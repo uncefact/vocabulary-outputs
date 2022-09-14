@@ -1,0 +1,29 @@
+
+{
+    "label": "informationAmount",
+    "uri": "unece:informationAmount",
+    "comment": [
+        "A monetary value of an amount being reported for information for this trade related tax, levy or duty.",
+        "A monetary value of an amount being reported for information in this trade settlement header monetary summation.",
+        "A monetary value of an amount being reported for information in this trade settlement monetary summation."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:decimal"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "unece:TradeSettlementHeaderMonetarySummation",
+            "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
+        },
+        {
+            "uri": "unece:TradeSettlementLineMonetarySummation",
+            "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
+        },
+        {
+            "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
+        }
+    ]
+}

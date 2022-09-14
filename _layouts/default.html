@@ -1,0 +1,34 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="page-wrapper">
+      {% include header.html %}
+      <div class="page-content">
+        {{ content }}
+      </div>
+    </div>
+    <button type="button" onclick="scrollTopFunction();" id="scroll-to-top" style="display: none;"></button>
+    <script>
+      const scrollButton = document.getElementById("scroll-to-top");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+          scrollButton.style.display = "block";
+        } else {
+          scrollButton.style.display = "none";
+        }
+      }
+
+      function scrollTopFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

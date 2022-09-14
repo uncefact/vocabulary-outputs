@@ -1,0 +1,28 @@
+---
+title: Code List
+permalink: code-lists
+type: code-list
+---
+
+<h1>Code list</h1>
+<p class="page-description">All code lists</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>URI</th>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for codeList in site.code-lists %}
+            {%- assign codeListJson = site.data[codeList.jsonid] -%}
+                <tr>
+                    <td><a href="{{ codeList | absolute_url }}">{{ codeListJson.label }}</a></td>
+                    <td>
+                        {{ codeListJson.comment }}
+                    </td>
+                </tr>
+        {% endfor %}
+    </tbody>
+</table>

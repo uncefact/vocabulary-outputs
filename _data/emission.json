@@ -1,0 +1,38 @@
+
+{
+    "label": "Emission",
+    "uri": "unece:Emission",
+    "comment": "Pollution (including noise, heat, and radiation) discharged into the environment by residential, commercial, or industrial facilities or by a means of transport.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:weightMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the weight ..."
+        },
+        {
+            "uri": "unece:affectedDistanceMeasure",
+            "type": "xsd:decimal",
+            "comment": "The affected distance over which this calculated emission is measured."
+        },
+        {
+            "uri": "unece:pollutionMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the pollution calculated for this emission."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:certifiedEmission",
+            "comment": "A certified level of pollution calculated for an emission from this logistics transport means."
+        },
+        {
+            "uri": "unece:specifiedEmission",
+            "comment": "A calculated emission specified for this logistics transport movement."
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+
+{
+    "label": "ProductInstance",
+    "uri": "unece:ProductInstance",
+    "comment": "An instance of an individual product or batch of similar products produced by human or mechanical effort or by a natural process.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:supplierAssignedSerialId",
+            "type": "xsd:token",
+            "comment": "The unique supplier assigned serial identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:expiryDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time ..."
+        },
+        {
+            "uri": "unece:actualQuantity",
+            "type": "xsd:decimal",
+            "comment": "The actual quantity added or ..."
+        },
+        {
+            "uri": "unece:kanbanId",
+            "type": "xsd:token",
+            "comment": "The unique kanban identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:registrationId",
+            "type": "xsd:token",
+            "comment": "A unique registration identifier, such as a vehicle licence plate identification, for this trade product instance."
+        },
+        {
+            "uri": "unece:lotId",
+            "type": "xsd:token",
+            "comment": "The unique lot identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:serialId",
+            "type": "xsd:token",
+            "comment": "A unique serial identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:globalSerialId",
+            "type": "xsd:token",
+            "comment": "The unique global serial identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:bestBeforeDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade product instance."
+        },
+        {
+            "uri": "unece:batchId",
+            "type": "xsd:token",
+            "comment": "A batch identifier for this ..."
+        },
+        {
+            "uri": "unece:sellByDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value by after which the items contained in the trade product instance should not be sold."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:appliedProcess",
+            "type": "unece:Process",
+            "comment": "A product handling process applied to this trade product instance, such as manufacturing or storage."
+        },
+        {
+            "uri": "unece:packagingEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The packaging event for this trade product instance."
+        },
+        {
+            "uri": "unece:productionEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The production event for this trade product instance."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:individualProductInstance",
+            "comment": "An individual instance of this trade product."
+        }
+    ]
+}

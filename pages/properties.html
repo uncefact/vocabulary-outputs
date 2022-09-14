@@ -1,0 +1,26 @@
+---
+title: Properties
+permalink: properties
+type: property
+---
+
+<h1>Properties</h1>
+<p class="page-description">A list of all properties</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>URI</th>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for property in site.properties %}
+        {%- assign propertyJson = site.data[property.jsonid] -%}
+        <tr>
+            <td><a href="{{ property.url | absolute_url }}">{{ property.title }}</a></td>
+            <td>{{ propertyJson.comment }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

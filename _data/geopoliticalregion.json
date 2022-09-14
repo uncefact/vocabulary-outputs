@@ -1,0 +1,40 @@
+
+{
+    "label": "GeopoliticalRegion",
+    "uri": "unece:GeopoliticalRegion",
+    "comment": "A collection of countries and/or economies united by a common characteristic, such as political union.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "A name, expressed as text, ..."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:includedCountry",
+            "type": "unece:Country",
+            "comment": "A country included in this trade geopolitical region."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:originGeopoliticalRegion",
+            "comment": "The geopolitical region of origin ..."
+        },
+        {
+            "uri": "unece:exportGeopoliticalRegion",
+            "comment": "The geopolitical region of export ..."
+        }
+    ]
+}

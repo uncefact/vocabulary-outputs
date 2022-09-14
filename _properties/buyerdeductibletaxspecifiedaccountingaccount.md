@@ -1,0 +1,5 @@
+---
+title: buyerDeductibleTaxSpecifiedAccountingAccount
+permalink: buyerDeductibleTaxSpecifiedAccountingAccount
+jsonid: buyerdeductibletaxspecifiedaccountingaccount
+---

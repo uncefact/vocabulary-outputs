@@ -1,0 +1,50 @@
+
+{
+    "label": "ComplexDescription",
+    "uri": "unece:ComplexDescription",
+    "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a complex description.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:abstract",
+            "type": "xsd:string",
+            "comment": "A textual abstract of the content of the work item complex description."
+        },
+        {
+            "uri": "unece:content",
+            "type": "xsd:string",
+            "comment": "A content, expressed as text, ..."
+        },
+        {
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the contractual ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:subsetComplexDescription",
+            "type": "unece:ComplexDescription",
+            "comment": "The complex description subset for this work item complex description."
+        },
+        {
+            "uri": "unece:respondingResponse",
+            "type": "unece:Response",
+            "comment": "A responding specification response for this work item complex description."
+        },
+        {
+            "uri": "unece:requestingQuery",
+            "type": "unece:Query",
+            "comment": "A requesting specification query for this work item complex description."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:subsetComplexDescription",
+            "comment": "The complex description subset for this work item complex description."
+        },
+        {
+            "uri": "unece:actualComplexDescription",
+            "comment": "An actual complex description for ..."
+        }
+    ]
+}

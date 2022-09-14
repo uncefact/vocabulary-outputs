@@ -1,0 +1,29 @@
+
+{
+    "label": "bBANId",
+    "uri": "unece:bBANId",
+    "comment": [
+        "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account.",
+        "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this creditor financial account.",
+        "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this debtor financial account."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:token"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "unece:CreditorFinancialAccount",
+            "comment": "A specific business arrangement whereby credits arising from transactions are recorded."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount",
+            "comment": "A specific business arrangement whereby debits arising from transactions are recorded."
+        },
+        {
+            "uri": "unece:FinancingFinancialAccount",
+            "comment": "A financial account used internally by a bank to manage the line of credit granted to financing requesting party."
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+
+{
+    "label": "LinearRing",
+    "uri": "unece:LinearRing",
+    "comment": "An array of points which define a closed loop which is not self intersecting.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:coordinate",
+            "type": "xsd:string",
+            "comment": "A coordinate, expressed as text, ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:coordinateDirectPosition",
+            "type": "unece:DirectPosition",
+            "comment": "The specified direct position of a coordinate for this linear ring."
+        },
+        {
+            "uri": "unece:specifiedGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "Geographical coordinate information specified for this linear ring."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:interiorLinearRing",
+            "comment": "An interior linear ring specified for this polygon."
+        },
+        {
+            "uri": "unece:exteriorLinearRing",
+            "comment": "The exterior linear specified ring for this polygon."
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+# Site settings
+title: Vocabulary UNECE
+baseurl: "" # the subpath of your site, e.g. /blog
+
+markdown: kramdown
+kramwdown:
+  parse_block_html: true
+
+collections:
+  classes:
+    output: true
+    permalink: /:name
+  properties:
+    output: true
+    permalink: /:name
+  code-lists:
+    output: true
+    permalink: /:name
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "classes"
+    values:
+      layout: "class"
+      type: "class"
+  -
+    scope:
+      path: ""
+      type: "properties"
+    values:
+      layout: "property"
+      type: "property"
+  -
+    scope:
+      path: ""
+      type: "code-lists"
+    values:
+      layout: "code-list"
+      type: "code-list"
+
+sass:
+  sourcemap: development
+
+exclude:
+  - .idea
+  - .git
+  - .sass-cache

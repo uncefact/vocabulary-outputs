@@ -1,0 +1,65 @@
+
+{
+    "label": "Sensor",
+    "uri": "unece:Sensor",
+    "comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of a value ..."
+        },
+        {
+            "uri": "unece:positionCode",
+            "type": "xsd:token",
+            "comment": "The code specifying a position ..."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:remainingBatteryChargePercent",
+            "type": "xsd:decimal",
+            "comment": "The percentage of the remaining ..."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:definedParameter",
+            "type": "unece:OperationalParameter",
+            "comment": "A control setting parameter defined ..."
+        },
+        {
+            "uri": "unece:precisionMeasurement",
+            "type": "unece:Measurement",
+            "comment": "A calibrated measurement of precision for this monitoring sensor."
+        },
+        {
+            "uri": "unece:scheduledReportedMeasurement",
+            "type": "unece:Measurement",
+            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:actualReportedMeasurement",
+            "type": "unece:Measurement",
+            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:embeddedSensor",
+            "comment": "An embedded sensor of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:remoteSensor",
+            "comment": "A remote sensor of this monitoring IOT device."
+        }
+    ]
+}

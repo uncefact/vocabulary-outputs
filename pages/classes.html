@@ -1,0 +1,28 @@
+---
+title: Classes
+permalink: classes
+type: class
+---
+
+<h1>Classes</h1>
+<p class="page-description">A list of all classes</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>URI</th>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for class in site.classes %}
+            {%- assign classJson = site.data[class.jsonid] -%}
+            <tr>
+                <td><a href="{{ class | absolute_url }}">{{ class.title }}</a></td>
+                <td>
+                    {{ classJson.comment }}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

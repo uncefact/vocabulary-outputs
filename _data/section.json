@@ -1,0 +1,31 @@
+
+{
+    "label": "Section",
+    "uri": "unece:Section",
+    "comment": "A part separated within or cut off from an object, such as the subdivision of a book or a piece of pipe.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:patternCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the pattern of this label section."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:includedSegment",
+            "type": "unece:Segment",
+            "comment": "A segment included in this label section."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:includedSection",
+            "comment": "A section included in this logistics label."
+        }
+    ]
+}

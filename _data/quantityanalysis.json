@@ -1,0 +1,75 @@
+
+{
+    "label": "QuantityAnalysis",
+    "uri": "unece:QuantityAnalysis",
+    "comment": "The analytic breakdown of a quantity to include its supporting information, such as a complex quantity that consists of multiple pieces of information that together constitute a single quantity.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:actualQuantityPercent",
+            "type": "xsd:decimal",
+            "comment": "The percentage of a total quantity that the actual quantity of this work item quantity analysis represents."
+        },
+        {
+            "uri": "unece:alternativeClassificationCode",
+            "type": "xsd:token",
+            "comment": "A code specifying an alternative ..."
+        },
+        {
+            "uri": "unece:actualQuantity",
+            "type": "xsd:decimal",
+            "comment": "The actual quantity added or ..."
+        },
+        {
+            "uri": "unece:primaryClassificationCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a primary ..."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description for this ..."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a status ..."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        },
+        {
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the contractual ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:actualQuantityDimension",
+            "type": "unece:Dimension",
+            "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+        },
+        {
+            "uri": "unece:breakdownQuantityAnalysis",
+            "type": "unece:QuantityAnalysis",
+            "comment": "A quantity analysis breakdown of this work item quantity analysis."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:totalQuantityQuantityAnalysis",
+            "comment": "An analysis of the total quantity for this basic work item."
+        },
+        {
+            "uri": "unece:breakdownQuantityAnalysis",
+            "comment": "A quantity analysis breakdown of this work item quantity analysis."
+        }
+    ]
+}

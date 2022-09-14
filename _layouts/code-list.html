@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{%- assign codeList = site.data[page.jsonid] -%}
+
+<h1>{{ page.title }}</h1>
+<p class="page-description">{{ codeList.comment }}</p>
+
+{% if codeList.values %}
+    <h2>Range includes:</h2>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>URI</th>
+                    <th>Label</th>
+                    <th>Comment</th>
+                    <th>Level Category</th>
+                    <th>Symbol</th>
+                    <th>Conversion Factor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for range in codeList.values %}
+                    {%- assign rangeUrl = range.uri | split: ":" -%}
+                    {%- assign mappingKey = rangeUrl[0] -%}
+                    <tr>
+                        <td><a target="_blank" href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri }}</a></td>
+                        <td>{{ range.label }}</td>
+                        <td>{{ range.comment }}</td>
+                        <td>{{ range['unece:levelCategory'] }}</td>
+                        <td>{{ range['unece:symbol'] }}</td>
+                        <td>{{ range['unece:conversionFactor'] }}</td>
+                        <td>{{ range['unece:status'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}
+

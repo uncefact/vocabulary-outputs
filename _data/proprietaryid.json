@@ -1,0 +1,29 @@
+
+{
+    "label": "proprietaryId",
+    "uri": "unece:proprietaryId",
+    "comment": [
+        "The proprietary identifier for this financing financial account.",
+        "The unique proprietary identifier for this creditor financial account.",
+        "The unique proprietary identifier for this debtor financial account."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:token"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "unece:CreditorFinancialAccount",
+            "comment": "A specific business arrangement whereby credits arising from transactions are recorded."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount",
+            "comment": "A specific business arrangement whereby debits arising from transactions are recorded."
+        },
+        {
+            "uri": "unece:FinancingFinancialAccount",
+            "comment": "A financial account used internally by a bank to manage the line of credit granted to financing requesting party."
+        }
+    ]
+}

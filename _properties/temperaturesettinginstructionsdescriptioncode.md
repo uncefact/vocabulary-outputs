@@ -1,0 +1,5 @@
+---
+title: temperatureSettingInstructionsDescriptionCode
+permalink: temperatureSettingInstructionsDescriptionCode
+jsonid: temperaturesettinginstructionsdescriptioncode
+---

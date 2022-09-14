@@ -1,0 +1,60 @@
+
+{
+    "label": "CommunicationEvent",
+    "uri": "unece:CommunicationEvent",
+    "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "A date, time, date time, ..."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of a value ..."
+        },
+        {
+            "uri": "unece:unitQuantity",
+            "type": "xsd:decimal",
+            "comment": "A number of units for ..."
+        },
+        {
+            "uri": "unece:reasonCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a reason ..."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description for this ..."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:operationalResponsibleParty",
+            "type": "unece:TradeParty",
+            "comment": "The operational responsible party for this communication event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:relatedEvent",
+            "comment": "A communication event related to ..."
+        },
+        {
+            "uri": "unece:matchingEvent",
+            "comment": "A matching event for this communication pairing."
+        }
+    ]
+}

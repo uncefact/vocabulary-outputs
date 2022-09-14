@@ -1,0 +1,30 @@
+.header {
+  display: block;
+  background: #fff;
+  border-bottom: 4px solid $app-blue;
+  height: 60px;
+
+  &__content {
+    max-width: $container__max-width;
+    padding: $container__padding $container__padding 0 $container__padding;
+    margin: 0 auto;
+  }
+}
+
+.main-nav {
+  display: block;
+
+  a {
+    display: inline-flex;
+    padding: 10px 20px;
+    margin: 0 5px 0 0;
+    border: 1px solid $app-light-blue;
+    border-bottom: 0;
+    text-decoration: none;
+
+    &.active {
+      background-color: $app-light-blue;
+      color: #fff;
+    }
+  }
+}

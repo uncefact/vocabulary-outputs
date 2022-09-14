@@ -1,0 +1,66 @@
+
+{
+    "label": "LogisticsStatus",
+    "uri": "unece:LogisticsStatus",
+    "comment": "The information relevant to a condition or a position related to logistics.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:reason",
+            "type": "xsd:string",
+            "comment": "A reason, expressed as text, ..."
+        },
+        {
+            "uri": "unece:logisticsStatusConditionCode",
+            "type": "unece:UNCL9013Code",
+            "comment": "The code specifying this logistics status condition [UNECE Recommendation 24]."
+        },
+        {
+            "uri": "unece:referenceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The reference date or date ..."
+        },
+        {
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:decimal",
+            "comment": "A sequence number for these ..."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description for this ..."
+        },
+        {
+            "uri": "unece:logisticsStatusReasonCode",
+            "type": "unece:UNCL9013Code",
+            "comment": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:loadingReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport loading event reported for this logistics status."
+        },
+        {
+            "uri": "unece:unloadingReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport unloading event reported for this logistics status."
+        },
+        {
+            "uri": "unece:departureReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport departure event reported for this logistics status."
+        },
+        {
+            "uri": "unece:arrivalReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport arrival event reported for this logistics status."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:reportedStatus",
+            "comment": "A logistics status reported for ..."
+        }
+    ]
+}

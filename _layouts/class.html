@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+{%- assign class = site.data[page.jsonid] -%}
+
+<h1>{{ class.label }}</h1>
+<p class="page-description">{{ class.comment }}</p>
+
+{% if class.objectProperties %}
+    <h2>Object Properties</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>URI</th>
+            <th>Type</th>
+            <th>Comment</th>
+        </tr>
+        </thead>
+        <tbody>
+            {%- for property in class.objectProperties -%}
+                {%- assign propertyUrl = property.uri | split: ":" -%}
+                {%- assign typeUrl = property.type | split: ":" -%}
+                {%- assign mappingKey = typeUrl[0] -%}
+                <tr>
+                    <td><a href="{{ propertyUrl[1] | absolute_url }}">{{ property.uri }}</a></td>
+                    <td><a target="_blank" href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
+                    <td>{{ property.comment }}</td>
+                </tr>
+            {%- endfor -%}
+        </tbody>
+    </table>
+{% endif %}
+
+{% if class.datatypeProperties %}
+    <h2>Data Properties</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>URI</th>
+                <th>Type</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for property in class.datatypeProperties %}
+                {% assign propertyUrl = property.uri | split: ":"  %}
+                {% assign typeUrl = property.type | split: ":"  %}
+                {% assign mappingKey = typeUrl[0]  %}
+                <tr>
+                    <td><a href="{{ propertyUrl[1] | absolute_url }}">{{ property.uri }}</a></td>
+                    <td><a target="_blank" href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
+                    <td>{{ property.comment }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+{% if class.referencedBy %}
+    <h2>Referenced by</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>URI</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reference in class.referencedBy %}
+                {% assign referenceUrl = reference.uri | split: ":"  %}
+                <tr>
+                    <td><a href="{{ referenceUrl[1] | absolute_url }}">{{ reference.uri }}</a></td>
+                    <td>{{ reference.comment }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

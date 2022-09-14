@@ -1,0 +1,30 @@
+
+{
+    "label": "specifiedMonetarySummation",
+    "uri": "unece:specifiedMonetarySummation",
+    "comment": [
+        "The monetary summation totals specified for this header trade settlement.",
+        "The monetary summation totals specified for this line trade settlement.",
+        "The monetary summation totals specified for this payment trade settlement."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "unece:TradeSettlementPaymentMonetarySummation",
+            "comment": "unece:TradeSettlementPaymentMonetarySummation"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
+        },
+        {
+            "uri": "unece:LineTradeSettlement",
+            "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+
+{
+    "label": "LineTradeSettlement",
+    "uri": "unece:LineTradeSettlement",
+    "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:payerReference",
+            "type": "xsd:string",
+            "comment": "The payer reference, expressed as ..."
+        },
+        {
+            "uri": "unece:discountIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or ..."
+        },
+        {
+            "uri": "unece:paymentAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of a ..."
+        },
+        {
+            "uri": "unece:priceCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the price ..."
+        },
+        {
+            "uri": "unece:invoiceIssuerReference",
+            "type": "xsd:string",
+            "comment": "The invoice issuer reference, expressed ..."
+        },
+        {
+            "uri": "unece:totalAdjustmentAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of the ..."
+        },
+        {
+            "uri": "unece:invoiceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time ..."
+        },
+        {
+            "uri": "unece:paymentReference",
+            "type": "xsd:string",
+            "comment": "A payment reference, expressed as ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:referencedTradeTransaction",
+            "type": "unece:TradeTransaction",
+            "comment": "A trade transaction referenced in this line trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedTradeSettlement",
+            "comment": "A line trade settlement specified ..."
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+
+{
+    "label": "ConsignmentItem",
+    "uri": "unece:ConsignmentItem",
+    "comment": "An item within a consignment of goods separately identified for transport and customs purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:typeExtensionCode",
+            "type": "xsd:token",
+            "comment": "The code used as an ..."
+        },
+        {
+            "uri": "unece:secondTypeExtensionCode",
+            "type": "xsd:token",
+            "comment": "The code used as a second extension to the type code for further specifying the type of supply chain consignment item."
+        },
+        {
+            "uri": "unece:globalId",
+            "type": "xsd:token",
+            "comment": "A global identifier for this ..."
+        },
+        {
+            "uri": "unece:firstTypeExtensionCode",
+            "type": "xsd:token",
+            "comment": "The code used as a first extension to the type code for further specifying the type of supply chain consignment item."
+        },
+        {
+            "uri": "unece:loadingLengthMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the loading ..."
+        },
+        {
+            "uri": "unece:tariffQuantity",
+            "type": "xsd:decimal",
+            "comment": "A tariff quantity for this ..."
+        },
+        {
+            "uri": "unece:declaredValueForStatisticsAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value of this supply chain consignment item as declared for statistical purposes."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        },
+        {
+            "uri": "unece:chargeableWeightMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of a chargeable ..."
+        },
+        {
+            "uri": "unece:damageRemarks",
+            "type": "xsd:string",
+            "comment": "Damage remarks, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:packageQuantity",
+            "type": "xsd:decimal",
+            "comment": "The number of packages in ..."
+        },
+        {
+            "uri": "unece:packageType",
+            "type": "xsd:string",
+            "comment": "A package type, expressed as ..."
+        },
+        {
+            "uri": "unece:fOBAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value for this ..."
+        },
+        {
+            "uri": "unece:insuranceValueAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value of this ..."
+        },
+        {
+            "uri": "unece:nationalTypeExtensionCode",
+            "type": "xsd:token",
+            "comment": "The code used as a national extension to the type code for further specifying the type of supply chain consignment item."
+        },
+        {
+            "uri": "unece:grossVolumeMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the gross ..."
+        },
+        {
+            "uri": "unece:deliveryInstructionsText",
+            "type": "xsd:string",
+            "comment": "Delivery instructions, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:cargoToleranceInformation",
+            "type": "xsd:string",
+            "comment": "Cargo tolerance information, expressed as ..."
+        },
+        {
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, concerning ..."
+        },
+        {
+            "uri": "unece:declaredValueForCarriageAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value of this ..."
+        },
+        {
+            "uri": "unece:invoiceAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value for an invoice for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:importTypeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the import type of supply chain consignment item."
+        },
+        {
+            "uri": "unece:totalChargeAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of the ..."
+        },
+        {
+            "uri": "unece:tradeLineItemQuantity",
+            "type": "xsd:decimal",
+            "comment": "The number of trade line ..."
+        },
+        {
+            "uri": "unece:netWeightMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the net ..."
+        },
+        {
+            "uri": "unece:declaredValueForCustomsAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value declared for ..."
+        },
+        {
+            "uri": "unece:specialInstructions",
+            "type": "xsd:string",
+            "comment": "Special instructions, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:decimal",
+            "comment": "A sequence number for these ..."
+        },
+        {
+            "uri": "unece:exportTypeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the export type of supply chain consignment item."
+        },
+        {
+            "uri": "unece:totalExportExitToImportEntryChargeAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value of the ..."
+        },
+        {
+            "uri": "unece:grossWeightMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the gross ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:importationCountry",
+            "type": "unece:Country",
+            "comment": "The importation country for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:applicableTransportMeans",
+            "type": "unece:TransportMeans",
+            "comment": "The means of transport applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "unece:transportTemperature",
+            "type": "unece:TransportSettingTemperature",
+            "comment": "The transport temperature setting for this supply chain consignment item."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:includedConsignmentItem",
+            "comment": "A consignment item included in ..."
+        },
+        {
+            "uri": "unece:includedWithinConsignmentItem",
+            "comment": "The consignment item within which this supply chain trade line item is included."
+        },
+        {
+            "uri": "unece:loadedConsignmentItem",
+            "comment": "A consignment item loaded onto, or into, this piece of logistics transport equipment."
+        }
+    ]
+}

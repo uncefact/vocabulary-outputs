@@ -1,0 +1,84 @@
+
+{
+    "label": "TradePrice",
+    "uri": "unece:TradePrice",
+    "comment": "A sum of money for which something is or may be bought or sold for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:priceTypeCode",
+            "type": "unece:UNCL5375Code",
+            "comment": "The code specifying the type of trade price."
+        },
+        {
+            "uri": "unece:maximumQuantity",
+            "type": "xsd:decimal",
+            "comment": "The maximum quantity in a range for which the trade price applies."
+        },
+        {
+            "uri": "unece:basisQuantity",
+            "type": "xsd:decimal",
+            "comment": "A quantity on which the ..."
+        },
+        {
+            "uri": "unece:type",
+            "type": "xsd:string",
+            "comment": "A type, expressed as text ..."
+        },
+        {
+            "uri": "unece:changeReason",
+            "type": "xsd:string",
+            "comment": "A reason, expressed as text, for a change of this trade price."
+        },
+        {
+            "uri": "unece:chargeAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of the ..."
+        },
+        {
+            "uri": "unece:unitAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of the unit of this trade price."
+        },
+        {
+            "uri": "unece:minimumQuantity",
+            "type": "xsd:decimal",
+            "comment": "The minimum quantity in a range for which this trade price applies."
+        },
+        {
+            "uri": "unece:orderUnitConversionFactorNumeric",
+            "type": "xsd:decimal",
+            "comment": "The value used as the factor to convert the order unit into the price unit for this trade price."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:tradeComparisonPrice",
+            "type": "unece:ReferencePrice",
+            "comment": "A price that provides a trade comparison with this trade price."
+        },
+        {
+            "uri": "unece:deliveryLocation",
+            "type": "unece:TradeLocation",
+            "comment": "A delivery location for this trade price."
+        },
+        {
+            "uri": "unece:appliedAllowanceCharge",
+            "type": "unece:AllowanceCharge",
+            "comment": "An allowance or charge applied to the trade price."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:orderPriceProductPrice",
+            "comment": "An order price for a product in this line trade agreement."
+        },
+        {
+            "uri": "unece:netPriceProductPrice",
+            "comment": "A net product price in ..."
+        },
+        {
+            "uri": "unece:grossPriceProductPrice",
+            "comment": "A gross product price in ..."
+        }
+    ]
+}

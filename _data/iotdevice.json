@@ -1,0 +1,95 @@
+
+{
+    "label": "IOTDevice",
+    "uri": "unece:IOTDevice",
+    "comment": "An object or system made or adapted for an IOT (Internet of Things) purpose such as to collect, report and autonomously transmit digital data especially when connected to a piece of mechanical or electronic equipment.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:communicationCapabilityCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the communication capability of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:attachedAssetId",
+            "type": "xsd:token",
+            "comment": "The identifier for the asset, such as a container, to which this monitoring IOT device is attached."
+        },
+        {
+            "uri": "unece:positionCode",
+            "type": "xsd:token",
+            "comment": "The code specifying a position ..."
+        },
+        {
+            "uri": "unece:powerSourceTypeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying a type of power source for this monitoring IOT device."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:operationalStatusCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the operational status, such as broken, stolen, unpaired, inactive of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:remainingBatteryChargePercent",
+            "type": "xsd:decimal",
+            "comment": "The percentage of the remaining ..."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        },
+        {
+            "uri": "unece:latestReceivedSignalDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:embeddedSensor",
+            "type": "unece:Sensor",
+            "comment": "An embedded sensor of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:reportingSensorPairing",
+            "type": "unece:Pairing",
+            "comment": "A sensor communication pairing reported for this monitoring IOT device."
+        },
+        {
+            "uri": "unece:reportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport event reported by this monitoring IOT device."
+        },
+        {
+            "uri": "unece:interfaceEquipment",
+            "type": "unece:Equipment",
+            "comment": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
+        },
+        {
+            "uri": "unece:latestReceivedGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
+        },
+        {
+            "uri": "unece:remoteSensor",
+            "type": "unece:Sensor",
+            "comment": "A remote sensor of this monitoring IOT device."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:attachedIOTDevice",
+            "comment": "An IOT device attached to ..."
+        },
+        {
+            "uri": "unece:reportingIOTDevice",
+            "comment": "An IOT device for this transport reporting event."
+        }
+    ]
+}

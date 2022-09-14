@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{%- assign property = site.data[page.jsonid] -%}
+
+<!--suppress ALL -->
+<h1>{{ property.label }}</h1>
+<p class="page-description">{{ property.comment }}</p>
+
+{% if property.rangeIncludes %}
+    <h2>Range includes:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>URI</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for range in property.rangeIncludes -%}
+                {%- assign rangeUrl = range.uri | split: ":" -%}
+                {%- assign mappingKey = rangeUrl[0] -%}
+                <tr>
+                    <td><a target="_blank" href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri }}</a></td>
+                </tr>
+            {%- endfor -%}
+        </tbody>
+    </table>
+{% endif %}
+
+    <h2>Domains:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>URI</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for domain in property.domainIncludes %}
+                {% assign domainUrl = domain.uri | split: ":"  %}
+                <tr>
+                    <td><a href="{{ domainUrl[1] | absolute_url }}">{{ domain.uri }}</a></td>
+                    <td>{{ domain.comment }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% if property.domainIncludes %}
+{% endif %}

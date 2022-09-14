@@ -1,0 +1,71 @@
+
+{
+    "label": "PaymentMeans",
+    "uri": "unece:PaymentMeans",
+    "comment": "Details of the means by which the payment will be or has been made.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:paymentGuaranteeMeansGuaranteeMethodCode",
+            "type": "unece:UNCL4431Code",
+            "comment": "The code specifying the method of guarantee for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:tradeSettlementPaymentMeansId",
+            "type": "unece:UNCL4461Code",
+            "comment": "An identifier for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:paymentMeansChannelPaymentChannelCode",
+            "type": "unece:UNCL4435Code",
+            "comment": "The code specifying the payment channel through which this trade settlement payment is to be processed (Reference United Nations Code List (UNCL) 4435)."
+        },
+        {
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, concerning ..."
+        },
+        {
+            "uri": "unece:paymentMeansTypeCode",
+            "type": "unece:UNCL4461Code",
+            "comment": "The code specifying the type of trade settlement payment means, such as cash or check."
+        },
+        {
+            "uri": "unece:paymentMethodCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the method ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:applicableFinancialCard",
+            "type": "unece:FinancialCard",
+            "comment": "A financial card applicable to this trade settlement payment means."
+        },
+        {
+            "uri": "unece:payerPartyFinancialAccount",
+            "type": "unece:DebtorFinancialAccount",
+            "comment": "The debtor financial account of the payer party for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:payeeSpecifiedFinancialInstitution",
+            "type": "unece:CreditorFinancialInstitution",
+            "comment": "The creditor financial institution of the payee party specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:payerSpecifiedFinancialInstitution",
+            "type": "unece:DebtorFinancialInstitution",
+            "comment": "The debtor financial institution of the payer party specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:payeePartyFinancialAccount",
+            "type": "unece:CreditorFinancialAccount",
+            "comment": "A creditor financial account of the payee party for this trade settlement payment means."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedPaymentMeans",
+            "comment": "A payment means specified for ..."
+        }
+    ]
+}

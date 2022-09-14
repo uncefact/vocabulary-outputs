@@ -1,0 +1,50 @@
+
+{
+    "label": "Seal",
+    "uri": "unece:Seal",
+    "comment": "A device used to secure an object and protect from unauthorized entry or tampering such as a seal affixed to a piece of transport equipment.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:maximumId",
+            "type": "xsd:token",
+            "comment": "The maximum unique identifier used for these logistics seals."
+        },
+        {
+            "uri": "unece:sealConditionCode",
+            "type": "unece:UNCL4517Code",
+            "comment": "A code specifying a condition of this logistics seal."
+        },
+        {
+            "uri": "unece:logisticsSealingPartyRoleCode",
+            "type": "unece:UNCL9303Code",
+            "comment": "The code specifying the role of the party responsible for the sealing of this logistics seal."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:sealTypeCode",
+            "type": "unece:UNCL4525Code",
+            "comment": "The code specifying the type of logistics seal."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:issuingParty",
+            "type": "unece:TradeParty",
+            "comment": "The party issuing this logistics seal."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:requiredSeal",
+            "comment": "A seal required by this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:affixedSeal",
+            "comment": "A seal affixed to this ..."
+        }
+    ]
+}

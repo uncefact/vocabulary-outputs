@@ -1,0 +1,44 @@
+@mixin chevron($cDirection:"right", $cSize: 8px, $cWidth: 1px, $cColor: $app-blue) {
+
+  display: block;
+  width: $cSize;
+  height: $cSize;
+  border-top: $cWidth solid $cColor;
+  border-right: $cWidth solid $cColor;
+
+  @if $cDirection == 'top' {
+    transform: rotate(-45deg);
+  }
+  @if $cDirection == 'right' {
+    transform: rotate(45deg);
+  }
+  @if $cDirection == 'bottom' {
+    transform: rotate(135deg);
+  }
+  @if $cDirection == 'left' {
+    transform: rotate(225deg);
+  }
+}
+
+#scroll-to-top {
+  position: fixed;
+  border: 0;
+  background: $scroll-to-top-bg;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  bottom: 10px;
+  left: 10px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:after {
+    content: "";
+    @include chevron('top', 16px, 4px, white);
+    margin: 10px 0 0 15px;
+  }
+}

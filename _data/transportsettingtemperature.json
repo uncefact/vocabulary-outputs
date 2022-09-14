@@ -1,0 +1,45 @@
+
+{
+    "label": "TransportSettingTemperature",
+    "uri": "unece:TransportSettingTemperature",
+    "comment": "Temperature settings for a transport movement, such as a required storage temperature range.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of a value ..."
+        },
+        {
+            "uri": "unece:maximumValueMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the highest ..."
+        },
+        {
+            "uri": "unece:temperatureTypeCode",
+            "type": "unece:UNCL6245Code",
+            "comment": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
+        },
+        {
+            "uri": "unece:minimumValueMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the lowest ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:informationInstructions",
+            "type": "unece:TemperatureSettingInstructions",
+            "comment": "Informational instructions for achieving, maintaining, using or responding to this transport setting temperature."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:transportTemperature",
+            "comment": "The transport temperature setting for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:settingTemperature",
+            "comment": "A temperature setting for this ..."
+        }
+    ]
+}

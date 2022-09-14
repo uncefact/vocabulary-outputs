@@ -1,0 +1,30 @@
+
+{
+    "label": "shipFromParty",
+    "uri": "unece:shipFromParty",
+    "comment": [
+        "The ship from party for this supply chain consignment.",
+        "The ship from party, at header level, for this trade delivery.",
+        "The ship from party, at line level, for this trade delivery."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "unece:TradeParty",
+            "comment": "unece:TradeParty"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+        },
+        {
+            "uri": "unece:HeaderTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
+        },
+        {
+            "uri": "unece:LineTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+        }
+    ]
+}

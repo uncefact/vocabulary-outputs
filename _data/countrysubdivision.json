@@ -1,0 +1,55 @@
+
+{
+    "label": "CountrySubDivision",
+    "uri": "unece:CountrySubDivision",
+    "comment": "A political or physical area or region within the political boundaries of a country used or referenced for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:hierarchicalLevelCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the hierarchical level of this trade country sub-division."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "A name, expressed as text, ..."
+        },
+        {
+            "uri": "unece:locationFunctionTypeCode",
+            "type": "unece:UNCL3227Code",
+            "comment": "A code specifying the type ..."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:activityAuthorizedParty",
+            "type": "unece:TradeParty",
+            "comment": "A party that is authorized to perform an activity in this trade country sub-division."
+        },
+        {
+            "uri": "unece:superordinateCountrySubDivision",
+            "type": "unece:CountrySubDivision",
+            "comment": "A superordinate country sub-division for this trade country sub-division."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:subordinateCountrySubDivision",
+            "comment": "A subordinate country sub-division within ..."
+        },
+        {
+            "uri": "unece:superordinateCountrySubDivision",
+            "comment": "A superordinate country sub-division for this trade country sub-division."
+        }
+    ]
+}

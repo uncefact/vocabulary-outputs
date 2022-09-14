@@ -1,0 +1,115 @@
+
+{
+    "label": "WorkItem",
+    "uri": "unece:WorkItem",
+    "comment": "A specific task or set of tasks to be undertaken.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:requestedActionCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a requested ..."
+        },
+        {
+            "uri": "unece:alternativeClassificationCode",
+            "type": "xsd:token",
+            "comment": "A code specifying an alternative ..."
+        },
+        {
+            "uri": "unece:index",
+            "type": "xsd:string",
+            "comment": "The index, expressed as text, ..."
+        },
+        {
+            "uri": "unece:primaryClassificationCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a primary ..."
+        },
+        {
+            "uri": "unece:indexValue",
+            "type": "xsd:string",
+            "comment": "The index value for this basic work item."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        },
+        {
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the contractual ..."
+        },
+        {
+            "uri": "unece:referenceId",
+            "type": "xsd:token",
+            "comment": "The unique identifier of another work item referenced by this basic work item."
+        },
+        {
+            "uri": "unece:totalQuantity",
+            "type": "xsd:decimal",
+            "comment": "The total quantity for this ..."
+        },
+        {
+            "uri": "unece:comment",
+            "type": "xsd:string",
+            "comment": "A comment, expressed as text, ..."
+        },
+        {
+            "uri": "unece:totalQuantityClassificationCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the classification of the total quantity for this basic work item."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A proprietary identifier. "
+        },
+        {
+            "uri": "unece:referenceFileBinaryObject",
+            "type": "xsd:base64Binary",
+            "comment": "A reference file binary object related to this basic work item."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a status ..."
+        },
+        {
+            "uri": "unece:priceListItemId",
+            "type": "xsd:token",
+            "comment": "The identifier of a price ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:subordinateWorkItem",
+            "type": "unece:WorkItem",
+            "comment": "A subordinate work item for this basic work item."
+        },
+        {
+            "uri": "unece:unitPrice",
+            "type": "unece:CalculatedPrice",
+            "comment": "A unit calculated price for this basic work item."
+        },
+        {
+            "uri": "unece:actualComplexDescription",
+            "type": "unece:ComplexDescription",
+            "comment": "An actual complex description for ..."
+        },
+        {
+            "uri": "unece:totalQuantityQuantityAnalysis",
+            "type": "unece:QuantityAnalysis",
+            "comment": "An analysis of the total quantity for this basic work item."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:itemWorkItem",
+            "comment": "A basic work item in ..."
+        },
+        {
+            "uri": "unece:subordinateWorkItem",
+            "comment": "A subordinate work item for this basic work item."
+        }
+    ]
+}

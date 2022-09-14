@@ -1,0 +1,80 @@
+
+{
+    "label": "Material",
+    "uri": "unece:Material",
+    "comment": "Something inanimate that occupies space and possesses mass.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:criticalitySafetyIndexNumeric",
+            "type": "xsd:decimal",
+            "comment": "The criticality safety index number of this radioactive material."
+        },
+        {
+            "uri": "unece:transportIndexNumeric",
+            "type": "xsd:decimal",
+            "comment": "The transport index number of this radioactive material."
+        },
+        {
+            "uri": "unece:compositionDescription",
+            "type": "xsd:string",
+            "comment": "The textual description of the composition of this radioactive material."
+        },
+        {
+            "uri": "unece:radionuclideName",
+            "type": "xsd:string",
+            "comment": "The name of the radionuclide, expressed as text, of this radioactive material."
+        },
+        {
+            "uri": "unece:specialFormInformation",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, describing the special form for this radioactive material."
+        },
+        {
+            "uri": "unece:completeDeliveryIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not a transport waste material delivery is complete."
+        },
+        {
+            "uri": "unece:fissileExceptionIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this radioactive material is a fissile exception."
+        },
+        {
+            "uri": "unece:lowDispersibleInformation",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, describing the low dispersion properties of this radioactive material."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type ..."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:nextDeliveryEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A next delivery event for this transport waste material."
+        },
+        {
+            "uri": "unece:includedMaterialComponent",
+            "type": "unece:MaterialComponent",
+            "comment": "A material component included in this transport waste."
+        },
+        {
+            "uri": "unece:receptionFacilityContact",
+            "type": "unece:Contact",
+            "comment": "A reception facility contact for this transport waste material."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:radioactiveMaterial",
+            "comment": "The radioactive material transported as dangerous goods."
+        },
+        {
+            "uri": "unece:reportedMaterial",
+            "comment": "Waste material reported for this logistics transport movement."
+        }
+    ]
+}

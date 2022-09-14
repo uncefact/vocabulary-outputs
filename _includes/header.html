@@ -1,0 +1,10 @@
+{% assign pageType = page.type %}
+<header class="header">
+    <div class="header__content">
+        <nav class="main-nav">
+            <a {% if pageType == 'class' %}class="active"{% endif %} href="{{ 'classes' | absolute_url }}">Classes</a>
+            <a {% if pageType == 'property' %}class="active"{% endif %} href="{{ 'properties' | absolute_url }}">Properties</a>
+            <a {% if pageType == 'code-list' %}class="active"{% endif %} href="{{ 'code-lists' | absolute_url }}">Code Lists</a>
+        </nav>
+    </div>
+</header>
