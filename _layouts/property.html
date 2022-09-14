@@ -28,6 +28,7 @@ layout: default
     </table>
 {% endif %}
 
+{% if property.domainIncludes %}
     <h2>Domains:</h2>
     <table>
         <thead>
@@ -46,5 +47,4 @@ layout: default
             {% endfor %}
         </tbody>
     </table>
-{% if property.domainIncludes %}
 {% endif %}
