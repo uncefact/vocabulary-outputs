@@ -2,19 +2,31 @@
   display: block;
   background: #fff;
   border-bottom: 4px solid $app-blue;
-  height: 60px;
 
   &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     max-width: $container__max-width;
     padding: $container__padding $container__padding 0 $container__padding;
     margin: 0 auto;
+  }
+
+  &__logo {
+    margin: 0 0 15px 0;
+
+    &-img {
+      height: 45px;
+      display: block;
+    }
   }
 }
 
 .main-nav {
   display: block;
+  align-self: flex-end;
 
-  a {
+  &__link {
     display: inline-flex;
     padding: 10px 20px;
     margin: 0 5px 0 0;
@@ -22,7 +34,7 @@
     border-bottom: 0;
     text-decoration: none;
 
-    &.active {
+    &--active {
       background-color: $app-light-blue;
       color: #fff;
     }

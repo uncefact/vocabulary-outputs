@@ -18,7 +18,7 @@ type: property
     {% for property in site.properties %}
         {%- assign propertyJson = site.data[property.jsonid] -%}
         <tr>
-            <td><a href="{{ property.url | absolute_url }}">{{ property.title }}</a></td>
+            <td><a href="{{ property.url | absolute_url }}">unece:{{ property.title }}</a></td>
             <td>{{ propertyJson.comment }}</td>
         </tr>
     {% endfor %}

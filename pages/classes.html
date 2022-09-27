@@ -18,7 +18,7 @@ type: class
         {% for class in site.classes %}
             {%- assign classJson = site.data[class.jsonid] -%}
             <tr>
-                <td><a href="{{ class | absolute_url }}">{{ class.title }}</a></td>
+                <td><a href="{{ class | absolute_url }}">unece:{{ class.title }}</a></td>
                 <td>
                     {{ classJson.comment }}
                 </td>

@@ -21,7 +21,7 @@ layout: default
                 {%- assign rangeUrl = range.uri | split: ":" -%}
                 {%- assign mappingKey = rangeUrl[0] -%}
                 <tr>
-                    <td><a target="_blank" href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri }}</a></td>
                 </tr>
             {%- endfor -%}
         </tbody>
