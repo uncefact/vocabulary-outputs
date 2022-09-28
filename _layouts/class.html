@@ -5,7 +5,15 @@ layout: default
 {%- assign class = site.data[page.jsonid] -%}
 
 <h1>{{ class.label }}</h1>
-<p class="page-description">{{ class.comment }}</p>
+<div class="page-description">
+    {%- if class.comment.first -%}
+        {%- for comment in class.comment -%}
+            <p>{{ comment }}</p>
+        {%- endfor -%}
+    {%- else -%}
+        <p>{{ class.comment }}</p>
+    {%- endif -%}
+</div>
 
 {% if class.objectProperties %}
     <h2>Object Properties</h2>

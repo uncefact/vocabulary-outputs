@@ -6,8 +6,15 @@ layout: default
 
 <!--suppress ALL -->
 <h1>{{ property.label }}</h1>
-<p class="page-description">{{ property.comment }}</p>
-
+<div class="page-description">
+    {%- if property.comment.first -%}
+        {%- for comment in property.comment -%}
+            <p>{{ comment }}</p>
+        {%- endfor -%}
+    {%- else -%}
+        <p>{{ property.comment }}</p>
+    {%- endif -%}
+</div>
 {% if property.rangeIncludes %}
     <h2>Range includes:</h2>
     <table>
