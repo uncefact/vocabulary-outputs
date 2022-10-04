@@ -2,49 +2,71 @@
 layout: default
 ---
 
-{%- assign codeList = site.data[page.jsonid] -%}
+{%- assign initialCodeList = site.data[page.jsonid] -%}
+
+{%- if initialCodeList.values -%}
+    {% assign codeList = initialCodeList.values %}
+{%- else -%}
+    {% assign codeList = initialCodeList %}
+{%- endif -%}
+
 
 <h1>{{ page.title }}</h1>
 <div class="page-description">
-    {%- if codeList.comment.first -%}
-        {%- for comment in codeList.comment -%}
+    {%- if initialCodeList.comment.first -%}
+        {%- for comment in initialCodeList.comment -%}
             <p>{{ comment }}</p>
         {%- endfor -%}
+    {%- elsif initialCodeList.comment -%}
+        <p>{{ initialCodeList.comment }}</p>
     {%- else -%}
-        <p>{{ codeList.comment }}</p>
+        <p>{{ page.comment }}</p>
     {%- endif -%}
 </div>
 
-{%- if codeList.values -%}
+{%- if codeList -%}
     <h2>Range includes:</h2>
     <div class="table-wrapper">
         {% assign columns = page.columns %}
+        {% assign mapping = site.data.mapping %}
         <table>
             <thead>
                 <tr>
                     <th>URI</th>
-                    <th>Label</th>
-                    <th>Comment</th>
                     {%- for column in columns -%}
                     <th>{{column.title}}</th>
                     {%- endfor -%}
                 </tr>
             </thead>
             <tbody>
-                {% for range in codeList.values %}
-                    {%- assign rangeUrl = range.uri | split: ":" -%}
-                    {%- assign mappingKey = rangeUrl[0] -%}
-                    <tr id="{{rangeUrl[1]}}">
-                        <td><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri }}</a></td>
-                        <td>{{ range.label }}</td>
-                        <td>{{ range.comment }}</td>
-                        {%- for column in columns -%}
-                        <td>{{ range[column.code] }}</td>
-                        {%- endfor -%}
-                    </tr>
-                {% endfor %}
+            {% for range in codeList %}
+                {%- assign rangeUrl = range.uri | split: ":" -%}
+                {%- assign mappingKey = rangeUrl[0] -%}
+                <tr id="{{rangeUrl[1]}}">
+                    <td><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri }}</a></td>
+                    {%- for column in columns -%}
+                       {%- if column.type == 'uri' -%}
+                            {%- assign links = range[column.code] | split: "," -%}
+                            <td>
+                                {%- for link in links -%}
+                                    {%- assign linkUrl = link | split: ":" -%}
+                                    {%- assign mappingKey = linkUrl[0] | strip -%}
+                                    {%- assign mappingUrl = mapping[mappingKey] | strip -%}
+                                    {%- if mappingUrl != '' -%}
+                                    <a href="{{ mapping[mappingKey] }}{{ linkUrl[1] }}">{{ link | strip }}</a>
+                                    {%- else -%}
+                                        {{ link | strip }}
+                                    {%- endif -%}
+                                    {% unless forloop.last %}, {% endunless %}
+                                {%- endfor -%}
+                            </td>
+                        {%- else  -%}
+                            <td>{{ range[column.code] }}</td>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </tr>
+            {% endfor %}
             </tbody>
         </table>
     </div>
 {%- endif -%}
-

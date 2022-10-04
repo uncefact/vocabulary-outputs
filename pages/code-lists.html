@@ -18,9 +18,21 @@ type: code-list
         {% for codeList in site.code-lists %}
             {%- assign codeListJson = site.data[codeList.jsonid] -%}
                 <tr>
-                    <td><a href="{{ codeList | absolute_url }}">unece:{{ codeListJson.label }}</a></td>
                     <td>
-                        {{ codeListJson.comment }}
+                        <a href="{{ codeList | absolute_url }}">
+                            {%- if codeListJson.label -%}
+                                unece:{{ codeListJson.label }}
+                            {%- else -%}
+                                unece:{{ codeList.jsonid }}
+                            {%- endif -%}
+                        </a>
+                    </td>
+                    <td>
+                        {%- if codeListJson.comment -%}
+                            {{ codeListJson.comment }}
+                        {%- else -%}
+                            {{ codeList.comment }}
+                        {%- endif -%}
                     </td>
                 </tr>
         {% endfor %}
