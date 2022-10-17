@@ -6,10 +6,6 @@ label: UN/LOCODE
 comment: desc
 columns:
   - 
-    title: URI
-    code: uri
-    type: uri
-  - 
     title: Label
     code: label
   - 

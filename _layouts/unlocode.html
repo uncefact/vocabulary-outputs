@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<script>
+    const url = new URL(document.URL);
+    let countryCode = '';
+
+    if (url.hash && !url.searchParams.has('country')) {
+        countryCode = url.hash.slice(1, 3).toLowerCase();
+
+        window.location.href = url.origin + url.pathname + '?country=' + countryCode + url.hash;
+    }
+
+</script>
