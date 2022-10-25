@@ -60,7 +60,10 @@ layout: default
                                     {% unless forloop.last %}, {% endunless %}
                                 {%- endfor -%}
                             </td>
-                        {%- else  -%}
+                        {%- elsif column.type == 'unlocode-link' -%}
+                            <td>
+                                <a href="{{ '/' | absolute_url }}unlocode?country={{rangeUrl[1] | downcase }}">View UN/LOCODEs</a></td>
+                        {%- else -%}
                             <td>{{ range[column.code] }}</td>
                         {%- endif -%}
                     {%- endfor -%}
