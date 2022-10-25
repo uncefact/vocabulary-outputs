@@ -4,6 +4,7 @@ permalink: unlocodeas
 jsonid: unlocodeas
 label: UN/LOCODE
 comment: desc
+excludeFromList: true
 columns:
   - 
     title: Label

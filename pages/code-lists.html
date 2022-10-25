@@ -16,7 +16,8 @@ type: code-list
     </thead>
     <tbody>
         {% for codeList in site.code-lists %}
-            {%- assign codeListJson = site.data[codeList.jsonid] -%}
+            {%- if codeList.excludeFromList != true -%}
+                {%- assign codeListJson = site.data[codeList.jsonid] -%}
                 <tr>
                     <td>
                         <a href="{{ codeList | absolute_url }}">
@@ -35,6 +36,7 @@ type: code-list
                         {%- endif -%}
                     </td>
                 </tr>
+            {%- endif -%}
         {% endfor %}
     </tbody>
 </table>
