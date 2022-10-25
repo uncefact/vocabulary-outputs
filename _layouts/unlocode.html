@@ -6,10 +6,12 @@ layout: default
     const url = new URL(document.URL);
     let countryCode = '';
 
-    if (url.hash && !url.searchParams.has('country')) {
+    if (url.hash && url.hash.length === 6 && !url.searchParams.has('country')) {
         countryCode = url.hash.slice(1, 3).toLowerCase();
 
         window.location.href = url.origin + url.pathname + '?country=' + countryCode + url.hash;
+    } else {
+        window.location.href = url.origin + '/unlocode-countries';
     }
 
 </script>
