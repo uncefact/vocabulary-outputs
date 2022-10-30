@@ -5,51 +5,141 @@
     "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
     "datatypeProperties": [
         {
-            "uri": "unece:payerReference",
-            "type": "xsd:string",
-            "comment": "The payer reference, expressed as ..."
-        },
-        {
             "uri": "unece:discountIndicator",
             "type": "xsd:boolean",
-            "comment": "The indication of whether or ..."
-        },
-        {
-            "uri": "unece:paymentAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a ..."
-        },
-        {
-            "uri": "unece:priceCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the price ..."
-        },
-        {
-            "uri": "unece:invoiceIssuerReference",
-            "type": "xsd:string",
-            "comment": "The invoice issuer reference, expressed ..."
-        },
-        {
-            "uri": "unece:totalAdjustmentAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the ..."
+            "comment": "The indication of whether or not a discount applies to the item in this line trade settlement."
         },
         {
             "uri": "unece:invoiceDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date time ..."
+            "comment": "The date, time, date time or other date time value of the invoice in this line trade settlement."
+        },
+        {
+            "uri": "unece:invoiceIssuerReference",
+            "type": "xsd:string",
+            "comment": "The invoice issuer reference, expressed as text, for this line settlement."
+        },
+        {
+            "uri": "unece:payerReference",
+            "type": "xsd:string",
+            "comment": "The payer reference, expressed as text, for this line trade settlement."
+        },
+        {
+            "uri": "unece:paymentAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of a payment for this line trade settlement."
         },
         {
             "uri": "unece:paymentReference",
             "type": "xsd:string",
-            "comment": "A payment reference, expressed as ..."
+            "comment": "A payment reference, expressed as text, for this line trade settlement."
+        },
+        {
+            "uri": "unece:priceCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the price currency for this line trade settlement."
+        },
+        {
+            "uri": "unece:totalAdjustmentAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value of the total adjustment for this line trade settlement."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:additionalDocument",
+            "type": "unece:Document",
+            "comment": "An additional document referenced in this line trade settlement."
+        },
+        {
+            "uri": "unece:applicableTax",
+            "type": "unece:TradeTax",
+            "comment": "A tax applicable to this line trade settlement."
+        },
+        {
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "unece:billingPeriod",
+            "type": "unece:Period",
+            "comment": "A billing period specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:invoiceDocument",
+            "type": "unece:Document",
+            "comment": "An invoice document referenced in this line trade settlement."
+        },
+        {
+            "uri": "unece:invoiceeParty",
+            "type": "unece:TradeParty",
+            "comment": "The party to whom an invoice is issued for this line trade settlement."
+        },
+        {
+            "uri": "unece:payableSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A payable accounting account specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:payerParty",
+            "type": "unece:TradeParty",
+            "comment": "The payer party for this line trade settlement."
+        },
+        {
+            "uri": "unece:purchaseSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A purchase accounting account specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:receivableSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A receivable accounting account specified for this line trade settlement."
+        },
+        {
             "uri": "unece:referencedTradeTransaction",
             "type": "unece:TradeTransaction",
             "comment": "A trade transaction referenced in this line trade settlement."
+        },
+        {
+            "uri": "unece:salesSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A sales accounting account specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:specifiedAdjustment",
+            "type": "unece:Adjustment",
+            "comment": "A financial adjustment specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:specifiedAllowanceCharge",
+            "type": "unece:AllowanceCharge",
+            "comment": "An allowance or charge specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:specifiedFinancialCard",
+            "type": "unece:FinancialCard",
+            "comment": "A financial card specified in this line trade settlement."
+        },
+        {
+            "uri": "unece:specifiedMonetarySummation",
+            "type": "unece:TradeSettlementPaymentMonetarySummation",
+            "comment": "The monetary summation totals specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:specifiedPaymentTerms",
+            "type": "unece:PaymentTerms",
+            "comment": "Payment terms specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:specifiedServiceCharge",
+            "type": "unece:ServiceCharge",
+            "comment": "A logistics service charge specified for this line trade settlement."
+        },
+        {
+            "uri": "unece:subtotalCalculatedTax",
+            "type": "unece:TradeTax",
+            "comment": "A tax subtotal calculated for this line trade settlement."
         }
     ],
     "referencedBy": [

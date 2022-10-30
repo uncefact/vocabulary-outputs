@@ -5,9 +5,19 @@
     "comment": "A detailed statement of work, materials, products, prices, or dimensions.",
     "datatypeProperties": [
         {
-            "uri": "unece:requestedActionCode",
+            "uri": "unece:comment",
+            "type": "xsd:string",
+            "comment": "A comment, expressed as text, for this valuation breakdown statement."
+        },
+        {
+            "uri": "unece:contractualLanguageCode",
             "type": "xsd:token",
-            "comment": "A code specifying a requested ..."
+            "comment": "The code specifying the contractual language for this valuation breakdown statement."
+        },
+        {
+            "uri": "unece:creationDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement."
         },
         {
             "uri": "unece:defaultCurrencyCode",
@@ -15,14 +25,19 @@
             "comment": "The code specifying the default currency for this valuation breakdown statement."
         },
         {
-            "uri": "unece:comment",
-            "type": "xsd:string",
-            "comment": "A comment, expressed as text, ..."
+            "uri": "unece:defaultLanguageCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the default language for this valuation breakdown statement."
         },
         {
-            "uri": "unece:creationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date or date time ..."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this valuation breakdown statement."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The unique identifier for this valuation breakdown statement."
         },
         {
             "uri": "unece:measurementMethodId",
@@ -30,24 +45,9 @@
             "comment": "A unique identifier of a method of measurement for this valuation breakdown statement."
         },
         {
-            "uri": "unece:defaultLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the default language for this valuation breakdown statement."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this ..."
-        },
-        {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
+            "comment": "The name, expressed as text, for this valuation breakdown statement."
         },
         {
             "uri": "unece:priceListId",
@@ -55,26 +55,46 @@
             "comment": "The identifier of a price list for this valuation breakdown statement."
         },
         {
-            "uri": "unece:typeCode",
+            "uri": "unece:requestedActionCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "A code specifying the requested action for this valuation breakdown statement."
         },
         {
-            "uri": "unece:contractualLanguageCode",
+            "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "The code specifying the contractual ..."
+            "comment": "A code specifying the type of valuation breakdown statement."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:changedStatus",
+            "type": "unece:RecordedStatus",
+            "comment": "A changed recorded status for this valuation breakdown statement."
+        },
+        {
+            "uri": "unece:creationBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A specified binary file used to create this valuation breakdown statement."
+        },
+        {
+            "uri": "unece:itemWorkItem",
+            "type": "unece:WorkItem",
+            "comment": "A grouped work item in this valuation breakdown statement."
+        },
         {
             "uri": "unece:readerBinaryFile",
             "type": "unece:BinaryFile",
             "comment": "A specified binary file used to read this valuation breakdown statement."
         },
         {
-            "uri": "unece:creationBinaryFile",
+            "uri": "unece:referencedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A specified binary file used to create this valuation breakdown statement."
+            "comment": "A specified binary file referenced by this valuation breakdown statement."
+        },
+        {
+            "uri": "unece:totalPrice",
+            "type": "unece:CalculatedPrice",
+            "comment": "A total calculated price for this valuation breakdown statement."
         }
     ]
 }

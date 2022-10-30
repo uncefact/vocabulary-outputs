@@ -5,9 +5,9 @@
     "comment": "A collection of information specific to an item being used or reported on for trade purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:typeExtensionCode",
+            "uri": "unece:additionalId",
             "type": "xsd:token",
-            "comment": "The code used as an ..."
+            "comment": "An additional unique identifier for this supply chain trade line item."
         },
         {
             "uri": "unece:barcodeId",
@@ -15,41 +15,36 @@
             "comment": "A unique barcode identifier for this supply chain trade line item."
         },
         {
+            "uri": "unece:descriptionCode",
+            "type": "xsd:token",
+            "comment": "The code specifying a description of this supply chain trade line item."
+        },
+        {
             "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "A unique identifier for this subordinate trade line item."
         },
         {
             "uri": "unece:sequenceNumeric",
             "type": "xsd:decimal",
-            "comment": "A sequence number for these ..."
-        },
-        {
-            "uri": "unece:additionalId",
-            "type": "xsd:token",
-            "comment": "An additional unique identifier for this supply chain trade line item."
+            "comment": "A sequence number for this supply chain trade line item."
         },
         {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "The code specifying the type of supply chain trade line item."
         },
         {
-            "uri": "unece:descriptionCode",
+            "uri": "unece:typeExtensionCode",
             "type": "xsd:token",
-            "comment": "The code specifying a description of this supply chain trade line item."
+            "comment": "The code used as an extension to the type code for further specifying a type of supply chain trade line item."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:substitutedProduct",
+            "uri": "unece:accessoryApplicableProduct",
             "type": "unece:Product",
-            "comment": "A referenced product substituted for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:includedWithinConsignmentItem",
-            "type": "unece:ConsignmentItem",
-            "comment": "The consignment item within which this supply chain trade line item is included."
+            "comment": "A referenced accessory product applicable for this supply chain trade line item."
         },
         {
             "uri": "unece:additionalApplicableProduct",
@@ -57,59 +52,9 @@
             "comment": "A referenced product additionally applicable with this supply chain trade line item."
         },
         {
-            "uri": "unece:assertedAuthentication",
-            "type": "unece:Authentication",
-            "comment": "A document authentication asserted for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:substituteApplicableProduct",
-            "type": "unece:Product",
-            "comment": "A referenced substitute product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:accessoryApplicableProduct",
-            "type": "unece:Product",
-            "comment": "A referenced accessory product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:requisitionerSpecifiedProduct",
-            "type": "unece:Product",
-            "comment": "The product specified by the requisitioner for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:physicalPackage",
-            "type": "unece:Package",
-            "comment": "A physical logistics package for ..."
-        },
-        {
-            "uri": "unece:referencedPackage",
-            "type": "unece:Package",
-            "comment": "A logistics package referenced in this supply chain trade line item."
-        },
-        {
-            "uri": "unece:componentApplicableProduct",
-            "type": "unece:Product",
-            "comment": "A referenced component product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:specifiedProduct",
-            "type": "unece:Product",
-            "comment": "A product specified for this ..."
-        },
-        {
             "uri": "unece:additionalInformationNote",
             "type": "unece:Note",
             "comment": "A note providing additional information for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:invoiceAssociatedDocument",
-            "type": "unece:Document",
-            "comment": "An invoice document associated to this supply chain trade line item."
-        },
-        {
-            "uri": "unece:specifiedProduction",
-            "type": "unece:Production",
-            "comment": "A production of goods specified for this supply chain trade line Item."
         },
         {
             "uri": "unece:applicableProduct",
@@ -117,9 +62,19 @@
             "comment": "A product applicable for this subordinate trade line item."
         },
         {
-            "uri": "unece:requiredApplicableProduct",
-            "type": "unece:Product",
-            "comment": "A required product applicable for this supply chain trade line item."
+            "uri": "unece:assertedAuthentication",
+            "type": "unece:Authentication",
+            "comment": "A document authentication asserted for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "The document line associated with this trade line item."
+        },
+        {
+            "uri": "unece:associatedTransportEquipment",
+            "type": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of transport equipment associated with this supply chain trade line item."
         },
         {
             "uri": "unece:complementaryApplicableProduct",
@@ -127,14 +82,84 @@
             "comment": "A referenced complementary product applicable for this supply chain trade line item."
         },
         {
-            "uri": "unece:specifiedTradeDelivery",
-            "type": "unece:LineTradeDelivery",
-            "comment": "The delivery specified for this ..."
+            "uri": "unece:componentApplicableProduct",
+            "type": "unece:Product",
+            "comment": "A referenced component product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:includedTradeLineItem",
+            "type": "unece:TradeLineItem",
+            "comment": "A subordinate trade line item included in this supply chain trade line item."
+        },
+        {
+            "uri": "unece:includedWithinConsignmentItem",
+            "type": "unece:ConsignmentItem",
+            "comment": "The consignment item within which this supply chain trade line item is included."
+        },
+        {
+            "uri": "unece:invoiceAssociatedDocument",
+            "type": "unece:Document",
+            "comment": "An invoice document associated to this supply chain trade line item."
+        },
+        {
+            "uri": "unece:physicalPackage",
+            "type": "unece:Package",
+            "comment": "A physical logistics package referenced for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:referenceDocument",
+            "type": "unece:Document",
+            "comment": "A document referenced for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:referencedPackage",
+            "type": "unece:Package",
+            "comment": "A logistics package referenced in this supply chain trade line item."
+        },
+        {
+            "uri": "unece:requiredApplicableProduct",
+            "type": "unece:Product",
+            "comment": "A required product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:requisitionerSpecifiedProduct",
+            "type": "unece:Product",
+            "comment": "The product specified by the requisitioner for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:specifiedProduct",
+            "type": "unece:Product",
+            "comment": "The referenced product specified for this subordinate trade line item."
+        },
+        {
+            "uri": "unece:specifiedProduction",
+            "type": "unece:Production",
+            "comment": "A production of goods specified for this supply chain trade line Item."
         },
         {
             "uri": "unece:specifiedTradeAgreement",
             "type": "unece:SubordinateLineTradeAgreement",
-            "comment": "The line trade agreement specified ..."
+            "comment": "The trade agreement specified for this subordinate trade line item."
+        },
+        {
+            "uri": "unece:specifiedTradeDelivery",
+            "type": "unece:SubordinateLineTradeDelivery",
+            "comment": "The delivery specified for this subordinate trade line item."
+        },
+        {
+            "uri": "unece:specifiedTradeSettlement",
+            "type": "unece:LineTradeSettlement",
+            "comment": "A line trade settlement specified for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:substituteApplicableProduct",
+            "type": "unece:Product",
+            "comment": "A referenced substitute product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:substitutedProduct",
+            "type": "unece:Product",
+            "comment": "A referenced product substituted for this supply chain trade line item."
         }
     ],
     "referencedBy": [

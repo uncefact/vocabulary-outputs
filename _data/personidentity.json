@@ -5,19 +5,14 @@
     "comment": "Identification of a person.",
     "datatypeProperties": [
         {
-            "uri": "unece:driversLicenceId",
-            "type": "xsd:token",
-            "comment": "The drivers licence identifier for this person."
-        },
-        {
-            "uri": "unece:passportId",
-            "type": "xsd:token",
-            "comment": "The passport identifier for this person."
-        },
-        {
             "uri": "unece:alienRegistrationId",
             "type": "xsd:token",
             "comment": "The alien registration identifier for this person."
+        },
+        {
+            "uri": "unece:driversLicenceId",
+            "type": "xsd:token",
+            "comment": "The drivers licence identifier for this person."
         },
         {
             "uri": "unece:identityCardId",
@@ -25,9 +20,21 @@
             "comment": "The identity card identifier for this person."
         },
         {
+            "uri": "unece:passportId",
+            "type": "xsd:token",
+            "comment": "The passport identifier for this person."
+        },
+        {
             "uri": "unece:socialSecurityId",
             "type": "xsd:token",
             "comment": "The social security identifier for this person."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:specifiedIdentity",
+            "type": "unece:ProprietaryIdentity",
+            "comment": "A proprietary Identity specified for this person."
         }
     ]
 }

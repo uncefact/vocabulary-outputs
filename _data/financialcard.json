@@ -5,9 +5,9 @@
     "comment": "A card used to represent a financial account.",
     "datatypeProperties": [
         {
-            "uri": "unece:verificationNumeric",
-            "type": "xsd:decimal",
-            "comment": "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card."
+            "uri": "unece:cardholderName",
+            "type": "xsd:string",
+            "comment": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual authorized to use the card as well as the organization that owns the card."
         },
         {
             "uri": "unece:creditAvailableAmount",
@@ -20,29 +20,9 @@
             "comment": "A monetary value of the credit limit for this trade settlement financial card."
         },
         {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description for this ..."
-        },
-        {
-            "uri": "unece:microchipIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade settlement financial card has a microchip."
-        },
-        {
-            "uri": "unece:validFromDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date from which this trade settlement financial card is valid."
-        },
-        {
-            "uri": "unece:cardholderName",
-            "type": "xsd:string",
-            "comment": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual authorized to use the card as well as the organization that owns the card."
+            "comment": "The textual description of this trade settlement financial card."
         },
         {
             "uri": "unece:expiryDate",
@@ -50,29 +30,49 @@
             "comment": "The date of expiry up to which this trade settlement financial card is valid."
         },
         {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The unique identifier, commonly known as the card number, of this trade settlement financial card."
+        },
+        {
             "uri": "unece:interestRatePercent",
             "type": "xsd:decimal",
             "comment": "The interest rate expressed as a percentage for this trade settlement financial card."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type ..."
-        },
-        {
             "uri": "unece:issuingCompanyName",
             "type": "xsd:string",
             "comment": "The issuing company name, expressed as text, for this trade settlement financial card."
+        },
+        {
+            "uri": "unece:microchipIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this trade settlement financial card has a microchip."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the type of this trade settlement financial card, such as debit or credit."
+        },
+        {
+            "uri": "unece:validFromDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date from which this trade settlement financial card is valid."
+        },
+        {
+            "uri": "unece:verificationNumeric",
+            "type": "xsd:decimal",
+            "comment": "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedFinancialCard",
-            "comment": "A financial card specified in ..."
-        },
-        {
             "uri": "unece:applicableFinancialCard",
             "comment": "A financial card applicable to this trade settlement payment means."
+        },
+        {
+            "uri": "unece:specifiedFinancialCard",
+            "comment": "A financial card specified in ..."
         }
     ]
 }

@@ -5,34 +5,34 @@
     "comment": "The contractual terms of a line trade agreement.",
     "datatypeProperties": [
         {
+            "uri": "unece:buyerApprovedDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value of approval by the buyer for this line trade agreement."
+        },
+        {
+            "uri": "unece:buyerReference",
+            "type": "xsd:string",
+            "comment": "A buyer reference, expressed as text, for this line trade agreement."
+        },
+        {
             "uri": "unece:deliveryOrderFulfilmentLeadTimeMeasure",
             "type": "xsd:decimal",
             "comment": "The measure of the expected time interval between the receipt of an order and its delivery fulfilment according to this line trade agreement."
         },
         {
-            "uri": "unece:buyerReference",
-            "type": "xsd:string",
-            "comment": "A buyer reference, expressed as ..."
-        },
-        {
-            "uri": "unece:buyerApprovedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, ..."
-        },
-        {
-            "uri": "unece:productReorderableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not the product can be reordered according to this line trade agreement."
-        },
-        {
-            "uri": "unece:minimumProductOrderableQuantity",
+            "uri": "unece:economicOrderQuantity",
             "type": "xsd:decimal",
-            "comment": "The minimum product orderable quantity for this line trade agreement."
+            "comment": "The economic order quantity for this line trade agreement."
         },
         {
-            "uri": "unece:priorityCode",
+            "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "The code specifying the priority ..."
+            "comment": "An identifier for this line trade agreement."
+        },
+        {
+            "uri": "unece:impactCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the impact for this line trade agreement."
         },
         {
             "uri": "unece:incrementalProductOrderableQuantity",
@@ -40,49 +40,9 @@
             "comment": "The incremental product orderable quantity for this line trade agreement."
         },
         {
-            "uri": "unece:productAvailabilityCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the product availability according to this line trade agreement."
-        },
-        {
             "uri": "unece:informationUseRestrictionIndicator",
             "type": "xsd:boolean",
             "comment": "The indication of whether or not the use of the information provided in this line trade agreement is restricted."
-        },
-        {
-            "uri": "unece:economicOrderQuantity",
-            "type": "xsd:decimal",
-            "comment": "The economic order quantity for ..."
-        },
-        {
-            "uri": "unece:reference",
-            "type": "xsd:string",
-            "comment": "A reference, expressed as text, ..."
-        },
-        {
-            "uri": "unece:sellerReference",
-            "type": "xsd:string",
-            "comment": "A seller reference, expressed as ..."
-        },
-        {
-            "uri": "unece:productMadeToOrderIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not, according to this line trade agreement, the product is manufactured, built or customized only after receipt of order."
-        },
-        {
-            "uri": "unece:resaleProductUnitMeasureCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the resale product unit of measure, such as kilogram or litre, for this trade line agreement."
-        },
-        {
-            "uri": "unece:impactCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the impact ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
         },
         {
             "uri": "unece:maximumProductOrderableQuantity",
@@ -90,9 +50,9 @@
             "comment": "The maximum product orderable quantity for this line trade agreement."
         },
         {
-            "uri": "unece:pickUpOrderFulfilmentLeadTimeMeasure",
+            "uri": "unece:minimumProductOrderableQuantity",
             "type": "xsd:decimal",
-            "comment": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this line trade agreement."
+            "comment": "The minimum product orderable quantity for this line trade agreement."
         },
         {
             "uri": "unece:orderProductUnitMeasureCode",
@@ -100,9 +60,29 @@
             "comment": "The code specifying the order product unit of measure, such as kilogram or litre, for this line trade agreement."
         },
         {
+            "uri": "unece:pickUpOrderFulfilmentLeadTimeMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the expected time interval between the receipt of an order and its pick-up fulfilment according to this line trade agreement."
+        },
+        {
+            "uri": "unece:priorityCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the priority for this line trade agreement."
+        },
+        {
             "uri": "unece:priorityDescriptionCode",
             "type": "unece:UNCL4037Code",
-            "comment": "The code specifying the delivery ..."
+            "comment": "The code specifying the delivery priority for this line trade agreement."
+        },
+        {
+            "uri": "unece:productAvailabilityCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the product availability according to this line trade agreement."
+        },
+        {
+            "uri": "unece:productMadeToOrderIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not, according to this line trade agreement, the product is manufactured, built or customized only after receipt of order."
         },
         {
             "uri": "unece:productOrderableIndicator",
@@ -110,61 +90,111 @@
             "comment": "The indication of whether or not the product can be ordered according to this line trade agreement."
         },
         {
+            "uri": "unece:productReorderableIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not the product can be reordered according to this line trade agreement."
+        },
+        {
+            "uri": "unece:reference",
+            "type": "xsd:string",
+            "comment": "A reference, expressed as text, for this line trade agreement."
+        },
+        {
+            "uri": "unece:resaleProductUnitMeasureCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the resale product unit of measure, such as kilogram or litre, for this trade line agreement."
+        },
+        {
             "uri": "unece:revisionId",
             "type": "xsd:token",
-            "comment": "A unique identifier for a ..."
+            "comment": "An identifier for the revision of this line trade agreement."
+        },
+        {
+            "uri": "unece:sellerReference",
+            "type": "xsd:string",
+            "comment": "A seller reference, expressed as text, for this line trade agreement."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:resalePeriod",
-            "type": "unece:Period",
-            "comment": "The resale period specified in this line trade agreement."
-        },
-        {
-            "uri": "unece:programProject",
-            "type": "unece:Project",
-            "comment": "A mission project program for this line trade agreement."
-        },
-        {
-            "uri": "unece:minimumOrderQuantityOrderingPeriod",
-            "type": "unece:Period",
-            "comment": "The minimum order quantity ordering period specified in this line trade agreement."
-        },
-        {
-            "uri": "unece:itemSellerParty",
-            "type": "unece:TradeParty",
-            "comment": "The item seller party for this line trade agreement."
-        },
-        {
-            "uri": "unece:immediatePreviousPriceListDocument",
+            "uri": "unece:additionalDocument",
             "type": "unece:Document",
-            "comment": "The immediate previous price list document referenced in this line trade agreement."
+            "comment": "An additional document referenced in this line trade agreement."
         },
         {
-            "uri": "unece:maximumOrderQuantityOrderingPeriod",
+            "uri": "unece:applicableDeliveryTerms",
+            "type": "unece:DeliveryTerms",
+            "comment": "The terms of delivery applicable to this line trade agreement."
+        },
+        {
+            "uri": "unece:applicableForecastTerms",
+            "type": "unece:ForecastTerms",
+            "comment": "The supply chain forecast terms applicable to this line trade agreement."
+        },
+        {
+            "uri": "unece:blanketOrderDocument",
+            "type": "unece:Document",
+            "comment": "The blanket order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:buyerOrderDocument",
+            "type": "unece:Document",
+            "comment": "A buyer generated order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:buyerParty",
+            "type": "unece:TradeParty",
+            "comment": "The buyer party for this line trade agreement."
+        },
+        {
+            "uri": "unece:buyerRequisitionerParty",
+            "type": "unece:TradeParty",
+            "comment": "A party who is a buyer requisitioner in this line trade agreement."
+        },
+        {
+            "uri": "unece:carrierParty",
+            "type": "unece:TradeParty",
+            "comment": "A carrier party for this line trade agreement."
+        },
+        {
+            "uri": "unece:catalogueDocument",
+            "type": "unece:Document",
+            "comment": "A catalogue document referenced by this line trade agreement."
+        },
+        {
+            "uri": "unece:catalogueInformationProviderParty",
+            "type": "unece:TradeParty",
+            "comment": "The party that provides catalogue information for this line trade agreement."
+        },
+        {
+            "uri": "unece:contractDocument",
+            "type": "unece:Document",
+            "comment": "A contract document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:demandForecastDocument",
+            "type": "unece:Document",
+            "comment": "A demand forecast document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:engineeringChangeDocument",
+            "type": "unece:Document",
+            "comment": "The engineering change document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:exclusivityPeriod",
             "type": "unece:Period",
-            "comment": "The maximum order quantity ordering period specified in this line trade agreement."
+            "comment": "The exclusivity period specified in this line trade agreement."
         },
         {
-            "uri": "unece:orderPriceProductPrice",
+            "uri": "unece:exportLicenceDocument",
+            "type": "unece:Document",
+            "comment": "The export licence document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:grossPriceProductPrice",
             "type": "unece:TradePrice",
-            "comment": "An order price for a product in this line trade agreement."
-        },
-        {
-            "uri": "unece:itemBuyerParty",
-            "type": "unece:TradeParty",
-            "comment": "The item buyer party for this line trade agreement."
-        },
-        {
-            "uri": "unece:supportCentreParty",
-            "type": "unece:TradeParty",
-            "comment": "The support centre party for this line trade agreement."
-        },
-        {
-            "uri": "unece:includedMarketplace",
-            "type": "unece:Marketplace",
-            "comment": "A marketplace included in this line trade agreement."
+            "comment": "A gross product price in this line trade agreement."
         },
         {
             "uri": "unece:guaranteedProductLifeSpanPeriod",
@@ -172,15 +202,189 @@
             "comment": "The guaranteed product life span specified in this line trade agreement."
         },
         {
-            "uri": "unece:exclusivityPeriod",
-            "type": "unece:Period",
-            "comment": "The exclusivity period specified in this line trade agreement."
-        }
-    ],
-    "referencedBy": [
+            "uri": "unece:immediatePreviousPriceListDocument",
+            "type": "unece:Document",
+            "comment": "The immediate previous price list document referenced in this line trade agreement."
+        },
         {
-            "uri": "unece:applicableTradeAgreement",
-            "comment": "A trade agreement applicable to ..."
+            "uri": "unece:importLicenceDocument",
+            "type": "unece:Document",
+            "comment": "The import licence document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:includedMarketplace",
+            "type": "unece:Marketplace",
+            "comment": "A marketplace included in this line trade agreement."
+        },
+        {
+            "uri": "unece:itemBuyerParty",
+            "type": "unece:TradeParty",
+            "comment": "The item buyer party for this line trade agreement."
+        },
+        {
+            "uri": "unece:itemSellerParty",
+            "type": "unece:TradeParty",
+            "comment": "The item seller party for this line trade agreement."
+        },
+        {
+            "uri": "unece:letterOfCreditDocument",
+            "type": "unece:Document",
+            "comment": "The letter of credit document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:marketplaceOrderDocument",
+            "type": "unece:Document",
+            "comment": "The marketplace generated order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:maximumOrderQuantityOrderingPeriod",
+            "type": "unece:Period",
+            "comment": "The maximum order quantity ordering period specified in this line trade agreement."
+        },
+        {
+            "uri": "unece:minimumOrderQuantityOrderingPeriod",
+            "type": "unece:Period",
+            "comment": "The minimum order quantity ordering period specified in this line trade agreement."
+        },
+        {
+            "uri": "unece:netPriceProductPrice",
+            "type": "unece:TradePrice",
+            "comment": "A net product price in this line trade agreement."
+        },
+        {
+            "uri": "unece:orderPriceProductPrice",
+            "type": "unece:TradePrice",
+            "comment": "An order price for a product in this line trade agreement."
+        },
+        {
+            "uri": "unece:orderingPeriod",
+            "type": "unece:Period",
+            "comment": "The ordering period specified in this line trade agreement."
+        },
+        {
+            "uri": "unece:originalOrderDocument",
+            "type": "unece:Document",
+            "comment": "The original order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:previousOrderDocument",
+            "type": "unece:Document",
+            "comment": "The previous order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:priceListDocument",
+            "type": "unece:Document",
+            "comment": "The price list document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:primeContractSellerParty",
+            "type": "unece:TradeParty",
+            "comment": "The seller party acting as the prime contractor for this line trade agreement."
+        },
+        {
+            "uri": "unece:procurementParty",
+            "type": "unece:TradeParty",
+            "comment": "The procurement party for this line trade agreement."
+        },
+        {
+            "uri": "unece:productEndUserParty",
+            "type": "unece:TradeParty",
+            "comment": "The party acting as the end user for the products in this line trade agreement."
+        },
+        {
+            "uri": "unece:programProject",
+            "type": "unece:Project",
+            "comment": "A mission project program for this line trade agreement."
+        },
+        {
+            "uri": "unece:promotionalDealDocument",
+            "type": "unece:Document",
+            "comment": "The promotional deal document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:quotationDocument",
+            "type": "unece:Document",
+            "comment": "The quotation document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:quotationProposalDocument",
+            "type": "unece:Document",
+            "comment": "The quotation proposal document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:quotationProposalResponseDocument",
+            "type": "unece:Document",
+            "comment": "The quotation proposal response document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:quotationRequestDocument",
+            "type": "unece:Document",
+            "comment": "The quotation request document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:quotationRequestResponseDocument",
+            "type": "unece:Document",
+            "comment": "The quotation request response document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:relevantParty",
+            "type": "unece:TradeParty",
+            "comment": "A party relevant for this line trade agreement."
+        },
+        {
+            "uri": "unece:requisitionDocument",
+            "type": "unece:Document",
+            "comment": "A requisition document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:requisitionerDocument",
+            "type": "unece:Document",
+            "comment": "A requisitioner document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:resalePeriod",
+            "type": "unece:Period",
+            "comment": "The resale period specified in this line trade agreement."
+        },
+        {
+            "uri": "unece:salesConditionsDocument",
+            "type": "unece:Document",
+            "comment": "A sales conditions document referenced by this line trade agreement."
+        },
+        {
+            "uri": "unece:salesReportDocument",
+            "type": "unece:Document",
+            "comment": "The sales report document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:sellerOrderDocument",
+            "type": "unece:Document",
+            "comment": "The seller generated order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:sellerParty",
+            "type": "unece:TradeParty",
+            "comment": "The seller party for this line trade agreement."
+        },
+        {
+            "uri": "unece:supplyInstructionDocument",
+            "type": "unece:Document",
+            "comment": "A supply instruction document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:supportCentreParty",
+            "type": "unece:TradeParty",
+            "comment": "The support centre party for this line trade agreement."
+        },
+        {
+            "uri": "unece:targetMarketCountry",
+            "type": "unece:Country",
+            "comment": "A target market country for this line trade agreement."
+        },
+        {
+            "uri": "unece:ultimateCustomerOrderDocument",
+            "type": "unece:Document",
+            "comment": "An ultimate customer order document referenced for this line trade agreement."
         }
     ]
 }

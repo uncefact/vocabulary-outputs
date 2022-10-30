@@ -5,9 +5,29 @@
     "comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties.",
     "datatypeProperties": [
         {
-            "uri": "unece:shipmentId",
+            "uri": "unece:documentURLId",
             "type": "xsd:token",
-            "comment": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply chain trade transaction."
+            "comment": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A unique identifier for this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, for this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:issueDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value for the issuance of this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:lineItemQuantity",
+            "type": "xsd:decimal",
+            "comment": "The number of line items for this supply chain trade transaction."
         },
         {
             "uri": "unece:salesAgentAssignedId",
@@ -15,46 +35,46 @@
             "comment": "The unique identifier assigned by the sales agent to identify this supply chain trade transaction."
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, concerning ..."
-        },
-        {
-            "uri": "unece:documentURLId",
-            "type": "xsd:token",
-            "comment": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
-        },
-        {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date and ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
             "uri": "unece:senderRecipientSequenceId",
             "type": "xsd:token",
             "comment": "The sender-recipient sequence identifier for this supply chain trade transaction."
         },
         {
-            "uri": "unece:lineItemQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of line items ..."
+            "uri": "unece:shipmentId",
+            "type": "xsd:token",
+            "comment": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply chain trade transaction."
         },
         {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "The code specifying the type of supply chain trade transaction."
         }
     ],
     "objectProperties": [
         {
             "uri": "unece:applicableTradeAgreement",
-            "type": "unece:LineTradeAgreement",
-            "comment": "A trade agreement applicable to ..."
+            "type": "unece:HeaderTradeAgreement",
+            "comment": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
+        },
+        {
+            "uri": "unece:applicableTradeDelivery",
+            "type": "unece:HeaderTradeDelivery",
+            "comment": "A trade delivery header applicable to this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:applicableTradeSettlement",
+            "type": "unece:HeaderTradeSettlement",
+            "comment": "The trade settlement header applicable to this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "The financing request result document associated with this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:includedProduct",
+            "type": "unece:Product",
+            "comment": "A trade product included in this line trade transaction."
         },
         {
             "uri": "unece:includedProductGroup",
@@ -62,14 +82,14 @@
             "comment": "A product group included in this supply chain trade transaction."
         },
         {
-            "uri": "unece:applicableTradeDelivery",
-            "type": "unece:HeaderTradeDelivery",
-            "comment": "A trade delivery applicable to ..."
+            "uri": "unece:includedTradeLineItem",
+            "type": "unece:TradeLineItem",
+            "comment": "A trade line item included in this supply chain trade transaction."
         },
         {
-            "uri": "unece:applicableTradeSettlement",
-            "type": "unece:HeaderTradeSettlement",
-            "comment": "The trade settlement header applicable to this supply chain trade transaction."
+            "uri": "unece:specifiedPackage",
+            "type": "unece:Package",
+            "comment": "A logistics package specified for this supply chain trade transaction."
         }
     ],
     "referencedBy": [

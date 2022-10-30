@@ -5,14 +5,9 @@
     "comment": "Something inanimate that occupies space and possesses mass.",
     "datatypeProperties": [
         {
-            "uri": "unece:criticalitySafetyIndexNumeric",
-            "type": "xsd:decimal",
-            "comment": "The criticality safety index number of this radioactive material."
-        },
-        {
-            "uri": "unece:transportIndexNumeric",
-            "type": "xsd:decimal",
-            "comment": "The transport index number of this radioactive material."
+            "uri": "unece:completeDeliveryIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not a transport waste material delivery is complete."
         },
         {
             "uri": "unece:compositionDescription",
@@ -20,19 +15,9 @@
             "comment": "The textual description of the composition of this radioactive material."
         },
         {
-            "uri": "unece:radionuclideName",
-            "type": "xsd:string",
-            "comment": "The name of the radionuclide, expressed as text, of this radioactive material."
-        },
-        {
-            "uri": "unece:specialFormInformation",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, describing the special form for this radioactive material."
-        },
-        {
-            "uri": "unece:completeDeliveryIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not a transport waste material delivery is complete."
+            "uri": "unece:criticalitySafetyIndexNumeric",
+            "type": "xsd:decimal",
+            "comment": "The criticality safety index number of this radioactive material."
         },
         {
             "uri": "unece:fissileExceptionIndicator",
@@ -45,21 +30,41 @@
             "comment": "Information, expressed as text, describing the low dispersion properties of this radioactive material."
         },
         {
+            "uri": "unece:radionuclideName",
+            "type": "xsd:string",
+            "comment": "The name of the radionuclide, expressed as text, of this radioactive material."
+        },
+        {
+            "uri": "unece:specialFormInformation",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, describing the special form for this radioactive material."
+        },
+        {
+            "uri": "unece:transportIndexNumeric",
+            "type": "xsd:decimal",
+            "comment": "The transport index number of this radioactive material."
+        },
+        {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "The code specifying the type of this radioactive material."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:includedMaterialComponent",
+            "type": "unece:MaterialComponent",
+            "comment": "A material component included in this transport waste."
+        },
         {
             "uri": "unece:nextDeliveryEvent",
             "type": "unece:TransportEvent",
             "comment": "A next delivery event for this transport waste material."
         },
         {
-            "uri": "unece:includedMaterialComponent",
-            "type": "unece:MaterialComponent",
-            "comment": "A material component included in this transport waste."
+            "uri": "unece:previousDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A previous delivery event for this transport waste material."
         },
         {
             "uri": "unece:receptionFacilityContact",

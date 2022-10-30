@@ -5,34 +5,34 @@
     "comment": "Offset information to ensure that debits and credits are equal.",
     "datatypeProperties": [
         {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, ..."
-        },
-        {
             "uri": "unece:calculatedAmount",
             "type": "xsd:decimal",
-            "comment": "A monetary value calculated for ..."
-        },
-        {
-            "uri": "unece:reasonDescription",
-            "type": "xsd:string",
-            "comment": "A textual description of the ..."
-        },
-        {
-            "uri": "unece:reasonCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a reason ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "A monetary value calculated for this payment balance out."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description for this ..."
+            "comment": "A textual description of this header balance out."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The identifier for this payment balance out."
+        },
+        {
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value of an occurrence of this header balance out."
+        },
+        {
+            "uri": "unece:reasonCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the reason for this header balance out."
+        },
+        {
+            "uri": "unece:reasonDescription",
+            "type": "xsd:string",
+            "comment": "A textual description of the reason for this payment balance out."
         }
     ],
     "objectProperties": [
@@ -44,12 +44,12 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:breakdownBalanceOut",
-            "comment": "A balance out breakdown of this header balance out."
-        },
-        {
             "uri": "unece:applicableBalanceOut",
             "comment": "A balance out applicable to ..."
+        },
+        {
+            "uri": "unece:breakdownBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
         }
     ]
 }

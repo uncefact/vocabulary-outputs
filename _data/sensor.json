@@ -5,36 +5,56 @@
     "comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally.",
     "datatypeProperties": [
         {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of a value ..."
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "An identifier of this monitoring sensor."
         },
         {
             "uri": "unece:positionCode",
             "type": "xsd:token",
-            "comment": "The code specifying a position ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The code specifying a position of this monitoring sensor."
         },
         {
             "uri": "unece:remainingBatteryChargePercent",
             "type": "xsd:decimal",
-            "comment": "The percentage of the remaining ..."
+            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
         },
         {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "The code specifying a type of monitoring sensor."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the value for this monitoring sensor."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:actualReportedMeasurement",
+            "type": "unece:Measurement",
+            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+        },
+        {
             "uri": "unece:definedParameter",
-            "type": "unece:OperationalParameter",
-            "comment": "A control setting parameter defined ..."
+            "type": "unece:ControlSettingParameter",
+            "comment": "A control setting parameter defined for this monitoring sensor."
+        },
+        {
+            "uri": "unece:grantedCertificate",
+            "type": "unece:Certificate",
+            "comment": "A product certificate granted for this monitoring sensor."
+        },
+        {
+            "uri": "unece:manufacturerParty",
+            "type": "unece:TradeParty",
+            "comment": "The manufacturer party for this monitoring sensor."
+        },
+        {
+            "uri": "unece:ownerParty",
+            "type": "unece:TradeParty",
+            "comment": "The owner party of this monitoring sensor."
         },
         {
             "uri": "unece:precisionMeasurement",
@@ -45,11 +65,6 @@
             "uri": "unece:scheduledReportedMeasurement",
             "type": "unece:Measurement",
             "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
-        },
-        {
-            "uri": "unece:actualReportedMeasurement",
-            "type": "unece:Measurement",
-            "comment": "An actual calibrated measurement reported for this monitoring sensor."
         }
     ],
     "referencedBy": [

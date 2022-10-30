@@ -1,31 +1,28 @@
 
 {
-    "label": "associatedTransportEquipment",
-    "uri": "unece:associatedTransportEquipment",
-    "comment": [
-        "A piece of transport equipment associated with this referenced supply chain consignment item.",
-        "A piece of transport equipment associated with this supply chain trade line item.",
-        "A referenced piece of transport equipment associated with this supply chain consignment item.",
-        "Referenced transport equipment associated with the dangerous goods."
-    ],
-    "rangeIncludes": [
+    "label": "AssociatedTransportEquipment",
+    "uri": "unece:AssociatedTransportEquipment",
+    "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
+    "datatypeProperties": [
         {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "unece:LogisticsTransportEquipment"
+            "uri": "unece:characteristic",
+            "type": "xsd:string",
+            "comment": "The textual description of the characteristics, i.e. size and type, of this piece of associated transport equipment."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A unique number, mark or name which identifies this associated piece of transport equipment."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
+            "uri": "unece:carriedTransportEquipment",
+            "comment": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
         },
         {
-            "uri": "unece:DangerousGoods",
-            "comment": "A hazardous or non-hazardous substance which may pose risks to people and/or the environment for which the transportation is regulated by dangerous goods regulations."
-        },
-        {
-            "uri": "unece:TradeLineItem",
-            "comment": "A collection of information specific to an item being used or reported on for trade purposes."
+            "uri": "unece:containedTransportEquipment",
+            "comment": "A piece of transport equipment contained within this piece of logistics transport equipment, such as a pallet."
         }
     ]
 }

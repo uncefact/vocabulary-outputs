@@ -5,54 +5,9 @@
     "comment": "A set of geographical coordinates of a specific point such as the longitude, latitude and altitude.",
     "datatypeProperties": [
         {
-            "uri": "unece:longitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the longitude ..."
-        },
-        {
-            "uri": "unece:timeZoneDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
-        },
-        {
-            "uri": "unece:longitudeDirectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether the ..."
-        },
-        {
-            "uri": "unece:timeZoneCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the time zone of this geographical coordinate."
-        },
-        {
             "uri": "unece:acquisitionDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date time ..."
-        },
-        {
-            "uri": "unece:altimetricSystemId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the system used for measuring the altitude."
-        },
-        {
-            "uri": "unece:systemId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the ..."
-        },
-        {
-            "uri": "unece:latitudeDirectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether the ..."
-        },
-        {
-            "uri": "unece:timeZone",
-            "type": "xsd:string",
-            "comment": "The time zone, expressed as text, for this geographical coordinate."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The date, time, date time or other date time value of the acquisition of this geographical coordinate."
         },
         {
             "uri": "unece:alternativeSourceSystemId",
@@ -60,24 +15,81 @@
             "comment": "An alternative source system identifier for this geographical coordinate."
         },
         {
-            "uri": "unece:latitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the latitude ..."
+            "uri": "unece:altimetricSystemId",
+            "type": "xsd:token",
+            "comment": "The unique identifier of the system used for measuring the altitude."
         },
         {
             "uri": "unece:altitudeMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the altitude ..."
+            "comment": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this geographical coordinate (Reference ISO 6709)."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The unique identifier for this geographical coordinate."
+        },
+        {
+            "uri": "unece:latitudeDirectionIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether the latitude compass direction from the Equator meridian to the meridian of a specific place is North (+) or South (-)  (Reference ISO 6709)."
+        },
+        {
+            "uri": "unece:latitudeMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the latitude as an angular distance north or south from the Equator meridian to the meridian of a specific place for this specified geographical coordinate. (Reference ISO 6709)."
+        },
+        {
+            "uri": "unece:longitudeDirectionIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this geographical coordinate (Reference ISO 6709)."
+        },
+        {
+            "uri": "unece:longitudeMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a specific place for this specified geographical coordinate. (Reference ISO 6709)."
+        },
+        {
+            "uri": "unece:systemId",
+            "type": "xsd:token",
+            "comment": "The unique identifier of the system used for measuring this specified geographical coordinate."
+        },
+        {
+            "uri": "unece:timeZone",
+            "type": "xsd:string",
+            "comment": "The time zone, expressed as text, for this geographical coordinate."
+        },
+        {
+            "uri": "unece:timeZoneCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the time zone of this geographical coordinate."
+        },
+        {
+            "uri": "unece:timeZoneDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:usedCoordinateReferenceSystem",
+            "type": "unece:CoordinateReferenceSystem",
+            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+        },
+        {
+            "uri": "unece:usedCoordinateSourceSystem",
+            "type": "unece:CoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this geographical coordinate."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:latestReceivedGeographicalCoordinate",
-            "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
-        },
-        {
             "uri": "unece:geoCoordinateIdentificationGeographicalCoordinate",
             "comment": "An identification of a set of geographical coordinates for this trade address."
+        },
+        {
+            "uri": "unece:latestReceivedGeographicalCoordinate",
+            "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
         },
         {
             "uri": "unece:physicalGeographicalCoordinate",

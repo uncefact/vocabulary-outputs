@@ -5,11 +5,6 @@
     "comment": "An act of notification by formal documentation or action, in any form prescribed or accepted, such as a goods declaration to customs.",
     "datatypeProperties": [
         {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date and ..."
-        },
-        {
             "uri": "unece:currencyExchangeRate",
             "type": "xsd:decimal",
             "comment": "The rate of currency exchange in this exchanged declaration."
@@ -20,24 +15,29 @@
             "comment": "The monetary value specified for customs purposes in this exchanged declaration."
         },
         {
-            "uri": "unece:versionId",
-            "type": "xsd:token",
-            "comment": "The identifier for the version ..."
+            "uri": "unece:documentTypeCode",
+            "type": "unece:UNCL1001Code",
+            "comment": "The code specifying the type of this exchanged declaration."
         },
         {
-            "uri": "unece:totalPackageSpecifiedQuantity",
+            "uri": "unece:grossWeightSpecifiedMeasure",
             "type": "xsd:decimal",
-            "comment": "The total package quantity specified in this exchanged declaration."
+            "comment": "The gross weight measure specified in this exchanged declaration."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "An identifier for this exchanged declaration."
+        },
+        {
+            "uri": "unece:issueDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value for the issuance of this exchanged declaration."
         },
         {
             "uri": "unece:jurisdictionEntryDateTime",
             "type": "xsd:dateTime",
             "comment": "The date, time, date time or other date time value when the items which are a subject of this exchanged declaration enter a jurisdiction, such as the actual date of arrival of a means of transport."
-        },
-        {
-            "uri": "unece:statisticalValueSpecifiedAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value specified for statistical purposes in this exchanged declaration."
         },
         {
             "uri": "unece:procedureCode",
@@ -50,24 +50,24 @@
             "comment": "The code specifying a specific circumstance in this exchanged declaration."
         },
         {
+            "uri": "unece:statisticalValueSpecifiedAmount",
+            "type": "xsd:decimal",
+            "comment": "The monetary value specified for statistical purposes in this exchanged declaration."
+        },
+        {
             "uri": "unece:totalInvoiceSpecifiedAmount",
             "type": "xsd:decimal",
             "comment": "The total invoice monetary value specified in this exchanged declaration."
         },
         {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:documentTypeCode",
-            "type": "unece:UNCL1001Code",
-            "comment": "A code specifying a type ..."
-        },
-        {
-            "uri": "unece:grossWeightSpecifiedMeasure",
+            "uri": "unece:totalPackageSpecifiedQuantity",
             "type": "xsd:decimal",
-            "comment": "The gross weight measure specified in this exchanged declaration."
+            "comment": "The total package quantity specified in this exchanged declaration."
+        },
+        {
+            "uri": "unece:versionId",
+            "type": "xsd:token",
+            "comment": "The identifier for the version of this exchanged declaration."
         }
     ],
     "objectProperties": [
@@ -77,14 +77,14 @@
             "comment": "An additional statement note for this exchanged declaration."
         },
         {
-            "uri": "unece:submissionLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The submission location for this exchanged declaration."
+            "uri": "unece:applicableCustomsValuation",
+            "type": "unece:CustomsValuation",
+            "comment": "Customs valuation information applicable to this exchanged declaration."
         },
         {
-            "uri": "unece:declarantParty",
-            "type": "unece:TradeParty",
-            "comment": "The trade party acting as the declarant for this exchanged declaration."
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "A referenced document associated with this exchanged declaration."
         },
         {
             "uri": "unece:declarantAgentParty",
@@ -92,9 +92,24 @@
             "comment": "The trade party acting as an agent for the declarant for this exchanged declaration."
         },
         {
+            "uri": "unece:declarantParty",
+            "type": "unece:TradeParty",
+            "comment": "The trade party acting as the declarant for this exchanged declaration."
+        },
+        {
+            "uri": "unece:previousDocument",
+            "type": "unece:Document",
+            "comment": "A previous document referenced for this exchanged declaration."
+        },
+        {
             "uri": "unece:principalAssociatedParty",
             "type": "unece:TradeParty",
             "comment": "A principal trade party associated with this exchanged declaration."
+        },
+        {
+            "uri": "unece:submissionLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "The submission location for this exchanged declaration."
         }
     ]
 }

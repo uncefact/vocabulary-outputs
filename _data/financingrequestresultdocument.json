@@ -5,14 +5,21 @@
     "comment": "A collection of data that reports the result of a financing request.",
     "datatypeProperties": [
         {
-            "uri": "unece:financedTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A financed total monetary value ..."
-        },
-        {
             "uri": "unece:financedRatePercent",
             "type": "xsd:decimal",
             "comment": "The financed rate, expressed as a percentage, in this financing request result document."
+        },
+        {
+            "uri": "unece:financedTotalAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of the financed total amount in this financing request result document."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:specifiedStatus",
+            "type": "unece:DocumentStatus",
+            "comment": "The financing status specified in this financing request result document."
         }
     ],
     "referencedBy": [

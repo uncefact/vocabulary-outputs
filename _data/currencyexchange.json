@@ -5,19 +5,9 @@
     "comment": "The conversion of one currency to another.",
     "datatypeProperties": [
         {
-            "uri": "unece:targetUnitBaseNumeric",
+            "uri": "unece:conversionRate",
             "type": "xsd:decimal",
-            "comment": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
-        },
-        {
-            "uri": "unece:sourceCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the source currency of a trade related currency conversion."
-        },
-        {
-            "uri": "unece:targetCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the target currency of a trade related currency conversion."
+            "comment": "The rate factor used for conversion from the source currency to the target currency for trade purposes."
         },
         {
             "uri": "unece:conversionRateDateTime",
@@ -25,9 +15,9 @@
             "comment": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange."
         },
         {
-            "uri": "unece:tradeCurrencyExchangeMarketId",
-            "type": "unece:UNCL6341Code",
-            "comment": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
+            "uri": "unece:sourceCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the source currency of a trade related currency conversion."
         },
         {
             "uri": "unece:sourceUnitBasisNumeric",
@@ -35,39 +25,32 @@
             "comment": "The numeric unit basis of the source currency used in this trade related currency exchange rate calculation."
         },
         {
-            "uri": "unece:conversionRate",
+            "uri": "unece:targetCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the target currency of a trade related currency conversion."
+        },
+        {
+            "uri": "unece:targetUnitBaseNumeric",
             "type": "xsd:decimal",
-            "comment": "The rate factor used for conversion from the source currency to the target currency for trade purposes."
+            "comment": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
+        },
+        {
+            "uri": "unece:tradeCurrencyExchangeMarketId",
+            "type": "unece:UNCL6341Code",
+            "comment": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "An associated document referenced for this trade related currency exchange."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:quotationApplicableCurrencyExchange",
-            "comment": "The currency exchange applicable to the quotation currency in this header trade settlement."
-        },
-        {
-            "uri": "unece:paymentApplicableCurrencyExchange",
-            "comment": "The currency exchange applicable to ..."
-        },
-        {
-            "uri": "unece:invoiceApplicableCurrencyExchange",
-            "comment": "A currency exchange applicable to ..."
-        },
-        {
-            "uri": "unece:taxApplicableCurrencyExchange",
-            "comment": "A currency exchange applicable to a tax in this header trade settlement."
-        },
-        {
             "uri": "unece:actualCurrencyExchange",
             "comment": "The actual trade currency exchange for this trade allowance charge."
-        },
-        {
-            "uri": "unece:priceApplicableCurrencyExchange",
-            "comment": "The currency exchange applicable to the price in this header trade settlement."
-        },
-        {
-            "uri": "unece:orderApplicableCurrencyExchange",
-            "comment": "The currency exchange applicable to the order currency in this header trade settlement."
         },
         {
             "uri": "unece:applicableCurrencyExchange",
@@ -78,8 +61,32 @@
             "comment": "A currency exchange applicable to an insurance charge for this supply chain consignment."
         },
         {
+            "uri": "unece:invoiceApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to ..."
+        },
+        {
+            "uri": "unece:orderApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the order currency in this header trade settlement."
+        },
+        {
+            "uri": "unece:paymentApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to ..."
+        },
+        {
+            "uri": "unece:priceApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the price in this header trade settlement."
+        },
+        {
+            "uri": "unece:quotationApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the quotation currency in this header trade settlement."
+        },
+        {
             "uri": "unece:serviceChargeApplicableCurrencyExchange",
             "comment": "A currency exchange applicable to a service charge for this supply chain consignment."
+        },
+        {
+            "uri": "unece:taxApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to a tax in this header trade settlement."
         }
     ]
 }

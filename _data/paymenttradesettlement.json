@@ -7,12 +7,44 @@
         {
             "uri": "unece:additionalDescription",
             "type": "xsd:string",
-            "comment": "An additional textual description for ..."
+            "comment": "The description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
         },
         {
             "uri": "unece:paymentCurrencyCode",
             "type": "xsd:token",
-            "comment": "The code specifying the currency ..."
+            "comment": "The code specifying the currency for this payment trade settlement."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:applicableTax",
+            "type": "unece:TradeTax",
+            "comment": "The tax applicable to this payment trade settlement."
+        },
+        {
+            "uri": "unece:payeeParty",
+            "type": "unece:TradeParty",
+            "comment": "The payee party for this payment trade settlement."
+        },
+        {
+            "uri": "unece:payerParty",
+            "type": "unece:TradeParty",
+            "comment": "The payer party for this payment trade settlement."
+        },
+        {
+            "uri": "unece:paymentApplicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The currency exchange applicable to this payment trade settlement."
+        },
+        {
+            "uri": "unece:specifiedMonetarySummation",
+            "type": "unece:TradeSettlementPaymentMonetarySummation",
+            "comment": "The monetary summation totals specified for this payment trade settlement."
+        },
+        {
+            "uri": "unece:specifiedPaymentMeans",
+            "type": "unece:PaymentMeans",
+            "comment": "The payment means specified for this payment trade settlement."
         }
     ]
 }

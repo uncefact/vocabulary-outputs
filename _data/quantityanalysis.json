@@ -5,49 +5,49 @@
     "comment": "The analytic breakdown of a quantity to include its supporting information, such as a complex quantity that consists of multiple pieces of information that together constitute a single quantity.",
     "datatypeProperties": [
         {
+            "uri": "unece:actualQuantity",
+            "type": "xsd:decimal",
+            "comment": "The actual quantity for this work item quantity analysis."
+        },
+        {
             "uri": "unece:actualQuantityPercent",
             "type": "xsd:decimal",
-            "comment": "The percentage of a total quantity that the actual quantity of this work item quantity analysis represents."
+            "comment": "The percentage of a total quantity that the actual quantity of this work item quantity analysis represents. Definition corrected. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:alternativeClassificationCode",
             "type": "xsd:token",
-            "comment": "A code specifying an alternative ..."
-        },
-        {
-            "uri": "unece:actualQuantity",
-            "type": "xsd:decimal",
-            "comment": "The actual quantity added or ..."
-        },
-        {
-            "uri": "unece:primaryClassificationCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a primary ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this ..."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a status ..."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "A code specifying an alternative classification value for this work item quantity analysis."
         },
         {
             "uri": "unece:contractualLanguageCode",
             "type": "xsd:token",
-            "comment": "The code specifying the contractual ..."
+            "comment": "The code specifying the contractual language for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this work item quantity analysis."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The unique identifier for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:primaryClassificationCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a primary classification value for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the status of this work item quantity analysis, such as partial, approved, not approved. Deprecated - Use ASBIE to Recorded Status instead."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the type of work item quantity analysis."
         }
     ],
     "objectProperties": [
@@ -60,16 +60,21 @@
             "uri": "unece:breakdownQuantityAnalysis",
             "type": "unece:QuantityAnalysis",
             "comment": "A quantity analysis breakdown of this work item quantity analysis."
+        },
+        {
+            "uri": "unece:changedStatus",
+            "type": "unece:RecordedStatus",
+            "comment": "A changed recorded status for this work item quantity analysis."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:totalQuantityQuantityAnalysis",
-            "comment": "An analysis of the total quantity for this basic work item."
-        },
-        {
             "uri": "unece:breakdownQuantityAnalysis",
             "comment": "A quantity analysis breakdown of this work item quantity analysis."
+        },
+        {
+            "uri": "unece:totalQuantityAnalysis",
+            "comment": "An analysis of the total quantity for this basic work item."
         }
     ]
 }

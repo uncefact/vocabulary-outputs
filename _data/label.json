@@ -5,14 +5,9 @@
     "comment": "An attachment to an object, person or animal which provides identification information for the object.",
     "datatypeProperties": [
         {
-            "uri": "unece:sizeCode",
+            "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "The code specifying the size of this logistics label."
-        },
-        {
-            "uri": "unece:seriesEndId",
-            "type": "xsd:token",
-            "comment": "The identifier of the end ..."
+            "comment": "The unique identifier of this logistics label."
         },
         {
             "uri": "unece:layoutTypeCode",
@@ -20,14 +15,19 @@
             "comment": "The code specifying the layout type of this logistics label."
         },
         {
-            "uri": "unece:seriesStartId",
+            "uri": "unece:seriesEndId",
             "type": "xsd:token",
-            "comment": "The identifier of the start ..."
+            "comment": "The unique identifier of the end of a series of logistics labels."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:seriesStartId",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The unique identifier of the start of a series of logistics labels."
+        },
+        {
+            "uri": "unece:sizeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the size of this logistics label."
         }
     ],
     "objectProperties": [
@@ -39,20 +39,20 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:vINLabel",
-            "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
-        },
-        {
-            "uri": "unece:usedLabel",
-            "comment": "A logistics label, at line level, used for this trade delivery."
+            "uri": "unece:barcodeLabel",
+            "comment": "A barcode label that is a part of these logistics shipping marks."
         },
         {
             "uri": "unece:rFIDLabel",
             "comment": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
         },
         {
-            "uri": "unece:barcodeLabel",
-            "comment": "A barcode label that is a part of these logistics shipping marks."
+            "uri": "unece:usedLabel",
+            "comment": "A logistics label, at line level, used for this trade delivery."
+        },
+        {
+            "uri": "unece:vINLabel",
+            "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
         }
     ]
 }

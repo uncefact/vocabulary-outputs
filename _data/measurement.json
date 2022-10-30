@@ -5,14 +5,9 @@
     "comment": "An amount, size, or extent as established by measuring.",
     "datatypeProperties": [
         {
-            "uri": "unece:method",
-            "type": "xsd:string",
-            "comment": "A measurement method expressed as text."
-        },
-        {
-            "uri": "unece:toleranceMeasure",
+            "uri": "unece:actualMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the tolerance ..."
+            "comment": "An actual measure for this measurement."
         },
         {
             "uri": "unece:comparisonOperatorCode",
@@ -20,39 +15,24 @@
             "comment": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this ..."
-        },
-        {
             "uri": "unece:conditionMeasure",
             "type": "xsd:decimal",
             "comment": "A measure of a condition for this measurement."
         },
         {
-            "uri": "unece:versionId",
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this measurement."
+        },
+        {
+            "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "The identifier for the version ..."
+            "comment": "The identifier for this calibrated measurement."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type ..."
-        },
-        {
-            "uri": "unece:tolerancePercent",
-            "type": "xsd:decimal",
-            "comment": "The percent of tolerance of this calibrated measurement."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of a value ..."
-        },
-        {
-            "uri": "unece:valueCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a value for this calibrated measurement."
+            "uri": "unece:method",
+            "type": "xsd:string",
+            "comment": "A measurement method expressed as text."
         },
         {
             "uri": "unece:quantificationTypeCode",
@@ -60,44 +40,64 @@
             "comment": "The code specifying a quantification type for this calibrated measurement, such as measured, calculated, or estimated."
         },
         {
-            "uri": "unece:actualMeasure",
+            "uri": "unece:toleranceMeasure",
             "type": "xsd:decimal",
-            "comment": "An actual measure for this measurement."
+            "comment": "The measure of the tolerance of this calibrated measurement."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:tolerancePercent",
+            "type": "xsd:decimal",
+            "comment": "The percent of tolerance of this calibrated measurement."
+        },
+        {
+            "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "A code specifying a type of measurement."
+        },
+        {
+            "uri": "unece:valueCode",
+            "type": "xsd:token",
+            "comment": "The code specifying a value for this calibrated measurement."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "The value of a measure for this calibrated measurement."
+        },
+        {
+            "uri": "unece:versionId",
+            "type": "xsd:token",
+            "comment": "The identifier of a version of this calibrated measurement."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:scheduledReportedMeasurement",
-            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
-        },
-        {
-            "uri": "unece:flashpointTemperatureMeasurement",
-            "comment": "A measurement of the flashpoint temperature of these transported dangerous goods."
-        },
-        {
-            "uri": "unece:controlTemperatureMeasurement",
-            "comment": "The measurement of the control temperature of these transported dangerous goods."
-        },
-        {
-            "uri": "unece:precisionMeasurement",
-            "comment": "A calibrated measurement of precision for this monitoring sensor."
-        },
-        {
-            "uri": "unece:emergencyTemperatureMeasurement",
-            "comment": "The measurement of the emergency temperature of these transported dangerous goods."
+            "uri": "unece:actualReportedMeasurement",
+            "comment": "An actual calibrated measurement reported for this monitoring sensor."
         },
         {
             "uri": "unece:associatedMeasurement",
             "comment": "A measurement associated with this document clause."
         },
         {
-            "uri": "unece:actualReportedMeasurement",
-            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+            "uri": "unece:controlTemperatureMeasurement",
+            "comment": "The measurement of the control temperature of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:emergencyTemperatureMeasurement",
+            "comment": "The measurement of the emergency temperature of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:flashpointTemperatureMeasurement",
+            "comment": "A measurement of the flashpoint temperature of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:precisionMeasurement",
+            "comment": "A calibrated measurement of precision for this monitoring sensor."
+        },
+        {
+            "uri": "unece:scheduledReportedMeasurement",
+            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
         }
     ]
 }

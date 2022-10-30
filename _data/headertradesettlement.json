@@ -5,19 +5,14 @@
     "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice.",
     "datatypeProperties": [
         {
-            "uri": "unece:discountIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or ..."
+            "uri": "unece:closingBookDueDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value when the book closing is due for this header trade settlement."
         },
         {
-            "uri": "unece:paymentAmount",
+            "uri": "unece:creditNoteAmount",
             "type": "xsd:decimal",
-            "comment": "A monetary value of a ..."
-        },
-        {
-            "uri": "unece:requestedFinancingAmount",
-            "type": "xsd:decimal",
-            "comment": "A financing monetary value requested for this header trade settlement."
+            "comment": "A monetary value of the credit note for this header trade settlement."
         },
         {
             "uri": "unece:creditReason",
@@ -25,9 +20,9 @@
             "comment": "A textual description of the reason for a credit being given in this header trade settlement."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this ..."
+            "uri": "unece:creditReasonCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the reason for a credit being given in this header trade settlement."
         },
         {
             "uri": "unece:creditorReferenceId",
@@ -35,44 +30,9 @@
             "comment": "The identifier of the creditor reference for this header trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction."
         },
         {
-            "uri": "unece:scheduledPaymentDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the scheduled payment of this header trade settlement."
-        },
-        {
-            "uri": "unece:nextInvoiceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time or other date time value of a next invoice or invoices in this header trade settlement."
-        },
-        {
-            "uri": "unece:closingBookDueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time ..."
-        },
-        {
-            "uri": "unece:payerReference",
-            "type": "xsd:string",
-            "comment": "The payer reference, expressed as ..."
-        },
-        {
-            "uri": "unece:taxCurrencyCode",
+            "uri": "unece:creditorReferenceIssuerId",
             "type": "xsd:token",
-            "comment": "The code specifying the tax currency for this header trade settlement."
-        },
-        {
-            "uri": "unece:duePayableAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value that is ..."
-        },
-        {
-            "uri": "unece:invoiceCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the invoice currency for this header trade settlement."
-        },
-        {
-            "uri": "unece:orderCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency of the order for this header trade settlement."
+            "comment": "An identifier of the creditor reference issuer for this header trade settlement."
         },
         {
             "uri": "unece:creditorReferenceType",
@@ -80,44 +40,9 @@
             "comment": "A creditor reference type, expressed as text, for this header trade settlement."
         },
         {
-            "uri": "unece:requestedFinancingRatePercent",
-            "type": "xsd:decimal",
-            "comment": "The financing rate, expressed as a percentage, requested for this header trade settlement."
-        },
-        {
-            "uri": "unece:quotationCurrencyCode",
+            "uri": "unece:creditorReferenceTypeCode",
             "type": "xsd:token",
-            "comment": "The code specifying the quotation currency for this header trade settlement."
-        },
-        {
-            "uri": "unece:priceCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the price ..."
-        },
-        {
-            "uri": "unece:paymentCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency ..."
-        },
-        {
-            "uri": "unece:invoiceIssuerReference",
-            "type": "xsd:string",
-            "comment": "The invoice issuer reference, expressed ..."
-        },
-        {
-            "uri": "unece:creditReasonCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the reason for a credit being given in this header trade settlement."
-        },
-        {
-            "uri": "unece:paymentReference",
-            "type": "xsd:string",
-            "comment": "A payment reference, expressed as ..."
-        },
-        {
-            "uri": "unece:creditorReferenceIssuerId",
-            "type": "xsd:token",
-            "comment": "An identifier of the creditor reference issuer for this header trade settlement."
+            "comment": "A code specifying the creditor reference type for this header trade settlement."
         },
         {
             "uri": "unece:debitNoteAmount",
@@ -125,46 +50,116 @@
             "comment": "A monetary value of the debit note for this header trade settlement."
         },
         {
-            "uri": "unece:creditorReferenceTypeCode",
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this header trade settlement."
+        },
+        {
+            "uri": "unece:discountIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this header trade settlement includes a discount amount."
+        },
+        {
+            "uri": "unece:duePayableAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value that is an exact amount due and payable for this header trade settlement, such as the amount due to the creditor."
+        },
+        {
+            "uri": "unece:invoiceCurrencyCode",
             "type": "xsd:token",
-            "comment": "A code specifying the creditor reference type for this header trade settlement."
+            "comment": "The code specifying the invoice currency for this header trade settlement."
+        },
+        {
+            "uri": "unece:invoiceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value of the invoice in this header trade settlement."
+        },
+        {
+            "uri": "unece:invoiceIssuerReference",
+            "type": "xsd:string",
+            "comment": "The invoice issuer reference, expressed as text, for this header trade settlement."
+        },
+        {
+            "uri": "unece:nextInvoiceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "A date, time, date time or other date time value of a next invoice or invoices in this header trade settlement."
+        },
+        {
+            "uri": "unece:orderCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the currency of the order for this header trade settlement."
+        },
+        {
+            "uri": "unece:payerReference",
+            "type": "xsd:string",
+            "comment": "The payer reference, expressed as text, for this header trade settlement."
+        },
+        {
+            "uri": "unece:paymentAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of a payment for this header trade settlement."
+        },
+        {
+            "uri": "unece:paymentCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the payment currency for this header trade settlement."
+        },
+        {
+            "uri": "unece:paymentReference",
+            "type": "xsd:string",
+            "comment": "A payment reference, expressed as text, for this header trade settlement."
+        },
+        {
+            "uri": "unece:priceCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the price currency for this header trade settlement."
+        },
+        {
+            "uri": "unece:quotationCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the quotation currency for this header trade settlement."
+        },
+        {
+            "uri": "unece:requestedFinancingAmount",
+            "type": "xsd:decimal",
+            "comment": "A financing monetary value requested for this header trade settlement."
+        },
+        {
+            "uri": "unece:requestedFinancingRatePercent",
+            "type": "xsd:decimal",
+            "comment": "The financing rate, expressed as a percentage, requested for this header trade settlement."
+        },
+        {
+            "uri": "unece:scheduledPaymentDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value of the scheduled payment of this header trade settlement."
+        },
+        {
+            "uri": "unece:taxCurrencyCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the tax currency for this header trade settlement."
+        },
+        {
+            "uri": "unece:totalAdjustmentAmount",
+            "type": "xsd:decimal",
+            "comment": "A monetary value of the total adjustment for this header trade settlement."
         },
         {
             "uri": "unece:totalInvoiceAmount",
             "type": "xsd:decimal",
             "comment": "A monetary value of the total invoice on which this header trade settlement is calculated."
-        },
-        {
-            "uri": "unece:totalAdjustmentAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the ..."
-        },
-        {
-            "uri": "unece:invoiceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time ..."
-        },
-        {
-            "uri": "unece:creditNoteAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the credit note for this header trade settlement."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:quotationApplicableCurrencyExchange",
-            "type": "unece:CurrencyExchange",
-            "comment": "The currency exchange applicable to the quotation currency in this header trade settlement."
+            "uri": "unece:applicableTax",
+            "type": "unece:TradeTax",
+            "comment": "A tax applicable to this header trade settlement."
         },
         {
-            "uri": "unece:ultimatePayeeParty",
-            "type": "unece:TradeParty",
-            "comment": "An ultimate payee party in this header trade settlement."
-        },
-        {
-            "uri": "unece:invoicerParty",
-            "type": "unece:TradeParty",
-            "comment": "The party issuing the invoice for this header trade settlement."
+            "uri": "unece:billingPeriod",
+            "type": "unece:Period",
+            "comment": "A billing period specified for this header trade settlement."
         },
         {
             "uri": "unece:factoringAgreementDocument",
@@ -172,14 +167,34 @@
             "comment": "A factoring agreement document referenced in this header trade settlement."
         },
         {
-            "uri": "unece:taxApplicableCurrencyExchange",
-            "type": "unece:CurrencyExchange",
-            "comment": "A currency exchange applicable to a tax in this header trade settlement."
+            "uri": "unece:factoringListDocument",
+            "type": "unece:Document",
+            "comment": "A factoring list document referenced in this header trade settlement."
         },
         {
-            "uri": "unece:proFormaInvoiceDocument",
+            "uri": "unece:invoiceApplicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The currency exchange applicable to the invoice in this header trade settlement."
+        },
+        {
+            "uri": "unece:invoiceDocument",
             "type": "unece:Document",
-            "comment": "The pro-forma invoice document referenced by this header trade settlement."
+            "comment": "An invoice document referenced by this header trade settlement."
+        },
+        {
+            "uri": "unece:invoiceeParty",
+            "type": "unece:TradeParty",
+            "comment": "The party to whom an invoice is issued for this header trade settlement."
+        },
+        {
+            "uri": "unece:invoicerParty",
+            "type": "unece:TradeParty",
+            "comment": "The party issuing the invoice for this header trade settlement."
+        },
+        {
+            "uri": "unece:letterOfCreditDocument",
+            "type": "unece:Document",
+            "comment": "The letter of credit document referenced in this header trade settlement."
         },
         {
             "uri": "unece:orderApplicableCurrencyExchange",
@@ -187,19 +202,119 @@
             "comment": "The currency exchange applicable to the order currency in this header trade settlement."
         },
         {
+            "uri": "unece:payableSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A payable accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:payeeParty",
+            "type": "unece:TradeParty",
+            "comment": "A payee party for this header trade settlement."
+        },
+        {
+            "uri": "unece:payerParty",
+            "type": "unece:TradeParty",
+            "comment": "The payer party for this header trade settlement."
+        },
+        {
+            "uri": "unece:paymentApplicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The currency exchange applicable to the payment in this header trade settlement."
+        },
+        {
             "uri": "unece:priceApplicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
             "comment": "The currency exchange applicable to the price in this header trade settlement."
         },
         {
-            "uri": "unece:factoringListDocument",
+            "uri": "unece:proFormaInvoiceDocument",
             "type": "unece:Document",
-            "comment": "A factoring list document referenced in this header trade settlement."
+            "comment": "The pro-forma invoice document referenced by this header trade settlement."
+        },
+        {
+            "uri": "unece:purchaseSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A purchase accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:quotationApplicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The currency exchange applicable to the quotation currency in this header trade settlement."
+        },
+        {
+            "uri": "unece:receivableSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A receivable accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:relevantParty",
+            "type": "unece:TradeParty",
+            "comment": "A relevant party for this header trade settlement."
+        },
+        {
+            "uri": "unece:salesSpecifiedAccountingAccount",
+            "type": "unece:AccountingAccount",
+            "comment": "A sales accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedAdjustment",
+            "type": "unece:Adjustment",
+            "comment": "A financial adjustment specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedAllowanceCharge",
+            "type": "unece:AllowanceCharge",
+            "comment": "An allowance or charge specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedFinancialCard",
+            "type": "unece:FinancialCard",
+            "comment": "A financial card specified in this header trade settlement."
         },
         {
             "uri": "unece:specifiedInstalmentPlan",
             "type": "unece:InstalmentPlan",
             "comment": "The payment instalment plan specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedMonetarySummation",
+            "type": "unece:TradeSettlementPaymentMonetarySummation",
+            "comment": "The monetary summation totals specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedPayment",
+            "type": "unece:InstalmentPayment",
+            "comment": "An advance payment specified in this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedPaymentMeans",
+            "type": "unece:PaymentMeans",
+            "comment": "A payment means specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedPaymentTerms",
+            "type": "unece:PaymentTerms",
+            "comment": "Payment terms specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:specifiedServiceCharge",
+            "type": "unece:ServiceCharge",
+            "comment": "A logistics service charge specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:subtotalCalculatedTax",
+            "type": "unece:TradeTax",
+            "comment": "A tax subtotal calculated for this header trade settlement."
+        },
+        {
+            "uri": "unece:taxApplicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "A currency exchange applicable to a tax in this header trade settlement."
+        },
+        {
+            "uri": "unece:ultimatePayeeParty",
+            "type": "unece:TradeParty",
+            "comment": "An ultimate payee party in this header trade settlement."
         }
     ],
     "referencedBy": [

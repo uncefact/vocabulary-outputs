@@ -5,101 +5,121 @@
     "comment": "A specific task or set of tasks to be undertaken.",
     "datatypeProperties": [
         {
-            "uri": "unece:requestedActionCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a requested ..."
-        },
-        {
             "uri": "unece:alternativeClassificationCode",
             "type": "xsd:token",
-            "comment": "A code specifying an alternative ..."
-        },
-        {
-            "uri": "unece:index",
-            "type": "xsd:string",
-            "comment": "The index, expressed as text, ..."
-        },
-        {
-            "uri": "unece:primaryClassificationCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a primary ..."
-        },
-        {
-            "uri": "unece:indexValue",
-            "type": "xsd:string",
-            "comment": "The index value for this basic work item."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type ..."
-        },
-        {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual ..."
-        },
-        {
-            "uri": "unece:referenceId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of another work item referenced by this basic work item."
-        },
-        {
-            "uri": "unece:totalQuantity",
-            "type": "xsd:decimal",
-            "comment": "The total quantity for this ..."
+            "comment": "A code specifying an alternative classification for this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:comment",
             "type": "xsd:string",
-            "comment": "A comment, expressed as text, ..."
+            "comment": "A comment, expressed as text, for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
-            "uri": "unece:totalQuantityClassificationCode",
+            "uri": "unece:contractualLanguageCode",
             "type": "xsd:token",
-            "comment": "The code specifying the classification of the total quantity for this basic work item."
+            "comment": "The code specifying the contractual language for this basic work item."
         },
         {
             "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The unique identifier for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
-            "uri": "unece:referenceFileBinaryObject",
-            "type": "xsd:base64Binary",
-            "comment": "A reference file binary object related to this basic work item."
+            "uri": "unece:index",
+            "type": "xsd:string",
+            "comment": "The index, expressed as text, to be used for this basic work item."
         },
         {
-            "uri": "unece:statusCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a status ..."
+            "uri": "unece:indexValue",
+            "type": "xsd:string",
+            "comment": "The index value for this basic work item. Deprecated - Use Basic_ Work Item. Index. Text instead"
         },
         {
             "uri": "unece:priceListItemId",
             "type": "xsd:token",
-            "comment": "The identifier of a price ..."
+            "comment": "The identifier of a price list item for this grouped work item."
+        },
+        {
+            "uri": "unece:primaryClassificationCode",
+            "type": "xsd:token",
+            "comment": "A code specifying the primary classification for this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+        },
+        {
+            "uri": "unece:referenceFileBinaryObject",
+            "type": "xsd:base64Binary",
+            "comment": "A reference file binary object related to this basic work item. Deprecated - Use ASBIE to Binary_ File instead."
+        },
+        {
+            "uri": "unece:referenceId",
+            "type": "xsd:token",
+            "comment": "The unique identifier of another work item referenced by this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+        },
+        {
+            "uri": "unece:requestedActionCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a requested action for this grouped work item."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:token",
+            "comment": "A code specifying the status of this basic work item. Deprecated - Use ASBIE to Information_ Status."
+        },
+        {
+            "uri": "unece:totalQuantity",
+            "type": "xsd:decimal",
+            "comment": "The total quantity for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+        },
+        {
+            "uri": "unece:totalQuantityClassificationCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the classification of the total quantity for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying the type of this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:actualComplexDescription",
+            "type": "unece:ComplexDescription",
+            "comment": "An actual complex description for this work item group."
+        },
+        {
+            "uri": "unece:changedStatus",
+            "type": "unece:RecordedStatus",
+            "comment": "A changed recorded status for this grouped work item."
+        },
+        {
+            "uri": "unece:itemWorkItem",
+            "type": "unece:WorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "unece:referencedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A specified binary file referenced by this grouped work item."
+        },
+        {
             "uri": "unece:subordinateWorkItem",
             "type": "unece:WorkItem",
-            "comment": "A subordinate work item for this basic work item."
+            "comment": "A subordinate work item for this basic work item. Deprecated - Use Basic_ Work Item. Item. Basic_ Work Item instead"
+        },
+        {
+            "uri": "unece:totalPrice",
+            "type": "unece:CalculatedPrice",
+            "comment": "A total calculated price for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+        },
+        {
+            "uri": "unece:totalQuantityAnalysis",
+            "type": "unece:QuantityAnalysis",
+            "comment": "An analysis of the total quantity for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:unitPrice",
             "type": "unece:CalculatedPrice",
-            "comment": "A unit calculated price for this basic work item."
-        },
-        {
-            "uri": "unece:actualComplexDescription",
-            "type": "unece:ComplexDescription",
-            "comment": "An actual complex description for ..."
-        },
-        {
-            "uri": "unece:totalQuantityQuantityAnalysis",
-            "type": "unece:QuantityAnalysis",
-            "comment": "An analysis of the total quantity for this basic work item."
+            "comment": "A unit calculated price for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         }
     ],
     "referencedBy": [

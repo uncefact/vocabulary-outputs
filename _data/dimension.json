@@ -5,29 +5,14 @@
     "comment": "A measure of spatial extent, such as length, breadth or height.",
     "datatypeProperties": [
         {
-            "uri": "unece:heightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the height component of this spatial dimension."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of a value ..."
-        },
-        {
-            "uri": "unece:lengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the length ..."
-        },
-        {
-            "uri": "unece:id",
+            "uri": "unece:contractualLanguageCode",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The code specifying the contractual language for this work item dimension."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description for this ..."
+            "comment": "A textual description of this spatial dimension."
         },
         {
             "uri": "unece:diameterMeasure",
@@ -40,33 +25,44 @@
             "comment": "The code specifying the type of spatial dimension, such as thickness, area, or volume."
         },
         {
-            "uri": "unece:workItemDimensionTypeCode",
-            "type": "unece:UNCL6145Code",
-            "comment": "The code specifying the type of this work item dimension."
+            "uri": "unece:heightMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the height component of this spatial dimension."
         },
         {
-            "uri": "unece:contractualLanguageCode",
+            "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "The code specifying the contractual ..."
+            "comment": "The unique identifier of this spatial dimension."
+        },
+        {
+            "uri": "unece:lengthMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the length component of this spatial dimension."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the value of this spatial dimension."
         },
         {
             "uri": "unece:widthMeasure",
             "type": "xsd:decimal",
             "comment": "The measure of the width component of this spatial dimension."
+        },
+        {
+            "uri": "unece:workItemDimensionTypeCode",
+            "type": "unece:UNCL6145Code",
+            "comment": "The code specifying the type of this work item dimension. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         }
     ],
     "objectProperties": [
         {
             "uri": "unece:componentDimension",
             "type": "unece:Dimension",
-            "comment": "A work item component dimension for this work item dimension."
+            "comment": "A work item component dimension for this work item dimension. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         }
     ],
     "referencedBy": [
-        {
-            "uri": "unece:linearDimension",
-            "comment": "Linear spatial dimensions of this ..."
-        },
         {
             "uri": "unece:actualQuantityDimension",
             "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
@@ -76,16 +72,20 @@
             "comment": "A work item component dimension for this work item dimension."
         },
         {
-            "uri": "unece:specifiedDimension",
-            "comment": "Spatial dimensions specified for this logistics means of transport."
+            "uri": "unece:linearDimension",
+            "comment": "Linear spatial dimensions of this ..."
+        },
+        {
+            "uri": "unece:maximumLinearDimension",
+            "comment": "Maximum linear spatial dimensions of ..."
         },
         {
             "uri": "unece:minimumLinearDimension",
             "comment": "Minimum linear spatial dimensions of ..."
         },
         {
-            "uri": "unece:maximumLinearDimension",
-            "comment": "Maximum linear spatial dimensions of ..."
+            "uri": "unece:specifiedDimension",
+            "comment": "Spatial dimensions specified for this logistics means of transport."
         }
     ]
 }

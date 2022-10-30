@@ -5,14 +5,14 @@
     "comment": "A feature that is fixed for a particular document context.",
     "datatypeProperties": [
         {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "A value, expressed as text, ..."
-        },
-        {
             "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The unique identifier of this document context parameter."
+        },
+        {
+            "uri": "unece:value",
+            "type": "xsd:string",
+            "comment": "The value, expressed as text, of this document context parameter."
         }
     ],
     "objectProperties": [
@@ -24,16 +24,28 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:scenarioSpecifiedParameter",
-            "comment": "A scenario context parameter specified for this exchanged document context."
+            "uri": "unece:applicationSpecifiedParameter",
+            "comment": "An application context parameter specified for this exchanged document context."
+        },
+        {
+            "uri": "unece:bIMSpecifiedParameter",
+            "comment": "A Business Information Master (BIM) context parameter specified for this exchanged document context."
+        },
+        {
+            "uri": "unece:businessProcessSpecifiedParameter",
+            "comment": "A business process context parameter specified for this exchanged document context."
         },
         {
             "uri": "unece:guidelineSpecifiedParameter",
             "comment": "A guideline context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:bIMSpecifiedParameter",
-            "comment": "A Business Information Master (BIM) context parameter specified for this exchanged document context."
+            "uri": "unece:messageStandardSpecifiedParameter",
+            "comment": "The message standard document context parameter specified for this exchanged document context."
+        },
+        {
+            "uri": "unece:scenarioSpecifiedParameter",
+            "comment": "A scenario context parameter specified for this exchanged document context."
         },
         {
             "uri": "unece:subsetSpecifiedParameter",
@@ -42,18 +54,6 @@
         {
             "uri": "unece:userSpecifiedParameter",
             "comment": "A user specified document context parameter specified for this exchanged document context."
-        },
-        {
-            "uri": "unece:applicationSpecifiedParameter",
-            "comment": "An application context parameter specified for this exchanged document context."
-        },
-        {
-            "uri": "unece:messageStandardSpecifiedParameter",
-            "comment": "The message standard document context parameter specified for this exchanged document context."
-        },
-        {
-            "uri": "unece:businessProcessSpecifiedParameter",
-            "comment": "A business process context parameter specified for this exchanged document context."
         }
     ]
 }

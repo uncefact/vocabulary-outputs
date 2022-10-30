@@ -5,14 +5,14 @@
     "comment": "Temperature settings for a transport movement, such as a required storage temperature range.",
     "datatypeProperties": [
         {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of a value ..."
-        },
-        {
             "uri": "unece:maximumValueMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the highest ..."
+            "comment": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen degrees Celsius."
+        },
+        {
+            "uri": "unece:minimumValueMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four degrees Celsius."
         },
         {
             "uri": "unece:temperatureTypeCode",
@@ -20,9 +20,9 @@
             "comment": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
         },
         {
-            "uri": "unece:minimumValueMeasure",
+            "uri": "unece:valueMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the lowest ..."
+            "comment": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
         }
     ],
     "objectProperties": [
@@ -34,12 +34,12 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:transportTemperature",
-            "comment": "The transport temperature setting for this supply chain consignment item."
-        },
-        {
             "uri": "unece:settingTemperature",
             "comment": "A temperature setting for this ..."
+        },
+        {
+            "uri": "unece:transportTemperature",
+            "comment": "The transport temperature setting for this supply chain consignment item."
         }
     ]
 }

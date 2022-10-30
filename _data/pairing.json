@@ -5,9 +5,9 @@
     "comment": "The process by which two potentially entities are linked.",
     "datatypeProperties": [
         {
-            "uri": "unece:targetEntityId",
+            "uri": "unece:methodCode",
             "type": "xsd:token",
-            "comment": "The identifier of the target entity for this communication pairing."
+            "comment": "The code specifying the method of this communication pairing."
         },
         {
             "uri": "unece:pairedIndicator",
@@ -15,9 +15,9 @@
             "comment": "The indication of whether or not the entity is paired in this communication pairing."
         },
         {
-            "uri": "unece:methodCode",
+            "uri": "unece:targetEntityId",
             "type": "xsd:token",
-            "comment": "The code specifying the method ..."
+            "comment": "The identifier of the target entity for this communication pairing."
         }
     ],
     "objectProperties": [
@@ -29,12 +29,12 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:reportingSensorPairing",
-            "comment": "A sensor communication pairing reported for this monitoring IOT device."
-        },
-        {
             "uri": "unece:reportingIOTDevicePairing",
             "comment": "An IOT device reported communication pairing for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:reportingSensorPairing",
+            "comment": "A sensor communication pairing reported for this monitoring IOT device."
         }
     ]
 }

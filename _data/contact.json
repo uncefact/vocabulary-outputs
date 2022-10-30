@@ -5,14 +5,9 @@
     "comment": "A person or department that acts as a point of contact with another person or department.",
     "datatypeProperties": [
         {
-            "uri": "unece:departmentName",
+            "uri": "unece:authorizedPersonName",
             "type": "xsd:string",
-            "comment": "The name, expressed as text, ..."
-        },
-        {
-            "uri": "unece:personId",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this trade contact person."
+            "comment": "The name, expressed as text, of the authorized person for this trade contact."
         },
         {
             "uri": "unece:contactTypeCode",
@@ -20,9 +15,14 @@
             "comment": "The code specifying the type of trade contact."
         },
         {
+            "uri": "unece:departmentName",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, of the department to which this trade contact belongs within an organization."
+        },
+        {
             "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The unique identifier for this trade contact."
         },
         {
             "uri": "unece:jobTitle",
@@ -30,9 +30,9 @@
             "comment": "The job title, position or designation, expressed as text, of this trade contact within an organization, such as Director, Software Engineer, Purchasing Manager."
         },
         {
-            "uri": "unece:responsibility",
-            "type": "xsd:string",
-            "comment": "A responsibility, expressed as text, of this trade contact."
+            "uri": "unece:personId",
+            "type": "xsd:token",
+            "comment": "A unique identifier for this trade contact person."
         },
         {
             "uri": "unece:personName",
@@ -40,21 +40,51 @@
             "comment": "The name, expressed as text, of this trade contact person."
         },
         {
-            "uri": "unece:authorizedPersonName",
+            "uri": "unece:responsibility",
             "type": "xsd:string",
-            "comment": "The name, expressed as text, of the authorized person for this trade contact."
+            "comment": "A responsibility, expressed as text, of this trade contact."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:directTelephoneCommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "The direct telephone communication information for this trade contact."
+        },
+        {
+            "uri": "unece:emailURICommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "The email URI communication information for this trade contact."
+        },
+        {
+            "uri": "unece:faxCommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "Fax communication information for this trade contact."
+        },
+        {
+            "uri": "unece:instantMessagingCommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "Instant messaging communication information for this trade contact."
+        },
+        {
+            "uri": "unece:mobileTelephoneCommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "The mobile telephone communication information for this trade contact."
+        },
         {
             "uri": "unece:specifiedNote",
             "type": "unece:Note",
             "comment": "A note specified for this trade contact."
         },
         {
-            "uri": "unece:instantMessagingCommunication",
+            "uri": "unece:specifiedPerson",
+            "type": "unece:AuthoritativeSignatoryPerson",
+            "comment": "The contact person specified for this trade contact."
+        },
+        {
+            "uri": "unece:telephoneCommunication",
             "type": "unece:UniversalCommunication",
-            "comment": "Instant messaging communication information for this trade contact."
+            "comment": "Telephone communication information for this trade contact."
         },
         {
             "uri": "unece:telexCommunication",
@@ -65,14 +95,13 @@
             "uri": "unece:vOIPCommunication",
             "type": "unece:UniversalCommunication",
             "comment": "Voice Over Internet Protocol (VOIP) communication information for this trade contact."
-        },
-        {
-            "uri": "unece:directTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "The direct telephone communication information for this trade contact."
         }
     ],
     "referencedBy": [
+        {
+            "uri": "unece:definedContact",
+            "comment": "A trade contact defined for ..."
+        },
         {
             "uri": "unece:emergencyContact",
             "comment": "The person or department to be contacted in the event of any emergency related to these transported dangerous goods."
@@ -80,10 +109,6 @@
         {
             "uri": "unece:receptionFacilityContact",
             "comment": "A reception facility contact for this transport waste material."
-        },
-        {
-            "uri": "unece:definedContact",
-            "comment": "A trade contact defined for ..."
         },
         {
             "uri": "unece:transportExpertContact",

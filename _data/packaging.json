@@ -5,49 +5,44 @@
     "comment": "Any wrapping or containment, such as a box or a barrel, of goods.",
     "datatypeProperties": [
         {
+            "uri": "unece:additionalInstructionCode",
+            "type": "xsd:token",
+            "comment": "A code specifying an additional instruction for this supply chain packaging."
+        },
+        {
+            "uri": "unece:additionalInstructionIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not there is an additional instruction for this supply chain packaging."
+        },
+        {
             "uri": "unece:conditionCode",
             "type": "xsd:token",
-            "comment": "A code specifying the condition ..."
+            "comment": "A code specifying the condition of this supply chain packaging."
         },
         {
-            "uri": "unece:instructionCode",
-            "type": "xsd:token",
-            "comment": "A code specifying an instruction ..."
+            "uri": "unece:contentLayerQuantity",
+            "type": "xsd:decimal",
+            "comment": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
         },
         {
-            "uri": "unece:returnableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or ..."
-        },
-        {
-            "uri": "unece:type",
-            "type": "xsd:string",
-            "comment": "A type, expressed as text ..."
+            "uri": "unece:customerFacingTotalUnitQuantity",
+            "type": "xsd:decimal",
+            "comment": "The total number of units of this supply chain packaging facing the customer, such as would be seen when this packaging is placed on a retail shelf."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description for this ..."
+            "comment": "A textual description of this supply chain packaging."
         },
         {
-            "uri": "unece:typeCode",
+            "uri": "unece:disposalMethodCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "A code specifying the disposal method of this supply chain packaging."
         },
         {
-            "uri": "unece:totalUnitQuantity",
-            "type": "xsd:decimal",
-            "comment": "A total number of units contained in this supply chain packaging."
-        },
-        {
-            "uri": "unece:weightMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the weight ..."
-        },
-        {
-            "uri": "unece:additionalInstructionCode",
+            "uri": "unece:instructionCode",
             "type": "xsd:token",
-            "comment": "A code specifying an additional instruction for this supply chain packaging."
+            "comment": "A code specifying an instruction for this supply chain packaging."
         },
         {
             "uri": "unece:layerTotalUnitQuantity",
@@ -60,32 +55,62 @@
             "comment": "The number of units of this type of supply chain packaging which can be stacked on top of each other."
         },
         {
-            "uri": "unece:additionalInstructionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not there is an additional instruction for this supply chain packaging."
-        },
-        {
-            "uri": "unece:disposalMethodCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the disposal method of this supply chain packaging."
-        },
-        {
             "uri": "unece:maximumStackabilityWeightMeasure",
             "type": "xsd:decimal",
             "comment": "The measure of the maximum stackability weight of this supply chain packaging."
         },
         {
-            "uri": "unece:customerFacingTotalUnitQuantity",
-            "type": "xsd:decimal",
-            "comment": "The total number of units of this supply chain packaging facing the customer, such as would be seen when this packaging is placed on a retail shelf."
+            "uri": "unece:returnableIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this supply chain packaging is returnable."
         },
         {
-            "uri": "unece:contentLayerQuantity",
+            "uri": "unece:totalUnitQuantity",
             "type": "xsd:decimal",
-            "comment": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
+            "comment": "A total number of units contained in this supply chain packaging."
+        },
+        {
+            "uri": "unece:type",
+            "type": "xsd:string",
+            "comment": "The type, expressed as text, of supply chain packaging."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the type of supply chain packaging."
+        },
+        {
+            "uri": "unece:weightMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the weight of this supply chain packaging."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:applicableGoodsCharacteristic",
+            "type": "unece:GoodsCharacteristic",
+            "comment": "Material goods characteristic applicable to this supply chain packaging."
+        },
+        {
+            "uri": "unece:applicableInstructions",
+            "type": "unece:DisposalInstructions",
+            "comment": "Disposal instructions for this supply chain packaging."
+        },
+        {
+            "uri": "unece:linearDimension",
+            "type": "unece:Dimension",
+            "comment": "The linear spatial dimensions of this supply chain packaging."
+        },
+        {
+            "uri": "unece:maximumLinearDimension",
+            "type": "unece:Dimension",
+            "comment": "The maximum linear spatial dimensions of this supply chain packaging."
+        },
+        {
+            "uri": "unece:minimumLinearDimension",
+            "type": "unece:Dimension",
+            "comment": "The minimum linear spatial dimensions of this supply chain packaging."
+        },
         {
             "uri": "unece:specifiedMarking",
             "type": "unece:Marking",

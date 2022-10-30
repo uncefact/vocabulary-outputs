@@ -5,9 +5,9 @@
     "comment": "A necessary item or object for a particular purpose.",
     "datatypeProperties": [
         {
-            "uri": "unece:pollingRateMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the polling rate for this OEM equipment."
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "An identifier of this OEM equipment."
         },
         {
             "uri": "unece:pollingCapabilityIndicator",
@@ -15,14 +15,26 @@
             "comment": "The indication of whether or not this OEM equipment has a polling capability."
         },
         {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "uri": "unece:pollingRateMeasure",
+            "type": "xsd:decimal",
+            "comment": "The measure of the polling rate for this OEM equipment."
         },
         {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "A code specifying a type of OEM equipment."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:applicableCharacteristic",
+            "type": "unece:Characteristic",
+            "comment": "A physical characteristic applicable to this OEM equipment."
+        },
+        {
+            "uri": "unece:manufacturerParty",
+            "type": "unece:TradeParty",
+            "comment": "The manufacturer party for this OEM equipment."
         }
     ],
     "referencedBy": [

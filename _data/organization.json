@@ -5,24 +5,19 @@
     "comment": "An organized structure set up for a particular purpose, such as a business, government body, department, charity, or financial institution.",
     "datatypeProperties": [
         {
-            "uri": "unece:tradingBusinessName",
-            "type": "xsd:string",
-            "comment": "The trading business name, expressed as text, of this legally set up organization."
-        },
-        {
             "uri": "unece:businessTypeCode",
             "type": "xsd:token",
             "comment": "A code specifying the type of business of this legally set up organization."
         },
         {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
             "uri": "unece:establishedDateTime",
             "type": "xsd:dateTime",
             "comment": "The date, time, date time, or other date time value when this legally set up organization was established."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A unique identifier for this legally set up organization."
         },
         {
             "uri": "unece:legalClassificationCode",
@@ -32,12 +27,17 @@
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
+            "comment": "A name, expressed as text, of this legally set up organization."
+        },
+        {
+            "uri": "unece:tradingBusinessName",
+            "type": "xsd:string",
+            "comment": "The trading business name, expressed as text, of this legally set up organization."
         },
         {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying a type ..."
+            "comment": "A code specifying a type of legally set up organization."
         }
     ],
     "objectProperties": [
@@ -45,6 +45,11 @@
             "uri": "unece:authorizedRegistration",
             "type": "unece:LegalRegistration",
             "comment": "A legal registration authorized for this legally set up organization."
+        },
+        {
+            "uri": "unece:postalAddress",
+            "type": "unece:TradeAddress",
+            "comment": "A postal address for this legally set up organization."
         }
     ],
     "referencedBy": [

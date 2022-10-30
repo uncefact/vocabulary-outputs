@@ -5,6 +5,16 @@
     "comment": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or services.",
     "datatypeProperties": [
         {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The identifier for this specified marketplace."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, for this specified marketplace."
+        },
+        {
             "uri": "unece:salesMethodCode",
             "type": "xsd:token",
             "comment": "The code specifying a sales method, such as an auction clock or mediation, for this specified marketplace."
@@ -18,16 +28,13 @@
             "uri": "unece:websiteURIId",
             "type": "xsd:token",
             "comment": "A website Uniform Resource Identifier (URI) for this specified marketplace."
-        },
+        }
+    ],
+    "objectProperties": [
         {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
+            "uri": "unece:orderingPeriod",
+            "type": "unece:Period",
+            "comment": "An available ordering period for this specified marketplace."
         }
     ],
     "referencedBy": [

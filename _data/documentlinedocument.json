@@ -5,14 +5,9 @@
     "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
     "datatypeProperties": [
         {
-            "uri": "unece:publicationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of the publication of this document line."
-        },
-        {
-            "uri": "unece:subordinateLineId",
+            "uri": "unece:buyerAssignedCategoryCode",
             "type": "xsd:token",
-            "comment": "An identifier of a subordinate ..."
+            "comment": "The code specifying the category assigned by the buyer for this document line."
         },
         {
             "uri": "unece:documentLineStatusCode",
@@ -20,34 +15,14 @@
             "comment": "The code specifying the status of this document line."
         },
         {
-            "uri": "unece:lineStatusReasonCode",
+            "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "The code specifying the line status reason for this document line."
-        },
-        {
-            "uri": "unece:lineStatusReason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for the line status in this document line."
-        },
-        {
-            "uri": "unece:lineId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a ..."
+            "comment": "The identifier of this document line document."
         },
         {
             "uri": "unece:issueDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date and ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:uUIDLineId",
-            "type": "xsd:token",
-            "comment": "The universally unique identifier (UUID) of this document line."
+            "comment": "The date, time, date time, or other date time value for the issuance of this document line."
         },
         {
             "uri": "unece:latestRevisionDateTime",
@@ -55,14 +30,56 @@
             "comment": "The date, time, date time, or other date time value for the latest revision of this document line."
         },
         {
-            "uri": "unece:buyerAssignedCategoryCode",
+            "uri": "unece:lineId",
             "type": "xsd:token",
-            "comment": "The code specifying the category assigned by the buyer for this document line."
+            "comment": "The unique identifier of this document line."
+        },
+        {
+            "uri": "unece:lineStatusReason",
+            "type": "xsd:string",
+            "comment": "A reason, expressed as text, for the line status in this document line."
+        },
+        {
+            "uri": "unece:lineStatusReasonCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the line status reason for this document line."
         },
         {
             "uri": "unece:parentLineId",
             "type": "xsd:token",
             "comment": "The unique identifier of the parent line to this document line."
+        },
+        {
+            "uri": "unece:publicationDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value of the publication of this document line."
+        },
+        {
+            "uri": "unece:subordinateLineId",
+            "type": "xsd:token",
+            "comment": "An identifier of a subordinate line of this document line."
+        },
+        {
+            "uri": "unece:uUIDLineId",
+            "type": "xsd:token",
+            "comment": "The universally unique identifier (UUID) of this document line."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:effectivePeriod",
+            "type": "unece:Period",
+            "comment": "The period within which this document line is effective."
+        },
+        {
+            "uri": "unece:includedNote",
+            "type": "unece:Note",
+            "comment": "A note included in this document line."
+        },
+        {
+            "uri": "unece:referenceDocument",
+            "type": "unece:Document",
+            "comment": "The acknowledgement document referenced in this document line."
         }
     ]
 }

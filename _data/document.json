@@ -5,54 +5,9 @@
     "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence.",
     "datatypeProperties": [
         {
-            "uri": "unece:electronicPresentationIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this referenced document is presented in an electronic format."
-        },
-        {
-            "uri": "unece:globalId",
-            "type": "xsd:token",
-            "comment": "A global identifier for this ..."
-        },
-        {
-            "uri": "unece:referenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The reference date or date ..."
-        },
-        {
-            "uri": "unece:receiptDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value for the formal receipt of this referenced document."
-        },
-        {
             "uri": "unece:acceptanceDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date time, ..."
-        },
-        {
-            "uri": "unece:proprietaryType",
-            "type": "xsd:string",
-            "comment": "A proprietary type, expressed as ..."
-        },
-        {
-            "uri": "unece:subordinateLineId",
-            "type": "xsd:token",
-            "comment": "An identifier of a subordinate ..."
-        },
-        {
-            "uri": "unece:lineId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a ..."
-        },
-        {
-            "uri": "unece:remarks",
-            "type": "xsd:string",
-            "comment": "A remark, expressed as text, ..."
-        },
-        {
-            "uri": "unece:copyIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or ..."
+            "comment": "The date, time, date time, or other date time value of the acceptance of this referenced document."
         },
         {
             "uri": "unece:attachmentBinaryObject",
@@ -60,44 +15,44 @@
             "comment": "A binary object that is attached or otherwise appended to this referenced document."
         },
         {
-            "uri": "unece:uRIId",
+            "uri": "unece:authenticatedOriginalIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this referenced document is an authenticated original."
+        },
+        {
+            "uri": "unece:categoryCode",
             "type": "xsd:token",
-            "comment": "The Uniform Resource Identifier (URI) ..."
+            "comment": "The code specifying the category of this referenced document."
+        },
+        {
+            "uri": "unece:copyIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not the referenced document is a copy."
         },
         {
             "uri": "unece:documentStatusCode",
             "type": "unece:UNCL1373Code",
-            "comment": "The code specifying the status ..."
+            "comment": "The code specifying the status for this referenced document."
         },
         {
-            "uri": "unece:sectionName",
-            "type": "xsd:string",
-            "comment": "A section name, expressed as text, for this referenced document."
+            "uri": "unece:documentTypeCode",
+            "type": "unece:UNCL1001Code",
+            "comment": "The code specifying the type of referenced document."
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, concerning ..."
+            "uri": "unece:electronicPresentationIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this referenced document is presented in an electronic format."
         },
         {
-            "uri": "unece:referenceTypeCode",
-            "type": "unece:UNCL1153Code",
-            "comment": "The code specifying the reference type of this referenced document."
-        },
-        {
-            "uri": "unece:pageId",
+            "uri": "unece:globalId",
             "type": "xsd:token",
-            "comment": "The identifier of the page for this referenced document."
+            "comment": "A unique global identifier for this referenced document."
         },
         {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date and ..."
-        },
-        {
-            "uri": "unece:previousRevisionId",
+            "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "An identifier for a previous ..."
+            "comment": "A unique identifier for this referenced document."
         },
         {
             "uri": "unece:includedAmount",
@@ -105,9 +60,14 @@
             "comment": "A monetary value included in this referenced document."
         },
         {
-            "uri": "unece:referenceRelationshipTypeCode",
-            "type": "unece:UNCL1153Code",
-            "comment": "The code specifying the type of relationship between this referenced document and another artefact, such as a replacement of an original document."
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:issueDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The formatted date or date time for the issuance of this referenced document."
         },
         {
             "uri": "unece:issuerAssignedId",
@@ -115,39 +75,79 @@
             "comment": "The unique issuer assigned identifier for this referenced document."
         },
         {
-            "uri": "unece:authenticatedOriginalIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this referenced document is an authenticated original."
-        },
-        {
             "uri": "unece:languageId",
             "type": "xsd:token",
-            "comment": "A unique identifier for a ..."
+            "comment": "An identifier for a language used in this referenced document."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:lineId",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:categoryCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a category ..."
-        },
-        {
-            "uri": "unece:documentTypeCode",
-            "type": "unece:UNCL1001Code",
-            "comment": "A code specifying a type ..."
+            "comment": "The unique identifier of a line in this referenced document."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
+            "comment": "A name, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:pageId",
+            "type": "xsd:token",
+            "comment": "The identifier of the page for this referenced document."
+        },
+        {
+            "uri": "unece:previousRevisionId",
+            "type": "xsd:token",
+            "comment": "An identifier for a previous revision of this referenced document."
+        },
+        {
+            "uri": "unece:proprietaryType",
+            "type": "xsd:string",
+            "comment": "A proprietary type, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:receiptDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value for the formal receipt of this referenced document."
+        },
+        {
+            "uri": "unece:referenceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The reference date or date time for this referenced document."
+        },
+        {
+            "uri": "unece:referenceRelationshipTypeCode",
+            "type": "unece:UNCL1153Code",
+            "comment": "The code specifying the type of relationship between this referenced document and another artefact, such as a replacement of an original document."
+        },
+        {
+            "uri": "unece:referenceTypeCode",
+            "type": "unece:UNCL1153Code",
+            "comment": "The code specifying the reference type of this referenced document."
+        },
+        {
+            "uri": "unece:remarks",
+            "type": "xsd:string",
+            "comment": "A remark, expressed as text, regarding this referenced document."
         },
         {
             "uri": "unece:revisionId",
             "type": "xsd:token",
-            "comment": "A unique identifier for a ..."
+            "comment": "A unique identifier for a revision of this referenced document."
+        },
+        {
+            "uri": "unece:sectionName",
+            "type": "xsd:string",
+            "comment": "A section name, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:subordinateLineId",
+            "type": "xsd:token",
+            "comment": "The identifier of the subordinate line of this referenced document."
+        },
+        {
+            "uri": "unece:uRIId",
+            "type": "xsd:token",
+            "comment": "The unique Uniform Resource Identifier (URI) for this referenced document."
         }
     ],
     "objectProperties": [
@@ -155,296 +155,351 @@
             "uri": "unece:acceptablePeriod",
             "type": "unece:Period",
             "comment": "The specified period within which this referenced document may be accepted."
+        },
+        {
+            "uri": "unece:attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A specified binary file attached to this referenced document."
+        },
+        {
+            "uri": "unece:contractualClause",
+            "type": "unece:Clause",
+            "comment": "A contractual clause of this referenced document."
+        },
+        {
+            "uri": "unece:effectivePeriod",
+            "type": "unece:Period",
+            "comment": "The specified period within which this referenced document is effective."
+        },
+        {
+            "uri": "unece:includedNote",
+            "type": "unece:Note",
+            "comment": "A note included in this referenced document."
+        },
+        {
+            "uri": "unece:issueLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "The logistics related location where this referenced document has been issued."
+        },
+        {
+            "uri": "unece:issuerParty",
+            "type": "unece:TradeParty",
+            "comment": "The trade related party that issues this referenced document."
+        },
+        {
+            "uri": "unece:lodgementLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "The logistics related location where this referenced document has been lodged."
+        },
+        {
+            "uri": "unece:recipientParty",
+            "type": "unece:TradeParty",
+            "comment": "A trade related party that receives this referenced document."
+        },
+        {
+            "uri": "unece:senderParty",
+            "type": "unece:TradeParty",
+            "comment": "The trade related party that sends this referenced document."
+        },
+        {
+            "uri": "unece:signatoryAuthentication",
+            "type": "unece:Authentication",
+            "comment": "A signatory authentication for this referenced document."
+        },
+        {
+            "uri": "unece:specifiedStatus",
+            "type": "unece:DocumentStatus",
+            "comment": "Status information specified for this referenced document."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:proFormaInvoiceDocument",
-            "comment": "The pro-forma invoice document referenced by this header trade settlement."
-        },
-        {
-            "uri": "unece:factoringListDocument",
-            "comment": "A factoring list document referenced in this header trade settlement."
-        },
-        {
-            "uri": "unece:priceListDocument",
-            "comment": "The price list document referenced ..."
-        },
-        {
-            "uri": "unece:receivingAdviceDocument",
-            "comment": "A receiving advice document, at ..."
-        },
-        {
-            "uri": "unece:blanketOrderDocument",
-            "comment": "The blanket order document referenced ..."
-        },
-        {
-            "uri": "unece:liftingInstructionsRelatedDocument",
-            "comment": "A referenced lifting instructions document related to this logistics transport movement."
-        },
-        {
-            "uri": "unece:despatchAdviceDocument",
-            "comment": "The despatch advice document, at ..."
-        },
-        {
-            "uri": "unece:previousOrderResponseDocument",
-            "comment": "The previous order response document referenced in this header trade agreement."
-        },
-        {
-            "uri": "unece:importLicenceDocument",
-            "comment": "The import licence document referenced ..."
-        },
-        {
-            "uri": "unece:marketplaceOrderDocument",
-            "comment": "The marketplace generated order document ..."
-        },
-        {
-            "uri": "unece:marketingCampaignReferenceDocument",
-            "comment": "A referenced marketing campaign document for this trade product."
-        },
-        {
-            "uri": "unece:exportLicenceDocument",
-            "comment": "The export licence document referenced ..."
-        },
-        {
-            "uri": "unece:letterOfCreditDocument",
-            "comment": "The letter of credit document ..."
-        },
-        {
-            "uri": "unece:packingListDocument",
-            "comment": "The packing list document, at ..."
-        },
-        {
-            "uri": "unece:manifestAssociatedDocument",
-            "comment": "A referenced manifest document associated to this supply chain consignment."
-        },
-        {
-            "uri": "unece:buyerSuppliedPartsReferenceDocument",
-            "comment": "A buyer supplier parts document referenced for this trade product."
-        },
-        {
-            "uri": "unece:deliveryNoteDocument",
-            "comment": "A delivery note document referenced ..."
-        },
-        {
-            "uri": "unece:orderResponseDocument",
-            "comment": "The order response document referenced in this header trade agreement."
+            "uri": "unece:additionalDocument",
+            "comment": "An additional document referenced in ..."
         },
         {
             "uri": "unece:additionalReferenceDocument",
             "comment": "An additional referenced document for this trade product, such as a manual or a certificate."
         },
         {
-            "uri": "unece:immediatePreviousPriceListDocument",
-            "comment": "The immediate previous price list document referenced in this line trade agreement."
-        },
-        {
-            "uri": "unece:goodsReceiptNoteDocument",
-            "comment": "A goods receipt note document, ..."
-        },
-        {
-            "uri": "unece:despatchNoteAssociatedDocument",
-            "comment": "A despatch note associated with this logistics package."
-        },
-        {
-            "uri": "unece:referenceDocument",
-            "comment": "A document referenced by this ..."
-        },
-        {
-            "uri": "unece:salesReportDocument",
-            "comment": "The sales report document referenced ..."
-        },
-        {
-            "uri": "unece:ultimateCustomerOrderDocument",
-            "comment": "An ultimate customer order document ..."
-        },
-        {
-            "uri": "unece:quotationProposalDocument",
-            "comment": "The quotation proposal document referenced ..."
-        },
-        {
-            "uri": "unece:invoiceAssociatedDocument",
-            "comment": "An invoice document associated to this supply chain trade line item."
-        },
-        {
-            "uri": "unece:inspectionReferenceDocument",
-            "comment": "A referenced inspection document for this trade product."
-        },
-        {
-            "uri": "unece:purchaseConditionsDocument",
-            "comment": "A purchase conditions document referenced in this header trade agreement."
-        },
-        {
-            "uri": "unece:catalogueSubscriptionDocument",
-            "comment": "A catalogue subscription document referenced in this header trade agreement."
-        },
-        {
-            "uri": "unece:salesConditionsDocument",
-            "comment": "A sales conditions document referenced ..."
-        },
-        {
-            "uri": "unece:iSSCDocument",
-            "comment": "The referenced ISSC (International Ship Security Certificate) document for this logistics transport means."
-        },
-        {
-            "uri": "unece:previousOrderChangeDocument",
-            "comment": "The previous order change document referenced in this header trade agreement."
-        },
-        {
-            "uri": "unece:consumptionReportDocument",
-            "comment": "The consumption report document, at ..."
-        },
-        {
-            "uri": "unece:transportContractDocument",
-            "comment": "A transport contract document for ..."
-        },
-        {
-            "uri": "unece:promotionalDealDocument",
-            "comment": "The promotional deal document referenced ..."
-        },
-        {
-            "uri": "unece:transportContractRelatedDocument",
-            "comment": "A transport contract document related to this logistics transport movement."
-        },
-        {
-            "uri": "unece:engineeringChangeDocument",
-            "comment": "The engineering change document referenced ..."
-        },
-        {
-            "uri": "unece:invoiceReferenceDocument",
-            "comment": "The invoice document referenced for this financial adjustment."
-        },
-        {
-            "uri": "unece:supplyInstructionDocument",
-            "comment": "A supply instruction document referenced ..."
-        },
-        {
-            "uri": "unece:invoiceDocument",
-            "comment": "An invoice document referenced by ..."
-        },
-        {
-            "uri": "unece:shipmentScheduleDocument",
-            "comment": "The shipment schedule document referenced, ..."
-        },
-        {
-            "uri": "unece:additionalDocument",
-            "comment": "An additional document referenced in ..."
-        },
-        {
-            "uri": "unece:sellerOrderDocument",
-            "comment": "The seller generated order document ..."
-        },
-        {
-            "uri": "unece:previousAdministrativeDocument",
-            "comment": "A previous administrative referenced document ..."
-        },
-        {
-            "uri": "unece:iSPSRelatedDocument",
-            "comment": "The International Ship and Port facility Security code (ISPS) document related to this transport movement."
-        },
-        {
-            "uri": "unece:previousDocument",
-            "comment": "A previous document referenced for ..."
-        },
-        {
-            "uri": "unece:passengerListRelatedDocument",
-            "comment": "The passenger list document related to this logistics transport movement."
-        },
-        {
-            "uri": "unece:factoringAgreementDocument",
-            "comment": "A factoring agreement document referenced in this header trade settlement."
-        },
-        {
-            "uri": "unece:quotationRequestResponseDocument",
-            "comment": "The quotation request response document ..."
-        },
-        {
-            "uri": "unece:referencedDocument",
-            "comment": "A document referenced by this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:quotationRequestDocument",
-            "comment": "The quotation request document referenced ..."
-        },
-        {
-            "uri": "unece:travelVisaDocument",
-            "comment": "A referenced travel visa document for this transport person."
-        },
-        {
-            "uri": "unece:previousOrderDocument",
-            "comment": "The previous order document referenced ..."
-        },
-        {
-            "uri": "unece:customsRequiredInvoiceDocument",
-            "comment": "A referenced invoice document required by customs for this supply chain consignment."
-        },
-        {
-            "uri": "unece:catalogueDocument",
-            "comment": "A catalogue document referenced by ..."
-        },
-        {
-            "uri": "unece:contractDocument",
-            "comment": "A contract document referenced in ..."
-        },
-        {
-            "uri": "unece:requisitionDocument",
-            "comment": "A requisition document referenced in ..."
-        },
-        {
-            "uri": "unece:quotationDocument",
-            "comment": "The quotation document referenced in ..."
-        },
-        {
-            "uri": "unece:demandForecastDocument",
-            "comment": "A demand forecast document referenced ..."
-        },
-        {
-            "uri": "unece:mSDSReferenceDocument",
-            "comment": "A Material Safety Data Sheet (MSDS) document referenced for this product."
-        },
-        {
-            "uri": "unece:requisitionerDocument",
-            "comment": "A requisitioner document referenced in ..."
-        },
-        {
-            "uri": "unece:dispositionDocument",
-            "comment": "A disposition document referenced in this supply chain inventory."
-        },
-        {
             "uri": "unece:associatedDocument",
             "comment": "A document associated with this ..."
         },
         {
-            "uri": "unece:originalOrderDocument",
-            "comment": "The original order document referenced ..."
-        },
-        {
-            "uri": "unece:catalogueRequestDocument",
-            "comment": "A catalogue request document referenced in this header trade agreement."
+            "uri": "unece:blanketOrderDocument",
+            "comment": "The blanket order document referenced ..."
         },
         {
             "uri": "unece:buyerOrderDocument",
             "comment": "A buyer generated order document ..."
         },
         {
-            "uri": "unece:manifestRelatedDocument",
-            "comment": "A referenced manifest document related to this transport movement."
+            "uri": "unece:buyerSuppliedPartsReferenceDocument",
+            "comment": "A buyer supplier parts document referenced for this trade product."
         },
         {
-            "uri": "unece:crewListRelatedDocument",
-            "comment": "The crew list document related to this logistics transport movement."
+            "uri": "unece:catalogueDocument",
+            "comment": "A catalogue document referenced by ..."
+        },
+        {
+            "uri": "unece:catalogueRequestDocument",
+            "comment": "A catalogue request document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:catalogueSubscriptionDocument",
+            "comment": "A catalogue subscription document referenced in this header trade agreement."
         },
         {
             "uri": "unece:certificationEvidenceReferenceDocument",
             "comment": "A referenced certification evidence document for this trade product."
         },
         {
+            "uri": "unece:consumptionReportDocument",
+            "comment": "The consumption report document, at ..."
+        },
+        {
+            "uri": "unece:contractDocument",
+            "comment": "A contract document referenced in ..."
+        },
+        {
+            "uri": "unece:crewListRelatedDocument",
+            "comment": "The crew list document related to this logistics transport movement."
+        },
+        {
+            "uri": "unece:customsRequiredInvoiceDocument",
+            "comment": "A referenced invoice document required by customs for this supply chain consignment."
+        },
+        {
+            "uri": "unece:deliveryNoteDocument",
+            "comment": "A delivery note document referenced ..."
+        },
+        {
+            "uri": "unece:demandForecastDocument",
+            "comment": "A demand forecast document referenced ..."
+        },
+        {
+            "uri": "unece:despatchAdviceDocument",
+            "comment": "The despatch advice document, at ..."
+        },
+        {
+            "uri": "unece:despatchNoteAssociatedDocument",
+            "comment": "A despatch note associated with this logistics package."
+        },
+        {
+            "uri": "unece:dispositionDocument",
+            "comment": "A disposition document referenced in this supply chain inventory."
+        },
+        {
+            "uri": "unece:engineeringChangeDocument",
+            "comment": "The engineering change document referenced ..."
+        },
+        {
+            "uri": "unece:exportLicenceDocument",
+            "comment": "The export licence document referenced ..."
+        },
+        {
+            "uri": "unece:factoringAgreementDocument",
+            "comment": "A factoring agreement document referenced in this header trade settlement."
+        },
+        {
+            "uri": "unece:factoringListDocument",
+            "comment": "A factoring list document referenced in this header trade settlement."
+        },
+        {
+            "uri": "unece:goodsReceiptNoteDocument",
+            "comment": "A goods receipt note document, ..."
+        },
+        {
+            "uri": "unece:iSPSRelatedDocument",
+            "comment": "The International Ship and Port facility Security code (ISPS) document related to this transport movement."
+        },
+        {
+            "uri": "unece:iSSCDocument",
+            "comment": "The referenced ISSC (International Ship Security Certificate) document for this logistics transport means."
+        },
+        {
+            "uri": "unece:immediatePreviousPriceListDocument",
+            "comment": "The immediate previous price list document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:importLicenceDocument",
+            "comment": "The import licence document referenced ..."
+        },
+        {
+            "uri": "unece:inspectionReferenceDocument",
+            "comment": "A referenced inspection document for this trade product."
+        },
+        {
+            "uri": "unece:invoiceAssociatedDocument",
+            "comment": "An invoice document associated to this supply chain trade line item."
+        },
+        {
+            "uri": "unece:invoiceDocument",
+            "comment": "An invoice document referenced by ..."
+        },
+        {
+            "uri": "unece:invoiceReferenceDocument",
+            "comment": "The invoice document referenced for this financial adjustment."
+        },
+        {
+            "uri": "unece:letterOfCreditDocument",
+            "comment": "The letter of credit document ..."
+        },
+        {
+            "uri": "unece:liftingInstructionsRelatedDocument",
+            "comment": "A referenced lifting instructions document related to this logistics transport movement."
+        },
+        {
+            "uri": "unece:mSDSReferenceDocument",
+            "comment": "A Material Safety Data Sheet (MSDS) document referenced for this product."
+        },
+        {
+            "uri": "unece:manifestAssociatedDocument",
+            "comment": "A referenced manifest document associated to this supply chain consignment."
+        },
+        {
+            "uri": "unece:manifestRelatedDocument",
+            "comment": "A referenced manifest document related to this transport movement."
+        },
+        {
+            "uri": "unece:marketingCampaignReferenceDocument",
+            "comment": "A referenced marketing campaign document for this trade product."
+        },
+        {
+            "uri": "unece:marketplaceOrderDocument",
+            "comment": "The marketplace generated order document ..."
+        },
+        {
+            "uri": "unece:orderResponseDocument",
+            "comment": "The order response document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:originalOrderDocument",
+            "comment": "The original order document referenced ..."
+        },
+        {
+            "uri": "unece:packingListDocument",
+            "comment": "The packing list document, at ..."
+        },
+        {
+            "uri": "unece:passengerListRelatedDocument",
+            "comment": "The passenger list document related to this logistics transport movement."
+        },
+        {
+            "uri": "unece:previousAdministrativeDocument",
+            "comment": "A previous administrative referenced document ..."
+        },
+        {
+            "uri": "unece:previousDocument",
+            "comment": "A previous document referenced for ..."
+        },
+        {
+            "uri": "unece:previousOrderChangeDocument",
+            "comment": "The previous order change document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:previousOrderDocument",
+            "comment": "The previous order document referenced ..."
+        },
+        {
+            "uri": "unece:previousOrderResponseDocument",
+            "comment": "The previous order response document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:priceListDocument",
+            "comment": "The price list document referenced ..."
+        },
+        {
+            "uri": "unece:proFormaInvoiceDocument",
+            "comment": "The pro-forma invoice document referenced by this header trade settlement."
+        },
+        {
+            "uri": "unece:promotionalDealDocument",
+            "comment": "The promotional deal document referenced ..."
+        },
+        {
+            "uri": "unece:purchaseConditionsDocument",
+            "comment": "A purchase conditions document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:quotationDocument",
+            "comment": "The quotation document referenced in ..."
+        },
+        {
+            "uri": "unece:quotationProposalDocument",
+            "comment": "The quotation proposal document referenced ..."
+        },
+        {
             "uri": "unece:quotationProposalResponseDocument",
             "comment": "The quotation proposal response document ..."
         },
         {
+            "uri": "unece:quotationRequestDocument",
+            "comment": "The quotation request document referenced ..."
+        },
+        {
+            "uri": "unece:quotationRequestResponseDocument",
+            "comment": "The quotation request response document ..."
+        },
+        {
+            "uri": "unece:receivingAdviceDocument",
+            "comment": "A receiving advice document, at ..."
+        },
+        {
+            "uri": "unece:referenceDocument",
+            "comment": "A document referenced by this ..."
+        },
+        {
+            "uri": "unece:referencedDocument",
+            "comment": "A document referenced by this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:requisitionDocument",
+            "comment": "A requisition document referenced in ..."
+        },
+        {
+            "uri": "unece:requisitionerDocument",
+            "comment": "A requisitioner document referenced in ..."
+        },
+        {
+            "uri": "unece:salesConditionsDocument",
+            "comment": "A sales conditions document referenced ..."
+        },
+        {
+            "uri": "unece:salesReportDocument",
+            "comment": "The sales report document referenced ..."
+        },
+        {
+            "uri": "unece:sellerOrderDocument",
+            "comment": "The seller generated order document ..."
+        },
+        {
+            "uri": "unece:shipmentScheduleDocument",
+            "comment": "The shipment schedule document referenced, ..."
+        },
+        {
+            "uri": "unece:supplyInstructionDocument",
+            "comment": "A supply instruction document referenced ..."
+        },
+        {
+            "uri": "unece:transportContractDocument",
+            "comment": "A transport contract document for ..."
+        },
+        {
+            "uri": "unece:transportContractRelatedDocument",
+            "comment": "A transport contract document related to this logistics transport movement."
+        },
+        {
             "uri": "unece:travelIdentityDocument",
             "comment": "A referenced travel identity document for this transport person."
+        },
+        {
+            "uri": "unece:travelVisaDocument",
+            "comment": "A referenced travel visa document for this transport person."
+        },
+        {
+            "uri": "unece:ultimateCustomerOrderDocument",
+            "comment": "An ultimate customer order document ..."
         }
     ]
 }

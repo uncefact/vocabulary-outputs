@@ -5,14 +5,19 @@
     "comment": "An individual human being in a position to give assistance or information.",
     "datatypeProperties": [
         {
-            "uri": "unece:role",
+            "uri": "unece:birthDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time or other date time value which specifies the birth date for this contact person."
+        },
+        {
+            "uri": "unece:familyName",
             "type": "xsd:string",
-            "comment": "A role, expressed as text, ..."
+            "comment": "The name, expressed as text, that this contact person shares with members of his/her family."
         },
         {
             "uri": "unece:givenName",
             "type": "xsd:string",
-            "comment": "A given name, expressed as ..."
+            "comment": "The name, expressed as text, given to this contact person, usually by parents at birth."
         },
         {
             "uri": "unece:middleName",
@@ -20,31 +25,51 @@
             "comment": "The middle name, expressed as text, of this contact person, usually given by parents at birth."
         },
         {
-            "uri": "unece:familyName",
-            "type": "xsd:string",
-            "comment": "A family name, expressed as ..."
+            "uri": "unece:residenceCountryId",
+            "type": "xsd:token",
+            "comment": "The identifier of the residence country of this contact person."
         },
         {
-            "uri": "unece:birthDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The birth date of this ..."
+            "uri": "unece:role",
+            "type": "xsd:string",
+            "comment": "A role, expressed as text, for this contact person."
         },
         {
             "uri": "unece:titleCode",
             "type": "xsd:token",
             "comment": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
-        },
-        {
-            "uri": "unece:residenceCountryId",
-            "type": "xsd:token",
-            "comment": "The identifier of the residence country of this contact person."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:emailURICommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "The email Uniform Resource Identifier (URI) communication for this contact person."
+        },
+        {
+            "uri": "unece:faxCommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "Facsimile communication information for this contact person."
+        },
+        {
             "uri": "unece:specifiedAddress",
             "type": "unece:BirthAddress",
             "comment": "The birth address specified for this contact person."
+        },
+        {
+            "uri": "unece:specifiedIdentity",
+            "type": "unece:ProprietaryIdentity",
+            "comment": "An employer identity specified for this contact person."
+        },
+        {
+            "uri": "unece:specifiedRegistration",
+            "type": "unece:GovernmentRegistration",
+            "comment": "A tax registration specified for this contact person."
+        },
+        {
+            "uri": "unece:telephoneCommunication",
+            "type": "unece:UniversalCommunication",
+            "comment": "Telephone communication information for this contact person."
         }
     ]
 }

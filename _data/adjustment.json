@@ -5,24 +5,24 @@
     "comment": "A correction or modification to reflect actual conditions.",
     "datatypeProperties": [
         {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, ..."
+            "uri": "unece:actualAmount",
+            "type": "xsd:decimal",
+            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
         },
         {
             "uri": "unece:actualDateTime",
             "type": "xsd:dateTime",
-            "comment": "An actual date, time, date ..."
-        },
-        {
-            "uri": "unece:actualAmount",
-            "type": "xsd:decimal",
-            "comment": "An actual monetary value added ..."
+            "comment": "The actual date, time, date time, or other date time value of this delivery adjustment."
         },
         {
             "uri": "unece:actualQuantity",
             "type": "xsd:decimal",
-            "comment": "The actual quantity added or ..."
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
+        },
+        {
+            "uri": "unece:adjustmentReasonCode",
+            "type": "unece:UNCL4465Code",
+            "comment": "The code specifying a reason for this delivery adjustment."
         },
         {
             "uri": "unece:directionCode",
@@ -30,14 +30,14 @@
             "comment": "The code specifying whether the financial adjustment must be subtracted or added."
         },
         {
-            "uri": "unece:reasonCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a reason ..."
+            "uri": "unece:reason",
+            "type": "xsd:string",
+            "comment": "A reason, expressed as text, for this financial adjustment."
         },
         {
-            "uri": "unece:adjustmentReasonCode",
-            "type": "unece:UNCL4465Code",
-            "comment": "The code specifying a reason for this delivery adjustment."
+            "uri": "unece:reasonCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a reason for this financial adjustment."
         }
     ],
     "objectProperties": [
@@ -54,12 +54,12 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedAdjustment",
-            "comment": "A delivery adjustment, at line ..."
-        },
-        {
             "uri": "unece:grandTotalSpecifiedAdjustment",
             "comment": "The financial adjustment of the grand total specified for this trade settlement header monetary summation."
+        },
+        {
+            "uri": "unece:specifiedAdjustment",
+            "comment": "A delivery adjustment, at line ..."
         }
     ]
 }

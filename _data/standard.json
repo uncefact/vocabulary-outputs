@@ -1,17 +1,44 @@
 
 {
-    "label": "standard",
-    "uri": "unece:standard",
-    "comment": "The standard, expressed as text, for this trade product certification.",
-    "rangeIncludes": [
+    "label": "Standard",
+    "uri": "unece:Standard",
+    "comment": "A norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
+    "datatypeProperties": [
         {
-            "uri": "xsd:string"
+            "uri": "unece:agencyId",
+            "type": "xsd:token",
+            "comment": "The identifier of the agency for this referenced standard."
+        },
+        {
+            "uri": "unece:elementVersionId",
+            "type": "xsd:token",
+            "comment": "The identifier of the version of a specific element within the referenced standard, such as the version of a data element."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The identifier of this referenced standard."
+        },
+        {
+            "uri": "unece:partId",
+            "type": "xsd:token",
+            "comment": "The identifier of a part of this referenced standard, such as a section or topic."
+        },
+        {
+            "uri": "unece:uRIId",
+            "type": "xsd:token",
+            "comment": "The Uniform Resource Identifier (URI) for this referenced standard."
+        },
+        {
+            "uri": "unece:versionId",
+            "type": "xsd:token",
+            "comment": "The identifier of the version of this referenced standard."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:Certification",
-            "comment": "unece:Certification"
+            "uri": "unece:applicableStandard",
+            "comment": "The referenced standard that is ..."
         }
     ]
 }

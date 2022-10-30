@@ -5,14 +5,19 @@
     "comment": "A reply, answer, or additional message that is usually in response to a question or query.",
     "datatypeProperties": [
         {
-            "uri": "unece:specificationResponseTypeCode",
-            "type": "unece:UNCL4343Code",
-            "comment": "The code specifying the type of this specification response."
+            "uri": "unece:content",
+            "type": "xsd:string",
+            "comment": "The content, expressed as text, of this specification response."
+        },
+        {
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:token",
+            "comment": "The code specifying the contractual language for this specification response."
         },
         {
             "uri": "unece:id",
             "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "comment": "The unique identifier for this specification response."
         },
         {
             "uri": "unece:queryId",
@@ -20,14 +25,9 @@
             "comment": "The unique identifier for the query to which this response refers."
         },
         {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "A content, expressed as text, ..."
-        },
-        {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual ..."
+            "uri": "unece:specificationResponseTypeCode",
+            "type": "unece:UNCL4343Code",
+            "comment": "The code specifying the type of this specification response."
         }
     ],
     "referencedBy": [

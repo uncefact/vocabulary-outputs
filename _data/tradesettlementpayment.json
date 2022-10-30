@@ -5,9 +5,9 @@
     "comment": "The specific discharge obligations in respect of funds or securities transferred between two or more parties as part of a trade settlement.",
     "datatypeProperties": [
         {
-            "uri": "unece:requestedExecutionDateTime",
+            "uri": "unece:closingBookDueDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the requested execution of this trade settlement payment."
+            "comment": "A date, time, date time or other date time value of a closing book due date for this trade settlement payment."
         },
         {
             "uri": "unece:endToEndId",
@@ -20,9 +20,16 @@
             "comment": "The unique identifier of the instruction for this trade settlement payment."
         },
         {
-            "uri": "unece:closingBookDueDateTime",
+            "uri": "unece:requestedExecutionDateTime",
             "type": "xsd:dateTime",
-            "comment": "A date, time, date time ..."
+            "comment": "The date, time, date time or other date time value of the requested execution of this trade settlement payment."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:specifiedTradeSettlement",
+            "type": "unece:LineTradeSettlement",
+            "comment": "A trade settlement payment specified for this trade settlement payment."
         }
     ]
 }

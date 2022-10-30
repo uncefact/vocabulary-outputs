@@ -5,42 +5,67 @@
     "comment": "A logistics related physical location or place.",
     "datatypeProperties": [
         {
-            "uri": "unece:countryName",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this ..."
-        },
-        {
             "uri": "unece:countryId",
             "type": "xsd:token",
-            "comment": "A unique country identifier for ..."
+            "comment": "The unique identifier of a country for this logistics location."
         },
         {
-            "uri": "unece:name",
+            "uri": "unece:countryName",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
-        },
-        {
-            "uri": "unece:locationFunctionTypeCode",
-            "type": "unece:UNCL3227Code",
-            "comment": "A code specifying the type ..."
+            "comment": "The country name, expressed as text, of this logistics location."
         },
         {
             "uri": "unece:countrySubDivisionId",
             "type": "xsd:token",
-            "comment": "A unique identifier of the ..."
+            "comment": "The identifier of the country sub-division for this logistics related location."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this logistics related location."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A unique identifier for this logistics related location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
+        },
+        {
+            "uri": "unece:locationFunctionTypeCode",
+            "type": "unece:UNCL3227Code",
+            "comment": "A code specifying the type of this logistics related location."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "A name, expressed as text, of this logistics related location."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:associatedGeographicalFeature",
+            "type": "unece:GeographicalFeature",
+            "comment": "A geographical feature associated with this logistics location."
+        },
+        {
+            "uri": "unece:inspectionEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A supply chain inspection event at this logistics location."
+        },
+        {
+            "uri": "unece:physicalGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "Geographical coordinate information for this logistics related location."
+        },
+        {
+            "uri": "unece:postalAddress",
+            "type": "unece:TradeAddress",
+            "comment": "The postal trade address information for this logistics related location."
+        },
+        {
+            "uri": "unece:previousAssociatedGeographicalFeature",
+            "type": "unece:GeographicalFeature",
+            "comment": "A geographical feature previously associated with this logistics location."
+        },
         {
             "uri": "unece:servicingSpecifiedParty",
             "type": "unece:LocationParty",
@@ -50,76 +75,17 @@
             "uri": "unece:stayPeriod",
             "type": "unece:Period",
             "comment": "A period of stay at this logistics location."
+        },
+        {
+            "uri": "unece:subordinateLocation",
+            "type": "unece:SubordinateLocation",
+            "comment": "A location subordinate to this logistics related location."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:issueLocation",
-            "comment": "The issue location for this ..."
-        },
-        {
-            "uri": "unece:finalDestinationLocation",
-            "comment": "The final destination location for this supply chain consignment."
-        },
-        {
-            "uri": "unece:conveyanceFacilityRelatedLocation",
-            "comment": "A location of a conveyance facility related to this transport event."
-        },
-        {
-            "uri": "unece:paymentPlaceLocation",
-            "comment": "The location of the place of payment of this logistics service charge."
-        },
-        {
-            "uri": "unece:transitReleaseCustomsOfficeSpecifiedLocation",
-            "comment": "A location of a specified customs office at which the goods which are subject to this cross-border regulatory procedure are released from a customs transit regime."
-        },
-        {
-            "uri": "unece:transitLocation",
-            "comment": "A location of transit for this supply chain consignment."
-        },
-        {
-            "uri": "unece:occurrenceLocation",
-            "comment": "A logistics location where this ..."
-        },
-        {
-            "uri": "unece:transitCustomsOfficeSpecifiedLocation",
-            "comment": "A location of a specified customs office which is responsible for transit formalities en route for the goods which are subject to this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:paymentOfficeLocation",
-            "comment": "The location of an office at which a payment relevant to this cross-border regulatory procedure is made."
-        },
-        {
-            "uri": "unece:specifiedLocation",
-            "comment": "A location specified for this ..."
-        },
-        {
-            "uri": "unece:unloadingBaseportLocation",
-            "comment": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract."
-        },
-        {
-            "uri": "unece:carrierAcceptanceLocation",
-            "comment": "The location where this referenced ..."
-        },
-        {
-            "uri": "unece:consigneeReceiptLocation",
-            "comment": "The location at which this supply chain consignment will be or has been received by the consignee."
-        },
-        {
-            "uri": "unece:originLocation",
-            "comment": "A location of origin for ..."
-        },
-        {
-            "uri": "unece:disembarkationLocation",
-            "comment": "A disembarkation location for this transport person."
-        },
-        {
-            "uri": "unece:entryCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office at which the goods subject to this cross-border regulatory procedure, enter the customs territory of entry."
-        },
-        {
-            "uri": "unece:importCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office which is responsible for import formalities for the goods which are subject to this cross-border regulatory procedure."
+            "uri": "unece:applicableLocation",
+            "comment": "A logistics location or place applicable to this header trade agreement."
         },
         {
             "uri": "unece:appliedFromLocation",
@@ -130,68 +96,132 @@
             "comment": "The end location at which this logistics service charge is no longer to be applied."
         },
         {
-            "uri": "unece:declarationLodgementLocation",
-            "comment": "The location at which a declaration has been lodged for this cross-border regulatory procedure."
+            "uri": "unece:associatedLocation",
+            "comment": "A logistics location associated with ..."
         },
         {
             "uri": "unece:cargoFacilityRelatedLocation",
             "comment": "The location of a cargo facility related to this transport event."
         },
         {
-            "uri": "unece:submissionLocation",
-            "comment": "The submission location for this exchanged declaration."
+            "uri": "unece:carrierAcceptanceLocation",
+            "comment": "The location where this referenced ..."
         },
         {
-            "uri": "unece:declaredForCustomsLocation",
-            "comment": "The location of this supply ..."
-        },
-        {
-            "uri": "unece:exportCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office which is responsible for export formalities for the goods which are subject to this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:associatedLocation",
-            "comment": "A logistics location associated with ..."
-        },
-        {
-            "uri": "unece:embarkationLocation",
-            "comment": "An embarkation location for this transport person."
-        },
-        {
-            "uri": "unece:unloadingLocation",
-            "comment": "The logistics location where the supply chain consignment is unloaded."
-        },
-        {
-            "uri": "unece:exitCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office at which the goods which are subject to this cross-border regulatory procedure leave the customs territory of destination."
-        },
-        {
-            "uri": "unece:applicableLocation",
-            "comment": "A logistics location or place applicable to this header trade agreement."
-        },
-        {
-            "uri": "unece:loadingLocation",
-            "comment": "The logistics location where the supply chain consignment is loaded."
-        },
-        {
-            "uri": "unece:transshipmentLocation",
-            "comment": "A transshipment location for this supply chain consignment."
+            "uri": "unece:consigneeReceiptLocation",
+            "comment": "The location at which this supply chain consignment will be or has been received by the consignee."
         },
         {
             "uri": "unece:consignmentDestinationSpecifiedLocation",
             "comment": "A consignment destination location specified for this cross-border regulatory procedure."
         },
         {
+            "uri": "unece:conveyanceFacilityRelatedLocation",
+            "comment": "A location of a conveyance facility related to this transport event."
+        },
+        {
+            "uri": "unece:declarationLodgementLocation",
+            "comment": "The location at which a declaration has been lodged for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:declaredForCustomsLocation",
+            "comment": "The location of this supply ..."
+        },
+        {
+            "uri": "unece:disembarkationLocation",
+            "comment": "A disembarkation location for this transport person."
+        },
+        {
+            "uri": "unece:embarkationLocation",
+            "comment": "An embarkation location for this transport person."
+        },
+        {
+            "uri": "unece:entryCustomsOfficeSpecifiedLocation",
+            "comment": "The location of the specified customs office at which the goods subject to this cross-border regulatory procedure, enter the customs territory of entry."
+        },
+        {
+            "uri": "unece:exitCustomsOfficeSpecifiedLocation",
+            "comment": "The location of the specified customs office at which the goods which are subject to this cross-border regulatory procedure leave the customs territory of destination."
+        },
+        {
+            "uri": "unece:exportCustomsOfficeSpecifiedLocation",
+            "comment": "The location of the specified customs office which is responsible for export formalities for the goods which are subject to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:finalDestinationLocation",
+            "comment": "The final destination location for this supply chain consignment."
+        },
+        {
+            "uri": "unece:importCustomsOfficeSpecifiedLocation",
+            "comment": "The location of the specified customs office which is responsible for import formalities for the goods which are subject to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:issueLocation",
+            "comment": "The issue location for this ..."
+        },
+        {
+            "uri": "unece:loadingBaseportLocation",
+            "comment": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract."
+        },
+        {
+            "uri": "unece:loadingLocation",
+            "comment": "The logistics location where the supply chain consignment is loaded."
+        },
+        {
             "uri": "unece:lodgementLocation",
             "comment": "The location where this exchanged ..."
+        },
+        {
+            "uri": "unece:occurrenceLocation",
+            "comment": "A logistics location where this ..."
+        },
+        {
+            "uri": "unece:originLocation",
+            "comment": "A location of origin for ..."
+        },
+        {
+            "uri": "unece:paymentOfficeLocation",
+            "comment": "The location of an office at which a payment relevant to this cross-border regulatory procedure is made."
+        },
+        {
+            "uri": "unece:paymentPlaceLocation",
+            "comment": "The location of the place of payment of this logistics service charge."
         },
         {
             "uri": "unece:pricingBaseApplicableLocation",
             "comment": "The logistics location applicable to the pricing base for this header trade agreement."
         },
         {
-            "uri": "unece:loadingBaseportLocation",
-            "comment": "The baseport location at which this supply chain consignment is to be loaded on a means of transport according to the transport contract."
+            "uri": "unece:specifiedLocation",
+            "comment": "A location specified for this ..."
+        },
+        {
+            "uri": "unece:submissionLocation",
+            "comment": "The submission location for this exchanged declaration."
+        },
+        {
+            "uri": "unece:transitCustomsOfficeSpecifiedLocation",
+            "comment": "A location of a specified customs office which is responsible for transit formalities en route for the goods which are subject to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:transitLocation",
+            "comment": "A location of transit for this supply chain consignment."
+        },
+        {
+            "uri": "unece:transitReleaseCustomsOfficeSpecifiedLocation",
+            "comment": "A location of a specified customs office at which the goods which are subject to this cross-border regulatory procedure are released from a customs transit regime."
+        },
+        {
+            "uri": "unece:transshipmentLocation",
+            "comment": "A transshipment location for this supply chain consignment."
+        },
+        {
+            "uri": "unece:unloadingBaseportLocation",
+            "comment": "The baseport location at which this supply chain consignment is to be unloaded from a means of transport according to the transport contract."
+        },
+        {
+            "uri": "unece:unloadingLocation",
+            "comment": "The logistics location where the supply chain consignment is unloaded."
         }
     ]
 }

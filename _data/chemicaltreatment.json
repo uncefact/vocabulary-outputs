@@ -5,9 +5,9 @@
     "comment": "A process of subjecting an object to the action of a chemical, physical, or biological agent.",
     "datatypeProperties": [
         {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, ..."
+            "uri": "unece:chemicalConcentrationMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of the chemical concentration of this applied chemical treatment."
         },
         {
             "uri": "unece:methodName",
@@ -15,26 +15,21 @@
             "comment": "The name, expressed as text, of the method of this applied chemical treatment."
         },
         {
-            "uri": "unece:chemicalConcentrationMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the chemical concentration of this applied chemical treatment."
-        },
-        {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
+            "comment": "A name, expressed as text, of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date time of the occurrence of this applied chemical treatment."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:usedChemical",
-            "type": "unece:Chemical",
-            "comment": "A chemical used during this applied chemical treatment."
-        },
-        {
-            "uri": "unece:resultNote",
-            "type": "unece:Note",
-            "comment": "The note describing the results of this applied chemical treatment."
+            "uri": "unece:applicableTemperature",
+            "type": "unece:SpecifiedTemperature",
+            "comment": "The specified temperature applicable for this applied chemical treatment."
         },
         {
             "uri": "unece:appliedPeriod",
@@ -45,6 +40,16 @@
             "uri": "unece:resultAuthentication",
             "type": "unece:Authentication",
             "comment": "The authentication of the results of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:resultNote",
+            "type": "unece:Note",
+            "comment": "The note describing the results of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:usedChemical",
+            "type": "unece:Chemical",
+            "comment": "A chemical used during this applied chemical treatment."
         }
     ],
     "referencedBy": [

@@ -1,30 +1,85 @@
 
 {
-    "label": "characteristic",
-    "uri": "unece:characteristic",
-    "comment": [
-        "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type.",
-        "The characteristics, expressed as text, of a referenced piece of logistics transport equipment, such as size and type.",
-        "The textual description of the characteristics, i.e. size and type, of this piece of associated transport equipment.",
-        "The textual description of the characteristics, i.e. size and type, of this piece of attached transport equipment."
-    ],
-    "rangeIncludes": [
+    "label": "Characteristic",
+    "uri": "unece:Characteristic",
+    "comment": "A prominent attribute or aspect.",
+    "datatypeProperties": [
         {
-            "uri": "xsd:string"
+            "uri": "unece:contentTypeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying the content type of this product characteristic."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this product characteristic."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "A unique identifier for this product characteristic."
+        },
+        {
+            "uri": "unece:measurementMethodCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a measurement method for this product characteristic."
+        },
+        {
+            "uri": "unece:productCharacteristicValueCode",
+            "type": "unece:UNCL7111Code",
+            "comment": "The code specifying the value of this product characteristic."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:token",
+            "comment": "A code specifying a type of product characteristic."
+        },
+        {
+            "uri": "unece:value",
+            "type": "xsd:string",
+            "comment": "A value, expressed as text, for this product characteristic."
+        },
+        {
+            "uri": "unece:valueDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The value for this product characteristic expressed as a date, time, date time, or other date time value."
+        },
+        {
+            "uri": "unece:valueIndicator",
+            "type": "xsd:boolean",
+            "comment": "The value for this product characteristic expressed as an indicator."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "xsd:decimal",
+            "comment": "A measure of a value for this product characteristic."
         }
     ],
-    "domainIncludes": [
+    "objectProperties": [
         {
-            "uri": "unece:AssociatedTransportEquipment",
-            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+            "uri": "unece:applicableCondition",
+            "type": "unece:Condition",
+            "comment": "A condition applicable to this product characteristic."
         },
         {
-            "uri": "unece:AttachedTransportEquipment",
-            "comment": "A piece of attached transport equipment, such as a chain or a tarpaulin."
+            "uri": "unece:applicableStandard",
+            "type": "unece:Standard",
+            "comment": "The referenced standard that is applicable to this product characteristic."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "uri": "unece:valueBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "The value for this product characteristic expressed in a binary file."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:applicableCharacteristic",
+            "comment": "A characteristic applicable to this ..."
+        },
+        {
+            "uri": "unece:classCharacteristic",
+            "comment": "A product class characteristic for this product classification."
         }
     ]
 }

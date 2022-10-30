@@ -5,19 +5,32 @@
     "comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery.",
     "datatypeProperties": [
         {
-            "uri": "unece:productUnitQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of product units ..."
-        },
-        {
             "uri": "unece:packageQuantity",
             "type": "xsd:decimal",
-            "comment": "The number of packages in ..."
+            "comment": "The number of packages in this subordinate line trade delivery."
         },
         {
             "uri": "unece:perPackageUnitQuantity",
             "type": "xsd:decimal",
-            "comment": "A number of units per ..."
+            "comment": "The number of units per package in this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:productUnitQuantity",
+            "type": "xsd:decimal",
+            "comment": "The number of product units in this subordinate line trade delivery."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:includedPackaging",
+            "type": "unece:Packaging",
+            "comment": "Packaging included in this subordinate line trade delivery."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedTradeDelivery",
+            "comment": "The delivery specified for this ..."
         }
     ]
 }

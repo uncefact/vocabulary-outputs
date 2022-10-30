@@ -5,69 +5,49 @@
     "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level.",
     "datatypeProperties": [
         {
-            "uri": "unece:buyerOrderDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, ..."
+            "uri": "unece:agreedQuantity",
+            "type": "xsd:decimal",
+            "comment": "The quantity, at header level, agreed for this trade delivery."
         },
         {
-            "uri": "unece:headerTradeDeliveryGoodsPhysicalStateType",
-            "type": "unece:UNCL7001Code",
-            "comment": "A type, expressed as text, for the physical state of the goods, at header level, for this trade delivery."
+            "uri": "unece:buyerOrderDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value, at header level, of the buyer order for this trade delivery."
         },
         {
             "uri": "unece:despatchedQuantity",
             "type": "xsd:decimal",
-            "comment": "The quantity, at header level, ..."
-        },
-        {
-            "uri": "unece:fullyDeliveredIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication, at header level, ..."
+            "comment": "The quantity, at header level, despatched in this trade delivery."
         },
         {
             "uri": "unece:dueInAvailableQuantity",
             "type": "xsd:decimal",
-            "comment": "The due in available quantity, ..."
-        },
-        {
-            "uri": "unece:requestedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity, at header level, ..."
+            "comment": "The due in available quantity, at header level, for this trade delivery."
         },
         {
             "uri": "unece:dueInForecastedQuantity",
             "type": "xsd:decimal",
-            "comment": "The due in forecasted quantity, ..."
-        },
-        {
-            "uri": "unece:overDeliveryAllowedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication, at header level, ..."
-        },
-        {
-            "uri": "unece:remainingRequestedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The remaining quantity, at header ..."
-        },
-        {
-            "uri": "unece:finalDeliveryIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication, at header level, ..."
-        },
-        {
-            "uri": "unece:pickUpAvailabilityDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The formatted date, time, date ..."
+            "comment": "The due in forecasted quantity, at header level, for this trade delivery."
         },
         {
             "uri": "unece:dueInRequestedQuantity",
             "type": "xsd:decimal",
-            "comment": "The due in requested quantity, ..."
+            "comment": "The due in requested quantity, at header level, for this trade delivery."
         },
         {
-            "uri": "unece:agreedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity, at header level, ..."
+            "uri": "unece:finalDeliveryIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication, at header level, of whether or not this trade delivery is the final delivery."
+        },
+        {
+            "uri": "unece:fullyDeliveredIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication, at header level, of whether or not this trade delivery is fully delivered."
+        },
+        {
+            "uri": "unece:goodsOwnershipChangeDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value, at header level, when the goods ownership of this trade delivery changed."
         },
         {
             "uri": "unece:headerTradeDeliveryGoodsPhysicalStateDescription",
@@ -75,19 +55,14 @@
             "comment": "A textual description for the physical state of the goods, at header level, for this trade delivery."
         },
         {
-            "uri": "unece:subordinateId",
-            "type": "xsd:token",
-            "comment": "A subordinate identifier, at header ..."
+            "uri": "unece:headerTradeDeliveryGoodsPhysicalStateDescriptionCode",
+            "type": "unece:UNCL7007Code",
+            "comment": "The code specifying a description for the physical state of the goods, at header level, for this trade delivery."
         },
         {
-            "uri": "unece:partialDeliveryAllowedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or ..."
-        },
-        {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
+            "uri": "unece:headerTradeDeliveryGoodsPhysicalStateType",
+            "type": "unece:UNCL7001Code",
+            "comment": "A type, expressed as text, for the physical state of the goods, at header level, for this trade delivery."
         },
         {
             "uri": "unece:headerTradeDeliveryGoodsPhysicalStateTypeCode",
@@ -95,36 +70,241 @@
             "comment": "The code specifying the type of physical state of the goods, at header level, for this trade delivery."
         },
         {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The identifier, at header level, for this trade delivery."
+        },
+        {
             "uri": "unece:modificationForecastedQuantity",
             "type": "xsd:decimal",
-            "comment": "The modification of a forecasted ..."
+            "comment": "The modification of a previously forecasted quantity, at header level, for this trade delivery."
         },
         {
-            "uri": "unece:headerTradeDeliveryGoodsPhysicalStateDescriptionCode",
-            "type": "unece:UNCL7007Code",
-            "comment": "The code specifying a description for the physical state of the goods, at header level, for this trade delivery."
+            "uri": "unece:overDeliveryAllowedIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication, at header level, of whether or not over delivery is allowed for this trade delivery."
         },
         {
-            "uri": "unece:goodsOwnershipChangeDateTime",
+            "uri": "unece:partialDeliveryAllowedIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication, at header level, of whether or not this trade delivery can be partially delivered."
+        },
+        {
+            "uri": "unece:pickUpAvailabilityDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date time, ..."
+            "comment": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up."
+        },
+        {
+            "uri": "unece:remainingRequestedQuantity",
+            "type": "xsd:decimal",
+            "comment": "The remaining quantity, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:requestedQuantity",
+            "type": "xsd:decimal",
+            "comment": "The quantity, at header level, requested for this trade delivery."
         },
         {
             "uri": "unece:statusCode",
             "type": "xsd:token",
-            "comment": "A code specifying a status ..."
+            "comment": "The code specifying the status, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:subordinateId",
+            "type": "xsd:token",
+            "comment": "A subordinate identifier, at header level, for this trade delivery."
         },
         {
             "uri": "unece:ultimateShipToDeliveryDateTime",
             "type": "xsd:dateTime",
-            "comment": "The date, time, date time, ..."
+            "comment": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:acceptanceEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An acceptance delivery event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:actualDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An actual delivery event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:actualDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An actual despatch event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:actualLoadingEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual loading event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:actualPickUpEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual pick-up event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:actualReceiptEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual receipt event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:actualUnloadingEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual unloading event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:additionalDocument",
+            "type": "unece:Document",
+            "comment": "An additional document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:confirmedDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The despatch event, at header level, confirmed for this trade delivery."
+        },
+        {
+            "uri": "unece:confirmedPickUpEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The pick-up event, at header level, confirmed for this trade delivery."
+        },
+        {
+            "uri": "unece:confirmedReleaseEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The confirmed release event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:consumptionReportDocument",
+            "type": "unece:Document",
+            "comment": "The consumption report document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:deliveryNoteDocument",
+            "type": "unece:Document",
+            "comment": "The delivery note document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:despatchAdviceDocument",
+            "type": "unece:Document",
+            "comment": "The despatch advice document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:disposalParty",
+            "type": "unece:TradeParty",
+            "comment": "A disposal party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:finalDestinationCountry",
+            "type": "unece:Country",
+            "comment": "The country of final destination, at header level, for this header trade delivery."
+        },
+        {
+            "uri": "unece:goodsReceiptNoteDocument",
+            "type": "unece:Document",
+            "comment": "A goods receipt note document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:includedPackaging",
+            "type": "unece:Packaging",
+            "comment": "Packaging, at header level, included in this trade delivery."
+        },
+        {
+            "uri": "unece:informationNote",
+            "type": "unece:Note",
+            "comment": "A note with information, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:inventoryManagerParty",
+            "type": "unece:TradeParty",
+            "comment": "An inventory manager party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:packingListDocument",
+            "type": "unece:Document",
+            "comment": "The packing list document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:plannedConsignment",
+            "type": "unece:Consignment",
+            "comment": "A consignment, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:plannedDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A delivery event, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:plannedDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A despatch event, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:plannedPickUpEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The pick-up event, at header level, planned for this trade delivery."
+        },
+        {
             "uri": "unece:plannedReleaseEvent",
             "type": "unece:SupplyChainEvent",
             "comment": "The release event, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:plannedShipFromDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The event of the planned ship from delivery, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:plannedShipToDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The planned ship to delivery event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:previousDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A previous delivery event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:receivingAdviceDocument",
+            "type": "unece:Document",
+            "comment": "A receiving advice document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:relatedConsignment",
+            "type": "unece:Consignment",
+            "comment": "A consignment, at header level, related to this trade delivery."
+        },
+        {
+            "uri": "unece:requestedDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A delivery event, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:requestedDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A despatch event, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:shipFromParty",
+            "type": "unece:TradeParty",
+            "comment": "The ship from party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:shipToParty",
+            "type": "unece:TradeParty",
+            "comment": "The ship to party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:shipmentScheduleDocument",
+            "type": "unece:Document",
+            "comment": "The shipment schedule document, referenced at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:specifiedInstructions",
+            "type": "unece:DeliveryInstructions",
+            "comment": "Handling instructions, at header level, specified for this trade delivery."
         },
         {
             "uri": "unece:ultimateShipToDeliveryEvent",
@@ -132,9 +312,9 @@
             "comment": "The ultimate ship to delivery event, at header level, for this trade delivery."
         },
         {
-            "uri": "unece:plannedShipFromDeliveryEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "The event of the planned ship from delivery, at header level, for this trade delivery."
+            "uri": "unece:ultimateShipToParty",
+            "type": "unece:TradeParty",
+            "comment": "The ultimate ship to party, at header level, for this trade delivery."
         }
     ],
     "referencedBy": [

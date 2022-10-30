@@ -5,29 +5,29 @@
     "comment": "Distinctive or characteristic part of a geographical object.",
     "datatypeProperties": [
         {
+            "uri": "unece:collectionIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this specified geographical feature is a collection of features."
+        },
+        {
             "uri": "unece:coordinateReferenceSystemId",
             "type": "xsd:token",
             "comment": "The identifier of the coordinate reference system for this geographical feature."
         },
         {
-            "uri": "unece:id",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier. "
-        },
-        {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description for this ..."
+            "comment": "The textual description of this specified geographical feature."
+        },
+        {
+            "uri": "unece:id",
+            "type": "xsd:token",
+            "comment": "The identifier for this specified geographical feature."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, ..."
-        },
-        {
-            "uri": "unece:collectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this specified geographical feature is a collection of features."
+            "comment": "The name, expressed as text, of this specified geographical feature."
         }
     ],
     "objectProperties": [
@@ -42,14 +42,9 @@
             "comment": "The geographical grid included in this geographical feature."
         },
         {
-            "uri": "unece:includedGeographicalMultiPoint",
-            "type": "unece:GeographicalMultiPoint",
-            "comment": "The geographical multi-point included in this geographical feature."
-        },
-        {
-            "uri": "unece:includedGeographicalSurface",
-            "type": "unece:GeographicalSurface",
-            "comment": "The geographical surface included in this geographical feature."
+            "uri": "unece:includedGeographicalLine",
+            "type": "unece:GeographicalLine",
+            "comment": "The geographical line included in this geographical feature."
         },
         {
             "uri": "unece:includedGeographicalMultiCurve",
@@ -57,9 +52,9 @@
             "comment": "The geographical multi-curve included in this geographical feature."
         },
         {
-            "uri": "unece:includedGeographicalPoint",
-            "type": "unece:GeographicalPoint",
-            "comment": "The geographical point included in this geographical feature."
+            "uri": "unece:includedGeographicalMultiPoint",
+            "type": "unece:GeographicalMultiPoint",
+            "comment": "The geographical multi-point included in this geographical feature."
         },
         {
             "uri": "unece:includedGeographicalMultiSurface",
@@ -67,19 +62,39 @@
             "comment": "The geographical multi-surface included in this geographical feature."
         },
         {
-            "uri": "unece:includedGeographicalLine",
-            "type": "unece:GeographicalLine",
-            "comment": "The geographical line included in this geographical feature."
+            "uri": "unece:includedGeographicalPoint",
+            "type": "unece:GeographicalPoint",
+            "comment": "The geographical point included in this geographical feature."
+        },
+        {
+            "uri": "unece:includedGeographicalSurface",
+            "type": "unece:GeographicalSurface",
+            "comment": "The geographical surface included in this geographical feature."
+        },
+        {
+            "uri": "unece:includedPolygon",
+            "type": "unece:Polygon",
+            "comment": "The polygon included in this geographical feature."
+        },
+        {
+            "uri": "unece:usedCoordinateReferenceSystem",
+            "type": "unece:CoordinateReferenceSystem",
+            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
+        },
+        {
+            "uri": "unece:usedCoordinateSourceSystem",
+            "type": "unece:CoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this specified geographical feature."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:previousAssociatedGeographicalFeature",
-            "comment": "A geographical feature previously associated ..."
-        },
-        {
             "uri": "unece:associatedGeographicalFeature",
             "comment": "A geographical feature associated with ..."
+        },
+        {
+            "uri": "unece:previousAssociatedGeographicalFeature",
+            "comment": "A geographical feature previously associated ..."
         }
     ]
 }

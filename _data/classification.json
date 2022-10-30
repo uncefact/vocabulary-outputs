@@ -5,19 +5,14 @@
     "comment": "A systematic arrangement in classes or categories according to established criteria.",
     "datatypeProperties": [
         {
-            "uri": "unece:systemName",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of the classification system for this product classification."
-        },
-        {
-            "uri": "unece:systemId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the ..."
-        },
-        {
             "uri": "unece:classCode",
             "type": "xsd:token",
             "comment": "The code specifying the class for this product classification."
+        },
+        {
+            "uri": "unece:className",
+            "type": "xsd:string",
+            "comment": "A class name, expressed as text, for this product classification."
         },
         {
             "uri": "unece:subClassCode",
@@ -25,12 +20,22 @@
             "comment": "The code specifying the sub class for this product classification."
         },
         {
-            "uri": "unece:className",
+            "uri": "unece:systemId",
+            "type": "xsd:token",
+            "comment": "The unique identifier of the classification system for this product classification."
+        },
+        {
+            "uri": "unece:systemName",
             "type": "xsd:string",
-            "comment": "A class name, expressed as text, for this product classification."
+            "comment": "A name, expressed as text, of the classification system for this product classification."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:applicableStandard",
+            "type": "unece:Standard",
+            "comment": "The referenced standard that is applicable to this product classification."
+        },
         {
             "uri": "unece:classCharacteristic",
             "type": "unece:Characteristic",
