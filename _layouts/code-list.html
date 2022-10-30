@@ -43,7 +43,11 @@ layout: default
                 {%- assign rangeUrl = range.uri | split: ":" -%}
                 {%- assign mappingKey = rangeUrl[0] -%}
                 <tr id="{{rangeUrl[1]}}">
-                    <td><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri }}</a></td>
+                    {%- assign mappingUrl = mapping[mappingKey] | strip -%}
+                    {%- if mappingUrl != '' -%}
+                    <td><a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}">{{ range.uri }}</a></td>
+                    {%- else -%}
+                    <td><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri }}</a></td>                    {%- endif -%}
                     {%- for column in columns -%}
                        {%- if column.type == 'uri' -%}
                             {%- assign links = range[column.code] | split: "," -%}
