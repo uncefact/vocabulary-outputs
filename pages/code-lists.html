@@ -21,10 +21,10 @@ type: code-list
                 <tr>
                     <td>
                         <a href="{{ codeList | absolute_url }}">
-                            {%- if codeListJson.label -%}
-                                unece:{{ codeListJson.label }}
+                            {%- if codeListJson.uri -%}
+                                {{ codeListJson.uri }}
                             {%- else -%}
-                                unece:{{ codeList.jsonid }}
+                                {{ codeList.label }}
                             {%- endif -%}
                         </a>
                     </td>
