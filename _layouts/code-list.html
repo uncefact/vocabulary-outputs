@@ -22,6 +22,9 @@ layout: default
     {%- else -%}
         <p>{{ page.comment }}</p>
     {%- endif -%}
+    {%- if initialCodeList.seeAlso -%}
+        <p>See also the corresponding <a href="{{ initialCodeList.seeAlso }}">class</a></p>
+    {%- endif -%}
 </div>
 
 {%- if codeList -%}

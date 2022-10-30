@@ -13,6 +13,9 @@ layout: default
     {%- else -%}
         <p>{{ class.comment }}</p>
     {%- endif -%}
+    {%- if class.seeAlso -%}
+        <p>See also the <a href="{{ class.seeAlso }}">values</a></p>
+    {%- endif -%}
 </div>
 
 {% if class.objectProperties %}
