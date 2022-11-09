@@ -21,10 +21,10 @@ type: code-list
                 <tr>
                     <td>
                         <a href="{{ codeList | absolute_url }}">
-                            {%- if codeListJson.uri -%}
-                                {{ codeListJson.uri }}
-                            {%- else -%}
+                            {%- if codeList.label -%}
                                 {{ codeList.label }}
+                            {%- else -%}
+                                {{ codeList.permalink }}
                             {%- endif -%}
                         </a>
                     </td>
