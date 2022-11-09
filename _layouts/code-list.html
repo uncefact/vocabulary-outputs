@@ -25,10 +25,22 @@ layout: default
     {%- if initialCodeList.seeAlso -%}
         <p>See also the corresponding <a href="{{ initialCodeList.seeAlso }}">class</a></p>
     {%- endif -%}
+    <p id="back-text" style="display: none;">Back to the <a id="back-country-link" href="/unlocode-countries">country</a></p>
+    <script>
+        const url = new URL(document.URL);
+
+        if (url.searchParams.has('country')) {
+            let countryCode = url.searchParams.get('country');
+            document.getElementById('back-text').style.display = 'block';
+            if (countryCode !== '') {
+                document.getElementById('back-country-link').setAttribute('href', "/unlocode-countries#" + countryCode);
+            }
+        }
+    </script>
 </div>
 
 {%- if codeList -%}
-    <h2>Range includes:</h2>
+    <h2>Values:</h2>
     <div class="table-wrapper">
         {% assign columns = page.columns %}
         {% assign mapping = site.data.mapping %}
