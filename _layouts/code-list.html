@@ -30,7 +30,7 @@ layout: default
         const url = new URL(document.URL);
 
         if (url.searchParams.has('country')) {
-            let countryCode = url.searchParams.get('country');
+            let countryCode = url.searchParams.get('country').toUpperCase();
             document.getElementById('back-text').style.display = 'block';
             if (countryCode !== '') {
                 document.getElementById('back-country-link').setAttribute('href', "/unlocode-countries#" + countryCode);
