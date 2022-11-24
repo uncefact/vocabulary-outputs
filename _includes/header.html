@@ -5,6 +5,7 @@
             <img src="{{site.baseurl}}/images/logo.svg" class="header__logo-img" alt="">
         </a>
         <nav class="main-nav">
+            <a class="main-nav__link{% if pageType == 'default' %} main-nav__link--active{% endif %}" href="{{ 'about' | absolute_url }}">About</a>
             <a class="main-nav__link{% if pageType == 'class' %} main-nav__link--active{% endif %}" href="{{ 'classes' | absolute_url }}">Classes</a>
             <a class="main-nav__link{% if pageType == 'property' %} main-nav__link--active{% endif %}" href="{{ 'properties' | absolute_url }}">Properties</a>
             <a class="main-nav__link{% if pageType == 'code-list' %} main-nav__link--active{% endif %}" href="{{ 'code-lists' | absolute_url }}">Code Lists</a>
