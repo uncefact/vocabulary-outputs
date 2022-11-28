@@ -14,6 +14,7 @@ columns:
   - 
     title: Country Code
     code: unlcdv:countryCode
+    type: uri
   - 
     title: Value
     code: value
