@@ -17,12 +17,12 @@
         {
             "uri": "unece:globalId",
             "type": "xsd:token",
-            "comment": "The global identifier for this referenced logistics package."
+            "comment": "The unique global identifier for this logistics package."
         },
         {
             "uri": "unece:grossVolumeMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the gross volume of this logistics package."
+            "comment": "The measure of the gross volume of this referenced logistics package."
         },
         {
             "uri": "unece:grossWeightMeasure",
@@ -30,14 +30,14 @@
             "comment": "The measure of the gross weight (mass) of this referenced logistics package and its contents."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
-            "comment": "The identifier for this referenced logistics package."
+            "comment": "The unique identifier for this logistics package."
         },
         {
             "uri": "unece:information",
             "type": "xsd:string",
-            "comment": "Information, expressed as text, for this logistics package."
+            "comment": "Information, expressed as text, for this referenced logistics package."
         },
         {
             "uri": "unece:itemQuantity",
@@ -47,17 +47,22 @@
         {
             "uri": "unece:netWeightMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the net weight of this logistics package, i.e. the weight (mass) of the contents."
+            "comment": "The measure of the net weight (mass) of the contents of this referenced logistics package."
         },
         {
             "uri": "unece:nominalGrossVolumeMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the nominal gross volume of this logistics package."
+            "comment": "The measure of the nominal gross volume of this referenced logistics package."
         },
         {
             "uri": "unece:nominalGrossWeightMeasure",
             "type": "xsd:decimal",
-            "comment": "The measure of the nominal gross weight (mass) of this referenced logistics package and its contents."
+            "comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
+        },
+        {
+            "uri": "unece:packageType",
+            "type": "xsd:string",
+            "comment": "A type, expressed as text, of this logistics package."
         },
         {
             "uri": "unece:packagingLevelCode",
@@ -72,7 +77,7 @@
         {
             "uri": "unece:perPackageUnitQuantity",
             "type": "xsd:decimal",
-            "comment": "A number of units per package in this referenced logistics package."
+            "comment": "A number of units per package in this logistics package."
         },
         {
             "uri": "unece:returnableIndicator",
@@ -92,12 +97,7 @@
         {
             "uri": "unece:seriesStartId",
             "type": "xsd:token",
-            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
-        },
-        {
-            "uri": "unece:type",
-            "type": "xsd:string",
-            "comment": "A type, expressed as text, of this referenced logistics package."
+            "comment": "The unique start identifier of a series of packages within this logistics package."
         },
         {
             "uri": "unece:typeCode",
@@ -124,7 +124,7 @@
         {
             "uri": "unece:physicalShippingMarks",
             "type": "unece:ShippingMarks",
-            "comment": "Physical logistics shipping marks in this referenced logistics package."
+            "comment": "Physical shipping marks and barcode information for this logistics package."
         },
         {
             "uri": "unece:usedPackaging",

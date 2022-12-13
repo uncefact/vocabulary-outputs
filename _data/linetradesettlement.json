@@ -62,6 +62,11 @@
             "comment": "A document associated with this line trade settlement."
         },
         {
+            "uri": "unece:associatedDocumentLineDocument",
+            "type": "unece:DocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
             "uri": "unece:billingPeriod",
             "type": "unece:Period",
             "comment": "A billing period specified for this line trade settlement."
@@ -122,11 +127,6 @@
             "comment": "A financial card specified in this line trade settlement."
         },
         {
-            "uri": "unece:specifiedMonetarySummation",
-            "type": "unece:TradeSettlementLineMonetarySummation",
-            "comment": "The monetary summation totals specified for this line trade settlement."
-        },
-        {
             "uri": "unece:specifiedPaymentTerms",
             "type": "unece:PaymentTerms",
             "comment": "Payment terms specified for this line trade settlement."
@@ -137,9 +137,20 @@
             "comment": "A logistics service charge specified for this line trade settlement."
         },
         {
+            "uri": "unece:specifiedTradeSettlementLineMonetarySummation",
+            "type": "unece:TradeSettlementLineMonetarySummation",
+            "comment": "The monetary summation totals specified for this line trade settlement."
+        },
+        {
             "uri": "unece:subtotalCalculatedTax",
             "type": "unece:TradeTax",
             "comment": "A tax subtotal calculated for this line trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedLineTradeSettlement",
+            "comment": "A line trade settlement specified for this supply chain trade line item."
         }
     ]
 }
