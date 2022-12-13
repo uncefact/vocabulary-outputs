@@ -25,7 +25,7 @@
         {
             "uri": "unece:characteristic",
             "type": "xsd:string",
-            "comment": "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type."
+            "comment": "The characteristics, expressed as text, of a referenced piece of logistics transport equipment, such as size and type."
         },
         {
             "uri": "unece:containedConsignmentQuantity",
@@ -53,9 +53,9 @@
             "comment": "The percent of the humidity (moisture content) within this piece of logistics transport equipment."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
-            "comment": "The unique identifier of this piece of logistics transport equipment."
+            "comment": "The unique identifier for this referenced piece of logistics transport equipment, such as a number, mark or name."
         },
         {
             "uri": "unece:information",
@@ -70,7 +70,7 @@
         {
             "uri": "unece:loadedPackageQuantity",
             "type": "xsd:decimal",
-            "comment": "The number of packages loaded into or onto this piece of logistics transport equipment."
+            "comment": "The number of packages loaded into or onto this piece of referenced logistics transport equipment."
         },
         {
             "uri": "unece:loadingLengthMeasure",
@@ -165,7 +165,7 @@
         {
             "uri": "unece:transportEquipmentCategoryCode",
             "type": "unece:UNCL8053Code",
-            "comment": "The code specifying the category for this piece of logistics transport equipment, such as container or trailer."
+            "comment": "The code specifying the category of this referenced piece of logistics transport equipment."
         },
         {
             "uri": "unece:transportEquipmentFullnessUsedCapacityCode",
@@ -190,7 +190,7 @@
         {
             "uri": "unece:transportEquipmentSizeTypeCharacteristicCode",
             "type": "unece:UNCL8155Code",
-            "comment": "The code specifying the characteristics, such as size and type, of this referenced piece of logistics transport equipment."
+            "comment": "The code specifying the characteristic or characteristics of this piece of logistics transport equipment, such as the ISO 6346 transport equipment size and type code."
         },
         {
             "uri": "unece:transportEquipmentSupplierPartyRoleCode",
@@ -222,7 +222,7 @@
         {
             "uri": "unece:affixedSeal",
             "type": "unece:Seal",
-            "comment": "A seal affixed to this piece of referenced logistics transport equipment."
+            "comment": "A seal affixed to this piece of logistics transport equipment."
         },
         {
             "uri": "unece:applicableNote",
@@ -240,14 +240,14 @@
             "comment": "A referenced document associated with this piece of logistics transport equipment."
         },
         {
+            "uri": "unece:attachedAttachedTransportEquipment",
+            "type": "unece:AttachedTransportEquipment",
+            "comment": "Transport equipment attached to this piece of logistics transport equipment, such as ropes or refrigeration units."
+        },
+        {
             "uri": "unece:attachedIOTDevice",
             "type": "unece:IOTDevice",
             "comment": "An IOT device attached to this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:attachedTransportEquipment",
-            "type": "unece:AttachedTransportEquipment",
-            "comment": "Transport equipment attached to this piece of logistics transport equipment, such as ropes or refrigeration units."
         },
         {
             "uri": "unece:bondedWarehouseStorageEvent",
@@ -387,7 +387,7 @@
         {
             "uri": "unece:settingTemperature",
             "type": "unece:TransportSettingTemperature",
-            "comment": "A temperature setting for this piece of logistics transport equipment, such as storage temperature or operational temperature."
+            "comment": "A temperature setting for this piece of referenced logistics transport equipment, such as storage temperature or operational temperature."
         },
         {
             "uri": "unece:specifiedRiskAnalysisResult",
@@ -424,6 +424,10 @@
         {
             "uri": "unece:associatedTransportEquipment",
             "comment": "A piece of transport equipment ..."
+        },
+        {
+            "uri": "unece:attachedTransportEquipment",
+            "comment": "A piece of logistics transport equipment attached to this logistics means of transport."
         },
         {
             "uri": "unece:utilizedTransportEquipment",
