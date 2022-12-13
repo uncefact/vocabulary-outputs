@@ -12,6 +12,6 @@ columns:
     title: Value
     code: value
   - 
-    title: UN/LOCODEs 
+    title: UN/LOCODEs
     type: unlocode-link
 ---
