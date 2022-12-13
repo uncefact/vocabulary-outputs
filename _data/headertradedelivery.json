@@ -70,7 +70,7 @@
             "comment": "The code specifying the type of physical state of the goods, at header level, for this trade delivery."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "The identifier, at header level, for this trade delivery."
         },
@@ -302,6 +302,11 @@
             "comment": "The shipment schedule document, referenced at header level, for this trade delivery."
         },
         {
+            "uri": "unece:specifiedDeliveryInstructions",
+            "type": "unece:DeliveryInstructions",
+            "comment": "Delivery instructions, at header level, specified for this trade delivery."
+        },
+        {
             "uri": "unece:specifiedInstructions",
             "type": "unece:HandlingInstructions",
             "comment": "Handling instructions, at header level, specified for this trade delivery."
@@ -320,7 +325,7 @@
     "referencedBy": [
         {
             "uri": "unece:applicableTradeDelivery",
-            "comment": "A trade delivery applicable to ..."
+            "comment": "A trade delivery header applicable to this supply chain trade transaction."
         }
     ]
 }

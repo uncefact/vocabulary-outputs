@@ -10,7 +10,7 @@
             "comment": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "A unique identifier for this supply chain trade transaction."
         },
@@ -52,6 +52,16 @@
     ],
     "objectProperties": [
         {
+            "uri": "unece:applicableLineTradeAgreement",
+            "type": "unece:LineTradeAgreement",
+            "comment": "A trade agreement applicable to this line trade transaction, such as payment or delivery terms."
+        },
+        {
+            "uri": "unece:applicableLineTradeDelivery",
+            "type": "unece:LineTradeDelivery",
+            "comment": "A trade delivery applicable to this line trade transaction."
+        },
+        {
             "uri": "unece:applicableTradeAgreement",
             "type": "unece:HeaderTradeAgreement",
             "comment": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
@@ -69,7 +79,17 @@
         {
             "uri": "unece:associatedDocument",
             "type": "unece:Document",
+            "comment": "A referenced document associated with this supply chain trade transaction, such as the purchase order, invoice or packing list."
+        },
+        {
+            "uri": "unece:associatedDocumentLineDocument",
+            "type": "unece:DocumentLineDocument",
             "comment": "The document line associated with this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:associatedFinancingRequestResultDocument",
+            "type": "unece:FinancingRequestResultDocument",
+            "comment": "The financing request result document associated with this supply chain trade transaction."
         },
         {
             "uri": "unece:includedProduct",
