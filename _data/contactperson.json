@@ -42,12 +42,12 @@
     ],
     "objectProperties": [
         {
-            "uri": "unece:emailURICommunication",
-            "type": "unece:UniversalCommunication",
+            "uri": "unece:emailURIEmailCommunication",
+            "type": "unece:EmailCommunication",
             "comment": "The email Uniform Resource Identifier (URI) communication for this contact person."
         },
         {
-            "uri": "unece:faxCommunication",
+            "uri": "unece:faxTelecommunicationCommunication",
             "type": "unece:TelecommunicationCommunication",
             "comment": "Facsimile communication information for this contact person."
         },
@@ -57,8 +57,13 @@
             "comment": "The birth address specified for this contact person."
         },
         {
-            "uri": "unece:specifiedIdentity",
-            "type": "unece:ProprietaryIdentity",
+            "uri": "unece:specifiedEmployerIdentity",
+            "type": "unece:EmployerIdentity",
+            "comment": "An employer identity specified for this contact person."
+        },
+        {
+            "uri": "unece:specifiedPersonIdentity",
+            "type": "unece:PersonIdentity",
             "comment": "The person identity specified for this contact person."
         },
         {
@@ -67,9 +72,15 @@
             "comment": "A tax registration specified for this contact person."
         },
         {
-            "uri": "unece:telephoneCommunication",
-            "type": "unece:UniversalCommunication",
+            "uri": "unece:telephoneTelecommunicationCommunication",
+            "type": "unece:TelecommunicationCommunication",
             "comment": "Telephone communication information for this contact person."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedPerson",
+            "comment": "A contact person specified for ..."
         }
     ]
 }
