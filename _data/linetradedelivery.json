@@ -105,7 +105,7 @@
             "comment": "The measure, at line level, of the gross weight (mass) of this line trade delivery."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "An identifier, at line level, for this trade delivery."
         },
@@ -482,9 +482,14 @@
             "comment": "A delivery adjustment, at line level, specified for this trade delivery."
         },
         {
-            "uri": "unece:specifiedInstructions",
+            "uri": "unece:specifiedDeliveryInstructions",
             "type": "unece:DeliveryInstructions",
             "comment": "Delivery instructions, at line level, specified for this trade delivery."
+        },
+        {
+            "uri": "unece:specifiedInstructions",
+            "type": "unece:HandlingInstructions",
+            "comment": "Handling instructions, at line level, specified for this trade delivery."
         },
         {
             "uri": "unece:specifiedPackage",
@@ -515,6 +520,16 @@
             "uri": "unece:utilizedTransportEquipment",
             "type": "unece:LogisticsTransportEquipment",
             "comment": "A piece of logistics transport equipment, at line level, utilized for this trade delivery."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:applicableLineTradeDelivery",
+            "comment": "A trade delivery applicable to this line trade transaction."
+        },
+        {
+            "uri": "unece:specifiedTradeDelivery",
+            "comment": "The line trade delivery specified for this supply chain trade line item."
         }
     ]
 }

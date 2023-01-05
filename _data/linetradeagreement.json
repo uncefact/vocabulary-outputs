@@ -25,7 +25,7 @@
             "comment": "The economic order quantity for this line trade agreement."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "An identifier for this line trade agreement."
         },
@@ -385,6 +385,16 @@
             "uri": "unece:ultimateCustomerOrderDocument",
             "type": "unece:Document",
             "comment": "An ultimate customer order document referenced for this line trade agreement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:applicableLineTradeAgreement",
+            "comment": "A trade agreement applicable to this line trade transaction, such as payment or delivery terms."
+        },
+        {
+            "uri": "unece:specifiedLineTradeAgreement",
+            "comment": "The line trade agreement specified for this supply chain trade line item."
         }
     ]
 }

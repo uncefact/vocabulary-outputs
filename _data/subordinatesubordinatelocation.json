@@ -5,7 +5,7 @@
     "comment": "A physical location or place which is a subordinate location of a subordinate location.",
     "datatypeProperties": [
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "The unique identifier for this subordinate of a subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
         },
@@ -25,6 +25,12 @@
             "uri": "unece:physicalGeographicalCoordinate",
             "type": "unece:GeographicalCoordinate",
             "comment": "Physical geographical coordinate information for this subordinate of a subordinate location."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:subordinateSubordinateSubordinateLocation",
+            "comment": "The location subordinate to this subordinate location."
         }
     ]
 }

@@ -7,27 +7,27 @@
         {
             "uri": "unece:alternativeClassificationCode",
             "type": "xsd:token",
-            "comment": "A code specifying an alternative classification for this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "comment": "A code specifying an alternative classification for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:comment",
             "type": "xsd:string",
-            "comment": "A comment, expressed as text, for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "comment": "A comment, expressed as text, for this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:contractualLanguageCode",
             "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this basic work item."
+            "comment": "The code specifying the contractual language for this grouped work item."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "The unique identifier for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:index",
             "type": "xsd:string",
-            "comment": "The index, expressed as text, to be used for this basic work item."
+            "comment": "The index, expressed as text, to be used for this grouped work item."
         },
         {
             "uri": "unece:indexValue",
@@ -42,7 +42,7 @@
         {
             "uri": "unece:primaryClassificationCode",
             "type": "xsd:token",
-            "comment": "A code specifying the primary classification for this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "comment": "A code specifying the primary classification for this basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         },
         {
             "uri": "unece:referenceFileBinaryObject",
@@ -57,7 +57,7 @@
         {
             "uri": "unece:requestedActionCode",
             "type": "xsd:token",
-            "comment": "A code specifying a requested action for this grouped work item."
+            "comment": "A code specifying a requested action for this basic work item."
         },
         {
             "uri": "unece:statusCode",
@@ -77,7 +77,7 @@
         {
             "uri": "unece:typeCode",
             "type": "xsd:token",
-            "comment": "A code specifying the type of this work item group. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "comment": "A code specifying the type of basic work item. Industry context value changed from \"Construction\" to \"In All Contexts\"."
         }
     ],
     "objectProperties": [
@@ -94,12 +94,12 @@
         {
             "uri": "unece:itemWorkItem",
             "type": "unece:WorkItem",
-            "comment": "A basic work item in this basic work item."
+            "comment": "A basic work item within this grouped work item."
         },
         {
             "uri": "unece:referencedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A specified binary file referenced by this grouped work item."
+            "comment": "A specified binary file referenced by this basic work item."
         },
         {
             "uri": "unece:subordinateWorkItem",

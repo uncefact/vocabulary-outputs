@@ -35,7 +35,7 @@
             "comment": "A code specifying a type of acknowledgement document."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "The unique identifier of this acknowledgement document."
         },
@@ -73,8 +73,14 @@
     "objectProperties": [
         {
             "uri": "unece:referenceDocument",
-            "type": "unece:Document",
+            "type": "unece:AcknowledgementDocument",
             "comment": "A document referenced by this acknowledgement document."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:referenceDocument",
+            "comment": "A document referenced by this ..."
         }
     ]
 }

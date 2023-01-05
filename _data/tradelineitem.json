@@ -20,7 +20,7 @@
             "comment": "The code specifying a description of this supply chain trade line item."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
             "comment": "A unique identifier for this subordinate trade line item."
         },
@@ -67,8 +67,8 @@
             "comment": "A document authentication asserted for this supply chain trade line item."
         },
         {
-            "uri": "unece:associatedDocument",
-            "type": "unece:Document",
+            "uri": "unece:associatedDocumentLineDocument",
+            "type": "unece:DocumentLineDocument",
             "comment": "The document line associated with this trade line item."
         },
         {
@@ -104,11 +104,11 @@
         {
             "uri": "unece:physicalPackage",
             "type": "unece:Package",
-            "comment": "A physical logistics package referenced for this supply chain trade line item."
+            "comment": "A physical logistics package for this supply chain trade line item."
         },
         {
             "uri": "unece:referenceDocument",
-            "type": "unece:Document",
+            "type": "unece:AcknowledgementDocument",
             "comment": "A document referenced for this supply chain trade line item."
         },
         {
@@ -127,14 +127,34 @@
             "comment": "The product specified by the requisitioner for this supply chain trade line item."
         },
         {
+            "uri": "unece:specifiedLineTradeAgreement",
+            "type": "unece:LineTradeAgreement",
+            "comment": "The line trade agreement specified for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:specifiedLineTradeSettlement",
+            "type": "unece:LineTradeSettlement",
+            "comment": "A line trade settlement specified for this supply chain trade line item."
+        },
+        {
             "uri": "unece:specifiedProduct",
             "type": "unece:Product",
-            "comment": "The referenced product specified for this subordinate trade line item."
+            "comment": "A product specified for this supply chain trade line item."
         },
         {
             "uri": "unece:specifiedProduction",
             "type": "unece:Production",
             "comment": "A production of goods specified for this supply chain trade line Item."
+        },
+        {
+            "uri": "unece:specifiedSubordinateLineTradeDelivery",
+            "type": "unece:SubordinateLineTradeDelivery",
+            "comment": "The delivery specified for this subordinate trade line item."
+        },
+        {
+            "uri": "unece:specifiedSubordinateLineTradeSettlement",
+            "type": "unece:SubordinateLineTradeSettlement",
+            "comment": "A trade settlement specified for this subordinate trade line item."
         },
         {
             "uri": "unece:specifiedTradeAgreement",
@@ -143,13 +163,8 @@
         },
         {
             "uri": "unece:specifiedTradeDelivery",
-            "type": "unece:SubordinateLineTradeDelivery",
-            "comment": "The delivery specified for this subordinate trade line item."
-        },
-        {
-            "uri": "unece:specifiedTradeSettlement",
-            "type": "unece:LineTradeSettlement",
-            "comment": "A line trade settlement specified for this supply chain trade line item."
+            "type": "unece:LineTradeDelivery",
+            "comment": "The line trade delivery specified for this supply chain trade line item."
         },
         {
             "uri": "unece:substituteApplicableProduct",

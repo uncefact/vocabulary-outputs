@@ -2,12 +2,11 @@
 title: Recommendation 20
 permalink: rec20
 jsonid: rec20
-label: rec20
 columns:
-  -
+  - 
     title: Label
     code: label
-  -
+  - 
     title: Comment
     code: comment
   - 
@@ -22,4 +21,7 @@ columns:
   - 
     title: Status
     code: unece:status
+  - 
+    title: Value
+    code: value
 ---

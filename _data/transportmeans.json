@@ -55,9 +55,9 @@
             "comment": "The code specifying the International Ship and Port facility Security (ISPS) level assigned to this logistics means of transport."
         },
         {
-            "uri": "unece:id",
+            "uri": "unece:identifier",
             "type": "xsd:token",
-            "comment": "An identifier of this logistics means of transport, such as the International Maritime Organization number of a vessel."
+            "comment": "An identifier of this referenced transport means, such as the International Maritime Organization number for a vessel."
         },
         {
             "uri": "unece:lengthMeasure",
@@ -82,7 +82,7 @@
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "The name, expressed as text, of this logistics means of transport."
+            "comment": "The name, expressed as text, of this referenced transport means, such as the vessel name."
         },
         {
             "uri": "unece:netWeightMeasure",
@@ -105,14 +105,14 @@
             "comment": "The measure of the tare weight (mass) of this logistics means of transport which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
         },
         {
+            "uri": "unece:transportMeansType",
+            "type": "xsd:string",
+            "comment": "The type, expressed as text, of this referenced transport means."
+        },
+        {
             "uri": "unece:transportMeansTypeCode",
             "type": "unece:UNCL8179Code",
             "comment": "The code specifying the type of referenced transport means [Reference UNECE Recommendation 28]."
-        },
-        {
-            "uri": "unece:type",
-            "type": "xsd:string",
-            "comment": "The type, expressed as text, of this logistics means of transport."
         },
         {
             "uri": "unece:wasteReportingExemptionIndicator",
@@ -133,7 +133,7 @@
         },
         {
             "uri": "unece:attachedTransportEquipment",
-            "type": "unece:AttachedTransportEquipment",
+            "type": "unece:LogisticsTransportEquipment",
             "comment": "A piece of logistics transport equipment attached to this logistics means of transport."
         },
         {
@@ -213,7 +213,7 @@
         },
         {
             "uri": "unece:specifiedInstructions",
-            "type": "unece:DeliveryInstructions",
+            "type": "unece:HandlingInstructions",
             "comment": "Handling instructions specified for this logistics means of transport."
         }
     ],
