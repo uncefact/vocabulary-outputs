@@ -1,58 +1,53 @@
 
 {
     "label": "DocumentContextParameter",
-    "uri": "unece:DocumentContextParameter",
+    "uri": "core:DocumentContextParameter",
     "comment": "A feature that is fixed for a particular document context.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier of this document context parameter."
+            "uri": "core:DocumentContextParameter.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "The value, expressed as text, of this document context parameter."
-        }
-    ],
-    "objectProperties": [
+            "uri": "core:DocumentContextParameter.specifiedVersion",
+            "type": "core:Version"
+        },
         {
-            "uri": "unece:specifiedVersion",
-            "type": "unece:Version",
-            "comment": "The document version specified for this document context parameter."
+            "uri": "core:DocumentContextParameter.value",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicationSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.applicationSpecifiedParameter",
             "comment": "An application context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:bIMSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.bIMSpecifiedParameter",
             "comment": "A Business Information Master (BIM) context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:businessProcessSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.businessProcessSpecifiedParameter",
             "comment": "A business process context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:guidelineSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.guidelineSpecifiedParameter",
             "comment": "A guideline context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:messageStandardSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.messageStandardSpecifiedParameter",
             "comment": "The message standard document context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:scenarioSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.scenarioSpecifiedParameter",
             "comment": "A scenario context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:subsetSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.subsetSpecifiedParameter",
             "comment": "A subset context parameter specified for this exchanged document context."
         },
         {
-            "uri": "unece:userSpecifiedParameter",
+            "uri": "core:ExchangedDocumentContext.userSpecifiedParameter",
             "comment": "A user specified document context parameter specified for this exchanged document context."
         }
     ]

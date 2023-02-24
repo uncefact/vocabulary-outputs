@@ -1,155 +1,145 @@
 
 {
     "label": "TransportPerson",
-    "uri": "unece:TransportPerson",
+    "uri": "transport:TransportPerson",
     "comment": "A transport related person, such as a member of a crew or a passenger.",
     "datatypeProperties": [
         {
-            "uri": "unece:birthCountryId",
-            "type": "xsd:token",
-            "comment": "The identifier of the birth country of this transport person."
+            "uri": "transport:TransportPerson.attainedAcademicQualification",
+            "type": "compliance:AcademicQualification"
         },
         {
-            "uri": "unece:birthDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The birth date of this transport person."
+            "uri": "transport:TransportPerson.birthCountryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:birthplaceName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the place where this transport person was born."
+            "uri": "transport:TransportPerson.birthDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:categoryCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a category for this transport person, such as a member of crew or passenger."
+            "uri": "transport:TransportPerson.birthplaceName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:familyName",
-            "type": "xsd:string",
-            "comment": "A family name, expressed as text, for this transport person."
+            "uri": "transport:TransportPerson.categoryCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:genderCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the gender of this transport person."
+            "uri": "transport:TransportPerson.declaredPersonalEffects",
+            "type": "tourism:PersonalEffects"
         },
         {
-            "uri": "unece:givenName",
-            "type": "xsd:string",
-            "comment": "A given name, expressed as text, for this transport person."
+            "uri": "transport:TransportPerson.disembarkationDateTime",
+            "type": "schema:DateTime"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this transport person."
+            "uri": "transport:TransportPerson.disembarkationLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:inTransitIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this transport person is in transit."
+            "uri": "transport:TransportPerson.emailURICommunication",
+            "type": "core:Communication"
         },
         {
-            "uri": "unece:languageId",
-            "type": "xsd:token",
-            "comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
+            "uri": "transport:TransportPerson.embarkationDateTime",
+            "type": "schema:DateTime"
         },
         {
-            "uri": "unece:role",
-            "type": "xsd:string",
-            "comment": "A role, expressed as text, of this transport person."
+            "uri": "transport:TransportPerson.embarkationLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:roleCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a role of this transport person."
+            "uri": "transport:TransportPerson.familyName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:transportPersonName",
-            "type": "unece:UNCL3403Code",
-            "comment": "The name or set of names, expressed as text, by which this transport person is known."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:attainedQualification",
-            "type": "unece:Qualification",
-            "comment": "An academic qualification attained by this transport person."
+            "uri": "transport:TransportPerson.genderCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:declaredPersonalEffects",
-            "type": "unece:PersonalEffects",
-            "comment": "Personal effects use declared by a transport person."
+            "uri": "transport:TransportPerson.givenName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:disembarkationLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A disembarkation location for this transport person."
+            "uri": "transport:TransportPerson.identifiedStowaway",
+            "type": "transport:Stowaway"
         },
         {
-            "uri": "unece:emailURICommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "The email URI (Uniform Resource Identifier) communication for this transport person."
+            "uri": "transport:TransportPerson.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:embarkationLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "An embarkation location for this transport person."
+            "uri": "transport:TransportPerson.inTransitIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:landlineTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Landline telephone communication information for this transport person."
+            "uri": "transport:TransportPerson.landlineTelephoneCommunication",
+            "type": "core:Communication"
         },
         {
-            "uri": "unece:mobileTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Mobile telephone communication information for this transport person."
+            "uri": "transport:TransportPerson.mobileTelephoneCommunication",
+            "type": "core:Communication"
         },
         {
-            "uri": "unece:nationalityCountry",
-            "type": "unece:Country",
-            "comment": "A country that constitutes a nationality by origin, birth, or naturalization for this transport person."
+            "uri": "transport:TransportPerson.nationalityCountry",
+            "type": "core:Country"
         },
         {
-            "uri": "unece:specificAccreditation",
-            "type": "unece:Accreditation",
-            "comment": "A certified accreditation specific to this transport person."
+            "uri": "transport:TransportPerson.partyRoleCode",
+            "type": "transport:PartyRoleCodeList"
         },
         {
-            "uri": "unece:travelIdentityDocument",
-            "type": "unece:Document",
-            "comment": "A referenced travel identity document for this transport person."
+            "uri": "transport:TransportPerson.reportedIllness",
+            "type": "transport:Illness"
         },
         {
-            "uri": "unece:travelVisaDocument",
-            "type": "unece:Document",
-            "comment": "A referenced travel visa document for this transport person."
+            "uri": "transport:TransportPerson.role",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportPerson.specificAccreditation",
+            "type": "compliance:Accreditation"
+        },
+        {
+            "uri": "transport:TransportPerson.transportPersonLanguageId",
+            "type": "transport:LanguageId"
+        },
+        {
+            "uri": "transport:TransportPerson.transportPersonName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportPerson.travelIdentityDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "transport:TransportPerson.travelVisaDocument",
+            "type": "core:Document"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:companySecurityOfficerPerson",
-            "comment": "A person who is a company security officer for this logistics transport means."
-        },
-        {
-            "uri": "unece:crewPerson",
-            "comment": "A person who is a member of the crew of the means of transport used for this logistics transport movement."
-        },
-        {
-            "uri": "unece:masterResponsiblePerson",
-            "comment": "The person legally responsible for the operation of the means of transport used for this logistics transport movement."
-        },
-        {
-            "uri": "unece:onboardPerson",
-            "comment": "A person onboard this logistics transport movement."
-        },
-        {
-            "uri": "unece:specifiedTransportPerson",
+            "uri": "transport:LocationParty.specifiedTransportPerson",
             "comment": "A transport related person specified for this location party."
         },
         {
-            "uri": "unece:transportMeansSecurityOfficerPerson",
+            "uri": "transport:LogisticsTransportMeans.companySecurityOfficerPerson",
+            "comment": "A person who is a company security officer for this logistics transport means."
+        },
+        {
+            "uri": "transport:TransportMovement.crewPerson",
+            "comment": "A person who is a member of the crew of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.masterResponsiblePerson",
+            "comment": "The person legally responsible for the operation of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.onboardPerson",
+            "comment": "A person onboard this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportMeansSecurityOfficerPerson",
             "comment": "The officer responsible for the security of the means of transport used for this logistics transport movement."
         }
     ]

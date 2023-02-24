@@ -1,25 +1,17 @@
 
 {
     "label": "seriesEndId",
-    "uri": "unece:seriesEndId",
-    "comment": [
-        "The identifier of the end of a series of packages within this referenced logistics package.",
-        "The unique identifier of the end of a series of logistics labels.",
-        "The unique identifier of the end of a series of packages within this logistics package."
-    ],
+    "uri": "transport:Package.seriesEndId",
+    "comment": "The identifier of the end of a series of packages within this referenced logistics package.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Label",
-            "comment": "An attachment to an object, person or animal which provides identification information for the object."
-        },
-        {
-            "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
+            "uri": "transport:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         }
     ]
 }

@@ -1,48 +1,93 @@
 
 {
     "label": "Chemical",
-    "uri": "unece:Chemical",
-    "comment": "Any substance having a defined molecular composition.",
+    "uri": "compliance:Chemical",
+    "comment": "Any clearly defined substance having a defined molecular composition.",
     "datatypeProperties": [
         {
-            "uri": "unece:commonName",
-            "type": "xsd:string",
-            "comment": "A common name, expressed as text, for this distinct chemical."
+            "uri": "compliance:Chemical.applicableHazardousMaterial",
+            "type": "compliance:HazardousMaterial"
         },
         {
-            "uri": "unece:familyName",
-            "type": "xsd:string",
-            "comment": "The family name expressed as text for this distinct chemical."
+            "uri": "compliance:Chemical.applicableProductCharacteristic",
+            "type": "compliance:ProductCharacteristic"
         },
         {
-            "uri": "unece:formulaDescription",
-            "type": "xsd:string",
-            "comment": "The textual description of the formula for this distinct chemical."
+            "uri": "compliance:Chemical.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
         },
         {
-            "uri": "unece:molecularWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the molecular weight (in grams) for this distinct chemical."
+            "uri": "compliance:Chemical.commonName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:scientificName",
-            "type": "xsd:string",
-            "comment": "The scientific name, expressed as text, for this distinct chemical."
+            "uri": "compliance:Chemical.familyName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:synonymName",
-            "type": "xsd:string",
-            "comment": "A synonym name, expressed as text, for this distinct chemical."
+            "uri": "compliance:Chemical.formulaDescription",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of distinct chemical."
+            "uri": "compliance:Chemical.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Chemical.massMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:Chemical.massRatioMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:Chemical.molecularWeightMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:Chemical.presenceMeasurement",
+            "type": "compliance:IngredientRangeMeasurement"
+        },
+        {
+            "uri": "compliance:Chemical.presencePercent",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Chemical.scientificName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Chemical.specifiedProductCertificate",
+            "type": "compliance:ProductCertificate"
+        },
+        {
+            "uri": "compliance:Chemical.synonymName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Chemical.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Chemical.volumeMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:Chemical.volumeRatioMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:Chemical.weightMeasure",
+            "type": "core:MeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:usedChemical",
+            "uri": "compliance:AppliedChemicalTreatment.usedChemical",
+            "comment": "A chemical used during this applied chemical treatment."
+        },
+        {
+            "uri": "compliance:SpecifiedMaterial.usedChemical",
             "comment": "A chemical used during this applied chemical treatment."
         }
     ]

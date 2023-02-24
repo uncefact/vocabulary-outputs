@@ -1,18 +1,17 @@
 
 {
     "label": "applicableLineTradeAgreement",
-    "uri": "unece:applicableLineTradeAgreement",
+    "uri": "trade:LineTradeTransaction.applicableLineTradeAgreement",
     "comment": "A trade agreement applicable to this line trade transaction, such as payment or delivery terms.",
     "rangeIncludes": [
         {
-            "uri": "unece:LineTradeAgreement",
-            "comment": "The contractual terms of a line trade agreement."
+            "uri": "trade:LineTradeAgreement"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:TradeTransaction",
-            "comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties."
+            "uri": "trade:LineTradeTransaction",
+            "comment": "A group of trade line items, trade line agreement, trade line delivery and trade line settlement details."
         }
     ]
 }

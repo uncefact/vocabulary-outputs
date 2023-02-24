@@ -1,0 +1,82 @@
+
+{
+    "label": "TransportRoute",
+    "uri": "transport:TransportRoute",
+    "comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:TransportRoute.departurePoint",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.frequencyEffectivePeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "transport:TransportRoute.frequencyTypeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.itineraryStopEvent",
+            "type": "transport:TransportEvent"
+        },
+        {
+            "uri": "transport:TransportRoute.mapBinaryObject",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.routeType",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.scheduledPeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "transport:TransportRoute.securityLevelCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.transportMeans",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportRoute.transportRouteStatusCode",
+            "type": "transport:StatusCodeList"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:LogisticsTransportEquipment.actualRoute",
+            "comment": "An actual route for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.requestedRoute",
+            "comment": "A requested route for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.scheduledRoute",
+            "comment": "A scheduled or planned route for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:Service.specifiedRoute",
+            "comment": "A transport route specified for this transport service."
+        },
+        {
+            "uri": "transport:TransportEvent.relatedRoute",
+            "comment": "The route related to this transport event."
+        },
+        {
+            "uri": "transport:TransportMovement.itineraryRoute",
+            "comment": "A route in the itinerary of this logistics transport movement."
+        }
+    ]
+}

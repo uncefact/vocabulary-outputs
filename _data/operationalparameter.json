@@ -1,66 +1,48 @@
 
 {
     "label": "OperationalParameter",
-    "uri": "unece:OperationalParameter",
+    "uri": "compliance:OperationalParameter",
     "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly.",
     "datatypeProperties": [
         {
-            "uri": "unece:changeableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication whether or not this operational parameter is changeable."
+            "uri": "compliance:OperationalParameter.changeableIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this operational parameter."
+            "uri": "compliance:OperationalParameter.definedRange",
+            "type": "core:Range"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this operational parameter."
+            "uri": "compliance:OperationalParameter.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this operational parameter."
+            "uri": "compliance:OperationalParameter.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:statusCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the status of this operational parameter."
+            "uri": "compliance:OperationalParameter.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of this operational parameter."
+            "uri": "compliance:OperationalParameter.statusCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "The value, expressed as text, of this operational parameter."
+            "uri": "compliance:OperationalParameter.typeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:valueAllowedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this operational parameter value is allowed."
+            "uri": "compliance:OperationalParameter.value",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure value for this operational parameter."
-        }
-    ],
-    "objectProperties": [
+            "uri": "compliance:OperationalParameter.valueAllowedIndicator",
+            "type": "schema:Boolean"
+        },
         {
-            "uri": "unece:definedRange",
-            "type": "unece:Range",
-            "comment": "A defined range specified for this operational parameter."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:definedOperationalParameter",
-            "comment": "An operational parameter defined for this monitoring sensor."
+            "uri": "compliance:OperationalParameter.valueMeasure",
+            "type": "core:MeasureType"
         }
     ]
 }

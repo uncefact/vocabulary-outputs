@@ -1,28 +1,25 @@
 
 {
     "label": "GeographicalMultiCurve",
-    "uri": "unece:GeographicalMultiCurve",
+    "uri": "core:GeographicalMultiCurve",
     "comment": "A collection of curves on the surface of the Earth (reference ISO 19136).",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:associatedDirectPositionList",
-            "type": "unece:DirectPositionList",
-            "comment": "The direct position list associated with this geographical multi-curve."
+            "uri": "core:GeographicalMultiCurve.associatedDirectPositionList",
+            "type": "core:DirectPositionList"
         },
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this geographical multi-curve."
+            "uri": "core:GeographicalMultiCurve.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:memberGeographicalLine",
-            "type": "unece:GeographicalLine",
-            "comment": "A geographical line member of this geographical multi-curve."
+            "uri": "core:GeographicalMultiCurve.memberGeographicalLine",
+            "type": "core:GeographicalLine"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedGeographicalMultiCurve",
+            "uri": "core:GeographicalFeature.includedGeographicalMultiCurve",
             "comment": "The geographical multi-curve included in this geographical feature."
         }
     ]

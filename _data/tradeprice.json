@@ -1,99 +1,156 @@
 
 {
     "label": "TradePrice",
-    "uri": "unece:TradePrice",
+    "uri": "finance:TradePrice",
     "comment": "A sum of money for which something is or may be bought or sold for trade purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:basisQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity on which the trade price is based."
+            "uri": "finance:TradePrice.applicableCustomerClass",
+            "type": "core:CustomerClass"
         },
         {
-            "uri": "unece:changeReason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for a change of this trade price."
+            "uri": "finance:TradePrice.applicableSpecifiedNote",
+            "type": "core:SpecifiedNote"
         },
         {
-            "uri": "unece:chargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the trade price charge."
+            "uri": "finance:TradePrice.appliedAllowanceCharge",
+            "type": "finance:TradeAllowanceCharge"
         },
         {
-            "uri": "unece:maximumQuantity",
-            "type": "xsd:decimal",
-            "comment": "The maximum quantity in a range for which the trade price applies."
+            "uri": "finance:TradePrice.associatedDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:minimumQuantity",
-            "type": "xsd:decimal",
-            "comment": "The minimum quantity in a range for which this trade price applies."
+            "uri": "finance:TradePrice.basisDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:orderUnitConversionFactorNumeric",
-            "type": "xsd:decimal",
-            "comment": "The value used as the factor to convert the order unit into the price unit for this trade price."
+            "uri": "finance:TradePrice.basisQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:priceType",
-            "type": "xsd:string",
-            "comment": "A type, expressed as text, for this trade price."
+            "uri": "finance:TradePrice.bracketTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:priceTypeCode",
-            "type": "unece:UNCL5375Code",
-            "comment": "The code specifying the type of trade price."
+            "uri": "finance:TradePrice.calculationPercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:unitAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the unit of this trade price."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:appliedAllowanceCharge",
-            "type": "unece:AllowanceCharge",
-            "comment": "An allowance or charge applied to the trade price."
+            "uri": "finance:TradePrice.cancellationPercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:associatedDocument",
-            "type": "unece:Document",
-            "comment": "An associated document referenced for this trade price."
+            "uri": "finance:TradePrice.categoryTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:deliveryLocation",
-            "type": "unece:TradeLocation",
-            "comment": "A delivery location for this trade price."
+            "uri": "finance:TradePrice.changeReason",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:includedTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax included in this trade price."
+            "uri": "finance:TradePrice.chargeAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:tradeComparisonPrice",
-            "type": "unece:ReferencePrice",
-            "comment": "A price that provides a trade comparison with this trade price."
+            "uri": "finance:TradePrice.customerServicePointQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:validityPeriod",
-            "type": "unece:Period",
-            "comment": "A specified period for which this trade price is valid."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:grossPriceProductPrice",
-            "comment": "A gross product price in ..."
+            "uri": "finance:TradePrice.dayQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:netPriceProductPrice",
-            "comment": "A net product price in ..."
+            "uri": "finance:TradePrice.deliveryLocation",
+            "type": "core:Location"
         },
         {
-            "uri": "unece:orderPriceProductPrice",
-            "comment": "An order price for a product in this line trade agreement."
+            "uri": "finance:TradePrice.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.determinationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.expiryDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.grandTotalChargeAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:TradePrice.includedTax",
+            "type": "finance:Tax"
+        },
+        {
+            "uri": "finance:TradePrice.information",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.maximumQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "finance:TradePrice.minimumQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "finance:TradePrice.multipleReasonIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "finance:TradePrice.netPriceIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "finance:TradePrice.operationalApplicablePeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "finance:TradePrice.orderUnitConversionFactorNumeric",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.priceType",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.priceTypeCode",
+            "type": "finance:PriceTypeCodeList"
+        },
+        {
+            "uri": "finance:TradePrice.reasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.seasonalApplicablePeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "finance:TradePrice.seasonalRankCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradePrice.specifiedPaymentTradeSettlement",
+            "type": "finance:PaymentTradeSettlement"
+        },
+        {
+            "uri": "finance:TradePrice.totalChargeAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:TradePrice.tradeComparisonPrice",
+            "type": "finance:ReferencePrice"
+        },
+        {
+            "uri": "finance:TradePrice.unitAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:TradePrice.validityPeriod",
+            "type": "core:SpecifiedPeriod"
         }
     ]
 }

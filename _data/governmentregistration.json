@@ -1,66 +1,48 @@
 
 {
     "label": "GovernmentRegistration",
-    "uri": "unece:GovernmentRegistration",
+    "uri": "compliance:GovernmentRegistration",
     "comment": "The recording of items or details for a governmental purpose.",
     "datatypeProperties": [
         {
-            "uri": "unece:categoryCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a category of this government registration."
+            "uri": "compliance:GovernmentRegistration.categoryCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "The identifier of the country for this government registration."
+            "uri": "compliance:GovernmentRegistration.countryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countrySubDivisionId",
-            "type": "xsd:token",
-            "comment": "The identifier of the country sub-division for this registration."
+            "uri": "compliance:GovernmentRegistration.countrySubDivisionId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier for this government registration."
+            "uri": "compliance:GovernmentRegistration.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lastRegisteredYearDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The last registered year of this government registration."
+            "uri": "compliance:GovernmentRegistration.lastRegisteredYearDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:licenceId",
-            "type": "xsd:token",
-            "comment": "The identifier of a licence for this government registration."
+            "uri": "compliance:GovernmentRegistration.licenceId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:recordedDate",
-            "type": "xsd:base64Binary",
-            "comment": "The date that this government registration was recorded."
+            "uri": "compliance:GovernmentRegistration.recordedDate",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type of government registration."
+            "uri": "compliance:GovernmentRegistration.typeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:versionId",
-            "type": "xsd:token",
-            "comment": "The identifier of the version of this government registration."
-        }
-    ],
-    "objectProperties": [
+            "uri": "compliance:GovernmentRegistration.validityPeriod",
+            "type": "core:SpecifiedPeriod"
+        },
         {
-            "uri": "unece:validityPeriod",
-            "type": "unece:Period",
-            "comment": "The period of time during which this government registration is valid."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:specifiedGovernmentRegistration",
-            "comment": "A governmental registration specified for this trade party."
+            "uri": "compliance:GovernmentRegistration.versionId",
+            "type": "schema:Text"
         }
     ]
 }

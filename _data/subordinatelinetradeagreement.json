@@ -1,38 +1,33 @@
 
 {
     "label": "SubordinateLineTradeAgreement",
-    "uri": "unece:SubordinateLineTradeAgreement",
+    "uri": "trade:SubordinateLineTradeAgreement",
     "comment": "The contractual terms of a subordinate line trade agreement.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:additionalDocument",
-            "type": "unece:Document",
-            "comment": "An additional document referenced in this subordinate line trade agreement."
+            "uri": "trade:SubordinateLineTradeAgreement.additionalDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:buyerOrderDocument",
-            "type": "unece:Document",
-            "comment": "A buyer generated order document referenced in this subordinate line trade agreement."
+            "uri": "trade:SubordinateLineTradeAgreement.buyerOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:grossPriceProductPrice",
-            "type": "unece:TradePrice",
-            "comment": "A gross product price in this subordinate line trade agreement."
+            "uri": "trade:SubordinateLineTradeAgreement.grossPriceProductPrice",
+            "type": "finance:TradePrice"
         },
         {
-            "uri": "unece:netPriceProductPrice",
-            "type": "unece:TradePrice",
-            "comment": "A net product price in this subordinate line trade agreement."
+            "uri": "trade:SubordinateLineTradeAgreement.netPriceProductPrice",
+            "type": "finance:TradePrice"
         },
         {
-            "uri": "unece:sellerOrderDocument",
-            "type": "unece:Document",
-            "comment": "The seller generated order document referenced in this subordinate line trade agreement."
+            "uri": "trade:SubordinateLineTradeAgreement.sellerOrderDocument",
+            "type": "core:Document"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedTradeAgreement",
+            "uri": "trade:SubordinateTradeLineItem.specifiedSubordinateLineTradeAgreement",
             "comment": "The trade agreement specified for this subordinate trade line item."
         }
     ]

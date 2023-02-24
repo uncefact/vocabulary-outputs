@@ -1,45 +1,37 @@
 
 {
     "label": "PersonIdentity",
-    "uri": "unece:PersonIdentity",
+    "uri": "core:PersonIdentity",
     "comment": "Identification of a person.",
     "datatypeProperties": [
         {
-            "uri": "unece:alienRegistrationId",
-            "type": "xsd:token",
-            "comment": "The alien registration identifier for this person."
+            "uri": "core:PersonIdentity.alienRegistrationId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:driversLicenceId",
-            "type": "xsd:token",
-            "comment": "The drivers licence identifier for this person."
+            "uri": "core:PersonIdentity.driversLicenceId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identityCardId",
-            "type": "xsd:token",
-            "comment": "The identity card identifier for this person."
+            "uri": "core:PersonIdentity.identityCardId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:passportId",
-            "type": "xsd:token",
-            "comment": "The passport identifier for this person."
+            "uri": "core:PersonIdentity.passportId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:socialSecurityId",
-            "type": "xsd:token",
-            "comment": "The social security identifier for this person."
-        }
-    ],
-    "objectProperties": [
+            "uri": "core:PersonIdentity.socialSecurityId",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:specifiedIdentity",
-            "type": "unece:ProprietaryIdentity",
-            "comment": "A proprietary Identity specified for this person."
+            "uri": "core:PersonIdentity.specifiedProprietaryIdentity",
+            "type": "core:ProprietaryIdentity"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedPersonIdentity",
+            "uri": "core:Contact.specifiedPersonIdentity",
             "comment": "The person identity specified for this contact person."
         }
     ]

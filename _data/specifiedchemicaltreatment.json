@@ -1,0 +1,46 @@
+
+{
+    "label": "SpecifiedChemicalTreatment",
+    "uri": "trade:SpecifiedChemicalTreatment",
+    "comment": "Any substance such as dyestuffs, chrome oxide, acids, sulphate, surfactant or other chemicals applied to an agricultural field, substrate, plant, animal product, material or product.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:SpecifiedChemicalTreatment.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "trade:SpecifiedChemicalTreatment.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SpecifiedChemicalTreatment.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SpecifiedChemicalTreatment.specifiedProcessCertificate",
+            "type": "compliance:ProcessCertificate"
+        },
+        {
+            "uri": "trade:SpecifiedChemicalTreatment.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SpecifiedChemicalTreatment.usedChemical",
+            "type": "compliance:Chemical"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:ProductBatch.appliedChemicalTreatment",
+            "comment": "A chemical treatment applied during this production process."
+        },
+        {
+            "uri": "trade:ProductionProcess.appliedChemicalTreatment",
+            "comment": "A chemical treatment applied during this production process."
+        },
+        {
+            "uri": "trade:TradeProduct.appliedChemicalTreatment",
+            "comment": "A chemical treatment applied during this production process."
+        }
+    ]
+}

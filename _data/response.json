@@ -1,38 +1,33 @@
 
 {
     "label": "Response",
-    "uri": "unece:Response",
-    "comment": "A reply, answer, or additional message that is usually in response to a question or query.",
+    "uri": "core:Response",
+    "comment": "A response to a specification query.",
     "datatypeProperties": [
         {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "The content, expressed as text, of this specification response."
+            "uri": "core:Response.content",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this specification response."
+            "uri": "core:Response.contractualLanguageCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this specification response."
+            "uri": "core:Response.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:queryId",
-            "type": "xsd:token",
-            "comment": "The unique identifier for the query to which this response refers."
+            "uri": "core:Response.queryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:specificationResponseTypeCode",
-            "type": "unece:UNCL4343Code",
-            "comment": "The code specifying the type of this specification response."
+            "uri": "core:Response.responseTypeCode",
+            "type": "core:ResponseTypeCodeList"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:respondingResponse",
+            "uri": "core:ComplexDescription.respondingResponse",
             "comment": "A responding specification response for this work item complex description."
         }
     ]

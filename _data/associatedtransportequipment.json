@@ -1,27 +1,81 @@
 
 {
     "label": "AssociatedTransportEquipment",
-    "uri": "unece:AssociatedTransportEquipment",
+    "uri": "transport:AssociatedTransportEquipment",
     "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
     "datatypeProperties": [
         {
-            "uri": "unece:characteristic",
-            "type": "xsd:string",
-            "comment": "The textual description of the characteristics, i.e. size and type, of this piece of associated transport equipment."
+            "uri": "transport:AssociatedTransportEquipment.affixedSeal",
+            "type": "compliance:Seal"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique number, mark or name which identifies this associated piece of transport equipment."
+            "uri": "transport:AssociatedTransportEquipment.characteristic",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.containedConsignment",
+            "type": "transport:Consignment"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.grossVolumeMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.grossWeightMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.loadedDangerousGoods",
+            "type": "transport:DangerousGoods"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.loadedPackageQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.sealQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.sealedIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.settingTemperature",
+            "type": "transport:TransportSettingTemperature"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.tareWeightMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.transportEquipmentCategoryCode",
+            "type": "transport:TransportEquipmentCategoryCodeList"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.transportEquipmentSizeTypeCharacteristicCode",
+            "type": "transport:TransportEquipmentSizeTypeCodeList"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.unitQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "transport:AssociatedTransportEquipment.usedCapacityCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:carriedTransportEquipment",
+            "uri": "transport:LogisticsTransportEquipment.carriedTransportEquipment",
             "comment": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
         },
         {
-            "uri": "unece:containedTransportEquipment",
+            "uri": "transport:LogisticsTransportEquipment.containedTransportEquipment",
             "comment": "A piece of transport equipment contained within this piece of logistics transport equipment, such as a pallet."
         }
     ]

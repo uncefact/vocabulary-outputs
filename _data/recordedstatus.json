@@ -1,29 +1,26 @@
 
 {
     "label": "RecordedStatus",
-    "uri": "unece:RecordedStatus",
+    "uri": "core:RecordedStatus",
     "comment": "Recorded information relevant to a condition or a position of an object.",
     "datatypeProperties": [
         {
-            "uri": "unece:changedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value when this recorded status changed."
+            "uri": "core:RecordedStatus.changedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:changerName",
-            "type": "xsd:string",
-            "comment": "The name of the person or system, expressed as text, that changed this recorded status."
+            "uri": "core:RecordedStatus.changerName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:recordedStatusConditionCode",
-            "type": "unece:UNCL4405Code",
-            "comment": "The code specifying the condition for this recorded status."
+            "uri": "core:RecordedStatus.recordedStatusConditionCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:changedStatus",
-            "comment": "A changed recorded status for ..."
+            "uri": "core:QuantityAnalysis.changedStatus",
+            "comment": "A changed recorded status for this basic work item."
         }
     ]
 }

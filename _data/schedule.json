@@ -1,63 +1,28 @@
 
 {
     "label": "Schedule",
-    "uri": "unece:Schedule",
-    "comment": "A series of planned activities or things to be done showing the times or dates when they are intended to happen or be done.",
+    "uri": "core:Schedule",
+    "comment": "A series of planned activities or things to be done in this supply chain.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this supply chain schedule."
+            "uri": "core:Schedule.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier of this supply chain schedule."
+            "uri": "core:Schedule.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+            "uri": "core:Schedule.occurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:statusCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the status of this supply chain schedule."
+            "uri": "core:Schedule.statusCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of supply chain schedule."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:consumptionSchedule",
-            "comment": "A supply chain consumption schedule, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:deliverySchedule",
-            "comment": "A supply chain delivery schedule, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:despatchSchedule",
-            "comment": "A supply chain despatch schedule, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:orderSchedule",
-            "comment": "A supply chain order schedule, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:receiptSchedule",
-            "comment": "A supply chain receipt schedule, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:specifiedSchedule",
-            "comment": "A supply chain schedule, specified at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:supplySpecifiedSchedule",
-            "comment": "A supply (replenishment) schedule, specified at line level, for this trade delivery."
+            "uri": "core:Schedule.typeCode",
+            "type": "schema:Text"
         }
     ]
 }

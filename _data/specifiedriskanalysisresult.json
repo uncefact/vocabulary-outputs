@@ -1,36 +1,17 @@
 
 {
     "label": "specifiedRiskAnalysisResult",
-    "uri": "unece:specifiedRiskAnalysisResult",
-    "comment": [
-        "A result of a logistics risk analysis calculation specified for this supply chain consignment.",
-        "A result of a logistics risk analysis calculation specified for this trade party.",
-        "A result of a logistics risk analysis calculation specified for this transport equipment.",
-        "A result of a logistics risk analysis calculation specified for this transport movement.",
-        "A result of a logistics risk analysis specified for this referenced supply chain consignment."
-    ],
+    "uri": "transport:TransportMovement.specifiedRiskAnalysisResult",
+    "comment": "A result of a logistics risk analysis calculation specified for this supply chain consignment.",
     "rangeIncludes": [
         {
-            "uri": "unece:RiskAnalysisResult",
-            "comment": "The results of a risk analysis calculation."
+            "uri": "compliance:RiskAnalysisResult"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
-        },
-        {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "uri": "transport:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

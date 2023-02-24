@@ -1,39 +1,16 @@
 
 {
     "label": "occurrenceDateTime",
-    "uri": "unece:occurrenceDateTime",
-    "comment": [
-        "A date, time, date time, or other date time of an occurrence in this supply chain schedule.",
-        "A date, time, date time, or other date time value of an occurrence of this supply chain event.",
-        "The date time of the occurrence of this applied chemical treatment.",
-        "The date, time, date time, or other date time value of an occurrence of this communication event.",
-        "The date, time, date time, or other date time value of an occurrence of this header balance out.",
-        "The date, time, date time, or other date time value of an occurrence of this payment balance out."
-    ],
+    "uri": "transport:SupplyChainEvent.occurrenceDateTime",
+    "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:BalanceOut",
-            "comment": "Offset information to ensure that debits and credits are equal."
-        },
-        {
-            "uri": "unece:ChemicalTreatment",
-            "comment": "A process of subjecting an object to the action of a chemical, physical, or biological agent."
-        },
-        {
-            "uri": "unece:CommunicationEvent",
-            "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet."
-        },
-        {
-            "uri": "unece:Schedule",
-            "comment": "A series of planned activities or things to be done showing the times or dates when they are intended to happen or be done."
-        },
-        {
-            "uri": "unece:SupplyChainEvent",
+            "uri": "transport:SupplyChainEvent",
             "comment": "A significant occurrence or happening in a supply chain."
         }
     ]

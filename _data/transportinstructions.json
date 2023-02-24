@@ -1,56 +1,22 @@
 
 {
     "label": "TransportInstructions",
-    "uri": "unece:TransportInstructions",
+    "uri": "compliance:TransportInstructions",
     "comment": "Transport information of an instructive nature.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these transport instructions."
+            "uri": "compliance:TransportInstructions.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:transportInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "The code specifying a description of these transport instructions."
+            "uri": "compliance:TransportInstructions.transportInstructionsDescriptionCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:additionalInstructions",
-            "comment": "Additional instructions for this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:borderClearanceInstructions",
-            "comment": "Border clearance instructions for this ..."
-        },
-        {
-            "uri": "unece:consignorProvidedBorderClearanceInstructions",
-            "comment": "Border clearance instructions provided by the consignor for this supply chain consignment."
-        },
-        {
-            "uri": "unece:loadingInspectionSpecifiedInstructions",
-            "comment": "Loading inspection instructions specified for this logistics transport movement."
-        },
-        {
-            "uri": "unece:loadingInstructions",
-            "comment": "Loading instructions for this piece ..."
-        },
-        {
-            "uri": "unece:specialSpecifiedInstructions",
-            "comment": "Special transport instructions specified for this logistics transport movement."
-        },
-        {
-            "uri": "unece:specifiedTransportInstructions",
-            "comment": "An instruction or a set of instructions specified for this transport event."
-        },
-        {
-            "uri": "unece:unloadingInspectionSpecifiedInstructions",
-            "comment": "Unloading inspection instructions specified for this logistics transport movement."
-        },
-        {
-            "uri": "unece:unloadingInstructions",
-            "comment": "Unloading instructions for this piece of logistics transport equipment."
+            "uri": "compliance:RegulatoryProcedure.borderClearanceInstructions",
+            "comment": "Border clearance instructions for this cross-border regulatory procedure."
         }
     ]
 }

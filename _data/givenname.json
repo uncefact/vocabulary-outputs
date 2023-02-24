@@ -1,23 +1,16 @@
 
 {
     "label": "givenName",
-    "uri": "unece:givenName",
-    "comment": [
-        "A given name, expressed as text, for this transport person.",
-        "The name, expressed as text, given to this contact person, usually by parents at birth."
-    ],
+    "uri": "transport:TransportPerson.givenName",
+    "comment": "A given name, expressed as text, for this transport person.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ContactPerson",
-            "comment": "An individual human being in a position to give assistance or information."
-        },
-        {
-            "uri": "unece:TransportPerson",
+            "uri": "transport:TransportPerson",
             "comment": "A transport related person, such as a member of a crew or a passenger."
         }
     ]

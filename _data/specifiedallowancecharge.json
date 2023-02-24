@@ -1,25 +1,17 @@
 
 {
     "label": "specifiedAllowanceCharge",
-    "uri": "unece:specifiedAllowanceCharge",
-    "comment": [
-        "An allowance or charge specified for this header trade settlement.",
-        "An allowance or charge specified for this line trade settlement."
-    ],
+    "uri": "trade:SubordinateLineTradeSettlement.specifiedAllowanceCharge",
+    "comment": "An allowance or charge specified for this header trade settlement.",
     "rangeIncludes": [
         {
-            "uri": "unece:AllowanceCharge",
-            "comment": "A component of pricing, such as a service, promotion, allowance or charge."
+            "uri": "finance:TradeAllowanceCharge"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
-            "uri": "unece:LineTradeSettlement",
-            "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+            "uri": "trade:SubordinateLineTradeSettlement",
+            "comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
         }
     ]
 }

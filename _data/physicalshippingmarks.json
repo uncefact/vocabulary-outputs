@@ -1,32 +1,17 @@
 
 {
     "label": "physicalShippingMarks",
-    "uri": "unece:physicalShippingMarks",
-    "comment": [
-        "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item.",
-        "Physical logistics shipping marks and barcode information for this supply chain consignment item.",
-        "Physical logistics shipping marks and barcoding information related to this supply chain consignment.",
-        "Physical logistics shipping marks in this referenced logistics package.",
-        "Physical shipping marks and barcode information for this logistics package."
-    ],
+    "uri": "transport:Package.physicalShippingMarks",
+    "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item.",
     "rangeIncludes": [
         {
-            "uri": "unece:ShippingMarks",
-            "comment": "Physical markings or labels on individual packages or transport units for shipping purposes."
+            "uri": "transport:ShippingMarks"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
+            "uri": "transport:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         }
     ]
 }

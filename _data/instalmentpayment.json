@@ -1,35 +1,29 @@
 
 {
     "label": "InstalmentPayment",
-    "uri": "unece:InstalmentPayment",
+    "uri": "finance:InstalmentPayment",
     "comment": "A discharge of obligations in respect of funds or securities, transferred through one of several payments, between two or more parties.",
     "datatypeProperties": [
         {
-            "uri": "unece:dueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The due date for this instalment payment."
+            "uri": "finance:InstalmentPayment.dueDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:paidAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value paid or to be paid for this instalment payment."
+            "uri": "finance:InstalmentPayment.paidAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:sequenceId",
-            "type": "xsd:token",
-            "comment": "The sequence identifier for this instalment payment."
-        }
-    ],
-    "objectProperties": [
+            "uri": "finance:InstalmentPayment.sequenceId",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:specifiedDocument",
-            "type": "unece:FinancingRequestResultDocument",
-            "comment": "The financing request result document specified for this instalment payment."
+            "uri": "finance:InstalmentPayment.specifiedFinancingRequestResultDocument",
+            "type": "finance:FinancingRequestResultDocument"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedPayment",
+            "uri": "finance:InstalmentPlan.specifiedInstalmentPayment",
             "comment": "An instalment payment specified for this instalment plan."
         }
     ]

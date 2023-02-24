@@ -1,0 +1,26 @@
+
+{
+    "label": "ProductCharacteristicCondition",
+    "uri": "compliance:ProductCharacteristicCondition",
+    "comment": "A state that applies to a product characteristic.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ProductCharacteristicCondition.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProductCharacteristicCondition.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProductCharacteristicCondition.valueMeasure",
+            "type": "core:MeasureType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:ProductCharacteristic.applicableCondition",
+            "comment": "A condition applicable to this product characteristic."
+        }
+    ]
+}

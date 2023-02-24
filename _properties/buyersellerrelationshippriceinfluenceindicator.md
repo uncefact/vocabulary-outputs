@@ -1,5 +1,0 @@
----
-title: buyerSellerRelationshipPriceInfluenceIndicator
-permalink: buyerSellerRelationshipPriceInfluenceIndicator
-jsonid: buyersellerrelationshippriceinfluenceindicator
----

@@ -1,24 +1,22 @@
 
 {
     "label": "ProprietaryIdentity",
-    "uri": "unece:ProprietaryIdentity",
+    "uri": "core:ProprietaryIdentity",
     "comment": "Proprietary information which uniquely identifies a person or organization.",
     "datatypeProperties": [
         {
-            "uri": "unece:identificationType",
-            "type": "xsd:string",
-            "comment": "An identifier type, expressed as text, for this proprietary identity."
+            "uri": "core:ProprietaryIdentity.identificationType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A proprietary identifier."
+            "uri": "core:ProprietaryIdentity.identifier",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedIdentity",
-            "comment": "A proprietary Identity specified for ..."
+            "uri": "core:PersonIdentity.specifiedProprietaryIdentity",
+            "comment": "A proprietary Identity specified for this person."
         }
     ]
 }

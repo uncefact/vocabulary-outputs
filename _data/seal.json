@@ -1,49 +1,37 @@
 
 {
     "label": "Seal",
-    "uri": "unece:Seal",
-    "comment": "A device used to secure an object and protect from unauthorized entry or tampering such as a seal affixed to a piece of transport equipment.",
+    "uri": "compliance:Seal",
+    "comment": "A device used to secure an object and protect it from unauthorized entry or tampering during transport or other logistics operations.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this logistics seal."
+            "uri": "compliance:Seal.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:logisticsSealingPartyRoleCode",
-            "type": "unece:UNCL9303Code",
-            "comment": "The code specifying the role of the party responsible for the sealing of this logistics seal."
+            "uri": "compliance:Seal.issuingParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:maximumId",
-            "type": "xsd:token",
-            "comment": "The maximum unique identifier used for these logistics seals."
+            "uri": "compliance:Seal.logisticsSealTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:sealConditionCode",
-            "type": "unece:UNCL4517Code",
-            "comment": "A code specifying a condition of this logistics seal."
+            "uri": "compliance:Seal.logisticsSealingPartyRoleCode",
+            "type": "compliance:SealingPartyRoleCodeList"
         },
         {
-            "uri": "unece:sealTypeCode",
-            "type": "unece:UNCL4525Code",
-            "comment": "The code specifying the type of logistics seal."
-        }
-    ],
-    "objectProperties": [
+            "uri": "compliance:Seal.maximumId",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:issuingParty",
-            "type": "unece:TradeParty",
-            "comment": "The party issuing this logistics seal."
+            "uri": "compliance:Seal.sealConditionCode",
+            "type": "compliance:SealConditionCodeList"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:affixedSeal",
-            "comment": "A seal affixed to this ..."
-        },
-        {
-            "uri": "unece:requiredSeal",
+            "uri": "compliance:RegulatoryProcedure.requiredSeal",
             "comment": "A seal required by this cross-border regulatory procedure."
         }
     ]

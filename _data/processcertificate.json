@@ -1,0 +1,90 @@
+
+{
+    "label": "ProcessCertificate",
+    "uri": "compliance:ProcessCertificate",
+    "comment": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required criteria.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ProcessCertificate.actualEffectiveDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.applicableAssertion",
+            "type": "compliance:Assertion"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.applicableObjectCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.applicableProcessCertification",
+            "type": "compliance:ProcessCertification"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.applicableProcessCharacteristic",
+            "type": "compliance:ProcessCharacteristic"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.applicableStandard",
+            "type": "compliance:Standard"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.attachedBinaryFile",
+            "type": "core:BinaryFile"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.certificateTypeCode",
+            "type": "compliance:CertificateTypeCodeList"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.expiryDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.issueDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.issueReasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.issuingPartyId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.purposeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProcessCertificate.requestedEffectiveDateTime",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResult.obtainedProcessCertificate",
+            "comment": "A process certificate obtained by means of this specified inspection result."
+        },
+        {
+            "uri": "compliance:ProductionWasteRecoveryDisposalProcess.specifiedProcessCertificate",
+            "comment": "A process certificate for this specified chemical treatment."
+        },
+        {
+            "uri": "compliance:WasteMaterialRecoveryDisposalProcess.applicableProcessCertificate",
+            "comment": "A process certificate applicable to this specified crop protection treatment."
+        }
+    ]
+}

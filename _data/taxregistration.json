@@ -1,31 +1,20 @@
 
 {
     "label": "TaxRegistration",
-    "uri": "unece:TaxRegistration",
+    "uri": "compliance:TaxRegistration",
     "comment": "Registration with a specific tax authority.",
     "datatypeProperties": [
         {
-            "uri": "unece:iOSSId",
-            "type": "xsd:token",
-            "comment": "The Import One Stop Shop (IOSS) identifier for this tax registration."
+            "uri": "compliance:TaxRegistration.associatedTax",
+            "type": "finance:RegisteredTax"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this tax registration."
-        }
-    ],
-    "objectProperties": [
+            "uri": "compliance:TaxRegistration.iOSSId",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:associatedTax",
-            "type": "unece:RegisteredTax",
-            "comment": "The registered tax associated with this tax registration."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:specifiedRegistration",
-            "comment": "A tax registration specified for ..."
+            "uri": "compliance:TaxRegistration.identifier",
+            "type": "schema:Text"
         }
     ]
 }

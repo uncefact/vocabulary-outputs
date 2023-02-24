@@ -1,24 +1,17 @@
 
 {
     "label": "paymentMethodCode",
-    "uri": "unece:paymentMethodCode",
-    "comment": [
-        "The code specifying the method by which a payment may be made for this trade settlement payment means.",
-        "The code specifying the payment method for this trade related tax, levy or duty."
-    ],
+    "uri": "finance:PaymentMeans.paymentMethodCode",
+    "comment": "The code specifying the method by which a payment may be made for this trade settlement payment means.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:PaymentMeans",
-            "comment": "Details of the means by which the payment will be or has been made."
-        },
-        {
-            "uri": "unece:TradeTax",
-            "comment": "A trade related fiscal levy or duty."
+            "uri": "finance:PaymentMeans",
+            "comment": "The means by which a payment will be or has been made for trade settlement purposes."
         }
     ]
 }

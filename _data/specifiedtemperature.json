@@ -1,29 +1,20 @@
 
 {
     "label": "SpecifiedTemperature",
-    "uri": "unece:SpecifiedTemperature",
+    "uri": "core:SpecifiedTemperature",
     "comment": "A specified temperature value or range of values.",
     "datatypeProperties": [
         {
-            "uri": "unece:maximumValueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the highest value of a range for this specified temperature, such as a maximum temperature value of fourteen degrees Celsius."
+            "uri": "core:SpecifiedTemperature.maximumValueMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:minimumValueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the lowest value of a range for this specified temperature, such as a minimum temperature value of four degrees Celsius."
+            "uri": "core:SpecifiedTemperature.minimumValueMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:applicableTemperature",
-            "comment": "The specified temperature applicable for this applied chemical treatment."
+            "uri": "core:SpecifiedTemperature.temperatureUnitValueMeasure",
+            "type": "core:TemperatureUnitMeasureType"
         }
     ]
 }

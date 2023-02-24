@@ -1,29 +1,17 @@
 
 {
-    "label": "Condition",
-    "uri": "unece:Condition",
-    "comment": "A state of a person or thing.",
-    "datatypeProperties": [
+    "label": "condition",
+    "uri": "finance:Guarantee.condition",
+    "comment": "A condition or status, expressed as text, for this process characteristic.",
+    "rangeIncludes": [
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this product characteristic condition."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of product characteristic condition."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value for this product characteristic condition."
+            "uri": "schema:Text"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:applicableCondition",
-            "comment": "A condition applicable to this product characteristic."
+            "uri": "finance:Guarantee",
+            "comment": "An official promise or assurance to fulfil a financial obligation."
         }
     ]
 }

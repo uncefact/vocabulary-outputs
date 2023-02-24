@@ -1,38 +1,33 @@
 
 {
     "label": "PaymentDiscountTerms",
-    "uri": "unece:PaymentDiscountTerms",
-    "comment": "Terms and conditions by which a payment discount is or can be applied to a payable amount.",
+    "uri": "finance:PaymentDiscountTerms",
+    "comment": "Trade terms and conditions by which a discount is or can be applied to a payable amount.",
     "datatypeProperties": [
         {
-            "uri": "unece:actualDiscountAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the actual discount in these trade payment discount terms."
+            "uri": "finance:PaymentDiscountTerms.actualDiscountAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:basisAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
+            "uri": "finance:PaymentDiscountTerms.basisAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:basisDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value used as the basis to calculate the discount in the trade payment discount terms."
+            "uri": "finance:PaymentDiscountTerms.basisDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:basisPeriodMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the basis period for these trade payment discount terms."
+            "uri": "finance:PaymentDiscountTerms.basisPeriodMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:calculationPercent",
-            "type": "xsd:decimal",
-            "comment": "The percent used to calculate the discount in these trade payment discount terms."
+            "uri": "finance:PaymentDiscountTerms.calculationPercent",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicablePaymentDiscountTerms",
+            "uri": "finance:PaymentTerms.applicablePaymentDiscountTerms",
             "comment": "Trade payment discount terms applicable to these trade payment terms."
         }
     ]

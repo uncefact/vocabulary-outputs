@@ -1,29 +1,17 @@
 
 {
     "label": "returnableIndicator",
-    "uri": "unece:returnableIndicator",
-    "comment": [
-        "The indication of whether or not this logistics package is returnable.",
-        "The indication of whether or not this piece of logistics transport equipment is returnable.",
-        "The indication of whether or not this supply chain packaging is returnable."
-    ],
+    "uri": "transport:SupplyChainPackaging.returnableIndicator",
+    "comment": "The indication of whether or not this logistics package is returnable.",
     "rangeIncludes": [
         {
-            "uri": "xsd:boolean"
+            "uri": "schema:Boolean"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
-        },
-        {
-            "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
-        },
-        {
-            "uri": "unece:Packaging",
-            "comment": "Any wrapping or containment, such as a box or a barrel, of goods."
+            "uri": "transport:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

@@ -1,48 +1,54 @@
 
 {
     "label": "DirectPositionList",
-    "uri": "unece:DirectPositionList",
-    "comment": "The list of coordinates for a physical location, expressed as a sequence of direct positions.",
+    "uri": "core:DirectPositionList",
+    "comment": "The specified list of coordinates for a physical location, expressed as a sequence of direct positions.",
     "datatypeProperties": [
         {
-            "uri": "unece:axisLabelList",
-            "type": "xsd:string",
-            "comment": "An ordered list of axis labels, expressed as text, for this specified direct position list."
+            "uri": "core:DirectPositionList.axisLabelList",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:coordinate",
-            "type": "xsd:string",
-            "comment": "The coordinate, expressed as text, for this specified direct position list."
+            "uri": "core:DirectPositionList.coordinate",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:coordinateReferenceDimension",
-            "type": "xsd:string",
-            "comment": "A coordinate reference dimension, expressed as text, for this specified direct position list."
+            "uri": "core:DirectPositionList.coordinateReferenceDimension",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countNumeric",
-            "type": "xsd:decimal",
-            "comment": "A count for this specified direct position list."
+            "uri": "core:DirectPositionList.countNumeric",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this specified direct position list."
+            "uri": "core:DirectPositionList.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:uOMLabelList",
-            "type": "xsd:string",
-            "comment": "An ordered list of Unit Of Measure (UOM) labels, expressed as text, for this specified direct position list."
+            "uri": "core:DirectPositionList.uOMLabelList",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:associatedDirectPositionList",
-            "comment": "The direct position list associated ..."
+            "uri": "core:GeographicalGrid.originAssociatedDirectPositionList",
+            "comment": "The direct position list associated with the origin of this geographical grid."
         },
         {
-            "uri": "unece:originAssociatedDirectPositionList",
-            "comment": "The direct position list associated with the origin of this geographical grid."
+            "uri": "core:GeographicalLine.associatedDirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
+        },
+        {
+            "uri": "core:GeographicalMultiCurve.associatedDirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
+        },
+        {
+            "uri": "core:GeographicalMultiPoint.associatedDirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
+        },
+        {
+            "uri": "core:GeographicalPoint.associatedDirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
         }
     ]
 }

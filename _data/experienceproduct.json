@@ -1,0 +1,126 @@
+
+{
+    "label": "ExperienceProduct",
+    "uri": "tourism:ExperienceProduct",
+    "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience.",
+    "datatypeProperties": [
+        {
+            "uri": "tourism:ExperienceProduct.applicableQuantityUnitTypeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.applicableSpecifiedNote",
+            "type": "core:SpecifiedNote"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.brandName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.calculatedPrice",
+            "type": "finance:TradePrice"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.categoryCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.certifiedPersonArrangementIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.distinctiveFeature",
+            "type": "core:SpecifiedFeature"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.includedEvent",
+            "type": "tourism:ExperienceEvent"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.indemnityClause",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.instruction",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.location",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.maximumUnitQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.minimumUnitQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.objective",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.operationalPeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.optionalProduct",
+            "type": "tourism:ExperienceProduct"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.providedCertificate",
+            "type": "compliance:SpecifiedCertificate"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.providedRequirement",
+            "type": "compliance:Requirement"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.requiredReservationGuaranteeIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.requiredUsageCondition",
+            "type": "core:UsageCondition"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.reservationGuarantee",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.specifiedTradeParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.theme",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:ExperienceProduct.themeTypeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "tourism:ExperienceItem.availableProduct",
+            "comment": "An available product for this specified experience item."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.optionalProduct",
+            "comment": "An optional product for this experience product."
+        }
+    ]
+}

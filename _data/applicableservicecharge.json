@@ -1,45 +1,17 @@
 
 {
     "label": "applicableServiceCharge",
-    "uri": "unece:applicableServiceCharge",
-    "comment": [
-        "A logistics service charge applicable to this supply chain consignment item.",
-        "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges.",
-        "A logistics service charge applicable to this trade party.",
-        "A service charge applicable to this piece of logistics transport equipment.",
-        "A service charge, such as a freight charge, applicable to this logistics means of transport.",
-        "A service charge, such as a freight charge, applicable to this logistics transport movement."
-    ],
+    "uri": "transport:TransportMovement.applicableServiceCharge",
+    "comment": "A logistics service charge applicable to this supply chain consignment item.",
     "rangeIncludes": [
         {
-            "uri": "unece:ServiceCharge",
-            "comment": "A charge made for services rendered or assessed, such as banking, freight charges, charges for a medical service such as provision of a private room, provision of a television, medical supplies, massage."
+            "uri": "transport:ServiceCharge"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
-        },
-        {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
-        },
-        {
-            "uri": "unece:TransportMeans",
-            "comment": "The device or method used to convey people, goods, animals or other objects from place to place."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "uri": "transport:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

@@ -1,84 +1,69 @@
 
 {
     "label": "Sensor",
-    "uri": "unece:Sensor",
-    "comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally.",
+    "uri": "transport:Sensor",
+    "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier of this monitoring sensor."
+            "uri": "transport:Sensor.actualReportedMeasurement",
+            "type": "compliance:CalibratedMeasurement"
         },
         {
-            "uri": "unece:positionCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a position of this monitoring sensor."
+            "uri": "transport:Sensor.definedControlSettingParameter",
+            "type": "compliance:ControlSettingParameter"
         },
         {
-            "uri": "unece:remainingBatteryChargePercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
+            "uri": "transport:Sensor.definedOperationalParameter",
+            "type": "compliance:OperationalParameter"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a type of monitoring sensor."
+            "uri": "transport:Sensor.grantedCertificate",
+            "type": "compliance:ProductCertificate"
         },
         {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value for this monitoring sensor."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:actualReportedMeasurement",
-            "type": "unece:Measurement",
-            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+            "uri": "transport:Sensor.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:definedOperationalParameter",
-            "type": "unece:OperationalParameter",
-            "comment": "An operational parameter defined for this monitoring sensor."
+            "uri": "transport:Sensor.manufacturerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:definedParameter",
-            "type": "unece:ControlSettingParameter",
-            "comment": "A control setting parameter defined for this monitoring sensor."
+            "uri": "transport:Sensor.ownerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:grantedCertificate",
-            "type": "unece:Certificate",
-            "comment": "A product certificate granted for this monitoring sensor."
+            "uri": "transport:Sensor.positionCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this monitoring sensor."
+            "uri": "transport:Sensor.precisionMeasurement",
+            "type": "compliance:CalibratedMeasurement"
         },
         {
-            "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner party of this monitoring sensor."
+            "uri": "transport:Sensor.remainingBatteryChargePercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:precisionMeasurement",
-            "type": "unece:Measurement",
-            "comment": "A calibrated measurement of precision for this monitoring sensor."
+            "uri": "transport:Sensor.scheduledReportedMeasurement",
+            "type": "compliance:CalibratedMeasurement"
         },
         {
-            "uri": "unece:scheduledReportedMeasurement",
-            "type": "unece:Measurement",
-            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+            "uri": "transport:Sensor.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:Sensor.valueMeasure",
+            "type": "core:MeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:embeddedSensor",
+            "uri": "transport:IOTDevice.embeddedSensor",
             "comment": "An embedded sensor of this monitoring IOT device."
         },
         {
-            "uri": "unece:remoteSensor",
+            "uri": "transport:IOTDevice.remoteSensor",
             "comment": "A remote sensor of this monitoring IOT device."
         }
     ]

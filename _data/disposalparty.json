@@ -1,24 +1,16 @@
 
 {
     "label": "disposalParty",
-    "uri": "unece:disposalParty",
-    "comment": [
-        "A disposal party, at header level, for this trade delivery.",
-        "A disposal party, at line level, for this trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.disposalParty",
+    "comment": "A disposal party, at header level, for this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "trade:TradeParty"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

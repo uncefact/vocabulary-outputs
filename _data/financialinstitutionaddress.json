@@ -1,99 +1,90 @@
 
 {
     "label": "FinancialInstitutionAddress",
-    "uri": "unece:FinancialInstitutionAddress",
+    "uri": "finance:FinancialInstitutionAddress",
     "comment": "The location at which a financial institution may be found or reached.",
     "datatypeProperties": [
         {
-            "uri": "unece:buildingNumber",
-            "type": "xsd:string",
-            "comment": "The number, expressed as text, of the building on a street for this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.buildingNumber",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:cityId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the city for this financial institution address, such as United Nations Location Code (UNLOCODE)."
+            "uri": "finance:FinancialInstitutionAddress.cityId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:cityName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the city, town or village of this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.cityName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a country for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
+            "uri": "finance:FinancialInstitutionAddress.countryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countryName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the country within this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.countryName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countrySubDivisionId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
+            "uri": "finance:FinancialInstitutionAddress.countrySubDivisionId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countrySubDivisionName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of a country sub-division within this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.countrySubDivisionName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:departmentName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of a department within this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.departmentName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:financialInstitutionAddressTypeCode",
-            "type": "unece:UNCL3131Code",
-            "comment": "The code specifying the type of financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.financialInstitutionAddressTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineFive",
-            "type": "xsd:string",
-            "comment": "The fifth free form line, expressed as text, of this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.lineFive",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineFour",
-            "type": "xsd:string",
-            "comment": "The fourth free form line, expressed as text, of this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.lineFour",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineOne",
-            "type": "xsd:string",
-            "comment": "The first free form line, expressed as text, of this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.lineOne",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineThree",
-            "type": "xsd:string",
-            "comment": "The third free form line, expressed as text, of this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.lineThree",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineTwo",
-            "type": "xsd:string",
-            "comment": "The second free form line, expressed as text, of this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.lineTwo",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:postOfficeBox",
-            "type": "xsd:string",
-            "comment": "The post office box, expressed as text, for this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.postOfficeBox",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:postcodeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the postcode for this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.postcodeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:streetName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the street or thoroughfare for this financial institution address."
+            "uri": "finance:FinancialInstitutionAddress.streetName",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:locationAddress",
-            "comment": "The location address for this ..."
+            "uri": "finance:BranchFinancialInstitution.locationAddress",
+            "comment": "The location address for this branch of a financial institution."
+        },
+        {
+            "uri": "finance:CreditorFinancialInstitution.locationAddress",
+            "comment": "The location address for this branch of a financial institution."
+        },
+        {
+            "uri": "finance:DebtorFinancialInstitution.locationAddress",
+            "comment": "The location address for this branch of a financial institution."
         }
     ]
 }

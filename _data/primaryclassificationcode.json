@@ -1,25 +1,17 @@
 
 {
     "label": "primaryClassificationCode",
-    "uri": "unece:primaryClassificationCode",
-    "comment": [
-        "A code specifying a primary classification value for this work item quantity analysis.",
-        "A code specifying the primary classification for this basic work item.",
-        "A code specifying the primary classification for this work item group."
-    ],
+    "uri": "finance:GroupedWorkItem.primaryClassificationCode",
+    "comment": "A code specifying a primary classification value for this work item quantity analysis.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:QuantityAnalysis",
-            "comment": "The analytic breakdown of a quantity to include its supporting information, such as a complex quantity that consists of multiple pieces of information that together constitute a single quantity."
-        },
-        {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
+            "uri": "finance:GroupedWorkItem",
+            "comment": "A grouping of related work items."
         }
     ]
 }

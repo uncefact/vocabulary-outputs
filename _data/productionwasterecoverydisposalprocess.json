@@ -1,0 +1,26 @@
+
+{
+    "label": "ProductionWasteRecoveryDisposalProcess",
+    "uri": "compliance:ProductionWasteRecoveryDisposalProcess",
+    "comment": "A process of either regaining waste substances in usable form, or of getting rid of waste substances resulting from production.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ProductionWasteRecoveryDisposalProcess.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProductionWasteRecoveryDisposalProcess.specifiedProcessCertificate",
+            "type": "compliance:ProcessCertificate"
+        },
+        {
+            "uri": "compliance:ProductionWasteRecoveryDisposalProcess.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:ProductionWasteMaterial.applicableProductionWasteRecoveryDisposalProcess",
+            "comment": "A production waste recovery disposal process applicable to this production waste material."
+        }
+    ]
+}

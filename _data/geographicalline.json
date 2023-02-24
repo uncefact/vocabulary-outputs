@@ -1,32 +1,29 @@
 
 {
     "label": "GeographicalLine",
-    "uri": "unece:GeographicalLine",
+    "uri": "core:GeographicalLine",
     "comment": "A connection between two points on the surface of the Earth (reference ISO 19136).",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:associatedDirectPositionList",
-            "type": "unece:DirectPositionList",
-            "comment": "The direct position list associated with this geographical line."
+            "uri": "core:GeographicalLine.associatedDirectPositionList",
+            "type": "core:DirectPositionList"
         },
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this geographical line."
+            "uri": "core:GeographicalLine.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:associatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location associated with this specified geographical line."
+            "uri": "core:GeographicalLine.associatedLocation",
+            "type": "core:Location"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedGeographicalLine",
+            "uri": "core:GeographicalFeature.includedGeographicalLine",
             "comment": "The geographical line included in this geographical feature."
         },
         {
-            "uri": "unece:memberGeographicalLine",
+            "uri": "core:GeographicalMultiCurve.memberGeographicalLine",
             "comment": "A geographical line member of this geographical multi-curve."
         }
     ]

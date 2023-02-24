@@ -1,49 +1,37 @@
 
 {
     "label": "ComplexDescription",
-    "uri": "unece:ComplexDescription",
-    "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a complex description.",
+    "uri": "core:ComplexDescription",
+    "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a work item complex description.",
     "datatypeProperties": [
         {
-            "uri": "unece:abstract",
-            "type": "xsd:string",
-            "comment": "A textual abstract of the content of the work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "uri": "core:ComplexDescription.abstract",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, for this work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "uri": "core:ComplexDescription.content",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this work item complex description."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:requestingQuery",
-            "type": "unece:Query",
-            "comment": "A requesting specification query for this work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "uri": "core:ComplexDescription.contractualLanguageCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:respondingResponse",
-            "type": "unece:Response",
-            "comment": "A responding specification response for this work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "uri": "core:ComplexDescription.requestingQuery",
+            "type": "core:SpecificationQuery"
         },
         {
-            "uri": "unece:subsetComplexDescription",
-            "type": "unece:ComplexDescription",
-            "comment": "The complex description subset for this work item complex description. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "uri": "core:ComplexDescription.respondingResponse",
+            "type": "core:Response"
+        },
+        {
+            "uri": "core:ComplexDescription.subsetComplexDescription",
+            "type": "core:ComplexDescription"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:actualComplexDescription",
-            "comment": "An actual complex description for ..."
-        },
-        {
-            "uri": "unece:subsetComplexDescription",
+            "uri": "core:ComplexDescription.subsetComplexDescription",
             "comment": "The complex description subset for this work item complex description."
         }
     ]

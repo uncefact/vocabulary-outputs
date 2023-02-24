@@ -1,54 +1,82 @@
 
 {
     "label": "GeographicalObjectCharacteristic",
-    "uri": "unece:GeographicalObjectCharacteristic",
+    "uri": "core:GeographicalObjectCharacteristic",
     "comment": "An attribute of a geographical object.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description for this geographical object characteristic."
+            "uri": "core:GeographicalObjectCharacteristic.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:descriptionReference",
-            "type": "xsd:string",
-            "comment": "The description reference, expressed as text, for this geographical object characteristic."
+            "uri": "core:GeographicalObjectCharacteristic.descriptionReference",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:geometryCollectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this geographical object can be characterized as a geometry collection."
+            "uri": "core:GeographicalObjectCharacteristic.geometryCollectionIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this geographical object characteristic."
+            "uri": "core:GeographicalObjectCharacteristic.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this geographical object characteristic."
+            "uri": "core:GeographicalObjectCharacteristic.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:physicalIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this geographical object can be characterized as physical."
+            "uri": "core:GeographicalObjectCharacteristic.physicalIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:relevantGeometryType",
-            "type": "xsd:string",
-            "comment": "The type of geometry, expressed as text, relevant for this geographical object characteristic."
+            "uri": "core:GeographicalObjectCharacteristic.relevantGeometryType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:shapeType",
-            "type": "xsd:string",
-            "comment": "The type of shape, expressed as text, such as a semi-circle, for this geographical object characteristic."
+            "uri": "core:GeographicalObjectCharacteristic.shapeType",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated ..."
+            "uri": "core:Circle.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalGrid.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalLine.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalMultiCurve.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalMultiPoint.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalMultiSurface.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalPoint.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalSurface.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:LinearRing.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:Polygon.associatedGeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
         }
     ]
 }

@@ -1,23 +1,20 @@
 
 {
     "label": "TransportServiceLocation",
-    "uri": "unece:TransportServiceLocation",
+    "uri": "transport:TransportServiceLocation",
     "comment": "A location where a transport service takes place.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier for this transport service location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
+            "uri": "transport:TransportServiceLocation.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:locationFunctionTypeCode",
-            "type": "unece:UNCL3227Code",
-            "comment": "A code specifying the type of transport service location."
+            "uri": "transport:TransportServiceLocation.locationFunctionTypeCode",
+            "type": "transport:LocationFunctionCodeList"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of this transport service location."
+            "uri": "transport:TransportServiceLocation.name",
+            "type": "schema:Text"
         }
     ]
 }

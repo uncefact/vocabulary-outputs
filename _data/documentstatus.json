@@ -1,50 +1,97 @@
 
 {
     "label": "DocumentStatus",
-    "uri": "unece:DocumentStatus",
+    "uri": "core:DocumentStatus",
     "comment": "The information relevant to a condition related to a document.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this document status."
+            "uri": "core:DocumentStatus.condition",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:documentStatusConditionCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "The code specifying the condition of this document status."
+            "uri": "core:DocumentStatus.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:documentStatusReasonCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "A code specifying a reason for this document status."
+            "uri": "core:DocumentStatus.documentStatusConditionCode",
+            "type": "core:DocumentStatusCodeList"
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this document status."
+            "uri": "core:DocumentStatus.documentStatusReasonCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this document status."
+            "uri": "core:DocumentStatus.includedNote",
+            "type": "core:Note"
         },
         {
-            "uri": "unece:referenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The reference date, time, date time or other date time value for this document status."
-        }
-    ],
-    "objectProperties": [
+            "uri": "core:DocumentStatus.information",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:validityPeriod",
-            "type": "unece:Period",
-            "comment": "A specified validity period for this document status."
+            "uri": "core:DocumentStatus.invalidInformation",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.processCondition",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.processConditionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.reason",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.reasonClassification",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.reasonClassificationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.reasonInformation",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.reasonInformationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.referenceDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.requestedAction",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.requestedActionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.sequenceNumeric",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.specifiedDocumentCharacteristic",
+            "type": "core:DocumentCharacteristic"
+        },
+        {
+            "uri": "core:DocumentStatus.validInformation",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:DocumentStatus.validityPeriod",
+            "type": "core:SpecifiedPeriod"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedStatus",
+            "uri": "core:Document.specifiedDocumentStatus",
             "comment": "Status information specified for this referenced document."
         }
     ]

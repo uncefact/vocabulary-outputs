@@ -1,31 +1,30 @@
 
 {
     "label": "BranchFinancialInstitution",
-    "uri": "unece:BranchFinancialInstitution",
+    "uri": "finance:BranchFinancialInstitution",
     "comment": "A sub-division of a bank, building society, credit union, stock brokerage, or similar business; established primarily to provide financial services and financial transactions.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this branch of a financial institution."
+            "uri": "finance:BranchFinancialInstitution.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this branch of a financial institution."
-        }
-    ],
-    "objectProperties": [
+            "uri": "finance:BranchFinancialInstitution.locationAddress",
+            "type": "finance:FinancialInstitutionAddress"
+        },
         {
-            "uri": "unece:locationAddress",
-            "type": "unece:FinancialInstitutionAddress",
-            "comment": "The location address for this branch of a financial institution."
+            "uri": "finance:BranchFinancialInstitution.name",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:subDivisionFinancialInstitution",
-            "comment": "The branch financial institution for ..."
+            "uri": "finance:CreditorFinancialInstitution.subDivisionFinancialInstitution",
+            "comment": "The branch financial institution for this creditor financial institution."
+        },
+        {
+            "uri": "finance:DebtorFinancialInstitution.subDivisionFinancialInstitution",
+            "comment": "The branch financial institution for this creditor financial institution."
         }
     ]
 }

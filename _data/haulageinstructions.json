@@ -1,23 +1,21 @@
 
 {
     "label": "HaulageInstructions",
-    "uri": "unece:HaulageInstructions",
+    "uri": "transport:HaulageInstructions",
     "comment": "Instructions related to the action or process of conveyance.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of these haulage instructions."
+            "uri": "transport:HaulageInstructions.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:haulageInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "The code specifying the description of these haulage instructions."
+            "uri": "transport:HaulageInstructions.haulageInstructionsDescriptionCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:haulageInstructions",
+            "uri": "transport:Consignment.haulageInstructions",
             "comment": "Haulage instructions for this supply chain consignment."
         }
     ]

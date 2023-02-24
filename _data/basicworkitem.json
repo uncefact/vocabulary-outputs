@@ -1,0 +1,98 @@
+
+{
+    "label": "BasicWorkItem",
+    "uri": "finance:BasicWorkItem",
+    "comment": "A basic item of work.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:BasicWorkItem.actualComplexDescription",
+            "type": "core:ComplexDescription"
+        },
+        {
+            "uri": "finance:BasicWorkItem.alternativeClassificationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.binaryFile",
+            "type": "core:BinaryFile"
+        },
+        {
+            "uri": "finance:BasicWorkItem.changedStatus",
+            "type": "core:RecordedStatus"
+        },
+        {
+            "uri": "finance:BasicWorkItem.comment",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.contractualLanguageCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.index",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.itemBasicWorkItem",
+            "type": "finance:BasicWorkItem"
+        },
+        {
+            "uri": "finance:BasicWorkItem.priceListItemId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.primaryClassificationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.referenceId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.requestedActionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.totalPrice",
+            "type": "finance:CalculatedPrice"
+        },
+        {
+            "uri": "finance:BasicWorkItem.totalQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "finance:BasicWorkItem.totalQuantityAnalysis",
+            "type": "core:QuantityAnalysis"
+        },
+        {
+            "uri": "finance:BasicWorkItem.totalQuantityClassificationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BasicWorkItem.unitPrice",
+            "type": "finance:CalculatedPrice"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:BasicWorkItem.itemBasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "finance:BreakdownStatement.itemBasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "finance:GroupedWorkItem.itemBasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        }
+    ]
+}

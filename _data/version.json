@@ -1,28 +1,25 @@
 
 {
     "label": "Version",
-    "uri": "unece:Version",
-    "comment": "A specific issuance of an object, such as a version of software or a message.",
+    "uri": "core:Version",
+    "comment": "A specific variant of a document.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this document version."
+            "uri": "core:Version.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date and time or other date time value of issue of this document version."
+            "uri": "core:Version.issueDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this document version."
+            "uri": "core:Version.name",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedVersion",
+            "uri": "core:DocumentContextParameter.specifiedVersion",
             "comment": "The document version specified for this document context parameter."
         }
     ]

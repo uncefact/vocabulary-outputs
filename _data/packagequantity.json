@@ -1,39 +1,17 @@
 
 {
     "label": "packageQuantity",
-    "uri": "unece:packageQuantity",
-    "comment": [
-        "The number of packages in this logistics transport movement.",
-        "The number of packages in this subordinate line trade delivery.",
-        "The number of packages within this supply chain consignment.",
-        "The number of packages, at line level, in this trade delivery.",
-        "The package quantity for this supply chain consignment item."
-    ],
+    "uri": "transport:TransportMovement.packageQuantity",
+    "comment": "The number of packages in this logistics transport movement.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
-        },
-        {
-            "uri": "unece:SubordinateLineTradeDelivery",
-            "comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "uri": "transport:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

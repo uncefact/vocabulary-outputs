@@ -1,24 +1,17 @@
 
 {
     "label": "toleranceMeasure",
-    "uri": "unece:toleranceMeasure",
-    "comment": [
-        "The measure of the tolerance of this calibrated measurement.",
-        "The measure of the tolerance of this geographical coordinate source system."
-    ],
+    "uri": "core:CoordinateSourceSystem.toleranceMeasure",
+    "comment": "The measure of the tolerance of this calibrated measurement.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:MeasureType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:CoordinateSourceSystem",
-            "comment": "Properties defining a coordinate source system used in different places around the world to identify locations on the earth."
-        },
-        {
-            "uri": "unece:Measurement",
-            "comment": "An amount, size, or extent as established by measuring."
+            "uri": "core:CoordinateSourceSystem",
+            "comment": "Properties defining a geographical coordinate source system used in different places around the world to identify locations on the earth."
         }
     ]
 }

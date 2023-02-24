@@ -1,79 +1,57 @@
 
 {
     "label": "AccountingAccount",
-    "uri": "unece:AccountingAccount",
-    "comment": "A specific account for recording debits and credits to general accounting, cost accounting or budget accounting.",
+    "uri": "finance:AccountingAccount",
+    "comment": "A specific trade account for recording debits and credits to general accounting, cost accounting or budget accounting.",
     "datatypeProperties": [
         {
-            "uri": "unece:accountingDocumentSetTriggerCode",
-            "type": "unece:UNCL1001Code",
-            "comment": "A code specifying a set trigger for this trade accounting account to be used in response to a specific event or a set of events."
+            "uri": "finance:AccountingAccount.accountingAccountTypeCode",
+            "type": "finance:AccountingAccountTypeCodeList"
         },
         {
-            "uri": "unece:amountTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the amount type for this trade accounting account."
+            "uri": "finance:AccountingAccount.accountingAmountTypeAmountTypeCode",
+            "type": "finance:AccountingAmountTypeCodeList"
         },
         {
-            "uri": "unece:costReferenceDimensionPattern",
-            "type": "xsd:string",
-            "comment": "The cost reference dimension pattern, expressed as text, for this trade accounting account."
+            "uri": "finance:AccountingAccount.accountingDocumentSetTriggerCode",
+            "type": "finance:AccountingDocumentCodeList"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this trade accounting account."
+            "uri": "finance:AccountingAccount.costReferenceDimensionPattern",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this trade accounting account."
+            "uri": "finance:AccountingAccount.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of trade accounting account, such as general (main), secondary, cost accounting or budget account."
+            "uri": "finance:AccountingAccount.name",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:buyerDeductibleTaxSpecifiedAccountingAccount",
+            "uri": "finance:Tax.buyerDeductibleTaxSpecifiedAccountingAccount",
             "comment": "The buyer deductible tax specified accounting account for this trade related tax, levy or duty."
         },
         {
-            "uri": "unece:buyerNonDeductibleTaxSpecifiedAccountingAccount",
+            "uri": "finance:Tax.buyerNonDeductibleTaxSpecifiedAccountingAccount",
             "comment": "The buyer non-deductible tax specified accounting account for this trade related tax, levy or duty."
         },
         {
-            "uri": "unece:buyerRepayableTaxSpecifiedAccountingAccount",
+            "uri": "finance:Tax.buyerRepayableTaxSpecifiedAccountingAccount",
             "comment": "The buyer repayable tax specified accounting account for this trade related tax, levy or duty."
         },
         {
-            "uri": "unece:payableSpecifiedAccountingAccount",
-            "comment": "A payable accounting account specified ..."
-        },
-        {
-            "uri": "unece:purchaseSpecifiedAccountingAccount",
-            "comment": "A purchase accounting account specified ..."
-        },
-        {
-            "uri": "unece:receivableSpecifiedAccountingAccount",
-            "comment": "A receivable accounting account specified ..."
-        },
-        {
-            "uri": "unece:salesSpecifiedAccountingAccount",
-            "comment": "A sales accounting account specified ..."
-        },
-        {
-            "uri": "unece:sellerPayableTaxSpecifiedAccountingAccount",
+            "uri": "finance:Tax.sellerPayableTaxSpecifiedAccountingAccount",
             "comment": "The seller payable tax specified accounting account for this trade related tax, levy or duty."
         },
         {
-            "uri": "unece:sellerRefundableTaxSpecifiedAccountingAccount",
+            "uri": "finance:Tax.sellerRefundableTaxSpecifiedAccountingAccount",
             "comment": "The seller refundable tax specified accounting account for this trade related tax, levy or duty."
         },
         {
-            "uri": "unece:specifiedAccountingAccount",
+            "uri": "finance:Tax.specifiedAccountingAccount",
             "comment": "A specified accounting account for this trade related tax, levy or duty."
         }
     ]

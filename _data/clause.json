@@ -1,45 +1,42 @@
 
 {
     "label": "Clause",
-    "uri": "unece:Clause",
-    "comment": "A distinct article or provision in a contract, treaty, will, or other formal or legal written document, which requires compliance.",
+    "uri": "core:Clause",
+    "comment": "A distinct article or provision in a document, which requires compliance.",
     "datatypeProperties": [
         {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, of this document clause."
+            "uri": "core:Clause.associatedMeasurement",
+            "type": "core:Measurement"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier of this document clause."
+            "uri": "core:Clause.associatedPeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:uRLId",
-            "type": "xsd:token",
-            "comment": "The Uniform Resource Locator (URL) for this document clause."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:associatedMeasurement",
-            "type": "unece:Measurement",
-            "comment": "A measurement associated with this document clause."
+            "uri": "core:Clause.content",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:associatedPeriod",
-            "type": "unece:Period",
-            "comment": "A period of time associated with this document clause."
+            "uri": "core:Clause.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Clause.uRLId",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:contractualClause",
-            "comment": "A contractual clause of this ..."
+            "uri": "core:Authentication.includedClause",
+            "comment": "A document clause included in this document authentication."
         },
         {
-            "uri": "unece:includedClause",
-            "comment": "A document clause included in this document authentication."
+            "uri": "core:Document.contractualClause",
+            "comment": "A contractual clause of this exchanged document."
+        },
+        {
+            "uri": "core:ExchangedDocument.contractualClause",
+            "comment": "A contractual clause of this exchanged document."
         }
     ]
 }

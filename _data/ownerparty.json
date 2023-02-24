@@ -1,30 +1,17 @@
 
 {
     "label": "ownerParty",
-    "uri": "unece:ownerParty",
-    "comment": [
-        "The owner party of this monitoring IOT device.",
-        "The owner party of this monitoring sensor.",
-        "The party owning this logistics means of transport."
-    ],
+    "uri": "transport:Sensor.ownerParty",
+    "comment": "A party who owns this piece of logistics transport equipment.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "core:Party"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:IOTDevice",
-            "comment": "An object or system made or adapted for an IOT (Internet of Things) purpose such as to collect, report and autonomously transmit digital data especially when connected to a piece of mechanical or electronic equipment."
-        },
-        {
-            "uri": "unece:Sensor",
-            "comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally."
-        },
-        {
-            "uri": "unece:TransportMeans",
-            "comment": "The device or method used to convey people, goods, animals or other objects from place to place."
+            "uri": "transport:Sensor",
+            "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements."
         }
     ]
 }

@@ -1,0 +1,42 @@
+
+{
+    "label": "WorkItemDimension",
+    "uri": "core:WorkItemDimension",
+    "comment": "A measure of spatial extent associated with this work item, such as length, breadth, or height.",
+    "datatypeProperties": [
+        {
+            "uri": "core:WorkItemDimension.componentDimension",
+            "type": "core:WorkItemDimension"
+        },
+        {
+            "uri": "core:WorkItemDimension.contractualLanguageCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:WorkItemDimension.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:WorkItemDimension.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:WorkItemDimension.valueMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "core:WorkItemDimension.workItemDimensionTypeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:QuantityAnalysis.actualQuantityDimension",
+            "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+        },
+        {
+            "uri": "core:WorkItemDimension.componentDimension",
+            "comment": "A work item component dimension for this work item dimension."
+        }
+    ]
+}

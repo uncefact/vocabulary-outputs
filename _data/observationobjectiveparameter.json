@@ -1,0 +1,62 @@
+
+{
+    "label": "ObservationObjectiveParameter",
+    "uri": "compliance:ObservationObjectiveParameter",
+    "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ObservationObjectiveParameter.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.parameterType",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.statusCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.statusValueMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.value",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.valueAllowedIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.valueMeasure",
+            "type": "core:MeasureType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResultCharacteristic.interpretationResultApplicableParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        },
+        {
+            "uri": "compliance:ObservationResult.interpretationResultApplicableParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        },
+        {
+            "uri": "compliance:ObservationResultCharacteristic.interpretationResultApplicableParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        }
+    ]
+}

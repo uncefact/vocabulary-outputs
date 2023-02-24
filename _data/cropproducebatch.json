@@ -1,0 +1,74 @@
+
+{
+    "label": "CropProduceBatch",
+    "uri": "agriculture:CropProduceBatch",
+    "comment": "A group of crop produce considered or dealt with together.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:CropProduceBatch.appliedTreatment",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.breakUpDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.creationDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.nominalSizeNumeric",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.productName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.sizeMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedAgriculturalCertificate",
+            "type": "agriculture:AgriculturalCertificate"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedAgriculturalCharacteristic",
+            "type": "agriculture:AgriculturalCharacteristic"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedProduce",
+            "type": "agriculture:Produce"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.unitQuantity",
+            "type": "core:QuantityType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:AgriculturalProcess.harvestedBatch",
+            "comment": "A crop produce batch harvested in the crop production for this agricultural process."
+        },
+        {
+            "uri": "agriculture:Produce.inputSpecifiedBatch",
+            "comment": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
+        },
+        {
+            "uri": "agriculture:Produce.outputSpecifiedBatch",
+            "comment": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
+        }
+    ]
+}

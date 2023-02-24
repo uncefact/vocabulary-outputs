@@ -1,0 +1,34 @@
+
+{
+    "label": "ConformanceCertificate",
+    "uri": "compliance:ConformanceCertificate",
+    "comment": "The label delivered by a trusted third party to assess the compliance of a product or a service with an agreed standard.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ConformanceCertificate.certificateTypeCode",
+            "type": "compliance:CertificateTypeCodeList"
+        },
+        {
+            "uri": "compliance:ConformanceCertificate.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ConformanceCertificate.issueDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ConformanceCertificate.issuingPartyId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ConformanceCertificate.softwareOperatingSystem",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResult.obtainedConformanceCertificate",
+            "comment": "A conformance certificate obtained by means of this specified inspection result."
+        }
+    ]
+}

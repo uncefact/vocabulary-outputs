@@ -1,35 +1,17 @@
 
 {
     "label": "reasonCode",
-    "uri": "unece:reasonCode",
-    "comment": [
-        "A code specifying a reason for this financial adjustment.",
-        "The code specifying a reason for this communication event.",
-        "The code specifying the reason for this financing status.",
-        "The code specifying the reason for this header balance out.",
-        "The code specifying the reason for this payment balance out."
-    ],
+    "uri": "transport:TransportMovement.reasonCode",
+    "comment": "A code specifying a reason for the declared error.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Adjustment",
-            "comment": "A correction or modification to reflect actual conditions."
-        },
-        {
-            "uri": "unece:BalanceOut",
-            "comment": "Offset information to ensure that debits and credits are equal."
-        },
-        {
-            "uri": "unece:CommunicationEvent",
-            "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet."
-        },
-        {
-            "uri": "unece:FinancingStatus",
-            "comment": "Information relevant to a condition of financing."
+            "uri": "transport:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

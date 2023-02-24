@@ -1,30 +1,17 @@
 
 {
     "label": "occurrenceLocation",
-    "uri": "unece:occurrenceLocation",
-    "comment": [
-        "A logistics location where this supply chain event occurs.",
-        "The logistics location where this communication event will occur or has occurred.",
-        "The logistics location where this transport event occurs."
-    ],
+    "uri": "transport:SupplyChainEvent.occurrenceLocation",
+    "comment": "The referenced location for the occurrence of this supply chain event.",
     "rangeIncludes": [
         {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
+            "uri": "core:Location"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:CommunicationEvent",
-            "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet."
-        },
-        {
-            "uri": "unece:SupplyChainEvent",
+            "uri": "transport:SupplyChainEvent",
             "comment": "A significant occurrence or happening in a supply chain."
-        },
-        {
-            "uri": "unece:TransportEvent",
-            "comment": "A significant occurrence or happening ..."
         }
     ]
 }

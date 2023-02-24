@@ -1,23 +1,16 @@
 
 {
     "label": "pickUpAvailabilityDateTime",
-    "uri": "unece:pickUpAvailabilityDateTime",
-    "comment": [
-        "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up.",
-        "The formatted date, time, date time, or other date time value, at line level, when this delivery is available for pick-up."
-    ],
+    "uri": "trade:LineTradeDelivery.pickUpAvailabilityDateTime",
+    "comment": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

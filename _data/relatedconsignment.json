@@ -1,24 +1,16 @@
 
 {
     "label": "relatedConsignment",
-    "uri": "unece:relatedConsignment",
-    "comment": [
-        "A consignment, at header level, related to this trade delivery.",
-        "A consignment, at line level, related to this line trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.relatedConsignment",
+    "comment": "A consignment, at header level, related to this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+            "uri": "transport:Consignment"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

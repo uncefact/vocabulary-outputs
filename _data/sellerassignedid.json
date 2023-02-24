@@ -1,20 +1,17 @@
 
 {
     "label": "sellerAssignedId",
-    "uri": "unece:sellerAssignedId",
-    "comment": [
-        "The unique seller assigned identifier for this referenced product.",
-        "The unique seller assigned identifier for this trade product."
-    ],
+    "uri": "trade:TradeProduct.sellerAssignedId",
+    "comment": "A seller assigned identifier of this product batch.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "trade:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

@@ -1,33 +1,29 @@
 
 {
     "label": "FinancingStatus",
-    "uri": "unece:FinancingStatus",
+    "uri": "finance:FinancingStatus",
     "comment": "Information relevant to a condition of financing.",
     "datatypeProperties": [
         {
-            "uri": "unece:conditionCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the condition of this financing status."
+            "uri": "finance:FinancingStatus.financingStatusConditionCode",
+            "type": "finance:FinancingStatusCodeList"
         },
         {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this financing status."
+            "uri": "finance:FinancingStatus.financingStatusReasonCode",
+            "type": "finance:FinancingStatusReasonCodeList"
         },
         {
-            "uri": "unece:reasonCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the reason for this financing status."
+            "uri": "finance:FinancingStatus.reason",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reasonInformation",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, related to the reason for this financing status."
+            "uri": "finance:FinancingStatus.reasonInformation",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedFinancingStatus",
+            "uri": "finance:FinancingRequestResultDocument.specifiedFinancingStatus",
             "comment": "The financing status specified in this financing request result document."
         }
     ]

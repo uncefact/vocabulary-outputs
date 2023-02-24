@@ -1,21 +1,17 @@
 
 {
     "label": "relatedTradeTransaction",
-    "uri": "unece:relatedTradeTransaction",
-    "comment": [
-        "A trade transaction related to this referenced supply chain consignment.",
-        "A trade transaction related to this supply chain consignment."
-    ],
+    "uri": "trade:TradeProduct.relatedTradeTransaction",
+    "comment": "A supply chain trade transaction related to this specified assessment.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeTransaction",
-            "comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties."
+            "uri": "trade:SupplyChainTradeTransaction"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+            "uri": "trade:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

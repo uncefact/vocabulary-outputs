@@ -1,0 +1,42 @@
+
+{
+    "label": "HeaderBalanceOut",
+    "uri": "finance:HeaderBalanceOut",
+    "comment": "Offset header information to ensure that debits and credits are equal for a transaction.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:HeaderBalanceOut.breakdownBalanceOut",
+            "type": "finance:HeaderBalanceOut"
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.calculatedAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.occurrenceDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.reasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.reasonDescription",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:HeaderBalanceOut.breakdownBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
+        }
+    ]
+}

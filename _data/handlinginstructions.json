@@ -1,85 +1,86 @@
 
 {
     "label": "HandlingInstructions",
-    "uri": "unece:HandlingInstructions",
+    "uri": "transport:HandlingInstructions",
     "comment": "Handling information of an instructive nature.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these handling instructions."
+            "uri": "transport:HandlingInstructions.applicableTransportSettingTemperature",
+            "type": "transport:TransportSettingTemperature"
         },
         {
-            "uri": "unece:handlingCode",
-            "type": "xsd:token",
-            "comment": "A code specifying these handling instructions."
+            "uri": "transport:HandlingInstructions.deliveryApplicableTemperature",
+            "type": "transport:InstructedTemperature"
         },
         {
-            "uri": "unece:handlingInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "A code specifying a description of these handling instructions."
+            "uri": "transport:HandlingInstructions.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this handling instructions."
+            "uri": "transport:HandlingInstructions.handlingCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:maximumStackabilityApplicableQuantity",
-            "type": "xsd:decimal",
-            "comment": "The maximum number of units which can be stacked on top of each other according to these handling instructions."
+            "uri": "transport:HandlingInstructions.handlingInstructionsDescriptionCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:maximumStackabilityWeightApplicableMeasure",
-            "type": "xsd:decimal",
-            "comment": "The maximum stackability weight applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:maximumStorageHumidityApplicableMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the maximum storage humidity applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.marketDeliveryApplicableTemperature",
+            "type": "transport:InstructedTemperature"
         },
         {
-            "uri": "unece:minimumStorageHumidityApplicableMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the minimum storage humidity applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.maximumStackabilityApplicableQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:procedure",
-            "type": "xsd:string",
-            "comment": "A procedure, expressed as text, for these handling instructions."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableTransportSettingTemperature",
-            "type": "unece:TransportSettingTemperature",
-            "comment": "A transport related temperature setting applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.maximumStackabilityWeightApplicableMeasure",
+            "type": "core:WeightUnitMeasureType"
         },
         {
-            "uri": "unece:deliveryApplicableTemperature",
-            "type": "unece:InstructedTemperature",
-            "comment": "The instructed temperature for delivery applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.maximumStorageHumidityApplicableMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:marketDeliveryApplicableTemperature",
-            "type": "unece:InstructedTemperature",
-            "comment": "The instructed temperature for market delivery applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.minimumStorageHumidityApplicableMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:storageApplicableTemperature",
-            "type": "unece:InstructedTemperature",
-            "comment": "The instructed temperature for storage applicable to these handling instructions."
+            "uri": "transport:HandlingInstructions.procedure",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:HandlingInstructions.storageApplicableTemperature",
+            "type": "transport:InstructedTemperature"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:handlingInstructions",
-            "comment": "Handling instructions for the transported ..."
+            "uri": "transport:Consignment.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
         },
         {
-            "uri": "unece:specifiedInstructions",
-            "comment": "Handling instructions specified for this ..."
+            "uri": "transport:ConsignmentItem.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "transport:DangerousGoods.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "transport:LogisticsTransportMeans.specifiedHandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedHandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
         }
     ]
 }

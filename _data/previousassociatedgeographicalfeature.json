@@ -1,25 +1,17 @@
 
 {
     "label": "previousAssociatedGeographicalFeature",
-    "uri": "unece:previousAssociatedGeographicalFeature",
-    "comment": [
-        "A geographical feature previously associated with this logistics location.",
-        "A geographical feature previously associated with this transport event."
-    ],
+    "uri": "transport:TransportEvent.previousAssociatedGeographicalFeature",
+    "comment": "A geographical feature previously associated with this logistics location.",
     "rangeIncludes": [
         {
-            "uri": "unece:GeographicalFeature",
-            "comment": "Distinctive or characteristic part of a geographical object."
+            "uri": "core:GeographicalFeature"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
-        },
-        {
-            "uri": "unece:TransportEvent",
-            "comment": "A significant occurrence or happening ..."
+            "uri": "transport:TransportEvent",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
         }
     ]
 }

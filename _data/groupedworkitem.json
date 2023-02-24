@@ -1,0 +1,82 @@
+
+{
+    "label": "GroupedWorkItem",
+    "uri": "finance:GroupedWorkItem",
+    "comment": "A grouping of related work items.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:GroupedWorkItem.actualComplexDescription",
+            "type": "core:ComplexDescription"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.alternativeClassificationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.binaryFile",
+            "type": "core:BinaryFile"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.changedStatus",
+            "type": "core:RecordedStatus"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.comment",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.contractualLanguageCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.index",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.itemBasicWorkItem",
+            "type": "finance:BasicWorkItem"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.itemGroupedWorkItem",
+            "type": "finance:GroupedWorkItem"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.priceListItemId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.primaryClassificationCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.requestedActionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.totalPrice",
+            "type": "finance:CalculatedPrice"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.totalQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "finance:GroupedWorkItem.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:BreakdownStatement.itemGroupedWorkItem",
+            "comment": "A grouped work item in this valuation breakdown statement."
+        },
+        {
+            "uri": "finance:GroupedWorkItem.itemGroupedWorkItem",
+            "comment": "A grouped work item in this valuation breakdown statement."
+        }
+    ]
+}

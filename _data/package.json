@@ -1,153 +1,146 @@
 
 {
     "label": "Package",
-    "uri": "unece:Package",
-    "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty.",
+    "uri": "transport:Package",
+    "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:colourCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the colour of this logistics package."
+            "uri": "transport:Package.additionalLevelCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this logistics package."
+            "uri": "transport:Package.colourCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:globalId",
-            "type": "xsd:token",
-            "comment": "The unique global identifier for this logistics package."
+            "uri": "transport:Package.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:grossVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the gross volume of this referenced logistics package."
+            "uri": "transport:Package.despatchNoteAssociatedDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:grossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the gross weight (mass) of this referenced logistics package and its contents."
+            "uri": "transport:Package.globalId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this logistics package."
+            "uri": "transport:Package.grossVolumeMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this referenced logistics package."
+            "uri": "transport:Package.grossWeightMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:itemQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of logistics packages at this level."
+            "uri": "transport:Package.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:netWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the net weight (mass) of the contents of this referenced logistics package."
+            "uri": "transport:Package.information",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:nominalGrossVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the nominal gross volume of this referenced logistics package."
+            "uri": "transport:Package.itemQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:nominalGrossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
+            "uri": "transport:Package.linearDimension",
+            "type": "core:SpatialDimension"
         },
         {
-            "uri": "unece:packageType",
-            "type": "xsd:string",
-            "comment": "A type, expressed as text, of this logistics package."
+            "uri": "transport:Package.netVolumeMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:packagingLevelCode",
-            "type": "unece:UNCL7075Code",
-            "comment": "The code specifying the level of this referenced logistics package."
+            "uri": "transport:Package.netWeightMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:parentId",
-            "type": "xsd:token",
-            "comment": "The unique parent identifier for this logistics package."
+            "uri": "transport:Package.nominalGrossVolumeMeasure",
+            "type": "core:VolumeUnitMeasureType"
         },
         {
-            "uri": "unece:perPackageUnitQuantity",
-            "type": "xsd:decimal",
-            "comment": "A number of units per package in this logistics package."
+            "uri": "transport:Package.nominalGrossWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
         },
         {
-            "uri": "unece:returnableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this logistics package is returnable."
+            "uri": "transport:Package.packageType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number of this referenced logistics package."
+            "uri": "transport:Package.packageTypeCode",
+            "type": "transport:PackageTypeCodeList"
         },
         {
-            "uri": "unece:seriesEndId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the end of a series of packages within this logistics package."
+            "uri": "transport:Package.packagingLevelCode",
+            "type": "transport:PackagingLevelCodeList"
         },
         {
-            "uri": "unece:seriesStartId",
-            "type": "xsd:token",
-            "comment": "The unique start identifier of a series of packages within this logistics package."
+            "uri": "transport:Package.parentId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of logistics package."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:despatchNoteAssociatedDocument",
-            "type": "unece:Document",
-            "comment": "A despatch note associated with this logistics package."
+            "uri": "transport:Package.perPackageUnitQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:includedTradeLineItem",
-            "type": "unece:TradeLineItem",
-            "comment": "A supply chain trade line item included in this logistics package."
+            "uri": "transport:Package.physicalShippingMarks",
+            "type": "transport:ShippingMarks"
         },
         {
-            "uri": "unece:linearDimension",
-            "type": "unece:Dimension",
-            "comment": "The linear spatial dimensions of this logistics package."
+            "uri": "transport:Package.returnableIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:physicalShippingMarks",
-            "type": "unece:ShippingMarks",
-            "comment": "Physical shipping marks and barcode information for this logistics package."
+            "uri": "transport:Package.sequenceNumeric",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:usedPackaging",
-            "type": "unece:Packaging",
-            "comment": "Supply chain packaging used for this logistics package."
+            "uri": "transport:Package.seriesEndId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:Package.seriesStartId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:Package.statedCondition",
+            "type": "transport:SpecifiedCondition"
+        },
+        {
+            "uri": "transport:Package.usedPackaging",
+            "type": "transport:SupplyChainPackaging"
+        },
+        {
+            "uri": "transport:Package.volumeUnitGrossVolumeMeasure",
+            "type": "core:VolumeUnitMeasureType"
+        },
+        {
+            "uri": "transport:Package.weightUnitGrossWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
+        },
+        {
+            "uri": "transport:Package.weightUnitNetWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:physicalPackage",
-            "comment": "A physical logistics package for ..."
+            "uri": "transport:Consignment.transportPackage",
+            "comment": "A transport package for this referenced supply chain consignment item."
         },
         {
-            "uri": "unece:referencedPackage",
-            "comment": "A logistics package referenced in this supply chain trade line item."
+            "uri": "transport:ConsignmentItem.transportPackage",
+            "comment": "A transport package for this referenced supply chain consignment item."
         },
         {
-            "uri": "unece:specifiedPackage",
-            "comment": "A logistics package specified for ..."
+            "uri": "transport:DangerousGoods.specifiedPackage",
+            "comment": "A logistics package specified for these transported dangerous goods."
         },
         {
-            "uri": "unece:transportPackage",
-            "comment": "A transport package for this ..."
+            "uri": "transport:LogisticsPackaging.containedPackage",
+            "comment": "A package contained in this logistics packaging."
         }
     ]
 }

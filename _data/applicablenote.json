@@ -1,35 +1,17 @@
 
 {
     "label": "applicableNote",
-    "uri": "unece:applicableNote",
-    "comment": [
-        "A note providing information applicable to this piece of logistics transport equipment.",
-        "A note providing information applicable to this specified observation.",
-        "A note providing information applicable to this supply chain consignment item.",
-        "A note providing information applicable to this transport event."
-    ],
+    "uri": "transport:TransportEvent.applicableNote",
+    "comment": "A note providing information applicable to this piece of logistics transport equipment.",
     "rangeIncludes": [
         {
-            "uri": "unece:Note",
-            "comment": "A textual or coded description, such as a remark or additional information."
+            "uri": "core:Note"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
-        },
-        {
-            "uri": "unece:Observation",
-            "comment": "An act or instance of viewing or noting a fact or occurrence for some scientific or other special purpose."
-        },
-        {
-            "uri": "unece:TransportEvent",
-            "comment": "A significant occurrence or happening ..."
+            "uri": "transport:TransportEvent",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
         }
     ]
 }

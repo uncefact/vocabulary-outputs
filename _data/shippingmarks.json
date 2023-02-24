@@ -1,41 +1,46 @@
 
 {
     "label": "ShippingMarks",
-    "uri": "unece:ShippingMarks",
-    "comment": "Physical markings or labels on individual packages or transport units for shipping purposes.",
+    "uri": "transport:ShippingMarks",
+    "comment": "Physical markings or labels on individual packages or transport units for logistics purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:logisticsShippingMarksMarkingInstructionCode",
-            "type": "unece:UNCL4233Code",
-            "comment": "A code specifying a marking instruction for these logistics shipping marks."
+            "uri": "transport:ShippingMarks.barcodeLabel",
+            "type": "transport:LogisticsLabel"
         },
         {
-            "uri": "unece:marking",
-            "type": "xsd:string",
-            "comment": "Marking, expressed as text, for these logistics shipping marks."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:barcodeLabel",
-            "type": "unece:Label",
-            "comment": "A barcode label that is a part of these logistics shipping marks."
+            "uri": "transport:ShippingMarks.logisticsShippingMarksMarkingInstructionCode",
+            "type": "transport:MarkingInstructionCodeList"
         },
         {
-            "uri": "unece:rFIDLabel",
-            "type": "unece:Label",
-            "comment": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
+            "uri": "transport:ShippingMarks.marking",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:vINLabel",
-            "type": "unece:Label",
-            "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
+            "uri": "transport:ShippingMarks.rFIDLabel",
+            "type": "transport:LogisticsLabel"
+        },
+        {
+            "uri": "transport:ShippingMarks.radioactiveLabel",
+            "type": "transport:LogisticsLabel"
+        },
+        {
+            "uri": "transport:ShippingMarks.vINLabel",
+            "type": "transport:LogisticsLabel"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:physicalShippingMarks",
-            "comment": "Physical logistics shipping marks and ..."
+            "uri": "transport:Consignment.physicalShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.physicalShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:Package.physicalShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
         }
     ]
 }

@@ -1,0 +1,94 @@
+
+{
+    "label": "SupplyChainInventory",
+    "uri": "trade:SupplyChainInventory",
+    "comment": "Supply chain goods and materials held in stock.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:SupplyChainInventory.averageDemandQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.averageDurationDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.calculationDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.dispositionDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.includedBatch",
+            "type": "trade:ProductBatch"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.includedMaterial",
+            "type": "compliance:SpecifiedMaterial"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.includedTradeProduct",
+            "type": "trade:TradeProduct"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.maximumStockLevelMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.maximumStockQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.minimumStockLevelMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.minimumStockQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.plannedStockCalculationDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.plannedStockQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.remarkNote",
+            "type": "core:Note"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.specifiedLogisticsLocation",
+            "type": "transport:LogisticsLocation"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.specifiedSupplyChainEvent",
+            "type": "transport:SupplyChainEvent"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.statusCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainInventory.stockQuantity",
+            "type": "core:QuantityType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:LineTradeDelivery.availableInventory",
+            "comment": "Inventory available, at line level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.consignmentInventory",
+            "comment": "Supply chain consignment inventory, at line level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.customerInventory",
+            "comment": "Supply chain customer inventory, at line level, for this trade delivery."
+        }
+    ]
+}

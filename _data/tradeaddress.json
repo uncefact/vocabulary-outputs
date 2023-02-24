@@ -1,136 +1,126 @@
 
 {
     "label": "TradeAddress",
-    "uri": "unece:TradeAddress",
+    "uri": "trade:TradeAddress",
     "comment": "The location at which a particular trade related organization or person may be found or reached.",
     "datatypeProperties": [
         {
-            "uri": "unece:additionalStreetName",
-            "type": "xsd:string",
-            "comment": "The additional name of a street, expressed as text, for this trade address."
+            "uri": "trade:TradeAddress.additionalStreetName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:attentionOf",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of a person or department in the organization to whom incoming mail is marked with words such as 'for the attention of' or 'FAO' or 'ATTN' for this trade address."
+            "uri": "trade:TradeAddress.addressTypeCode",
+            "type": "trade:AddressTypeCodeList"
         },
         {
-            "uri": "unece:buildingName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of a building, a house or other structure on a street at this trade address."
+            "uri": "trade:TradeAddress.attentionOf",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:buildingNumber",
-            "type": "xsd:string",
-            "comment": "The building number, expressed as text, in this trade address."
+            "uri": "trade:TradeAddress.buildingName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:careOf",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with words such as 'care of' or 'C/O'."
+            "uri": "trade:TradeAddress.buildingNumber",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:cityId",
-            "type": "xsd:token",
-            "comment": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE)."
+            "uri": "trade:TradeAddress.careOf",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:cityName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the city, town or village of this trade address."
+            "uri": "trade:TradeAddress.cityId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:citySubDivisionName",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of a sub-division of a city for this trade address, for example a district or borough."
+            "uri": "trade:TradeAddress.cityName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a country for this trade address."
+            "uri": "trade:TradeAddress.citySubDivisionName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countryName",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of the country for this trade address."
+            "uri": "trade:TradeAddress.countryName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countrySubDivisionId",
-            "type": "xsd:token",
-            "comment": "A unique identifier of the country sub-division for this trade address."
+            "uri": "trade:TradeAddress.countrySubDivisionId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countrySubDivisionName",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of the sub-division of a country for this trade address."
+            "uri": "trade:TradeAddress.countrySubDivisionName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:departmentName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of a department for this trade address."
+            "uri": "trade:TradeAddress.departmentName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this trade address."
+            "uri": "trade:TradeAddress.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineFive",
-            "type": "xsd:string",
-            "comment": "The fifth free form line, expressed as text, of this trade address."
+            "uri": "trade:TradeAddress.freeForm",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineFour",
-            "type": "xsd:string",
-            "comment": "The fourth free form line, expressed as text, of this trade address."
+            "uri": "trade:TradeAddress.geoCoordinateIdentificationGeographicalCoordinate",
+            "type": "core:GeographicalCoordinate"
         },
         {
-            "uri": "unece:lineOne",
-            "type": "xsd:string",
-            "comment": "The first free form line, expressed as text, of this trade address."
+            "uri": "trade:TradeAddress.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineThree",
-            "type": "xsd:string",
-            "comment": "The third free form line, expressed as text, of this trade address."
+            "uri": "trade:TradeAddress.invalidIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:lineTwo",
-            "type": "xsd:string",
-            "comment": "The second free form line, expressed as text, of this trade address."
+            "uri": "trade:TradeAddress.lineFive",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:postOfficeBox",
-            "type": "xsd:string",
-            "comment": "The unique identifier, expressed as text, of a container commonly referred to as a box, in a post office or other postal service location, assigned to a person or organization, where postal items may be kept for this trade address."
+            "uri": "trade:TradeAddress.lineFour",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:postcodeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the postcode of this trade address."
+            "uri": "trade:TradeAddress.lineOne",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:streetName",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of a street or thoroughfare for this trade address."
+            "uri": "trade:TradeAddress.lineThree",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of this trade address, such as business address or home address."
-        }
-    ],
-    "objectProperties": [
+            "uri": "trade:TradeAddress.lineTwo",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:geoCoordinateIdentificationGeographicalCoordinate",
-            "type": "unece:GeographicalCoordinate",
-            "comment": "An identification of a set of geographical coordinates for this trade address."
+            "uri": "trade:TradeAddress.postOfficeBox",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:TradeAddress.postcodeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:TradeAddress.streetName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:TradeAddress.tradeAddressCountryId",
+            "type": "trade:CountryId"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:postalAddress",
-            "comment": "A postal address for this ..."
+            "uri": "trade:TradeContact.postalAddress",
+            "comment": "A postal address for this legally set up organization."
+        },
+        {
+            "uri": "trade:TradeParty.postalAddress",
+            "comment": "A postal address for this legally set up organization."
         }
     ]
 }

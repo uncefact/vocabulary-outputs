@@ -1,24 +1,17 @@
 
 {
     "label": "adjustedBalanceOutAmount",
-    "uri": "unece:adjustedBalanceOutAmount",
-    "comment": [
-        "A monetary value that is an adjusted amount balanced out for this trade settlement header monetary summation.",
-        "A monetary value that is an adjusted amount balanced out for this trade settlement payment monetary summation."
-    ],
+    "uri": "trade:TradeSettlementHeaderMonetarySummation.adjustedBalanceOutAmount",
+    "comment": "A monetary value that is an adjusted amount balanced out for this trade settlement header monetary summation.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:AmountType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:TradeSettlementHeaderMonetarySummation",
+            "uri": "trade:TradeSettlementHeaderMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
-        },
-        {
-            "uri": "unece:TradeSettlementPaymentMonetarySummation",
-            "comment": "A collection of monetary amount totals specified for a trade settlement payment."
         }
     ]
 }

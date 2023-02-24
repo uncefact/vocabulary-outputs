@@ -1,43 +1,34 @@
 
 {
     "label": "GoodsCharacteristic",
-    "uri": "unece:GoodsCharacteristic",
-    "comment": "A distinguishing feature or quality of goods.",
+    "uri": "compliance:GoodsCharacteristic",
+    "comment": "A distinctive feature of a material contained within physical goods.",
     "datatypeProperties": [
         {
-            "uri": "unece:absolutePresenceVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The volume measure of the absolute presence of this material goods characteristic."
+            "uri": "compliance:GoodsCharacteristic.absolutePresenceVolumeMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:absolutePresenceWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The weight measure of the absolute presence of this material goods characteristic."
+            "uri": "compliance:GoodsCharacteristic.absolutePresenceWeightMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this material goods characteristic."
+            "uri": "compliance:GoodsCharacteristic.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:proportionalConstituentPercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage presence of the material within the goods for this material goods characteristic."
+            "uri": "compliance:GoodsCharacteristic.proportionalConstituentPercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of material goods characteristic."
+            "uri": "compliance:GoodsCharacteristic.typeCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableGoodsCharacteristic",
-            "comment": "A distinguishing material feature applicable ..."
-        },
-        {
-            "uri": "unece:carriedGoodsCharacteristic",
-            "comment": "Material characteristics of goods carried during this logistics transport movement."
+            "uri": "compliance:SpecifiedMaterial.applicableGoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
         }
     ]
 }

@@ -1,23 +1,16 @@
 
 {
     "label": "finalDeliveryIndicator",
-    "uri": "unece:finalDeliveryIndicator",
-    "comment": [
-        "The indication, at header level, of whether or not this trade delivery is the final delivery.",
-        "The indication, at line level, of whether or not this trade delivery is the final delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.finalDeliveryIndicator",
+    "comment": "The indication, at header level, of whether or not this trade delivery is the final delivery.",
     "rangeIncludes": [
         {
-            "uri": "xsd:boolean"
+            "uri": "schema:Boolean"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

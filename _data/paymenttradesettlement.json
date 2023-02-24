@@ -1,56 +1,110 @@
 
 {
     "label": "PaymentTradeSettlement",
-    "uri": "unece:PaymentTradeSettlement",
+    "uri": "finance:PaymentTradeSettlement",
     "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice.",
     "datatypeProperties": [
         {
-            "uri": "unece:additionalDescription",
-            "type": "xsd:string",
-            "comment": "The description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
+            "uri": "finance:PaymentTradeSettlement.acceptedAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:paymentCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency for this payment trade settlement."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableTax",
-            "type": "unece:TradeTax",
-            "comment": "The tax applicable to this payment trade settlement."
+            "uri": "finance:PaymentTradeSettlement.additionalDescription",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:payeeParty",
-            "type": "unece:TradeParty",
-            "comment": "The payee party for this payment trade settlement."
+            "uri": "finance:PaymentTradeSettlement.applicableTax",
+            "type": "finance:Tax"
         },
         {
-            "uri": "unece:payerParty",
-            "type": "unece:TradeParty",
-            "comment": "The payer party for this payment trade settlement."
+            "uri": "finance:PaymentTradeSettlement.creationDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:paymentApplicableCurrencyExchange",
-            "type": "unece:CurrencyExchange",
-            "comment": "The currency exchange applicable to this payment trade settlement."
+            "uri": "finance:PaymentTradeSettlement.dueDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:specifiedPaymentMeans",
-            "type": "unece:PaymentMeans",
-            "comment": "The payment means specified for this payment trade settlement."
+            "uri": "finance:PaymentTradeSettlement.identifiedGuarantee",
+            "type": "finance:Guarantee"
         },
         {
-            "uri": "unece:specifiedTradeSettlementPaymentMonetarySummation",
-            "type": "unece:TradeSettlementPaymentMonetarySummation",
-            "comment": "The monetary summation totals specified for this payment trade settlement."
+            "uri": "finance:PaymentTradeSettlement.instruction",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.invoicePayerAssignedReferenceId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.payeeParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.payerParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.paymentAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.paymentApplicableCurrencyExchange",
+            "type": "finance:CurrencyExchange"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.paymentCurrencyCode",
+            "type": "finance:CurrencyCodeList"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.penaltyPercent",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.priorityCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.receiptDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.refundAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.requestedAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.specifiedPaymentMeans",
+            "type": "finance:PaymentMeans"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.specifiedTradeSettlementPaymentMonetarySummation",
+            "type": "finance:TradeSettlementPaymentMonetarySummation"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.statusCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.taxAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.transferFeeInclusiveIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.typeCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedTradeSettlement",
-            "comment": "A trade settlement payment specified for this trade settlement payment."
+            "uri": "finance:TradePrice.specifiedPaymentTradeSettlement",
+            "comment": "A payment trade settlement specified for this trade price."
         }
     ]
 }

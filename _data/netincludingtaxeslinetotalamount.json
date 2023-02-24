@@ -1,23 +1,16 @@
 
 {
     "label": "netIncludingTaxesLineTotalAmount",
-    "uri": "unece:netIncludingTaxesLineTotalAmount",
-    "comment": [
-        "A monetary value of the total of all line amounts, including line level allowances and charges and including line level taxes, being reported in this trade settlement header monetary summation.",
-        "A monetary value of the total of all line amounts, including line level allowances and charges and including line level taxes, being reported in this trade settlement line monetary summation."
-    ],
+    "uri": "trade:TradeSettlementLineMonetarySummation.netIncludingTaxesLineTotalAmount",
+    "comment": "A monetary value of the total of all line amounts, including line level allowances and charges and including line level taxes, being reported in this trade settlement header monetary summation.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:AmountType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:TradeSettlementHeaderMonetarySummation",
-            "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
-        },
-        {
-            "uri": "unece:TradeSettlementLineMonetarySummation",
+            "uri": "trade:TradeSettlementLineMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
         }
     ]

@@ -1,25 +1,17 @@
 
 {
     "label": "requestedActionCode",
-    "uri": "unece:requestedActionCode",
-    "comment": [
-        "A code specifying a requested action for this basic work item.",
-        "A code specifying a requested action for this grouped work item.",
-        "A code specifying the requested action for this valuation breakdown statement."
-    ],
+    "uri": "finance:GroupedWorkItem.requestedActionCode",
+    "comment": "A code specifying a requested action for this basic work item.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:BreakdownStatement",
-            "comment": "A detailed statement of work, materials, products, prices, or dimensions."
-        },
-        {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
+            "uri": "finance:GroupedWorkItem",
+            "comment": "A grouping of related work items."
         }
     ]
 }

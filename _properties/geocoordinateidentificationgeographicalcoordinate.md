@@ -1,5 +1,0 @@
----
-title: geoCoordinateIdentificationGeographicalCoordinate
-permalink: geoCoordinateIdentificationGeographicalCoordinate
-jsonid: geocoordinateidentificationgeographicalcoordinate
----

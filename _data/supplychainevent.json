@@ -1,185 +1,86 @@
 
 {
     "label": "SupplyChainEvent",
-    "uri": "unece:SupplyChainEvent",
+    "uri": "transport:SupplyChainEvent",
     "comment": "A significant occurrence or happening in a supply chain.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this supply chain event."
+            "uri": "transport:SupplyChainEvent.associatedReference",
+            "type": "transport:SupplyChainReference"
         },
         {
-            "uri": "unece:descriptionBinaryObject",
-            "type": "xsd:base64Binary",
-            "comment": "Binary object data, such as a photograph, describing this supply chain event."
+            "uri": "transport:SupplyChainEvent.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:dueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The due date, time, date time, or other date time value of this supply chain event."
+            "uri": "transport:SupplyChainEvent.descriptionBinaryObject",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:earliestOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of the earliest occurrence of this supply chain event."
+            "uri": "transport:SupplyChainEvent.dueDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:frequencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a frequency for this supply chain event."
+            "uri": "transport:SupplyChainEvent.earliestOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this supply chain event."
+            "uri": "transport:SupplyChainEvent.frequencyCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:latestOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of the latest occurrence of this supply chain event."
+            "uri": "transport:SupplyChainEvent.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, or other date time value of an occurrence of this supply chain event."
+            "uri": "transport:SupplyChainEvent.latestOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:timeOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A time value of an occurrence of this supply chain event."
+            "uri": "transport:SupplyChainEvent.occurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of supply chain event."
+            "uri": "transport:SupplyChainEvent.occurrenceLocation",
+            "type": "core:Location"
         },
         {
-            "uri": "unece:unitQuantity",
-            "type": "xsd:decimal",
-            "comment": "A number of units for this supply chain event."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:occurrenceLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location where this supply chain event occurs."
+            "uri": "transport:SupplyChainEvent.occurrenceLogisticsLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:occurrencePeriod",
-            "type": "unece:Period",
-            "comment": "A specified period of time during which this supply chain event occurs."
+            "uri": "transport:SupplyChainEvent.occurrencePeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "transport:SupplyChainEvent.relatedSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "transport:SupplyChainEvent.relatedTechnicalCharacteristic",
+            "type": "compliance:TechnicalCharacteristic"
+        },
+        {
+            "uri": "transport:SupplyChainEvent.timeOccurrenceDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "transport:SupplyChainEvent.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainEvent.unitQuantity",
+            "type": "core:QuantityType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:acceptanceEvent",
-            "comment": "An acceptance delivery event, at ..."
+            "uri": "transport:LogisticsLocation.inspectionEvent",
+            "comment": "A supply chain inspection event at this logistics location."
         },
         {
-            "uri": "unece:actualDeliveryEvent",
-            "comment": "An actual delivery event, at ..."
-        },
-        {
-            "uri": "unece:actualDespatchEvent",
-            "comment": "An actual despatch event, at ..."
-        },
-        {
-            "uri": "unece:actualLoadingEvent",
-            "comment": "The actual loading event, at ..."
-        },
-        {
-            "uri": "unece:actualPickUpEvent",
-            "comment": "The actual pick-up event, at ..."
-        },
-        {
-            "uri": "unece:actualReceiptEvent",
-            "comment": "The actual receipt event, at ..."
-        },
-        {
-            "uri": "unece:actualUnloadingEvent",
-            "comment": "The actual unloading event, at ..."
-        },
-        {
-            "uri": "unece:confirmedDeliveryEvent",
-            "comment": "A confirmed delivery event in ..."
-        },
-        {
-            "uri": "unece:confirmedDespatchEvent",
-            "comment": "The despatch event, at header ..."
-        },
-        {
-            "uri": "unece:confirmedPickUpEvent",
-            "comment": "The pick-up event, at header ..."
-        },
-        {
-            "uri": "unece:confirmedReleaseEvent",
-            "comment": "The confirmed release event, at ..."
-        },
-        {
-            "uri": "unece:deliverySupplyChainEvent",
-            "comment": "A delivery event for this supply chain supply plan."
-        },
-        {
-            "uri": "unece:inspectionEvent",
-            "comment": "A supply chain inspection event ..."
-        },
-        {
-            "uri": "unece:packagingEvent",
-            "comment": "The packaging event for this trade product instance."
-        },
-        {
-            "uri": "unece:plannedDeliveryEvent",
-            "comment": "A delivery event, at header ..."
-        },
-        {
-            "uri": "unece:plannedDespatchEvent",
-            "comment": "A despatch event, at header ..."
-        },
-        {
-            "uri": "unece:plannedPickUpEvent",
-            "comment": "The pick-up event, at header ..."
-        },
-        {
-            "uri": "unece:plannedReleaseEvent",
-            "comment": "The release event, at header level, planned for this trade delivery."
-        },
-        {
-            "uri": "unece:plannedShipFromDeliveryEvent",
-            "comment": "The event of the planned ship from delivery, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:plannedShipToDeliveryEvent",
-            "comment": "The planned ship to delivery ..."
-        },
-        {
-            "uri": "unece:previousDeliveryEvent",
-            "comment": "A previous delivery event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:productionEvent",
-            "comment": "The production event for this trade product instance."
-        },
-        {
-            "uri": "unece:requestedDeliveryEvent",
-            "comment": "A delivery event, at header ..."
-        },
-        {
-            "uri": "unece:requestedDespatchEvent",
-            "comment": "A despatch event, at header ..."
-        },
-        {
-            "uri": "unece:scheduledDeliveryEvent",
-            "comment": "A scheduled delivery event in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this supply chain inventory."
-        },
-        {
-            "uri": "unece:ultimateShipToDeliveryEvent",
-            "comment": "The ultimate ship to delivery event, at header level, for this trade delivery."
+            "uri": "transport:LogisticsStatus.reportedSupplyChainEvent",
+            "comment": "A supply chain event reported for this logistics status."
         }
     ]
 }

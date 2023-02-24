@@ -1,24 +1,17 @@
 
 {
     "label": "lineItemQuantity",
-    "uri": "unece:lineItemQuantity",
-    "comment": [
-        "The number of line items for this supply chain trade transaction.",
-        "The number of line items in this exchanged document."
-    ],
+    "uri": "trade:SupplyChainTradeTransaction.lineItemQuantity",
+    "comment": "The number of line items for this supply chain trade transaction.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ExchangedDocument",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
-        },
-        {
-            "uri": "unece:TradeTransaction",
-            "comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties."
+            "uri": "trade:SupplyChainTradeTransaction",
+            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         }
     ]
 }

@@ -1,246 +1,34 @@
 
 {
     "label": "TransportMeans",
-    "uri": "unece:TransportMeans",
-    "comment": "The device or method used to convey people, goods, animals or other objects from place to place.",
+    "uri": "transport:TransportMeans",
+    "comment": "Reference to a device or method used to convey people, goods, or other objects from place to place.",
     "datatypeProperties": [
         {
-            "uri": "unece:aftDraughtLevelMeasure",
-            "type": "xsd:decimal",
-            "comment": "The draught level measured at the aft end of this transport means."
+            "uri": "transport:TransportMeans.driverAccompaniedIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:approvedSecurityPlanOnboardIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not there is an approved security plan onboard this logistics transport means."
+            "uri": "transport:TransportMeans.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:cargoGrossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the total gross weight (mass) of all cargo loaded onto this logistics means of transport, including packaging but excluding any associated transport equipment."
+            "uri": "transport:TransportMeans.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:conferenceCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the conference for this logistics means of transport."
+            "uri": "transport:TransportMeans.transportMeansType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:draughtLevelMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the draught level of this logistics means of transport."
-        },
-        {
-            "uri": "unece:driverAccompaniedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this referenced means of transport is accompanied by a driver."
-        },
-        {
-            "uri": "unece:forwardDraughtLevelMeasure",
-            "type": "xsd:decimal",
-            "comment": "The draught level measured at the fore end of this transport means."
-        },
-        {
-            "uri": "unece:grossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the gross weight (mass) of this logistics means of transport including cargo, such as the measure of the overall size of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
-        },
-        {
-            "uri": "unece:helipadIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not there is a helipad on this logistics means of transport."
-        },
-        {
-            "uri": "unece:iSPSSecurityLevelCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the International Ship and Port facility Security (ISPS) level assigned to this logistics means of transport."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier of this referenced transport means, such as the International Maritime Organization number for a vessel."
-        },
-        {
-            "uri": "unece:lengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the length of this logistics means of transport."
-        },
-        {
-            "uri": "unece:loadedCargoMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the cargo loaded onto this logistics means of transport, such as the number of barrels of oil or other quantity of breakbulk cargo."
-        },
-        {
-            "uri": "unece:manoeuvringSpeedMeasure",
-            "type": "xsd:decimal",
-            "comment": "The manoeuvring speed measured for this logistics means of transport."
-        },
-        {
-            "uri": "unece:manufacturingDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The manufacturing date, time, date time, or other date time value for this logistics means of transport."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this referenced transport means, such as the vessel name."
-        },
-        {
-            "uri": "unece:netWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the net weight (mass) of this logistics means of transport, such as the net tonnage of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969."
-        },
-        {
-            "uri": "unece:requiredLaneLengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the external length required in a lane for this logistics transport means."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number differentiating this logistics transport means from others."
-        },
-        {
-            "uri": "unece:tareWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the tare weight (mass) of this logistics means of transport which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
-        },
-        {
-            "uri": "unece:transportMeansType",
-            "type": "xsd:string",
-            "comment": "The type, expressed as text, of this referenced transport means."
-        },
-        {
-            "uri": "unece:transportMeansTypeCode",
-            "type": "unece:UNCL8179Code",
-            "comment": "The code specifying the type of referenced transport means [Reference UNECE Recommendation 28]."
-        },
-        {
-            "uri": "unece:wasteReportingExemptionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not there is a waste reporting exemption for this logistics means of transport."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableServiceCharge",
-            "type": "unece:ServiceCharge",
-            "comment": "A service charge, such as a freight charge, applicable to this logistics means of transport."
-        },
-        {
-            "uri": "unece:attachedIOTDevice",
-            "type": "unece:IOTDevice",
-            "comment": "An IOT device attached to this logistics transport means."
-        },
-        {
-            "uri": "unece:attachedTransportEquipment",
-            "type": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of logistics transport equipment attached to this logistics means of transport."
-        },
-        {
-            "uri": "unece:certifiedEmission",
-            "type": "unece:Emission",
-            "comment": "A certified level of pollution calculated for an emission from this logistics transport means."
-        },
-        {
-            "uri": "unece:companySecurityOfficerPerson",
-            "type": "unece:TransportPerson",
-            "comment": "A person who is a company security officer for this logistics transport means."
-        },
-        {
-            "uri": "unece:iSSCDocument",
-            "type": "unece:Document",
-            "comment": "The referenced ISSC (International Ship Security Certificate) document for this logistics transport means."
-        },
-        {
-            "uri": "unece:iSSCIssuingAuthorityParty",
-            "type": "unece:TradeParty",
-            "comment": "The trade party authorized to issue the International Ship Security Certificate (ISSC) for this logistics means of transport."
-        },
-        {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this logistics means of transport."
-        },
-        {
-            "uri": "unece:operatorNationalityCountry",
-            "type": "unece:Country",
-            "comment": "The country of nationality of the operator of this logistics means of transport."
-        },
-        {
-            "uri": "unece:operatorParty",
-            "type": "unece:TradeParty",
-            "comment": "The party operating this logistics means of transport."
-        },
-        {
-            "uri": "unece:ownerAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner agent trade party for this logistics means of transport."
-        },
-        {
-            "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The party owning this logistics means of transport."
-        },
-        {
-            "uri": "unece:registrationCountry",
-            "type": "unece:Country",
-            "comment": "The country of registration of this logistics means of transport."
-        },
-        {
-            "uri": "unece:registrationEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A registration event of this logistics transport means."
-        },
-        {
-            "uri": "unece:requiredService",
-            "type": "unece:Service",
-            "comment": "A transport service required for this logistics means of transport."
-        },
-        {
-            "uri": "unece:serviceProviderParty",
-            "type": "unece:TradeParty",
-            "comment": "A trade party providing services for this logistics means of transport."
-        },
-        {
-            "uri": "unece:specifiedDimension",
-            "type": "unece:Dimension",
-            "comment": "Spatial dimensions specified for this logistics means of transport."
-        },
-        {
-            "uri": "unece:specifiedFault",
-            "type": "unece:Fault",
-            "comment": "An identified defect specified for this logistics means of transport."
-        },
-        {
-            "uri": "unece:specifiedInstructions",
-            "type": "unece:HandlingInstructions",
-            "comment": "Handling instructions specified for this logistics means of transport."
+            "uri": "transport:TransportMeans.transportMeansTypeCode",
+            "type": "transport:TransportMeansTypeCodeList"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableTransportMeans",
-            "comment": "The means of transport applicable to this supply chain consignment item."
-        },
-        {
-            "uri": "unece:carriedInactiveTransportMeans",
+            "uri": "transport:TransportMovement.carriedInactiveTransportMeans",
             "comment": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO) ferry."
-        },
-        {
-            "uri": "unece:powerActiveTransportMeans",
-            "comment": "A means of transport actively powering this logistics convoy."
-        },
-        {
-            "uri": "unece:powerInactiveTransportMeans",
-            "comment": "A means of transport not actively powering this logistics convoy."
-        },
-        {
-            "uri": "unece:specifiedTransportMeans",
-            "comment": "A transport means specified for this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:usedTransportMeans",
-            "comment": "The means of transport used for this logistics transport movement."
         }
     ]
 }

@@ -1,0 +1,5 @@
+---
+title: cargoCommodityCategoryStatisticalClassificationCode
+permalink: transport/Cargo.cargoCommodityCategoryStatisticalClassificationCode.html
+jsonid: cargocommoditycategorystatisticalclassificationcode
+---

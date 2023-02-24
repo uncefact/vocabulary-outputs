@@ -1,29 +1,16 @@
 
 {
     "label": "issueLocation",
-    "uri": "unece:issueLocation",
-    "comment": [
-        "The issue location for this document authentication.",
-        "The location where this exchanged document has been issued.",
-        "The logistics related location where this referenced document has been issued."
-    ],
+    "uri": "core:ExchangedDocument.issueLocation",
+    "comment": "The issue location for this document authentication.",
     "rangeIncludes": [
         {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
+            "uri": "core:Location"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Authentication",
-            "comment": "A proof that something is genuine."
-        },
-        {
-            "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
-        },
-        {
-            "uri": "unece:ExchangedDocument",
+            "uri": "core:ExchangedDocument",
             "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
         }
     ]

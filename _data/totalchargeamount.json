@@ -1,29 +1,17 @@
 
 {
     "label": "totalChargeAmount",
-    "uri": "unece:totalChargeAmount",
-    "comment": [
-        "A monetary value of the total charges, including tariff and non-tariff charges, for this cross-border regulatory procedure.",
-        "The monetary value of all freight and other service charges for this supply chain consignment item.",
-        "The total monetary value of all freight and other service charges for this supply chain consignment."
-    ],
+    "uri": "transport:ConsignmentItem.totalChargeAmount",
+    "comment": "A monetary value of the total charge of this trade price.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:AmountType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:RegulatoryProcedure",
-            "comment": "A set of formal steps to satisfy a regulation, law or convention."
+            "uri": "transport:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

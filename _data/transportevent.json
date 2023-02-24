@@ -1,365 +1,378 @@
 
 {
     "label": "TransportEvent",
-    "uri": "unece:TransportEvent",
-    "comment": [
-        "A significant occurrence or happening during transport.",
-        "A referenced significant occurrence or happening during transport."
-    ],
+    "uri": "transport:TransportEvent",
+    "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport.",
     "datatypeProperties": [
         {
-            "uri": "unece:actualArrivalRelatedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the actual arrival related to this transport event."
+            "uri": "transport:TransportEvent.actualArrivalRelatedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:actualDepartureRelatedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the actual departure related to this transport event."
+            "uri": "transport:TransportEvent.actualDepartureRelatedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:actualOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The actual date, time, date time, or other date time value of the occurrence of this transport event."
+            "uri": "transport:TransportEvent.actualOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:arrivalRelatedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "An arrival date, time, date time, or other date time value related to this transport event."
+            "uri": "transport:TransportEvent.actualOccurrencePeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:departureRelatedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A departure date, time, date time, or other date time value related to this transport event."
+            "uri": "transport:TransportEvent.additionalSecurityMeasuresApplicableNote",
+            "type": "core:Note"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this transport event."
+            "uri": "transport:TransportEvent.anchorageDescription",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:estimatedOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The estimated date, time, date time, or other date time value of the occurrence of this transport event."
+            "uri": "transport:TransportEvent.anchorageExpectedIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:estimatedTransportMeansArrivalOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value when the arrival of a means of transport at the location of this transport event is estimated to occur."
+            "uri": "transport:TransportEvent.applicableNote",
+            "type": "core:Note"
         },
         {
-            "uri": "unece:expectedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this transport event is or was expected."
+            "uri": "transport:TransportEvent.arrivalRelatedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this transport event."
+            "uri": "transport:TransportEvent.associatedGeographicalFeature",
+            "type": "core:GeographicalFeature"
         },
         {
-            "uri": "unece:reasonTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the reason type for this referenced transport event."
+            "uri": "transport:TransportEvent.cargoFacilityRelatedLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:receivedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value when information related to this transport event was received, from the perspective of the receiver."
+            "uri": "transport:TransportEvent.certifyingParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:reportedConditionTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of reported condition for this transport event."
+            "uri": "transport:TransportEvent.conveyanceFacilityRelatedLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:requestedOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The requested date, time, date time, or other date time value of the occurrence of this transport event."
+            "uri": "transport:TransportEvent.delayOccurrencePeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:scheduledArrivalRelatedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the scheduled arrival related to this referenced transport event."
+            "uri": "transport:TransportEvent.delaySpecifiedEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:scheduledDepartureRelatedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the scheduled departure related to this referenced transport event."
+            "uri": "transport:TransportEvent.departureRelatedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:scheduledOccurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The scheduled date, time, date time, or other date time value of the occurrence of this transport event."
+            "uri": "transport:TransportEvent.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:securityLevelCode",
-            "type": "xsd:token",
-            "comment": "A security level code for this transport event."
+            "uri": "transport:TransportEvent.estimatedOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of transport event."
+            "uri": "transport:TransportEvent.estimatedTransportMeansArrivalOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:unitQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of units for this transport event."
+            "uri": "transport:TransportEvent.expectedIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of a value for this transport event."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:actualOccurrencePeriod",
-            "type": "unece:Period",
-            "comment": "The actual period of time during which this transport event occurred."
+            "uri": "transport:TransportEvent.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:additionalSecurityMeasuresApplicableNote",
-            "type": "unece:Note",
-            "comment": "A note providing additional security measures applicable to this transport event."
+            "uri": "transport:TransportEvent.laycanOccurrencePeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:applicableNote",
-            "type": "unece:Note",
-            "comment": "A note providing information applicable to this transport event."
+            "uri": "transport:TransportEvent.maritimeAnchorageIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:associatedGeographicalFeature",
-            "type": "unece:GeographicalFeature",
-            "comment": "A geographical feature associated with this transport event."
+            "uri": "transport:TransportEvent.occurrenceLogisticsLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:cargoFacilityRelatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The location of a cargo facility related to this transport event."
+            "uri": "transport:TransportEvent.occurrencePeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:certifyingParty",
-            "type": "unece:TradeParty",
-            "comment": "A certifying party for this transport event."
+            "uri": "transport:TransportEvent.pilotBoardingPlace",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:conveyanceFacilityRelatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A location of a conveyance facility related to this transport event."
+            "uri": "transport:TransportEvent.previousAssociatedGeographicalFeature",
+            "type": "core:GeographicalFeature"
         },
         {
-            "uri": "unece:delayOccurrencePeriod",
-            "type": "unece:Period",
-            "comment": "A specified period of time during which this transport event is delayed."
+            "uri": "transport:TransportEvent.reasonTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:delaySpecifiedEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A delay specified for this referenced transport event."
+            "uri": "transport:TransportEvent.receivedDateTime",
+            "type": "schema:DateTime"
         },
         {
-            "uri": "unece:laycanOccurrencePeriod",
-            "type": "unece:Period",
-            "comment": "The specified period of laycan time during which this transport event occurs."
+            "uri": "transport:TransportEvent.relatedObservation",
+            "type": "compliance:Observation"
         },
         {
-            "uri": "unece:occurrenceLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The logistics location where this transport event occurs."
+            "uri": "transport:TransportEvent.relatedRoute",
+            "type": "transport:TransportRoute"
         },
         {
-            "uri": "unece:occurrencePeriod",
-            "type": "unece:Period",
-            "comment": "A specified period of time during which this transport event occurs."
+            "uri": "transport:TransportEvent.reportedConditionTypeCode",
+            "type": "transport:LogisticsStatusCodeList"
         },
         {
-            "uri": "unece:previousAssociatedGeographicalFeature",
-            "type": "unece:GeographicalFeature",
-            "comment": "A geographical feature previously associated with this transport event."
+            "uri": "transport:TransportEvent.reportingIOTDevice",
+            "type": "transport:IOTDevice"
         },
         {
-            "uri": "unece:relatedObservation",
-            "type": "unece:Observation",
-            "comment": "An observation related to this transport event."
+            "uri": "transport:TransportEvent.requestedOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:relatedRoute",
-            "type": "unece:Route",
-            "comment": "The route related to this transport event."
+            "uri": "transport:TransportEvent.requestedRelatedService",
+            "type": "transport:Service"
         },
         {
-            "uri": "unece:reportingIOTDevice",
-            "type": "unece:IOTDevice",
-            "comment": "An IOT device for this transport reporting event."
+            "uri": "transport:TransportEvent.scheduledArrivalRelatedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:requestedRelatedService",
-            "type": "unece:Service",
-            "comment": "A requested service related to this transport event."
+            "uri": "transport:TransportEvent.scheduledDepartureRelatedDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:scheduledOccurrencePeriod",
-            "type": "unece:Period",
-            "comment": "The scheduled period of time specified for the occurrence of this transport event."
+            "uri": "transport:TransportEvent.scheduledOccurrenceDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:specifiedTransportInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "An instruction or a set of instructions specified for this transport event."
+            "uri": "transport:TransportEvent.scheduledOccurrencePeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:staySpecifiedEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A stay specified for this referenced transport event."
+            "uri": "transport:TransportEvent.securityLevelCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:transportMeansStayOccurrencePeriod",
-            "type": "unece:Period",
-            "comment": "The specified period during which the transport means is held at a location."
+            "uri": "transport:TransportEvent.specifiedTransportInstructions",
+            "type": "compliance:TransportInstructions"
+        },
+        {
+            "uri": "transport:TransportEvent.staySpecifiedEvent",
+            "type": "transport:TransportEvent"
+        },
+        {
+            "uri": "transport:TransportEvent.transportMeansStayOccurrencePeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "transport:TransportEvent.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportEvent.unitQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "transport:TransportEvent.unitValueMeasure",
+            "type": "core:UnitMeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:arrivalEvent",
-            "comment": "An arrival event for this logistics transport movement."
+            "uri": "transport:Consignment.bondedWarehouseStorageEvent",
+            "comment": "A bonded warehouse storage event for this supply chain consignment."
         },
         {
-            "uri": "unece:arrivalReportedEvent",
-            "comment": "A transport arrival event reported for this logistics status."
+            "uri": "transport:Consignment.deliveryTransportEvent",
+            "comment": "A delivery event for this piece of logistics transport equipment."
         },
         {
-            "uri": "unece:bondedWarehouseStorageEvent",
-            "comment": "A bonded warehouse storage event ..."
+            "uri": "transport:Consignment.devanningEvent",
+            "comment": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
         },
         {
-            "uri": "unece:borderCrossingEvent",
-            "comment": "A border crossing event for this logistics transport movement."
+            "uri": "transport:Consignment.examinationEvent",
+            "comment": "An examination event for this cross-border regulatory procedure."
         },
         {
-            "uri": "unece:callEvent",
-            "comment": "A call event for this logistics transport movement."
+            "uri": "transport:Consignment.pickUpEvent",
+            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
         },
         {
-            "uri": "unece:consolidationEvent",
-            "comment": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been, stuffed."
+            "uri": "transport:Consignment.storageEvent",
+            "comment": "A storage event for this supply chain consignment."
         },
         {
-            "uri": "unece:delaySpecifiedEvent",
-            "comment": "A delay specified for this referenced transport event."
-        },
-        {
-            "uri": "unece:deliveryEvent",
-            "comment": "A delivery event for this ..."
-        },
-        {
-            "uri": "unece:departureEvent",
-            "comment": "A departure event during this logistics transport movement."
-        },
-        {
-            "uri": "unece:departureReportedEvent",
-            "comment": "A transport departure event reported for this logistics status."
-        },
-        {
-            "uri": "unece:devanningEvent",
-            "comment": "A transport devanning event for ..."
-        },
-        {
-            "uri": "unece:examinationEvent",
-            "comment": "An examination event for this ..."
-        },
-        {
-            "uri": "unece:firstArrivalEvent",
-            "comment": "The first arrival event for this logistics transport movement."
-        },
-        {
-            "uri": "unece:itineraryStopEvent",
-            "comment": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
-        },
-        {
-            "uri": "unece:loadingEvent",
-            "comment": "The loading event during which ..."
-        },
-        {
-            "uri": "unece:loadingReportedEvent",
-            "comment": "A transport loading event reported for this logistics status."
-        },
-        {
-            "uri": "unece:nextDeliveryEvent",
-            "comment": "A next delivery event for this transport waste material."
-        },
-        {
-            "uri": "unece:pickUpEvent",
-            "comment": "A pick-up event specifying when ..."
-        },
-        {
-            "uri": "unece:positioningEvent",
-            "comment": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been, positioned, i.e. delivered and available for pick-up."
-        },
-        {
-            "uri": "unece:previousDeliveryTransportEvent",
-            "comment": "A previous delivery event for this transport waste material."
-        },
-        {
-            "uri": "unece:registrationEvent",
-            "comment": "A registration event of this logistics transport means."
-        },
-        {
-            "uri": "unece:remainingDeliveryEvent",
-            "comment": "A delivery event for this remaining transport waste material component."
-        },
-        {
-            "uri": "unece:reportedEvent",
-            "comment": "A transport event reported by this monitoring IOT device."
-        },
-        {
-            "uri": "unece:reportingIOTDeviceEvent",
-            "comment": "An IOT device reported transport event for this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:shipToShipEvent",
-            "comment": "A ship to ship event for this logistics transport movement."
-        },
-        {
-            "uri": "unece:specifiedEvent",
-            "comment": "A transport event specified for this logistics transport movement."
-        },
-        {
-            "uri": "unece:staySpecifiedEvent",
-            "comment": "A stay specified for this referenced transport event."
-        },
-        {
-            "uri": "unece:storageEvent",
-            "comment": "A storage event for this ..."
-        },
-        {
-            "uri": "unece:transportEvent",
+            "uri": "transport:Consignment.transportEvent",
             "comment": "An event occurring during the transport of this supply chain consignment."
         },
         {
-            "uri": "unece:transshipmentIntermediateEvent",
-            "comment": "A transshipment intermediate event during this logistics transport movement."
+            "uri": "transport:Consignment.vanningEvent",
+            "comment": "The vanning event (the loading of this consignment at the place of its original despatch) for this referenced supply chain consignment."
         },
         {
-            "uri": "unece:treatmentEvent",
-            "comment": "A treatment event for this cross-border regulatory procedure."
+            "uri": "transport:Consignment.warehouseStorageEvent",
+            "comment": "A warehouse storage event for this referenced supply chain consignment."
         },
         {
-            "uri": "unece:unloadingEvent",
-            "comment": "The unloading event during which ..."
+            "uri": "transport:ConsignmentItem.deliveryTransportEvent",
+            "comment": "A delivery event for this piece of logistics transport equipment."
         },
         {
-            "uri": "unece:unloadingReportedEvent",
+            "uri": "transport:ConsignmentItem.examinationEvent",
+            "comment": "An examination event for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "transport:ConsignmentItem.pickUpEvent",
+            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
+        },
+        {
+            "uri": "transport:ConsignmentItem.vanningEvent",
+            "comment": "The vanning event (the loading of this consignment at the place of its original despatch) for this referenced supply chain consignment."
+        },
+        {
+            "uri": "transport:IOTDevice.reportedTransportEvent",
+            "comment": "A transport event reported by this monitoring IOT device."
+        },
+        {
+            "uri": "transport:LogisticsStatus.arrivalReportedEvent",
+            "comment": "A transport arrival event reported for this logistics status."
+        },
+        {
+            "uri": "transport:LogisticsStatus.departureReportedEvent",
+            "comment": "A transport departure event reported for this logistics status."
+        },
+        {
+            "uri": "transport:LogisticsStatus.loadingReportedEvent",
+            "comment": "A transport loading event reported for this logistics status."
+        },
+        {
+            "uri": "transport:LogisticsStatus.unloadingReportedEvent",
             "comment": "A transport unloading event reported for this logistics status."
         },
         {
-            "uri": "unece:vanningEvent",
-            "comment": "The vanning event (the loading ..."
+            "uri": "transport:LogisticsTransportEquipment.bondedWarehouseStorageEvent",
+            "comment": "A bonded warehouse storage event for this supply chain consignment."
         },
         {
-            "uri": "unece:warehouseStorageEvent",
-            "comment": "A warehouse storage event for this referenced supply chain consignment."
+            "uri": "transport:LogisticsTransportEquipment.consolidationEvent",
+            "comment": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been, stuffed."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.deconsolidationEvent",
+            "comment": "A deconsolidation event for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.deliveryTransportEvent",
+            "comment": "A delivery event for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.loadingEvent",
+            "comment": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.pickUpEvent",
+            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.positioningEvent",
+            "comment": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been, positioned, i.e. delivered and available for pick-up."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.reportingIOTDeviceTransportEvent",
+            "comment": "An IOT device reported transport event for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.storageEvent",
+            "comment": "A storage event for this supply chain consignment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.unloadingEvent",
+            "comment": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:LogisticsTransportMeans.registrationEvent",
+            "comment": "A registration event of this logistics transport means."
+        },
+        {
+            "uri": "transport:TransportEvent.delaySpecifiedEvent",
+            "comment": "A delay specified for this referenced transport event."
+        },
+        {
+            "uri": "transport:TransportEvent.staySpecifiedEvent",
+            "comment": "A stay specified for this referenced transport event."
+        },
+        {
+            "uri": "transport:TransportMovement.arrivalEvent",
+            "comment": "An arrival event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.borderCrossingEvent",
+            "comment": "A border crossing event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.callEvent",
+            "comment": "A call event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.damageEvent",
+            "comment": "A damage event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.departureEvent",
+            "comment": "A departure event during this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.firstArrivalEvent",
+            "comment": "The first arrival event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.loadingEvent",
+            "comment": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.shipToShipEvent",
+            "comment": "A ship to ship event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedTransportEvent",
+            "comment": "A transport event specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transshipmentIntermediateEvent",
+            "comment": "A transshipment intermediate event during this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.unloadingEvent",
+            "comment": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportRoute.itineraryStopEvent",
+            "comment": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
+        },
+        {
+            "uri": "transport:TransportationWasteMaterial.nextDeliveryEvent",
+            "comment": "A next delivery event for this transportation waste material."
+        },
+        {
+            "uri": "transport:TransportationWasteMaterial.previousDeliveryTransportEvent",
+            "comment": "A previous delivery event for this transportation waste material."
+        },
+        {
+            "uri": "transport:TransportationWasteMaterialComponent.remainingDeliveryEvent",
+            "comment": "A delivery event for this remaining transportation waste material component."
         }
     ]
 }

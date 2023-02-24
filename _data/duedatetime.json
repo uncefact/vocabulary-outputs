@@ -1,29 +1,16 @@
 
 {
     "label": "dueDateTime",
-    "uri": "unece:dueDateTime",
-    "comment": [
-        "The date, time, date time, or other date time value for a due date specified by these trade payment terms.",
-        "The date, time, date time, or other date time value of the due date specified by these trade payment terms.",
-        "The due date for this instalment payment.",
-        "The due date, time, date time, or other date time value of this supply chain event."
-    ],
+    "uri": "transport:SupplyChainEvent.dueDateTime",
+    "comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:InstalmentPayment",
-            "comment": "A discharge of obligations in respect of funds or securities, transferred through one of several payments, between two or more parties."
-        },
-        {
-            "uri": "unece:PaymentTerms",
-            "comment": "Terms and conditions by which payment has been or will be made."
-        },
-        {
-            "uri": "unece:SupplyChainEvent",
+            "uri": "transport:SupplyChainEvent",
             "comment": "A significant occurrence or happening in a supply chain."
         }
     ]

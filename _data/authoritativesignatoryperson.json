@@ -1,26 +1,16 @@
 
 {
     "label": "AuthoritativeSignatoryPerson",
-    "uri": "unece:AuthoritativeSignatoryPerson",
+    "uri": "compliance:AuthoritativeSignatoryPerson",
     "comment": "A person who is authorized to sign a document, such as a customs officer or other government official.",
     "datatypeProperties": [
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this authoritative signatory person."
-        }
-    ],
-    "objectProperties": [
+            "uri": "compliance:AuthoritativeSignatoryPerson.attainedAcademicQualification",
+            "type": "compliance:AcademicQualification"
+        },
         {
-            "uri": "unece:attainedQualification",
-            "type": "unece:Qualification",
-            "comment": "An academic qualification attained by this authoritative signatory person."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:specifiedAuthoritativeSignatoryPerson",
-            "comment": "A person specified to sign on behalf of this trade party."
+            "uri": "compliance:AuthoritativeSignatoryPerson.name",
+            "type": "schema:Text"
         }
     ]
 }

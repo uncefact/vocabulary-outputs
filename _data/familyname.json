@@ -1,28 +1,16 @@
 
 {
     "label": "familyName",
-    "uri": "unece:familyName",
-    "comment": [
-        "A family name, expressed as text, for this transport person.",
-        "The family name expressed as text for this distinct chemical.",
-        "The name, expressed as text, that this contact person shares with members of his/her family."
-    ],
+    "uri": "transport:TransportPerson.familyName",
+    "comment": "A family name, expressed as text, for this transport person.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Chemical",
-            "comment": "Any substance having a defined molecular composition."
-        },
-        {
-            "uri": "unece:ContactPerson",
-            "comment": "An individual human being in a position to give assistance or information."
-        },
-        {
-            "uri": "unece:TransportPerson",
+            "uri": "transport:TransportPerson",
             "comment": "A transport related person, such as a member of a crew or a passenger."
         }
     ]

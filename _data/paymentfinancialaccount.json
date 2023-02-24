@@ -1,0 +1,34 @@
+
+{
+    "label": "PaymentFinancialAccount",
+    "uri": "finance:PaymentFinancialAccount",
+    "comment": "A specific business arrangement whereby monetary values pertaining to payment, collected or paid, are recorded.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:PaymentFinancialAccount.accountName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialAccount.iBANId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialAccount.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialAccount.paymentFinancialAccountCurrencyCode",
+            "type": "finance:CurrencyCodeList"
+        },
+        {
+            "uri": "finance:PaymentFinancialAccount.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:PaymentFinancialInstitution.specifiedPaymentFinancialAccount",
+            "comment": "A payment financial account specified for this payment financial institution."
+        }
+    ]
+}

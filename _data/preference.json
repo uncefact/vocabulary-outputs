@@ -1,0 +1,30 @@
+
+{
+    "label": "Preference",
+    "uri": "tourism:Preference",
+    "comment": "An involvement in a happening, such as a theme park, a guided tour that is liked or wanted more than another item.",
+    "datatypeProperties": [
+        {
+            "uri": "tourism:Preference.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:Preference.dislikedItem",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:Preference.preferredItem",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "tourism:Preference.priorityRankingNumeric",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "tourism:GuestPerson.notifiedPreference",
+            "comment": "An experience item preference notified for this guest person."
+        }
+    ]
+}

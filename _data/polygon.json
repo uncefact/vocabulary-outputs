@@ -1,34 +1,38 @@
 
 {
     "label": "Polygon",
-    "uri": "unece:Polygon",
+    "uri": "core:Polygon",
     "comment": "A planar surface, defined by one exterior boundary and zero or more interior boundaries. Each interior boundary defines a hole in the polygon.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this specified polygon."
+            "uri": "core:Polygon.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:associatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location associated with this specified polygon."
+            "uri": "core:Polygon.associatedLocation",
+            "type": "core:Location"
         },
         {
-            "uri": "unece:exteriorLinearRing",
-            "type": "unece:LinearRing",
-            "comment": "The exterior linear specified ring for this polygon."
+            "uri": "core:Polygon.exteriorLinearRing",
+            "type": "core:LinearRing"
         },
         {
-            "uri": "unece:interiorLinearRing",
-            "type": "unece:LinearRing",
-            "comment": "An interior linear ring specified for this polygon."
+            "uri": "core:Polygon.interiorLinearRing",
+            "type": "core:LinearRing"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedPolygon",
-            "comment": "A polygon included in this ..."
+            "uri": "core:GeographicalFeature.includedPolygon",
+            "comment": "A polygon included in this geographical multi-surface."
+        },
+        {
+            "uri": "core:GeographicalMultiSurface.includedPolygon",
+            "comment": "A polygon included in this geographical multi-surface."
+        },
+        {
+            "uri": "core:GeographicalSurface.includedPolygon",
+            "comment": "A polygon included in this geographical multi-surface."
         }
     ]
 }

@@ -1,0 +1,82 @@
+
+{
+    "label": "AgriculturalCertificate",
+    "uri": "agriculture:AgriculturalCertificate",
+    "comment": "A legal proof of ownership, worthiness or qualification to operate an agricultural item.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:AgriculturalCertificate.actualEffectiveDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.applicableAssertion",
+            "type": "compliance:Assertion"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.applicableObjectCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.applicableStandard",
+            "type": "compliance:Standard"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.attachedBinaryFile",
+            "type": "core:BinaryFile"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.certificateTypeCode",
+            "type": "agriculture:CertificateTypeCodeList"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.expiryDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.issueDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.issueReasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.issuingPartyId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.purposeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:AgriculturalCertificate.requestedEffectiveDateTime",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:AgriculturalApplication.appliedCertificate",
+            "comment": "An agricultural certificate applied to this specified agricultural application."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedAgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        },
+        {
+            "uri": "agriculture:Plot.specifiedAgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        }
+    ]
+}

@@ -1,24 +1,17 @@
 
 {
     "label": "transportEquipmentQuantity",
-    "uri": "unece:transportEquipmentQuantity",
-    "comment": [
-        "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment.",
-        "The number of pieces of transport equipment for this logistics transport movement."
-    ],
+    "uri": "transport:TransportMovement.transportEquipmentQuantity",
+    "comment": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "uri": "transport:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

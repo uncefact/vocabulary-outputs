@@ -1,0 +1,50 @@
+
+{
+    "label": "Tolerance",
+    "uri": "core:Tolerance",
+    "comment": "Permissible limit or limits of variation that is fixed for the case in question but may be different in other cases.",
+    "datatypeProperties": [
+        {
+            "uri": "core:Tolerance.information",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Tolerance.marginValueNumeric",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Tolerance.marginValuePercent",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Tolerance.minusValuePercent",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Tolerance.minusValueQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "core:Tolerance.surplusValuePercent",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Tolerance.surplusValueQuantity",
+            "type": "core:QuantityType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:MetricCharacteristic.valueTolerance",
+            "comment": "A tolerance specified for a value of this metric characteristic."
+        },
+        {
+            "uri": "core:SpecifiedFault.operationalApplicableTolerance",
+            "comment": "An applicable operational tolerance of this specified fault."
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueTolerance",
+            "comment": "A tolerance specified for a value of this metric characteristic."
+        }
+    ]
+}

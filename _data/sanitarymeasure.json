@@ -1,0 +1,30 @@
+
+{
+    "label": "SanitaryMeasure",
+    "uri": "transport:SanitaryMeasure",
+    "comment": "Sanitary measures as reported for a WHO MDH (Maritime Declaration of Health).",
+    "datatypeProperties": [
+        {
+            "uri": "transport:SanitaryMeasure.applicationDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "transport:SanitaryMeasure.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SanitaryMeasure.location",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SanitaryMeasure.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:MDHHealthIndication.appliedSanitaryMeasure",
+            "comment": "A sanitary measure applied for this MDH health indication."
+        }
+    ]
+}

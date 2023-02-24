@@ -1,355 +1,285 @@
 
 {
     "label": "HeaderTradeAgreement",
-    "uri": "unece:HeaderTradeAgreement",
+    "uri": "trade:HeaderTradeAgreement",
     "comment": "The contractual terms of a header trade agreement.",
     "datatypeProperties": [
         {
-            "uri": "unece:buyerApprovedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.additionalDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:buyerReference",
-            "type": "xsd:string",
-            "comment": "A buyer reference, expressed as text, for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.applicableDeliveryTerms",
+            "type": "transport:DeliveryTerms"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.applicableForecastTerms",
+            "type": "trade:ForecastTerms"
         },
         {
-            "uri": "unece:impactCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the impact for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.applicableLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:priorityCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the priority for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.applicablePaymentTerms",
+            "type": "finance:PaymentTerms"
         },
         {
-            "uri": "unece:priorityDescriptionCode",
-            "type": "unece:UNCL4037Code",
-            "comment": "The code specifying the delivery priority for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.applicableRegulatoryProcedure",
+            "type": "compliance:RegulatoryProcedure"
         },
         {
-            "uri": "unece:reference",
-            "type": "xsd:string",
-            "comment": "A reference, expressed as text, for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.blanketOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:revisionId",
-            "type": "xsd:token",
-            "comment": "An identifier for the revision of this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerAgentParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:sellerReference",
-            "type": "xsd:string",
-            "comment": "A seller reference, expressed as text, for this header trade agreement."
-        }
-    ],
-    "objectProperties": [
+            "uri": "trade:HeaderTradeAgreement.buyerApprovedDateTime",
+            "type": "schema:DateTime"
+        },
         {
-            "uri": "unece:additionalDocument",
-            "type": "unece:Document",
-            "comment": "An additional document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerAssignedAccountantParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:applicableDeliveryTerms",
-            "type": "unece:DeliveryTerms",
-            "comment": "The terms of delivery applicable to this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:applicableForecastTerms",
-            "type": "unece:ForecastTerms",
-            "comment": "The supply chain forecast terms applicable to this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:applicableLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location or place applicable to this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerReference",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:applicablePaymentTerms",
-            "type": "unece:PaymentTerms",
-            "comment": "The payment terms applicable to this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerRequisitionerParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:applicableRegulatoryProcedure",
-            "type": "unece:RegulatoryProcedure",
-            "comment": "A cross-border regulatory procedure applicable to this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.buyerTaxRepresentativeParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:blanketOrderDocument",
-            "type": "unece:Document",
-            "comment": "The blanket order document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.carrierParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:buyerAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The buyer agent party for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.catalogueDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:buyerAssignedAccountantParty",
-            "type": "unece:TradeParty",
-            "comment": "The party assigned as an accountant by the buyer for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.catalogueInformationProviderParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:buyerOrderDocument",
-            "type": "unece:Document",
-            "comment": "The buyer generated order document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.catalogueInformationReceiverParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:buyerParty",
-            "type": "unece:TradeParty",
-            "comment": "The buyer party for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.catalogueRequestDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:buyerRequisitionerParty",
-            "type": "unece:TradeParty",
-            "comment": "A party who is a buyer requisitioner in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.catalogueSubscriptionDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:buyerTaxRepresentativeParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as a tax representative for the buyer for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.contractDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:carrierParty",
-            "type": "unece:TradeParty",
-            "comment": "The carrier party, at header level, for this trade agreement."
+            "uri": "trade:HeaderTradeAgreement.demandForecastDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:catalogueDocument",
-            "type": "unece:Document",
-            "comment": "A catalogue document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.engineeringChangeDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:catalogueInformationProviderParty",
-            "type": "unece:TradeParty",
-            "comment": "The party that provides catalogue information for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.exportLicenceDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:catalogueInformationReceiverParty",
-            "type": "unece:TradeParty",
-            "comment": "The party that receives catalogue information for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:catalogueRequestDocument",
-            "type": "unece:Document",
-            "comment": "A catalogue request document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.impactCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:catalogueSubscriptionDocument",
-            "type": "unece:Document",
-            "comment": "A catalogue subscription document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.importLicenceDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:contractDocument",
-            "type": "unece:Document",
-            "comment": "A contract document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.letterOfCreditDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:demandForecastDocument",
-            "type": "unece:Document",
-            "comment": "A demand forecast document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.marketplaceOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:engineeringChangeDocument",
-            "type": "unece:Document",
-            "comment": "The engineering change document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.orderResponseDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:exportLicenceDocument",
-            "type": "unece:Document",
-            "comment": "The export licence document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.originalOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:importLicenceDocument",
-            "type": "unece:Document",
-            "comment": "The import licence document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.previousOrderChangeDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:letterOfCreditDocument",
-            "type": "unece:Document",
-            "comment": "The letter of credit document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.previousOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:marketplaceOrderDocument",
-            "type": "unece:Document",
-            "comment": "The marketplace generated order document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.previousOrderResponseDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:orderResponseDocument",
-            "type": "unece:Document",
-            "comment": "The order response document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.priceListDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:originalOrderDocument",
-            "type": "unece:Document",
-            "comment": "The original order document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.pricingBaseApplicableLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:previousOrderChangeDocument",
-            "type": "unece:Document",
-            "comment": "The previous order change document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.primeContractSellerParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:previousOrderDocument",
-            "type": "unece:Document",
-            "comment": "The previous order document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.priorityCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:previousOrderResponseDocument",
-            "type": "unece:Document",
-            "comment": "The previous order response document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.priorityDescriptionCode",
+            "type": "trade:PriorityDescriptionCodeList"
         },
         {
-            "uri": "unece:priceListDocument",
-            "type": "unece:Document",
-            "comment": "The price list document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.procurementParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:pricingBaseApplicableLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The logistics location applicable to the pricing base for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.productEndUserParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:primeContractSellerParty",
-            "type": "unece:TradeParty",
-            "comment": "The seller party acting as the prime contractor for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.promotionalDealDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:procurementParty",
-            "type": "unece:TradeParty",
-            "comment": "The procurement party for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.purchaseConditionsDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:productEndUserParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as the end user for the products in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.quotationDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:promotionalDealDocument",
-            "type": "unece:Document",
-            "comment": "The promotional deal document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.quotationProposalDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:purchaseConditionsDocument",
-            "type": "unece:Document",
-            "comment": "A purchase conditions document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.quotationProposalResponseDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:quotationDocument",
-            "type": "unece:Document",
-            "comment": "The quotation document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.quotationRequestDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:quotationProposalDocument",
-            "type": "unece:Document",
-            "comment": "The quotation proposal document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.quotationRequestResponseDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:quotationProposalResponseDocument",
-            "type": "unece:Document",
-            "comment": "The quotation proposal response document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.quoteReferencedWorkflowObject",
+            "type": "core:WorkflowObject"
         },
         {
-            "uri": "unece:quotationRequestDocument",
-            "type": "unece:Document",
-            "comment": "The quotation request document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.reference",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:quotationRequestResponseDocument",
-            "type": "unece:Document",
-            "comment": "The quotation request response document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.relevantParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:quoteReferencedWorkflowObject",
-            "type": "unece:WorkflowObject",
-            "comment": "The quote trade workflow object referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.requisitionDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:relevantParty",
-            "type": "unece:TradeParty",
-            "comment": "A relevant party for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.requisitionerDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:requisitionDocument",
-            "type": "unece:Document",
-            "comment": "A requisition document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.revisionId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:requisitionerDocument",
-            "type": "unece:Document",
-            "comment": "A requisitioner document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.salesAgentParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:salesAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The agent party representing the seller for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.salesConditionsDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:salesConditionsDocument",
-            "type": "unece:Document",
-            "comment": "A sales conditions document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.salesReportDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:salesReportDocument",
-            "type": "unece:Document",
-            "comment": "The sales report document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.sellerAssignedAccountantParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:sellerAssignedAccountantParty",
-            "type": "unece:TradeParty",
-            "comment": "The party assigned as an accountant by the seller for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.sellerOrderDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:sellerOrderDocument",
-            "type": "unece:Document",
-            "comment": "The seller generated order document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.sellerParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:sellerParty",
-            "type": "unece:TradeParty",
-            "comment": "The seller party for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.sellerReference",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:sellerTaxRepresentativeParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as a tax representative for the seller for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.sellerTaxRepresentativeParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:shippingPeriod",
-            "type": "unece:Period",
-            "comment": "The shipping period specified in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.shippingPeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:specifiedProject",
-            "type": "unece:Project",
-            "comment": "The procuring project specified for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.specifiedProject",
+            "type": "core:Project"
         },
         {
-            "uri": "unece:supplyInstructionDocument",
-            "type": "unece:Document",
-            "comment": "A supply instruction document referenced in this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.supplyInstructionDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:targetMarketCountry",
-            "type": "unece:Country",
-            "comment": "A target market country for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.targetMarketCountry",
+            "type": "core:Country"
         },
         {
-            "uri": "unece:ultimateCustomerOrderDocument",
-            "type": "unece:Document",
-            "comment": "An ultimate customer order document referenced for this header trade agreement."
+            "uri": "trade:HeaderTradeAgreement.ultimateCustomerOrderDocument",
+            "type": "core:Document"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableTradeAgreement",
+            "uri": "trade:SupplyChainTradeTransaction.applicableHeaderTradeAgreement",
             "comment": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
         }
     ]

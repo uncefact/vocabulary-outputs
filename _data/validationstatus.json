@@ -1,34 +1,24 @@
 
 {
     "label": "ValidationStatus",
-    "uri": "unece:ValidationStatus",
+    "uri": "core:ValidationStatus",
     "comment": "Information relevant to a condition of a validation.",
     "datatypeProperties": [
         {
-            "uri": "unece:additionalReason",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, related to the reason for this validation status."
+            "uri": "core:ValidationStatus.additionalReason",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this validation status."
+            "uri": "core:ValidationStatus.reason",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:validationDocumentStatusConditionCode",
-            "type": "unece:UNCL1373Code",
-            "comment": "The code specifying the condition of this validation status."
+            "uri": "core:ValidationStatus.reasonCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:validationStatusReasonCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "The code specifying the reason for this validation status."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:specifiedValidationStatus",
-            "comment": "The status of the validation specified for this financing request document, such as error."
+            "uri": "core:ValidationStatus.validationDocumentStatusConditionCode",
+            "type": "core:ValidationDocumentStatusCodeList"
         }
     ]
 }

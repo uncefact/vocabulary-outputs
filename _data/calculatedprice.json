@@ -1,35 +1,17 @@
 
 {
-    "label": "CalculatedPrice",
-    "uri": "unece:CalculatedPrice",
-    "comment": "Information related to a calculated price.",
-    "datatypeProperties": [
+    "label": "calculatedPrice",
+    "uri": "tourism:ExperienceProduct.calculatedPrice",
+    "comment": "A calculated price for this experience event.",
+    "rangeIncludes": [
         {
-            "uri": "unece:calculatedPriceTypeCode",
-            "type": "unece:UNCL5375Code",
-            "comment": "A code specifying the type of calculated price."
-        },
-        {
-            "uri": "unece:chargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the calculated price to be charged."
+            "uri": "finance:TradePrice"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:relatedAllowanceCharge",
-            "type": "unece:AllowanceCharge",
-            "comment": "Applied allowance charge information related to this calculated price."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:totalPrice",
-            "comment": "A total calculated price for ..."
-        },
-        {
-            "uri": "unece:unitPrice",
-            "comment": "A unit calculated price for this basic work item."
+            "uri": "tourism:ExperienceProduct",
+            "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience."
         }
     ]
 }

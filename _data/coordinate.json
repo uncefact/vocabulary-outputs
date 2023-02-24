@@ -1,24 +1,17 @@
 
 {
     "label": "coordinate",
-    "uri": "unece:coordinate",
-    "comment": [
-        "A coordinate, expressed as text, for this specified linear ring.",
-        "The coordinate, expressed as text, for this specified direct position list."
-    ],
+    "uri": "core:LinearRing.coordinate",
+    "comment": "A coordinate, expressed as text, for this specified linear ring.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:DirectPositionList",
-            "comment": "The list of coordinates for a physical location, expressed as a sequence of direct positions."
-        },
-        {
-            "uri": "unece:LinearRing",
-            "comment": "An array of points which define a closed loop which is not self intersecting."
+            "uri": "core:LinearRing",
+            "comment": "A specified array of points which define a closed loop which is not self intersecting."
         }
     ]
 }

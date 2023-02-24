@@ -1,33 +1,29 @@
 
 {
     "label": "LegalRegistration",
-    "uri": "unece:LegalRegistration",
+    "uri": "core:LegalRegistration",
     "comment": "The recording of items or details for a specific legal purpose.",
     "datatypeProperties": [
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "An identifier of the country in which this legal registration is valid."
+            "uri": "core:LegalRegistration.countryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this legal registration."
+            "uri": "core:LegalRegistration.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lastRegisteredYearDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The last year in which this legal registration was registered."
+            "uri": "core:LegalRegistration.lastRegisteredYearDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of this legal registration."
+            "uri": "core:LegalRegistration.typeCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:authorizedRegistration",
+            "uri": "core:LegalOrganization.authorizedRegistration",
             "comment": "A legal registration authorized for this legally set up organization."
         }
     ]

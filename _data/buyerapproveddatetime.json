@@ -1,23 +1,16 @@
 
 {
     "label": "buyerApprovedDateTime",
-    "uri": "unece:buyerApprovedDateTime",
-    "comment": [
-        "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement.",
-        "The date, time, date time, or other date time value of approval by the buyer for this line trade agreement."
-    ],
+    "uri": "trade:LineTradeAgreement.buyerApprovedDateTime",
+    "comment": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:DateTime"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeAgreement",
-            "comment": "The contractual terms of a header trade agreement."
-        },
-        {
-            "uri": "unece:LineTradeAgreement",
+            "uri": "trade:LineTradeAgreement",
             "comment": "The contractual terms of a line trade agreement."
         }
     ]

@@ -1,23 +1,16 @@
 
 {
     "label": "uKSortCodeId",
-    "uri": "unece:uKSortCodeId",
-    "comment": [
-        "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this creditor financial institution.",
-        "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this debtor financial institution."
-    ],
+    "uri": "finance:DebtorFinancialInstitution.uKSortCodeId",
+    "comment": "The unique United Kingdom (UK) Sort Code identifier as assigned by the UK Payment Association (APACS) for this creditor financial institution.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:CreditorFinancialInstitution",
-            "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money."
-        },
-        {
-            "uri": "unece:DebtorFinancialInstitution",
+            "uri": "finance:DebtorFinancialInstitution",
             "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that owes money."
         }
     ]

@@ -1,39 +1,38 @@
 
 {
     "label": "CoordinateSourceSystem",
-    "uri": "unece:CoordinateSourceSystem",
-    "comment": "Properties defining a coordinate source system used in different places around the world to identify locations on the earth.",
+    "uri": "core:CoordinateSourceSystem",
+    "comment": "Properties defining a geographical coordinate source system used in different places around the world to identify locations on the earth.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this geographical coordinate source system."
+            "uri": "core:CoordinateSourceSystem.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:signalSourceAvailableQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity of signal source available for this geographical coordinate source system."
+            "uri": "core:CoordinateSourceSystem.signalSourceAvailableQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:sourceTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a type of source for this geographical coordinate source system."
+            "uri": "core:CoordinateSourceSystem.sourceTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:toleranceMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the tolerance of this geographical coordinate source system."
+            "uri": "core:CoordinateSourceSystem.toleranceMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:usedSignalSourceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity of the used signal source of this geographical coordinate source system."
+            "uri": "core:CoordinateSourceSystem.usedSignalSourceQuantity",
+            "type": "core:QuantityType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:usedCoordinateSourceSystem",
-            "comment": "The geographical coordinate source system ..."
+            "uri": "core:GeographicalCoordinate.usedCoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this geographical coordinate."
+        },
+        {
+            "uri": "core:GeographicalFeature.usedCoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this geographical coordinate."
         }
     ]
 }

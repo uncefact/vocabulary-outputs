@@ -1,0 +1,46 @@
+
+{
+    "label": "ProductFinishingTreatment",
+    "uri": "trade:ProductFinishingTreatment",
+    "comment": "Improving measures for manufactured components or products to meet end use requirements.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:ProductFinishingTreatment.applicableProcessCertificate",
+            "type": "compliance:ProcessCertificate"
+        },
+        {
+            "uri": "trade:ProductFinishingTreatment.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "trade:ProductFinishingTreatment.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:ProductFinishingTreatment.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:ProductFinishingTreatment.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:ProductFinishingTreatment.usedMaterial",
+            "type": "compliance:SpecifiedMaterial"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:ProductBatch.appliedProductFinishingTreatment",
+            "comment": "A product finishing treatment applied during this production process."
+        },
+        {
+            "uri": "trade:ProductionProcess.appliedProductFinishingTreatment",
+            "comment": "A product finishing treatment applied during this production process."
+        },
+        {
+            "uri": "trade:TradeProduct.appliedProductFinishingTreatment",
+            "comment": "A product finishing treatment applied during this production process."
+        }
+    ]
+}

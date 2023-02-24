@@ -1,100 +1,84 @@
 
 {
     "label": "BreakdownStatement",
-    "uri": "unece:BreakdownStatement",
-    "comment": "A detailed statement of work, materials, products, prices, or dimensions.",
+    "uri": "finance:BreakdownStatement",
+    "comment": "A detailed statement of work, prices, and dimensions for this valuation.",
     "datatypeProperties": [
         {
-            "uri": "unece:comment",
-            "type": "xsd:string",
-            "comment": "A comment, expressed as text, for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.binaryFile",
+            "type": "core:BinaryFile"
         },
         {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.changedStatus",
+            "type": "core:RecordedStatus"
         },
         {
-            "uri": "unece:creationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.comment",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:defaultCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the default currency for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.contractualLanguageCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:defaultLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the default language for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.creationBinaryFile",
+            "type": "core:BinaryFile"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.creationDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.defaultCurrencyCode",
+            "type": "finance:CurrencyCodeList"
         },
         {
-            "uri": "unece:measurementMethodId",
-            "type": "xsd:token",
-            "comment": "A unique identifier of a method of measurement for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.defaultLanguageCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:priceListId",
-            "type": "xsd:token",
-            "comment": "The identifier of a price list for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:requestedActionCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the requested action for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.itemBasicWorkItem",
+            "type": "finance:BasicWorkItem"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of valuation breakdown statement."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:changedStatus",
-            "type": "unece:RecordedStatus",
-            "comment": "A changed recorded status for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.itemGroupedWorkItem",
+            "type": "finance:GroupedWorkItem"
         },
         {
-            "uri": "unece:creationBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A specified binary file used to create this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.measurementMethodId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:itemWorkItem",
-            "type": "unece:WorkItem",
-            "comment": "A basic work item in this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:readerBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A specified binary file used to read this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.priceListId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:referencedBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A specified binary file referenced by this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.readerBinaryFile",
+            "type": "core:BinaryFile"
         },
         {
-            "uri": "unece:totalPrice",
-            "type": "unece:CalculatedPrice",
-            "comment": "A total calculated price for this valuation breakdown statement."
+            "uri": "finance:BreakdownStatement.requestedActionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:BreakdownStatement.totalPrice",
+            "type": "finance:CalculatedPrice"
+        },
+        {
+            "uri": "finance:BreakdownStatement.typeCode",
+            "type": "schema:Text"
         }
     ]
 }

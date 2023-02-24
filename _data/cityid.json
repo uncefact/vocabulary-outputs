@@ -1,23 +1,16 @@
 
 {
     "label": "cityId",
-    "uri": "unece:cityId",
-    "comment": [
-        "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE).",
-        "The unique identifier of the city for this financial institution address, such as United Nations Location Code (UNLOCODE)."
-    ],
+    "uri": "trade:TradeAddress.cityId",
+    "comment": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE).",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:FinancialInstitutionAddress",
-            "comment": "The location at which a financial institution may be found or reached."
-        },
-        {
-            "uri": "unece:TradeAddress",
+            "uri": "trade:TradeAddress",
             "comment": "The location at which a particular trade related organization or person may be found or reached."
         }
     ]

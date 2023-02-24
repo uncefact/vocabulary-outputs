@@ -1,0 +1,30 @@
+
+{
+    "label": "ProductionWasteMaterialComponent",
+    "uri": "compliance:ProductionWasteMaterialComponent",
+    "comment": "A production material component that is unused and rejected as unwanted.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ProductionWasteMaterialComponent.applicableProductCertificate",
+            "type": "compliance:ProductCertificate"
+        },
+        {
+            "uri": "compliance:ProductionWasteMaterialComponent.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "compliance:ProductionWasteMaterialComponent.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:ProductionWasteMaterialComponent.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:ProductionWasteMaterial.includedProductionWasteMaterialComponent",
+            "comment": "A production waste material component included in this production waste material."
+        }
+    ]
+}

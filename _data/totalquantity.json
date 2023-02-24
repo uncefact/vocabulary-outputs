@@ -1,20 +1,17 @@
 
 {
     "label": "totalQuantity",
-    "uri": "unece:totalQuantity",
-    "comment": [
-        "The total quantity for this basic work item.",
-        "The total quantity of this work item group."
-    ],
+    "uri": "finance:GroupedWorkItem.totalQuantity",
+    "comment": "The total quantity for this basic work item.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
+            "uri": "finance:GroupedWorkItem",
+            "comment": "A grouping of related work items."
         }
     ]
 }

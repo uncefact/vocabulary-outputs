@@ -1,35 +1,29 @@
 
 {
     "label": "Circle",
-    "uri": "unece:Circle",
-    "comment": "A planar surface, defined by one completely round flat shape in the mathematical sense.",
+    "uri": "core:Circle",
+    "comment": "A planar surface specified as one completely round flat shape in the mathematical sense.",
     "datatypeProperties": [
         {
-            "uri": "unece:radiusMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the radius for this specified circle."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this specified circle."
+            "uri": "core:Circle.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:associatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location associated with this specified circle."
+            "uri": "core:Circle.associatedLocation",
+            "type": "core:Location"
         },
         {
-            "uri": "unece:centreGeographicalPoint",
-            "type": "unece:GeographicalPoint",
-            "comment": "The geographical point which defines the centre of this specified circle."
+            "uri": "core:Circle.centreGeographicalPoint",
+            "type": "core:GeographicalPoint"
+        },
+        {
+            "uri": "core:Circle.radiusMeasure",
+            "type": "core:MeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedCircle",
+            "uri": "core:GeographicalFeature.includedCircle",
             "comment": "A circle included in this specified geographical feature."
         }
     ]

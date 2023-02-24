@@ -1,437 +1,366 @@
 
 {
     "label": "LogisticsTransportEquipment",
-    "uri": "unece:LogisticsTransportEquipment",
-    "comment": [
-        "A piece of equipment used to hold, protect or secure cargo for logistics purposes.",
-        "A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
-    ],
+    "uri": "transport:LogisticsTransportEquipment",
+    "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:accompaniedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this piece of logistics transport equipment is accompanied, such as by a transport means."
+            "uri": "transport:LogisticsTransportEquipment.accompaniedIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:airFlowMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the air flow for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.actualRoute",
+            "type": "transport:TransportRoute"
         },
         {
-            "uri": "unece:carrierAssignedBookingId",
-            "type": "xsd:token",
-            "comment": "A carrier assigned booking identifier for this piece of referenced logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.additionalInstructions",
+            "type": "compliance:TransportInstructions"
         },
         {
-            "uri": "unece:characteristic",
-            "type": "xsd:string",
-            "comment": "The characteristics, expressed as text, of a referenced piece of logistics transport equipment, such as size and type."
+            "uri": "transport:LogisticsTransportEquipment.affixedSeal",
+            "type": "compliance:Seal"
         },
         {
-            "uri": "unece:containedConsignmentQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of consignments contained in this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.airFlowUnitAirFlowMeasure",
+            "type": "core:AirFlowUnitMeasureType"
         },
         {
-            "uri": "unece:damageRemark",
-            "type": "xsd:string",
-            "comment": "A damage remark, expressed as text, for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.applicableNote",
+            "type": "core:Note"
         },
         {
-            "uri": "unece:grossVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the gross volume of this piece of referenced logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.applicableServiceCharge",
+            "type": "transport:ServiceCharge"
         },
         {
-            "uri": "unece:grossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the gross weight (mass) of this piece of logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.associatedDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:humidityPercent",
-            "type": "xsd:decimal",
-            "comment": "The percent of the humidity (moisture content) within this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.attachedAttachedTransportEquipment",
+            "type": "transport:AttachedTransportEquipment"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this referenced piece of logistics transport equipment, such as a number, mark or name."
+            "uri": "transport:LogisticsTransportEquipment.attachedIOTDevice",
+            "type": "transport:IOTDevice"
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.bondedWarehouseStorageEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:legalStatusCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the legal status of this piece of logistics transport equipment with respect to a specific law such as the \"Container Convention Code\"."
+            "uri": "transport:LogisticsTransportEquipment.carriedTransportEquipment",
+            "type": "transport:AssociatedTransportEquipment"
         },
         {
-            "uri": "unece:loadedPackageQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of packages loaded into or onto this piece of referenced logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.carrierAssignedBookingId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:loadingLengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the loading length of this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.carrierParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:loadingRemark",
-            "type": "xsd:string",
-            "comment": "A loading remark, expressed as text, for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.characteristic",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:loadingSequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number differentiating this piece of logistics transport equipment from others during loading."
+            "uri": "transport:LogisticsTransportEquipment.consolidationEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:manufacturingDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The manufacturing date, time, date time, or other date time value for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.containedConsignment",
+            "type": "transport:Consignment"
         },
         {
-            "uri": "unece:netWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the net weight (mass) of this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.containedConsignmentQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:powerSupplyConnectorQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of power supply connectors for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.containedTransportEquipment",
+            "type": "transport:AssociatedTransportEquipment"
         },
         {
-            "uri": "unece:powerSupplyType",
-            "type": "xsd:string",
-            "comment": "The type of power supply, expressed as text, for this piece of logistics transport equipment, such as diesel fuel or electricity."
+            "uri": "transport:LogisticsTransportEquipment.damageRemark",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:powerSupplyTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of power supply for this piece of logistics transport equipment, such as diesel fuel or electricity."
+            "uri": "transport:LogisticsTransportEquipment.deconsolidationEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:releaseId",
-            "type": "xsd:token",
-            "comment": "The release identifier for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.deliveryInstructions",
+            "type": "transport:DeliveryInstructions"
         },
         {
-            "uri": "unece:releaseRestriction",
-            "type": "xsd:string",
-            "comment": "The release restriction, expressed as text, for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.deliveryTransportEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:requiredLaneLengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the length required in a lane for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.handlingInstructions",
+            "type": "transport:HandlingInstructions"
         },
         {
-            "uri": "unece:returnableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this piece of logistics transport equipment is returnable."
+            "uri": "transport:LogisticsTransportEquipment.humidityPercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:sealQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity of seals for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:sealedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this piece of logistics transport equipment is sealed."
+            "uri": "transport:LogisticsTransportEquipment.information",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number differentiating this piece of logistics transport equipment from others in a set of transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.linearDimension",
+            "type": "core:SpatialDimension"
         },
         {
-            "uri": "unece:shipperReferenceInformation",
-            "type": "xsd:string",
-            "comment": "Shipper reference information, expressed as text, for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.linearUnitLoadingLengthMeasure",
+            "type": "core:LinearUnitMeasureType"
         },
         {
-            "uri": "unece:stowagePositionId",
-            "type": "xsd:token",
-            "comment": "The stowage position identifier for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.linearUnitRequiredLaneLengthMeasure",
+            "type": "core:LinearUnitMeasureType"
         },
         {
-            "uri": "unece:tareWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the tare weight (mass) of this piece of logistics transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
+            "uri": "transport:LogisticsTransportEquipment.loadedConsignmentItem",
+            "type": "transport:ConsignmentItem"
         },
         {
-            "uri": "unece:transportEquipmentCategoryCode",
-            "type": "unece:UNCL8053Code",
-            "comment": "The code specifying the category of this referenced piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.loadedDangerousGoods",
+            "type": "transport:DangerousGoods"
         },
         {
-            "uri": "unece:transportEquipmentFullnessUsedCapacityCode",
-            "type": "unece:UNCL8169Code",
-            "comment": "The code specifying the used capacity of this piece of logistics transport equipment, such as full or empty."
+            "uri": "transport:LogisticsTransportEquipment.loadedPackageQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:transportEquipmentHaulageArrangementsCode",
-            "type": "unece:UNCL8341Code",
-            "comment": "The code specifying the arrangement for the haulage of this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.loadingEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:transportEquipmentMovementStatusTransportMovementStatusCode",
-            "type": "unece:UNCL8249Code",
-            "comment": "The code specifying the transport movement status for this piece of logistics transport equipment, such as for export, for import, or for transhipment."
+            "uri": "transport:LogisticsTransportEquipment.loadingInstructions",
+            "type": "compliance:TransportInstructions"
         },
         {
-            "uri": "unece:transportEquipmentOperationalStatusCode",
-            "type": "unece:UNCL8249Code",
-            "comment": "The code specifying the operational status for this piece of logistics transport equipment, such as to be repaired or to be shifted."
+            "uri": "transport:LogisticsTransportEquipment.loadingParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:transportEquipmentSizeTypeCharacteristicCode",
-            "type": "unece:UNCL8155Code",
-            "comment": "The code specifying the characteristic or characteristics of this piece of logistics transport equipment, such as the ISO 6346 transport equipment size and type code."
+            "uri": "transport:LogisticsTransportEquipment.loadingRemark",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:transportEquipmentSupplierPartyRoleCode",
-            "type": "unece:UNCL8077Code",
-            "comment": "The code specifying the role of the party responsible for supplying this piece of logistics transport equipment, such as the carrier or the buyer."
+            "uri": "transport:LogisticsTransportEquipment.loadingSequenceNumeric",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:unitQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of units of this type of referenced logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.logisticsTransportEquipmentCharacteristicCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:unloadingSequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number differentiating this piece of logistics transport equipment from others during unloading."
-        }
-    ],
-    "objectProperties": [
+            "uri": "transport:LogisticsTransportEquipment.manufacturerParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.manufacturingDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.notifiedParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.operatingParty",
+            "type": "core:Party"
+        },
         {
-            "uri": "unece:actualRoute",
-            "type": "unece:Route",
-            "comment": "An actual route for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.ownerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:additionalInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Additional instructions for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.pickUpEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:affixedSeal",
-            "type": "unece:Seal",
-            "comment": "A seal affixed to this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.positioningEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:applicableNote",
-            "type": "unece:Note",
-            "comment": "A note providing information applicable to this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.powerSupplyConnectorQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:applicableServiceCharge",
-            "type": "unece:ServiceCharge",
-            "comment": "A service charge applicable to this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.powerSupplyType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:associatedDocument",
-            "type": "unece:Document",
-            "comment": "A referenced document associated with this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.powerSupplyTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:attachedAttachedTransportEquipment",
-            "type": "unece:AttachedTransportEquipment",
-            "comment": "Transport equipment attached to this piece of logistics transport equipment, such as ropes or refrigeration units."
+            "uri": "transport:LogisticsTransportEquipment.quarantineInstructions",
+            "type": "compliance:QuarantineInstructions"
         },
         {
-            "uri": "unece:attachedIOTDevice",
-            "type": "unece:IOTDevice",
-            "comment": "An IOT device attached to this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.relatedEvent",
+            "type": "core:CommunicationEvent"
         },
         {
-            "uri": "unece:bondedWarehouseStorageEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A bonded warehouse storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+            "uri": "transport:LogisticsTransportEquipment.releaseId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:carriedTransportEquipment",
-            "type": "unece:AssociatedTransportEquipment",
-            "comment": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
+            "uri": "transport:LogisticsTransportEquipment.releaseRestriction",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:carrierParty",
-            "type": "unece:TradeParty",
-            "comment": "A carrier party for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.reportedLogisticsStatus",
+            "type": "transport:LogisticsStatus"
         },
         {
-            "uri": "unece:consolidationEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A consolidation event specifying when and where this piece of logistics transport equipment will be, or has been, stuffed."
+            "uri": "transport:LogisticsTransportEquipment.reportingIOTDevicePairing",
+            "type": "core:Pairing"
         },
         {
-            "uri": "unece:containedConsignment",
-            "type": "unece:Consignment",
-            "comment": "A consignment contained in this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.reportingIOTDeviceTransportEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:containedTransportEquipment",
-            "type": "unece:AssociatedTransportEquipment",
-            "comment": "A piece of transport equipment contained within this piece of logistics transport equipment, such as a pallet."
+            "uri": "transport:LogisticsTransportEquipment.requestedRoute",
+            "type": "transport:TransportRoute"
         },
         {
-            "uri": "unece:deliveryEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A delivery event for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.returnableIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:deliveryInstructions",
-            "type": "unece:DeliveryInstructions",
-            "comment": "Delivery instructions for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.scheduledRoute",
+            "type": "transport:TransportRoute"
         },
         {
-            "uri": "unece:handlingInstructions",
-            "type": "unece:HandlingInstructions",
-            "comment": "Handling instructions for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.sealQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:linearDimension",
-            "type": "unece:Dimension",
-            "comment": "The linear spatial dimensions of this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.sealedIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:loadedConsignmentItem",
-            "type": "unece:ConsignmentItem",
-            "comment": "A consignment item loaded onto, or into, this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.sequenceNumeric",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:loadedDangerousGoods",
-            "type": "unece:DangerousGoods",
-            "comment": "Dangerous goods loaded into this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.settingTemperature",
+            "type": "transport:TransportSettingTemperature"
         },
         {
-            "uri": "unece:loadingEvent",
-            "type": "unece:TransportEvent",
-            "comment": "The loading event for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.shipperReferenceInformation",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:loadingInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Loading instructions for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.specifiedRiskAnalysisResult",
+            "type": "compliance:RiskAnalysisResult"
         },
         {
-            "uri": "unece:loadingParty",
-            "type": "unece:TradeParty",
-            "comment": "The party that loads this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.specifiedTransportMeans",
+            "type": "transport:LogisticsTransportMeans"
         },
         {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party specified for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.storageEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:notifiedParty",
-            "type": "unece:TradeParty",
-            "comment": "A party who has been or will be notified about this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.stowagePositionId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:operatingParty",
-            "type": "unece:TradeParty",
-            "comment": "The party that operates this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentCategoryCode",
+            "type": "transport:TransportEquipmentCategoryCodeList"
         },
         {
-            "uri": "unece:pickUpEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentFullnessUsedCapacityCode",
+            "type": "transport:TransportEquipmentFullnessCodeList"
         },
         {
-            "uri": "unece:positioningEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A positioning event specifying when and where this piece of logistics transport equipment will be, or has been, positioned, i.e. delivered and available for pick-up."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentHaulageArrangementsCode",
+            "type": "transport:TransportEquipmentHaulageArrangementsCodeList"
         },
         {
-            "uri": "unece:quarantineInstructions",
-            "type": "unece:QuarantineInstructions",
-            "comment": "Quarantine instructions for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentLegalStatusLegalStatusCode",
+            "type": "transport:TransportEquipmentLegalStatusCodeList"
         },
         {
-            "uri": "unece:relatedEvent",
-            "type": "unece:CommunicationEvent",
-            "comment": "A communication event related to this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentMovementStatusTransportMovementStatusCode",
+            "type": "transport:TransportEquipmentMovementStatusCodeList"
         },
         {
-            "uri": "unece:reportedStatus",
-            "type": "unece:LogisticsStatus",
-            "comment": "A status reported for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentOperationalStatusCode",
+            "type": "transport:TransportEquipmentOperationalStatusCodeList"
         },
         {
-            "uri": "unece:reportingIOTDeviceEvent",
-            "type": "unece:TransportEvent",
-            "comment": "An IOT device reported transport event for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentSizeTypeCharacteristicCode",
+            "type": "transport:TransportEquipmentSizeTypeCodeList"
         },
         {
-            "uri": "unece:reportingIOTDevicePairing",
-            "type": "unece:Pairing",
-            "comment": "An IOT device reported communication pairing for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportEquipmentSupplierPartyRoleCode",
+            "type": "transport:TransportEquipmentSupplierPartyRoleCodeList"
         },
         {
-            "uri": "unece:requestedRoute",
-            "type": "unece:Route",
-            "comment": "A requested route for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.transportServicesBuyerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:scheduledRoute",
-            "type": "unece:Route",
-            "comment": "A scheduled or planned route for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.unitQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:settingTemperature",
-            "type": "unece:TransportSettingTemperature",
-            "comment": "A temperature setting for this piece of referenced logistics transport equipment, such as storage temperature or operational temperature."
+            "uri": "transport:LogisticsTransportEquipment.unloadingEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:specifiedRiskAnalysisResult",
-            "type": "unece:RiskAnalysisResult",
-            "comment": "A result of a logistics risk analysis calculation specified for this transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.unloadingInstructions",
+            "type": "compliance:TransportInstructions"
         },
         {
-            "uri": "unece:specifiedTransportMeans",
-            "type": "unece:TransportMeans",
-            "comment": "A transport means specified for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.unloadingSequenceNumeric",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:storageEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
+            "uri": "transport:LogisticsTransportEquipment.volumeUnitGrossVolumeMeasure",
+            "type": "core:VolumeUnitMeasureType"
         },
         {
-            "uri": "unece:transportServicesBuyerParty",
-            "type": "unece:TradeParty",
-            "comment": "The transport services buyer party for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.weightUnitGrossWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
         },
         {
-            "uri": "unece:unloadingEvent",
-            "type": "unece:TransportEvent",
-            "comment": "The unloading event for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.weightUnitNetWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
         },
         {
-            "uri": "unece:unloadingInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Unloading instructions for this piece of logistics transport equipment."
+            "uri": "transport:LogisticsTransportEquipment.weightUnitTareWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:associatedTransportEquipment",
-            "comment": "A piece of transport equipment ..."
+            "uri": "transport:Consignment.utilizedTransportEquipment",
+            "comment": "A piece of logistics transport equipment, at line level, utilized for this trade delivery."
         },
         {
-            "uri": "unece:attachedTransportEquipment",
+            "uri": "transport:ConsignmentItem.associatedTransportEquipment",
+            "comment": "A piece of transport equipment associated with this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:DangerousGoods.associatedTransportEquipment",
+            "comment": "A piece of transport equipment associated with this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:LogisticsTransportMeans.attachedLogisticsTransportEquipment",
             "comment": "A piece of logistics transport equipment attached to this logistics means of transport."
-        },
-        {
-            "uri": "unece:utilizedTransportEquipment",
-            "comment": "A piece of logistics transport ..."
         }
     ]
 }

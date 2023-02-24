@@ -1,23 +1,16 @@
 
 {
     "label": "despatchedQuantity",
-    "uri": "unece:despatchedQuantity",
-    "comment": [
-        "The quantity, at header level, despatched in this trade delivery.",
-        "The quantity, at line level, despatched for this trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.despatchedQuantity",
+    "comment": "The quantity, at header level, despatched in this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

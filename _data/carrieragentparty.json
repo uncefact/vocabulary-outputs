@@ -1,25 +1,17 @@
 
 {
     "label": "carrierAgentParty",
-    "uri": "unece:carrierAgentParty",
-    "comment": [
-        "The carrier agent trade party for this logistics transport movement.",
-        "The party acting as the agent of the carrier for this supply chain consignment."
-    ],
+    "uri": "transport:TransportMovement.carrierAgentParty",
+    "comment": "The carrier agent trade party for this logistics transport movement.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "core:Party"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "uri": "transport:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

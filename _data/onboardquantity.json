@@ -1,24 +1,17 @@
 
 {
     "label": "onboardQuantity",
-    "uri": "unece:onboardQuantity",
-    "comment": [
-        "An onboard number of these specified personal effects.",
-        "An onboard quantity for this stores inventory item."
-    ],
+    "uri": "transport:StoresItemInventory.onboardQuantity",
+    "comment": "An onboard number of these specified personal effects.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Inventory",
-            "comment": "Material held in stock."
-        },
-        {
-            "uri": "unece:PersonalEffects",
-            "comment": "Privately owned articles for personal use by an individual."
+            "uri": "transport:StoresItemInventory",
+            "comment": "A stores item, such as for onboard use during a journey."
         }
     ]
 }

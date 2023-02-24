@@ -1,19 +1,17 @@
 
 {
-    "label": "EmailCommunication",
-    "uri": "unece:EmailCommunication",
-    "comment": "An address for the delivery of electronic mail.",
-    "datatypeProperties": [
+    "label": "emailCommunication",
+    "uri": "compliance:LaboratoryObservationContact.emailCommunication",
+    "comment": "The email address of this laboratory observation contact.",
+    "rangeIncludes": [
         {
-            "uri": "unece:uRIId",
-            "type": "xsd:token",
-            "comment": "The Uniform Resource Identifier (URI) for this email communication."
+            "uri": "core:Communication"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:emailURIEmailCommunication",
-            "comment": "The email Uniform Resource Identifier (URI) communication for this contact person."
+            "uri": "compliance:LaboratoryObservationContact",
+            "comment": "A person or department that acts as a point of contact for laboratory observations."
         }
     ]
 }

@@ -1,23 +1,16 @@
 
 {
     "label": "dueInForecastedQuantity",
-    "uri": "unece:dueInForecastedQuantity",
-    "comment": [
-        "The due in forecasted quantity, at header level, for this trade delivery.",
-        "The due in forecasted quantity, at line level, for this trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.dueInForecastedQuantity",
+    "comment": "The due in forecasted quantity, at header level, for this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

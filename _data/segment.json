@@ -1,33 +1,29 @@
 
 {
     "label": "Segment",
-    "uri": "unece:Segment",
-    "comment": "Each of the parts into which something is or may be divided.",
+    "uri": "core:Segment",
+    "comment": "The parts into which a segment is or may be divided.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this section segment."
+            "uri": "core:Segment.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:imageBinaryObject",
-            "type": "xsd:base64Binary",
-            "comment": "The image, expressed as a binary object, for this section segment."
+            "uri": "core:Segment.imageBinaryObject",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, in this section segment."
+            "uri": "core:Segment.information",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of section segment."
+            "uri": "core:Segment.typeCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedSegment",
+            "uri": "core:Section.includedSegment",
             "comment": "A segment included in this label section."
         }
     ]

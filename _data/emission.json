@@ -1,38 +1,38 @@
 
 {
     "label": "Emission",
-    "uri": "unece:Emission",
-    "comment": "Pollution (including noise, heat, and radiation) discharged into the environment by residential, commercial, or industrial facilities or by a means of transport.",
+    "uri": "transport:Emission",
+    "comment": "A calculation of the pollution (including noise, heat, and radiation etc.) discharged into the environment by a residential, commercial, or industrial facility or by a means of transport, such as a vessel, aircraft or truck.",
     "datatypeProperties": [
         {
-            "uri": "unece:affectedDistanceMeasure",
-            "type": "xsd:decimal",
-            "comment": "The affected distance over which this calculated emission is measured."
+            "uri": "transport:Emission.affectedDistanceMeasure",
+            "type": "core:LinearUnitMeasureType"
         },
         {
-            "uri": "unece:pollutionMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the pollution calculated for this emission."
+            "uri": "transport:Emission.pollutionMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of this calculated emission."
+            "uri": "transport:Emission.typeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:weightMeasure",
-            "type": "xsd:decimal",
-            "comment": "A weight for which this calculated emission is measured."
+            "uri": "transport:Emission.weightUnitWeightMeasure",
+            "type": "core:WeightUnitMeasureType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:certifiedEmission",
+            "uri": "transport:LogisticsTransportMeans.certifiedEmission",
             "comment": "A certified level of pollution calculated for an emission from this logistics transport means."
         },
         {
-            "uri": "unece:specifiedEmission",
-            "comment": "A calculated emission specified for this logistics transport movement."
+            "uri": "transport:LogisticsTransportMeans.specifiedEmission",
+            "comment": "A calculated emission specified for this logistics transport means."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedEmission",
+            "comment": "A calculated emission specified for this logistics transport means."
         }
     ]
 }

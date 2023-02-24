@@ -1,64 +1,17 @@
 
 {
     "label": "statusCode",
-    "uri": "unece:statusCode",
-    "comment": [
-        "A code specifying a status for this trade product.",
-        "A code specifying the status of this basic work item.",
-        "A code specifying the status of this supply chain schedule.",
-        "The code specifying a status for this supply chain inventory.",
-        "The code specifying the status of this control setting parameter.",
-        "The code specifying the status of this operational parameter.",
-        "The code specifying the status of this trade workflow object.",
-        "The code specifying the status of this work item quantity analysis, such as partial, approved, not approved.",
-        "The code specifying the status, at header level, for this trade delivery.",
-        "The code specifying the status, at line level, for this trade delivery."
-    ],
+    "uri": "transport:SpecifiedRoute.statusCode",
+    "comment": "A code specifying a status for this trade product.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ControlSettingParameter",
-            "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
-        },
-        {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:Inventory",
-            "comment": "Material held in stock."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
-        },
-        {
-            "uri": "unece:OperationalParameter",
-            "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
-        },
-        {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
-        },
-        {
-            "uri": "unece:QuantityAnalysis",
-            "comment": "The analytic breakdown of a quantity to include its supporting information, such as a complex quantity that consists of multiple pieces of information that together constitute a single quantity."
-        },
-        {
-            "uri": "unece:Schedule",
-            "comment": "A series of planned activities or things to be done showing the times or dates when they are intended to happen or be done."
-        },
-        {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
-        },
-        {
-            "uri": "unece:WorkflowObject",
-            "comment": "An object used in the management of the state changes in a business process."
+            "uri": "transport:SpecifiedRoute",
+            "comment": "A specified way or course taken from one location to another."
         }
     ]
 }

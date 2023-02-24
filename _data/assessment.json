@@ -1,0 +1,90 @@
+
+{
+    "label": "Assessment",
+    "uri": "compliance:Assessment",
+    "comment": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or condition.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:Assessment.applicableStandard",
+            "type": "compliance:Standard"
+        },
+        {
+            "uri": "compliance:Assessment.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "compliance:Assessment.assessedObject",
+            "type": "core:Object"
+        },
+        {
+            "uri": "compliance:Assessment.assessorParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "compliance:Assessment.associatedBinaryFile",
+            "type": "core:BinaryFile"
+        },
+        {
+            "uri": "compliance:Assessment.assuranceLevelCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.categoryCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.endDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.reportDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.reportId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.selfAssessedIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "compliance:Assessment.startDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.statusCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:Assessment.verifiedIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "compliance:Assessment.verifierParty",
+            "type": "core:Party"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResult.relatedAssessment",
+            "comment": "An assessment related to this specified inspection result."
+        },
+        {
+            "uri": "compliance:SpecifiedMaterial.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "compliance:Standard.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        }
+    ]
+}

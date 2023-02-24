@@ -1,34 +1,24 @@
 
 {
     "label": "DisposalInstructions",
-    "uri": "unece:DisposalInstructions",
+    "uri": "compliance:DisposalInstructions",
     "comment": "A set of instructions detailing how to properly dispose of a material.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these disposal instructions."
+            "uri": "compliance:DisposalInstructions.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:disposalInstructionsRecyclingDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "A code describing recycling in these disposal instructions."
+            "uri": "compliance:DisposalInstructions.disposalInstructionsRecyclingDescriptionCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:materialId",
-            "type": "xsd:token",
-            "comment": "The identifier of the material to which these disposal instructions apply."
+            "uri": "compliance:DisposalInstructions.materialId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:recyclingProcedure",
-            "type": "xsd:string",
-            "comment": "A recycling procedure, expressed as text, for these disposal instructions."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:applicableInstructions",
-            "comment": "Disposal instructions applicable to this ..."
+            "uri": "compliance:DisposalInstructions.recyclingProcedure",
+            "type": "schema:Text"
         }
     ]
 }

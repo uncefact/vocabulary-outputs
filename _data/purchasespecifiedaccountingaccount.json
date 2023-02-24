@@ -1,24 +1,16 @@
 
 {
     "label": "purchaseSpecifiedAccountingAccount",
-    "uri": "unece:purchaseSpecifiedAccountingAccount",
-    "comment": [
-        "A purchase accounting account specified for this header trade settlement.",
-        "A purchase accounting account specified for this line trade settlement."
-    ],
+    "uri": "trade:LineTradeSettlement.purchaseSpecifiedAccountingAccount",
+    "comment": "A purchase accounting account specified for this header trade settlement.",
     "rangeIncludes": [
         {
-            "uri": "unece:AccountingAccount",
-            "comment": "A specific account for recording debits and credits to general accounting, cost accounting or budget accounting."
+            "uri": "finance:AccountingAccount"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
-            "uri": "unece:LineTradeSettlement",
+            "uri": "trade:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
         }
     ]

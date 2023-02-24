@@ -1,49 +1,36 @@
 
 {
     "label": "RegisteredTax",
-    "uri": "unece:RegisteredTax",
+    "uri": "finance:RegisteredTax",
     "comment": "A registered tax or duty system pertaining to an authority.",
     "datatypeProperties": [
         {
-            "uri": "unece:currencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency for this registered tax."
+            "uri": "finance:RegisteredTax.currencyCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:customsDutyIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this registered tax is a customs duty."
+            "uri": "finance:RegisteredTax.customsDutyIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this registered tax."
+            "uri": "finance:RegisteredTax.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:exemptionReason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for exemption from this registered tax."
+            "uri": "finance:RegisteredTax.exemptionReason",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:exemptionReasonCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the exemption reason for this registered tax."
+            "uri": "finance:RegisteredTax.exemptionReasonCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:jurisdiction",
-            "type": "xsd:string",
-            "comment": "A jurisdiction, expressed as text, for this registered tax."
+            "uri": "finance:RegisteredTax.jurisdiction",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:registeredTaxTypeCode",
-            "type": "unece:UNCL5153Code",
-            "comment": "The code specifying the type of registered tax."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:associatedTax",
-            "comment": "The registered tax associated with this tax registration."
+            "uri": "finance:RegisteredTax.registeredTaxTypeCode",
+            "type": "schema:Text"
         }
     ]
 }

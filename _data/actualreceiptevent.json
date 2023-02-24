@@ -1,24 +1,16 @@
 
 {
     "label": "actualReceiptEvent",
-    "uri": "unece:actualReceiptEvent",
-    "comment": [
-        "The actual receipt event, at header level, for this trade delivery.",
-        "The actual receipt event, at line level, for this trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.actualReceiptEvent",
+    "comment": "The actual receipt event, at header level, for this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "unece:SupplyChainEvent",
-            "comment": "A significant occurrence or happening in a supply chain."
+            "uri": "transport:SupplyChainEvent"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

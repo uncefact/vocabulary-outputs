@@ -1,46 +1,17 @@
 
 {
     "label": "globalId",
-    "uri": "unece:globalId",
-    "comment": [
-        "A global identifier for this supply chain consignment item.",
-        "A globally unique identifier of this trade party.",
-        "A unique global identifier for this referenced document.",
-        "A unique global identifier for this referenced product.",
-        "A unique global identifier for this trade product.",
-        "The global identifier for this referenced logistics package.",
-        "The unique global identifier for this exchanged document.",
-        "The unique global identifier for this logistics package."
-    ],
+    "uri": "transport:Package.globalId",
+    "comment": "A global identifier for this supply chain consignment item.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
-        },
-        {
-            "uri": "unece:ExchangedDocument",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
-        },
-        {
-            "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
-        },
-        {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
-        },
-        {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "transport:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         }
     ]
 }

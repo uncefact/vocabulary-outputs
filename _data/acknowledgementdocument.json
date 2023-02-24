@@ -1,86 +1,86 @@
 
 {
     "label": "AcknowledgementDocument",
-    "uri": "unece:AcknowledgementDocument",
+    "uri": "trade:AcknowledgementDocument",
     "comment": "A document exchanged between parties for a business application level acknowledgement of the receipt of information.",
     "datatypeProperties": [
         {
-            "uri": "unece:acknowledgementDocumentReasonInformation",
-            "type": "unece:UNCL9013Code",
-            "comment": "Reason information, expressed as text, for this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.acknowledgementDocumentReasonInformation",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:acknowledgementDocumentStatusCode",
-            "type": "unece:UNCL4405Code",
-            "comment": "A code specifying a status for this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.acknowledgementDocumentStatusCode",
+            "type": "trade:StatusCodeList"
         },
         {
-            "uri": "unece:acknowledgementStatusCode",
-            "type": "xsd:token",
-            "comment": "A code specifying an acknowledgment status for this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.acknowledgementStatusCode",
+            "type": "trade:AcknowledgementCodeList"
         },
         {
-            "uri": "unece:controlRequirementIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this acknowledgement document has a control requirement."
+            "uri": "trade:AcknowledgementDocument.channelCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:creationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date or date time value of the creation of this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.controlRequirementIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:documentTypeCode",
-            "type": "unece:UNCL1001Code",
-            "comment": "A code specifying a type of acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.creationDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier of this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.documentTypeCode",
+            "type": "trade:DocumentCodeList"
         },
         {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value for the issuance of this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:itemIdentificationId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of an item in this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.issueDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:multipleReferencesIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this acknowledgement document has multiple references."
+            "uri": "trade:AcknowledgementDocument.itemIdentificationId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.multipleReferencesIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:reportReceiptDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the receipt of the report being acknowledged by this acknowledgment document."
+            "uri": "trade:AcknowledgementDocument.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reportSubmissionDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the submission of the report being acknowledged by this acknowledgment document."
-        }
-    ],
-    "objectProperties": [
+            "uri": "trade:AcknowledgementDocument.processCondition",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:referenceDocument",
-            "type": "unece:AcknowledgementDocument",
-            "comment": "A document referenced by this acknowledgement document."
+            "uri": "trade:AcknowledgementDocument.processConditionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:AcknowledgementDocument.referenceDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "trade:AcknowledgementDocument.reportReceiptDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:AcknowledgementDocument.reportSubmissionDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:AcknowledgementDocument.status",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:referenceDocument",
-            "comment": "A document referenced by this ..."
+            "uri": "trade:DocumentLineDocument.referenceAcknowledgementDocument",
+            "comment": "The acknowledgement document referenced in this document line."
         }
     ]
 }

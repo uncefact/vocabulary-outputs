@@ -1,40 +1,33 @@
 
 {
     "label": "ReturnableAssetInstructions",
-    "uri": "unece:ReturnableAssetInstructions",
+    "uri": "transport:ReturnableAssetInstructions",
     "comment": "The procedures to follow for returnable assets, such as reusable packaging (pallets, crates).",
     "datatypeProperties": [
         {
-            "uri": "unece:depositValueSpecifiedAmount",
-            "type": "xsd:decimal",
-            "comment": "A deposit value specified in these returnable asset instructions."
+            "uri": "transport:ReturnableAssetInstructions.depositValueSpecifiedAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:materialId",
-            "type": "xsd:token",
-            "comment": "An identifier of the material to which these returnable asset instructions apply."
+            "uri": "transport:ReturnableAssetInstructions.depositValueValidityPeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:returnableAssetInstructionsTermsAndConditionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "The code specifying the description of the terms and conditions for these returnable asset instructions."
+            "uri": "transport:ReturnableAssetInstructions.materialId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:termsAndConditionsDescription",
-            "type": "xsd:string",
-            "comment": "A textual description of the terms and conditions for these returnable asset instructions."
-        }
-    ],
-    "objectProperties": [
+            "uri": "transport:ReturnableAssetInstructions.returnableAssetInstructionsTermsAndConditionsDescriptionCode",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:depositValueValidityPeriod",
-            "type": "unece:Period",
-            "comment": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
+            "uri": "transport:ReturnableAssetInstructions.termsAndConditionsDescription",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableReturnableAssetInstructions",
+            "uri": "transport:SupplyChainPackaging.applicableReturnableAssetInstructions",
             "comment": "Returnable asset instructions for this supply chain packaging."
         }
     ]

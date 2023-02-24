@@ -1,25 +1,17 @@
 
 {
     "label": "actualDeliveryEvent",
-    "uri": "unece:actualDeliveryEvent",
-    "comment": [
-        "An actual delivery event, at header level, for this trade delivery.",
-        "An actual delivery event, at line level, for this trade delivery."
-    ],
+    "uri": "trade:SubordinateLineTradeDelivery.actualDeliveryEvent",
+    "comment": "An actual delivery event for this subordinate line trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "unece:SupplyChainEvent",
-            "comment": "A significant occurrence or happening in a supply chain."
+            "uri": "transport:SupplyChainEvent"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+            "uri": "trade:SubordinateLineTradeDelivery",
+            "comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery."
         }
     ]
 }

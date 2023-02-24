@@ -1,36 +1,24 @@
 
 {
     "label": "Observation",
-    "uri": "unece:Observation",
-    "comment": "An act or instance of viewing or noting a fact or occurrence for some scientific or other special purpose.",
+    "uri": "compliance:Observation",
+    "comment": "A specified act or instance of viewing or noting a fact or occurrence for some scientific or other special purpose.",
     "datatypeProperties": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description for this specified observation."
+            "uri": "compliance:Observation.applicableNote",
+            "type": "core:Note"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this specified observation."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableNote",
-            "type": "unece:Note",
-            "comment": "A note providing information applicable to this specified observation."
+            "uri": "compliance:Observation.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:relatedBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A binary file related to this specified observation."
-        }
-    ],
-    "referencedBy": [
+            "uri": "compliance:Observation.identifier",
+            "type": "schema:Text"
+        },
         {
-            "uri": "unece:relatedObservation",
-            "comment": "An observation related to this transport event."
+            "uri": "compliance:Observation.relatedBinaryFile",
+            "type": "core:BinaryFile"
         }
     ]
 }

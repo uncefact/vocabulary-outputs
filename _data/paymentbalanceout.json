@@ -1,0 +1,38 @@
+
+{
+    "label": "PaymentBalanceOut",
+    "uri": "finance:PaymentBalanceOut",
+    "comment": "Offset information to ensure that debits and credits are equal for a transaction.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:PaymentBalanceOut.calculatedAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.occurrenceDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.reasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.reasonDescription",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:TradeSettlementPaymentMonetarySummation.applicablePaymentBalanceOut",
+            "comment": "A balance out applicable to this trade settlement payment monetary summation."
+        }
+    ]
+}

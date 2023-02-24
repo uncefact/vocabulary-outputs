@@ -1,0 +1,54 @@
+
+{
+    "label": "Contract",
+    "uri": "trade:Contract",
+    "comment": "An agreement between two or more parties for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:Contract.automaticExtensionDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "trade:Contract.automaticExtensionDurationMeasure",
+            "type": "core:DurationUnitMeasureType"
+        },
+        {
+            "uri": "trade:Contract.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:Contract.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:Contract.issueDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:Contract.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:Contract.signatureName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:Contract.signedDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "trade:Contract.signedLocation",
+            "type": "core:SpecifiedLocation"
+        },
+        {
+            "uri": "trade:Contract.signeeJobTitle",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:TradeParty.agreedContract",
+            "comment": "A trade contract agreed with this trade party."
+        }
+    ]
+}

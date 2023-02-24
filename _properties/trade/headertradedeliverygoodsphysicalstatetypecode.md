@@ -1,0 +1,5 @@
+---
+title: headerTradeDeliveryGoodsPhysicalStateTypeCode
+permalink: trade/HeaderTradeDelivery.headerTradeDeliveryGoodsPhysicalStateTypeCode.html
+jsonid: headertradedeliverygoodsphysicalstatetypecode
+---

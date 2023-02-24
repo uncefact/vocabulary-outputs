@@ -1,20 +1,17 @@
 
 {
     "label": "manufacturerAssignedId",
-    "uri": "unece:manufacturerAssignedId",
-    "comment": [
-        "A unique manufacturer assigned identifier for this referenced product.",
-        "A unique manufacturer assigned identifier for this trade product."
-    ],
+    "uri": "trade:TradeProduct.manufacturerAssignedId",
+    "comment": "A manufacturer assigned identifier of this product batch.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "trade:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

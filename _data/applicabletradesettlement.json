@@ -1,18 +1,17 @@
 
 {
     "label": "applicableTradeSettlement",
-    "uri": "unece:applicableTradeSettlement",
+    "uri": "trade:SupplyChainTradeTransaction.applicableTradeSettlement",
     "comment": "The trade settlement header applicable to this supply chain trade transaction.",
     "rangeIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
+            "uri": "trade:HeaderTradeSettlement"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:TradeTransaction",
-            "comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties."
+            "uri": "trade:SupplyChainTradeTransaction",
+            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         }
     ]
 }

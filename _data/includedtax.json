@@ -1,24 +1,16 @@
 
 {
     "label": "includedTax",
-    "uri": "unece:includedTax",
-    "comment": [
-        "A tax included in this advance payment.",
-        "A tax included in this trade price."
-    ],
+    "uri": "finance:TradePrice.includedTax",
+    "comment": "A tax included in this advance payment.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeTax",
-            "comment": "A trade related fiscal levy or duty."
+            "uri": "finance:Tax"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:AdvancePayment",
-            "comment": "A prepaid discharge of obligations in respect of funds or securities transferred between two or more parties."
-        },
-        {
-            "uri": "unece:TradePrice",
+            "uri": "finance:TradePrice",
             "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ]

@@ -1,45 +1,36 @@
 
 {
     "label": "FinancingSummaryDocument",
-    "uri": "unece:FinancingSummaryDocument",
+    "uri": "finance:FinancingSummaryDocument",
     "comment": "A collection of financing related data that provides an overview of key points.",
     "datatypeProperties": [
         {
-            "uri": "unece:acceptedTransactionOriginalTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "An original total monetary value of accepted transactions in this financing summary document."
+            "uri": "finance:FinancingSummaryDocument.acceptedTransactionOriginalTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:financedAppliedRatePercent",
-            "type": "xsd:decimal",
-            "comment": "The financed applied rate, expressed as a percentage, in this financing summary document."
+            "uri": "finance:FinancingSummaryDocument.financedAppliedRatePercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:financedTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A financed total monetary value in this financing summary document."
+            "uri": "finance:FinancingSummaryDocument.financedTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:financedTransactionSpecifiedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of financed transactions specified in this financing summary document."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
-            "type": "unece:FinancingFinancialAccount",
-            "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
+            "uri": "finance:FinancingSummaryDocument.financedTransactionSpecifiedQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:relatedBooking",
-            "type": "unece:Booking",
-            "comment": "The financial booking related to this financing summary document."
+            "uri": "finance:FinancingSummaryDocument.lineOfCreditSpecifiedFinancialAccount",
+            "type": "finance:FinancingFinancialAccount"
         },
         {
-            "uri": "unece:specifiedFinancialAccount",
-            "type": "unece:CreditorFinancialAccount",
-            "comment": "The creditor financial account, used for crediting, specified for this financing summary document."
+            "uri": "finance:FinancingSummaryDocument.relatedBooking",
+            "type": "finance:Booking"
+        },
+        {
+            "uri": "finance:FinancingSummaryDocument.specifiedCreditorFinancialAccount",
+            "type": "finance:CreditorFinancialAccount"
         }
     ]
 }

@@ -1,26 +1,17 @@
 
 {
     "label": "despatchParty",
-    "uri": "unece:despatchParty",
-    "comment": [
-        "The party from whom this referenced supply chain consignment will be or has been despatched.",
-        "The party from whom this supply chain consignment item will be or has been despatched.",
-        "The party from whom this supply chain consignment will be or has been despatched."
-    ],
+    "uri": "transport:ConsignmentItem.despatchParty",
+    "comment": "The party from whom this referenced supply chain consignment will be or has been despatched.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "core:Party"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
+            "uri": "transport:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

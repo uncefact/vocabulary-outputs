@@ -1,0 +1,5 @@
+---
+title: transportEquipmentLegalStatusLegalStatusCode
+permalink: transport/LogisticsTransportEquipment.transportEquipmentLegalStatusLegalStatusCode.html
+jsonid: transportequipmentlegalstatuslegalstatuscode
+---

@@ -1,29 +1,16 @@
 
 {
     "label": "buyerOrderDocument",
-    "uri": "unece:buyerOrderDocument",
-    "comment": [
-        "A buyer generated order document referenced in this line trade agreement.",
-        "A buyer generated order document referenced in this subordinate line trade agreement.",
-        "The buyer generated order document referenced in this header trade agreement."
-    ],
+    "uri": "trade:SubordinateLineTradeAgreement.buyerOrderDocument",
+    "comment": "A buyer generated order document referenced in this line trade agreement.",
     "rangeIncludes": [
         {
-            "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
+            "uri": "core:Document"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeAgreement",
-            "comment": "The contractual terms of a header trade agreement."
-        },
-        {
-            "uri": "unece:LineTradeAgreement",
-            "comment": "The contractual terms of a line trade agreement."
-        },
-        {
-            "uri": "unece:SubordinateLineTradeAgreement",
+            "uri": "trade:SubordinateLineTradeAgreement",
             "comment": "The contractual terms of a subordinate line trade agreement."
         }
     ]

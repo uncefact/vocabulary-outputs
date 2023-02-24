@@ -1,0 +1,62 @@
+
+{
+    "label": "SpecifiedParameter",
+    "uri": "core:SpecifiedParameter",
+    "comment": "A specified feature that is fixed for the case in question but may be different in other cases.",
+    "datatypeProperties": [
+        {
+            "uri": "core:SpecifiedParameter.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.parameterType",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.statusCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.statusValueMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "core:SpecifiedParameter.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.value",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueAllowedIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueTolerance",
+            "type": "core:Tolerance"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:MetricCharacteristic.valueParameter",
+            "comment": "A parameter specified for a value for this metric characteristic."
+        },
+        {
+            "uri": "core:SpecifiedMethod.applicableParameter",
+            "comment": "A parameter applicable to this specified method."
+        }
+    ]
+}

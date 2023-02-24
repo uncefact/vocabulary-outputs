@@ -1,23 +1,21 @@
 
 {
     "label": "GeographicalMultiSurface",
-    "uri": "unece:GeographicalMultiSurface",
+    "uri": "core:GeographicalMultiSurface",
     "comment": "A collection of surfaces on the Earth (reference ISO 19136).",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this geographical multi-surface."
+            "uri": "core:GeographicalMultiSurface.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:includedPolygon",
-            "type": "unece:Polygon",
-            "comment": "A polygon included in this geographical multi-surface."
+            "uri": "core:GeographicalMultiSurface.includedPolygon",
+            "type": "core:Polygon"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedGeographicalMultiSurface",
+            "uri": "core:GeographicalFeature.includedGeographicalMultiSurface",
             "comment": "The geographical multi-surface included in this geographical feature."
         }
     ]

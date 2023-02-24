@@ -1,124 +1,109 @@
 
 {
     "label": "IOTDevice",
-    "uri": "unece:IOTDevice",
-    "comment": "An object or system made or adapted for an IOT (Internet of Things) purpose such as to collect, report and autonomously transmit digital data especially when connected to a piece of mechanical or electronic equipment.",
+    "uri": "transport:IOTDevice",
+    "comment": "An IOT (Internet of Things) piece of mechanical or electronic equipment which can collect, report and autonomously transmit digital data.",
     "datatypeProperties": [
         {
-            "uri": "unece:attachedAssetId",
-            "type": "xsd:token",
-            "comment": "The identifier for the asset, such as a container, to which this monitoring IOT device is attached."
+            "uri": "transport:IOTDevice.attachedAssetId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:communicationCapabilityCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the communication capability of this monitoring IOT device."
+            "uri": "transport:IOTDevice.communicationCapabilityCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier for this monitoring IOT device."
+            "uri": "transport:IOTDevice.embeddedSensor",
+            "type": "transport:Sensor"
         },
         {
-            "uri": "unece:latestReceivedSignalDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver."
+            "uri": "transport:IOTDevice.grantedCertificate",
+            "type": "compliance:ProductCertificate"
         },
         {
-            "uri": "unece:operationalStatusCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the operational status, such as broken, stolen, unpaired, inactive of this monitoring IOT device."
+            "uri": "transport:IOTDevice.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:positionCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the position of this monitoring IOT device."
+            "uri": "transport:IOTDevice.interfaceEquipment",
+            "type": "transport:Equipment"
         },
         {
-            "uri": "unece:powerSourceTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a type of power source for this monitoring IOT device."
+            "uri": "transport:IOTDevice.latestReceivedGeographicalCoordinate",
+            "type": "core:GeographicalCoordinate"
         },
         {
-            "uri": "unece:remainingBatteryChargePercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
+            "uri": "transport:IOTDevice.latestReceivedSignalDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of monitoring IOT device."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:embeddedSensor",
-            "type": "unece:Sensor",
-            "comment": "An embedded sensor of this monitoring IOT device."
+            "uri": "transport:IOTDevice.manufacturerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:grantedCertificate",
-            "type": "unece:Certificate",
-            "comment": "A product certificate granted for this monitoring IOT device."
+            "uri": "transport:IOTDevice.modelId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:interfaceEquipment",
-            "type": "unece:Equipment",
-            "comment": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
+            "uri": "transport:IOTDevice.operationalStatusCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:latestReceivedGeographicalCoordinate",
-            "type": "unece:GeographicalCoordinate",
-            "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
+            "uri": "transport:IOTDevice.operatorParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party of this monitoring IOT device."
+            "uri": "transport:IOTDevice.ownerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:operatorParty",
-            "type": "unece:TradeParty",
-            "comment": "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device."
+            "uri": "transport:IOTDevice.positionCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner party of this monitoring IOT device."
+            "uri": "transport:IOTDevice.powerSourceTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:providerTradeParty",
-            "type": "unece:TradeParty",
-            "comment": "The provider party for this monitoring IOT device."
+            "uri": "transport:IOTDevice.providerParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:relatedEvent",
-            "type": "unece:CommunicationEvent",
-            "comment": "A communication event related to this monitoring IOT device."
+            "uri": "transport:IOTDevice.relatedEvent",
+            "type": "core:CommunicationEvent"
         },
         {
-            "uri": "unece:remoteSensor",
-            "type": "unece:Sensor",
-            "comment": "A remote sensor of this monitoring IOT device."
+            "uri": "transport:IOTDevice.remainingBatteryChargePercent",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reportedEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A transport event reported by this monitoring IOT device."
+            "uri": "transport:IOTDevice.remoteSensor",
+            "type": "transport:Sensor"
         },
         {
-            "uri": "unece:reportingSensorPairing",
-            "type": "unece:Pairing",
-            "comment": "A sensor communication pairing reported for this monitoring IOT device."
+            "uri": "transport:IOTDevice.reportedTransportEvent",
+            "type": "transport:TransportEvent"
+        },
+        {
+            "uri": "transport:IOTDevice.reportingSensorPairing",
+            "type": "core:Pairing"
+        },
+        {
+            "uri": "transport:IOTDevice.typeCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:attachedIOTDevice",
-            "comment": "An IOT device attached to ..."
+            "uri": "transport:LogisticsTransportEquipment.attachedIOTDevice",
+            "comment": "An IOT device attached to this logistics transport means."
         },
         {
-            "uri": "unece:reportingIOTDevice",
+            "uri": "transport:LogisticsTransportMeans.attachedIOTDevice",
+            "comment": "An IOT device attached to this logistics transport means."
+        },
+        {
+            "uri": "transport:TransportEvent.reportingIOTDevice",
             "comment": "An IOT device for this transport reporting event."
         }
     ]

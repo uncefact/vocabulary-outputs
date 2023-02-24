@@ -1,0 +1,50 @@
+
+{
+    "label": "TradeProductCertification",
+    "uri": "compliance:TradeProductCertification",
+    "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:TradeProductCertification.applicableStandard",
+            "type": "compliance:Standard"
+        },
+        {
+            "uri": "compliance:TradeProductCertification.assertion",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:TradeProductCertification.assertionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:TradeProductCertification.relatedLocation",
+            "type": "core:Location"
+        },
+        {
+            "uri": "compliance:TradeProductCertification.responsibleAgency",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:TradeProductCertification.specifiedAssertion",
+            "type": "compliance:Assertion"
+        },
+        {
+            "uri": "compliance:TradeProductCertification.standard",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:ProductBatchCertificate.applicableTradeProductCertification",
+            "comment": "A certification applicable to this trade product."
+        },
+        {
+            "uri": "compliance:ProductCertificate.applicableTradeProductCertification",
+            "comment": "A certification applicable to this trade product."
+        },
+        {
+            "uri": "compliance:SpecifiedMaterial.applicableTradeProductCertification",
+            "comment": "A certification applicable to this trade product."
+        }
+    ]
+}

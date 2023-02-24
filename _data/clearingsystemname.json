@@ -1,23 +1,16 @@
 
 {
     "label": "clearingSystemName",
-    "uri": "unece:clearingSystemName",
-    "comment": [
-        "The clearing system name, expressed as text, for this creditor financial institution.",
-        "The clearing system name, expressed as text, for this debtor financial institution."
-    ],
+    "uri": "finance:DebtorFinancialInstitution.clearingSystemName",
+    "comment": "The clearing system name, expressed as text, for this creditor financial institution.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:CreditorFinancialInstitution",
-            "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money."
-        },
-        {
-            "uri": "unece:DebtorFinancialInstitution",
+            "uri": "finance:DebtorFinancialInstitution",
             "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that owes money."
         }
     ]

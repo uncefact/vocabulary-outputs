@@ -1,34 +1,34 @@
 
 {
     "label": "Cargo",
-    "uri": "unece:Cargo",
-    "comment": "Goods being transported.",
+    "uri": "transport:Cargo",
+    "comment": "Information about goods being transported identifying their nature for customs, statistical or transport purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:cargoOperationalCategoryCode",
-            "type": "unece:UNCL7085Code",
-            "comment": "The code specifying the operational category for this transport cargo, such as obnoxious or military."
+            "uri": "transport:Cargo.cargoCategoryTypeCode",
+            "type": "transport:CargoCategoryCodeList"
         },
         {
-            "uri": "unece:identification",
-            "type": "xsd:string",
-            "comment": "Identification, expressed as text, of this transport cargo that is sufficient to identify it for customs, statistical or transport purposes."
+            "uri": "transport:Cargo.cargoCommodityCategoryStatisticalClassificationCode",
+            "type": "transport:CargoCommodityCategoryCodeList"
         },
         {
-            "uri": "unece:statisticalClassificationCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a statistical classification for this transport cargo."
+            "uri": "transport:Cargo.cargoOperationalCategoryCode",
+            "type": "transport:CargoOperationalCategoryCodeList"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo."
+            "uri": "transport:Cargo.identification",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:natureIdentificationCargo",
-            "comment": "Transport cargo details of this ..."
+            "uri": "transport:Consignment.natureIdentificationCargo",
+            "comment": "Transport cargo details of this referenced supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
+        },
+        {
+            "uri": "transport:ConsignmentItem.natureIdentificationCargo",
+            "comment": "Transport cargo details of this referenced supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
         }
     ]
 }

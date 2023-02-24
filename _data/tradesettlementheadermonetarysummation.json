@@ -1,155 +1,125 @@
 
 {
     "label": "TradeSettlementHeaderMonetarySummation",
-    "uri": "unece:TradeSettlementHeaderMonetarySummation",
+    "uri": "trade:TradeSettlementHeaderMonetarySummation",
     "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement.",
     "datatypeProperties": [
         {
-            "uri": "unece:adjustedBalanceOutAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value that is an adjusted amount balanced out for this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.adjustedBalanceOutAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:allowanceTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all allowance amounts being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.allowanceTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:balanceOutAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value that is an amount balanced out for this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.applicableHeaderBalanceOut",
+            "type": "finance:HeaderBalanceOut"
         },
         {
-            "uri": "unece:chargeTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all charge amounts being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.balanceOutAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:duePayableAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value that is an amount due and payable for this trade settlement header monetary summation, such as the amount due to the creditor."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.chargeTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:excludingTaxesLineTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all line amounts, excluding all duties and taxes, being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.duePayableAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:grandTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the grand total of this trade settlement header monetary summation, to include addition and subtraction of individual summation amounts."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.excludingTaxesLineTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:grossLineTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all line amounts, excluding line level allowances and charges and taxes, being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.grandTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:includingTaxesLineTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all line amounts, including all duties and taxes, being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.grandTotalSpecifiedAdjustment",
+            "type": "finance:FinancialAdjustment"
         },
         {
-            "uri": "unece:informationAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of an amount being reported for information in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.grossLineTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:insuranceChargeTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all insurance charges being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.includingTaxesLineTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:lineTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the line amount total being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.informationAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:netIncludingTaxesLineTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all line amounts, including line level allowances and charges and including line level taxes, being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.insuranceChargeTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:netLineTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all line amounts, including line level allowances and charges and excluding line level taxes, being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.lineTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:paymentTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a payment total reported in this header trade settlement payment monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.netIncludingTaxesLineTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:productValueExcludingTobaccoTaxInformationAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value which constitutes the total product value, excluding tobacco tax, stated for information purposes in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.netLineTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:retailValueExcludingTaxInformationAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value which constitutes the retail value, excluding all duties and taxes, stated for information purposes in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.paymentTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:roundingAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a rounding amount being applied in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.productValueExcludingTobaccoTaxInformationAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:taxBasisTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all tax basis amounts being reported in this trade settlement monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.retailValueExcludingTaxInformationAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:taxTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total of all tax amounts being reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.roundingAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:totalAllowanceChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a total allowance and charge reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.taxBasisTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:totalDepositFeeInformationAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total deposit fee stated for information purposes in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.taxTotalAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:totalDiscountAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a total discount reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.totalAllowanceChargeAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:totalDiscountBasisAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a total discount basis reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.totalDepositFeeInformationAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:totalPrepaidAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a prepaid total reported in this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.totalDiscountAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:totalRetailValueInformationAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value which constitutes the total retail value stated for information purposes in this trade settlement header monetary summation."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableBalanceOut",
-            "type": "unece:BalanceOut",
-            "comment": "A header balance out applicable to this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.totalDiscountBasisAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:grandTotalSpecifiedAdjustment",
-            "type": "unece:Adjustment",
-            "comment": "The financial adjustment of the grand total specified for this trade settlement header monetary summation."
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.totalPrepaidAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "trade:TradeSettlementHeaderMonetarySummation.totalRetailValueInformationAmount",
+            "type": "core:AmountType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedMonetarySummation",
+            "uri": "trade:HeaderTradeSettlement.specifiedTradeSettlementHeaderMonetarySummation",
             "comment": "The monetary summation totals specified for this header trade settlement."
         }
     ]

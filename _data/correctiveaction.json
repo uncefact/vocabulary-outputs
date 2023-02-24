@@ -1,0 +1,26 @@
+
+{
+    "label": "CorrectiveAction",
+    "uri": "compliance:CorrectiveAction",
+    "comment": "Improvements taken to eliminate causes of non-conformities or other undesirable situations, such as to an organization's processes or products.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:CorrectiveAction.actionType",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:CorrectiveAction.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:CorrectiveAction.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResult.applicableCorrectiveAction",
+            "comment": "A corrective action applicable to this specified inspection result."
+        }
+    ]
+}

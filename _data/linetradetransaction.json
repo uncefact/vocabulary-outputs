@@ -1,0 +1,26 @@
+
+{
+    "label": "LineTradeTransaction",
+    "uri": "trade:LineTradeTransaction",
+    "comment": "A group of trade line items, trade line agreement, trade line delivery and trade line settlement details.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:LineTradeTransaction.applicableLineTradeAgreement",
+            "type": "trade:LineTradeAgreement"
+        },
+        {
+            "uri": "trade:LineTradeTransaction.applicableLineTradeDelivery",
+            "type": "trade:LineTradeDelivery"
+        },
+        {
+            "uri": "trade:LineTradeTransaction.includedTradeProduct",
+            "type": "trade:TradeProduct"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:LineTradeSettlement.tradeTransaction",
+            "comment": "A trade transaction referenced in this line trade settlement."
+        }
+    ]
+}

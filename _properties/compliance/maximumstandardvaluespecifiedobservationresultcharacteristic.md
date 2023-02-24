@@ -1,0 +1,5 @@
+---
+title: maximumStandardValueSpecifiedObservationResultCharacteristic
+permalink: compliance/ObservationResult.maximumStandardValueSpecifiedObservationResultCharacteristic.html
+jsonid: maximumstandardvaluespecifiedobservationresultcharacteristic
+---

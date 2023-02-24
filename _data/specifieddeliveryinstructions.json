@@ -1,24 +1,16 @@
 
 {
     "label": "specifiedDeliveryInstructions",
-    "uri": "unece:specifiedDeliveryInstructions",
-    "comment": [
-        "Delivery instructions, at header level, specified for this trade delivery.",
-        "Delivery instructions, at line level, specified for this trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.specifiedDeliveryInstructions",
+    "comment": "Delivery instructions, at header level, specified for this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "unece:DeliveryInstructions",
-            "comment": "Delivery information of an instructive nature."
+            "uri": "transport:DeliveryInstructions"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

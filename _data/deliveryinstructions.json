@@ -1,38 +1,34 @@
 
 {
     "label": "DeliveryInstructions",
-    "uri": "unece:DeliveryInstructions",
+    "uri": "transport:DeliveryInstructions",
     "comment": "Delivery information of an instructive nature.",
     "datatypeProperties": [
         {
-            "uri": "unece:deliveryInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "The code specifying a description of these delivery instructions."
+            "uri": "transport:DeliveryInstructions.deliveryInstructionsDescriptionCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these delivery instructions."
+            "uri": "transport:DeliveryInstructions.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:handling",
-            "type": "xsd:string",
-            "comment": "Delivery handling instructions expressed as text."
+            "uri": "transport:DeliveryInstructions.handling",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:handlingCode",
-            "type": "xsd:token",
-            "comment": "A code specifying delivery handling instructions."
+            "uri": "transport:DeliveryInstructions.handlingCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:deliveryInstructions",
-            "comment": "Delivery instructions for this piece ..."
+            "uri": "transport:Consignment.deliveryInstructions",
+            "comment": "Delivery instructions for this piece of logistics transport equipment."
         },
         {
-            "uri": "unece:specifiedDeliveryInstructions",
-            "comment": "Delivery instructions, at header level, ..."
+            "uri": "transport:LogisticsTransportEquipment.deliveryInstructions",
+            "comment": "Delivery instructions for this piece of logistics transport equipment."
         }
     ]
 }

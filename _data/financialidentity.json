@@ -1,44 +1,32 @@
 
 {
     "label": "FinancialIdentity",
-    "uri": "unece:FinancialIdentity",
+    "uri": "finance:FinancialIdentity",
     "comment": "A financial identification for an organization.",
     "datatypeProperties": [
         {
-            "uri": "unece:agentAssignedCustomerId",
-            "type": "xsd:token",
-            "comment": "The agent assigned customer identifier for this financial identity."
+            "uri": "finance:FinancialIdentity.agentAssignedCustomerId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:bEIId",
-            "type": "xsd:token",
-            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+            "uri": "finance:FinancialIdentity.bEIId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:bICId",
-            "type": "xsd:token",
-            "comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+            "uri": "finance:FinancialIdentity.bICId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:bankAssignedId",
-            "type": "xsd:token",
-            "comment": "The bank assigned identifier for this financial identity."
+            "uri": "finance:FinancialIdentity.bankAssignedId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:cHIPSUniversalId",
-            "type": "xsd:token",
-            "comment": "The (United States) Clearing House Interbank Payments System (CHIPS) Universal Identification (UID) as assigned by the New York Clearing House for this financial identity."
+            "uri": "finance:FinancialIdentity.cHIPSUniversalId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:iBEIId",
-            "type": "xsd:token",
-            "comment": "The International Business Entity Identifier (IBEI) for this financial identity."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:specifiedFinancialIdentity",
-            "comment": "The financial identity specified for this trade party."
+            "uri": "finance:FinancialIdentity.iBEIId",
+            "type": "schema:Text"
         }
     ]
 }

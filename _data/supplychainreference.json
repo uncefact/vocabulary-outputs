@@ -1,0 +1,54 @@
+
+{
+    "label": "SupplyChainReference",
+    "uri": "transport:SupplyChainReference",
+    "comment": "The identification of related information in a supply chain context.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:SupplyChainReference.abbreviation",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.comment",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.propertyReferenceCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.status",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.value",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SupplyChainReference.valueCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.specifiedSupplyChainReference",
+            "comment": "A reference specified for this supply chain consignment."
+        },
+        {
+            "uri": "transport:SupplyChainEvent.associatedReference",
+            "comment": "A reference associated with this supply chain event."
+        }
+    ]
+}

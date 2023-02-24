@@ -1,0 +1,102 @@
+
+{
+    "label": "SupplyChainTradeTransaction",
+    "uri": "trade:SupplyChainTradeTransaction",
+    "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicableHeaderTradeAgreement",
+            "type": "trade:HeaderTradeAgreement"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicableHeaderTradeDelivery",
+            "type": "trade:HeaderTradeDelivery"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicablePeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicableTradeSettlement",
+            "type": "trade:HeaderTradeSettlement"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedDocumentLineDocument",
+            "type": "trade:DocumentLineDocument"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedFinancingRequestResultDocument",
+            "type": "finance:FinancingRequestResultDocument"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedStandard",
+            "type": "compliance:Standard"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.documentURLId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedDeliverySchedule",
+            "type": "trade:DeliverySchedule"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedNote",
+            "type": "core:Note"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedProductGroup",
+            "type": "trade:ProductGroup"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedSupplyChainTradeLineItem",
+            "type": "trade:SupplyChainTradeLineItem"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.information",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.issueDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.lineItemQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.salesAgentAssignedId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.senderRecipientSequenceId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.shipmentId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.specifiedPackage",
+            "type": "transport:Package"
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:TradeProduct.relatedTradeTransaction",
+            "comment": "A supply chain trade transaction related to this specified assessment."
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+---
+title: minimumStandardValueApplicableCharacteristic
+permalink: compliance/InspectionResult.minimumStandardValueApplicableCharacteristic.html
+jsonid: minimumstandardvalueapplicablecharacteristic
+---

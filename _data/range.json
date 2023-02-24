@@ -1,48 +1,50 @@
 
 {
     "label": "Range",
-    "uri": "unece:Range",
-    "comment": "A row, line or series, such as a block of floors in a building.",
+    "uri": "core:Range",
+    "comment": "A row, line or series, commonly used to express the difference between lowest and highest values.",
     "datatypeProperties": [
         {
-            "uri": "unece:endId",
-            "type": "xsd:token",
-            "comment": "The identifier of the end of this specified range."
+            "uri": "core:Range.endId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:maximumValueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the maximum value for this specified range."
+            "uri": "core:Range.maximumValueMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:minimumValueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the minimum value for this specified range."
+            "uri": "core:Range.minimumValueMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:startId",
-            "type": "xsd:token",
-            "comment": "The identifier of the start of this specified range."
+            "uri": "core:Range.startId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:totalItemQuantity",
-            "type": "xsd:decimal",
-            "comment": "The total number of items in this specified range."
+            "uri": "core:Range.totalItemQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a type of this specified range."
+            "uri": "core:Range.typeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Range.value",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Range.valueBaseSystemCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "core:Range.valueCode",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:definedRange",
-            "comment": "A defined range specified for this operational parameter."
-        },
-        {
-            "uri": "unece:requestedRange",
-            "comment": "A requested range specified for this control setting parameter."
+            "uri": "core:MetricCharacteristic.valueRange",
+            "comment": "A range specified for a value of this metric characteristic."
         }
     ]
 }

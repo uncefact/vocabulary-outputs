@@ -1,0 +1,38 @@
+
+{
+    "label": "SpecifiedCondition",
+    "uri": "transport:SpecifiedCondition",
+    "comment": "A state, such as of a specified person or thing.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:SpecifiedCondition.actionCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SpecifiedCondition.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SpecifiedCondition.specifiedMeasurement",
+            "type": "compliance:CalibratedMeasurement"
+        },
+        {
+            "uri": "transport:SpecifiedCondition.subjectTypeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:SpecifiedCondition.valueMeasure",
+            "type": "core:MeasureType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:DangerousGoods.statedCondition",
+            "comment": "A stated condition of these transported dangerous goods."
+        },
+        {
+            "uri": "transport:Package.statedCondition",
+            "comment": "A stated condition of these transported dangerous goods."
+        }
+    ]
+}

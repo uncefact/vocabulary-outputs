@@ -1,29 +1,16 @@
 
 {
     "label": "includedPolygon",
-    "uri": "unece:includedPolygon",
-    "comment": [
-        "A polygon included in this geographical multi-surface.",
-        "The polygon included in this geographical feature.",
-        "The polygon included in this geographical surface."
-    ],
+    "uri": "core:GeographicalSurface.includedPolygon",
+    "comment": "A polygon included in this geographical multi-surface.",
     "rangeIncludes": [
         {
-            "uri": "unece:Polygon",
-            "comment": "A planar surface, defined by one exterior boundary and zero or more interior boundaries. Each interior boundary defines a hole in the polygon."
+            "uri": "core:Polygon"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:GeographicalFeature",
-            "comment": "Distinctive or characteristic part of a geographical object."
-        },
-        {
-            "uri": "unece:GeographicalMultiSurface",
-            "comment": "A collection of surfaces on the Earth (reference ISO 19136)."
-        },
-        {
-            "uri": "unece:GeographicalSurface",
+            "uri": "core:GeographicalSurface",
             "comment": "A figure on the Earth having only two dimensions (reference ISO 19136)."
         }
     ]

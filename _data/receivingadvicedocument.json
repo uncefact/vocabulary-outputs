@@ -1,24 +1,16 @@
 
 {
     "label": "receivingAdviceDocument",
-    "uri": "unece:receivingAdviceDocument",
-    "comment": [
-        "A receiving advice document, at header level, referenced for this trade delivery.",
-        "A receiving advice document, at line level, referenced for this trade delivery."
-    ],
+    "uri": "trade:LineTradeDelivery.receivingAdviceDocument",
+    "comment": "A receiving advice document, at header level, referenced for this trade delivery.",
     "rangeIncludes": [
         {
-            "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
+            "uri": "core:Document"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

@@ -1,0 +1,30 @@
+
+{
+    "label": "Cash",
+    "uri": "finance:Cash",
+    "comment": "Coins, banknotes paid by the recipient of goods or services to the provider.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:Cash.applicableIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "finance:Cash.currencyCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:Cash.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:Cash.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:PaymentMeans.identifiedCash",
+            "comment": "A cash payment identified for this trade settlement payment means."
+        }
+    ]
+}

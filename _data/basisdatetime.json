@@ -1,24 +1,17 @@
 
 {
     "label": "basisDateTime",
-    "uri": "unece:basisDateTime",
-    "comment": [
-        "The date, time, date time, or other date time value used as the basis to calculate the discount in the trade payment discount terms.",
-        "The date, time, date time, or other date time value used as the basis to calculate these trade payment penalty terms."
-    ],
+    "uri": "finance:TradePrice.basisDateTime",
+    "comment": "The date, time, date time, or other date time value used as the basis for this trade price.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:PaymentDiscountTerms",
-            "comment": "Terms and conditions by which a payment discount is or can be applied to a payable amount."
-        },
-        {
-            "uri": "unece:PaymentPenaltyTerms",
-            "comment": "Terms and conditions by which a payment penalty is or can be applied to a payable amount."
+            "uri": "finance:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ]
 }

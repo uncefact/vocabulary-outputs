@@ -1,17 +1,16 @@
 
 {
     "label": "quotationApplicableCurrencyExchange",
-    "uri": "unece:quotationApplicableCurrencyExchange",
+    "uri": "trade:HeaderTradeSettlement.quotationApplicableCurrencyExchange",
     "comment": "The currency exchange applicable to the quotation currency in this header trade settlement.",
     "rangeIncludes": [
         {
-            "uri": "unece:CurrencyExchange",
-            "comment": "The conversion of one currency to another."
+            "uri": "finance:CurrencyExchange"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
+            "uri": "trade:HeaderTradeSettlement",
             "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]

@@ -1,459 +1,433 @@
 
 {
     "label": "TransportMovement",
-    "uri": "unece:TransportMovement",
-    "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place.",
+    "uri": "transport:TransportMovement",
+    "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:borderCrossingDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time or other date time value when this logistics transport movement crosses a border."
+            "uri": "transport:TransportMovement.administrativeMedicalPersonnelOnboardQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:callPurposeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a call purpose for this logistics transport movement."
+            "uri": "transport:TransportMovement.applicableRegulatoryProcedure",
+            "type": "compliance:RegulatoryProcedure"
         },
         {
-            "uri": "unece:cargoDescription",
-            "type": "xsd:string",
-            "comment": "The textual description of the cargo for this logistics transport movement."
+            "uri": "transport:TransportMovement.applicableServiceCharge",
+            "type": "transport:ServiceCharge"
         },
         {
-            "uri": "unece:closingDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value by which cargo should be loaded onto the means of transport for the departure of this logistics transport movement."
+            "uri": "transport:TransportMovement.applicableSpecifiedInspection",
+            "type": "compliance:SpecifiedInspection"
         },
         {
-            "uri": "unece:consignmentQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of consignments in this logistics transport movement."
+            "uri": "transport:TransportMovement.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
         },
         {
-            "uri": "unece:crewQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of crew members for this logistics transport movement."
+            "uri": "transport:TransportMovement.applicableSustainabilityInspection",
+            "type": "compliance:SustainabilityInspection"
         },
         {
-            "uri": "unece:cycle",
-            "type": "xsd:string",
-            "comment": "The cycle, as expressed as text, of this logistics transport movement, such as twice a day."
+            "uri": "transport:TransportMovement.arrivalEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:dangerousGoodsIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not dangerous goods are carried for this logistics transport movement."
+            "uri": "transport:TransportMovement.associatedConvoy",
+            "type": "transport:Convoy"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number."
+            "uri": "transport:TransportMovement.borderCrossingDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this logistics transport movement."
+            "uri": "transport:TransportMovement.borderCrossingEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:logisticsTransportMovementStatusCode",
-            "type": "unece:UNCL4405Code",
-            "comment": "The code specifying a status for the logistics transport movement, such as estimated or final."
+            "uri": "transport:TransportMovement.callEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:manifestOnboardIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not the manifest for this logistics transport movement is onboard."
+            "uri": "transport:TransportMovement.callPurposeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:mode",
-            "type": "xsd:string",
-            "comment": "The mode, expressed as text, of this logistics transport movement."
+            "uri": "transport:TransportMovement.cargoDescription",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:modeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the mode, such as by air, sea, rail, road or inland waterway, for this logistics transport movement."
+            "uri": "transport:TransportMovement.carriedGoodsCharacteristic",
+            "type": "compliance:GoodsCharacteristic"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this logistics transport movement."
+            "uri": "transport:TransportMovement.carriedInactiveTransportMeans",
+            "type": "transport:TransportMeans"
         },
         {
-            "uri": "unece:packageQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of packages in this logistics transport movement."
+            "uri": "transport:TransportMovement.carrierAgentParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:passengerQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of passengers for this logistics transport movement."
+            "uri": "transport:TransportMovement.carrierParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:pilotageExemptionId",
-            "type": "xsd:token",
-            "comment": "The identifier of a pilotage exemption for this logistics transport movement."
+            "uri": "transport:TransportMovement.closingDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reportedSecurityInformation",
-            "type": "xsd:string",
-            "comment": "Reported security information, expressed as text, for this logistics transport movement."
+            "uri": "transport:TransportMovement.commodityConsolidatorAgentParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:sailingAdviceNotificationInformation",
-            "type": "xsd:string",
-            "comment": "Sailing advice notification information, expressed as text, for this logistics transport movement."
+            "uri": "transport:TransportMovement.commodityConsolidatorParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:scheduledId",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number, as stated in a schedule."
+            "uri": "transport:TransportMovement.consignmentQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:service",
-            "type": "xsd:string",
-            "comment": "The service, expressed as text, of this logistics transport movement."
+            "uri": "transport:TransportMovement.consortiumCarrierParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:serviceCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the service of this logistics transport movement, such as regular, milk run or spot service."
+            "uri": "transport:TransportMovement.crewListRelatedDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:stayId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a stay in a port, airport or other place of service for this logistics transport movement."
+            "uri": "transport:TransportMovement.crewNationalityCountry",
+            "type": "core:Country"
         },
         {
-            "uri": "unece:terminalOperatorAssignedId",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this logistics transport movement as assigned by a terminal operator."
+            "uri": "transport:TransportMovement.crewPerson",
+            "type": "transport:TransportPerson"
         },
         {
-            "uri": "unece:tradedParcelQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of traded parcels of cargo being transported in this logistics transport movement."
+            "uri": "transport:TransportMovement.crewPersonalEffects",
+            "type": "tourism:PersonalEffects"
         },
         {
-            "uri": "unece:tradingConsolidatorAssignedId",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this logistics transport movement as assigned by the trading consolidator."
+            "uri": "transport:TransportMovement.crewQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:transportEquipmentQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of pieces of transport equipment for this logistics transport movement."
+            "uri": "transport:TransportMovement.cycle",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:transportMeansDirectionTransitDirectionCode",
-            "type": "unece:UNCL8101Code",
-            "comment": "The code specifying the transit direction of this logistics transport movement."
+            "uri": "transport:TransportMovement.damageEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:transportMovementStageCode",
-            "type": "unece:UNCL8051Code",
-            "comment": "The code specifying the stage of this logistics transport movement."
+            "uri": "transport:TransportMovement.dangerousGoodsIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:transportMovementType",
-            "type": "xsd:string",
-            "comment": "The type, as expressed as text, of the logistics transport movement."
-        }
-    ],
-    "objectProperties": [
+            "uri": "transport:TransportMovement.departureEvent",
+            "type": "transport:TransportEvent"
+        },
+        {
+            "uri": "transport:TransportMovement.documentaryInstructionsNotifiedParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "transport:TransportMovement.excessTransportService",
+            "type": "transport:Service"
+        },
+        {
+            "uri": "transport:TransportMovement.firstArrivalEvent",
+            "type": "transport:TransportEvent"
+        },
+        {
+            "uri": "transport:TransportMovement.iSPSRelatedDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "transport:TransportMovement.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportMovement.information",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "transport:TransportMovement.inspectionParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "transport:TransportMovement.itineraryRoute",
+            "type": "transport:TransportRoute"
+        },
+        {
+            "uri": "transport:TransportMovement.liftingInstructionsRelatedDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "transport:TransportMovement.loadingEvent",
+            "type": "transport:TransportEvent"
+        },
+        {
+            "uri": "transport:TransportMovement.loadingInspectionParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "transport:TransportMovement.loadingInspectionSpecifiedInstructions",
+            "type": "compliance:TransportInstructions"
+        },
+        {
+            "uri": "transport:TransportMovement.logisticsTransportMovementStatusCode",
+            "type": "transport:StatusCodeList"
+        },
+        {
+            "uri": "transport:TransportMovement.manifestOnboardIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "transport:TransportMovement.manifestRelatedDocument",
+            "type": "core:Document"
+        },
         {
-            "uri": "unece:applicableRegulatoryProcedure",
-            "type": "unece:RegulatoryProcedure",
-            "comment": "A cross-border regulatory procedure applicable to this logistics transport movement."
+            "uri": "transport:TransportMovement.masterResponsiblePerson",
+            "type": "transport:TransportPerson"
         },
         {
-            "uri": "unece:applicableServiceCharge",
-            "type": "unece:ServiceCharge",
-            "comment": "A service charge, such as a freight charge, applicable to this logistics transport movement."
+            "uri": "transport:TransportMovement.mode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:arrivalEvent",
-            "type": "unece:TransportEvent",
-            "comment": "An arrival event for this logistics transport movement."
+            "uri": "transport:TransportMovement.nVOCCCarrierParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:associatedConvoy",
-            "type": "unece:Convoy",
-            "comment": "The convoy associated with this logistics transport movement."
+            "uri": "transport:TransportMovement.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:borderCrossingEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A border crossing event for this logistics transport movement."
+            "uri": "transport:TransportMovement.notifiedParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:callEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A call event for this logistics transport movement."
+            "uri": "transport:TransportMovement.onboardInventory",
+            "type": "transport:StoresItemInventory"
         },
         {
-            "uri": "unece:carriedGoodsCharacteristic",
-            "type": "unece:GoodsCharacteristic",
-            "comment": "Material characteristics of goods carried during this logistics transport movement."
+            "uri": "transport:TransportMovement.onboardPerson",
+            "type": "transport:TransportPerson"
         },
         {
-            "uri": "unece:carriedInactiveTransportMeans",
-            "type": "unece:TransportMeans",
-            "comment": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO) ferry."
+            "uri": "transport:TransportMovement.onboardPersonQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:carrierAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The carrier agent trade party for this logistics transport movement."
+            "uri": "transport:TransportMovement.packageQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:carrierParty",
-            "type": "unece:TradeParty",
-            "comment": "A carrier party for this logistics transport movement."
+            "uri": "transport:TransportMovement.passengerListRelatedDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:commodityConsolidatorAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The commodity consolidator agent party for this logistics transport movement."
+            "uri": "transport:TransportMovement.passengerNationalityCountry",
+            "type": "core:Country"
         },
         {
-            "uri": "unece:commodityConsolidatorParty",
-            "type": "unece:TradeParty",
-            "comment": "The commodity consolidator party for this logistics transport movement."
+            "uri": "transport:TransportMovement.passengerQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:consortiumCarrierParty",
-            "type": "unece:TradeParty",
-            "comment": "A consortium carrier party for this logistics transport movement."
+            "uri": "transport:TransportMovement.pilotageExemptionId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:crewListRelatedDocument",
-            "type": "unece:Document",
-            "comment": "The crew list document related to this logistics transport movement."
+            "uri": "transport:TransportMovement.professionalMedicalPersonnelOnboardQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:crewNationalityCountry",
-            "type": "unece:Country",
-            "comment": "Crew nationality details for this logistics transport movement."
+            "uri": "transport:TransportMovement.reasonCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:crewPerson",
-            "type": "unece:TransportPerson",
-            "comment": "A person who is a member of the crew of the means of transport used for this logistics transport movement."
+            "uri": "transport:TransportMovement.reportedSecurityInformation",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:crewPersonalEffects",
-            "type": "unece:PersonalEffects",
-            "comment": "Personal effects of an individual member of the crew for this logistics transport movement."
+            "uri": "transport:TransportMovement.reportedTransportationHealth",
+            "type": "transport:TransportationHealth"
         },
         {
-            "uri": "unece:departureEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A departure event during this logistics transport movement."
+            "uri": "transport:TransportMovement.reportedTransportationWasteMaterial",
+            "type": "transport:TransportationWasteMaterial"
         },
         {
-            "uri": "unece:documentaryInstructionsNotifiedParty",
-            "type": "unece:TradeParty",
-            "comment": "A party to be notified of the documentary instructions for this logistics transport movement."
+            "uri": "transport:TransportMovement.sailingAdviceNotificationInformation",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:excessTransportService",
-            "type": "unece:Service",
-            "comment": "An excess transport service for this logistics transport movement."
+            "uri": "transport:TransportMovement.sailingAdviceNotifiedParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:firstArrivalEvent",
-            "type": "unece:TransportEvent",
-            "comment": "The first arrival event for this logistics transport movement."
+            "uri": "transport:TransportMovement.scheduledId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:iSPSRelatedDocument",
-            "type": "unece:Document",
-            "comment": "The International Ship and Port facility Security code (ISPS) document related to this transport movement."
+            "uri": "transport:TransportMovement.service",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:inspectionParty",
-            "type": "unece:TradeParty",
-            "comment": "An inspection party for this logistics transport movement."
+            "uri": "transport:TransportMovement.serviceCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:itineraryRoute",
-            "type": "unece:Route",
-            "comment": "A route in the itinerary of this logistics transport movement."
+            "uri": "transport:TransportMovement.shipToShipEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:liftingInstructionsRelatedDocument",
-            "type": "unece:Document",
-            "comment": "A referenced lifting instructions document related to this logistics transport movement."
+            "uri": "transport:TransportMovement.specialSpecifiedInstructions",
+            "type": "compliance:TransportInstructions"
         },
         {
-            "uri": "unece:loadingEvent",
-            "type": "unece:TransportEvent",
-            "comment": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this logistics transport movement."
+            "uri": "transport:TransportMovement.specifiedEmission",
+            "type": "transport:Emission"
         },
         {
-            "uri": "unece:loadingInspectionParty",
-            "type": "unece:TradeParty",
-            "comment": "The loading inspection party for this logistics transport movement."
+            "uri": "transport:TransportMovement.specifiedHandlingInstructions",
+            "type": "transport:HandlingInstructions"
         },
         {
-            "uri": "unece:loadingInspectionSpecifiedInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Loading inspection instructions specified for this logistics transport movement."
+            "uri": "transport:TransportMovement.specifiedLogisticsStatus",
+            "type": "transport:LogisticsStatus"
         },
         {
-            "uri": "unece:manifestRelatedDocument",
-            "type": "unece:Document",
-            "comment": "A referenced manifest document related to this transport movement."
+            "uri": "transport:TransportMovement.specifiedOrganizationalCertificate",
+            "type": "compliance:OrganizationalCertificate"
         },
         {
-            "uri": "unece:masterResponsiblePerson",
-            "type": "unece:TransportPerson",
-            "comment": "The person legally responsible for the operation of the means of transport used for this logistics transport movement."
+            "uri": "transport:TransportMovement.specifiedProcessCertificate",
+            "type": "compliance:ProcessCertificate"
         },
         {
-            "uri": "unece:nVOCCCarrierParty",
-            "type": "unece:TradeParty",
-            "comment": "A Non-Vessel Operating Common Carrier (NVOCC) carrier party for this logistics transport movement."
+            "uri": "transport:TransportMovement.specifiedRiskAnalysisResult",
+            "type": "compliance:RiskAnalysisResult"
         },
         {
-            "uri": "unece:notifiedParty",
-            "type": "unece:TradeParty",
-            "comment": "A party to be notified about this logistics transport movement."
+            "uri": "transport:TransportMovement.specifiedTransportEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:onboardInventory",
-            "type": "unece:Inventory",
-            "comment": "A stores inventory item held onboard for this logistics transport movement."
+            "uri": "transport:TransportMovement.stage",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:onboardPerson",
-            "type": "unece:TransportPerson",
-            "comment": "A person onboard this logistics transport movement."
+            "uri": "transport:TransportMovement.stayId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:passengerListRelatedDocument",
-            "type": "unece:Document",
-            "comment": "The passenger list document related to this logistics transport movement."
+            "uri": "transport:TransportMovement.stevedoreParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:passengerNationalityCountry",
-            "type": "unece:Country",
-            "comment": "Passenger nationality details for this logistics transport movement."
+            "uri": "transport:TransportMovement.terminalOperatorAssignedId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:reportedMaterial",
-            "type": "unece:Material",
-            "comment": "Waste material reported for this logistics transport movement."
+            "uri": "transport:TransportMovement.terminalOperatorParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:sailingAdviceNotifiedParty",
-            "type": "unece:TradeParty",
-            "comment": "A party to be notified of the sailing advice for this logistics transport movement."
+            "uri": "transport:TransportMovement.tradedParcelQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:shipToShipEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A ship to ship event for this logistics transport movement."
+            "uri": "transport:TransportMovement.tradingConsolidatorAssignedId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:specialSpecifiedInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Special transport instructions specified for this logistics transport movement."
+            "uri": "transport:TransportMovement.trainedMedicalPersonnelOnboardQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:specifiedEmission",
-            "type": "unece:Emission",
-            "comment": "A calculated emission specified for this logistics transport movement."
+            "uri": "transport:TransportMovement.transportContractRelatedDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:specifiedEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A transport event specified for this logistics transport movement."
+            "uri": "transport:TransportMovement.transportEquipmentQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:specifiedInstructions",
-            "type": "unece:HandlingInstructions",
-            "comment": "Handling instructions specified for this logistics transport movement."
+            "uri": "transport:TransportMovement.transportMeansDirectionTransitDirectionCode",
+            "type": "transport:TransportMeansDirectionCodeList"
         },
         {
-            "uri": "unece:specifiedRiskAnalysisResult",
-            "type": "unece:RiskAnalysisResult",
-            "comment": "A result of a logistics risk analysis calculation specified for this transport movement."
+            "uri": "transport:TransportMovement.transportMeansSecurityOfficerPerson",
+            "type": "transport:TransportPerson"
         },
         {
-            "uri": "unece:stevedoreParty",
-            "type": "unece:TradeParty",
-            "comment": "A stevedore party for this logistics transport movement."
+            "uri": "transport:TransportMovement.transportModeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:terminalOperatorParty",
-            "type": "unece:TradeParty",
-            "comment": "A terminal operator party for this logistics transport movement."
+            "uri": "transport:TransportMovement.transportMovementStageCode",
+            "type": "transport:TransportMovementStageCodeList"
         },
         {
-            "uri": "unece:transportContractRelatedDocument",
-            "type": "unece:Document",
-            "comment": "A transport contract document related to this logistics transport movement."
+            "uri": "transport:TransportMovement.transportMovementType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:transportMeansSecurityOfficerPerson",
-            "type": "unece:TransportPerson",
-            "comment": "The officer responsible for the security of the means of transport used for this logistics transport movement."
+            "uri": "transport:TransportMovement.transportWasteSpecifiedInstructions",
+            "type": "compliance:DisposalInstructions"
         },
         {
-            "uri": "unece:transshipmentIntermediateEvent",
-            "type": "unece:TransportEvent",
-            "comment": "A transshipment intermediate event during this logistics transport movement."
+            "uri": "transport:TransportMovement.transshipmentIntermediateEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:unloadingEvent",
-            "type": "unece:TransportEvent",
-            "comment": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
+            "uri": "transport:TransportMovement.unloadingEvent",
+            "type": "transport:TransportEvent"
         },
         {
-            "uri": "unece:unloadingInspectionParty",
-            "type": "unece:TradeParty",
-            "comment": "The inspection party for the unloading of this logistics transport movement."
+            "uri": "transport:TransportMovement.unloadingInspectionParty",
+            "type": "core:Party"
         },
         {
-            "uri": "unece:unloadingInspectionSpecifiedInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Unloading inspection instructions specified for this logistics transport movement."
+            "uri": "transport:TransportMovement.unloadingInspectionSpecifiedInstructions",
+            "type": "compliance:TransportInstructions"
         },
         {
-            "uri": "unece:usedTransportMeans",
-            "type": "unece:TransportMeans",
-            "comment": "The means of transport used for this logistics transport movement."
+            "uri": "transport:TransportMovement.usedTransportMeans",
+            "type": "transport:LogisticsTransportMeans"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:atArrivalTransportMovement",
+            "uri": "transport:Consignment.atArrivalTransportMovement",
             "comment": "The logistics transport movement for this supply chain consignment at the point when the means of transport arrives in a country or at a regional border."
         },
         {
-            "uri": "unece:atDepartureTransportMovement",
+            "uri": "transport:Consignment.atDepartureTransportMovement",
             "comment": "The logistics transport movement for this supply chain consignment at the point when the means of transport departs a country or regional border."
         },
         {
-            "uri": "unece:borderCrossingTransportMovement",
+            "uri": "transport:Consignment.borderCrossingTransportMovement",
             "comment": "A border crossing logistics transport movement for this supply chain consignment."
         },
         {
-            "uri": "unece:mainCarriageTransportMovement",
+            "uri": "transport:Consignment.mainCarriageTransportMovement",
             "comment": "A main carriage logistics transport movement for this supply chain consignment."
         },
         {
-            "uri": "unece:onCarriageTransportMovement",
+            "uri": "transport:Consignment.onCarriageTransportMovement",
             "comment": "An on-carriage logistics transport movement for this supply chain consignment."
         },
         {
-            "uri": "unece:preCarriageTransportMovement",
-            "comment": "A pre-carriage logistics transport movement ..."
+            "uri": "transport:Consignment.preCarriageTransportMovement",
+            "comment": "A pre-carriage logistics transport movement for this referenced supply chain consignment."
         },
         {
-            "uri": "unece:specifiedTransportMovement",
+            "uri": "transport:Consignment.specifiedTransportMovement",
             "comment": "A logistics transport movement specified for this supply chain consignment."
         }
     ]

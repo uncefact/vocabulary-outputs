@@ -1,23 +1,16 @@
 
 {
     "label": "taxBasisTotalAmount",
-    "uri": "unece:taxBasisTotalAmount",
-    "comment": [
-        "A monetary value of the total of all tax basis amounts being reported in this trade settlement line monetary summation.",
-        "A monetary value of the total of all tax basis amounts being reported in this trade settlement monetary summation."
-    ],
+    "uri": "trade:TradeSettlementLineMonetarySummation.taxBasisTotalAmount",
+    "comment": "A monetary value of the total of all tax basis amounts being reported in this trade settlement line monetary summation.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "core:AmountType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:TradeSettlementHeaderMonetarySummation",
-            "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
-        },
-        {
-            "uri": "unece:TradeSettlementLineMonetarySummation",
+            "uri": "trade:TradeSettlementLineMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
         }
     ]

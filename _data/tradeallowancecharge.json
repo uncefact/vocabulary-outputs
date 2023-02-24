@@ -1,0 +1,74 @@
+
+{
+    "label": "TradeAllowanceCharge",
+    "uri": "finance:TradeAllowanceCharge",
+    "comment": "A component of pricing, such as an allowance or charge for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:TradeAllowanceCharge.actualAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.actualCurrencyExchange",
+            "type": "finance:CurrencyExchange"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.allowanceChargeIdTypeCode",
+            "type": "finance:AllowanceChargeIdCodeList"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.allowanceChargeReasonCode",
+            "type": "finance:AllowanceChargeReasonCodeList"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.basisAmount",
+            "type": "core:AmountType"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.basisQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.calculationPercent",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.categoryTradeTax",
+            "type": "finance:Tax"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.chargeIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.prepaidIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.reason",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.sequenceNumeric",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.unitBasisAmount",
+            "type": "core:AmountType"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:TradePrice.appliedAllowanceCharge",
+            "comment": "An allowance or charge applied to the trade price."
+        }
+    ]
+}

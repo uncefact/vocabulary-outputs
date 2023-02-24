@@ -1,39 +1,29 @@
 
 {
     "label": "LinearRing",
-    "uri": "unece:LinearRing",
-    "comment": "An array of points which define a closed loop which is not self intersecting.",
+    "uri": "core:LinearRing",
+    "comment": "A specified array of points which define a closed loop which is not self intersecting.",
     "datatypeProperties": [
         {
-            "uri": "unece:coordinate",
-            "type": "xsd:string",
-            "comment": "A coordinate, expressed as text, for this specified linear ring. linear ring must contain min 3 points"
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this linear ring."
+            "uri": "core:LinearRing.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:coordinateDirectPosition",
-            "type": "unece:DirectPosition",
-            "comment": "The specified direct position of a coordinate for this linear ring."
+            "uri": "core:LinearRing.coordinate",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:specifiedGeographicalCoordinate",
-            "type": "unece:GeographicalCoordinate",
-            "comment": "Geographical coordinate information specified for this linear ring. If used, linear ring must contain a minimum of 3 geographical coordinate points"
+            "uri": "core:LinearRing.coordinateDirectPosition",
+            "type": "core:DirectPosition"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:exteriorLinearRing",
+            "uri": "core:Polygon.exteriorLinearRing",
             "comment": "The exterior linear specified ring for this polygon."
         },
         {
-            "uri": "unece:interiorLinearRing",
+            "uri": "core:Polygon.interiorLinearRing",
             "comment": "An interior linear ring specified for this polygon."
         }
     ]

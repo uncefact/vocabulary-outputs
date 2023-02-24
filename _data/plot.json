@@ -1,0 +1,74 @@
+
+{
+    "label": "Plot",
+    "uri": "agriculture:Plot",
+    "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:Plot.applicableAgriculturalProcess",
+            "type": "agriculture:AgriculturalProcess"
+        },
+        {
+            "uri": "agriculture:Plot.appliedAgriculturalApplication",
+            "type": "agriculture:AgriculturalApplication"
+        },
+        {
+            "uri": "agriculture:Plot.areaMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "agriculture:Plot.endDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:Plot.grownCrop",
+            "type": "agriculture:FieldCrop"
+        },
+        {
+            "uri": "agriculture:Plot.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:Plot.regulatoryOrganicIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "agriculture:Plot.regulatorySoilTypeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "agriculture:Plot.specifiedAgriculturalCertificate",
+            "type": "agriculture:AgriculturalCertificate"
+        },
+        {
+            "uri": "agriculture:Plot.specifiedAgriculturalCharacteristic",
+            "type": "agriculture:AgriculturalCharacteristic"
+        },
+        {
+            "uri": "agriculture:Plot.specifiedArea",
+            "type": "agriculture:Area"
+        },
+        {
+            "uri": "agriculture:Plot.specifiedLocation",
+            "type": "core:Location"
+        },
+        {
+            "uri": "agriculture:Plot.startDateTime",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:AgriculturalApplication.specifiedPlot",
+            "comment": "A crop plot specified for this agricultural application."
+        },
+        {
+            "uri": "agriculture:Area.specifiedPlot",
+            "comment": "A crop plot specified for this agricultural application."
+        },
+        {
+            "uri": "agriculture:FieldCrop.grownPlot",
+            "comment": "The plot where this field crop is grown."
+        }
+    ]
+}

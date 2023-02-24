@@ -1,0 +1,70 @@
+
+{
+    "label": "PaymentFinancialInstitution",
+    "uri": "finance:PaymentFinancialInstitution",
+    "comment": "An institution that provides financial services and financial transactions for payment.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:PaymentFinancialInstitution.bEIId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.bICId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.branchName",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.branchNameId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.gLNId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.nameId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.roleCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.specifiedCommunication",
+            "type": "core:Communication"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.specifiedPaymentFinancialAccount",
+            "type": "finance:PaymentFinancialAccount"
+        },
+        {
+            "uri": "finance:PaymentFinancialInstitution.typeCode",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:PaymentMeans.creditorSpecifiedFinancialInstitution",
+            "comment": "A creditor financial institution specified for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:PaymentMeans.debtorSpecifiedFinancialInstitution",
+            "comment": "A debtor financial institution specified for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:PaymentMeans.specifiedPaymentFinancialInstitution",
+            "comment": "A financial institution specified for this trade settlement payment means."
+        }
+    ]
+}

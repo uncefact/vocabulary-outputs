@@ -1,40 +1,33 @@
 
 {
     "label": "Convoy",
-    "uri": "unece:Convoy",
-    "comment": "A number of means of transport following each other with a common transport purpose.",
+    "uri": "transport:Convoy",
+    "comment": "A number of means of transport following each other with a common logistics purpose.",
     "datatypeProperties": [
         {
-            "uri": "unece:maximumWidthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The maximum width measure for this logistics convoy."
+            "uri": "transport:Convoy.maximumWidthMeasure",
+            "type": "core:LinearUnitMeasureType"
         },
         {
-            "uri": "unece:overallLengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "The overall length measure of this logistics convoy."
+            "uri": "transport:Convoy.overallLengthMeasure",
+            "type": "core:LinearUnitMeasureType"
         },
         {
-            "uri": "unece:transportMeansQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of means of transport in this logistics convoy."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:powerActiveTransportMeans",
-            "type": "unece:TransportMeans",
-            "comment": "A means of transport actively powering this logistics convoy."
+            "uri": "transport:Convoy.powerActiveTransportMeans",
+            "type": "transport:LogisticsTransportMeans"
         },
         {
-            "uri": "unece:powerInactiveTransportMeans",
-            "type": "unece:TransportMeans",
-            "comment": "A means of transport not actively powering this logistics convoy."
+            "uri": "transport:Convoy.powerInactiveTransportMeans",
+            "type": "transport:LogisticsTransportMeans"
+        },
+        {
+            "uri": "transport:Convoy.transportMeansQuantity",
+            "type": "core:QuantityType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:associatedConvoy",
+            "uri": "transport:TransportMovement.associatedConvoy",
             "comment": "The convoy associated with this logistics transport movement."
         }
     ]

@@ -1,38 +1,33 @@
 
 {
     "label": "PaymentPenaltyTerms",
-    "uri": "unece:PaymentPenaltyTerms",
-    "comment": "Terms and conditions by which a payment penalty is or can be applied to a payable amount.",
+    "uri": "finance:PaymentPenaltyTerms",
+    "comment": "Trade terms and conditions by which a penalty is or can be applied to a payable amount.",
     "datatypeProperties": [
         {
-            "uri": "unece:actualPenaltyAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the actual penalty in these trade payment penalty terms."
+            "uri": "finance:PaymentPenaltyTerms.actualPenaltyAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:basisAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value used as a basis to calculate these trade payment penalty terms."
+            "uri": "finance:PaymentPenaltyTerms.basisAmount",
+            "type": "core:AmountType"
         },
         {
-            "uri": "unece:basisDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value used as the basis to calculate these trade payment penalty terms."
+            "uri": "finance:PaymentPenaltyTerms.basisDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:basisPeriodMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the period used as a basis to calculate these trade payment penalty terms."
+            "uri": "finance:PaymentPenaltyTerms.basisPeriodMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:calculationPercent",
-            "type": "xsd:decimal",
-            "comment": "The percent applied to calculate these trade payment penalty terms."
+            "uri": "finance:PaymentPenaltyTerms.calculationPercent",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicablePaymentPenaltyTerms",
+            "uri": "finance:PaymentTerms.applicablePaymentPenaltyTerms",
             "comment": "Trade payment penalty terms applicable to these trade payment terms."
         }
     ]

@@ -1,96 +1,86 @@
 
 {
     "label": "SupplyPlan",
-    "uri": "unece:SupplyPlan",
-    "comment": "Specification of the delivery time and quantity bucket in a demand forecast or supply schedule.",
+    "uri": "trade:SupplyPlan",
+    "comment": "Specification of the delivery quantities and date/time values in a supply schedule.",
     "datatypeProperties": [
         {
-            "uri": "unece:actualQuantity",
-            "type": "xsd:decimal",
-            "comment": "The actual quantity in this supply chain supply plan."
+            "uri": "trade:SupplyPlan.actualQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:minusToleranceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The minus tolerance quantity from the planned or requested quantity in this supply chain supply plan. Minus Tolerance: the maximum permissible variation in the negative direction for a quantity."
+            "uri": "trade:SupplyPlan.applicablePeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:plannedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The planned quantity in this supply chain supply plan."
+            "uri": "trade:SupplyPlan.confirmedDeliveryEvent",
+            "type": "transport:SupplyChainEvent"
         },
         {
-            "uri": "unece:plusToleranceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The plus tolerance quantity from the planned or requested quantity in this supply chain supply plan."
+            "uri": "trade:SupplyPlan.contractDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:supplyChainSupplyPlanCommitmentLevelCode",
-            "type": "unece:UNCL4017Code",
-            "comment": "The code specifying the commitment level for this supply chain supply plan, such as fabrication or raw material."
+            "uri": "trade:SupplyPlan.deliveryNoteDocument",
+            "type": "core:Document"
         },
         {
-            "uri": "unece:synchronizationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, or other date time value of a synchronization of the supply chain supply plan. The max occurences allow the reporting of time and date as separate instances."
+            "uri": "trade:SupplyPlan.deliverySupplyChainEvent",
+            "type": "transport:SupplyChainEvent"
         },
         {
-            "uri": "unece:synchronizationQuantity",
-            "type": "xsd:decimal",
-            "comment": "The value specifying the quantity for a synchronization of this supply chain supply plan."
+            "uri": "trade:SupplyPlan.minusToleranceQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:toleranceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity of tolerance from the planned quantity in this supply chain supply plan."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicablePeriod",
-            "type": "unece:Period",
-            "comment": "The period applicable for this supply chain supply plan."
+            "uri": "trade:SupplyPlan.plannedQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:confirmedDeliveryEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "A confirmed delivery event in this supply chain supply plan."
+            "uri": "trade:SupplyPlan.plusToleranceQuantity",
+            "type": "core:QuantityType"
         },
         {
-            "uri": "unece:contractDocument",
-            "type": "unece:Document",
-            "comment": "A referenced contract document for this supply chain supply plan."
+            "uri": "trade:SupplyPlan.scheduledDeliveryEvent",
+            "type": "transport:SupplyChainEvent"
         },
         {
-            "uri": "unece:deliveryNoteDocument",
-            "type": "unece:Document",
-            "comment": "A delivery note document referenced by this supply chain supply plan."
+            "uri": "trade:SupplyPlan.shipToParty",
+            "type": "trade:TradeParty"
         },
         {
-            "uri": "unece:deliverySupplyChainEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "A delivery event for this supply chain supply plan."
+            "uri": "trade:SupplyPlan.specifiedLogisticsLocation",
+            "type": "transport:LogisticsLocation"
         },
         {
-            "uri": "unece:scheduledDeliveryEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "A scheduled delivery event in this supply chain supply plan."
+            "uri": "trade:SupplyPlan.specifiedSupplyChainEvent",
+            "type": "transport:SupplyChainEvent"
         },
         {
-            "uri": "unece:shipToParty",
-            "type": "unece:TradeParty",
-            "comment": "The ship to trade party for this supply chain supply plan."
+            "uri": "trade:SupplyPlan.supplyChainSupplyPlanCommitmentLevelCode",
+            "type": "trade:CommitmentLevelCodeList"
         },
         {
-            "uri": "unece:specifiedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A location specified for this supply chain supply plan."
+            "uri": "trade:SupplyPlan.synchronizationDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:SupplyPlan.synchronizationQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "trade:SupplyPlan.toleranceQuantity",
+            "type": "core:QuantityType"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:projectedSupplyPlan",
+            "uri": "trade:LineTradeDelivery.projectedSupplyPlan",
             "comment": "A supply plan, at line level, projected for this trade delivery."
+        },
+        {
+            "uri": "trade:TradeProduct.specifiedSupplyPlan",
+            "comment": "The specification of the delivery quantities and delivery date/time values in a supply plan for this trade product."
         }
     ]
 }

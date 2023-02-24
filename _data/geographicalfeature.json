@@ -1,100 +1,82 @@
 
 {
     "label": "GeographicalFeature",
-    "uri": "unece:GeographicalFeature",
-    "comment": "Distinctive or characteristic part of a geographical object.",
+    "uri": "core:GeographicalFeature",
+    "comment": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings, roads, rivers, forests and lakes.",
     "datatypeProperties": [
         {
-            "uri": "unece:collectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this specified geographical feature is a collection of features."
+            "uri": "core:GeographicalFeature.collectionIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:coordinateReferenceSystemId",
-            "type": "xsd:token",
-            "comment": "The identifier of the coordinate reference system for this geographical feature."
+            "uri": "core:GeographicalFeature.coordinateReferenceSystemId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this specified geographical feature."
+            "uri": "core:GeographicalFeature.description",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this specified geographical feature."
+            "uri": "core:GeographicalFeature.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this specified geographical feature."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:includedCircle",
-            "type": "unece:Circle",
-            "comment": "A circle included in this specified geographical feature."
+            "uri": "core:GeographicalFeature.includedCircle",
+            "type": "core:Circle"
         },
         {
-            "uri": "unece:includedGeographicalGrid",
-            "type": "unece:GeographicalGrid",
-            "comment": "The geographical grid included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalGrid",
+            "type": "core:GeographicalGrid"
         },
         {
-            "uri": "unece:includedGeographicalLine",
-            "type": "unece:GeographicalLine",
-            "comment": "The geographical line included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalLine",
+            "type": "core:GeographicalLine"
         },
         {
-            "uri": "unece:includedGeographicalMultiCurve",
-            "type": "unece:GeographicalMultiCurve",
-            "comment": "The geographical multi-curve included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalMultiCurve",
+            "type": "core:GeographicalMultiCurve"
         },
         {
-            "uri": "unece:includedGeographicalMultiPoint",
-            "type": "unece:GeographicalMultiPoint",
-            "comment": "The geographical multi-point included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalMultiPoint",
+            "type": "core:GeographicalMultiPoint"
         },
         {
-            "uri": "unece:includedGeographicalMultiSurface",
-            "type": "unece:GeographicalMultiSurface",
-            "comment": "The geographical multi-surface included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalMultiSurface",
+            "type": "core:GeographicalMultiSurface"
         },
         {
-            "uri": "unece:includedGeographicalPoint",
-            "type": "unece:GeographicalPoint",
-            "comment": "The geographical point included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalPoint",
+            "type": "core:GeographicalPoint"
         },
         {
-            "uri": "unece:includedGeographicalSurface",
-            "type": "unece:GeographicalSurface",
-            "comment": "The geographical surface included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedGeographicalSurface",
+            "type": "core:GeographicalSurface"
         },
         {
-            "uri": "unece:includedPolygon",
-            "type": "unece:Polygon",
-            "comment": "The polygon included in this geographical feature."
+            "uri": "core:GeographicalFeature.includedPolygon",
+            "type": "core:Polygon"
         },
         {
-            "uri": "unece:usedCoordinateReferenceSystem",
-            "type": "unece:CoordinateReferenceSystem",
-            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this specified geographical feature."
+            "uri": "core:GeographicalFeature.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:usedCoordinateSourceSystem",
-            "type": "unece:CoordinateSourceSystem",
-            "comment": "The geographical coordinate source system used for this specified geographical feature."
+            "uri": "core:GeographicalFeature.usedCoordinateReferenceSystem",
+            "type": "core:CoordinateReferenceSystem"
+        },
+        {
+            "uri": "core:GeographicalFeature.usedCoordinateSourceSystem",
+            "type": "core:CoordinateSourceSystem"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:associatedGeographicalFeature",
-            "comment": "A geographical feature associated with ..."
+            "uri": "core:CommunicationEvent.associatedGeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
         },
         {
-            "uri": "unece:previousAssociatedGeographicalFeature",
-            "comment": "A geographical feature previously associated ..."
+            "uri": "core:Location.associatedGeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
         }
     ]
 }

@@ -1,23 +1,16 @@
 
 {
     "label": "customsDutyIndicator",
-    "uri": "unece:customsDutyIndicator",
-    "comment": [
-        "The indication of whether or not this registered tax is a customs duty.",
-        "The indication of whether or not this trade related tax, levy or duty is a customs duty."
-    ],
+    "uri": "trade:TradeTax.customsDutyIndicator",
+    "comment": "The indication of whether or not this registered tax is a customs duty.",
     "rangeIncludes": [
         {
-            "uri": "xsd:boolean"
+            "uri": "schema:Boolean"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:RegisteredTax",
-            "comment": "A registered tax or duty system pertaining to an authority."
-        },
-        {
-            "uri": "unece:TradeTax",
+            "uri": "trade:TradeTax",
             "comment": "A trade related fiscal levy or duty."
         }
     ]

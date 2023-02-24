@@ -1,28 +1,25 @@
 
 {
     "label": "BirthAddress",
-    "uri": "unece:BirthAddress",
+    "uri": "core:BirthAddress",
     "comment": "The place of birth.",
     "datatypeProperties": [
         {
-            "uri": "unece:cityName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the city, town or village of this birth address."
+            "uri": "core:BirthAddress.birthAddressCountryId",
+            "type": "core:CountryId"
         },
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "The identifier of a country for this birth address."
+            "uri": "core:BirthAddress.cityName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:countrySubDivisionName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the sub-division of a country for this birth address."
+            "uri": "core:BirthAddress.countrySubDivisionName",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedAddress",
+            "uri": "core:Contact.specifiedBirthAddress",
             "comment": "The birth address specified for this contact person."
         }
     ]

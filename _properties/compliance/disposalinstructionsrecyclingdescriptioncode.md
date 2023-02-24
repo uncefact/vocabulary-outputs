@@ -1,0 +1,5 @@
+---
+title: disposalInstructionsRecyclingDescriptionCode
+permalink: compliance/DisposalInstructions.disposalInstructionsRecyclingDescriptionCode.html
+jsonid: disposalinstructionsrecyclingdescriptioncode
+---

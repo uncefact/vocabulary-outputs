@@ -1,18 +1,174 @@
 
 {
-    "label": "specifiedCertificate",
-    "uri": "unece:specifiedCertificate",
-    "comment": "A product certificate specified for this trade product.",
-    "rangeIncludes": [
+    "label": "SpecifiedCertificate",
+    "uri": "compliance:SpecifiedCertificate",
+    "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object.",
+    "datatypeProperties": [
         {
-            "uri": "unece:Certificate",
-            "comment": "A legal proof of ownership or worthiness of an item."
+            "uri": "compliance:SpecifiedCertificate.actualEffectiveDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.aliasNameCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.applicableClause",
+            "type": "core:Clause"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.applicableGeographicRegion",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.applicableStandard",
+            "type": "compliance:Standard"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.assuranceLevelCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.attachedBinaryFile",
+            "type": "core:BinaryFile"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.availableLanguageCode",
+            "type": "compliance:LanguageCodeList"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.capabilityLevel",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.categoryCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.certificateTypeCode",
+            "type": "compliance:CertificateTypeCodeList"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.certifiedObject",
+            "type": "core:Object"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.certifiedParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.certifiedPersonQuantity",
+            "type": "core:QuantityType"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.description",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.effectiveFromDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.endorsementDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.expiryDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.identifier",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.issuanceLocation",
+            "type": "core:Location"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.issueDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.issueReasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.issuerParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.latestEndorsementDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.name",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.partyId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.providingParty",
+            "type": "core:Party"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.purposeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.reportedDocumentStatus",
+            "type": "core:DocumentStatus"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.requestedEffectiveDateTime",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.requiredIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.sequenceNumeric",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.statusCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.subjectTypeCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.validIndicator",
+            "type": "schema:Boolean"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.validityExtendedUntilDateTime",
+            "type": "schema:DateTime"
+        },
+        {
+            "uri": "compliance:SpecifiedCertificate.validityTypeCode",
+            "type": "schema:Text"
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "compliance:InspectionResult.obtainedSpecifiedCertificate",
+            "comment": "A certificate obtained by means of this specified inspection result."
+        },
+        {
+            "uri": "compliance:SpecifiedMaterial.applicableSpecifiedCertificate",
+            "comment": "A certificate applicable to this product batch."
+        },
+        {
+            "uri": "compliance:Standard.applicableSpecifiedCertificate",
+            "comment": "A certificate applicable to this product batch."
         }
     ]
 }

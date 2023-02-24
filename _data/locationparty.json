@@ -1,70 +1,57 @@
 
 {
     "label": "LocationParty",
-    "uri": "unece:LocationParty",
+    "uri": "transport:LocationParty",
     "comment": "An individual, a group, or a body having a role related to a location.",
     "datatypeProperties": [
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "A unique country identifier for this location party."
+            "uri": "transport:LocationParty.countryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique identifier of this location party."
+            "uri": "transport:LocationParty.definedContact",
+            "type": "core:Contact"
         },
         {
-            "uri": "unece:locationPartyRoleCode",
-            "type": "unece:UNCL3035Code",
-            "comment": "A code specifying a role of this location party."
+            "uri": "transport:LocationParty.faxCommunication",
+            "type": "core:Communication"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this location party."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:definedContact",
-            "type": "unece:Contact",
-            "comment": "A trade contact defined for this location party."
+            "uri": "transport:LocationParty.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:faxCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Fax communication information for this location party."
+            "uri": "transport:LocationParty.locationPartyRoleCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:postalAddress",
-            "type": "unece:TradeAddress",
-            "comment": "A postal address for this location party."
+            "uri": "transport:LocationParty.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:providedService",
-            "type": "unece:Service",
-            "comment": "A transport service provided by this location party."
+            "uri": "transport:LocationParty.postalAddress",
+            "type": "core:Address"
         },
         {
-            "uri": "unece:specifiedTransportPerson",
-            "type": "unece:TransportPerson",
-            "comment": "A transport related person specified for this location party."
+            "uri": "transport:LocationParty.providedService",
+            "type": "transport:Service"
         },
         {
-            "uri": "unece:telephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Telephone communication information for this location party."
+            "uri": "transport:LocationParty.specifiedTransportPerson",
+            "type": "transport:TransportPerson"
         },
         {
-            "uri": "unece:uRICommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Uniform Resource Identifier (URI) communication information for this location party, such as a web or email address."
+            "uri": "transport:LocationParty.telephoneCommunication",
+            "type": "core:Communication"
+        },
+        {
+            "uri": "transport:LocationParty.uRICommunication",
+            "type": "core:Communication"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:servicingSpecifiedParty",
+            "uri": "transport:LogisticsLocation.servicingSpecifiedParty",
             "comment": "A servicing party specified for this logistics related location."
         }
     ]

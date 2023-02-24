@@ -1,91 +1,94 @@
 
 {
     "label": "DocumentLineDocument",
-    "uri": "unece:DocumentLineDocument",
+    "uri": "trade:DocumentLineDocument",
     "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
     "datatypeProperties": [
         {
-            "uri": "unece:buyerAssignedCategoryCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the category assigned by the buyer for this document line."
+            "uri": "trade:DocumentLineDocument.buyerAssignedCategoryCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:documentLineStatusCode",
-            "type": "unece:UNCL1073Code",
-            "comment": "The code specifying the status of this document line."
+            "uri": "trade:DocumentLineDocument.categoryCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this document line document."
+            "uri": "trade:DocumentLineDocument.documentLineStatusCode",
+            "type": "trade:LineStatusCodeList"
         },
         {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value for the issuance of this document line."
+            "uri": "trade:DocumentLineDocument.effectiveSpecifiedPeriod",
+            "type": "core:SpecifiedPeriod"
         },
         {
-            "uri": "unece:latestRevisionDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value for the latest revision of this document line."
+            "uri": "trade:DocumentLineDocument.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of this document line."
+            "uri": "trade:DocumentLineDocument.includedNote",
+            "type": "core:Note"
         },
         {
-            "uri": "unece:lineStatusReason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for the line status in this document line."
+            "uri": "trade:DocumentLineDocument.issueDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:lineStatusReasonCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the line status reason for this document line."
+            "uri": "trade:DocumentLineDocument.latestRevisionDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:parentLineId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the parent line to this document line."
+            "uri": "trade:DocumentLineDocument.lineId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:publicationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of the publication of this document line."
+            "uri": "trade:DocumentLineDocument.lineStatusReason",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:subordinateLineId",
-            "type": "xsd:token",
-            "comment": "An identifier of a subordinate line of this document line."
+            "uri": "trade:DocumentLineDocument.lineStatusReasonCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:uUIDLineId",
-            "type": "xsd:token",
-            "comment": "The universally unique identifier (UUID) of this document line."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:effectivePeriod",
-            "type": "unece:Period",
-            "comment": "The period within which this document line is effective."
+            "uri": "trade:DocumentLineDocument.parentLineId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:includedNote",
-            "type": "unece:Note",
-            "comment": "A note included in this document line."
+            "uri": "trade:DocumentLineDocument.publicationDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:referenceDocument",
-            "type": "unece:AcknowledgementDocument",
-            "comment": "The acknowledgement document referenced in this document line."
+            "uri": "trade:DocumentLineDocument.referenceAcknowledgementDocument",
+            "type": "trade:AcknowledgementDocument"
+        },
+        {
+            "uri": "trade:DocumentLineDocument.referenceDocument",
+            "type": "core:Document"
+        },
+        {
+            "uri": "trade:DocumentLineDocument.responseReasonCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:DocumentLineDocument.subordinateLineId",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "trade:DocumentLineDocument.uUIDLineId",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:associatedDocumentLineDocument",
-            "comment": "A document line associated with ..."
+            "uri": "trade:LineTradeSettlement.associatedDocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:SupplyChainTradeLineItem.associatedDocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedDocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
         }
     ]
 }

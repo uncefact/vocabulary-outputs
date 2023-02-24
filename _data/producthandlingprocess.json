@@ -1,0 +1,38 @@
+
+{
+    "label": "ProductHandlingProcess",
+    "uri": "trade:ProductHandlingProcess",
+    "comment": "A naturally occurring or designed sequence of operations or events that create, transform, or touch a product, such as manufacturing, treating, packaging, and storing.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:ProductHandlingProcess.applicableProcessCharacteristic",
+            "type": "compliance:ProcessCharacteristic"
+        },
+        {
+            "uri": "trade:ProductHandlingProcess.completionPeriod",
+            "type": "core:SpecifiedPeriod"
+        },
+        {
+            "uri": "trade:ProductHandlingProcess.operationCountry",
+            "type": "core:Country"
+        },
+        {
+            "uri": "trade:ProductHandlingProcess.operatorParty",
+            "type": "trade:TradeParty"
+        },
+        {
+            "uri": "trade:ProductHandlingProcess.processTypeCode",
+            "type": "trade:ProcessTypeCodeList"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:ProductInstance.appliedProcess",
+            "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
+        },
+        {
+            "uri": "trade:SupplyChainTradeLineItem.appliedProcess",
+            "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
+        }
+    ]
+}

@@ -1,34 +1,17 @@
 
 {
     "label": "creationDateTime",
-    "uri": "unece:creationDateTime",
-    "comment": [
-        "The date or date time value of the creation of this acknowledgement document.",
-        "The date, time, date time or other date time value for the creation of this financing request document.",
-        "The date, time, date time, or other date time value of a creation of this exchanged document.",
-        "The date, time, date time, or other date time value of the creation of this valuation breakdown statement."
-    ],
+    "uri": "trade:ProductBatch.creationDateTime",
+    "comment": "The creation date, time, date time, or other date time value for this payment trade settlement.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:AcknowledgementDocument",
-            "comment": "A document exchanged between parties for a business application level acknowledgement of the receipt of information."
-        },
-        {
-            "uri": "unece:BreakdownStatement",
-            "comment": "A detailed statement of work, materials, products, prices, or dimensions."
-        },
-        {
-            "uri": "unece:ExchangedDocument",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
-        },
-        {
-            "uri": "unece:FinancingRequestDocument",
-            "comment": "The set of characteristics shared by all individual transactions grouped for this financing request document."
+            "uri": "trade:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
         }
     ]
 }

@@ -1,67 +1,58 @@
 
 {
     "label": "CreditorFinancialAccount",
-    "uri": "unece:CreditorFinancialAccount",
+    "uri": "finance:CreditorFinancialAccount",
     "comment": "A specific business arrangement whereby credits arising from transactions are recorded.",
     "datatypeProperties": [
         {
-            "uri": "unece:accountName",
-            "type": "xsd:string",
-            "comment": "The account name, expressed as text, of this creditor financial account."
+            "uri": "finance:CreditorFinancialAccount.accountName",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:bBANId",
-            "type": "xsd:token",
-            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this creditor financial account."
+            "uri": "finance:CreditorFinancialAccount.bBANId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:creditorFinancialAccountTypeCode",
-            "type": "unece:UNCL4437Code",
-            "comment": "The code specifying the type of creditor financial account."
+            "uri": "finance:CreditorFinancialAccount.creditorFinancialAccountTypeCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:currencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency of this creditor financial account (Reference ISO 4217 codes)."
+            "uri": "finance:CreditorFinancialAccount.currencyCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:iBANId",
-            "type": "xsd:token",
-            "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
+            "uri": "finance:CreditorFinancialAccount.iBANId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:proprietaryAccountName",
-            "type": "xsd:string",
-            "comment": "The proprietary account name, expressed as text, of this creditor financial account. Deprecated."
+            "uri": "finance:CreditorFinancialAccount.proprietaryId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:proprietaryId",
-            "type": "xsd:token",
-            "comment": "The unique proprietary identifier for this creditor financial account."
+            "uri": "finance:CreditorFinancialAccount.proprietaryType",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:proprietaryType",
-            "type": "xsd:string",
-            "comment": "The proprietary type, expressed as text, of this creditor financial account, such as the nature or use of the creditor account."
-        },
-        {
-            "uri": "unece:uPICId",
-            "type": "xsd:token",
-            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
+            "uri": "finance:CreditorFinancialAccount.uPICId",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ownedFinancialAccount",
-            "comment": "The creditor financial account owned by this trade party."
+            "uri": "finance:FinancingSummaryDocument.specifiedCreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:payeePartyFinancialAccount",
+            "uri": "finance:PaymentMeans.payeePartyFinancialAccount",
             "comment": "A creditor financial account of the payee party for this trade settlement payment means."
         },
         {
-            "uri": "unece:specifiedFinancialAccount",
-            "comment": "A creditor financial account specified ..."
+            "uri": "finance:PaymentMeans.specifiedCreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:RequestingParty.specifiedCreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
         }
     ]
 }

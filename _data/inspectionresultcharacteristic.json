@@ -1,0 +1,70 @@
+
+{
+    "label": "InspectionResultCharacteristic",
+    "uri": "compliance:InspectionResultCharacteristic",
+    "comment": "A property of a collection of diagnostic data, visual or technical data, obtained by a performed inspection.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:InspectionResultCharacteristic.applicableMethod",
+            "type": "core:SpecifiedMethod"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.comparisonOperatorCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.interpretationResultApplicableParameter",
+            "type": "compliance:ObservationObjectiveParameter"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.measuredAccuracyMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.measuredValue",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.measuredValueMeasure",
+            "type": "core:MeasureType"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.qualityResultCode",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.qualityResultDescription",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.qualityResultReferenceLevelDescription",
+            "type": "schema:Text"
+        },
+        {
+            "uri": "compliance:InspectionResultCharacteristic.range",
+            "type": "schema:Text"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResult.applicableInspectionResultCharacteristic",
+            "comment": "A characteristic applicable to this specified inspection result."
+        },
+        {
+            "uri": "compliance:InspectionResult.expectedValueApplicableCharacteristic",
+            "comment": "An expected value for the inspection characteristic to be acquired by using the type of inspection applicable to this specified inspection result."
+        },
+        {
+            "uri": "compliance:InspectionResult.maximumStandardValueApplicableCharacteristic",
+            "comment": "A maximum standard value for the inspection characteristic observed or measured by using the type of inspection applicable to this specified inspection result."
+        },
+        {
+            "uri": "compliance:InspectionResult.minimumStandardValueApplicableCharacteristic",
+            "comment": "A minimum standard value for the inspection characteristic observed or measured by using the type of inspection applicable to this specified inspection result."
+        },
+        {
+            "uri": "compliance:InspectionResult.observedValueApplicableCharacteristic",
+            "comment": "An observed value for the inspection characteristic acquired by using the type of inspection applicable to this specified inspection result."
+        }
+    ]
+}

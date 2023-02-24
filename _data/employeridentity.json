@@ -1,18 +1,17 @@
 
 {
     "label": "EmployerIdentity",
-    "uri": "unece:EmployerIdentity",
+    "uri": "core:EmployerIdentity",
     "comment": "Identification of a party who pays someone to do work on a regular or contractual basis.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this employer identity."
+            "uri": "core:EmployerIdentity.identifier",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedEmployerIdentity",
+            "uri": "core:Contact.specifiedEmployerIdentity",
             "comment": "An employer identity specified for this contact person."
         }
     ]

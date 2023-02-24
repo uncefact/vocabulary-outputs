@@ -1,30 +1,17 @@
 
 {
     "label": "calculationPercent",
-    "uri": "unece:calculationPercent",
-    "comment": [
-        "The percent applied to calculate these trade payment penalty terms.",
-        "The percent used to calculate the discount in these trade payment discount terms.",
-        "The percentage applied to calculate this trade allowance charge.",
-        "The percentage used to calculate the applied allowance charge."
-    ],
+    "uri": "finance:TradePrice.calculationPercent",
+    "comment": "The calculation percentage for this trade price.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:AllowanceCharge",
-            "comment": "A component of pricing, such as a service, promotion, allowance or charge."
-        },
-        {
-            "uri": "unece:PaymentDiscountTerms",
-            "comment": "Terms and conditions by which a payment discount is or can be applied to a payable amount."
-        },
-        {
-            "uri": "unece:PaymentPenaltyTerms",
-            "comment": "Terms and conditions by which a payment penalty is or can be applied to a payable amount."
+            "uri": "finance:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ]
 }

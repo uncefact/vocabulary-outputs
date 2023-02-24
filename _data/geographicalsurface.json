@@ -1,23 +1,21 @@
 
 {
     "label": "GeographicalSurface",
-    "uri": "unece:GeographicalSurface",
+    "uri": "core:GeographicalSurface",
     "comment": "A figure on the Earth having only two dimensions (reference ISO 19136).",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this geographical surface."
+            "uri": "core:GeographicalSurface.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:includedPolygon",
-            "type": "unece:Polygon",
-            "comment": "The polygon included in this geographical surface."
+            "uri": "core:GeographicalSurface.includedPolygon",
+            "type": "core:Polygon"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedGeographicalSurface",
+            "uri": "core:GeographicalFeature.includedGeographicalSurface",
             "comment": "The geographical surface included in this geographical feature."
         }
     ]

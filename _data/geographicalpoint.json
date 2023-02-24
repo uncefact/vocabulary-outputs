@@ -1,36 +1,33 @@
 
 {
     "label": "GeographicalPoint",
-    "uri": "unece:GeographicalPoint",
+    "uri": "core:GeographicalPoint",
     "comment": "A point on the surface of the Earth (reference ISO 19136).",
-    "objectProperties": [
+    "datatypeProperties": [
         {
-            "uri": "unece:associatedDirectPositionList",
-            "type": "unece:DirectPositionList",
-            "comment": "The direct position list associated with this geographical point."
+            "uri": "core:GeographicalPoint.associatedDirectPositionList",
+            "type": "core:DirectPositionList"
         },
         {
-            "uri": "unece:associatedGeographicalObjectCharacteristic",
-            "type": "unece:GeographicalObjectCharacteristic",
-            "comment": "The geographical object characteristic associated with this geographical point."
+            "uri": "core:GeographicalPoint.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic"
         },
         {
-            "uri": "unece:associatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location associated with this specified geographical point."
+            "uri": "core:GeographicalPoint.associatedLocation",
+            "type": "core:Location"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:centreGeographicalPoint",
+            "uri": "core:Circle.centreGeographicalPoint",
             "comment": "The geographical point which defines the centre of this specified circle."
         },
         {
-            "uri": "unece:includedGeographicalPoint",
+            "uri": "core:GeographicalFeature.includedGeographicalPoint",
             "comment": "The geographical point included in this geographical feature."
         },
         {
-            "uri": "unece:memberGeographicalPoint",
+            "uri": "core:GeographicalMultiPoint.memberGeographicalPoint",
             "comment": "A geographical point member of this geographical multi-point feature."
         }
     ]

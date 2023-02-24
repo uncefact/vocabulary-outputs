@@ -1,20 +1,17 @@
 
 {
     "label": "reasonDescription",
-    "uri": "unece:reasonDescription",
-    "comment": [
-        "A textual description of the reason for this header balance out.",
-        "A textual description of the reason for this payment balance out."
-    ],
+    "uri": "finance:PaymentBalanceOut.reasonDescription",
+    "comment": "A textual description of the reason for this header balance out.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:BalanceOut",
-            "comment": "Offset information to ensure that debits and credits are equal."
+            "uri": "finance:PaymentBalanceOut",
+            "comment": "Offset information to ensure that debits and credits are equal for a transaction."
         }
     ]
 }

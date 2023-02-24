@@ -1,103 +1,82 @@
 
 {
     "label": "GeographicalCoordinate",
-    "uri": "unece:GeographicalCoordinate",
+    "uri": "core:GeographicalCoordinate",
     "comment": "A set of geographical coordinates of a specific point such as the longitude, latitude and altitude.",
     "datatypeProperties": [
         {
-            "uri": "unece:acquisitionDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value of the acquisition of this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.acquisitionDateTime",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:alternativeSourceSystemId",
-            "type": "xsd:token",
-            "comment": "An alternative source system identifier for this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.alternativeSourceSystemId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:altimetricSystemId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the system used for measuring the altitude."
+            "uri": "core:GeographicalCoordinate.altimetricSystemId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:altitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this specified geographical coordinate (Reference ISO 6709)."
+            "uri": "core:GeographicalCoordinate.altitudeMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:latitudeDirectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether the latitude compass direction from the Equator meridian to the meridian of a specific place is North (+) or South (-)  (Reference ISO 6709)."
+            "uri": "core:GeographicalCoordinate.latitudeDirectionIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:latitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the latitude as an angular distance north or south from the Equator meridian to the meridian of a specific place for this specified geographical coordinate. (Reference ISO 6709)."
+            "uri": "core:GeographicalCoordinate.latitudeMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:longitudeDirectionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this specified geographical coordinate. (Reference ISO 6709)."
+            "uri": "core:GeographicalCoordinate.longitudeDirectionIndicator",
+            "type": "schema:Boolean"
         },
         {
-            "uri": "unece:longitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a specific place for this specified geographical coordinate. (Reference ISO 6709)."
+            "uri": "core:GeographicalCoordinate.longitudeMeasure",
+            "type": "core:MeasureType"
         },
         {
-            "uri": "unece:systemId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the reference system used for measuring a geographical coordinate."
+            "uri": "core:GeographicalCoordinate.systemId",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:timeZone",
-            "type": "xsd:string",
-            "comment": "The time zone, expressed as text, for this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.timeZone",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:timeZoneCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the time zone of this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.timeZoneCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:timeZoneDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:usedCoordinateReferenceSystem",
-            "type": "unece:CoordinateReferenceSystem",
-            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.timeZoneDateTime",
+            "type": "schema:DateTime"
         },
         {
-            "uri": "unece:usedCoordinateSourceSystem",
-            "type": "unece:CoordinateSourceSystem",
-            "comment": "The geographical coordinate source system used for this geographical coordinate."
+            "uri": "core:GeographicalCoordinate.usedCoordinateReferenceSystem",
+            "type": "core:CoordinateReferenceSystem"
+        },
+        {
+            "uri": "core:GeographicalCoordinate.usedCoordinateSourceSystem",
+            "type": "core:CoordinateSourceSystem"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:geoCoordinateIdentificationGeographicalCoordinate",
+            "uri": "core:Address.geoCoordinateIdentificationGeographicalCoordinate",
             "comment": "An identification of a set of geographical coordinates for this trade address."
         },
         {
-            "uri": "unece:latestReceivedGeographicalCoordinate",
-            "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
+            "uri": "core:SubordinateLocation.physicalGeographicalCoordinate",
+            "comment": "Geographical coordinate information for this logistics related location."
         },
         {
-            "uri": "unece:physicalGeographicalCoordinate",
-            "comment": "Geographical coordinate information for this ..."
-        },
-        {
-            "uri": "unece:specifiedGeographicalCoordinate",
-            "comment": "Geographical coordinate information specified for this linear ring."
+            "uri": "core:SubordinateSubordinateLocation.physicalGeographicalCoordinate",
+            "comment": "Geographical coordinate information for this logistics related location."
         }
     ]
 }

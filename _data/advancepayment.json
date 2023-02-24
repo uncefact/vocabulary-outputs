@@ -1,31 +1,20 @@
 
 {
     "label": "AdvancePayment",
-    "uri": "unece:AdvancePayment",
+    "uri": "finance:AdvancePayment",
     "comment": "A prepaid discharge of obligations in respect of funds or securities transferred between two or more parties.",
     "datatypeProperties": [
         {
-            "uri": "unece:paidAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the funds or securities paid in this advance payment."
+            "uri": "finance:AdvancePayment.includedTax",
+            "type": "finance:Tax"
         },
         {
-            "uri": "unece:receivedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The formatted date or date time value when an advance payment has been received."
-        }
-    ],
-    "objectProperties": [
+            "uri": "finance:AdvancePayment.paidAmount",
+            "type": "core:AmountType"
+        },
         {
-            "uri": "unece:includedTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax included in this advance payment."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:specifiedAdvancePayment",
-            "comment": "An advance payment specified in this header trade settlement."
+            "uri": "finance:AdvancePayment.receivedDateTime",
+            "type": "schema:DateTime"
         }
     ]
 }

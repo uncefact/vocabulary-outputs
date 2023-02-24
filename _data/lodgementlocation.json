@@ -1,24 +1,16 @@
 
 {
     "label": "lodgementLocation",
-    "uri": "unece:lodgementLocation",
-    "comment": [
-        "The location where this exchanged document has been lodged.",
-        "The logistics related location where this referenced document has been lodged."
-    ],
+    "uri": "core:ExchangedDocument.lodgementLocation",
+    "comment": "The location where this exchanged document has been lodged.",
     "rangeIncludes": [
         {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
+            "uri": "core:Location"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
-        },
-        {
-            "uri": "unece:ExchangedDocument",
+            "uri": "core:ExchangedDocument",
             "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
         }
     ]

@@ -1,45 +1,37 @@
 
 {
     "label": "Marketplace",
-    "uri": "unece:Marketplace",
+    "uri": "trade:Marketplace",
     "comment": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or services.",
     "datatypeProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this specified marketplace."
+            "uri": "trade:Marketplace.identifier",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this specified marketplace."
+            "uri": "trade:Marketplace.name",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:salesMethodCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a sales method, such as an auction clock or mediation, for this specified marketplace."
+            "uri": "trade:Marketplace.orderingAvailablePeriod",
+            "type": "core:AvailablePeriod"
         },
         {
-            "uri": "unece:virtualIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this specified marketplace is virtual, such as a web-based marketplace."
+            "uri": "trade:Marketplace.salesMethodCode",
+            "type": "schema:Text"
         },
         {
-            "uri": "unece:websiteURIId",
-            "type": "xsd:token",
-            "comment": "A website Uniform Resource Identifier (URI) for this specified marketplace."
-        }
-    ],
-    "objectProperties": [
+            "uri": "trade:Marketplace.virtualIndicator",
+            "type": "schema:Boolean"
+        },
         {
-            "uri": "unece:orderingPeriod",
-            "type": "unece:Period",
-            "comment": "An available ordering period for this specified marketplace."
+            "uri": "trade:Marketplace.websiteURIId",
+            "type": "schema:Text"
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:includedMarketplace",
+            "uri": "trade:LineTradeAgreement.includedMarketplace",
             "comment": "A marketplace included in this line trade agreement."
         }
     ]

@@ -1,23 +1,16 @@
 
 {
     "label": "ultimateShipToDeliveryDateTime",
-    "uri": "unece:ultimateShipToDeliveryDateTime",
-    "comment": [
-        "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party.",
-        "The formatted date, time, date time, or other date time value, at line level, when this trade delivery is delivered to the ultimate ship to party."
-    ],
+    "uri": "trade:LineTradeDelivery.ultimateShipToDeliveryDateTime",
+    "comment": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "schema:DateTime"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
+            "uri": "trade:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]

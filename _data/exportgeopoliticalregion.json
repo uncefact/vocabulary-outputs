@@ -1,25 +1,17 @@
 
 {
     "label": "exportGeopoliticalRegion",
-    "uri": "unece:exportGeopoliticalRegion",
-    "comment": [
-        "The geopolitical region of export for this supply chain consignment item.",
-        "The geopolitical region of export for this supply chain consignment."
-    ],
+    "uri": "transport:ConsignmentItem.exportGeopoliticalRegion",
+    "comment": "The geopolitical region of export for this supply chain consignment item.",
     "rangeIncludes": [
         {
-            "uri": "unece:GeopoliticalRegion",
-            "comment": "A collection of countries and/or economies united by a common characteristic, such as political union."
+            "uri": "core:GeopoliticalRegion"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
+            "uri": "transport:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

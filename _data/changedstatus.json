@@ -1,31 +1,17 @@
 
 {
     "label": "changedStatus",
-    "uri": "unece:changedStatus",
-    "comment": [
-        "A changed recorded status for this basic work item.",
-        "A changed recorded status for this grouped work item.",
-        "A changed recorded status for this valuation breakdown statement.",
-        "A changed recorded status for this work item quantity analysis."
-    ],
+    "uri": "finance:GroupedWorkItem.changedStatus",
+    "comment": "A changed recorded status for this basic work item.",
     "rangeIncludes": [
         {
-            "uri": "unece:RecordedStatus",
-            "comment": "Recorded information relevant to a condition or a position of an object."
+            "uri": "core:RecordedStatus"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:BreakdownStatement",
-            "comment": "A detailed statement of work, materials, products, prices, or dimensions."
-        },
-        {
-            "uri": "unece:QuantityAnalysis",
-            "comment": "The analytic breakdown of a quantity to include its supporting information, such as a complex quantity that consists of multiple pieces of information that together constitute a single quantity."
-        },
-        {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
+            "uri": "finance:GroupedWorkItem",
+            "comment": "A grouping of related work items."
         }
     ]
 }

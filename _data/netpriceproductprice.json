@@ -1,24 +1,16 @@
 
 {
     "label": "netPriceProductPrice",
-    "uri": "unece:netPriceProductPrice",
-    "comment": [
-        "A net product price in this line trade agreement.",
-        "A net product price in this subordinate line trade agreement."
-    ],
+    "uri": "trade:SubordinateLineTradeAgreement.netPriceProductPrice",
+    "comment": "A net product price in this line trade agreement.",
     "rangeIncludes": [
         {
-            "uri": "unece:TradePrice",
-            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
+            "uri": "finance:TradePrice"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:LineTradeAgreement",
-            "comment": "The contractual terms of a line trade agreement."
-        },
-        {
-            "uri": "unece:SubordinateLineTradeAgreement",
+            "uri": "trade:SubordinateLineTradeAgreement",
             "comment": "The contractual terms of a subordinate line trade agreement."
         }
     ]
