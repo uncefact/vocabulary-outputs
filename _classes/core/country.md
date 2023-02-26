@@ -1,5 +1,5 @@
 ---
 title: Country
 permalink: core/Country.html
-jsonid: country
+jsonid: core_country
 ---

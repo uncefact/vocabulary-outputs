@@ -1,5 +1,5 @@
 ---
 title: ForecastTerms
 permalink: trade/ForecastTerms.html
-jsonid: forecastterms
+jsonid: trade_forecastterms
 ---

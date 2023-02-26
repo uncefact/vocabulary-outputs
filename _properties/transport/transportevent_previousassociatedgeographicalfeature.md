@@ -1,0 +1,5 @@
+---
+title: previousAssociatedGeographicalFeature
+permalink: transport/TransportEvent.previousAssociatedGeographicalFeature.html
+jsonid: transport_transportevent_previousassociatedgeographicalfeature
+---

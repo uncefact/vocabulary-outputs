@@ -1,5 +1,5 @@
 ---
 title: AmountType
 permalink: core/AmountType.html
-jsonid: amounttype
+jsonid: core_amounttype
 ---

@@ -1,5 +1,5 @@
 ---
 title: Project
 permalink: core/Project.html
-jsonid: project
+jsonid: core_project
 ---

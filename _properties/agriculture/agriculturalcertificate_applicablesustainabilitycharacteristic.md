@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: agriculture/AgriculturalCertificate.applicableSustainabilityCharacteristic.html
+jsonid: agriculture_agriculturalcertificate_applicablesustainabilitycharacteristic
+---

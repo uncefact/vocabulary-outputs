@@ -1,5 +1,5 @@
 ---
 title: Plot
 permalink: agriculture/Plot.html
-jsonid: plot
+jsonid: agriculture_plot
 ---

@@ -1,5 +1,5 @@
 ---
 title: SpecifiedCertificate
 permalink: compliance/SpecifiedCertificate.html
-jsonid: specifiedcertificate
+jsonid: compliance_specifiedcertificate
 ---

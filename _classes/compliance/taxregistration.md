@@ -1,5 +1,5 @@
 ---
 title: TaxRegistration
 permalink: compliance/TaxRegistration.html
-jsonid: taxregistration
+jsonid: compliance_taxregistration
 ---

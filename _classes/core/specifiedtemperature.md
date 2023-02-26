@@ -1,5 +1,5 @@
 ---
 title: SpecifiedTemperature
 permalink: core/SpecifiedTemperature.html
-jsonid: specifiedtemperature
+jsonid: core_specifiedtemperature
 ---

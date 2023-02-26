@@ -1,0 +1,5 @@
+---
+title: spanishDomesticInterbankingId
+permalink: finance/DebtorFinancialInstitution.spanishDomesticInterbankingId.html
+jsonid: finance_debtorfinancialinstitution_spanishdomesticinterbankingid
+---

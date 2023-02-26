@@ -1,5 +1,5 @@
 ---
 title: DeliveryAdjustment
 permalink: transport/DeliveryAdjustment.html
-jsonid: deliveryadjustment
+jsonid: transport_deliveryadjustment
 ---

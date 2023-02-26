@@ -1,0 +1,5 @@
+---
+title: geoCoordinateIdentificationGeographicalCoordinate
+permalink: core/Address.geoCoordinateIdentificationGeographicalCoordinate.html
+jsonid: core_address_geocoordinateidentificationgeographicalcoordinate
+---

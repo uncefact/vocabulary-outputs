@@ -1,5 +1,5 @@
 ---
 title: ProductBatch
 permalink: trade/ProductBatch.html
-jsonid: productbatch
+jsonid: trade_productbatch
 ---

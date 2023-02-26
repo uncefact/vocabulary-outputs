@@ -1,5 +1,5 @@
 ---
 title: Allergy
 permalink: tourism/Allergy.html
-jsonid: allergy
+jsonid: tourism_allergy
 ---

@@ -1,5 +1,5 @@
 ---
 title: LanguageProficiency
 permalink: core/LanguageProficiency.html
-jsonid: languageproficiency
+jsonid: core_languageproficiency
 ---

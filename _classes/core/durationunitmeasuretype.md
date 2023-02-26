@@ -1,5 +1,5 @@
 ---
 title: DurationUnitMeasureType
 permalink: core/DurationUnitMeasureType.html
-jsonid: durationunitmeasuretype
+jsonid: core_durationunitmeasuretype
 ---

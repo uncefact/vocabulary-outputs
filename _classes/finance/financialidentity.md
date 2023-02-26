@@ -1,5 +1,5 @@
 ---
 title: FinancialIdentity
 permalink: finance/FinancialIdentity.html
-jsonid: financialidentity
+jsonid: finance_financialidentity
 ---

@@ -1,0 +1,88 @@
+
+{
+    "label": "MDHHealthIndication",
+    "uri": "transport:MDHHealthIndication",
+    "comment": "Information related to a specific transportation indication to be reported on a WHO MDH (Maritime Declaration of Health).",
+    "datatypeProperties": [
+        {
+            "uri": "transport:MDHHealthIndication.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "transport:MDHHealthIndication.locationId",
+            "type": "schema:Text",
+            "comment": "An identifier of a location for this MDH health indication."
+        },
+        {
+            "uri": "transport:MDHHealthIndication.locationName",
+            "type": "schema:Text",
+            "comment": "A location name, expressed as text, of a location for this MDH health indication."
+        },
+        {
+            "uri": "transport:MDHHealthIndication.reportedDateTime",
+            "type": "schema:DateTime",
+            "comment": "A reported date, time, date time or other date time value for this MDH health indication."
+        },
+        {
+            "uri": "transport:MDHHealthIndication.statusIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the status of this MDH health indication is true or false."
+        },
+        {
+            "uri": "transport:MDHHealthIndication.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:MDHHealthIndication.appliedSanitaryMeasure",
+            "type": "transport:SanitaryMeasure",
+            "comment": "A sanitary measure applied for this MDH health indication."
+        },
+        {
+            "uri": "transport:MDHHealthIndication.reportedQuantity",
+            "type": "core:QuantityType",
+            "comment": "A reported quantity for this MDH health indication."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:TransportationHealth.diedOnboardHealthIndication",
+            "comment": "A died onboard indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.diseaseOnboardHealthIndication",
+            "comment": "A disease onboard indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.illPersonNowOnboardHealthIndication",
+            "comment": "An ill person or persons now onboard indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.medicalPractitionerConsultedHealthIndication",
+            "comment": "A medical practitioner consulted indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.moreIllOnboardHealthIndication",
+            "comment": "A more ill onboard indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.onboardInfectionConditionHealthIndication",
+            "comment": "An onboard infection condition indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.sanitaryMeasureAppliedHealthIndication",
+            "comment": "An applied sanitary measure indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.sickAnimalOnboardHealthIndication",
+            "comment": "A sick animal or animals onboard indication for this MDH transportation health."
+        },
+        {
+            "uri": "transport:TransportationHealth.stowawayFoundOnboardHealthIndication",
+            "comment": "A stowaway or stowaways found onboard indication for this MDH transportation health."
+        }
+    ]
+}

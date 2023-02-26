@@ -1,0 +1,5 @@
+---
+title: transportEquipmentSupplierPartyRoleCode
+permalink: transport/LogisticsTransportEquipment.transportEquipmentSupplierPartyRoleCode.html
+jsonid: transport_logisticstransportequipment_transportequipmentsupplierpartyrolecode
+---

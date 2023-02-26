@@ -1,5 +1,5 @@
 ---
 title: Classification
 permalink: trade/Classification.html
-jsonid: classification
+jsonid: trade_classification
 ---

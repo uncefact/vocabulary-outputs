@@ -1,5 +1,5 @@
 ---
 title: AvailablePeriod
 permalink: core/AvailablePeriod.html
-jsonid: availableperiod
+jsonid: core_availableperiod
 ---

@@ -1,0 +1,45 @@
+
+{
+    "label": "CoordinateSourceSystem",
+    "uri": "core:CoordinateSourceSystem",
+    "comment": "Properties defining a geographical coordinate source system used in different places around the world to identify locations on the earth.",
+    "datatypeProperties": [
+        {
+            "uri": "core:CoordinateSourceSystem.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "core:CoordinateSourceSystem.sourceTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a type of source for this geographical coordinate source system."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:CoordinateSourceSystem.signalSourceAvailableQuantity",
+            "type": "core:QuantityType",
+            "comment": "The quantity of signal source available for this geographical coordinate source system."
+        },
+        {
+            "uri": "core:CoordinateSourceSystem.toleranceMeasure",
+            "type": "core:MeasureType",
+            "comment": "The measure of the tolerance of this calibrated measurement."
+        },
+        {
+            "uri": "core:CoordinateSourceSystem.usedSignalSourceQuantity",
+            "type": "core:QuantityType",
+            "comment": "The quantity of the used signal source of this geographical coordinate source system."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:GeographicalCoordinate.usedCoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this geographical coordinate."
+        },
+        {
+            "uri": "core:GeographicalFeature.usedCoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this geographical coordinate."
+        }
+    ]
+}

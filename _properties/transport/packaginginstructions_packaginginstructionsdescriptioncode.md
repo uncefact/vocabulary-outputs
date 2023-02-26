@@ -1,0 +1,5 @@
+---
+title: packagingInstructionsDescriptionCode
+permalink: transport/PackagingInstructions.packagingInstructionsDescriptionCode.html
+jsonid: transport_packaginginstructions_packaginginstructionsdescriptioncode
+---

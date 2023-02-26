@@ -1,5 +1,5 @@
 ---
 title: CurrencyExchange
 permalink: finance/CurrencyExchange.html
-jsonid: currencyexchange
+jsonid: finance_currencyexchange
 ---

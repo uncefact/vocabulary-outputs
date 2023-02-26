@@ -1,5 +1,5 @@
 ---
 title: Policy
 permalink: compliance/Policy.html
-jsonid: policy
+jsonid: compliance_policy
 ---

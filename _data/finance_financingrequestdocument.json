@@ -1,0 +1,90 @@
+
+{
+    "label": "FinancingRequestDocument",
+    "uri": "finance:FinancingRequestDocument",
+    "comment": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:FinancingRequestDocument.agreementInformation",
+            "type": "schema:Text",
+            "comment": "Agreement information, expressed as text, in this financing request document, such as a collection mandate."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.authorization",
+            "type": "schema:Text",
+            "comment": "An authorization, expressed as text, for this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.cancellationReason",
+            "type": "schema:Text",
+            "comment": "A cancellation reason, expressed as text, in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.copyIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the referenced document is a copy."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.creationDateTime",
+            "type": "schema:Text",
+            "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.financingRequestDocumentCurrencyCode",
+            "type": "finance:CurrencyCodeList",
+            "comment": "The code specifying the currency in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.groupId",
+            "type": "schema:Text",
+            "comment": "The group identifier in this financing request document."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "finance:FinancingRequestDocument.additionalInformationIncludedNote",
+            "type": "core:Note",
+            "comment": "An additional information note included for this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.contractualClause",
+            "type": "core:Clause",
+            "comment": "A contractual clause of this exchanged document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.firstAgentSpecifiedFinancialInstitution",
+            "type": "finance:CreditorFinancialInstitution",
+            "comment": "The creditor financial institution specified as the first agent in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.groupedTransactionSpecifiedQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of grouped transactions specified in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.groupedTransactionTotalAmount",
+            "type": "core:AmountType",
+            "comment": "A total monetary value of grouped transactions in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.intermediarySpecifiedFinancialInstitution",
+            "type": "finance:CreditorFinancialInstitution",
+            "comment": "The creditor financial institution specified as the intermediary in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.specifiedCancellationStatus",
+            "type": "core:CancellationStatus",
+            "comment": "A status of a cancellation specified for this financing request document, such as accepted."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.specifiedRequestingParty",
+            "type": "finance:RequestingParty",
+            "comment": "The requesting party specified in this financing request document."
+        },
+        {
+            "uri": "finance:FinancingRequestDocument.specifiedValidationStatus",
+            "type": "core:ValidationStatus",
+            "comment": "The status of the validation specified for this financing request document, such as error."
+        }
+    ]
+}

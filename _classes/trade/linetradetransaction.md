@@ -1,5 +1,5 @@
 ---
 title: LineTradeTransaction
 permalink: trade/LineTradeTransaction.html
-jsonid: linetradetransaction
+jsonid: trade_linetradetransaction
 ---

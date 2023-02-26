@@ -1,5 +1,5 @@
 ---
 title: Range
 permalink: core/Range.html
-jsonid: range
+jsonid: core_range
 ---

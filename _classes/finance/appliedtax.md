@@ -1,5 +1,5 @@
 ---
 title: AppliedTax
 permalink: finance/AppliedTax.html
-jsonid: appliedtax
+jsonid: finance_appliedtax
 ---

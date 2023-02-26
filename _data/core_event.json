@@ -1,0 +1,60 @@
+
+{
+    "label": "Event",
+    "uri": "core:Event",
+    "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport.",
+    "datatypeProperties": [
+        {
+            "uri": "core:Event.actualOccurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the actual arrival related to this transport event."
+        },
+        {
+            "uri": "core:Event.description",
+            "type": "schema:Text",
+            "comment": "A note providing additional security measures applicable to this transport event."
+        },
+        {
+            "uri": "core:Event.estimatedOccurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "The estimated date, time, date time, or other date time value of the occurrence of this transport event."
+        },
+        {
+            "uri": "core:Event.identifier",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value when the arrival of a means of transport at the location of this transport event is estimated to occur."
+        },
+        {
+            "uri": "core:Event.scheduledOccurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A pilot boarding place, expressed as text, for this transport event."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:Event.actualOccurrencePeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "The actual period of time during which this transport event occurred."
+        },
+        {
+            "uri": "core:Event.occurrencePeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "The specified period of laycan time during which this transport event occurs."
+        },
+        {
+            "uri": "core:Event.scheduledOccurrencePeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "The scheduled period of time specified for the occurrence of this transport event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:Error.associatedEvent",
+            "comment": "A corrective event associated with this declared error."
+        },
+        {
+            "uri": "core:Location.specifiedSupplyChainEvent",
+            "comment": "A supply chain event specified for this product batch."
+        }
+    ]
+}

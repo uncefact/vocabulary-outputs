@@ -1,0 +1,41 @@
+
+{
+    "label": "ReturnableAssetInstructions",
+    "uri": "transport:ReturnableAssetInstructions",
+    "comment": "The procedures to follow for returnable assets, such as reusable packaging (pallets, crates).",
+    "datatypeProperties": [
+        {
+            "uri": "transport:ReturnableAssetInstructions.materialId",
+            "type": "schema:Text",
+            "comment": "An identifier of the material to which these returnable asset instructions apply."
+        },
+        {
+            "uri": "transport:ReturnableAssetInstructions.returnableAssetInstructionsTermsAndConditionsDescriptionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the description of the terms and conditions for these returnable asset instructions."
+        },
+        {
+            "uri": "transport:ReturnableAssetInstructions.termsAndConditionsDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of the terms and conditions for these returnable asset instructions."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:ReturnableAssetInstructions.depositValueSpecifiedAmount",
+            "type": "core:AmountType",
+            "comment": "A deposit value specified in these returnable asset instructions."
+        },
+        {
+            "uri": "transport:ReturnableAssetInstructions.depositValueValidityPeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:SupplyChainPackaging.applicableReturnableAssetInstructions",
+            "comment": "Returnable asset instructions for this supply chain packaging."
+        }
+    ]
+}

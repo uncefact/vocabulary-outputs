@@ -1,5 +1,5 @@
 ---
 title: ProductionDevice
 permalink: trade/ProductionDevice.html
-jsonid: productiondevice
+jsonid: trade_productiondevice
 ---

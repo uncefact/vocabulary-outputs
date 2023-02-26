@@ -1,5 +1,5 @@
 ---
 title: LogisticsLabel
 permalink: transport/LogisticsLabel.html
-jsonid: logisticslabel
+jsonid: transport_logisticslabel
 ---

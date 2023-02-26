@@ -1,0 +1,5 @@
+---
+title: estimatedGeneratedMeasure
+permalink: transport/TransportationWasteMaterialComponent.estimatedGeneratedMeasure.html
+jsonid: transport_transportationwastematerialcomponent_estimatedgeneratedmeasure
+---

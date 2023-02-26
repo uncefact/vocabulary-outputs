@@ -1,5 +1,5 @@
 ---
 title: ProductFinishingTreatment
 permalink: trade/ProductFinishingTreatment.html
-jsonid: productfinishingtreatment
+jsonid: trade_productfinishingtreatment
 ---

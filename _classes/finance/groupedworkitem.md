@@ -1,5 +1,5 @@
 ---
 title: GroupedWorkItem
 permalink: finance/GroupedWorkItem.html
-jsonid: groupedworkitem
+jsonid: finance_groupedworkitem
 ---

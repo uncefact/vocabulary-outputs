@@ -1,5 +1,5 @@
 ---
 title: HeaderBalanceOut
 permalink: finance/HeaderBalanceOut.html
-jsonid: headerbalanceout
+jsonid: finance_headerbalanceout
 ---

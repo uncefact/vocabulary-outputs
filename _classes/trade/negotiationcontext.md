@@ -1,5 +1,5 @@
 ---
 title: NegotiationContext
 permalink: trade/NegotiationContext.html
-jsonid: negotiationcontext
+jsonid: trade_negotiationcontext
 ---

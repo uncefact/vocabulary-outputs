@@ -1,5 +1,5 @@
 ---
 title: ProcessCertificate
 permalink: compliance/ProcessCertificate.html
-jsonid: processcertificate
+jsonid: compliance_processcertificate
 ---

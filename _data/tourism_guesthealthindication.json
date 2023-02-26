@@ -1,0 +1,34 @@
+
+{
+    "label": "GuestHealthIndication",
+    "uri": "tourism:GuestHealthIndication",
+    "comment": "A guest's physical or mental condition.",
+    "datatypeProperties": [
+        {
+            "uri": "tourism:GuestHealthIndication.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "tourism:GuestHealthIndication.restriction",
+            "type": "schema:Text",
+            "comment": "A restriction, expressed as text, for this disease protection means."
+        },
+        {
+            "uri": "tourism:GuestHealthIndication.status",
+            "type": "schema:Text",
+            "comment": "A status, expressed as text, for this acknowledgement document."
+        },
+        {
+            "uri": "tourism:GuestHealthIndication.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "tourism:GuestPerson.notifiedHealthIndication",
+            "comment": "A health indication notified for this guest person."
+        }
+    ]
+}

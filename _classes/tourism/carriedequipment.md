@@ -1,5 +1,5 @@
 ---
 title: CarriedEquipment
 permalink: tourism/CarriedEquipment.html
-jsonid: carriedequipment
+jsonid: tourism_carriedequipment
 ---

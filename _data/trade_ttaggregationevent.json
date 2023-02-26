@@ -1,0 +1,90 @@
+
+{
+    "label": "TTAggregationEvent",
+    "uri": "trade:TTAggregationEvent",
+    "comment": "A Track and Trace (TT) event where objects or processes are grouped.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:TTAggregationEvent.actionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an action for this specified condition."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.businessStepCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the business step for this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.childObjectInstanceId",
+            "type": "schema:Text",
+            "comment": "An instance identifier for a child object of this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.dispositionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the disposition related to this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.parentObjectId",
+            "type": "schema:Text",
+            "comment": "The identifier of the parent object for this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.recordedDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value at which this TT aggregation event was recorded."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:TTAggregationEvent.childQuantitySpecifiedEventElement",
+            "type": "core:EventElement",
+            "comment": "A quantity event element specified for a child of this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.destinationRelatedParty",
+            "type": "trade:TTParty",
+            "comment": "A destination related party for this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.readPointRelatedLocation",
+            "type": "trade:TTLocation",
+            "comment": "The read point related location of this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.relatedCertification",
+            "type": "compliance:SpecifiedCertification",
+            "comment": "A certification related to this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.relatedTTLocation",
+            "type": "trade:TTLocation",
+            "comment": "A location related to this TT animal."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.sourceRelatedParty",
+            "type": "trade:TTParty",
+            "comment": "A source related party for this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.specifiedError",
+            "type": "core:Error",
+            "comment": "A declared error specified for this TT aggregation event."
+        },
+        {
+            "uri": "trade:TTAggregationEvent.specifiedTradeTransaction",
+            "type": "trade:TTTradeTransaction",
+            "comment": "A trade transaction specified for this TT aggregation event."
+        }
+    ]
+}

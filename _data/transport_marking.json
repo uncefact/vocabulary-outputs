@@ -1,0 +1,55 @@
+
+{
+    "label": "Marking",
+    "uri": "transport:Marking",
+    "comment": "An inscription, stamp or label on packaging, such as to indicate date, ownership, quality, manufacture or origin.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:Marking.automaticDataCaptureMethodTypeCode",
+            "type": "transport:AutomaticDataCaptureMethodCodeList",
+            "comment": "A code specifying an automatic data capture method type for this packaging marking."
+        },
+        {
+            "uri": "transport:Marking.content",
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
+        },
+        {
+            "uri": "transport:Marking.contentCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the content of this note."
+        },
+        {
+            "uri": "transport:Marking.contentDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the content of this packaging marking."
+        },
+        {
+            "uri": "transport:Marking.packagingMarkingBarcodeTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of barcode for this packaging marking."
+        },
+        {
+            "uri": "transport:Marking.packagingMarkingTypeCode",
+            "type": "transport:PackagingMarkingCodeList",
+            "comment": "A code specifying a type of packaging marking."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:Marking.contentAmount",
+            "type": "core:AmountType",
+            "comment": "Content, expressed as a monetary amount, for this packaging marking."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:LogisticsPackaging.specifiedMarking",
+            "comment": "A marking specified for this logistics packaging."
+        },
+        {
+            "uri": "transport:SupplyChainPackaging.specifiedMarking",
+            "comment": "A marking specified for this logistics packaging."
+        }
+    ]
+}

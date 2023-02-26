@@ -1,5 +1,5 @@
 ---
 title: CancellationStatus
 permalink: core/CancellationStatus.html
-jsonid: cancellationstatus
+jsonid: core_cancellationstatus
 ---

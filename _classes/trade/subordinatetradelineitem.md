@@ -1,5 +1,5 @@
 ---
 title: SubordinateTradeLineItem
 permalink: trade/SubordinateTradeLineItem.html
-jsonid: subordinatetradelineitem
+jsonid: trade_subordinatetradelineitem
 ---

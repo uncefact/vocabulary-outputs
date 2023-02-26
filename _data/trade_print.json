@@ -1,0 +1,106 @@
+
+{
+    "label": "Print",
+    "uri": "trade:Print",
+    "comment": "Any text or pattern put on the surface of a product using a specific material such as dye.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:Print.backgroundColourCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the background colour for this product print."
+        },
+        {
+            "uri": "trade:Print.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "trade:Print.design",
+            "type": "schema:Text",
+            "comment": "A textual description of a design for this product print."
+        },
+        {
+            "uri": "trade:Print.designCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the design for this product print."
+        },
+        {
+            "uri": "trade:Print.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:Print.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "trade:Print.section",
+            "type": "schema:Text",
+            "comment": "A section, expressed as text, of this product print."
+        },
+        {
+            "uri": "trade:Print.sectionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the section for this product print."
+        },
+        {
+            "uri": "trade:Print.testIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this XHE document is a test ."
+        },
+        {
+            "uri": "trade:Print.textContent",
+            "type": "schema:Text",
+            "comment": "A textual description of the content for this product print."
+        },
+        {
+            "uri": "trade:Print.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:Print.applicableMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Material applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "trade:Print.applicableMethod",
+            "type": "core:SpecifiedMethod",
+            "comment": "A method applicable to this specified inspection result."
+        },
+        {
+            "uri": "trade:Print.applicableProductionDevice",
+            "type": "trade:ProductionDevice",
+            "comment": "A production device applicable to this product colour."
+        },
+        {
+            "uri": "trade:Print.applicableTechnicalCharacteristic",
+            "type": "compliance:TechnicalCharacteristic",
+            "comment": "A technical characteristic applicable to this product colour."
+        },
+        {
+            "uri": "trade:Print.relatedParty",
+            "type": "trade:TradeParty",
+            "comment": "A trade party related to this facility production unit."
+        },
+        {
+            "uri": "trade:Print.specifiedDocument",
+            "type": "core:Document",
+            "comment": "A referenced document for this specified inspection."
+        },
+        {
+            "uri": "trade:Print.specifiedMachine",
+            "type": "trade:Machine",
+            "comment": "A production machine specified for this product print."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:TradeProduct.specifiedPrint",
+            "comment": "A product print specified for this trade product."
+        }
+    ]
+}

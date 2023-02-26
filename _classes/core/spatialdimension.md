@@ -1,5 +1,5 @@
 ---
 title: SpatialDimension
 permalink: core/SpatialDimension.html
-jsonid: spatialdimension
+jsonid: core_spatialdimension
 ---

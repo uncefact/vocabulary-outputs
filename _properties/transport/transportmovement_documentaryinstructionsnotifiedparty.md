@@ -1,0 +1,5 @@
+---
+title: documentaryInstructionsNotifiedParty
+permalink: transport/TransportMovement.documentaryInstructionsNotifiedParty.html
+jsonid: transport_transportmovement_documentaryinstructionsnotifiedparty
+---

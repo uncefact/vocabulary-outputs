@@ -1,5 +1,5 @@
 ---
 title: SpecifiedAction
 permalink: core/SpecifiedAction.html
-jsonid: specifiedaction
+jsonid: core_specifiedaction
 ---

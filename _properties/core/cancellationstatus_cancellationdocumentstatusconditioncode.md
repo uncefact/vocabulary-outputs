@@ -1,0 +1,5 @@
+---
+title: cancellationDocumentStatusConditionCode
+permalink: core/CancellationStatus.cancellationDocumentStatusConditionCode.html
+jsonid: core_cancellationstatus_cancellationdocumentstatusconditioncode
+---

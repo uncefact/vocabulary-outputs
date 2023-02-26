@@ -1,0 +1,35 @@
+
+{
+    "label": "Issue",
+    "uri": "core:Issue",
+    "comment": "A targeted topic for debate or resolution.",
+    "datatypeProperties": [
+        {
+            "uri": "core:Issue.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "core:Issue.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:Issue.maximumSpecifiedCharacteristic",
+            "type": "core:MetricCharacteristic",
+            "comment": "The maximum metric characteristic specified for this target issue."
+        },
+        {
+            "uri": "core:Issue.minimumSpecifiedCharacteristic",
+            "type": "core:MetricCharacteristic",
+            "comment": "The minimum metric characteristic specified for this target issue."
+        },
+        {
+            "uri": "core:Issue.specifiedMetricCharacteristic",
+            "type": "core:MetricCharacteristic",
+            "comment": "The metric characteristic specified for this target issue."
+        }
+    ]
+}

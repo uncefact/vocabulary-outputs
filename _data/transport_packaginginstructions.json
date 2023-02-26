@@ -1,0 +1,58 @@
+
+{
+    "label": "PackagingInstructions",
+    "uri": "transport:PackagingInstructions",
+    "comment": "Packaging information of an instructive nature.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:PackagingInstructions.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "transport:PackagingInstructions.handling",
+            "type": "schema:Text",
+            "comment": "Delivery handling instructions expressed as text."
+        },
+        {
+            "uri": "transport:PackagingInstructions.handlingCode",
+            "type": "schema:Text",
+            "comment": "A code specifying delivery handling instructions."
+        },
+        {
+            "uri": "transport:PackagingInstructions.instructionsType",
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, of these packaging instructions."
+        },
+        {
+            "uri": "transport:PackagingInstructions.itemName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of an item included in these packaging instructions."
+        },
+        {
+            "uri": "transport:PackagingInstructions.packagingInstructionsDescriptionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a description of these packaging instructions."
+        },
+        {
+            "uri": "transport:PackagingInstructions.procedure",
+            "type": "schema:Text",
+            "comment": "A procedure, expressed as text, for a set of inspection instructions."
+        },
+        {
+            "uri": "transport:PackagingInstructions.requirementIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not a requirement exists for these document handling instructions."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:LogisticsPackaging.applicablePackagingInstructions",
+            "comment": "Instructions applicable to this logistics packaging."
+        },
+        {
+            "uri": "transport:SupplyChainPackaging.applicablePackagingInstructions",
+            "comment": "Instructions applicable to this logistics packaging."
+        }
+    ]
+}

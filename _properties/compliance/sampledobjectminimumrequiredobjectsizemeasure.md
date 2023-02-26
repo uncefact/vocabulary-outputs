@@ -1,5 +1,0 @@
----
-title: sampledObjectMinimumRequiredObjectSizeMeasure
-permalink: compliance/LaboratoryObservationAnalysisMethod.sampledObjectMinimumRequiredObjectSizeMeasure.html
-jsonid: sampledobjectminimumrequiredobjectsizemeasure
----

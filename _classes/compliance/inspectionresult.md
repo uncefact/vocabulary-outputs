@@ -1,5 +1,5 @@
 ---
 title: InspectionResult
 permalink: compliance/InspectionResult.html
-jsonid: inspectionresult
+jsonid: compliance_inspectionresult
 ---

@@ -1,5 +1,5 @@
 ---
 title: ServiceCharge
 permalink: transport/ServiceCharge.html
-jsonid: servicecharge
+jsonid: transport_servicecharge
 ---

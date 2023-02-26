@@ -1,5 +1,5 @@
 ---
 title: AcknowledgementDocument
 permalink: trade/AcknowledgementDocument.html
-jsonid: acknowledgementdocument
+jsonid: trade_acknowledgementdocument
 ---

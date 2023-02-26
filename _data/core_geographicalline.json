@@ -1,0 +1,33 @@
+
+{
+    "label": "GeographicalLine",
+    "uri": "core:GeographicalLine",
+    "comment": "A connection between two points on the surface of the Earth (reference ISO 19136).",
+    "objectProperties": [
+        {
+            "uri": "core:GeographicalLine.associatedDirectPositionList",
+            "type": "core:DirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
+        },
+        {
+            "uri": "core:GeographicalLine.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalLine.associatedLocation",
+            "type": "core:Location",
+            "comment": "A logistics location associated with this specified circle."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:GeographicalFeature.includedGeographicalLine",
+            "comment": "The geographical line included in this geographical feature."
+        },
+        {
+            "uri": "core:GeographicalMultiCurve.memberGeographicalLine",
+            "comment": "A geographical line member of this geographical multi-curve."
+        }
+    ]
+}

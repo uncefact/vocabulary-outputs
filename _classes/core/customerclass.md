@@ -1,5 +1,5 @@
 ---
 title: CustomerClass
 permalink: core/CustomerClass.html
-jsonid: customerclass
+jsonid: core_customerclass
 ---

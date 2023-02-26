@@ -1,5 +1,5 @@
 ---
 title: LinearUnitMeasureType
 permalink: core/LinearUnitMeasureType.html
-jsonid: linearunitmeasuretype
+jsonid: core_linearunitmeasuretype
 ---

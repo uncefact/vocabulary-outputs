@@ -1,5 +1,5 @@
 ---
 title: TradePrice
 permalink: finance/TradePrice.html
-jsonid: tradeprice
+jsonid: finance_tradeprice
 ---

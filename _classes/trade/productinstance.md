@@ -1,5 +1,5 @@
 ---
 title: ProductInstance
 permalink: trade/ProductInstance.html
-jsonid: productinstance
+jsonid: trade_productinstance
 ---

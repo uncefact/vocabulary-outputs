@@ -1,5 +1,5 @@
 ---
 title: ProductBatchCertificate
 permalink: compliance/ProductBatchCertificate.html
-jsonid: productbatchcertificate
+jsonid: compliance_productbatchcertificate
 ---

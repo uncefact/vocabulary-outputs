@@ -1,0 +1,63 @@
+
+{
+    "label": "AgriculturalApplication",
+    "uri": "agriculture:AgriculturalApplication",
+    "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:AgriculturalApplication.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "agriculture:AgriculturalApplication.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "agriculture:AgriculturalApplication.appliedArea",
+            "type": "agriculture:Area",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:AgriculturalApplication.appliedCertificate",
+            "type": "agriculture:AgriculturalCertificate",
+            "comment": "An agricultural certificate applied to this specified agricultural application."
+        },
+        {
+            "uri": "agriculture:AgriculturalApplication.appliedMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Specified material applied to this agricultural application."
+        },
+        {
+            "uri": "agriculture:AgriculturalApplication.specifiedLocation",
+            "type": "core:Location",
+            "comment": "A referenced location specified for this material."
+        },
+        {
+            "uri": "agriculture:AgriculturalApplication.specifiedPlot",
+            "type": "agriculture:Plot",
+            "comment": "A crop plot specified for this agricultural application."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:AgriculturalProcess.appliedAgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.appliedAgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:FieldCrop.appliedAgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Plot.appliedAgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        }
+    ]
+}

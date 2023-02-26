@@ -1,5 +1,5 @@
 ---
 title: SpecifiedChemicalTreatment
 permalink: trade/SpecifiedChemicalTreatment.html
-jsonid: specifiedchemicaltreatment
+jsonid: trade_specifiedchemicaltreatment
 ---

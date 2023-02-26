@@ -1,5 +1,5 @@
 ---
 title: BranchFinancialInstitution
 permalink: finance/BranchFinancialInstitution.html
-jsonid: branchfinancialinstitution
+jsonid: finance_branchfinancialinstitution
 ---

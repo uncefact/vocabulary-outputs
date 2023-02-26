@@ -1,5 +1,5 @@
 ---
 title: TradeSettlementLineMonetarySummation
 permalink: trade/TradeSettlementLineMonetarySummation.html
-jsonid: tradesettlementlinemonetarysummation
+jsonid: trade_tradesettlementlinemonetarysummation
 ---

@@ -1,5 +1,5 @@
 ---
 title: SecurityTag
 permalink: core/SecurityTag.html
-jsonid: securitytag
+jsonid: core_securitytag
 ---

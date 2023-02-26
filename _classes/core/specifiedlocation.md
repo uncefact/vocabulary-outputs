@@ -1,5 +1,5 @@
 ---
 title: SpecifiedLocation
 permalink: core/SpecifiedLocation.html
-jsonid: specifiedlocation
+jsonid: core_specifiedlocation
 ---

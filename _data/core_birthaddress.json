@@ -1,0 +1,29 @@
+
+{
+    "label": "BirthAddress",
+    "uri": "core:BirthAddress",
+    "comment": "The place of birth.",
+    "datatypeProperties": [
+        {
+            "uri": "core:BirthAddress.birthAddressCountryId",
+            "type": "core:CountryId",
+            "comment": "The identifier of a country for this birth address."
+        },
+        {
+            "uri": "core:BirthAddress.cityName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of the city, town or village of this birth address."
+        },
+        {
+            "uri": "core:BirthAddress.countrySubDivisionName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of the sub-division of a country for this trade address."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:Contact.specifiedBirthAddress",
+            "comment": "The birth address specified for this contact person."
+        }
+    ]
+}

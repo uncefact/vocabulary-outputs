@@ -1,0 +1,5 @@
+---
+title: qualityResultReferenceLevelDescription
+permalink: compliance/InspectionResultCharacteristic.qualityResultReferenceLevelDescription.html
+jsonid: compliance_inspectionresultcharacteristic_qualityresultreferenceleveldescription
+---

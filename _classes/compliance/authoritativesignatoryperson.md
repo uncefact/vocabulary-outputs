@@ -1,5 +1,5 @@
 ---
 title: AuthoritativeSignatoryPerson
 permalink: compliance/AuthoritativeSignatoryPerson.html
-jsonid: authoritativesignatoryperson
+jsonid: compliance_authoritativesignatoryperson
 ---

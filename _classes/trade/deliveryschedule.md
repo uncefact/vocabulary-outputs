@@ -1,5 +1,5 @@
 ---
 title: DeliverySchedule
 permalink: trade/DeliverySchedule.html
-jsonid: deliveryschedule
+jsonid: trade_deliveryschedule
 ---

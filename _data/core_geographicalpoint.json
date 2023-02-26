@@ -1,0 +1,37 @@
+
+{
+    "label": "GeographicalPoint",
+    "uri": "core:GeographicalPoint",
+    "comment": "A point on the surface of the Earth (reference ISO 19136).",
+    "objectProperties": [
+        {
+            "uri": "core:GeographicalPoint.associatedDirectPositionList",
+            "type": "core:DirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
+        },
+        {
+            "uri": "core:GeographicalPoint.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalPoint.associatedLocation",
+            "type": "core:Location",
+            "comment": "A logistics location associated with this specified circle."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:Circle.centreGeographicalPoint",
+            "comment": "The geographical point which defines the centre of this specified circle."
+        },
+        {
+            "uri": "core:GeographicalFeature.includedGeographicalPoint",
+            "comment": "The geographical point included in this geographical feature."
+        },
+        {
+            "uri": "core:GeographicalMultiPoint.memberGeographicalPoint",
+            "comment": "A geographical point member of this geographical multi-point feature."
+        }
+    ]
+}

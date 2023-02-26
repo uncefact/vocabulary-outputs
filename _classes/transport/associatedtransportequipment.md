@@ -1,5 +1,5 @@
 ---
 title: AssociatedTransportEquipment
 permalink: transport/AssociatedTransportEquipment.html
-jsonid: associatedtransportequipment
+jsonid: transport_associatedtransportequipment
 ---

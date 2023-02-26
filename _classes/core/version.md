@@ -1,5 +1,5 @@
 ---
 title: Version
 permalink: core/Version.html
-jsonid: version
+jsonid: core_version
 ---

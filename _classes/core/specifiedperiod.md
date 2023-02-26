@@ -1,5 +1,5 @@
 ---
 title: SpecifiedPeriod
 permalink: core/SpecifiedPeriod.html
-jsonid: specifiedperiod
+jsonid: core_specifiedperiod
 ---

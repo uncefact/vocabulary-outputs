@@ -1,0 +1,79 @@
+
+{
+    "label": "Area",
+    "uri": "agriculture:Area",
+    "comment": "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform agricultural treatment.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:Area.designatedSection",
+            "type": "schema:Text",
+            "comment": "The designated section, expressed as text, of this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "agriculture:Area.multiSurfaceTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the multi-surface type for this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "agriculture:Area.thirdPartyIssuedId",
+            "type": "schema:Text",
+            "comment": "An alternate identifier issued by a third party for this laboratory observation party."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "agriculture:Area.applicableAgriculturalCharacteristic",
+            "type": "agriculture:AgriculturalCharacteristic",
+            "comment": "An agricultural characteristic applicable to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.appliedAgriculturalApplication",
+            "type": "agriculture:AgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.harvestedProduce",
+            "type": "agriculture:Produce",
+            "comment": "Crop produce harvested from this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.specifiedLocation",
+            "type": "core:Location",
+            "comment": "A referenced location specified for this material."
+        },
+        {
+            "uri": "agriculture:Area.specifiedPlot",
+            "type": "agriculture:Plot",
+            "comment": "A crop plot specified for this agricultural application."
+        },
+        {
+            "uri": "agriculture:Area.subordinateArea",
+            "type": "agriculture:Area",
+            "comment": "An agricultural zone area subordinate to this agricultural zone area."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:AgriculturalApplication.appliedArea",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Area.subordinateArea",
+            "comment": "An agricultural zone area subordinate to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:Plot.specifiedArea",
+            "comment": "An agricultural zone area specified for this crop plot."
+        }
+    ]
+}

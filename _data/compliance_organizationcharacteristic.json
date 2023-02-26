@@ -1,0 +1,101 @@
+
+{
+    "label": "OrganizationCharacteristic",
+    "uri": "compliance:OrganizationCharacteristic",
+    "comment": "A prominent attribute or aspect of an organization.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:OrganizationCharacteristic.condition",
+            "type": "schema:Text",
+            "comment": "A condition or status, expressed as text, for this process characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.value",
+            "type": "schema:Text",
+            "comment": "A value, expressed as text, for this document characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a value for this specified range."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time or other date time value for this document characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueIndicator",
+            "type": "schema:Boolean",
+            "comment": "The value for this metric characteristic expressed as an indicator."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueNumeric",
+            "type": "schema:Text",
+            "comment": "A value, expressed as a number, for this document characteristic."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:OrganizationCharacteristic.applicableStandard",
+            "type": "compliance:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueAmount",
+            "type": "core:AmountType",
+            "comment": "A value, expressed as a monetary value, for this document characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueMethod",
+            "type": "core:SpecifiedMethod",
+            "comment": "A method specified for a value of this metric characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueParameter",
+            "type": "core:SpecifiedParameter",
+            "comment": "A parameter specified for a value for this metric characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueRange",
+            "type": "core:Range",
+            "comment": "A range specified for a value of this metric characteristic."
+        },
+        {
+            "uri": "compliance:OrganizationCharacteristic.valueTolerance",
+            "type": "core:Tolerance",
+            "comment": "A tolerance specified for a value of this metric characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:OrganizationalCertificate.applicableOrganizationCharacteristic",
+            "comment": "A characteristic applicable to this organization certificate."
+        }
+    ]
+}

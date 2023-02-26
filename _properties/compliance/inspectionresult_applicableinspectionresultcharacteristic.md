@@ -1,0 +1,5 @@
+---
+title: applicableInspectionResultCharacteristic
+permalink: compliance/InspectionResult.applicableInspectionResultCharacteristic.html
+jsonid: compliance_inspectionresult_applicableinspectionresultcharacteristic
+---

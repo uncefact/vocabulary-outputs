@@ -1,5 +1,5 @@
 ---
 title: LocationParty
 permalink: transport/LocationParty.html
-jsonid: locationparty
+jsonid: transport_locationparty
 ---

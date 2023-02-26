@@ -1,0 +1,5 @@
+---
+title: personalLanguageProficiencyLanguageCode
+permalink: core/LanguageProficiency.personalLanguageProficiencyLanguageCode.html
+jsonid: core_languageproficiency_personallanguageproficiencylanguagecode
+---

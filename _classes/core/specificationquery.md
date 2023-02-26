@@ -1,5 +1,5 @@
 ---
 title: SpecificationQuery
 permalink: core/SpecificationQuery.html
-jsonid: specificationquery
+jsonid: core_specificationquery
 ---

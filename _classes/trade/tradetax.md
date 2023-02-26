@@ -1,5 +1,5 @@
 ---
 title: TradeTax
 permalink: trade/TradeTax.html
-jsonid: tradetax
+jsonid: trade_tradetax
 ---

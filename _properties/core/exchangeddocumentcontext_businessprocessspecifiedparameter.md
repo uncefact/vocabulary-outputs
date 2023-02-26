@@ -1,0 +1,5 @@
+---
+title: businessProcessSpecifiedParameter
+permalink: core/ExchangedDocumentContext.businessProcessSpecifiedParameter.html
+jsonid: core_exchangeddocumentcontext_businessprocessspecifiedparameter
+---

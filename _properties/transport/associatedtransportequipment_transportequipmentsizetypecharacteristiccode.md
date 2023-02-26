@@ -1,0 +1,5 @@
+---
+title: transportEquipmentSizeTypeCharacteristicCode
+permalink: transport/AssociatedTransportEquipment.transportEquipmentSizeTypeCharacteristicCode.html
+jsonid: transport_associatedtransportequipment_transportequipmentsizetypecharacteristiccode
+---

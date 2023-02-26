@@ -1,5 +1,5 @@
 ---
 title: Event
 permalink: core/Event.html
-jsonid: event
+jsonid: core_event
 ---

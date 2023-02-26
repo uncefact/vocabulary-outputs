@@ -1,0 +1,5 @@
+---
+title: containedConsignmentQuantity
+permalink: transport/LogisticsTransportEquipment.containedConsignmentQuantity.html
+jsonid: transport_logisticstransportequipment_containedconsignmentquantity
+---

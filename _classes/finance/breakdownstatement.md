@@ -1,5 +1,5 @@
 ---
 title: BreakdownStatement
 permalink: finance/BreakdownStatement.html
-jsonid: breakdownstatement
+jsonid: finance_breakdownstatement
 ---

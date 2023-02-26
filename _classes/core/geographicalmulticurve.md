@@ -1,5 +1,5 @@
 ---
 title: GeographicalMultiCurve
 permalink: core/GeographicalMultiCurve.html
-jsonid: geographicalmulticurve
+jsonid: core_geographicalmulticurve
 ---

@@ -1,5 +1,5 @@
 ---
 title: QuantityType
 permalink: core/QuantityType.html
-jsonid: quantitytype
+jsonid: core_quantitytype
 ---

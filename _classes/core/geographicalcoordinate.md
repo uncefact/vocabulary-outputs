@@ -1,5 +1,5 @@
 ---
 title: GeographicalCoordinate
 permalink: core/GeographicalCoordinate.html
-jsonid: geographicalcoordinate
+jsonid: core_geographicalcoordinate
 ---

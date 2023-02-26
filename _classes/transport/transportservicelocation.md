@@ -1,5 +1,5 @@
 ---
 title: TransportServiceLocation
 permalink: transport/TransportServiceLocation.html
-jsonid: transportservicelocation
+jsonid: transport_transportservicelocation
 ---

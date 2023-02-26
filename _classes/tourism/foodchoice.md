@@ -1,5 +1,5 @@
 ---
 title: FoodChoice
 permalink: tourism/FoodChoice.html
-jsonid: foodchoice
+jsonid: tourism_foodchoice
 ---

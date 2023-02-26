@@ -1,5 +1,5 @@
 ---
 title: ExchangedDeclaration
 permalink: trade/ExchangedDeclaration.html
-jsonid: exchangeddeclaration
+jsonid: trade_exchangeddeclaration
 ---

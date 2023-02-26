@@ -1,0 +1,5 @@
+---
+title: specifiedAgriculturalCharacteristic
+permalink: agriculture/CropProduceBatch.specifiedAgriculturalCharacteristic.html
+jsonid: agriculture_cropproducebatch_specifiedagriculturalcharacteristic
+---

@@ -1,0 +1,5 @@
+---
+title: inputQuantitySpecifiedEventElement
+permalink: trade/TTTransformationEvent.inputQuantitySpecifiedEventElement.html
+jsonid: trade_tttransformationevent_inputquantityspecifiedeventelement
+---

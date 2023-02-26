@@ -1,0 +1,5 @@
+---
+title: transportDangerousGoodsPackageTypeCode
+permalink: transport/DangerousGoods.transportDangerousGoodsPackageTypeCode.html
+jsonid: transport_dangerousgoods_transportdangerousgoodspackagetypecode
+---

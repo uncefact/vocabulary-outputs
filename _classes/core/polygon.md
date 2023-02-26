@@ -1,5 +1,5 @@
 ---
 title: Polygon
 permalink: core/Polygon.html
-jsonid: polygon
+jsonid: core_polygon
 ---

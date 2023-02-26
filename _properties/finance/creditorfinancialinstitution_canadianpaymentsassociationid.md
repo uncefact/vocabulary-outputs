@@ -1,0 +1,5 @@
+---
+title: canadianPaymentsAssociationId
+permalink: finance/CreditorFinancialInstitution.canadianPaymentsAssociationId.html
+jsonid: finance_creditorfinancialinstitution_canadianpaymentsassociationid
+---

@@ -1,5 +1,5 @@
 ---
 title: MetricCharacteristic
 permalink: core/MetricCharacteristic.html
-jsonid: metriccharacteristic
+jsonid: core_metriccharacteristic
 ---

@@ -1,5 +1,5 @@
 ---
 title: SupplyChainTradeTransaction
 permalink: trade/SupplyChainTradeTransaction.html
-jsonid: supplychaintradetransaction
+jsonid: trade_supplychaintradetransaction
 ---

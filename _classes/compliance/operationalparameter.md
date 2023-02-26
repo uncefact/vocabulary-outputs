@@ -1,5 +1,5 @@
 ---
 title: OperationalParameter
 permalink: compliance/OperationalParameter.html
-jsonid: operationalparameter
+jsonid: compliance_operationalparameter
 ---

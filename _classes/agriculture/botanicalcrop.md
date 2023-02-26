@@ -1,5 +1,5 @@
 ---
 title: BotanicalCrop
 permalink: agriculture/BotanicalCrop.html
-jsonid: botanicalcrop
+jsonid: agriculture_botanicalcrop
 ---

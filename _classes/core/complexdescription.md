@@ -1,5 +1,5 @@
 ---
 title: ComplexDescription
 permalink: core/ComplexDescription.html
-jsonid: complexdescription
+jsonid: core_complexdescription
 ---

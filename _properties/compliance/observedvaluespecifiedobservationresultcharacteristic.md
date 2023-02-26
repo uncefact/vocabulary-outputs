@@ -1,5 +1,0 @@
----
-title: observedValueSpecifiedObservationResultCharacteristic
-permalink: compliance/ObservationResult.observedValueSpecifiedObservationResultCharacteristic.html
-jsonid: observedvaluespecifiedobservationresultcharacteristic
----

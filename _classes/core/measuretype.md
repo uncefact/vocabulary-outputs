@@ -1,5 +1,5 @@
 ---
 title: MeasureType
 permalink: core/MeasureType.html
-jsonid: measuretype
+jsonid: core_measuretype
 ---

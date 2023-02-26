@@ -1,5 +1,5 @@
 ---
 title: Booking
 permalink: finance/Booking.html
-jsonid: booking
+jsonid: finance_booking
 ---

@@ -1,0 +1,5 @@
+---
+title: linearUnitLoadingLengthMeasure
+permalink: transport/LogisticsTransportEquipment.linearUnitLoadingLengthMeasure.html
+jsonid: transport_logisticstransportequipment_linearunitloadinglengthmeasure
+---

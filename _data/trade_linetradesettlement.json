@@ -1,0 +1,171 @@
+
+{
+    "label": "LineTradeSettlement",
+    "uri": "trade:LineTradeSettlement",
+    "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:LineTradeSettlement.amountDirectionCode",
+            "type": "schema:Text",
+            "comment": "The code, specifying the direction, either an addition or subtraction, for the amount of this line trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.creditorReferenceTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of creditor reference for this line trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.discountIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not a discount applies to the item in this line trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.invoiceDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the invoice in this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.invoiceIssuerReference",
+            "type": "schema:Text",
+            "comment": "The invoice issuer reference, expressed as text, for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.payerReference",
+            "type": "schema:Text",
+            "comment": "The payer reference, expressed as text, for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.paymentReference",
+            "type": "schema:Text",
+            "comment": "A payment reference, expressed as text, for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.priceCurrencyCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the price currency for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:LineTradeSettlement.additionalDocument",
+            "type": "core:Document",
+            "comment": "An additional document referenced in this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.applicableTax",
+            "type": "trade:TradeTax",
+            "comment": "A tax applicable to this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.associatedDocument",
+            "type": "core:Document",
+            "comment": "A document associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.associatedDocumentLineDocument",
+            "type": "trade:DocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.billingPeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "A billing period specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.invoiceDocument",
+            "type": "core:Document",
+            "comment": "An invoice document referenced by this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.invoiceeParty",
+            "type": "trade:TradeParty",
+            "comment": "The party to whom an invoice is issued for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.payableSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "A payable accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.payerParty",
+            "type": "trade:TradeParty",
+            "comment": "The payer party for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.paymentAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of a payment for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.purchaseSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "A purchase accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.receivableSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "A receivable accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.salesSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "A sales accounting account specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.specifiedAllowanceCharge",
+            "type": "finance:TradeAllowanceCharge",
+            "comment": "An allowance or charge specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.specifiedFinancialAdjustment",
+            "type": "finance:FinancialAdjustment",
+            "comment": "A financial adjustment specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.specifiedFinancialCard",
+            "type": "finance:FinancialCard",
+            "comment": "A financial card specified in this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.specifiedPaymentTerms",
+            "type": "finance:PaymentTerms",
+            "comment": "Payment terms specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.specifiedServiceCharge",
+            "type": "transport:ServiceCharge",
+            "comment": "A logistics service charge specified for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.specifiedTradeSettlementLineMonetarySummation",
+            "type": "trade:TradeSettlementLineMonetarySummation",
+            "comment": "The monetary summation totals specified for this line trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.subtotalCalculatedTax",
+            "type": "trade:TradeTax",
+            "comment": "A tax subtotal calculated for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.totalAdjustmentAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of the total adjustment for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.tradeTransaction",
+            "type": "trade:LineTradeTransaction",
+            "comment": "A trade transaction referenced in this line trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:SupplyChainTradeLineItem.specifiedLineTradeSettlement",
+            "comment": "A line trade settlement specified for this supply chain trade line item."
+        }
+    ]
+}

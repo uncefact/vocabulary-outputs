@@ -1,5 +1,5 @@
 ---
 title: Standard
 permalink: compliance/Standard.html
-jsonid: standard
+jsonid: compliance_standard
 ---

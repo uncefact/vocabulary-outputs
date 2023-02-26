@@ -1,0 +1,66 @@
+
+{
+    "label": "RequestingParty",
+    "uri": "finance:RequestingParty",
+    "comment": "An individual, a group, or a body having a role as a requestor.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:RequestingParty.accessRightsTypeAccessRightsCode",
+            "type": "finance:AccessRightsTypeCodeList",
+            "comment": "The code specifying the access rights, such as unlimited, restricted, prohibited, for this requesting party."
+        },
+        {
+            "uri": "finance:RequestingParty.bEIId",
+            "type": "schema:Text",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+        },
+        {
+            "uri": "finance:RequestingParty.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "finance:RequestingParty.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "finance:RequestingParty.languageCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a language for this requesting party."
+        },
+        {
+            "uri": "finance:RequestingParty.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "finance:RequestingParty.partyTypeCode",
+            "type": "finance:PartyTypeCodeList",
+            "comment": "A code specifying the type of TT party."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "finance:RequestingParty.lineOfCreditSpecifiedFinancialAccount",
+            "type": "finance:FinancingFinancialAccount",
+            "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
+        },
+        {
+            "uri": "finance:RequestingParty.specifiedCreditorFinancialAccount",
+            "type": "finance:CreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:RequestingParty.specifiedProprietaryIdentity",
+            "type": "core:ProprietaryIdentity",
+            "comment": "A proprietary Identity specified for this person."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:FinancingRequestDocument.specifiedRequestingParty",
+            "comment": "The requesting party specified in this financing request document."
+        }
+    ]
+}

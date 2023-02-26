@@ -1,5 +1,5 @@
 ---
 title: SupplyChainInventory
 permalink: trade/SupplyChainInventory.html
-jsonid: supplychaininventory
+jsonid: trade_supplychaininventory
 ---

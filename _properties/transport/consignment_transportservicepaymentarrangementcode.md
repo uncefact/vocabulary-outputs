@@ -1,0 +1,5 @@
+---
+title: transportServicePaymentArrangementCode
+permalink: transport/Consignment.transportServicePaymentArrangementCode.html
+jsonid: transport_consignment_transportservicepaymentarrangementcode
+---

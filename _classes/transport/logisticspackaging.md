@@ -1,5 +1,5 @@
 ---
 title: LogisticsPackaging
 permalink: transport/LogisticsPackaging.html
-jsonid: logisticspackaging
+jsonid: transport_logisticspackaging
 ---

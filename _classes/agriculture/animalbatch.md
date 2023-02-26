@@ -1,5 +1,5 @@
 ---
 title: AnimalBatch
 permalink: agriculture/AnimalBatch.html
-jsonid: animalbatch
+jsonid: agriculture_animalbatch
 ---

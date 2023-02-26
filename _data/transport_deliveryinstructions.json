@@ -1,0 +1,38 @@
+
+{
+    "label": "DeliveryInstructions",
+    "uri": "transport:DeliveryInstructions",
+    "comment": "Delivery information of an instructive nature.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:DeliveryInstructions.deliveryInstructionsDescriptionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a description of these delivery instructions."
+        },
+        {
+            "uri": "transport:DeliveryInstructions.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "transport:DeliveryInstructions.handling",
+            "type": "schema:Text",
+            "comment": "Delivery handling instructions expressed as text."
+        },
+        {
+            "uri": "transport:DeliveryInstructions.handlingCode",
+            "type": "schema:Text",
+            "comment": "A code specifying delivery handling instructions."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.deliveryInstructions",
+            "comment": "Delivery instructions for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.deliveryInstructions",
+            "comment": "Delivery instructions for this piece of logistics transport equipment."
+        }
+    ]
+}

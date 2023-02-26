@@ -1,0 +1,5 @@
+---
+title: japanFinancialInstitutionCommonId
+permalink: finance/DebtorFinancialInstitution.japanFinancialInstitutionCommonId.html
+jsonid: finance_debtorfinancialinstitution_japanfinancialinstitutioncommonid
+---

@@ -1,0 +1,5 @@
+---
+title: purchaseSpecifiedAccountingAccount
+permalink: trade/HeaderTradeSettlement.purchaseSpecifiedAccountingAccount.html
+jsonid: trade_headertradesettlement_purchasespecifiedaccountingaccount
+---

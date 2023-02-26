@@ -1,5 +1,5 @@
 ---
 title: GoodsCharacteristic
 permalink: compliance/GoodsCharacteristic.html
-jsonid: goodscharacteristic
+jsonid: compliance_goodscharacteristic
 ---

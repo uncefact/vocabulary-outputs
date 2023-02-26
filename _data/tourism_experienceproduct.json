@@ -1,0 +1,155 @@
+
+{
+    "label": "ExperienceProduct",
+    "uri": "tourism:ExperienceProduct",
+    "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience.",
+    "datatypeProperties": [
+        {
+            "uri": "tourism:ExperienceProduct.applicableQuantityUnitTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of quantity unit applicable for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.brandName",
+            "type": "schema:Text",
+            "comment": "A brand name, expressed as text, for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.certifiedPersonArrangementIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not a certified person arrangement is made for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.indemnityClause",
+            "type": "schema:Text",
+            "comment": "An indemnity clause, expressed as text, for this experience event."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.instruction",
+            "type": "schema:Text",
+            "comment": "An instruction, expressed as text, for this experience event."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.location",
+            "type": "schema:Text",
+            "comment": "A location, expressed as text, for this MDH sanitary measure."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.objective",
+            "type": "schema:Text",
+            "comment": "An objective, expressed as text, for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.requiredReservationGuaranteeIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this experience product requires a reservation guarantee."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.reservationGuarantee",
+            "type": "schema:Text",
+            "comment": "A reservation guarantee, expressed as text, for this experience event."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.theme",
+            "type": "schema:Text",
+            "comment": "A theme, expressed as text, for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.themeTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of theme for this experience product."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "tourism:ExperienceProduct.applicableSpecifiedNote",
+            "type": "core:SpecifiedNote",
+            "comment": "A note applicable for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.calculatedPrice",
+            "type": "finance:TradePrice",
+            "comment": "A calculated price for this experience event."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.distinctiveFeature",
+            "type": "core:SpecifiedFeature",
+            "comment": "A distinctive feature of this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.includedEvent",
+            "type": "tourism:ExperienceEvent",
+            "comment": "An event included within this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.maximumUnitQuantity",
+            "type": "core:QuantityType",
+            "comment": "The maximum number of units of this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.minimumUnitQuantity",
+            "type": "core:QuantityType",
+            "comment": "The minimum number of units of this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.operationalPeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "A operational period for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.optionalProduct",
+            "type": "tourism:ExperienceProduct",
+            "comment": "An optional product for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.providedCertificate",
+            "type": "compliance:SpecifiedCertificate",
+            "comment": "A certificate provided for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.providedRequirement",
+            "type": "compliance:Requirement",
+            "comment": "A requirement provided for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.requiredUsageCondition",
+            "type": "core:UsageCondition",
+            "comment": "A required usage condition for this experience product."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.specifiedTradeParty",
+            "type": "core:Party",
+            "comment": "A party specified for this experience event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "tourism:ExperienceItem.availableProduct",
+            "comment": "An available product for this specified experience item."
+        },
+        {
+            "uri": "tourism:ExperienceProduct.optionalProduct",
+            "comment": "An optional product for this experience product."
+        }
+    ]
+}

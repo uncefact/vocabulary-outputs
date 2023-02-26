@@ -1,0 +1,71 @@
+
+{
+    "label": "LocationParty",
+    "uri": "transport:LocationParty",
+    "comment": "An individual, a group, or a body having a role related to a location.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:LocationParty.countryId",
+            "type": "schema:Text",
+            "comment": "A unique country identifier for this location party."
+        },
+        {
+            "uri": "transport:LocationParty.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:LocationParty.locationPartyRoleCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a role of this location party."
+        },
+        {
+            "uri": "transport:LocationParty.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:LocationParty.definedContact",
+            "type": "core:Contact",
+            "comment": "A trade contact defined for this location party."
+        },
+        {
+            "uri": "transport:LocationParty.faxCommunication",
+            "type": "core:Communication",
+            "comment": "Facsimile communication information for this contact person."
+        },
+        {
+            "uri": "transport:LocationParty.postalAddress",
+            "type": "core:Address",
+            "comment": "A postal address for this legally set up organization."
+        },
+        {
+            "uri": "transport:LocationParty.providedService",
+            "type": "transport:Service",
+            "comment": "A transport service provided by this location party."
+        },
+        {
+            "uri": "transport:LocationParty.specifiedTransportPerson",
+            "type": "transport:TransportPerson",
+            "comment": "A transport related person specified for this location party."
+        },
+        {
+            "uri": "transport:LocationParty.telephoneCommunication",
+            "type": "core:Communication",
+            "comment": "A telephone communication for this trade party."
+        },
+        {
+            "uri": "transport:LocationParty.uRICommunication",
+            "type": "core:Communication",
+            "comment": "A Uniform Resource Identifier (URI) communication for this trade party, such as a web or email address."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:LogisticsLocation.servicingSpecifiedParty",
+            "comment": "A servicing party specified for this logistics related location."
+        }
+    ]
+}

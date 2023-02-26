@@ -1,0 +1,5 @@
+---
+title: geoCoordinateIdentificationGeographicalCoordinate
+permalink: trade/TradeAddress.geoCoordinateIdentificationGeographicalCoordinate.html
+jsonid: trade_tradeaddress_geocoordinateidentificationgeographicalcoordinate
+---

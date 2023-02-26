@@ -1,5 +1,5 @@
 ---
 title: Cheque
 permalink: finance/Cheque.html
-jsonid: cheque
+jsonid: finance_cheque
 ---

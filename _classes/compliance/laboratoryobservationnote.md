@@ -1,5 +1,5 @@
 ---
 title: LaboratoryObservationNote
 permalink: compliance/LaboratoryObservationNote.html
-jsonid: laboratoryobservationnote
+jsonid: compliance_laboratoryobservationnote
 ---

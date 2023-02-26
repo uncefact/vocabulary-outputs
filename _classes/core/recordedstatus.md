@@ -1,5 +1,5 @@
 ---
 title: RecordedStatus
 permalink: core/RecordedStatus.html
-jsonid: recordedstatus
+jsonid: core_recordedstatus
 ---

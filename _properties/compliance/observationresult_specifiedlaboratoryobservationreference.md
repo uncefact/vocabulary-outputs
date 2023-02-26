@@ -1,0 +1,5 @@
+---
+title: specifiedLaboratoryObservationReference
+permalink: compliance/ObservationResult.specifiedLaboratoryObservationReference.html
+jsonid: compliance_observationresult_specifiedlaboratoryobservationreference
+---

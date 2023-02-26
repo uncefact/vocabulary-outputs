@@ -1,0 +1,40 @@
+
+{
+    "label": "InspectionEvent",
+    "uri": "compliance:InspectionEvent",
+    "comment": "A significant occurrence or happening related to an inspection.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:InspectionEvent.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "compliance:InspectionEvent.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        },
+        {
+            "uri": "compliance:InspectionEvent.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:InspectionEvent.occurrenceLocation",
+            "type": "core:Location",
+            "comment": "The referenced location for the occurrence of this supply chain event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:SpecifiedInspection.specifiedInspectionEvent",
+            "comment": "A specified inspection event for this sustainability inspection."
+        },
+        {
+            "uri": "compliance:SustainabilityInspection.specifiedInspectionEvent",
+            "comment": "A specified inspection event for this sustainability inspection."
+        }
+    ]
+}

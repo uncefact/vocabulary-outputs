@@ -1,5 +1,5 @@
 ---
 title: Note
 permalink: core/Note.html
-jsonid: note
+jsonid: core_note
 ---

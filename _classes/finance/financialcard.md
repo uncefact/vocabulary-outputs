@@ -1,5 +1,5 @@
 ---
 title: FinancialCard
 permalink: finance/FinancialCard.html
-jsonid: financialcard
+jsonid: finance_financialcard
 ---

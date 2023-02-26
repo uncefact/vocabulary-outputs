@@ -1,5 +1,5 @@
 ---
 title: ProductHandlingProcess
 permalink: trade/ProductHandlingProcess.html
-jsonid: producthandlingprocess
+jsonid: trade_producthandlingprocess
 ---

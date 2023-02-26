@@ -1,5 +1,5 @@
 ---
 title: GeographicalGrid
 permalink: core/GeographicalGrid.html
-jsonid: geographicalgrid
+jsonid: core_geographicalgrid
 ---

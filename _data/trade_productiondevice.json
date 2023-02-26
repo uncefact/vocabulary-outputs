@@ -1,0 +1,132 @@
+
+{
+    "label": "ProductionDevice",
+    "uri": "trade:ProductionDevice",
+    "comment": "An object, especially a piece of mechanical or electronic equipment, made or adapted in order to perform a production activity.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:ProductionDevice.functionDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of a function for this trade product."
+        },
+        {
+            "uri": "trade:ProductionDevice.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:ProductionDevice.productionDeviceType",
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, for this specified production device."
+        },
+        {
+            "uri": "trade:ProductionDevice.subordinateTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the subordinate type for this production device."
+        },
+        {
+            "uri": "trade:ProductionDevice.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:ProductionDevice.applicableParameter",
+            "type": "core:SpecifiedParameter",
+            "comment": "A parameter applicable to this specified method."
+        },
+        {
+            "uri": "trade:ProductionDevice.combinedMachine",
+            "type": "trade:Machine",
+            "comment": "A production machine combined with this production machine."
+        },
+        {
+            "uri": "trade:ProductionDevice.combinedProductionDevice",
+            "type": "trade:ProductionDevice",
+            "comment": "A production device combined with this production machine."
+        },
+        {
+            "uri": "trade:ProductionDevice.inputApplicableBatch",
+            "type": "trade:ProductBatch",
+            "comment": "An input batch applicable to this production machine."
+        },
+        {
+            "uri": "trade:ProductionDevice.inputApplicableMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Input material applicable to this facility production unit."
+        },
+        {
+            "uri": "trade:ProductionDevice.inputApplicableProduct",
+            "type": "trade:TradeProduct",
+            "comment": "An input product applicable to this facility production unit."
+        },
+        {
+            "uri": "trade:ProductionDevice.inputCapacityMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the input capacity for this production facility."
+        },
+        {
+            "uri": "trade:ProductionDevice.outputApplicableBatch",
+            "type": "trade:ProductBatch",
+            "comment": "An output batch applicable to this specified production device."
+        },
+        {
+            "uri": "trade:ProductionDevice.outputApplicableMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Output material applicable to this facility production unit."
+        },
+        {
+            "uri": "trade:ProductionDevice.outputApplicableProduct",
+            "type": "trade:TradeProduct",
+            "comment": "An output product applicable to this facility production unit."
+        },
+        {
+            "uri": "trade:ProductionDevice.outputCapacityMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the output capacity for this production facility."
+        },
+        {
+            "uri": "trade:ProductionDevice.reportingIOTDeviceSupplyChainEvent",
+            "type": "transport:SupplyChainEvent",
+            "comment": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
+        },
+        {
+            "uri": "trade:ProductionDevice.requestedOperationalApplicableParameter",
+            "type": "core:SpecifiedParameter",
+            "comment": "A requested operational parameter applicable to this production machine."
+        },
+        {
+            "uri": "trade:ProductionDevice.specifiedLocation",
+            "type": "core:Location",
+            "comment": "A referenced location specified for this material."
+        },
+        {
+            "uri": "trade:ProductionDevice.specifiedProductionUnit",
+            "type": "trade:ProductionUnit",
+            "comment": "A facility production unit for this specified production device."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:Colour.applicableProductionDevice",
+            "comment": "A production device applicable to this product colour."
+        },
+        {
+            "uri": "trade:Machine.combinedProductionDevice",
+            "comment": "A production device combined with this production machine."
+        },
+        {
+            "uri": "trade:Print.applicableProductionDevice",
+            "comment": "A production device applicable to this product colour."
+        },
+        {
+            "uri": "trade:ProductionDevice.combinedProductionDevice",
+            "comment": "A production device combined with this production machine."
+        },
+        {
+            "uri": "trade:ProductionProcess.allocatedProductionDevice",
+            "comment": "A production device allocated to this production process."
+        }
+    ]
+}

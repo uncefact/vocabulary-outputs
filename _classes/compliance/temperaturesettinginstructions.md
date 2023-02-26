@@ -1,5 +1,5 @@
 ---
 title: TemperatureSettingInstructions
 permalink: compliance/TemperatureSettingInstructions.html
-jsonid: temperaturesettinginstructions
+jsonid: compliance_temperaturesettinginstructions
 ---

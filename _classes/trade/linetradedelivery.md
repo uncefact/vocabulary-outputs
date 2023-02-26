@@ -1,5 +1,5 @@
 ---
 title: LineTradeDelivery
 permalink: trade/LineTradeDelivery.html
-jsonid: linetradedelivery
+jsonid: trade_linetradedelivery
 ---

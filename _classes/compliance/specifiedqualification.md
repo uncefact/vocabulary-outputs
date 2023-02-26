@@ -1,5 +1,5 @@
 ---
 title: SpecifiedQualification
 permalink: compliance/SpecifiedQualification.html
-jsonid: specifiedqualification
+jsonid: compliance_specifiedqualification
 ---

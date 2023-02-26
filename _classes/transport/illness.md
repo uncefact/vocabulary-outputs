@@ -1,5 +1,5 @@
 ---
 title: Illness
 permalink: transport/Illness.html
-jsonid: illness
+jsonid: transport_illness
 ---

@@ -1,5 +1,5 @@
 ---
 title: Chemical
 permalink: compliance/Chemical.html
-jsonid: chemical
+jsonid: compliance_chemical
 ---

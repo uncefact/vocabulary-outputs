@@ -1,0 +1,75 @@
+
+{
+    "label": "SpecifiedParameter",
+    "uri": "core:SpecifiedParameter",
+    "comment": "A specified feature that is fixed for the case in question but may be different in other cases.",
+    "datatypeProperties": [
+        {
+            "uri": "core:SpecifiedParameter.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "core:SpecifiedParameter.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "core:SpecifiedParameter.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "core:SpecifiedParameter.parameterType",
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, for this observation objective parameter."
+        },
+        {
+            "uri": "core:SpecifiedParameter.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "core:SpecifiedParameter.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "core:SpecifiedParameter.value",
+            "type": "schema:Text",
+            "comment": "A value, expressed as text, for this document characteristic."
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueAllowedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the value for this specified parameter is allowed."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:SpecifiedParameter.statusValueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value of the status for this specified parameter."
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        },
+        {
+            "uri": "core:SpecifiedParameter.valueTolerance",
+            "type": "core:Tolerance",
+            "comment": "A tolerance specified for a value of this metric characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:MetricCharacteristic.valueParameter",
+            "comment": "A parameter specified for a value for this metric characteristic."
+        },
+        {
+            "uri": "core:SpecifiedMethod.applicableParameter",
+            "comment": "A parameter applicable to this specified method."
+        }
+    ]
+}

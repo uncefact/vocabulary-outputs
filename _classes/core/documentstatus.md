@@ -1,5 +1,5 @@
 ---
 title: DocumentStatus
 permalink: core/DocumentStatus.html
-jsonid: documentstatus
+jsonid: core_documentstatus
 ---

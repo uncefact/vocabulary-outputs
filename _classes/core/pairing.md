@@ -1,5 +1,5 @@
 ---
 title: Pairing
 permalink: core/Pairing.html
-jsonid: pairing
+jsonid: core_pairing
 ---

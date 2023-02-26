@@ -1,5 +1,5 @@
 ---
 title: Communication
 permalink: core/Communication.html
-jsonid: communication
+jsonid: core_communication
 ---

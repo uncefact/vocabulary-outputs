@@ -1,0 +1,56 @@
+
+{
+    "label": "SubordinateTradeLineItem",
+    "uri": "trade:SubordinateTradeLineItem",
+    "comment": "A collection of information specific to a subordinate item being used or reported on for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:SubordinateTradeLineItem.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "trade:SubordinateTradeLineItem.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:SubordinateTradeLineItem.responseReasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a response reason for this exchanged document."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:SubordinateTradeLineItem.applicableProduct",
+            "type": "trade:TradeProduct",
+            "comment": "A product applicable for this subordinate trade line item."
+        },
+        {
+            "uri": "trade:SubordinateTradeLineItem.specifiedProduct",
+            "type": "trade:Product",
+            "comment": "The referenced product specified for this subordinate trade line item."
+        },
+        {
+            "uri": "trade:SubordinateTradeLineItem.specifiedSubordinateLineTradeAgreement",
+            "type": "trade:SubordinateLineTradeAgreement",
+            "comment": "The trade agreement specified for this subordinate trade line item."
+        },
+        {
+            "uri": "trade:SubordinateTradeLineItem.specifiedSubordinateLineTradeDelivery",
+            "type": "trade:SubordinateLineTradeDelivery",
+            "comment": "The delivery specified for this subordinate trade line item."
+        },
+        {
+            "uri": "trade:SubordinateTradeLineItem.specifiedSubordinateLineTradeSettlement",
+            "type": "trade:SubordinateLineTradeSettlement",
+            "comment": "A trade settlement specified for this subordinate trade line item."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:SupplyChainTradeLineItem.includedSubordinateTradeLineItem",
+            "comment": "A subordinate trade line item included in this supply chain trade line item."
+        }
+    ]
+}

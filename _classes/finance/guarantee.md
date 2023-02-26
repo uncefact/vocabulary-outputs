@@ -1,5 +1,5 @@
 ---
 title: Guarantee
 permalink: finance/Guarantee.html
-jsonid: guarantee
+jsonid: finance_guarantee
 ---

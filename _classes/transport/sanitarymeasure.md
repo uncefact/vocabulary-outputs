@@ -1,5 +1,5 @@
 ---
 title: SanitaryMeasure
 permalink: transport/SanitaryMeasure.html
-jsonid: sanitarymeasure
+jsonid: transport_sanitarymeasure
 ---

@@ -1,0 +1,29 @@
+
+{
+    "label": "GeographicalMultiPoint",
+    "uri": "core:GeographicalMultiPoint",
+    "comment": "A collection of points, on the surface of the Earth (reference ISO 19136).",
+    "objectProperties": [
+        {
+            "uri": "core:GeographicalMultiPoint.associatedDirectPositionList",
+            "type": "core:DirectPositionList",
+            "comment": "The direct position list associated with this geographical line."
+        },
+        {
+            "uri": "core:GeographicalMultiPoint.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalMultiPoint.memberGeographicalPoint",
+            "type": "core:GeographicalPoint",
+            "comment": "A geographical point member of this geographical multi-point feature."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:GeographicalFeature.includedGeographicalMultiPoint",
+            "comment": "The geographical multi-point included in this geographical feature."
+        }
+    ]
+}

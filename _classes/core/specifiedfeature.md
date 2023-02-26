@@ -1,5 +1,5 @@
 ---
 title: SpecifiedFeature
 permalink: core/SpecifiedFeature.html
-jsonid: specifiedfeature
+jsonid: core_specifiedfeature
 ---

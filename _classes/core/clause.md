@@ -1,5 +1,5 @@
 ---
 title: Clause
 permalink: core/Clause.html
-jsonid: clause
+jsonid: core_clause
 ---

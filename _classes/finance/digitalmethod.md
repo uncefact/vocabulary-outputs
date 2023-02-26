@@ -1,5 +1,5 @@
 ---
 title: DigitalMethod
 permalink: finance/DigitalMethod.html
-jsonid: digitalmethod
+jsonid: finance_digitalmethod
 ---

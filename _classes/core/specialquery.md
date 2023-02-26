@@ -1,5 +1,5 @@
 ---
 title: SpecialQuery
 permalink: core/SpecialQuery.html
-jsonid: specialquery
+jsonid: core_specialquery
 ---

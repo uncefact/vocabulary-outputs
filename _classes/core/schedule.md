@@ -1,5 +1,5 @@
 ---
 title: Schedule
 permalink: core/Schedule.html
-jsonid: schedule
+jsonid: core_schedule
 ---

@@ -1,5 +1,5 @@
 ---
 title: Document
 permalink: core/Document.html
-jsonid: document
+jsonid: core_document
 ---

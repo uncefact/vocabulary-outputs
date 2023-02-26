@@ -1,0 +1,5 @@
+---
+title: specifiedSubordinateLineTradeAgreement
+permalink: trade/SubordinateTradeLineItem.specifiedSubordinateLineTradeAgreement.html
+jsonid: trade_subordinatetradelineitem_specifiedsubordinatelinetradeagreement
+---

@@ -1,5 +1,5 @@
 ---
 title: ExchangedDocumentContext
 permalink: core/ExchangedDocumentContext.html
-jsonid: exchangeddocumentcontext
+jsonid: core_exchangeddocumentcontext
 ---

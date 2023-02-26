@@ -1,0 +1,5 @@
+---
+title: associatedGeographicalObjectCharacteristic
+permalink: core/GeographicalMultiCurve.associatedGeographicalObjectCharacteristic.html
+jsonid: core_geographicalmulticurve_associatedgeographicalobjectcharacteristic
+---

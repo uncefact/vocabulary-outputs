@@ -1,5 +1,0 @@
----
-title: includedTransportationWasteMaterialComponent
-permalink: transport/TransportationWasteMaterial.includedTransportationWasteMaterialComponent.html
-jsonid: includedtransportationwastematerialcomponent
----

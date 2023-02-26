@@ -1,5 +1,5 @@
 ---
 title: SupplyChainTradeLineItem
 permalink: trade/SupplyChainTradeLineItem.html
-jsonid: supplychaintradelineitem
+jsonid: trade_supplychaintradelineitem
 ---

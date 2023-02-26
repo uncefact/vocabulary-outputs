@@ -1,0 +1,90 @@
+
+{
+    "label": "PaymentTerms",
+    "uri": "finance:PaymentTerms",
+    "comment": "Terms and conditions by which payment has been or will be made for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:PaymentTerms.billStartDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the bill start specified by these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "finance:PaymentTerms.dueDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.instructionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an instruction for these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.partialPaymentPercent",
+            "type": "schema:Text",
+            "comment": "A partial payment, expressed as a percent, in these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.paymentTermsEventTimeReferenceFromEventCode",
+            "type": "finance:PaymentTermsEventTimeReferenceCodeList",
+            "comment": "The code specifying the event from which these trade payment terms are offered for a length of time."
+        },
+        {
+            "uri": "finance:PaymentTerms.paymentTermsId",
+            "type": "finance:PaymentTermsId",
+            "comment": "The unique identifier of these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.paymentTermsTypeCode",
+            "type": "finance:PaymentTermsTypeCodeList",
+            "comment": "A code specifying the type of trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.tradePaymentTermsDirectDebitMandateId",
+            "type": "schema:Text",
+            "comment": "An identifier of a direct debit mandate in these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.tradePaymentTermsInstructionTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of instruction for these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.tradePaymentTermsPaymentMeansId",
+            "type": "schema:Text",
+            "comment": "An identifier of a payment means in these trade payment terms."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "finance:PaymentTerms.applicablePaymentDiscountTerms",
+            "type": "finance:PaymentDiscountTerms",
+            "comment": "Trade payment discount terms applicable to these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.applicablePaymentPenaltyTerms",
+            "type": "finance:PaymentPenaltyTerms",
+            "comment": "Trade payment penalty terms applicable to these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.partialPaymentAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of a partial payment in these trade payment terms."
+        },
+        {
+            "uri": "finance:PaymentTerms.payeeParty",
+            "type": "core:Party",
+            "comment": "A payee party for this header trade settlement."
+        },
+        {
+            "uri": "finance:PaymentTerms.settlementPeriodMeasure",
+            "type": "core:MeasureType",
+            "comment": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
+        }
+    ]
+}

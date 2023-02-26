@@ -1,0 +1,24 @@
+
+{
+    "label": "GeographicalSurface",
+    "uri": "core:GeographicalSurface",
+    "comment": "A figure on the Earth having only two dimensions (reference ISO 19136).",
+    "objectProperties": [
+        {
+            "uri": "core:GeographicalSurface.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:GeographicalSurface.includedPolygon",
+            "type": "core:Polygon",
+            "comment": "A polygon included in this geographical multi-surface."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:GeographicalFeature.includedGeographicalSurface",
+            "comment": "The geographical surface included in this geographical feature."
+        }
+    ]
+}

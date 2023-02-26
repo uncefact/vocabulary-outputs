@@ -1,5 +1,5 @@
 ---
 title: Licence
 permalink: compliance/Licence.html
-jsonid: licence
+jsonid: compliance_licence
 ---

@@ -1,5 +1,0 @@
----
-title: applicableWasteMaterialRecoveryDisposalProcess
-permalink: compliance/SpecifiedMaterial.applicableWasteMaterialRecoveryDisposalProcess.html
-jsonid: applicablewastematerialrecoverydisposalprocess
----

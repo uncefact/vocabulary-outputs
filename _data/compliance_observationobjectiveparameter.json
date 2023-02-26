@@ -1,0 +1,74 @@
+
+{
+    "label": "ObservationObjectiveParameter",
+    "uri": "compliance:ObservationObjectiveParameter",
+    "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ObservationObjectiveParameter.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.parameterType",
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, for this observation objective parameter."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.value",
+            "type": "schema:Text",
+            "comment": "A value, expressed as text, for this document characteristic."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.valueAllowedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the value for this specified parameter is allowed."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:ObservationObjectiveParameter.statusValueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value of the status for this specified parameter."
+        },
+        {
+            "uri": "compliance:ObservationObjectiveParameter.valueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:InspectionResultCharacteristic.interpretationResultApplicableParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        },
+        {
+            "uri": "compliance:ObservationResult.interpretationResultApplicableParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        },
+        {
+            "uri": "compliance:ObservationResultCharacteristic.interpretationResultApplicableParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        }
+    ]
+}

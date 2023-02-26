@@ -1,0 +1,51 @@
+
+{
+    "label": "Note",
+    "uri": "core:Note",
+    "comment": "A textual or coded description, such as a remark or additional information.",
+    "datatypeProperties": [
+        {
+            "uri": "core:Note.content",
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
+        },
+        {
+            "uri": "core:Note.contentCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the content of this note."
+        },
+        {
+            "uri": "core:Note.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "core:Note.noteSubjectCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the subject of this note."
+        },
+        {
+            "uri": "core:Note.subject",
+            "type": "schema:Text",
+            "comment": "A subject, expressed as text, of this specified note."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:Document.includedNote",
+            "comment": "A note included for this document status."
+        },
+        {
+            "uri": "core:DocumentStatus.includedNote",
+            "comment": "A note included for this document status."
+        },
+        {
+            "uri": "core:ExchangedDocument.includedNote",
+            "comment": "A note included for this document status."
+        },
+        {
+            "uri": "core:Picture.specifiedNote",
+            "comment": "A note specified for this photographic picture."
+        }
+    ]
+}

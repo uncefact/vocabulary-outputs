@@ -1,5 +1,5 @@
 ---
 title: LogisticsTransportEquipment
 permalink: transport/LogisticsTransportEquipment.html
-jsonid: logisticstransportequipment
+jsonid: transport_logisticstransportequipment
 ---

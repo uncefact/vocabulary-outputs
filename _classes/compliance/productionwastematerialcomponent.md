@@ -1,5 +1,5 @@
 ---
 title: ProductionWasteMaterialComponent
 permalink: compliance/ProductionWasteMaterialComponent.html
-jsonid: productionwastematerialcomponent
+jsonid: compliance_productionwastematerialcomponent
 ---

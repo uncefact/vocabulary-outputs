@@ -1,0 +1,5 @@
+---
+title: applicableProcessCertificate
+permalink: compliance/WasteMaterialRecoveryDisposalProcess.applicableProcessCertificate.html
+jsonid: compliance_wastematerialrecoverydisposalprocess_applicableprocesscertificate
+---

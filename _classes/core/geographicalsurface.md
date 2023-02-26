@@ -1,5 +1,5 @@
 ---
 title: GeographicalSurface
 permalink: core/GeographicalSurface.html
-jsonid: geographicalsurface
+jsonid: core_geographicalsurface
 ---

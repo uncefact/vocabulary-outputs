@@ -1,5 +1,5 @@
 ---
 title: LaboratoryObservationAnalysisMethod
 permalink: compliance/LaboratoryObservationAnalysisMethod.html
-jsonid: laboratoryobservationanalysismethod
+jsonid: compliance_laboratoryobservationanalysismethod
 ---

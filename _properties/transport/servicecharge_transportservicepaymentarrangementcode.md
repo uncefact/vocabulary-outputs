@@ -1,0 +1,5 @@
+---
+title: transportServicePaymentArrangementCode
+permalink: transport/ServiceCharge.transportServicePaymentArrangementCode.html
+jsonid: transport_servicecharge_transportservicepaymentarrangementcode
+---

@@ -1,0 +1,535 @@
+
+{
+    "label": "TransportMovement",
+    "uri": "transport:TransportMovement",
+    "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:TransportMovement.borderCrossingDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time or other date time value when this logistics transport movement crosses a border."
+        },
+        {
+            "uri": "transport:TransportMovement.callPurposeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a call purpose for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.cargoDescription",
+            "type": "schema:Text",
+            "comment": "The textual description of the cargo for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.closingDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value by which cargo should be loaded onto the means of transport for the departure of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.cycle",
+            "type": "schema:Text",
+            "comment": "The cycle, as expressed as text, of this logistics transport movement, such as twice a day."
+        },
+        {
+            "uri": "transport:TransportMovement.dangerousGoodsIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not dangerous goods are carried for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:TransportMovement.information",
+            "type": "schema:Text",
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
+        },
+        {
+            "uri": "transport:TransportMovement.logisticsTransportMovementStatusCode",
+            "type": "transport:StatusCodeList",
+            "comment": "The code specifying a status for the logistics transport movement, such as estimated or final."
+        },
+        {
+            "uri": "transport:TransportMovement.manifestOnboardIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the manifest for this logistics transport movement is onboard."
+        },
+        {
+            "uri": "transport:TransportMovement.mode",
+            "type": "schema:Text",
+            "comment": "The mode, expressed as text, of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "transport:TransportMovement.pilotageExemptionId",
+            "type": "schema:Text",
+            "comment": "The identifier of a pilotage exemption for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.reasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a reason for the declared error."
+        },
+        {
+            "uri": "transport:TransportMovement.reportedSecurityInformation",
+            "type": "schema:Text",
+            "comment": "Reported security information, expressed as text, for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.sailingAdviceNotificationInformation",
+            "type": "schema:Text",
+            "comment": "Sailing advice notification information, expressed as text, for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.scheduledId",
+            "type": "schema:Text",
+            "comment": "A unique identifier for this logistics transport movement, such as a voyage number, flight number, or trip number, as stated in a schedule."
+        },
+        {
+            "uri": "transport:TransportMovement.service",
+            "type": "schema:Text",
+            "comment": "The service, expressed as text, of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.serviceCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the service of this logistics transport movement, such as regular, milk run or spot service."
+        },
+        {
+            "uri": "transport:TransportMovement.stage",
+            "type": "schema:Text",
+            "comment": "A stage, expressed as text, of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.stayId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of a stay in a port, airport or other place of service for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.terminalOperatorAssignedId",
+            "type": "schema:Text",
+            "comment": "A unique identifier for this logistics transport movement as assigned by a terminal operator."
+        },
+        {
+            "uri": "transport:TransportMovement.tradingConsolidatorAssignedId",
+            "type": "schema:Text",
+            "comment": "The unique identifier for this logistics transport movement as assigned by the trading consolidator."
+        },
+        {
+            "uri": "transport:TransportMovement.transportMeansDirectionTransitDirectionCode",
+            "type": "transport:TransportMeansDirectionCodeList",
+            "comment": "The code specifying the transit direction of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportModeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the mode, such as by air, sea, rail, road or inland waterway, for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportMovementStageCode",
+            "type": "transport:TransportMovementStageCodeList",
+            "comment": "The code specifying the stage of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportMovementType",
+            "type": "schema:Text",
+            "comment": "The type, as expressed as text, of the logistics transport movement."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:TransportMovement.administrativeMedicalPersonnelOnboardQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of administrative medical personnel onboard this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.applicableRegulatoryProcedure",
+            "type": "compliance:RegulatoryProcedure",
+            "comment": "A cross-border regulatory procedure applicable to this header trade agreement."
+        },
+        {
+            "uri": "transport:TransportMovement.applicableServiceCharge",
+            "type": "transport:ServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:TransportMovement.applicableSpecifiedInspection",
+            "type": "compliance:SpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "transport:TransportMovement.applicableSustainabilityInspection",
+            "type": "compliance:SustainabilityInspection",
+            "comment": "A sustainability inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.arrivalEvent",
+            "type": "transport:TransportEvent",
+            "comment": "An arrival event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.associatedConvoy",
+            "type": "transport:Convoy",
+            "comment": "The convoy associated with this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.borderCrossingEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A border crossing event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.callEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A call event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.carriedGoodsCharacteristic",
+            "type": "compliance:GoodsCharacteristic",
+            "comment": "Material characteristics of goods carried during this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.carriedInactiveTransportMeans",
+            "type": "transport:TransportMeans",
+            "comment": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO) ferry."
+        },
+        {
+            "uri": "transport:TransportMovement.carrierAgentParty",
+            "type": "core:Party",
+            "comment": "The carrier agent trade party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.carrierParty",
+            "type": "core:Party",
+            "comment": "A carrier party for this line trade agreement."
+        },
+        {
+            "uri": "transport:TransportMovement.commodityConsolidatorAgentParty",
+            "type": "core:Party",
+            "comment": "The commodity consolidator agent party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.commodityConsolidatorParty",
+            "type": "core:Party",
+            "comment": "The commodity consolidator party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.consignmentQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of consignments in this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.consortiumCarrierParty",
+            "type": "core:Party",
+            "comment": "A consortium carrier party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.crewListRelatedDocument",
+            "type": "core:Document",
+            "comment": "The crew list document related to this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.crewNationalityCountry",
+            "type": "core:Country",
+            "comment": "Crew nationality details for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.crewPerson",
+            "type": "transport:TransportPerson",
+            "comment": "A person who is a member of the crew of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.crewPersonalEffects",
+            "type": "tourism:PersonalEffects",
+            "comment": "Personal effects of an individual member of the crew for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.crewQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of crew members for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.damageEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A damage event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.departureEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A departure event during this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.documentaryInstructionsNotifiedParty",
+            "type": "core:Party",
+            "comment": "A party to be notified of the documentary instructions for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.excessTransportService",
+            "type": "transport:Service",
+            "comment": "An excess transport service for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.firstArrivalEvent",
+            "type": "transport:TransportEvent",
+            "comment": "The first arrival event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.iSPSRelatedDocument",
+            "type": "core:Document",
+            "comment": "The International Ship and Port facility Security code (ISPS) document related to this transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.inspectionParty",
+            "type": "core:Party",
+            "comment": "An inspection party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.itineraryRoute",
+            "type": "transport:TransportRoute",
+            "comment": "A route in the itinerary of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.liftingInstructionsRelatedDocument",
+            "type": "core:Document",
+            "comment": "A referenced lifting instructions document related to this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.loadingEvent",
+            "type": "transport:TransportEvent",
+            "comment": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.loadingInspectionParty",
+            "type": "core:Party",
+            "comment": "The loading inspection party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.loadingInspectionSpecifiedInstructions",
+            "type": "compliance:TransportInstructions",
+            "comment": "Loading inspection instructions specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.manifestRelatedDocument",
+            "type": "core:Document",
+            "comment": "A referenced manifest document related to this transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.masterResponsiblePerson",
+            "type": "transport:TransportPerson",
+            "comment": "The person legally responsible for the operation of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.nVOCCCarrierParty",
+            "type": "core:Party",
+            "comment": "A Non-Vessel Operating Common Carrier (NVOCC) carrier party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.notifiedParty",
+            "type": "core:Party",
+            "comment": "A party to be notified about this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.onboardInventory",
+            "type": "transport:StoresItemInventory",
+            "comment": "A stores inventory item held onboard for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.onboardPerson",
+            "type": "transport:TransportPerson",
+            "comment": "A person onboard this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.onboardPersonQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of onboard persons for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.packageQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of packages in this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.passengerListRelatedDocument",
+            "type": "core:Document",
+            "comment": "The passenger list document related to this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.passengerNationalityCountry",
+            "type": "core:Country",
+            "comment": "Passenger nationality details for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.passengerQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of passengers for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.professionalMedicalPersonnelOnboardQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of professional medical personnel onboard this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.reportedTransportationHealth",
+            "type": "transport:TransportationHealth",
+            "comment": "MDH (Maritime Declaration of Health) transportation health information reported for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.reportedTransportationWasteMaterial",
+            "type": "transport:TransportationWasteMaterial",
+            "comment": "Transportation waste material reported for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.sailingAdviceNotifiedParty",
+            "type": "core:Party",
+            "comment": "A party to be notified of the sailing advice for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.shipToShipEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A ship to ship event for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.specialSpecifiedInstructions",
+            "type": "compliance:TransportInstructions",
+            "comment": "Special transport instructions specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedEmission",
+            "type": "transport:Emission",
+            "comment": "A calculated emission specified for this logistics transport means."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedHandlingInstructions",
+            "type": "transport:HandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedLogisticsStatus",
+            "type": "transport:LogisticsStatus",
+            "comment": "A status specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedOrganizationalCertificate",
+            "type": "compliance:OrganizationalCertificate",
+            "comment": "An organizational certificate specified for this facility production unit."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedProcessCertificate",
+            "type": "compliance:ProcessCertificate",
+            "comment": "A process certificate for this specified chemical treatment."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedRiskAnalysisResult",
+            "type": "compliance:RiskAnalysisResult",
+            "comment": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
+        },
+        {
+            "uri": "transport:TransportMovement.specifiedTransportEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A transport event specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.stevedoreParty",
+            "type": "core:Party",
+            "comment": "A stevedore party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.terminalOperatorParty",
+            "type": "core:Party",
+            "comment": "A terminal operator party for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.tradedParcelQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of traded parcels of cargo being transported in this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.trainedMedicalPersonnelOnboardQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of trained medical personnel onboard this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportContractRelatedDocument",
+            "type": "core:Document",
+            "comment": "A transport contract document related to this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportEquipmentQuantity",
+            "type": "core:QuantityType",
+            "comment": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment."
+        },
+        {
+            "uri": "transport:TransportMovement.transportMeansSecurityOfficerPerson",
+            "type": "transport:TransportPerson",
+            "comment": "The officer responsible for the security of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transportWasteSpecifiedInstructions",
+            "type": "compliance:DisposalInstructions",
+            "comment": "Transport waste disposal instructions specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.transshipmentIntermediateEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A transshipment intermediate event during this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.unloadingEvent",
+            "type": "transport:TransportEvent",
+            "comment": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.unloadingInspectionParty",
+            "type": "core:Party",
+            "comment": "The inspection party for the unloading of this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.unloadingInspectionSpecifiedInstructions",
+            "type": "compliance:TransportInstructions",
+            "comment": "Unloading inspection instructions specified for this logistics transport movement."
+        },
+        {
+            "uri": "transport:TransportMovement.usedTransportMeans",
+            "type": "transport:LogisticsTransportMeans",
+            "comment": "The means of transport used for this logistics transport movement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.atArrivalTransportMovement",
+            "comment": "The logistics transport movement for this supply chain consignment at the point when the means of transport arrives in a country or at a regional border."
+        },
+        {
+            "uri": "transport:Consignment.atDepartureTransportMovement",
+            "comment": "The logistics transport movement for this supply chain consignment at the point when the means of transport departs a country or regional border."
+        },
+        {
+            "uri": "transport:Consignment.borderCrossingTransportMovement",
+            "comment": "A border crossing logistics transport movement for this supply chain consignment."
+        },
+        {
+            "uri": "transport:Consignment.mainCarriageTransportMovement",
+            "comment": "A main carriage logistics transport movement for this supply chain consignment."
+        },
+        {
+            "uri": "transport:Consignment.onCarriageTransportMovement",
+            "comment": "An on-carriage logistics transport movement for this supply chain consignment."
+        },
+        {
+            "uri": "transport:Consignment.preCarriageTransportMovement",
+            "comment": "A pre-carriage logistics transport movement for this referenced supply chain consignment."
+        },
+        {
+            "uri": "transport:Consignment.specifiedTransportMovement",
+            "comment": "A logistics transport movement specified for this supply chain consignment."
+        }
+    ]
+}

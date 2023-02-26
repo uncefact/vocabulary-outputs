@@ -1,5 +1,5 @@
 ---
 title: FinancialAdjustment
 permalink: finance/FinancialAdjustment.html
-jsonid: financialadjustment
+jsonid: finance_financialadjustment
 ---

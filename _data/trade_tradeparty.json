@@ -1,0 +1,650 @@
+
+{
+    "label": "TradeParty",
+    "uri": "trade:TradeParty",
+    "comment": "An individual, a group, or a body having a role in a trade business function.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:TradeParty.allianceName",
+            "type": "schema:Text",
+            "comment": "An alliance name, expressed as text, for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.brandName",
+            "type": "schema:Text",
+            "comment": "A brand name, expressed as text, for this experience product."
+        },
+        {
+            "uri": "trade:TradeParty.businessTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the type of business of this legally set up organization."
+        },
+        {
+            "uri": "trade:TradeParty.chainName",
+            "type": "schema:Text",
+            "comment": "A chain name, expressed as text, for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.dUNSId",
+            "type": "schema:Text",
+            "comment": "The unique nine-digit Data Universal Numbering System (DUNS) identifier for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "trade:TradeParty.disclosureLevelCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a disclosure level for this production process."
+        },
+        {
+            "uri": "trade:TradeParty.gLNId",
+            "type": "schema:Text",
+            "comment": "A Global Location Number (GLN) identifier for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.globalId",
+            "type": "schema:Text",
+            "comment": "A global identifier for this supply chain consignment item."
+        },
+        {
+            "uri": "trade:TradeParty.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:TradeParty.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "trade:TradeParty.partyRoleCode",
+            "type": "trade:PartyRoleCodeList",
+            "comment": "A code specifying a role of this transport person."
+        },
+        {
+            "uri": "trade:TradeParty.partyTypeCode",
+            "type": "trade:PartyTypeCodeList",
+            "comment": "A code specifying the type of TT party."
+        },
+        {
+            "uri": "trade:TradeParty.qualityAssuranceIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this trade party is quality assured."
+        },
+        {
+            "uri": "trade:TradeParty.registeredId",
+            "type": "schema:Text",
+            "comment": "A registered identifier of this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.role",
+            "type": "schema:Text",
+            "comment": "A role, expressed as text, for this contact person."
+        },
+        {
+            "uri": "trade:TradeParty.salesManagerName",
+            "type": "schema:Text",
+            "comment": "A name of a sales manager, expressed as text, for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.tradePartyLanguageCode",
+            "type": "trade:LanguageCodeList",
+            "comment": "A code specifying a language for this trade party."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:TradeParty.agreedContract",
+            "type": "trade:Contract",
+            "comment": "A trade contract agreed with this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.applicableAssessment",
+            "type": "compliance:Assessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "trade:TradeParty.applicableDeclaration",
+            "type": "compliance:SpecifiedDeclaration",
+            "comment": "A specified declaration applicable to this production process."
+        },
+        {
+            "uri": "trade:TradeParty.applicableLicence",
+            "type": "compliance:Licence",
+            "comment": "A specified licence applicable to this production process."
+        },
+        {
+            "uri": "trade:TradeParty.applicableOrganizationalCertificate",
+            "type": "compliance:OrganizationalCertificate",
+            "comment": "An organizational certificate applicable to this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.applicableOrganizationalCertification",
+            "type": "compliance:OrganizationalCertification",
+            "comment": "An organizational certification applicable to this organizational certificate."
+        },
+        {
+            "uri": "trade:TradeParty.applicableProcessCertificate",
+            "type": "compliance:ProcessCertificate",
+            "comment": "A process certificate applicable to this specified crop protection treatment."
+        },
+        {
+            "uri": "trade:TradeParty.applicableProductBatchCertificate",
+            "type": "compliance:ProductBatchCertificate",
+            "comment": "A product batch certificate applicable to this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.applicableProductCertificate",
+            "type": "compliance:ProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "trade:TradeParty.applicableServiceCharge",
+            "type": "transport:ServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "trade:TradeParty.applicableSpecifiedCertificate",
+            "type": "compliance:SpecifiedCertificate",
+            "comment": "A certificate applicable to this product batch."
+        },
+        {
+            "uri": "trade:TradeParty.applicableSpecifiedInspection",
+            "type": "compliance:SpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "trade:TradeParty.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "trade:TradeParty.applicableSustainabilityInspection",
+            "type": "compliance:SustainabilityInspection",
+            "comment": "A sustainability inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "trade:TradeParty.applicableTechnicalCharacteristic",
+            "type": "compliance:TechnicalCharacteristic",
+            "comment": "A technical characteristic applicable to this product colour."
+        },
+        {
+            "uri": "trade:TradeParty.associatedMembership",
+            "type": "core:Membership",
+            "comment": "A membership associated with this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.associatedParty",
+            "type": "trade:TradeParty",
+            "comment": "A party associated with this trade party, such as a local agent of a shipping line."
+        },
+        {
+            "uri": "trade:TradeParty.availableExperienceItem",
+            "type": "tourism:ExperienceItem",
+            "comment": "An experience item available for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.availableFacility",
+            "type": "tourism:ExperienceFacility",
+            "comment": "An experience facility made available for or by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.claimedLanguageProficiency",
+            "type": "core:LanguageProficiency",
+            "comment": "Personal language proficiency skills claimed by this found stowaway."
+        },
+        {
+            "uri": "trade:TradeParty.commentedReviewNote",
+            "type": "core:SpecifiedNote",
+            "comment": "A commented review note specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.cooperativeInformationSource",
+            "type": "core:InformationSource",
+            "comment": "A cooperative information source specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.definedContact",
+            "type": "trade:TradeContact",
+            "comment": "A trade contact defined for this location party."
+        },
+        {
+            "uri": "trade:TradeParty.endPointURICommunication",
+            "type": "core:Communication",
+            "comment": "The communication address of the end point URI for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.logoAssociatedBinaryFile",
+            "type": "core:BinaryFile",
+            "comment": "A file containing a specified binary representation of a logo associated with this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.ownedFinancialAccount",
+            "type": "finance:CreditorFinancialAccount",
+            "comment": "The creditor financial account owned by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.postalAddress",
+            "type": "trade:TradeAddress",
+            "comment": "A postal address for this legally set up organization."
+        },
+        {
+            "uri": "trade:TradeParty.providedProcess",
+            "type": "trade:ProductionProcess",
+            "comment": "A production process provided by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.providedService",
+            "type": "transport:Service",
+            "comment": "A transport service provided by this location party."
+        },
+        {
+            "uri": "trade:TradeParty.relatedBatch",
+            "type": "trade:ProductBatch",
+            "comment": "A product batch related to this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.relatedMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Material related to this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.requestedExperienceItem",
+            "type": "tourism:ExperienceItem",
+            "comment": "An experience item requested for or by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.reservedExperienceItem",
+            "type": "tourism:ExperienceItem",
+            "comment": "An experience item reserved for or by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.searchedWishListExperienceItem",
+            "type": "tourism:ExperienceItem",
+            "comment": "An experience item wish list searched for or by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedAssertion",
+            "type": "compliance:Assertion",
+            "comment": "A sustainability assertion for this specified certification."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedAuthoritativeSignatoryPerson",
+            "type": "compliance:AuthoritativeSignatoryPerson",
+            "comment": "A person specified to sign on behalf of this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedContactPerson",
+            "type": "core:Contact",
+            "comment": "A contact person specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedCooperatingOrganization",
+            "type": "core:CooperatingOrganization",
+            "comment": "A cooperating organization specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedCreditorFinancialInstitution",
+            "type": "finance:CreditorFinancialInstitution",
+            "comment": "A creditor financial institution specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedFacility",
+            "type": "trade:ProductionFacility",
+            "comment": "A production facility specified for this production process."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedFinancialIdentity",
+            "type": "finance:FinancialIdentity",
+            "comment": "The financial identity specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedGovernmentRegistration",
+            "type": "compliance:GovernmentRegistration",
+            "comment": "A governmental registration specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedGuestPerson",
+            "type": "tourism:GuestPerson",
+            "comment": "A guest person specified by this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedLegalOrganization",
+            "type": "core:LegalOrganization",
+            "comment": "The legally constituted organization specified for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedLogisticsLocation",
+            "type": "transport:LogisticsLocation",
+            "comment": "A location specified for this logistics status."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedProprietaryIdentity",
+            "type": "core:ProprietaryIdentity",
+            "comment": "A proprietary Identity specified for this person."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedRiskAnalysisResult",
+            "type": "compliance:RiskAnalysisResult",
+            "comment": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedTaxRegistration",
+            "type": "compliance:TaxRegistration",
+            "comment": "A tax registration specified for this contact person."
+        },
+        {
+            "uri": "trade:TradeParty.specifiedTradeProduct",
+            "type": "trade:TradeProduct",
+            "comment": "A product specified for this supply chain trade line item."
+        },
+        {
+            "uri": "trade:TradeParty.subcontractorParty",
+            "type": "trade:TradeParty",
+            "comment": "A subcontractor for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.telephoneCommunication",
+            "type": "core:Communication",
+            "comment": "A telephone communication for this trade party."
+        },
+        {
+            "uri": "trade:TradeParty.uRICommunication",
+            "type": "core:Communication",
+            "comment": "A Uniform Resource Identifier (URI) communication for this trade party, such as a web or email address."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:Colour.relatedParty",
+            "comment": "A trade party related to this facility production unit."
+        },
+        {
+            "uri": "trade:DeliverySchedule.shipToParty",
+            "comment": "A ship to party for this forecast delivery schedule."
+        },
+        {
+            "uri": "trade:Equipment.manufacturerParty",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "trade:ExchangedDeclaration.declarantAgentParty",
+            "comment": "The trade party acting as an agent for the declarant for this exchanged declaration."
+        },
+        {
+            "uri": "trade:ExchangedDeclaration.declarantParty",
+            "comment": "The trade party acting as the declarant for this exchanged declaration."
+        },
+        {
+            "uri": "trade:ExchangedDeclaration.principalAssociatedParty",
+            "comment": "A principal trade party associated with this exchanged declaration."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.buyerAgentParty",
+            "comment": "The buyer agent party for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.buyerAssignedAccountantParty",
+            "comment": "The party assigned as an accountant by the buyer for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.buyerParty",
+            "comment": "The buyer party for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.buyerRequisitionerParty",
+            "comment": "A party who is a buyer requisitioner in this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.buyerTaxRepresentativeParty",
+            "comment": "The party acting as a tax representative for the buyer for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.carrierParty",
+            "comment": "A carrier party for this line trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.catalogueInformationProviderParty",
+            "comment": "The party that provides catalogue information for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.catalogueInformationReceiverParty",
+            "comment": "The party that receives catalogue information for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.primeContractSellerParty",
+            "comment": "The seller party acting as the prime contractor for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.procurementParty",
+            "comment": "The procurement party for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.productEndUserParty",
+            "comment": "The party acting as the end user for the products in this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.relevantParty",
+            "comment": "A party relevant for this line trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.salesAgentParty",
+            "comment": "The agent party representing the seller for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.sellerAssignedAccountantParty",
+            "comment": "The party assigned as an accountant by the seller for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.sellerParty",
+            "comment": "The seller party for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeAgreement.sellerTaxRepresentativeParty",
+            "comment": "The party acting as a tax representative for the seller for this header trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.disposalParty",
+            "comment": "A disposal party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.freightForwarderParty",
+            "comment": "A freight forwarder party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.inventoryManagerParty",
+            "comment": "An inventory manager party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.relatedParty",
+            "comment": "A trade party related to this facility production unit."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.shipFromParty",
+            "comment": "The ship from party for this supply chain consignment."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.shipToParty",
+            "comment": "A ship to party for this forecast delivery schedule."
+        },
+        {
+            "uri": "trade:HeaderTradeDelivery.ultimateShipToParty",
+            "comment": "The ultimate ship to party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:HeaderTradeSettlement.invoiceeParty",
+            "comment": "The party to whom an invoice is issued for this header trade settlement."
+        },
+        {
+            "uri": "trade:HeaderTradeSettlement.invoicerParty",
+            "comment": "The party issuing the invoice for this header trade settlement."
+        },
+        {
+            "uri": "trade:HeaderTradeSettlement.payeeParty",
+            "comment": "A payee party for this header trade settlement."
+        },
+        {
+            "uri": "trade:HeaderTradeSettlement.payerParty",
+            "comment": "The payer party for this header trade settlement."
+        },
+        {
+            "uri": "trade:HeaderTradeSettlement.relevantParty",
+            "comment": "A party relevant for this line trade agreement."
+        },
+        {
+            "uri": "trade:HeaderTradeSettlement.ultimatePayeeParty",
+            "comment": "An ultimate payee party in this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.buyerParty",
+            "comment": "The buyer party for this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.buyerRequisitionerParty",
+            "comment": "A party who is a buyer requisitioner in this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.carrierParty",
+            "comment": "A carrier party for this line trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.catalogueInformationProviderParty",
+            "comment": "The party that provides catalogue information for this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.itemBuyerParty",
+            "comment": "The item buyer party for this line trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.itemSellerParty",
+            "comment": "The item seller party for this line trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.manufacturerParty",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.primeContractSellerParty",
+            "comment": "The seller party acting as the prime contractor for this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.procurementParty",
+            "comment": "The procurement party for this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.productEndUserParty",
+            "comment": "The party acting as the end user for the products in this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.relevantParty",
+            "comment": "A party relevant for this line trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.sellerParty",
+            "comment": "The seller party for this header trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeAgreement.supportCentreParty",
+            "comment": "The support centre party for this line trade agreement."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.disposalParty",
+            "comment": "A disposal party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.inventoryManagerParty",
+            "comment": "An inventory manager party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.logisticsServiceProviderParty",
+            "comment": "A logistics service provider party, at line level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.shipFromParty",
+            "comment": "The ship from party for this supply chain consignment."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.shipToParty",
+            "comment": "A ship to party for this forecast delivery schedule."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.ultimateShipToParty",
+            "comment": "The ultimate ship to party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.invoiceeParty",
+            "comment": "The party to whom an invoice is issued for this header trade settlement."
+        },
+        {
+            "uri": "trade:LineTradeSettlement.payerParty",
+            "comment": "The payer party for this header trade settlement."
+        },
+        {
+            "uri": "trade:Print.relatedParty",
+            "comment": "A trade party related to this facility production unit."
+        },
+        {
+            "uri": "trade:ProductHandlingProcess.operatorParty",
+            "comment": "A trade party who is an operator of this product handling process."
+        },
+        {
+            "uri": "trade:ProductionProcess.manufacturerParty",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "trade:ProductionProcess.subcontractorParty",
+            "comment": "A subcontractor for this trade party."
+        },
+        {
+            "uri": "trade:ProductionUnit.manufacturerParty",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "trade:ProductionUnit.relatedParty",
+            "comment": "A trade party related to this facility production unit."
+        },
+        {
+            "uri": "trade:ProductionUnit.subcontractorParty",
+            "comment": "A subcontractor for this trade party."
+        },
+        {
+            "uri": "trade:SupplyPlan.shipToParty",
+            "comment": "A ship to party for this forecast delivery schedule."
+        },
+        {
+            "uri": "trade:TradeParty.associatedParty",
+            "comment": "A party associated with this trade party, such as a local agent of a shipping line."
+        },
+        {
+            "uri": "trade:TradeParty.subcontractorParty",
+            "comment": "A subcontractor for this trade party."
+        },
+        {
+            "uri": "trade:TradeProduct.brandOwnerParty",
+            "comment": "The party that owns the brand of this trade product."
+        },
+        {
+            "uri": "trade:TradeProduct.endUserParty",
+            "comment": "An end user party for this trade product."
+        },
+        {
+            "uri": "trade:TradeProduct.legalRightsOwnerParty",
+            "comment": "The party that owns the legal rights for this trade product."
+        },
+        {
+            "uri": "trade:TradeProduct.manufacturerParty",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "trade:TradeProduct.responsibleParty",
+            "comment": "A party responsible for providing this referenced transport service."
+        },
+        {
+            "uri": "trade:TradeProduct.subcontractorParty",
+            "comment": "A subcontractor for this trade party."
+        }
+    ]
+}

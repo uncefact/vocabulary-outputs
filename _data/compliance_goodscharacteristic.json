@@ -1,0 +1,41 @@
+
+{
+    "label": "GoodsCharacteristic",
+    "uri": "compliance:GoodsCharacteristic",
+    "comment": "A distinctive feature of a material contained within physical goods.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:GoodsCharacteristic.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "compliance:GoodsCharacteristic.proportionalConstituentPercent",
+            "type": "schema:Text",
+            "comment": "The percentage presence of the material within the goods for this material goods characteristic."
+        },
+        {
+            "uri": "compliance:GoodsCharacteristic.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:GoodsCharacteristic.absolutePresenceVolumeMeasure",
+            "type": "core:MeasureType",
+            "comment": "The volume measure of the absolute presence of this material goods characteristic."
+        },
+        {
+            "uri": "compliance:GoodsCharacteristic.absolutePresenceWeightMeasure",
+            "type": "core:MeasureType",
+            "comment": "The weight measure of the absolute presence of this material goods characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:SpecifiedMaterial.applicableGoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
+        }
+    ]
+}

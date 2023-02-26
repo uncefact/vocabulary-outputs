@@ -1,5 +1,5 @@
 ---
 title: InformationSource
 permalink: core/InformationSource.html
-jsonid: informationsource
+jsonid: core_informationsource
 ---

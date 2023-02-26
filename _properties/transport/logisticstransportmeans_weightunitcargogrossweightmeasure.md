@@ -1,0 +1,5 @@
+---
+title: weightUnitCargoGrossWeightMeasure
+permalink: transport/LogisticsTransportMeans.weightUnitCargoGrossWeightMeasure.html
+jsonid: transport_logisticstransportmeans_weightunitcargogrossweightmeasure
+---

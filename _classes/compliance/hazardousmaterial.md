@@ -1,5 +1,5 @@
 ---
 title: HazardousMaterial
 permalink: compliance/HazardousMaterial.html
-jsonid: hazardousmaterial
+jsonid: compliance_hazardousmaterial
 ---

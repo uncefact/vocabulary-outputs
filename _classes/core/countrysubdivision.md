@@ -1,5 +1,5 @@
 ---
 title: CountrySubDivision
 permalink: core/CountrySubDivision.html
-jsonid: countrysubdivision
+jsonid: core_countrysubdivision
 ---

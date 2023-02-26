@@ -1,5 +1,5 @@
 ---
 title: Preference
 permalink: tourism/Preference.html
-jsonid: preference
+jsonid: tourism_preference
 ---

@@ -1,5 +1,5 @@
 ---
 title: BinaryFile
 permalink: core/BinaryFile.html
-jsonid: binaryfile
+jsonid: core_binaryfile
 ---

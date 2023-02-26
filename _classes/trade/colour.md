@@ -1,5 +1,5 @@
 ---
 title: Colour
 permalink: trade/Colour.html
-jsonid: colour
+jsonid: trade_colour
 ---

@@ -1,5 +1,5 @@
 ---
 title: ObservationResultCharacteristic
 permalink: compliance/ObservationResultCharacteristic.html
-jsonid: observationresultcharacteristic
+jsonid: compliance_observationresultcharacteristic
 ---

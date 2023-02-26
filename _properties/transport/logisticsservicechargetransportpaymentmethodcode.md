@@ -1,5 +1,0 @@
----
-title: logisticsServiceChargeTransportPaymentMethodCode
-permalink: transport/ServiceCharge.logisticsServiceChargeTransportPaymentMethodCode.html
-jsonid: logisticsservicechargetransportpaymentmethodcode
----

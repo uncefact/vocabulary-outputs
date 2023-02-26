@@ -1,0 +1,5 @@
+---
+title: shipperReferenceInformation
+permalink: transport/LogisticsTransportEquipment.shipperReferenceInformation.html
+jsonid: transport_logisticstransportequipment_shipperreferenceinformation
+---

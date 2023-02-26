@@ -1,5 +1,5 @@
 ---
 title: Measurement
 permalink: core/Measurement.html
-jsonid: measurement
+jsonid: core_measurement
 ---

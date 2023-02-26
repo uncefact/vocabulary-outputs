@@ -1,0 +1,115 @@
+
+{
+    "label": "Chemical",
+    "uri": "compliance:Chemical",
+    "comment": "Any clearly defined substance having a defined molecular composition.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:Chemical.commonName",
+            "type": "schema:Text",
+            "comment": "A common name, expressed as text, for this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.familyName",
+            "type": "schema:Text",
+            "comment": "A family name, expressed as text, for this transport person."
+        },
+        {
+            "uri": "compliance:Chemical.formulaDescription",
+            "type": "schema:Text",
+            "comment": "The textual description of the formula for this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "compliance:Chemical.presencePercent",
+            "type": "schema:Text",
+            "comment": "The percentage of the presence for this specified material."
+        },
+        {
+            "uri": "compliance:Chemical.scientificName",
+            "type": "schema:Text",
+            "comment": "A scientific name, expressed as text, for this trade product."
+        },
+        {
+            "uri": "compliance:Chemical.synonymName",
+            "type": "schema:Text",
+            "comment": "A synonym name, expressed as text, for this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:Chemical.applicableHazardousMaterial",
+            "type": "compliance:HazardousMaterial",
+            "comment": "An applicable toxicological hazardous material for this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.applicableProductCharacteristic",
+            "type": "compliance:ProductCharacteristic",
+            "comment": "A characteristic applicable to this trade product."
+        },
+        {
+            "uri": "compliance:Chemical.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "compliance:Chemical.massMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the mass of this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.massRatioMeasure",
+            "type": "core:MeasureType",
+            "comment": "A mass measure of this distinct chemical expressed as a ratio to another mass, such as the total mass."
+        },
+        {
+            "uri": "compliance:Chemical.molecularWeightMeasure",
+            "type": "core:MeasureType",
+            "comment": "The measure of the molecular weight (in grams) for this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.presenceMeasurement",
+            "type": "compliance:IngredientRangeMeasurement",
+            "comment": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.specifiedProductCertificate",
+            "type": "compliance:ProductCertificate",
+            "comment": "A product certificate specified for this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.volumeMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the volume of this distinct chemical."
+        },
+        {
+            "uri": "compliance:Chemical.volumeRatioMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the volume of this distinct chemical expressed as a ratio to another volume, such as the total volume."
+        },
+        {
+            "uri": "compliance:Chemical.weightMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a weight (mass) of this logistics packaging."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:AppliedChemicalTreatment.usedChemical",
+            "comment": "A chemical used during this applied chemical treatment."
+        },
+        {
+            "uri": "compliance:SpecifiedMaterial.usedChemical",
+            "comment": "A chemical used during this applied chemical treatment."
+        }
+    ]
+}

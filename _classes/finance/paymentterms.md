@@ -1,5 +1,5 @@
 ---
 title: PaymentTerms
 permalink: finance/PaymentTerms.html
-jsonid: paymentterms
+jsonid: finance_paymentterms
 ---

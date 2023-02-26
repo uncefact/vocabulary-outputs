@@ -1,5 +1,5 @@
 ---
 title: AgriculturalCharacteristic
 permalink: agriculture/AgriculturalCharacteristic.html
-jsonid: agriculturalcharacteristic
+jsonid: agriculture_agriculturalcharacteristic
 ---

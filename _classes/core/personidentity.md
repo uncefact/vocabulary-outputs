@@ -1,5 +1,5 @@
 ---
 title: PersonIdentity
 permalink: core/PersonIdentity.html
-jsonid: personidentity
+jsonid: core_personidentity
 ---

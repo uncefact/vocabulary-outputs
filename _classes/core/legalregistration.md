@@ -1,5 +1,5 @@
 ---
 title: LegalRegistration
 permalink: core/LegalRegistration.html
-jsonid: legalregistration
+jsonid: core_legalregistration
 ---

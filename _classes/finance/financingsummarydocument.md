@@ -1,5 +1,5 @@
 ---
 title: FinancingSummaryDocument
 permalink: finance/FinancingSummaryDocument.html
-jsonid: financingsummarydocument
+jsonid: finance_financingsummarydocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: SpecifiedCondition
 permalink: transport/SpecifiedCondition.html
-jsonid: specifiedcondition
+jsonid: transport_specifiedcondition
 ---

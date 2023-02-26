@@ -1,0 +1,114 @@
+
+{
+    "label": "DocumentLineDocument",
+    "uri": "trade:DocumentLineDocument",
+    "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:DocumentLineDocument.buyerAssignedCategoryCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the category assigned by the buyer for this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.documentLineStatusCode",
+            "type": "trade:LineStatusCodeList",
+            "comment": "The code specifying the status of this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.latestRevisionDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value for the latest revision of this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.lineId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of a line in this referenced document."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.lineStatusReason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for the line status in this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.lineStatusReasonCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the line status reason for this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.parentLineId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of the parent line to this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.publicationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the publication of this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.responseReasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a response reason for this exchanged document."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.subordinateLineId",
+            "type": "schema:Text",
+            "comment": "An identifier of a subordinate line of this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.uUIDLineId",
+            "type": "schema:Text",
+            "comment": "The universally unique identifier (UUID) of this document line."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:DocumentLineDocument.effectiveSpecifiedPeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "The period within which this document line is effective."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.includedNote",
+            "type": "core:Note",
+            "comment": "A note included for this document status."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.referenceAcknowledgementDocument",
+            "type": "trade:AcknowledgementDocument",
+            "comment": "The acknowledgement document referenced in this document line."
+        },
+        {
+            "uri": "trade:DocumentLineDocument.referenceDocument",
+            "type": "core:Document",
+            "comment": "A document referenced by this acknowledgement document."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:LineTradeSettlement.associatedDocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:SupplyChainTradeLineItem.associatedDocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedDocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        }
+    ]
+}

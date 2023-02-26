@@ -1,0 +1,36 @@
+
+{
+    "label": "CargoInsurance",
+    "uri": "transport:CargoInsurance",
+    "comment": "Insurance coverage for cargo during transport movements.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:CargoInsurance.contractGeneralConditions",
+            "type": "schema:Text",
+            "comment": "The contract general conditions, expressed as text, for this transport cargo insurance."
+        },
+        {
+            "uri": "transport:CargoInsurance.coverageCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the coverage of this transport cargo insurance."
+        },
+        {
+            "uri": "transport:CargoInsurance.coverageDescription",
+            "type": "schema:Text",
+            "comment": "The textual description of the coverage of this transport cargo insurance."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:CargoInsurance.coverageParty",
+            "type": "core:Party",
+            "comment": "The coverage party for this transport cargo insurance."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.applicableCargoInsurance",
+            "comment": "The cargo insurance applicable to this supply chain consignment."
+        }
+    ]
+}

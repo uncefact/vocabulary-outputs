@@ -1,5 +1,5 @@
 ---
 title: ExperienceItem
 permalink: tourism/ExperienceItem.html
-jsonid: experienceitem
+jsonid: tourism_experienceitem
 ---

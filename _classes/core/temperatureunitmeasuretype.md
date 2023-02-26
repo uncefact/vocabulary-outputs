@@ -1,5 +1,5 @@
 ---
 title: TemperatureUnitMeasureType
 permalink: core/TemperatureUnitMeasureType.html
-jsonid: temperatureunitmeasuretype
+jsonid: core_temperatureunitmeasuretype
 ---

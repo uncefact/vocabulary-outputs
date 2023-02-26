@@ -1,5 +1,5 @@
 ---
 title: TechnicalCharacteristic
 permalink: compliance/TechnicalCharacteristic.html
-jsonid: technicalcharacteristic
+jsonid: compliance_technicalcharacteristic
 ---

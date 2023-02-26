@@ -1,0 +1,46 @@
+
+{
+    "label": "PersonIdentity",
+    "uri": "core:PersonIdentity",
+    "comment": "Identification of a person.",
+    "datatypeProperties": [
+        {
+            "uri": "core:PersonIdentity.alienRegistrationId",
+            "type": "schema:Text",
+            "comment": "The alien registration identifier for this person."
+        },
+        {
+            "uri": "core:PersonIdentity.driversLicenceId",
+            "type": "schema:Text",
+            "comment": "The drivers licence identifier for this person."
+        },
+        {
+            "uri": "core:PersonIdentity.identityCardId",
+            "type": "schema:Text",
+            "comment": "The identity card identifier for this person."
+        },
+        {
+            "uri": "core:PersonIdentity.passportId",
+            "type": "schema:Text",
+            "comment": "The identifier of the passport of this guest."
+        },
+        {
+            "uri": "core:PersonIdentity.socialSecurityId",
+            "type": "schema:Text",
+            "comment": "The social security identifier for this person."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:PersonIdentity.specifiedProprietaryIdentity",
+            "type": "core:ProprietaryIdentity",
+            "comment": "A proprietary Identity specified for this person."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:Contact.specifiedPersonIdentity",
+            "comment": "The person identity specified for this contact person."
+        }
+    ]
+}

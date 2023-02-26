@@ -1,0 +1,63 @@
+
+{
+    "label": "LogisticsLabel",
+    "uri": "transport:LogisticsLabel",
+    "comment": "A label used for identifying goods for logistics purposes, such as a barcode, a radio frequency tag or a Vehicle Identification Number (VIN).",
+    "datatypeProperties": [
+        {
+            "uri": "transport:LogisticsLabel.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:LogisticsLabel.layoutTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the layout type of this logistics label."
+        },
+        {
+            "uri": "transport:LogisticsLabel.markingIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not there is a marking on this logistics label."
+        },
+        {
+            "uri": "transport:LogisticsLabel.seriesEndId",
+            "type": "schema:Text",
+            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
+        },
+        {
+            "uri": "transport:LogisticsLabel.seriesStartId",
+            "type": "schema:Text",
+            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
+        },
+        {
+            "uri": "transport:LogisticsLabel.sizeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the size of this logistics label."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:LogisticsLabel.includedSection",
+            "type": "core:Section",
+            "comment": "A section included in this logistics label."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:ShippingMarks.barcodeLabel",
+            "comment": "A barcode label that is a part of these logistics shipping marks."
+        },
+        {
+            "uri": "transport:ShippingMarks.rFIDLabel",
+            "comment": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
+        },
+        {
+            "uri": "transport:ShippingMarks.radioactiveLabel",
+            "comment": "Radioactive labelling that is a part of these logistics shipping marks."
+        },
+        {
+            "uri": "transport:ShippingMarks.vINLabel",
+            "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
+        }
+    ]
+}

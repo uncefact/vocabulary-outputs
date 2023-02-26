@@ -1,0 +1,5 @@
+---
+title: logisticsChargeCalculationBasisCalculationBasisCode
+permalink: transport/ServiceCharge.logisticsChargeCalculationBasisCalculationBasisCode.html
+jsonid: transport_servicecharge_logisticschargecalculationbasiscalculationbasiscode
+---

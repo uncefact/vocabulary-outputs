@@ -1,5 +1,5 @@
 ---
 title: SupplyPlan
 permalink: trade/SupplyPlan.html
-jsonid: supplyplan
+jsonid: trade_supplyplan
 ---

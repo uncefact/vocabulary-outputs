@@ -1,0 +1,5 @@
+---
+title: applicableHeaderTradeAgreement
+permalink: trade/SupplyChainTradeTransaction.applicableHeaderTradeAgreement.html
+jsonid: trade_supplychaintradetransaction_applicableheadertradeagreement
+---

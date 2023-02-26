@@ -1,0 +1,35 @@
+
+{
+    "label": "LinearRing",
+    "uri": "core:LinearRing",
+    "comment": "A specified array of points which define a closed loop which is not self intersecting.",
+    "datatypeProperties": [
+        {
+            "uri": "core:LinearRing.coordinate",
+            "type": "schema:Text",
+            "comment": "A coordinate, expressed as text, for this specified linear ring."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:LinearRing.associatedGeographicalObjectCharacteristic",
+            "type": "core:GeographicalObjectCharacteristic",
+            "comment": "The geographical object characteristic associated with this geographical grid."
+        },
+        {
+            "uri": "core:LinearRing.coordinateDirectPosition",
+            "type": "core:DirectPosition",
+            "comment": "The specified direct position of a coordinate for this linear ring."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:Polygon.exteriorLinearRing",
+            "comment": "The exterior linear specified ring for this polygon."
+        },
+        {
+            "uri": "core:Polygon.interiorLinearRing",
+            "comment": "An interior linear ring specified for this polygon."
+        }
+    ]
+}

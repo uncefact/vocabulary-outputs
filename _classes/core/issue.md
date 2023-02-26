@@ -1,5 +1,5 @@
 ---
 title: Issue
 permalink: core/Issue.html
-jsonid: issue
+jsonid: core_issue
 ---

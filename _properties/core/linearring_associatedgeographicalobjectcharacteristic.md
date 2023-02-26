@@ -1,0 +1,5 @@
+---
+title: associatedGeographicalObjectCharacteristic
+permalink: core/LinearRing.associatedGeographicalObjectCharacteristic.html
+jsonid: core_linearring_associatedgeographicalobjectcharacteristic
+---

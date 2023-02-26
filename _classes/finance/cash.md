@@ -1,5 +1,5 @@
 ---
 title: Cash
 permalink: finance/Cash.html
-jsonid: cash
+jsonid: finance_cash
 ---

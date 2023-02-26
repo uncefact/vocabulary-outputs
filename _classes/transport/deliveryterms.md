@@ -1,5 +1,5 @@
 ---
 title: DeliveryTerms
 permalink: transport/DeliveryTerms.html
-jsonid: deliveryterms
+jsonid: transport_deliveryterms
 ---

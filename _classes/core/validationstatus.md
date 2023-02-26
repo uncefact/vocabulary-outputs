@@ -1,5 +1,5 @@
 ---
 title: ValidationStatus
 permalink: core/ValidationStatus.html
-jsonid: validationstatus
+jsonid: core_validationstatus
 ---

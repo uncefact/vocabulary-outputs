@@ -1,5 +1,0 @@
----
-title: maximumStackabilityWeightApplicableMeasure
-permalink: transport/HandlingInstructions.maximumStackabilityWeightApplicableMeasure.html
-jsonid: maximumstackabilityweightapplicablemeasure
----

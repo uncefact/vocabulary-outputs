@@ -1,0 +1,5 @@
+---
+title: paymentFinancialAccountCurrencyCode
+permalink: finance/PaymentFinancialAccount.paymentFinancialAccountCurrencyCode.html
+jsonid: finance_paymentfinancialaccount_paymentfinancialaccountcurrencycode
+---

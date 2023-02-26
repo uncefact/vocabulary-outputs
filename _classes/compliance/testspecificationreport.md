@@ -1,5 +1,5 @@
 ---
 title: TestSpecificationReport
 permalink: compliance/TestSpecificationReport.html
-jsonid: testspecificationreport
+jsonid: compliance_testspecificationreport
 ---

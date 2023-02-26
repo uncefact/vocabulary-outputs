@@ -1,0 +1,5 @@
+---
+title: requestedOperationalApplicableParameter
+permalink: trade/ProductionDevice.requestedOperationalApplicableParameter.html
+jsonid: trade_productiondevice_requestedoperationalapplicableparameter
+---

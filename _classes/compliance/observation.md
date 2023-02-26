@@ -1,5 +1,5 @@
 ---
 title: Observation
 permalink: compliance/Observation.html
-jsonid: observation
+jsonid: compliance_observation
 ---

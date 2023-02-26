@@ -1,0 +1,5 @@
+---
+title: observationDiscontinuationReasonCode
+permalink: compliance/ObservationResult.observationDiscontinuationReasonCode.html
+jsonid: compliance_observationresult_observationdiscontinuationreasoncode
+---

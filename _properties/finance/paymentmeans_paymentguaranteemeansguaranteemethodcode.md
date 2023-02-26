@@ -1,0 +1,5 @@
+---
+title: paymentGuaranteeMeansGuaranteeMethodCode
+permalink: finance/PaymentMeans.paymentGuaranteeMeansGuaranteeMethodCode.html
+jsonid: finance_paymentmeans_paymentguaranteemeansguaranteemethodcode
+---

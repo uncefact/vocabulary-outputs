@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: compliance/ProductionWasteMaterialComponent.applicableSustainabilityCharacteristic.html
+jsonid: compliance_productionwastematerialcomponent_applicablesustainabilitycharacteristic
+---

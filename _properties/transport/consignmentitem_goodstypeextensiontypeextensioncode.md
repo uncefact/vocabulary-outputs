@@ -1,0 +1,5 @@
+---
+title: goodsTypeExtensionTypeExtensionCode
+permalink: transport/ConsignmentItem.goodsTypeExtensionTypeExtensionCode.html
+jsonid: transport_consignmentitem_goodstypeextensiontypeextensioncode
+---

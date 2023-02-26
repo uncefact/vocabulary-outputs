@@ -1,5 +1,5 @@
 ---
 title: ExchangedDocument
 permalink: core/ExchangedDocument.html
-jsonid: exchangeddocument
+jsonid: core_exchangeddocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: ProductionUnit
 permalink: trade/ProductionUnit.html
-jsonid: productionunit
+jsonid: trade_productionunit
 ---

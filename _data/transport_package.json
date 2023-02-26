@@ -1,0 +1,178 @@
+
+{
+    "label": "Package",
+    "uri": "transport:Package",
+    "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:Package.additionalLevelCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the additional level of this logistics package."
+        },
+        {
+            "uri": "transport:Package.colourCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the colour for this trade product."
+        },
+        {
+            "uri": "transport:Package.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "transport:Package.globalId",
+            "type": "schema:Text",
+            "comment": "A global identifier for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:Package.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:Package.information",
+            "type": "schema:Text",
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
+        },
+        {
+            "uri": "transport:Package.packageType",
+            "type": "schema:Text",
+            "comment": "A package type, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:Package.packageTypeCode",
+            "type": "transport:PackageTypeCodeList",
+            "comment": "A code specifying the type of logistics package."
+        },
+        {
+            "uri": "transport:Package.packagingLevelCode",
+            "type": "transport:PackagingLevelCodeList",
+            "comment": "The code specifying the level of this logistics package."
+        },
+        {
+            "uri": "transport:Package.parentId",
+            "type": "schema:Text",
+            "comment": "The parent identifier for this referenced logistics package."
+        },
+        {
+            "uri": "transport:Package.returnableIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this logistics package is returnable."
+        },
+        {
+            "uri": "transport:Package.sequenceNumeric",
+            "type": "schema:Text",
+            "comment": "A sequence number for these specified personal effects."
+        },
+        {
+            "uri": "transport:Package.seriesEndId",
+            "type": "schema:Text",
+            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
+        },
+        {
+            "uri": "transport:Package.seriesStartId",
+            "type": "schema:Text",
+            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:Package.despatchNoteAssociatedDocument",
+            "type": "core:Document",
+            "comment": "A despatch note associated with this logistics package."
+        },
+        {
+            "uri": "transport:Package.grossVolumeMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the gross volume for this trade product."
+        },
+        {
+            "uri": "transport:Package.grossWeightMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the gross weight (mass) of this trade product."
+        },
+        {
+            "uri": "transport:Package.itemQuantity",
+            "type": "core:QuantityType",
+            "comment": "A quantity of items for this referenced transport service."
+        },
+        {
+            "uri": "transport:Package.linearDimension",
+            "type": "core:SpatialDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "transport:Package.netVolumeMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a net volume for this trade product."
+        },
+        {
+            "uri": "transport:Package.netWeightMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the net weight (mass) of this trade product."
+        },
+        {
+            "uri": "transport:Package.nominalGrossVolumeMeasure",
+            "type": "core:VolumeUnitMeasureType",
+            "comment": "The measure of the nominal gross volume of this logistics package."
+        },
+        {
+            "uri": "transport:Package.nominalGrossWeightMeasure",
+            "type": "core:WeightUnitMeasureType",
+            "comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
+        },
+        {
+            "uri": "transport:Package.perPackageUnitQuantity",
+            "type": "core:QuantityType",
+            "comment": "A number of units per package in this logistics package."
+        },
+        {
+            "uri": "transport:Package.physicalShippingMarks",
+            "type": "transport:ShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:Package.statedCondition",
+            "type": "transport:SpecifiedCondition",
+            "comment": "A stated condition of these transported dangerous goods."
+        },
+        {
+            "uri": "transport:Package.usedPackaging",
+            "type": "transport:SupplyChainPackaging",
+            "comment": "Supply chain packaging used for this logistics package."
+        },
+        {
+            "uri": "transport:Package.volumeUnitGrossVolumeMeasure",
+            "type": "core:VolumeUnitMeasureType",
+            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
+        },
+        {
+            "uri": "transport:Package.weightUnitGrossWeightMeasure",
+            "type": "core:WeightUnitMeasureType",
+            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
+        },
+        {
+            "uri": "transport:Package.weightUnitNetWeightMeasure",
+            "type": "core:WeightUnitMeasureType",
+            "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.transportPackage",
+            "comment": "A transport package for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.transportPackage",
+            "comment": "A transport package for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:DangerousGoods.specifiedPackage",
+            "comment": "A logistics package specified for these transported dangerous goods."
+        },
+        {
+            "uri": "transport:LogisticsPackaging.containedPackage",
+            "comment": "A package contained in this logistics packaging."
+        }
+    ]
+}

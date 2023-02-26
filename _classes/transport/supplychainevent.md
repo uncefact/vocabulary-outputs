@@ -1,5 +1,5 @@
 ---
 title: SupplyChainEvent
 permalink: transport/SupplyChainEvent.html
-jsonid: supplychainevent
+jsonid: transport_supplychainevent
 ---

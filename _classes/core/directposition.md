@@ -1,5 +1,5 @@
 ---
 title: DirectPosition
 permalink: core/DirectPosition.html
-jsonid: directposition
+jsonid: core_directposition
 ---

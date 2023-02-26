@@ -1,0 +1,287 @@
+
+{
+    "label": "Tax",
+    "uri": "finance:Tax",
+    "comment": "A trade related fiscal levy or duty.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:Tax.applicablePercent",
+            "type": "schema:Text",
+            "comment": "The percent of trade tax applicable, such as to an object or an activity."
+        },
+        {
+            "uri": "finance:Tax.calculatedRate",
+            "type": "schema:Text",
+            "comment": "The rate used to calculate the amount of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.calculationMethodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the method by which this trade related tax, levy or duty is calculated, such as codes for \"tax calculated after line total summation\", \"tax calculated before line total summation\", \"tax back calculated based on grand total\"."
+        },
+        {
+            "uri": "finance:Tax.calculationSequenceNumeric",
+            "type": "schema:Text",
+            "comment": "A numeric expression of the sequence in which this trade related tax is to be or has been applied when multiple taxes are applicable per calculation, such as first \"Value Added Tax (VAT)\", second \"Transfer\"."
+        },
+        {
+            "uri": "finance:Tax.categoryName",
+            "type": "schema:Text",
+            "comment": "A category name, expressed as text, of this specified customer class."
+        },
+        {
+            "uri": "finance:Tax.customsDutyIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this registered tax is a customs duty."
+        },
+        {
+            "uri": "finance:Tax.customsDutyRegimeTypeCode",
+            "type": "finance:CustomsDutyRegimeTypeCodeList",
+            "comment": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
+        },
+        {
+            "uri": "finance:Tax.customsProcedureGuaranteeCode",
+            "type": "finance:CustomsProcedureGuaranteeCodeList",
+            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "finance:Tax.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "finance:Tax.exemptionAuthorizationId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of the exemption authorization for this trade tax."
+        },
+        {
+            "uri": "finance:Tax.exemptionIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not there is an exemption from this trade tax."
+        },
+        {
+            "uri": "finance:Tax.exemptionReason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for exemption from this registered tax."
+        },
+        {
+            "uri": "finance:Tax.guarantee",
+            "type": "schema:Text",
+            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "finance:Tax.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "finance:Tax.jurisdiction",
+            "type": "schema:Text",
+            "comment": "A jurisdiction, expressed as text, for this registered tax."
+        },
+        {
+            "uri": "finance:Tax.localTaxSystemId",
+            "type": "schema:Text",
+            "comment": "The identifier of the local tax system for this trade tax."
+        },
+        {
+            "uri": "finance:Tax.paymentId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of the payment of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.rateApplicablePercent",
+            "type": "schema:Text",
+            "comment": "The applicable rate, expressed as a percentage, for this trade tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.rateCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the rate for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.taxBasisAllowanceRate",
+            "type": "schema:Text",
+            "comment": "The rate of the tax basis allowance (deduction or discount) used to calculate the trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.taxCategoryCode",
+            "type": "finance:TaxCategoryCodeList",
+            "comment": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from Tax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
+        },
+        {
+            "uri": "finance:Tax.taxExemptionAuthorityId",
+            "type": "schema:Text",
+            "comment": "The unique tax exemption authority identifier for this trade tax."
+        },
+        {
+            "uri": "finance:Tax.taxExemptionReasonExemptionReasonCode",
+            "type": "finance:TaxExemptionReasonCodeList",
+            "comment": "A code specifying a reason for exemption from this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.taxPointDate",
+            "type": "schema:Text",
+            "comment": "The date of the tax point when taxes, such as VAT, are to be applied."
+        },
+        {
+            "uri": "finance:Tax.taxType",
+            "type": "schema:Text",
+            "comment": "The type, expressed as text, of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.taxTypeCode",
+            "type": "finance:TaxTypeCodeList",
+            "comment": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference United Nations Code List (UNCL) 5153]."
+        },
+        {
+            "uri": "finance:Tax.timeReferenceDueDateTypeCode",
+            "type": "finance:TimeReferenceCodeList",
+            "comment": "The code specifying a type of due date for this trade tax."
+        },
+        {
+            "uri": "finance:Tax.tradeTaxCurrencyCode",
+            "type": "finance:CurrencyCodeList",
+            "comment": "The code specifying the currency for this trade related tax, levy or duty [UNCL 6345]."
+        },
+        {
+            "uri": "finance:Tax.tradeTaxPaymentMethodCode",
+            "type": "finance:PaymentMethodCodeList",
+            "comment": "The code specifying the payment method for this trade related tax, levy or duty."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "finance:Tax.allowanceChargeBasisAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value used as the allowance and charge basis on which this trade related tax, levy or duty is calculated."
+        },
+        {
+            "uri": "finance:Tax.basisAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
+        },
+        {
+            "uri": "finance:Tax.basisQuantity",
+            "type": "core:QuantityType",
+            "comment": "A quantity on which the reference price is based."
+        },
+        {
+            "uri": "finance:Tax.buyerDeductibleTaxSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "The buyer deductible tax specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.buyerNonDeductibleTaxSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "The buyer non-deductible tax specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.buyerRepayableTaxSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "The buyer repayable tax specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.calculatedAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value calculated for this header balance out."
+        },
+        {
+            "uri": "finance:Tax.deductionAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of the deduction from this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.grandTotalAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of a grand total reported in this trade settlement payment monetary summation."
+        },
+        {
+            "uri": "finance:Tax.informationAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of an amount being reported for information for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.lineTotalBasisAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value used as the line total basis on which this trade related tax, levy or duty is calculated."
+        },
+        {
+            "uri": "finance:Tax.placeApplicableLocation",
+            "type": "core:Location",
+            "comment": "A location where this trade tax is applicable."
+        },
+        {
+            "uri": "finance:Tax.refundAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of the refund of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.selfAssessedBasisAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+        },
+        {
+            "uri": "finance:Tax.selfAssessedBasisQuantity",
+            "type": "core:QuantityType",
+            "comment": "The quantity on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+        },
+        {
+            "uri": "finance:Tax.selfAssessedCalculatedAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of the self-assessed calculated amount of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.sellerPayableTaxSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "The seller payable tax specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.sellerRefundableTaxSpecifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "The seller refundable tax specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.serviceSupplyCountry",
+            "type": "core:Country",
+            "comment": "The country or country sub-division where a service was supplied for this trade tax."
+        },
+        {
+            "uri": "finance:Tax.specifiedAccountingAccount",
+            "type": "finance:AccountingAccount",
+            "comment": "A specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "finance:Tax.tariffDeductionQuantity",
+            "type": "core:QuantityType",
+            "comment": "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy."
+        },
+        {
+            "uri": "finance:Tax.unitBasisAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:AdvancePayment.includedTax",
+            "comment": "A tax included in this advance payment."
+        },
+        {
+            "uri": "finance:FinancialAdjustment.relatedTax",
+            "comment": "A trade tax related to this financial adjustment."
+        },
+        {
+            "uri": "finance:PaymentTradeSettlement.applicableTax",
+            "comment": "A tax applicable to this header trade settlement."
+        },
+        {
+            "uri": "finance:TradeAllowanceCharge.categoryTradeTax",
+            "comment": "A tax category of this trade allowance charge."
+        },
+        {
+            "uri": "finance:TradePrice.includedTax",
+            "comment": "A tax included in this advance payment."
+        }
+    ]
+}

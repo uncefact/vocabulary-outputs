@@ -1,5 +1,5 @@
 ---
 title: GeographicalObjectCharacteristic
 permalink: core/GeographicalObjectCharacteristic.html
-jsonid: geographicalobjectcharacteristic
+jsonid: core_geographicalobjectcharacteristic
 ---

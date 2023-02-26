@@ -1,5 +1,5 @@
 ---
 title: ExperienceProgramAction
 permalink: tourism/ExperienceProgramAction.html
-jsonid: experienceprogramaction
+jsonid: tourism_experienceprogramaction
 ---

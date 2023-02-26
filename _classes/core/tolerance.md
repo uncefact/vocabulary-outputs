@@ -1,5 +1,5 @@
 ---
 title: Tolerance
 permalink: core/Tolerance.html
-jsonid: tolerance
+jsonid: core_tolerance
 ---

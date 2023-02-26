@@ -1,0 +1,5 @@
+---
+title: consignmentDestinationSpecifiedLocation
+permalink: compliance/RegulatoryProcedure.consignmentDestinationSpecifiedLocation.html
+jsonid: compliance_regulatoryprocedure_consignmentdestinationspecifiedlocation
+---

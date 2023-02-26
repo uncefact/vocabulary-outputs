@@ -1,5 +1,5 @@
 ---
 title: RegulatoryProcedure
 permalink: compliance/RegulatoryProcedure.html
-jsonid: regulatoryprocedure
+jsonid: compliance_regulatoryprocedure
 ---

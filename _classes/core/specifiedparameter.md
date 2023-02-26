@@ -1,5 +1,5 @@
 ---
 title: SpecifiedParameter
 permalink: core/SpecifiedParameter.html
-jsonid: specifiedparameter
+jsonid: core_specifiedparameter
 ---

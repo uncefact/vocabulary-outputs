@@ -1,5 +1,5 @@
 ---
 title: TransportationWasteRecoveryDisposalProcess
 permalink: transport/TransportationWasteRecoveryDisposalProcess.html
-jsonid: transportationwasterecoverydisposalprocess
+jsonid: transport_transportationwasterecoverydisposalprocess
 ---

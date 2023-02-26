@@ -1,5 +1,5 @@
 ---
 title: AppliedAllowanceCharge
 permalink: finance/AppliedAllowanceCharge.html
-jsonid: appliedallowancecharge
+jsonid: finance_appliedallowancecharge
 ---

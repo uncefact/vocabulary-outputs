@@ -1,5 +1,5 @@
 ---
 title: ReferencePrice
 permalink: finance/ReferencePrice.html
-jsonid: referenceprice
+jsonid: finance_referenceprice
 ---

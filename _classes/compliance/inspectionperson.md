@@ -1,5 +1,5 @@
 ---
 title: InspectionPerson
 permalink: compliance/InspectionPerson.html
-jsonid: inspectionperson
+jsonid: compliance_inspectionperson
 ---

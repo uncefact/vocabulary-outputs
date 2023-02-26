@@ -1,0 +1,96 @@
+
+{
+    "label": "Colour",
+    "uri": "trade:Colour",
+    "comment": "A colour of a product.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:Colour.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "trade:Colour.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:Colour.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "trade:Colour.presencePercent",
+            "type": "schema:Text",
+            "comment": "The percentage of the presence for this specified material."
+        },
+        {
+            "uri": "trade:Colour.testIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this XHE document is a test ."
+        },
+        {
+            "uri": "trade:Colour.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "trade:Colour.usedLightSourceCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the light source used for this product colour."
+        },
+        {
+            "uri": "trade:Colour.variationMeasureCoefficientNumeric",
+            "type": "schema:Text",
+            "comment": "The measure of the variation coefficient number for this product colour."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:Colour.applicableMachine",
+            "type": "trade:Machine",
+            "comment": "A production machine applicable to this facility production unit."
+        },
+        {
+            "uri": "trade:Colour.applicableMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Material applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "trade:Colour.applicableMethod",
+            "type": "core:SpecifiedMethod",
+            "comment": "A method applicable to this specified inspection result."
+        },
+        {
+            "uri": "trade:Colour.applicableProductionDevice",
+            "type": "trade:ProductionDevice",
+            "comment": "A production device applicable to this product colour."
+        },
+        {
+            "uri": "trade:Colour.applicableStandard",
+            "type": "compliance:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "trade:Colour.applicableTechnicalCharacteristic",
+            "type": "compliance:TechnicalCharacteristic",
+            "comment": "A technical characteristic applicable to this product colour."
+        },
+        {
+            "uri": "trade:Colour.relatedParty",
+            "type": "trade:TradeParty",
+            "comment": "A trade party related to this facility production unit."
+        },
+        {
+            "uri": "trade:Colour.specifiedDocument",
+            "type": "core:Document",
+            "comment": "A referenced document for this specified inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:TradeProduct.specifiedColour",
+            "comment": "A colour specified for this trade product."
+        }
+    ]
+}

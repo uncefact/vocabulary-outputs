@@ -1,0 +1,5 @@
+---
+title: certifiedPersonArrangementIndicator
+permalink: tourism/ExperienceProduct.certifiedPersonArrangementIndicator.html
+jsonid: tourism_experienceproduct_certifiedpersonarrangementindicator
+---

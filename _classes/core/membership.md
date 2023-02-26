@@ -1,5 +1,5 @@
 ---
 title: Membership
 permalink: core/Membership.html
-jsonid: membership
+jsonid: core_membership
 ---

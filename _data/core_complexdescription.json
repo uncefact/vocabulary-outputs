@@ -1,0 +1,46 @@
+
+{
+    "label": "ComplexDescription",
+    "uri": "core:ComplexDescription",
+    "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a work item complex description.",
+    "datatypeProperties": [
+        {
+            "uri": "core:ComplexDescription.abstract",
+            "type": "schema:Text",
+            "comment": "A textual abstract of the content of the work item complex description."
+        },
+        {
+            "uri": "core:ComplexDescription.content",
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
+        },
+        {
+            "uri": "core:ComplexDescription.contractualLanguageCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the contractual language for this basic work item."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:ComplexDescription.requestingQuery",
+            "type": "core:SpecificationQuery",
+            "comment": "A requesting specification query for this work item complex description."
+        },
+        {
+            "uri": "core:ComplexDescription.respondingResponse",
+            "type": "core:Response",
+            "comment": "A responding specification response for this work item complex description."
+        },
+        {
+            "uri": "core:ComplexDescription.subsetComplexDescription",
+            "type": "core:ComplexDescription",
+            "comment": "The complex description subset for this work item complex description."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:ComplexDescription.subsetComplexDescription",
+            "comment": "The complex description subset for this work item complex description."
+        }
+    ]
+}

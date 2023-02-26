@@ -1,5 +1,5 @@
 ---
 title: Tax
 permalink: finance/Tax.html
-jsonid: tax
+jsonid: finance_tax
 ---

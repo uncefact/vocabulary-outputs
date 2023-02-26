@@ -1,5 +1,5 @@
 ---
 title: PaymentBalanceOut
 permalink: finance/PaymentBalanceOut.html
-jsonid: paymentbalanceout
+jsonid: finance_paymentbalanceout
 ---

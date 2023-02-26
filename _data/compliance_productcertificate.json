@@ -1,0 +1,121 @@
+
+{
+    "label": "ProductCertificate",
+    "uri": "compliance:ProductCertificate",
+    "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about the product.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:ProductCertificate.actualEffectiveDateTime",
+            "type": "schema:Text",
+            "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
+        },
+        {
+            "uri": "compliance:ProductCertificate.applicableObjectCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
+        },
+        {
+            "uri": "compliance:ProductCertificate.certificateTypeCode",
+            "type": "compliance:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "compliance:ProductCertificate.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "compliance:ProductCertificate.expiryDateTime",
+            "type": "schema:Text",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
+        },
+        {
+            "uri": "compliance:ProductCertificate.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "compliance:ProductCertificate.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "compliance:ProductCertificate.issueReasonCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the reason for the issue of this process certificate."
+        },
+        {
+            "uri": "compliance:ProductCertificate.issuingPartyId",
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
+        },
+        {
+            "uri": "compliance:ProductCertificate.purposeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
+        },
+        {
+            "uri": "compliance:ProductCertificate.requestedEffectiveDateTime",
+            "type": "schema:Text",
+            "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:ProductCertificate.applicableAssertion",
+            "type": "compliance:Assertion",
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
+        },
+        {
+            "uri": "compliance:ProductCertificate.applicableProductCharacteristic",
+            "type": "compliance:ProductCharacteristic",
+            "comment": "A characteristic applicable to this trade product."
+        },
+        {
+            "uri": "compliance:ProductCertificate.applicableStandard",
+            "type": "compliance:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "compliance:ProductCertificate.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "compliance:ProductCertificate.applicableTradeProductCertification",
+            "type": "compliance:TradeProductCertification",
+            "comment": "A certification applicable to this trade product."
+        },
+        {
+            "uri": "compliance:ProductCertificate.attachedBinaryFile",
+            "type": "core:BinaryFile",
+            "comment": "A binary file attached for this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:Chemical.specifiedProductCertificate",
+            "comment": "A product certificate specified for this distinct chemical."
+        },
+        {
+            "uri": "compliance:HazardousMaterial.applicableProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "compliance:InspectionResult.obtainedProductCertificate",
+            "comment": "A product certificate obtained by means of this specified inspection result."
+        },
+        {
+            "uri": "compliance:ProductionWasteMaterial.applicableProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "compliance:ProductionWasteMaterialComponent.applicableProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "compliance:SpecifiedMaterial.applicableProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        }
+    ]
+}

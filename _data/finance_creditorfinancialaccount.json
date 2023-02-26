@@ -1,0 +1,66 @@
+
+{
+    "label": "CreditorFinancialAccount",
+    "uri": "finance:CreditorFinancialAccount",
+    "comment": "A specific business arrangement whereby credits arising from transactions are recorded.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:CreditorFinancialAccount.accountName",
+            "type": "schema:Text",
+            "comment": "An account name, expressed as text, of this payment financial account."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.bBANId",
+            "type": "schema:Text",
+            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.creditorFinancialAccountTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of creditor financial account."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.currencyCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a currency of this cash used for payment."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.iBANId",
+            "type": "schema:Text",
+            "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.proprietaryId",
+            "type": "schema:Text",
+            "comment": "The proprietary identifier for this financing financial account."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.proprietaryType",
+            "type": "schema:Text",
+            "comment": "A proprietary type, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "finance:CreditorFinancialAccount.uPICId",
+            "type": "schema:Text",
+            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:FinancingSummaryDocument.specifiedCreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:PaymentMeans.payeePartyFinancialAccount",
+            "comment": "A creditor financial account of the payee party for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:PaymentMeans.specifiedCreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
+        },
+        {
+            "uri": "finance:RequestingParty.specifiedCreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
+        }
+    ]
+}

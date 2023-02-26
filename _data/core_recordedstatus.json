@@ -1,0 +1,29 @@
+
+{
+    "label": "RecordedStatus",
+    "uri": "core:RecordedStatus",
+    "comment": "Recorded information relevant to a condition or a position of an object.",
+    "datatypeProperties": [
+        {
+            "uri": "core:RecordedStatus.changedDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value when this recorded status changed."
+        },
+        {
+            "uri": "core:RecordedStatus.changerName",
+            "type": "schema:Text",
+            "comment": "The name of the person or system, expressed as text, that changed this recorded status."
+        },
+        {
+            "uri": "core:RecordedStatus.recordedStatusConditionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the condition for this recorded status."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:QuantityAnalysis.changedStatus",
+            "comment": "A changed recorded status for this basic work item."
+        }
+    ]
+}

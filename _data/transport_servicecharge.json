@@ -1,0 +1,141 @@
+
+{
+    "label": "ServiceCharge",
+    "uri": "transport:ServiceCharge",
+    "comment": "A charge made for a logistics related service.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:ServiceCharge.allowanceCharge",
+            "type": "schema:Text",
+            "comment": "The allowance or charge, expressed as text, for this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.calculationBasis",
+            "type": "schema:Text",
+            "comment": "The basis, expressed as text, on which this logistics service charge is to be calculated, such as by volume or per unit."
+        },
+        {
+            "uri": "transport:ServiceCharge.chargeCategoryCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the category of charge for this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.chargePayingPartyRoleCode",
+            "type": "transport:ChargePayingPartyRoleCodeList",
+            "comment": "The code specifying the role of the party responsible for paying this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "transport:ServiceCharge.freightChargeTariffClassCode",
+            "type": "transport:FreightChargeTariffClassCodeList",
+            "comment": "The code specifying the tariff class for this logistics service charge which represents an entry in a table of fixed charges [Reference United Nations Code List (UNCL) 5243]."
+        },
+        {
+            "uri": "transport:ServiceCharge.freightChargeTypeId",
+            "type": "transport:FreightChargeTypeId",
+            "comment": "The unique identifier for this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.freightInvoiceTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of freight invoice of this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.logisticsChargeCalculationBasisCalculationBasisCode",
+            "type": "transport:LogisticsChargeCalculationBasisCodeList",
+            "comment": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit."
+        },
+        {
+            "uri": "transport:ServiceCharge.logisticsServiceChargeTransportPaymentMethodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the transport payment method for this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.serviceCategoryCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the category of service for this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.transportServiceCategoryCode",
+            "type": "transport:TransportServiceCategoryCodeList",
+            "comment": "The code specifying the category of this logistics service charge [Reference United Nations Code List (UNCL) 5237]."
+        },
+        {
+            "uri": "transport:ServiceCharge.transportServicePaymentArrangementCode",
+            "type": "transport:TransportServicePaymentArrangementCodeList",
+            "comment": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:ServiceCharge.appliedAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value applied to this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.appliedFromLocation",
+            "type": "transport:LogisticsLocation",
+            "comment": "The start location from which this logistics service charge should be applied."
+        },
+        {
+            "uri": "transport:ServiceCharge.appliedTax",
+            "type": "finance:Tax",
+            "comment": "A tax that is applied to this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.appliedToLocation",
+            "type": "transport:LogisticsLocation",
+            "comment": "The end location at which this logistics service charge is no longer to be applied."
+        },
+        {
+            "uri": "transport:ServiceCharge.calculationBasisPrice",
+            "type": "finance:TradePrice",
+            "comment": "The trade price upon which a calculation of this logistics service charge is or will be based."
+        },
+        {
+            "uri": "transport:ServiceCharge.disbursementAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of a disbursement for this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.paymentPlaceLocation",
+            "type": "transport:LogisticsLocation",
+            "comment": "The location of the place of payment of this logistics service charge."
+        },
+        {
+            "uri": "transport:ServiceCharge.specifiedPaymentMeans",
+            "type": "finance:PaymentMeans",
+            "comment": "A payment means specified for this header trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.applicableServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:Consignment.estimatedApplicableServiceCharge",
+            "comment": "An estimated logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
+        },
+        {
+            "uri": "transport:ConsignmentItem.applicableServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.applicableServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:LogisticsTransportMeans.applicableServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:TransportMovement.applicableServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        }
+    ]
+}

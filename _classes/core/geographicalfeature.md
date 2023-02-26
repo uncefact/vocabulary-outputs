@@ -1,5 +1,5 @@
 ---
 title: GeographicalFeature
 permalink: core/GeographicalFeature.html
-jsonid: geographicalfeature
+jsonid: core_geographicalfeature
 ---

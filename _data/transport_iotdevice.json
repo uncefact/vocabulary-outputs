@@ -1,0 +1,134 @@
+
+{
+    "label": "IOTDevice",
+    "uri": "transport:IOTDevice",
+    "comment": "An IOT (Internet of Things) piece of mechanical or electronic equipment which can collect, report and autonomously transmit digital data.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:IOTDevice.attachedAssetId",
+            "type": "schema:Text",
+            "comment": "The identifier for the asset, such as a container, to which this monitoring IOT device is attached."
+        },
+        {
+            "uri": "transport:IOTDevice.communicationCapabilityCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the communication capability of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:IOTDevice.latestReceivedSignalDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver."
+        },
+        {
+            "uri": "transport:IOTDevice.modelId",
+            "type": "schema:Text",
+            "comment": "A model identifier for this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.operationalStatusCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the operational status, such as broken, stolen, unpaired, inactive of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.positionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a position of this monitoring sensor."
+        },
+        {
+            "uri": "transport:IOTDevice.powerSourceTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a type of power source for this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.remainingBatteryChargePercent",
+            "type": "schema:Text",
+            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:IOTDevice.embeddedSensor",
+            "type": "transport:Sensor",
+            "comment": "An embedded sensor of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.grantedCertificate",
+            "type": "compliance:ProductCertificate",
+            "comment": "A product certificate granted for this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.interfaceEquipment",
+            "type": "transport:Equipment",
+            "comment": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.latestReceivedGeographicalCoordinate",
+            "type": "core:GeographicalCoordinate",
+            "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
+        },
+        {
+            "uri": "transport:IOTDevice.manufacturerParty",
+            "type": "core:Party",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "transport:IOTDevice.operatorParty",
+            "type": "core:Party",
+            "comment": "A trade party who is an operator of this product handling process."
+        },
+        {
+            "uri": "transport:IOTDevice.ownerParty",
+            "type": "core:Party",
+            "comment": "A party who owns this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:IOTDevice.providerParty",
+            "type": "core:Party",
+            "comment": "The provider party for this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.relatedEvent",
+            "type": "core:CommunicationEvent",
+            "comment": "A communication event related to this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.remoteSensor",
+            "type": "transport:Sensor",
+            "comment": "A remote sensor of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.reportedTransportEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A transport event reported by this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.reportingSensorPairing",
+            "type": "core:Pairing",
+            "comment": "A sensor communication pairing reported for this monitoring IOT device."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:LogisticsTransportEquipment.attachedIOTDevice",
+            "comment": "An IOT device attached to this logistics transport means."
+        },
+        {
+            "uri": "transport:LogisticsTransportMeans.attachedIOTDevice",
+            "comment": "An IOT device attached to this logistics transport means."
+        },
+        {
+            "uri": "transport:TransportEvent.reportingIOTDevice",
+            "comment": "An IOT device for this transport reporting event."
+        }
+    ]
+}

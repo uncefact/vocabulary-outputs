@@ -1,5 +1,5 @@
 ---
 title: Segment
 permalink: core/Segment.html
-jsonid: segment
+jsonid: core_segment
 ---

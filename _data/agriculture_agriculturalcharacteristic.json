@@ -1,0 +1,98 @@
+
+{
+    "label": "AgriculturalCharacteristic",
+    "uri": "agriculture:AgriculturalCharacteristic",
+    "comment": "A prominent attribute or aspect of an agricultural object.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.value",
+            "type": "schema:Text",
+            "comment": "A value, expressed as text, for this document characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a value for this specified range."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time or other date time value for this document characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueIndicator",
+            "type": "schema:Boolean",
+            "comment": "The value for this metric characteristic expressed as an indicator."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueNumeric",
+            "type": "schema:Text",
+            "comment": "A value, expressed as a number, for this document characteristic."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueAmount",
+            "type": "core:AmountType",
+            "comment": "A value, expressed as a monetary value, for this document characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueMethod",
+            "type": "core:SpecifiedMethod",
+            "comment": "A method specified for a value of this metric characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueParameter",
+            "type": "core:SpecifiedParameter",
+            "comment": "A parameter specified for a value for this metric characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueRange",
+            "type": "core:Range",
+            "comment": "A range specified for a value of this metric characteristic."
+        },
+        {
+            "uri": "agriculture:AgriculturalCharacteristic.valueTolerance",
+            "type": "core:Tolerance",
+            "comment": "A tolerance specified for a value of this metric characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:Area.applicableAgriculturalCharacteristic",
+            "comment": "An agricultural characteristic applicable to this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedAgriculturalCharacteristic",
+            "comment": "An agricultural characteristic specified for this crop plot."
+        },
+        {
+            "uri": "agriculture:FieldCrop.specifiedAgriculturalCharacteristic",
+            "comment": "An agricultural characteristic specified for this crop plot."
+        },
+        {
+            "uri": "agriculture:Plot.specifiedAgriculturalCharacteristic",
+            "comment": "An agricultural characteristic specified for this crop plot."
+        }
+    ]
+}

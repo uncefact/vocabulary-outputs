@@ -1,5 +1,5 @@
 ---
 title: DocumentContextParameter
 permalink: core/DocumentContextParameter.html
-jsonid: documentcontextparameter
+jsonid: core_documentcontextparameter
 ---

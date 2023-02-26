@@ -1,5 +1,5 @@
 ---
 title: ObservationObjectiveParameter
 permalink: compliance/ObservationObjectiveParameter.html
-jsonid: observationobjectiveparameter
+jsonid: compliance_observationobjectiveparameter
 ---

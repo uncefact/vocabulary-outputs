@@ -1,5 +1,5 @@
 ---
 title: HeaderTradeSettlement
 permalink: trade/HeaderTradeSettlement.html
-jsonid: headertradesettlement
+jsonid: trade_headertradesettlement
 ---

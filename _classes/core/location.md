@@ -1,5 +1,5 @@
 ---
 title: Location
 permalink: core/Location.html
-jsonid: location
+jsonid: core_location
 ---

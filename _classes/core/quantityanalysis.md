@@ -1,5 +1,5 @@
 ---
 title: QuantityAnalysis
 permalink: core/QuantityAnalysis.html
-jsonid: quantityanalysis
+jsonid: core_quantityanalysis
 ---

@@ -1,5 +1,5 @@
 ---
 title: TradeAllowanceCharge
 permalink: finance/TradeAllowanceCharge.html
-jsonid: tradeallowancecharge
+jsonid: finance_tradeallowancecharge
 ---

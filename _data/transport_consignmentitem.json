@@ -1,0 +1,365 @@
+
+{
+    "label": "ConsignmentItem",
+    "uri": "transport:ConsignmentItem",
+    "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:ConsignmentItem.cargoToleranceInformation",
+            "type": "schema:Text",
+            "comment": "Cargo tolerance information, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.damageRemarks",
+            "type": "schema:Text",
+            "comment": "Damage remarks, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.deliveryInstructionsText",
+            "type": "schema:Text",
+            "comment": "Delivery instructions, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.exportTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the export type of supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.firstTypeExtensionCode",
+            "type": "schema:Text",
+            "comment": "The code used as a first extension to the type code for further specifying the type of supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.globalId",
+            "type": "schema:Text",
+            "comment": "A global identifier for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.goodsTypeCode",
+            "type": "transport:GoodsTypeCodeList",
+            "comment": "The code specifying the type of referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.goodsTypeExtensionTypeExtensionCode",
+            "type": "transport:GoodsTypeExtensionCodeList",
+            "comment": "The code used as an extension to the type code for further specifying the type of referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:ConsignmentItem.importTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the import type of supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.information",
+            "type": "schema:Text",
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
+        },
+        {
+            "uri": "transport:ConsignmentItem.nationalTypeExtensionCode",
+            "type": "schema:Text",
+            "comment": "The code used as a national extension to the type code for further specifying the type of supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.packageType",
+            "type": "schema:Text",
+            "comment": "A package type, expressed as text, for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.secondTypeExtensionCode",
+            "type": "schema:Text",
+            "comment": "The code used as a second extension to the type code for further specifying the type of supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.sequenceNumeric",
+            "type": "schema:Text",
+            "comment": "A sequence number for these specified personal effects."
+        },
+        {
+            "uri": "transport:ConsignmentItem.specialInstructions",
+            "type": "schema:Text",
+            "comment": "Special instructions, expressed as text, for this supply chain consignment item."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:ConsignmentItem.applicableCustomsValuation",
+            "type": "finance:CustomsValuation",
+            "comment": "A cross-border customs valuation applicable to this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.applicableDangerousGoods",
+            "type": "transport:DangerousGoods",
+            "comment": "Dangerous goods applicable to the transport of this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.applicableNote",
+            "type": "core:Note",
+            "comment": "A note providing information applicable to this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.applicableRegulatoryProcedure",
+            "type": "compliance:RegulatoryProcedure",
+            "comment": "A cross-border regulatory procedure applicable to this header trade agreement."
+        },
+        {
+            "uri": "transport:ConsignmentItem.applicableServiceCharge",
+            "type": "transport:ServiceCharge",
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.applicableTransportMeans",
+            "type": "transport:LogisticsTransportMeans",
+            "comment": "The means of transport applicable to this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.associatedDocument",
+            "type": "core:Document",
+            "comment": "A document associated with this line trade settlement."
+        },
+        {
+            "uri": "transport:ConsignmentItem.associatedTransportEquipment",
+            "type": "transport:LogisticsTransportEquipment",
+            "comment": "A piece of transport equipment associated with this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.borderClearanceInstructions",
+            "type": "compliance:TransportInstructions",
+            "comment": "Border clearance instructions for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "transport:ConsignmentItem.classificationDocument",
+            "type": "core:Document",
+            "comment": "The referenced classification document for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.declaredForCustomsLocation",
+            "type": "transport:LogisticsLocation",
+            "comment": "The location of this supply chain consignment as declared for customs."
+        },
+        {
+            "uri": "transport:ConsignmentItem.declaredValueForCarriageAmount",
+            "type": "core:AmountType",
+            "comment": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery."
+        },
+        {
+            "uri": "transport:ConsignmentItem.declaredValueForCustomsAmount",
+            "type": "core:AmountType",
+            "comment": "The monetary value declared for customs purposes for this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.declaredValueForStatisticsAmount",
+            "type": "core:AmountType",
+            "comment": "The monetary value of this supply chain consignment item as declared for statistical purposes."
+        },
+        {
+            "uri": "transport:ConsignmentItem.deliveryParty",
+            "type": "core:Party",
+            "comment": "The party to whom this referenced supply chain consignment will be or has been delivered."
+        },
+        {
+            "uri": "transport:ConsignmentItem.deliveryTransportEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A delivery event for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.despatchParty",
+            "type": "core:Party",
+            "comment": "The party from whom this referenced supply chain consignment will be or has been despatched."
+        },
+        {
+            "uri": "transport:ConsignmentItem.destinationCountry",
+            "type": "core:Country",
+            "comment": "The destination country for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.examinationEvent",
+            "type": "transport:TransportEvent",
+            "comment": "An examination event for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "transport:ConsignmentItem.exportCountry",
+            "type": "core:Country",
+            "comment": "The export country for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.exportGeopoliticalRegion",
+            "type": "core:GeopoliticalRegion",
+            "comment": "The geopolitical region of export for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.fOBAmount",
+            "type": "core:AmountType",
+            "comment": "The monetary value for this supply chain consignment item as calculated under FOB (Free On Board) delivery terms."
+        },
+        {
+            "uri": "transport:ConsignmentItem.handlingInstructions",
+            "type": "transport:HandlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "transport:ConsignmentItem.importationCountry",
+            "type": "core:Country",
+            "comment": "The importation country for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.insuranceValueAmount",
+            "type": "core:AmountType",
+            "comment": "The monetary value of this supply chain consignment as covered by an insurance policy."
+        },
+        {
+            "uri": "transport:ConsignmentItem.invoiceAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value for an invoice for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.linearDimension",
+            "type": "core:SpatialDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "transport:ConsignmentItem.linearUnitLoadingLengthMeasure",
+            "type": "core:LinearUnitMeasureType",
+            "comment": "A measure of the loading length which is the length along a means of transport over which the complete width and height is needed for loading all the goods items in this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.manufacturerParty",
+            "type": "core:Party",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "transport:ConsignmentItem.natureIdentificationCargo",
+            "type": "transport:Cargo",
+            "comment": "Transport cargo details of this referenced supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
+        },
+        {
+            "uri": "transport:ConsignmentItem.originCountry",
+            "type": "core:Country",
+            "comment": "A country of origin for this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.originGeopoliticalRegion",
+            "type": "core:GeopoliticalRegion",
+            "comment": "The geopolitical region of origin for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.packageQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of packages in this logistics transport movement."
+        },
+        {
+            "uri": "transport:ConsignmentItem.physicalShippingMarks",
+            "type": "transport:ShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.pickUpEvent",
+            "type": "transport:TransportEvent",
+            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
+        },
+        {
+            "uri": "transport:ConsignmentItem.previousAdministrativeDocument",
+            "type": "core:Document",
+            "comment": "A previous administrative referenced document for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.quarantineInstructions",
+            "type": "compliance:QuarantineInstructions",
+            "comment": "Quarantine instructions for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.reportedLogisticsStatus",
+            "type": "transport:LogisticsStatus",
+            "comment": "A logistics status reported for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "transport:ConsignmentItem.specifiedInspectionEvent",
+            "type": "compliance:InspectionEvent",
+            "comment": "A specified inspection event for this sustainability inspection."
+        },
+        {
+            "uri": "transport:ConsignmentItem.specifiedRiskAnalysisResult",
+            "type": "compliance:RiskAnalysisResult",
+            "comment": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.tariffQuantity",
+            "type": "core:QuantityType",
+            "comment": "A tariff quantity for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "transport:ConsignmentItem.totalChargeAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value of the total charge of this trade price."
+        },
+        {
+            "uri": "transport:ConsignmentItem.totalExportExitToImportEntryChargeAmount",
+            "type": "core:AmountType",
+            "comment": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain consignment calculated from the export exit location to the import entry location."
+        },
+        {
+            "uri": "transport:ConsignmentItem.tradeLineItemQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of trade line items in this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.transitCountry",
+            "type": "core:Country",
+            "comment": "A transit country for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.transportContractDocument",
+            "type": "core:Document",
+            "comment": "A transport contract document for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.transportPackage",
+            "type": "transport:Package",
+            "comment": "A transport package for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.transportTemperature",
+            "type": "transport:TransportSettingTemperature",
+            "comment": "The transport temperature setting for this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.vanningEvent",
+            "type": "transport:TransportEvent",
+            "comment": "The vanning event (the loading of this consignment at the place of its original despatch) for this referenced supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.volumeUnitGrossVolumeMeasure",
+            "type": "core:VolumeUnitMeasureType",
+            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
+        },
+        {
+            "uri": "transport:ConsignmentItem.weightUnitChargeableWeightMeasure",
+            "type": "core:WeightUnitMeasureType",
+            "comment": "A measure of a chargeable weight of this supply chain consignment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.weightUnitGrossWeightMeasure",
+            "type": "core:WeightUnitMeasureType",
+            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
+        },
+        {
+            "uri": "transport:ConsignmentItem.weightUnitNetWeightMeasure",
+            "type": "core:WeightUnitMeasureType",
+            "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:Consignment.includedConsignmentItem",
+            "comment": "A consignment item included in this supply chain consignment."
+        },
+        {
+            "uri": "transport:LogisticsTransportEquipment.loadedConsignmentItem",
+            "comment": "A consignment item loaded onto, or into, this piece of logistics transport equipment."
+        }
+    ]
+}

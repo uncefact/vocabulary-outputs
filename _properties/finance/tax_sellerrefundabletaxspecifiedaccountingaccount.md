@@ -1,0 +1,5 @@
+---
+title: sellerRefundableTaxSpecifiedAccountingAccount
+permalink: finance/Tax.sellerRefundableTaxSpecifiedAccountingAccount.html
+jsonid: finance_tax_sellerrefundabletaxspecifiedaccountingaccount
+---

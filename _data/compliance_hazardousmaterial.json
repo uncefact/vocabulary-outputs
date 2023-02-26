@@ -1,0 +1,51 @@
+
+{
+    "label": "HazardousMaterial",
+    "uri": "compliance:HazardousMaterial",
+    "comment": "Material which exhibits adverse effects on living organisms.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:HazardousMaterial.biologicalSeverityDescription",
+            "type": "schema:Text",
+            "comment": "The textual description of the biological severity of this toxicological hazardous material."
+        },
+        {
+            "uri": "compliance:HazardousMaterial.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "compliance:HazardousMaterial.entryRouteDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of the entry route of this toxicological hazardous material."
+        },
+        {
+            "uri": "compliance:HazardousMaterial.reproductiveToxinName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of the reproductive toxin in this toxicological hazardous material."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "compliance:HazardousMaterial.applicableProductCertificate",
+            "type": "compliance:ProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "compliance:HazardousMaterial.applicableProductCharacteristic",
+            "type": "compliance:ProductCharacteristic",
+            "comment": "A characteristic applicable to this trade product."
+        },
+        {
+            "uri": "compliance:HazardousMaterial.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:Chemical.applicableHazardousMaterial",
+            "comment": "An applicable toxicological hazardous material for this distinct chemical."
+        }
+    ]
+}

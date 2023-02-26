@@ -1,5 +1,5 @@
 ---
 title: PaymentMeans
 permalink: finance/PaymentMeans.html
-jsonid: paymentmeans
+jsonid: finance_paymentmeans
 ---

@@ -1,0 +1,89 @@
+
+{
+    "label": "CropProduceBatch",
+    "uri": "agriculture:CropProduceBatch",
+    "comment": "A group of crop produce considered or dealt with together.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:CropProduceBatch.appliedTreatment",
+            "type": "schema:Text",
+            "comment": "A treatment, expressed as text, applied to this crop produce batch."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.breakUpDateTime",
+            "type": "schema:Text",
+            "comment": "The break up date, time, date time, or other date time value for this experience event."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.creationDateTime",
+            "type": "schema:Text",
+            "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.nominalSizeNumeric",
+            "type": "schema:Text",
+            "comment": "The value of the nominal size for this crop produce batch."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.productName",
+            "type": "schema:Text",
+            "comment": "The product name, expressed as text, for this crop produce batch."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "agriculture:CropProduceBatch.sizeMeasure",
+            "type": "core:MeasureType",
+            "comment": "The measure of the size of this specified binary file."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedAgriculturalCertificate",
+            "type": "agriculture:AgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedAgriculturalCharacteristic",
+            "type": "agriculture:AgriculturalCharacteristic",
+            "comment": "An agricultural characteristic specified for this crop plot."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedProduce",
+            "type": "agriculture:Produce",
+            "comment": "A crop produce specified for this crop produce batch."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedQuantity",
+            "type": "core:QuantityType",
+            "comment": "The quantity specified for this crop produce batch."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.unitQuantity",
+            "type": "core:QuantityType",
+            "comment": "A number of units for this supply chain event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:AgriculturalProcess.harvestedBatch",
+            "comment": "A crop produce batch harvested in the crop production for this agricultural process."
+        },
+        {
+            "uri": "agriculture:Produce.inputSpecifiedBatch",
+            "comment": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
+        },
+        {
+            "uri": "agriculture:Produce.outputSpecifiedBatch",
+            "comment": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 ---
 title: Contract
 permalink: trade/Contract.html
-jsonid: contract
+jsonid: trade_contract
 ---

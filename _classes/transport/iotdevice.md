@@ -1,5 +1,5 @@
 ---
 title: IOTDevice
 permalink: transport/IOTDevice.html
-jsonid: iotdevice
+jsonid: transport_iotdevice
 ---

@@ -1,0 +1,64 @@
+
+{
+    "label": "Produce",
+    "uri": "agriculture:Produce",
+    "comment": "Agricultural plants or plant products grown and harvested, such as grain, fruit, vegetables, silage.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:Produce.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "agriculture:Produce.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "agriculture:Produce.subordinateTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the subordinate type for this production device."
+        },
+        {
+            "uri": "agriculture:Produce.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "agriculture:Produce.calculatedYieldMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the calculated yield, such as weight per surface area unit, of this crop produce."
+        },
+        {
+            "uri": "agriculture:Produce.estimatedYieldMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of the estimated yield, such as weight per surface area unit, of this crop produce."
+        },
+        {
+            "uri": "agriculture:Produce.inputSpecifiedBatch",
+            "type": "agriculture:CropProduceBatch",
+            "comment": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
+        },
+        {
+            "uri": "agriculture:Produce.outputSpecifiedBatch",
+            "type": "agriculture:CropProduceBatch",
+            "comment": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "agriculture:Area.harvestedProduce",
+            "comment": "Crop produce harvested from this agricultural zone area."
+        },
+        {
+            "uri": "agriculture:CropProduceBatch.specifiedProduce",
+            "comment": "A crop produce specified for this crop produce batch."
+        },
+        {
+            "uri": "agriculture:FieldCrop.harvestedProduce",
+            "comment": "Crop produce harvested from this agricultural zone area."
+        }
+    ]
+}

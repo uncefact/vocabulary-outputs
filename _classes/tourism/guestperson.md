@@ -1,5 +1,5 @@
 ---
 title: GuestPerson
 permalink: tourism/GuestPerson.html
-jsonid: guestperson
+jsonid: tourism_guestperson
 ---

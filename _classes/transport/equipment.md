@@ -1,5 +1,5 @@
 ---
 title: Equipment
 permalink: transport/Equipment.html
-jsonid: equipment
+jsonid: transport_equipment
 ---

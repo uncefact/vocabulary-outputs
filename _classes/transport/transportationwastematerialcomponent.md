@@ -1,5 +1,5 @@
 ---
 title: TransportationWasteMaterialComponent
 permalink: transport/TransportationWasteMaterialComponent.html
-jsonid: transportationwastematerialcomponent
+jsonid: transport_transportationwastematerialcomponent
 ---

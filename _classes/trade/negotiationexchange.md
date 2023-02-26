@@ -1,5 +1,5 @@
 ---
 title: NegotiationExchange
 permalink: trade/NegotiationExchange.html
-jsonid: negotiationexchange
+jsonid: trade_negotiationexchange
 ---

@@ -1,5 +1,5 @@
 ---
 title: WorkflowObject
 permalink: core/WorkflowObject.html
-jsonid: workflowobject
+jsonid: core_workflowobject
 ---

@@ -1,5 +1,5 @@
 ---
 title: PaymentFinancialAccount
 permalink: finance/PaymentFinancialAccount.html
-jsonid: paymentfinancialaccount
+jsonid: finance_paymentfinancialaccount
 ---

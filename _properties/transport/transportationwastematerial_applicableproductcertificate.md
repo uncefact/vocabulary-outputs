@@ -1,0 +1,5 @@
+---
+title: applicableProductCertificate
+permalink: transport/TransportationWasteMaterial.applicableProductCertificate.html
+jsonid: transport_transportationwastematerial_applicableproductcertificate
+---

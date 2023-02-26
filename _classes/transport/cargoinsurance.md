@@ -1,5 +1,5 @@
 ---
 title: CargoInsurance
 permalink: transport/CargoInsurance.html
-jsonid: cargoinsurance
+jsonid: transport_cargoinsurance
 ---

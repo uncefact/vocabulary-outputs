@@ -1,0 +1,49 @@
+
+{
+    "label": "CoordinateReferenceSystem",
+    "uri": "core:CoordinateReferenceSystem",
+    "comment": "A coordinate reference system that is used in a contextually local sense to describe the relative locations of objects in which coordinates of points are recorded in a Coordinate System (CS) (reference ISO 19111).",
+    "datatypeProperties": [
+        {
+            "uri": "core:CoordinateReferenceSystem.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "core:CoordinateReferenceSystem.level",
+            "type": "schema:Text",
+            "comment": "The level, expressed as text, of this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "core:CoordinateReferenceSystem.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "core:CoordinateReferenceSystem.specifiedPeriod",
+            "type": "core:DelimitedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "core:CoordinateReferenceSystem.subordinateCoordinateReferenceSystem",
+            "type": "core:CoordinateReferenceSystem",
+            "comment": "A CS engineering coordinate reference system subordinate to this CS engineering coordinate reference system."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "core:CoordinateReferenceSystem.subordinateCoordinateReferenceSystem",
+            "comment": "A CS engineering coordinate reference system subordinate to this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "core:GeographicalCoordinate.usedCoordinateReferenceSystem",
+            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+        },
+        {
+            "uri": "core:GeographicalFeature.usedCoordinateReferenceSystem",
+            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+        }
+    ]
+}

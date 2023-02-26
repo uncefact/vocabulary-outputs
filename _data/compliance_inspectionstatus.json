@@ -1,0 +1,28 @@
+
+{
+    "label": "InspectionStatus",
+    "uri": "compliance:InspectionStatus",
+    "comment": "The information relevant to a condition related to an inspection.",
+    "datatypeProperties": [
+        {
+            "uri": "compliance:InspectionStatus.conditionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a condition of this logistics packaging."
+        },
+        {
+            "uri": "compliance:InspectionStatus.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "compliance:SpecifiedInspection.specifiedInspectionStatus",
+            "comment": "The inspection status specified for this sustainability inspection."
+        },
+        {
+            "uri": "compliance:SustainabilityInspection.specifiedInspectionStatus",
+            "comment": "The inspection status specified for this sustainability inspection."
+        }
+    ]
+}

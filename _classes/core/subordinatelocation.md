@@ -1,5 +1,5 @@
 ---
 title: SubordinateLocation
 permalink: core/SubordinateLocation.html
-jsonid: subordinatelocation
+jsonid: core_subordinatelocation
 ---

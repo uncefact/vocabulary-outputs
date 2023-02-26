@@ -1,0 +1,40 @@
+
+{
+    "label": "AnimalCertificate",
+    "uri": "agriculture:AnimalCertificate",
+    "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about the identity of an animal or a batch of animals.",
+    "datatypeProperties": [
+        {
+            "uri": "agriculture:AnimalCertificate.certificateTypeCode",
+            "type": "agriculture:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "agriculture:AnimalCertificate.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "agriculture:AnimalCertificate.applicableAnimalCertification",
+            "type": "agriculture:AnimalCertification",
+            "comment": "An animal certification applicable to this animal certificate."
+        },
+        {
+            "uri": "agriculture:AnimalCertificate.applicableAssertion",
+            "type": "compliance:Assertion",
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
+        },
+        {
+            "uri": "agriculture:AnimalCertificate.applicableStandard",
+            "type": "compliance:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "agriculture:AnimalCertificate.applicableSustainabilityCharacteristic",
+            "type": "compliance:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        }
+    ]
+}

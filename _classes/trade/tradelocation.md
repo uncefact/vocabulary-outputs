@@ -1,5 +1,5 @@
 ---
 title: TradeLocation
 permalink: trade/TradeLocation.html
-jsonid: tradelocation
+jsonid: trade_tradelocation
 ---

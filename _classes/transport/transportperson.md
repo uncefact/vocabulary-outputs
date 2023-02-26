@@ -1,5 +1,5 @@
 ---
 title: TransportPerson
 permalink: transport/TransportPerson.html
-jsonid: transportperson
+jsonid: transport_transportperson
 ---

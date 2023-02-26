@@ -1,0 +1,71 @@
+
+{
+    "label": "Classification",
+    "uri": "trade:Classification",
+    "comment": "A systematic arrangement of products in classes or categories according to established criteria.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:Classification.classCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the class for this product classification."
+        },
+        {
+            "uri": "trade:Classification.classContentTypeDescription",
+            "type": "schema:Text",
+            "comment": "The textual description for the class content type of this product classification."
+        },
+        {
+            "uri": "trade:Classification.classContentTypeDescriptionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the description of the class content type of this product classification."
+        },
+        {
+            "uri": "trade:Classification.className",
+            "type": "schema:Text",
+            "comment": "A class name, expressed as text, for this product classification."
+        },
+        {
+            "uri": "trade:Classification.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "trade:Classification.subClassCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the sub class for this product classification."
+        },
+        {
+            "uri": "trade:Classification.systemId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of the classification system for this product classification."
+        },
+        {
+            "uri": "trade:Classification.systemName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of the classification system for this product classification."
+        },
+        {
+            "uri": "trade:Classification.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:Classification.applicableStandard",
+            "type": "compliance:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "trade:Classification.classCharacteristic",
+            "type": "compliance:ProductCharacteristic",
+            "comment": "A product class characteristic for this product classification."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:TradeProduct.designatedClassification",
+            "comment": "A product classification designated for this trade product."
+        }
+    ]
+}

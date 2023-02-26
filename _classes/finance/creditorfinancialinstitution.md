@@ -1,5 +1,5 @@
 ---
 title: CreditorFinancialInstitution
 permalink: finance/CreditorFinancialInstitution.html
-jsonid: creditorfinancialinstitution
+jsonid: finance_creditorfinancialinstitution
 ---

@@ -1,5 +1,5 @@
 ---
 title: ShippingMarks
 permalink: transport/ShippingMarks.html
-jsonid: shippingmarks
+jsonid: transport_shippingmarks
 ---

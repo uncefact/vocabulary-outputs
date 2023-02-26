@@ -1,0 +1,51 @@
+
+{
+    "label": "HeaderBalanceOut",
+    "uri": "finance:HeaderBalanceOut",
+    "comment": "Offset header information to ensure that debits and credits are equal for a transaction.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:HeaderBalanceOut.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.reasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a reason for the declared error."
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.reasonDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of the reason for this header balance out."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "finance:HeaderBalanceOut.breakdownBalanceOut",
+            "type": "finance:HeaderBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
+        },
+        {
+            "uri": "finance:HeaderBalanceOut.calculatedAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value calculated for this header balance out."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:HeaderBalanceOut.breakdownBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
+        }
+    ]
+}

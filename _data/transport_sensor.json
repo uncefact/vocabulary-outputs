@@ -1,0 +1,85 @@
+
+{
+    "label": "Sensor",
+    "uri": "transport:Sensor",
+    "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
+    "datatypeProperties": [
+        {
+            "uri": "transport:Sensor.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "transport:Sensor.positionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a position of this monitoring sensor."
+        },
+        {
+            "uri": "transport:Sensor.remainingBatteryChargePercent",
+            "type": "schema:Text",
+            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:Sensor.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "transport:Sensor.actualReportedMeasurement",
+            "type": "compliance:CalibratedMeasurement",
+            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "transport:Sensor.definedControlSettingParameter",
+            "type": "compliance:ControlSettingParameter",
+            "comment": "A control setting parameter defined for this monitoring sensor."
+        },
+        {
+            "uri": "transport:Sensor.definedOperationalParameter",
+            "type": "compliance:OperationalParameter",
+            "comment": "An operational parameter defined for this monitoring sensor."
+        },
+        {
+            "uri": "transport:Sensor.grantedCertificate",
+            "type": "compliance:ProductCertificate",
+            "comment": "A product certificate granted for this monitoring IOT device."
+        },
+        {
+            "uri": "transport:Sensor.manufacturerParty",
+            "type": "core:Party",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "transport:Sensor.ownerParty",
+            "type": "core:Party",
+            "comment": "A party who owns this piece of logistics transport equipment."
+        },
+        {
+            "uri": "transport:Sensor.precisionMeasurement",
+            "type": "compliance:CalibratedMeasurement",
+            "comment": "A calibrated measurement of precision for this monitoring sensor."
+        },
+        {
+            "uri": "transport:Sensor.scheduledReportedMeasurement",
+            "type": "compliance:CalibratedMeasurement",
+            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "transport:Sensor.valueMeasure",
+            "type": "core:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "transport:IOTDevice.embeddedSensor",
+            "comment": "An embedded sensor of this monitoring IOT device."
+        },
+        {
+            "uri": "transport:IOTDevice.remoteSensor",
+            "comment": "A remote sensor of this monitoring IOT device."
+        }
+    ]
+}

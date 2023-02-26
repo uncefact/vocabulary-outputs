@@ -1,5 +1,5 @@
 ---
 title: WorkItemDimension
 permalink: core/WorkItemDimension.html
-jsonid: workitemdimension
+jsonid: core_workitemdimension
 ---

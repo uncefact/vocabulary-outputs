@@ -1,0 +1,46 @@
+
+{
+    "label": "PaymentBalanceOut",
+    "uri": "finance:PaymentBalanceOut",
+    "comment": "Offset information to ensure that debits and credits are equal for a transaction.",
+    "datatypeProperties": [
+        {
+            "uri": "finance:PaymentBalanceOut.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.reasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a reason for the declared error."
+        },
+        {
+            "uri": "finance:PaymentBalanceOut.reasonDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of the reason for this header balance out."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "finance:PaymentBalanceOut.calculatedAmount",
+            "type": "core:AmountType",
+            "comment": "A monetary value calculated for this header balance out."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "finance:TradeSettlementPaymentMonetarySummation.applicablePaymentBalanceOut",
+            "comment": "A balance out applicable to this trade settlement payment monetary summation."
+        }
+    ]
+}

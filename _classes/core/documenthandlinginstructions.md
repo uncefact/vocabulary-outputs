@@ -1,5 +1,5 @@
 ---
 title: DocumentHandlingInstructions
 permalink: core/DocumentHandlingInstructions.html
-jsonid: documenthandlinginstructions
+jsonid: core_documenthandlinginstructions
 ---

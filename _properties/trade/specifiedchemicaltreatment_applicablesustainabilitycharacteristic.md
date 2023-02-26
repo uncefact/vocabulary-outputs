@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: trade/SpecifiedChemicalTreatment.applicableSustainabilityCharacteristic.html
+jsonid: trade_specifiedchemicaltreatment_applicablesustainabilitycharacteristic
+---

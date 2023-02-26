@@ -1,5 +1,5 @@
 ---
 title: DocumentCharacteristic
 permalink: core/DocumentCharacteristic.html
-jsonid: documentcharacteristic
+jsonid: core_documentcharacteristic
 ---

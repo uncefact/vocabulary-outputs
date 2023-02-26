@@ -1,5 +1,5 @@
 ---
 title: GeographicalMultiSurface
 permalink: core/GeographicalMultiSurface.html
-jsonid: geographicalmultisurface
+jsonid: core_geographicalmultisurface
 ---

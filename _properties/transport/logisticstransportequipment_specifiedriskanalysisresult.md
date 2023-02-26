@@ -1,0 +1,5 @@
+---
+title: specifiedRiskAnalysisResult
+permalink: transport/LogisticsTransportEquipment.specifiedRiskAnalysisResult.html
+jsonid: transport_logisticstransportequipment_specifiedriskanalysisresult
+---

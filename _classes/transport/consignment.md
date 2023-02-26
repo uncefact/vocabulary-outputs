@@ -1,5 +1,5 @@
 ---
 title: Consignment
 permalink: transport/Consignment.html
-jsonid: consignment
+jsonid: transport_consignment
 ---

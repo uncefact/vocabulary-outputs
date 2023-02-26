@@ -1,5 +1,5 @@
 ---
 title: GuestHealthIndication
 permalink: tourism/GuestHealthIndication.html
-jsonid: guesthealthindication
+jsonid: tourism_guesthealthindication
 ---

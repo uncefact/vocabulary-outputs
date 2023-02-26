@@ -1,5 +1,5 @@
 ---
 title: Seal
 permalink: compliance/Seal.html
-jsonid: seal
+jsonid: compliance_seal
 ---

@@ -1,0 +1,114 @@
+
+{
+    "label": "SupplyChainInventory",
+    "uri": "trade:SupplyChainInventory",
+    "comment": "Supply chain goods and materials held in stock.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:SupplyChainInventory.averageDurationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time of the average duration for this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.calculationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the calculation of this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.plannedStockCalculationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:SupplyChainInventory.averageDemandQuantity",
+            "type": "core:QuantityType",
+            "comment": "The average demand quantity for this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.dispositionDocument",
+            "type": "core:Document",
+            "comment": "A disposition document referenced in this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.includedBatch",
+            "type": "trade:ProductBatch",
+            "comment": "A product batch included in this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.includedMaterial",
+            "type": "compliance:SpecifiedMaterial",
+            "comment": "Material included in this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.includedTradeProduct",
+            "type": "trade:TradeProduct",
+            "comment": "A product included in this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.maximumStockLevelMeasure",
+            "type": "core:MeasureType",
+            "comment": "The measure of the maximum stock level for this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.maximumStockQuantity",
+            "type": "core:QuantityType",
+            "comment": "The maximum stock quantity in this CI supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.minimumStockLevelMeasure",
+            "type": "core:MeasureType",
+            "comment": "The measure of the minimum stock level for this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.minimumStockQuantity",
+            "type": "core:QuantityType",
+            "comment": "The minimum stock quantity in this CI supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.plannedStockQuantity",
+            "type": "core:QuantityType",
+            "comment": "The planned stock quantity for this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.remarkNote",
+            "type": "core:Note",
+            "comment": "A note containing a remark for this supply chain inventory."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.specifiedLogisticsLocation",
+            "type": "transport:LogisticsLocation",
+            "comment": "A location specified for this logistics status."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.specifiedSupplyChainEvent",
+            "type": "transport:SupplyChainEvent",
+            "comment": "A supply chain event specified for this product batch."
+        },
+        {
+            "uri": "trade:SupplyChainInventory.stockQuantity",
+            "type": "core:QuantityType",
+            "comment": "The quantity of stock in this supply chain inventory."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:LineTradeDelivery.availableInventory",
+            "comment": "Inventory available, at line level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.consignmentInventory",
+            "comment": "Supply chain consignment inventory, at line level, for this trade delivery."
+        },
+        {
+            "uri": "trade:LineTradeDelivery.customerInventory",
+            "comment": "Supply chain customer inventory, at line level, for this trade delivery."
+        }
+    ]
+}

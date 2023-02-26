@@ -1,5 +1,5 @@
 ---
 title: TradeSettlementPayment
 permalink: trade/TradeSettlementPayment.html
-jsonid: tradesettlementpayment
+jsonid: trade_tradesettlementpayment
 ---

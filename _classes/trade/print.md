@@ -1,5 +1,5 @@
 ---
 title: Print
 permalink: trade/Print.html
-jsonid: print
+jsonid: trade_print
 ---

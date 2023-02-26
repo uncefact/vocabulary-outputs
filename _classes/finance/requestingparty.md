@@ -1,5 +1,5 @@
 ---
 title: RequestingParty
 permalink: finance/RequestingParty.html
-jsonid: requestingparty
+jsonid: finance_requestingparty
 ---

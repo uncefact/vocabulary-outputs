@@ -1,0 +1,126 @@
+
+{
+    "label": "SupplyChainTradeTransaction",
+    "uri": "trade:SupplyChainTradeTransaction",
+    "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details.",
+    "datatypeProperties": [
+        {
+            "uri": "trade:SupplyChainTradeTransaction.documentURLId",
+            "type": "schema:Text",
+            "comment": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.information",
+            "type": "schema:Text",
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.salesAgentAssignedId",
+            "type": "schema:Text",
+            "comment": "The unique identifier assigned by the sales agent to identify this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.senderRecipientSequenceId",
+            "type": "schema:Text",
+            "comment": "The sender-recipient sequence identifier for this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.shipmentId",
+            "type": "schema:Text",
+            "comment": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicableHeaderTradeAgreement",
+            "type": "trade:HeaderTradeAgreement",
+            "comment": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicableHeaderTradeDelivery",
+            "type": "trade:HeaderTradeDelivery",
+            "comment": "A trade delivery header applicable to this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicablePeriod",
+            "type": "core:SpecifiedPeriod",
+            "comment": "A period applicable to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.applicableTradeSettlement",
+            "type": "trade:HeaderTradeSettlement",
+            "comment": "The trade settlement header applicable to this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedDocument",
+            "type": "core:Document",
+            "comment": "A document associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedDocumentLineDocument",
+            "type": "trade:DocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedFinancingRequestResultDocument",
+            "type": "finance:FinancingRequestResultDocument",
+            "comment": "The financing request result document associated with this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.associatedStandard",
+            "type": "compliance:Standard",
+            "comment": "A referenced standard associated to this specified licence."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedDeliverySchedule",
+            "type": "trade:DeliverySchedule",
+            "comment": "Delivery scheduling details included in a defined forecast period for this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedNote",
+            "type": "core:Note",
+            "comment": "A note included for this document status."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedProductGroup",
+            "type": "trade:ProductGroup",
+            "comment": "A product group included in this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.includedSupplyChainTradeLineItem",
+            "type": "trade:SupplyChainTradeLineItem",
+            "comment": "A supply chain trade line item included in this logistics package."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.lineItemQuantity",
+            "type": "core:QuantityType",
+            "comment": "The number of line items for this supply chain trade transaction."
+        },
+        {
+            "uri": "trade:SupplyChainTradeTransaction.specifiedPackage",
+            "type": "transport:Package",
+            "comment": "A logistics package specified for these transported dangerous goods."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "trade:TradeProduct.relatedTradeTransaction",
+            "comment": "A supply chain trade transaction related to this specified assessment."
+        }
+    ]
+}

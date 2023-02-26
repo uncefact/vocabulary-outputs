@@ -1,0 +1,5 @@
+---
+title: interpretationResultApplicableParameter
+permalink: compliance/ObservationResultCharacteristic.interpretationResultApplicableParameter.html
+jsonid: compliance_observationresultcharacteristic_interpretationresultapplicableparameter
+---

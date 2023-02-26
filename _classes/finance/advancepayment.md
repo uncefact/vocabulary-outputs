@@ -1,5 +1,5 @@
 ---
 title: AdvancePayment
 permalink: finance/AdvancePayment.html
-jsonid: advancepayment
+jsonid: finance_advancepayment
 ---

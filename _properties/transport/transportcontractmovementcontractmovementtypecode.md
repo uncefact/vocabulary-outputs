@@ -1,5 +1,0 @@
----
-title: transportContractMovementContractMovementTypeCode
-permalink: transport/Service.transportContractMovementContractMovementTypeCode.html
-jsonid: transportcontractmovementcontractmovementtypecode
----
