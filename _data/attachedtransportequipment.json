@@ -1,0 +1,41 @@
+
+{
+    "label": "AttachedTransportEquipment",
+    "uri": "unece:AttachedTransportEquipment",
+    "comment": "A piece of attached transport equipment, such as a chain or a tarpaulin.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:AttachedTransportEquipment.characteristic",
+            "type": "schema:Text",
+            "comment": "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type."
+        },
+        {
+            "uri": "unece:AttachedTransportEquipment.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:AttachedTransportEquipment.transportEquipmentCategoryCode",
+            "type": "unece:TransportEquipmentCategoryCodeList",
+            "comment": "A code specifying a category of this piece of associated transport equipment."
+        },
+        {
+            "uri": "unece:AttachedTransportEquipment.transportEquipmentSizeTypeCharacteristicCode",
+            "type": "unece:TransportEquipmentSizeTypeCodeList",
+            "comment": "The code specifying the characteristics, i.e. size and type, of this piece of associated transport equipment."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:AttachedTransportEquipment.unitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A number of units for this supply chain event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:LogisticsTransportEquipment.attachedAttachedTransportEquipment",
+            "comment": "Transport equipment attached to this piece of logistics transport equipment, such as ropes or refrigeration units."
+        }
+    ]
+}

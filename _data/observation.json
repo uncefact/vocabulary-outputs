@@ -1,0 +1,36 @@
+
+{
+    "label": "Observation",
+    "uri": "unece:Observation",
+    "comment": "A specified act or instance of viewing or noting a fact or occurrence for some scientific or other special purpose.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Observation.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:Observation.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Observation.applicableNote",
+            "type": "unece:Note",
+            "comment": "A note providing information applicable to this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:Observation.relatedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file related to this production process."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TransportEvent.relatedObservation",
+            "comment": "An observation related to this transport event."
+        }
+    ]
+}

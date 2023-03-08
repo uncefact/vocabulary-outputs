@@ -1,5 +1,0 @@
----
-title: logisticsShippingMarksMarkingInstructionCode
-permalink: transport/ShippingMarks.logisticsShippingMarksMarkingInstructionCode.html
-jsonid: transport_shippingmarks_logisticsshippingmarksmarkinginstructioncode
----

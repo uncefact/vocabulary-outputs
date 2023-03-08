@@ -1,5 +1,0 @@
----
-title: applicableTradeProductCertification
-permalink: compliance/SpecifiedMaterial.applicableTradeProductCertification.html
-jsonid: compliance_specifiedmaterial_applicabletradeproductcertification
----

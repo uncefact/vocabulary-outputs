@@ -1,5 +1,0 @@
----
-title: applicableOrganizationCharacteristic
-permalink: compliance/OrganizationalCertificate.applicableOrganizationCharacteristic.html
-jsonid: compliance_organizationalcertificate_applicableorganizationcharacteristic
----

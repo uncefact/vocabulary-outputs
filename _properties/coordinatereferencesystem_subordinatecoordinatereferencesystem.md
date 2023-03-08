@@ -1,0 +1,5 @@
+---
+title: subordinateCoordinateReferenceSystem
+permalink: CoordinateReferenceSystem.subordinateCoordinateReferenceSystem.html
+jsonid: coordinatereferencesystem_subordinatecoordinatereferencesystem
+---

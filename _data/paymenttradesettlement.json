@@ -1,0 +1,144 @@
+
+{
+    "label": "PaymentTradeSettlement",
+    "uri": "unece:PaymentTradeSettlement",
+    "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:PaymentTradeSettlement.additionalDescription",
+            "type": "schema:Text",
+            "comment": "An additional textual description for this trade product."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.creationDateTime",
+            "type": "schema:Text",
+            "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.dueDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.instruction",
+            "type": "schema:Text",
+            "comment": "An instruction, expressed as text, for this experience event."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.invoicePayerAssignedReferenceId",
+            "type": "schema:Text",
+            "comment": "The identifier of the invoice payer assigned reference of this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.paymentCurrencyCode",
+            "type": "unece:CurrencyCodeList",
+            "comment": "The code specifying the currency for this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.penaltyPercent",
+            "type": "schema:Text",
+            "comment": "The penalty percentage related to this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.priorityCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the priority for this header trade agreement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.receiptDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value for the formal receipt of this referenced document."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.transferFeeInclusiveIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this payment trade settlement includes a transfer fee."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:PaymentTradeSettlement.acceptedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value accepted for this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.applicableTax",
+            "type": "unece:Tax",
+            "comment": "A tax applicable to this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.identifiedGuarantee",
+            "type": "unece:Guarantee",
+            "comment": "The financial guarantee identified for this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.payeeParty",
+            "type": "unece:Party",
+            "comment": "A payee party for this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.payerParty",
+            "type": "unece:Party",
+            "comment": "The payer party for this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.paymentAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of a payment for this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.paymentApplicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The currency exchange applicable to the payment in this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.refundAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the refund of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.requestedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value requested for this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.specifiedPaymentMeans",
+            "type": "unece:PaymentMeans",
+            "comment": "A payment means specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.specifiedTradeSettlementPaymentMonetarySummation",
+            "type": "unece:TradeSettlementPaymentMonetarySummation",
+            "comment": "The monetary summation totals specified for this payment trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.taxAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the tax related to this payment trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Requirement.specifiedPaymentTradeSettlement",
+            "comment": "A payment trade settlement specified for this trade price."
+        },
+        {
+            "uri": "unece:TradePrice.specifiedPaymentTradeSettlement",
+            "comment": "A payment trade settlement specified for this trade price."
+        },
+        {
+            "uri": "unece:TradeSettlementPayment.specifiedPaymentTradeSettlement",
+            "comment": "A payment trade settlement specified for this trade price."
+        }
+    ]
+}

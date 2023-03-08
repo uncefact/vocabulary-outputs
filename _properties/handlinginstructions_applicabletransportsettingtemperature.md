@@ -1,0 +1,5 @@
+---
+title: applicableTransportSettingTemperature
+permalink: HandlingInstructions.applicableTransportSettingTemperature.html
+jsonid: handlinginstructions_applicabletransportsettingtemperature
+---

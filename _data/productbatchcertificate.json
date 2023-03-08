@@ -1,0 +1,113 @@
+
+{
+    "label": "ProductBatchCertificate",
+    "uri": "unece:ProductBatchCertificate",
+    "comment": "A piece of written, printed or electronic matter that provides information or evidence that a product batch has met required criteria.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductBatchCertificate.actualEffectiveDateTime",
+            "type": "schema:Text",
+            "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.applicableObjectCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.certificateTypeCode",
+            "type": "unece:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.expiryDateTime",
+            "type": "schema:Text",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.issueReasonCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the reason for the issue of this process certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.issuingPartyId",
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.purposeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.requestedEffectiveDateTime",
+            "type": "schema:Text",
+            "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductBatchCertificate.applicableAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.applicableProductCharacteristic",
+            "type": "unece:ProductCharacteristic",
+            "comment": "A characteristic applicable to this trade product."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.applicableTradeProductCertification",
+            "type": "unece:TradeProductCertification",
+            "comment": "A certification applicable to this trade product."
+        },
+        {
+            "uri": "unece:ProductBatchCertificate.attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file attached for this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductBatch.specifiedProductBatchCertificate",
+            "comment": "A certificate specified for this product batch."
+        },
+        {
+            "uri": "unece:ProductionFacility.specifiedProductBatchCertificate",
+            "comment": "A certificate specified for this product batch."
+        },
+        {
+            "uri": "unece:ProductionUnit.specifiedProductBatchCertificate",
+            "comment": "A certificate specified for this product batch."
+        },
+        {
+            "uri": "unece:TradeParty.applicableProductBatchCertificate",
+            "comment": "A product batch certificate applicable to this trade party."
+        }
+    ]
+}

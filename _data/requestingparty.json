@@ -1,0 +1,66 @@
+
+{
+    "label": "RequestingParty",
+    "uri": "unece:RequestingParty",
+    "comment": "An individual, a group, or a body having a role as a requestor.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:RequestingParty.accessRightsTypeAccessRightsCode",
+            "type": "unece:AccessRightsTypeCodeList",
+            "comment": "The code specifying the access rights, such as unlimited, restricted, prohibited, for this requesting party."
+        },
+        {
+            "uri": "unece:RequestingParty.bEIId",
+            "type": "schema:Text",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+        },
+        {
+            "uri": "unece:RequestingParty.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:RequestingParty.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:RequestingParty.languageCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a language for this requesting party."
+        },
+        {
+            "uri": "unece:RequestingParty.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:RequestingParty.partyTypeCode",
+            "type": "unece:PartyTypeCodeList",
+            "comment": "A code specifying the type of TT party."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:RequestingParty.lineOfCreditSpecifiedFinancialAccount",
+            "type": "unece:FinancingFinancialAccount",
+            "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
+        },
+        {
+            "uri": "unece:RequestingParty.specifiedCreditorFinancialAccount",
+            "type": "unece:CreditorFinancialAccount",
+            "comment": "A creditor financial account specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:RequestingParty.specifiedProprietaryIdentity",
+            "type": "unece:ProprietaryIdentity",
+            "comment": "A proprietary Identity specified for this person."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:FinancingRequestDocument.specifiedRequestingParty",
+            "comment": "The requesting party specified in this financing request document."
+        }
+    ]
+}

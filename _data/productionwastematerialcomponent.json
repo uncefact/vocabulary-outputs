@@ -1,0 +1,36 @@
+
+{
+    "label": "ProductionWasteMaterialComponent",
+    "uri": "unece:ProductionWasteMaterialComponent",
+    "comment": "A production material component that is unused and rejected as unwanted.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductionWasteMaterialComponent.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterialComponent.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductionWasteMaterialComponent.applicableProductCertificate",
+            "type": "unece:ProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterialComponent.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductionWasteMaterial.includedProductionWasteMaterialComponent",
+            "comment": "A production waste material component included in this production waste material."
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+
+{
+    "label": "OrganizationalCertification",
+    "uri": "unece:OrganizationalCertification",
+    "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:OrganizationalCertification.assertion",
+            "type": "schema:Text",
+            "comment": "An assertion, expressed as text, for this animal certification."
+        },
+        {
+            "uri": "unece:OrganizationalCertification.assertionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
+        },
+        {
+            "uri": "unece:OrganizationalCertification.responsibleAgency",
+            "type": "schema:Text",
+            "comment": "A responsible agency, expressed as text, for this specified certification."
+        },
+        {
+            "uri": "unece:OrganizationalCertification.standard",
+            "type": "schema:Text",
+            "comment": "A standard, expressed as text, for this specified certification."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:OrganizationalCertification.applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:OrganizationalCertification.relatedLocation",
+            "type": "unece:Location",
+            "comment": "A referenced location related to this animal certification."
+        },
+        {
+            "uri": "unece:OrganizationalCertification.specifiedAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion for this specified certification."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:OrganizationalCertificate.applicableOrganizationalCertification",
+            "comment": "An organizational certification applicable to this organizational certificate."
+        },
+        {
+            "uri": "unece:ProductionFacility.specifiedOrganizationalCertification",
+            "comment": "An organizational certification specified for this production facility."
+        },
+        {
+            "uri": "unece:ProductionProcess.specifiedOrganizationalCertification",
+            "comment": "An organizational certification specified for this production facility."
+        },
+        {
+            "uri": "unece:TradeParty.applicableOrganizationalCertification",
+            "comment": "An organizational certification applicable to this organizational certificate."
+        }
+    ]
+}

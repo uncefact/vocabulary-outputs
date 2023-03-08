@@ -1,0 +1,54 @@
+
+{
+    "label": "Seal",
+    "uri": "unece:Seal",
+    "comment": "A device used to secure an object and protect it from unauthorized entry or tampering during transport or other logistics operations.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Seal.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Seal.logisticsSealTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of logistics seal."
+        },
+        {
+            "uri": "unece:Seal.logisticsSealingPartyRoleCode",
+            "type": "unece:SealingPartyRoleCodeList",
+            "comment": "The code specifying the role of the party responsible for the sealing of this logistics seal."
+        },
+        {
+            "uri": "unece:Seal.maximumId",
+            "type": "schema:Text",
+            "comment": "The maximum unique identifier used for these logistics seals."
+        },
+        {
+            "uri": "unece:Seal.sealConditionCode",
+            "type": "unece:SealConditionCodeList",
+            "comment": "A code specifying a condition of this logistics seal."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Seal.issuingParty",
+            "type": "unece:Party",
+            "comment": "The party issuing this logistics seal."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AssociatedTransportEquipment.affixedSeal",
+            "comment": "A logistics seal affixed to this piece of associated transport equipment."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment.affixedSeal",
+            "comment": "A logistics seal affixed to this piece of associated transport equipment."
+        },
+        {
+            "uri": "unece:RegulatoryProcedure.requiredSeal",
+            "comment": "A seal required by this cross-border regulatory procedure."
+        }
+    ]
+}

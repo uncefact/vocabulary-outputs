@@ -1,0 +1,5 @@
+---
+title: transportEquipmentCategoryCode
+permalink: AssociatedTransportEquipment.transportEquipmentCategoryCode.html
+jsonid: associatedtransportequipment_transportequipmentcategorycode
+---

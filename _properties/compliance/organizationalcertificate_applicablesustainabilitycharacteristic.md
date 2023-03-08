@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: compliance/OrganizationalCertificate.applicableSustainabilityCharacteristic.html
-jsonid: compliance_organizationalcertificate_applicablesustainabilitycharacteristic
----

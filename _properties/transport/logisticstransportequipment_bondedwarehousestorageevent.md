@@ -1,5 +1,0 @@
----
-title: bondedWarehouseStorageEvent
-permalink: transport/LogisticsTransportEquipment.bondedWarehouseStorageEvent.html
-jsonid: transport_logisticstransportequipment_bondedwarehousestorageevent
----

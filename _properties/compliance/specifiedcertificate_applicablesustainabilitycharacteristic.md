@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: compliance/SpecifiedCertificate.applicableSustainabilityCharacteristic.html
-jsonid: compliance_specifiedcertificate_applicablesustainabilitycharacteristic
----

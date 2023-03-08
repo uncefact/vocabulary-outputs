@@ -1,0 +1,5 @@
+---
+title: insuranceChargeTotalAmount
+permalink: TradeSettlementHeaderMonetarySummation.insuranceChargeTotalAmount.html
+jsonid: tradesettlementheadermonetarysummation_insurancechargetotalamount
+---

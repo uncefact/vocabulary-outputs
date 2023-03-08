@@ -1,5 +1,0 @@
----
-title: referenceLevelQualityResultDescription
-permalink: compliance/ObservationResultCharacteristic.referenceLevelQualityResultDescription.html
-jsonid: compliance_observationresultcharacteristic_referencelevelqualityresultdescription
----

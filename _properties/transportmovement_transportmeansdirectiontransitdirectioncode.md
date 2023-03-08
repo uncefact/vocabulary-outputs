@@ -1,0 +1,5 @@
+---
+title: transportMeansDirectionTransitDirectionCode
+permalink: TransportMovement.transportMeansDirectionTransitDirectionCode.html
+jsonid: transportmovement_transportmeansdirectiontransitdirectioncode
+---

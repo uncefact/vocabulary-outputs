@@ -1,0 +1,66 @@
+
+{
+    "label": "GovernmentRegistration",
+    "uri": "unece:GovernmentRegistration",
+    "comment": "The recording of items or details for a governmental purpose.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:GovernmentRegistration.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.countryId",
+            "type": "schema:Text",
+            "comment": "A unique country identifier for this location party."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.countrySubDivisionId",
+            "type": "schema:Text",
+            "comment": "A unique identifier of the country sub-division for this trade address."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.lastRegisteredYearDateTime",
+            "type": "schema:Text",
+            "comment": "The last registered year of this government registration."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.licenceId",
+            "type": "schema:Text",
+            "comment": "The identifier of a licence for this government registration."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.recordedDate",
+            "type": "schema:Text",
+            "comment": "The date that this government registration was recorded."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "unece:GovernmentRegistration.versionId",
+            "type": "schema:Text",
+            "comment": "The identifier for the version of this exchanged declaration."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:GovernmentRegistration.validityPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A period of validity specified for this referenced document."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradeParty.specifiedGovernmentRegistration",
+            "comment": "A governmental registration specified for this trade party."
+        }
+    ]
+}

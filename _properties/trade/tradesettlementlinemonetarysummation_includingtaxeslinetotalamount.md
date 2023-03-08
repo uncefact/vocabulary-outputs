@@ -1,5 +1,0 @@
----
-title: includingTaxesLineTotalAmount
-permalink: trade/TradeSettlementLineMonetarySummation.includingTaxesLineTotalAmount.html
-jsonid: trade_tradesettlementlinemonetarysummation_includingtaxeslinetotalamount
----

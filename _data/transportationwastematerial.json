@@ -1,0 +1,71 @@
+
+{
+    "label": "TransportationWasteMaterial",
+    "uri": "unece:TransportationWasteMaterial",
+    "comment": "Any materials unused and rejected as unwanted resulting from transportation.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TransportationWasteMaterial.completeDeliveryIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not a transportation waste material delivery is complete."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TransportationWasteMaterial.applicableProductCertificate",
+            "type": "unece:ProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.applicableTransportationWasteRecoveryDisposalProcess",
+            "type": "unece:TransportationWasteRecoveryDisposalProcess",
+            "comment": "A transportation waste recovery disposal process applicable to this transportation waste material."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.includedTransportationWasteMaterialComponent",
+            "type": "unece:TransportationWasteMaterialComponent",
+            "comment": "A material component included in this transportation waste."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.nextDeliveryEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A next delivery event for this transportation waste material."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.previousDeliveryTransportEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A previous delivery event for this transportation waste material."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.receptionFacilityContact",
+            "type": "unece:Contact",
+            "comment": "A reception facility contact for this transportation waste material."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.volumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the volume of this distinct chemical."
+        },
+        {
+            "uri": "unece:TransportationWasteMaterial.weightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a weight (mass) of this logistics packaging."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TransportMovement.reportedTransportationWasteMaterial",
+            "comment": "Transportation waste material reported for this logistics transport movement."
+        }
+    ]
+}

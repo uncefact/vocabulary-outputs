@@ -1,0 +1,54 @@
+
+{
+    "label": "ProductFinishingTreatment",
+    "uri": "unece:ProductFinishingTreatment",
+    "comment": "Improving measures for manufactured components or products to meet end use requirements.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductFinishingTreatment.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:ProductFinishingTreatment.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ProductFinishingTreatment.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductFinishingTreatment.applicableProcessCertificate",
+            "type": "unece:ProcessCertificate",
+            "comment": "A process certificate applicable to this specified crop protection treatment."
+        },
+        {
+            "uri": "unece:ProductFinishingTreatment.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:ProductFinishingTreatment.usedMaterial",
+            "type": "unece:SpecifiedMaterial",
+            "comment": "Material used for this specified crop protection treatment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductBatch.appliedProductFinishingTreatment",
+            "comment": "A product finishing treatment applied during this production process."
+        },
+        {
+            "uri": "unece:ProductionProcess.appliedProductFinishingTreatment",
+            "comment": "A product finishing treatment applied during this production process."
+        },
+        {
+            "uri": "unece:TradeProduct.appliedProductFinishingTreatment",
+            "comment": "A product finishing treatment applied during this production process."
+        }
+    ]
+}

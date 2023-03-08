@@ -1,0 +1,5 @@
+---
+title: acceptedTransactionOriginalTotalAmount
+permalink: FinancingSummaryDocument.acceptedTransactionOriginalTotalAmount.html
+jsonid: financingsummarydocument_acceptedtransactionoriginaltotalamount
+---

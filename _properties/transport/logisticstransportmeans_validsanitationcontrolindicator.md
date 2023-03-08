@@ -1,5 +1,0 @@
----
-title: validSanitationControlIndicator
-permalink: transport/LogisticsTransportMeans.validSanitationControlIndicator.html
-jsonid: transport_logisticstransportmeans_validsanitationcontrolindicator
----

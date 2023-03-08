@@ -1,5 +1,0 @@
----
-title: geometryCollectionIndicator
-permalink: core/GeographicalObjectCharacteristic.geometryCollectionIndicator.html
-jsonid: core_geographicalobjectcharacteristic_geometrycollectionindicator
----

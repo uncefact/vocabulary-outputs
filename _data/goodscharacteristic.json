@@ -1,0 +1,57 @@
+
+{
+    "label": "GoodsCharacteristic",
+    "uri": "unece:GoodsCharacteristic",
+    "comment": "A distinctive feature of a material contained within physical goods.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:GoodsCharacteristic.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:GoodsCharacteristic.proportionalConstituentPercent",
+            "type": "schema:Text",
+            "comment": "The percentage presence of the material within the goods for this material goods characteristic."
+        },
+        {
+            "uri": "unece:GoodsCharacteristic.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:GoodsCharacteristic.absolutePresenceVolumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The volume measure of the absolute presence of this material goods characteristic."
+        },
+        {
+            "uri": "unece:GoodsCharacteristic.absolutePresenceWeightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The weight measure of the absolute presence of this material goods characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductInstance.applicableGoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
+        },
+        {
+            "uri": "unece:SpecifiedMaterial.applicableGoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging.applicableGoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
+        },
+        {
+            "uri": "unece:TradeProduct.applicableGoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
+        },
+        {
+            "uri": "unece:TransportMovement.carriedGoodsCharacteristic",
+            "comment": "Material characteristics of goods carried during this logistics transport movement."
+        }
+    ]
+}

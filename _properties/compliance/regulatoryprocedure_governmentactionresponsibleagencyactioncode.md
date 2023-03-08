@@ -1,5 +1,0 @@
----
-title: governmentActionResponsibleAgencyActionCode
-permalink: compliance/RegulatoryProcedure.governmentActionResponsibleAgencyActionCode.html
-jsonid: compliance_regulatoryprocedure_governmentactionresponsibleagencyactioncode
----

@@ -1,5 +1,0 @@
----
-title: canadianPaymentsAssociationId
-permalink: finance/DebtorFinancialInstitution.canadianPaymentsAssociationId.html
-jsonid: finance_debtorfinancialinstitution_canadianpaymentsassociationid
----

@@ -1,0 +1,5 @@
+---
+title: totalExportExitToImportEntryChargeAmount
+permalink: ConsignmentItem.totalExportExitToImportEntryChargeAmount.html
+jsonid: consignmentitem_totalexportexittoimportentrychargeamount
+---

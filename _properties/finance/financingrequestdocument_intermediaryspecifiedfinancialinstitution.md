@@ -1,5 +1,0 @@
----
-title: intermediarySpecifiedFinancialInstitution
-permalink: finance/FinancingRequestDocument.intermediarySpecifiedFinancialInstitution.html
-jsonid: finance_financingrequestdocument_intermediaryspecifiedfinancialinstitution
----

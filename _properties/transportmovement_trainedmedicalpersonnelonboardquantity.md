@@ -1,0 +1,5 @@
+---
+title: trainedMedicalPersonnelOnboardQuantity
+permalink: TransportMovement.trainedMedicalPersonnelOnboardQuantity.html
+jsonid: transportmovement_trainedmedicalpersonnelonboardquantity
+---

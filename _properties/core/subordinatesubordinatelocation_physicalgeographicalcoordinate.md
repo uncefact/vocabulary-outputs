@@ -1,5 +1,0 @@
----
-title: physicalGeographicalCoordinate
-permalink: core/SubordinateSubordinateLocation.physicalGeographicalCoordinate.html
-jsonid: core_subordinatesubordinatelocation_physicalgeographicalcoordinate
----

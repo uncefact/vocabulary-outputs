@@ -1,0 +1,141 @@
+
+{
+    "label": "ObservationResult",
+    "uri": "unece:ObservationResult",
+    "comment": "A collection of diagnostic data, visual or technical, and processing data, performed on a sample.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ObservationResult.actualObservationEndDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value for the end of the observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.actualObservationStartDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value for the start of the observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.emergencyObservationIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the observation was an emergency observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.generalCharacteristic",
+            "type": "schema:Text",
+            "comment": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this specified inspection result."
+        },
+        {
+            "uri": "unece:ObservationResult.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ObservationResult.materialType",
+            "type": "schema:Text",
+            "comment": "The context material type of the observed sample, expressed as text, such as animal or blood."
+        },
+        {
+            "uri": "unece:ObservationResult.materialTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a material type for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.observationDiscontinuationReason",
+            "type": "schema:Text",
+            "comment": "The observation discontinuation reason, expressed as text, for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.observationDiscontinuationReasonCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the observation discontinuation reason for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.observationTimeFrame",
+            "type": "schema:Text",
+            "comment": "The observation time frame, expressed as text, for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.outsourcedObservationIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the observation was an outsourced observation (performed by a third party)."
+        },
+        {
+            "uri": "unece:ObservationResult.shareableIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this sample observation result characteristic is shareable."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ObservationResult.applicableMethod",
+            "type": "unece:SpecifiedMethod",
+            "comment": "A method applicable to this specified inspection result."
+        },
+        {
+            "uri": "unece:ObservationResult.attachedLaboratoryObservationNote",
+            "type": "unece:LaboratoryObservationNote",
+            "comment": "A note attached to the laboratory observation results with additional observations and or conclusions."
+        },
+        {
+            "uri": "unece:ObservationResult.authorizationParty",
+            "type": "unece:LaboratoryObservationParty",
+            "comment": "The laboratory observation party who authorized this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.expectedValueSpecifiedObservationResultCharacteristic",
+            "type": "unece:ObservationResultCharacteristic",
+            "comment": "An expected value for the characteristic, to be observed or measured according to the specified type of observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.interpretationResultApplicableParameter",
+            "type": "unece:ObservationObjectiveParameter",
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
+        },
+        {
+            "uri": "unece:ObservationResult.laboratoryAnalysisRequestSpecifiedReference",
+            "type": "unece:LaboratoryObservationReference",
+            "comment": "A laboratory observation analysis request reference specified for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.maximumStandardValueSpecifiedObservationResultCharacteristic",
+            "type": "unece:ObservationResultCharacteristic",
+            "comment": "A maximum standard value of the values for the characteristic observed or measured by using the specified type of observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.minimumStandardValueSpecifiedObservationResultCharacteristic",
+            "type": "unece:ObservationResultCharacteristic",
+            "comment": "A minimum standard value of the values for the characteristic observed or measured by using the specified type of observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.observedValueSpecifiedObservationResultCharacteristic",
+            "type": "unece:ObservationResultCharacteristic",
+            "comment": "An observed value for the characteristic, acquired by observing or measuring according to the specified type of observation for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.outsourcedLaboratoryParty",
+            "type": "unece:LaboratoryObservationParty",
+            "comment": "The outsourced laboratory party who performed this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.specifiedLaboratoryObservationInstructions",
+            "type": "unece:LaboratoryObservationInstructions",
+            "comment": "A set of laboratory observation instructions specified for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.specifiedLaboratoryObservationReference",
+            "type": "unece:LaboratoryObservationReference",
+            "comment": "A laboratory observation reference specified for this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.usedMethod",
+            "type": "unece:LaboratoryObservationAnalysisMethod",
+            "comment": "A laboratory observation analysis method used for this sample observation result."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:InspectionResult.laboratoryObservationResult",
+            "comment": "A laboratory sample observation result for this specified inspection result."
+        }
+    ]
+}

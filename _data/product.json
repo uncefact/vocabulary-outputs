@@ -1,0 +1,106 @@
+
+{
+    "label": "Product",
+    "uri": "unece:Product",
+    "comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Product.buyerAssignedId",
+            "type": "schema:Text",
+            "comment": "A buyer assigned identifier of this product batch."
+        },
+        {
+            "uri": "unece:Product.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:Product.globalId",
+            "type": "schema:Text",
+            "comment": "A global identifier for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:Product.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Product.industryAssignedId",
+            "type": "schema:Text",
+            "comment": "A unique industry assigned identifier for this product."
+        },
+        {
+            "uri": "unece:Product.manufacturerAssignedId",
+            "type": "schema:Text",
+            "comment": "A manufacturer assigned identifier of this product batch."
+        },
+        {
+            "uri": "unece:Product.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:Product.relationshipTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of relationship for this referenced product."
+        },
+        {
+            "uri": "unece:Product.sellerAssignedId",
+            "type": "schema:Text",
+            "comment": "A seller assigned identifier of this product batch."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Product.unitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A number of units for this supply chain event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:SubordinateTradeLineItem.specifiedProduct",
+            "comment": "The referenced product specified for this subordinate trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.accessoryApplicableProduct",
+            "comment": "A referenced accessory product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.additionalApplicableProduct",
+            "comment": "A referenced product additionally applicable with this supply chain trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.complementaryApplicableProduct",
+            "comment": "A referenced complementary product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.componentApplicableProduct",
+            "comment": "A referenced component product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.requiredApplicableProduct",
+            "comment": "A required product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.substituteApplicableProduct",
+            "comment": "A referenced substitute product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.substitutedProduct",
+            "comment": "A referenced product substituted for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:TradeProduct.includedProduct",
+            "comment": "An included product referenced from this trade product."
+        },
+        {
+            "uri": "unece:TradeProduct.substituteProduct",
+            "comment": "A referenced product that may substitute for this trade product."
+        },
+        {
+            "uri": "unece:TradeProduct.substitutedProduct",
+            "comment": "A referenced product substituted for this supply chain trade line item."
+        }
+    ]
+}

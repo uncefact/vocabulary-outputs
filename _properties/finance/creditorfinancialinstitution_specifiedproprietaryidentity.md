@@ -1,5 +1,0 @@
----
-title: specifiedProprietaryIdentity
-permalink: finance/CreditorFinancialInstitution.specifiedProprietaryIdentity.html
-jsonid: finance_creditorfinancialinstitution_specifiedproprietaryidentity
----

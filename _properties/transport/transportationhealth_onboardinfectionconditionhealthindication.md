@@ -1,5 +1,0 @@
----
-title: onboardInfectionConditionHealthIndication
-permalink: transport/TransportationHealth.onboardInfectionConditionHealthIndication.html
-jsonid: transport_transportationhealth_onboardinfectionconditionhealthindication
----

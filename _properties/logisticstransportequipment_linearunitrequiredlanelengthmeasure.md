@@ -1,0 +1,5 @@
+---
+title: linearUnitRequiredLaneLengthMeasure
+permalink: LogisticsTransportEquipment.linearUnitRequiredLaneLengthMeasure.html
+jsonid: logisticstransportequipment_linearunitrequiredlanelengthmeasure
+---

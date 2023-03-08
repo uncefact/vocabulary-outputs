@@ -1,0 +1,84 @@
+
+{
+    "label": "PaymentFinancialInstitution",
+    "uri": "unece:PaymentFinancialInstitution",
+    "comment": "An institution that provides financial services and financial transactions for payment.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:PaymentFinancialInstitution.bEIId",
+            "type": "schema:Text",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.bICId",
+            "type": "schema:Text",
+            "comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.branchName",
+            "type": "schema:Text",
+            "comment": "A branch name, expressed as text, for this payment financial institution."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.branchNameId",
+            "type": "schema:Text",
+            "comment": "The identifier of the branch name for this payment financial institution."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.gLNId",
+            "type": "schema:Text",
+            "comment": "A Global Location Number (GLN) identifier for this trade party."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.nameId",
+            "type": "schema:Text",
+            "comment": "The identifier of the name for this payment financial institution."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.roleCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the role for this cooperating organization."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:PaymentFinancialInstitution.specifiedCommunication",
+            "type": "unece:Communication",
+            "comment": "A communication specified for this payment financial institution."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution.specifiedPaymentFinancialAccount",
+            "type": "unece:PaymentFinancialAccount",
+            "comment": "A payment financial account specified for this payment financial institution."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:PaymentMeans.creditorSpecifiedFinancialInstitution",
+            "comment": "A creditor financial institution specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:PaymentMeans.debtorSpecifiedFinancialInstitution",
+            "comment": "A debtor financial institution specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:PaymentMeans.specifiedPaymentFinancialInstitution",
+            "comment": "A financial institution specified for this trade settlement payment means."
+        }
+    ]
+}

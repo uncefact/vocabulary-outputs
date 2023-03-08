@@ -1,0 +1,51 @@
+
+{
+    "label": "Voucher",
+    "uri": "unece:Voucher",
+    "comment": "A printed piece of paper or an electronic document that can be used instead of money to pay for an experience, such as a tour, a trip or a meal in a restaurant.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Voucher.applicableIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this cash used for payment. is applicable."
+        },
+        {
+            "uri": "unece:Voucher.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:Voucher.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Voucher.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "unece:Voucher.issuingCompanyName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of the company issuing this experience item voucher."
+        },
+        {
+            "uri": "unece:Voucher.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Voucher.faceAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value shown on the face of this experience item voucher."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:PaymentMeans.identifiedVoucher",
+            "comment": "An experience item voucher identified for this trade settlement payment means."
+        }
+    ]
+}

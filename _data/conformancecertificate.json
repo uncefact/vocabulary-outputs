@@ -1,0 +1,39 @@
+
+{
+    "label": "ConformanceCertificate",
+    "uri": "unece:ConformanceCertificate",
+    "comment": "The label delivered by a trusted third party to assess the compliance of a product or a service with an agreed standard.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ConformanceCertificate.certificateTypeCode",
+            "type": "unece:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "unece:ConformanceCertificate.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ConformanceCertificate.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "unece:ConformanceCertificate.issuingPartyId",
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
+        },
+        {
+            "uri": "unece:ConformanceCertificate.softwareOperatingSystem",
+            "type": "schema:Text",
+            "comment": "The software operating system, expressed as text, for which this conformance certificate is produced."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:InspectionResult.obtainedConformanceCertificate",
+            "comment": "A conformance certificate obtained by means of this specified inspection result."
+        }
+    ]
+}

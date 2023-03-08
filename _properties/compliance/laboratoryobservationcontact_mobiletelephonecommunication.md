@@ -1,5 +1,0 @@
----
-title: mobileTelephoneCommunication
-permalink: compliance/LaboratoryObservationContact.mobileTelephoneCommunication.html
-jsonid: compliance_laboratoryobservationcontact_mobiletelephonecommunication
----

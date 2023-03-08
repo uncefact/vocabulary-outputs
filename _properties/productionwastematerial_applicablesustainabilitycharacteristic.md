@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: ProductionWasteMaterial.applicableSustainabilityCharacteristic.html
+jsonid: productionwastematerial_applicablesustainabilitycharacteristic
+---

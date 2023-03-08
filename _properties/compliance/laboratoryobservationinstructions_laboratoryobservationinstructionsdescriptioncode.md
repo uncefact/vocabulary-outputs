@@ -1,5 +1,0 @@
----
-title: laboratoryObservationInstructionsDescriptionCode
-permalink: compliance/LaboratoryObservationInstructions.laboratoryObservationInstructionsDescriptionCode.html
-jsonid: compliance_laboratoryobservationinstructions_laboratoryobservationinstructionsdescriptioncode
----

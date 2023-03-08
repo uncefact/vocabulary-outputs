@@ -1,0 +1,36 @@
+
+{
+    "label": "ReferencePrice",
+    "uri": "unece:ReferencePrice",
+    "comment": "A reference to a sum of money for which something is or may be bought or sold.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ReferencePrice.comparisonMethodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the comparison method for this reference price."
+        },
+        {
+            "uri": "unece:ReferencePrice.netPriceIndicator",
+            "type": "schema:Boolean",
+            "comment": "An indication of whether or not the reference price is a net price."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ReferencePrice.basisQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A quantity on which the reference price is based."
+        },
+        {
+            "uri": "unece:ReferencePrice.chargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the calculated price to be charged."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradePrice.tradeComparisonPrice",
+            "comment": "A price that provides a trade comparison with this trade price."
+        }
+    ]
+}

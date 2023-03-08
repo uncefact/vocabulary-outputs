@@ -1,5 +1,0 @@
----
-title: wasteReportingExemptionIndicator
-permalink: transport/LogisticsTransportMeans.wasteReportingExemptionIndicator.html
-jsonid: transport_logisticstransportmeans_wastereportingexemptionindicator
----

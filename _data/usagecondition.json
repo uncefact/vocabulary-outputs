@@ -1,0 +1,55 @@
+
+{
+    "label": "UsageCondition",
+    "uri": "unece:UsageCondition",
+    "comment": "The particular state of something, affected by use, that should be respected.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:UsageCondition.ageLimitation",
+            "type": "schema:Text",
+            "comment": "An age limitation, expressed as text, for this specified usage condition."
+        },
+        {
+            "uri": "unece:UsageCondition.appropriateClothing",
+            "type": "schema:Text",
+            "comment": "Appropriate clothing, expressed as text, for this specified usage condition."
+        },
+        {
+            "uri": "unece:UsageCondition.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:UsageCondition.duration",
+            "type": "schema:Text",
+            "comment": "A duration, expressed as text, for this specified period."
+        },
+        {
+            "uri": "unece:UsageCondition.genderLimitation",
+            "type": "schema:Text",
+            "comment": "A gender limitation, expressed as text, for this specified usage condition."
+        },
+        {
+            "uri": "unece:UsageCondition.occupancy",
+            "type": "schema:Text",
+            "comment": "Occupancy, expressed as text, for this specified usage condition."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:UsageCondition.requiringParty",
+            "type": "unece:Party",
+            "comment": "A party requiring this specified usage condition."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ExperienceEvent.requiredUsageCondition",
+            "comment": "A required usage condition for this experience product."
+        },
+        {
+            "uri": "unece:ExperienceProduct.requiredUsageCondition",
+            "comment": "A required usage condition for this experience product."
+        }
+    ]
+}

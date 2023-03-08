@@ -1,5 +1,0 @@
----
-title: dangerousGoodsPackagingLevelPackagingDangerLevelCode
-permalink: transport/DangerousGoods.dangerousGoodsPackagingLevelPackagingDangerLevelCode.html
-jsonid: transport_dangerousgoods_dangerousgoodspackaginglevelpackagingdangerlevelcode
----

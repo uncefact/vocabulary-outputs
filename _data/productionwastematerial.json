@@ -1,0 +1,55 @@
+
+{
+    "label": "ProductionWasteMaterial",
+    "uri": "unece:ProductionWasteMaterial",
+    "comment": "Any materials unused and rejected as unwanted during a production process.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductionWasteMaterial.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductionWasteMaterial.applicableProductCertificate",
+            "type": "unece:ProductCertificate",
+            "comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterial.applicableProductionWasteRecoveryDisposalProcess",
+            "type": "unece:ProductionWasteRecoveryDisposalProcess",
+            "comment": "A production waste recovery disposal process applicable to this production waste material."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterial.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterial.includedProductionWasteMaterialComponent",
+            "type": "unece:ProductionWasteMaterialComponent",
+            "comment": "A production waste material component included in this production waste material."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterial.volumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the volume of this distinct chemical."
+        },
+        {
+            "uri": "unece:ProductionWasteMaterial.weightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a weight (mass) of this logistics packaging."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AgriculturalProcess.reportedProductionWasteMaterial",
+            "comment": "Production waste material reported for this agricultural crop production process."
+        },
+        {
+            "uri": "unece:ProductionProcess.reportedProductionWasteMaterial",
+            "comment": "Production waste material reported for this agricultural crop production process."
+        }
+    ]
+}

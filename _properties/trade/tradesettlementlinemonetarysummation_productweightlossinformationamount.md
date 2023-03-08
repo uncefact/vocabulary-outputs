@@ -1,5 +1,0 @@
----
-title: productWeightLossInformationAmount
-permalink: trade/TradeSettlementLineMonetarySummation.productWeightLossInformationAmount.html
-jsonid: trade_tradesettlementlinemonetarysummation_productweightlossinformationamount
----

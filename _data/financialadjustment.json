@@ -1,0 +1,73 @@
+
+{
+    "label": "FinancialAdjustment",
+    "uri": "unece:FinancialAdjustment",
+    "comment": "A correction or modification to reflect actual financial conditions.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:FinancialAdjustment.accountingDebitCreditStatusDirectionCode",
+            "type": "unece:AccountingDebitCreditStatusCodeList",
+            "comment": "The code specifying whether the financial adjustment must be subtracted or added."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.actualDateTime",
+            "type": "schema:Text",
+            "comment": "An actual date, time, date time, or other date time value of this financial booking."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.financialAdjustmentReasonCode",
+            "type": "unece:FinancialAdjustmentReasonCodeList",
+            "comment": "A code specifying a reason for this financial adjustment."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.reason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for this cancellation status."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:FinancialAdjustment.actualAmount",
+            "type": "unece:AmountType",
+            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.actualQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.claimRelatedParty",
+            "type": "unece:Party",
+            "comment": "The claim related party for this financial adjustment."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.invoiceReferenceDocument",
+            "type": "unece:Document",
+            "comment": "The invoice document referenced for this financial adjustment."
+        },
+        {
+            "uri": "unece:FinancialAdjustment.relatedTax",
+            "type": "unece:Tax",
+            "comment": "A trade tax related to this financial adjustment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:HeaderTradeSettlement.specifiedFinancialAdjustment",
+            "comment": "A financial adjustment specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:LineTradeSettlement.specifiedFinancialAdjustment",
+            "comment": "A financial adjustment specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.specifiedFinancialAdjustment",
+            "comment": "A financial adjustment specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:TradeSettlementHeaderMonetarySummation.grandTotalSpecifiedAdjustment",
+            "comment": "The financial adjustment of the grand total specified for this trade settlement header monetary summation."
+        }
+    ]
+}

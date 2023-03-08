@@ -1,0 +1,39 @@
+
+{
+    "label": "SubordinateLineTradeAgreement",
+    "uri": "unece:SubordinateLineTradeAgreement",
+    "comment": "The contractual terms of a subordinate line trade agreement.",
+    "objectProperties": [
+        {
+            "uri": "unece:SubordinateLineTradeAgreement.additionalDocument",
+            "type": "unece:Document",
+            "comment": "An additional document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeAgreement.buyerOrderDocument",
+            "type": "unece:Document",
+            "comment": "A buyer generated order document referenced in this line trade agreement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeAgreement.grossPriceProductPrice",
+            "type": "unece:TradePrice",
+            "comment": "A gross product price in this line trade agreement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeAgreement.netPriceProductPrice",
+            "type": "unece:TradePrice",
+            "comment": "A net product price in this line trade agreement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeAgreement.sellerOrderDocument",
+            "type": "unece:Document",
+            "comment": "The seller generated order document referenced in this header trade agreement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:SubordinateTradeLineItem.specifiedSubordinateLineTradeAgreement",
+            "comment": "The trade agreement specified for this subordinate trade line item."
+        }
+    ]
+}

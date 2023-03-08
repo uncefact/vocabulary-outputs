@@ -1,5 +1,0 @@
----
-title: specifiedOrganizationalCertification
-permalink: trade/ProductionFacility.specifiedOrganizationalCertification.html
-jsonid: trade_productionfacility_specifiedorganizationalcertification
----

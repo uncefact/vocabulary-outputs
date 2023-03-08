@@ -1,0 +1,5 @@
+---
+title: associatedGeographicalObjectCharacteristic
+permalink: GeographicalGrid.associatedGeographicalObjectCharacteristic.html
+jsonid: geographicalgrid_associatedgeographicalobjectcharacteristic
+---

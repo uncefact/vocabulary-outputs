@@ -1,5 +1,0 @@
----
-title: creditorFinancialAccountTypeCode
-permalink: finance/CreditorFinancialAccount.creditorFinancialAccountTypeCode.html
-jsonid: finance_creditorfinancialaccount_creditorfinancialaccounttypecode
----

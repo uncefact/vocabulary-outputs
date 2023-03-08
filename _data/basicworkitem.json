@@ -1,0 +1,119 @@
+
+{
+    "label": "BasicWorkItem",
+    "uri": "unece:BasicWorkItem",
+    "comment": "A basic item of work.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:BasicWorkItem.alternativeClassificationCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an alternative classification for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.comment",
+            "type": "schema:Text",
+            "comment": "A comment, expressed as text for this MDH illness."
+        },
+        {
+            "uri": "unece:BasicWorkItem.contractualLanguageCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the contractual language for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:BasicWorkItem.index",
+            "type": "schema:Text",
+            "comment": "The index, expressed as text, to be used for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.priceListItemId",
+            "type": "schema:Text",
+            "comment": "The identifier of a price list item for this grouped work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.primaryClassificationCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a primary classification value for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:BasicWorkItem.referenceId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of another work item referenced by this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.requestedActionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a requested action for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.totalQuantityClassificationCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the classification of the total quantity for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:BasicWorkItem.actualComplexDescription",
+            "type": "unece:ComplexDescription",
+            "comment": "An actual complex description for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.binaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A specified binary file referenced by this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.changedStatus",
+            "type": "unece:RecordedStatus",
+            "comment": "A changed recorded status for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.itemBasicWorkItem",
+            "type": "unece:BasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.totalPrice",
+            "type": "unece:CalculatedPrice",
+            "comment": "A total calculated price for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.totalQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The total quantity for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.totalQuantityAnalysis",
+            "type": "unece:QuantityAnalysis",
+            "comment": "An analysis of the total quantity for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.unitPrice",
+            "type": "unece:CalculatedPrice",
+            "comment": "A unit calculated price for this basic work item."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:BasicWorkItem.itemBasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "unece:BreakdownStatement.itemBasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "unece:GroupedWorkItem.itemBasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        }
+    ]
+}

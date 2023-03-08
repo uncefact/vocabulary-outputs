@@ -1,0 +1,51 @@
+
+{
+    "label": "IngredientRangeMeasurement",
+    "uri": "unece:IngredientRangeMeasurement",
+    "comment": "A measurement of the variation limits of an ingredient.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:IngredientRangeMeasurement.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:IngredientRangeMeasurement.lowerLimitComparisonOperatorCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the comparison operator for the lower limit of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:IngredientRangeMeasurement.upperLimitComparisonOperatorCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the comparison operator for the upper limit of this ingredient range measurement."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:IngredientRangeMeasurement.lowerLimitActualMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The actual lower limit measure of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:IngredientRangeMeasurement.lowerLimitPressureConditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the pressure condition at which this lower limit ingredient range measurement is taken."
+        },
+        {
+            "uri": "unece:IngredientRangeMeasurement.upperLimitActualMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The actual upper limit measure of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:IngredientRangeMeasurement.upperLimitPressureConditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the pressure condition at which this upper limit ingredient range measurement is taken."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Chemical.presenceMeasurement",
+            "comment": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+        }
+    ]
+}

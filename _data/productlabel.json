@@ -1,0 +1,80 @@
+
+{
+    "label": "ProductLabel",
+    "uri": "unece:ProductLabel",
+    "comment": "A label, such as a garment label or a radio frequency tag, used for identifying a product.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductLabel.attachmentDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value, for the attachment of this product label."
+        },
+        {
+            "uri": "unece:ProductLabel.barcodeId",
+            "type": "schema:Text",
+            "comment": "A unique barcode identifier for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:ProductLabel.brandName",
+            "type": "schema:Text",
+            "comment": "A brand name, expressed as text, for this experience product."
+        },
+        {
+            "uri": "unece:ProductLabel.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "unece:ProductLabel.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ProductLabel.layoutTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the layout type of this logistics label."
+        },
+        {
+            "uri": "unece:ProductLabel.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:ProductLabel.seriesEndId",
+            "type": "schema:Text",
+            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
+        },
+        {
+            "uri": "unece:ProductLabel.seriesStartId",
+            "type": "schema:Text",
+            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
+        },
+        {
+            "uri": "unece:ProductLabel.sizeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the size of this logistics label."
+        },
+        {
+            "uri": "unece:ProductLabel.tagTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of tag for this product label."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductLabel.includedAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion included on this product label."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradeProduct.careSpecifiedLabel",
+            "comment": "A product care label specified for this trade product."
+        },
+        {
+            "uri": "unece:TradeProduct.specifiedLabel",
+            "comment": "A product label specified for this trade product."
+        }
+    ]
+}

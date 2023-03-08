@@ -1,0 +1,5 @@
+---
+title: applicableOrganizationalCertification
+permalink: OrganizationalCertificate.applicableOrganizationalCertification.html
+jsonid: organizationalcertificate_applicableorganizationalcertification
+---

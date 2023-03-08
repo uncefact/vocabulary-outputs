@@ -1,5 +1,0 @@
----
-title: serviceChargeApplicableCurrencyExchange
-permalink: transport/Consignment.serviceChargeApplicableCurrencyExchange.html
-jsonid: transport_consignment_servicechargeapplicablecurrencyexchange
----

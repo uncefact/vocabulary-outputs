@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: CropProtectionTreatment.applicableSustainabilityCharacteristic.html
+jsonid: cropprotectiontreatment_applicablesustainabilitycharacteristic
+---

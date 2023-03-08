@@ -1,5 +1,0 @@
----
-title: specifiedOrganizationalCertificate
-permalink: transport/TransportMovement.specifiedOrganizationalCertificate.html
-jsonid: transport_transportmovement_specifiedorganizationalcertificate
----

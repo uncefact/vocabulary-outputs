@@ -1,0 +1,34 @@
+
+{
+    "label": "FinancingStatus",
+    "uri": "unece:FinancingStatus",
+    "comment": "Information relevant to a condition of financing.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:FinancingStatus.financingStatusConditionCode",
+            "type": "unece:FinancingStatusCodeList",
+            "comment": "The code specifying the condition of this financing status."
+        },
+        {
+            "uri": "unece:FinancingStatus.financingStatusReasonCode",
+            "type": "unece:FinancingStatusReasonCodeList",
+            "comment": "The code specifying the reason for this financing status."
+        },
+        {
+            "uri": "unece:FinancingStatus.reason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for this cancellation status."
+        },
+        {
+            "uri": "unece:FinancingStatus.reasonInformation",
+            "type": "schema:Text",
+            "comment": "Information, expressed as text, related to the reason for this cancellation status."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:FinancingRequestResultDocument.specifiedFinancingStatus",
+            "comment": "The financing status specified in this financing request result document."
+        }
+    ]
+}

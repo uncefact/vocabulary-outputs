@@ -1,5 +1,0 @@
----
-title: exchangedDocumentAmendmentPurposeCode
-permalink: core/ExchangedDocument.exchangedDocumentAmendmentPurposeCode.html
-jsonid: core_exchangeddocument_exchangeddocumentamendmentpurposecode
----

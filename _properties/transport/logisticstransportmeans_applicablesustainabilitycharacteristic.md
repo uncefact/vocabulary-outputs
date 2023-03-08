@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: transport/LogisticsTransportMeans.applicableSustainabilityCharacteristic.html
-jsonid: transport_logisticstransportmeans_applicablesustainabilitycharacteristic
----

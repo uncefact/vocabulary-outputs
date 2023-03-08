@@ -1,0 +1,5 @@
+---
+title: transportEquipmentFullnessUsedCapacityCode
+permalink: LogisticsTransportEquipment.transportEquipmentFullnessUsedCapacityCode.html
+jsonid: logisticstransportequipment_transportequipmentfullnessusedcapacitycode
+---

@@ -1,0 +1,66 @@
+
+{
+    "label": "LaboratoryObservationAnalysisMethod",
+    "uri": "unece:LaboratoryObservationAnalysisMethod",
+    "comment": "A defined way of performing laboratory observation analysis.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.certificationId",
+            "type": "schema:Text",
+            "comment": "A certification identifier of this specified method."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.certificationTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the certification type of this method."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.externalReference",
+            "type": "schema:Text",
+            "comment": "An external reference, expressed as text, for this specified method."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.information",
+            "type": "schema:Text",
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.localTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the local type for this method."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.obligatoryTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the obligatory type for this method."
+        },
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.standardTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the standard type for this method."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:LaboratoryObservationAnalysisMethod.sampledObjectMinimumRequiredObjectSizeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the minimum object size required for this laboratory observation analysis method."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ObservationResult.usedMethod",
+            "comment": "A laboratory observation analysis method used for this sample observation result."
+        }
+    ]
+}

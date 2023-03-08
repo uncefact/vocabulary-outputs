@@ -1,5 +1,0 @@
----
-title: transportEquipmentHaulageArrangementsCode
-permalink: transport/LogisticsTransportEquipment.transportEquipmentHaulageArrangementsCode.html
-jsonid: transport_logisticstransportequipment_transportequipmenthaulagearrangementscode
----

@@ -1,0 +1,63 @@
+
+{
+    "label": "CalibratedMeasurement",
+    "uri": "unece:CalibratedMeasurement",
+    "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:CalibratedMeasurement.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:CalibratedMeasurement.quantificationTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a quantification type for this calibrated measurement, such as measured, calculated, or estimated."
+        },
+        {
+            "uri": "unece:CalibratedMeasurement.tolerancePercent",
+            "type": "schema:Text",
+            "comment": "The percent of tolerance of this calibrated measurement."
+        },
+        {
+            "uri": "unece:CalibratedMeasurement.valueCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a value for this specified range."
+        },
+        {
+            "uri": "unece:CalibratedMeasurement.versionId",
+            "type": "schema:Text",
+            "comment": "The identifier for the version of this exchanged declaration."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:CalibratedMeasurement.toleranceMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the tolerance of this calibrated measurement."
+        },
+        {
+            "uri": "unece:CalibratedMeasurement.valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Sensor.actualReportedMeasurement",
+            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.precisionMeasurement",
+            "comment": "A calibrated measurement of precision for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.scheduledReportedMeasurement",
+            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:SpecifiedCondition.specifiedMeasurement",
+            "comment": "A calibrated measurement specified for this specified condition."
+        }
+    ]
+}

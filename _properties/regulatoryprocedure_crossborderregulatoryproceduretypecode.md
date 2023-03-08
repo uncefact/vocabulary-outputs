@@ -1,0 +1,5 @@
+---
+title: crossBorderRegulatoryProcedureTypeCode
+permalink: RegulatoryProcedure.crossBorderRegulatoryProcedureTypeCode.html
+jsonid: regulatoryprocedure_crossborderregulatoryproceduretypecode
+---

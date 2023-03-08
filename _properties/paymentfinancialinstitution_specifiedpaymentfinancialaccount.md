@@ -1,0 +1,5 @@
+---
+title: specifiedPaymentFinancialAccount
+permalink: PaymentFinancialInstitution.specifiedPaymentFinancialAccount.html
+jsonid: paymentfinancialinstitution_specifiedpaymentfinancialaccount
+---

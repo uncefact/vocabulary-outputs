@@ -1,0 +1,41 @@
+
+{
+    "label": "Issue",
+    "uri": "unece:Issue",
+    "comment": "A targeted topic for debate or resolution.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Issue.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Issue.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Issue.maximumSpecifiedCharacteristic",
+            "type": "unece:MetricCharacteristic",
+            "comment": "The maximum metric characteristic specified for this target issue."
+        },
+        {
+            "uri": "unece:Issue.minimumSpecifiedCharacteristic",
+            "type": "unece:MetricCharacteristic",
+            "comment": "The minimum metric characteristic specified for this target issue."
+        },
+        {
+            "uri": "unece:Issue.specifiedMetricCharacteristic",
+            "type": "unece:MetricCharacteristic",
+            "comment": "The metric characteristic specified for this target issue."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:NegotiationExchange.specifiedIssue",
+            "comment": "A target issue specified for this electronic negotiation exchange."
+        }
+    ]
+}

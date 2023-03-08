@@ -1,5 +1,0 @@
----
-title: financedTransactionSpecifiedQuantity
-permalink: finance/FinancingSummaryDocument.financedTransactionSpecifiedQuantity.html
-jsonid: finance_financingsummarydocument_financedtransactionspecifiedquantity
----

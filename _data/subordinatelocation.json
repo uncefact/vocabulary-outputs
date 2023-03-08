@@ -1,0 +1,41 @@
+
+{
+    "label": "SubordinateLocation",
+    "uri": "unece:SubordinateLocation",
+    "comment": "A physical location or place which is a subordinate location of a location.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SubordinateLocation.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:SubordinateLocation.locationFunctionTypeCode",
+            "type": "unece:LocationFunctionCodeList",
+            "comment": "A code specifying the type of this logistics related location."
+        },
+        {
+            "uri": "unece:SubordinateLocation.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SubordinateLocation.physicalGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "Geographical coordinate information for this logistics related location."
+        },
+        {
+            "uri": "unece:SubordinateLocation.subordinateSubordinateSubordinateLocation",
+            "type": "unece:SubordinateSubordinateLocation",
+            "comment": "The location subordinate to this subordinate location."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:LogisticsLocation.subordinateSubordinateLocation",
+            "comment": "A location subordinate to this logistics related location."
+        }
+    ]
+}

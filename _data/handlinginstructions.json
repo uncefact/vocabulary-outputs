@@ -1,0 +1,109 @@
+
+{
+    "label": "HandlingInstructions",
+    "uri": "unece:HandlingInstructions",
+    "comment": "Handling information of an instructive nature.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:HandlingInstructions.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:HandlingInstructions.handlingCode",
+            "type": "schema:Text",
+            "comment": "A code specifying delivery handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.handlingInstructionsDescriptionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a description of these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:HandlingInstructions.procedure",
+            "type": "schema:Text",
+            "comment": "A procedure, expressed as text, for a set of inspection instructions."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:HandlingInstructions.applicableTransportSettingTemperature",
+            "type": "unece:TransportSettingTemperature",
+            "comment": "A transport related temperature setting applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.deliveryApplicableTemperature",
+            "type": "unece:InstructedTemperature",
+            "comment": "The instructed temperature for delivery applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.marketDeliveryApplicableTemperature",
+            "type": "unece:InstructedTemperature",
+            "comment": "The instructed temperature for market delivery applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.maximumStackabilityApplicableQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The maximum number of units which can be stacked on top of each other according to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.maximumStackabilityWeightApplicableMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "The maximum stackability weight applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.maximumStorageHumidityApplicableMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the maximum storage humidity applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.minimumStorageHumidityApplicableMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the minimum storage humidity applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.storageApplicableTemperature",
+            "type": "unece:InstructedTemperature",
+            "comment": "The instructed temperature for storage applicable to these handling instructions."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "unece:ConsignmentItem.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "unece:DangerousGoods.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "unece:HeaderTradeDelivery.specifiedHandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.specifiedHandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment.handlingInstructions",
+            "comment": "Handling instructions for the transported dangerous goods."
+        },
+        {
+            "uri": "unece:LogisticsTransportMeans.specifiedHandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        },
+        {
+            "uri": "unece:TransportMovement.specifiedHandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        }
+    ]
+}

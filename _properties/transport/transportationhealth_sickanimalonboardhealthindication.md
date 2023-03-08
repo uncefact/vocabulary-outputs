@@ -1,5 +1,0 @@
----
-title: sickAnimalOnboardHealthIndication
-permalink: transport/TransportationHealth.sickAnimalOnboardHealthIndication.html
-jsonid: transport_transportationhealth_sickanimalonboardhealthindication
----

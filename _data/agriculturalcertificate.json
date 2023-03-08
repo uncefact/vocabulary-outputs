@@ -1,0 +1,103 @@
+
+{
+    "label": "AgriculturalCertificate",
+    "uri": "unece:AgriculturalCertificate",
+    "comment": "A legal proof of ownership, worthiness or qualification to operate an agricultural item.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:AgriculturalCertificate.actualEffectiveDateTime",
+            "type": "schema:Text",
+            "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.applicableObjectCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.certificateTypeCode",
+            "type": "unece:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.expiryDateTime",
+            "type": "schema:Text",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.issueDateTime",
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.issueReasonCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the reason for the issue of this process certificate."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.issuingPartyId",
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.purposeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.requestedEffectiveDateTime",
+            "type": "schema:Text",
+            "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:AgriculturalCertificate.applicableAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:AgriculturalCertificate.attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file attached for this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AgriculturalApplication.appliedCertificate",
+            "comment": "An agricultural certificate applied to this specified agricultural application."
+        },
+        {
+            "uri": "unece:CropProduceBatch.specifiedAgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        },
+        {
+            "uri": "unece:Plot.specifiedAgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        },
+        {
+            "uri": "unece:ProductBatch.specifiedAgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        }
+    ]
+}

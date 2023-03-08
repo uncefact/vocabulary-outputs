@@ -1,0 +1,66 @@
+
+{
+    "label": "TTLocation",
+    "uri": "unece:TTLocation",
+    "comment": "A physical place related to a Track and Trace (TT) process.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TTLocation.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:TTLocation.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:TTLocation.locationFunctionTypeCode",
+            "type": "unece:LocationFunctionCodeList",
+            "comment": "A code specifying the type of this logistics related location."
+        },
+        {
+            "uri": "unece:TTLocation.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TTAggregationEvent.readPointRelatedLocation",
+            "comment": "The read point related location of this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTAggregationEvent.relatedTTLocation",
+            "comment": "A location related to this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.relatedTTLocation",
+            "comment": "A location related to this TT animal."
+        },
+        {
+            "uri": "unece:TTObjectEvent.businessRelatedLocation",
+            "comment": "The business location related to this TT object event."
+        },
+        {
+            "uri": "unece:TTObjectEvent.readPointRelatedLocation",
+            "comment": "The read point related location of this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.businessRelatedLocation",
+            "comment": "The business location related to this TT object event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.readPointRelatedLocation",
+            "comment": "The read point related location of this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransformationEvent.businessRelatedLocation",
+            "comment": "The business location related to this TT object event."
+        },
+        {
+            "uri": "unece:TTTransformationEvent.readPointRelatedLocation",
+            "comment": "The read point related location of this TT aggregation event."
+        }
+    ]
+}

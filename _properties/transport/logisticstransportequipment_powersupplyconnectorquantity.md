@@ -1,5 +1,0 @@
----
-title: powerSupplyConnectorQuantity
-permalink: transport/LogisticsTransportEquipment.powerSupplyConnectorQuantity.html
-jsonid: transport_logisticstransportequipment_powersupplyconnectorquantity
----

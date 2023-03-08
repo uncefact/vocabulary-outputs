@@ -1,0 +1,176 @@
+
+{
+    "label": "TransportPerson",
+    "uri": "unece:TransportPerson",
+    "comment": "A transport related person, such as a member of a crew or a passenger.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TransportPerson.birthCountryId",
+            "type": "schema:Text",
+            "comment": "The identifier of the birth country of this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.birthDateTime",
+            "type": "schema:Text",
+            "comment": "The birth date for this individual TT animal."
+        },
+        {
+            "uri": "unece:TransportPerson.birthplaceName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of the place where this transport person was born."
+        },
+        {
+            "uri": "unece:TransportPerson.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "unece:TransportPerson.disembarkationDateTime",
+            "type": "schema:DateTime",
+            "comment": "A date, time, date time, or other date time value that this person disembarked from a means of transport."
+        },
+        {
+            "uri": "unece:TransportPerson.embarkationDateTime",
+            "type": "schema:DateTime",
+            "comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport."
+        },
+        {
+            "uri": "unece:TransportPerson.familyName",
+            "type": "schema:Text",
+            "comment": "A family name, expressed as text, for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.genderCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the gender of this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.givenName",
+            "type": "schema:Text",
+            "comment": "A given name, expressed as text, for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:TransportPerson.inTransitIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this transport person is in transit."
+        },
+        {
+            "uri": "unece:TransportPerson.partyRoleCode",
+            "type": "unece:PartyRoleCodeList",
+            "comment": "A code specifying a role of this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.role",
+            "type": "schema:Text",
+            "comment": "A role, expressed as text, for this contact person."
+        },
+        {
+            "uri": "unece:TransportPerson.transportPersonLanguageId",
+            "type": "unece:LanguageId",
+            "comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
+        },
+        {
+            "uri": "unece:TransportPerson.transportPersonName",
+            "type": "schema:Text",
+            "comment": "The name or set of names, expressed as text, by which this transport person is known."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TransportPerson.attainedAcademicQualification",
+            "type": "unece:AcademicQualification",
+            "comment": "An academic qualification attained by this authoritative signatory person."
+        },
+        {
+            "uri": "unece:TransportPerson.declaredPersonalEffects",
+            "type": "unece:PersonalEffects",
+            "comment": "Personal effects use declared by a transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.disembarkationLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A disembarkation location for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.emailURICommunication",
+            "type": "unece:Communication",
+            "comment": "An email Uniform Resource Identifier (URI) communication for this contact person."
+        },
+        {
+            "uri": "unece:TransportPerson.embarkationLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A logistics location where a found stowaway embarked upon the transport means on which they were discovered."
+        },
+        {
+            "uri": "unece:TransportPerson.identifiedStowaway",
+            "type": "unece:Stowaway",
+            "comment": "A transport person identified as a found stowaway."
+        },
+        {
+            "uri": "unece:TransportPerson.landlineTelephoneCommunication",
+            "type": "unece:Communication",
+            "comment": "Landline telephone communication information for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.mobileTelephoneCommunication",
+            "type": "unece:Communication",
+            "comment": "Mobile telephone communication information for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.nationalityCountry",
+            "type": "unece:Country",
+            "comment": "A country that constitutes a nationality by origin, birth, or naturalization for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.reportedIllness",
+            "type": "unece:Illness",
+            "comment": "An MDH (Maritime Declaration of Health) reported illness or disease for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.specificAccreditation",
+            "type": "unece:Accreditation",
+            "comment": "A certified accreditation specific to this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.travelIdentityDocument",
+            "type": "unece:Document",
+            "comment": "A referenced travel identity document for this transport person."
+        },
+        {
+            "uri": "unece:TransportPerson.travelVisaDocument",
+            "type": "unece:Document",
+            "comment": "A referenced travel visa document for this transport person."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:LocationParty.specifiedTransportPerson",
+            "comment": "A transport related person specified for this location party."
+        },
+        {
+            "uri": "unece:LogisticsTransportMeans.companySecurityOfficerPerson",
+            "comment": "A person who is a company security officer for this logistics transport means."
+        },
+        {
+            "uri": "unece:TransportMovement.crewPerson",
+            "comment": "A person who is a member of the crew of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "unece:TransportMovement.masterResponsiblePerson",
+            "comment": "The person legally responsible for the operation of the means of transport used for this logistics transport movement."
+        },
+        {
+            "uri": "unece:TransportMovement.onboardPerson",
+            "comment": "A person onboard this logistics transport movement."
+        },
+        {
+            "uri": "unece:TransportMovement.transportMeansSecurityOfficerPerson",
+            "comment": "The officer responsible for the security of the means of transport used for this logistics transport movement."
+        }
+    ]
+}

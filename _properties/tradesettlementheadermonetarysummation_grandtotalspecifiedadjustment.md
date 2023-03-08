@@ -1,0 +1,5 @@
+---
+title: grandTotalSpecifiedAdjustment
+permalink: TradeSettlementHeaderMonetarySummation.grandTotalSpecifiedAdjustment.html
+jsonid: tradesettlementheadermonetarysummation_grandtotalspecifiedadjustment
+---

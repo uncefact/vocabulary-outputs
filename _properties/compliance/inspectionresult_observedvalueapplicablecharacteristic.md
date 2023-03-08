@@ -1,5 +1,0 @@
----
-title: observedValueApplicableCharacteristic
-permalink: compliance/InspectionResult.observedValueApplicableCharacteristic.html
-jsonid: compliance_inspectionresult_observedvalueapplicablecharacteristic
----

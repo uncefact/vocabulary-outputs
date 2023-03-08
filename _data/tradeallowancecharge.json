@@ -1,0 +1,107 @@
+
+{
+    "label": "TradeAllowanceCharge",
+    "uri": "unece:TradeAllowanceCharge",
+    "comment": "A component of pricing, such as an allowance or charge for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TradeAllowanceCharge.allowanceChargeIdTypeCode",
+            "type": "unece:AllowanceChargeIdCodeList",
+            "comment": "The code specifying the type of this trade allowance charge."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.allowanceChargeReasonCode",
+            "type": "unece:AllowanceChargeReasonCodeList",
+            "comment": "The code specifying the reason for this trade allowance charge."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.calculationPercent",
+            "type": "schema:Text",
+            "comment": "The calculation percentage for this trade price."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.chargeIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the applied allowance charge is a charge."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.prepaidIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this trade allowance charge is prepaid."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.reason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for this cancellation status."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.sequenceNumeric",
+            "type": "schema:Text",
+            "comment": "A sequence number for these specified personal effects."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TradeAllowanceCharge.actualAmount",
+            "type": "unece:AmountType",
+            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.actualCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The actual trade currency exchange for this trade allowance charge."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.basisAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.basisQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A quantity on which the reference price is based."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.categoryTradeTax",
+            "type": "unece:Tax",
+            "comment": "A tax category of this trade allowance charge."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.unitBasisAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.applicableAllowanceCharge",
+            "comment": "An allowance or charge applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.specifiedAllowanceCharge",
+            "comment": "An allowance or charge specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:LineTradeSettlement.specifiedAllowanceCharge",
+            "comment": "An allowance or charge specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.specifiedAllowanceCharge",
+            "comment": "An allowance or charge specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:TradePrice.appliedAllowanceCharge",
+            "comment": "An allowance or charge applied to the trade price."
+        }
+    ]
+}

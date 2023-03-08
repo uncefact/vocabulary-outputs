@@ -1,0 +1,90 @@
+
+{
+    "label": "TTTransactionEvent",
+    "uri": "unece:TTTransactionEvent",
+    "comment": "Information about an event declaring that certain objects have been associated or disassociated with one or more Track and Trace (TT) trade transactions.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TTTransactionEvent.actionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an action for this specified condition."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.businessStepCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the business step for this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.dispositionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the disposition related to this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.objectInstanceId",
+            "type": "schema:Text",
+            "comment": "An instance identifier for an object of this TT object event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.parentObjectId",
+            "type": "schema:Text",
+            "comment": "The identifier of the parent object for this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.recordedDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value at which this TT aggregation event was recorded."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TTTransactionEvent.businessRelatedLocation",
+            "type": "unece:TTLocation",
+            "comment": "The business location related to this TT object event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.destinationRelatedParty",
+            "type": "unece:TTParty",
+            "comment": "A destination related party for this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.quantitySpecifiedEventElement",
+            "type": "unece:EventElement",
+            "comment": "A quantity event element specified for this TT object event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.readPointRelatedLocation",
+            "type": "unece:TTLocation",
+            "comment": "The read point related location of this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.relatedCertification",
+            "type": "unece:SpecifiedCertification",
+            "comment": "A certification related to this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.sourceRelatedParty",
+            "type": "unece:TTParty",
+            "comment": "A source related party for this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.specifiedError",
+            "type": "unece:Error",
+            "comment": "A declared error specified for this TT aggregation event."
+        },
+        {
+            "uri": "unece:TTTransactionEvent.specifiedTradeTransaction",
+            "type": "unece:TTTradeTransaction",
+            "comment": "A trade transaction specified for this TT aggregation event."
+        }
+    ]
+}

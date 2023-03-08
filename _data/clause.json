@@ -1,0 +1,57 @@
+
+{
+    "label": "Clause",
+    "uri": "unece:Clause",
+    "comment": "A distinct article or provision in a document, which requires compliance.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Clause.content",
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
+        },
+        {
+            "uri": "unece:Clause.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Clause.uRLId",
+            "type": "schema:Text",
+            "comment": "The Uniform Resource Locator (URL) for this document clause."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Clause.associatedMeasurement",
+            "type": "unece:Measurement",
+            "comment": "A measurement associated with this document clause."
+        },
+        {
+            "uri": "unece:Clause.associatedPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A period of time associated with this document clause."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Authentication.includedClause",
+            "comment": "A document clause included in this document authentication."
+        },
+        {
+            "uri": "unece:Document.contractualClause",
+            "comment": "A contractual clause of this exchanged document."
+        },
+        {
+            "uri": "unece:ExchangedDocument.contractualClause",
+            "comment": "A contractual clause of this exchanged document."
+        },
+        {
+            "uri": "unece:FinancingRequestDocument.contractualClause",
+            "comment": "A contractual clause of this exchanged document."
+        },
+        {
+            "uri": "unece:SpecifiedCertificate.applicableClause",
+            "comment": "A clause applicable to this specified certificate."
+        }
+    ]
+}

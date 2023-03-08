@@ -1,0 +1,5 @@
+---
+title: totalAllowanceChargeAmount
+permalink: TradeSettlementLineMonetarySummation.totalAllowanceChargeAmount.html
+jsonid: tradesettlementlinemonetarysummation_totalallowancechargeamount
+---

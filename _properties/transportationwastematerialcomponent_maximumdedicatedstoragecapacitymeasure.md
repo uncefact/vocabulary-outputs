@@ -1,0 +1,5 @@
+---
+title: maximumDedicatedStorageCapacityMeasure
+permalink: TransportationWasteMaterialComponent.maximumDedicatedStorageCapacityMeasure.html
+jsonid: transportationwastematerialcomponent_maximumdedicatedstoragecapacitymeasure
+---

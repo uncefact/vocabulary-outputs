@@ -1,5 +1,0 @@
----
-title: termsAndConditionsDescription
-permalink: transport/ReturnableAssetInstructions.termsAndConditionsDescription.html
-jsonid: transport_returnableassetinstructions_termsandconditionsdescription
----

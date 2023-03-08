@@ -1,0 +1,55 @@
+
+{
+    "label": "HeaderBalanceOut",
+    "uri": "unece:HeaderBalanceOut",
+    "comment": "Offset header information to ensure that debits and credits are equal for a transaction.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:HeaderBalanceOut.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:HeaderBalanceOut.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:HeaderBalanceOut.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        },
+        {
+            "uri": "unece:HeaderBalanceOut.reasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a reason for the declared error."
+        },
+        {
+            "uri": "unece:HeaderBalanceOut.reasonDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of the reason for this header balance out."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:HeaderBalanceOut.breakdownBalanceOut",
+            "type": "unece:HeaderBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
+        },
+        {
+            "uri": "unece:HeaderBalanceOut.calculatedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value calculated for this header balance out."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:HeaderBalanceOut.breakdownBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
+        },
+        {
+            "uri": "unece:TradeSettlementHeaderMonetarySummation.applicableHeaderBalanceOut",
+            "comment": "A header balance out applicable to this trade settlement header monetary summation."
+        }
+    ]
+}

@@ -1,0 +1,545 @@
+
+{
+    "label": "LineTradeDelivery",
+    "uri": "unece:LineTradeDelivery",
+    "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:LineTradeDelivery.buyerOrderDateTime",
+            "type": "schema:DateTime",
+            "comment": "The date, time, date time, or other date time value, at header level, for the buyer order for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.finalDeliveryIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication, at header level, of whether or not this trade delivery is the final delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.fullyDeliveredIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication, at header level, of whether or not this trade delivery is fully delivered."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.goodsOwnershipChangeDateTime",
+            "type": "schema:DateTime",
+            "comment": "The date, time, date time, or other date time value for the goods ownership change, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.lineTradeDeliveryQuantityDiscrepancyNatureCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the nature of the discrepancy of the quantity, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.lineTradeDeliveryQuantityVariationTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of quantity variation, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.overDeliveryAllowedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication, at header level, of whether or not over delivery is allowed for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.partialDeliveryAllowedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not these trade delivery terms allow a partial delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.pickUpAvailabilityDateTime",
+            "type": "schema:Text",
+            "comment": "The formatted date, time, date time, or other date time value, at header level, when this trade delivery is available for pick-up."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.quantityCalculationMethodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the quantity calculation method of this header trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.quantityVariationReason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for a quantity variation, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.quantityVariationReasonCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the reason for the quantity variation, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.subordinateId",
+            "type": "schema:Text",
+            "comment": "A subordinate identifier, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.ultimateShipToDeliveryDateTime",
+            "type": "schema:DateTime",
+            "comment": "The date, time, date time, or other date time value, at header level, when this trade delivery is delivered to the ultimate ship to party."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:LineTradeDelivery.acceptanceEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An acceptance delivery event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.actualDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An actual delivery event for this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.actualDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An actual despatch event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.actualLoadingEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual loading event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.actualPickUpEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual pick-up event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.actualReceiptEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual receipt event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.actualUnloadingEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The actual unloading event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.additionalDocument",
+            "type": "unece:Document",
+            "comment": "An additional document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.agreedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at header level, agreed for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.applicableDangerousGoods",
+            "type": "unece:DangerousGoods",
+            "comment": "Dangerous goods applicable to the transport of this supply chain consignment."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.availableInventory",
+            "type": "unece:SupplyChainInventory",
+            "comment": "Inventory available, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.availableQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, available for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.billedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A billed quantity of this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.cancelledQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, cancelled for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.chargeFreeQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, free of charge, in this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.classificationDocument",
+            "type": "unece:Document",
+            "comment": "The referenced classification document for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.confirmedDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A confirmed delivery event in this supply chain supply plan."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.confirmedDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The despatch event, at header level, confirmed for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.confirmedPickUpEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The pick-up event, at header level, confirmed for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.confirmedReleaseEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The confirmed release event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.consignmentInventory",
+            "type": "unece:SupplyChainInventory",
+            "comment": "Supply chain consignment inventory, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.consumptionReportDocument",
+            "type": "unece:Document",
+            "comment": "The consumption report document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.consumptionSchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply chain consumption schedule, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.customerInventory",
+            "type": "unece:SupplyChainInventory",
+            "comment": "Supply chain customer inventory, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.deliveryNoteDocument",
+            "type": "unece:Document",
+            "comment": "A delivery note document referenced by this supply chain supply plan."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.deliverySchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply chain delivery schedule, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.despatchAdviceDocument",
+            "type": "unece:Document",
+            "comment": "The despatch advice document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.despatchSchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply chain despatch schedule, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.despatchedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at header level, despatched in this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.destroyedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, destroyed for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.disposalParty",
+            "type": "unece:TradeParty",
+            "comment": "A disposal party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.dueInAvailableQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The due in available quantity, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.dueInForecastedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The due in forecasted quantity, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.dueInRequestedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The due in requested quantity, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.dueInReturnedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The due in returned quantity, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.economicOrderQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The economic order quantity for this line trade agreement."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.finalDestinationCountry",
+            "type": "unece:Country",
+            "comment": "The country of final destination, at header level, for this header trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.gFMTransferRejectedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The Government Furnished Material (GFM) transfer rejected quantity, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.goodsReceiptNoteDocument",
+            "type": "unece:Document",
+            "comment": "A goods receipt note document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.includedPackaging",
+            "type": "unece:SupplyChainPackaging",
+            "comment": "Packaging included in this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.individualPackageQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity within the individual package, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.informationNote",
+            "type": "unece:Note",
+            "comment": "A note with information, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.inventoryManagerParty",
+            "type": "unece:TradeParty",
+            "comment": "An inventory manager party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.latestDespatchedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The latest quantity, at line level, despatched in this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.logisticsServiceProviderParty",
+            "type": "unece:TradeParty",
+            "comment": "A logistics service provider party, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.modificationForecastedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The modification of a forecasted quantity, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.orderQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, ordered for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.orderSchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply chain order schedule, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.packageQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of packages in this logistics transport movement."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.packingListDocument",
+            "type": "unece:Document",
+            "comment": "The packing list document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.perPackageUnitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A number of units per package in this logistics package."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.plannedConsignment",
+            "type": "unece:Consignment",
+            "comment": "A consignment, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.plannedDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A delivery event, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.plannedDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A despatch event, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.plannedPickUpEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The pick-up event, at header level, planned for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.plannedShipToDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The planned ship to delivery event, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.productUnitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of product units in this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.projectedSupplyPlan",
+            "type": "unece:SupplyPlan",
+            "comment": "A supply plan, at line level, projected for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.receiptSchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply chain receipt schedule, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.receivedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, received for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.receivingAdviceDocument",
+            "type": "unece:Document",
+            "comment": "A receiving advice document, at header level, referenced for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.rejectedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, rejected for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.relatedConsignment",
+            "type": "unece:Consignment",
+            "comment": "A consignment, at header level, related to this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.remainingRequestedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The remaining quantity, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.requestedDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A delivery event, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.requestedDespatchEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A despatch event, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.requestedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at header level, requested for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.returnedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, returned for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.reverseBilledQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The reverse billed quantity, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.shipFromParty",
+            "type": "unece:TradeParty",
+            "comment": "The ship from party for this supply chain consignment."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.shipToParty",
+            "type": "unece:TradeParty",
+            "comment": "A ship to party for this forecast delivery schedule."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.shipmentScheduleDocument",
+            "type": "unece:Document",
+            "comment": "The shipment schedule document referenced, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.specifiedDeliveryAdjustment",
+            "type": "unece:DeliveryAdjustment",
+            "comment": "A delivery adjustment, at line level, specified for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.specifiedDeliveryInstructions",
+            "type": "unece:DeliveryInstructions",
+            "comment": "Delivery instructions, at header level, specified for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.specifiedHandlingInstructions",
+            "type": "unece:HandlingInstructions",
+            "comment": "Handling instructions specified for this logistics means of transport."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.specifiedPackage",
+            "type": "unece:Package",
+            "comment": "A logistics package specified for these transported dangerous goods."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.specifiedSchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply chain schedule, at header level, specified for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.supplySpecifiedSchedule",
+            "type": "unece:Schedule",
+            "comment": "A supply (replenishment) schedule, specified at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.turnInReceivedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The turn in quantity, at line level, received for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.ultimateShipToParty",
+            "type": "unece:TradeParty",
+            "comment": "The ultimate ship to party, at header level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.unavailableQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity, at line level, unavailable for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.usedLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "A logistics label, at line level, used for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.utilizedTransportEquipment",
+            "type": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of logistics transport equipment, at line level, utilized for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.volumeUnitGrossVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.volumeUnitNetVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": "A measure of the net volume of this supply chain consignment item which excludes all packaging."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.weightUnitChargeableWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "A measure of a chargeable weight of this supply chain consignment."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.weightUnitGrossWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.weightUnitNetWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.weightUnitTheoreticalWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "The measure, at line level, of the theoretical weight of this trade delivery."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:LineTradeTransaction.applicableLineTradeDelivery",
+            "comment": "A trade delivery applicable to this line trade transaction."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem.specifiedLineTradeDelivery",
+            "comment": "The line trade delivery specified for this supply chain trade line item."
+        }
+    ]
+}

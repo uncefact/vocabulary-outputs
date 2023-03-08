@@ -1,0 +1,54 @@
+
+{
+    "label": "DeliveryTerms",
+    "uri": "unece:DeliveryTerms",
+    "comment": "Conditions agreed upon between the parties with regard to the delivery of goods and or services for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:DeliveryTerms.deliveryDiscontinuationCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the delivery discontinuation for this trade delivery terms."
+        },
+        {
+            "uri": "unece:DeliveryTerms.deliveryTermsDeliveryTypeCode",
+            "type": "unece:DeliveryTermsCodeList",
+            "comment": "The code specifying the type of delivery for these trade delivery terms."
+        },
+        {
+            "uri": "unece:DeliveryTerms.deliveryTermsFunctionCode",
+            "type": "unece:DeliveryTermsFunctionCodeList",
+            "comment": "A code specifying a function of these trade delivery terms."
+        },
+        {
+            "uri": "unece:DeliveryTerms.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:DeliveryTerms.partialDeliveryAllowedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not these trade delivery terms allow a partial delivery."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:DeliveryTerms.relevantLocation",
+            "type": "unece:Location",
+            "comment": "The trade location relevant for these trade delivery terms."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.specifiedDeliveryTerms",
+            "comment": "Delivery terms specified for this supply chain consignment."
+        },
+        {
+            "uri": "unece:HeaderTradeAgreement.applicableDeliveryTerms",
+            "comment": "The terms of delivery applicable to this header trade agreement."
+        },
+        {
+            "uri": "unece:LineTradeAgreement.applicableDeliveryTerms",
+            "comment": "The terms of delivery applicable to this header trade agreement."
+        }
+    ]
+}

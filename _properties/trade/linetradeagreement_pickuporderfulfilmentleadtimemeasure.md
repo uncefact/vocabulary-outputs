@@ -1,5 +1,0 @@
----
-title: pickUpOrderFulfilmentLeadTimeMeasure
-permalink: trade/LineTradeAgreement.pickUpOrderFulfilmentLeadTimeMeasure.html
-jsonid: trade_linetradeagreement_pickuporderfulfilmentleadtimemeasure
----

@@ -1,5 +1,0 @@
----
-title: specifiedSubordinateLineTradeSettlement
-permalink: trade/SubordinateTradeLineItem.specifiedSubordinateLineTradeSettlement.html
-jsonid: trade_subordinatetradelineitem_specifiedsubordinatelinetradesettlement
----

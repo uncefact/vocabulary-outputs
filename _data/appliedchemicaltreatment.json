@@ -1,0 +1,61 @@
+
+{
+    "label": "AppliedChemicalTreatment",
+    "uri": "unece:AppliedChemicalTreatment",
+    "comment": "A process of applying a chemical, physical, or biological agent to an object.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:AppliedChemicalTreatment.methodName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of the method of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.occurrenceDateTime",
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:AppliedChemicalTreatment.applicableSpecifiedTemperature",
+            "type": "unece:SpecifiedTemperature",
+            "comment": "The specified temperature applicable for this applied chemical treatment."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.appliedPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A period during which this chemical treatment is applied."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.chemicalConcentrationMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the chemical concentration of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.resultAuthentication",
+            "type": "unece:Authentication",
+            "comment": "The authentication of the results of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.resultNote",
+            "type": "unece:Note",
+            "comment": "The note describing the results of this applied chemical treatment."
+        },
+        {
+            "uri": "unece:AppliedChemicalTreatment.usedChemical",
+            "type": "unece:Chemical",
+            "comment": "A chemical used during this applied chemical treatment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:RegulatoryProcedure.requiredChemicalTreatment",
+            "comment": "A chemical treatment applied as required by this cross-border regulatory procedure."
+        }
+    ]
+}

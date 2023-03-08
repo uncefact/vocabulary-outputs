@@ -1,0 +1,50 @@
+
+{
+    "label": "WorkItemDimension",
+    "uri": "unece:WorkItemDimension",
+    "comment": "A measure of spatial extent associated with this work item, such as length, breadth, or height.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:WorkItemDimension.contractualLanguageCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the contractual language for this basic work item."
+        },
+        {
+            "uri": "unece:WorkItemDimension.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:WorkItemDimension.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:WorkItemDimension.workItemDimensionTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of this work item dimension."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:WorkItemDimension.componentDimension",
+            "type": "unece:WorkItemDimension",
+            "comment": "A work item component dimension for this work item dimension."
+        },
+        {
+            "uri": "unece:WorkItemDimension.valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:QuantityAnalysis.actualQuantityDimension",
+            "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+        },
+        {
+            "uri": "unece:WorkItemDimension.componentDimension",
+            "comment": "A work item component dimension for this work item dimension."
+        }
+    ]
+}

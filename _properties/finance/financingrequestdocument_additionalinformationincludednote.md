@@ -1,5 +1,0 @@
----
-title: additionalInformationIncludedNote
-permalink: finance/FinancingRequestDocument.additionalInformationIncludedNote.html
-jsonid: finance_financingrequestdocument_additionalinformationincludednote
----

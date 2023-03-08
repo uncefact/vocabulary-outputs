@@ -1,0 +1,129 @@
+
+{
+    "label": "Assessment",
+    "uri": "unece:Assessment",
+    "comment": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or condition.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Assessment.assuranceLevelCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an assurance level of this specified declaration."
+        },
+        {
+            "uri": "unece:Assessment.categoryCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "unece:Assessment.endDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the end of this available period of time."
+        },
+        {
+            "uri": "unece:Assessment.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:Assessment.reportDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the report of this specified assessment."
+        },
+        {
+            "uri": "unece:Assessment.reportId",
+            "type": "schema:Text",
+            "comment": "The report identifier for this specified assessment."
+        },
+        {
+            "uri": "unece:Assessment.selfAssessedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this specified assessment is self assessed."
+        },
+        {
+            "uri": "unece:Assessment.startDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the start of this available period of time."
+        },
+        {
+            "uri": "unece:Assessment.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "unece:Assessment.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "unece:Assessment.verifiedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this specified assessment is verified."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Assessment.applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:Assessment.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:Assessment.assessedObject",
+            "type": "unece:Object",
+            "comment": "An object assessed for this specified assessment."
+        },
+        {
+            "uri": "unece:Assessment.assessorParty",
+            "type": "unece:Party",
+            "comment": "The assessor party for this specified assessment."
+        },
+        {
+            "uri": "unece:Assessment.associatedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file associated with this specified assessment."
+        },
+        {
+            "uri": "unece:Assessment.verifierParty",
+            "type": "unece:Party",
+            "comment": "A verifier party for this specified assessment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:InspectionResult.relatedAssessment",
+            "comment": "An assessment related to this specified inspection result."
+        },
+        {
+            "uri": "unece:ProductBatch.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:ProductionFacility.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:ProductionProcess.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:SpecifiedMaterial.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:Standard.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:TradeParty.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:TradeProduct.applicableAssessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        }
+    ]
+}

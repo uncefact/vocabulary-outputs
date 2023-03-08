@@ -1,0 +1,97 @@
+
+{
+    "label": "LogisticsStatus",
+    "uri": "unece:LogisticsStatus",
+    "comment": "The information relevant to a condition or a position related to logistics.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:LogisticsStatus.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:LogisticsStatus.logisticsStatusConditionCode",
+            "type": "unece:LogisticsStatusCodeList",
+            "comment": "The code specifying this logistics status condition [UNECE Recommendation 24]."
+        },
+        {
+            "uri": "unece:LogisticsStatus.logisticsStatusReasonCode",
+            "type": "unece:LogisticsStatusCodeList",
+            "comment": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
+        },
+        {
+            "uri": "unece:LogisticsStatus.reason",
+            "type": "schema:Text",
+            "comment": "A reason, expressed as text, for this cancellation status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.referenceDateTime",
+            "type": "schema:Text",
+            "comment": "The reference date or date time for this referenced document."
+        },
+        {
+            "uri": "unece:LogisticsStatus.sequenceNumeric",
+            "type": "schema:Text",
+            "comment": "A sequence number for these specified personal effects."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:LogisticsStatus.arrivalReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport arrival event reported for this logistics status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.departureReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport departure event reported for this logistics status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.loadingReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport loading event reported for this logistics status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.reportedSupplyChainEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A supply chain event reported for this logistics status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.specifiedLogisticsLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A location specified for this logistics status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.unloadingReportedEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A transport unloading event reported for this logistics status."
+        },
+        {
+            "uri": "unece:LogisticsStatus.validityPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A period of validity specified for this referenced document."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.reportedLogisticsStatus",
+            "comment": "A logistics status reported for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:Consignment.specifiedLogisticsStatus",
+            "comment": "A status specified for this logistics transport movement."
+        },
+        {
+            "uri": "unece:ConsignmentItem.reportedLogisticsStatus",
+            "comment": "A logistics status reported for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment.reportedLogisticsStatus",
+            "comment": "A logistics status reported for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:TransportMovement.specifiedLogisticsStatus",
+            "comment": "A status specified for this logistics transport movement."
+        }
+    ]
+}

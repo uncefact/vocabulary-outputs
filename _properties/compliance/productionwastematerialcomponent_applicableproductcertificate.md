@@ -1,5 +1,0 @@
----
-title: applicableProductCertificate
-permalink: compliance/ProductionWasteMaterialComponent.applicableProductCertificate.html
-jsonid: compliance_productionwastematerialcomponent_applicableproductcertificate
----

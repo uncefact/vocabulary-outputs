@@ -1,5 +1,0 @@
----
-title: quotationApplicableCurrencyExchange
-permalink: trade/HeaderTradeSettlement.quotationApplicableCurrencyExchange.html
-jsonid: trade_headertradesettlement_quotationapplicablecurrencyexchange
----

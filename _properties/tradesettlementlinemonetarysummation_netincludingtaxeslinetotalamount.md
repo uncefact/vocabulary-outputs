@@ -1,0 +1,5 @@
+---
+title: netIncludingTaxesLineTotalAmount
+permalink: TradeSettlementLineMonetarySummation.netIncludingTaxesLineTotalAmount.html
+jsonid: tradesettlementlinemonetarysummation_netincludingtaxeslinetotalamount
+---

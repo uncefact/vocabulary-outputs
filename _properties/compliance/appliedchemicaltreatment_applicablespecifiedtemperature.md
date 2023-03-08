@@ -1,5 +1,0 @@
----
-title: applicableSpecifiedTemperature
-permalink: compliance/AppliedChemicalTreatment.applicableSpecifiedTemperature.html
-jsonid: compliance_appliedchemicaltreatment_applicablespecifiedtemperature
----

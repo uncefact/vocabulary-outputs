@@ -1,0 +1,5 @@
+---
+title: acknowledgementDocumentReasonInformation
+permalink: AcknowledgementDocument.acknowledgementDocumentReasonInformation.html
+jsonid: acknowledgementdocument_acknowledgementdocumentreasoninformation
+---

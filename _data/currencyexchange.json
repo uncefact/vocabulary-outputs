@@ -1,0 +1,108 @@
+
+{
+    "label": "CurrencyExchange",
+    "uri": "unece:CurrencyExchange",
+    "comment": "The conversion of one currency to another for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:CurrencyExchange.conversionRate",
+            "type": "schema:Text",
+            "comment": "The rate factor used for conversion from the source currency to the target currency for trade purposes."
+        },
+        {
+            "uri": "unece:CurrencyExchange.conversionRateDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange."
+        },
+        {
+            "uri": "unece:CurrencyExchange.currencySourceCurrencyCode",
+            "type": "unece:CurrencyCodeList",
+            "comment": "The code specifying the source currency of a trade related currency conversion."
+        },
+        {
+            "uri": "unece:CurrencyExchange.currencyTargetCurrencyCode",
+            "type": "unece:CurrencyCodeList",
+            "comment": "The code specifying the target currency of a trade related currency conversion."
+        },
+        {
+            "uri": "unece:CurrencyExchange.sourceUnitBasisNumeric",
+            "type": "schema:Text",
+            "comment": "The numeric unit basis of the source currency used in this trade related currency exchange rate calculation."
+        },
+        {
+            "uri": "unece:CurrencyExchange.targetUnitBaseNumeric",
+            "type": "schema:Text",
+            "comment": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
+        },
+        {
+            "uri": "unece:CurrencyExchange.tradeCurrencyExchangeMarketId",
+            "type": "schema:Text",
+            "comment": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:CurrencyExchange.associatedDocument",
+            "type": "unece:Document",
+            "comment": "A document associated with this line trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.applicableCurrencyExchange",
+            "comment": "A currency exchange applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:Consignment.insuranceApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to an insurance charge for this supply chain consignment."
+        },
+        {
+            "uri": "unece:Consignment.invoiceApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to the invoice for this supply chain consignment."
+        },
+        {
+            "uri": "unece:Consignment.serviceChargeApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to a service charge for this supply chain consignment."
+        },
+        {
+            "uri": "unece:CustomsValuation.applicableCurrencyExchange",
+            "comment": "A currency exchange applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.invoiceApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to the invoice for this supply chain consignment."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.orderApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the order currency in this header trade settlement."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.paymentApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the payment in this header trade settlement."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.priceApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the price in this header trade settlement."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.quotationApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the quotation currency in this header trade settlement."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement.taxApplicableCurrencyExchange",
+            "comment": "A currency exchange applicable to a tax in this header trade settlement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement.paymentApplicableCurrencyExchange",
+            "comment": "The currency exchange applicable to the payment in this header trade settlement."
+        },
+        {
+            "uri": "unece:RegulatoryProcedure.applicableCurrencyExchange",
+            "comment": "A currency exchange applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge.actualCurrencyExchange",
+            "comment": "The actual trade currency exchange for this trade allowance charge."
+        }
+    ]
+}

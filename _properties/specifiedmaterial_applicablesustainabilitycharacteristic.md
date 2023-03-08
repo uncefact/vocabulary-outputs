@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: SpecifiedMaterial.applicableSustainabilityCharacteristic.html
+jsonid: specifiedmaterial_applicablesustainabilitycharacteristic
+---

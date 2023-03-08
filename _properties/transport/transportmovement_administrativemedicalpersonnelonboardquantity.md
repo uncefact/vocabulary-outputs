@@ -1,5 +1,0 @@
----
-title: administrativeMedicalPersonnelOnboardQuantity
-permalink: transport/TransportMovement.administrativeMedicalPersonnelOnboardQuantity.html
-jsonid: transport_transportmovement_administrativemedicalpersonnelonboardquantity
----

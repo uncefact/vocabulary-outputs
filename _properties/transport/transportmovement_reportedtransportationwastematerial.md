@@ -1,5 +1,0 @@
----
-title: reportedTransportationWasteMaterial
-permalink: transport/TransportMovement.reportedTransportationWasteMaterial.html
-jsonid: transport_transportmovement_reportedtransportationwastematerial
----

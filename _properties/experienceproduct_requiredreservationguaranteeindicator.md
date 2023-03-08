@@ -1,0 +1,5 @@
+---
+title: requiredReservationGuaranteeIndicator
+permalink: ExperienceProduct.requiredReservationGuaranteeIndicator.html
+jsonid: experienceproduct_requiredreservationguaranteeindicator
+---

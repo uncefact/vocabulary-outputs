@@ -1,5 +1,0 @@
----
-title: buyerRepayableTaxSpecifiedAccountingAccount
-permalink: trade/TradeTax.buyerRepayableTaxSpecifiedAccountingAccount.html
-jsonid: trade_tradetax_buyerrepayabletaxspecifiedaccountingaccount
----

@@ -1,0 +1,60 @@
+
+{
+    "label": "LaboratoryObservationParty",
+    "uri": "unece:LaboratoryObservationParty",
+    "comment": "An individual, group, or body having a role in laboratory observations.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:LaboratoryObservationParty.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:LaboratoryObservationParty.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:LaboratoryObservationParty.thirdPartyIssuedId",
+            "type": "schema:Text",
+            "comment": "An alternate identifier issued by a third party for this laboratory observation party."
+        },
+        {
+            "uri": "unece:LaboratoryObservationParty.thirdPartyIssuedIdentification",
+            "type": "schema:Text",
+            "comment": "A third party issued identifier, expressed as text, for this laboratory observation party."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:LaboratoryObservationParty.officeAddress",
+            "type": "unece:Address",
+            "comment": "The office address of this laboratory observation party."
+        },
+        {
+            "uri": "unece:LaboratoryObservationParty.personDefinedContact",
+            "type": "unece:LaboratoryObservationContact",
+            "comment": "The person defined as the contact for this laboratory observation party."
+        },
+        {
+            "uri": "unece:LaboratoryObservationParty.postalAddress",
+            "type": "unece:Address",
+            "comment": "A postal address for this legally set up organization."
+        },
+        {
+            "uri": "unece:LaboratoryObservationParty.websiteURICommunication",
+            "type": "unece:Communication",
+            "comment": "A website Uniform Resource Identifier (URI) communication for this contact person."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ObservationResult.authorizationParty",
+            "comment": "The laboratory observation party who authorized this sample observation result."
+        },
+        {
+            "uri": "unece:ObservationResult.outsourcedLaboratoryParty",
+            "comment": "The outsourced laboratory party who performed this sample observation result."
+        }
+    ]
+}

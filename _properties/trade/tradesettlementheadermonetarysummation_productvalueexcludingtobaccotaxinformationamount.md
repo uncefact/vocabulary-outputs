@@ -1,5 +1,0 @@
----
-title: productValueExcludingTobaccoTaxInformationAmount
-permalink: trade/TradeSettlementHeaderMonetarySummation.productValueExcludingTobaccoTaxInformationAmount.html
-jsonid: trade_tradesettlementheadermonetarysummation_productvalueexcludingtobaccotaxinformationamount
----

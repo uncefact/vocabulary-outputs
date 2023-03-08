@@ -1,5 +1,0 @@
----
-title: deferredPayableTotalChargeAmount
-permalink: compliance/RegulatoryProcedure.deferredPayableTotalChargeAmount.html
-jsonid: compliance_regulatoryprocedure_deferredpayabletotalchargeamount
----

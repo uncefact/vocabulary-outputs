@@ -1,0 +1,34 @@
+
+{
+    "label": "GuestArrival",
+    "uri": "unece:GuestArrival",
+    "comment": "The act of coming to or reaching a place by a specified guest.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:GuestArrival.carrierId",
+            "type": "schema:Text",
+            "comment": "The identifier of the carrier for this specified guest arrival."
+        },
+        {
+            "uri": "unece:GuestArrival.carrierName",
+            "type": "schema:Text",
+            "comment": "A carrier's name, expressed as text, related to this specified guest arrival."
+        },
+        {
+            "uri": "unece:GuestArrival.expectedDateTime",
+            "type": "schema:DateTime",
+            "comment": "The date, time, date time, or other date time value when this specified guest arrival is expected."
+        },
+        {
+            "uri": "unece:GuestArrival.transportModeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the mode, such as by air, sea, rail, road or inland waterway, for this logistics transport movement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:GuestPerson.notifiedGuestArrival",
+            "comment": "An arrival notified for this guest person."
+        }
+    ]
+}

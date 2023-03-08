@@ -1,0 +1,45 @@
+
+{
+    "label": "SpecifiedCondition",
+    "uri": "unece:SpecifiedCondition",
+    "comment": "A state, such as of a specified person or thing.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SpecifiedCondition.actionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an action for this specified condition."
+        },
+        {
+            "uri": "unece:SpecifiedCondition.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:SpecifiedCondition.subjectTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a subject type for this licence."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SpecifiedCondition.specifiedMeasurement",
+            "type": "unece:CalibratedMeasurement",
+            "comment": "A calibrated measurement specified for this specified condition."
+        },
+        {
+            "uri": "unece:SpecifiedCondition.valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:DangerousGoods.statedCondition",
+            "comment": "A stated condition of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:Package.statedCondition",
+            "comment": "A stated condition of these transported dangerous goods."
+        }
+    ]
+}

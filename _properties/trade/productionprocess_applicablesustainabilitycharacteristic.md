@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: trade/ProductionProcess.applicableSustainabilityCharacteristic.html
-jsonid: trade_productionprocess_applicablesustainabilitycharacteristic
----

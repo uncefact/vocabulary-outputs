@@ -1,0 +1,38 @@
+
+{
+    "label": "Cargo",
+    "uri": "unece:Cargo",
+    "comment": "Information about goods being transported identifying their nature for customs, statistical or transport purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Cargo.cargoCategoryTypeCode",
+            "type": "unece:CargoCategoryCodeList",
+            "comment": "The code, such as UNECE Recommendation 21 single digit codes, specifying the type of transported cargo."
+        },
+        {
+            "uri": "unece:Cargo.cargoCommodityCategoryStatisticalClassificationCode",
+            "type": "unece:CargoCommodityCategoryCodeList",
+            "comment": "The code specifying a statistical classification for this transport cargo."
+        },
+        {
+            "uri": "unece:Cargo.cargoOperationalCategoryCode",
+            "type": "unece:CargoOperationalCategoryCodeList",
+            "comment": "The code specifying the operational category for this transport cargo, such as obnoxious or military."
+        },
+        {
+            "uri": "unece:Cargo.identification",
+            "type": "schema:Text",
+            "comment": "Identification, expressed as text, of this transport cargo that is sufficient to identify it for customs, statistical or transport purposes."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.natureIdentificationCargo",
+            "comment": "Transport cargo details of this referenced supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
+        },
+        {
+            "uri": "unece:ConsignmentItem.natureIdentificationCargo",
+            "comment": "Transport cargo details of this referenced supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
+        }
+    ]
+}

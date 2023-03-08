@@ -1,5 +1,0 @@
----
-title: temperatureUnitValueMeasure
-permalink: transport/TransportSettingTemperature.temperatureUnitValueMeasure.html
-jsonid: transport_transportsettingtemperature_temperatureunitvaluemeasure
----

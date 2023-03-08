@@ -1,0 +1,104 @@
+
+{
+    "label": "CustomsValuation",
+    "uri": "unece:CustomsValuation",
+    "comment": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:CustomsValuation.addedAdjustmentPercent",
+            "type": "schema:Text",
+            "comment": "The adjustment added, expressed as a percentage, for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.buyerSellerRelationshipIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not there is a relationship between the buyer and the seller, such as a financial relationship, for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.buyerSellerRelationshipPriceInfluenceIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the buyer seller relationship influences the price of the goods for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.chargeApportionMethodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the method of the apportion of charges for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.deductedAdjustmentPercent",
+            "type": "schema:Text",
+            "comment": "The adjustment deducted, expressed as a percentage, for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.methodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the method by which this cross-border customs valuation is determined."
+        },
+        {
+            "uri": "unece:CustomsValuation.royaltyLicenseFeeIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not there is a royalty or licence fee related to the goods for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.salePriceConditionIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not there is a condition imposed on the sale price of the goods for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.saleRestriction",
+            "type": "schema:Text",
+            "comment": "A restriction, expressed as text, imposed on the sale of the goods for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.saleRestrictionIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not there is any restriction imposed on the sale of the goods for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "unece:CustomsValuation.wTOAdditionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying any additions necessary under the World Trade Organization (WTO) Valuation Agreement used for the assessment of this cross-border customs valuation."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:CustomsValuation.addedAdjustmentAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the adjustment added for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.applicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "A currency exchange applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:CustomsValuation.deductedAdjustmentAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the adjustment deducted for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:CustomsValuation.otherChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value added or subtracted from the total invoice price not previously taken into account for this cross-border customs valuation."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.applicableCustomsValuation",
+            "comment": "A cross-border customs valuation applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:ConsignmentItem.applicableCustomsValuation",
+            "comment": "A cross-border customs valuation applicable to this supply chain consignment."
+        },
+        {
+            "uri": "unece:ExchangedDeclaration.applicableCustomsValuation",
+            "comment": "A cross-border customs valuation applicable to this supply chain consignment."
+        }
+    ]
+}

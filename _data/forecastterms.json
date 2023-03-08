@@ -1,0 +1,38 @@
+
+{
+    "label": "ForecastTerms",
+    "uri": "unece:ForecastTerms",
+    "comment": "A set of terms and conditions by which a supply chain forecast has been or will be made.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ForecastTerms.dateTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of date in these supply chain forecast terms."
+        },
+        {
+            "uri": "unece:ForecastTerms.forecastTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the forecast type in these supply chain forecast terms."
+        },
+        {
+            "uri": "unece:ForecastTerms.supplyChainForecastTermsCommitmentLevelCode",
+            "type": "unece:CommitmentLevelCodeList",
+            "comment": "A code specifying a commitment level in these supply chain forecast terms."
+        },
+        {
+            "uri": "unece:ForecastTerms.supplyChainForecastTermsFrequencyCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a frequency in these supply chain forecast terms."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:HeaderTradeAgreement.applicableForecastTerms",
+            "comment": "The supply chain forecast terms applicable to this header trade agreement."
+        },
+        {
+            "uri": "unece:LineTradeAgreement.applicableForecastTerms",
+            "comment": "The supply chain forecast terms applicable to this header trade agreement."
+        }
+    ]
+}

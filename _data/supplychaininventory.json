@@ -1,0 +1,114 @@
+
+{
+    "label": "SupplyChainInventory",
+    "uri": "unece:SupplyChainInventory",
+    "comment": "Supply chain goods and materials held in stock.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SupplyChainInventory.averageDurationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time of the average duration for this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.calculationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the calculation of this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.plannedStockCalculationDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SupplyChainInventory.averageDemandQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The average demand quantity for this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.dispositionDocument",
+            "type": "unece:Document",
+            "comment": "A disposition document referenced in this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.includedBatch",
+            "type": "unece:ProductBatch",
+            "comment": "A product batch included in this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.includedMaterial",
+            "type": "unece:SpecifiedMaterial",
+            "comment": "Material included in this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.includedTradeProduct",
+            "type": "unece:TradeProduct",
+            "comment": "A product included in this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.maximumStockLevelMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the maximum stock level for this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.maximumStockQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The maximum stock quantity in this CI supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.minimumStockLevelMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the minimum stock level for this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.minimumStockQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The minimum stock quantity in this CI supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.plannedStockQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The planned stock quantity for this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.remarkNote",
+            "type": "unece:Note",
+            "comment": "A note containing a remark for this supply chain inventory."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.specifiedLogisticsLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A location specified for this logistics status."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.specifiedSupplyChainEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A supply chain event specified for this product batch."
+        },
+        {
+            "uri": "unece:SupplyChainInventory.stockQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity of stock in this supply chain inventory."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:LineTradeDelivery.availableInventory",
+            "comment": "Inventory available, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.consignmentInventory",
+            "comment": "Supply chain consignment inventory, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:LineTradeDelivery.customerInventory",
+            "comment": "Supply chain customer inventory, at line level, for this trade delivery."
+        }
+    ]
+}

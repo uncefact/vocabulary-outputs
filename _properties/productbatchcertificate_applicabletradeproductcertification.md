@@ -1,0 +1,5 @@
+---
+title: applicableTradeProductCertification
+permalink: ProductBatchCertificate.applicableTradeProductCertification.html
+jsonid: productbatchcertificate_applicabletradeproductcertification
+---

@@ -1,0 +1,50 @@
+
+{
+    "label": "AnimalCertificate",
+    "uri": "unece:AnimalCertificate",
+    "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about the identity of an animal or a batch of animals.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:AnimalCertificate.certificateTypeCode",
+            "type": "unece:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "unece:AnimalCertificate.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:AnimalCertificate.applicableAnimalCertification",
+            "type": "unece:AnimalCertification",
+            "comment": "An animal certification applicable to this animal certificate."
+        },
+        {
+            "uri": "unece:AnimalCertificate.applicableAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:AnimalCertificate.applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:AnimalCertificate.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductionFacility.specifiedAnimalCertificate",
+            "comment": "An animal certificate specified for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedAnimalCertificate",
+            "comment": "An animal certificate specified for this TT animal."
+        }
+    ]
+}

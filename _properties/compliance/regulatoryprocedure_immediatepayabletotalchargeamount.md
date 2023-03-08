@@ -1,5 +1,0 @@
----
-title: immediatePayableTotalChargeAmount
-permalink: compliance/RegulatoryProcedure.immediatePayableTotalChargeAmount.html
-jsonid: compliance_regulatoryprocedure_immediatepayabletotalchargeamount
----

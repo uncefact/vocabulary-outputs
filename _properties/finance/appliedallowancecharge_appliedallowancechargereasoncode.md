@@ -1,5 +1,0 @@
----
-title: appliedAllowanceChargeReasonCode
-permalink: finance/AppliedAllowanceCharge.appliedAllowanceChargeReasonCode.html
-jsonid: finance_appliedallowancecharge_appliedallowancechargereasoncode
----

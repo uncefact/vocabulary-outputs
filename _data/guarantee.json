@@ -1,0 +1,36 @@
+
+{
+    "label": "Guarantee",
+    "uri": "unece:Guarantee",
+    "comment": "An official promise or assurance to fulfil a financial obligation.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Guarantee.condition",
+            "type": "schema:Text",
+            "comment": "A condition or status, expressed as text, for this process characteristic."
+        },
+        {
+            "uri": "unece:Guarantee.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Guarantee.effectiveDelimitedPeriod",
+            "type": "unece:DelimitedPeriod",
+            "comment": "The period within which this financial guarantee is effective."
+        },
+        {
+            "uri": "unece:Guarantee.liabilityAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the liability in this financial guarantee."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:PaymentTradeSettlement.identifiedGuarantee",
+            "comment": "The financial guarantee identified for this payment trade settlement."
+        }
+    ]
+}

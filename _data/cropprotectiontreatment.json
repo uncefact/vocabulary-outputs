@@ -1,0 +1,46 @@
+
+{
+    "label": "CropProtectionTreatment",
+    "uri": "unece:CropProtectionTreatment",
+    "comment": "A method or substance, such as chemical fertilizers and crop protection products, applied to plant growth whilst managing and controlling diseases and pests.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:CropProtectionTreatment.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:CropProtectionTreatment.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:CropProtectionTreatment.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:CropProtectionTreatment.applicableProcessCertificate",
+            "type": "unece:ProcessCertificate",
+            "comment": "A process certificate applicable to this specified crop protection treatment."
+        },
+        {
+            "uri": "unece:CropProtectionTreatment.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:CropProtectionTreatment.usedMaterial",
+            "type": "unece:SpecifiedMaterial",
+            "comment": "Material used for this specified crop protection treatment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductionProcess.appliedCropProtectionTreatment",
+            "comment": "A crop protection treatment applied during this production process."
+        }
+    ]
+}

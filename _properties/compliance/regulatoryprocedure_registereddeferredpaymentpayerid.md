@@ -1,5 +1,0 @@
----
-title: registeredDeferredPaymentPayerId
-permalink: compliance/RegulatoryProcedure.registeredDeferredPaymentPayerId.html
-jsonid: compliance_regulatoryprocedure_registereddeferredpaymentpayerid
----

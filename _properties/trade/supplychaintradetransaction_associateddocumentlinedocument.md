@@ -1,5 +1,0 @@
----
-title: associatedDocumentLineDocument
-permalink: trade/SupplyChainTradeTransaction.associatedDocumentLineDocument.html
-jsonid: trade_supplychaintradetransaction_associateddocumentlinedocument
----

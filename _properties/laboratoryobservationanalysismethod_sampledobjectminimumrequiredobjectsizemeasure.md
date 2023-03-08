@@ -1,0 +1,5 @@
+---
+title: sampledObjectMinimumRequiredObjectSizeMeasure
+permalink: LaboratoryObservationAnalysisMethod.sampledObjectMinimumRequiredObjectSizeMeasure.html
+jsonid: laboratoryobservationanalysismethod_sampledobjectminimumrequiredobjectsizemeasure
+---

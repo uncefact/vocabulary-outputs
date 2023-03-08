@@ -1,0 +1,5 @@
+---
+title: weightUnitDeadweightTonnageMeasure
+permalink: LogisticsTransportMeans.weightUnitDeadweightTonnageMeasure.html
+jsonid: logisticstransportmeans_weightunitdeadweighttonnagemeasure
+---

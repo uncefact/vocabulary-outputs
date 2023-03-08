@@ -1,5 +1,0 @@
----
-title: specifiedTradeSettlementLineMonetarySummation
-permalink: trade/LineTradeSettlement.specifiedTradeSettlementLineMonetarySummation.html
-jsonid: trade_linetradesettlement_specifiedtradesettlementlinemonetarysummation
----

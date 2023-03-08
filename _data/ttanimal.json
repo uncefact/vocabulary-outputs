@@ -1,0 +1,66 @@
+
+{
+    "label": "TTAnimal",
+    "uri": "unece:TTAnimal",
+    "comment": "A Track and Trace (TT) animal or a group of animals, such as those kept or raised on a farm, ranch.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TTAnimal.speciesTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the species type of this TT animal."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TTAnimal.holderResponsibleParty",
+            "type": "unece:TTParty",
+            "comment": "The holder responsible party for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.relatedTTLocation",
+            "type": "unece:TTLocation",
+            "comment": "A location related to this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedAnimalBatch",
+            "type": "unece:AnimalBatch",
+            "comment": "The animal batch specified for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedAnimalCertificate",
+            "type": "unece:AnimalCertificate",
+            "comment": "An animal certificate specified for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedAnimalHoldingEvent",
+            "type": "unece:AnimalHoldingEvent",
+            "comment": "An animal holding event specified for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedAnimalIdentity",
+            "type": "unece:AnimalIdentity",
+            "comment": "An animal identity specified for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedIndividualTTAnimal",
+            "type": "unece:IndividualTTAnimal",
+            "comment": "The individual tracking animal specified for this TT animal."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedPeriod",
+            "type": "unece:DelimitedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedSpeciesTTAnimal",
+            "type": "unece:SpeciesTTAnimal",
+            "comment": "A species specified for this TT animal."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradeProduct.relatedAnimal",
+            "comment": "A TT (Track and Trace) animal, such as one kept or raised on a farm or ranch, related to this trade product."
+        }
+    ]
+}

@@ -1,5 +1,0 @@
----
-title: thirdPartyIssuedIdentification
-permalink: compliance/LaboratoryObservationParty.thirdPartyIssuedIdentification.html
-jsonid: compliance_laboratoryobservationparty_thirdpartyissuedidentification
----

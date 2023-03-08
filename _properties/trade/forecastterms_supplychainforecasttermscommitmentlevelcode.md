@@ -1,5 +1,0 @@
----
-title: supplyChainForecastTermsCommitmentLevelCode
-permalink: trade/ForecastTerms.supplyChainForecastTermsCommitmentLevelCode.html
-jsonid: trade_forecastterms_supplychainforecasttermscommitmentlevelcode
----

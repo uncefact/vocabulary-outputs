@@ -1,0 +1,85 @@
+
+{
+    "label": "AgriculturalProcess",
+    "uri": "unece:AgriculturalProcess",
+    "comment": "A practice of cultivating land, raising crops, or treatment of the agricultural produce.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:AgriculturalProcess.actualEndDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the actual end for the crop production in this agricultural process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.actualStartDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the actual start of the crop production in this agricultural process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.earliestStartDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the earliest start of the crop production in this agricultural process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.latestEndDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value of the latest end for the crop production in this agricultural process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.subordinateTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the subordinate type for this production device."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:AgriculturalProcess.appliedAgriculturalApplication",
+            "type": "unece:AgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.harvestedBatch",
+            "type": "unece:CropProduceBatch",
+            "comment": "A crop produce batch harvested in the crop production for this agricultural process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.productionWasteInstructions",
+            "type": "unece:DisposalInstructions",
+            "comment": "Disposal instructions for the waste resulting from this production process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.reportedProductionWasteMaterial",
+            "type": "unece:ProductionWasteMaterial",
+            "comment": "Production waste material reported for this agricultural crop production process."
+        },
+        {
+            "uri": "unece:AgriculturalProcess.specifiedFieldCrop",
+            "type": "unece:FieldCrop",
+            "comment": "A field crop specified for this crop production agricultural process."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:FieldCrop.applicableAgriculturalProcess",
+            "comment": "An agricultural process crop production applicable for this field crop."
+        },
+        {
+            "uri": "unece:Plot.applicableAgriculturalProcess",
+            "comment": "An agricultural process crop production applicable for this field crop."
+        }
+    ]
+}

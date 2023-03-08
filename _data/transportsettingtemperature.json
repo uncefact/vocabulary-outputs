@@ -1,0 +1,53 @@
+
+{
+    "label": "TransportSettingTemperature",
+    "uri": "unece:TransportSettingTemperature",
+    "comment": "Temperature settings for a transport movement, such as a required storage temperature range.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TransportSettingTemperature.temperatureTypeCode",
+            "type": "unece:TemperatureTypeCodeList",
+            "comment": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TransportSettingTemperature.informationInstructions",
+            "type": "unece:TemperatureSettingInstructions",
+            "comment": "Informational instructions for achieving, maintaining, using or responding to this transport setting temperature."
+        },
+        {
+            "uri": "unece:TransportSettingTemperature.maximumValueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a maximum value for this sustainability characteristic."
+        },
+        {
+            "uri": "unece:TransportSettingTemperature.minimumValueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a minimum value for this sustainability characteristic."
+        },
+        {
+            "uri": "unece:TransportSettingTemperature.temperatureUnitValueMeasure",
+            "type": "unece:TemperatureUnitMeasureType",
+            "comment": "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AssociatedTransportEquipment.settingTemperature",
+            "comment": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational temperature."
+        },
+        {
+            "uri": "unece:ConsignmentItem.transportTemperature",
+            "comment": "The transport temperature setting for this supply chain consignment item."
+        },
+        {
+            "uri": "unece:HandlingInstructions.applicableTransportSettingTemperature",
+            "comment": "A transport related temperature setting applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment.settingTemperature",
+            "comment": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational temperature."
+        }
+    ]
+}

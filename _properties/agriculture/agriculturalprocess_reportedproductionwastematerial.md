@@ -1,5 +1,0 @@
----
-title: reportedProductionWasteMaterial
-permalink: agriculture/AgriculturalProcess.reportedProductionWasteMaterial.html
-jsonid: agriculture_agriculturalprocess_reportedproductionwastematerial
----

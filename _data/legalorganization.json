@@ -1,0 +1,61 @@
+
+{
+    "label": "LegalOrganization",
+    "uri": "unece:LegalOrganization",
+    "comment": "An organization set up on a legal basis as a business, government body, department, charity, or financial institution.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:LegalOrganization.businessTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the type of business of this legally set up organization."
+        },
+        {
+            "uri": "unece:LegalOrganization.establishedDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value when this legally set up organization was established."
+        },
+        {
+            "uri": "unece:LegalOrganization.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:LegalOrganization.legalClassificationCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the legal classification of this organization, such as Incorporated (Inc), Limited Liability Corporation (LLC) or non-profit."
+        },
+        {
+            "uri": "unece:LegalOrganization.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:LegalOrganization.tradingBusinessName",
+            "type": "schema:Text",
+            "comment": "The trading business name, expressed as text, of this legally set up organization."
+        },
+        {
+            "uri": "unece:LegalOrganization.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:LegalOrganization.authorizedRegistration",
+            "type": "unece:LegalRegistration",
+            "comment": "A legal registration authorized for this legally set up organization."
+        },
+        {
+            "uri": "unece:LegalOrganization.postalAddress",
+            "type": "unece:Address",
+            "comment": "A postal address for this legally set up organization."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradeParty.specifiedLegalOrganization",
+            "comment": "The legally constituted organization specified for this trade party."
+        }
+    ]
+}

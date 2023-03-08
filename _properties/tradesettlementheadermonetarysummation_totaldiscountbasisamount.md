@@ -1,0 +1,5 @@
+---
+title: totalDiscountBasisAmount
+permalink: TradeSettlementHeaderMonetarySummation.totalDiscountBasisAmount.html
+jsonid: tradesettlementheadermonetarysummation_totaldiscountbasisamount
+---

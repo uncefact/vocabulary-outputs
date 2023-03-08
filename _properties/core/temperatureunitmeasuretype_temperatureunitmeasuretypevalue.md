@@ -1,5 +1,0 @@
----
-title: TemperatureUnitMeasureTypeValue
-permalink: core/TemperatureUnitMeasureType.TemperatureUnitMeasureTypeValue.html
-jsonid: core_temperatureunitmeasuretype_temperatureunitmeasuretypevalue
----

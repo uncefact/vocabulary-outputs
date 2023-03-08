@@ -1,0 +1,5 @@
+---
+title: includedSupplyChainTradeLineItem
+permalink: SupplyChainTradeTransaction.includedSupplyChainTradeLineItem.html
+jsonid: supplychaintradetransaction_includedsupplychaintradelineitem
+---

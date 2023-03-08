@@ -1,0 +1,5 @@
+---
+title: attachedLogisticsTransportEquipment
+permalink: LogisticsTransportMeans.attachedLogisticsTransportEquipment.html
+jsonid: logisticstransportmeans_attachedlogisticstransportequipment
+---

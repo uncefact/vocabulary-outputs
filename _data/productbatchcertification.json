@@ -1,0 +1,59 @@
+
+{
+    "label": "ProductBatchCertification",
+    "uri": "unece:ProductBatchCertification",
+    "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductBatchCertification.assertion",
+            "type": "schema:Text",
+            "comment": "An assertion, expressed as text, for this animal certification."
+        },
+        {
+            "uri": "unece:ProductBatchCertification.assertionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
+        },
+        {
+            "uri": "unece:ProductBatchCertification.responsibleAgency",
+            "type": "schema:Text",
+            "comment": "A responsible agency, expressed as text, for this specified certification."
+        },
+        {
+            "uri": "unece:ProductBatchCertification.standard",
+            "type": "schema:Text",
+            "comment": "A standard, expressed as text, for this specified certification."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductBatchCertification.applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this agricultural certificate."
+        },
+        {
+            "uri": "unece:ProductBatchCertification.relatedLocation",
+            "type": "unece:Location",
+            "comment": "A referenced location related to this animal certification."
+        },
+        {
+            "uri": "unece:ProductBatchCertification.specifiedAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion for this specified certification."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductBatch.applicableProductBatchCertification",
+            "comment": "A certification applicable to this product batch."
+        },
+        {
+            "uri": "unece:ProductionFacility.specifiedProductBatchCertification",
+            "comment": "A product batch certification specified for this production facility."
+        },
+        {
+            "uri": "unece:ProductionProcess.specifiedProductBatchCertification",
+            "comment": "A product batch certification specified for this production facility."
+        }
+    ]
+}

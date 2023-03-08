@@ -1,5 +1,0 @@
----
-title: weightUnitDeadweightTonnageMeasure
-permalink: transport/LogisticsTransportMeans.weightUnitDeadweightTonnageMeasure.html
-jsonid: transport_logisticstransportmeans_weightunitdeadweighttonnagemeasure
----

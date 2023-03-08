@@ -1,0 +1,31 @@
+
+{
+    "label": "Section",
+    "uri": "unece:Section",
+    "comment": "The parts into which a label is or may be divided.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Section.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Section.patternCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the pattern of this label section."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Section.includedSegment",
+            "type": "unece:Segment",
+            "comment": "A segment included in this label section."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:LogisticsLabel.includedSection",
+            "comment": "A section included in this logistics label."
+        }
+    ]
+}

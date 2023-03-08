@@ -1,5 +1,0 @@
----
-title: plannedDischargedMeasure
-permalink: transport/TransportationWasteMaterialComponent.plannedDischargedMeasure.html
-jsonid: transport_transportationwastematerialcomponent_planneddischargedmeasure
----

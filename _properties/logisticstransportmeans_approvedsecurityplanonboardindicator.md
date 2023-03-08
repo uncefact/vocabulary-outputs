@@ -1,0 +1,5 @@
+---
+title: approvedSecurityPlanOnboardIndicator
+permalink: LogisticsTransportMeans.approvedSecurityPlanOnboardIndicator.html
+jsonid: logisticstransportmeans_approvedsecurityplanonboardindicator
+---

@@ -1,5 +1,0 @@
----
-title: lineOfCreditSpecifiedFinancialAccount
-permalink: finance/RequestingParty.lineOfCreditSpecifiedFinancialAccount.html
-jsonid: finance_requestingparty_lineofcreditspecifiedfinancialaccount
----

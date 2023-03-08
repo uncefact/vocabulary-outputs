@@ -1,5 +1,0 @@
----
-title: acknowledgementDocumentStatusCode
-permalink: trade/AcknowledgementDocument.acknowledgementDocumentStatusCode.html
-jsonid: trade_acknowledgementdocument_acknowledgementdocumentstatuscode
----

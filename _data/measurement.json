@@ -1,0 +1,58 @@
+
+{
+    "label": "Measurement",
+    "uri": "unece:Measurement",
+    "comment": "An amount, size, or extent as established by measuring.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Measurement.comparisonOperatorCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures."
+        },
+        {
+            "uri": "unece:Measurement.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:Measurement.method",
+            "type": "schema:Text",
+            "comment": "A measurement method expressed as text."
+        },
+        {
+            "uri": "unece:Measurement.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Measurement.actualMeasure",
+            "type": "unece:MeasureType",
+            "comment": "An actual measure for this measurement."
+        },
+        {
+            "uri": "unece:Measurement.conditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a condition for this measurement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Clause.associatedMeasurement",
+            "comment": "A measurement associated with this document clause."
+        },
+        {
+            "uri": "unece:DangerousGoods.controlTemperatureMeasurement",
+            "comment": "The measurement of the control temperature of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:DangerousGoods.emergencyTemperatureMeasurement",
+            "comment": "The measurement of the emergency temperature of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:DangerousGoods.flashpointTemperatureMeasurement",
+            "comment": "A measurement of the flashpoint temperature of these transported dangerous goods."
+        }
+    ]
+}

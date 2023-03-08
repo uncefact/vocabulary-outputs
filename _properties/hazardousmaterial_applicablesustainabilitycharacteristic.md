@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: HazardousMaterial.applicableSustainabilityCharacteristic.html
+jsonid: hazardousmaterial_applicablesustainabilitycharacteristic
+---

@@ -1,0 +1,5 @@
+---
+title: deliveryOrderFulfilmentLeadTimeMeasure
+permalink: LineTradeAgreement.deliveryOrderFulfilmentLeadTimeMeasure.html
+jsonid: linetradeagreement_deliveryorderfulfilmentleadtimemeasure
+---

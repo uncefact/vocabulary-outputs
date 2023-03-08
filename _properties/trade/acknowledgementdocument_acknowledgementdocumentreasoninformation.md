@@ -1,5 +1,0 @@
----
-title: acknowledgementDocumentReasonInformation
-permalink: trade/AcknowledgementDocument.acknowledgementDocumentReasonInformation.html
-jsonid: trade_acknowledgementdocument_acknowledgementdocumentreasoninformation
----

@@ -1,0 +1,131 @@
+
+{
+    "label": "ProductInstance",
+    "uri": "unece:ProductInstance",
+    "comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductInstance.batchId",
+            "type": "schema:Text",
+            "comment": "A batch identifier for this trade product."
+        },
+        {
+            "uri": "unece:ProductInstance.bestBeforeDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value before which it is best to consume the items contained in this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.ceramicCapacitorId",
+            "type": "schema:Text",
+            "comment": "The ceramic capacitor identifier of this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.dNAMarkerId",
+            "type": "schema:Text",
+            "comment": "The DNA marker identifier of this product batch."
+        },
+        {
+            "uri": "unece:ProductInstance.ePCId",
+            "type": "schema:Text",
+            "comment": "The EPC (Electronic Product Code) identifier of this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.expiryDateTime",
+            "type": "schema:Text",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
+        },
+        {
+            "uri": "unece:ProductInstance.globalSerialId",
+            "type": "schema:Text",
+            "comment": "The unique global serial identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ProductInstance.kanbanId",
+            "type": "schema:Text",
+            "comment": "The unique kanban identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.lotId",
+            "type": "schema:Text",
+            "comment": "The unique lot identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.manufacturerAssignedSerialId",
+            "type": "schema:Text",
+            "comment": "The unique manufacturer assigned serial identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.registrationId",
+            "type": "schema:Text",
+            "comment": "A unique registration identifier, such as a vehicle licence plate identification, for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.sellByDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value by after which the items contained in the trade product instance should not be sold."
+        },
+        {
+            "uri": "unece:ProductInstance.serialId",
+            "type": "schema:Text",
+            "comment": "A unique serial identifier for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.supplierAssignedSerialId",
+            "type": "schema:Text",
+            "comment": "The unique supplier assigned serial identifier for this trade product instance."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductInstance.actualQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
+        },
+        {
+            "uri": "unece:ProductInstance.applicableGoodsCharacteristic",
+            "type": "unece:GoodsCharacteristic",
+            "comment": "A distinguishing material feature applicable to this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.applicableProductCharacteristic",
+            "type": "unece:ProductCharacteristic",
+            "comment": "A characteristic applicable to this trade product."
+        },
+        {
+            "uri": "unece:ProductInstance.appliedProcess",
+            "type": "unece:ProductHandlingProcess",
+            "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
+        },
+        {
+            "uri": "unece:ProductInstance.inspectionEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A supply chain inspection event at this logistics location."
+        },
+        {
+            "uri": "unece:ProductInstance.originLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A location of origin for this supply chain product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.packagingEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The packaging event for this trade product instance."
+        },
+        {
+            "uri": "unece:ProductInstance.productionEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "The production event for this trade product instance."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradeProduct.individualProductInstance",
+            "comment": "An individual instance of this trade product."
+        }
+    ]
+}

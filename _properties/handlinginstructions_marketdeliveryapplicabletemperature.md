@@ -1,0 +1,5 @@
+---
+title: marketDeliveryApplicableTemperature
+permalink: HandlingInstructions.marketDeliveryApplicableTemperature.html
+jsonid: handlinginstructions_marketdeliveryapplicabletemperature
+---

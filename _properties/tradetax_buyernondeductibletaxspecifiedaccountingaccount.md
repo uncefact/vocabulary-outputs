@@ -1,0 +1,5 @@
+---
+title: buyerNonDeductibleTaxSpecifiedAccountingAccount
+permalink: TradeTax.buyerNonDeductibleTaxSpecifiedAccountingAccount.html
+jsonid: tradetax_buyernondeductibletaxspecifiedaccountingaccount
+---

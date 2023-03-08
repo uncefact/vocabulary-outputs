@@ -1,0 +1,39 @@
+
+{
+    "label": "Response",
+    "uri": "unece:Response",
+    "comment": "A response to a specification query.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Response.content",
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
+        },
+        {
+            "uri": "unece:Response.contractualLanguageCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the contractual language for this basic work item."
+        },
+        {
+            "uri": "unece:Response.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Response.queryId",
+            "type": "schema:Text",
+            "comment": "The unique identifier for the query to which this response refers."
+        },
+        {
+            "uri": "unece:Response.responseTypeCode",
+            "type": "unece:ResponseTypeCodeList",
+            "comment": "The code specifying the type of this specification response."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ComplexDescription.respondingResponse",
+            "comment": "A responding specification response for this work item complex description."
+        }
+    ]
+}

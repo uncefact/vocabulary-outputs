@@ -1,0 +1,41 @@
+
+{
+    "label": "SubordinateLineTradeSettlement",
+    "uri": "unece:SubordinateLineTradeSettlement",
+    "comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.amountDirectionCode",
+            "type": "schema:Text",
+            "comment": "The code, specifying the direction, either an addition or subtraction, for the amount of this line trade settlement."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.applicableTax",
+            "type": "unece:TradeTax",
+            "comment": "A tax applicable to this header trade settlement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.invoiceReferencedDocument",
+            "type": "unece:Document",
+            "comment": "An invoice document referenced for this subordinate line trade settlement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.specifiedAllowanceCharge",
+            "type": "unece:TradeAllowanceCharge",
+            "comment": "An allowance or charge specified for this header trade settlement."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeSettlement.specifiedFinancialAdjustment",
+            "type": "unece:FinancialAdjustment",
+            "comment": "A financial adjustment specified for this header trade settlement."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:SubordinateTradeLineItem.specifiedSubordinateLineTradeSettlement",
+            "comment": "A trade settlement specified for this subordinate trade line item."
+        }
+    ]
+}

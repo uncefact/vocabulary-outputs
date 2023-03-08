@@ -1,0 +1,58 @@
+
+{
+    "label": "ProductGroup",
+    "uri": "unece:ProductGroup",
+    "comment": "A grouping of trade products.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ProductGroup.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:ProductGroup.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ProductGroup.includedSupplyChainTradeLineItem",
+            "type": "unece:SupplyChainTradeLineItem",
+            "comment": "A supply chain trade line item included in this logistics package."
+        },
+        {
+            "uri": "unece:ProductGroup.includedTradeProduct",
+            "type": "unece:TradeProduct",
+            "comment": "A product included in this supply chain inventory."
+        },
+        {
+            "uri": "unece:ProductGroup.specifiedDocument",
+            "type": "unece:Document",
+            "comment": "A referenced document for this specified inspection."
+        },
+        {
+            "uri": "unece:ProductGroup.subordinateProductGroup",
+            "type": "unece:ProductGroup",
+            "comment": "A product group subordinate to this trade product group."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductGroup.subordinateProductGroup",
+            "comment": "A product group subordinate to this trade product group."
+        },
+        {
+            "uri": "unece:SupplyChainTradeTransaction.includedProductGroup",
+            "comment": "A product group included in this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:TradeProduct.endUseProductGroup",
+            "comment": "An end use product group for this trade product."
+        },
+        {
+            "uri": "unece:TradeProduct.specifiedProductGroup",
+            "comment": "A product group specified for this trade product."
+        }
+    ]
+}

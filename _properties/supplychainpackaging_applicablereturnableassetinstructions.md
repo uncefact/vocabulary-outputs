@@ -1,0 +1,5 @@
+---
+title: applicableReturnableAssetInstructions
+permalink: SupplyChainPackaging.applicableReturnableAssetInstructions.html
+jsonid: supplychainpackaging_applicablereturnableassetinstructions
+---

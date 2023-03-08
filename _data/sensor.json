@@ -1,0 +1,85 @@
+
+{
+    "label": "Sensor",
+    "uri": "unece:Sensor",
+    "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Sensor.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Sensor.positionCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a position of this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.remainingBatteryChargePercent",
+            "type": "schema:Text",
+            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:Sensor.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Sensor.actualReportedMeasurement",
+            "type": "unece:CalibratedMeasurement",
+            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.definedControlSettingParameter",
+            "type": "unece:ControlSettingParameter",
+            "comment": "A control setting parameter defined for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.definedOperationalParameter",
+            "type": "unece:OperationalParameter",
+            "comment": "An operational parameter defined for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.grantedCertificate",
+            "type": "unece:ProductCertificate",
+            "comment": "A product certificate granted for this monitoring IOT device."
+        },
+        {
+            "uri": "unece:Sensor.manufacturerParty",
+            "type": "unece:Party",
+            "comment": "A manufacturer party for this production process."
+        },
+        {
+            "uri": "unece:Sensor.ownerParty",
+            "type": "unece:Party",
+            "comment": "A party who owns this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:Sensor.precisionMeasurement",
+            "type": "unece:CalibratedMeasurement",
+            "comment": "A calibrated measurement of precision for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.scheduledReportedMeasurement",
+            "type": "unece:CalibratedMeasurement",
+            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:Sensor.valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:IOTDevice.embeddedSensor",
+            "comment": "An embedded sensor of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:IOTDevice.remoteSensor",
+            "comment": "A remote sensor of this monitoring IOT device."
+        }
+    ]
+}

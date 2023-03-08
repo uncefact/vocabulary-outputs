@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: TransportationWasteMaterial.applicableSustainabilityCharacteristic.html
+jsonid: transportationwastematerial_applicablesustainabilitycharacteristic
+---

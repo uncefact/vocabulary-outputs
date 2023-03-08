@@ -1,0 +1,58 @@
+
+{
+    "label": "DebtorFinancialAccount",
+    "uri": "unece:DebtorFinancialAccount",
+    "comment": "A specific business arrangement whereby debits arising from transactions are recorded.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:DebtorFinancialAccount.accountName",
+            "type": "schema:Text",
+            "comment": "An account name, expressed as text, of this payment financial account."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.bBANId",
+            "type": "schema:Text",
+            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.currencyCode",
+            "type": "schema:Text",
+            "comment": "The code specifying a currency of this cash used for payment."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.debtorFinancialAccountTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of debtor financial account."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.iBANId",
+            "type": "schema:Text",
+            "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.proprietaryId",
+            "type": "schema:Text",
+            "comment": "The proprietary identifier for this financing financial account."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.proprietaryType",
+            "type": "schema:Text",
+            "comment": "A proprietary type, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:DebtorFinancialAccount.uPICId",
+            "type": "schema:Text",
+            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:PaymentMeans.payerPartyFinancialAccount",
+            "comment": "The debtor financial account of the payer party for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:RegulatoryProcedure.specifiedDebtorFinancialAccount",
+            "comment": "A debtor financial account specified for this cross-border regulatory procedure."
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+
+{
+    "label": "TradeAddress",
+    "uri": "unece:TradeAddress",
+    "comment": "The location at which a particular trade related organization or person may be found or reached.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:TradeAddress.additionalStreetName",
+            "type": "schema:Text",
+            "comment": "The additional name of a street, expressed as text, for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.addressTypeCode",
+            "type": "unece:AddressTypeCodeList",
+            "comment": "A code specifying the type of this trade address, such as business address or home address."
+        },
+        {
+            "uri": "unece:TradeAddress.attentionOf",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of a person or department in the organization to whom incoming mail is marked with words such as 'for the attention of' or 'FAO' or 'ATTN' for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.buildingName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of a building, a house or other structure on a street at this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.buildingNumber",
+            "type": "schema:Text",
+            "comment": "The building number, expressed as text, in this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.careOf",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of a person or organization at this trade address to whom incoming mail is marked with words such as 'care of' or 'C/O'."
+        },
+        {
+            "uri": "unece:TradeAddress.cityId",
+            "type": "schema:Text",
+            "comment": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE)."
+        },
+        {
+            "uri": "unece:TradeAddress.cityName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of the city, town or village of this birth address."
+        },
+        {
+            "uri": "unece:TradeAddress.citySubDivisionName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of a sub-division of a city for this trade address, for example a district or borough."
+        },
+        {
+            "uri": "unece:TradeAddress.countryName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of the country for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.countrySubDivisionId",
+            "type": "schema:Text",
+            "comment": "A unique identifier of the country sub-division for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.countrySubDivisionName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of the sub-division of a country for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.departmentName",
+            "type": "schema:Text",
+            "comment": "The name, expressed as text, of a department for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:TradeAddress.freeForm",
+            "type": "schema:Text",
+            "comment": "A free form representation, expressed as text, of this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:TradeAddress.invalidIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this trade address is invalid."
+        },
+        {
+            "uri": "unece:TradeAddress.lineFive",
+            "type": "schema:Text",
+            "comment": "The fifth free form line, expressed as text, of this financial institution address."
+        },
+        {
+            "uri": "unece:TradeAddress.lineFour",
+            "type": "schema:Text",
+            "comment": "The fourth free form line, expressed as text, of this financial institution address."
+        },
+        {
+            "uri": "unece:TradeAddress.lineOne",
+            "type": "schema:Text",
+            "comment": "The first free form line, expressed as text, of this financial institution address."
+        },
+        {
+            "uri": "unece:TradeAddress.lineThree",
+            "type": "schema:Text",
+            "comment": "The third free form line, expressed as text, of this financial institution address."
+        },
+        {
+            "uri": "unece:TradeAddress.lineTwo",
+            "type": "schema:Text",
+            "comment": "The second free form line, expressed as text, of this financial institution address."
+        },
+        {
+            "uri": "unece:TradeAddress.postOfficeBox",
+            "type": "schema:Text",
+            "comment": "The post office box, expressed as text, for this financial institution address."
+        },
+        {
+            "uri": "unece:TradeAddress.postcodeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the postcode of this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.streetName",
+            "type": "schema:Text",
+            "comment": "A name, expressed as text, of a street or thoroughfare for this trade address."
+        },
+        {
+            "uri": "unece:TradeAddress.tradeAddressCountryId",
+            "type": "unece:CountryId",
+            "comment": "The unique identifier of a country for this trade address."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:TradeAddress.geoCoordinateIdentificationGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "An identification of a set of geographical coordinates for this trade address."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TradeContact.postalAddress",
+            "comment": "A postal address for this legally set up organization."
+        },
+        {
+            "uri": "unece:TradeParty.postalAddress",
+            "comment": "A postal address for this legally set up organization."
+        }
+    ]
+}

@@ -1,5 +1,0 @@
----
-title: relatedSustainabilityCharacteristic
-permalink: transport/SupplyChainEvent.relatedSustainabilityCharacteristic.html
-jsonid: transport_supplychainevent_relatedsustainabilitycharacteristic
----

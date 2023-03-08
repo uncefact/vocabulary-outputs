@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: compliance/ProductBatchCertificate.applicableSustainabilityCharacteristic.html
-jsonid: compliance_productbatchcertificate_applicablesustainabilitycharacteristic
----

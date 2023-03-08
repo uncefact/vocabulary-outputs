@@ -1,5 +1,0 @@
----
-title: loadingInspectionSpecifiedInstructions
-permalink: transport/TransportMovement.loadingInspectionSpecifiedInstructions.html
-jsonid: transport_transportmovement_loadinginspectionspecifiedinstructions
----

@@ -1,5 +1,0 @@
----
-title: attachedLaboratoryObservationNote
-permalink: compliance/ObservationResult.attachedLaboratoryObservationNote.html
-jsonid: compliance_observationresult_attachedlaboratoryobservationnote
----

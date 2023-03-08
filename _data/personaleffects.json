@@ -1,0 +1,40 @@
+
+{
+    "label": "PersonalEffects",
+    "uri": "unece:PersonalEffects",
+    "comment": "Specified privately owned articles for personal use by an individual.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:PersonalEffects.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:PersonalEffects.sequenceNumeric",
+            "type": "schema:Text",
+            "comment": "A sequence number for these specified personal effects."
+        },
+        {
+            "uri": "unece:PersonalEffects.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:PersonalEffects.onboardQuantity",
+            "type": "unece:QuantityType",
+            "comment": "An onboard number of these specified personal effects."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TransportMovement.crewPersonalEffects",
+            "comment": "Personal effects of an individual member of the crew for this logistics transport movement."
+        },
+        {
+            "uri": "unece:TransportPerson.declaredPersonalEffects",
+            "comment": "Personal effects use declared by a transport person."
+        }
+    ]
+}

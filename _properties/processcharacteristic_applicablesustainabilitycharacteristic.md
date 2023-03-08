@@ -1,0 +1,5 @@
+---
+title: applicableSustainabilityCharacteristic
+permalink: ProcessCharacteristic.applicableSustainabilityCharacteristic.html
+jsonid: processcharacteristic_applicablesustainabilitycharacteristic
+---

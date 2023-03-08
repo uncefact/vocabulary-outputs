@@ -1,0 +1,5 @@
+---
+title: receivableSpecifiedAccountingAccount
+permalink: LineTradeSettlement.receivableSpecifiedAccountingAccount.html
+jsonid: linetradesettlement_receivablespecifiedaccountingaccount
+---

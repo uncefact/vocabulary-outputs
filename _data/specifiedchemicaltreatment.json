@@ -1,0 +1,54 @@
+
+{
+    "label": "SpecifiedChemicalTreatment",
+    "uri": "unece:SpecifiedChemicalTreatment",
+    "comment": "Any substance such as dyestuffs, chrome oxide, acids, sulphate, surfactant or other chemicals applied to an agricultural field, substrate, plant, animal product, material or product.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SpecifiedChemicalTreatment.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:SpecifiedChemicalTreatment.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:SpecifiedChemicalTreatment.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SpecifiedChemicalTreatment.applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A characteristic applicable to this sustainability inspection."
+        },
+        {
+            "uri": "unece:SpecifiedChemicalTreatment.specifiedProcessCertificate",
+            "type": "unece:ProcessCertificate",
+            "comment": "A process certificate for this specified chemical treatment."
+        },
+        {
+            "uri": "unece:SpecifiedChemicalTreatment.usedChemical",
+            "type": "unece:Chemical",
+            "comment": "A chemical used during this applied chemical treatment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductBatch.appliedChemicalTreatment",
+            "comment": "A chemical treatment applied during this production process."
+        },
+        {
+            "uri": "unece:ProductionProcess.appliedChemicalTreatment",
+            "comment": "A chemical treatment applied during this production process."
+        },
+        {
+            "uri": "unece:TradeProduct.appliedChemicalTreatment",
+            "comment": "A chemical treatment applied during this production process."
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+---
+title: outputQuantitySpecifiedEventElement
+permalink: TTTransformationEvent.outputQuantitySpecifiedEventElement.html
+jsonid: tttransformationevent_outputquantityspecifiedeventelement
+---

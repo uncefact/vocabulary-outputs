@@ -1,0 +1,89 @@
+
+{
+    "label": "Plot",
+    "uri": "unece:Plot",
+    "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Plot.endDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the end of this available period of time."
+        },
+        {
+            "uri": "unece:Plot.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Plot.regulatoryOrganicIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this crop plot is certified as regulatory organic."
+        },
+        {
+            "uri": "unece:Plot.regulatorySoilTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of regulatory soil for this crop plot."
+        },
+        {
+            "uri": "unece:Plot.startDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the start of this available period of time."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Plot.applicableAgriculturalProcess",
+            "type": "unece:AgriculturalProcess",
+            "comment": "An agricultural process crop production applicable for this field crop."
+        },
+        {
+            "uri": "unece:Plot.appliedAgriculturalApplication",
+            "type": "unece:AgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "unece:Plot.areaMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The area measure for this crop plot."
+        },
+        {
+            "uri": "unece:Plot.grownCrop",
+            "type": "unece:FieldCrop",
+            "comment": "A field crop grown on this crop plot."
+        },
+        {
+            "uri": "unece:Plot.specifiedAgriculturalCertificate",
+            "type": "unece:AgriculturalCertificate",
+            "comment": "An agricultural certificate specified for this crop plot."
+        },
+        {
+            "uri": "unece:Plot.specifiedAgriculturalCharacteristic",
+            "type": "unece:AgriculturalCharacteristic",
+            "comment": "An agricultural characteristic specified for this crop plot."
+        },
+        {
+            "uri": "unece:Plot.specifiedArea",
+            "type": "unece:Area",
+            "comment": "An agricultural zone area specified for this crop plot."
+        },
+        {
+            "uri": "unece:Plot.specifiedLocation",
+            "type": "unece:Location",
+            "comment": "A referenced location specified for this material."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AgriculturalApplication.specifiedPlot",
+            "comment": "A crop plot specified for this agricultural application."
+        },
+        {
+            "uri": "unece:Area.specifiedPlot",
+            "comment": "A crop plot specified for this agricultural application."
+        },
+        {
+            "uri": "unece:FieldCrop.grownPlot",
+            "comment": "The plot where this field crop is grown."
+        }
+    ]
+}

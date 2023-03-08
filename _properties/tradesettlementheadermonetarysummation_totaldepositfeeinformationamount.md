@@ -1,0 +1,5 @@
+---
+title: totalDepositFeeInformationAmount
+permalink: TradeSettlementHeaderMonetarySummation.totalDepositFeeInformationAmount.html
+jsonid: tradesettlementheadermonetarysummation_totaldepositfeeinformationamount
+---

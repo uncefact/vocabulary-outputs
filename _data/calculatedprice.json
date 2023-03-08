@@ -1,0 +1,43 @@
+
+{
+    "label": "CalculatedPrice",
+    "uri": "unece:CalculatedPrice",
+    "comment": "Information related to a calculated price.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:CalculatedPrice.calculatedPriceTypeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying the type of calculated price."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:CalculatedPrice.chargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the calculated price to be charged."
+        },
+        {
+            "uri": "unece:CalculatedPrice.relatedAllowanceCharge",
+            "type": "unece:AppliedAllowanceCharge",
+            "comment": "Applied allowance charge information related to this calculated price."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:BasicWorkItem.totalPrice",
+            "comment": "A total calculated price for this basic work item."
+        },
+        {
+            "uri": "unece:BasicWorkItem.unitPrice",
+            "comment": "A unit calculated price for this basic work item."
+        },
+        {
+            "uri": "unece:BreakdownStatement.totalPrice",
+            "comment": "A total calculated price for this basic work item."
+        },
+        {
+            "uri": "unece:GroupedWorkItem.totalPrice",
+            "comment": "A total calculated price for this basic work item."
+        }
+    ]
+}

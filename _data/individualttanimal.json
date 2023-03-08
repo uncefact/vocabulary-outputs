@@ -1,0 +1,36 @@
+
+{
+    "label": "IndividualTTAnimal",
+    "uri": "unece:IndividualTTAnimal",
+    "comment": "A Track and Trace (TT) animal, such as one kept or raised on a farm, ranch.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:IndividualTTAnimal.birthDateTime",
+            "type": "schema:Text",
+            "comment": "The birth date for this individual TT animal."
+        },
+        {
+            "uri": "unece:IndividualTTAnimal.deathDateTime",
+            "type": "schema:Text",
+            "comment": "The death date for this individual TT animal."
+        },
+        {
+            "uri": "unece:IndividualTTAnimal.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:IndividualTTAnimal.specifiedPeriod",
+            "type": "unece:DelimitedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TTAnimal.specifiedIndividualTTAnimal",
+            "comment": "The individual tracking animal specified for this TT animal."
+        }
+    ]
+}

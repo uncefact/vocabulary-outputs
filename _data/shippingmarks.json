@@ -1,0 +1,54 @@
+
+{
+    "label": "ShippingMarks",
+    "uri": "unece:ShippingMarks",
+    "comment": "Physical markings or labels on individual packages or transport units for logistics purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:ShippingMarks.logisticsShippingMarksMarkingInstructionCode",
+            "type": "unece:MarkingInstructionCodeList",
+            "comment": "A code specifying a marking instruction for these logistics shipping marks."
+        },
+        {
+            "uri": "unece:ShippingMarks.marking",
+            "type": "schema:Text",
+            "comment": "Marking, expressed as text, for these logistics shipping marks."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:ShippingMarks.barcodeLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "A barcode label that is a part of these logistics shipping marks."
+        },
+        {
+            "uri": "unece:ShippingMarks.rFIDLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
+        },
+        {
+            "uri": "unece:ShippingMarks.radioactiveLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "Radioactive labelling that is a part of these logistics shipping marks."
+        },
+        {
+            "uri": "unece:ShippingMarks.vINLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Consignment.physicalShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "unece:ConsignmentItem.physicalShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "uri": "unece:Package.physicalShippingMarks",
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        }
+    ]
+}

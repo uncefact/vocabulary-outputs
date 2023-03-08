@@ -1,5 +1,0 @@
----
-title: paymentApplicableCurrencyExchange
-permalink: finance/PaymentTradeSettlement.paymentApplicableCurrencyExchange.html
-jsonid: finance_paymenttradesettlement_paymentapplicablecurrencyexchange
----

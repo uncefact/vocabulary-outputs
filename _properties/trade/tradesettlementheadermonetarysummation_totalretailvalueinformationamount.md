@@ -1,5 +1,0 @@
----
-title: totalRetailValueInformationAmount
-permalink: trade/TradeSettlementHeaderMonetarySummation.totalRetailValueInformationAmount.html
-jsonid: trade_tradesettlementheadermonetarysummation_totalretailvalueinformationamount
----

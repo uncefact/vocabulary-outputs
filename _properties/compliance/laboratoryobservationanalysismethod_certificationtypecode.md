@@ -1,5 +1,0 @@
----
-title: certificationTypeCode
-permalink: compliance/LaboratoryObservationAnalysisMethod.certificationTypeCode.html
-jsonid: compliance_laboratoryobservationanalysismethod_certificationtypecode
----

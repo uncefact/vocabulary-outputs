@@ -1,5 +1,0 @@
----
-title: specifiedPaymentFinancialAccount
-permalink: finance/PaymentFinancialInstitution.specifiedPaymentFinancialAccount.html
-jsonid: finance_paymentfinancialinstitution_specifiedpaymentfinancialaccount
----

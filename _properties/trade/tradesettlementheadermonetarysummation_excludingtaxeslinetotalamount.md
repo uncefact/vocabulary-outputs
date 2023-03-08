@@ -1,5 +1,0 @@
----
-title: excludingTaxesLineTotalAmount
-permalink: trade/TradeSettlementHeaderMonetarySummation.excludingTaxesLineTotalAmount.html
-jsonid: trade_tradesettlementheadermonetarysummation_excludingtaxeslinetotalamount
----

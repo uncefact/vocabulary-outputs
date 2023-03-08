@@ -1,0 +1,96 @@
+
+{
+    "label": "SpecifiedInspection",
+    "uri": "unece:SpecifiedInspection",
+    "comment": "The process of performing documented checks, such as on materials or processes, with a focus on discovering deviations, errors or faults related to documented requirements.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SpecifiedInspection.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.outsourcedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this specified inspection is outsourced."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SpecifiedInspection.attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file attached for this sustainability inspection."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.executionParty",
+            "type": "unece:Party",
+            "comment": "The party executing this specified inspection."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.executionPerson",
+            "type": "unece:InspectionPerson",
+            "comment": "The inspector executing this specified inspection."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.reportedInspectionResult",
+            "type": "unece:InspectionResult",
+            "comment": "The result reported for this specified inspection."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.specifiedDocument",
+            "type": "unece:Document",
+            "comment": "A referenced document for this specified inspection."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.specifiedInspectionEvent",
+            "type": "unece:InspectionEvent",
+            "comment": "A specified inspection event for this sustainability inspection."
+        },
+        {
+            "uri": "unece:SpecifiedInspection.specifiedInspectionStatus",
+            "type": "unece:InspectionStatus",
+            "comment": "The inspection status specified for this sustainability inspection."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ProductBatch.applicableSpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "unece:ProductionFacility.applicableSpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "unece:ProductionProcess.applicableSpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "unece:TradeParty.applicableSpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "unece:TradeProduct.applicableSpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "uri": "unece:TransportMovement.applicableSpecifiedInspection",
+            "comment": "A specified inspection applicable to this logistics transport movement."
+        }
+    ]
+}

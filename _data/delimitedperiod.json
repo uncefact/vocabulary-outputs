@@ -1,0 +1,47 @@
+
+{
+    "label": "DelimitedPeriod",
+    "uri": "unece:DelimitedPeriod",
+    "comment": "A period of time from a start date time onwards up to an end date time.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:DelimitedPeriod.endDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the end of this available period of time."
+        },
+        {
+            "uri": "unece:DelimitedPeriod.startDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the start of this available period of time."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:DelimitedPeriod.durationMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the length of time for this specified time period such as hours, days, weeks, months, years."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AnimalBatch.specifiedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "unece:CoordinateReferenceSystem.specifiedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "unece:Guarantee.effectiveDelimitedPeriod",
+            "comment": "The period within which this financial guarantee is effective."
+        },
+        {
+            "uri": "unece:IndividualTTAnimal.specifiedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        },
+        {
+            "uri": "unece:TTAnimal.specifiedPeriod",
+            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+        }
+    ]
+}

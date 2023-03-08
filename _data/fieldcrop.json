@@ -1,0 +1,120 @@
+
+{
+    "label": "FieldCrop",
+    "uri": "unece:FieldCrop",
+    "comment": "A field with one or more cultivated plants or produce from one or more botanical species or varieties.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:FieldCrop.className",
+            "type": "schema:Text",
+            "comment": "A class name, expressed as text, for this product classification."
+        },
+        {
+            "uri": "unece:FieldCrop.classificationCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a classification for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.cultivationContainerCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of cultivation container, such as a pot or an iron cabinet, for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.cultivationCoverageCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of cultivation coverage, such as glass, for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.cultivationMediumCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of cultivation medium, such as substrate, for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.cultivationTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the type of cultivation for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:FieldCrop.harvestDateTime",
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value for the harvest of this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.plantingReasonCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a reason for planting this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.productionEnvironmentCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the production environment for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.productionPeriodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the production period for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.propagationMaterialIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not a field crop is to be used as propagation material."
+        },
+        {
+            "uri": "unece:FieldCrop.purposeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.sowingPeriodCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the sowing period for this field crop, such as spring or winter."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:FieldCrop.applicableAgriculturalProcess",
+            "type": "unece:AgriculturalProcess",
+            "comment": "An agricultural process crop production applicable for this field crop."
+        },
+        {
+            "uri": "unece:FieldCrop.appliedAgriculturalApplication",
+            "type": "unece:AgriculturalApplication",
+            "comment": "A specified agricultural application applied to this agricultural zone area."
+        },
+        {
+            "uri": "unece:FieldCrop.grownPlot",
+            "type": "unece:Plot",
+            "comment": "The plot where this field crop is grown."
+        },
+        {
+            "uri": "unece:FieldCrop.harvestedProduce",
+            "type": "unece:Produce",
+            "comment": "Crop produce harvested from this agricultural zone area."
+        },
+        {
+            "uri": "unece:FieldCrop.specifiedAgriculturalCharacteristic",
+            "type": "unece:AgriculturalCharacteristic",
+            "comment": "An agricultural characteristic specified for this crop plot."
+        },
+        {
+            "uri": "unece:FieldCrop.specifiedCropMixtureConstituent",
+            "type": "unece:CropMixtureConstituent",
+            "comment": "A field crop mixture constituent specified for this field crop."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:AgriculturalProcess.specifiedFieldCrop",
+            "comment": "A field crop specified for this crop production agricultural process."
+        },
+        {
+            "uri": "unece:Plot.grownCrop",
+            "comment": "A field crop grown on this crop plot."
+        }
+    ]
+}

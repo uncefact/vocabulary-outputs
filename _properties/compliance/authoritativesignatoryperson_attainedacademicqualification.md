@@ -1,5 +1,0 @@
----
-title: attainedAcademicQualification
-permalink: compliance/AuthoritativeSignatoryPerson.attainedAcademicQualification.html
-jsonid: compliance_authoritativesignatoryperson_attainedacademicqualification
----

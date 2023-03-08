@@ -1,0 +1,116 @@
+
+{
+    "label": "GeographicalFeature",
+    "uri": "unece:GeographicalFeature",
+    "comment": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings, roads, rivers, forests and lakes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:GeographicalFeature.collectionIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this specified geographical feature is a collection of features."
+        },
+        {
+            "uri": "unece:GeographicalFeature.coordinateReferenceSystemId",
+            "type": "schema:Text",
+            "comment": "The identifier of the coordinate reference system for this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:GeographicalFeature.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:GeographicalFeature.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:GeographicalFeature.includedCircle",
+            "type": "unece:Circle",
+            "comment": "A circle included in this specified geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalGrid",
+            "type": "unece:GeographicalGrid",
+            "comment": "The geographical grid included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalLine",
+            "type": "unece:GeographicalLine",
+            "comment": "The geographical line included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalMultiCurve",
+            "type": "unece:GeographicalMultiCurve",
+            "comment": "The geographical multi-curve included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalMultiPoint",
+            "type": "unece:GeographicalMultiPoint",
+            "comment": "The geographical multi-point included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalMultiSurface",
+            "type": "unece:GeographicalMultiSurface",
+            "comment": "The geographical multi-surface included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalPoint",
+            "type": "unece:GeographicalPoint",
+            "comment": "The geographical point included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedGeographicalSurface",
+            "type": "unece:GeographicalSurface",
+            "comment": "The geographical surface included in this geographical feature."
+        },
+        {
+            "uri": "unece:GeographicalFeature.includedPolygon",
+            "type": "unece:Polygon",
+            "comment": "A polygon included in this geographical multi-surface."
+        },
+        {
+            "uri": "unece:GeographicalFeature.usedCoordinateReferenceSystem",
+            "type": "unece:CoordinateReferenceSystem",
+            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
+        },
+        {
+            "uri": "unece:GeographicalFeature.usedCoordinateSourceSystem",
+            "type": "unece:CoordinateSourceSystem",
+            "comment": "The geographical coordinate source system used for this geographical coordinate."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:CommunicationEvent.associatedGeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
+        },
+        {
+            "uri": "unece:Location.associatedGeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
+        },
+        {
+            "uri": "unece:LogisticsLocation.associatedGeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
+        },
+        {
+            "uri": "unece:LogisticsLocation.previousAssociatedGeographicalFeature",
+            "comment": "A geographical feature previously associated with this logistics location."
+        },
+        {
+            "uri": "unece:TransportEvent.associatedGeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
+        },
+        {
+            "uri": "unece:TransportEvent.previousAssociatedGeographicalFeature",
+            "comment": "A geographical feature previously associated with this logistics location."
+        }
+    ]
+}

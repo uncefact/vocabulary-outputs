@@ -1,0 +1,56 @@
+
+{
+    "label": "Illness",
+    "uri": "unece:Illness",
+    "comment": "A WHO MDH (Maritime Declaration of Health) reported illness or disease for an onboard person.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Illness.caseDispositionCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a case disposition of this MDH illness."
+        },
+        {
+            "uri": "unece:Illness.comment",
+            "type": "schema:Text",
+            "comment": "A comment, expressed as text for this MDH illness."
+        },
+        {
+            "uri": "unece:Illness.healthStatusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a health status of this MDH illness."
+        },
+        {
+            "uri": "unece:Illness.healthStatusReportedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the health status has been reported for this MDH illness."
+        },
+        {
+            "uri": "unece:Illness.nature",
+            "type": "schema:Text",
+            "comment": "A nature, expressed as text, of this MDH illness."
+        },
+        {
+            "uri": "unece:Illness.symptomOnsetDateTime",
+            "type": "schema:DateTime",
+            "comment": "A symptom onset date, time, date time or other date time value for this MDH illness."
+        },
+        {
+            "uri": "unece:Illness.treatment",
+            "type": "schema:Text",
+            "comment": "A treatment, expressed as text, for this MDH illness."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Illness.evacuationLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A logistics evacuation location for this MDH illness."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:TransportPerson.reportedIllness",
+            "comment": "An MDH (Maritime Declaration of Health) reported illness or disease for this transport person."
+        }
+    ]
+}

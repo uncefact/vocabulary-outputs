@@ -1,0 +1,64 @@
+
+{
+    "label": "CountrySubDivision",
+    "uri": "unece:CountrySubDivision",
+    "comment": "A political or physical area or region within the political boundaries of a country used or referenced for trade purposes.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:CountrySubDivision.hierarchicalLevelCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the hierarchical level of this trade country sub-division."
+        },
+        {
+            "uri": "unece:CountrySubDivision.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:CountrySubDivision.locationFunctionTypeCode",
+            "type": "unece:LocationFunctionCodeList",
+            "comment": "A code specifying the type of this logistics related location."
+        },
+        {
+            "uri": "unece:CountrySubDivision.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:CountrySubDivision.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:CountrySubDivision.activityAuthorizedParty",
+            "type": "unece:Party",
+            "comment": "A party that is authorized to perform an activity in this trade country sub-division."
+        },
+        {
+            "uri": "unece:CountrySubDivision.subordinateCountrySubDivision",
+            "type": "unece:CountrySubDivision",
+            "comment": "A subordinate country sub-division within this trade country sub-division."
+        },
+        {
+            "uri": "unece:CountrySubDivision.superordinateCountrySubDivision",
+            "type": "unece:CountrySubDivision",
+            "comment": "A superordinate country sub-division for this trade country sub-division."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Country.subordinateCountrySubDivision",
+            "comment": "A subordinate country sub-division within this trade country sub-division."
+        },
+        {
+            "uri": "unece:CountrySubDivision.subordinateCountrySubDivision",
+            "comment": "A subordinate country sub-division within this trade country sub-division."
+        },
+        {
+            "uri": "unece:CountrySubDivision.superordinateCountrySubDivision",
+            "comment": "A superordinate country sub-division for this trade country sub-division."
+        }
+    ]
+}

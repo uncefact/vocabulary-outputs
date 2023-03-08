@@ -1,0 +1,39 @@
+
+{
+    "label": "InstructedTemperature",
+    "uri": "unece:InstructedTemperature",
+    "comment": "Temperature settings instructed for storage or movement of goods.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:InstructedTemperature.controlCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the control of this instructed temperature, such as normal or chilled."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:InstructedTemperature.maximumValueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a maximum value for this sustainability characteristic."
+        },
+        {
+            "uri": "unece:InstructedTemperature.minimumValueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a minimum value for this sustainability characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:HandlingInstructions.deliveryApplicableTemperature",
+            "comment": "The instructed temperature for delivery applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.marketDeliveryApplicableTemperature",
+            "comment": "The instructed temperature for market delivery applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:HandlingInstructions.storageApplicableTemperature",
+            "comment": "The instructed temperature for storage applicable to these handling instructions."
+        }
+    ]
+}

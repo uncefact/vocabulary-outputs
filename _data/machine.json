@@ -1,0 +1,136 @@
+
+{
+    "label": "Machine",
+    "uri": "unece:Machine",
+    "comment": "An apparatus specified to be used to perform an activity to produce something.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:Machine.functionDescription",
+            "type": "schema:Text",
+            "comment": "A textual description of a function for this trade product."
+        },
+        {
+            "uri": "unece:Machine.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:Machine.machineType",
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, for this production machine."
+        },
+        {
+            "uri": "unece:Machine.subordinateTypeCode",
+            "type": "schema:Text",
+            "comment": "The code specifying the subordinate type for this production device."
+        },
+        {
+            "uri": "unece:Machine.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:Machine.combinedMachine",
+            "type": "unece:Machine",
+            "comment": "A production machine combined with this production machine."
+        },
+        {
+            "uri": "unece:Machine.combinedProductionDevice",
+            "type": "unece:ProductionDevice",
+            "comment": "A production device combined with this production machine."
+        },
+        {
+            "uri": "unece:Machine.inputApplicableBatch",
+            "type": "unece:ProductBatch",
+            "comment": "An input batch applicable to this production machine."
+        },
+        {
+            "uri": "unece:Machine.inputApplicableMaterial",
+            "type": "unece:SpecifiedMaterial",
+            "comment": "Input material applicable to this facility production unit."
+        },
+        {
+            "uri": "unece:Machine.inputApplicableProduct",
+            "type": "unece:TradeProduct",
+            "comment": "An input product applicable to this facility production unit."
+        },
+        {
+            "uri": "unece:Machine.inputCapacityMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the input capacity for this production facility."
+        },
+        {
+            "uri": "unece:Machine.operationalApplicableParameter",
+            "type": "unece:SpecifiedParameter",
+            "comment": "An operational parameter applicable to this production machine."
+        },
+        {
+            "uri": "unece:Machine.outputApplicableBatch",
+            "type": "unece:ProductBatch",
+            "comment": "An output batch applicable to this specified production device."
+        },
+        {
+            "uri": "unece:Machine.outputApplicableMaterial",
+            "type": "unece:SpecifiedMaterial",
+            "comment": "Output material applicable to this facility production unit."
+        },
+        {
+            "uri": "unece:Machine.outputApplicableProduct",
+            "type": "unece:TradeProduct",
+            "comment": "An output product applicable to this facility production unit."
+        },
+        {
+            "uri": "unece:Machine.outputCapacityMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the output capacity for this production facility."
+        },
+        {
+            "uri": "unece:Machine.reportingIOTDeviceSupplyChainEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
+        },
+        {
+            "uri": "unece:Machine.requestedOperationalApplicableParameter",
+            "type": "unece:SpecifiedParameter",
+            "comment": "A requested operational parameter applicable to this production machine."
+        },
+        {
+            "uri": "unece:Machine.specifiedLocation",
+            "type": "unece:Location",
+            "comment": "A referenced location specified for this material."
+        },
+        {
+            "uri": "unece:Machine.specifiedProductionUnit",
+            "type": "unece:ProductionUnit",
+            "comment": "A facility production unit for this specified production device."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Colour.applicableMachine",
+            "comment": "A production machine applicable to this facility production unit."
+        },
+        {
+            "uri": "unece:Machine.combinedMachine",
+            "comment": "A production machine combined with this production machine."
+        },
+        {
+            "uri": "unece:Print.specifiedMachine",
+            "comment": "A production machine specified for this product print."
+        },
+        {
+            "uri": "unece:ProductionDevice.combinedMachine",
+            "comment": "A production machine combined with this production machine."
+        },
+        {
+            "uri": "unece:ProductionProcess.allocatedMachine",
+            "comment": "A machine allocated to this production process."
+        },
+        {
+            "uri": "unece:ProductionUnit.applicableMachine",
+            "comment": "A production machine applicable to this facility production unit."
+        }
+    ]
+}

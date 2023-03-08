@@ -1,0 +1,35 @@
+
+{
+    "label": "BranchFinancialInstitution",
+    "uri": "unece:BranchFinancialInstitution",
+    "comment": "A sub-division of a bank, building society, credit union, stock brokerage, or similar business; established primarily to provide financial services and financial transactions.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:BranchFinancialInstitution.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:BranchFinancialInstitution.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:BranchFinancialInstitution.locationAddress",
+            "type": "unece:FinancialInstitutionAddress",
+            "comment": "The location address for this branch of a financial institution."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:CreditorFinancialInstitution.subDivisionFinancialInstitution",
+            "comment": "The branch financial institution for this creditor financial institution."
+        },
+        {
+            "uri": "unece:DebtorFinancialInstitution.subDivisionFinancialInstitution",
+            "comment": "The branch financial institution for this creditor financial institution."
+        }
+    ]
+}

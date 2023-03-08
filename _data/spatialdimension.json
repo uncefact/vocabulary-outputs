@@ -1,0 +1,100 @@
+
+{
+    "label": "SpatialDimension",
+    "uri": "unece:SpatialDimension",
+    "comment": "A measure of spatial extent of an object, such as the length, breadth or height of a shipping container.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:SpatialDimension.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:SpatialDimension.dimensionTypeCode",
+            "type": "unece:DimensionTypeCodeList",
+            "comment": "The code specifying the type of spatial dimension, such as thickness, area, or volume."
+        },
+        {
+            "uri": "unece:SpatialDimension.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:SpatialDimension.heightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the height component of this spatial dimension."
+        },
+        {
+            "uri": "unece:SpatialDimension.lengthMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the length component of this spatial dimension."
+        },
+        {
+            "uri": "unece:SpatialDimension.linearUnitDiameterMeasure",
+            "type": "unece:LinearUnitMeasureType",
+            "comment": "The measure of the diameter component for this spatial dimension."
+        },
+        {
+            "uri": "unece:SpatialDimension.valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        },
+        {
+            "uri": "unece:SpatialDimension.widthMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the width component of this spatial dimension."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:ConsignmentItem.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:LogisticsPackaging.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:LogisticsTransportMeans.specifiedDimension",
+            "comment": "Spatial dimensions specified for this logistics means of transport."
+        },
+        {
+            "uri": "unece:Package.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:Picture.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging.maximumLinearDimension",
+            "comment": "Maximum linear spatial dimensions of this trade product."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging.minimumLinearDimension",
+            "comment": "Minimum linear spatial dimensions of this trade product."
+        },
+        {
+            "uri": "unece:TradeProduct.linearDimension",
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
+        },
+        {
+            "uri": "unece:TradeProduct.maximumLinearDimension",
+            "comment": "Maximum linear spatial dimensions of this trade product."
+        },
+        {
+            "uri": "unece:TradeProduct.minimumLinearDimension",
+            "comment": "Minimum linear spatial dimensions of this trade product."
+        }
+    ]
+}

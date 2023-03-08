@@ -1,0 +1,66 @@
+
+{
+    "label": "OperationalParameter",
+    "uri": "unece:OperationalParameter",
+    "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:OperationalParameter.changeableIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication whether or not this control setting parameter is changeable."
+        },
+        {
+            "uri": "unece:OperationalParameter.description",
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:OperationalParameter.identifier",
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:OperationalParameter.name",
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        },
+        {
+            "uri": "unece:OperationalParameter.statusCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "unece:OperationalParameter.typeCode",
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
+        },
+        {
+            "uri": "unece:OperationalParameter.value",
+            "type": "schema:Text",
+            "comment": "A value, expressed as text, for this document characteristic."
+        },
+        {
+            "uri": "unece:OperationalParameter.valueAllowedIndicator",
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the value for this specified parameter is allowed."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:OperationalParameter.definedRange",
+            "type": "unece:Range",
+            "comment": "A defined range specified for this operational parameter."
+        },
+        {
+            "uri": "unece:OperationalParameter.valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a value for this document characteristic."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:Sensor.definedOperationalParameter",
+            "comment": "An operational parameter defined for this monitoring sensor."
+        }
+    ]
+}
