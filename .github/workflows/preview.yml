@@ -42,7 +42,7 @@ jobs:
     - name: "Bundle install"
       run: bundle install
     - name: "Build Site"
-      run: bundle exec jekyll build
+      run: bundle exec jekyll build --config _config_preview.yml
     - name: "Deploy to AWS S3"
-      run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket --delete --cache-control max-age=604800
+      run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket/vocabulary --delete --cache-control max-age=604800
     
