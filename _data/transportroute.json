@@ -5,92 +5,92 @@
     "comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers.",
     "datatypeProperties": [
         {
-            "uri": "unece:TransportRoute.departurePoint",
-            "type": "schema:Text",
+            "uri": "unece:departurePoint",
+            "type": "xsd:string",
             "comment": "A departure point, expressed as text, for this specified route."
         },
         {
-            "uri": "unece:TransportRoute.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:TransportRoute.frequencyTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:frequencyTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the type of frequency for this transport route, such as weekly, bi-monthly or daily."
         },
         {
-            "uri": "unece:TransportRoute.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:TransportRoute.mapBinaryObject",
-            "type": "schema:Text",
+            "uri": "unece:mapBinaryObject",
+            "type": "xsd:string",
             "comment": "Binary object data that is the map of this transport route."
         },
         {
-            "uri": "unece:TransportRoute.routeType",
-            "type": "schema:Text",
+            "uri": "unece:routeType",
+            "type": "xsd:string",
             "comment": "A type, expressed as text, for this specified route."
         },
         {
-            "uri": "unece:TransportRoute.securityLevelCode",
-            "type": "schema:Text",
+            "uri": "unece:securityLevelCode",
+            "type": "xsd:string",
             "comment": "A code specifying a security level for this transport route."
         },
         {
-            "uri": "unece:TransportRoute.transportMeans",
-            "type": "schema:Text",
+            "uri": "unece:transportMeans",
+            "type": "xsd:string",
             "comment": "A means of transport, expressed as text, for this transport route."
         },
         {
-            "uri": "unece:TransportRoute.transportRouteStatusCode",
+            "uri": "unece:transportRouteStatusCode",
             "type": "unece:StatusCodeList",
             "comment": "The code specifying a status for a transport route, such as planned or actual."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:TransportRoute.frequencyEffectivePeriod",
+            "uri": "unece:frequencyEffectivePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time for which a frequency is effective for this transport route."
+            "comment": "A specified period of time."
         },
         {
-            "uri": "unece:TransportRoute.itineraryStopEvent",
+            "uri": "unece:itineraryStopEvent",
             "type": "unece:TransportEvent",
             "comment": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
         },
         {
-            "uri": "unece:TransportRoute.scheduledPeriod",
+            "uri": "unece:scheduledPeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The specified period during which this transport route is scheduled."
+            "comment": "A specified period of time."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:LogisticsTransportEquipment.actualRoute",
+            "uri": "unece:actualRoute",
             "comment": "An actual route for this piece of logistics transport equipment."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment.requestedRoute",
-            "comment": "A requested route for this piece of logistics transport equipment."
+            "uri": "unece:itineraryRoute",
+            "comment": "A route in the itinerary of this logistics transport movement."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment.scheduledRoute",
-            "comment": "A scheduled or planned route for this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:Service.specifiedRoute",
-            "comment": "A transport route specified for this transport service."
-        },
-        {
-            "uri": "unece:TransportEvent.relatedRoute",
+            "uri": "unece:relatedRoute",
             "comment": "The route related to this transport event."
         },
         {
-            "uri": "unece:TransportMovement.itineraryRoute",
-            "comment": "A route in the itinerary of this logistics transport movement."
+            "uri": "unece:requestedRoute",
+            "comment": "A requested route for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:scheduledRoute",
+            "comment": "A scheduled or planned route for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:specifiedRoute",
+            "comment": "A transport route specified for this transport service."
         }
     ]
 }

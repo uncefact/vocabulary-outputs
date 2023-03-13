@@ -5,80 +5,76 @@
     "comment": "A practice of cultivating land, raising crops, or treatment of the agricultural produce.",
     "datatypeProperties": [
         {
-            "uri": "unece:AgriculturalProcess.actualEndDateTime",
-            "type": "schema:Text",
+            "uri": "unece:actualEndDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value of the actual end for the crop production in this agricultural process."
         },
         {
-            "uri": "unece:AgriculturalProcess.actualStartDateTime",
-            "type": "schema:Text",
+            "uri": "unece:actualStartDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the actual start of the crop production in this agricultural process."
         },
         {
-            "uri": "unece:AgriculturalProcess.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:AgriculturalProcess.earliestStartDateTime",
-            "type": "schema:Text",
+            "uri": "unece:earliestStartDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the earliest start of the crop production in this agricultural process."
         },
         {
-            "uri": "unece:AgriculturalProcess.latestEndDateTime",
-            "type": "schema:Text",
+            "uri": "unece:latestEndDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value of the latest end for the crop production in this agricultural process."
         },
         {
-            "uri": "unece:AgriculturalProcess.statusCode",
-            "type": "schema:Text",
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
             "comment": "A code specifying a status for this trade product."
         },
         {
-            "uri": "unece:AgriculturalProcess.subordinateTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:subordinateTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the subordinate type for this production device."
         },
         {
-            "uri": "unece:AgriculturalProcess.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:AgriculturalProcess.appliedAgriculturalApplication",
+            "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this agricultural zone area."
+            "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product."
         },
         {
-            "uri": "unece:AgriculturalProcess.harvestedBatch",
+            "uri": "unece:harvestedBatch",
             "type": "unece:CropProduceBatch",
             "comment": "A crop produce batch harvested in the crop production for this agricultural process."
         },
         {
-            "uri": "unece:AgriculturalProcess.productionWasteInstructions",
+            "uri": "unece:productionWasteInstructions",
             "type": "unece:DisposalInstructions",
-            "comment": "Disposal instructions for the waste resulting from this production process."
+            "comment": "A set of instructions detailing how to properly dispose of a material."
         },
         {
-            "uri": "unece:AgriculturalProcess.reportedProductionWasteMaterial",
+            "uri": "unece:reportedProductionWasteMaterial",
             "type": "unece:ProductionWasteMaterial",
-            "comment": "Production waste material reported for this agricultural crop production process."
+            "comment": "Any materials unused and rejected as unwanted during a production process."
         },
         {
-            "uri": "unece:AgriculturalProcess.specifiedFieldCrop",
+            "uri": "unece:specifiedFieldCrop",
             "type": "unece:FieldCrop",
             "comment": "A field crop specified for this crop production agricultural process."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:FieldCrop.applicableAgriculturalProcess",
-            "comment": "An agricultural process crop production applicable for this field crop."
-        },
-        {
-            "uri": "unece:Plot.applicableAgriculturalProcess",
+            "uri": "unece:applicableAgriculturalProcess",
             "comment": "An agricultural process crop production applicable for this field crop."
         }
     ]

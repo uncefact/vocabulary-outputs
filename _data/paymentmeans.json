@@ -5,124 +5,112 @@
     "comment": "The means by which a payment will be or has been made for trade settlement purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:PaymentMeans.information",
-            "type": "schema:Text",
+            "uri": "unece:information",
+            "type": "xsd:string",
             "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
         },
         {
-            "uri": "unece:PaymentMeans.paymentGuaranteeMeansGuaranteeMethodCode",
+            "uri": "unece:paymentGuaranteeMeansGuaranteeMethodCode",
             "type": "unece:PaymentGuaranteeMeansCodeList",
             "comment": "The code specifying the method of guarantee for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.paymentMeansChannelPaymentChannelCode",
+            "uri": "unece:paymentMeansChannelPaymentChannelCode",
             "type": "unece:PaymentMeansChannelCodeList",
             "comment": "The code specifying the payment channel through which this trade settlement payment is to be processed (Reference United Nations Code List (UNCL) 4435)."
         },
         {
-            "uri": "unece:PaymentMeans.paymentMeansTypeCode",
+            "uri": "unece:paymentMeansTypeCode",
             "type": "unece:PaymentMeansCodeList",
             "comment": "The code specifying the type of trade settlement payment means, such as cash or check."
         },
         {
-            "uri": "unece:PaymentMeans.paymentMethodCode",
-            "type": "schema:Text",
+            "uri": "unece:paymentMethodCode",
+            "type": "xsd:string",
             "comment": "The code specifying the method by which a payment may be made for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.tradeSettlementPaymentMeansId",
-            "type": "schema:Text",
+            "uri": "unece:tradeSettlementPaymentMeansId",
+            "type": "xsd:string",
             "comment": "An identifier for this trade settlement payment means."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:PaymentMeans.applicableFinancialCard",
+            "uri": "unece:applicableFinancialCard",
             "type": "unece:FinancialCard",
             "comment": "A financial card applicable to this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.creditorSpecifiedFinancialInstitution",
+            "uri": "unece:creditorSpecifiedFinancialInstitution",
             "type": "unece:PaymentFinancialInstitution",
             "comment": "A creditor financial institution specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.debtorSpecifiedFinancialInstitution",
+            "uri": "unece:debtorSpecifiedFinancialInstitution",
             "type": "unece:PaymentFinancialInstitution",
             "comment": "A debtor financial institution specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.identifiedCash",
+            "uri": "unece:identifiedCash",
             "type": "unece:Cash",
             "comment": "A cash payment identified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.identifiedCheque",
+            "uri": "unece:identifiedCheque",
             "type": "unece:Cheque",
             "comment": "A cheque payment identified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.identifiedDigitalMethod",
+            "uri": "unece:identifiedDigitalMethod",
             "type": "unece:DigitalMethod",
             "comment": "A digital payment method identified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.identifiedFinancialCard",
+            "uri": "unece:identifiedFinancialCard",
             "type": "unece:FinancialCard",
             "comment": "A financial card identified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.identifiedVoucher",
+            "uri": "unece:identifiedVoucher",
             "type": "unece:Voucher",
             "comment": "An experience item voucher identified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.payeePartyFinancialAccount",
+            "uri": "unece:payeePartyFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
             "comment": "A creditor financial account of the payee party for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.payeeSpecifiedFinancialInstitution",
+            "uri": "unece:payeeSpecifiedFinancialInstitution",
             "type": "unece:CreditorFinancialInstitution",
             "comment": "The creditor financial institution of the payee party specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.payerPartyFinancialAccount",
+            "uri": "unece:payerPartyFinancialAccount",
             "type": "unece:DebtorFinancialAccount",
             "comment": "The debtor financial account of the payer party for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.payerSpecifiedFinancialInstitution",
+            "uri": "unece:payerSpecifiedFinancialInstitution",
             "type": "unece:DebtorFinancialInstitution",
             "comment": "The debtor financial institution of the payer party specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.specifiedCreditorFinancialAccount",
+            "uri": "unece:specifiedCreditorFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
             "comment": "A creditor financial account specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:PaymentMeans.specifiedPaymentFinancialInstitution",
+            "uri": "unece:specifiedPaymentFinancialInstitution",
             "type": "unece:PaymentFinancialInstitution",
             "comment": "A financial institution specified for this trade settlement payment means."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:GuestPerson.specifiedPaymentMeans",
-            "comment": "A payment means specified for this header trade settlement."
-        },
-        {
-            "uri": "unece:HeaderTradeSettlement.specifiedPaymentMeans",
-            "comment": "A payment means specified for this header trade settlement."
-        },
-        {
-            "uri": "unece:PaymentTradeSettlement.specifiedPaymentMeans",
-            "comment": "A payment means specified for this header trade settlement."
-        },
-        {
-            "uri": "unece:ServiceCharge.specifiedPaymentMeans",
-            "comment": "A payment means specified for this header trade settlement."
+            "uri": "unece:specifiedPaymentMeans",
+            "comment": "The means by which a payment will be or has been made for trade settlement purposes."
         }
     ]
 }

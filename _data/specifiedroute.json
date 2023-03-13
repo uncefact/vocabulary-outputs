@@ -1,50 +1,18 @@
 
 {
-    "label": "SpecifiedRoute",
-    "uri": "unece:SpecifiedRoute",
-    "comment": "A specified way or course taken from one location to another.",
-    "datatypeProperties": [
+    "label": "specifiedRoute",
+    "uri": "unece:specifiedRoute",
+    "comment": "A transport route specified for this transport service.",
+    "rangeIncludes": [
         {
-            "uri": "unece:SpecifiedRoute.departurePoint",
-            "type": "schema:Text",
-            "comment": "A departure point, expressed as text, for this specified route."
-        },
-        {
-            "uri": "unece:SpecifiedRoute.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:SpecifiedRoute.mapURIId",
-            "type": "schema:Text",
-            "comment": "The Uniform Resource Identifier (URI) of the map of this specified route."
-        },
-        {
-            "uri": "unece:SpecifiedRoute.routeType",
-            "type": "schema:Text",
-            "comment": "A type, expressed as text, for this specified route."
-        },
-        {
-            "uri": "unece:SpecifiedRoute.securityLevelCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a security level for this transport route."
-        },
-        {
-            "uri": "unece:SpecifiedRoute.statusCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a status for this trade product."
-        },
-        {
-            "uri": "unece:SpecifiedRoute.transportMeans",
-            "type": "schema:Text",
-            "comment": "A means of transport, expressed as text, for this transport route."
+            "uri": "unece:TransportRoute",
+            "comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:SpecifiedRoute.linearUnitDistanceMeasure",
-            "type": "unece:LinearUnitMeasureType",
-            "comment": "The measure of the distance of this specified route."
+            "uri": "unece:Service",
+            "comment": "A service associated with a transport movement.,A referenced service associated with a specified event during transport movement."
         }
     ]
 }

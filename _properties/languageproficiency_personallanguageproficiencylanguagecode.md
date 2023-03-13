@@ -1,5 +1,0 @@
----
-title: personalLanguageProficiencyLanguageCode
-permalink: LanguageProficiency.personalLanguageProficiencyLanguageCode.html
-jsonid: languageproficiency_personallanguageproficiencylanguagecode
----

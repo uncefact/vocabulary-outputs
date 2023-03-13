@@ -1,0 +1,5 @@
+---
+title: buyerSellerRelationshipPriceInfluenceIndicator
+permalink: buyerSellerRelationshipPriceInfluenceIndicator.html
+jsonid: buyersellerrelationshippriceinfluenceindicator
+---

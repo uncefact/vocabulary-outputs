@@ -1,41 +1,18 @@
 
 {
-    "label": "AppliedTax",
-    "uri": "unece:AppliedTax",
-    "comment": "A total levy or payment for the support of a government that is required of persons, groups, or businesses within the domain of that government.",
-    "datatypeProperties": [
+    "label": "appliedTax",
+    "uri": "unece:appliedTax",
+    "comment": "A trade related fiscal levy or duty.",
+    "rangeIncludes": [
         {
-            "uri": "unece:AppliedTax.appliedTaxTypeCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the applied tax type such as VAT."
-        },
-        {
-            "uri": "unece:AppliedTax.calculatedRate",
-            "type": "schema:Text",
-            "comment": "The rate used to calculate the amount of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:AppliedTax.taxPointDate",
-            "type": "schema:Text",
-            "comment": "The date of the tax point when taxes, such as VAT, are to be applied."
+            "uri": "unece:Tax",
+            "comment": "A trade related fiscal levy or duty."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:AppliedTax.basisAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
-        },
-        {
-            "uri": "unece:AppliedTax.calculatedAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value calculated for this header balance out."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:AppliedAllowanceCharge.categoryAppliedTax",
-            "comment": "The applied tax category of this applied allowance charge."
+            "uri": "unece:ServiceCharge",
+            "comment": "A charge made for a logistics related service."
         }
     ]
 }

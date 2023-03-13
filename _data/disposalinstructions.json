@@ -5,50 +5,38 @@
     "comment": "A set of instructions detailing how to properly dispose of a material.",
     "datatypeProperties": [
         {
-            "uri": "unece:DisposalInstructions.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:DisposalInstructions.disposalInstructionsRecyclingDescriptionCode",
-            "type": "schema:Text",
+            "uri": "unece:disposalInstructionsRecyclingDescriptionCode",
+            "type": "xsd:string",
             "comment": "A code describing recycling in these disposal instructions."
         },
         {
-            "uri": "unece:DisposalInstructions.materialId",
-            "type": "schema:Text",
+            "uri": "unece:materialId",
+            "type": "xsd:string",
             "comment": "An identifier of the material to which these returnable asset instructions apply."
         },
         {
-            "uri": "unece:DisposalInstructions.recyclingProcedure",
-            "type": "schema:Text",
+            "uri": "unece:recyclingProcedure",
+            "type": "xsd:string",
             "comment": "A recycling procedure, expressed as text, for these disposal instructions."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:AgriculturalProcess.productionWasteInstructions",
-            "comment": "Disposal instructions for the waste resulting from this production process."
+            "uri": "unece:applicableDisposalInstructions",
+            "comment": "A set of instructions detailing how to properly dispose of a material."
         },
         {
-            "uri": "unece:ProductBatch.applicableDisposalInstructions",
-            "comment": "Disposal instructions applicable to this product batch."
+            "uri": "unece:productionWasteInstructions",
+            "comment": "A set of instructions detailing how to properly dispose of a material."
         },
         {
-            "uri": "unece:ProductionProcess.productionWasteInstructions",
-            "comment": "Disposal instructions for the waste resulting from this production process."
-        },
-        {
-            "uri": "unece:SupplyChainPackaging.applicableDisposalInstructions",
-            "comment": "Disposal instructions applicable to this product batch."
-        },
-        {
-            "uri": "unece:TradeProduct.applicableDisposalInstructions",
-            "comment": "Disposal instructions applicable to this product batch."
-        },
-        {
-            "uri": "unece:TransportMovement.transportWasteSpecifiedInstructions",
-            "comment": "Transport waste disposal instructions specified for this logistics transport movement."
+            "uri": "unece:transportWasteSpecifiedInstructions",
+            "comment": "A set of instructions detailing how to properly dispose of a material."
         }
     ]
 }

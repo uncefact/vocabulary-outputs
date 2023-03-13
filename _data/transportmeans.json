@@ -1,39 +1,21 @@
 
 {
-    "label": "TransportMeans",
-    "uri": "unece:TransportMeans",
-    "comment": "Reference to a device or method used to convey people, goods, or other objects from place to place.",
-    "datatypeProperties": [
+    "label": "transportMeans",
+    "uri": "unece:transportMeans",
+    "comment": "A means of transport, expressed as text, for this transport route.",
+    "rangeIncludes": [
         {
-            "uri": "unece:TransportMeans.driverAccompaniedIndicator",
-            "type": "schema:Boolean",
-            "comment": "The indication of whether or not this logistics means of transport is accompanied by a driver."
-        },
-        {
-            "uri": "unece:TransportMeans.identifier",
-            "type": "schema:Text",
-            "comment": "A proprietary identifier."
-        },
-        {
-            "uri": "unece:TransportMeans.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
-        },
-        {
-            "uri": "unece:TransportMeans.transportMeansType",
-            "type": "schema:Text",
-            "comment": "The type, expressed as text, of this logistics means of transport."
-        },
-        {
-            "uri": "unece:TransportMeans.transportMeansTypeCode",
-            "type": "unece:TransportMeansTypeCodeList",
-            "comment": "The code specifying the type of logistics means of transport (Reference UNECE Recommendation 28)."
+            "uri": "xsd:string"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:TransportMovement.carriedInactiveTransportMeans",
-            "comment": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO) ferry."
+            "uri": "unece:SpecifiedRoute",
+            "comment": "A specified way or course taken from one location to another."
+        },
+        {
+            "uri": "unece:TransportRoute",
+            "comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers."
         }
     ]
 }

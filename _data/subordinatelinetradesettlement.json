@@ -5,36 +5,36 @@
     "comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice.",
     "datatypeProperties": [
         {
-            "uri": "unece:SubordinateLineTradeSettlement.amountDirectionCode",
-            "type": "schema:Text",
+            "uri": "unece:amountDirectionCode",
+            "type": "xsd:string",
             "comment": "The code, specifying the direction, either an addition or subtraction, for the amount of this line trade settlement."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:SubordinateLineTradeSettlement.applicableTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax applicable to this header trade settlement."
+            "uri": "unece:applicableTax",
+            "type": "unece:Tax",
+            "comment": "A trade related fiscal levy or duty."
         },
         {
-            "uri": "unece:SubordinateLineTradeSettlement.invoiceReferencedDocument",
+            "uri": "unece:invoiceReferencedDocument",
             "type": "unece:Document",
-            "comment": "An invoice document referenced for this subordinate line trade settlement."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
-            "uri": "unece:SubordinateLineTradeSettlement.specifiedAllowanceCharge",
+            "uri": "unece:specifiedAllowanceCharge",
             "type": "unece:TradeAllowanceCharge",
-            "comment": "An allowance or charge specified for this header trade settlement."
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         },
         {
-            "uri": "unece:SubordinateLineTradeSettlement.specifiedFinancialAdjustment",
+            "uri": "unece:specifiedFinancialAdjustment",
             "type": "unece:FinancialAdjustment",
-            "comment": "A financial adjustment specified for this header trade settlement."
+            "comment": "A correction or modification to reflect actual financial conditions."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:SubordinateTradeLineItem.specifiedSubordinateLineTradeSettlement",
+            "uri": "unece:specifiedSubordinateLineTradeSettlement",
             "comment": "A trade settlement specified for this subordinate trade line item."
         }
     ]

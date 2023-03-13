@@ -1,51 +1,18 @@
 
 {
-    "label": "AppliedAllowanceCharge",
-    "uri": "unece:AppliedAllowanceCharge",
-    "comment": "The applied allowance or charge component of pricing.",
-    "datatypeProperties": [
+    "label": "appliedAllowanceCharge",
+    "uri": "unece:appliedAllowanceCharge",
+    "comment": "An allowance or charge applied to the trade price.",
+    "rangeIncludes": [
         {
-            "uri": "unece:AppliedAllowanceCharge.appliedAllowanceChargeReasonCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the reason for this applied allowance charge."
-        },
-        {
-            "uri": "unece:AppliedAllowanceCharge.calculationPercent",
-            "type": "schema:Text",
-            "comment": "The calculation percentage for this trade price."
-        },
-        {
-            "uri": "unece:AppliedAllowanceCharge.chargeIndicator",
-            "type": "schema:Boolean",
-            "comment": "The indication of whether or not the applied allowance charge is a charge."
-        },
-        {
-            "uri": "unece:AppliedAllowanceCharge.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:AppliedAllowanceCharge.actualAmount",
-            "type": "unece:AmountType",
-            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
-        },
-        {
-            "uri": "unece:AppliedAllowanceCharge.basisAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
-        },
-        {
-            "uri": "unece:AppliedAllowanceCharge.categoryAppliedTax",
-            "type": "unece:AppliedTax",
-            "comment": "The applied tax category of this applied allowance charge."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:CalculatedPrice.relatedAllowanceCharge",
-            "comment": "Applied allowance charge information related to this calculated price."
+            "uri": "unece:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ]
 }

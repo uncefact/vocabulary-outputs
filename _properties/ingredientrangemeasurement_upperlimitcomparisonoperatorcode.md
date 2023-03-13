@@ -1,5 +1,0 @@
----
-title: upperLimitComparisonOperatorCode
-permalink: IngredientRangeMeasurement.upperLimitComparisonOperatorCode.html
-jsonid: ingredientrangemeasurement_upperlimitcomparisonoperatorcode
----

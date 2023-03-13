@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: ProductCertificate.applicableSustainabilityCharacteristic.html
-jsonid: productcertificate_applicablesustainabilitycharacteristic
----

@@ -1,5 +1,0 @@
----
-title: associatedGeographicalObjectCharacteristic
-permalink: GeographicalMultiSurface.associatedGeographicalObjectCharacteristic.html
-jsonid: geographicalmultisurface_associatedgeographicalobjectcharacteristic
----

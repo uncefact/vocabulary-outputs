@@ -1,5 +1,0 @@
----
-title: maximumStandardValueApplicableCharacteristic
-permalink: InspectionResult.maximumStandardValueApplicableCharacteristic.html
-jsonid: inspectionresult_maximumstandardvalueapplicablecharacteristic
----

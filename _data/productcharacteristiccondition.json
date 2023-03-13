@@ -5,26 +5,26 @@
     "comment": "A state that applies to a product characteristic.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductCharacteristicCondition.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:ProductCharacteristicCondition.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductCharacteristicCondition.valueMeasure",
+            "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of a value for this document characteristic."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ProductCharacteristic.applicableCondition",
+            "uri": "unece:applicableCondition",
             "comment": "A condition applicable to this product characteristic."
         }
     ]

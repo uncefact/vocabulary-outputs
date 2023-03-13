@@ -1,28 +1,22 @@
 
 {
-    "label": "QuarantineInstructions",
-    "uri": "unece:QuarantineInstructions",
+    "label": "quarantineInstructions",
+    "uri": "unece:quarantineInstructions",
     "comment": "Instructions for a period of imposed isolation or detention.",
-    "datatypeProperties": [
+    "rangeIncludes": [
         {
-            "uri": "unece:QuarantineInstructions.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:QuarantineInstructions.quarantineInstructionsDescriptionCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the description of these quarantine instructions."
+            "uri": "unece:QuarantineInstructions",
+            "comment": "Instructions for a period of imposed isolation or detention."
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:ConsignmentItem.quarantineInstructions",
-            "comment": "Quarantine instructions for this piece of logistics transport equipment."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment.quarantineInstructions",
-            "comment": "Quarantine instructions for this piece of logistics transport equipment."
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

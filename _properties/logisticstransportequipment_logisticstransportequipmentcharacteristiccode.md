@@ -1,5 +1,0 @@
----
-title: logisticsTransportEquipmentCharacteristicCode
-permalink: LogisticsTransportEquipment.logisticsTransportEquipmentCharacteristicCode.html
-jsonid: logisticstransportequipment_logisticstransportequipmentcharacteristiccode
----

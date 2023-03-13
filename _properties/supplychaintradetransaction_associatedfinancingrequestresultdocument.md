@@ -1,5 +1,0 @@
----
-title: associatedFinancingRequestResultDocument
-permalink: SupplyChainTradeTransaction.associatedFinancingRequestResultDocument.html
-jsonid: supplychaintradetransaction_associatedfinancingrequestresultdocument
----

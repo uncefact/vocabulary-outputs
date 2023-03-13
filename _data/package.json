@@ -1,198 +1,22 @@
 
 {
-    "label": "Package",
-    "uri": "unece:Package",
+    "label": "package",
+    "uri": "unece:package",
     "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes.",
-    "datatypeProperties": [
+    "rangeIncludes": [
         {
-            "uri": "unece:Package.additionalLevelCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the additional level of this logistics package."
-        },
-        {
-            "uri": "unece:Package.colourCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the colour for this trade product."
-        },
-        {
-            "uri": "unece:Package.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:Package.globalId",
-            "type": "schema:Text",
-            "comment": "A global identifier for this supply chain consignment item."
-        },
-        {
-            "uri": "unece:Package.identifier",
-            "type": "schema:Text",
-            "comment": "A proprietary identifier."
-        },
-        {
-            "uri": "unece:Package.information",
-            "type": "schema:Text",
-            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
-        },
-        {
-            "uri": "unece:Package.packageType",
-            "type": "schema:Text",
-            "comment": "A package type, expressed as text, for this supply chain consignment item."
-        },
-        {
-            "uri": "unece:Package.packageTypeCode",
-            "type": "unece:PackageTypeCodeList",
-            "comment": "A code specifying the type of logistics package."
-        },
-        {
-            "uri": "unece:Package.packagingLevelCode",
-            "type": "unece:PackagingLevelCodeList",
-            "comment": "The code specifying the level of this logistics package."
-        },
-        {
-            "uri": "unece:Package.parentId",
-            "type": "schema:Text",
-            "comment": "The parent identifier for this referenced logistics package."
-        },
-        {
-            "uri": "unece:Package.returnableIndicator",
-            "type": "schema:Boolean",
-            "comment": "The indication of whether or not this logistics package is returnable."
-        },
-        {
-            "uri": "unece:Package.sequenceNumeric",
-            "type": "schema:Text",
-            "comment": "A sequence number for these specified personal effects."
-        },
-        {
-            "uri": "unece:Package.seriesEndId",
-            "type": "schema:Text",
-            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
-        },
-        {
-            "uri": "unece:Package.seriesStartId",
-            "type": "schema:Text",
-            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:Package.despatchNoteAssociatedDocument",
-            "type": "unece:Document",
-            "comment": "A despatch note associated with this logistics package."
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         },
         {
-            "uri": "unece:Package.grossVolumeMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the gross volume for this trade product."
-        },
-        {
-            "uri": "unece:Package.grossWeightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the gross weight (mass) of this trade product."
-        },
-        {
-            "uri": "unece:Package.itemQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A quantity of items for this referenced transport service."
-        },
-        {
-            "uri": "unece:Package.linearDimension",
-            "type": "unece:SpatialDimension",
-            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
-        },
-        {
-            "uri": "unece:Package.netVolumeMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a net volume for this trade product."
-        },
-        {
-            "uri": "unece:Package.netWeightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the net weight (mass) of this trade product."
-        },
-        {
-            "uri": "unece:Package.nominalGrossVolumeMeasure",
-            "type": "unece:VolumeUnitMeasureType",
-            "comment": "The measure of the nominal gross volume of this logistics package."
-        },
-        {
-            "uri": "unece:Package.nominalGrossWeightMeasure",
-            "type": "unece:WeightUnitMeasureType",
-            "comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
-        },
-        {
-            "uri": "unece:Package.perPackageUnitQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A number of units per package in this logistics package."
-        },
-        {
-            "uri": "unece:Package.physicalShippingMarks",
-            "type": "unece:ShippingMarks",
-            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
-        },
-        {
-            "uri": "unece:Package.statedCondition",
-            "type": "unece:SpecifiedCondition",
-            "comment": "A stated condition of these transported dangerous goods."
-        },
-        {
-            "uri": "unece:Package.usedPackaging",
-            "type": "unece:SupplyChainPackaging",
-            "comment": "Supply chain packaging used for this logistics package."
-        },
-        {
-            "uri": "unece:Package.volumeUnitGrossVolumeMeasure",
-            "type": "unece:VolumeUnitMeasureType",
-            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
-        },
-        {
-            "uri": "unece:Package.weightUnitGrossWeightMeasure",
-            "type": "unece:WeightUnitMeasureType",
-            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
-        },
-        {
-            "uri": "unece:Package.weightUnitNetWeightMeasure",
-            "type": "unece:WeightUnitMeasureType",
-            "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:Consignment.transportPackage",
-            "comment": "A transport package for this referenced supply chain consignment item."
-        },
-        {
-            "uri": "unece:ConsignmentItem.transportPackage",
-            "comment": "A transport package for this referenced supply chain consignment item."
-        },
-        {
-            "uri": "unece:DangerousGoods.specifiedPackage",
-            "comment": "A logistics package specified for these transported dangerous goods."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.specifiedPackage",
-            "comment": "A logistics package specified for these transported dangerous goods."
-        },
-        {
-            "uri": "unece:LogisticsPackaging.containedPackage",
-            "comment": "A package contained in this logistics packaging."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.package",
-            "comment": "A logistics package referenced in this supply chain trade line item."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.physicalPackage",
-            "comment": "A physical logistics package for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:SupplyChainTradeTransaction.specifiedPackage",
-            "comment": "A logistics package specified for these transported dangerous goods."
-        },
-        {
-            "uri": "unece:TradeProduct.relatedPackage",
-            "comment": "A logistics package related to this trade product."
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         }
     ]
 }

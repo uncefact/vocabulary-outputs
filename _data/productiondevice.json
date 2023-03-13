@@ -5,128 +5,120 @@
     "comment": "An object, especially a piece of mechanical or electronic equipment, made or adapted in order to perform a production activity.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductionDevice.functionDescription",
-            "type": "schema:Text",
+            "uri": "unece:functionDescription",
+            "type": "xsd:string",
             "comment": "A textual description of a function for this trade product."
         },
         {
-            "uri": "unece:ProductionDevice.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:ProductionDevice.productionDeviceType",
-            "type": "schema:Text",
+            "uri": "unece:productionDeviceType",
+            "type": "xsd:string",
             "comment": "A type, expressed as text, for this specified production device."
         },
         {
-            "uri": "unece:ProductionDevice.subordinateTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:subordinateTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the subordinate type for this production device."
         },
         {
-            "uri": "unece:ProductionDevice.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductionDevice.applicableParameter",
+            "uri": "unece:applicableParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "A parameter applicable to this specified method."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
-            "uri": "unece:ProductionDevice.combinedMachine",
+            "uri": "unece:combinedMachine",
             "type": "unece:Machine",
             "comment": "A production machine combined with this production machine."
         },
         {
-            "uri": "unece:ProductionDevice.combinedProductionDevice",
+            "uri": "unece:combinedProductionDevice",
             "type": "unece:ProductionDevice",
             "comment": "A production device combined with this production machine."
         },
         {
-            "uri": "unece:ProductionDevice.inputApplicableBatch",
+            "uri": "unece:inputApplicableBatch",
             "type": "unece:ProductBatch",
             "comment": "An input batch applicable to this production machine."
         },
         {
-            "uri": "unece:ProductionDevice.inputApplicableMaterial",
+            "uri": "unece:inputApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Input material applicable to this facility production unit."
+            "comment": "A substance from which something is or could be made."
         },
         {
-            "uri": "unece:ProductionDevice.inputApplicableProduct",
+            "uri": "unece:inputApplicableProduct",
             "type": "unece:TradeProduct",
             "comment": "An input product applicable to this facility production unit."
         },
         {
-            "uri": "unece:ProductionDevice.inputCapacityMeasure",
+            "uri": "unece:inputCapacityMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the input capacity for this production facility."
+            "comment": ""
         },
         {
-            "uri": "unece:ProductionDevice.outputApplicableBatch",
+            "uri": "unece:outputApplicableBatch",
             "type": "unece:ProductBatch",
             "comment": "An output batch applicable to this specified production device."
         },
         {
-            "uri": "unece:ProductionDevice.outputApplicableMaterial",
+            "uri": "unece:outputApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Output material applicable to this facility production unit."
+            "comment": "A substance from which something is or could be made."
         },
         {
-            "uri": "unece:ProductionDevice.outputApplicableProduct",
+            "uri": "unece:outputApplicableProduct",
             "type": "unece:TradeProduct",
             "comment": "An output product applicable to this facility production unit."
         },
         {
-            "uri": "unece:ProductionDevice.outputCapacityMeasure",
+            "uri": "unece:outputCapacityMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the output capacity for this production facility."
+            "comment": ""
         },
         {
-            "uri": "unece:ProductionDevice.reportingIOTDeviceSupplyChainEvent",
+            "uri": "unece:reportingIOTDeviceSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:ProductionDevice.requestedOperationalApplicableParameter",
+            "uri": "unece:requestedOperationalApplicableParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "A requested operational parameter applicable to this production machine."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
-            "uri": "unece:ProductionDevice.specifiedLocation",
+            "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location specified for this material."
+            "comment": "A reference to a physical location or place."
         },
         {
-            "uri": "unece:ProductionDevice.specifiedProductionUnit",
+            "uri": "unece:specifiedProductionUnit",
             "type": "unece:ProductionUnit",
             "comment": "A facility production unit for this specified production device."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Colour.applicableProductionDevice",
-            "comment": "A production device applicable to this product colour."
-        },
-        {
-            "uri": "unece:Machine.combinedProductionDevice",
-            "comment": "A production device combined with this production machine."
-        },
-        {
-            "uri": "unece:Print.applicableProductionDevice",
-            "comment": "A production device applicable to this product colour."
-        },
-        {
-            "uri": "unece:ProductionDevice.combinedProductionDevice",
-            "comment": "A production device combined with this production machine."
-        },
-        {
-            "uri": "unece:ProductionProcess.allocatedProductionDevice",
+            "uri": "unece:allocatedProductionDevice",
             "comment": "A production device allocated to this production process."
+        },
+        {
+            "uri": "unece:applicableProductionDevice",
+            "comment": "A production device applicable to this product colour."
+        },
+        {
+            "uri": "unece:combinedProductionDevice",
+            "comment": "A production device combined with this production machine."
         }
     ]
 }

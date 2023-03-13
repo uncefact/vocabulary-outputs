@@ -5,62 +5,38 @@
     "comment": "A physical place related to a Track and Trace (TT) process.",
     "datatypeProperties": [
         {
-            "uri": "unece:TTLocation.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:TTLocation.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:TTLocation.locationFunctionTypeCode",
+            "uri": "unece:locationFunctionTypeCode",
             "type": "unece:LocationFunctionCodeList",
             "comment": "A code specifying the type of this logistics related location."
         },
         {
-            "uri": "unece:TTLocation.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:TTAggregationEvent.readPointRelatedLocation",
+            "uri": "unece:businessRelatedLocation",
+            "comment": "The business location related to this TT object event."
+        },
+        {
+            "uri": "unece:readPointRelatedLocation",
             "comment": "The read point related location of this TT aggregation event."
         },
         {
-            "uri": "unece:TTAggregationEvent.relatedTTLocation",
+            "uri": "unece:relatedTTLocation",
             "comment": "A location related to this TT animal."
-        },
-        {
-            "uri": "unece:TTAnimal.relatedTTLocation",
-            "comment": "A location related to this TT animal."
-        },
-        {
-            "uri": "unece:TTObjectEvent.businessRelatedLocation",
-            "comment": "The business location related to this TT object event."
-        },
-        {
-            "uri": "unece:TTObjectEvent.readPointRelatedLocation",
-            "comment": "The read point related location of this TT aggregation event."
-        },
-        {
-            "uri": "unece:TTTransactionEvent.businessRelatedLocation",
-            "comment": "The business location related to this TT object event."
-        },
-        {
-            "uri": "unece:TTTransactionEvent.readPointRelatedLocation",
-            "comment": "The read point related location of this TT aggregation event."
-        },
-        {
-            "uri": "unece:TTTransformationEvent.businessRelatedLocation",
-            "comment": "The business location related to this TT object event."
-        },
-        {
-            "uri": "unece:TTTransformationEvent.readPointRelatedLocation",
-            "comment": "The read point related location of this TT aggregation event."
         }
     ]
 }

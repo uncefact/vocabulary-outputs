@@ -5,31 +5,31 @@
     "comment": "A collection of data that reports the result of a financing request.",
     "datatypeProperties": [
         {
-            "uri": "unece:FinancingRequestResultDocument.financedRatePercent",
-            "type": "schema:Text",
+            "uri": "unece:financedRatePercent",
+            "type": "xsd:string",
             "comment": "The financed rate, expressed as a percentage, in this financing request result document."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:FinancingRequestResultDocument.financedTotalAmount",
+            "uri": "unece:financedTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A financed total monetary value in this financing summary document."
+            "comment": ""
         },
         {
-            "uri": "unece:FinancingRequestResultDocument.specifiedFinancingStatus",
+            "uri": "unece:specifiedFinancingStatus",
             "type": "unece:FinancingStatus",
             "comment": "The financing status specified in this financing request result document."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:InstalmentPayment.specifiedFinancingRequestResultDocument",
-            "comment": "The financing request result document specified for this instalment payment."
+            "uri": "unece:associatedFinancingRequestResultDocument",
+            "comment": "A collection of data that reports the result of a financing request."
         },
         {
-            "uri": "unece:SupplyChainTradeTransaction.associatedFinancingRequestResultDocument",
-            "comment": "The financing request result document associated with this supply chain trade transaction."
+            "uri": "unece:specifiedFinancingRequestResultDocument",
+            "comment": "The financing request result document specified for this instalment payment."
         }
     ]
 }

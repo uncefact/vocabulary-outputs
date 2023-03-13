@@ -5,317 +5,217 @@
     "comment": "A significant occurrence or happening in a supply chain.",
     "datatypeProperties": [
         {
-            "uri": "unece:SupplyChainEvent.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:SupplyChainEvent.descriptionBinaryObject",
-            "type": "schema:Text",
+            "uri": "unece:descriptionBinaryObject",
+            "type": "xsd:string",
             "comment": "Binary object data, such as a photograph, describing this supply chain event."
         },
         {
-            "uri": "unece:SupplyChainEvent.dueDateTime",
-            "type": "schema:Text",
+            "uri": "unece:dueDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
         },
         {
-            "uri": "unece:SupplyChainEvent.earliestOccurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:earliestOccurrenceDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value of the earliest occurrence of this supply chain event."
         },
         {
-            "uri": "unece:SupplyChainEvent.frequencyCode",
-            "type": "schema:Text",
+            "uri": "unece:frequencyCode",
+            "type": "xsd:string",
             "comment": "The code specifying a frequency for this supply chain event."
         },
         {
-            "uri": "unece:SupplyChainEvent.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:SupplyChainEvent.latestOccurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:latestOccurrenceDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value of the latest occurrence of this supply chain event."
         },
         {
-            "uri": "unece:SupplyChainEvent.occurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:string",
             "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
         },
         {
-            "uri": "unece:SupplyChainEvent.timeOccurrenceDateTime",
-            "type": "schema:DateTime",
+            "uri": "unece:timeOccurrenceDateTime",
+            "type": "xsd:datetime",
             "comment": "A time value of an occurrence of this supply chain event."
         },
         {
-            "uri": "unece:SupplyChainEvent.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:SupplyChainEvent.associatedReference",
+            "uri": "unece:associatedReference",
             "type": "unece:SupplyChainReference",
             "comment": "A reference associated with this supply chain event."
         },
         {
-            "uri": "unece:SupplyChainEvent.occurrenceLocation",
+            "uri": "unece:occurrenceLocation",
             "type": "unece:Location",
-            "comment": "The referenced location for the occurrence of this supply chain event."
+            "comment": "A reference to a physical location or place."
         },
         {
-            "uri": "unece:SupplyChainEvent.occurrenceLogisticsLocation",
-            "type": "unece:LogisticsLocation",
+            "uri": "unece:occurrenceLogisticsLocation",
+            "type": "unece:Location",
             "comment": "A logistics location where this supply chain event occurs."
         },
         {
-            "uri": "unece:SupplyChainEvent.occurrencePeriod",
+            "uri": "unece:occurrencePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time during which this supply chain event occurs."
+            "comment": "A specified period of time."
         },
         {
-            "uri": "unece:SupplyChainEvent.relatedSustainabilityCharacteristic",
+            "uri": "unece:relatedSustainabilityCharacteristic",
             "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic related to this supply chain event."
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
         {
-            "uri": "unece:SupplyChainEvent.relatedTechnicalCharacteristic",
+            "uri": "unece:relatedTechnicalCharacteristic",
             "type": "unece:TechnicalCharacteristic",
-            "comment": "A technical characteristic related to this supply chain event."
+            "comment": "A prominent technical attribute or aspect."
         },
         {
-            "uri": "unece:SupplyChainEvent.unitQuantity",
+            "uri": "unece:unitQuantity",
             "type": "unece:QuantityType",
-            "comment": "A number of units for this supply chain event."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:HeaderTradeDelivery.acceptanceEvent",
-            "comment": "An acceptance delivery event, at header level, for this trade delivery."
+            "uri": "unece:acceptanceEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.actualDeliveryEvent",
-            "comment": "An actual delivery event for this subordinate line trade delivery."
+            "uri": "unece:actualDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.actualDespatchEvent",
-            "comment": "An actual despatch event, at header level, for this trade delivery."
+            "uri": "unece:actualDespatchEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.actualLoadingEvent",
-            "comment": "The actual loading event, at header level, for this trade delivery."
+            "uri": "unece:actualLoadingEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.actualPickUpEvent",
-            "comment": "The actual pick-up event, at header level, for this trade delivery."
+            "uri": "unece:actualPickUpEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.actualReceiptEvent",
-            "comment": "The actual receipt event, at header level, for this trade delivery."
+            "uri": "unece:actualReceiptEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.actualUnloadingEvent",
-            "comment": "The actual unloading event, at header level, for this trade delivery."
+            "uri": "unece:actualUnloadingEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.confirmedDespatchEvent",
-            "comment": "The despatch event, at header level, confirmed for this trade delivery."
+            "uri": "unece:confirmedDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.confirmedPickUpEvent",
-            "comment": "The pick-up event, at header level, confirmed for this trade delivery."
+            "uri": "unece:confirmedDespatchEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.confirmedReleaseEvent",
-            "comment": "The confirmed release event, at header level, for this trade delivery."
+            "uri": "unece:confirmedPickUpEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.estimatedDeliveryEvent",
-            "comment": "An estimated delivery event for this trade delivery header."
+            "uri": "unece:confirmedReleaseEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.plannedDeliveryEvent",
-            "comment": "A delivery event, at header level, planned for this trade delivery."
+            "uri": "unece:deliverySupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.plannedDespatchEvent",
-            "comment": "A despatch event, at header level, planned for this trade delivery."
+            "uri": "unece:estimatedDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.plannedPickUpEvent",
-            "comment": "The pick-up event, at header level, planned for this trade delivery."
+            "uri": "unece:inspectionEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.plannedReleaseEvent",
-            "comment": "The release event, at header level, planned for this trade delivery."
+            "uri": "unece:occurrenceEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.plannedShipFromDeliveryEvent",
-            "comment": "The event of the planned ship from delivery, at header level, for this trade delivery."
+            "uri": "unece:packagingEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.plannedShipToDeliveryEvent",
-            "comment": "The planned ship to delivery event, at header level, for this trade delivery."
+            "uri": "unece:plannedDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.previousDeliverySupplyChainEvent",
-            "comment": "A previous delivery event, at header level, for this trade delivery."
+            "uri": "unece:plannedDespatchEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.requestedDeliveryEvent",
-            "comment": "A delivery event, at header level, requested for this trade delivery."
+            "uri": "unece:plannedPickUpEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.requestedDespatchEvent",
-            "comment": "A despatch event, at header level, requested for this trade delivery."
+            "uri": "unece:plannedReleaseEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
+            "uri": "unece:plannedShipFromDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.ultimateShipToDeliveryEvent",
-            "comment": "The ultimate ship to delivery event, at header level, for this trade delivery."
+            "uri": "unece:plannedShipToDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:LineTradeDelivery.acceptanceEvent",
-            "comment": "An acceptance delivery event, at header level, for this trade delivery."
+            "uri": "unece:previousDeliverySupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:LineTradeDelivery.actualDeliveryEvent",
-            "comment": "An actual delivery event for this subordinate line trade delivery."
+            "uri": "unece:productionEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:LineTradeDelivery.actualDespatchEvent",
-            "comment": "An actual despatch event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.actualLoadingEvent",
-            "comment": "The actual loading event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.actualPickUpEvent",
-            "comment": "The actual pick-up event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.actualReceiptEvent",
-            "comment": "The actual receipt event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.actualUnloadingEvent",
-            "comment": "The actual unloading event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.confirmedDeliveryEvent",
-            "comment": "A confirmed delivery event in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.confirmedDespatchEvent",
-            "comment": "The despatch event, at header level, confirmed for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.confirmedPickUpEvent",
-            "comment": "The pick-up event, at header level, confirmed for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.confirmedReleaseEvent",
-            "comment": "The confirmed release event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.plannedDeliveryEvent",
-            "comment": "A delivery event, at header level, planned for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.plannedDespatchEvent",
-            "comment": "A despatch event, at header level, planned for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.plannedPickUpEvent",
-            "comment": "The pick-up event, at header level, planned for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.plannedShipToDeliveryEvent",
-            "comment": "The planned ship to delivery event, at header level, for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.requestedDeliveryEvent",
-            "comment": "A delivery event, at header level, requested for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.requestedDespatchEvent",
-            "comment": "A despatch event, at header level, requested for this trade delivery."
-        },
-        {
-            "uri": "unece:LogisticsLocation.inspectionEvent",
-            "comment": "A supply chain inspection event at this logistics location."
-        },
-        {
-            "uri": "unece:LogisticsStatus.reportedSupplyChainEvent",
+            "uri": "unece:reportedSupplyChainEvent",
             "comment": "A supply chain event reported for this logistics status."
         },
         {
-            "uri": "unece:Machine.reportingIOTDeviceSupplyChainEvent",
-            "comment": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
+            "uri": "unece:reportingIOTDeviceSupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:ProductBatch.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
+            "uri": "unece:requestedDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:ProductInstance.inspectionEvent",
-            "comment": "A supply chain inspection event at this logistics location."
+            "uri": "unece:requestedDespatchEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:ProductInstance.packagingEvent",
-            "comment": "The packaging event for this trade product instance."
+            "uri": "unece:scheduledDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:ProductInstance.productionEvent",
-            "comment": "The production event for this trade product instance."
+            "uri": "unece:specifiedSupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
-            "uri": "unece:ProductionDevice.reportingIOTDeviceSupplyChainEvent",
-            "comment": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
-        },
-        {
-            "uri": "unece:ProductionFacility.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
-        },
-        {
-            "uri": "unece:ProductionProcess.occurrenceEvent",
-            "comment": "An occurrence of an event for this production process."
-        },
-        {
-            "uri": "unece:SubordinateLineTradeDelivery.actualDeliveryEvent",
-            "comment": "An actual delivery event for this subordinate line trade delivery."
-        },
-        {
-            "uri": "unece:SupplyChainInventory.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
-        },
-        {
-            "uri": "unece:SupplyPlan.confirmedDeliveryEvent",
-            "comment": "A confirmed delivery event in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:SupplyPlan.deliverySupplyChainEvent",
-            "comment": "A delivery event for this supply chain supply plan."
-        },
-        {
-            "uri": "unece:SupplyPlan.scheduledDeliveryEvent",
-            "comment": "A scheduled delivery event in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:SupplyPlan.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
-        },
-        {
-            "uri": "unece:TradeProduct.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
+            "uri": "unece:ultimateShipToDeliveryEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         }
     ]
 }

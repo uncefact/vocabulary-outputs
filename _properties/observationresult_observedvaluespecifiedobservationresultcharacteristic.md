@@ -1,5 +1,0 @@
----
-title: observedValueSpecifiedObservationResultCharacteristic
-permalink: ObservationResult.observedValueSpecifiedObservationResultCharacteristic.html
-jsonid: observationresult_observedvaluespecifiedobservationresultcharacteristic
----

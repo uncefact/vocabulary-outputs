@@ -5,40 +5,36 @@
     "comment": "A naturally occurring or designed sequence of operations or events that create, transform, or touch a product, such as manufacturing, treating, packaging, and storing.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductHandlingProcess.processTypeCode",
+            "uri": "unece:processTypeCode",
             "type": "unece:ProcessTypeCodeList",
             "comment": "The code specifying the type of product handling process."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductHandlingProcess.applicableProcessCharacteristic",
+            "uri": "unece:applicableProcessCharacteristic",
             "type": "unece:ProcessCharacteristic",
-            "comment": "A process characteristic applicable to this process certificate."
+            "comment": "A prominent attribute or aspect of a process."
         },
         {
-            "uri": "unece:ProductHandlingProcess.completionPeriod",
+            "uri": "unece:completionPeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The specified period of completion for this product handling process."
+            "comment": "A specified period of time."
         },
         {
-            "uri": "unece:ProductHandlingProcess.operationCountry",
+            "uri": "unece:operationCountry",
             "type": "unece:Country",
-            "comment": "The trade country where the operation of this product handling process occurs."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
-            "uri": "unece:ProductHandlingProcess.operatorParty",
-            "type": "unece:TradeParty",
-            "comment": "A trade party who is an operator of this product handling process."
+            "uri": "unece:operatorParty",
+            "type": "unece:Party",
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ProductInstance.appliedProcess",
-            "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.appliedProcess",
+            "uri": "unece:appliedProcess",
             "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
         }
     ]

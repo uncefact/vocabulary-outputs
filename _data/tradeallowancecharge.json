@@ -5,103 +5,95 @@
     "comment": "A component of pricing, such as an allowance or charge for trade purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:TradeAllowanceCharge.allowanceChargeIdTypeCode",
+            "uri": "unece:allowanceChargeIdTypeCode",
             "type": "unece:AllowanceChargeIdCodeList",
             "comment": "The code specifying the type of this trade allowance charge."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.allowanceChargeReasonCode",
+            "uri": "unece:allowanceChargeReasonCode",
             "type": "unece:AllowanceChargeReasonCodeList",
             "comment": "The code specifying the reason for this trade allowance charge."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.calculationPercent",
-            "type": "schema:Text",
+            "uri": "unece:calculationPercent",
+            "type": "xsd:string",
             "comment": "The calculation percentage for this trade price."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.chargeIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:chargeIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not the applied allowance charge is a charge."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.prepaidIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:prepaidIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not this trade allowance charge is prepaid."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.reason",
-            "type": "schema:Text",
+            "uri": "unece:reason",
+            "type": "xsd:string",
             "comment": "A reason, expressed as text, for this cancellation status."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.sequenceNumeric",
-            "type": "schema:Text",
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
             "comment": "A sequence number for these specified personal effects."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:TradeAllowanceCharge.actualAmount",
+            "uri": "unece:actualAmount",
             "type": "unece:AmountType",
-            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
+            "comment": ""
         },
         {
-            "uri": "unece:TradeAllowanceCharge.actualCurrencyExchange",
+            "uri": "unece:actualCurrencyExchange",
             "type": "unece:CurrencyExchange",
             "comment": "The actual trade currency exchange for this trade allowance charge."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.basisAmount",
+            "uri": "unece:basisAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
+            "comment": ""
         },
         {
-            "uri": "unece:TradeAllowanceCharge.basisQuantity",
+            "uri": "unece:basisQuantity",
             "type": "unece:QuantityType",
-            "comment": "A quantity on which the reference price is based."
+            "comment": ""
         },
         {
-            "uri": "unece:TradeAllowanceCharge.categoryTradeTax",
+            "uri": "unece:categoryTradeTax",
             "type": "unece:Tax",
             "comment": "A tax category of this trade allowance charge."
         },
         {
-            "uri": "unece:TradeAllowanceCharge.unitBasisAmount",
+            "uri": "unece:unitBasisAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Consignment.applicableAllowanceCharge",
-            "comment": "An allowance or charge applicable to this supply chain consignment."
+            "uri": "unece:applicableAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         },
         {
-            "uri": "unece:HeaderTradeSettlement.specifiedAllowanceCharge",
-            "comment": "An allowance or charge specified for this header trade settlement."
-        },
-        {
-            "uri": "unece:LineTradeSettlement.specifiedAllowanceCharge",
-            "comment": "An allowance or charge specified for this header trade settlement."
-        },
-        {
-            "uri": "unece:SubordinateLineTradeSettlement.specifiedAllowanceCharge",
-            "comment": "An allowance or charge specified for this header trade settlement."
-        },
-        {
-            "uri": "unece:TradePrice.appliedAllowanceCharge",
+            "uri": "unece:appliedAllowanceCharge",
             "comment": "An allowance or charge applied to the trade price."
+        },
+        {
+            "uri": "unece:specifiedAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         }
     ]
 }

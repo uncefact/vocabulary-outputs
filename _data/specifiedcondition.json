@@ -5,40 +5,36 @@
     "comment": "A state, such as of a specified person or thing.",
     "datatypeProperties": [
         {
-            "uri": "unece:SpecifiedCondition.actionCode",
-            "type": "schema:Text",
+            "uri": "unece:actionCode",
+            "type": "xsd:string",
             "comment": "A code specifying an action for this specified condition."
         },
         {
-            "uri": "unece:SpecifiedCondition.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:SpecifiedCondition.subjectTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:subjectTypeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a subject type for this licence."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:SpecifiedCondition.specifiedMeasurement",
+            "uri": "unece:specifiedMeasurement",
             "type": "unece:CalibratedMeasurement",
-            "comment": "A calibrated measurement specified for this specified condition."
+            "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy."
         },
         {
-            "uri": "unece:SpecifiedCondition.valueMeasure",
+            "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of a value for this document characteristic."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:DangerousGoods.statedCondition",
-            "comment": "A stated condition of these transported dangerous goods."
-        },
-        {
-            "uri": "unece:Package.statedCondition",
+            "uri": "unece:statedCondition",
             "comment": "A stated condition of these transported dangerous goods."
         }
     ]

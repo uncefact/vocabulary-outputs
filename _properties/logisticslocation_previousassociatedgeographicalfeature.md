@@ -1,5 +1,0 @@
----
-title: previousAssociatedGeographicalFeature
-permalink: LogisticsLocation.previousAssociatedGeographicalFeature.html
-jsonid: logisticslocation_previousassociatedgeographicalfeature
----

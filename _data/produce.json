@@ -5,60 +5,56 @@
     "comment": "Agricultural plants or plant products grown and harvested, such as grain, fruit, vegetables, silage.",
     "datatypeProperties": [
         {
-            "uri": "unece:Produce.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Produce.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:Produce.subordinateTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:subordinateTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the subordinate type for this production device."
         },
         {
-            "uri": "unece:Produce.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Produce.calculatedYieldMeasure",
+            "uri": "unece:calculatedYieldMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the calculated yield, such as weight per surface area unit, of this crop produce."
+            "comment": ""
         },
         {
-            "uri": "unece:Produce.estimatedYieldMeasure",
+            "uri": "unece:estimatedYieldMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the estimated yield, such as weight per surface area unit, of this crop produce."
+            "comment": ""
         },
         {
-            "uri": "unece:Produce.inputSpecifiedBatch",
+            "uri": "unece:inputSpecifiedBatch",
             "type": "unece:CropProduceBatch",
             "comment": "An input batch crop produce, such as seed or fertilizer, specified for this crop produce."
         },
         {
-            "uri": "unece:Produce.outputSpecifiedBatch",
+            "uri": "unece:outputSpecifiedBatch",
             "type": "unece:CropProduceBatch",
             "comment": "An output batch crop produce, such as potatoes, grain, straw, specified for this crop produce."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Area.harvestedProduce",
+            "uri": "unece:harvestedProduce",
             "comment": "Crop produce harvested from this agricultural zone area."
         },
         {
-            "uri": "unece:CropProduceBatch.specifiedProduce",
+            "uri": "unece:specifiedProduce",
             "comment": "A crop produce specified for this crop produce batch."
-        },
-        {
-            "uri": "unece:FieldCrop.harvestedProduce",
-            "comment": "Crop produce harvested from this agricultural zone area."
         }
     ]
 }

@@ -5,30 +5,30 @@
     "comment": "Information relevant to a condition of a validation.",
     "datatypeProperties": [
         {
-            "uri": "unece:ValidationStatus.additionalReason",
-            "type": "schema:Text",
+            "uri": "unece:additionalReason",
+            "type": "xsd:string",
             "comment": "Information, expressed as text, related to the reason for this validation status."
         },
         {
-            "uri": "unece:ValidationStatus.reason",
-            "type": "schema:Text",
+            "uri": "unece:reason",
+            "type": "xsd:string",
             "comment": "A reason, expressed as text, for this cancellation status."
         },
         {
-            "uri": "unece:ValidationStatus.reasonCode",
-            "type": "schema:Text",
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
             "comment": "A code specifying a reason for the declared error."
         },
         {
-            "uri": "unece:ValidationStatus.validationDocumentStatusConditionCode",
+            "uri": "unece:validationDocumentStatusConditionCode",
             "type": "unece:ValidationDocumentStatusCodeList",
             "comment": "The code specifying the condition of this validation status."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:FinancingRequestDocument.specifiedValidationStatus",
-            "comment": "The status of the validation specified for this financing request document, such as error."
+            "uri": "unece:specifiedValidationStatus",
+            "comment": "Information relevant to a condition of a validation."
         }
     ]
 }

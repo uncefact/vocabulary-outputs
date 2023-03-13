@@ -5,118 +5,114 @@
     "comment": "A proof that a document is genuine.",
     "datatypeProperties": [
         {
-            "uri": "unece:Authentication.actualDateTime",
-            "type": "schema:Text",
+            "uri": "unece:actualDateTime",
+            "type": "xsd:string",
             "comment": "An actual date, time, date time, or other date time value of this financial booking."
         },
         {
-            "uri": "unece:Authentication.categoryCode",
-            "type": "schema:Text",
+            "uri": "unece:categoryCode",
+            "type": "xsd:string",
             "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
-            "uri": "unece:Authentication.governmentActionTypeCode",
+            "uri": "unece:governmentActionTypeCode",
             "type": "unece:GovernmentActionCodeList",
             "comment": "The code specifying the type of document authentication."
         },
         {
-            "uri": "unece:Authentication.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Authentication.information",
-            "type": "schema:Text",
+            "uri": "unece:information",
+            "type": "xsd:string",
             "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
         },
         {
-            "uri": "unece:Authentication.representationTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:representationTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the type of representation of this document authentication, such as direct or indirect."
         },
         {
-            "uri": "unece:Authentication.signatory",
-            "type": "schema:Text",
+            "uri": "unece:signatory",
+            "type": "xsd:string",
             "comment": "The signatory, expressed as text, for this document authentication."
         },
         {
-            "uri": "unece:Authentication.signatoryImageBinaryObject",
-            "type": "schema:Text",
+            "uri": "unece:signatoryImageBinaryObject",
+            "type": "xsd:string",
             "comment": "The signatory image, expressed as a binary object, for this document authentication."
         },
         {
-            "uri": "unece:Authentication.statement",
-            "type": "schema:Text",
+            "uri": "unece:statement",
+            "type": "xsd:string",
             "comment": "A statement, expressed as text, for this specified inspection result."
         },
         {
-            "uri": "unece:Authentication.statementCode",
-            "type": "schema:Text",
+            "uri": "unece:statementCode",
+            "type": "xsd:string",
             "comment": "The code specifying the statement for this document authentication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Authentication.includedClause",
+            "uri": "unece:includedClause",
             "type": "unece:Clause",
             "comment": "A document clause included in this document authentication."
         },
         {
-            "uri": "unece:Authentication.issueLocation",
+            "uri": "unece:issueLocation",
             "type": "unece:Location",
             "comment": "The issue location for this document authentication."
         },
         {
-            "uri": "unece:Authentication.locationProviderParty",
+            "uri": "unece:locationProviderParty",
             "type": "unece:Party",
             "comment": "The trade party providing the location for this document authentication."
         },
         {
-            "uri": "unece:Authentication.providerParty",
+            "uri": "unece:providerParty",
             "type": "unece:Party",
-            "comment": "The provider party for this monitoring IOT device."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:AppliedChemicalTreatment.resultAuthentication",
-            "comment": "The authentication of the results of this applied chemical treatment."
-        },
-        {
-            "uri": "unece:Document.signatoryAuthentication",
-            "comment": "A signatory authentication for this referenced document."
-        },
-        {
-            "uri": "unece:ExchangedDocument.approverSignatoryAuthentication",
+            "uri": "unece:approverSignatoryAuthentication",
             "comment": "The approver signature that authenticates this exchanged document."
         },
         {
-            "uri": "unece:ExchangedDocument.buyerSignatoryAuthentication",
+            "uri": "unece:assertedAuthentication",
+            "comment": "A proof that a document is genuine."
+        },
+        {
+            "uri": "unece:buyerSignatoryAuthentication",
             "comment": "The buyer signature that authenticates this exchanged document."
         },
         {
-            "uri": "unece:ExchangedDocument.firstSignatoryAuthentication",
+            "uri": "unece:firstSignatoryAuthentication",
             "comment": "The first or primary signature that authenticates this exchanged document."
         },
         {
-            "uri": "unece:ExchangedDocument.fourthSignatoryAuthentication",
+            "uri": "unece:fourthSignatoryAuthentication",
             "comment": "The fourth signature, also known as the third counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
         },
         {
-            "uri": "unece:ExchangedDocument.secondSignatoryAuthentication",
+            "uri": "unece:resultAuthentication",
+            "comment": "A proof that a document is genuine."
+        },
+        {
+            "uri": "unece:secondSignatoryAuthentication",
             "comment": "The second signature, also known as the first counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
         },
         {
-            "uri": "unece:ExchangedDocument.signatoryAuthentication",
+            "uri": "unece:signatoryAuthentication",
             "comment": "A signatory authentication for this referenced document."
         },
         {
-            "uri": "unece:ExchangedDocument.thirdSignatoryAuthentication",
+            "uri": "unece:thirdSignatoryAuthentication",
             "comment": "The third signature, also known as the second counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.assertedAuthentication",
-            "comment": "A document authentication asserted for this supply chain trade line item."
         }
     ]
 }

@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: ProductionFacility.applicableSustainabilityCharacteristic.html
-jsonid: productionfacility_applicablesustainabilitycharacteristic
----

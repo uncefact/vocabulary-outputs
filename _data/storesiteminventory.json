@@ -5,36 +5,36 @@
     "comment": "A stores item, such as for onboard use during a journey.",
     "datatypeProperties": [
         {
-            "uri": "unece:StoresItemInventory.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:StoresItemInventory.sequenceNumeric",
-            "type": "schema:Text",
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
             "comment": "A sequence number for these specified personal effects."
         },
         {
-            "uri": "unece:StoresItemInventory.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:StoresItemInventory.onboardQuantity",
+            "uri": "unece:onboardQuantity",
             "type": "unece:QuantityType",
-            "comment": "An onboard number of these specified personal effects."
+            "comment": ""
         },
         {
-            "uri": "unece:StoresItemInventory.specifiedLogisticsLocation",
+            "uri": "unece:specifiedLogisticsLocation",
             "type": "unece:LogisticsLocation",
-            "comment": "A location specified for this logistics status."
+            "comment": "A logistics related physical location or place."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:TransportMovement.onboardInventory",
+            "uri": "unece:onboardInventory",
             "comment": "A stores inventory item held onboard for this logistics transport movement."
         }
     ]

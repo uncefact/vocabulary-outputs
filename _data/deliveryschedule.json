@@ -1,31 +1,22 @@
 
 {
-    "label": "DeliverySchedule",
-    "uri": "unece:DeliverySchedule",
-    "comment": "Specification of the forecasted delivery quantities and date/time values for a delivery schedule.",
-    "datatypeProperties": [
+    "label": "deliverySchedule",
+    "uri": "unece:deliverySchedule",
+    "comment": "A series of planned activities or things to be done in this supply chain.",
+    "rangeIncludes": [
         {
-            "uri": "unece:DeliverySchedule.scopeCode",
-            "type": "schema:Text",
-            "comment": "The code indicating the scope of a forecast delivery schedule."
+            "uri": "unece:Schedule",
+            "comment": "A series of planned activities or things to be done in this supply chain."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:DeliverySchedule.shipToParty",
-            "type": "unece:TradeParty",
-            "comment": "A ship to party for this forecast delivery schedule."
+            "uri": "unece:LineTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         },
         {
-            "uri": "unece:DeliverySchedule.specifiedTradeLineItem",
-            "type": "unece:SupplyChainTradeLineItem",
-            "comment": "A trade line item specified for this forecast delivery schedule."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:SupplyChainTradeTransaction.includedDeliverySchedule",
-            "comment": "Delivery scheduling details included in a defined forecast period for this supply chain trade transaction."
+            "uri": "unece:LineTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
         }
     ]
 }

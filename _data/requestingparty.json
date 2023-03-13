@@ -5,61 +5,61 @@
     "comment": "An individual, a group, or a body having a role as a requestor.",
     "datatypeProperties": [
         {
-            "uri": "unece:RequestingParty.accessRightsTypeAccessRightsCode",
+            "uri": "unece:accessRightsTypeAccessRightsCode",
             "type": "unece:AccessRightsTypeCodeList",
             "comment": "The code specifying the access rights, such as unlimited, restricted, prohibited, for this requesting party."
         },
         {
-            "uri": "unece:RequestingParty.bEIId",
-            "type": "schema:Text",
+            "uri": "unece:bEIId",
+            "type": "xsd:string",
             "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
         },
         {
-            "uri": "unece:RequestingParty.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:RequestingParty.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:RequestingParty.languageCode",
-            "type": "schema:Text",
+            "uri": "unece:languageCode",
+            "type": "xsd:string",
             "comment": "A code specifying a language for this requesting party."
         },
         {
-            "uri": "unece:RequestingParty.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:RequestingParty.partyTypeCode",
+            "uri": "unece:partyTypeCode",
             "type": "unece:PartyTypeCodeList",
             "comment": "A code specifying the type of TT party."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:RequestingParty.lineOfCreditSpecifiedFinancialAccount",
+            "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
             "type": "unece:FinancingFinancialAccount",
             "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
         },
         {
-            "uri": "unece:RequestingParty.specifiedCreditorFinancialAccount",
+            "uri": "unece:specifiedCreditorFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
             "comment": "A creditor financial account specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:RequestingParty.specifiedProprietaryIdentity",
+            "uri": "unece:specifiedProprietaryIdentity",
             "type": "unece:ProprietaryIdentity",
-            "comment": "A proprietary Identity specified for this person."
+            "comment": "Proprietary information which uniquely identifies a person or organization."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:FinancingRequestDocument.specifiedRequestingParty",
+            "uri": "unece:specifiedRequestingParty",
             "comment": "The requesting party specified in this financing request document."
         }
     ]

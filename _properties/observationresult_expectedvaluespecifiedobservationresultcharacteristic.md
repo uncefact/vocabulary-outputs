@@ -1,5 +1,0 @@
----
-title: expectedValueSpecifiedObservationResultCharacteristic
-permalink: ObservationResult.expectedValueSpecifiedObservationResultCharacteristic.html
-jsonid: observationresult_expectedvaluespecifiedobservationresultcharacteristic
----

@@ -1,100 +1,30 @@
 
 {
-    "label": "AssociatedTransportEquipment",
-    "uri": "unece:AssociatedTransportEquipment",
-    "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
-    "datatypeProperties": [
+    "label": "associatedTransportEquipment",
+    "uri": "unece:associatedTransportEquipment",
+    "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.",
+    "rangeIncludes": [
         {
-            "uri": "unece:AssociatedTransportEquipment.characteristic",
-            "type": "schema:Text",
-            "comment": "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.identifier",
-            "type": "schema:Text",
-            "comment": "A proprietary identifier."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.sealedIndicator",
-            "type": "schema:Boolean",
-            "comment": "The indication of whether or not this associated piece of transport equipment is sealed."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.transportEquipmentCategoryCode",
-            "type": "unece:TransportEquipmentCategoryCodeList",
-            "comment": "A code specifying a category of this piece of associated transport equipment."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.transportEquipmentSizeTypeCharacteristicCode",
-            "type": "unece:TransportEquipmentSizeTypeCodeList",
-            "comment": "The code specifying the characteristics, i.e. size and type, of this piece of associated transport equipment."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.usedCapacityCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the used capacity, such as full or empty, of this associated piece of transport equipment."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:AssociatedTransportEquipment.affixedSeal",
-            "type": "unece:Seal",
-            "comment": "A logistics seal affixed to this piece of associated transport equipment."
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         },
         {
-            "uri": "unece:AssociatedTransportEquipment.containedConsignment",
-            "type": "unece:Consignment",
-            "comment": "A consignment contained in this piece of logistics transport equipment."
+            "uri": "unece:DangerousGoods",
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         },
         {
-            "uri": "unece:AssociatedTransportEquipment.grossVolumeMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the gross volume for this trade product."
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         },
         {
-            "uri": "unece:AssociatedTransportEquipment.grossWeightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the gross weight (mass) of this trade product."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.loadedDangerousGoods",
-            "type": "unece:DangerousGoods",
-            "comment": "Dangerous goods loaded into or onto this piece of associated transport equipment."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.loadedPackageQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The number of packages loaded into or onto this piece of associated transport equipment."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.sealQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A quantity of seals for this associated piece of transport equipment."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.settingTemperature",
-            "type": "unece:TransportSettingTemperature",
-            "comment": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational temperature."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.tareWeightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the tare weight (mass) of this piece of associated transport equipment which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
-        },
-        {
-            "uri": "unece:AssociatedTransportEquipment.unitQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A number of units for this supply chain event."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:LogisticsTransportEquipment.carriedTransportEquipment",
-            "comment": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment.containedTransportEquipment",
-            "comment": "A piece of transport equipment contained within this piece of logistics transport equipment, such as a pallet."
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         }
     ]
 }

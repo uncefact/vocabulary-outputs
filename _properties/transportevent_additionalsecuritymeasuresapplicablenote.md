@@ -1,5 +1,0 @@
----
-title: additionalSecurityMeasuresApplicableNote
-permalink: TransportEvent.additionalSecurityMeasuresApplicableNote.html
-jsonid: transportevent_additionalsecuritymeasuresapplicablenote
----

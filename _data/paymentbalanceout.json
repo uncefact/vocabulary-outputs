@@ -5,41 +5,41 @@
     "comment": "Offset information to ensure that debits and credits are equal for a transaction.",
     "datatypeProperties": [
         {
-            "uri": "unece:PaymentBalanceOut.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:PaymentBalanceOut.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:PaymentBalanceOut.occurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:string",
             "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
         },
         {
-            "uri": "unece:PaymentBalanceOut.reasonCode",
-            "type": "schema:Text",
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
             "comment": "A code specifying a reason for the declared error."
         },
         {
-            "uri": "unece:PaymentBalanceOut.reasonDescription",
-            "type": "schema:Text",
+            "uri": "unece:reasonDescription",
+            "type": "xsd:string",
             "comment": "A textual description of the reason for this header balance out."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:PaymentBalanceOut.calculatedAmount",
+            "uri": "unece:calculatedAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value calculated for this header balance out."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:TradeSettlementPaymentMonetarySummation.applicablePaymentBalanceOut",
+            "uri": "unece:applicablePaymentBalanceOut",
             "comment": "A balance out applicable to this trade settlement payment monetary summation."
         }
     ]

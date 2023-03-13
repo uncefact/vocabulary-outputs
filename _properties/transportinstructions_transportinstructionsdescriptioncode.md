@@ -1,5 +1,0 @@
----
-title: transportInstructionsDescriptionCode
-permalink: TransportInstructions.transportInstructionsDescriptionCode.html
-jsonid: transportinstructions_transportinstructionsdescriptioncode
----

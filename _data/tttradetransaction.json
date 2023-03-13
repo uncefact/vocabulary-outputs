@@ -5,36 +5,24 @@
     "comment": "An agreement, contract, exchange, understanding, or transfer of cash or property related to a Track and Trace (TT) process.",
     "datatypeProperties": [
         {
-            "uri": "unece:TTTradeTransaction.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:TTTradeTransaction.typeId",
-            "type": "schema:Text",
+            "uri": "unece:typeId",
+            "type": "xsd:string",
             "comment": "An identifier of the type for this TT party."
         },
         {
-            "uri": "unece:TTTradeTransaction.uRIId",
-            "type": "schema:Text",
+            "uri": "unece:uRIId",
+            "type": "xsd:string",
             "comment": "A Uniform Resource Identifier (URI) for this specified certification."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:TTAggregationEvent.specifiedTradeTransaction",
-            "comment": "A trade transaction specified for this TT aggregation event."
-        },
-        {
-            "uri": "unece:TTObjectEvent.specifiedTradeTransaction",
-            "comment": "A trade transaction specified for this TT aggregation event."
-        },
-        {
-            "uri": "unece:TTTransactionEvent.specifiedTradeTransaction",
-            "comment": "A trade transaction specified for this TT aggregation event."
-        },
-        {
-            "uri": "unece:TTTransformationEvent.specifiedTradeTransaction",
+            "uri": "unece:specifiedTradeTransaction",
             "comment": "A trade transaction specified for this TT aggregation event."
         }
     ]

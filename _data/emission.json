@@ -5,39 +5,35 @@
     "comment": "A calculation of the pollution (including noise, heat, and radiation etc.) discharged into the environment by a residential, commercial, or industrial facility or by a means of transport, such as a vessel, aircraft or truck.",
     "datatypeProperties": [
         {
-            "uri": "unece:Emission.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Emission.affectedDistanceMeasure",
+            "uri": "unece:affectedDistanceMeasure",
             "type": "unece:LinearUnitMeasureType",
-            "comment": "The affected distance over which this calculated emission is measured."
+            "comment": ""
         },
         {
-            "uri": "unece:Emission.pollutionMeasure",
+            "uri": "unece:pollutionMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the pollution calculated for this emission."
+            "comment": ""
         },
         {
-            "uri": "unece:Emission.weightUnitWeightMeasure",
+            "uri": "unece:weightUnitWeightMeasure",
             "type": "unece:WeightUnitMeasureType",
-            "comment": "A weight for which this calculated emission is measured."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:LogisticsTransportMeans.certifiedEmission",
+            "uri": "unece:certifiedEmission",
             "comment": "A certified level of pollution calculated for an emission from this logistics transport means."
         },
         {
-            "uri": "unece:LogisticsTransportMeans.specifiedEmission",
-            "comment": "A calculated emission specified for this logistics transport means."
-        },
-        {
-            "uri": "unece:TransportMovement.specifiedEmission",
+            "uri": "unece:specifiedEmission",
             "comment": "A calculated emission specified for this logistics transport means."
         }
     ]

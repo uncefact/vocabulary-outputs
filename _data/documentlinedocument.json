@@ -5,109 +5,101 @@
     "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
     "datatypeProperties": [
         {
-            "uri": "unece:DocumentLineDocument.buyerAssignedCategoryCode",
-            "type": "schema:Text",
+            "uri": "unece:buyerAssignedCategoryCode",
+            "type": "xsd:string",
             "comment": "The code specifying the category assigned by the buyer for this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.categoryCode",
-            "type": "schema:Text",
+            "uri": "unece:categoryCode",
+            "type": "xsd:string",
             "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
-            "uri": "unece:DocumentLineDocument.documentLineStatusCode",
+            "uri": "unece:documentLineStatusCode",
             "type": "unece:LineStatusCodeList",
             "comment": "The code specifying the status of this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:DocumentLineDocument.issueDateTime",
-            "type": "schema:Text",
+            "uri": "unece:issueDateTime",
+            "type": "xsd:string",
             "comment": "An issue date, time, date time or other date time value for this declared error."
         },
         {
-            "uri": "unece:DocumentLineDocument.latestRevisionDateTime",
-            "type": "schema:Text",
+            "uri": "unece:latestRevisionDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value for the latest revision of this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.lineId",
-            "type": "schema:Text",
+            "uri": "unece:lineId",
+            "type": "xsd:string",
             "comment": "The unique identifier of a line in this referenced document."
         },
         {
-            "uri": "unece:DocumentLineDocument.lineStatusReason",
-            "type": "schema:Text",
+            "uri": "unece:lineStatusReason",
+            "type": "xsd:string",
             "comment": "A reason, expressed as text, for the line status in this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.lineStatusReasonCode",
-            "type": "schema:Text",
+            "uri": "unece:lineStatusReasonCode",
+            "type": "xsd:string",
             "comment": "The code specifying the line status reason for this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.parentLineId",
-            "type": "schema:Text",
+            "uri": "unece:parentLineId",
+            "type": "xsd:string",
             "comment": "The unique identifier of the parent line to this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.publicationDateTime",
-            "type": "schema:Text",
+            "uri": "unece:publicationDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value of the publication of this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.responseReasonCode",
-            "type": "schema:Text",
+            "uri": "unece:responseReasonCode",
+            "type": "xsd:string",
             "comment": "A code specifying a response reason for this exchanged document."
         },
         {
-            "uri": "unece:DocumentLineDocument.subordinateLineId",
-            "type": "schema:Text",
+            "uri": "unece:subordinateLineId",
+            "type": "xsd:string",
             "comment": "An identifier of a subordinate line of this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.uUIDLineId",
-            "type": "schema:Text",
+            "uri": "unece:uUIDLineId",
+            "type": "xsd:string",
             "comment": "The universally unique identifier (UUID) of this document line."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:DocumentLineDocument.effectiveSpecifiedPeriod",
+            "uri": "unece:effectiveSpecifiedPeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The period within which this document line is effective."
+            "comment": "A specified period of time."
         },
         {
-            "uri": "unece:DocumentLineDocument.includedNote",
+            "uri": "unece:includedNote",
             "type": "unece:Note",
-            "comment": "A note included for this document status."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
-            "uri": "unece:DocumentLineDocument.referenceAcknowledgementDocument",
+            "uri": "unece:referenceAcknowledgementDocument",
             "type": "unece:AcknowledgementDocument",
             "comment": "The acknowledgement document referenced in this document line."
         },
         {
-            "uri": "unece:DocumentLineDocument.referenceDocument",
+            "uri": "unece:referenceDocument",
             "type": "unece:Document",
-            "comment": "A document referenced by this acknowledgement document."
+            "comment": "Written, printed or electronic matter that is referenced."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:LineTradeSettlement.associatedDocumentLineDocument",
-            "comment": "A document line associated with this line trade settlement."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.associatedDocumentLineDocument",
-            "comment": "A document line associated with this line trade settlement."
-        },
-        {
-            "uri": "unece:SupplyChainTradeTransaction.associatedDocumentLineDocument",
+            "uri": "unece:associatedDocumentLineDocument",
             "comment": "A document line associated with this line trade settlement."
         }
     ]

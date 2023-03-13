@@ -1,5 +1,0 @@
----
-title: consignorProvidedBorderClearanceInstructions
-permalink: Consignment.consignorProvidedBorderClearanceInstructions.html
-jsonid: consignment_consignorprovidedborderclearanceinstructions
----

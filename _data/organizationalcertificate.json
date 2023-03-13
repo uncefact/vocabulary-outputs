@@ -5,117 +5,105 @@
     "comment": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met required organizational criteria.",
     "datatypeProperties": [
         {
-            "uri": "unece:OrganizationalCertificate.actualEffectiveDateTime",
-            "type": "schema:Text",
+            "uri": "unece:actualEffectiveDateTime",
+            "type": "xsd:string",
             "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
         },
         {
-            "uri": "unece:OrganizationalCertificate.applicableObjectCode",
-            "type": "schema:Text",
+            "uri": "unece:applicableObjectCode",
+            "type": "xsd:string",
             "comment": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
         },
         {
-            "uri": "unece:OrganizationalCertificate.certificateTypeCode",
+            "uri": "unece:certificateTypeCode",
             "type": "unece:CertificateTypeCodeList",
             "comment": "A code specifying a type of specified certificate."
         },
         {
-            "uri": "unece:OrganizationalCertificate.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:OrganizationalCertificate.expiryDateTime",
-            "type": "schema:Text",
+            "uri": "unece:expiryDateTime",
+            "type": "xsd:string",
             "comment": "An expiry date, time, date time or other date time value for this specified licence."
         },
         {
-            "uri": "unece:OrganizationalCertificate.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:OrganizationalCertificate.issueDateTime",
-            "type": "schema:Text",
+            "uri": "unece:issueDateTime",
+            "type": "xsd:string",
             "comment": "An issue date, time, date time or other date time value for this declared error."
         },
         {
-            "uri": "unece:OrganizationalCertificate.issueReasonCode",
-            "type": "schema:Text",
+            "uri": "unece:issueReasonCode",
+            "type": "xsd:string",
             "comment": "The code specifying the reason for the issue of this process certificate."
         },
         {
-            "uri": "unece:OrganizationalCertificate.issuingPartyId",
-            "type": "schema:Text",
+            "uri": "unece:issuingPartyId",
+            "type": "xsd:string",
             "comment": "An identifier of a party issuing this sustainability assertion."
         },
         {
-            "uri": "unece:OrganizationalCertificate.purposeCode",
-            "type": "schema:Text",
+            "uri": "unece:purposeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a purpose for this field crop."
         },
         {
-            "uri": "unece:OrganizationalCertificate.requestedEffectiveDateTime",
-            "type": "schema:Text",
+            "uri": "unece:requestedEffectiveDateTime",
+            "type": "xsd:string",
             "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:OrganizationalCertificate.applicableAssertion",
+            "uri": "unece:applicableAssertion",
             "type": "unece:Assertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
+            "comment": "A statement that user needs of the present are met without compromising the needs of future generations."
         },
         {
-            "uri": "unece:OrganizationalCertificate.applicableOrganizationCharacteristic",
+            "uri": "unece:applicableOrganizationCharacteristic",
             "type": "unece:OrganizationCharacteristic",
             "comment": "A characteristic applicable to this organization certificate."
         },
         {
-            "uri": "unece:OrganizationalCertificate.applicableOrganizationalCertification",
+            "uri": "unece:applicableOrganizationalCertification",
             "type": "unece:OrganizationalCertification",
-            "comment": "An organizational certification applicable to this organizational certificate."
+            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
         },
         {
-            "uri": "unece:OrganizationalCertificate.applicableStandard",
+            "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
-            "uri": "unece:OrganizationalCertificate.applicableSustainabilityCharacteristic",
+            "uri": "unece:applicableSustainabilityCharacteristic",
             "type": "unece:SustainabilityCharacteristic",
-            "comment": "A characteristic applicable to this sustainability inspection."
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
         {
-            "uri": "unece:OrganizationalCertificate.attachedBinaryFile",
+            "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file attached for this sustainability inspection."
+            "comment": "A specified computer file or program stored in a binary format."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:InspectionResult.obtainedOrganizationalCertificate",
+            "uri": "unece:applicableOrganizationalCertificate",
+            "comment": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met required organizational criteria."
+        },
+        {
+            "uri": "unece:obtainedOrganizationalCertificate",
             "comment": "An organizational certificate obtained by means of this specified inspection result."
         },
         {
-            "uri": "unece:ProductionFacility.specifiedOrganizationalCertificate",
-            "comment": "An organizational certificate specified for this facility production unit."
-        },
-        {
-            "uri": "unece:ProductionProcess.specifiedOrganizationalCertificate",
-            "comment": "An organizational certificate specified for this facility production unit."
-        },
-        {
-            "uri": "unece:ProductionUnit.specifiedOrganizationalCertificate",
-            "comment": "An organizational certificate specified for this facility production unit."
-        },
-        {
-            "uri": "unece:TradeParty.applicableOrganizationalCertificate",
-            "comment": "An organizational certificate applicable to this trade party."
-        },
-        {
-            "uri": "unece:TransportMovement.specifiedOrganizationalCertificate",
-            "comment": "An organizational certificate specified for this facility production unit."
+            "uri": "unece:specifiedOrganizationalCertificate",
+            "comment": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met required organizational criteria."
         }
     ]
 }

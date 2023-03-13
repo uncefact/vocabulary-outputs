@@ -5,23 +5,19 @@
     "comment": "The information relevant to a condition related to an inspection.",
     "datatypeProperties": [
         {
-            "uri": "unece:InspectionStatus.conditionCode",
-            "type": "schema:Text",
+            "uri": "unece:conditionCode",
+            "type": "xsd:string",
             "comment": "A code specifying a condition of this logistics packaging."
         },
         {
-            "uri": "unece:InspectionStatus.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:SpecifiedInspection.specifiedInspectionStatus",
-            "comment": "The inspection status specified for this sustainability inspection."
-        },
-        {
-            "uri": "unece:SustainabilityInspection.specifiedInspectionStatus",
+            "uri": "unece:specifiedInspectionStatus",
             "comment": "The inspection status specified for this sustainability inspection."
         }
     ]

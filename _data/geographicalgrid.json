@@ -2,64 +2,64 @@
 {
     "label": "GeographicalGrid",
     "uri": "unece:GeographicalGrid",
-    "comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+    "comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
     "datatypeProperties": [
         {
-            "uri": "unece:GeographicalGrid.axisName",
-            "type": "schema:Text",
+            "uri": "unece:axisName",
+            "type": "xsd:string",
             "comment": "An axis name, expressed as text, for this geographical grid."
         },
         {
-            "uri": "unece:GeographicalGrid.cell",
-            "type": "schema:Text",
+            "uri": "unece:cell",
+            "type": "xsd:string",
             "comment": "The cell value, expressed as text, for this geographical grid."
         },
         {
-            "uri": "unece:GeographicalGrid.dimensionNumeric",
-            "type": "schema:Text",
+            "uri": "unece:dimensionNumeric",
+            "type": "xsd:string",
             "comment": "The dimension, expressed as a number, of this geographical grid."
         },
         {
-            "uri": "unece:GeographicalGrid.highLimit",
-            "type": "schema:Text",
+            "uri": "unece:highLimit",
+            "type": "xsd:string",
             "comment": "The tuple of elements, expressed as text, indicating the high limit of this geographical grid specifying the diagonally opposing corner of each axis."
         },
         {
-            "uri": "unece:GeographicalGrid.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:GeographicalGrid.lowLimit",
-            "type": "schema:Text",
+            "uri": "unece:lowLimit",
+            "type": "xsd:string",
             "comment": "The tuple of elements, expressed as text, indicating the low limit of this geographical grid specifying the offset of each axis."
         },
         {
-            "uri": "unece:GeographicalGrid.offsetVectorNumeric",
-            "type": "schema:Text",
+            "uri": "unece:offsetVectorNumeric",
+            "type": "xsd:string",
             "comment": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical grid."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:GeographicalGrid.associatedGeographicalObjectCharacteristic",
+            "uri": "unece:associatedGeographicalObjectCharacteristic",
             "type": "unece:GeographicalObjectCharacteristic",
             "comment": "The geographical object characteristic associated with this geographical grid."
         },
         {
-            "uri": "unece:GeographicalGrid.associatedLocation",
+            "uri": "unece:associatedLocation",
             "type": "unece:Location",
             "comment": "A logistics location associated with this specified circle."
         },
         {
-            "uri": "unece:GeographicalGrid.originAssociatedDirectPositionList",
+            "uri": "unece:originAssociatedDirectPositionList",
             "type": "unece:DirectPositionList",
             "comment": "The direct position list associated with the origin of this geographical grid."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:GeographicalFeature.includedGeographicalGrid",
+            "uri": "unece:includedGeographicalGrid",
             "comment": "The geographical grid included in this geographical feature."
         }
     ]

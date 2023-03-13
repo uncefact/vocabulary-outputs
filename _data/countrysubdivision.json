@@ -5,59 +5,55 @@
     "comment": "A political or physical area or region within the political boundaries of a country used or referenced for trade purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:CountrySubDivision.hierarchicalLevelCode",
-            "type": "schema:Text",
+            "uri": "unece:hierarchicalLevelCode",
+            "type": "xsd:string",
             "comment": "The code specifying the hierarchical level of this trade country sub-division."
         },
         {
-            "uri": "unece:CountrySubDivision.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:CountrySubDivision.locationFunctionTypeCode",
+            "uri": "unece:locationFunctionTypeCode",
             "type": "unece:LocationFunctionCodeList",
             "comment": "A code specifying the type of this logistics related location."
         },
         {
-            "uri": "unece:CountrySubDivision.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:CountrySubDivision.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:CountrySubDivision.activityAuthorizedParty",
+            "uri": "unece:activityAuthorizedParty",
             "type": "unece:Party",
             "comment": "A party that is authorized to perform an activity in this trade country sub-division."
         },
         {
-            "uri": "unece:CountrySubDivision.subordinateCountrySubDivision",
+            "uri": "unece:subordinateCountrySubDivision",
             "type": "unece:CountrySubDivision",
             "comment": "A subordinate country sub-division within this trade country sub-division."
         },
         {
-            "uri": "unece:CountrySubDivision.superordinateCountrySubDivision",
+            "uri": "unece:superordinateCountrySubDivision",
             "type": "unece:CountrySubDivision",
             "comment": "A superordinate country sub-division for this trade country sub-division."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Country.subordinateCountrySubDivision",
+            "uri": "unece:subordinateCountrySubDivision",
             "comment": "A subordinate country sub-division within this trade country sub-division."
         },
         {
-            "uri": "unece:CountrySubDivision.subordinateCountrySubDivision",
-            "comment": "A subordinate country sub-division within this trade country sub-division."
-        },
-        {
-            "uri": "unece:CountrySubDivision.superordinateCountrySubDivision",
+            "uri": "unece:superordinateCountrySubDivision",
             "comment": "A superordinate country sub-division for this trade country sub-division."
         }
     ]

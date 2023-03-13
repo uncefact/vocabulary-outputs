@@ -1,218 +1,37 @@
 
 {
-    "label": "Standard",
-    "uri": "unece:Standard",
-    "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
-    "datatypeProperties": [
+    "label": "standard",
+    "uri": "unece:standard",
+    "comment": "A standard, expressed as text, for this specified certification.",
+    "rangeIncludes": [
         {
-            "uri": "unece:Standard.agencyId",
-            "type": "schema:Text",
-            "comment": "The identifier of the agency for this referenced standard."
-        },
-        {
-            "uri": "unece:Standard.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:Standard.elementVersionId",
-            "type": "schema:Text",
-            "comment": "The identifier of the version of a specific element within the referenced standard, such as the version of a data element."
-        },
-        {
-            "uri": "unece:Standard.identifier",
-            "type": "schema:Text",
-            "comment": "A proprietary identifier."
-        },
-        {
-            "uri": "unece:Standard.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
-        },
-        {
-            "uri": "unece:Standard.partId",
-            "type": "schema:Text",
-            "comment": "The identifier of a part of this referenced standard, such as a section or topic."
-        },
-        {
-            "uri": "unece:Standard.typeCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a type of MDH health indication."
-        },
-        {
-            "uri": "unece:Standard.uRIId",
-            "type": "schema:Text",
-            "comment": "A Uniform Resource Identifier (URI) for this specified certification."
-        },
-        {
-            "uri": "unece:Standard.versionId",
-            "type": "schema:Text",
-            "comment": "The identifier for the version of this exchanged declaration."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:Standard.applicableAssessment",
-            "type": "unece:Assessment",
-            "comment": "A specified assessment applicable to this referenced standard."
+            "uri": "unece:OrganizationalCertification",
+            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
         },
         {
-            "uri": "unece:Standard.applicableCountry",
-            "type": "unece:Country",
-            "comment": "A country applicable to this product batch characteristic."
+            "uri": "unece:ProcessCertification",
+            "comment": "The process of certifying that a process has met performance and quality assurance tests, or qualification requirements."
         },
         {
-            "uri": "unece:Standard.applicableDeclaration",
-            "type": "unece:SpecifiedDeclaration",
-            "comment": "A specified declaration applicable to this production process."
+            "uri": "unece:ProductBatchCertification",
+            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
-            "uri": "unece:Standard.applicableLicence",
-            "type": "unece:Licence",
-            "comment": "A specified licence applicable to this production process."
+            "uri": "unece:SpecifiedCertification",
+            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
         },
         {
-            "uri": "unece:Standard.applicableMetricCharacteristic",
-            "type": "unece:MetricCharacteristic",
-            "comment": "A metric characteristic applicable to this referenced standard."
+            "uri": "unece:TradeProductCertification",
+            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
-            "uri": "unece:Standard.applicableSpecifiedCertificate",
-            "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate applicable to this product batch."
-        },
-        {
-            "uri": "unece:Standard.attachedBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A binary file attached for this sustainability inspection."
-        },
-        {
-            "uri": "unece:Standard.specifiedAssertion",
-            "type": "unece:Assertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:Standard.specifiedDocument",
-            "type": "unece:Document",
-            "comment": "A referenced document for this specified inspection."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:AgriculturalCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:AnimalCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:Assertion.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:Assessment.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:Classification.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:Colour.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:InspectionResult.inspectionStandard",
-            "comment": "A referenced inspection standard for this specified inspection result."
-        },
-        {
-            "uri": "unece:Licence.associatedStandard",
-            "comment": "A referenced standard associated to this specified licence."
-        },
-        {
-            "uri": "unece:OrganizationCharacteristic.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:OrganizationalCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:OrganizationalCertification.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:Policy.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProcessCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProcessCertification.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProcessCharacteristic.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductBatchCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductBatchCertification.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductBatchCharacteristic.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductCharacteristic.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductionProcess.associatedStandard",
-            "comment": "A referenced standard associated to this specified licence."
-        },
-        {
-            "uri": "unece:SpecifiedCertificate.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:SpecifiedCertification.relatedStandard",
-            "comment": "A referenced standard related to this specified certification."
-        },
-        {
-            "uri": "unece:SpecifiedDeclaration.associatedStandard",
-            "comment": "A referenced standard associated to this specified licence."
-        },
-        {
-            "uri": "unece:SupplyChainTradeTransaction.associatedStandard",
-            "comment": "A referenced standard associated to this specified licence."
-        },
-        {
-            "uri": "unece:SustainabilityCharacteristic.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:SustainabilityInspection.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:TechnicalCharacteristic.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:TradeProductCertification.applicableStandard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
+            "uri": "unece:AnimalCertification",
+            "comment": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations."
         }
     ]
 }

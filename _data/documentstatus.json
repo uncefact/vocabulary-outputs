@@ -5,121 +5,121 @@
     "comment": "The information relevant to a condition related to a document.",
     "datatypeProperties": [
         {
-            "uri": "unece:DocumentStatus.condition",
-            "type": "schema:Text",
+            "uri": "unece:condition",
+            "type": "xsd:string",
             "comment": "A condition or status, expressed as text, for this process characteristic."
         },
         {
-            "uri": "unece:DocumentStatus.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:DocumentStatus.documentStatusConditionCode",
+            "uri": "unece:documentStatusConditionCode",
             "type": "unece:DocumentStatusCodeList",
             "comment": "The code specifying the condition of this document status."
         },
         {
-            "uri": "unece:DocumentStatus.documentStatusReasonCode",
-            "type": "schema:Text",
+            "uri": "unece:documentStatusReasonCode",
+            "type": "xsd:string",
             "comment": "A code specifying a reason for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.information",
-            "type": "schema:Text",
+            "uri": "unece:information",
+            "type": "xsd:string",
             "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
         },
         {
-            "uri": "unece:DocumentStatus.invalidInformation",
-            "type": "schema:Text",
+            "uri": "unece:invalidInformation",
+            "type": "xsd:string",
             "comment": "The invalid information, expressed as text, for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.processCondition",
-            "type": "schema:Text",
+            "uri": "unece:processCondition",
+            "type": "xsd:string",
             "comment": "A process condition, expressed as text, for this acknowledgement document."
         },
         {
-            "uri": "unece:DocumentStatus.processConditionCode",
-            "type": "schema:Text",
+            "uri": "unece:processConditionCode",
+            "type": "xsd:string",
             "comment": "The code specifying the process condition for this acknowledgement document."
         },
         {
-            "uri": "unece:DocumentStatus.reason",
-            "type": "schema:Text",
+            "uri": "unece:reason",
+            "type": "xsd:string",
             "comment": "A reason, expressed as text, for this cancellation status."
         },
         {
-            "uri": "unece:DocumentStatus.reasonClassification",
-            "type": "schema:Text",
+            "uri": "unece:reasonClassification",
+            "type": "xsd:string",
             "comment": "A reason classification, expressed as text, for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.reasonClassificationCode",
-            "type": "schema:Text",
+            "uri": "unece:reasonClassificationCode",
+            "type": "xsd:string",
             "comment": "The code specifying the reason classification for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.reasonInformation",
-            "type": "schema:Text",
+            "uri": "unece:reasonInformation",
+            "type": "xsd:string",
             "comment": "Information, expressed as text, related to the reason for this cancellation status."
         },
         {
-            "uri": "unece:DocumentStatus.reasonInformationCode",
-            "type": "schema:Text",
+            "uri": "unece:reasonInformationCode",
+            "type": "xsd:string",
             "comment": "The code specifying the reason for the information for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.referenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:referenceDateTime",
+            "type": "xsd:string",
             "comment": "The reference date or date time for this referenced document."
         },
         {
-            "uri": "unece:DocumentStatus.requestedAction",
-            "type": "schema:Text",
+            "uri": "unece:requestedAction",
+            "type": "xsd:string",
             "comment": "A requested action, expressed as text, for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.requestedActionCode",
-            "type": "schema:Text",
+            "uri": "unece:requestedActionCode",
+            "type": "xsd:string",
             "comment": "A code specifying a requested action for this basic work item."
         },
         {
-            "uri": "unece:DocumentStatus.sequenceNumeric",
-            "type": "schema:Text",
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
             "comment": "A sequence number for these specified personal effects."
         },
         {
-            "uri": "unece:DocumentStatus.validInformation",
-            "type": "schema:Text",
+            "uri": "unece:validInformation",
+            "type": "xsd:string",
             "comment": "The valid information, expressed as text, for this document status."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:DocumentStatus.includedNote",
+            "uri": "unece:includedNote",
             "type": "unece:Note",
-            "comment": "A note included for this document status."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
-            "uri": "unece:DocumentStatus.specifiedDocumentCharacteristic",
+            "uri": "unece:specifiedDocumentCharacteristic",
             "type": "unece:DocumentCharacteristic",
             "comment": "A document characteristic specified for this document status."
         },
         {
-            "uri": "unece:DocumentStatus.validityPeriod",
+            "uri": "unece:validityPeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A period of validity specified for this referenced document."
+            "comment": "A specified period of time."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Document.specifiedDocumentStatus",
-            "comment": "Status information specified for this referenced document."
+            "uri": "unece:reportedDocumentStatus",
+            "comment": "The information relevant to a condition related to a document."
         },
         {
-            "uri": "unece:SpecifiedCertificate.reportedDocumentStatus",
-            "comment": "A reported status for this specified certificate."
+            "uri": "unece:specifiedDocumentStatus",
+            "comment": "Status information specified for this referenced document."
         }
     ]
 }

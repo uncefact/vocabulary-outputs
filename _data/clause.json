@@ -5,53 +5,45 @@
     "comment": "A distinct article or provision in a document, which requires compliance.",
     "datatypeProperties": [
         {
-            "uri": "unece:Clause.content",
-            "type": "schema:Text",
+            "uri": "unece:content",
+            "type": "xsd:string",
             "comment": "A content, expressed as text, of this note."
         },
         {
-            "uri": "unece:Clause.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Clause.uRLId",
-            "type": "schema:Text",
+            "uri": "unece:uRLId",
+            "type": "xsd:string",
             "comment": "The Uniform Resource Locator (URL) for this document clause."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Clause.associatedMeasurement",
+            "uri": "unece:associatedMeasurement",
             "type": "unece:Measurement",
             "comment": "A measurement associated with this document clause."
         },
         {
-            "uri": "unece:Clause.associatedPeriod",
+            "uri": "unece:associatedPeriod",
             "type": "unece:SpecifiedPeriod",
             "comment": "A period of time associated with this document clause."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Authentication.includedClause",
+            "uri": "unece:applicableClause",
+            "comment": "A distinct article or provision in a document, which requires compliance."
+        },
+        {
+            "uri": "unece:contractualClause",
+            "comment": "A distinct article or provision in a document, which requires compliance."
+        },
+        {
+            "uri": "unece:includedClause",
             "comment": "A document clause included in this document authentication."
-        },
-        {
-            "uri": "unece:Document.contractualClause",
-            "comment": "A contractual clause of this exchanged document."
-        },
-        {
-            "uri": "unece:ExchangedDocument.contractualClause",
-            "comment": "A contractual clause of this exchanged document."
-        },
-        {
-            "uri": "unece:FinancingRequestDocument.contractualClause",
-            "comment": "A contractual clause of this exchanged document."
-        },
-        {
-            "uri": "unece:SpecifiedCertificate.applicableClause",
-            "comment": "A clause applicable to this specified certificate."
         }
     ]
 }

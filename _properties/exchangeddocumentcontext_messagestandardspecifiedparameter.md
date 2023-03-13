@@ -1,5 +1,0 @@
----
-title: messageStandardSpecifiedParameter
-permalink: ExchangedDocumentContext.messageStandardSpecifiedParameter.html
-jsonid: exchangeddocumentcontext_messagestandardspecifiedparameter
----

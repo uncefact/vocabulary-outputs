@@ -5,41 +5,41 @@
     "comment": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or services.",
     "datatypeProperties": [
         {
-            "uri": "unece:Marketplace.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Marketplace.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:Marketplace.salesMethodCode",
-            "type": "schema:Text",
+            "uri": "unece:salesMethodCode",
+            "type": "xsd:string",
             "comment": "The code specifying a sales method, such as an auction clock or mediation, for this specified marketplace."
         },
         {
-            "uri": "unece:Marketplace.virtualIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:virtualIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not this specified marketplace is virtual, such as a web-based marketplace."
         },
         {
-            "uri": "unece:Marketplace.websiteURIId",
-            "type": "schema:Text",
+            "uri": "unece:websiteURIId",
+            "type": "xsd:string",
             "comment": "A website Uniform Resource Identifier (URI) for this specified marketplace."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Marketplace.orderingAvailablePeriod",
+            "uri": "unece:orderingAvailablePeriod",
             "type": "unece:AvailablePeriod",
-            "comment": "An available ordering period for this specified marketplace."
+            "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date for which something is available."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:LineTradeAgreement.includedMarketplace",
+            "uri": "unece:includedMarketplace",
             "comment": "A marketplace included in this line trade agreement."
         }
     ]

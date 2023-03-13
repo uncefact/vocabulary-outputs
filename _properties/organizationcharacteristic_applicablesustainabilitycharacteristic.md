@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: OrganizationCharacteristic.applicableSustainabilityCharacteristic.html
-jsonid: organizationcharacteristic_applicablesustainabilitycharacteristic
----

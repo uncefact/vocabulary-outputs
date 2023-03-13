@@ -5,75 +5,75 @@
     "comment": "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform agricultural treatment.",
     "datatypeProperties": [
         {
-            "uri": "unece:Area.designatedSection",
-            "type": "schema:Text",
+            "uri": "unece:designatedSection",
+            "type": "xsd:string",
             "comment": "The designated section, expressed as text, of this agricultural zone area."
         },
         {
-            "uri": "unece:Area.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Area.multiSurfaceTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:multiSurfaceTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the multi-surface type for this agricultural zone area."
         },
         {
-            "uri": "unece:Area.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:Area.thirdPartyIssuedId",
-            "type": "schema:Text",
+            "uri": "unece:thirdPartyIssuedId",
+            "type": "xsd:string",
             "comment": "An alternate identifier issued by a third party for this laboratory observation party."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Area.applicableAgriculturalCharacteristic",
+            "uri": "unece:applicableAgriculturalCharacteristic",
             "type": "unece:AgriculturalCharacteristic",
             "comment": "An agricultural characteristic applicable to this agricultural zone area."
         },
         {
-            "uri": "unece:Area.appliedAgriculturalApplication",
+            "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this agricultural zone area."
+            "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product."
         },
         {
-            "uri": "unece:Area.harvestedProduce",
+            "uri": "unece:harvestedProduce",
             "type": "unece:Produce",
             "comment": "Crop produce harvested from this agricultural zone area."
         },
         {
-            "uri": "unece:Area.specifiedLocation",
+            "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location specified for this material."
+            "comment": "A reference to a physical location or place."
         },
         {
-            "uri": "unece:Area.specifiedPlot",
+            "uri": "unece:specifiedPlot",
             "type": "unece:Plot",
             "comment": "A crop plot specified for this agricultural application."
         },
         {
-            "uri": "unece:Area.subordinateArea",
+            "uri": "unece:subordinateArea",
             "type": "unece:Area",
             "comment": "An agricultural zone area subordinate to this agricultural zone area."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:AgriculturalApplication.appliedArea",
+            "uri": "unece:appliedArea",
             "comment": "A specified agricultural application applied to this agricultural zone area."
         },
         {
-            "uri": "unece:Area.subordinateArea",
-            "comment": "An agricultural zone area subordinate to this agricultural zone area."
+            "uri": "unece:specifiedArea",
+            "comment": "An agricultural zone area specified for this crop plot."
         },
         {
-            "uri": "unece:Plot.specifiedArea",
-            "comment": "An agricultural zone area specified for this crop plot."
+            "uri": "unece:subordinateArea",
+            "comment": "An agricultural zone area subordinate to this agricultural zone area."
         }
     ]
 }

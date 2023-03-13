@@ -1,0 +1,5 @@
+---
+title: geoCoordinateIdentificationGeographicalCoordinate
+permalink: geoCoordinateIdentificationGeographicalCoordinate.html
+jsonid: geocoordinateidentificationgeographicalcoordinate
+---

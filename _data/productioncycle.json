@@ -5,56 +5,56 @@
     "comment": "A series of activities associated with the processing of a product.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductionCycle.endDateTime",
-            "type": "schema:Text",
+            "uri": "unece:endDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the end of this available period of time."
         },
         {
-            "uri": "unece:ProductionCycle.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:ProductionCycle.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:ProductionCycle.productionYearDateTime",
-            "type": "schema:Text",
+            "uri": "unece:productionYearDateTime",
+            "type": "xsd:string",
             "comment": "The production year for this specified production cycle."
         },
         {
-            "uri": "unece:ProductionCycle.sequenceNumeric",
-            "type": "schema:Text",
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
             "comment": "A sequence number for these specified personal effects."
         },
         {
-            "uri": "unece:ProductionCycle.startDateTime",
-            "type": "schema:Text",
+            "uri": "unece:startDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the start of this available period of time."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductionCycle.applicableProductionProcess",
+            "uri": "unece:applicableProductionProcess",
             "type": "unece:ProductionProcess",
             "comment": "A process applicable to this specified production cycle."
         },
         {
-            "uri": "unece:ProductionCycle.processSpecifiedDocument",
+            "uri": "unece:processSpecifiedDocument",
             "type": "unece:Document",
-            "comment": "A process document referenced for this specified production cycle."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
-            "uri": "unece:ProductionCycle.relatedBinaryFile",
+            "uri": "unece:relatedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file related to this production process."
+            "comment": "A specified computer file or program stored in a binary format."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ProductionProcess.applicableProductionCycle",
+            "uri": "unece:applicableProductionCycle",
             "comment": "A specified production cycle applicable to this production process."
         }
     ]

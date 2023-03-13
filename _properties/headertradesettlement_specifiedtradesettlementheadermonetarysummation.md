@@ -1,5 +1,0 @@
----
-title: specifiedTradeSettlementHeaderMonetarySummation
-permalink: HeaderTradeSettlement.specifiedTradeSettlementHeaderMonetarySummation.html
-jsonid: headertradesettlement_specifiedtradesettlementheadermonetarysummation
----

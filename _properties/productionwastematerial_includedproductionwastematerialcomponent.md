@@ -1,5 +1,0 @@
----
-title: includedProductionWasteMaterialComponent
-permalink: ProductionWasteMaterial.includedProductionWasteMaterialComponent.html
-jsonid: productionwastematerial_includedproductionwastematerialcomponent
----

@@ -5,49 +5,41 @@
     "comment": "Improving measures for manufactured components or products to meet end use requirements.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductFinishingTreatment.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:ProductFinishingTreatment.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:ProductFinishingTreatment.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductFinishingTreatment.applicableProcessCertificate",
+            "uri": "unece:applicableProcessCertificate",
             "type": "unece:ProcessCertificate",
-            "comment": "A process certificate applicable to this specified crop protection treatment."
+            "comment": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required criteria."
         },
         {
-            "uri": "unece:ProductFinishingTreatment.applicableSustainabilityCharacteristic",
+            "uri": "unece:applicableSustainabilityCharacteristic",
             "type": "unece:SustainabilityCharacteristic",
-            "comment": "A characteristic applicable to this sustainability inspection."
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
         {
-            "uri": "unece:ProductFinishingTreatment.usedMaterial",
+            "uri": "unece:usedMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Material used for this specified crop protection treatment."
+            "comment": "A substance from which something is or could be made."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ProductBatch.appliedProductFinishingTreatment",
-            "comment": "A product finishing treatment applied during this production process."
-        },
-        {
-            "uri": "unece:ProductionProcess.appliedProductFinishingTreatment",
-            "comment": "A product finishing treatment applied during this production process."
-        },
-        {
-            "uri": "unece:TradeProduct.appliedProductFinishingTreatment",
+            "uri": "unece:appliedProductFinishingTreatment",
             "comment": "A product finishing treatment applied during this production process."
         }
     ]

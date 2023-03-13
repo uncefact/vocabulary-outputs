@@ -5,51 +5,51 @@
     "comment": "A WHO MDH (Maritime Declaration of Health) reported illness or disease for an onboard person.",
     "datatypeProperties": [
         {
-            "uri": "unece:Illness.caseDispositionCode",
-            "type": "schema:Text",
+            "uri": "unece:caseDispositionCode",
+            "type": "xsd:string",
             "comment": "A code specifying a case disposition of this MDH illness."
         },
         {
-            "uri": "unece:Illness.comment",
-            "type": "schema:Text",
+            "uri": "unece:comment",
+            "type": "xsd:string",
             "comment": "A comment, expressed as text for this MDH illness."
         },
         {
-            "uri": "unece:Illness.healthStatusCode",
-            "type": "schema:Text",
+            "uri": "unece:healthStatusCode",
+            "type": "xsd:string",
             "comment": "A code specifying a health status of this MDH illness."
         },
         {
-            "uri": "unece:Illness.healthStatusReportedIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:healthStatusReportedIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not the health status has been reported for this MDH illness."
         },
         {
-            "uri": "unece:Illness.nature",
-            "type": "schema:Text",
+            "uri": "unece:nature",
+            "type": "xsd:string",
             "comment": "A nature, expressed as text, of this MDH illness."
         },
         {
-            "uri": "unece:Illness.symptomOnsetDateTime",
-            "type": "schema:DateTime",
+            "uri": "unece:symptomOnsetDateTime",
+            "type": "xsd:datetime",
             "comment": "A symptom onset date, time, date time or other date time value for this MDH illness."
         },
         {
-            "uri": "unece:Illness.treatment",
-            "type": "schema:Text",
+            "uri": "unece:treatment",
+            "type": "xsd:string",
             "comment": "A treatment, expressed as text, for this MDH illness."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Illness.evacuationLocation",
+            "uri": "unece:evacuationLocation",
             "type": "unece:LogisticsLocation",
             "comment": "A logistics evacuation location for this MDH illness."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:TransportPerson.reportedIllness",
+            "uri": "unece:reportedIllness",
             "comment": "An MDH (Maritime Declaration of Health) reported illness or disease for this transport person."
         }
     ]

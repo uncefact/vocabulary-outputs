@@ -1,5 +1,0 @@
----
-title: applicableTransportationWasteRecoveryDisposalProcess
-permalink: TransportationWasteMaterial.applicableTransportationWasteRecoveryDisposalProcess.html
-jsonid: transportationwastematerial_applicabletransportationwasterecoverydisposalprocess
----

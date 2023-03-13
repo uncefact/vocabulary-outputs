@@ -5,55 +5,55 @@
     "comment": "An individual, group, or body having a role in laboratory observations.",
     "datatypeProperties": [
         {
-            "uri": "unece:LaboratoryObservationParty.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:LaboratoryObservationParty.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:LaboratoryObservationParty.thirdPartyIssuedId",
-            "type": "schema:Text",
+            "uri": "unece:thirdPartyIssuedId",
+            "type": "xsd:string",
             "comment": "An alternate identifier issued by a third party for this laboratory observation party."
         },
         {
-            "uri": "unece:LaboratoryObservationParty.thirdPartyIssuedIdentification",
-            "type": "schema:Text",
+            "uri": "unece:thirdPartyIssuedIdentification",
+            "type": "xsd:string",
             "comment": "A third party issued identifier, expressed as text, for this laboratory observation party."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:LaboratoryObservationParty.officeAddress",
+            "uri": "unece:officeAddress",
             "type": "unece:Address",
-            "comment": "The office address of this laboratory observation party."
+            "comment": "The location at which a particular trade related organization or person may be found or reached."
         },
         {
-            "uri": "unece:LaboratoryObservationParty.personDefinedContact",
+            "uri": "unece:personDefinedContact",
             "type": "unece:LaboratoryObservationContact",
             "comment": "The person defined as the contact for this laboratory observation party."
         },
         {
-            "uri": "unece:LaboratoryObservationParty.postalAddress",
+            "uri": "unece:postalAddress",
             "type": "unece:Address",
-            "comment": "A postal address for this legally set up organization."
+            "comment": "The location at which a particular trade related organization or person may be found or reached."
         },
         {
-            "uri": "unece:LaboratoryObservationParty.websiteURICommunication",
+            "uri": "unece:websiteURICommunication",
             "type": "unece:Communication",
-            "comment": "A website Uniform Resource Identifier (URI) communication for this contact person."
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ObservationResult.authorizationParty",
+            "uri": "unece:authorizationParty",
             "comment": "The laboratory observation party who authorized this sample observation result."
         },
         {
-            "uri": "unece:ObservationResult.outsourcedLaboratoryParty",
+            "uri": "unece:outsourcedLaboratoryParty",
             "comment": "The outsourced laboratory party who performed this sample observation result."
         }
     ]

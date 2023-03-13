@@ -1,5 +1,0 @@
----
-title: buyerDeductibleTaxSpecifiedAccountingAccount
-permalink: TradeTax.buyerDeductibleTaxSpecifiedAccountingAccount.html
-jsonid: tradetax_buyerdeductibletaxspecifiedaccountingaccount
----

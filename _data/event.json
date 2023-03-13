@@ -5,76 +5,60 @@
     "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport.",
     "datatypeProperties": [
         {
-            "uri": "unece:Event.actualOccurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:actualOccurrenceDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value of the actual arrival related to this transport event."
         },
         {
-            "uri": "unece:Event.description",
-            "type": "schema:Text",
-            "comment": "A note providing additional security measures applicable to this transport event."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:Event.estimatedOccurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:estimatedOccurrenceDateTime",
+            "type": "xsd:string",
             "comment": "The estimated date, time, date time, or other date time value of the occurrence of this transport event."
         },
         {
-            "uri": "unece:Event.identifier",
-            "type": "schema:Text",
-            "comment": "The date, time, date time, or other date time value when the arrival of a means of transport at the location of this transport event is estimated to occur."
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Event.scheduledOccurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:scheduledOccurrenceDateTime",
+            "type": "xsd:string",
             "comment": "A pilot boarding place, expressed as text, for this transport event."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Event.actualOccurrencePeriod",
+            "uri": "unece:actualOccurrencePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The actual period of time during which this transport event occurred."
+            "comment": "A specified period of time."
         },
         {
-            "uri": "unece:Event.occurrencePeriod",
+            "uri": "unece:occurrencePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The specified period of laycan time during which this transport event occurs."
+            "comment": "A specified period of time."
         },
         {
-            "uri": "unece:Event.scheduledOccurrencePeriod",
+            "uri": "unece:scheduledOccurrencePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The scheduled period of time specified for the occurrence of this transport event."
+            "comment": "A specified period of time."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Error.associatedEvent",
+            "uri": "unece:associatedEvent",
             "comment": "A corrective event associated with this declared error."
         },
         {
-            "uri": "unece:Location.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
+            "uri": "unece:examinationEvent",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
         },
         {
-            "uri": "unece:RegulatoryProcedure.examinationEvent",
-            "comment": "An examination event for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:RegulatoryProcedure.treatmentEvent",
-            "comment": "A treatment event for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:SustainabilityCharacteristic.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
-        },
-        {
-            "uri": "unece:TechnicalCharacteristic.specifiedAnimalHoldingEvent",
-            "comment": "An animal holding event specified for this TT animal."
-        },
-        {
-            "uri": "unece:TechnicalCharacteristic.specifiedSupplyChainEvent",
-            "comment": "A supply chain event specified for this product batch."
+            "uri": "unece:treatmentEvent",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
         }
     ]
 }

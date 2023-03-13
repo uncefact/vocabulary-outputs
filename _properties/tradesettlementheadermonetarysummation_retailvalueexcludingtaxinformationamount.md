@@ -1,5 +1,0 @@
----
-title: retailValueExcludingTaxInformationAmount
-permalink: TradeSettlementHeaderMonetarySummation.retailValueExcludingTaxInformationAmount.html
-jsonid: tradesettlementheadermonetarysummation_retailvalueexcludingtaxinformationamount
----

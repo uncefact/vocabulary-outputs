@@ -5,25 +5,21 @@
     "comment": "An individual human being who conducts an inspection.",
     "datatypeProperties": [
         {
-            "uri": "unece:InspectionPerson.inspectionPersonName",
-            "type": "schema:Text",
+            "uri": "unece:inspectionPersonName",
+            "type": "xsd:string",
             "comment": "The name or set of names, expressed as text, by which this inspection person is known."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:InspectionPerson.attainedSpecifiedQualification",
+            "uri": "unece:attainedSpecifiedQualification",
             "type": "unece:SpecifiedQualification",
             "comment": "The specified qualification attained by this inspection person."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:SpecifiedInspection.executionPerson",
-            "comment": "The inspector executing this specified inspection."
-        },
-        {
-            "uri": "unece:SustainabilityInspection.executionPerson",
+            "uri": "unece:executionPerson",
             "comment": "The inspector executing this specified inspection."
         }
     ]

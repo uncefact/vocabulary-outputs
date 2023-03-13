@@ -1,97 +1,21 @@
 
 {
-    "label": "Range",
-    "uri": "unece:Range",
-    "comment": "A row, line or series, commonly used to express the difference between lowest and highest values.",
-    "datatypeProperties": [
+    "label": "range",
+    "uri": "unece:range",
+    "comment": "The range, expressed as text, of the values of the measurements performed for this inspection result characteristic.",
+    "rangeIncludes": [
         {
-            "uri": "unece:Range.endId",
-            "type": "schema:Text",
-            "comment": "The identifier of the end of this specified range."
-        },
-        {
-            "uri": "unece:Range.startId",
-            "type": "schema:Text",
-            "comment": "The identifier of the start of this specified range."
-        },
-        {
-            "uri": "unece:Range.typeCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a type of MDH health indication."
-        },
-        {
-            "uri": "unece:Range.value",
-            "type": "schema:Text",
-            "comment": "A value, expressed as text, for this document characteristic."
-        },
-        {
-            "uri": "unece:Range.valueBaseSystemCode",
-            "type": "schema:Text",
-            "comment": "The code specifying the value base system, such as Arabic numerals, for this specified range."
-        },
-        {
-            "uri": "unece:Range.valueCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a value for this specified range."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:Range.maximumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a maximum value for this sustainability characteristic."
+            "uri": "unece:InspectionResultCharacteristic",
+            "comment": "A property of a collection of diagnostic data, visual or technical data, obtained by a performed inspection."
         },
         {
-            "uri": "unece:Range.minimumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a minimum value for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:Range.totalItemQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The total number of items in this specified range."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:AgriculturalCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:ControlSettingParameter.requestedRange",
-            "comment": "A requested range specified for this control setting parameter."
-        },
-        {
-            "uri": "unece:MetricCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:OperationalParameter.definedRange",
-            "comment": "A defined range specified for this operational parameter."
-        },
-        {
-            "uri": "unece:OrganizationCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:ProcessCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:ProductBatchCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:ProductCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:SustainabilityCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
-        },
-        {
-            "uri": "unece:TechnicalCharacteristic.valueRange",
-            "comment": "A range specified for a value of this metric characteristic."
+            "uri": "unece:ObservationResultCharacteristic",
+            "comment": "Specifies the type of the performed observation and the acquired values of this observation on the sample."
         }
     ]
 }

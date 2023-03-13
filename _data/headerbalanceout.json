@@ -5,51 +5,51 @@
     "comment": "Offset header information to ensure that debits and credits are equal for a transaction.",
     "datatypeProperties": [
         {
-            "uri": "unece:HeaderBalanceOut.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:HeaderBalanceOut.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:HeaderBalanceOut.occurrenceDateTime",
-            "type": "schema:Text",
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:string",
             "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
         },
         {
-            "uri": "unece:HeaderBalanceOut.reasonCode",
-            "type": "schema:Text",
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
             "comment": "A code specifying a reason for the declared error."
         },
         {
-            "uri": "unece:HeaderBalanceOut.reasonDescription",
-            "type": "schema:Text",
+            "uri": "unece:reasonDescription",
+            "type": "xsd:string",
             "comment": "A textual description of the reason for this header balance out."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:HeaderBalanceOut.breakdownBalanceOut",
+            "uri": "unece:breakdownBalanceOut",
             "type": "unece:HeaderBalanceOut",
             "comment": "A balance out breakdown of this header balance out."
         },
         {
-            "uri": "unece:HeaderBalanceOut.calculatedAmount",
+            "uri": "unece:calculatedAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value calculated for this header balance out."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:HeaderBalanceOut.breakdownBalanceOut",
-            "comment": "A balance out breakdown of this header balance out."
+            "uri": "unece:applicableHeaderBalanceOut",
+            "comment": "Offset header information to ensure that debits and credits are equal for a transaction."
         },
         {
-            "uri": "unece:TradeSettlementHeaderMonetarySummation.applicableHeaderBalanceOut",
-            "comment": "A header balance out applicable to this trade settlement header monetary summation."
+            "uri": "unece:breakdownBalanceOut",
+            "comment": "A balance out breakdown of this header balance out."
         }
     ]
 }

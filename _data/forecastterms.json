@@ -5,33 +5,29 @@
     "comment": "A set of terms and conditions by which a supply chain forecast has been or will be made.",
     "datatypeProperties": [
         {
-            "uri": "unece:ForecastTerms.dateTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:dateTypeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of date in these supply chain forecast terms."
         },
         {
-            "uri": "unece:ForecastTerms.forecastTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:forecastTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the forecast type in these supply chain forecast terms."
         },
         {
-            "uri": "unece:ForecastTerms.supplyChainForecastTermsCommitmentLevelCode",
+            "uri": "unece:supplyChainForecastTermsCommitmentLevelCode",
             "type": "unece:CommitmentLevelCodeList",
             "comment": "A code specifying a commitment level in these supply chain forecast terms."
         },
         {
-            "uri": "unece:ForecastTerms.supplyChainForecastTermsFrequencyCode",
-            "type": "schema:Text",
+            "uri": "unece:supplyChainForecastTermsFrequencyCode",
+            "type": "xsd:string",
             "comment": "A code specifying a frequency in these supply chain forecast terms."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:HeaderTradeAgreement.applicableForecastTerms",
-            "comment": "The supply chain forecast terms applicable to this header trade agreement."
-        },
-        {
-            "uri": "unece:LineTradeAgreement.applicableForecastTerms",
+            "uri": "unece:applicableForecastTerms",
             "comment": "The supply chain forecast terms applicable to this header trade agreement."
         }
     ]

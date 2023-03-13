@@ -5,25 +5,25 @@
     "comment": "An object used in the management of the status changes in a business process.",
     "datatypeProperties": [
         {
-            "uri": "unece:WorkflowObject.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:WorkflowObject.previousStatusCode",
+            "uri": "unece:previousStatusCode",
             "type": "unece:WorkflowStatusCodeList",
             "comment": "The code specifying the previous status of this trade workflow object."
         },
         {
-            "uri": "unece:WorkflowObject.workflowStatusCode",
+            "uri": "unece:workflowStatusCode",
             "type": "unece:WorkflowStatusCodeList",
             "comment": "The code specifying the status of this trade workflow object."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:HeaderTradeAgreement.quoteReferencedWorkflowObject",
-            "comment": "The quote trade workflow object referenced in this header trade agreement."
+            "uri": "unece:quoteReferencedWorkflowObject",
+            "comment": "An object used in the management of the status changes in a business process."
         }
     ]
 }

@@ -5,51 +5,51 @@
     "comment": "A collection of information specific to a subordinate item being used or reported on for trade purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:SubordinateTradeLineItem.categoryCode",
-            "type": "schema:Text",
+            "uri": "unece:categoryCode",
+            "type": "xsd:string",
             "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
-            "uri": "unece:SubordinateTradeLineItem.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:SubordinateTradeLineItem.responseReasonCode",
-            "type": "schema:Text",
+            "uri": "unece:responseReasonCode",
+            "type": "xsd:string",
             "comment": "A code specifying a response reason for this exchanged document."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:SubordinateTradeLineItem.applicableProduct",
+            "uri": "unece:applicableProduct",
             "type": "unece:TradeProduct",
             "comment": "A product applicable for this subordinate trade line item."
         },
         {
-            "uri": "unece:SubordinateTradeLineItem.specifiedProduct",
+            "uri": "unece:specifiedProduct",
             "type": "unece:Product",
             "comment": "The referenced product specified for this subordinate trade line item."
         },
         {
-            "uri": "unece:SubordinateTradeLineItem.specifiedSubordinateLineTradeAgreement",
+            "uri": "unece:specifiedSubordinateLineTradeAgreement",
             "type": "unece:SubordinateLineTradeAgreement",
             "comment": "The trade agreement specified for this subordinate trade line item."
         },
         {
-            "uri": "unece:SubordinateTradeLineItem.specifiedSubordinateLineTradeDelivery",
+            "uri": "unece:specifiedSubordinateLineTradeDelivery",
             "type": "unece:SubordinateLineTradeDelivery",
             "comment": "The delivery specified for this subordinate trade line item."
         },
         {
-            "uri": "unece:SubordinateTradeLineItem.specifiedSubordinateLineTradeSettlement",
+            "uri": "unece:specifiedSubordinateLineTradeSettlement",
             "type": "unece:SubordinateLineTradeSettlement",
             "comment": "A trade settlement specified for this subordinate trade line item."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:SupplyChainTradeLineItem.includedSubordinateTradeLineItem",
+            "uri": "unece:includedSubordinateTradeLineItem",
             "comment": "A subordinate trade line item included in this supply chain trade line item."
         }
     ]

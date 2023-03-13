@@ -1,93 +1,25 @@
 
 {
-    "label": "Licence",
-    "uri": "unece:Licence",
-    "comment": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade.",
-    "datatypeProperties": [
+    "label": "licence",
+    "uri": "unece:licence",
+    "comment": "A licence, expressed as text, for this production facility.",
+    "rangeIncludes": [
         {
-            "uri": "unece:Licence.assuranceLevelCode",
-            "type": "schema:Text",
-            "comment": "A code specifying an assurance level of this specified declaration."
-        },
-        {
-            "uri": "unece:Licence.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:Licence.expiryDateTime",
-            "type": "schema:Text",
-            "comment": "An expiry date, time, date time or other date time value for this specified licence."
-        },
-        {
-            "uri": "unece:Licence.identifier",
-            "type": "schema:Text",
-            "comment": "A proprietary identifier."
-        },
-        {
-            "uri": "unece:Licence.issueDateTime",
-            "type": "schema:Text",
-            "comment": "An issue date, time, date time or other date time value for this declared error."
-        },
-        {
-            "uri": "unece:Licence.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
-        },
-        {
-            "uri": "unece:Licence.subjectTypeCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a subject type for this licence."
-        },
-        {
-            "uri": "unece:Licence.typeCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a type of MDH health indication."
-        },
-        {
-            "uri": "unece:Licence.validIndicator",
-            "type": "schema:Boolean",
-            "comment": "The indication of whether or not this specified certificate is valid."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:Licence.associatedStandard",
-            "type": "unece:Standard",
-            "comment": "A referenced standard associated to this specified licence."
+            "uri": "unece:ProductionFacility",
+            "comment": "A man made physical structure, such as a building, in which something is produced."
         },
         {
-            "uri": "unece:Licence.grantedParty",
-            "type": "unece:Party",
-            "comment": "A party granted this specified licence."
+            "uri": "unece:TechnicalCharacteristic",
+            "comment": "A prominent technical attribute or aspect."
         },
         {
-            "uri": "unece:Licence.issuerParty",
-            "type": "unece:Party",
-            "comment": "A party that issues this specified declaration."
-        },
-        {
-            "uri": "unece:Licence.verifiedObject",
-            "type": "unece:Object",
-            "comment": "An object verified for this specified declaration."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:ProductionProcess.applicableLicence",
-            "comment": "A specified licence applicable to this production process."
-        },
-        {
-            "uri": "unece:Standard.applicableLicence",
-            "comment": "A specified licence applicable to this production process."
-        },
-        {
-            "uri": "unece:TradeParty.applicableLicence",
-            "comment": "A specified licence applicable to this production process."
-        },
-        {
-            "uri": "unece:TradeProduct.applicableLicence",
-            "comment": "A specified licence applicable to this production process."
+            "uri": "unece:ProductionFacility",
+            "comment": "A man made physical structure, such as a building, in which something is produced."
         }
     ]
 }

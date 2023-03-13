@@ -5,41 +5,37 @@
     "comment": "Common conditions contained in a contract or agreement applicable between trading partners.",
     "datatypeProperties": [
         {
-            "uri": "unece:Requirement.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:Requirement.rule",
-            "type": "schema:Text",
+            "uri": "unece:rule",
+            "type": "xsd:string",
             "comment": "A rule, expressed as text, for this specified requirement."
         },
         {
-            "uri": "unece:Requirement.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Requirement.specifiedPaymentTradeSettlement",
+            "uri": "unece:specifiedPaymentTradeSettlement",
             "type": "unece:PaymentTradeSettlement",
-            "comment": "A payment trade settlement specified for this trade price."
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         },
         {
-            "uri": "unece:Requirement.specifyingParty",
+            "uri": "unece:specifyingParty",
             "type": "unece:Party",
-            "comment": "The party specifying this specified requirement."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ExperienceEvent.providedRequirement",
-            "comment": "A requirement provided for this experience product."
-        },
-        {
-            "uri": "unece:ExperienceProduct.providedRequirement",
-            "comment": "A requirement provided for this experience product."
+            "uri": "unece:providedRequirement",
+            "comment": "Common conditions contained in a contract or agreement applicable between trading partners."
         }
     ]
 }

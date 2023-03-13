@@ -1,5 +1,0 @@
----
-title: reportingIOTDeviceTransportEvent
-permalink: LogisticsTransportEquipment.reportingIOTDeviceTransportEvent.html
-jsonid: logisticstransportequipment_reportingiotdevicetransportevent
----

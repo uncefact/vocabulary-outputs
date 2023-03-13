@@ -1,5 +1,0 @@
----
-title: temperatureSettingInstructionsDescriptionCode
-permalink: TemperatureSettingInstructions.temperatureSettingInstructionsDescriptionCode.html
-jsonid: temperaturesettinginstructions_temperaturesettinginstructionsdescriptioncode
----

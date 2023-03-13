@@ -1,5 +1,0 @@
----
-title: maximumStorageHumidityApplicableMeasure
-permalink: HandlingInstructions.maximumStorageHumidityApplicableMeasure.html
-jsonid: handlinginstructions_maximumstoragehumidityapplicablemeasure
----

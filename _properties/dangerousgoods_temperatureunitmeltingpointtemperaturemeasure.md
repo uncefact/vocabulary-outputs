@@ -1,5 +1,0 @@
----
-title: temperatureUnitMeltingPointTemperatureMeasure
-permalink: DangerousGoods.temperatureUnitMeltingPointTemperatureMeasure.html
-jsonid: dangerousgoods_temperatureunitmeltingpointtemperaturemeasure
----

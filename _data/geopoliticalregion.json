@@ -5,44 +5,36 @@
     "comment": "A collection of countries and/or economies united for trade purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:GeopoliticalRegion.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:GeopoliticalRegion.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:GeopoliticalRegion.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:GeopoliticalRegion.includedCountry",
+            "uri": "unece:includedCountry",
             "type": "unece:Country",
             "comment": "A country included in this trade geopolitical region."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Consignment.exportGeopoliticalRegion",
-            "comment": "The geopolitical region of export for this supply chain consignment item."
+            "uri": "unece:exportGeopoliticalRegion",
+            "comment": "A collection of countries and/or economies united for trade purposes."
         },
         {
-            "uri": "unece:Consignment.originGeopoliticalRegion",
-            "comment": "The geopolitical region of origin for this supply chain consignment item."
-        },
-        {
-            "uri": "unece:ConsignmentItem.exportGeopoliticalRegion",
-            "comment": "The geopolitical region of export for this supply chain consignment item."
-        },
-        {
-            "uri": "unece:ConsignmentItem.originGeopoliticalRegion",
-            "comment": "The geopolitical region of origin for this supply chain consignment item."
+            "uri": "unece:originGeopoliticalRegion",
+            "comment": "A collection of countries and/or economies united for trade purposes."
         }
     ]
 }

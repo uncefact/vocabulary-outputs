@@ -1,5 +1,0 @@
----
-title: equivalentTransferTotalAmount
-permalink: TradeSettlementPaymentMonetarySummation.equivalentTransferTotalAmount.html
-jsonid: tradesettlementpaymentmonetarysummation_equivalenttransfertotalamount
----

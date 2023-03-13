@@ -1,5 +1,0 @@
----
-title: qualityResultReferenceLevelDescription
-permalink: InspectionResultCharacteristic.qualityResultReferenceLevelDescription.html
-jsonid: inspectionresultcharacteristic_qualityresultreferenceleveldescription
----

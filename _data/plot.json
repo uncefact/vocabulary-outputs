@@ -5,85 +5,81 @@
     "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
     "datatypeProperties": [
         {
-            "uri": "unece:Plot.endDateTime",
-            "type": "schema:Text",
+            "uri": "unece:endDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the end of this available period of time."
         },
         {
-            "uri": "unece:Plot.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Plot.regulatoryOrganicIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:regulatoryOrganicIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not this crop plot is certified as regulatory organic."
         },
         {
-            "uri": "unece:Plot.regulatorySoilTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:regulatorySoilTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the type of regulatory soil for this crop plot."
         },
         {
-            "uri": "unece:Plot.startDateTime",
-            "type": "schema:Text",
+            "uri": "unece:startDateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the start of this available period of time."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Plot.applicableAgriculturalProcess",
+            "uri": "unece:applicableAgriculturalProcess",
             "type": "unece:AgriculturalProcess",
             "comment": "An agricultural process crop production applicable for this field crop."
         },
         {
-            "uri": "unece:Plot.appliedAgriculturalApplication",
+            "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this agricultural zone area."
+            "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product."
         },
         {
-            "uri": "unece:Plot.areaMeasure",
+            "uri": "unece:areaMeasure",
             "type": "unece:MeasureType",
-            "comment": "The area measure for this crop plot."
+            "comment": ""
         },
         {
-            "uri": "unece:Plot.grownCrop",
+            "uri": "unece:grownCrop",
             "type": "unece:FieldCrop",
             "comment": "A field crop grown on this crop plot."
         },
         {
-            "uri": "unece:Plot.specifiedAgriculturalCertificate",
+            "uri": "unece:specifiedAgriculturalCertificate",
             "type": "unece:AgriculturalCertificate",
-            "comment": "An agricultural certificate specified for this crop plot."
+            "comment": "A legal proof of ownership, worthiness or qualification to operate an agricultural item."
         },
         {
-            "uri": "unece:Plot.specifiedAgriculturalCharacteristic",
+            "uri": "unece:specifiedAgriculturalCharacteristic",
             "type": "unece:AgriculturalCharacteristic",
-            "comment": "An agricultural characteristic specified for this crop plot."
+            "comment": "A prominent attribute or aspect of an agricultural object."
         },
         {
-            "uri": "unece:Plot.specifiedArea",
+            "uri": "unece:specifiedArea",
             "type": "unece:Area",
             "comment": "An agricultural zone area specified for this crop plot."
         },
         {
-            "uri": "unece:Plot.specifiedLocation",
+            "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location specified for this material."
+            "comment": "A reference to a physical location or place."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:AgriculturalApplication.specifiedPlot",
-            "comment": "A crop plot specified for this agricultural application."
-        },
-        {
-            "uri": "unece:Area.specifiedPlot",
-            "comment": "A crop plot specified for this agricultural application."
-        },
-        {
-            "uri": "unece:FieldCrop.grownPlot",
+            "uri": "unece:grownPlot",
             "comment": "The plot where this field crop is grown."
+        },
+        {
+            "uri": "unece:specifiedPlot",
+            "comment": "A crop plot specified for this agricultural application."
         }
     ]
 }

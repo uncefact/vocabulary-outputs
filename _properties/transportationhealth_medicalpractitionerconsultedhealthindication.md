@@ -1,5 +1,0 @@
----
-title: medicalPractitionerConsultedHealthIndication
-permalink: TransportationHealth.medicalPractitionerConsultedHealthIndication.html
-jsonid: transportationhealth_medicalpractitionerconsultedhealthindication
----

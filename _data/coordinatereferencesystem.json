@@ -5,44 +5,40 @@
     "comment": "A coordinate reference system that is used in a contextually local sense to describe the relative locations of objects in which coordinates of points are recorded in a Coordinate System (CS) (reference ISO 19111).",
     "datatypeProperties": [
         {
-            "uri": "unece:CoordinateReferenceSystem.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:CoordinateReferenceSystem.level",
-            "type": "schema:Text",
+            "uri": "unece:level",
+            "type": "xsd:string",
             "comment": "The level, expressed as text, of this CS engineering coordinate reference system."
         },
         {
-            "uri": "unece:CoordinateReferenceSystem.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:CoordinateReferenceSystem.specifiedPeriod",
+            "uri": "unece:specifiedPeriod",
             "type": "unece:DelimitedPeriod",
-            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+            "comment": "A period of time from a start date time onwards up to an end date time."
         },
         {
-            "uri": "unece:CoordinateReferenceSystem.subordinateCoordinateReferenceSystem",
+            "uri": "unece:subordinateCoordinateReferenceSystem",
             "type": "unece:CoordinateReferenceSystem",
             "comment": "A CS engineering coordinate reference system subordinate to this CS engineering coordinate reference system."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:CoordinateReferenceSystem.subordinateCoordinateReferenceSystem",
+            "uri": "unece:subordinateCoordinateReferenceSystem",
             "comment": "A CS engineering coordinate reference system subordinate to this CS engineering coordinate reference system."
         },
         {
-            "uri": "unece:GeographicalCoordinate.usedCoordinateReferenceSystem",
-            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
-        },
-        {
-            "uri": "unece:GeographicalFeature.usedCoordinateReferenceSystem",
+            "uri": "unece:usedCoordinateReferenceSystem",
             "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
         }
     ]

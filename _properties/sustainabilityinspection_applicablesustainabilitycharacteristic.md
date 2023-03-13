@@ -1,5 +1,0 @@
----
-title: applicableSustainabilityCharacteristic
-permalink: SustainabilityInspection.applicableSustainabilityCharacteristic.html
-jsonid: sustainabilityinspection_applicablesustainabilitycharacteristic
----

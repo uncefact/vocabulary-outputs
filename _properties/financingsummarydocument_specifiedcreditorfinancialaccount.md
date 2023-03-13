@@ -1,5 +1,0 @@
----
-title: specifiedCreditorFinancialAccount
-permalink: FinancingSummaryDocument.specifiedCreditorFinancialAccount.html
-jsonid: financingsummarydocument_specifiedcreditorfinancialaccount
----

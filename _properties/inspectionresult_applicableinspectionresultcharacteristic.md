@@ -1,5 +1,0 @@
----
-title: applicableInspectionResultCharacteristic
-permalink: InspectionResult.applicableInspectionResultCharacteristic.html
-jsonid: inspectionresult_applicableinspectionresultcharacteristic
----

@@ -1,5 +1,0 @@
----
-title: radioactivePackageTransportIndexCode
-permalink: RadioactiveMaterial.radioactivePackageTransportIndexCode.html
-jsonid: radioactivematerial_radioactivepackagetransportindexcode
----

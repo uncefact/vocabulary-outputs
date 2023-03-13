@@ -5,27 +5,27 @@
     "comment": "A prepaid discharge of obligations in respect of funds or securities transferred between two or more parties.",
     "datatypeProperties": [
         {
-            "uri": "unece:AdvancePayment.receivedDateTime",
-            "type": "schema:DateTime",
+            "uri": "unece:receivedDateTime",
+            "type": "xsd:datetime",
             "comment": "The date, time, date time, or other date time value when information related to this transport event was received, from the perspective of the receiver."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:AdvancePayment.includedTax",
+            "uri": "unece:includedTax",
             "type": "unece:Tax",
             "comment": "A tax included in this advance payment."
         },
         {
-            "uri": "unece:AdvancePayment.paidAmount",
+            "uri": "unece:paidAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value paid or to be paid for this instalment payment."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:HeaderTradeSettlement.specifiedAdvancePayment",
-            "comment": "An advance payment specified in this header trade settlement."
+            "uri": "unece:specifiedAdvancePayment",
+            "comment": "A prepaid discharge of obligations in respect of funds or securities transferred between two or more parties."
         }
     ]
 }

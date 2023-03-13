@@ -1,5 +1,0 @@
----
-title: accountingDebitCreditStatusDirectionCode
-permalink: FinancialAdjustment.accountingDebitCreditStatusDirectionCode.html
-jsonid: financialadjustment_accountingdebitcreditstatusdirectioncode
----

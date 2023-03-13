@@ -5,67 +5,51 @@
     "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations.",
     "datatypeProperties": [
         {
-            "uri": "unece:TradeProductCertification.assertion",
-            "type": "schema:Text",
+            "uri": "unece:assertion",
+            "type": "xsd:string",
             "comment": "An assertion, expressed as text, for this animal certification."
         },
         {
-            "uri": "unece:TradeProductCertification.assertionCode",
-            "type": "schema:Text",
+            "uri": "unece:assertionCode",
+            "type": "xsd:string",
             "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
         },
         {
-            "uri": "unece:TradeProductCertification.responsibleAgency",
-            "type": "schema:Text",
+            "uri": "unece:responsibleAgency",
+            "type": "xsd:string",
             "comment": "A responsible agency, expressed as text, for this specified certification."
         },
         {
-            "uri": "unece:TradeProductCertification.standard",
-            "type": "schema:Text",
+            "uri": "unece:standard",
+            "type": "xsd:string",
             "comment": "A standard, expressed as text, for this specified certification."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:TradeProductCertification.applicableStandard",
+            "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
-            "uri": "unece:TradeProductCertification.relatedLocation",
+            "uri": "unece:relatedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location related to this animal certification."
+            "comment": "A reference to a physical location or place."
         },
         {
-            "uri": "unece:TradeProductCertification.specifiedAssertion",
+            "uri": "unece:specifiedAssertion",
             "type": "unece:Assertion",
-            "comment": "A sustainability assertion for this specified certification."
+            "comment": "A statement that user needs of the present are met without compromising the needs of future generations."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ProductBatchCertificate.applicableTradeProductCertification",
-            "comment": "A certification applicable to this trade product."
+            "uri": "unece:applicableTradeProductCertification",
+            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
-            "uri": "unece:ProductCertificate.applicableTradeProductCertification",
-            "comment": "A certification applicable to this trade product."
-        },
-        {
-            "uri": "unece:ProductionFacility.specifiedTradeProductCertification",
-            "comment": "A trade product certification specified for this production facility."
-        },
-        {
-            "uri": "unece:ProductionProcess.specifiedTradeProductCertification",
-            "comment": "A trade product certification specified for this production facility."
-        },
-        {
-            "uri": "unece:SpecifiedMaterial.applicableTradeProductCertification",
-            "comment": "A certification applicable to this trade product."
-        },
-        {
-            "uri": "unece:TradeProduct.applicableTradeProductCertification",
-            "comment": "A certification applicable to this trade product."
+            "uri": "unece:specifiedTradeProductCertification",
+            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         }
     ]
 }

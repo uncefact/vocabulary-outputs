@@ -1,5 +1,0 @@
----
-title: weightUnitCargoGrossWeightMeasure
-permalink: LogisticsTransportMeans.weightUnitCargoGrossWeightMeasure.html
-jsonid: logisticstransportmeans_weightunitcargogrossweightmeasure
----

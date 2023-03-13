@@ -1,52 +1,26 @@
 
 {
-    "label": "InspectionEvent",
-    "uri": "unece:InspectionEvent",
-    "comment": "A significant occurrence or happening related to an inspection.",
-    "datatypeProperties": [
+    "label": "inspectionEvent",
+    "uri": "unece:inspectionEvent",
+    "comment": "A significant occurrence or happening in a supply chain.",
+    "rangeIncludes": [
         {
-            "uri": "unece:InspectionEvent.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:InspectionEvent.occurrenceDateTime",
-            "type": "schema:Text",
-            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
-        },
-        {
-            "uri": "unece:InspectionEvent.typeCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a type of MDH health indication."
+            "uri": "unece:SupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:InspectionEvent.occurrenceLocation",
-            "type": "unece:Location",
-            "comment": "The referenced location for the occurrence of this supply chain event."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:Consignment.specifiedInspectionEvent",
-            "comment": "A specified inspection event for this sustainability inspection."
+            "uri": "unece:ProductInstance",
+            "comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process."
         },
         {
-            "uri": "unece:ConsignmentItem.specifiedInspectionEvent",
-            "comment": "A specified inspection event for this sustainability inspection."
+            "uri": "unece:LogisticsLocation",
+            "comment": "A logistics related physical location or place."
         },
         {
-            "uri": "unece:LogisticsLocation.specifiedInspectionEvent",
-            "comment": "A specified inspection event for this sustainability inspection."
-        },
-        {
-            "uri": "unece:SpecifiedInspection.specifiedInspectionEvent",
-            "comment": "A specified inspection event for this sustainability inspection."
-        },
-        {
-            "uri": "unece:SustainabilityInspection.specifiedInspectionEvent",
-            "comment": "A specified inspection event for this sustainability inspection."
+            "uri": "unece:ProductInstance",
+            "comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process."
         }
     ]
 }

@@ -1,46 +1,22 @@
 
 {
-    "label": "DeliveryInstructions",
-    "uri": "unece:DeliveryInstructions",
-    "comment": "Delivery information of an instructive nature.",
-    "datatypeProperties": [
+    "label": "deliveryInstructions",
+    "uri": "unece:deliveryInstructions",
+    "comment": "Delivery instructions for this piece of logistics transport equipment.",
+    "rangeIncludes": [
         {
-            "uri": "unece:DeliveryInstructions.deliveryInstructionsDescriptionCode",
-            "type": "schema:Text",
-            "comment": "The code specifying a description of these delivery instructions."
-        },
-        {
-            "uri": "unece:DeliveryInstructions.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:DeliveryInstructions.handling",
-            "type": "schema:Text",
-            "comment": "Delivery handling instructions expressed as text."
-        },
-        {
-            "uri": "unece:DeliveryInstructions.handlingCode",
-            "type": "schema:Text",
-            "comment": "A code specifying delivery handling instructions."
+            "uri": "unece:DeliveryInstructions",
+            "comment": "Delivery information of an instructive nature."
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:Consignment.deliveryInstructions",
-            "comment": "Delivery instructions for this piece of logistics transport equipment."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
-            "uri": "unece:HeaderTradeDelivery.specifiedDeliveryInstructions",
-            "comment": "Delivery instructions, at header level, specified for this trade delivery."
-        },
-        {
-            "uri": "unece:LineTradeDelivery.specifiedDeliveryInstructions",
-            "comment": "Delivery instructions, at header level, specified for this trade delivery."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment.deliveryInstructions",
-            "comment": "Delivery instructions for this piece of logistics transport equipment."
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         }
     ]
 }

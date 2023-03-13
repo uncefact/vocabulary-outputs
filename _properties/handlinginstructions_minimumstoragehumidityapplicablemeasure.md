@@ -1,5 +1,0 @@
----
-title: minimumStorageHumidityApplicableMeasure
-permalink: HandlingInstructions.minimumStorageHumidityApplicableMeasure.html
-jsonid: handlinginstructions_minimumstoragehumidityapplicablemeasure
----

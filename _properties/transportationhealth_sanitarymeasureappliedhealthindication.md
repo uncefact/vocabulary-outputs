@@ -1,5 +1,0 @@
----
-title: sanitaryMeasureAppliedHealthIndication
-permalink: TransportationHealth.sanitaryMeasureAppliedHealthIndication.html
-jsonid: transportationhealth_sanitarymeasureappliedhealthindication
----

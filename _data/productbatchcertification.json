@@ -5,55 +5,51 @@
     "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductBatchCertification.assertion",
-            "type": "schema:Text",
+            "uri": "unece:assertion",
+            "type": "xsd:string",
             "comment": "An assertion, expressed as text, for this animal certification."
         },
         {
-            "uri": "unece:ProductBatchCertification.assertionCode",
-            "type": "schema:Text",
+            "uri": "unece:assertionCode",
+            "type": "xsd:string",
             "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
         },
         {
-            "uri": "unece:ProductBatchCertification.responsibleAgency",
-            "type": "schema:Text",
+            "uri": "unece:responsibleAgency",
+            "type": "xsd:string",
             "comment": "A responsible agency, expressed as text, for this specified certification."
         },
         {
-            "uri": "unece:ProductBatchCertification.standard",
-            "type": "schema:Text",
+            "uri": "unece:standard",
+            "type": "xsd:string",
             "comment": "A standard, expressed as text, for this specified certification."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductBatchCertification.applicableStandard",
+            "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
-            "uri": "unece:ProductBatchCertification.relatedLocation",
+            "uri": "unece:relatedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location related to this animal certification."
+            "comment": "A reference to a physical location or place."
         },
         {
-            "uri": "unece:ProductBatchCertification.specifiedAssertion",
+            "uri": "unece:specifiedAssertion",
             "type": "unece:Assertion",
-            "comment": "A sustainability assertion for this specified certification."
+            "comment": "A statement that user needs of the present are met without compromising the needs of future generations."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:ProductBatch.applicableProductBatchCertification",
-            "comment": "A certification applicable to this product batch."
+            "uri": "unece:applicableProductBatchCertification",
+            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
-            "uri": "unece:ProductionFacility.specifiedProductBatchCertification",
-            "comment": "A product batch certification specified for this production facility."
-        },
-        {
-            "uri": "unece:ProductionProcess.specifiedProductBatchCertification",
-            "comment": "A product batch certification specified for this production facility."
+            "uri": "unece:specifiedProductBatchCertification",
+            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         }
     ]
 }

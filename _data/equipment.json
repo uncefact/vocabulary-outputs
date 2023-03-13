@@ -5,36 +5,36 @@
     "comment": "Hardware or software typically marketed by a company other than the original manufacturer.",
     "datatypeProperties": [
         {
-            "uri": "unece:Equipment.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Equipment.pollingCapabilityIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:pollingCapabilityIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not this OEM equipment has a polling capability."
         },
         {
-            "uri": "unece:Equipment.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Equipment.manufacturerParty",
+            "uri": "unece:manufacturerParty",
             "type": "unece:Party",
-            "comment": "A manufacturer party for this production process."
+            "comment": ""
         },
         {
-            "uri": "unece:Equipment.pollingRateMeasure",
+            "uri": "unece:pollingRateMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the polling rate for this OEM equipment."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:IOTDevice.interfaceEquipment",
+            "uri": "unece:interfaceEquipment",
             "comment": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
         }
     ]

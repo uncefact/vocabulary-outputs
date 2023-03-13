@@ -5,62 +5,62 @@
     "comment": "A label used for identifying goods for logistics purposes, such as a barcode, a radio frequency tag or a Vehicle Identification Number (VIN).",
     "datatypeProperties": [
         {
-            "uri": "unece:LogisticsLabel.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:LogisticsLabel.layoutTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:layoutTypeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the layout type of this logistics label."
         },
         {
-            "uri": "unece:LogisticsLabel.markingIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:markingIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not there is a marking on this logistics label."
         },
         {
-            "uri": "unece:LogisticsLabel.seriesEndId",
-            "type": "schema:Text",
+            "uri": "unece:seriesEndId",
+            "type": "xsd:string",
             "comment": "The identifier of the end of a series of packages within this referenced logistics package."
         },
         {
-            "uri": "unece:LogisticsLabel.seriesStartId",
-            "type": "schema:Text",
+            "uri": "unece:seriesStartId",
+            "type": "xsd:string",
             "comment": "The identifier of the start of a series of packages within this referenced logistics package."
         },
         {
-            "uri": "unece:LogisticsLabel.sizeCode",
-            "type": "schema:Text",
+            "uri": "unece:sizeCode",
+            "type": "xsd:string",
             "comment": "The code specifying the size of this logistics label."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:LogisticsLabel.includedSection",
+            "uri": "unece:includedSection",
             "type": "unece:Section",
-            "comment": "A section included in this logistics label."
+            "comment": "The parts into which a label is or may be divided."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:LineTradeDelivery.usedLabel",
-            "comment": "A logistics label, at line level, used for this trade delivery."
-        },
-        {
-            "uri": "unece:ShippingMarks.barcodeLabel",
+            "uri": "unece:barcodeLabel",
             "comment": "A barcode label that is a part of these logistics shipping marks."
         },
         {
-            "uri": "unece:ShippingMarks.rFIDLabel",
+            "uri": "unece:rFIDLabel",
             "comment": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
         },
         {
-            "uri": "unece:ShippingMarks.radioactiveLabel",
+            "uri": "unece:radioactiveLabel",
             "comment": "Radioactive labelling that is a part of these logistics shipping marks."
         },
         {
-            "uri": "unece:ShippingMarks.vINLabel",
+            "uri": "unece:usedLabel",
+            "comment": "A label used for identifying goods for logistics purposes, such as a barcode, a radio frequency tag or a Vehicle Identification Number (VIN)."
+        },
+        {
+            "uri": "unece:vINLabel",
             "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
         }
     ]

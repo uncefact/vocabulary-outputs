@@ -1,5 +1,0 @@
----
-title: fissileCriticalitySafetyIndexNumeric
-permalink: RadioactiveMaterial.fissileCriticalitySafetyIndexNumeric.html
-jsonid: radioactivematerial_fissilecriticalitysafetyindexnumeric
----

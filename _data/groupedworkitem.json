@@ -5,95 +5,91 @@
     "comment": "A grouping of related work items.",
     "datatypeProperties": [
         {
-            "uri": "unece:GroupedWorkItem.alternativeClassificationCode",
-            "type": "schema:Text",
+            "uri": "unece:alternativeClassificationCode",
+            "type": "xsd:string",
             "comment": "A code specifying an alternative classification for this basic work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.comment",
-            "type": "schema:Text",
+            "uri": "unece:comment",
+            "type": "xsd:string",
             "comment": "A comment, expressed as text for this MDH illness."
         },
         {
-            "uri": "unece:GroupedWorkItem.contractualLanguageCode",
-            "type": "schema:Text",
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:string",
             "comment": "The code specifying the contractual language for this basic work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:GroupedWorkItem.index",
-            "type": "schema:Text",
+            "uri": "unece:index",
+            "type": "xsd:string",
             "comment": "The index, expressed as text, to be used for this basic work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.priceListItemId",
-            "type": "schema:Text",
+            "uri": "unece:priceListItemId",
+            "type": "xsd:string",
             "comment": "The identifier of a price list item for this grouped work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.primaryClassificationCode",
-            "type": "schema:Text",
+            "uri": "unece:primaryClassificationCode",
+            "type": "xsd:string",
             "comment": "A code specifying a primary classification value for this work item quantity analysis."
         },
         {
-            "uri": "unece:GroupedWorkItem.requestedActionCode",
-            "type": "schema:Text",
+            "uri": "unece:requestedActionCode",
+            "type": "xsd:string",
             "comment": "A code specifying a requested action for this basic work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:GroupedWorkItem.actualComplexDescription",
+            "uri": "unece:actualComplexDescription",
             "type": "unece:ComplexDescription",
-            "comment": "An actual complex description for this basic work item."
+            "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a work item complex description."
         },
         {
-            "uri": "unece:GroupedWorkItem.binaryFile",
+            "uri": "unece:binaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A specified binary file referenced by this basic work item."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
-            "uri": "unece:GroupedWorkItem.changedStatus",
+            "uri": "unece:changedStatus",
             "type": "unece:RecordedStatus",
-            "comment": "A changed recorded status for this basic work item."
+            "comment": "Recorded information relevant to a condition or a position of an object."
         },
         {
-            "uri": "unece:GroupedWorkItem.itemBasicWorkItem",
+            "uri": "unece:itemBasicWorkItem",
             "type": "unece:BasicWorkItem",
             "comment": "A basic work item in this basic work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.itemGroupedWorkItem",
+            "uri": "unece:itemGroupedWorkItem",
             "type": "unece:GroupedWorkItem",
             "comment": "A grouped work item in this valuation breakdown statement."
         },
         {
-            "uri": "unece:GroupedWorkItem.totalPrice",
+            "uri": "unece:totalPrice",
             "type": "unece:CalculatedPrice",
             "comment": "A total calculated price for this basic work item."
         },
         {
-            "uri": "unece:GroupedWorkItem.totalQuantity",
+            "uri": "unece:totalQuantity",
             "type": "unece:QuantityType",
-            "comment": "The total quantity for this basic work item."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:BreakdownStatement.itemGroupedWorkItem",
-            "comment": "A grouped work item in this valuation breakdown statement."
-        },
-        {
-            "uri": "unece:GroupedWorkItem.itemGroupedWorkItem",
+            "uri": "unece:itemGroupedWorkItem",
             "comment": "A grouped work item in this valuation breakdown statement."
         }
     ]

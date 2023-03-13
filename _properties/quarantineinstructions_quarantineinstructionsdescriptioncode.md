@@ -1,5 +1,0 @@
----
-title: quarantineInstructionsDescriptionCode
-permalink: QuarantineInstructions.quarantineInstructionsDescriptionCode.html
-jsonid: quarantineinstructions_quarantineinstructionsdescriptioncode
----

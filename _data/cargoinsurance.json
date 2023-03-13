@@ -5,31 +5,31 @@
     "comment": "Insurance coverage for cargo during transport movements.",
     "datatypeProperties": [
         {
-            "uri": "unece:CargoInsurance.contractGeneralConditions",
-            "type": "schema:Text",
+            "uri": "unece:contractGeneralConditions",
+            "type": "xsd:string",
             "comment": "The contract general conditions, expressed as text, for this transport cargo insurance."
         },
         {
-            "uri": "unece:CargoInsurance.coverageCode",
-            "type": "schema:Text",
+            "uri": "unece:coverageCode",
+            "type": "xsd:string",
             "comment": "The code specifying the coverage of this transport cargo insurance."
         },
         {
-            "uri": "unece:CargoInsurance.coverageDescription",
-            "type": "schema:Text",
+            "uri": "unece:coverageDescription",
+            "type": "xsd:string",
             "comment": "The textual description of the coverage of this transport cargo insurance."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:CargoInsurance.coverageParty",
+            "uri": "unece:coverageParty",
             "type": "unece:Party",
-            "comment": "The coverage party for this transport cargo insurance."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:Consignment.applicableCargoInsurance",
+            "uri": "unece:applicableCargoInsurance",
             "comment": "The cargo insurance applicable to this supply chain consignment."
         }
     ]

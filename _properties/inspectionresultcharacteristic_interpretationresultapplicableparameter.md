@@ -1,5 +1,0 @@
----
-title: interpretationResultApplicableParameter
-permalink: InspectionResultCharacteristic.interpretationResultApplicableParameter.html
-jsonid: inspectionresultcharacteristic_interpretationresultapplicableparameter
----

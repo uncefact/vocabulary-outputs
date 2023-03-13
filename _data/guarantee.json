@@ -1,36 +1,29 @@
 
 {
-    "label": "Guarantee",
-    "uri": "unece:Guarantee",
-    "comment": "An official promise or assurance to fulfil a financial obligation.",
-    "datatypeProperties": [
+    "label": "guarantee",
+    "uri": "unece:guarantee",
+    "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure.",
+    "rangeIncludes": [
         {
-            "uri": "unece:Guarantee.condition",
-            "type": "schema:Text",
-            "comment": "A condition or status, expressed as text, for this process characteristic."
-        },
-        {
-            "uri": "unece:Guarantee.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:Guarantee.effectiveDelimitedPeriod",
-            "type": "unece:DelimitedPeriod",
-            "comment": "The period within which this financial guarantee is effective."
+            "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
         },
         {
-            "uri": "unece:Guarantee.liabilityAmount",
-            "type": "unece:AmountType",
-            "comment": "The monetary value of the liability in this financial guarantee."
-        }
-    ],
-    "referencedBy": [
+            "uri": "unece:RegulatoryProcedure",
+            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+        },
         {
-            "uri": "unece:PaymentTradeSettlement.identifiedGuarantee",
-            "comment": "The financial guarantee identified for this payment trade settlement."
+            "uri": "unece:Tax",
+            "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
         }
     ]
 }

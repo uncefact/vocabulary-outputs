@@ -5,69 +5,61 @@
     "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective.",
     "datatypeProperties": [
         {
-            "uri": "unece:ObservationObjectiveParameter.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.parameterType",
-            "type": "schema:Text",
+            "uri": "unece:parameterType",
+            "type": "xsd:string",
             "comment": "A type, expressed as text, for this observation objective parameter."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.statusCode",
-            "type": "schema:Text",
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
             "comment": "A code specifying a status for this trade product."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.value",
-            "type": "schema:Text",
+            "uri": "unece:value",
+            "type": "xsd:string",
             "comment": "A value, expressed as text, for this document characteristic."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.valueAllowedIndicator",
-            "type": "schema:Boolean",
+            "uri": "unece:valueAllowedIndicator",
+            "type": "xsd:boolean",
             "comment": "The indication of whether or not the value for this specified parameter is allowed."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ObservationObjectiveParameter.statusValueMeasure",
+            "uri": "unece:statusValueMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of a value of the status for this specified parameter."
+            "comment": ""
         },
         {
-            "uri": "unece:ObservationObjectiveParameter.valueMeasure",
+            "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of a value for this document characteristic."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:InspectionResultCharacteristic.interpretationResultApplicableParameter",
-            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
-        },
-        {
-            "uri": "unece:ObservationResult.interpretationResultApplicableParameter",
-            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
-        },
-        {
-            "uri": "unece:ObservationResultCharacteristic.interpretationResultApplicableParameter",
+            "uri": "unece:interpretationResultApplicableParameter",
             "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
         }
     ]

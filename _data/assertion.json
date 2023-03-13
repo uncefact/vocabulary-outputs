@@ -1,123 +1,37 @@
 
 {
-    "label": "Assertion",
-    "uri": "unece:Assertion",
-    "comment": "A statement that user needs of the present are met without compromising the needs of future generations.",
-    "datatypeProperties": [
+    "label": "assertion",
+    "uri": "unece:assertion",
+    "comment": "An assertion, expressed as text, for this animal certification.",
+    "rangeIncludes": [
         {
-            "uri": "unece:Assertion.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
-        },
-        {
-            "uri": "unece:Assertion.descriptionCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a description of this technical characteristic."
-        },
-        {
-            "uri": "unece:Assertion.identifier",
-            "type": "schema:Text",
-            "comment": "A proprietary identifier."
-        },
-        {
-            "uri": "unece:Assertion.issuingPartyId",
-            "type": "schema:Text",
-            "comment": "An identifier of a party issuing this sustainability assertion."
-        },
-        {
-            "uri": "unece:Assertion.statusCode",
-            "type": "schema:Text",
-            "comment": "A code specifying a status for this trade product."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:Assertion.applicableStandard",
-            "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
+            "uri": "unece:OrganizationalCertification",
+            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
         },
         {
-            "uri": "unece:Assertion.relatedPolicy",
-            "type": "unece:Policy",
-            "comment": "A compliance policy related to this sustainability assertion."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:AgriculturalCertificate.applicableAssertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
+            "uri": "unece:ProcessCertification",
+            "comment": "The process of certifying that a process has met performance and quality assurance tests, or qualification requirements."
         },
         {
-            "uri": "unece:AnimalCertificate.applicableAssertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
+            "uri": "unece:ProductBatchCertification",
+            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
-            "uri": "unece:AnimalCertification.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
+            "uri": "unece:SpecifiedCertification",
+            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
         },
         {
-            "uri": "unece:InspectionResult.obtainedAssertion",
-            "comment": "A sustainability assertion obtained by means of this specified inspection result."
+            "uri": "unece:TradeProductCertification",
+            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
-            "uri": "unece:OrganizationalCertificate.applicableAssertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:OrganizationalCertification.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:ProcessCertificate.applicableAssertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProcessCertification.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:ProductBatch.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:ProductBatchCertificate.applicableAssertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductBatchCertification.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:ProductCertificate.applicableAssertion",
-            "comment": "A sustainability assertion applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:ProductLabel.includedAssertion",
-            "comment": "A sustainability assertion included on this product label."
-        },
-        {
-            "uri": "unece:ProductionProcess.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:SpecifiedCertification.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:Standard.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:TradeParty.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:TradeProduct.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:TradeProductCertification.specifiedAssertion",
-            "comment": "A sustainability assertion for this specified certification."
+            "uri": "unece:AnimalCertification",
+            "comment": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations."
         }
     ]
 }

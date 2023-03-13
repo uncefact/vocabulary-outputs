@@ -5,51 +5,47 @@
     "comment": "Any materials unused and rejected as unwanted during a production process.",
     "datatypeProperties": [
         {
-            "uri": "unece:ProductionWasteMaterial.typeCode",
-            "type": "schema:Text",
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:ProductionWasteMaterial.applicableProductCertificate",
+            "uri": "unece:applicableProductCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate applicable to this production waste material component."
+            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about the product."
         },
         {
-            "uri": "unece:ProductionWasteMaterial.applicableProductionWasteRecoveryDisposalProcess",
+            "uri": "unece:applicableProductionWasteRecoveryDisposalProcess",
             "type": "unece:ProductionWasteRecoveryDisposalProcess",
             "comment": "A production waste recovery disposal process applicable to this production waste material."
         },
         {
-            "uri": "unece:ProductionWasteMaterial.applicableSustainabilityCharacteristic",
+            "uri": "unece:applicableSustainabilityCharacteristic",
             "type": "unece:SustainabilityCharacteristic",
-            "comment": "A characteristic applicable to this sustainability inspection."
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
         {
-            "uri": "unece:ProductionWasteMaterial.includedProductionWasteMaterialComponent",
+            "uri": "unece:includedProductionWasteMaterialComponent",
             "type": "unece:ProductionWasteMaterialComponent",
             "comment": "A production waste material component included in this production waste material."
         },
         {
-            "uri": "unece:ProductionWasteMaterial.volumeMeasure",
+            "uri": "unece:volumeMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the volume of this distinct chemical."
+            "comment": ""
         },
         {
-            "uri": "unece:ProductionWasteMaterial.weightMeasure",
+            "uri": "unece:weightMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of a weight (mass) of this logistics packaging."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:AgriculturalProcess.reportedProductionWasteMaterial",
-            "comment": "Production waste material reported for this agricultural crop production process."
-        },
-        {
-            "uri": "unece:ProductionProcess.reportedProductionWasteMaterial",
-            "comment": "Production waste material reported for this agricultural crop production process."
+            "uri": "unece:reportedProductionWasteMaterial",
+            "comment": "Any materials unused and rejected as unwanted during a production process."
         }
     ]
 }

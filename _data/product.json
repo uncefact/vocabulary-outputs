@@ -5,101 +5,97 @@
     "comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
     "datatypeProperties": [
         {
-            "uri": "unece:Product.buyerAssignedId",
-            "type": "schema:Text",
+            "uri": "unece:buyerAssignedId",
+            "type": "xsd:string",
             "comment": "A buyer assigned identifier of this product batch."
         },
         {
-            "uri": "unece:Product.description",
-            "type": "schema:Text",
-            "comment": "A textual description for the type of transportation waste recovery disposal process."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
         },
         {
-            "uri": "unece:Product.globalId",
-            "type": "schema:Text",
+            "uri": "unece:globalId",
+            "type": "xsd:string",
             "comment": "A global identifier for this supply chain consignment item."
         },
         {
-            "uri": "unece:Product.identifier",
-            "type": "schema:Text",
+            "uri": "unece:identifier",
+            "type": "xsd:string",
             "comment": "A proprietary identifier."
         },
         {
-            "uri": "unece:Product.industryAssignedId",
-            "type": "schema:Text",
+            "uri": "unece:industryAssignedId",
+            "type": "xsd:string",
             "comment": "A unique industry assigned identifier for this product."
         },
         {
-            "uri": "unece:Product.manufacturerAssignedId",
-            "type": "schema:Text",
+            "uri": "unece:manufacturerAssignedId",
+            "type": "xsd:string",
             "comment": "A manufacturer assigned identifier of this product batch."
         },
         {
-            "uri": "unece:Product.name",
-            "type": "schema:Text",
-            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:Product.relationshipTypeCode",
-            "type": "schema:Text",
+            "uri": "unece:relationshipTypeCode",
+            "type": "xsd:string",
             "comment": "A code specifying a type of relationship for this referenced product."
         },
         {
-            "uri": "unece:Product.sellerAssignedId",
-            "type": "schema:Text",
+            "uri": "unece:sellerAssignedId",
+            "type": "xsd:string",
             "comment": "A seller assigned identifier of this product batch."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:Product.unitQuantity",
+            "uri": "unece:unitQuantity",
             "type": "unece:QuantityType",
-            "comment": "A number of units for this supply chain event."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:SubordinateTradeLineItem.specifiedProduct",
-            "comment": "The referenced product specified for this subordinate trade line item."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.accessoryApplicableProduct",
+            "uri": "unece:accessoryApplicableProduct",
             "comment": "A referenced accessory product applicable for this supply chain trade line item."
         },
         {
-            "uri": "unece:SupplyChainTradeLineItem.additionalApplicableProduct",
+            "uri": "unece:additionalApplicableProduct",
             "comment": "A referenced product additionally applicable with this supply chain trade line item."
         },
         {
-            "uri": "unece:SupplyChainTradeLineItem.complementaryApplicableProduct",
+            "uri": "unece:complementaryApplicableProduct",
             "comment": "A referenced complementary product applicable for this supply chain trade line item."
         },
         {
-            "uri": "unece:SupplyChainTradeLineItem.componentApplicableProduct",
+            "uri": "unece:componentApplicableProduct",
             "comment": "A referenced component product applicable for this supply chain trade line item."
         },
         {
-            "uri": "unece:SupplyChainTradeLineItem.requiredApplicableProduct",
-            "comment": "A required product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.substituteApplicableProduct",
-            "comment": "A referenced substitute product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem.substitutedProduct",
-            "comment": "A referenced product substituted for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:TradeProduct.includedProduct",
+            "uri": "unece:includedProduct",
             "comment": "An included product referenced from this trade product."
         },
         {
-            "uri": "unece:TradeProduct.substituteProduct",
+            "uri": "unece:requiredApplicableProduct",
+            "comment": "A required product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:specifiedProduct",
+            "comment": "The referenced product specified for this subordinate trade line item."
+        },
+        {
+            "uri": "unece:substituteApplicableProduct",
+            "comment": "A referenced substitute product applicable for this supply chain trade line item."
+        },
+        {
+            "uri": "unece:substituteProduct",
             "comment": "A referenced product that may substitute for this trade product."
         },
         {
-            "uri": "unece:TradeProduct.substitutedProduct",
+            "uri": "unece:substitutedProduct",
             "comment": "A referenced product substituted for this supply chain trade line item."
         }
     ]
