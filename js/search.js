@@ -33,7 +33,7 @@ const search = {
             let options = {
                 valueNames: ['field.label', 'field.comment'],
                 item: function (values) {
-                    return `<tr><td class='search-results__label'><a href="${self.getUrlById(values.id)}">${values.fields.label}</a></td><td class='search-results__comment'>${values.fields.comment}</td></tr>`;
+                    return `<tr><td class='search-results__label'><a href="${self.getUrlById(values.id)}">${values.id}</a></td><td class='search-results__comment'>${values.fields.comment}</td></tr>`;
                 },
                 page: 20,
                 searchClass: 'js-search-filter',
