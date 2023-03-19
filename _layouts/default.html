@@ -30,5 +30,9 @@ layout: compress
         document.documentElement.scrollTop = 0;
       }
     </script>
+    <script>
+      {%- assign mapping = site.data.mapping -%}
+      localStorage.setItem('mapping', '{{ mapping | jsonify }}');
+    </script>
   </body>
 </html>
