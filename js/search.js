@@ -6,7 +6,7 @@ const search = {
             q: searchQuery,
             size: 1000,
             fq: "dataset:'test'",
-            sort: 'type'
+            sort: 'type asc'
         })
 
         const response = await fetch(url, {
