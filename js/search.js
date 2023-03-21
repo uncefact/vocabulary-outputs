@@ -4,7 +4,9 @@ const search = {
     async postData(searchQuery) {
         url = 'https://test.uncefact.org/search' + '?' + new URLSearchParams({
             q: searchQuery,
-            size: 1000
+            size: 1000,
+            fq: "dataset:'test'",
+            sort: 'type'
         })
 
         const response = await fetch(url, {
