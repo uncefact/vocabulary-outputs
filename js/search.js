@@ -35,7 +35,8 @@ const search = {
             let options = {
                 valueNames: ['field.label', 'field.comment'],
                 item: function (values) {
-                    return `<tr><td class='search-results__label'><a href="${self.getUrlById(values.id)}">${values.id}</a></td><td class='search-results__comment'>${values.fields.comment}</td></tr>`;
+                    const key = values.id.split('_');
+                    return `<tr><td class='search-results__label'><a href="${self.getUrlById(key[1])}">${key[1]}</a></td><td class='search-results__comment'>${values.fields.comment}</td></tr>`;
                 },
                 page: 20,
                 searchClass: 'js-search-filter',
