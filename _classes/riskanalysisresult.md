@@ -1,5 +1,5 @@
 ---
 title: RiskAnalysisResult
-permalink: RiskAnalysisResult
+permalink: RiskAnalysisResult.html
 jsonid: riskanalysisresult
 ---

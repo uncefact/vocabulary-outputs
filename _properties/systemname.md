@@ -1,5 +1,5 @@
 ---
 title: systemName
-permalink: systemName
+permalink: systemName.html
 jsonid: systemname
 ---

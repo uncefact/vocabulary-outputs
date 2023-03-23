@@ -1,0 +1,5 @@
+---
+title: specifiedTradeSettlementHeaderMonetarySummation
+permalink: specifiedTradeSettlementHeaderMonetarySummation.html
+jsonid: specifiedtradesettlementheadermonetarysummation
+---

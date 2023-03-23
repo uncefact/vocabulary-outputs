@@ -1,5 +1,5 @@
 ---
 title: complementaryApplicableProduct
-permalink: complementaryApplicableProduct
+permalink: complementaryApplicableProduct.html
 jsonid: complementaryapplicableproduct
 ---

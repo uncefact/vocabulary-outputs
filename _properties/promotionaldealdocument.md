@@ -1,5 +1,5 @@
 ---
 title: promotionalDealDocument
-permalink: promotionalDealDocument
+permalink: promotionalDealDocument.html
 jsonid: promotionaldealdocument
 ---

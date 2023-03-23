@@ -1,5 +1,5 @@
 ---
 title: PaymentTradeSettlement
-permalink: PaymentTradeSettlement
+permalink: PaymentTradeSettlement.html
 jsonid: paymenttradesettlement
 ---

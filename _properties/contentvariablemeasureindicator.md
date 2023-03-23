@@ -1,5 +1,5 @@
 ---
 title: contentVariableMeasureIndicator
-permalink: contentVariableMeasureIndicator
+permalink: contentVariableMeasureIndicator.html
 jsonid: contentvariablemeasureindicator
 ---

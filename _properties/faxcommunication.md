@@ -1,5 +1,5 @@
 ---
 title: faxCommunication
-permalink: faxCommunication
+permalink: faxCommunication.html
 jsonid: faxcommunication
 ---

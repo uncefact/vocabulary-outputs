@@ -1,5 +1,5 @@
 ---
 title: invoiceApplicableCurrencyExchange
-permalink: invoiceApplicableCurrencyExchange
+permalink: invoiceApplicableCurrencyExchange.html
 jsonid: invoiceapplicablecurrencyexchange
 ---

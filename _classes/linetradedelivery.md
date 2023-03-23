@@ -1,5 +1,5 @@
 ---
 title: LineTradeDelivery
-permalink: LineTradeDelivery
+permalink: LineTradeDelivery.html
 jsonid: linetradedelivery
 ---

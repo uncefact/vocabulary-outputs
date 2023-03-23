@@ -1,5 +1,5 @@
 ---
 title: manoeuvringSpeedMeasure
-permalink: manoeuvringSpeedMeasure
+permalink: manoeuvringSpeedMeasure.html
 jsonid: manoeuvringspeedmeasure
 ---

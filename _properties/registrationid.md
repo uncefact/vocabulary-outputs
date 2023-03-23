@@ -1,5 +1,5 @@
 ---
 title: registrationId
-permalink: registrationId
+permalink: registrationId.html
 jsonid: registrationid
 ---

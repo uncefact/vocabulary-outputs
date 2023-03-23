@@ -1,5 +1,5 @@
 ---
 title: transportMeansType
-permalink: transportMeansType
+permalink: transportMeansType.html
 jsonid: transportmeanstype
 ---

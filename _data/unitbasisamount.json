@@ -2,23 +2,25 @@
 {
     "label": "unitBasisAmount",
     "uri": "unece:unitBasisAmount",
-    "comment": [
-        "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated.",
-        "The monetary value of the unit basis on which the allowance or charge is calculated."
-    ],
+    "comment": "",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:AmountType",
+            "comment": ""
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:AllowanceCharge",
-            "comment": "A component of pricing, such as a service, promotion, allowance or charge."
-        },
-        {
             "uri": "unece:TradeTax",
             "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:Tax",
+            "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         }
     ]
 }

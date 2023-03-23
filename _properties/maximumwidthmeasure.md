@@ -1,5 +1,5 @@
 ---
 title: maximumWidthMeasure
-permalink: maximumWidthMeasure
+permalink: maximumWidthMeasure.html
 jsonid: maximumwidthmeasure
 ---

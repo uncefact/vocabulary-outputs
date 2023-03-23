@@ -1,5 +1,5 @@
 ---
 title: ReferencePrice
-permalink: ReferencePrice
+permalink: ReferencePrice.html
 jsonid: referenceprice
 ---

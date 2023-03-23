@@ -1,5 +1,5 @@
 ---
 title: debitDateTime
-permalink: debitDateTime
+permalink: debitDateTime.html
 jsonid: debitdatetime
 ---

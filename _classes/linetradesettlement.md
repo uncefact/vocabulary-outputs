@@ -1,5 +1,5 @@
 ---
 title: LineTradeSettlement
-permalink: LineTradeSettlement
+permalink: LineTradeSettlement.html
 jsonid: linetradesettlement
 ---

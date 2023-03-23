@@ -1,5 +1,5 @@
 ---
 title: manufacturerAssignedId
-permalink: manufacturerAssignedId
+permalink: manufacturerAssignedId.html
 jsonid: manufacturerassignedid
 ---

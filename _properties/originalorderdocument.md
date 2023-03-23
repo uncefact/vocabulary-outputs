@@ -1,5 +1,5 @@
 ---
 title: originalOrderDocument
-permalink: originalOrderDocument
+permalink: originalOrderDocument.html
 jsonid: originalorderdocument
 ---

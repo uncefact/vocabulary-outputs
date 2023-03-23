@@ -1,5 +1,5 @@
 ---
 title: className
-permalink: className
+permalink: className.html
 jsonid: classname
 ---

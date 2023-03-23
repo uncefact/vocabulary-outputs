@@ -1,5 +1,5 @@
 ---
 title: calculatedRate
-permalink: calculatedRate
+permalink: calculatedRate.html
 jsonid: calculatedrate
 ---

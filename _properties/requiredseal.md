@@ -1,5 +1,5 @@
 ---
 title: requiredSeal
-permalink: requiredSeal
+permalink: requiredSeal.html
 jsonid: requiredseal
 ---

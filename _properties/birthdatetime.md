@@ -1,5 +1,5 @@
 ---
 title: birthDateTime
-permalink: birthDateTime
+permalink: birthDateTime.html
 jsonid: birthdatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: supplierAssignedSerialId
-permalink: supplierAssignedSerialId
+permalink: supplierAssignedSerialId.html
 jsonid: supplierassignedserialid
 ---

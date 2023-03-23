@@ -1,5 +1,5 @@
 ---
 title: tradingConsolidatorAssignedId
-permalink: tradingConsolidatorAssignedId
+permalink: tradingConsolidatorAssignedId.html
 jsonid: tradingconsolidatorassignedid
 ---

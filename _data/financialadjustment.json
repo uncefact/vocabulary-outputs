@@ -1,0 +1,65 @@
+
+{
+    "label": "FinancialAdjustment",
+    "uri": "unece:FinancialAdjustment",
+    "comment": "A correction or modification to reflect actual financial conditions.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:accountingDebitCreditStatusDirectionCode",
+            "type": "unece:AccountingDebitCreditStatusCodeList",
+            "comment": "The code specifying whether the financial adjustment must be subtracted or added."
+        },
+        {
+            "uri": "unece:actualDateTime",
+            "type": "xsd:string",
+            "comment": "An actual date, time, date time, or other date time value of this financial booking."
+        },
+        {
+            "uri": "unece:financialAdjustmentReasonCode",
+            "type": "unece:FinancialAdjustmentReasonCodeList",
+            "comment": "A code specifying a reason for this financial adjustment."
+        },
+        {
+            "uri": "unece:reason",
+            "type": "xsd:string",
+            "comment": "A reason, expressed as text, for this cancellation status."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:actualAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:actualQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:claimRelatedParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:invoiceReferenceDocument",
+            "type": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:relatedTax",
+            "type": "unece:Tax",
+            "comment": "A trade tax related to this financial adjustment."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:grandTotalSpecifiedAdjustment",
+            "comment": "A correction or modification to reflect actual financial conditions."
+        },
+        {
+            "uri": "unece:specifiedFinancialAdjustment",
+            "comment": "A correction or modification to reflect actual financial conditions."
+        }
+    ]
+}

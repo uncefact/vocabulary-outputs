@@ -1,5 +1,5 @@
 ---
 title: lengthMeasure
-permalink: lengthMeasure
+permalink: lengthMeasure.html
 jsonid: lengthmeasure
 ---

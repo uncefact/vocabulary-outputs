@@ -1,5 +1,5 @@
 ---
 title: totalDiscountAmount
-permalink: totalDiscountAmount
+permalink: totalDiscountAmount.html
 jsonid: totaldiscountamount
 ---

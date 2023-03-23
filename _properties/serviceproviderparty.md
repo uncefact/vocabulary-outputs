@@ -1,5 +1,5 @@
 ---
 title: serviceProviderParty
-permalink: serviceProviderParty
+permalink: serviceProviderParty.html
 jsonid: serviceproviderparty
 ---

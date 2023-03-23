@@ -1,5 +1,5 @@
 ---
 title: TransportPerson
-permalink: TransportPerson
+permalink: TransportPerson.html
 jsonid: transportperson
 ---

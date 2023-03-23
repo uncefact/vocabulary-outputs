@@ -1,5 +1,5 @@
 ---
 title: maximumLinearDimension
-permalink: maximumLinearDimension
+permalink: maximumLinearDimension.html
 jsonid: maximumlineardimension
 ---

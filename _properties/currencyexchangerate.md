@@ -1,5 +1,5 @@
 ---
 title: currencyExchangeRate
-permalink: currencyExchangeRate
+permalink: currencyExchangeRate.html
 jsonid: currencyexchangerate
 ---

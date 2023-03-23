@@ -1,5 +1,5 @@
 ---
 title: nilCarriageValueIndicator
-permalink: nilCarriageValueIndicator
+permalink: nilCarriageValueIndicator.html
 jsonid: nilcarriagevalueindicator
 ---

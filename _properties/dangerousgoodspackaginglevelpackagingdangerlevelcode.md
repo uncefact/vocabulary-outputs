@@ -1,5 +1,5 @@
 ---
 title: dangerousGoodsPackagingLevelPackagingDangerLevelCode
-permalink: dangerousGoodsPackagingLevelPackagingDangerLevelCode
+permalink: dangerousGoodsPackagingLevelPackagingDangerLevelCode.html
 jsonid: dangerousgoodspackaginglevelpackagingdangerlevelcode
 ---

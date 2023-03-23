@@ -1,5 +1,5 @@
 ---
 title: additionalInstructions
-permalink: additionalInstructions
+permalink: additionalInstructions.html
 jsonid: additionalinstructions
 ---

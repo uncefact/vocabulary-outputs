@@ -1,5 +1,5 @@
 ---
 title: affectedDistanceMeasure
-permalink: affectedDistanceMeasure
+permalink: affectedDistanceMeasure.html
 jsonid: affecteddistancemeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: powerInactiveTransportMeans
-permalink: powerInactiveTransportMeans
+permalink: powerInactiveTransportMeans.html
 jsonid: powerinactivetransportmeans
 ---

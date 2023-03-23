@@ -1,5 +1,5 @@
 ---
 title: priceListItemId
-permalink: priceListItemId
+permalink: priceListItemId.html
 jsonid: pricelistitemid
 ---

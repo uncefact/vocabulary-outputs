@@ -1,5 +1,5 @@
 ---
 title: specifiedMarking
-permalink: specifiedMarking
+permalink: specifiedMarking.html
 jsonid: specifiedmarking
 ---

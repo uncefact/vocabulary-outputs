@@ -1,5 +1,5 @@
 ---
 title: orderResponseDocument
-permalink: orderResponseDocument
+permalink: orderResponseDocument.html
 jsonid: orderresponsedocument
 ---

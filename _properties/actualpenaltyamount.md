@@ -1,5 +1,5 @@
 ---
 title: actualPenaltyAmount
-permalink: actualPenaltyAmount
+permalink: actualPenaltyAmount.html
 jsonid: actualpenaltyamount
 ---

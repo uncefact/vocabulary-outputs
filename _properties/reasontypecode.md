@@ -1,5 +1,5 @@
 ---
 title: reasonTypeCode
-permalink: reasonTypeCode
+permalink: reasonTypeCode.html
 jsonid: reasontypecode
 ---

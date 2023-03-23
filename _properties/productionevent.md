@@ -1,5 +1,5 @@
 ---
 title: productionEvent
-permalink: productionEvent
+permalink: productionEvent.html
 jsonid: productionevent
 ---

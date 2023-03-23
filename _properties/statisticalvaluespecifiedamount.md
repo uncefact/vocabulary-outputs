@@ -1,5 +1,5 @@
 ---
 title: statisticalValueSpecifiedAmount
-permalink: statisticalValueSpecifiedAmount
+permalink: statisticalValueSpecifiedAmount.html
 jsonid: statisticalvaluespecifiedamount
 ---

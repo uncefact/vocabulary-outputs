@@ -1,5 +1,5 @@
 ---
 title: IOTDevice
-permalink: IOTDevice
+permalink: IOTDevice.html
 jsonid: iotdevice
 ---

@@ -1,5 +1,5 @@
 ---
 title: inventoryManagerParty
-permalink: inventoryManagerParty
+permalink: inventoryManagerParty.html
 jsonid: inventorymanagerparty
 ---

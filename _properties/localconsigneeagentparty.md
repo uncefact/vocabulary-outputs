@@ -1,5 +1,5 @@
 ---
 title: localConsigneeAgentParty
-permalink: localConsigneeAgentParty
+permalink: localConsigneeAgentParty.html
 jsonid: localconsigneeagentparty
 ---

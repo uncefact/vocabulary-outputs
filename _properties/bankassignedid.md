@@ -1,5 +1,5 @@
 ---
 title: bankAssignedId
-permalink: bankAssignedId
+permalink: bankAssignedId.html
 jsonid: bankassignedid
 ---

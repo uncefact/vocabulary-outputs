@@ -1,5 +1,5 @@
 ---
 title: creationBinaryFile
-permalink: creationBinaryFile
+permalink: creationBinaryFile.html
 jsonid: creationbinaryfile
 ---

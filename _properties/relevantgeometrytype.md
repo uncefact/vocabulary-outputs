@@ -1,5 +1,5 @@
 ---
 title: relevantGeometryType
-permalink: relevantGeometryType
+permalink: relevantGeometryType.html
 jsonid: relevantgeometrytype
 ---

@@ -1,5 +1,5 @@
 ---
 title: applicationSpecifiedParameter
-permalink: applicationSpecifiedParameter
+permalink: applicationSpecifiedParameter.html
 jsonid: applicationspecifiedparameter
 ---

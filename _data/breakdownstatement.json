@@ -2,99 +2,104 @@
 {
     "label": "BreakdownStatement",
     "uri": "unece:BreakdownStatement",
-    "comment": "A detailed statement of work, materials, products, prices, or dimensions.",
+    "comment": "A detailed statement of work, prices, and dimensions for this valuation.",
     "datatypeProperties": [
         {
             "uri": "unece:comment",
             "type": "xsd:string",
-            "comment": "A comment, expressed as text, for this valuation breakdown statement."
+            "comment": "A comment, expressed as text for this MDH illness."
         },
         {
             "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this valuation breakdown statement."
+            "type": "xsd:string",
+            "comment": "The code specifying the contractual language for this basic work item."
         },
         {
             "uri": "unece:creationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of the creation of this valuation breakdown statement."
+            "type": "xsd:string",
+            "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
         },
         {
             "uri": "unece:defaultCurrencyCode",
-            "type": "xsd:token",
+            "type": "unece:CurrencyCodeList",
             "comment": "The code specifying the default currency for this valuation breakdown statement."
         },
         {
             "uri": "unece:defaultLanguageCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the default language for this valuation breakdown statement."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this valuation breakdown statement."
+            "comment": "A description of the item."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this valuation breakdown statement."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:measurementMethodId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier of a method of measurement for this valuation breakdown statement."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "The name, expressed as text, for this valuation breakdown statement."
+            "comment": "The name of the item."
         },
         {
             "uri": "unece:priceListId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of a price list for this valuation breakdown statement."
         },
         {
             "uri": "unece:requestedActionCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the requested action for this valuation breakdown statement."
+            "type": "xsd:string",
+            "comment": "A code specifying a requested action for this basic work item."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of valuation breakdown statement."
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:binaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A specified computer file or program stored in a binary format."
+        },
+        {
             "uri": "unece:changedStatus",
             "type": "unece:RecordedStatus",
-            "comment": "A changed recorded status for this valuation breakdown statement."
+            "comment": "Recorded information relevant to a condition or a position of an object."
         },
         {
             "uri": "unece:creationBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A specified binary file used to create this valuation breakdown statement."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
-            "uri": "unece:itemWorkItem",
-            "type": "unece:WorkItem",
-            "comment": "A basic work item in this valuation breakdown statement."
+            "uri": "unece:itemBasicWorkItem",
+            "type": "unece:BasicWorkItem",
+            "comment": "A basic work item in this basic work item."
+        },
+        {
+            "uri": "unece:itemGroupedWorkItem",
+            "type": "unece:GroupedWorkItem",
+            "comment": "A grouped work item in this valuation breakdown statement."
         },
         {
             "uri": "unece:readerBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A specified binary file used to read this valuation breakdown statement."
-        },
-        {
-            "uri": "unece:referencedBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A specified binary file referenced by this valuation breakdown statement."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
             "uri": "unece:totalPrice",
             "type": "unece:CalculatedPrice",
-            "comment": "A total calculated price for this valuation breakdown statement."
+            "comment": "A total calculated price for this basic work item."
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
 title: minimumLinearDimension
-permalink: minimumLinearDimension
+permalink: minimumLinearDimension.html
 jsonid: minimumlineardimension
 ---

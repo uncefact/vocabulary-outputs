@@ -1,5 +1,5 @@
 ---
 title: locationProviderParty
-permalink: locationProviderParty
+permalink: locationProviderParty.html
 jsonid: locationproviderparty
 ---

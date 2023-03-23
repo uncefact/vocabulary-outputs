@@ -1,5 +1,5 @@
 ---
 title: supplySpecifiedSchedule
-permalink: supplySpecifiedSchedule
+permalink: supplySpecifiedSchedule.html
 jsonid: supplyspecifiedschedule
 ---

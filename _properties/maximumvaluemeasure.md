@@ -1,5 +1,5 @@
 ---
 title: maximumValueMeasure
-permalink: maximumValueMeasure
+permalink: maximumValueMeasure.html
 jsonid: maximumvaluemeasure
 ---

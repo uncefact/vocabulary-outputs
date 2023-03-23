@@ -1,5 +1,5 @@
 ---
 title: specifiedValidationStatus
-permalink: specifiedValidationStatus
+permalink: specifiedValidationStatus.html
 jsonid: specifiedvalidationstatus
 ---

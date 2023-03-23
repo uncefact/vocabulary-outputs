@@ -1,5 +1,5 @@
 ---
 title: delayOccurrencePeriod
-permalink: delayOccurrencePeriod
+permalink: delayOccurrencePeriod.html
 jsonid: delayoccurrenceperiod
 ---

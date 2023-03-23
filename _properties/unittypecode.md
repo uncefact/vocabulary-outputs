@@ -1,5 +1,5 @@
 ---
 title: unitTypeCode
-permalink: unitTypeCode
+permalink: unitTypeCode.html
 jsonid: unittypecode
 ---

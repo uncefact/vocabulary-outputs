@@ -1,113 +1,17 @@
 
 {
-    "label": "AllowanceCharge",
-    "uri": "unece:AllowanceCharge",
-    "comment": "A component of pricing, such as a service, promotion, allowance or charge.",
-    "datatypeProperties": [
+    "label": "allowanceCharge",
+    "uri": "unece:allowanceCharge",
+    "comment": "The allowance or charge, expressed as text, for this logistics service charge.",
+    "rangeIncludes": [
         {
-            "uri": "unece:actualAmount",
-            "type": "xsd:decimal",
-            "comment": "The actual monetary value of the applied allowance charge."
-        },
-        {
-            "uri": "unece:allowanceChargeIdentificationTypeCode",
-            "type": "unece:UNCL5189Code",
-            "comment": "The code specifying the type of this trade allowance charge."
-        },
-        {
-            "uri": "unece:allowanceChargeReasonCode",
-            "type": "unece:UNCL4465Code",
-            "comment": "The code specifying the reason for this trade allowance charge."
-        },
-        {
-            "uri": "unece:appliedAllowanceChargeReasonCode",
-            "type": "unece:UNCL4465Code",
-            "comment": "The code specifying the reason for this applied allowance charge."
-        },
-        {
-            "uri": "unece:basisAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value that is the basis on which the applied allowance charge is calculated."
-        },
-        {
-            "uri": "unece:basisQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity on which this trade allowance charge is based."
-        },
-        {
-            "uri": "unece:calculationPercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage applied to calculate this trade allowance charge."
-        },
-        {
-            "uri": "unece:chargeIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not the trade allowance charge is a charge."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of the applied allowance charge."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this trade allowance charge."
-        },
-        {
-            "uri": "unece:prepaidIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade allowance charge is prepaid."
-        },
-        {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "The reason, expressed as text, for this trade allowance charge."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number for applying this trade allowance charge."
-        },
-        {
-            "uri": "unece:unitBasisAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the unit basis on which the allowance or charge is calculated."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:actualCurrencyExchange",
-            "type": "unece:CurrencyExchange",
-            "comment": "The actual trade currency exchange for this trade allowance charge."
-        },
-        {
-            "uri": "unece:categoryAppliedTax",
-            "type": "unece:AppliedTax",
-            "comment": "The applied tax category of this applied allowance charge."
-        },
-        {
-            "uri": "unece:categoryTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax category of this trade allowance charge."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:applicableAllowanceCharge",
-            "comment": "An allowance or charge applicable to this supply chain consignment."
-        },
-        {
-            "uri": "unece:appliedAllowanceCharge",
-            "comment": "An allowance or charge applied to the trade price."
-        },
-        {
-            "uri": "unece:relatedAllowanceCharge",
-            "comment": "Applied allowance charge information related to this calculated price."
-        },
-        {
-            "uri": "unece:specifiedAllowanceCharge",
-            "comment": "An allowance or charge specified ..."
+            "uri": "unece:ServiceCharge",
+            "comment": "A charge made for a logistics related service."
         }
     ]
 }

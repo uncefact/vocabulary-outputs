@@ -1,5 +1,5 @@
 ---
 title: subWorksTypeCode
-permalink: subWorksTypeCode
+permalink: subWorksTypeCode.html
 jsonid: subworkstypecode
 ---

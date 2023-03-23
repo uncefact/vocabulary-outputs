@@ -1,5 +1,5 @@
 ---
 title: associatedDocumentLineDocument
-permalink: associatedDocumentLineDocument
+permalink: associatedDocumentLineDocument.html
 jsonid: associateddocumentlinedocument
 ---

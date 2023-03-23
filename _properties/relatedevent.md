@@ -1,5 +1,5 @@
 ---
 title: relatedEvent
-permalink: relatedEvent
+permalink: relatedEvent.html
 jsonid: relatedevent
 ---

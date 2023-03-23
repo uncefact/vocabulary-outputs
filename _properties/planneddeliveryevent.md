@@ -1,5 +1,5 @@
 ---
 title: plannedDeliveryEvent
-permalink: plannedDeliveryEvent
+permalink: plannedDeliveryEvent.html
 jsonid: planneddeliveryevent
 ---

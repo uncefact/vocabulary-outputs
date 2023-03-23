@@ -1,5 +1,5 @@
 ---
 title: countNumeric
-permalink: countNumeric
+permalink: countNumeric.html
 jsonid: countnumeric
 ---

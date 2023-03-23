@@ -1,5 +1,5 @@
 ---
 title: scheduledReportedMeasurement
-permalink: scheduledReportedMeasurement
+permalink: scheduledReportedMeasurement.html
 jsonid: scheduledreportedmeasurement
 ---

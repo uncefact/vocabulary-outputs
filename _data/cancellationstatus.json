@@ -6,18 +6,18 @@
     "datatypeProperties": [
         {
             "uri": "unece:cancellationDocumentStatusConditionCode",
-            "type": "unece:UNCL1373Code",
+            "type": "xsd:string",
             "comment": "The code specifying the condition of this cancellation status."
-        },
-        {
-            "uri": "unece:cancellationStatusReasonCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "The code specifying the reason for this cancellation status."
         },
         {
             "uri": "unece:reason",
             "type": "xsd:string",
             "comment": "A reason, expressed as text, for this cancellation status."
+        },
+        {
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a reason for the declared error."
         },
         {
             "uri": "unece:reasonInformation",
@@ -28,7 +28,7 @@
     "referencedBy": [
         {
             "uri": "unece:specifiedCancellationStatus",
-            "comment": "A status of a cancellation specified for this financing request document, such as accepted."
+            "comment": "Information relevant to a condition of a cancellation."
         }
     ]
 }

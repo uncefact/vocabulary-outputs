@@ -1,5 +1,5 @@
 ---
 title: applicableLocation
-permalink: applicableLocation
+permalink: applicableLocation.html
 jsonid: applicablelocation
 ---

@@ -1,5 +1,5 @@
 ---
 title: consignmentDestinationSpecifiedLocation
-permalink: consignmentDestinationSpecifiedLocation
+permalink: consignmentDestinationSpecifiedLocation.html
 jsonid: consignmentdestinationspecifiedlocation
 ---

@@ -1,5 +1,5 @@
 ---
 title: minimumStockLevelMeasure
-permalink: minimumStockLevelMeasure
+permalink: minimumStockLevelMeasure.html
 jsonid: minimumstocklevelmeasure
 ---

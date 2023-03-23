@@ -1,5 +1,5 @@
 ---
 title: continuousIndicator
-permalink: continuousIndicator
+permalink: continuousIndicator.html
 jsonid: continuousindicator
 ---

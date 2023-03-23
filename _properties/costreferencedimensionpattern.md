@@ -1,5 +1,5 @@
 ---
 title: costReferenceDimensionPattern
-permalink: costReferenceDimensionPattern
+permalink: costReferenceDimensionPattern.html
 jsonid: costreferencedimensionpattern
 ---

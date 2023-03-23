@@ -2,21 +2,21 @@
 {
     "label": "Clause",
     "uri": "unece:Clause",
-    "comment": "A distinct article or provision in a contract, treaty, will, or other formal or legal written document, which requires compliance.",
+    "comment": "A distinct article or provision in a document, which requires compliance.",
     "datatypeProperties": [
         {
             "uri": "unece:content",
             "type": "xsd:string",
-            "comment": "Content, expressed as text, of this document clause."
+            "comment": "A content, expressed as text, of this note."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier of this document clause."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:uRLId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The Uniform Resource Locator (URL) for this document clause."
         }
     ],
@@ -28,14 +28,18 @@
         },
         {
             "uri": "unece:associatedPeriod",
-            "type": "unece:Period",
+            "type": "unece:SpecifiedPeriod",
             "comment": "A period of time associated with this document clause."
         }
     ],
     "referencedBy": [
         {
+            "uri": "unece:applicableClause",
+            "comment": "A distinct article or provision in a document, which requires compliance."
+        },
+        {
             "uri": "unece:contractualClause",
-            "comment": "A contractual clause of this ..."
+            "comment": "A distinct article or provision in a document, which requires compliance."
         },
         {
             "uri": "unece:includedClause",

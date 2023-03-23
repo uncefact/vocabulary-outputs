@@ -1,5 +1,5 @@
 ---
 title: exportGeopoliticalRegion
-permalink: exportGeopoliticalRegion
+permalink: exportGeopoliticalRegion.html
 jsonid: exportgeopoliticalregion
 ---

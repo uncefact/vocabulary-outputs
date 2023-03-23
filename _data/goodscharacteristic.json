@@ -2,42 +2,44 @@
 {
     "label": "GoodsCharacteristic",
     "uri": "unece:GoodsCharacteristic",
-    "comment": "A distinguishing feature or quality of goods.",
+    "comment": "A distinctive feature of a material contained within physical goods.",
     "datatypeProperties": [
-        {
-            "uri": "unece:absolutePresenceVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The volume measure of the absolute presence of this material goods characteristic."
-        },
-        {
-            "uri": "unece:absolutePresenceWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The weight measure of the absolute presence of this material goods characteristic."
-        },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this material goods characteristic."
+            "comment": "A description of the item."
         },
         {
             "uri": "unece:proportionalConstituentPercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The percentage presence of the material within the goods for this material goods characteristic."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of material goods characteristic."
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:absolutePresenceVolumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:absolutePresenceWeightMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableGoodsCharacteristic",
-            "comment": "A distinguishing material feature applicable ..."
+            "comment": "A distinctive feature of a material contained within physical goods."
         },
         {
             "uri": "unece:carriedGoodsCharacteristic",
-            "comment": "Material characteristics of goods carried during this logistics transport movement."
+            "comment": "A distinctive feature of a material contained within physical goods."
         }
     ]
 }

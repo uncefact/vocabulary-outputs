@@ -1,5 +1,5 @@
 ---
 title: chargeFreeQuantity
-permalink: chargeFreeQuantity
+permalink: chargeFreeQuantity.html
 jsonid: chargefreequantity
 ---

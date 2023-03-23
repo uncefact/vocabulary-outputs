@@ -1,5 +1,5 @@
 ---
 title: copyIndicator
-permalink: copyIndicator
+permalink: copyIndicator.html
 jsonid: copyindicator
 ---

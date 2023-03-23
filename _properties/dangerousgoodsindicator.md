@@ -1,5 +1,5 @@
 ---
 title: dangerousGoodsIndicator
-permalink: dangerousGoodsIndicator
+permalink: dangerousGoodsIndicator.html
 jsonid: dangerousgoodsindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: requestedDespatchEvent
-permalink: requestedDespatchEvent
+permalink: requestedDespatchEvent.html
 jsonid: requesteddespatchevent
 ---

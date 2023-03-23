@@ -1,5 +1,5 @@
 ---
 title: limitedQuantityCode
-permalink: limitedQuantityCode
+permalink: limitedQuantityCode.html
 jsonid: limitedquantitycode
 ---

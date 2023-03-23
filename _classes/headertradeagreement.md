@@ -1,5 +1,5 @@
 ---
 title: HeaderTradeAgreement
-permalink: HeaderTradeAgreement
+permalink: HeaderTradeAgreement.html
 jsonid: headertradeagreement
 ---

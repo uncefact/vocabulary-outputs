@@ -1,5 +1,5 @@
 ---
 title: TestSpecificationReport
-permalink: TestSpecificationReport
+permalink: TestSpecificationReport.html
 jsonid: testspecificationreport
 ---

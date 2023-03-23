@@ -1,5 +1,5 @@
 ---
 title: itemIdentificationId
-permalink: itemIdentificationId
+permalink: itemIdentificationId.html
 jsonid: itemidentificationid
 ---

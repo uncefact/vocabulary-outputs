@@ -1,5 +1,5 @@
 ---
 title: transitCustomsOfficeSpecifiedLocation
-permalink: transitCustomsOfficeSpecifiedLocation
+permalink: transitCustomsOfficeSpecifiedLocation.html
 jsonid: transitcustomsofficespecifiedlocation
 ---

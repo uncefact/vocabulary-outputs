@@ -1,5 +1,5 @@
 ---
 title: collectionIndicator
-permalink: collectionIndicator
+permalink: collectionIndicator.html
 jsonid: collectionindicator
 ---

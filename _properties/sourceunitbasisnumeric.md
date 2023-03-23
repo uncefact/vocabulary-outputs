@@ -1,5 +1,5 @@
 ---
 title: sourceUnitBasisNumeric
-permalink: sourceUnitBasisNumeric
+permalink: sourceUnitBasisNumeric.html
 jsonid: sourceunitbasisnumeric
 ---

@@ -1,5 +1,5 @@
 ---
 title: brandOwnerParty
-permalink: brandOwnerParty
+permalink: brandOwnerParty.html
 jsonid: brandownerparty
 ---

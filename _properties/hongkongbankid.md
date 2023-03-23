@@ -1,5 +1,5 @@
 ---
 title: hongKongBankId
-permalink: hongKongBankId
+permalink: hongKongBankId.html
 jsonid: hongkongbankid
 ---

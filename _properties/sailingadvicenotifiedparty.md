@@ -1,5 +1,5 @@
 ---
 title: sailingAdviceNotifiedParty
-permalink: sailingAdviceNotifiedParty
+permalink: sailingAdviceNotifiedParty.html
 jsonid: sailingadvicenotifiedparty
 ---

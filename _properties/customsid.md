@@ -1,5 +1,5 @@
 ---
 title: customsId
-permalink: customsId
+permalink: customsId.html
 jsonid: customsid
 ---

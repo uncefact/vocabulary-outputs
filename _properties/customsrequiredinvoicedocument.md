@@ -1,5 +1,5 @@
 ---
 title: customsRequiredInvoiceDocument
-permalink: customsRequiredInvoiceDocument
+permalink: customsRequiredInvoiceDocument.html
 jsonid: customsrequiredinvoicedocument
 ---

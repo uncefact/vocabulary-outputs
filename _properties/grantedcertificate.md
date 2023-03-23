@@ -1,5 +1,5 @@
 ---
 title: grantedCertificate
-permalink: grantedCertificate
+permalink: grantedCertificate.html
 jsonid: grantedcertificate
 ---

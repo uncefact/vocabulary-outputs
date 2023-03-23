@@ -1,5 +1,5 @@
 ---
 title: contentDateTime
-permalink: contentDateTime
+permalink: contentDateTime.html
 jsonid: contentdatetime
 ---

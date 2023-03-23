@@ -1,5 +1,5 @@
 ---
 title: registrationEvent
-permalink: registrationEvent
+permalink: registrationEvent.html
 jsonid: registrationevent
 ---

@@ -1,5 +1,5 @@
 ---
 title: carrierAcceptanceLocation
-permalink: carrierAcceptanceLocation
+permalink: carrierAcceptanceLocation.html
 jsonid: carrieracceptancelocation
 ---

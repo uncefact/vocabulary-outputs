@@ -1,5 +1,5 @@
 ---
 title: recordedDate
-permalink: recordedDate
+permalink: recordedDate.html
 jsonid: recordeddate
 ---

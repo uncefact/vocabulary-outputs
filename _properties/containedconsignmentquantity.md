@@ -1,5 +1,5 @@
 ---
 title: containedConsignmentQuantity
-permalink: containedConsignmentQuantity
+permalink: containedConsignmentQuantity.html
 jsonid: containedconsignmentquantity
 ---

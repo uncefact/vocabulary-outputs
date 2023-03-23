@@ -1,5 +1,5 @@
 ---
 title: rejectedQuantity
-permalink: rejectedQuantity
+permalink: rejectedQuantity.html
 jsonid: rejectedquantity
 ---

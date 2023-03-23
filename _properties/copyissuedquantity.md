@@ -1,5 +1,5 @@
 ---
 title: copyIssuedQuantity
-permalink: copyIssuedQuantity
+permalink: copyIssuedQuantity.html
 jsonid: copyissuedquantity
 ---

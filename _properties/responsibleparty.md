@@ -1,5 +1,5 @@
 ---
 title: responsibleParty
-permalink: responsibleParty
+permalink: responsibleParty.html
 jsonid: responsibleparty
 ---

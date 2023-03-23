@@ -1,5 +1,5 @@
 ---
 title: loadingInspectionSpecifiedInstructions
-permalink: loadingInspectionSpecifiedInstructions
+permalink: loadingInspectionSpecifiedInstructions.html
 jsonid: loadinginspectionspecifiedinstructions
 ---

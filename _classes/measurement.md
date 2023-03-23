@@ -1,5 +1,5 @@
 ---
 title: Measurement
-permalink: Measurement
+permalink: Measurement.html
 jsonid: measurement
 ---

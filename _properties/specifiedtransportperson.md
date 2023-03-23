@@ -1,5 +1,5 @@
 ---
 title: specifiedTransportPerson
-permalink: specifiedTransportPerson
+permalink: specifiedTransportPerson.html
 jsonid: specifiedtransportperson
 ---

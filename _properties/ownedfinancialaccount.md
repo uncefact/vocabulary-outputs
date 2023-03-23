@@ -1,5 +1,5 @@
 ---
 title: ownedFinancialAccount
-permalink: ownedFinancialAccount
+permalink: ownedFinancialAccount.html
 jsonid: ownedfinancialaccount
 ---

@@ -1,5 +1,5 @@
 ---
 title: pricingBaseApplicableLocation
-permalink: pricingBaseApplicableLocation
+permalink: pricingBaseApplicableLocation.html
 jsonid: pricingbaseapplicablelocation
 ---

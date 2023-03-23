@@ -1,5 +1,5 @@
 ---
 title: nilCustomsValueIndicator
-permalink: nilCustomsValueIndicator
+permalink: nilCustomsValueIndicator.html
 jsonid: nilcustomsvalueindicator
 ---

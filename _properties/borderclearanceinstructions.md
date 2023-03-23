@@ -1,5 +1,5 @@
 ---
 title: borderClearanceInstructions
-permalink: borderClearanceInstructions
+permalink: borderClearanceInstructions.html
 jsonid: borderclearanceinstructions
 ---

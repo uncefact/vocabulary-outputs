@@ -1,5 +1,5 @@
 ---
 title: frequencyCode
-permalink: frequencyCode
+permalink: frequencyCode.html
 jsonid: frequencycode
 ---

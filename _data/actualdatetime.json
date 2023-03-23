@@ -2,29 +2,28 @@
 {
     "label": "actualDateTime",
     "uri": "unece:actualDateTime",
-    "comment": [
-        "An actual date, time, date time, or other date time value of this financial booking.",
-        "The actual date, time, date time, or other date time value of this delivery adjustment.",
-        "The actual date, time, date time, or other date time value of this document authentication.",
-        "The actual date, time, date time, or other date time value of this financial adjustment."
-    ],
+    "comment": "An actual date, time, date time, or other date time value of this financial booking.",
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Adjustment",
-            "comment": "A correction or modification to reflect actual conditions."
+            "uri": "unece:Authentication",
+            "comment": "A proof that a document is genuine."
         },
         {
-            "uri": "unece:Authentication",
-            "comment": "A proof that something is genuine."
+            "uri": "unece:FinancialAdjustment",
+            "comment": "A correction or modification to reflect actual financial conditions."
         },
         {
             "uri": "unece:Booking",
-            "comment": "A transaction which results in the recording of an entry in an account, such as an entry in a bank account or ordering transport services."
+            "comment": "A result of a financial transaction recorded within a financial account."
+        },
+        {
+            "uri": "unece:DeliveryAdjustment",
+            "comment": "A correction or modification to reflect actual delivery conditions."
         }
     ]
 }

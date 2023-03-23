@@ -1,5 +1,5 @@
 ---
 title: maximumStockLevelMeasure
-permalink: maximumStockLevelMeasure
+permalink: maximumStockLevelMeasure.html
 jsonid: maximumstocklevelmeasure
 ---

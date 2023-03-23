@@ -1,5 +1,5 @@
 ---
 title: transportMeansStayOccurrencePeriod
-permalink: transportMeansStayOccurrencePeriod
+permalink: transportMeansStayOccurrencePeriod.html
 jsonid: transportmeansstayoccurrenceperiod
 ---

@@ -1,5 +1,5 @@
 ---
 title: creditorReferenceType
-permalink: creditorReferenceType
+permalink: creditorReferenceType.html
 jsonid: creditorreferencetype
 ---

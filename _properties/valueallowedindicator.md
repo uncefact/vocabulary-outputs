@@ -1,5 +1,5 @@
 ---
 title: valueAllowedIndicator
-permalink: valueAllowedIndicator
+permalink: valueAllowedIndicator.html
 jsonid: valueallowedindicator
 ---

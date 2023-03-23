@@ -1,5 +1,5 @@
 ---
 title: controlStartDateConfirmationIndicator
-permalink: controlStartDateConfirmationIndicator
+permalink: controlStartDateConfirmationIndicator.html
 jsonid: controlstartdateconfirmationindicator
 ---

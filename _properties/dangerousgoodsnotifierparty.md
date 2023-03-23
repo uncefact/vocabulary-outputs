@@ -1,5 +1,5 @@
 ---
 title: dangerousGoodsNotifierParty
-permalink: dangerousGoodsNotifierParty
+permalink: dangerousGoodsNotifierParty.html
 jsonid: dangerousgoodsnotifierparty
 ---

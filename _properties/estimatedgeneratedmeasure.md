@@ -1,5 +1,5 @@
 ---
 title: estimatedGeneratedMeasure
-permalink: estimatedGeneratedMeasure
+permalink: estimatedGeneratedMeasure.html
 jsonid: estimatedgeneratedmeasure
 ---

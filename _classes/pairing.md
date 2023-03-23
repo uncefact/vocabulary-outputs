@@ -1,5 +1,5 @@
 ---
 title: Pairing
-permalink: Pairing
+permalink: Pairing.html
 jsonid: pairing
 ---

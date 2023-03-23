@@ -1,5 +1,5 @@
 ---
 title: previousAssociatedGeographicalFeature
-permalink: previousAssociatedGeographicalFeature
+permalink: previousAssociatedGeographicalFeature.html
 jsonid: previousassociatedgeographicalfeature
 ---

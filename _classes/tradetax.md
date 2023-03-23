@@ -1,5 +1,5 @@
 ---
 title: TradeTax
-permalink: TradeTax
+permalink: TradeTax.html
 jsonid: tradetax
 ---

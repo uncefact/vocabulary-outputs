@@ -2,7 +2,7 @@
 {
     "label": "ServiceCharge",
     "uri": "unece:ServiceCharge",
-    "comment": "A charge made for services rendered or assessed, such as banking, freight charges, charges for a medical service such as provision of a private room, provision of a television, medical supplies, massage.",
+    "comment": "A charge made for a logistics related service.",
     "datatypeProperties": [
         {
             "uri": "unece:allowanceCharge",
@@ -10,77 +10,72 @@
             "comment": "The allowance or charge, expressed as text, for this logistics service charge."
         },
         {
-            "uri": "unece:appliedAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value applied to this logistics service charge."
-        },
-        {
             "uri": "unece:calculationBasis",
             "type": "xsd:string",
             "comment": "The basis, expressed as text, on which this logistics service charge is to be calculated, such as by volume or per unit."
         },
         {
-            "uri": "unece:calculationBasisCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit."
-        },
-        {
             "uri": "unece:chargeCategoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the category of charge for this logistics service charge."
         },
         {
             "uri": "unece:chargePayingPartyRoleCode",
-            "type": "unece:UNCL3035Code",
+            "type": "unece:ChargePayingPartyRoleCodeList",
             "comment": "The code specifying the role of the party responsible for paying this logistics service charge."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this logistics service charge."
-        },
-        {
-            "uri": "unece:disbursementAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a disbursement for this logistics service charge."
+            "comment": "A description of the item."
         },
         {
             "uri": "unece:freightChargeTariffClassCode",
-            "type": "unece:UNCL5243Code",
+            "type": "unece:FreightChargeTariffClassCodeList",
             "comment": "The code specifying the tariff class for this logistics service charge which represents an entry in a table of fixed charges [Reference United Nations Code List (UNCL) 5243]."
         },
         {
-            "uri": "unece:freightInvoiceTypeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type of freight invoice of this logistics service charge."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
+            "uri": "unece:freightChargeTypeId",
+            "type": "unece:FreightChargeTypeId",
             "comment": "The unique identifier for this logistics service charge."
         },
         {
+            "uri": "unece:freightInvoiceTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of freight invoice of this logistics service charge."
+        },
+        {
+            "uri": "unece:logisticsChargeCalculationBasisCalculationBasisCode",
+            "type": "unece:LogisticsChargeCalculationBasisCodeList",
+            "comment": "The code specifying a basis on which this logistics service charge is to be calculated, such as by volume or per unit."
+        },
+        {
             "uri": "unece:logisticsServiceChargeTransportPaymentMethodCode",
-            "type": "unece:UNCL4215Code",
+            "type": "xsd:string",
             "comment": "The code specifying the transport payment method for this logistics service charge."
         },
         {
             "uri": "unece:serviceCategoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the category of service for this logistics service charge."
         },
         {
             "uri": "unece:transportServiceCategoryCode",
-            "type": "unece:UNCL5237Code",
+            "type": "unece:TransportServiceCategoryCodeList",
             "comment": "The code specifying the category of this logistics service charge [Reference United Nations Code List (UNCL) 5237]."
         },
         {
             "uri": "unece:transportServicePaymentArrangementCode",
-            "type": "unece:UNCL4237Code",
+            "type": "unece:TransportServicePaymentArrangementCodeList",
             "comment": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:appliedAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
         {
             "uri": "unece:appliedFromLocation",
             "type": "unece:LogisticsLocation",
@@ -88,13 +83,23 @@
         },
         {
             "uri": "unece:appliedTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax that is applied to this logistics service charge."
+            "type": "unece:Tax",
+            "comment": "A trade related fiscal levy or duty."
         },
         {
             "uri": "unece:appliedToLocation",
             "type": "unece:LogisticsLocation",
             "comment": "The end location at which this logistics service charge is no longer to be applied."
+        },
+        {
+            "uri": "unece:calculationBasisPrice",
+            "type": "unece:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
+        },
+        {
+            "uri": "unece:disbursementAmount",
+            "type": "unece:AmountType",
+            "comment": ""
         },
         {
             "uri": "unece:paymentPlaceLocation",
@@ -104,13 +109,13 @@
         {
             "uri": "unece:specifiedPaymentMeans",
             "type": "unece:PaymentMeans",
-            "comment": "The trade settlement payment means specified for this logistics service charge."
+            "comment": "The means by which a payment will be or has been made for trade settlement purposes."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableServiceCharge",
-            "comment": "A logistics service charge applicable ..."
+            "comment": "A charge made for a logistics related service."
         },
         {
             "uri": "unece:estimatedApplicableServiceCharge",
@@ -118,7 +123,7 @@
         },
         {
             "uri": "unece:specifiedServiceCharge",
-            "comment": "A logistics service charge specified ..."
+            "comment": "A charge made for a logistics related service."
         }
     ]
 }

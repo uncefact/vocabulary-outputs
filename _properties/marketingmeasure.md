@@ -1,5 +1,5 @@
 ---
 title: marketingMeasure
-permalink: marketingMeasure
+permalink: marketingMeasure.html
 jsonid: marketingmeasure
 ---

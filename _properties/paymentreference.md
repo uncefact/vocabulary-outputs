@@ -1,5 +1,5 @@
 ---
 title: paymentReference
-permalink: paymentReference
+permalink: paymentReference.html
 jsonid: paymentreference
 ---

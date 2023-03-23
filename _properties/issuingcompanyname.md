@@ -1,5 +1,5 @@
 ---
 title: issuingCompanyName
-permalink: issuingCompanyName
+permalink: issuingCompanyName.html
 jsonid: issuingcompanyname
 ---

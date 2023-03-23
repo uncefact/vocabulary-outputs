@@ -1,5 +1,5 @@
 ---
 title: plannedStockQuantity
-permalink: plannedStockQuantity
+permalink: plannedStockQuantity.html
 jsonid: plannedstockquantity
 ---

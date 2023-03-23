@@ -1,5 +1,5 @@
 ---
 title: consolidatorParty
-permalink: consolidatorParty
+permalink: consolidatorParty.html
 jsonid: consolidatorparty
 ---

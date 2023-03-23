@@ -1,5 +1,5 @@
 ---
 title: totalAllowanceChargeAmount
-permalink: totalAllowanceChargeAmount
+permalink: totalAllowanceChargeAmount.html
 jsonid: totalallowancechargeamount
 ---

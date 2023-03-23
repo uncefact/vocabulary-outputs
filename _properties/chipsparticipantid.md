@@ -1,5 +1,5 @@
 ---
 title: cHIPSParticipantId
-permalink: cHIPSParticipantId
+permalink: cHIPSParticipantId.html
 jsonid: chipsparticipantid
 ---

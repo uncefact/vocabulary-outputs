@@ -1,5 +1,5 @@
 ---
 title: disembarkationLocation
-permalink: disembarkationLocation
+permalink: disembarkationLocation.html
 jsonid: disembarkationlocation
 ---

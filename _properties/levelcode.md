@@ -1,5 +1,5 @@
 ---
 title: levelCode
-permalink: levelCode
+permalink: levelCode.html
 jsonid: levelcode
 ---

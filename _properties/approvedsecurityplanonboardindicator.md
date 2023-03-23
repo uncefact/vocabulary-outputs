@@ -1,5 +1,5 @@
 ---
 title: approvedSecurityPlanOnboardIndicator
-permalink: approvedSecurityPlanOnboardIndicator
+permalink: approvedSecurityPlanOnboardIndicator.html
 jsonid: approvedsecurityplanonboardindicator
 ---

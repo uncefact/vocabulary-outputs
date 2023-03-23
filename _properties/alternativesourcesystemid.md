@@ -1,5 +1,5 @@
 ---
 title: alternativeSourceSystemId
-permalink: alternativeSourceSystemId
+permalink: alternativeSourceSystemId.html
 jsonid: alternativesourcesystemid
 ---

@@ -1,5 +1,5 @@
 ---
 title: guaranteedProductLifeSpanPeriod
-permalink: guaranteedProductLifeSpanPeriod
+permalink: guaranteedProductLifeSpanPeriod.html
 jsonid: guaranteedproductlifespanperiod
 ---

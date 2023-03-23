@@ -1,5 +1,5 @@
 ---
 title: loadingBaseportLocation
-permalink: loadingBaseportLocation
+permalink: loadingBaseportLocation.html
 jsonid: loadingbaseportlocation
 ---

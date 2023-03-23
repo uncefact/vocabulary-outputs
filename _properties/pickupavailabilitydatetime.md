@@ -1,5 +1,5 @@
 ---
 title: pickUpAvailabilityDateTime
-permalink: pickUpAvailabilityDateTime
+permalink: pickUpAvailabilityDateTime.html
 jsonid: pickupavailabilitydatetime
 ---

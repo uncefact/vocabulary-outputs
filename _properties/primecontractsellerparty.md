@@ -1,5 +1,5 @@
 ---
 title: primeContractSellerParty
-permalink: primeContractSellerParty
+permalink: primeContractSellerParty.html
 jsonid: primecontractsellerparty
 ---

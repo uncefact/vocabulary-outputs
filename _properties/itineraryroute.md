@@ -1,5 +1,5 @@
 ---
 title: itineraryRoute
-permalink: itineraryRoute
+permalink: itineraryRoute.html
 jsonid: itineraryroute
 ---

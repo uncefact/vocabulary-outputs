@@ -1,5 +1,5 @@
 ---
 title: intendedUse
-permalink: intendedUse
+permalink: intendedUse.html
 jsonid: intendeduse
 ---

@@ -1,17 +1,49 @@
 
 {
-    "label": "paymentTermsId",
-    "uri": "unece:paymentTermsId",
-    "comment": "The unique identifier of these trade payment terms.",
-    "rangeIncludes": [
+    "label": "PaymentTermsId",
+    "uri": "unece:PaymentTermsId",
+    "comment": "A character string used to represent a payment terms.",
+    "values": [
         {
-            "uri": "unece:UNCL4277Code"
+            "uri": "unece:PaymentTermsId#1",
+            "comment": "Draft(s) drawn on issuing bank",
+            "value": "1"
+        },
+        {
+            "uri": "unece:PaymentTermsId#2",
+            "comment": "Draft(s) drawn on advising bank",
+            "value": "2"
+        },
+        {
+            "uri": "unece:PaymentTermsId#3",
+            "comment": "Draft(s) drawn on reimbursing bank",
+            "value": "3"
+        },
+        {
+            "uri": "unece:PaymentTermsId#4",
+            "comment": "Draft(s) drawn on applicant",
+            "value": "4"
+        },
+        {
+            "uri": "unece:PaymentTermsId#5",
+            "comment": "Draft(s) drawn on any other drawee",
+            "value": "5"
+        },
+        {
+            "uri": "unece:PaymentTermsId#6",
+            "comment": "No drafts",
+            "value": "6"
+        },
+        {
+            "uri": "unece:PaymentTermsId#7",
+            "comment": "Payment means specified in commercial account summary",
+            "value": "7"
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:PaymentTerms",
-            "comment": "Terms and conditions by which payment has been or will be made."
+            "uri": "unece:paymentTermsId",
+            "comment": "The unique identifier of these trade payment terms."
         }
     ]
 }

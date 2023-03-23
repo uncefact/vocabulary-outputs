@@ -1,5 +1,5 @@
 ---
 title: marketingFeature
-permalink: marketingFeature
+permalink: marketingFeature.html
 jsonid: marketingfeature
 ---

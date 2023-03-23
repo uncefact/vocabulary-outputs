@@ -1,5 +1,5 @@
 ---
 title: markedSerialNumberIndicator
-permalink: markedSerialNumberIndicator
+permalink: markedSerialNumberIndicator.html
 jsonid: markedserialnumberindicator
 ---

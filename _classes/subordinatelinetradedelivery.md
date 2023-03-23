@@ -1,5 +1,5 @@
 ---
 title: SubordinateLineTradeDelivery
-permalink: SubordinateLineTradeDelivery
+permalink: SubordinateLineTradeDelivery.html
 jsonid: subordinatelinetradedelivery
 ---

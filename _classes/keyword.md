@@ -1,5 +1,5 @@
 ---
 title: Keyword
-permalink: Keyword
+permalink: Keyword.html
 jsonid: keyword
 ---

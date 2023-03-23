@@ -1,5 +1,5 @@
 ---
 title: scheduledRoute
-permalink: scheduledRoute
+permalink: scheduledRoute.html
 jsonid: scheduledroute
 ---

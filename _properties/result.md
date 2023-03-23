@@ -1,5 +1,5 @@
 ---
 title: result
-permalink: result
+permalink: result.html
 jsonid: result
 ---

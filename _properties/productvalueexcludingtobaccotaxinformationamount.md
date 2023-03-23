@@ -1,5 +1,5 @@
 ---
 title: productValueExcludingTobaccoTaxInformationAmount
-permalink: productValueExcludingTobaccoTaxInformationAmount
+permalink: productValueExcludingTobaccoTaxInformationAmount.html
 jsonid: productvalueexcludingtobaccotaxinformationamount
 ---

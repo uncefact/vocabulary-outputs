@@ -1,5 +1,5 @@
 ---
 title: issuerParty
-permalink: issuerParty
+permalink: issuerParty.html
 jsonid: issuerparty
 ---

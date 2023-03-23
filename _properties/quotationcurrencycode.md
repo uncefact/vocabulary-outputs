@@ -1,5 +1,5 @@
 ---
 title: quotationCurrencyCode
-permalink: quotationCurrencyCode
+permalink: quotationCurrencyCode.html
 jsonid: quotationcurrencycode
 ---

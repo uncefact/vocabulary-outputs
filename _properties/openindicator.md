@@ -1,5 +1,5 @@
 ---
 title: openIndicator
-permalink: openIndicator
+permalink: openIndicator.html
 jsonid: openindicator
 ---

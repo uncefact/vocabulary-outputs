@@ -1,5 +1,5 @@
 ---
 title: identificationCode
-permalink: identificationCode
+permalink: identificationCode.html
 jsonid: identificationcode
 ---

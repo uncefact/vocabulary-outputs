@@ -1,5 +1,5 @@
 ---
 title: servicingSpecifiedParty
-permalink: servicingSpecifiedParty
+permalink: servicingSpecifiedParty.html
 jsonid: servicingspecifiedparty
 ---

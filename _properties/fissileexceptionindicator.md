@@ -1,5 +1,5 @@
 ---
 title: fissileExceptionIndicator
-permalink: fissileExceptionIndicator
+permalink: fissileExceptionIndicator.html
 jsonid: fissileexceptionindicator
 ---

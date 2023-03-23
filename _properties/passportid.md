@@ -1,5 +1,5 @@
 ---
 title: passportId
-permalink: passportId
+permalink: passportId.html
 jsonid: passportid
 ---

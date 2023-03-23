@@ -1,5 +1,5 @@
 ---
 title: lineOfCreditSpecifiedFinancialAccount
-permalink: lineOfCreditSpecifiedFinancialAccount
+permalink: lineOfCreditSpecifiedFinancialAccount.html
 jsonid: lineofcreditspecifiedfinancialaccount
 ---

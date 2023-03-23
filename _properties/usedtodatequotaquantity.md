@@ -1,5 +1,5 @@
 ---
 title: usedToDateQuotaQuantity
-permalink: usedToDateQuotaQuantity
+permalink: usedToDateQuotaQuantity.html
 jsonid: usedtodatequotaquantity
 ---

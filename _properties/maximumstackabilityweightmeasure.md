@@ -1,5 +1,5 @@
 ---
 title: maximumStackabilityWeightMeasure
-permalink: maximumStackabilityWeightMeasure
+permalink: maximumStackabilityWeightMeasure.html
 jsonid: maximumstackabilityweightmeasure
 ---

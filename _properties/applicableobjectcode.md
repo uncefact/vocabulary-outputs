@@ -1,5 +1,5 @@
 ---
 title: applicableObjectCode
-permalink: applicableObjectCode
+permalink: applicableObjectCode.html
 jsonid: applicableobjectcode
 ---

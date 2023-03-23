@@ -1,5 +1,5 @@
 ---
 title: memberGeographicalPoint
-permalink: memberGeographicalPoint
+permalink: memberGeographicalPoint.html
 jsonid: membergeographicalpoint
 ---

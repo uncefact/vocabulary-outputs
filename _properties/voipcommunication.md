@@ -1,5 +1,5 @@
 ---
 title: vOIPCommunication
-permalink: vOIPCommunication
+permalink: vOIPCommunication.html
 jsonid: voipcommunication
 ---

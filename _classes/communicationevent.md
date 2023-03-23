@@ -1,5 +1,5 @@
 ---
 title: CommunicationEvent
-permalink: CommunicationEvent
+permalink: CommunicationEvent.html
 jsonid: communicationevent
 ---

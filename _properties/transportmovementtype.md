@@ -1,5 +1,5 @@
 ---
 title: transportMovementType
-permalink: transportMovementType
+permalink: transportMovementType.html
 jsonid: transportmovementtype
 ---

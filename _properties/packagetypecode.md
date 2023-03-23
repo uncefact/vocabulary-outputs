@@ -1,5 +1,5 @@
 ---
 title: packageTypeCode
-permalink: packageTypeCode
+permalink: packageTypeCode.html
 jsonid: packagetypecode
 ---

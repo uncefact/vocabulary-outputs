@@ -1,5 +1,5 @@
 ---
 title: physicalIndicator
-permalink: physicalIndicator
+permalink: physicalIndicator.html
 jsonid: physicalindicator
 ---

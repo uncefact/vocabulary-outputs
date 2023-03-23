@@ -1,0 +1,51 @@
+
+{
+    "label": "IngredientRangeMeasurement",
+    "uri": "unece:IngredientRangeMeasurement",
+    "comment": "A measurement of the variation limits of an ingredient.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
+        },
+        {
+            "uri": "unece:lowerLimitComparisonOperatorCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the comparison operator for the lower limit of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:upperLimitComparisonOperatorCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the comparison operator for the upper limit of this ingredient range measurement."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:lowerLimitActualMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:lowerLimitPressureConditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:upperLimitActualMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:upperLimitPressureConditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:presenceMeasurement",
+            "comment": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+        }
+    ]
+}

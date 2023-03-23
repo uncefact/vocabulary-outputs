@@ -1,0 +1,126 @@
+
+{
+    "label": "SupplyChainTradeTransaction",
+    "uri": "unece:SupplyChainTradeTransaction",
+    "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:documentURLId",
+            "type": "xsd:string",
+            "comment": "The Uniform Resource Locator (URL) of the web location of the document for this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
+        },
+        {
+            "uri": "unece:issueDateTime",
+            "type": "xsd:string",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "unece:salesAgentAssignedId",
+            "type": "xsd:string",
+            "comment": "The unique identifier assigned by the sales agent to identify this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:senderRecipientSequenceId",
+            "type": "xsd:string",
+            "comment": "The sender-recipient sequence identifier for this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:shipmentId",
+            "type": "xsd:string",
+            "comment": "An identifier, such as the Unique Consignment Reference (UCR), for the shipment which is the subject of this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:applicableHeaderTradeAgreement",
+            "type": "unece:HeaderTradeAgreement",
+            "comment": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
+        },
+        {
+            "uri": "unece:applicableHeaderTradeDelivery",
+            "type": "unece:HeaderTradeDelivery",
+            "comment": "A trade delivery header applicable to this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:applicablePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
+        },
+        {
+            "uri": "unece:applicableTradeSettlement",
+            "type": "unece:HeaderTradeSettlement",
+            "comment": "The trade settlement header applicable to this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:associatedDocumentLineDocument",
+            "type": "unece:DocumentLineDocument",
+            "comment": "A document line associated with this line trade settlement."
+        },
+        {
+            "uri": "unece:associatedFinancingRequestResultDocument",
+            "type": "unece:FinancingRequestResultDocument",
+            "comment": "A collection of data that reports the result of a financing request."
+        },
+        {
+            "uri": "unece:associatedStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
+        },
+        {
+            "uri": "unece:includedDeliverySchedule",
+            "type": "unece:DeliverySchedule",
+            "comment": "Delivery scheduling details included in a defined forecast period for this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:includedNote",
+            "type": "unece:Note",
+            "comment": "A textual or coded description, such as a remark or additional information."
+        },
+        {
+            "uri": "unece:includedProductGroup",
+            "type": "unece:ProductGroup",
+            "comment": "A product group included in this supply chain trade transaction."
+        },
+        {
+            "uri": "unece:includedSupplyChainTradeLineItem",
+            "type": "unece:SupplyChainTradeLineItem",
+            "comment": "A supply chain trade line item included in this logistics package."
+        },
+        {
+            "uri": "unece:lineItemQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:specifiedPackage",
+            "type": "unece:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:relatedTradeTransaction",
+            "comment": "A supply chain trade transaction related to this specified assessment."
+        }
+    ]
+}

@@ -33,8 +33,9 @@ layout: default
                 {%- assign propertyUrl = property.uri | split: ":" -%}
                 {%- assign typeUrl = property.type | split: ":" -%}
                 {%- assign mappingKey = typeUrl[0] -%}
+                {%- assign propertyMappingKey = propertyUrl[0] -%}
                 <tr>
-                    <td><a href="{{ propertyUrl[1] | absolute_url }}">{{ property.uri }}</a></td>
+                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri }}</a></td>
                     <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
                     <td>{{ property.comment }}</td>
                 </tr>
@@ -57,9 +58,10 @@ layout: default
             {% for property in class.datatypeProperties %}
                 {% assign propertyUrl = property.uri | split: ":"  %}
                 {% assign typeUrl = property.type | split: ":"  %}
+                {% assign propertyMappingKey = propertyUrl[0]  %}
                 {% assign mappingKey = typeUrl[0]  %}
                 <tr>
-                    <td><a href="{{ propertyUrl[1] | absolute_url }}">{{ property.uri }}</a></td>
+                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri }}</a></td>
                     <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
                     <td>{{ property.comment }}</td>
                 </tr>
@@ -80,8 +82,9 @@ layout: default
         <tbody>
             {% for reference in class.referencedBy %}
                 {% assign referenceUrl = reference.uri | split: ":"  %}
+                {% assign mappingKey = referenceUrl[0]  %}
                 <tr>
-                    <td><a href="{{ referenceUrl[1] | absolute_url }}">{{ reference.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
                     <td>{{ reference.comment }}</td>
                 </tr>
             {% endfor %}

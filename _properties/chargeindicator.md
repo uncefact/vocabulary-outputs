@@ -1,5 +1,5 @@
 ---
 title: chargeIndicator
-permalink: chargeIndicator
+permalink: chargeIndicator.html
 jsonid: chargeindicator
 ---

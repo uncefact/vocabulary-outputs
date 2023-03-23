@@ -1,5 +1,5 @@
 ---
 title: taxExemptionAuthorityId
-permalink: taxExemptionAuthorityId
+permalink: taxExemptionAuthorityId.html
 jsonid: taxexemptionauthorityid
 ---

@@ -1,5 +1,5 @@
 ---
 title: demandForecastDocument
-permalink: demandForecastDocument
+permalink: demandForecastDocument.html
 jsonid: demandforecastdocument
 ---

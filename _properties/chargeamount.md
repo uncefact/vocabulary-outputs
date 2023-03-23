@@ -1,5 +1,5 @@
 ---
 title: chargeAmount
-permalink: chargeAmount
+permalink: chargeAmount.html
 jsonid: chargeamount
 ---

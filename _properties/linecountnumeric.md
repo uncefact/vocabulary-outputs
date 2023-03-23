@@ -1,5 +1,5 @@
 ---
 title: lineCountNumeric
-permalink: lineCountNumeric
+permalink: lineCountNumeric.html
 jsonid: linecountnumeric
 ---

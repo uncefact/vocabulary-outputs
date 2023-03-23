@@ -1,5 +1,5 @@
 ---
 title: powerSupplyConnectorQuantity
-permalink: powerSupplyConnectorQuantity
+permalink: powerSupplyConnectorQuantity.html
 jsonid: powersupplyconnectorquantity
 ---

@@ -1,5 +1,5 @@
 ---
 title: reportingIOTDevice
-permalink: reportingIOTDevice
+permalink: reportingIOTDevice.html
 jsonid: reportingiotdevice
 ---

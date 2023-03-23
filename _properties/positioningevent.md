@@ -1,5 +1,5 @@
 ---
 title: positioningEvent
-permalink: positioningEvent
+permalink: positioningEvent.html
 jsonid: positioningevent
 ---

@@ -1,5 +1,5 @@
 ---
 title: debtorFinancialAccountTypeCode
-permalink: debtorFinancialAccountTypeCode
+permalink: debtorFinancialAccountTypeCode.html
 jsonid: debtorfinancialaccounttypecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: categoryCode
-permalink: categoryCode
+permalink: categoryCode.html
 jsonid: categorycode
 ---

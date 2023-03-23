@@ -1,5 +1,5 @@
 ---
 title: physicalShippingMarks
-permalink: physicalShippingMarks
+permalink: physicalShippingMarks.html
 jsonid: physicalshippingmarks
 ---

@@ -1,5 +1,5 @@
 ---
 title: associatedParty
-permalink: associatedParty
+permalink: associatedParty.html
 jsonid: associatedparty
 ---

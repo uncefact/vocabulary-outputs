@@ -1,5 +1,5 @@
 ---
 title: nominalGrossWeightMeasure
-permalink: nominalGrossWeightMeasure
+permalink: nominalGrossWeightMeasure.html
 jsonid: nominalgrossweightmeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: requestedActionCode
-permalink: requestedActionCode
+permalink: requestedActionCode.html
 jsonid: requestedactioncode
 ---

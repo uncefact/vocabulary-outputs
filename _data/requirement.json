@@ -1,0 +1,41 @@
+
+{
+    "label": "Requirement",
+    "uri": "unece:Requirement",
+    "comment": "Common conditions contained in a contract or agreement applicable between trading partners.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
+        },
+        {
+            "uri": "unece:rule",
+            "type": "xsd:string",
+            "comment": "A rule, expressed as text, for this specified requirement."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:specifiedPaymentTradeSettlement",
+            "type": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:specifyingParty",
+            "type": "unece:Party",
+            "comment": ""
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:providedRequirement",
+            "comment": "Common conditions contained in a contract or agreement applicable between trading partners."
+        }
+    ]
+}

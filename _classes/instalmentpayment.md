@@ -1,5 +1,5 @@
 ---
 title: InstalmentPayment
-permalink: InstalmentPayment
+permalink: InstalmentPayment.html
 jsonid: instalmentpayment
 ---

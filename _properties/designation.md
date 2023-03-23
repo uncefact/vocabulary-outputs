@@ -1,5 +1,5 @@
 ---
 title: designation
-permalink: designation
+permalink: designation.html
 jsonid: designation
 ---

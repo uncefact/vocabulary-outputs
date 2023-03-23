@@ -1,5 +1,5 @@
 ---
 title: plannedReleaseEvent
-permalink: plannedReleaseEvent
+permalink: plannedReleaseEvent.html
 jsonid: plannedreleaseevent
 ---

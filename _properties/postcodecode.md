@@ -1,5 +1,5 @@
 ---
 title: postcodeCode
-permalink: postcodeCode
+permalink: postcodeCode.html
 jsonid: postcodecode
 ---

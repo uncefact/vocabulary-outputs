@@ -1,5 +1,5 @@
 ---
 title: despatchSchedule
-permalink: despatchSchedule
+permalink: despatchSchedule.html
 jsonid: despatchschedule
 ---

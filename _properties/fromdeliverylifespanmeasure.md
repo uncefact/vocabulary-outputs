@@ -1,5 +1,5 @@
 ---
 title: fromDeliveryLifeSpanMeasure
-permalink: fromDeliveryLifeSpanMeasure
+permalink: fromDeliveryLifeSpanMeasure.html
 jsonid: fromdeliverylifespanmeasure
 ---

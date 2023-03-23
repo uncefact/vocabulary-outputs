@@ -1,0 +1,50 @@
+
+{
+    "label": "WorkItemDimension",
+    "uri": "unece:WorkItemDimension",
+    "comment": "A measure of spatial extent associated with this work item, such as length, breadth, or height.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the contractual language for this basic work item."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:workItemDimensionTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of this work item dimension."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:componentDimension",
+            "type": "unece:WorkItemDimension",
+            "comment": "A work item component dimension for this work item dimension."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:actualQuantityDimension",
+            "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+        },
+        {
+            "uri": "unece:componentDimension",
+            "comment": "A work item component dimension for this work item dimension."
+        }
+    ]
+}

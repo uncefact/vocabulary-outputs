@@ -1,5 +1,5 @@
 ---
 title: salesMethodCode
-permalink: salesMethodCode
+permalink: salesMethodCode.html
 jsonid: salesmethodcode
 ---

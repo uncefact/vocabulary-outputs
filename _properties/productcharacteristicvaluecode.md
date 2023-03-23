@@ -1,5 +1,5 @@
 ---
 title: productCharacteristicValueCode
-permalink: productCharacteristicValueCode
+permalink: productCharacteristicValueCode.html
 jsonid: productcharacteristicvaluecode
 ---

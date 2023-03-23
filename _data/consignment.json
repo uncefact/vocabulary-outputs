@@ -2,32 +2,17 @@
 {
     "label": "Consignment",
     "uri": "unece:Consignment",
-    "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract.",
+    "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract.",
     "datatypeProperties": [
         {
-            "uri": "unece:associatedInvoiceAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of an invoice associated with this supply chain consignment."
-        },
-        {
-            "uri": "unece:associatedInvoiceDiscountAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the discount on an invoice associated with this supply chain consignment."
-        },
-        {
             "uri": "unece:associatedInvoiceDiscountPercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "A percent that is a discount on an invoice amount associated with this supply chain consignment."
         },
         {
             "uri": "unece:availabilityDueDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value when this supply chain consignment is due to be available."
-        },
-        {
-            "uri": "unece:cODAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the COD (Cash On Delivery) amount to be collected by the carrier upon delivery of this supply chain consignment."
         },
         {
             "uri": "unece:cargoInsuranceInstructionsInformation",
@@ -37,17 +22,17 @@
         {
             "uri": "unece:cargoToleranceInformation",
             "type": "xsd:string",
-            "comment": "Cargo tolerance information, expressed as text, for this supply chain consignment."
+            "comment": "Cargo tolerance information, expressed as text, for this supply chain consignment item."
         },
         {
             "uri": "unece:carrierAcceptanceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value when this supply chain consignment will be, or has been, accepted by the carrier."
+            "type": "xsd:string",
+            "comment": "The date, time, date time or other date time value when this referenced supply chain consignment will be, or has been, accepted by the carrier."
         },
         {
             "uri": "unece:carrierAssignedId",
-            "type": "xsd:token",
-            "comment": "The unique identifier assigned by the carrier to this supply chain consignment, such as a booking reference number when cargo space is reserved prior to loading."
+            "type": "xsd:string",
+            "comment": "The unique identifier assigned by the carrier to this referenced supply chain consignment, such as a booking reference number when cargo space is reserved prior to loading."
         },
         {
             "uri": "unece:carrierProvidedInformation",
@@ -55,29 +40,14 @@
             "comment": "Information, expressed as text, provided by the carrier for this supply chain consignment."
         },
         {
-            "uri": "unece:chargeableTransportationStageQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of separately chargeable transportation stages to be covered by this supply chain consignment."
-        },
-        {
-            "uri": "unece:chargeableWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of a chargeable weight of this supply chain consignment."
-        },
-        {
             "uri": "unece:consigneeAssignedId",
-            "type": "xsd:token",
-            "comment": "The unique identifier assigned by the consignee to this supply chain consignment."
-        },
-        {
-            "uri": "unece:consignmentItemQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of consignment items separately defined for transport or customs purposes within this supply chain consignment."
+            "type": "xsd:string",
+            "comment": "The unique identifier assigned by the consignee to this referenced supply chain consignment."
         },
         {
             "uri": "unece:consignorAssignedId",
-            "type": "xsd:token",
-            "comment": "The unique identifier assigned by the consignor to this supply chain consignment."
+            "type": "xsd:string",
+            "comment": "The unique identifier assigned by the consignor to this referenced supply chain consignment."
         },
         {
             "uri": "unece:consignorProvidedInformation",
@@ -90,19 +60,24 @@
             "comment": "The indication of whether or not this supply chain consignment is to be transported in a container or containers."
         },
         {
+            "uri": "unece:contractId",
+            "type": "xsd:string",
+            "comment": "A contract identifier for this supply chain consignment."
+        },
+        {
+            "uri": "unece:contractTermsInformation",
+            "type": "xsd:string",
+            "comment": "Information related to contract terms and conditions, expressed as text, for this supply chain consignment."
+        },
+        {
+            "uri": "unece:currencyServiceChargeCurrencyCode",
+            "type": "unece:CurrencyCodeList",
+            "comment": "A code specifying a service charge currency for this supply chain consignment."
+        },
+        {
             "uri": "unece:customsId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier, for customs purposes, for this consignment."
-        },
-        {
-            "uri": "unece:declaredValueForCarriageAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of this supply chain consignment as declared by the shipper or his agent for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery."
-        },
-        {
-            "uri": "unece:declaredValueForCustomsAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value declared for customs purposes for this supply chain consignment."
         },
         {
             "uri": "unece:deliveryInformation",
@@ -116,18 +91,18 @@
         },
         {
             "uri": "unece:exportExitDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value when this supply chain consignment will exit, or has exited from the last port, airport, or border post of the country of export."
         },
         {
-            "uri": "unece:fOBAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value that has to be, or has been, paid for this supply chain consignment as calculated under FOB (Free on Board) delivery terms."
+            "uri": "unece:freightForwarderAssignedId",
+            "type": "xsd:string",
+            "comment": "The unique identifier assigned by the freight forwarder to this referenced supply chain consignment."
         },
         {
-            "uri": "unece:freightForwarderAssignedId",
-            "type": "xsd:token",
-            "comment": "The unique identifier assigned by the freight forwarder to this supply chain consignment."
+            "uri": "unece:globalId",
+            "type": "xsd:string",
+            "comment": "A global identifier for this supply chain consignment item."
         },
         {
             "uri": "unece:goodsReleaseRestriction",
@@ -135,34 +110,14 @@
             "comment": "A goods release restriction, expressed as text, for this supply chain consignment."
         },
         {
-            "uri": "unece:grossVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height, of this referenced supply chain consignment."
-        },
-        {
-            "uri": "unece:grossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
-        },
-        {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this referenced supply chain consignment."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:information",
             "type": "xsd:string",
-            "comment": "Information, expressed as text, for this supply chain consignment."
-        },
-        {
-            "uri": "unece:insurancePremiumAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the insurance premium for this supply chain consignment."
-        },
-        {
-            "uri": "unece:insuranceValueAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of this supply chain consignment as covered by an insurance policy."
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
         },
         {
             "uri": "unece:loadingInformation",
@@ -170,29 +125,9 @@
             "comment": "Loading information, expressed as text, for this supply chain consignment, such as advice and instructions."
         },
         {
-            "uri": "unece:loadingLengthMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the loading length which is the length along a means of transport over which the complete width and height is needed for loading all the goods items in this supply chain consignment."
-        },
-        {
-            "uri": "unece:loadingListQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of loading lists, manifests or similar documents for this supply chain consignment."
-        },
-        {
             "uri": "unece:loadingSequenceNumeric",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The loading sequence number for this supply chain consignment."
-        },
-        {
-            "uri": "unece:netVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the net volume of this supply chain consignment item which excludes all packaging."
-        },
-        {
-            "uri": "unece:netWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the net weight (mass) of this referenced consignment which excludes the weight of packaging and the weight of any transport equipment."
         },
         {
             "uri": "unece:nilCarriageValueIndicator",
@@ -210,14 +145,9 @@
             "comment": "The indication of whether or not this supply chain consignment has a nil value for insurance."
         },
         {
-            "uri": "unece:packageQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of packages within this supply chain consignment."
-        },
-        {
             "uri": "unece:packageType",
             "type": "xsd:string",
-            "comment": "A type of package, expressed as text, for this supply chain consignment."
+            "comment": "A package type, expressed as text, for this supply chain consignment item."
         },
         {
             "uri": "unece:relatedBookingType",
@@ -226,13 +156,13 @@
         },
         {
             "uri": "unece:riskFactorCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying a risk factor for this supply chain consignment."
         },
         {
             "uri": "unece:sequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "A sequence number for this supply chain consignment."
+            "type": "xsd:string",
+            "comment": "A sequence number for these specified personal effects."
         },
         {
             "uri": "unece:shipStoresIndicator",
@@ -240,49 +170,19 @@
             "comment": "The indication of whether or not this supply chain consignment is for ship stores, such as for consumption on the means of transport."
         },
         {
+            "uri": "unece:shippedOnboardDateTime",
+            "type": "xsd:datetime",
+            "comment": "A date, time, date time, or other date time value when this supply chain consignment is shipped onboard."
+        },
+        {
             "uri": "unece:summaryDescription",
             "type": "xsd:string",
             "comment": "A textual summary description of this supply chain consignment."
         },
         {
-            "uri": "unece:totalAllowanceChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "The total monetary value of all allowances and charges for this supply chain consignment."
-        },
-        {
-            "uri": "unece:totalChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "The total monetary value of all freight and other service charges for this supply chain consignment."
-        },
-        {
-            "uri": "unece:totalCollectChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "The total monetary value of all freight and other service charges which are to be collected from the consignee at or after delivery for this supply chain consignment."
-        },
-        {
-            "uri": "unece:totalDisbursementAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of total disbursement for this supply chain consignment, such as the amount to be collected by the carrier according to the order given by the consignor."
-        },
-        {
-            "uri": "unece:totalExportExitToImportEntryChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the total charge or charges of freight, insurance and other services for this supply chain consignment calculated from the export exit location to the import entry location."
-        },
-        {
-            "uri": "unece:totalPrepaidChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "The total monetary value of all freight and other service charges which have been paid in advance for this supply chain consignment."
-        },
-        {
             "uri": "unece:tradedParcelId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A traded parcel identifier for this supply chain consignment."
-        },
-        {
-            "uri": "unece:transportEquipmentQuantity",
-            "type": "xsd:decimal",
-            "comment": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment."
         },
         {
             "uri": "unece:transportEquipmentSplitGoodsIndicator",
@@ -291,8 +191,8 @@
         },
         {
             "uri": "unece:transportServicePaymentArrangementCode",
-            "type": "unece:UNCL4237Code",
-            "comment": "The code specifying the payment arrangements for this supply chain consignment."
+            "type": "unece:TransportServicePaymentArrangementCodeList",
+            "comment": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]."
         },
         {
             "uri": "unece:transportSplitDescription",
@@ -306,20 +206,20 @@
         },
         {
             "uri": "unece:unloadingSequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The unloading sequence number for this supply chain consignment."
+            "type": "xsd:string",
+            "comment": "The sequence number differentiating this piece of logistics transport equipment from others during unloading."
         },
         {
             "uri": "unece:warehouseArrivalDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value of the arrival of this supply chain consignment at a warehouse."
         }
     ],
     "objectProperties": [
         {
             "uri": "unece:applicableAllowanceCharge",
-            "type": "unece:AllowanceCharge",
-            "comment": "An allowance or charge applicable to this supply chain consignment."
+            "type": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         },
         {
             "uri": "unece:applicableCargoInsurance",
@@ -329,37 +229,47 @@
         {
             "uri": "unece:applicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
-            "comment": "A currency exchange applicable to this supply chain consignment."
+            "comment": "The conversion of one currency to another for trade purposes."
         },
         {
             "uri": "unece:applicableCustomsValuation",
             "type": "unece:CustomsValuation",
-            "comment": "A cross-border customs valuation applicable to this supply chain consignment."
+            "comment": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes."
         },
         {
             "uri": "unece:applicableDangerousGoods",
             "type": "unece:DangerousGoods",
-            "comment": "Dangerous goods applicable to the transport of this supply chain consignment."
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         },
         {
             "uri": "unece:applicableRegulatoryProcedure",
             "type": "unece:RegulatoryProcedure",
-            "comment": "A cross-border regulatory procedure applicable to this referenced supply chain consignment."
+            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
         },
         {
             "uri": "unece:applicableServiceCharge",
             "type": "unece:ServiceCharge",
-            "comment": "A logistics service charge applicable to this supply chain consignment, such as freight or insurance charges."
+            "comment": "A charge made for a logistics related service."
         },
         {
             "uri": "unece:associatedDocument",
             "type": "unece:Document",
-            "comment": "A referenced document associated with this supply chain consignment, such as the certificate of origin or dangerous goods note."
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:associatedInvoiceAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:associatedInvoiceDiscountAmount",
+            "type": "unece:AmountType",
+            "comment": ""
         },
         {
             "uri": "unece:associatedParty",
-            "type": "unece:TradeParty",
-            "comment": "A trade party associated with this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:atArrivalTransportMovement",
@@ -382,34 +292,49 @@
             "comment": "A border crossing logistics transport movement for this supply chain consignment."
         },
         {
+            "uri": "unece:cODAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
             "uri": "unece:carrierAcceptanceLocation",
             "type": "unece:LogisticsLocation",
             "comment": "The location where this referenced supply chain consignment will be or has been accepted by the carrier."
         },
         {
             "uri": "unece:carrierAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as the agent of the carrier for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:carrierParty",
-            "type": "unece:TradeParty",
-            "comment": "The carrier party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:chargeableTransportationStageQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:classificationDocument",
+            "type": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:connectingCarrierParty",
-            "type": "unece:TradeParty",
-            "comment": "A connecting carrier party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:consigneeAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The party authorized to act for or on behalf of the consignee for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:consigneeParty",
-            "type": "unece:TradeParty",
-            "comment": "The consignee party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:consigneeReceiptLocation",
@@ -417,49 +342,54 @@
             "comment": "The location at which this supply chain consignment will be or has been received by the consignee."
         },
         {
+            "uri": "unece:consignmentItemQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
             "uri": "unece:consignorAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The party authorized to act for or on behalf of the consignor for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:consignorParty",
-            "type": "unece:TradeParty",
-            "comment": "The consignor party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:consignorProvidedBorderClearanceInstructions",
             "type": "unece:TransportInstructions",
-            "comment": "Border clearance instructions provided by the consignor for this supply chain consignment."
+            "comment": "Transport information of an instructive nature."
         },
         {
             "uri": "unece:consolidatorParty",
-            "type": "unece:TradeParty",
-            "comment": "The party responsible for the consolidation of this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:customsExportAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as an agent for, or on behalf of, the consignor with respect to the customs export procedures for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:customsImportAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as an agent for, or on behalf of, the consignee with respect to the customs import procedures for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:customsRequiredInvoiceDocument",
             "type": "unece:Document",
-            "comment": "A referenced invoice document required by customs for this supply chain consignment."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:customsTransitAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The party acting as an agent for, or on behalf of, the consignor with respect to customs transit procedures for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:dangerousGoodsNotifierParty",
-            "type": "unece:TradeParty",
-            "comment": "The party responsible for providing the dangerous goods notification in accordance with the dangerous goods regulations relevant for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:declaredForCustomsLocation",
@@ -467,34 +397,44 @@
             "comment": "The location of this supply chain consignment as declared for customs."
         },
         {
-            "uri": "unece:deconsolidatorParty",
-            "type": "unece:TradeParty",
-            "comment": "The party responsible for the deconsolidation of this supply chain consignment."
+            "uri": "unece:declaredValueForCarriageAmount",
+            "type": "unece:AmountType",
+            "comment": ""
         },
         {
-            "uri": "unece:deliveryEvent",
-            "type": "unece:TransportEvent",
-            "comment": "The delivery event for this supply chain consignment."
+            "uri": "unece:declaredValueForCustomsAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:deconsolidatorParty",
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:deliveryInstructions",
             "type": "unece:DeliveryInstructions",
-            "comment": "Delivery instructions for this supply chain consignment."
+            "comment": "Delivery instructions for this piece of logistics transport equipment."
         },
         {
             "uri": "unece:deliveryParty",
-            "type": "unece:TradeParty",
-            "comment": "The party to whom this referenced supply chain consignment will be or has been delivered."
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:deliveryTransportEvent",
+            "type": "unece:TransportEvent",
+            "comment": "A delivery event for this piece of logistics transport equipment."
         },
         {
             "uri": "unece:despatchParty",
-            "type": "unece:TradeParty",
-            "comment": "The party from whom this supply chain consignment will be or has been despatched."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:destinationCountry",
             "type": "unece:Country",
-            "comment": "The destination country for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
             "uri": "unece:devanningEvent",
@@ -508,28 +448,33 @@
         },
         {
             "uri": "unece:examinationEvent",
-            "type": "unece:TransportEvent",
-            "comment": "An examination event for this supply chain consignment."
+            "type": "unece:Event",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
         },
         {
             "uri": "unece:exportCountry",
             "type": "unece:Country",
-            "comment": "The export country for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
             "uri": "unece:exportGeopoliticalRegion",
             "type": "unece:GeopoliticalRegion",
-            "comment": "The geopolitical region of export for this supply chain consignment."
+            "comment": "A collection of countries and/or economies united for trade purposes."
         },
         {
             "uri": "unece:exporterParty",
-            "type": "unece:TradeParty",
-            "comment": "The party who exports this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:fOBAmount",
+            "type": "unece:AmountType",
+            "comment": ""
         },
         {
             "uri": "unece:finalDestinationCountry",
             "type": "unece:Country",
-            "comment": "The final destination country for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
             "uri": "unece:finalDestinationLocation",
@@ -538,18 +483,18 @@
         },
         {
             "uri": "unece:freightForwarderParty",
-            "type": "unece:TradeParty",
-            "comment": "The freight forwarder party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:groupingCentreParty",
-            "type": "unece:TradeParty",
-            "comment": "A grouping centre party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:handlingInstructions",
             "type": "unece:HandlingInstructions",
-            "comment": "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be loaded on a means of transport."
+            "comment": "Handling instructions for the transported dangerous goods."
         },
         {
             "uri": "unece:haulageInstructions",
@@ -559,12 +504,12 @@
         {
             "uri": "unece:importCountry",
             "type": "unece:Country",
-            "comment": "The import country for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
             "uri": "unece:importerParty",
-            "type": "unece:TradeParty",
-            "comment": "The party who imports this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:includedConsignment",
@@ -574,27 +519,42 @@
         {
             "uri": "unece:includedConsignmentItem",
             "type": "unece:ConsignmentItem",
-            "comment": "A referenced consignment item included in this referenced supply chain consignment."
+            "comment": "A consignment item included in this supply chain consignment."
         },
         {
             "uri": "unece:insuranceApplicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
-            "comment": "A currency exchange applicable to an insurance charge for this supply chain consignment."
+            "comment": "The conversion of one currency to another for trade purposes."
+        },
+        {
+            "uri": "unece:insurancePremiumAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:insuranceValueAmount",
+            "type": "unece:AmountType",
+            "comment": ""
         },
         {
             "uri": "unece:intermediateConsigneeParty",
-            "type": "unece:TradeParty",
-            "comment": "A party that is an intermediate consignee for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:invoiceApplicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
-            "comment": "A currency exchange applicable to the invoice for this supply chain consignment."
+            "comment": "The conversion of one currency to another for trade purposes."
         },
         {
             "uri": "unece:invoiceeAssociatedParty",
-            "type": "unece:TradeParty",
-            "comment": "An invoicee trade party associated with this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:linearUnitLoadingLengthMeasure",
+            "type": "unece:LinearUnitMeasureType",
+            "comment": ""
         },
         {
             "uri": "unece:loadingBaseportLocation",
@@ -604,7 +564,12 @@
         {
             "uri": "unece:loadingInstructions",
             "type": "unece:TransportInstructions",
-            "comment": "Loading instructions for this supply chain consignment."
+            "comment": "Transport information of an instructive nature."
+        },
+        {
+            "uri": "unece:loadingListQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
         },
         {
             "uri": "unece:loadingLocation",
@@ -613,8 +578,8 @@
         },
         {
             "uri": "unece:localConsigneeAgentParty",
-            "type": "unece:TradeParty",
-            "comment": "The local party authorized to act for or on behalf of the consignee for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:mainCarriageTransportMovement",
@@ -624,17 +589,17 @@
         {
             "uri": "unece:manifestAssociatedDocument",
             "type": "unece:Document",
-            "comment": "A referenced manifest document associated to this supply chain consignment."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:natureIdentificationCargo",
             "type": "unece:Cargo",
-            "comment": "Transport cargo details of this supply chain consignment sufficient to identify its nature for customs, statistical or transport purposes."
+            "comment": "Transport cargo details of this referenced supply chain consignment item sufficient to identify its nature for customs, statistical or transport purposes."
         },
         {
             "uri": "unece:notifiedParty",
-            "type": "unece:TradeParty",
-            "comment": "A party who has been or will be notified about this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:onCarriageTransportMovement",
@@ -642,29 +607,44 @@
             "comment": "An on-carriage logistics transport movement for this supply chain consignment."
         },
         {
+            "uri": "unece:onwardRoutingLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "An onward routing location for this supply chain consignment."
+        },
+        {
             "uri": "unece:originCountry",
             "type": "unece:Country",
-            "comment": "A country of origin for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
             "uri": "unece:originGeopoliticalRegion",
             "type": "unece:GeopoliticalRegion",
-            "comment": "The geopolitical region of origin for this supply chain consignment."
+            "comment": "A collection of countries and/or economies united for trade purposes."
+        },
+        {
+            "uri": "unece:originalDespatchLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "The location from which this supply chain consignment was originally despatched."
+        },
+        {
+            "uri": "unece:packageQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
         },
         {
             "uri": "unece:physicalShippingMarks",
             "type": "unece:ShippingMarks",
-            "comment": "Physical logistics shipping marks and barcoding information related to this supply chain consignment."
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
         },
         {
             "uri": "unece:pickUpEvent",
             "type": "unece:TransportEvent",
-            "comment": "The pick-up event for this supply chain consignment."
+            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
         },
         {
             "uri": "unece:pickUpParty",
-            "type": "unece:TradeParty",
-            "comment": "The pick-up trade party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:preCarriageTransportMovement",
@@ -674,37 +654,32 @@
         {
             "uri": "unece:previousAdministrativeDocument",
             "type": "unece:Document",
-            "comment": "A previous administrative referenced document for this supply chain consignment."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:reExportCountry",
             "type": "unece:Country",
-            "comment": "A re-export country for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
-            "uri": "unece:relatedTradeTransaction",
-            "type": "unece:TradeTransaction",
-            "comment": "A trade transaction related to this referenced supply chain consignment."
-        },
-        {
-            "uri": "unece:reportedStatus",
+            "uri": "unece:reportedLogisticsStatus",
             "type": "unece:LogisticsStatus",
-            "comment": "A logistics status reported for this supply chain consignment."
+            "comment": "A logistics status reported for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:serviceChargeApplicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
-            "comment": "A currency exchange applicable to a service charge for this supply chain consignment."
+            "comment": "The conversion of one currency to another for trade purposes."
         },
         {
             "uri": "unece:shipFromParty",
-            "type": "unece:TradeParty",
-            "comment": "The ship from party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:shipToParty",
-            "type": "unece:TradeParty",
-            "comment": "The ship to party for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:specifiedDeliveryTerms",
@@ -712,9 +687,24 @@
             "comment": "Delivery terms specified for this supply chain consignment."
         },
         {
+            "uri": "unece:specifiedInspectionEvent",
+            "type": "unece:InspectionEvent",
+            "comment": "A significant occurrence or happening related to an inspection."
+        },
+        {
+            "uri": "unece:specifiedLogisticsStatus",
+            "type": "unece:LogisticsStatus",
+            "comment": "A status specified for this logistics transport movement."
+        },
+        {
             "uri": "unece:specifiedRiskAnalysisResult",
             "type": "unece:RiskAnalysisResult",
-            "comment": "A result of a logistics risk analysis calculation specified for this supply chain consignment."
+            "comment": "The result of a logistics risk analysis calculation."
+        },
+        {
+            "uri": "unece:specifiedSupplyChainReference",
+            "type": "unece:SupplyChainReference",
+            "comment": "A reference specified for this supply chain consignment."
         },
         {
             "uri": "unece:specifiedTransportMovement",
@@ -727,9 +717,39 @@
             "comment": "A storage event for this supply chain consignment."
         },
         {
+            "uri": "unece:totalAllowanceChargeAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:totalChargeAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:totalCollectChargeAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:totalDisbursementAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:totalExportExitToImportEntryChargeAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:totalPrepaidChargeAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
             "uri": "unece:transitCountry",
             "type": "unece:Country",
-            "comment": "A transit country for this supply chain consignment."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
         },
         {
             "uri": "unece:transitLocation",
@@ -739,7 +759,12 @@
         {
             "uri": "unece:transportContractDocument",
             "type": "unece:Document",
-            "comment": "The transport contract document for this referenced supply chain consignment, such as an airwaybill or a seawaybill."
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:transportEquipmentQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
         },
         {
             "uri": "unece:transportEvent",
@@ -749,7 +774,7 @@
         {
             "uri": "unece:transportPackage",
             "type": "unece:Package",
-            "comment": "Transport packages for this referenced supply chain consignment."
+            "comment": "A transport package for this referenced supply chain consignment item."
         },
         {
             "uri": "unece:transportService",
@@ -758,8 +783,8 @@
         },
         {
             "uri": "unece:transportServicesBuyerParty",
-            "type": "unece:TradeParty",
-            "comment": "The party which is the buyer of the transport services for this supply chain consignment."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:transshipmentLocation",
@@ -779,7 +804,7 @@
         {
             "uri": "unece:utilizedTransportEquipment",
             "type": "unece:LogisticsTransportEquipment",
-            "comment": "Logistics transport equipment utilized for this supply chain consignment."
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
             "uri": "unece:vanningEvent",
@@ -787,9 +812,49 @@
             "comment": "The vanning event (the loading of this consignment at the place of its original despatch) for this referenced supply chain consignment."
         },
         {
+            "uri": "unece:volumeUnitGrossVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:volumeUnitNetVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:warehouseDepositorParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:warehouseKeeperParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:warehouseOperatorParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
             "uri": "unece:warehouseStorageEvent",
             "type": "unece:TransportEvent",
             "comment": "A warehouse storage event for this referenced supply chain consignment."
+        },
+        {
+            "uri": "unece:weightUnitChargeableWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:weightUnitGrossWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:weightUnitNetWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
         }
     ],
     "referencedBy": [
@@ -803,11 +868,11 @@
         },
         {
             "uri": "unece:plannedConsignment",
-            "comment": "A consignment, at header level, ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         },
         {
             "uri": "unece:relatedConsignment",
-            "comment": "A consignment, at header level, ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         }
     ]
 }

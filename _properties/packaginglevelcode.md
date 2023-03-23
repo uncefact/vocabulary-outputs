@@ -1,5 +1,5 @@
 ---
 title: packagingLevelCode
-permalink: packagingLevelCode
+permalink: packagingLevelCode.html
 jsonid: packaginglevelcode
 ---

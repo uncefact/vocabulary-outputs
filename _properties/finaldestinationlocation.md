@@ -1,5 +1,5 @@
 ---
 title: finalDestinationLocation
-permalink: finalDestinationLocation
+permalink: finalDestinationLocation.html
 jsonid: finaldestinationlocation
 ---

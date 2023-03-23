@@ -1,5 +1,5 @@
 ---
 title: serviceChargeApplicableCurrencyExchange
-permalink: serviceChargeApplicableCurrencyExchange
+permalink: serviceChargeApplicableCurrencyExchange.html
 jsonid: servicechargeapplicablecurrencyexchange
 ---

@@ -1,5 +1,5 @@
 ---
 title: indianFinancialSystemId
-permalink: indianFinancialSystemId
+permalink: indianFinancialSystemId.html
 jsonid: indianfinancialsystemid
 ---

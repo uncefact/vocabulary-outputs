@@ -1,5 +1,5 @@
 ---
 title: fOBAmount
-permalink: fOBAmount
+permalink: fOBAmount.html
 jsonid: fobamount
 ---

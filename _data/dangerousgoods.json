@@ -2,11 +2,11 @@
 {
     "label": "DangerousGoods",
     "uri": "unece:DangerousGoods",
-    "comment": "A hazardous or non-hazardous substance which may pose risks to people and/or the environment for which the transportation is regulated by dangerous goods regulations.",
+    "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations.",
     "datatypeProperties": [
         {
             "uri": "unece:additionalHazardClassificationId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of an additional hazard class applicable to these transported dangerous goods."
         },
         {
@@ -31,62 +31,47 @@
         },
         {
             "uri": "unece:dangerousGoodsPackagingLevelPackagingDangerLevelCode",
-            "type": "unece:UNCL8339Code",
+            "type": "unece:DangerousGoodsPackagingLevelCodeList",
             "comment": "The code specifying the level of danger that the packaging of these dangerous goods must cover for transport purposes."
         },
         {
             "uri": "unece:dangerousGoodsRegulationCode",
-            "type": "unece:UNCL8273Code",
+            "type": "unece:DangerousGoodsRegulationCodeList",
             "comment": "The code specifying a regulation applicable to these transported dangerous goods."
         },
         {
             "uri": "unece:eMSId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique transport emergency procedure (EMS) identifier applicable for these transported dangerous goods."
         },
         {
-            "uri": "unece:explosiveCargoNetWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the explosive cargo weight applicable to these transported dangerous goods."
-        },
-        {
             "uri": "unece:explosiveCompatibilityGroupCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the explosive compatibility group for these transported dangerous goods."
         },
         {
-            "uri": "unece:grossVolumeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the gross volume, normally calculated by multiplying the maximum length, width and height dimensions of these transported dangerous goods."
-        },
-        {
-            "uri": "unece:grossWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the weight (mass) of these transported dangerous goods including packaging but excluding the transport equipment."
-        },
-        {
             "uri": "unece:hazardCategoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the hazard category for these transported dangerous goods."
         },
         {
             "uri": "unece:hazardClassVersionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of the version of a hazard class for these transported dangerous goods."
         },
         {
             "uri": "unece:hazardClassificationId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of a hazard class applicable to these transported dangerous goods as defined by the relevant governing regulation authority."
         },
         {
             "uri": "unece:hazardTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying the type of hazard for these transported dangerous goods."
         },
         {
             "uri": "unece:iMDGSegregationGroupCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the IMDG (International Maritime Dangerous Goods regulation) segregation group for these transported dangerous goods."
         },
         {
@@ -96,17 +81,17 @@
         },
         {
             "uri": "unece:limitedQuantityCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying facilitations for transport of limited quantities of these transported dangerous goods."
         },
         {
             "uri": "unece:lowerPartOrangeHazardPlacardId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique lower part of the orange hazard placard identifier for these transported dangerous goods."
         },
         {
             "uri": "unece:mFAGId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique Medical First Aid Guide (MFAG) identifier for these transported dangerous goods."
         },
         {
@@ -115,14 +100,14 @@
             "comment": "The indication of whether or not these transported dangerous goods have a marine pollutant content."
         },
         {
-            "uri": "unece:marking",
+            "uri": "unece:maritimePollutantTypeCode",
             "type": "xsd:string",
-            "comment": "Marking, expressed as text, for these transported dangerous goods."
+            "comment": "A code specifying a type of maritime pollutant for the transported dangerous goods."
         },
         {
-            "uri": "unece:netWeightMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the net weight (mass) of these transported dangerous goods."
+            "uri": "unece:marking",
+            "type": "xsd:string",
+            "comment": "Marking, expressed as text, for these logistics shipping marks."
         },
         {
             "uri": "unece:overpackInformation",
@@ -130,13 +115,8 @@
             "comment": "Overpack information, expressed as text, for these transported dangerous goods."
         },
         {
-            "uri": "unece:packageTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the package type for the transported dangerous goods."
-        },
-        {
             "uri": "unece:packingInstructionTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying a type of packing instruction for these transported dangerous goods."
         },
         {
@@ -146,7 +126,7 @@
         },
         {
             "uri": "unece:pollutantLevelCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the level of pollution of these transported dangerous goods."
         },
         {
@@ -156,8 +136,13 @@
         },
         {
             "uri": "unece:qValueNumeric",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The number of the Q-Value for these transported dangerous goods."
+        },
+        {
+            "uri": "unece:radioactiveIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indicator of whether or not these transported dangerous goods are radioactive."
         },
         {
             "uri": "unece:regulationName",
@@ -170,18 +155,13 @@
             "comment": "The name, expressed as text, for the regulatory authority for these transported dangerous goods."
         },
         {
-            "uri": "unece:reportableQuantity",
-            "type": "xsd:decimal",
-            "comment": "The reportable quantity for these transported dangerous goods. Quantity of a hazardous substance that triggers reports under Comprehensive Environmental Response, Compensation, and Liability Act (CERCLA). If a substance exceeds its Reportable Quantity, the release must be reported to the National Response Center, the SERC, and community emergency coordinators for areas likely to be affected."
-        },
-        {
             "uri": "unece:shipperDeclarationInformation",
             "type": "xsd:string",
             "comment": "Shipper declaration information, expressed as text, for these transported dangerous goods."
         },
         {
             "uri": "unece:specialProvisionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of the special provision for these transported dangerous goods."
         },
         {
@@ -191,7 +171,7 @@
         },
         {
             "uri": "unece:tREMId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique TRansport EMergency (TREM) card identifier for these transported dangerous goods."
         },
         {
@@ -200,18 +180,23 @@
             "comment": "A technical name, expressed as text, for these transported dangerous goods."
         },
         {
+            "uri": "unece:transportDangerousGoodsPackageTypeCode",
+            "type": "unece:PackageTypeCodeList",
+            "comment": "The code specifying the package type for the transported dangerous goods."
+        },
+        {
             "uri": "unece:tunnelRestrictionCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the tunnel restriction for these transported dangerous goods."
         },
         {
             "uri": "unece:uNDGIdentificationCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the unique United Nations Dangerous Goods (UNDG) number assigned to these transported dangerous goods."
         },
         {
             "uri": "unece:upperPartOrangeHazardPlacardId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique upper part of the orange hazard placard identifier for these transported dangerous goods."
         }
     ],
@@ -219,27 +204,37 @@
         {
             "uri": "unece:associatedTransportEquipment",
             "type": "unece:LogisticsTransportEquipment",
-            "comment": "Referenced transport equipment associated with the dangerous goods."
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
             "uri": "unece:controlTemperatureMeasurement",
             "type": "unece:Measurement",
-            "comment": "The measurement of the control temperature of these transported dangerous goods."
+            "comment": "An amount, size, or extent as established by measuring."
+        },
+        {
+            "uri": "unece:densityMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
         },
         {
             "uri": "unece:emergencyContact",
             "type": "unece:Contact",
-            "comment": "The person or department to be contacted in the event of any emergency related to these transported dangerous goods."
+            "comment": "An individual human being in a position to give assistance or information."
         },
         {
             "uri": "unece:emergencyTemperatureMeasurement",
             "type": "unece:Measurement",
-            "comment": "The measurement of the emergency temperature of these transported dangerous goods."
+            "comment": "An amount, size, or extent as established by measuring."
+        },
+        {
+            "uri": "unece:explosiveCargoNetWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
         },
         {
             "uri": "unece:flashpointTemperatureMeasurement",
             "type": "unece:Measurement",
-            "comment": "A measurement of the flashpoint temperature of these transported dangerous goods."
+            "comment": "An amount, size, or extent as established by measuring."
         },
         {
             "uri": "unece:handlingInstructions",
@@ -248,28 +243,73 @@
         },
         {
             "uri": "unece:radioactiveMaterial",
-            "type": "unece:Material",
-            "comment": "The radioactive material transported as dangerous goods."
+            "type": "unece:RadioactiveMaterial",
+            "comment": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of particles or gamma rays."
+        },
+        {
+            "uri": "unece:relatedDocument",
+            "type": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:reportableQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
         },
         {
             "uri": "unece:specifiedPackage",
             "type": "unece:Package",
-            "comment": "A logistics package specified for these transported dangerous goods."
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
+        },
+        {
+            "uri": "unece:statedCondition",
+            "type": "unece:SpecifiedCondition",
+            "comment": "A stated condition of these transported dangerous goods."
+        },
+        {
+            "uri": "unece:temperatureUnitMeltingPointTemperatureMeasure",
+            "type": "unece:TemperatureUnitMeasureType",
+            "comment": ""
         },
         {
             "uri": "unece:transportExpertContact",
             "type": "unece:Contact",
-            "comment": "The expert to be contacted for details about the transport of these dangerous goods."
+            "comment": "An individual human being in a position to give assistance or information."
+        },
+        {
+            "uri": "unece:viscosityMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:volumeUnitGrossVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:volumeUnitMarinePollutantVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:weightUnitGrossWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:weightUnitNetWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableDangerousGoods",
-            "comment": "Dangerous goods applicable to the ..."
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         },
         {
             "uri": "unece:loadedDangerousGoods",
-            "comment": "Dangerous goods loaded into this piece of logistics transport equipment."
+            "comment": "Dangerous goods loaded into or onto this piece of associated transport equipment."
         }
     ]
 }

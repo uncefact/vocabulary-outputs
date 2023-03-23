@@ -1,5 +1,5 @@
 ---
 title: buyerNonDeductibleTaxSpecifiedAccountingAccount
-permalink: buyerNonDeductibleTaxSpecifiedAccountingAccount
+permalink: buyerNonDeductibleTaxSpecifiedAccountingAccount.html
 jsonid: buyernondeductibletaxspecifiedaccountingaccount
 ---

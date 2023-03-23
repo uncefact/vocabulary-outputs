@@ -1,5 +1,5 @@
 ---
 title: LogisticsTransportEquipment
-permalink: LogisticsTransportEquipment
+permalink: LogisticsTransportEquipment.html
 jsonid: logisticstransportequipment
 ---

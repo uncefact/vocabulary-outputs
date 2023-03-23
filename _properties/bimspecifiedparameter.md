@@ -1,5 +1,5 @@
 ---
 title: bIMSpecifiedParameter
-permalink: bIMSpecifiedParameter
+permalink: bIMSpecifiedParameter.html
 jsonid: bimspecifiedparameter
 ---

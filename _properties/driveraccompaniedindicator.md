@@ -1,5 +1,5 @@
 ---
 title: driverAccompaniedIndicator
-permalink: driverAccompaniedIndicator
+permalink: driverAccompaniedIndicator.html
 jsonid: driveraccompaniedindicator
 ---

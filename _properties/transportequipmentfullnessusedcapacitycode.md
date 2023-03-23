@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentFullnessUsedCapacityCode
-permalink: transportEquipmentFullnessUsedCapacityCode
+permalink: transportEquipmentFullnessUsedCapacityCode.html
 jsonid: transportequipmentfullnessusedcapacitycode
 ---

@@ -1,5 +1,5 @@
 ---
 title: iSSCIssuingAuthorityParty
-permalink: iSSCIssuingAuthorityParty
+permalink: iSSCIssuingAuthorityParty.html
 jsonid: isscissuingauthorityparty
 ---

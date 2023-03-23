@@ -2,24 +2,21 @@
 {
     "label": "specifiedServiceCharge",
     "uri": "unece:specifiedServiceCharge",
-    "comment": [
-        "A logistics service charge specified for this header trade settlement.",
-        "A logistics service charge specified for this line trade settlement."
-    ],
+    "comment": "A charge made for a logistics related service.",
     "rangeIncludes": [
         {
             "uri": "unece:ServiceCharge",
-            "comment": "A charge made for services rendered or assessed, such as banking, freight charges, charges for a medical service such as provision of a private room, provision of a television, medical supplies, massage."
+            "comment": "A charge made for a logistics related service."
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

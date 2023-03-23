@@ -1,5 +1,5 @@
 ---
 title: resultAuthentication
-permalink: resultAuthentication
+permalink: resultAuthentication.html
 jsonid: resultauthentication
 ---

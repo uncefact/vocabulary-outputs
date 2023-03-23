@@ -1,5 +1,5 @@
 ---
 title: manufacturingDateTime
-permalink: manufacturingDateTime
+permalink: manufacturingDateTime.html
 jsonid: manufacturingdatetime
 ---

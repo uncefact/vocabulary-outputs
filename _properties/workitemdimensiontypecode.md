@@ -1,5 +1,5 @@
 ---
 title: workItemDimensionTypeCode
-permalink: workItemDimensionTypeCode
+permalink: workItemDimensionTypeCode.html
 jsonid: workitemdimensiontypecode
 ---

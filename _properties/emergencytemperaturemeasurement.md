@@ -1,5 +1,5 @@
 ---
 title: emergencyTemperatureMeasurement
-permalink: emergencyTemperatureMeasurement
+permalink: emergencyTemperatureMeasurement.html
 jsonid: emergencytemperaturemeasurement
 ---

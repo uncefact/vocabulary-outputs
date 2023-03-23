@@ -1,5 +1,5 @@
 ---
 title: paymentGuaranteeMeansGuaranteeMethodCode
-permalink: paymentGuaranteeMeansGuaranteeMethodCode
+permalink: paymentGuaranteeMeansGuaranteeMethodCode.html
 jsonid: paymentguaranteemeansguaranteemethodcode
 ---

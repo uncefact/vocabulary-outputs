@@ -1,5 +1,5 @@
 ---
 title: designatedClassification
-permalink: designatedClassification
+permalink: designatedClassification.html
 jsonid: designatedclassification
 ---

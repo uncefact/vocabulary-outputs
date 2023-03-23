@@ -1,5 +1,5 @@
 ---
 title: ReturnableAssetInstructions
-permalink: ReturnableAssetInstructions
+permalink: ReturnableAssetInstructions.html
 jsonid: returnableassetinstructions
 ---

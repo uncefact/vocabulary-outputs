@@ -1,5 +1,5 @@
 ---
 title: eMSId
-permalink: eMSId
+permalink: eMSId.html
 jsonid: emsid
 ---

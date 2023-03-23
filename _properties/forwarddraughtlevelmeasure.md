@@ -1,5 +1,5 @@
 ---
 title: forwardDraughtLevelMeasure
-permalink: forwardDraughtLevelMeasure
+permalink: forwardDraughtLevelMeasure.html
 jsonid: forwarddraughtlevelmeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: conveyanceFacilityRelatedLocation
-permalink: conveyanceFacilityRelatedLocation
+permalink: conveyanceFacilityRelatedLocation.html
 jsonid: conveyancefacilityrelatedlocation
 ---

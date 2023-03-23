@@ -1,5 +1,5 @@
 ---
 title: TransportServiceLocation
-permalink: TransportServiceLocation
+permalink: TransportServiceLocation.html
 jsonid: transportservicelocation
 ---

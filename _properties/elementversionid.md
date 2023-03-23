@@ -1,5 +1,5 @@
 ---
 title: elementVersionId
-permalink: elementVersionId
+permalink: elementVersionId.html
 jsonid: elementversionid
 ---

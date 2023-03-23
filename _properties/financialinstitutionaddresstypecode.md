@@ -1,5 +1,5 @@
 ---
 title: financialInstitutionAddressTypeCode
-permalink: financialInstitutionAddressTypeCode
+permalink: financialInstitutionAddressTypeCode.html
 jsonid: financialinstitutionaddresstypecode
 ---

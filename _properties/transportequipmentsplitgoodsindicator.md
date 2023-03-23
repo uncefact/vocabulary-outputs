@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentSplitGoodsIndicator
-permalink: transportEquipmentSplitGoodsIndicator
+permalink: transportEquipmentSplitGoodsIndicator.html
 jsonid: transportequipmentsplitgoodsindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: applicableCondition
-permalink: applicableCondition
+permalink: applicableCondition.html
 jsonid: applicablecondition
 ---

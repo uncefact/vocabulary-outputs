@@ -1,5 +1,5 @@
 ---
 title: additionalInstructionIndicator
-permalink: additionalInstructionIndicator
+permalink: additionalInstructionIndicator.html
 jsonid: additionalinstructionindicator
 ---

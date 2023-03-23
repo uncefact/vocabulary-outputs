@@ -1,5 +1,5 @@
 ---
 title: receiptSchedule
-permalink: receiptSchedule
+permalink: receiptSchedule.html
 jsonid: receiptschedule
 ---

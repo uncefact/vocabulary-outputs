@@ -1,5 +1,5 @@
 ---
 title: logisticsServiceProviderParty
-permalink: logisticsServiceProviderParty
+permalink: logisticsServiceProviderParty.html
 jsonid: logisticsserviceproviderparty
 ---

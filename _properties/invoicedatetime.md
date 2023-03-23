@@ -1,5 +1,5 @@
 ---
 title: invoiceDateTime
-permalink: invoiceDateTime
+permalink: invoiceDateTime.html
 jsonid: invoicedatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: unloadingLocation
-permalink: unloadingLocation
+permalink: unloadingLocation.html
 jsonid: unloadinglocation
 ---

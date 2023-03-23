@@ -1,5 +1,5 @@
 ---
 title: statementNote
-permalink: statementNote
+permalink: statementNote.html
 jsonid: statementnote
 ---

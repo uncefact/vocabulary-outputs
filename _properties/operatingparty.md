@@ -1,5 +1,5 @@
 ---
 title: operatingParty
-permalink: operatingParty
+permalink: operatingParty.html
 jsonid: operatingparty
 ---

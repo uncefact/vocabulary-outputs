@@ -1,5 +1,5 @@
 ---
 title: crewPersonalEffects
-permalink: crewPersonalEffects
+permalink: crewPersonalEffects.html
 jsonid: crewpersonaleffects
 ---

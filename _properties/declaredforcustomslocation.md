@@ -1,5 +1,5 @@
 ---
 title: declaredForCustomsLocation
-permalink: declaredForCustomsLocation
+permalink: declaredForCustomsLocation.html
 jsonid: declaredforcustomslocation
 ---

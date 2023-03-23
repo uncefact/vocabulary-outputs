@@ -1,5 +1,5 @@
 ---
 title: specifiedCancellationStatus
-permalink: specifiedCancellationStatus
+permalink: specifiedCancellationStatus.html
 jsonid: specifiedcancellationstatus
 ---

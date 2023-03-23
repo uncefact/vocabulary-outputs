@@ -1,5 +1,5 @@
 ---
 title: carriedInactiveTransportMeans
-permalink: carriedInactiveTransportMeans
+permalink: carriedInactiveTransportMeans.html
 jsonid: carriedinactivetransportmeans
 ---

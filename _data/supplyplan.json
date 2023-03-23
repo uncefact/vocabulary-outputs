@@ -2,95 +2,104 @@
 {
     "label": "SupplyPlan",
     "uri": "unece:SupplyPlan",
-    "comment": "Specification of the delivery time and quantity bucket in a demand forecast or supply schedule.",
+    "comment": "Specification of the delivery quantities and date/time values in a supply schedule.",
     "datatypeProperties": [
         {
-            "uri": "unece:actualQuantity",
-            "type": "xsd:decimal",
-            "comment": "The actual quantity in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:minusToleranceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The minus tolerance quantity from the planned or requested quantity in this supply chain supply plan. Minus Tolerance: the maximum permissible variation in the negative direction for a quantity."
-        },
-        {
-            "uri": "unece:plannedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The planned quantity in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:plusToleranceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The plus tolerance quantity from the planned or requested quantity in this supply chain supply plan."
-        },
-        {
             "uri": "unece:supplyChainSupplyPlanCommitmentLevelCode",
-            "type": "unece:UNCL4017Code",
+            "type": "unece:CommitmentLevelCodeList",
             "comment": "The code specifying the commitment level for this supply chain supply plan, such as fabrication or raw material."
         },
         {
             "uri": "unece:synchronizationDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, or other date time value of a synchronization of the supply chain supply plan. The max occurences allow the reporting of time and date as separate instances."
-        },
-        {
-            "uri": "unece:synchronizationQuantity",
-            "type": "xsd:decimal",
-            "comment": "The value specifying the quantity for a synchronization of this supply chain supply plan."
-        },
-        {
-            "uri": "unece:toleranceQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity of tolerance from the planned quantity in this supply chain supply plan."
+            "type": "xsd:string",
+            "comment": "A date, time, date time, or other date time value of a synchronization of the supply chain supply plan."
         }
     ],
     "objectProperties": [
         {
+            "uri": "unece:actualQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
             "uri": "unece:applicablePeriod",
-            "type": "unece:Period",
-            "comment": "The period applicable for this supply chain supply plan."
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:confirmedDeliveryEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A confirmed delivery event in this supply chain supply plan."
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
             "uri": "unece:contractDocument",
             "type": "unece:Document",
-            "comment": "A referenced contract document for this supply chain supply plan."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:deliveryNoteDocument",
             "type": "unece:Document",
-            "comment": "A delivery note document referenced by this supply chain supply plan."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:deliverySupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A delivery event for this supply chain supply plan."
+            "comment": "A significant occurrence or happening in a supply chain."
+        },
+        {
+            "uri": "unece:minusToleranceQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:plannedQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:plusToleranceQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
         },
         {
             "uri": "unece:scheduledDeliveryEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A scheduled delivery event in this supply chain supply plan."
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
             "uri": "unece:shipToParty",
-            "type": "unece:TradeParty",
-            "comment": "The ship to trade party for this supply chain supply plan."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
-            "uri": "unece:specifiedLocation",
+            "uri": "unece:specifiedLogisticsLocation",
             "type": "unece:LogisticsLocation",
-            "comment": "A location specified for this supply chain supply plan."
+            "comment": "A logistics related physical location or place."
+        },
+        {
+            "uri": "unece:specifiedSupplyChainEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
+        },
+        {
+            "uri": "unece:synchronizationQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:toleranceQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:projectedSupplyPlan",
             "comment": "A supply plan, at line level, projected for this trade delivery."
+        },
+        {
+            "uri": "unece:specifiedSupplyPlan",
+            "comment": "The specification of the delivery quantities and delivery date/time values in a supply plan for this trade product."
         }
     ]
 }

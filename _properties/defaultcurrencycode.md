@@ -1,5 +1,5 @@
 ---
 title: defaultCurrencyCode
-permalink: defaultCurrencyCode
+permalink: defaultCurrencyCode.html
 jsonid: defaultcurrencycode
 ---

@@ -1,5 +1,5 @@
 ---
 title: ProprietaryIdentity
-permalink: ProprietaryIdentity
+permalink: ProprietaryIdentity.html
 jsonid: proprietaryidentity
 ---

@@ -1,5 +1,5 @@
 ---
 title: sellerTaxRepresentativeParty
-permalink: sellerTaxRepresentativeParty
+permalink: sellerTaxRepresentativeParty.html
 jsonid: sellertaxrepresentativeparty
 ---

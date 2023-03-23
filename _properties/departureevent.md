@@ -1,5 +1,5 @@
 ---
 title: departureEvent
-permalink: departureEvent
+permalink: departureEvent.html
 jsonid: departureevent
 ---

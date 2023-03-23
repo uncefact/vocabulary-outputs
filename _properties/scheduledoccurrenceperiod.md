@@ -1,5 +1,5 @@
 ---
 title: scheduledOccurrencePeriod
-permalink: scheduledOccurrencePeriod
+permalink: scheduledOccurrencePeriod.html
 jsonid: scheduledoccurrenceperiod
 ---

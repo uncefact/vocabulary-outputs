@@ -1,5 +1,5 @@
 ---
 title: paymentOfficeLocation
-permalink: paymentOfficeLocation
+permalink: paymentOfficeLocation.html
 jsonid: paymentofficelocation
 ---

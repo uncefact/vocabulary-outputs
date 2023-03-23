@@ -1,5 +1,5 @@
 ---
 title: valuationBasisAmount
-permalink: valuationBasisAmount
+permalink: valuationBasisAmount.html
 jsonid: valuationbasisamount
 ---

@@ -1,5 +1,5 @@
 ---
 title: conversionRateDateTime
-permalink: conversionRateDateTime
+permalink: conversionRateDateTime.html
 jsonid: conversionratedatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: adjustedBalanceOutAmount
-permalink: adjustedBalanceOutAmount
+permalink: adjustedBalanceOutAmount.html
 jsonid: adjustedbalanceoutamount
 ---

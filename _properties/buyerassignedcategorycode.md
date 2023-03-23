@@ -1,5 +1,5 @@
 ---
 title: buyerAssignedCategoryCode
-permalink: buyerAssignedCategoryCode
+permalink: buyerAssignedCategoryCode.html
 jsonid: buyerassignedcategorycode
 ---

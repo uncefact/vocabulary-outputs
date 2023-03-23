@@ -1,5 +1,5 @@
 ---
 title: immediatePreviousPriceListDocument
-permalink: immediatePreviousPriceListDocument
+permalink: immediatePreviousPriceListDocument.html
 jsonid: immediatepreviouspricelistdocument
 ---

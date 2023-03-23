@@ -2,27 +2,29 @@
 {
     "label": "Emission",
     "uri": "unece:Emission",
-    "comment": "Pollution (including noise, heat, and radiation) discharged into the environment by residential, commercial, or industrial facilities or by a means of transport.",
+    "comment": "A calculation of the pollution (including noise, heat, and radiation etc.) discharged into the environment by a residential, commercial, or industrial facility or by a means of transport, such as a vessel, aircraft or truck.",
     "datatypeProperties": [
         {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
             "uri": "unece:affectedDistanceMeasure",
-            "type": "xsd:decimal",
-            "comment": "The affected distance over which this calculated emission is measured."
+            "type": "unece:LinearUnitMeasureType",
+            "comment": ""
         },
         {
             "uri": "unece:pollutionMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of the pollution calculated for this emission."
+            "type": "unece:MeasureType",
+            "comment": ""
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of this calculated emission."
-        },
-        {
-            "uri": "unece:weightMeasure",
-            "type": "xsd:decimal",
-            "comment": "A weight for which this calculated emission is measured."
+            "uri": "unece:weightUnitWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": ""
         }
     ],
     "referencedBy": [
@@ -32,7 +34,7 @@
         },
         {
             "uri": "unece:specifiedEmission",
-            "comment": "A calculated emission specified for this logistics transport movement."
+            "comment": "A calculated emission specified for this logistics transport means."
         }
     ]
 }

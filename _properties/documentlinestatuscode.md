@@ -1,5 +1,5 @@
 ---
 title: documentLineStatusCode
-permalink: documentLineStatusCode
+permalink: documentLineStatusCode.html
 jsonid: documentlinestatuscode
 ---

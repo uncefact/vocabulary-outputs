@@ -1,5 +1,5 @@
 ---
 title: complianceDeclarationInformation
-permalink: complianceDeclarationInformation
+permalink: complianceDeclarationInformation.html
 jsonid: compliancedeclarationinformation
 ---

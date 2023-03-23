@@ -1,5 +1,5 @@
 ---
 title: lowerPartOrangeHazardPlacardId
-permalink: lowerPartOrangeHazardPlacardId
+permalink: lowerPartOrangeHazardPlacardId.html
 jsonid: lowerpartorangehazardplacardid
 ---

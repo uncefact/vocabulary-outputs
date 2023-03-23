@@ -1,5 +1,5 @@
 ---
 title: directTelephoneCommunication
-permalink: directTelephoneCommunication
+permalink: directTelephoneCommunication.html
 jsonid: directtelephonecommunication
 ---

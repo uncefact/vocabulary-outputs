@@ -1,5 +1,5 @@
 ---
 title: radionuclideName
-permalink: radionuclideName
+permalink: radionuclideName.html
 jsonid: radionuclidename
 ---

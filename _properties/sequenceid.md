@@ -1,5 +1,5 @@
 ---
 title: sequenceId
-permalink: sequenceId
+permalink: sequenceId.html
 jsonid: sequenceid
 ---

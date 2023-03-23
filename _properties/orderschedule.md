@@ -1,5 +1,5 @@
 ---
 title: orderSchedule
-permalink: orderSchedule
+permalink: orderSchedule.html
 jsonid: orderschedule
 ---

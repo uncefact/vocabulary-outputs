@@ -1,5 +1,5 @@
 ---
 title: TradeLocation
-permalink: TradeLocation
+permalink: TradeLocation.html
 jsonid: tradelocation
 ---

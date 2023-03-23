@@ -1,5 +1,5 @@
 ---
 title: deconsolidatorParty
-permalink: deconsolidatorParty
+permalink: deconsolidatorParty.html
 jsonid: deconsolidatorparty
 ---

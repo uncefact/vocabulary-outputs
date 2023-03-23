@@ -1,5 +1,5 @@
 ---
 title: creditLimitAmount
-permalink: creditLimitAmount
+permalink: creditLimitAmount.html
 jsonid: creditlimitamount
 ---

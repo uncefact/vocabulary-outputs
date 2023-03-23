@@ -1,5 +1,5 @@
 ---
 title: grossLineTotalAmount
-permalink: grossLineTotalAmount
+permalink: grossLineTotalAmount.html
 jsonid: grosslinetotalamount
 ---

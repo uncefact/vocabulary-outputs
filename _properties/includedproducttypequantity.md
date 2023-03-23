@@ -1,5 +1,5 @@
 ---
 title: includedProductTypeQuantity
-permalink: includedProductTypeQuantity
+permalink: includedProductTypeQuantity.html
 jsonid: includedproducttypequantity
 ---

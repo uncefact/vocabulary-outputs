@@ -1,5 +1,5 @@
 ---
 title: newZealandNCCId
-permalink: newZealandNCCId
+permalink: newZealandNCCId.html
 jsonid: newzealandnccid
 ---

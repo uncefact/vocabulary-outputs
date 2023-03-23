@@ -1,5 +1,5 @@
 ---
 title: dimensionTypeCode
-permalink: dimensionTypeCode
+permalink: dimensionTypeCode.html
 jsonid: dimensiontypecode
 ---

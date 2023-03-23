@@ -1,5 +1,5 @@
 ---
 title: deliveryTermsDeliveryTypeCode
-permalink: deliveryTermsDeliveryTypeCode
+permalink: deliveryTermsDeliveryTypeCode.html
 jsonid: deliverytermsdeliverytypecode
 ---

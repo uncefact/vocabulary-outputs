@@ -1,5 +1,5 @@
 ---
 title: estimatedOccurrenceDateTime
-permalink: estimatedOccurrenceDateTime
+permalink: estimatedOccurrenceDateTime.html
 jsonid: estimatedoccurrencedatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: sICId
-permalink: sICId
+permalink: sICId.html
 jsonid: sicid
 ---

@@ -1,5 +1,5 @@
 ---
 title: procurementParty
-permalink: procurementParty
+permalink: procurementParty.html
 jsonid: procurementparty
 ---

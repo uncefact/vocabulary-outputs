@@ -2,16 +2,21 @@
 {
     "label": "billedQuantity",
     "uri": "unece:billedQuantity",
-    "comment": "The quantity, at line level, billed for in this trade delivery.",
+    "comment": "",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:QuantityType",
+            "comment": ""
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeDelivery",
+            "comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery."
         }
     ]
 }

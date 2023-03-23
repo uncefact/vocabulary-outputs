@@ -1,5 +1,5 @@
 ---
 title: countrySubDivisionId
-permalink: countrySubDivisionId
+permalink: countrySubDivisionId.html
 jsonid: countrysubdivisionid
 ---

@@ -1,5 +1,5 @@
 ---
 title: characterSetCode
-permalink: characterSetCode
+permalink: characterSetCode.html
 jsonid: charactersetcode
 ---

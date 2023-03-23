@@ -1,5 +1,5 @@
 ---
 title: commonName
-permalink: commonName
+permalink: commonName.html
 jsonid: commonname
 ---

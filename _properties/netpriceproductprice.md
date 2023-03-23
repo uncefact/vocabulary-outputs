@@ -1,5 +1,5 @@
 ---
 title: netPriceProductPrice
-permalink: netPriceProductPrice
+permalink: netPriceProductPrice.html
 jsonid: netpriceproductprice
 ---

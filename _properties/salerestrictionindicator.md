@@ -1,5 +1,5 @@
 ---
 title: saleRestrictionIndicator
-permalink: saleRestrictionIndicator
+permalink: saleRestrictionIndicator.html
 jsonid: salerestrictionindicator
 ---

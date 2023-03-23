@@ -1,5 +1,5 @@
 ---
 title: orderProductUnitMeasureCode
-permalink: orderProductUnitMeasureCode
+permalink: orderProductUnitMeasureCode.html
 jsonid: orderproductunitmeasurecode
 ---

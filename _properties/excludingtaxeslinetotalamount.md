@@ -1,5 +1,5 @@
 ---
 title: excludingTaxesLineTotalAmount
-permalink: excludingTaxesLineTotalAmount
+permalink: excludingTaxesLineTotalAmount.html
 jsonid: excludingtaxeslinetotalamount
 ---

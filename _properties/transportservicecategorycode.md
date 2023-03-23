@@ -1,5 +1,5 @@
 ---
 title: transportServiceCategoryCode
-permalink: transportServiceCategoryCode
+permalink: transportServiceCategoryCode.html
 jsonid: transportservicecategorycode
 ---

@@ -1,5 +1,5 @@
 ---
 title: alienRegistrationId
-permalink: alienRegistrationId
+permalink: alienRegistrationId.html
 jsonid: alienregistrationid
 ---

@@ -1,5 +1,5 @@
 ---
 title: buyerApprovedDateTime
-permalink: buyerApprovedDateTime
+permalink: buyerApprovedDateTime.html
 jsonid: buyerapproveddatetime
 ---

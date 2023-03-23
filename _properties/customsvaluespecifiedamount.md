@@ -1,5 +1,5 @@
 ---
 title: customsValueSpecifiedAmount
-permalink: customsValueSpecifiedAmount
+permalink: customsValueSpecifiedAmount.html
 jsonid: customsvaluespecifiedamount
 ---

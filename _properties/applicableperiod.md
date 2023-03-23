@@ -1,5 +1,5 @@
 ---
 title: applicablePeriod
-permalink: applicablePeriod
+permalink: applicablePeriod.html
 jsonid: applicableperiod
 ---

@@ -2,21 +2,14 @@
 {
     "label": "totalAllowanceChargeAmount",
     "uri": "unece:totalAllowanceChargeAmount",
-    "comment": [
-        "A monetary value of a total allowance and charge reported in this trade settlement header monetary summation.",
-        "A monetary value of a total allowance and charge reported in this trade settlement line monetary summation.",
-        "The total monetary value of all allowances and charges for this supply chain consignment."
-    ],
+    "comment": "",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:AmountType",
+            "comment": ""
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
         {
             "uri": "unece:TradeSettlementHeaderMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
@@ -24,6 +17,10 @@
         {
             "uri": "unece:TradeSettlementLineMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
+        },
+        {
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         }
     ]
 }

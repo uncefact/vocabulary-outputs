@@ -1,5 +1,5 @@
 ---
 title: locationFunctionTypeCode
-permalink: locationFunctionTypeCode
+permalink: locationFunctionTypeCode.html
 jsonid: locationfunctiontypecode
 ---

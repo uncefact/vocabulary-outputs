@@ -1,5 +1,5 @@
 ---
 title: unloadingReportedEvent
-permalink: unloadingReportedEvent
+permalink: unloadingReportedEvent.html
 jsonid: unloadingreportedevent
 ---

@@ -1,5 +1,5 @@
 ---
 title: staySpecifiedEvent
-permalink: staySpecifiedEvent
+permalink: staySpecifiedEvent.html
 jsonid: stayspecifiedevent
 ---

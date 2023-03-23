@@ -1,5 +1,5 @@
 ---
 title: salePriceConditionIndicator
-permalink: salePriceConditionIndicator
+permalink: salePriceConditionIndicator.html
 jsonid: salepriceconditionindicator
 ---

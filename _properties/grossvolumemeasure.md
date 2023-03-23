@@ -1,5 +1,5 @@
 ---
 title: grossVolumeMeasure
-permalink: grossVolumeMeasure
+permalink: grossVolumeMeasure.html
 jsonid: grossvolumemeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: deliveryDiscontinuationCode
-permalink: deliveryDiscontinuationCode
+permalink: deliveryDiscontinuationCode.html
 jsonid: deliverydiscontinuationcode
 ---

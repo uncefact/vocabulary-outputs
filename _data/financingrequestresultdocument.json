@@ -6,16 +6,16 @@
     "datatypeProperties": [
         {
             "uri": "unece:financedRatePercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The financed rate, expressed as a percentage, in this financing request result document."
-        },
-        {
-            "uri": "unece:financedTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the financed total amount in this financing request result document."
         }
     ],
     "objectProperties": [
+        {
+            "uri": "unece:financedTotalAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
         {
             "uri": "unece:specifiedFinancingStatus",
             "type": "unece:FinancingStatus",
@@ -25,10 +25,10 @@
     "referencedBy": [
         {
             "uri": "unece:associatedFinancingRequestResultDocument",
-            "comment": "The financing request result document associated with this supply chain trade transaction."
+            "comment": "A collection of data that reports the result of a financing request."
         },
         {
-            "uri": "unece:specifiedDocument",
+            "uri": "unece:specifiedFinancingRequestResultDocument",
             "comment": "The financing request result document specified for this instalment payment."
         }
     ]

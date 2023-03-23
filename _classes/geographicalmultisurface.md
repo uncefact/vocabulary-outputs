@@ -1,5 +1,5 @@
 ---
 title: GeographicalMultiSurface
-permalink: GeographicalMultiSurface
+permalink: GeographicalMultiSurface.html
 jsonid: geographicalmultisurface
 ---

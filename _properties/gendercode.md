@@ -1,5 +1,5 @@
 ---
 title: genderCode
-permalink: genderCode
+permalink: genderCode.html
 jsonid: gendercode
 ---

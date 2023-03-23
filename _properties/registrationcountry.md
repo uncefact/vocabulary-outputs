@@ -1,5 +1,5 @@
 ---
 title: registrationCountry
-permalink: registrationCountry
+permalink: registrationCountry.html
 jsonid: registrationcountry
 ---

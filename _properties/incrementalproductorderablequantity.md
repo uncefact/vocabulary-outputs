@@ -1,5 +1,5 @@
 ---
 title: incrementalProductOrderableQuantity
-permalink: incrementalProductOrderableQuantity
+permalink: incrementalProductOrderableQuantity.html
 jsonid: incrementalproductorderablequantity
 ---

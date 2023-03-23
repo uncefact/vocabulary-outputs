@@ -1,5 +1,5 @@
 ---
 title: transactionNatureCode
-permalink: transactionNatureCode
+permalink: transactionNatureCode.html
 jsonid: transactionnaturecode
 ---

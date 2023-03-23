@@ -1,5 +1,5 @@
 ---
 title: proportionalConstituentPercent
-permalink: proportionalConstituentPercent
+permalink: proportionalConstituentPercent.html
 jsonid: proportionalconstituentpercent
 ---

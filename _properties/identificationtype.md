@@ -1,5 +1,5 @@
 ---
 title: identificationType
-permalink: identificationType
+permalink: identificationType.html
 jsonid: identificationtype
 ---

@@ -1,5 +1,5 @@
 ---
 title: representationTypeCode
-permalink: representationTypeCode
+permalink: representationTypeCode.html
 jsonid: representationtypecode
 ---

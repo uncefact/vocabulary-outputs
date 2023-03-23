@@ -1,5 +1,5 @@
 ---
 title: operationCountry
-permalink: operationCountry
+permalink: operationCountry.html
 jsonid: operationcountry
 ---

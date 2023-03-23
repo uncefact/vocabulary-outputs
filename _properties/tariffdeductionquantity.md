@@ -1,5 +1,5 @@
 ---
 title: tariffDeductionQuantity
-permalink: tariffDeductionQuantity
+permalink: tariffDeductionQuantity.html
 jsonid: tariffdeductionquantity
 ---

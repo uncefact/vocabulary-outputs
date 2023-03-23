@@ -1,5 +1,5 @@
 ---
 title: totalDepositFeeInformationAmount
-permalink: totalDepositFeeInformationAmount
+permalink: totalDepositFeeInformationAmount.html
 jsonid: totaldepositfeeinformationamount
 ---

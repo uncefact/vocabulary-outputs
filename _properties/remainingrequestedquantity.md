@@ -1,5 +1,5 @@
 ---
 title: remainingRequestedQuantity
-permalink: remainingRequestedQuantity
+permalink: remainingRequestedQuantity.html
 jsonid: remainingrequestedquantity
 ---

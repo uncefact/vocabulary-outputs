@@ -1,5 +1,5 @@
 ---
 title: batchId
-permalink: batchId
+permalink: batchId.html
 jsonid: batchid
 ---

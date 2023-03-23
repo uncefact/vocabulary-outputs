@@ -1,5 +1,5 @@
 ---
 title: buyerOrderDocument
-permalink: buyerOrderDocument
+permalink: buyerOrderDocument.html
 jsonid: buyerorderdocument
 ---

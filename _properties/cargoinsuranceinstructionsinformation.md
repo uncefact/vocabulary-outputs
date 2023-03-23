@@ -1,5 +1,5 @@
 ---
 title: cargoInsuranceInstructionsInformation
-permalink: cargoInsuranceInstructionsInformation
+permalink: cargoInsuranceInstructionsInformation.html
 jsonid: cargoinsuranceinstructionsinformation
 ---

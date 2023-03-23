@@ -1,5 +1,5 @@
 ---
 title: receivingAdviceDocument
-permalink: receivingAdviceDocument
+permalink: receivingAdviceDocument.html
 jsonid: receivingadvicedocument
 ---

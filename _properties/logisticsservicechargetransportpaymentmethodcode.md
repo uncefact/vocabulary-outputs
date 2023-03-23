@@ -1,5 +1,5 @@
 ---
 title: logisticsServiceChargeTransportPaymentMethodCode
-permalink: logisticsServiceChargeTransportPaymentMethodCode
+permalink: logisticsServiceChargeTransportPaymentMethodCode.html
 jsonid: logisticsservicechargetransportpaymentmethodcode
 ---

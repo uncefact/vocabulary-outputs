@@ -1,5 +1,5 @@
 ---
 title: governmentActionTypeCode
-permalink: governmentActionTypeCode
+permalink: governmentActionTypeCode.html
 jsonid: governmentactiontypecode
 ---

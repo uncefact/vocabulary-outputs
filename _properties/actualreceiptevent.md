@@ -1,5 +1,5 @@
 ---
 title: actualReceiptEvent
-permalink: actualReceiptEvent
+permalink: actualReceiptEvent.html
 jsonid: actualreceiptevent
 ---

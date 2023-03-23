@@ -1,5 +1,5 @@
 ---
 title: lowLimit
-permalink: lowLimit
+permalink: lowLimit.html
 jsonid: lowlimit
 ---

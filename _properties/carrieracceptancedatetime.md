@@ -1,5 +1,5 @@
 ---
 title: carrierAcceptanceDateTime
-permalink: carrierAcceptanceDateTime
+permalink: carrierAcceptanceDateTime.html
 jsonid: carrieracceptancedatetime
 ---

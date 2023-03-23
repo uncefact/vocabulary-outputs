@@ -1,5 +1,5 @@
 ---
 title: reportedConditionTypeCode
-permalink: reportedConditionTypeCode
+permalink: reportedConditionTypeCode.html
 jsonid: reportedconditiontypecode
 ---

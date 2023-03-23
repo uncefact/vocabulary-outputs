@@ -1,5 +1,5 @@
 ---
 title: onboardQuantity
-permalink: onboardQuantity
+permalink: onboardQuantity.html
 jsonid: onboardquantity
 ---

@@ -1,5 +1,5 @@
 ---
 title: unloadingInspectionParty
-permalink: unloadingInspectionParty
+permalink: unloadingInspectionParty.html
 jsonid: unloadinginspectionparty
 ---

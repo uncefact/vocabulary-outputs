@@ -1,5 +1,5 @@
 ---
 title: molecularWeightMeasure
-permalink: molecularWeightMeasure
+permalink: molecularWeightMeasure.html
 jsonid: molecularweightmeasure
 ---

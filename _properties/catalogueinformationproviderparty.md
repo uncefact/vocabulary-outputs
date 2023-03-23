@@ -1,5 +1,5 @@
 ---
 title: catalogueInformationProviderParty
-permalink: catalogueInformationProviderParty
+permalink: catalogueInformationProviderParty.html
 jsonid: catalogueinformationproviderparty
 ---

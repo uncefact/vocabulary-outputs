@@ -1,5 +1,5 @@
 ---
 title: linearDimension
-permalink: linearDimension
+permalink: linearDimension.html
 jsonid: lineardimension
 ---

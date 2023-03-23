@@ -1,5 +1,5 @@
 ---
 title: sealQuantity
-permalink: sealQuantity
+permalink: sealQuantity.html
 jsonid: sealquantity
 ---

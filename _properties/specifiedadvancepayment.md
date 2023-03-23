@@ -1,5 +1,5 @@
 ---
 title: specifiedAdvancePayment
-permalink: specifiedAdvancePayment
+permalink: specifiedAdvancePayment.html
 jsonid: specifiedadvancepayment
 ---

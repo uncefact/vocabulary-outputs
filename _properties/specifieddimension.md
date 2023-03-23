@@ -1,5 +1,5 @@
 ---
 title: specifiedDimension
-permalink: specifiedDimension
+permalink: specifiedDimension.html
 jsonid: specifieddimension
 ---

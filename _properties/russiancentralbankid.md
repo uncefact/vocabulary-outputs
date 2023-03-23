@@ -1,5 +1,5 @@
 ---
 title: russianCentralBankId
-permalink: russianCentralBankId
+permalink: russianCentralBankId.html
 jsonid: russiancentralbankid
 ---

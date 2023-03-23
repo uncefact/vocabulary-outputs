@@ -1,5 +1,5 @@
 ---
 title: scheduledId
-permalink: scheduledId
+permalink: scheduledId.html
 jsonid: scheduledid
 ---

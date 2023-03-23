@@ -1,5 +1,5 @@
 ---
 title: subsetSpecifiedParameter
-permalink: subsetSpecifiedParameter
+permalink: subsetSpecifiedParameter.html
 jsonid: subsetspecifiedparameter
 ---

@@ -1,5 +1,5 @@
 ---
 title: cODAmount
-permalink: cODAmount
+permalink: cODAmount.html
 jsonid: codamount
 ---

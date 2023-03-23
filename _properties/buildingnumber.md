@@ -1,5 +1,5 @@
 ---
 title: buildingNumber
-permalink: buildingNumber
+permalink: buildingNumber.html
 jsonid: buildingnumber
 ---

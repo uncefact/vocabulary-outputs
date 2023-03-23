@@ -1,5 +1,5 @@
 ---
 title: registeredTaxTypeCode
-permalink: registeredTaxTypeCode
+permalink: registeredTaxTypeCode.html
 jsonid: registeredtaxtypecode
 ---

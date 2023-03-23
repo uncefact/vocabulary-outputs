@@ -1,5 +1,5 @@
 ---
 title: centreGeographicalPoint
-permalink: centreGeographicalPoint
+permalink: centreGeographicalPoint.html
 jsonid: centregeographicalpoint
 ---

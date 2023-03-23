@@ -1,5 +1,5 @@
 ---
 title: CreditorFinancialAccount
-permalink: CreditorFinancialAccount
+permalink: CreditorFinancialAccount.html
 jsonid: creditorfinancialaccount
 ---

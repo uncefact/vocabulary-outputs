@@ -2,11 +2,7 @@
 {
     "label": "totalPrice",
     "uri": "unece:totalPrice",
-    "comment": [
-        "A total calculated price for this basic work item.",
-        "A total calculated price for this valuation breakdown statement.",
-        "A total calculated price for this work item group."
-    ],
+    "comment": "A total calculated price for this basic work item.",
     "rangeIncludes": [
         {
             "uri": "unece:CalculatedPrice",
@@ -16,11 +12,15 @@
     "domainIncludes": [
         {
             "uri": "unece:BreakdownStatement",
-            "comment": "A detailed statement of work, materials, products, prices, or dimensions."
+            "comment": "A detailed statement of work, prices, and dimensions for this valuation."
         },
         {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
+            "uri": "unece:BasicWorkItem",
+            "comment": "A basic item of work."
+        },
+        {
+            "uri": "unece:GroupedWorkItem",
+            "comment": "A grouping of related work items."
         }
     ]
 }

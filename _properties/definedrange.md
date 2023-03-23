@@ -1,5 +1,5 @@
 ---
 title: definedRange
-permalink: definedRange
+permalink: definedRange.html
 jsonid: definedrange
 ---

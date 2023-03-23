@@ -1,5 +1,5 @@
 ---
 title: netVolumeMeasure
-permalink: netVolumeMeasure
+permalink: netVolumeMeasure.html
 jsonid: netvolumemeasure
 ---

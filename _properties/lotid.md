@@ -1,5 +1,5 @@
 ---
 title: lotId
-permalink: lotId
+permalink: lotId.html
 jsonid: lotid
 ---

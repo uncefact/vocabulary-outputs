@@ -1,5 +1,5 @@
 ---
 title: legalClassificationCode
-permalink: legalClassificationCode
+permalink: legalClassificationCode.html
 jsonid: legalclassificationcode
 ---

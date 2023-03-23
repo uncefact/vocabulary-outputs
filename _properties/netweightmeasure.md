@@ -1,5 +1,5 @@
 ---
 title: netWeightMeasure
-permalink: netWeightMeasure
+permalink: netWeightMeasure.html
 jsonid: netweightmeasure
 ---

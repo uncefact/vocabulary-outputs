@@ -1,5 +1,5 @@
 ---
 title: reason
-permalink: reason
+permalink: reason.html
 jsonid: reason
 ---

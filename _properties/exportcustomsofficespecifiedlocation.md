@@ -1,5 +1,5 @@
 ---
 title: exportCustomsOfficeSpecifiedLocation
-permalink: exportCustomsOfficeSpecifiedLocation
+permalink: exportCustomsOfficeSpecifiedLocation.html
 jsonid: exportcustomsofficespecifiedlocation
 ---

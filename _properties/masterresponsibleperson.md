@@ -1,5 +1,5 @@
 ---
 title: masterResponsiblePerson
-permalink: masterResponsiblePerson
+permalink: masterResponsiblePerson.html
 jsonid: masterresponsibleperson
 ---

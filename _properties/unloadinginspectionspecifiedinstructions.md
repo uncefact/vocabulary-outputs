@@ -1,5 +1,5 @@
 ---
 title: unloadingInspectionSpecifiedInstructions
-permalink: unloadingInspectionSpecifiedInstructions
+permalink: unloadingInspectionSpecifiedInstructions.html
 jsonid: unloadinginspectionspecifiedinstructions
 ---

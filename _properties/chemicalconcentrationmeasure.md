@@ -1,5 +1,5 @@
 ---
 title: chemicalConcentrationMeasure
-permalink: chemicalConcentrationMeasure
+permalink: chemicalConcentrationMeasure.html
 jsonid: chemicalconcentrationmeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: deliveryLocation
-permalink: deliveryLocation
+permalink: deliveryLocation.html
 jsonid: deliverylocation
 ---

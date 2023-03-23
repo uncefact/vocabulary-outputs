@@ -1,5 +1,5 @@
 ---
 title: terminalOperatorParty
-permalink: terminalOperatorParty
+permalink: terminalOperatorParty.html
 jsonid: terminaloperatorparty
 ---

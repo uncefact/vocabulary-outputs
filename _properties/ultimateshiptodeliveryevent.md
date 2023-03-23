@@ -1,5 +1,5 @@
 ---
 title: ultimateShipToDeliveryEvent
-permalink: ultimateShipToDeliveryEvent
+permalink: ultimateShipToDeliveryEvent.html
 jsonid: ultimateshiptodeliveryevent
 ---

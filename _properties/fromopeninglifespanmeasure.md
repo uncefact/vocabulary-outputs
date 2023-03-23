@@ -1,5 +1,5 @@
 ---
 title: fromOpeningLifeSpanMeasure
-permalink: fromOpeningLifeSpanMeasure
+permalink: fromOpeningLifeSpanMeasure.html
 jsonid: fromopeninglifespanmeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: groupedTransactionTotalAmount
-permalink: groupedTransactionTotalAmount
+permalink: groupedTransactionTotalAmount.html
 jsonid: groupedtransactiontotalamount
 ---

@@ -1,5 +1,5 @@
 ---
 title: nilInsuranceValueIndicator
-permalink: nilInsuranceValueIndicator
+permalink: nilInsuranceValueIndicator.html
 jsonid: nilinsurancevalueindicator
 ---

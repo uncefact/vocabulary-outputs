@@ -1,5 +1,5 @@
 ---
 title: DocumentStatus
-permalink: DocumentStatus
+permalink: DocumentStatus.html
 jsonid: documentstatus
 ---

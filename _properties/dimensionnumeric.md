@@ -1,5 +1,5 @@
 ---
 title: dimensionNumeric
-permalink: dimensionNumeric
+permalink: dimensionNumeric.html
 jsonid: dimensionnumeric
 ---

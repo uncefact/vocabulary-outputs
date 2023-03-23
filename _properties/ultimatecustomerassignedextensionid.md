@@ -1,5 +1,5 @@
 ---
 title: ultimateCustomerAssignedExtensionId
-permalink: ultimateCustomerAssignedExtensionId
+permalink: ultimateCustomerAssignedExtensionId.html
 jsonid: ultimatecustomerassignedextensionid
 ---

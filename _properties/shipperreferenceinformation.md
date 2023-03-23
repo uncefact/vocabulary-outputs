@@ -1,5 +1,5 @@
 ---
 title: shipperReferenceInformation
-permalink: shipperReferenceInformation
+permalink: shipperReferenceInformation.html
 jsonid: shipperreferenceinformation
 ---

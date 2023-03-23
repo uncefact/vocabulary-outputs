@@ -1,5 +1,5 @@
 ---
 title: balanceOutAmount
-permalink: balanceOutAmount
+permalink: balanceOutAmount.html
 jsonid: balanceoutamount
 ---

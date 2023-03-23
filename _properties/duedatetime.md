@@ -1,5 +1,5 @@
 ---
 title: dueDateTime
-permalink: dueDateTime
+permalink: dueDateTime.html
 jsonid: duedatetime
 ---

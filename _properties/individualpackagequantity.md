@@ -1,5 +1,5 @@
 ---
 title: individualPackageQuantity
-permalink: individualPackageQuantity
+permalink: individualPackageQuantity.html
 jsonid: individualpackagequantity
 ---

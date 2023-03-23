@@ -1,5 +1,5 @@
 ---
 title: specialFormInformation
-permalink: specialFormInformation
+permalink: specialFormInformation.html
 jsonid: specialforminformation
 ---

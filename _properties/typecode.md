@@ -1,5 +1,5 @@
 ---
 title: typeCode
-permalink: typeCode
+permalink: typeCode.html
 jsonid: typecode
 ---

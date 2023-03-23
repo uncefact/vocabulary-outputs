@@ -1,5 +1,5 @@
 ---
 title: noteSubjectCode
-permalink: noteSubjectCode
+permalink: noteSubjectCode.html
 jsonid: notesubjectcode
 ---

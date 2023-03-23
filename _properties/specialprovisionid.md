@@ -1,5 +1,5 @@
 ---
 title: specialProvisionId
-permalink: specialProvisionId
+permalink: specialProvisionId.html
 jsonid: specialprovisionid
 ---

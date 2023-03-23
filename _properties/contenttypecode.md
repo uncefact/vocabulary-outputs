@@ -1,5 +1,5 @@
 ---
 title: contentTypeCode
-permalink: contentTypeCode
+permalink: contentTypeCode.html
 jsonid: contenttypecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: totalInvoiceAmount
-permalink: totalInvoiceAmount
+permalink: totalInvoiceAmount.html
 jsonid: totalinvoiceamount
 ---

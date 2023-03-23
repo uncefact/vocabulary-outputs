@@ -1,5 +1,5 @@
 ---
 title: consolidationEvent
-permalink: consolidationEvent
+permalink: consolidationEvent.html
 jsonid: consolidationevent
 ---

@@ -1,5 +1,5 @@
 ---
 title: includedGeographicalSurface
-permalink: includedGeographicalSurface
+permalink: includedGeographicalSurface.html
 jsonid: includedgeographicalsurface
 ---

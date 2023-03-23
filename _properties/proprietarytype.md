@@ -1,5 +1,5 @@
 ---
 title: proprietaryType
-permalink: proprietaryType
+permalink: proprietaryType.html
 jsonid: proprietarytype
 ---

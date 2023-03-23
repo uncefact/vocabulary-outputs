@@ -1,5 +1,5 @@
 ---
 title: parentId
-permalink: parentId
+permalink: parentId.html
 jsonid: parentid
 ---

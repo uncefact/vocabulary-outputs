@@ -1,5 +1,5 @@
 ---
 title: previousProcedureTypeCode
-permalink: previousProcedureTypeCode
+permalink: previousProcedureTypeCode.html
 jsonid: previousproceduretypecode
 ---

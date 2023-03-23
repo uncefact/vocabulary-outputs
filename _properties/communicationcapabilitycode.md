@@ -1,5 +1,5 @@
 ---
 title: communicationCapabilityCode
-permalink: communicationCapabilityCode
+permalink: communicationCapabilityCode.html
 jsonid: communicationcapabilitycode
 ---

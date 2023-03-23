@@ -1,5 +1,5 @@
 ---
 title: customsDutyRegimeTypeCode
-permalink: customsDutyRegimeTypeCode
+permalink: customsDutyRegimeTypeCode.html
 jsonid: customsdutyregimetypecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: referenceTypeCode
-permalink: referenceTypeCode
+permalink: referenceTypeCode.html
 jsonid: referencetypecode
 ---

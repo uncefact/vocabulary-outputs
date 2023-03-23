@@ -1,5 +1,5 @@
 ---
 title: recyclingProcedure
-permalink: recyclingProcedure
+permalink: recyclingProcedure.html
 jsonid: recyclingprocedure
 ---

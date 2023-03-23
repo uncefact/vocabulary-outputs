@@ -1,5 +1,5 @@
 ---
 title: associatedInvoiceAmount
-permalink: associatedInvoiceAmount
+permalink: associatedInvoiceAmount.html
 jsonid: associatedinvoiceamount
 ---

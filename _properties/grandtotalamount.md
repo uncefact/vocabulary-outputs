@@ -1,5 +1,5 @@
 ---
 title: grandTotalAmount
-permalink: grandTotalAmount
+permalink: grandTotalAmount.html
 jsonid: grandtotalamount
 ---

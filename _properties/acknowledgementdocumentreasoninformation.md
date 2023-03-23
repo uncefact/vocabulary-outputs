@@ -1,5 +1,5 @@
 ---
 title: acknowledgementDocumentReasonInformation
-permalink: acknowledgementDocumentReasonInformation
+permalink: acknowledgementDocumentReasonInformation.html
 jsonid: acknowledgementdocumentreasoninformation
 ---

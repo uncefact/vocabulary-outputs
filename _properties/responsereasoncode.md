@@ -1,5 +1,5 @@
 ---
 title: responseReasonCode
-permalink: responseReasonCode
+permalink: responseReasonCode.html
 jsonid: responsereasoncode
 ---

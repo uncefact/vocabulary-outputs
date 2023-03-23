@@ -1,5 +1,5 @@
 ---
 title: actualPickUpEvent
-permalink: actualPickUpEvent
+permalink: actualPickUpEvent.html
 jsonid: actualpickupevent
 ---

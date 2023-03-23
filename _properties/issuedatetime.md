@@ -1,5 +1,5 @@
 ---
 title: issueDateTime
-permalink: issueDateTime
+permalink: issueDateTime.html
 jsonid: issuedatetime
 ---

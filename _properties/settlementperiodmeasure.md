@@ -1,5 +1,5 @@
 ---
 title: settlementPeriodMeasure
-permalink: settlementPeriodMeasure
+permalink: settlementPeriodMeasure.html
 jsonid: settlementperiodmeasure
 ---

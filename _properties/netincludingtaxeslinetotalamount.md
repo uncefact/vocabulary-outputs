@@ -1,5 +1,5 @@
 ---
 title: netIncludingTaxesLineTotalAmount
-permalink: netIncludingTaxesLineTotalAmount
+permalink: netIncludingTaxesLineTotalAmount.html
 jsonid: netincludingtaxeslinetotalamount
 ---

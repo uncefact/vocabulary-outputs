@@ -1,5 +1,5 @@
 ---
 title: longitudeMeasure
-permalink: longitudeMeasure
+permalink: longitudeMeasure.html
 jsonid: longitudemeasure
 ---

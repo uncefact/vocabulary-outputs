@@ -1,5 +1,5 @@
 ---
 title: Cargo
-permalink: Cargo
+permalink: Cargo.html
 jsonid: cargo
 ---

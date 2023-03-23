@@ -2,74 +2,74 @@
 {
     "label": "Sensor",
     "uri": "unece:Sensor",
-    "comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally.",
+    "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
     "datatypeProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier of this monitoring sensor."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:positionCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying a position of this monitoring sensor."
         },
         {
             "uri": "unece:remainingBatteryChargePercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
+            "type": "xsd:string",
+            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a type of monitoring sensor."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value for this monitoring sensor."
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "objectProperties": [
         {
             "uri": "unece:actualReportedMeasurement",
-            "type": "unece:Measurement",
-            "comment": "An actual calibrated measurement reported for this monitoring sensor."
+            "type": "unece:CalibratedMeasurement",
+            "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy."
+        },
+        {
+            "uri": "unece:definedControlSettingParameter",
+            "type": "unece:ControlSettingParameter",
+            "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
         },
         {
             "uri": "unece:definedOperationalParameter",
             "type": "unece:OperationalParameter",
-            "comment": "An operational parameter defined for this monitoring sensor."
-        },
-        {
-            "uri": "unece:definedParameter",
-            "type": "unece:ControlSettingParameter",
-            "comment": "A control setting parameter defined for this monitoring sensor."
+            "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
         },
         {
             "uri": "unece:grantedCertificate",
-            "type": "unece:Certificate",
-            "comment": "A product certificate granted for this monitoring sensor."
+            "type": "unece:ProductCertificate",
+            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence about the product."
         },
         {
             "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this monitoring sensor."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner party of this monitoring sensor."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:precisionMeasurement",
-            "type": "unece:Measurement",
-            "comment": "A calibrated measurement of precision for this monitoring sensor."
+            "type": "unece:CalibratedMeasurement",
+            "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy."
         },
         {
             "uri": "unece:scheduledReportedMeasurement",
-            "type": "unece:Measurement",
-            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+            "type": "unece:CalibratedMeasurement",
+            "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
         }
     ],
     "referencedBy": [

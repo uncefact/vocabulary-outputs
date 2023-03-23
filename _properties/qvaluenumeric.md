@@ -1,5 +1,5 @@
 ---
 title: qValueNumeric
-permalink: qValueNumeric
+permalink: qValueNumeric.html
 jsonid: qvaluenumeric
 ---

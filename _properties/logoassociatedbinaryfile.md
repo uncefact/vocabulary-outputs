@@ -1,5 +1,5 @@
 ---
 title: logoAssociatedBinaryFile
-permalink: logoAssociatedBinaryFile
+permalink: logoAssociatedBinaryFile.html
 jsonid: logoassociatedbinaryfile
 ---

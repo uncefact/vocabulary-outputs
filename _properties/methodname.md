@@ -1,5 +1,5 @@
 ---
 title: methodName
-permalink: methodName
+permalink: methodName.html
 jsonid: methodname
 ---

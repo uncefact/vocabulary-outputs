@@ -1,5 +1,5 @@
 ---
 title: cancellationDateTime
-permalink: cancellationDateTime
+permalink: cancellationDateTime.html
 jsonid: cancellationdatetime
 ---

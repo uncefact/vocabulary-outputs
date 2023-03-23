@@ -1,5 +1,5 @@
 ---
 title: bEIId
-permalink: bEIId
+permalink: bEIId.html
 jsonid: beiid
 ---

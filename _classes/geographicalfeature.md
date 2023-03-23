@@ -1,5 +1,5 @@
 ---
 title: GeographicalFeature
-permalink: GeographicalFeature
+permalink: GeographicalFeature.html
 jsonid: geographicalfeature
 ---

@@ -1,5 +1,5 @@
 ---
 title: reportReceiptDateTime
-permalink: reportReceiptDateTime
+permalink: reportReceiptDateTime.html
 jsonid: reportreceiptdatetime
 ---

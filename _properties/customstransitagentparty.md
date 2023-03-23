@@ -1,5 +1,5 @@
 ---
 title: customsTransitAgentParty
-permalink: customsTransitAgentParty
+permalink: customsTransitAgentParty.html
 jsonid: customstransitagentparty
 ---

@@ -1,5 +1,5 @@
 ---
 title: storageInformationNote
-permalink: storageInformationNote
+permalink: storageInformationNote.html
 jsonid: storageinformationnote
 ---

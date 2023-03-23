@@ -1,5 +1,5 @@
 ---
 title: BranchFinancialInstitution
-permalink: BranchFinancialInstitution
+permalink: BranchFinancialInstitution.html
 jsonid: branchfinancialinstitution
 ---

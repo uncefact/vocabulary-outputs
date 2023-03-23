@@ -1,5 +1,5 @@
 ---
 title: validityPeriod
-permalink: validityPeriod
+permalink: validityPeriod.html
 jsonid: validityperiod
 ---

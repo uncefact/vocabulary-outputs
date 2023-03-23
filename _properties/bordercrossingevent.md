@@ -1,5 +1,5 @@
 ---
 title: borderCrossingEvent
-permalink: borderCrossingEvent
+permalink: borderCrossingEvent.html
 jsonid: bordercrossingevent
 ---

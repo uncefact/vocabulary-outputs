@@ -1,5 +1,5 @@
 ---
 title: ProductInstance
-permalink: ProductInstance
+permalink: ProductInstance.html
 jsonid: productinstance
 ---

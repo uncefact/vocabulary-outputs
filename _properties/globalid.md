@@ -1,5 +1,5 @@
 ---
 title: globalId
-permalink: globalId
+permalink: globalId.html
 jsonid: globalid
 ---

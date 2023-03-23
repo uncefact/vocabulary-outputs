@@ -1,5 +1,5 @@
 ---
 title: documentURLId
-permalink: documentURLId
+permalink: documentURLId.html
 jsonid: documenturlid
 ---

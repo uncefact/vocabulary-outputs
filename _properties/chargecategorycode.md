@@ -1,5 +1,5 @@
 ---
 title: chargeCategoryCode
-permalink: chargeCategoryCode
+permalink: chargeCategoryCode.html
 jsonid: chargecategorycode
 ---

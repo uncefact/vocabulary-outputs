@@ -1,5 +1,5 @@
 ---
 title: languageCode
-permalink: languageCode
+permalink: languageCode.html
 jsonid: languagecode
 ---

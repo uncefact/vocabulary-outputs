@@ -1,5 +1,5 @@
 ---
 title: referenceId
-permalink: referenceId
+permalink: referenceId.html
 jsonid: referenceid
 ---

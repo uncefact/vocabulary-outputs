@@ -1,5 +1,5 @@
 ---
 title: conditionMeasure
-permalink: conditionMeasure
+permalink: conditionMeasure.html
 jsonid: conditionmeasure
 ---

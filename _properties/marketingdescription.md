@@ -1,5 +1,5 @@
 ---
 title: marketingDescription
-permalink: marketingDescription
+permalink: marketingDescription.html
 jsonid: marketingdescription
 ---

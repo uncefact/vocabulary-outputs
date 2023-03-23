@@ -1,5 +1,5 @@
 ---
 title: onboardPerson
-permalink: onboardPerson
+permalink: onboardPerson.html
 jsonid: onboardperson
 ---

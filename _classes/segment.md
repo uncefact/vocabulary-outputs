@@ -1,5 +1,5 @@
 ---
 title: Segment
-permalink: Segment
+permalink: Segment.html
 jsonid: segment
 ---

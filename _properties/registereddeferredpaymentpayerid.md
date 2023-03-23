@@ -1,5 +1,5 @@
 ---
 title: registeredDeferredPaymentPayerId
-permalink: registeredDeferredPaymentPayerId
+permalink: registeredDeferredPaymentPayerId.html
 jsonid: registereddeferredpaymentpayerid
 ---

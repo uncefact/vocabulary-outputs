@@ -1,5 +1,5 @@
 ---
 title: laycanOccurrencePeriod
-permalink: laycanOccurrencePeriod
+permalink: laycanOccurrencePeriod.html
 jsonid: laycanoccurrenceperiod
 ---

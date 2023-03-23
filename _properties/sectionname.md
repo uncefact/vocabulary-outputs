@@ -1,5 +1,5 @@
 ---
 title: sectionName
-permalink: sectionName
+permalink: sectionName.html
 jsonid: sectionname
 ---

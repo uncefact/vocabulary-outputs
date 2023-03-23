@@ -1,5 +1,5 @@
 ---
 title: locationAddress
-permalink: locationAddress
+permalink: locationAddress.html
 jsonid: locationaddress
 ---

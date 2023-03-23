@@ -1,5 +1,5 @@
 ---
 title: confirmedDespatchEvent
-permalink: confirmedDespatchEvent
+permalink: confirmedDespatchEvent.html
 jsonid: confirmeddespatchevent
 ---

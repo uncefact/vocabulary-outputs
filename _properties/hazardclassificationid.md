@@ -1,5 +1,5 @@
 ---
 title: hazardClassificationId
-permalink: hazardClassificationId
+permalink: hazardClassificationId.html
 jsonid: hazardclassificationid
 ---

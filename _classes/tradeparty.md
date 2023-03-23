@@ -1,5 +1,5 @@
 ---
 title: TradeParty
-permalink: TradeParty
+permalink: TradeParty.html
 jsonid: tradeparty
 ---

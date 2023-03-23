@@ -1,5 +1,5 @@
 ---
 title: publicationDateTime
-permalink: publicationDateTime
+permalink: publicationDateTime.html
 jsonid: publicationdatetime
 ---

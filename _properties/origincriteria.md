@@ -1,5 +1,5 @@
 ---
 title: originCriteria
-permalink: originCriteria
+permalink: originCriteria.html
 jsonid: origincriteria
 ---

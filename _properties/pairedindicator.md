@@ -1,5 +1,5 @@
 ---
 title: pairedIndicator
-permalink: pairedIndicator
+permalink: pairedIndicator.html
 jsonid: pairedindicator
 ---

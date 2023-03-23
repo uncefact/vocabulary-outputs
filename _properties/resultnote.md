@@ -1,5 +1,5 @@
 ---
 title: resultNote
-permalink: resultNote
+permalink: resultNote.html
 jsonid: resultnote
 ---

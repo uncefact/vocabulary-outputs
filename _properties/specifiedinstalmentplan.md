@@ -1,5 +1,5 @@
 ---
 title: specifiedInstalmentPlan
-permalink: specifiedInstalmentPlan
+permalink: specifiedInstalmentPlan.html
 jsonid: specifiedinstalmentplan
 ---

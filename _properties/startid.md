@@ -1,5 +1,5 @@
 ---
 title: startId
-permalink: startId
+permalink: startId.html
 jsonid: startid
 ---

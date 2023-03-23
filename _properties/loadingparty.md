@@ -1,5 +1,5 @@
 ---
 title: loadingParty
-permalink: loadingParty
+permalink: loadingParty.html
 jsonid: loadingparty
 ---

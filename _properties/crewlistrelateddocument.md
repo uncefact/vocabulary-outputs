@@ -1,5 +1,5 @@
 ---
 title: crewListRelatedDocument
-permalink: crewListRelatedDocument
+permalink: crewListRelatedDocument.html
 jsonid: crewlistrelateddocument
 ---

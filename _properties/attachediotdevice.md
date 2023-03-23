@@ -1,5 +1,5 @@
 ---
 title: attachedIOTDevice
-permalink: attachedIOTDevice
+permalink: attachedIOTDevice.html
 jsonid: attachediotdevice
 ---

@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentQuantity
-permalink: transportEquipmentQuantity
+permalink: transportEquipmentQuantity.html
 jsonid: transportequipmentquantity
 ---

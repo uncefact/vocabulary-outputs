@@ -6,8 +6,8 @@
     "datatypeProperties": [
         {
             "uri": "unece:currencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency for this registered tax."
+            "type": "xsd:string",
+            "comment": "The code specifying a currency of this cash used for payment."
         },
         {
             "uri": "unece:customsDutyIndicator",
@@ -17,7 +17,7 @@
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this registered tax."
+            "comment": "A description of the item."
         },
         {
             "uri": "unece:exemptionReason",
@@ -26,7 +26,7 @@
         },
         {
             "uri": "unece:exemptionReasonCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the exemption reason for this registered tax."
         },
         {
@@ -36,14 +36,14 @@
         },
         {
             "uri": "unece:registeredTaxTypeCode",
-            "type": "unece:UNCL5153Code",
+            "type": "xsd:string",
             "comment": "The code specifying the type of registered tax."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:associatedTax",
-            "comment": "The registered tax associated with this tax registration."
+            "comment": "A registered tax or duty system pertaining to an authority."
         }
     ]
 }

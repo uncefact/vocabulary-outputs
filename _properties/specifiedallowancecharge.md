@@ -1,5 +1,5 @@
 ---
 title: specifiedAllowanceCharge
-permalink: specifiedAllowanceCharge
+permalink: specifiedAllowanceCharge.html
 jsonid: specifiedallowancecharge
 ---

@@ -6,30 +6,30 @@
     "datatypeProperties": [
         {
             "uri": "unece:dueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The due date for this instalment payment."
-        },
-        {
-            "uri": "unece:paidAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value paid or to be paid for this instalment payment."
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
         },
         {
             "uri": "unece:sequenceId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The sequence identifier for this instalment payment."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:specifiedDocument",
+            "uri": "unece:paidAmount",
+            "type": "unece:AmountType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:specifiedFinancingRequestResultDocument",
             "type": "unece:FinancingRequestResultDocument",
             "comment": "The financing request result document specified for this instalment payment."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedPayment",
+            "uri": "unece:specifiedInstalmentPayment",
             "comment": "An instalment payment specified for this instalment plan."
         }
     ]

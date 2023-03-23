@@ -1,5 +1,5 @@
 ---
 title: bICId
-permalink: bICId
+permalink: bICId.html
 jsonid: bicid
 ---

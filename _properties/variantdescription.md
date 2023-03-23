@@ -1,5 +1,5 @@
 ---
 title: variantDescription
-permalink: variantDescription
+permalink: variantDescription.html
 jsonid: variantdescription
 ---

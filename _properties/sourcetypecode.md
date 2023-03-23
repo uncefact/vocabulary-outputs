@@ -1,5 +1,5 @@
 ---
 title: sourceTypeCode
-permalink: sourceTypeCode
+permalink: sourceTypeCode.html
 jsonid: sourcetypecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: financedTransactionSpecifiedQuantity
-permalink: financedTransactionSpecifiedQuantity
+permalink: financedTransactionSpecifiedQuantity.html
 jsonid: financedtransactionspecifiedquantity
 ---

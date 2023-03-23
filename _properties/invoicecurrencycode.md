@@ -1,5 +1,5 @@
 ---
 title: invoiceCurrencyCode
-permalink: invoiceCurrencyCode
+permalink: invoiceCurrencyCode.html
 jsonid: invoicecurrencycode
 ---

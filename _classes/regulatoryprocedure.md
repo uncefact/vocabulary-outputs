@@ -1,5 +1,5 @@
 ---
 title: RegulatoryProcedure
-permalink: RegulatoryProcedure
+permalink: RegulatoryProcedure.html
 jsonid: regulatoryprocedure
 ---

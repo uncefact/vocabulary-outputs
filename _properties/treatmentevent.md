@@ -1,5 +1,5 @@
 ---
 title: treatmentEvent
-permalink: treatmentEvent
+permalink: treatmentEvent.html
 jsonid: treatmentevent
 ---

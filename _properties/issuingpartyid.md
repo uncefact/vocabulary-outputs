@@ -1,5 +1,5 @@
 ---
 title: issuingPartyId
-permalink: issuingPartyId
+permalink: issuingPartyId.html
 jsonid: issuingpartyid
 ---

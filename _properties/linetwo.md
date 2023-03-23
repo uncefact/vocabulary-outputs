@@ -1,5 +1,5 @@
 ---
 title: lineTwo
-permalink: lineTwo
+permalink: lineTwo.html
 jsonid: linetwo
 ---

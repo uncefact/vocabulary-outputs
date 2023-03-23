@@ -1,0 +1,84 @@
+
+{
+    "label": "PaymentFinancialInstitution",
+    "uri": "unece:PaymentFinancialInstitution",
+    "comment": "An institution that provides financial services and financial transactions for payment.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:bEIId",
+            "type": "xsd:string",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+        },
+        {
+            "uri": "unece:bICId",
+            "type": "xsd:string",
+            "comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
+        },
+        {
+            "uri": "unece:branchName",
+            "type": "xsd:string",
+            "comment": "A branch name, expressed as text, for this payment financial institution."
+        },
+        {
+            "uri": "unece:branchNameId",
+            "type": "xsd:string",
+            "comment": "The identifier of the branch name for this payment financial institution."
+        },
+        {
+            "uri": "unece:gLNId",
+            "type": "xsd:string",
+            "comment": "A Global Location Number (GLN) identifier for this trade party."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
+        },
+        {
+            "uri": "unece:nameId",
+            "type": "xsd:string",
+            "comment": "The identifier of the name for this payment financial institution."
+        },
+        {
+            "uri": "unece:roleCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the role for this cooperating organization."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:specifiedCommunication",
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
+        },
+        {
+            "uri": "unece:specifiedPaymentFinancialAccount",
+            "type": "unece:PaymentFinancialAccount",
+            "comment": "A payment financial account specified for this payment financial institution."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:creditorSpecifiedFinancialInstitution",
+            "comment": "A creditor financial institution specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:debtorSpecifiedFinancialInstitution",
+            "comment": "A debtor financial institution specified for this trade settlement payment means."
+        },
+        {
+            "uri": "unece:specifiedPaymentFinancialInstitution",
+            "comment": "A financial institution specified for this trade settlement payment means."
+        }
+    ]
+}

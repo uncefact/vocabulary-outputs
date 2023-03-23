@@ -1,5 +1,5 @@
 ---
 title: totalDisbursementAmount
-permalink: totalDisbursementAmount
+permalink: totalDisbursementAmount.html
 jsonid: totaldisbursementamount
 ---

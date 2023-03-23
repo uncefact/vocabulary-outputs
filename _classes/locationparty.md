@@ -1,5 +1,5 @@
 ---
 title: LocationParty
-permalink: LocationParty
+permalink: LocationParty.html
 jsonid: locationparty
 ---

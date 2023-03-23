@@ -1,5 +1,5 @@
 ---
 title: industryAssignedId
-permalink: industryAssignedId
+permalink: industryAssignedId.html
 jsonid: industryassignedid
 ---

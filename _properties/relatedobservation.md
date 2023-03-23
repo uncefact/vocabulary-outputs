@@ -1,5 +1,5 @@
 ---
 title: relatedObservation
-permalink: relatedObservation
+permalink: relatedObservation.html
 jsonid: relatedobservation
 ---

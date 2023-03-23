@@ -1,5 +1,5 @@
 ---
 title: uOMLabelList
-permalink: uOMLabelList
+permalink: uOMLabelList.html
 jsonid: uomlabellist
 ---

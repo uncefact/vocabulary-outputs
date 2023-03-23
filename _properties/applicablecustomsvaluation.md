@@ -1,5 +1,5 @@
 ---
 title: applicableCustomsValuation
-permalink: applicableCustomsValuation
+permalink: applicableCustomsValuation.html
 jsonid: applicablecustomsvaluation
 ---

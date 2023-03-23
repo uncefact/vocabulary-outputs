@@ -1,5 +1,5 @@
 ---
 title: LinearRing
-permalink: LinearRing
+permalink: LinearRing.html
 jsonid: linearring
 ---

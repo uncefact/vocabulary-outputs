@@ -1,5 +1,5 @@
 ---
 title: ExchangedDocument
-permalink: ExchangedDocument
+permalink: ExchangedDocument.html
 jsonid: exchangeddocument
 ---

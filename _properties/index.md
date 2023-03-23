@@ -1,5 +1,5 @@
 ---
 title: index
-permalink: index
+permalink: index.html
 jsonid: index
 ---

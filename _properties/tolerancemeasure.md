@@ -1,5 +1,5 @@
 ---
 title: toleranceMeasure
-permalink: toleranceMeasure
+permalink: toleranceMeasure.html
 jsonid: tolerancemeasure
 ---

@@ -2,22 +2,24 @@
 {
     "label": "tariffDeductionQuantity",
     "uri": "unece:tariffDeductionQuantity",
-    "comment": [
-        "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy.",
-        "A quantity to be deducted from the tariff quantity for this cross-border regulatory procedure."
-    ],
+    "comment": "",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:QuantityType",
+            "comment": ""
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:RegulatoryProcedure",
-            "comment": "A set of formal steps to satisfy a regulation, law or convention."
+            "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
         },
         {
-            "uri": "unece:TradeTax",
+            "uri": "unece:RegulatoryProcedure",
+            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+        },
+        {
+            "uri": "unece:Tax",
             "comment": "A trade related fiscal levy or duty."
         }
     ]

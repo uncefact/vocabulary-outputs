@@ -1,5 +1,5 @@
 ---
 title: Schedule
-permalink: Schedule
+permalink: Schedule.html
 jsonid: schedule
 ---

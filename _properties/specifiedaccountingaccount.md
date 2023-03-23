@@ -1,5 +1,5 @@
 ---
 title: specifiedAccountingAccount
-permalink: specifiedAccountingAccount
+permalink: specifiedAccountingAccount.html
 jsonid: specifiedaccountingaccount
 ---

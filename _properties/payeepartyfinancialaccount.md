@@ -1,5 +1,5 @@
 ---
 title: payeePartyFinancialAccount
-permalink: payeePartyFinancialAccount
+permalink: payeePartyFinancialAccount.html
 jsonid: payeepartyfinancialaccount
 ---

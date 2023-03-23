@@ -1,5 +1,5 @@
 ---
 title: remarks
-permalink: remarks
+permalink: remarks.html
 jsonid: remarks
 ---

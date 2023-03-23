@@ -1,5 +1,5 @@
 ---
 title: groupId
-permalink: groupId
+permalink: groupId.html
 jsonid: groupid
 ---

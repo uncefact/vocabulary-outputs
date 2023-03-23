@@ -1,5 +1,5 @@
 ---
 title: mobileTelephoneCommunication
-permalink: mobileTelephoneCommunication
+permalink: mobileTelephoneCommunication.html
 jsonid: mobiletelephonecommunication
 ---

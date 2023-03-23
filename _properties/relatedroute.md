@@ -1,5 +1,5 @@
 ---
 title: relatedRoute
-permalink: relatedRoute
+permalink: relatedRoute.html
 jsonid: relatedroute
 ---

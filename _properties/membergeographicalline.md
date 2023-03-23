@@ -1,5 +1,5 @@
 ---
 title: memberGeographicalLine
-permalink: memberGeographicalLine
+permalink: memberGeographicalLine.html
 jsonid: membergeographicalline
 ---

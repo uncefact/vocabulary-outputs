@@ -1,5 +1,5 @@
 ---
 title: principalAssociatedParty
-permalink: principalAssociatedParty
+permalink: principalAssociatedParty.html
 jsonid: principalassociatedparty
 ---

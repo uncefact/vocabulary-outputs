@@ -1,5 +1,5 @@
 ---
 title: totalAdjustmentAmount
-permalink: totalAdjustmentAmount
+permalink: totalAdjustmentAmount.html
 jsonid: totaladjustmentamount
 ---

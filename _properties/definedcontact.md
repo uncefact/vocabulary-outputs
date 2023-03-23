@@ -1,5 +1,5 @@
 ---
 title: definedContact
-permalink: definedContact
+permalink: definedContact.html
 jsonid: definedcontact
 ---

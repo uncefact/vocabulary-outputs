@@ -1,5 +1,5 @@
 ---
 title: releaseRestriction
-permalink: releaseRestriction
+permalink: releaseRestriction.html
 jsonid: releaserestriction
 ---

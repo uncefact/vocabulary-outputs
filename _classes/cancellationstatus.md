@@ -1,5 +1,5 @@
 ---
 title: CancellationStatus
-permalink: CancellationStatus
+permalink: CancellationStatus.html
 jsonid: cancellationstatus
 ---

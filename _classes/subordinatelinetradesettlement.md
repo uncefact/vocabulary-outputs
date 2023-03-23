@@ -1,5 +1,5 @@
 ---
 title: SubordinateLineTradeSettlement
-permalink: SubordinateLineTradeSettlement
+permalink: SubordinateLineTradeSettlement.html
 jsonid: subordinatelinetradesettlement
 ---

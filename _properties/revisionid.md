@@ -1,5 +1,5 @@
 ---
 title: revisionId
-permalink: revisionId
+permalink: revisionId.html
 jsonid: revisionid
 ---

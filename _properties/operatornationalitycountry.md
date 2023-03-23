@@ -1,5 +1,5 @@
 ---
 title: operatorNationalityCountry
-permalink: operatorNationalityCountry
+permalink: operatorNationalityCountry.html
 jsonid: operatornationalitycountry
 ---

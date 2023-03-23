@@ -1,5 +1,5 @@
 ---
 title: matchingEvent
-permalink: matchingEvent
+permalink: matchingEvent.html
 jsonid: matchingevent
 ---

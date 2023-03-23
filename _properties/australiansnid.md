@@ -1,5 +1,5 @@
 ---
 title: australianSNId
-permalink: australianSNId
+permalink: australianSNId.html
 jsonid: australiansnid
 ---

@@ -1,5 +1,5 @@
 ---
 title: supplyInstructionDocument
-permalink: supplyInstructionDocument
+permalink: supplyInstructionDocument.html
 jsonid: supplyinstructiondocument
 ---

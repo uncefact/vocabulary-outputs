@@ -1,5 +1,5 @@
 ---
 title: FinancingStatus
-permalink: FinancingStatus
+permalink: FinancingStatus.html
 jsonid: financingstatus
 ---

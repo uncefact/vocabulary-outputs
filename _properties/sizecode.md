@@ -1,5 +1,5 @@
 ---
 title: sizeCode
-permalink: sizeCode
+permalink: sizeCode.html
 jsonid: sizecode
 ---

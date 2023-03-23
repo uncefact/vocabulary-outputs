@@ -1,5 +1,5 @@
 ---
 title: specifiedServiceCharge
-permalink: specifiedServiceCharge
+permalink: specifiedServiceCharge.html
 jsonid: specifiedservicecharge
 ---

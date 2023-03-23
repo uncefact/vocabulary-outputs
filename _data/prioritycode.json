@@ -2,13 +2,10 @@
 {
     "label": "priorityCode",
     "uri": "unece:priorityCode",
-    "comment": [
-        "The code specifying the priority for this header trade agreement.",
-        "The code specifying the priority for this line trade agreement."
-    ],
+    "comment": "The code specifying the priority for this header trade agreement.",
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
@@ -19,6 +16,10 @@
         {
             "uri": "unece:LineTradeAgreement",
             "comment": "The contractual terms of a line trade agreement."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         }
     ]
 }

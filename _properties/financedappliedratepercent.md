@@ -1,5 +1,5 @@
 ---
 title: financedAppliedRatePercent
-permalink: financedAppliedRatePercent
+permalink: financedAppliedRatePercent.html
 jsonid: financedappliedratepercent
 ---

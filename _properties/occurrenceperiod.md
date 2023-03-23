@@ -1,5 +1,5 @@
 ---
 title: occurrencePeriod
-permalink: occurrencePeriod
+permalink: occurrencePeriod.html
 jsonid: occurrenceperiod
 ---

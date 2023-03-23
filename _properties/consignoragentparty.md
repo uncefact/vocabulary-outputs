@@ -1,5 +1,5 @@
 ---
 title: consignorAgentParty
-permalink: consignorAgentParty
+permalink: consignorAgentParty.html
 jsonid: consignoragentparty
 ---

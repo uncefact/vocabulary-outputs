@@ -1,5 +1,5 @@
 ---
 title: clearingSystemName
-permalink: clearingSystemName
+permalink: clearingSystemName.html
 jsonid: clearingsystemname
 ---

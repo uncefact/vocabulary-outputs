@@ -1,5 +1,5 @@
 ---
 title: securityInformationNote
-permalink: securityInformationNote
+permalink: securityInformationNote.html
 jsonid: securityinformationnote
 ---

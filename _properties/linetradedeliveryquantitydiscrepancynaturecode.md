@@ -1,5 +1,5 @@
 ---
 title: lineTradeDeliveryQuantityDiscrepancyNatureCode
-permalink: lineTradeDeliveryQuantityDiscrepancyNatureCode
+permalink: lineTradeDeliveryQuantityDiscrepancyNatureCode.html
 jsonid: linetradedeliveryquantitydiscrepancynaturecode
 ---

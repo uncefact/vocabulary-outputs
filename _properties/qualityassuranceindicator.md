@@ -1,5 +1,5 @@
 ---
 title: qualityAssuranceIndicator
-permalink: qualityAssuranceIndicator
+permalink: qualityAssuranceIndicator.html
 jsonid: qualityassuranceindicator
 ---

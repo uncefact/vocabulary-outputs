@@ -1,5 +1,5 @@
 ---
 title: shapeType
-permalink: shapeType
+permalink: shapeType.html
 jsonid: shapetype
 ---

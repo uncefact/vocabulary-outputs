@@ -1,5 +1,5 @@
 ---
 title: maximumId
-permalink: maximumId
+permalink: maximumId.html
 jsonid: maximumid
 ---

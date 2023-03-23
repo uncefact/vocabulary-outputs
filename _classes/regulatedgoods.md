@@ -1,5 +1,5 @@
 ---
 title: RegulatedGoods
-permalink: RegulatedGoods
+permalink: RegulatedGoods.html
 jsonid: regulatedgoods
 ---

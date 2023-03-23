@@ -1,5 +1,5 @@
 ---
 title: explosiveCompatibilityGroupCode
-permalink: explosiveCompatibilityGroupCode
+permalink: explosiveCompatibilityGroupCode.html
 jsonid: explosivecompatibilitygroupcode
 ---

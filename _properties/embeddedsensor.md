@@ -1,5 +1,5 @@
 ---
 title: embeddedSensor
-permalink: embeddedSensor
+permalink: embeddedSensor.html
 jsonid: embeddedsensor
 ---

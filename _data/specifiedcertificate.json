@@ -1,18 +1,226 @@
 
 {
-    "label": "specifiedCertificate",
-    "uri": "unece:specifiedCertificate",
-    "comment": "A product certificate specified for this trade product.",
-    "rangeIncludes": [
+    "label": "SpecifiedCertificate",
+    "uri": "unece:SpecifiedCertificate",
+    "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object.",
+    "datatypeProperties": [
         {
-            "uri": "unece:Certificate",
-            "comment": "A legal proof of ownership or worthiness of an item."
+            "uri": "unece:actualEffectiveDateTime",
+            "type": "xsd:string",
+            "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
+        },
+        {
+            "uri": "unece:aliasNameCode",
+            "type": "xsd:string",
+            "comment": "A code specifying an alias name of this specified certificate."
+        },
+        {
+            "uri": "unece:applicableGeographicRegion",
+            "type": "xsd:string",
+            "comment": "A geographic region, expressed as text, applicable for this specified certificate."
+        },
+        {
+            "uri": "unece:assuranceLevelCode",
+            "type": "xsd:string",
+            "comment": "A code specifying an assurance level of this specified declaration."
+        },
+        {
+            "uri": "unece:availableLanguageCode",
+            "type": "unece:LanguageCodeList",
+            "comment": "A code specifying an available language for this specified certificate."
+        },
+        {
+            "uri": "unece:capabilityLevel",
+            "type": "xsd:string",
+            "comment": "A capability level, expressed as text, for this specified experience item."
+        },
+        {
+            "uri": "unece:categoryCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "unece:certificateTypeCode",
+            "type": "unece:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
+        },
+        {
+            "uri": "unece:effectiveFromDateTime",
+            "type": "xsd:datetime",
+            "comment": "The date, time, date time, or other date time value from which this specified certificate is effective."
+        },
+        {
+            "uri": "unece:endorsementDateTime",
+            "type": "xsd:datetime",
+            "comment": "An endorsement date, time, date time or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:expiryDateTime",
+            "type": "xsd:string",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:issueDateTime",
+            "type": "xsd:string",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
+        },
+        {
+            "uri": "unece:issueReasonCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the reason for the issue of this process certificate."
+        },
+        {
+            "uri": "unece:latestEndorsementDateTime",
+            "type": "xsd:datetime",
+            "comment": "A latest endorsement date, time, date time or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name of the item."
+        },
+        {
+            "uri": "unece:partyId",
+            "type": "xsd:string",
+            "comment": "An identifier of a party for this specified certificate."
+        },
+        {
+            "uri": "unece:purposeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a purpose for this field crop."
+        },
+        {
+            "uri": "unece:requestedEffectiveDateTime",
+            "type": "xsd:string",
+            "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
+        },
+        {
+            "uri": "unece:requiredIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this specified certificate is required."
+        },
+        {
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
+            "comment": "A sequence number for these specified personal effects."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a status for this trade product."
+        },
+        {
+            "uri": "unece:subjectTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a subject type for this licence."
+        },
+        {
+            "uri": "unece:validIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this specified certificate is valid."
+        },
+        {
+            "uri": "unece:validityExtendedUntilDateTime",
+            "type": "xsd:datetime",
+            "comment": "A date, time, date time or other date time value until which this specified certificate will remain valid under the terms of an approved extension period."
+        },
+        {
+            "uri": "unece:validityTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of validity for this specified certificate."
         }
     ],
-    "domainIncludes": [
+    "objectProperties": [
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "unece:applicableClause",
+            "type": "unece:Clause",
+            "comment": "A distinct article or provision in a document, which requires compliance."
+        },
+        {
+            "uri": "unece:applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
+        },
+        {
+            "uri": "unece:applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
+        },
+        {
+            "uri": "unece:attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A specified computer file or program stored in a binary format."
+        },
+        {
+            "uri": "unece:certifiedObject",
+            "type": "unece:Object",
+            "comment": "Anything that is visible or tangible, such as a product, process, or organization."
+        },
+        {
+            "uri": "unece:certifiedParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:certifiedPersonQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:issuanceLocation",
+            "type": "unece:Location",
+            "comment": "A reference to a physical location or place."
+        },
+        {
+            "uri": "unece:issuerParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:providingParty",
+            "type": "unece:Party",
+            "comment": ""
+        },
+        {
+            "uri": "unece:reportedDocumentStatus",
+            "type": "unece:DocumentStatus",
+            "comment": "The information relevant to a condition related to a document."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:applicableSpecifiedCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:carriedCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:maritimeApplicableCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:obtainedSpecifiedCertificate",
+            "comment": "A certificate obtained by means of this specified inspection result."
+        },
+        {
+            "uri": "unece:providedCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:travelInsuranceCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
         }
     ]
 }

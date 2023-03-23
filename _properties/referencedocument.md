@@ -1,5 +1,5 @@
 ---
 title: referenceDocument
-permalink: referenceDocument
+permalink: referenceDocument.html
 jsonid: referencedocument
 ---

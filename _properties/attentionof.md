@@ -1,5 +1,5 @@
 ---
 title: attentionOf
-permalink: attentionOf
+permalink: attentionOf.html
 jsonid: attentionof
 ---

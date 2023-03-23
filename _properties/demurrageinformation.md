@@ -1,5 +1,5 @@
 ---
 title: demurrageInformation
-permalink: demurrageInformation
+permalink: demurrageInformation.html
 jsonid: demurrageinformation
 ---

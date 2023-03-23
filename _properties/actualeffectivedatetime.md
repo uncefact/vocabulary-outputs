@@ -1,5 +1,5 @@
 ---
 title: actualEffectiveDateTime
-permalink: actualEffectiveDateTime
+permalink: actualEffectiveDateTime.html
 jsonid: actualeffectivedatetime
 ---

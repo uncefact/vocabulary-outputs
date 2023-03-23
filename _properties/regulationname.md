@@ -1,5 +1,5 @@
 ---
 title: regulationName
-permalink: regulationName
+permalink: regulationName.html
 jsonid: regulationname
 ---

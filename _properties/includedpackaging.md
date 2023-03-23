@@ -1,5 +1,5 @@
 ---
 title: includedPackaging
-permalink: includedPackaging
+permalink: includedPackaging.html
 jsonid: includedpackaging
 ---

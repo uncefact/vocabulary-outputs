@@ -1,5 +1,5 @@
 ---
 title: loadedCargoMeasure
-permalink: loadedCargoMeasure
+permalink: loadedCargoMeasure.html
 jsonid: loadedcargomeasure
 ---

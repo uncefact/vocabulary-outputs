@@ -1,5 +1,5 @@
 ---
 title: additionalInformationIncludedNote
-permalink: additionalInformationIncludedNote
+permalink: additionalInformationIncludedNote.html
 jsonid: additionalinformationincludednote
 ---

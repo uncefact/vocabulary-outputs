@@ -1,5 +1,5 @@
 ---
 title: exemptionAuthorizationId
-permalink: exemptionAuthorizationId
+permalink: exemptionAuthorizationId.html
 jsonid: exemptionauthorizationid
 ---

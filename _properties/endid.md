@@ -1,5 +1,5 @@
 ---
 title: endId
-permalink: endId
+permalink: endId.html
 jsonid: endid
 ---

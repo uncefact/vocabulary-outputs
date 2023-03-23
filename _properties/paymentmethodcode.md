@@ -1,5 +1,5 @@
 ---
 title: paymentMethodCode
-permalink: paymentMethodCode
+permalink: paymentMethodCode.html
 jsonid: paymentmethodcode
 ---

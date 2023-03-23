@@ -5,24 +5,24 @@
     "comment": "Information relevant to a condition of financing.",
     "datatypeProperties": [
         {
-            "uri": "unece:conditionCode",
-            "type": "xsd:token",
+            "uri": "unece:financingStatusConditionCode",
+            "type": "unece:FinancingStatusCodeList",
             "comment": "The code specifying the condition of this financing status."
+        },
+        {
+            "uri": "unece:financingStatusReasonCode",
+            "type": "unece:FinancingStatusReasonCodeList",
+            "comment": "The code specifying the reason for this financing status."
         },
         {
             "uri": "unece:reason",
             "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this financing status."
-        },
-        {
-            "uri": "unece:reasonCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the reason for this financing status."
+            "comment": "A reason, expressed as text, for this cancellation status."
         },
         {
             "uri": "unece:reasonInformation",
             "type": "xsd:string",
-            "comment": "Information, expressed as text, related to the reason for this financing status."
+            "comment": "Information, expressed as text, related to the reason for this cancellation status."
         }
     ],
     "referencedBy": [

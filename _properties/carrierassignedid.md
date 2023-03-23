@@ -1,5 +1,5 @@
 ---
 title: carrierAssignedId
-permalink: carrierAssignedId
+permalink: carrierAssignedId.html
 jsonid: carrierassignedid
 ---

@@ -1,5 +1,5 @@
 ---
 title: businessProcessSpecifiedParameter
-permalink: businessProcessSpecifiedParameter
+permalink: businessProcessSpecifiedParameter.html
 jsonid: businessprocessspecifiedparameter
 ---

@@ -1,5 +1,5 @@
 ---
 title: passengerNationalityCountry
-permalink: passengerNationalityCountry
+permalink: passengerNationalityCountry.html
 jsonid: passengernationalitycountry
 ---

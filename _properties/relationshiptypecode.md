@@ -1,5 +1,5 @@
 ---
 title: relationshipTypeCode
-permalink: relationshipTypeCode
+permalink: relationshipTypeCode.html
 jsonid: relationshiptypecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: importerParty
-permalink: importerParty
+permalink: importerParty.html
 jsonid: importerparty
 ---

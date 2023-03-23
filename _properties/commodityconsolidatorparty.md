@@ -1,5 +1,5 @@
 ---
 title: commodityConsolidatorParty
-permalink: commodityConsolidatorParty
+permalink: commodityConsolidatorParty.html
 jsonid: commodityconsolidatorparty
 ---

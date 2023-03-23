@@ -1,5 +1,5 @@
 ---
 title: includedClause
-permalink: includedClause
+permalink: includedClause.html
 jsonid: includedclause
 ---

@@ -1,5 +1,5 @@
 ---
 title: TaxRegistration
-permalink: TaxRegistration
+permalink: TaxRegistration.html
 jsonid: taxregistration
 ---

@@ -1,5 +1,5 @@
 ---
 title: transportMovementStageCode
-permalink: transportMovementStageCode
+permalink: transportMovementStageCode.html
 jsonid: transportmovementstagecode
 ---

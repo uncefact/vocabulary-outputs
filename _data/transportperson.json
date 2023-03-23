@@ -6,13 +6,13 @@
     "datatypeProperties": [
         {
             "uri": "unece:birthCountryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the birth country of this transport person."
         },
         {
             "uri": "unece:birthDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The birth date of this transport person."
+            "type": "xsd:string",
+            "comment": "The birth date for this individual TT animal."
         },
         {
             "uri": "unece:birthplaceName",
@@ -21,17 +21,27 @@
         },
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a category for this transport person, such as a member of crew or passenger."
+            "type": "xsd:string",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
+        },
+        {
+            "uri": "unece:disembarkationDateTime",
+            "type": "xsd:datetime",
+            "comment": "A date, time, date time, or other date time value that this person disembarked from a means of transport."
+        },
+        {
+            "uri": "unece:embarkationDateTime",
+            "type": "xsd:datetime",
+            "comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport."
         },
         {
             "uri": "unece:familyName",
             "type": "xsd:string",
-            "comment": "A family name, expressed as text, for this transport person."
+            "comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport."
         },
         {
             "uri": "unece:genderCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying the gender of this transport person."
         },
         {
@@ -41,8 +51,8 @@
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this transport person."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:inTransitIndicator",
@@ -50,36 +60,36 @@
             "comment": "The indication of whether or not this transport person is in transit."
         },
         {
-            "uri": "unece:languageId",
-            "type": "xsd:token",
-            "comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
+            "uri": "unece:partyRoleCode",
+            "type": "unece:PartyRoleCodeList",
+            "comment": "A code specifying a role of this transport person."
         },
         {
             "uri": "unece:role",
             "type": "xsd:string",
-            "comment": "A role, expressed as text, of this transport person."
+            "comment": "A role, expressed as text, for this contact person."
         },
         {
-            "uri": "unece:roleCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a role of this transport person."
+            "uri": "unece:transportPersonLanguageId",
+            "type": "unece:LanguageId",
+            "comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
         },
         {
             "uri": "unece:transportPersonName",
-            "type": "unece:UNCL3403Code",
+            "type": "xsd:string",
             "comment": "The name or set of names, expressed as text, by which this transport person is known."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:attainedQualification",
-            "type": "unece:Qualification",
-            "comment": "An academic qualification attained by this transport person."
+            "uri": "unece:attainedAcademicQualification",
+            "type": "unece:AcademicQualification",
+            "comment": "An academic achievement that is officially recognized."
         },
         {
             "uri": "unece:declaredPersonalEffects",
             "type": "unece:PersonalEffects",
-            "comment": "Personal effects use declared by a transport person."
+            "comment": "Specified privately owned articles for personal use by an individual."
         },
         {
             "uri": "unece:disembarkationLocation",
@@ -88,43 +98,53 @@
         },
         {
             "uri": "unece:emailURICommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "The email URI (Uniform Resource Identifier) communication for this transport person."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
             "uri": "unece:embarkationLocation",
             "type": "unece:LogisticsLocation",
-            "comment": "An embarkation location for this transport person."
+            "comment": "A logistics location where a found stowaway embarked upon the transport means on which they were discovered."
+        },
+        {
+            "uri": "unece:identifiedStowaway",
+            "type": "unece:Stowaway",
+            "comment": "A transport person identified as a found stowaway."
         },
         {
             "uri": "unece:landlineTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Landline telephone communication information for this transport person."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
             "uri": "unece:mobileTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Mobile telephone communication information for this transport person."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
             "uri": "unece:nationalityCountry",
             "type": "unece:Country",
-            "comment": "A country that constitutes a nationality by origin, birth, or naturalization for this transport person."
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
+        },
+        {
+            "uri": "unece:reportedIllness",
+            "type": "unece:Illness",
+            "comment": "An MDH (Maritime Declaration of Health) reported illness or disease for this transport person."
         },
         {
             "uri": "unece:specificAccreditation",
             "type": "unece:Accreditation",
-            "comment": "A certified accreditation specific to this transport person."
+            "comment": "A certified recognition that provides evidence of a level of competency in a given area, such as certifying a level of skill in a trade."
         },
         {
             "uri": "unece:travelIdentityDocument",
             "type": "unece:Document",
-            "comment": "A referenced travel identity document for this transport person."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:travelVisaDocument",
             "type": "unece:Document",
-            "comment": "A referenced travel visa document for this transport person."
+            "comment": "Written, printed or electronic matter that is referenced."
         }
     ],
     "referencedBy": [

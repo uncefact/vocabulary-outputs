@@ -1,5 +1,5 @@
 ---
 title: packagingMarkingTypeCode
-permalink: packagingMarkingTypeCode
+permalink: packagingMarkingTypeCode.html
 jsonid: packagingmarkingtypecode
 ---

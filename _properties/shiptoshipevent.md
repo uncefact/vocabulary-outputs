@@ -1,5 +1,5 @@
 ---
 title: shipToShipEvent
-permalink: shipToShipEvent
+permalink: shipToShipEvent.html
 jsonid: shiptoshipevent
 ---

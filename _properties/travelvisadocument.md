@@ -1,5 +1,5 @@
 ---
 title: travelVisaDocument
-permalink: travelVisaDocument
+permalink: travelVisaDocument.html
 jsonid: travelvisadocument
 ---

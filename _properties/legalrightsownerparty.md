@@ -1,5 +1,5 @@
 ---
 title: legalRightsOwnerParty
-permalink: legalRightsOwnerParty
+permalink: legalRightsOwnerParty.html
 jsonid: legalrightsownerparty
 ---

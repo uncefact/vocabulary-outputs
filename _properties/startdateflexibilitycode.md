@@ -1,5 +1,5 @@
 ---
 title: startDateFlexibilityCode
-permalink: startDateFlexibilityCode
+permalink: startDateFlexibilityCode.html
 jsonid: startdateflexibilitycode
 ---

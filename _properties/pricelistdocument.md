@@ -1,5 +1,5 @@
 ---
 title: priceListDocument
-permalink: priceListDocument
+permalink: priceListDocument.html
 jsonid: pricelistdocument
 ---

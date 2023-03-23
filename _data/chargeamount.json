@@ -2,15 +2,11 @@
 {
     "label": "chargeAmount",
     "uri": "unece:chargeAmount",
-    "comment": [
-        "A monetary value of the calculated price to be charged.",
-        "A monetary value of the trade price charge.",
-        "The monetary value of a charged reference price.",
-        "The monetary value of the charge for this transport service."
-    ],
+    "comment": "",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:AmountType",
+            "comment": ""
         }
     ],
     "domainIncludes": [
@@ -19,16 +15,16 @@
             "comment": "Information related to a calculated price."
         },
         {
+            "uri": "unece:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
+        },
+        {
             "uri": "unece:ReferencePrice",
             "comment": "A reference to a sum of money for which something is or may be bought or sold."
         },
         {
             "uri": "unece:Service",
-            "comment": "Work or the doing of work for another or community to include utilities and transport."
-        },
-        {
-            "uri": "unece:TradePrice",
-            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
+            "comment": "A service associated with a transport movement.,A referenced service associated with a specified event during transport movement."
         }
     ]
 }

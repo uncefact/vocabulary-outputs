@@ -1,5 +1,5 @@
 ---
 title: nonTariffChargeAmount
-permalink: nonTariffChargeAmount
+permalink: nonTariffChargeAmount.html
 jsonid: nontariffchargeamount
 ---

@@ -1,5 +1,5 @@
 ---
 title: categoryAppliedTax
-permalink: categoryAppliedTax
+permalink: categoryAppliedTax.html
 jsonid: categoryappliedtax
 ---

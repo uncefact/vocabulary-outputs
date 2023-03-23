@@ -1,28 +1,26 @@
 
 {
-    "label": "AssociatedTransportEquipment",
-    "uri": "unece:AssociatedTransportEquipment",
-    "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation.",
-    "datatypeProperties": [
+    "label": "associatedTransportEquipment",
+    "uri": "unece:associatedTransportEquipment",
+    "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.",
+    "rangeIncludes": [
         {
-            "uri": "unece:characteristic",
-            "type": "xsd:string",
-            "comment": "The textual description of the characteristics, i.e. size and type, of this piece of associated transport equipment."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique number, mark or name which identifies this associated piece of transport equipment."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:carriedTransportEquipment",
-            "comment": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         },
         {
-            "uri": "unece:containedTransportEquipment",
-            "comment": "A piece of transport equipment contained within this piece of logistics transport equipment, such as a pallet."
+            "uri": "unece:DangerousGoods",
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
+        },
+        {
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

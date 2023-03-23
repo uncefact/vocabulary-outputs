@@ -1,5 +1,5 @@
 ---
 title: proFormaInvoiceDocument
-permalink: proFormaInvoiceDocument
+permalink: proFormaInvoiceDocument.html
 jsonid: proformainvoicedocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: depositValueValidityPeriod
-permalink: depositValueValidityPeriod
+permalink: depositValueValidityPeriod.html
 jsonid: depositvaluevalidityperiod
 ---

@@ -1,5 +1,5 @@
 ---
 title: TradePrice
-permalink: TradePrice
+permalink: TradePrice.html
 jsonid: tradeprice
 ---

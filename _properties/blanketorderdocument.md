@@ -1,5 +1,5 @@
 ---
 title: blanketOrderDocument
-permalink: blanketOrderDocument
+permalink: blanketOrderDocument.html
 jsonid: blanketorderdocument
 ---

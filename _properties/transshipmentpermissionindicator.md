@@ -1,5 +1,5 @@
 ---
 title: transshipmentPermissionIndicator
-permalink: transshipmentPermissionIndicator
+permalink: transshipmentPermissionIndicator.html
 jsonid: transshipmentpermissionindicator
 ---

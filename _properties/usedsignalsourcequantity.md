@@ -1,5 +1,5 @@
 ---
 title: usedSignalSourceQuantity
-permalink: usedSignalSourceQuantity
+permalink: usedSignalSourceQuantity.html
 jsonid: usedsignalsourcequantity
 ---

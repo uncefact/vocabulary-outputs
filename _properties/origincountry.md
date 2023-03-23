@@ -1,5 +1,5 @@
 ---
 title: originCountry
-permalink: originCountry
+permalink: originCountry.html
 jsonid: origincountry
 ---

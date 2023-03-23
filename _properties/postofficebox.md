@@ -1,5 +1,5 @@
 ---
 title: postOfficeBox
-permalink: postOfficeBox
+permalink: postOfficeBox.html
 jsonid: postofficebox
 ---

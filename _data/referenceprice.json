@@ -5,24 +5,26 @@
     "comment": "A reference to a sum of money for which something is or may be bought or sold.",
     "datatypeProperties": [
         {
-            "uri": "unece:basisQuantity",
-            "type": "xsd:decimal",
-            "comment": "A quantity on which the reference price is based."
-        },
-        {
-            "uri": "unece:chargeAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of a charged reference price."
-        },
-        {
             "uri": "unece:comparisonMethodCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the comparison method for this reference price."
         },
         {
             "uri": "unece:netPriceIndicator",
             "type": "xsd:boolean",
             "comment": "An indication of whether or not the reference price is a net price."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:basisQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:chargeAmount",
+            "type": "unece:AmountType",
+            "comment": ""
         }
     ],
     "referencedBy": [

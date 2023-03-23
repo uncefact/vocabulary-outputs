@@ -1,5 +1,5 @@
 ---
 title: productionDiscontinuedDateTime
-permalink: productionDiscontinuedDateTime
+permalink: productionDiscontinuedDateTime.html
 jsonid: productiondiscontinueddatetime
 ---

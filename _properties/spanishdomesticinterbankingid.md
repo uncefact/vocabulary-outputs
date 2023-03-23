@@ -1,5 +1,5 @@
 ---
 title: spanishDomesticInterbankingId
-permalink: spanishDomesticInterbankingId
+permalink: spanishDomesticInterbankingId.html
 jsonid: spanishdomesticinterbankingid
 ---

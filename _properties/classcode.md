@@ -1,5 +1,5 @@
 ---
 title: classCode
-permalink: classCode
+permalink: classCode.html
 jsonid: classcode
 ---

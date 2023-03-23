@@ -1,0 +1,64 @@
+
+{
+    "label": "Event",
+    "uri": "unece:Event",
+    "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:actualOccurrenceDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time or other date time value of the actual arrival related to this transport event."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A description of the item."
+        },
+        {
+            "uri": "unece:estimatedOccurrenceDateTime",
+            "type": "xsd:string",
+            "comment": "The estimated date, time, date time, or other date time value of the occurrence of this transport event."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:scheduledOccurrenceDateTime",
+            "type": "xsd:string",
+            "comment": "A pilot boarding place, expressed as text, for this transport event."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:actualOccurrencePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
+        },
+        {
+            "uri": "unece:occurrencePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
+        },
+        {
+            "uri": "unece:scheduledOccurrencePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:associatedEvent",
+            "comment": "A corrective event associated with this declared error."
+        },
+        {
+            "uri": "unece:examinationEvent",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
+        },
+        {
+            "uri": "unece:treatmentEvent",
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 ---
 title: reasonInformation
-permalink: reasonInformation
+permalink: reasonInformation.html
 jsonid: reasoninformation
 ---

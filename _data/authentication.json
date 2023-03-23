@@ -2,36 +2,36 @@
 {
     "label": "Authentication",
     "uri": "unece:Authentication",
-    "comment": "A proof that something is genuine.",
+    "comment": "A proof that a document is genuine.",
     "datatypeProperties": [
         {
             "uri": "unece:actualDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The actual date, time, date time, or other date time value of this document authentication."
+            "type": "xsd:string",
+            "comment": "An actual date, time, date time, or other date time value of this financial booking."
         },
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a category for this document authentication."
+            "type": "xsd:string",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
             "uri": "unece:governmentActionTypeCode",
-            "type": "unece:UNCL9417Code",
+            "type": "unece:GovernmentActionCodeList",
             "comment": "The code specifying the type of document authentication."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this document authentication."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:information",
             "type": "xsd:string",
-            "comment": "Information, expressed as text, for this document authentication."
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
         },
         {
             "uri": "unece:representationTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the type of representation of this document authentication, such as direct or indirect."
         },
         {
@@ -41,17 +41,17 @@
         },
         {
             "uri": "unece:signatoryImageBinaryObject",
-            "type": "xsd:base64Binary",
+            "type": "xsd:string",
             "comment": "The signatory image, expressed as a binary object, for this document authentication."
         },
         {
             "uri": "unece:statement",
             "type": "xsd:string",
-            "comment": "The statement, expressed as text, for this document authentication."
+            "comment": "A statement, expressed as text, for this specified inspection result."
         },
         {
             "uri": "unece:statementCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the statement for this document authentication."
         }
     ],
@@ -63,23 +63,18 @@
         },
         {
             "uri": "unece:issueLocation",
-            "type": "unece:LogisticsLocation",
+            "type": "unece:Location",
             "comment": "The issue location for this document authentication."
         },
         {
             "uri": "unece:locationProviderParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "The trade party providing the location for this document authentication."
         },
         {
             "uri": "unece:providerParty",
             "type": "unece:Party",
-            "comment": "The referenced party providing this document authentication."
-        },
-        {
-            "uri": "unece:providerTradeParty",
-            "type": "unece:TradeParty",
-            "comment": "The trade party providing this document authentication."
+            "comment": ""
         }
     ],
     "referencedBy": [
@@ -89,7 +84,7 @@
         },
         {
             "uri": "unece:assertedAuthentication",
-            "comment": "A document authentication asserted for this supply chain trade line item."
+            "comment": "A proof that a document is genuine."
         },
         {
             "uri": "unece:buyerSignatoryAuthentication",
@@ -105,7 +100,7 @@
         },
         {
             "uri": "unece:resultAuthentication",
-            "comment": "The authentication of the results of this applied chemical treatment."
+            "comment": "A proof that a document is genuine."
         },
         {
             "uri": "unece:secondSignatoryAuthentication",
@@ -113,7 +108,7 @@
         },
         {
             "uri": "unece:signatoryAuthentication",
-            "comment": "A signatory authentication for this ..."
+            "comment": "A signatory authentication for this referenced document."
         },
         {
             "uri": "unece:thirdSignatoryAuthentication",

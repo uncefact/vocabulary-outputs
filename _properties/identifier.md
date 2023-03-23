@@ -1,5 +1,5 @@
 ---
 title: identifier
-permalink: identifier
+permalink: identifier.html
 jsonid: identifier
 ---

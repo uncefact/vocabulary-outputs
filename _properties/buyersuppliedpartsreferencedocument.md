@@ -1,5 +1,5 @@
 ---
 title: buyerSuppliedPartsReferenceDocument
-permalink: buyerSuppliedPartsReferenceDocument
+permalink: buyerSuppliedPartsReferenceDocument.html
 jsonid: buyersuppliedpartsreferencedocument
 ---

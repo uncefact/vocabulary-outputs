@@ -1,5 +1,5 @@
 ---
 title: placeApplicableLocation
-permalink: placeApplicableLocation
+permalink: placeApplicableLocation.html
 jsonid: placeapplicablelocation
 ---

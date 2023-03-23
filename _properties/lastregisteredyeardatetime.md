@@ -1,5 +1,5 @@
 ---
 title: lastRegisteredYearDateTime
-permalink: lastRegisteredYearDateTime
+permalink: lastRegisteredYearDateTime.html
 jsonid: lastregisteredyeardatetime
 ---

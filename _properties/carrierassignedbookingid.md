@@ -1,5 +1,5 @@
 ---
 title: carrierAssignedBookingId
-permalink: carrierAssignedBookingId
+permalink: carrierAssignedBookingId.html
 jsonid: carrierassignedbookingid
 ---

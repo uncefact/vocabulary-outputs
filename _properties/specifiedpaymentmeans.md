@@ -1,5 +1,5 @@
 ---
 title: specifiedPaymentMeans
-permalink: specifiedPaymentMeans
+permalink: specifiedPaymentMeans.html
 jsonid: specifiedpaymentmeans
 ---

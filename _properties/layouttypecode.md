@@ -1,5 +1,5 @@
 ---
 title: layoutTypeCode
-permalink: layoutTypeCode
+permalink: layoutTypeCode.html
 jsonid: layouttypecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: goodsOwnershipChangeDateTime
-permalink: goodsOwnershipChangeDateTime
+permalink: goodsOwnershipChangeDateTime.html
 jsonid: goodsownershipchangedatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: logisticsTransportMovementStatusCode
-permalink: logisticsTransportMovementStatusCode
+permalink: logisticsTransportMovementStatusCode.html
 jsonid: logisticstransportmovementstatuscode
 ---

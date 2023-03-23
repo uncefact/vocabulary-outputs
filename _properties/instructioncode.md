@@ -1,5 +1,5 @@
 ---
 title: instructionCode
-permalink: instructionCode
+permalink: instructionCode.html
 jsonid: instructioncode
 ---

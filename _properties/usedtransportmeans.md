@@ -1,5 +1,5 @@
 ---
 title: usedTransportMeans
-permalink: usedTransportMeans
+permalink: usedTransportMeans.html
 jsonid: usedtransportmeans
 ---

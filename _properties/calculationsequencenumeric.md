@@ -1,5 +1,5 @@
 ---
 title: calculationSequenceNumeric
-permalink: calculationSequenceNumeric
+permalink: calculationSequenceNumeric.html
 jsonid: calculationsequencenumeric
 ---

@@ -1,5 +1,5 @@
 ---
 title: goodsStatusCode
-permalink: goodsStatusCode
+permalink: goodsStatusCode.html
 jsonid: goodsstatuscode
 ---

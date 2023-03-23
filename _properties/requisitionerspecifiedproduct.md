@@ -1,5 +1,5 @@
 ---
 title: requisitionerSpecifiedProduct
-permalink: requisitionerSpecifiedProduct
+permalink: requisitionerSpecifiedProduct.html
 jsonid: requisitionerspecifiedproduct
 ---

@@ -1,5 +1,5 @@
 ---
 title: FinancingRequestDocument
-permalink: FinancingRequestDocument
+permalink: FinancingRequestDocument.html
 jsonid: financingrequestdocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: shippingPeriod
-permalink: shippingPeriod
+permalink: shippingPeriod.html
 jsonid: shippingperiod
 ---

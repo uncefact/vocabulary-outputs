@@ -1,5 +1,5 @@
 ---
 title: cycle
-permalink: cycle
+permalink: cycle.html
 jsonid: cycle
 ---

@@ -2,24 +2,21 @@
 {
     "label": "billingPeriod",
     "uri": "unece:billingPeriod",
-    "comment": [
-        "A billing period specified for this header trade settlement.",
-        "A billing period specified for this line trade settlement."
-    ],
+    "comment": "A specified period of time.",
     "rangeIncludes": [
         {
-            "uri": "unece:Period",
-            "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date."
+            "uri": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

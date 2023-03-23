@@ -1,5 +1,5 @@
 ---
 title: signalSourceAvailableQuantity
-permalink: signalSourceAvailableQuantity
+permalink: signalSourceAvailableQuantity.html
 jsonid: signalsourceavailablequantity
 ---

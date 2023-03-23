@@ -1,5 +1,5 @@
 ---
 title: Equipment
-permalink: Equipment
+permalink: Equipment.html
 jsonid: equipment
 ---

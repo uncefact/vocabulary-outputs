@@ -1,5 +1,5 @@
 ---
 title: powerSourceTypeCode
-permalink: powerSourceTypeCode
+permalink: powerSourceTypeCode.html
 jsonid: powersourcetypecode
 ---

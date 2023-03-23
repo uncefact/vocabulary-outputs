@@ -1,5 +1,5 @@
 ---
 title: transportMeansDirectionTransitDirectionCode
-permalink: transportMeansDirectionTransitDirectionCode
+permalink: transportMeansDirectionTransitDirectionCode.html
 jsonid: transportmeansdirectiontransitdirectioncode
 ---

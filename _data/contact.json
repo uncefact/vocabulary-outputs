@@ -2,117 +2,86 @@
 {
     "label": "Contact",
     "uri": "unece:Contact",
-    "comment": "A person or department that acts as a point of contact with another person or department.",
+    "comment": "An individual human being in a position to give assistance or information.",
     "datatypeProperties": [
         {
-            "uri": "unece:authorizedPersonName",
+            "uri": "unece:contactPersonTitleCode",
+            "type": "unece:TitleCodeList",
+            "comment": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
+        },
+        {
+            "uri": "unece:countryResidenceCountryId",
+            "type": "unece:CountryId",
+            "comment": "The identifier of the residence country of this contact person."
+        },
+        {
+            "uri": "unece:role",
             "type": "xsd:string",
-            "comment": "The name, expressed as text, of the authorized person for this trade contact."
-        },
-        {
-            "uri": "unece:contactTypeCode",
-            "type": "unece:UNCL3139Code",
-            "comment": "The code specifying the type of trade contact."
-        },
-        {
-            "uri": "unece:departmentName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of the department to which this trade contact belongs within an organization."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this trade contact."
-        },
-        {
-            "uri": "unece:jobTitle",
-            "type": "xsd:string",
-            "comment": "The job title, position or designation, expressed as text, of this trade contact within an organization, such as Director, Software Engineer, Purchasing Manager."
-        },
-        {
-            "uri": "unece:personId",
-            "type": "xsd:token",
-            "comment": "A unique identifier for this trade contact person."
-        },
-        {
-            "uri": "unece:personName",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this trade contact person."
-        },
-        {
-            "uri": "unece:responsibility",
-            "type": "xsd:string",
-            "comment": "A responsibility, expressed as text, of this trade contact."
+            "comment": "A role, expressed as text, for this contact person."
         }
     ],
     "objectProperties": [
         {
-            "uri": "unece:directTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "The direct telephone communication information for this trade contact."
-        },
-        {
             "uri": "unece:emailURICommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "The email URI communication information for this trade contact."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
             "uri": "unece:faxCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Fax communication information for this trade contact."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
             "uri": "unece:instantMessagingCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Instant messaging communication information for this trade contact."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
-            "uri": "unece:mobileTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "The mobile telephone communication information for this trade contact."
+            "uri": "unece:specifiedBirthAddress",
+            "type": "unece:BirthAddress",
+            "comment": "The birth address specified for this contact person."
         },
         {
-            "uri": "unece:specifiedNote",
-            "type": "unece:Note",
-            "comment": "A note specified for this trade contact."
+            "uri": "unece:specifiedEmployerIdentity",
+            "type": "unece:EmployerIdentity",
+            "comment": "An employer identity specified for this contact person."
         },
         {
-            "uri": "unece:specifiedPerson",
-            "type": "unece:ContactPerson",
-            "comment": "The contact person specified for this trade contact."
+            "uri": "unece:specifiedPersonIdentity",
+            "type": "unece:PersonIdentity",
+            "comment": "The person identity specified for this contact person."
         },
         {
             "uri": "unece:telephoneCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Telephone communication information for this trade contact."
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
-            "uri": "unece:telexCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Telegraphy (Telex) communication information for this trade contact."
-        },
-        {
-            "uri": "unece:vOIPCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Voice Over Internet Protocol (VOIP) communication information for this trade contact."
+            "uri": "unece:websiteURICommunication",
+            "type": "unece:Communication",
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:definedContact",
-            "comment": "A trade contact defined for ..."
+            "comment": "An individual human being in a position to give assistance or information."
         },
         {
             "uri": "unece:emergencyContact",
-            "comment": "The person or department to be contacted in the event of any emergency related to these transported dangerous goods."
+            "comment": "An individual human being in a position to give assistance or information."
         },
         {
             "uri": "unece:receptionFacilityContact",
-            "comment": "A reception facility contact for this transport waste material."
+            "comment": "An individual human being in a position to give assistance or information."
+        },
+        {
+            "uri": "unece:specifiedContactPerson",
+            "comment": "An individual human being in a position to give assistance or information."
         },
         {
             "uri": "unece:transportExpertContact",
-            "comment": "The expert to be contacted for details about the transport of these dangerous goods."
+            "comment": "An individual human being in a position to give assistance or information."
         }
     ]
 }

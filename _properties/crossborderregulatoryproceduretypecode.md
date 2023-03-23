@@ -1,5 +1,5 @@
 ---
 title: crossBorderRegulatoryProcedureTypeCode
-permalink: crossBorderRegulatoryProcedureTypeCode
+permalink: crossBorderRegulatoryProcedureTypeCode.html
 jsonid: crossborderregulatoryproceduretypecode
 ---

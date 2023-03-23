@@ -1,5 +1,5 @@
 ---
 title: customsImportAgentParty
-permalink: customsImportAgentParty
+permalink: customsImportAgentParty.html
 jsonid: customsimportagentparty
 ---

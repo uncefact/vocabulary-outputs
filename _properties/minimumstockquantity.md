@@ -1,5 +1,5 @@
 ---
 title: minimumStockQuantity
-permalink: minimumStockQuantity
+permalink: minimumStockQuantity.html
 jsonid: minimumstockquantity
 ---

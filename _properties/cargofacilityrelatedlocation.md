@@ -1,5 +1,5 @@
 ---
 title: cargoFacilityRelatedLocation
-permalink: cargoFacilityRelatedLocation
+permalink: cargoFacilityRelatedLocation.html
 jsonid: cargofacilityrelatedlocation
 ---

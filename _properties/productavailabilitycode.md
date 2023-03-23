@@ -1,5 +1,5 @@
 ---
 title: productAvailabilityCode
-permalink: productAvailabilityCode
+permalink: productAvailabilityCode.html
 jsonid: productavailabilitycode
 ---

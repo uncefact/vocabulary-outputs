@@ -1,5 +1,5 @@
 ---
 title: orderCurrencyCode
-permalink: orderCurrencyCode
+permalink: orderCurrencyCode.html
 jsonid: ordercurrencycode
 ---

@@ -1,5 +1,5 @@
 ---
 title: interiorLinearRing
-permalink: interiorLinearRing
+permalink: interiorLinearRing.html
 jsonid: interiorlinearring
 ---

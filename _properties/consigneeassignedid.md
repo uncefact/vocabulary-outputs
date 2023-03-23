@@ -1,5 +1,5 @@
 ---
 title: consigneeAssignedId
-permalink: consigneeAssignedId
+permalink: consigneeAssignedId.html
 jsonid: consigneeassignedid
 ---

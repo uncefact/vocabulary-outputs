@@ -1,5 +1,5 @@
 ---
 title: cell
-permalink: cell
+permalink: cell.html
 jsonid: cell
 ---

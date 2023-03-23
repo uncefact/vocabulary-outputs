@@ -1,5 +1,5 @@
 ---
 title: estimatedApplicableServiceCharge
-permalink: estimatedApplicableServiceCharge
+permalink: estimatedApplicableServiceCharge.html
 jsonid: estimatedapplicableservicecharge
 ---

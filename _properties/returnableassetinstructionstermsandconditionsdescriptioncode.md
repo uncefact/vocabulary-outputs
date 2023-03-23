@@ -1,5 +1,5 @@
 ---
 title: returnableAssetInstructionsTermsAndConditionsDescriptionCode
-permalink: returnableAssetInstructionsTermsAndConditionsDescriptionCode
+permalink: returnableAssetInstructionsTermsAndConditionsDescriptionCode.html
 jsonid: returnableassetinstructionstermsandconditionsdescriptioncode
 ---

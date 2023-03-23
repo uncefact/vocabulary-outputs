@@ -1,5 +1,5 @@
 ---
 title: fedwireRoutingNumberId
-permalink: fedwireRoutingNumberId
+permalink: fedwireRoutingNumberId.html
 jsonid: fedwireroutingnumberid
 ---

@@ -1,5 +1,5 @@
 ---
 title: manifestAssociatedDocument
-permalink: manifestAssociatedDocument
+permalink: manifestAssociatedDocument.html
 jsonid: manifestassociateddocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: dateTypeCode
-permalink: dateTypeCode
+permalink: dateTypeCode.html
 jsonid: datetypecode
 ---

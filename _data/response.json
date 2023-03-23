@@ -2,31 +2,31 @@
 {
     "label": "Response",
     "uri": "unece:Response",
-    "comment": "A reply, answer, or additional message that is usually in response to a question or query.",
+    "comment": "A response to a specification query.",
     "datatypeProperties": [
         {
             "uri": "unece:content",
             "type": "xsd:string",
-            "comment": "The content, expressed as text, of this specification response."
+            "comment": "A content, expressed as text, of this note."
         },
         {
             "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this specification response."
+            "type": "xsd:string",
+            "comment": "The code specifying the contractual language for this basic work item."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this specification response."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:queryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier for the query to which this response refers."
         },
         {
-            "uri": "unece:specificationResponseTypeCode",
-            "type": "unece:UNCL4343Code",
+            "uri": "unece:responseTypeCode",
+            "type": "unece:ResponseTypeCodeList",
             "comment": "The code specifying the type of this specification response."
         }
     ],

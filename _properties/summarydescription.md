@@ -1,5 +1,5 @@
 ---
 title: summaryDescription
-permalink: summaryDescription
+permalink: summaryDescription.html
 jsonid: summarydescription
 ---

@@ -1,5 +1,5 @@
 ---
 title: consignmentRiskRelatedCode
-permalink: consignmentRiskRelatedCode
+permalink: consignmentRiskRelatedCode.html
 jsonid: consignmentriskrelatedcode
 ---

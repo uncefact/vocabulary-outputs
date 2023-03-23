@@ -1,5 +1,5 @@
 ---
 title: Clause
-permalink: Clause
+permalink: Clause.html
 jsonid: clause
 ---

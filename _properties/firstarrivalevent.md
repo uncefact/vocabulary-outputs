@@ -1,5 +1,5 @@
 ---
 title: firstArrivalEvent
-permalink: firstArrivalEvent
+permalink: firstArrivalEvent.html
 jsonid: firstarrivalevent
 ---

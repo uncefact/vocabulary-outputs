@@ -1,5 +1,5 @@
 ---
 title: priceCurrencyCode
-permalink: priceCurrencyCode
+permalink: priceCurrencyCode.html
 jsonid: pricecurrencycode
 ---

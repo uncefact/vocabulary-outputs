@@ -1,5 +1,5 @@
 ---
 title: submissionLocation
-permalink: submissionLocation
+permalink: submissionLocation.html
 jsonid: submissionlocation
 ---

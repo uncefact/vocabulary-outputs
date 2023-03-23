@@ -1,5 +1,5 @@
 ---
 title: altimetricSystemId
-permalink: altimetricSystemId
+permalink: altimetricSystemId.html
 jsonid: altimetricsystemid
 ---

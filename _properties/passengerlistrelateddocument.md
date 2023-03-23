@@ -1,5 +1,5 @@
 ---
 title: passengerListRelatedDocument
-permalink: passengerListRelatedDocument
+permalink: passengerListRelatedDocument.html
 jsonid: passengerlistrelateddocument
 ---

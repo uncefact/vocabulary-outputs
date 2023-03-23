@@ -1,5 +1,5 @@
 ---
 title: releaseId
-permalink: releaseId
+permalink: releaseId.html
 jsonid: releaseid
 ---

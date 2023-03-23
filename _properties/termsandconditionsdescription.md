@@ -1,5 +1,5 @@
 ---
 title: termsAndConditionsDescription
-permalink: termsAndConditionsDescription
+permalink: termsAndConditionsDescription.html
 jsonid: termsandconditionsdescription
 ---

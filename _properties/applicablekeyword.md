@@ -1,5 +1,5 @@
 ---
 title: applicableKeyword
-permalink: applicableKeyword
+permalink: applicableKeyword.html
 jsonid: applicablekeyword
 ---

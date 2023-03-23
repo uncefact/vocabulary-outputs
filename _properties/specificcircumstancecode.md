@@ -1,5 +1,5 @@
 ---
 title: specificCircumstanceCode
-permalink: specificCircumstanceCode
+permalink: specificCircumstanceCode.html
 jsonid: specificcircumstancecode
 ---

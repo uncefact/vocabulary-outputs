@@ -1,5 +1,5 @@
 ---
 title: processingTransactionDateTime
-permalink: processingTransactionDateTime
+permalink: processingTransactionDateTime.html
 jsonid: processingtransactiondatetime
 ---

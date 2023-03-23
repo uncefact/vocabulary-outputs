@@ -1,5 +1,5 @@
 ---
 title: interfaceEquipment
-permalink: interfaceEquipment
+permalink: interfaceEquipment.html
 jsonid: interfaceequipment
 ---

@@ -1,5 +1,5 @@
 ---
 title: ProductGroup
-permalink: ProductGroup
+permalink: ProductGroup.html
 jsonid: productgroup
 ---

@@ -1,5 +1,5 @@
 ---
 title: lowDispersibleInformation
-permalink: lowDispersibleInformation
+permalink: lowDispersibleInformation.html
 jsonid: lowdispersibleinformation
 ---

@@ -1,5 +1,5 @@
 ---
 title: contractualClause
-permalink: contractualClause
+permalink: contractualClause.html
 jsonid: contractualclause
 ---

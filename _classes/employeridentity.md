@@ -1,5 +1,5 @@
 ---
 title: EmployerIdentity
-permalink: EmployerIdentity
+permalink: EmployerIdentity.html
 jsonid: employeridentity
 ---

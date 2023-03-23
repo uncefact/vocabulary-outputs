@@ -1,5 +1,5 @@
 ---
 title: Sensor
-permalink: Sensor
+permalink: Sensor.html
 jsonid: sensor
 ---

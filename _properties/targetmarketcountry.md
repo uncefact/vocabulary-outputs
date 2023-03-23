@@ -1,5 +1,5 @@
 ---
 title: targetMarketCountry
-permalink: targetMarketCountry
+permalink: targetMarketCountry.html
 jsonid: targetmarketcountry
 ---

@@ -1,5 +1,5 @@
 ---
 title: appliedProcess
-permalink: appliedProcess
+permalink: appliedProcess.html
 jsonid: appliedprocess
 ---

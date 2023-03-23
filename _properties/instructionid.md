@@ -1,5 +1,5 @@
 ---
 title: instructionId
-permalink: instructionId
+permalink: instructionId.html
 jsonid: instructionid
 ---

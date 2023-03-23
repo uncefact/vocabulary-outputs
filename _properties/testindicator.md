@@ -1,5 +1,5 @@
 ---
 title: testIndicator
-permalink: testIndicator
+permalink: testIndicator.html
 jsonid: testindicator
 ---

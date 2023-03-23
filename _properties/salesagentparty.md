@@ -1,5 +1,5 @@
 ---
 title: salesAgentParty
-permalink: salesAgentParty
+permalink: salesAgentParty.html
 jsonid: salesagentparty
 ---

@@ -1,5 +1,5 @@
 ---
 title: priorityCode
-permalink: priorityCode
+permalink: priorityCode.html
 jsonid: prioritycode
 ---

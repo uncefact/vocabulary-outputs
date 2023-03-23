@@ -1,5 +1,5 @@
 ---
 title: specifiedNote
-permalink: specifiedNote
+permalink: specifiedNote.html
 jsonid: specifiednote
 ---

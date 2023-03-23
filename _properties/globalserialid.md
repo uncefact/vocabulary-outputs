@@ -1,5 +1,5 @@
 ---
 title: globalSerialId
-permalink: globalSerialId
+permalink: globalSerialId.html
 jsonid: globalserialid
 ---

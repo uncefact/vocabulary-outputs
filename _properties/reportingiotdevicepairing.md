@@ -1,5 +1,5 @@
 ---
 title: reportingIOTDevicePairing
-permalink: reportingIOTDevicePairing
+permalink: reportingIOTDevicePairing.html
 jsonid: reportingiotdevicepairing
 ---

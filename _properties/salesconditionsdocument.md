@@ -1,5 +1,5 @@
 ---
 title: salesConditionsDocument
-permalink: salesConditionsDocument
+permalink: salesConditionsDocument.html
 jsonid: salesconditionsdocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: loadedPackageQuantity
-permalink: loadedPackageQuantity
+permalink: loadedPackageQuantity.html
 jsonid: loadedpackagequantity
 ---

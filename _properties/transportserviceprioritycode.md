@@ -1,5 +1,5 @@
 ---
 title: transportServicePriorityCode
-permalink: transportServicePriorityCode
+permalink: transportServicePriorityCode.html
 jsonid: transportserviceprioritycode
 ---

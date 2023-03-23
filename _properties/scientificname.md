@@ -1,5 +1,5 @@
 ---
 title: scientificName
-permalink: scientificName
+permalink: scientificName.html
 jsonid: scientificname
 ---

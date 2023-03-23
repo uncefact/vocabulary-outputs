@@ -1,5 +1,5 @@
 ---
 title: terminalOperatorAssignedId
-permalink: terminalOperatorAssignedId
+permalink: terminalOperatorAssignedId.html
 jsonid: terminaloperatorassignedid
 ---

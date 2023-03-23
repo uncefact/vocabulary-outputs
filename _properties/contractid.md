@@ -1,5 +1,5 @@
 ---
 title: contractId
-permalink: contractId
+permalink: contractId.html
 jsonid: contractid
 ---

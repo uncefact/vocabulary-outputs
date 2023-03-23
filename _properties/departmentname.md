@@ -1,5 +1,5 @@
 ---
 title: departmentName
-permalink: departmentName
+permalink: departmentName.html
 jsonid: departmentname
 ---

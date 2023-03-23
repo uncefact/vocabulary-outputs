@@ -1,5 +1,5 @@
 ---
 title: adjustmentReasonCode
-permalink: adjustmentReasonCode
+permalink: adjustmentReasonCode.html
 jsonid: adjustmentreasoncode
 ---

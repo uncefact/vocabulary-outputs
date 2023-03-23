@@ -1,5 +1,5 @@
 ---
 title: manufacturingProcessDescription
-permalink: manufacturingProcessDescription
+permalink: manufacturingProcessDescription.html
 jsonid: manufacturingprocessdescription
 ---

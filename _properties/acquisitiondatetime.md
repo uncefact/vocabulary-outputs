@@ -1,5 +1,5 @@
 ---
 title: acquisitionDateTime
-permalink: acquisitionDateTime
+permalink: acquisitionDateTime.html
 jsonid: acquisitiondatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: access
-permalink: access
+permalink: access.html
 jsonid: access
 ---

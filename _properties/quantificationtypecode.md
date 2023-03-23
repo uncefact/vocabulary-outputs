@@ -1,5 +1,5 @@
 ---
 title: quantificationTypeCode
-permalink: quantificationTypeCode
+permalink: quantificationTypeCode.html
 jsonid: quantificationtypecode
 ---

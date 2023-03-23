@@ -1,5 +1,5 @@
 ---
 title: catalogueRequestDocument
-permalink: catalogueRequestDocument
+permalink: catalogueRequestDocument.html
 jsonid: cataloguerequestdocument
 ---

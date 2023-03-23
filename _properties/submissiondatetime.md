@@ -1,5 +1,5 @@
 ---
 title: submissionDateTime
-permalink: submissionDateTime
+permalink: submissionDateTime.html
 jsonid: submissiondatetime
 ---

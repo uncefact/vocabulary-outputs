@@ -47,8 +47,9 @@ layout: default
         <tbody>
             {% for domain in property.domainIncludes %}
                 {% assign domainUrl = domain.uri | split: ":"  %}
+                {%- assign mappingKey = domainUrl[0] -%}
                 <tr>
-                    <td><a href="{{ domainUrl[1] | absolute_url }}">{{ domain.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ domainUrl[1] }}">{{ domain.uri }}</a></td>
                     <td>{{ domain.comment }}</td>
                 </tr>
             {% endfor %}

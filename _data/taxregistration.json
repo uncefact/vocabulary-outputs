@@ -6,26 +6,26 @@
     "datatypeProperties": [
         {
             "uri": "unece:iOSSId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The Import One Stop Shop (IOSS) identifier for this tax registration."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this tax registration."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         }
     ],
     "objectProperties": [
         {
             "uri": "unece:associatedTax",
             "type": "unece:RegisteredTax",
-            "comment": "The registered tax associated with this tax registration."
+            "comment": "A registered tax or duty system pertaining to an authority."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedRegistration",
-            "comment": "A tax registration specified for ..."
+            "uri": "unece:specifiedTaxRegistration",
+            "comment": "Registration with a specific tax authority."
         }
     ]
 }

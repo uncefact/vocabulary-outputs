@@ -1,5 +1,5 @@
 ---
 title: gFMTransferRejectedQuantity
-permalink: gFMTransferRejectedQuantity
+permalink: gFMTransferRejectedQuantity.html
 jsonid: gfmtransferrejectedquantity
 ---

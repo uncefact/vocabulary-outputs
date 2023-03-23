@@ -1,5 +1,5 @@
 ---
 title: authenticatedOriginalIndicator
-permalink: authenticatedOriginalIndicator
+permalink: authenticatedOriginalIndicator.html
 jsonid: authenticatedoriginalindicator
 ---

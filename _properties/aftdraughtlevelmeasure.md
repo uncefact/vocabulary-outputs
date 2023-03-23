@@ -1,5 +1,5 @@
 ---
 title: aftDraughtLevelMeasure
-permalink: aftDraughtLevelMeasure
+permalink: aftDraughtLevelMeasure.html
 jsonid: aftdraughtlevelmeasure
 ---

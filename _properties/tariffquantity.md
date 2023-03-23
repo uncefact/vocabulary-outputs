@@ -1,5 +1,5 @@
 ---
 title: tariffQuantity
-permalink: tariffQuantity
+permalink: tariffQuantity.html
 jsonid: tariffquantity
 ---

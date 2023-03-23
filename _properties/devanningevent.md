@@ -1,5 +1,5 @@
 ---
 title: devanningEvent
-permalink: devanningEvent
+permalink: devanningEvent.html
 jsonid: devanningevent
 ---

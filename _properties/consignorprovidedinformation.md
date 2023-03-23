@@ -1,5 +1,5 @@
 ---
 title: consignorProvidedInformation
-permalink: consignorProvidedInformation
+permalink: consignorProvidedInformation.html
 jsonid: consignorprovidedinformation
 ---

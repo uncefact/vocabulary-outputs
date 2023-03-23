@@ -1,5 +1,5 @@
 ---
 title: inspectionReferenceDocument
-permalink: inspectionReferenceDocument
+permalink: inspectionReferenceDocument.html
 jsonid: inspectionreferencedocument
 ---

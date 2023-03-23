@@ -1,5 +1,5 @@
 ---
 title: materialId
-permalink: materialId
+permalink: materialId.html
 jsonid: materialid
 ---

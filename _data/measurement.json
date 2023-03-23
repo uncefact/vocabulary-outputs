@@ -5,29 +5,14 @@
     "comment": "An amount, size, or extent as established by measuring.",
     "datatypeProperties": [
         {
-            "uri": "unece:actualMeasure",
-            "type": "xsd:decimal",
-            "comment": "An actual measure for this measurement."
-        },
-        {
             "uri": "unece:comparisonOperatorCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures."
-        },
-        {
-            "uri": "unece:conditionMeasure",
-            "type": "xsd:decimal",
-            "comment": "A measure of a condition for this measurement."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this measurement."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this calibrated measurement."
+            "comment": "A description of the item."
         },
         {
             "uri": "unece:method",
@@ -35,69 +20,39 @@
             "comment": "A measurement method expressed as text."
         },
         {
-            "uri": "unece:quantificationTypeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a quantification type for this calibrated measurement, such as measured, calculated, or estimated."
-        },
-        {
-            "uri": "unece:toleranceMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the tolerance of this calibrated measurement."
-        },
-        {
-            "uri": "unece:tolerancePercent",
-            "type": "xsd:decimal",
-            "comment": "The percent of tolerance of this calibrated measurement."
-        },
-        {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type of measurement."
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:actualMeasure",
+            "type": "unece:MeasureType",
+            "comment": "An actual measure for this measurement."
         },
         {
-            "uri": "unece:valueCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a value for this calibrated measurement."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The value of a measure for this calibrated measurement."
-        },
-        {
-            "uri": "unece:versionId",
-            "type": "xsd:token",
-            "comment": "The identifier of a version of this calibrated measurement."
+            "uri": "unece:conditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a condition for this measurement."
         }
     ],
     "referencedBy": [
-        {
-            "uri": "unece:actualReportedMeasurement",
-            "comment": "An actual calibrated measurement reported for this monitoring sensor."
-        },
         {
             "uri": "unece:associatedMeasurement",
             "comment": "A measurement associated with this document clause."
         },
         {
             "uri": "unece:controlTemperatureMeasurement",
-            "comment": "The measurement of the control temperature of these transported dangerous goods."
+            "comment": "An amount, size, or extent as established by measuring."
         },
         {
             "uri": "unece:emergencyTemperatureMeasurement",
-            "comment": "The measurement of the emergency temperature of these transported dangerous goods."
+            "comment": "An amount, size, or extent as established by measuring."
         },
         {
             "uri": "unece:flashpointTemperatureMeasurement",
-            "comment": "A measurement of the flashpoint temperature of these transported dangerous goods."
-        },
-        {
-            "uri": "unece:precisionMeasurement",
-            "comment": "A calibrated measurement of precision for this monitoring sensor."
-        },
-        {
-            "uri": "unece:scheduledReportedMeasurement",
-            "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+            "comment": "An amount, size, or extent as established by measuring."
         }
     ]
 }

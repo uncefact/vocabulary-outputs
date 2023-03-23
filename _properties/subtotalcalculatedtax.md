@@ -1,5 +1,5 @@
 ---
 title: subtotalCalculatedTax
-permalink: subtotalCalculatedTax
+permalink: subtotalCalculatedTax.html
 jsonid: subtotalcalculatedtax
 ---

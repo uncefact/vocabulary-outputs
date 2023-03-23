@@ -1,5 +1,5 @@
 ---
 title: quotaId
-permalink: quotaId
+permalink: quotaId.html
 jsonid: quotaid
 ---

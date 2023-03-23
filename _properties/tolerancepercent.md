@@ -1,5 +1,5 @@
 ---
 title: tolerancePercent
-permalink: tolerancePercent
+permalink: tolerancePercent.html
 jsonid: tolerancepercent
 ---

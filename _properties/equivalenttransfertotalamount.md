@@ -1,5 +1,5 @@
 ---
 title: equivalentTransferTotalAmount
-permalink: equivalentTransferTotalAmount
+permalink: equivalentTransferTotalAmount.html
 jsonid: equivalenttransfertotalamount
 ---

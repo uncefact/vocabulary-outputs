@@ -1,5 +1,5 @@
 ---
 title: Contact
-permalink: Contact
+permalink: Contact.html
 jsonid: contact
 ---

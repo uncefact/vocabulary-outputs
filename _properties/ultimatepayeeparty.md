@@ -1,5 +1,5 @@
 ---
 title: ultimatePayeeParty
-permalink: ultimatePayeeParty
+permalink: ultimatePayeeParty.html
 jsonid: ultimatepayeeparty
 ---

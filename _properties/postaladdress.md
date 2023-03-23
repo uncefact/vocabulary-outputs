@@ -1,5 +1,5 @@
 ---
 title: postalAddress
-permalink: postalAddress
+permalink: postalAddress.html
 jsonid: postaladdress
 ---

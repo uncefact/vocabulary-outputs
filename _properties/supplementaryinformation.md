@@ -1,5 +1,5 @@
 ---
 title: supplementaryInformation
-permalink: supplementaryInformation
+permalink: supplementaryInformation.html
 jsonid: supplementaryinformation
 ---

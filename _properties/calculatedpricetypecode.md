@@ -1,5 +1,5 @@
 ---
 title: calculatedPriceTypeCode
-permalink: calculatedPriceTypeCode
+permalink: calculatedPriceTypeCode.html
 jsonid: calculatedpricetypecode
 ---

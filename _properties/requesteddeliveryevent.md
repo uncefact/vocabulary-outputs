@@ -1,5 +1,5 @@
 ---
 title: requestedDeliveryEvent
-permalink: requestedDeliveryEvent
+permalink: requestedDeliveryEvent.html
 jsonid: requesteddeliveryevent
 ---

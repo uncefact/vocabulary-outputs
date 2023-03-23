@@ -1,5 +1,5 @@
 ---
 title: radiusMeasure
-permalink: radiusMeasure
+permalink: radiusMeasure.html
 jsonid: radiusmeasure
 ---

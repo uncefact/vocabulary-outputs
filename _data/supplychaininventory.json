@@ -1,0 +1,114 @@
+
+{
+    "label": "SupplyChainInventory",
+    "uri": "unece:SupplyChainInventory",
+    "comment": "Supply chain goods and materials held in stock.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:averageDurationDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time of the average duration for this supply chain inventory."
+        },
+        {
+            "uri": "unece:calculationDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the calculation of this supply chain inventory."
+        },
+        {
+            "uri": "unece:plannedStockCalculationDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a status for this trade product."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:averageDemandQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:dispositionDocument",
+            "type": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:includedBatch",
+            "type": "unece:ProductBatch",
+            "comment": "A product batch included in this supply chain inventory."
+        },
+        {
+            "uri": "unece:includedMaterial",
+            "type": "unece:SpecifiedMaterial",
+            "comment": "A substance from which something is or could be made."
+        },
+        {
+            "uri": "unece:includedTradeProduct",
+            "type": "unece:TradeProduct",
+            "comment": "A product included in this supply chain inventory."
+        },
+        {
+            "uri": "unece:maximumStockLevelMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:maximumStockQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:minimumStockLevelMeasure",
+            "type": "unece:MeasureType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:minimumStockQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:plannedStockQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        },
+        {
+            "uri": "unece:remarkNote",
+            "type": "unece:Note",
+            "comment": "A textual or coded description, such as a remark or additional information."
+        },
+        {
+            "uri": "unece:specifiedLogisticsLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A logistics related physical location or place."
+        },
+        {
+            "uri": "unece:specifiedSupplyChainEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A significant occurrence or happening in a supply chain."
+        },
+        {
+            "uri": "unece:stockQuantity",
+            "type": "unece:QuantityType",
+            "comment": ""
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:availableInventory",
+            "comment": "Inventory available, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:consignmentInventory",
+            "comment": "Supply chain consignment inventory, at line level, for this trade delivery."
+        },
+        {
+            "uri": "unece:customerInventory",
+            "comment": "Supply chain customer inventory, at line level, for this trade delivery."
+        }
+    ]
+}

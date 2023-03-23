@@ -1,5 +1,5 @@
 ---
 title: hellenicBankId
-permalink: hellenicBankId
+permalink: hellenicBankId.html
 jsonid: hellenicbankid
 ---

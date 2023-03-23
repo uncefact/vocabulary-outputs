@@ -1,5 +1,5 @@
 ---
 title: dUNSId
-permalink: dUNSId
+permalink: dUNSId.html
 jsonid: dunsid
 ---

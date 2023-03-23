@@ -1,5 +1,5 @@
 ---
 title: completionPeriod
-permalink: completionPeriod
+permalink: completionPeriod.html
 jsonid: completionperiod
 ---

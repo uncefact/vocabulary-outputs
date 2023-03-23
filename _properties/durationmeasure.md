@@ -1,5 +1,5 @@
 ---
 title: durationMeasure
-permalink: durationMeasure
+permalink: durationMeasure.html
 jsonid: durationmeasure
 ---

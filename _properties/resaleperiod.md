@@ -1,5 +1,5 @@
 ---
 title: resalePeriod
-permalink: resalePeriod
+permalink: resalePeriod.html
 jsonid: resaleperiod
 ---

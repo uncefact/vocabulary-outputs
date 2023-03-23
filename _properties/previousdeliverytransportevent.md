@@ -1,5 +1,5 @@
 ---
 title: previousDeliveryTransportEvent
-permalink: previousDeliveryTransportEvent
+permalink: previousDeliveryTransportEvent.html
 jsonid: previousdeliverytransportevent
 ---

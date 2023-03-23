@@ -1,5 +1,5 @@
 ---
 title: paymentMeansChannelPaymentChannelCode
-permalink: paymentMeansChannelPaymentChannelCode
+permalink: paymentMeansChannelPaymentChannelCode.html
 jsonid: paymentmeanschannelpaymentchannelcode
 ---

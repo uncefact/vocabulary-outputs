@@ -1,5 +1,5 @@
 ---
 title: websiteURIId
-permalink: websiteURIId
+permalink: websiteURIId.html
 jsonid: websiteuriid
 ---

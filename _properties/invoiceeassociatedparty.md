@@ -1,5 +1,5 @@
 ---
 title: invoiceeAssociatedParty
-permalink: invoiceeAssociatedParty
+permalink: invoiceeAssociatedParty.html
 jsonid: invoiceeassociatedparty
 ---

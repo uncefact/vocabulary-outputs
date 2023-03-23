@@ -1,5 +1,5 @@
 ---
 title: packingListDocument
-permalink: packingListDocument
+permalink: packingListDocument.html
 jsonid: packinglistdocument
 ---

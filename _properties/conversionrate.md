@@ -1,5 +1,5 @@
 ---
 title: conversionRate
-permalink: conversionRate
+permalink: conversionRate.html
 jsonid: conversionrate
 ---

@@ -1,5 +1,5 @@
 ---
 title: australianBSBId
-permalink: australianBSBId
+permalink: australianBSBId.html
 jsonid: australianbsbid
 ---

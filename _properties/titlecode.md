@@ -1,5 +1,5 @@
 ---
 title: titleCode
-permalink: titleCode
+permalink: titleCode.html
 jsonid: titlecode
 ---

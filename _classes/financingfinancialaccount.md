@@ -1,5 +1,5 @@
 ---
 title: FinancingFinancialAccount
-permalink: FinancingFinancialAccount
+permalink: FinancingFinancialAccount.html
 jsonid: financingfinancialaccount
 ---

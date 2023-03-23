@@ -1,5 +1,5 @@
 ---
 title: insuranceApplicableCurrencyExchange
-permalink: insuranceApplicableCurrencyExchange
+permalink: insuranceApplicableCurrencyExchange.html
 jsonid: insuranceapplicablecurrencyexchange
 ---

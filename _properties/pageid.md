@@ -1,5 +1,5 @@
 ---
 title: pageId
-permalink: pageId
+permalink: pageId.html
 jsonid: pageid
 ---

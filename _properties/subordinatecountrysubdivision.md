@@ -1,5 +1,5 @@
 ---
 title: subordinateCountrySubDivision
-permalink: subordinateCountrySubDivision
+permalink: subordinateCountrySubDivision.html
 jsonid: subordinatecountrysubdivision
 ---

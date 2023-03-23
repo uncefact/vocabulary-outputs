@@ -2,7 +2,7 @@
 {
     "label": "GeographicalGrid",
     "uri": "unece:GeographicalGrid",
-    "comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
+    "comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
     "datatypeProperties": [
         {
             "uri": "unece:axisName",
@@ -16,7 +16,7 @@
         },
         {
             "uri": "unece:dimensionNumeric",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The dimension, expressed as a number, of this geographical grid."
         },
         {
@@ -26,8 +26,8 @@
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier for this geographical grid."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:lowLimit",
@@ -36,7 +36,7 @@
         },
         {
             "uri": "unece:offsetVectorNumeric",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical grid."
         }
     ],
@@ -48,8 +48,8 @@
         },
         {
             "uri": "unece:associatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location associated with this specified geographical grid."
+            "type": "unece:Location",
+            "comment": "A logistics location associated with this specified circle."
         },
         {
             "uri": "unece:originAssociatedDirectPositionList",

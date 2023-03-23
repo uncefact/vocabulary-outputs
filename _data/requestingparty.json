@@ -5,71 +5,61 @@
     "comment": "An individual, a group, or a body having a role as a requestor.",
     "datatypeProperties": [
         {
-            "uri": "unece:accessRightsCode",
-            "type": "xsd:token",
+            "uri": "unece:accessRightsTypeAccessRightsCode",
+            "type": "unece:AccessRightsTypeCodeList",
             "comment": "The code specifying the access rights, such as unlimited, restricted, prohibited, for this requesting party."
         },
         {
             "uri": "unece:bEIId",
-            "type": "xsd:token",
-            "comment": "The unique Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this requesting party."
+            "type": "xsd:string",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "The textual description of this requesting party."
+            "comment": "A description of the item."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this requesting party."
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:languageCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a language for this requesting party."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "The name, expressed as text, for this requesting party."
+            "comment": "The name of the item."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of requesting party."
+            "uri": "unece:partyTypeCode",
+            "type": "unece:PartyTypeCodeList",
+            "comment": "A code specifying the type of TT party."
         }
     ],
     "objectProperties": [
         {
             "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
             "type": "unece:FinancingFinancialAccount",
-            "comment": "The financing financial account, used for managing the line of credit, specified for this requesting party."
+            "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
         },
         {
-            "uri": "unece:specifiedFinancialAccount",
+            "uri": "unece:specifiedCreditorFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
-            "comment": "The creditor financial account, used for crediting, specified for this requesting party."
+            "comment": "A creditor financial account specified for this trade settlement payment means."
         },
         {
-            "uri": "unece:specifiedIdentity",
+            "uri": "unece:specifiedProprietaryIdentity",
             "type": "unece:ProprietaryIdentity",
-            "comment": "A proprietary identity specified for this requesting party."
-        },
-        {
-            "uri": "unece:specifiedOrganization",
-            "type": "unece:Organization",
-            "comment": "The project organization, such as a business or government body, for this requesting party."
-        },
-        {
-            "uri": "unece:specifiedProjectPerson",
-            "type": "unece:ProjectPerson",
-            "comment": "The project person specified for this requesting party."
+            "comment": "Proprietary information which uniquely identifies a person or organization."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedParty",
+            "uri": "unece:specifiedRequestingParty",
             "comment": "The requesting party specified in this financing request document."
         }
     ]

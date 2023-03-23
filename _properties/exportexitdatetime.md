@@ -1,5 +1,5 @@
 ---
 title: exportExitDateTime
-permalink: exportExitDateTime
+permalink: exportExitDateTime.html
 jsonid: exportexitdatetime
 ---

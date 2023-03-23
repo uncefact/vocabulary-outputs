@@ -1,5 +1,5 @@
 ---
 title: calculationPercent
-permalink: calculationPercent
+permalink: calculationPercent.html
 jsonid: calculationpercent
 ---

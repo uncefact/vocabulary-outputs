@@ -1,5 +1,5 @@
 ---
 title: actualQuantityPercent
-permalink: actualQuantityPercent
+permalink: actualQuantityPercent.html
 jsonid: actualquantitypercent
 ---

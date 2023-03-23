@@ -1,5 +1,5 @@
 ---
 title: deliveryApplicableTemperature
-permalink: deliveryApplicableTemperature
+permalink: deliveryApplicableTemperature.html
 jsonid: deliveryapplicabletemperature
 ---

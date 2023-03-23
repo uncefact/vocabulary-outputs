@@ -1,5 +1,5 @@
 ---
 title: sealedIndicator
-permalink: sealedIndicator
+permalink: sealedIndicator.html
 jsonid: sealedindicator
 ---

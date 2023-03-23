@@ -12,23 +12,23 @@
         {
             "uri": "unece:reason",
             "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this validation status."
+            "comment": "A reason, expressed as text, for this cancellation status."
+        },
+        {
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a reason for the declared error."
         },
         {
             "uri": "unece:validationDocumentStatusConditionCode",
-            "type": "unece:UNCL1373Code",
+            "type": "unece:ValidationDocumentStatusCodeList",
             "comment": "The code specifying the condition of this validation status."
-        },
-        {
-            "uri": "unece:validationStatusReasonCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "The code specifying the reason for this validation status."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedValidationStatus",
-            "comment": "The status of the validation specified for this financing request document, such as error."
+            "comment": "Information relevant to a condition of a validation."
         }
     ]
 }

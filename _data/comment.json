@@ -2,11 +2,7 @@
 {
     "label": "comment",
     "uri": "unece:comment",
-    "comment": [
-        "A comment, expressed as text, for this basic work item.",
-        "A comment, expressed as text, for this valuation breakdown statement.",
-        "A comment, expressed as text, for this work item group."
-    ],
+    "comment": "A comment, expressed as text for this MDH illness.",
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -14,12 +10,32 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:BreakdownStatement",
-            "comment": "A detailed statement of work, materials, products, prices, or dimensions."
+            "uri": "unece:InspectionReference",
+            "comment": "The identification of related information for an inspection."
         },
         {
-            "uri": "unece:WorkItem",
-            "comment": "A specific task or set of tasks to be undertaken."
+            "uri": "unece:LaboratoryObservationReference",
+            "comment": "The direction to related information for this laboratory observation."
+        },
+        {
+            "uri": "unece:BreakdownStatement",
+            "comment": "A detailed statement of work, prices, and dimensions for this valuation."
+        },
+        {
+            "uri": "unece:BasicWorkItem",
+            "comment": "A basic item of work."
+        },
+        {
+            "uri": "unece:GroupedWorkItem",
+            "comment": "A grouping of related work items."
+        },
+        {
+            "uri": "unece:Illness",
+            "comment": "A WHO MDH (Maritime Declaration of Health) reported illness or disease for an onboard person."
+        },
+        {
+            "uri": "unece:SupplyChainReference",
+            "comment": "The identification of related information in a supply chain context."
         }
     ]
 }

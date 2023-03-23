@@ -1,5 +1,5 @@
 ---
 title: availableInventory
-permalink: availableInventory
+permalink: availableInventory.html
 jsonid: availableinventory
 ---

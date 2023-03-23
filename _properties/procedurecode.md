@@ -1,5 +1,5 @@
 ---
 title: procedureCode
-permalink: procedureCode
+permalink: procedureCode.html
 jsonid: procedurecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: Product
-permalink: Product
+permalink: Product.html
 jsonid: product
 ---

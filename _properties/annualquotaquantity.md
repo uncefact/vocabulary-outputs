@@ -1,5 +1,5 @@
 ---
 title: annualQuotaQuantity
-permalink: annualQuotaQuantity
+permalink: annualQuotaQuantity.html
 jsonid: annualquotaquantity
 ---

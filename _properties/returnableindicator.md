@@ -1,5 +1,5 @@
 ---
 title: returnableIndicator
-permalink: returnableIndicator
+permalink: returnableIndicator.html
 jsonid: returnableindicator
 ---

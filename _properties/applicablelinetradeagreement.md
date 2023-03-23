@@ -1,5 +1,5 @@
 ---
 title: applicableLineTradeAgreement
-permalink: applicableLineTradeAgreement
+permalink: applicableLineTradeAgreement.html
 jsonid: applicablelinetradeagreement
 ---

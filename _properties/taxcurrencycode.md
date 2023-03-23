@@ -1,5 +1,5 @@
 ---
 title: taxCurrencyCode
-permalink: taxCurrencyCode
+permalink: taxCurrencyCode.html
 jsonid: taxcurrencycode
 ---

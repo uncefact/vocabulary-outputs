@@ -1,5 +1,5 @@
 ---
 title: haulageInstructionsDescriptionCode
-permalink: haulageInstructionsDescriptionCode
+permalink: haulageInstructionsDescriptionCode.html
 jsonid: haulageinstructionsdescriptioncode
 ---

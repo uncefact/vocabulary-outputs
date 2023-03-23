@@ -1,5 +1,5 @@
 ---
 title: fourthSignatoryAuthentication
-permalink: fourthSignatoryAuthentication
+permalink: fourthSignatoryAuthentication.html
 jsonid: fourthsignatoryauthentication
 ---

@@ -1,5 +1,5 @@
 ---
 title: changeReason
-permalink: changeReason
+permalink: changeReason.html
 jsonid: changereason
 ---

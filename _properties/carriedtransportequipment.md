@@ -1,5 +1,5 @@
 ---
 title: carriedTransportEquipment
-permalink: carriedTransportEquipment
+permalink: carriedTransportEquipment.html
 jsonid: carriedtransportequipment
 ---

@@ -1,5 +1,5 @@
 ---
 title: traderAssignedId
-permalink: traderAssignedId
+permalink: traderAssignedId.html
 jsonid: traderassignedid
 ---

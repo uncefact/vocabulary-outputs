@@ -1,5 +1,5 @@
 ---
 title: absolutePresenceWeightMeasure
-permalink: absolutePresenceWeightMeasure
+permalink: absolutePresenceWeightMeasure.html
 jsonid: absolutepresenceweightmeasure
 ---

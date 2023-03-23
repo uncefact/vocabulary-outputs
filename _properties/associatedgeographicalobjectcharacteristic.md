@@ -1,5 +1,5 @@
 ---
 title: associatedGeographicalObjectCharacteristic
-permalink: associatedGeographicalObjectCharacteristic
+permalink: associatedGeographicalObjectCharacteristic.html
 jsonid: associatedgeographicalobjectcharacteristic
 ---

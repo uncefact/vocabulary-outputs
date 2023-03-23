@@ -1,5 +1,5 @@
 ---
 title: controlTemperatureMeasurement
-permalink: controlTemperatureMeasurement
+permalink: controlTemperatureMeasurement.html
 jsonid: controltemperaturemeasurement
 ---

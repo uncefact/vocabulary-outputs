@@ -1,5 +1,5 @@
 ---
 title: ControlSettingParameter
-permalink: ControlSettingParameter
+permalink: ControlSettingParameter.html
 jsonid: controlsettingparameter
 ---

@@ -1,5 +1,5 @@
 ---
 title: DeliveryTerms
-permalink: DeliveryTerms
+permalink: DeliveryTerms.html
 jsonid: deliveryterms
 ---

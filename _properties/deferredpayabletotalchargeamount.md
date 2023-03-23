@@ -1,5 +1,5 @@
 ---
 title: deferredPayableTotalChargeAmount
-permalink: deferredPayableTotalChargeAmount
+permalink: deferredPayableTotalChargeAmount.html
 jsonid: deferredpayabletotalchargeamount
 ---

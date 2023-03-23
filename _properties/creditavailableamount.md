@@ -1,5 +1,5 @@
 ---
 title: creditAvailableAmount
-permalink: creditAvailableAmount
+permalink: creditAvailableAmount.html
 jsonid: creditavailableamount
 ---

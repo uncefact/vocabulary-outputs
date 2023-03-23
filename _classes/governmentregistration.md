@@ -1,5 +1,5 @@
 ---
 title: GovernmentRegistration
-permalink: GovernmentRegistration
+permalink: GovernmentRegistration.html
 jsonid: governmentregistration
 ---

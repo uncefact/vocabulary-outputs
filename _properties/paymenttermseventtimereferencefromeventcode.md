@@ -1,5 +1,5 @@
 ---
 title: paymentTermsEventTimeReferenceFromEventCode
-permalink: paymentTermsEventTimeReferenceFromEventCode
+permalink: paymentTermsEventTimeReferenceFromEventCode.html
 jsonid: paymenttermseventtimereferencefromeventcode
 ---

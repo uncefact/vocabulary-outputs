@@ -1,5 +1,5 @@
 ---
 title: Consignment
-permalink: Consignment
+permalink: Consignment.html
 jsonid: consignment
 ---

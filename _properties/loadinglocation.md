@@ -1,5 +1,5 @@
 ---
 title: loadingLocation
-permalink: loadingLocation
+permalink: loadingLocation.html
 jsonid: loadinglocation
 ---

@@ -1,5 +1,5 @@
 ---
 title: Marketplace
-permalink: Marketplace
+permalink: Marketplace.html
 jsonid: marketplace
 ---

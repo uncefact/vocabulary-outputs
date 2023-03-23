@@ -1,5 +1,5 @@
 ---
 title: minimumOrderQuantityOrderingPeriod
-permalink: minimumOrderQuantityOrderingPeriod
+permalink: minimumOrderQuantityOrderingPeriod.html
 jsonid: minimumorderquantityorderingperiod
 ---

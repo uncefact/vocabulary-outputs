@@ -1,5 +1,5 @@
 ---
 title: seasonDescription
-permalink: seasonDescription
+permalink: seasonDescription.html
 jsonid: seasondescription
 ---

@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentRiskRelatedCode
-permalink: transportEquipmentRiskRelatedCode
+permalink: transportEquipmentRiskRelatedCode.html
 jsonid: transportequipmentriskrelatedcode
 ---

@@ -1,5 +1,5 @@
 ---
 title: responsibleGovernmentAgencyInvolvementResponsibleAgencyInvolvementCode
-permalink: responsibleGovernmentAgencyInvolvementResponsibleAgencyInvolvementCode
+permalink: responsibleGovernmentAgencyInvolvementResponsibleAgencyInvolvementCode.html
 jsonid: responsiblegovernmentagencyinvolvementresponsibleagencyinvolvementcode
 ---

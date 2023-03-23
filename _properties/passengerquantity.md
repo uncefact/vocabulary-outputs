@@ -1,5 +1,5 @@
 ---
 title: passengerQuantity
-permalink: passengerQuantity
+permalink: passengerQuantity.html
 jsonid: passengerquantity
 ---

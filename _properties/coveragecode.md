@@ -1,5 +1,5 @@
 ---
 title: coverageCode
-permalink: coverageCode
+permalink: coverageCode.html
 jsonid: coveragecode
 ---

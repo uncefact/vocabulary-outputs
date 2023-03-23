@@ -1,5 +1,5 @@
 ---
 title: discountIndicator
-permalink: discountIndicator
+permalink: discountIndicator.html
 jsonid: discountindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: physicalFormDescription
-permalink: physicalFormDescription
+permalink: physicalFormDescription.html
 jsonid: physicalformdescription
 ---

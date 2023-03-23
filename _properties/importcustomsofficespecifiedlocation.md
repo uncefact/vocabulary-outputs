@@ -1,5 +1,5 @@
 ---
 title: importCustomsOfficeSpecifiedLocation
-permalink: importCustomsOfficeSpecifiedLocation
+permalink: importCustomsOfficeSpecifiedLocation.html
 jsonid: importcustomsofficespecifiedlocation
 ---

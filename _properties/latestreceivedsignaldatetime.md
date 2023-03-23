@@ -1,5 +1,5 @@
 ---
 title: latestReceivedSignalDateTime
-permalink: latestReceivedSignalDateTime
+permalink: latestReceivedSignalDateTime.html
 jsonid: latestreceivedsignaldatetime
 ---

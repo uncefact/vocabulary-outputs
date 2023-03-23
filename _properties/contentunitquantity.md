@@ -1,5 +1,5 @@
 ---
 title: contentUnitQuantity
-permalink: contentUnitQuantity
+permalink: contentUnitQuantity.html
 jsonid: contentunitquantity
 ---

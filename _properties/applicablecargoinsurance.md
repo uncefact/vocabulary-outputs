@@ -1,5 +1,5 @@
 ---
 title: applicableCargoInsurance
-permalink: applicableCargoInsurance
+permalink: applicableCargoInsurance.html
 jsonid: applicablecargoinsurance
 ---

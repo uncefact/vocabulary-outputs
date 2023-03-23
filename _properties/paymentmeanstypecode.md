@@ -1,5 +1,5 @@
 ---
 title: paymentMeansTypeCode
-permalink: paymentMeansTypeCode
+permalink: paymentMeansTypeCode.html
 jsonid: paymentmeanstypecode
 ---

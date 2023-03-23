@@ -1,5 +1,5 @@
 ---
 title: availabilityDueDateTime
-permalink: availabilityDueDateTime
+permalink: availabilityDueDateTime.html
 jsonid: availabilityduedatetime
 ---

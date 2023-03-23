@@ -1,5 +1,5 @@
 ---
 title: duePayableAmount
-permalink: duePayableAmount
+permalink: duePayableAmount.html
 jsonid: duepayableamount
 ---

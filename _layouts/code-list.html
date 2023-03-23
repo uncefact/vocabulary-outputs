@@ -92,3 +92,26 @@ layout: default
         </table>
     </div>
 {%- endif -%}
+
+{% if initialCodeList.referencedBy %}
+    <h2>Referenced by</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>URI</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reference in initialCodeList.referencedBy %}
+                {% assign referenceUrl = reference.uri | split: ":"  %}
+                {% assign mappingKey = referenceUrl[0]  %}
+                <tr>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
+                    <td>{{ reference.comment }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
