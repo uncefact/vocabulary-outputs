@@ -1,5 +1,5 @@
 ---
 title: draughtLevelMeasure
-permalink: draughtLevelMeasure
+permalink: draughtLevelMeasure.html
 jsonid: draughtlevelmeasure
 ---

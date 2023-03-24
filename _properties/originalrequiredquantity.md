@@ -1,5 +1,5 @@
 ---
 title: originalRequiredQuantity
-permalink: originalRequiredQuantity
+permalink: originalRequiredQuantity.html
 jsonid: originalrequiredquantity
 ---

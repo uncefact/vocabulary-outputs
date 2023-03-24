@@ -1,5 +1,5 @@
 ---
 title: additionalReason
-permalink: additionalReason
+permalink: additionalReason.html
 jsonid: additionalreason
 ---

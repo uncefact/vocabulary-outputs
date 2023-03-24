@@ -1,5 +1,5 @@
 ---
 title: specifiedTradeSettlementPaymentMonetarySummation
-permalink: specifiedTradeSettlementPaymentMonetarySummation
+permalink: specifiedTradeSettlementPaymentMonetarySummation.html
 jsonid: specifiedtradesettlementpaymentmonetarysummation
 ---

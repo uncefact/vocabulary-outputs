@@ -1,5 +1,5 @@
 ---
 title: completeDateTime
-permalink: completeDateTime
+permalink: completeDateTime.html
 jsonid: completedatetime
 ---

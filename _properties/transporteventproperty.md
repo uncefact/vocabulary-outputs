@@ -1,5 +1,5 @@
 ---
 title: transportEvent
-permalink: transportEventProperty
+permalink: transportEventProperty.html
 jsonid: transporteventproperty
 ---

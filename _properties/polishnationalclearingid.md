@@ -1,5 +1,5 @@
 ---
 title: polishNationalClearingId
-permalink: polishNationalClearingId
+permalink: polishNationalClearingId.html
 jsonid: polishnationalclearingid
 ---

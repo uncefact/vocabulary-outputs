@@ -1,5 +1,5 @@
 ---
 title: includedPolygon
-permalink: includedPolygon
+permalink: includedPolygon.html
 jsonid: includedpolygon
 ---

@@ -1,5 +1,5 @@
 ---
 title: guidelineSpecifiedParameter
-permalink: guidelineSpecifiedParameter
+permalink: guidelineSpecifiedParameter.html
 jsonid: guidelinespecifiedparameter
 ---

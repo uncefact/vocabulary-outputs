@@ -1,5 +1,5 @@
 ---
 title: minimumProductOrderableQuantity
-permalink: minimumProductOrderableQuantity
+permalink: minimumProductOrderableQuantity.html
 jsonid: minimumproductorderablequantity
 ---

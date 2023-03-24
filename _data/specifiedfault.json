@@ -1,18 +1,58 @@
 
 {
-    "label": "specifiedFault",
-    "uri": "unece:specifiedFault",
-    "comment": "An identified defect specified for this logistics means of transport.",
-    "rangeIncludes": [
+    "label": "SpecifiedFault",
+    "uri": "unece:SpecifiedFault",
+    "comment": "An unattractive or unsatisfactory characteristic.",
+    "objectProperties": [
         {
-            "uri": "unece:Fault",
-            "comment": "A defect or logical grouping of defects that appear to be related or are showing the same symptoms."
+            "uri": "unece:actualSpecifiedPercent",
+            "type": "xsd:string",
+            "comment": "The actual percentage of this specified fault."
+        },
+        {
+            "uri": "unece:actualSpecifiedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The actual total quantity of this specified fault."
+        },
+        {
+            "uri": "unece:categoryCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the category for this fault."
+        },
+        {
+            "uri": "unece:classificationCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the classification for this fault."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this specified fault."
+        },
+        {
+            "uri": "unece:estimatedSpecifiedPercent",
+            "type": "xsd:string",
+            "comment": "The estimated percentage of this specified fault."
+        },
+        {
+            "uri": "unece:faultType",
+            "type": "xsd:string",
+            "comment": "A type, expressed as text, of this specified fault."
+        },
+        {
+            "uri": "unece:operationalApplicableTolerance",
+            "type": "unece:Tolerance",
+            "comment": "An applicable operational tolerance of this specified fault."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of fault."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:TransportMeans",
-            "comment": "The device or method used to convey people, goods, animals or other objects from place to place."
+            "uri": "unece:applicableFault"
         }
     ]
 }

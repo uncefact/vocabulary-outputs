@@ -3,7 +3,7 @@
     "label": "FinancingFinancialAccount",
     "uri": "unece:FinancingFinancialAccount",
     "comment": "A financial account used internally by a bank to manage the line of credit granted to financing requesting party.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:accountName",
             "type": "xsd:string",
@@ -11,22 +11,27 @@
         },
         {
             "uri": "unece:bBANId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account."
         },
         {
-            "uri": "unece:currencyCode",
-            "type": "xsd:token",
+            "uri": "unece:cashAccountTypeCode",
+            "type": "unece:CashAccountTypeCodeList",
+            "comment": "The code specifying the type of financing financial account."
+        },
+        {
+            "uri": "unece:financingFinancialAccountCurrencyCode",
+            "type": "unece:CurrencyCodeList",
             "comment": "The code specifying the currency of this financing financial account."
         },
         {
             "uri": "unece:iBANId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique International Bank Account Number (IBAN) identifier for this financing financial account."
         },
         {
             "uri": "unece:proprietaryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The proprietary identifier for this financing financial account."
         },
         {
@@ -35,20 +40,14 @@
             "comment": "The proprietary type, expressed as text, of this financing financial account, such as the nature or use."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of financing financial account."
-        },
-        {
             "uri": "unece:uPICId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this financing financial account."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
-            "comment": "The financing financial account, used ..."
+            "uri": "unece:lineOfCreditSpecifiedFinancialAccount"
         }
     ]
 }

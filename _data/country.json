@@ -2,20 +2,18 @@
 {
     "label": "Country",
     "uri": "unece:Country",
-    "comment": "The area of land that belongs to a nation together with its properties such as population, political organization, etc.",
-    "datatypeProperties": [
+    "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes.",
+    "objectProperties": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
+            "uri": "unece:countryId",
+            "type": "xsd:string",
             "comment": "A unique identifier for this trade country."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
             "comment": "A name, expressed as text, of this trade country."
-        }
-    ],
-    "objectProperties": [
+        },
         {
             "uri": "unece:subordinateCountrySubDivision",
             "type": "unece:CountrySubDivision",
@@ -24,24 +22,24 @@
     ],
     "referencedBy": [
         {
+            "uri": "unece:applicableCountry"
+        },
+        {
             "uri": "unece:crewNationalityCountry",
             "comment": "Crew nationality details for this logistics transport movement."
         },
         {
-            "uri": "unece:destinationCountry",
-            "comment": "The destination country for this ..."
+            "uri": "unece:destinationCountry"
         },
         {
-            "uri": "unece:exportCountry",
-            "comment": "The export country for this ..."
+            "uri": "unece:exportCountry"
         },
         {
             "uri": "unece:finalAssemblyCountry",
             "comment": "A final assembly country for this trade product."
         },
         {
-            "uri": "unece:finalDestinationCountry",
-            "comment": "The country of final destination, ..."
+            "uri": "unece:finalDestinationCountry"
         },
         {
             "uri": "unece:importCountry",
@@ -72,8 +70,7 @@
             "comment": "The country of nationality of the operator of this logistics means of transport."
         },
         {
-            "uri": "unece:originCountry",
-            "comment": "A country of origin for ..."
+            "uri": "unece:originCountry"
         },
         {
             "uri": "unece:passengerNationalityCountry",
@@ -88,6 +85,10 @@
             "comment": "The country of registration of this logistics means of transport."
         },
         {
+            "uri": "unece:salesCountry",
+            "comment": "A sales country for this trade product."
+        },
+        {
             "uri": "unece:serviceSupplyCountry",
             "comment": "The country or country sub-division where a service was supplied for this trade tax."
         },
@@ -96,12 +97,10 @@
             "comment": "A country of supply for this trade product."
         },
         {
-            "uri": "unece:targetMarketCountry",
-            "comment": "A target market country for ..."
+            "uri": "unece:targetMarketCountry"
         },
         {
-            "uri": "unece:transitCountry",
-            "comment": "A transit country for this ..."
+            "uri": "unece:transitCountry"
         }
     ]
 }

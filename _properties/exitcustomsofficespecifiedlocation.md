@@ -1,5 +1,5 @@
 ---
 title: exitCustomsOfficeSpecifiedLocation
-permalink: exitCustomsOfficeSpecifiedLocation
+permalink: exitCustomsOfficeSpecifiedLocation.html
 jsonid: exitcustomsofficespecifiedlocation
 ---

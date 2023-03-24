@@ -1,5 +1,5 @@
 ---
 title: BasicBIE
-permalink: BasicBIE
+permalink: BasicBIE.html
 jsonid: basicbie
 ---

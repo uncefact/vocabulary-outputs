@@ -1,5 +1,5 @@
 ---
 title: valueBinaryFile
-permalink: valueBinaryFile
+permalink: valueBinaryFile.html
 jsonid: valuebinaryfile
 ---

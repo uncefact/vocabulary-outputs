@@ -1,5 +1,5 @@
 ---
 title: streetName
-permalink: streetName
+permalink: streetName.html
 jsonid: streetname
 ---

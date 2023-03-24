@@ -1,5 +1,5 @@
 ---
 title: exclusivityPeriod
-permalink: exclusivityPeriod
+permalink: exclusivityPeriod.html
 jsonid: exclusivityperiod
 ---

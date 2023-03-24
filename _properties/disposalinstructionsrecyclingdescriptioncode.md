@@ -1,5 +1,5 @@
 ---
 title: disposalInstructionsRecyclingDescriptionCode
-permalink: disposalInstructionsRecyclingDescriptionCode
+permalink: disposalInstructionsRecyclingDescriptionCode.html
 jsonid: disposalinstructionsrecyclingdescriptioncode
 ---

@@ -1,5 +1,5 @@
 ---
 title: averageDemandQuantity
-permalink: averageDemandQuantity
+permalink: averageDemandQuantity.html
 jsonid: averagedemandquantity
 ---

@@ -1,5 +1,5 @@
 ---
 title: additionalSecurityMeasuresApplicableNote
-permalink: additionalSecurityMeasuresApplicableNote
+permalink: additionalSecurityMeasuresApplicableNote.html
 jsonid: additionalsecuritymeasuresapplicablenote
 ---

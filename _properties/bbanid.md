@@ -1,5 +1,5 @@
 ---
 title: bBANId
-permalink: bBANId
+permalink: bBANId.html
 jsonid: bbanid
 ---

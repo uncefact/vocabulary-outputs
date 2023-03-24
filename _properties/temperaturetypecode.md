@@ -1,5 +1,5 @@
 ---
 title: temperatureTypeCode
-permalink: temperatureTypeCode
+permalink: temperatureTypeCode.html
 jsonid: temperaturetypecode
 ---

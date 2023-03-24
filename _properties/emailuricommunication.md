@@ -1,5 +1,5 @@
 ---
 title: emailURICommunication
-permalink: emailURICommunication
+permalink: emailURICommunication.html
 jsonid: emailuricommunication
 ---

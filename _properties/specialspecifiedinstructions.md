@@ -1,5 +1,5 @@
 ---
 title: specialSpecifiedInstructions
-permalink: specialSpecifiedInstructions
+permalink: specialSpecifiedInstructions.html
 jsonid: specialspecifiedinstructions
 ---

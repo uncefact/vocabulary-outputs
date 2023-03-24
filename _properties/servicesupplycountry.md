@@ -1,5 +1,5 @@
 ---
 title: serviceSupplyCountry
-permalink: serviceSupplyCountry
+permalink: serviceSupplyCountry.html
 jsonid: servicesupplycountry
 ---

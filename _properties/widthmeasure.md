@@ -1,5 +1,5 @@
 ---
 title: widthMeasure
-permalink: widthMeasure
+permalink: widthMeasure.html
 jsonid: widthmeasure
 ---

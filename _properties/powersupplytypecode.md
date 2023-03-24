@@ -1,5 +1,5 @@
 ---
 title: powerSupplyTypeCode
-permalink: powerSupplyTypeCode
+permalink: powerSupplyTypeCode.html
 jsonid: powersupplytypecode
 ---

@@ -2,39 +2,17 @@
 {
     "label": "Sensor",
     "uri": "unece:Sensor",
-    "comment": "An object which can detect and measure physical properties and which can record, indicate and even transmit such measurements locally.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier of this monitoring sensor."
-        },
-        {
-            "uri": "unece:positionCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a position of this monitoring sensor."
-        },
-        {
-            "uri": "unece:remainingBatteryChargePercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a type of monitoring sensor."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value for this monitoring sensor."
-        }
-    ],
+    "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
     "objectProperties": [
         {
             "uri": "unece:actualReportedMeasurement",
-            "type": "unece:Measurement",
+            "type": "unece:CalibratedMeasurement",
             "comment": "An actual calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:definedControlSettingParameter",
+            "type": "unece:ControlSettingParameter",
+            "comment": "A control setting parameter defined for this monitoring sensor."
         },
         {
             "uri": "unece:definedOperationalParameter",
@@ -42,14 +20,14 @@
             "comment": "An operational parameter defined for this monitoring sensor."
         },
         {
-            "uri": "unece:definedParameter",
-            "type": "unece:ControlSettingParameter",
-            "comment": "A control setting parameter defined for this monitoring sensor."
+            "uri": "unece:grantedCertificate",
+            "type": "unece:ProductCertificate",
+            "comment": "A product certificate granted for this monitoring sensor."
         },
         {
-            "uri": "unece:grantedCertificate",
-            "type": "unece:Certificate",
-            "comment": "A product certificate granted for this monitoring sensor."
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "An identifier of this monitoring sensor."
         },
         {
             "uri": "unece:manufacturerParty",
@@ -62,14 +40,34 @@
             "comment": "The owner party of this monitoring sensor."
         },
         {
+            "uri": "unece:positionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying a position of this monitoring sensor."
+        },
+        {
             "uri": "unece:precisionMeasurement",
-            "type": "unece:Measurement",
+            "type": "unece:CalibratedMeasurement",
             "comment": "A calibrated measurement of precision for this monitoring sensor."
         },
         {
+            "uri": "unece:remainingBatteryChargePercent",
+            "type": "xsd:string",
+            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
+        },
+        {
             "uri": "unece:scheduledReportedMeasurement",
-            "type": "unece:Measurement",
+            "type": "unece:CalibratedMeasurement",
             "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying a type of monitoring sensor."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the value for this monitoring sensor."
         }
     ],
     "referencedBy": [

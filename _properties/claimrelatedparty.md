@@ -1,5 +1,5 @@
 ---
 title: claimRelatedParty
-permalink: claimRelatedParty
+permalink: claimRelatedParty.html
 jsonid: claimrelatedparty
 ---

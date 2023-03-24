@@ -1,0 +1,5 @@
+---
+title: minimumStandardValueSpecifiedObservationResultCharacteristic
+permalink: minimumStandardValueSpecifiedObservationResultCharacteristic.html
+jsonid: minimumstandardvaluespecifiedobservationresultcharacteristic
+---

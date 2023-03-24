@@ -2,7 +2,10 @@
 {
     "label": "personName",
     "uri": "unece:personName",
-    "comment": "The name, expressed as text, of this trade contact person.",
+    "comment": [
+        "The name, expressed as text, of the person for this laboratory observation contact.",
+        "The name, expressed as text, of this trade contact person."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -10,8 +13,12 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Contact",
-            "comment": "A person or department that acts as a point of contact with another person or department."
+            "uri": "unece:LaboratoryObservationContact",
+            "comment": "A person or department that acts as a point of contact for laboratory observations."
+        },
+        {
+            "uri": "unece:TradeContact",
+            "comment": "A person or a department that acts as a point of contact with another person or department in a trading relationship."
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
 title: valueIndicator
-permalink: valueIndicator
+permalink: valueIndicator.html
 jsonid: valueindicator
 ---

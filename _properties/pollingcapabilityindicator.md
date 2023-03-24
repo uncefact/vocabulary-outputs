@@ -1,5 +1,5 @@
 ---
 title: pollingCapabilityIndicator
-permalink: pollingCapabilityIndicator
+permalink: pollingCapabilityIndicator.html
 jsonid: pollingcapabilityindicator
 ---

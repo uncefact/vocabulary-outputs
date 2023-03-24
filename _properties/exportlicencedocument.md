@@ -1,5 +1,5 @@
 ---
 title: exportLicenceDocument
-permalink: exportLicenceDocument
+permalink: exportLicenceDocument.html
 jsonid: exportlicencedocument
 ---

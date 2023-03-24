@@ -1,0 +1,34 @@
+
+{
+    "label": "businessStepCode",
+    "uri": "unece:businessStepCode",
+    "comment": [
+        "The code specifying the business step for this TT aggregation event.",
+        "The code specifying the business step for this TT object event.",
+        "The code specifying the business step for this TT transaction event.",
+        "The code specifying the business step for this TT transformation event."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:string"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "unece:TTAggregationEvent",
+            "comment": "A Track and Trace (TT) event where objects or processes are grouped."
+        },
+        {
+            "uri": "unece:TTObjectEvent",
+            "comment": "Information about an event concerning one or more physical or digital Track and Trace (TT) objects identified by instance or class level identifiers."
+        },
+        {
+            "uri": "unece:TTTransactionEvent",
+            "comment": "Information about an event declaring that certain objects have been associated or disassociated with one or more Track and Trace (TT) trade transactions."
+        },
+        {
+            "uri": "unece:TTTransformationEvent",
+            "comment": "Information about an event that captures the relationship between one or more physical or digital objects identified by identifiers, such as an EPC (Electronic Product Code) or EPC class, that are fully or partially consumed as inputs or as outputs."
+        }
+    ]
+}

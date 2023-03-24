@@ -1,5 +1,5 @@
 ---
 title: marketingPhrase
-permalink: marketingPhrase
+permalink: marketingPhrase.html
 jsonid: marketingphrase
 ---

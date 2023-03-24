@@ -1,5 +1,5 @@
 ---
 title: alternativeClassificationCode
-permalink: alternativeClassificationCode
+permalink: alternativeClassificationCode.html
 jsonid: alternativeclassificationcode
 ---

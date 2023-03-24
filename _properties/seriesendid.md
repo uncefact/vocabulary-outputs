@@ -1,5 +1,5 @@
 ---
 title: seriesEndId
-permalink: seriesEndId
+permalink: seriesEndId.html
 jsonid: seriesendid
 ---

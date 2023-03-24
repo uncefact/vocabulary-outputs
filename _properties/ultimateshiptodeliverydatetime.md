@@ -1,5 +1,5 @@
 ---
 title: ultimateShipToDeliveryDateTime
-permalink: ultimateShipToDeliveryDateTime
+permalink: ultimateShipToDeliveryDateTime.html
 jsonid: ultimateshiptodeliverydatetime
 ---

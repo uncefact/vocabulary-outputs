@@ -1,5 +1,5 @@
 ---
 title: completeNumber
-permalink: completeNumber
+permalink: completeNumber.html
 jsonid: completenumber
 ---

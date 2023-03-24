@@ -1,5 +1,5 @@
 ---
 title: modelId
-permalink: modelId
+permalink: modelId.html
 jsonid: modelid
 ---

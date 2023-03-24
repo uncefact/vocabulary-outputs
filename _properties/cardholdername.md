@@ -1,5 +1,5 @@
 ---
 title: cardholderName
-permalink: cardholderName
+permalink: cardholderName.html
 jsonid: cardholdername
 ---

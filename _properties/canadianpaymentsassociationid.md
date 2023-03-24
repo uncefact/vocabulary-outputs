@@ -1,5 +1,5 @@
 ---
 title: canadianPaymentsAssociationId
-permalink: canadianPaymentsAssociationId
+permalink: canadianPaymentsAssociationId.html
 jsonid: canadianpaymentsassociationid
 ---

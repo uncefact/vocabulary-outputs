@@ -1,5 +1,5 @@
 ---
 title: synchronizationDateTime
-permalink: synchronizationDateTime
+permalink: synchronizationDateTime.html
 jsonid: synchronizationdatetime
 ---

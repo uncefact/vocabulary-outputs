@@ -1,5 +1,5 @@
 ---
 title: taxApplicableCurrencyExchange
-permalink: taxApplicableCurrencyExchange
+permalink: taxApplicableCurrencyExchange.html
 jsonid: taxapplicablecurrencyexchange
 ---

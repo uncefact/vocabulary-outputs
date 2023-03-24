@@ -1,5 +1,5 @@
 ---
 title: marketingCampaignReferenceDocument
-permalink: marketingCampaignReferenceDocument
+permalink: marketingCampaignReferenceDocument.html
 jsonid: marketingcampaignreferencedocument
 ---

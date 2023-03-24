@@ -1,5 +1,5 @@
 ---
 title: relatedTradeTransaction
-permalink: relatedTradeTransaction
+permalink: relatedTradeTransaction.html
 jsonid: relatedtradetransaction
 ---

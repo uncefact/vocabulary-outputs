@@ -1,5 +1,5 @@
 ---
 title: gLNId
-permalink: gLNId
+permalink: gLNId.html
 jsonid: glnid
 ---

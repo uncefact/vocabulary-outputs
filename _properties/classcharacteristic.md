@@ -1,5 +1,5 @@
 ---
 title: classCharacteristic
-permalink: classCharacteristic
+permalink: classCharacteristic.html
 jsonid: classcharacteristic
 ---

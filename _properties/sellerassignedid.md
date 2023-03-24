@@ -1,5 +1,5 @@
 ---
 title: sellerAssignedId
-permalink: sellerAssignedId
+permalink: sellerAssignedId.html
 jsonid: sellerassignedid
 ---

@@ -1,5 +1,5 @@
 ---
 title: associatedTransportEquipment
-permalink: associatedTransportEquipmentProperty
+permalink: associatedTransportEquipmentProperty.html
 jsonid: associatedtransportequipmentproperty
 ---

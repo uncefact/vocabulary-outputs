@@ -1,5 +1,5 @@
 ---
 title: geometryCollectionIndicator
-permalink: geometryCollectionIndicator
+permalink: geometryCollectionIndicator.html
 jsonid: geometrycollectionindicator
 ---

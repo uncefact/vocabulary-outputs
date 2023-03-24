@@ -1,5 +1,5 @@
 ---
 title: synonymName
-permalink: synonymName
+permalink: synonymName.html
 jsonid: synonymname
 ---

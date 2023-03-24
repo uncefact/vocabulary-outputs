@@ -3,28 +3,36 @@
     "label": "SubordinateLineTradeDelivery",
     "uri": "unece:SubordinateLineTradeDelivery",
     "comment": "Supply chain shipping arrangements and movement of products and or services including despatch and delivery.",
-    "datatypeProperties": [
+    "objectProperties": [
+        {
+            "uri": "unece:actualDeliveryEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "An actual delivery event for this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:billedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A billed quantity of this subordinate line trade delivery."
+        },
+        {
+            "uri": "unece:includedPackaging",
+            "type": "unece:SupplyChainPackaging",
+            "comment": "Packaging included in this subordinate line trade delivery."
+        },
         {
             "uri": "unece:packageQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The number of packages in this subordinate line trade delivery."
         },
         {
             "uri": "unece:perPackageUnitQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The number of units per package in this subordinate line trade delivery."
         },
         {
             "uri": "unece:productUnitQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The number of product units in this subordinate line trade delivery."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:includedPackaging",
-            "type": "unece:Packaging",
-            "comment": "Packaging included in this subordinate line trade delivery."
         }
     ],
     "referencedBy": [

@@ -3,7 +3,7 @@
     "label": "CreditorFinancialAccount",
     "uri": "unece:CreditorFinancialAccount",
     "comment": "A specific business arrangement whereby credits arising from transactions are recorded.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:accountName",
             "type": "xsd:string",
@@ -11,32 +11,27 @@
         },
         {
             "uri": "unece:bBANId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this creditor financial account."
         },
         {
             "uri": "unece:creditorFinancialAccountTypeCode",
-            "type": "unece:UNCL4437Code",
+            "type": "xsd:string",
             "comment": "The code specifying the type of creditor financial account."
         },
         {
             "uri": "unece:currencyCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the currency of this creditor financial account (Reference ISO 4217 codes)."
         },
         {
             "uri": "unece:iBANId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
         },
         {
-            "uri": "unece:proprietaryAccountName",
-            "type": "xsd:string",
-            "comment": "The proprietary account name, expressed as text, of this creditor financial account. Deprecated."
-        },
-        {
             "uri": "unece:proprietaryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique proprietary identifier for this creditor financial account."
         },
         {
@@ -46,7 +41,7 @@
         },
         {
             "uri": "unece:uPICId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
         }
     ],
@@ -60,8 +55,7 @@
             "comment": "A creditor financial account of the payee party for this trade settlement payment means."
         },
         {
-            "uri": "unece:specifiedFinancialAccount",
-            "comment": "A creditor financial account specified ..."
+            "uri": "unece:specifiedCreditorFinancialAccount"
         }
     ]
 }

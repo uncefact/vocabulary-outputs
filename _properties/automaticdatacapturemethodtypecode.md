@@ -1,5 +1,5 @@
 ---
 title: automaticDataCaptureMethodTypeCode
-permalink: automaticDataCaptureMethodTypeCode
+permalink: automaticDataCaptureMethodTypeCode.html
 jsonid: automaticdatacapturemethodtypecode
 ---

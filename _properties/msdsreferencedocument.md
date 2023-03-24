@@ -1,5 +1,5 @@
 ---
 title: mSDSReferenceDocument
-permalink: mSDSReferenceDocument
+permalink: mSDSReferenceDocument.html
 jsonid: msdsreferencedocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: nationalTypeExtensionCode
-permalink: nationalTypeExtensionCode
+permalink: nationalTypeExtensionCode.html
 jsonid: nationaltypeextensioncode
 ---

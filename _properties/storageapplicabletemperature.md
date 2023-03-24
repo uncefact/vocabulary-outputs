@@ -1,5 +1,5 @@
 ---
 title: storageApplicableTemperature
-permalink: storageApplicableTemperature
+permalink: storageApplicableTemperature.html
 jsonid: storageapplicabletemperature
 ---

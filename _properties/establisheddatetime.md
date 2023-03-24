@@ -1,5 +1,5 @@
 ---
 title: establishedDateTime
-permalink: establishedDateTime
+permalink: establishedDateTime.html
 jsonid: establisheddatetime
 ---

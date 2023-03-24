@@ -1,5 +1,5 @@
 ---
 title: lineStatusReasonCode
-permalink: lineStatusReasonCode
+permalink: lineStatusReasonCode.html
 jsonid: linestatusreasoncode
 ---

@@ -1,5 +1,5 @@
 ---
 title: helipadIndicator
-permalink: helipadIndicator
+permalink: helipadIndicator.html
 jsonid: helipadindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: coverageParty
-permalink: coverageParty
+permalink: coverageParty.html
 jsonid: coverageparty
 ---

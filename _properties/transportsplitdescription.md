@@ -1,5 +1,5 @@
 ---
 title: transportSplitDescription
-permalink: transportSplitDescription
+permalink: transportSplitDescription.html
 jsonid: transportsplitdescription
 ---

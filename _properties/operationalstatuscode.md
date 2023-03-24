@@ -1,5 +1,5 @@
 ---
 title: operationalStatusCode
-permalink: operationalStatusCode
+permalink: operationalStatusCode.html
 jsonid: operationalstatuscode
 ---

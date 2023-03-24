@@ -1,5 +1,5 @@
 ---
 title: amendmentReasonCode
-permalink: amendmentReasonCode
+permalink: amendmentReasonCode.html
 jsonid: amendmentreasoncode
 ---

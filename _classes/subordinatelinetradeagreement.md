@@ -1,5 +1,5 @@
 ---
 title: SubordinateLineTradeAgreement
-permalink: SubordinateLineTradeAgreement
+permalink: SubordinateLineTradeAgreement.html
 jsonid: subordinatelinetradeagreement
 ---

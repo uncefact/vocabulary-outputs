@@ -1,5 +1,5 @@
 ---
 title: inTransitIndicator
-permalink: inTransitIndicator
+permalink: inTransitIndicator.html
 jsonid: intransitindicator
 ---

@@ -3,31 +3,31 @@
     "label": "AppliedTax",
     "uri": "unece:AppliedTax",
     "comment": "A total levy or payment for the support of a government that is required of persons, groups, or businesses within the domain of that government.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:appliedTaxTypeCode",
-            "type": "unece:UNCL5153Code",
+            "type": "xsd:string",
             "comment": "The code specifying the applied tax type such as VAT."
         },
         {
             "uri": "unece:basisAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "The monetary value used as the basis in calculating the applied tax."
         },
         {
             "uri": "unece:calculatedAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "The monetary value resulting from the calculation of the applied tax."
         },
         {
             "uri": "unece:calculatedRate",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The rate used to calculate the applied tax."
         },
         {
             "uri": "unece:taxPointDate",
-            "type": "xsd:base64Binary",
-            "comment": "The date of the tax point when taxes, such as VAT, are to be applied. Deprecated - Use Tax. Specified Tax Point. Date Time instead."
+            "type": "xsd:string",
+            "comment": "The date of the tax point when taxes, such as VAT, are to be applied."
         }
     ],
     "referencedBy": [

@@ -1,5 +1,5 @@
 ---
 title: GeographicalCoordinate
-permalink: GeographicalCoordinate
+permalink: GeographicalCoordinate.html
 jsonid: geographicalcoordinate
 ---

@@ -1,5 +1,5 @@
 ---
 title: telexCommunication
-permalink: telexCommunication
+permalink: telexCommunication.html
 jsonid: telexcommunication
 ---

@@ -1,5 +1,5 @@
 ---
 title: netBudgetAmount
-permalink: netBudgetAmount
+permalink: netBudgetAmount.html
 jsonid: netbudgetamount
 ---

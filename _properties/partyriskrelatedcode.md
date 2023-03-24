@@ -1,5 +1,5 @@
 ---
 title: partyRiskRelatedCode
-permalink: partyRiskRelatedCode
+permalink: partyRiskRelatedCode.html
 jsonid: partyriskrelatedcode
 ---

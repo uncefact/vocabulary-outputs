@@ -1,5 +1,5 @@
 ---
 title: manifestOnboardIndicator
-permalink: manifestOnboardIndicator
+permalink: manifestOnboardIndicator.html
 jsonid: manifestonboardindicator
 ---

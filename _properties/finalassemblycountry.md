@@ -1,5 +1,5 @@
 ---
 title: finalAssemblyCountry
-permalink: finalAssemblyCountry
+permalink: finalAssemblyCountry.html
 jsonid: finalassemblycountry
 ---

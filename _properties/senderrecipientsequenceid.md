@@ -1,5 +1,5 @@
 ---
 title: senderRecipientSequenceId
-permalink: senderRecipientSequenceId
+permalink: senderRecipientSequenceId.html
 jsonid: senderrecipientsequenceid
 ---

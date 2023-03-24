@@ -3,38 +3,6 @@
     "label": "LogisticsStatus",
     "uri": "unece:LogisticsStatus",
     "comment": "The information relevant to a condition or a position related to logistics.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this logistics status."
-        },
-        {
-            "uri": "unece:logisticsStatusConditionCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "The code specifying this logistics status condition [UNECE Recommendation 24]."
-        },
-        {
-            "uri": "unece:logisticsStatusReasonCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
-        },
-        {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this logistics status."
-        },
-        {
-            "uri": "unece:referenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The reference date, time, date time or other date time value for this logistics status."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "The sequence number of this logistics status, such as within a status report."
-        }
-    ],
     "objectProperties": [
         {
             "uri": "unece:arrivalReportedEvent",
@@ -47,12 +15,47 @@
             "comment": "A transport departure event reported for this logistics status."
         },
         {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this logistics status."
+        },
+        {
             "uri": "unece:loadingReportedEvent",
             "type": "unece:TransportEvent",
             "comment": "A transport loading event reported for this logistics status."
         },
         {
-            "uri": "unece:specifiedLocation",
+            "uri": "unece:logisticsStatusConditionCode",
+            "type": "unece:LogisticsStatusCodeList",
+            "comment": "The code specifying this logistics status condition [UNECE Recommendation 24]."
+        },
+        {
+            "uri": "unece:logisticsStatusReasonCode",
+            "type": "unece:LogisticsStatusCodeList",
+            "comment": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
+        },
+        {
+            "uri": "unece:reason",
+            "type": "xsd:string",
+            "comment": "A reason, expressed as text, for this logistics status."
+        },
+        {
+            "uri": "unece:referenceDateTime",
+            "type": "xsd:string",
+            "comment": "The reference date, time, date time or other date time value for this logistics status."
+        },
+        {
+            "uri": "unece:reportedSupplyChainEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A supply chain event reported for this logistics status."
+        },
+        {
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
+            "comment": "The sequence number of this logistics status, such as within a status report."
+        },
+        {
+            "uri": "unece:specifiedLogisticsLocation",
             "type": "unece:LogisticsLocation",
             "comment": "A location specified for this logistics status."
         },
@@ -63,14 +66,16 @@
         },
         {
             "uri": "unece:validityPeriod",
-            "type": "unece:Period",
+            "type": "unece:SpecifiedPeriod",
             "comment": "A specific validity period for this logistics status."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:reportedStatus",
-            "comment": "A logistics status reported for ..."
+            "uri": "unece:reportedLogisticsStatus"
+        },
+        {
+            "uri": "unece:specifiedLogisticsStatus"
         }
     ]
 }

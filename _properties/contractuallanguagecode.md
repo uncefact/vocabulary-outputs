@@ -1,5 +1,5 @@
 ---
 title: contractualLanguageCode
-permalink: contractualLanguageCode
+permalink: contractualLanguageCode.html
 jsonid: contractuallanguagecode
 ---

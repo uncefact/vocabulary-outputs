@@ -1,5 +1,5 @@
 ---
 title: billedQuantity
-permalink: billedQuantity
+permalink: billedQuantity.html
 jsonid: billedquantity
 ---

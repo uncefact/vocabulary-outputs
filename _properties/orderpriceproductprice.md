@@ -1,5 +1,5 @@
 ---
 title: orderPriceProductPrice
-permalink: orderPriceProductPrice
+permalink: orderPriceProductPrice.html
 jsonid: orderpriceproductprice
 ---

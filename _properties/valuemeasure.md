@@ -1,5 +1,5 @@
 ---
 title: valueMeasure
-permalink: valueMeasure
+permalink: valueMeasure.html
 jsonid: valuemeasure
 ---

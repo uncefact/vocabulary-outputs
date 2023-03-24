@@ -1,5 +1,5 @@
 ---
 title: issueLocation
-permalink: issueLocation
+permalink: issueLocation.html
 jsonid: issuelocation
 ---

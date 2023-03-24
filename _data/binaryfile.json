@@ -2,12 +2,17 @@
 {
     "label": "BinaryFile",
     "uri": "unece:BinaryFile",
-    "comment": "A computer file or program stored in a binary format.",
-    "datatypeProperties": [
+    "comment": "A specified computer file or program stored in a binary format.",
+    "objectProperties": [
         {
             "uri": "unece:access",
             "type": "xsd:string",
             "comment": "Access information, expressed as text, for this specified binary file, such as security and download parameters."
+        },
+        {
+            "uri": "unece:accessAvailabilityPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "The specified period when access to this binary file is available."
         },
         {
             "uri": "unece:authorName",
@@ -16,7 +21,7 @@
         },
         {
             "uri": "unece:characterSetCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the character set for this specified binary file."
         },
         {
@@ -26,17 +31,17 @@
         },
         {
             "uri": "unece:encodingCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the encoding of this specified binary file."
         },
         {
             "uri": "unece:fileName",
             "type": "xsd:string",
-            "comment": "The file name, expressed as text, of this specified binary file. Deprecated - Use Binary File. Name. Text instead."
+            "comment": "The file name, expressed as text, of this specified binary file."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier for this specified binary file."
         },
         {
@@ -46,12 +51,12 @@
         },
         {
             "uri": "unece:mIMECode",
-            "type": "xsd:token",
+            "type": "unece:MimeCodeList",
             "comment": "The code specifying the Multipurpose Internet Mail Extensions (MIME) type for this specified binary file."
         },
         {
             "uri": "unece:sizeMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:MeasureType",
             "comment": "The measure of the size of this specified binary file."
         },
         {
@@ -61,26 +66,30 @@
         },
         {
             "uri": "unece:uRIId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique Uniform Resource Identifier (URI) for this specified binary file."
         },
         {
-            "uri": "unece:versionId",
-            "type": "xsd:token",
-            "comment": "The unique version identifier for this specified binary file."
-        }
-    ],
-    "objectProperties": [
+            "uri": "unece:validityPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "The validity period specified of this binary file."
+        },
         {
-            "uri": "unece:accessAvailabilityPeriod",
-            "type": "unece:Period",
-            "comment": "The specified period when access to this binary file is available."
+            "uri": "unece:versionId",
+            "type": "xsd:string",
+            "comment": "The unique version identifier for this specified binary file."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:attachedBinaryFile",
-            "comment": "A binary file attached to ..."
+            "uri": "unece:associatedBinaryFile",
+            "comment": "A binary file associated with this specified assessment."
+        },
+        {
+            "uri": "unece:attachedBinaryFile"
+        },
+        {
+            "uri": "unece:binaryFile"
         },
         {
             "uri": "unece:creationBinaryFile",
@@ -91,6 +100,10 @@
             "comment": "A file containing a specified binary representation of a logo associated with this trade party."
         },
         {
+            "uri": "unece:photographicPictureBinaryFile",
+            "comment": "A binary file providing a photographic picture of this found stowaway."
+        },
+        {
             "uri": "unece:presentationBinaryFile",
             "comment": "A binary file presentation specified for this trade product."
         },
@@ -99,16 +112,10 @@
             "comment": "A specified binary file used to read this valuation breakdown statement."
         },
         {
-            "uri": "unece:referencedBinaryFile",
-            "comment": "A specified binary file referenced ..."
+            "uri": "unece:relatedBinaryFile"
         },
         {
-            "uri": "unece:relatedBinaryFile",
-            "comment": "A binary file related to this specified observation."
-        },
-        {
-            "uri": "unece:valueBinaryFile",
-            "comment": "The value for this product characteristic expressed in a binary file."
+            "uri": "unece:valueBinaryFile"
         }
     ]
 }

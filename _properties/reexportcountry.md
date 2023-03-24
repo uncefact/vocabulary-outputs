@@ -1,5 +1,5 @@
 ---
 title: reExportCountry
-permalink: reExportCountry
+permalink: reExportCountry.html
 jsonid: reexportcountry
 ---

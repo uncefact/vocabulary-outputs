@@ -1,5 +1,5 @@
 ---
 title: pollingRateMeasure
-permalink: pollingRateMeasure
+permalink: pollingRateMeasure.html
 jsonid: pollingratemeasure
 ---

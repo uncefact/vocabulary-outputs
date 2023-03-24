@@ -1,5 +1,5 @@
 ---
 title: AdvancePayment
-permalink: AdvancePayment
+permalink: AdvancePayment.html
 jsonid: advancepayment
 ---

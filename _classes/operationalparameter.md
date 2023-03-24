@@ -1,5 +1,5 @@
 ---
 title: OperationalParameter
-permalink: OperationalParameter
+permalink: OperationalParameter.html
 jsonid: operationalparameter
 ---

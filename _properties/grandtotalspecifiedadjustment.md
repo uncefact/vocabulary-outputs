@@ -1,5 +1,5 @@
 ---
 title: grandTotalSpecifiedAdjustment
-permalink: grandTotalSpecifiedAdjustment
+permalink: grandTotalSpecifiedAdjustment.html
 jsonid: grandtotalspecifiedadjustment
 ---

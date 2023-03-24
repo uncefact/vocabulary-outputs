@@ -1,5 +1,5 @@
 ---
 title: priceApplicableCurrencyExchange
-permalink: priceApplicableCurrencyExchange
+permalink: priceApplicableCurrencyExchange.html
 jsonid: priceapplicablecurrencyexchange
 ---

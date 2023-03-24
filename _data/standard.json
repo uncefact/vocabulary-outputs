@@ -2,43 +2,113 @@
 {
     "label": "Standard",
     "uri": "unece:Standard",
-    "comment": "A norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
-    "datatypeProperties": [
+    "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
+    "objectProperties": [
         {
             "uri": "unece:agencyId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the agency for this referenced standard."
         },
         {
+            "uri": "unece:applicableAssessment",
+            "type": "unece:Assessment",
+            "comment": "A specified assessment applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:applicableCountry",
+            "type": "unece:Country",
+            "comment": "A country where this referenced standard is applicable."
+        },
+        {
+            "uri": "unece:applicableDeclaration",
+            "type": "unece:SpecifiedDeclaration",
+            "comment": "A specified declaration applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:applicableLicence",
+            "type": "unece:Licence",
+            "comment": "A specified licence applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:applicableMetricCharacteristic",
+            "type": "unece:MetricCharacteristic",
+            "comment": "A metric characteristic applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:applicableSpecifiedCertificate",
+            "type": "unece:SpecifiedCertificate",
+            "comment": "A specified certificate applicable to this referenced standard."
+        },
+        {
+            "uri": "unece:attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file attached to this referenced standard."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this referenced standard."
+        },
+        {
             "uri": "unece:elementVersionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the version of a specific element within the referenced standard, such as the version of a data element."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of this referenced standard."
         },
         {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, for this referenced standard."
+        },
+        {
             "uri": "unece:partId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of a part of this referenced standard, such as a section or topic."
         },
         {
+            "uri": "unece:specifiedAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion specified for this referenced standard."
+        },
+        {
+            "uri": "unece:specifiedDocument",
+            "type": "unece:Document",
+            "comment": "A referenced document specified for this referenced standard."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of referenced standard."
+        },
+        {
             "uri": "unece:uRIId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The Uniform Resource Identifier (URI) for this referenced standard."
         },
         {
             "uri": "unece:versionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the version of this referenced standard."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableStandard",
-            "comment": "The referenced standard that is ..."
+            "uri": "unece:applicableStandard"
+        },
+        {
+            "uri": "unece:associatedStandard"
+        },
+        {
+            "uri": "unece:inspectionStandard",
+            "comment": "A referenced inspection standard for this specified inspection result."
+        },
+        {
+            "uri": "unece:relatedStandard",
+            "comment": "A referenced standard related to this specified certification."
         }
     ]
 }

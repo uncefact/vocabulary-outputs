@@ -2,40 +2,42 @@
 {
     "label": "ShippingMarks",
     "uri": "unece:ShippingMarks",
-    "comment": "Physical markings or labels on individual packages or transport units for shipping purposes.",
-    "datatypeProperties": [
+    "comment": "Physical markings or labels on individual packages or transport units for logistics purposes.",
+    "objectProperties": [
+        {
+            "uri": "unece:barcodeLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "A barcode label that is a part of these logistics shipping marks."
+        },
         {
             "uri": "unece:logisticsShippingMarksMarkingInstructionCode",
-            "type": "unece:UNCL4233Code",
+            "type": "unece:MarkingInstructionCodeList",
             "comment": "A code specifying a marking instruction for these logistics shipping marks."
         },
         {
             "uri": "unece:marking",
             "type": "xsd:string",
             "comment": "Marking, expressed as text, for these logistics shipping marks."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:barcodeLabel",
-            "type": "unece:Label",
-            "comment": "A barcode label that is a part of these logistics shipping marks."
         },
         {
             "uri": "unece:rFIDLabel",
-            "type": "unece:Label",
+            "type": "unece:LogisticsLabel",
             "comment": "A Radio Frequency Identification (RFID) label that is a part of these logistics shipping marks."
         },
         {
+            "uri": "unece:radioactiveLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "Radioactive labelling that is a part of these logistics shipping marks."
+        },
+        {
             "uri": "unece:vINLabel",
-            "type": "unece:Label",
+            "type": "unece:LogisticsLabel",
             "comment": "A Vehicle Identification Number (VIN) label that is a part of these logistics shipping marks."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:physicalShippingMarks",
-            "comment": "Physical logistics shipping marks and ..."
+            "uri": "unece:physicalShippingMarks"
         }
     ]
 }

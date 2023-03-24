@@ -1,5 +1,5 @@
 ---
 title: statementCode
-permalink: statementCode
+permalink: statementCode.html
 jsonid: statementcode
 ---

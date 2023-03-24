@@ -1,5 +1,5 @@
 ---
 title: borderCrossingDateTime
-permalink: borderCrossingDateTime
+permalink: borderCrossingDateTime.html
 jsonid: bordercrossingdatetime
 ---

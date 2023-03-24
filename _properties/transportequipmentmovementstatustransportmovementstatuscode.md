@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentMovementStatusTransportMovementStatusCode
-permalink: transportEquipmentMovementStatusTransportMovementStatusCode
+permalink: transportEquipmentMovementStatusTransportMovementStatusCode.html
 jsonid: transportequipmentmovementstatustransportmovementstatuscode
 ---

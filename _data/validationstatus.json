@@ -3,7 +3,7 @@
     "label": "ValidationStatus",
     "uri": "unece:ValidationStatus",
     "comment": "Information relevant to a condition of a validation.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:additionalReason",
             "type": "xsd:string",
@@ -15,14 +15,14 @@
             "comment": "A reason, expressed as text, for this validation status."
         },
         {
-            "uri": "unece:validationDocumentStatusConditionCode",
-            "type": "unece:UNCL1373Code",
-            "comment": "The code specifying the condition of this validation status."
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the reason for this validation status."
         },
         {
-            "uri": "unece:validationStatusReasonCode",
-            "type": "unece:UNCL9013Code",
-            "comment": "The code specifying the reason for this validation status."
+            "uri": "unece:validationDocumentStatusConditionCode",
+            "type": "unece:ValidationDocumentStatusCodeList",
+            "comment": "The code specifying the condition of this validation status."
         }
     ],
     "referencedBy": [

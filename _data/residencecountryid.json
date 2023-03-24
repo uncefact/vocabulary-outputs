@@ -2,16 +2,23 @@
 {
     "label": "residenceCountryId",
     "uri": "unece:residenceCountryId",
-    "comment": "The identifier of the residence country of this contact person.",
+    "comment": [
+        "The identifier for the country of residence for this TT party, such as the country in which a person lives or in which a corporation has its place of incorporation.",
+        "The identifier of the residence country of this guest person."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ContactPerson",
-            "comment": "An individual human being in a position to give assistance or information."
+            "uri": "unece:GuestPerson",
+            "comment": "An individual guest."
+        },
+        {
+            "uri": "unece:TTParty",
+            "comment": "An individual, group, or body related to a Track and Trace (TT) process."
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
 title: coordinate
-permalink: coordinate
+permalink: coordinate.html
 jsonid: coordinate
 ---

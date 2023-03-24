@@ -1,5 +1,5 @@
 ---
 title: associatedDocument
-permalink: associatedDocument
+permalink: associatedDocument.html
 jsonid: associateddocument
 ---

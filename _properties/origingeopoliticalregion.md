@@ -1,5 +1,5 @@
 ---
 title: originGeopoliticalRegion
-permalink: originGeopoliticalRegion
+permalink: originGeopoliticalRegion.html
 jsonid: origingeopoliticalregion
 ---

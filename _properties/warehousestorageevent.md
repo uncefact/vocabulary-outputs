@@ -1,5 +1,5 @@
 ---
 title: warehouseStorageEvent
-permalink: warehouseStorageEvent
+permalink: warehouseStorageEvent.html
 jsonid: warehousestorageevent
 ---

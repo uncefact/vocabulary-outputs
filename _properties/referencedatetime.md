@@ -1,5 +1,5 @@
 ---
 title: referenceDateTime
-permalink: referenceDateTime
+permalink: referenceDateTime.html
 jsonid: referencedatetime
 ---

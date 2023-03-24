@@ -1,5 +1,5 @@
 ---
 title: assertedAuthentication
-permalink: assertedAuthentication
+permalink: assertedAuthentication.html
 jsonid: assertedauthentication
 ---

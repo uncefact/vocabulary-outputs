@@ -1,5 +1,5 @@
 ---
 title: QuantityAnalysis
-permalink: QuantityAnalysis
+permalink: QuantityAnalysis.html
 jsonid: quantityanalysis
 ---

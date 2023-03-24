@@ -1,5 +1,5 @@
 ---
 title: expectedIndicator
-permalink: expectedIndicator
+permalink: expectedIndicator.html
 jsonid: expectedindicator
 ---

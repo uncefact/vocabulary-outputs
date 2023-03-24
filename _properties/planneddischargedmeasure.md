@@ -1,5 +1,5 @@
 ---
 title: plannedDischargedMeasure
-permalink: plannedDischargedMeasure
+permalink: plannedDischargedMeasure.html
 jsonid: planneddischargedmeasure
 ---

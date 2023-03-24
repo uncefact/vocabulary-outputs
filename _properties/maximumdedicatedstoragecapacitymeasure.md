@@ -1,5 +1,5 @@
 ---
 title: maximumDedicatedStorageCapacityMeasure
-permalink: maximumDedicatedStorageCapacityMeasure
+permalink: maximumDedicatedStorageCapacityMeasure.html
 jsonid: maximumdedicatedstoragecapacitymeasure
 ---

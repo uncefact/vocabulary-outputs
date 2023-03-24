@@ -1,5 +1,5 @@
 ---
 title: remainingDeliveryEvent
-permalink: remainingDeliveryEvent
+permalink: remainingDeliveryEvent.html
 jsonid: remainingdeliveryevent
 ---

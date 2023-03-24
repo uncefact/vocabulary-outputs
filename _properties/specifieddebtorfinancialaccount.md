@@ -1,5 +1,5 @@
 ---
 title: specifiedDebtorFinancialAccount
-permalink: specifiedDebtorFinancialAccount
+permalink: specifiedDebtorFinancialAccount.html
 jsonid: specifieddebtorfinancialaccount
 ---

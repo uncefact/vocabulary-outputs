@@ -1,5 +1,5 @@
 ---
 title: buyerAssignedAccountantParty
-permalink: buyerAssignedAccountantParty
+permalink: buyerAssignedAccountantParty.html
 jsonid: buyerassignedaccountantparty
 ---

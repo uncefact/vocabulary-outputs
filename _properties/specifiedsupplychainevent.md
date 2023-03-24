@@ -1,5 +1,5 @@
 ---
 title: specifiedSupplyChainEvent
-permalink: specifiedSupplyChainEvent
+permalink: specifiedSupplyChainEvent.html
 jsonid: specifiedsupplychainevent
 ---

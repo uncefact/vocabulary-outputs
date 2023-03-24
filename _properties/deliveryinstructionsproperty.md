@@ -1,5 +1,5 @@
 ---
 title: deliveryInstructions
-permalink: deliveryInstructionsProperty
+permalink: deliveryInstructionsProperty.html
 jsonid: deliveryinstructionsproperty
 ---

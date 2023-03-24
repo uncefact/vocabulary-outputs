@@ -3,23 +3,46 @@
     "label": "PaymentTradeSettlement",
     "uri": "unece:PaymentTradeSettlement",
     "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice.",
-    "datatypeProperties": [
+    "objectProperties": [
+        {
+            "uri": "unece:acceptedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value accepted for this payment trade settlement."
+        },
         {
             "uri": "unece:additionalDescription",
             "type": "xsd:string",
             "comment": "The description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
         },
         {
-            "uri": "unece:paymentCurrencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency for this payment trade settlement."
-        }
-    ],
-    "objectProperties": [
-        {
             "uri": "unece:applicableTax",
             "type": "unece:TradeTax",
             "comment": "The tax applicable to this payment trade settlement."
+        },
+        {
+            "uri": "unece:creationDateTime",
+            "type": "xsd:string",
+            "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "unece:dueDateTime",
+            "type": "xsd:string",
+            "comment": "The due date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "unece:identifiedGuarantee",
+            "type": "unece:Guarantee",
+            "comment": "The financial guarantee identified for this payment trade settlement."
+        },
+        {
+            "uri": "unece:instruction",
+            "type": "xsd:string",
+            "comment": "An instruction, expressed as text, for this payment trade settlement."
+        },
+        {
+            "uri": "unece:invoicePayerAssignedReferenceId",
+            "type": "xsd:string",
+            "comment": "The identifier of the invoice payer assigned reference of this payment trade settlement."
         },
         {
             "uri": "unece:payeeParty",
@@ -32,9 +55,49 @@
             "comment": "The payer party for this payment trade settlement."
         },
         {
+            "uri": "unece:paymentAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the payment for this trade settlement payment."
+        },
+        {
             "uri": "unece:paymentApplicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
             "comment": "The currency exchange applicable to this payment trade settlement."
+        },
+        {
+            "uri": "unece:paymentCurrencyCode",
+            "type": "unece:CurrencyCodeList",
+            "comment": "The code specifying the currency for this payment trade settlement."
+        },
+        {
+            "uri": "unece:penaltyPercent",
+            "type": "xsd:string",
+            "comment": "The penalty percentage related to this payment trade settlement."
+        },
+        {
+            "uri": "unece:priorityCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the priority for this payment trade settlement."
+        },
+        {
+            "uri": "unece:receiptDateTime",
+            "type": "xsd:string",
+            "comment": "The receipt date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "unece:recordedExperienceItem",
+            "type": "unece:ExperienceItem",
+            "comment": "A specified experience item recorded for this payment trade settlement."
+        },
+        {
+            "uri": "unece:refundAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the refund related to this payment trade settlement."
+        },
+        {
+            "uri": "unece:requestedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value requested for this payment trade settlement."
         },
         {
             "uri": "unece:specifiedPaymentMeans",
@@ -45,12 +108,31 @@
             "uri": "unece:specifiedTradeSettlementPaymentMonetarySummation",
             "type": "unece:TradeSettlementPaymentMonetarySummation",
             "comment": "The monetary summation totals specified for this payment trade settlement."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the status of this payment trade settlement."
+        },
+        {
+            "uri": "unece:taxAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the tax related to this payment trade settlement."
+        },
+        {
+            "uri": "unece:transferFeeInclusiveIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this payment trade settlement includes a transfer fee."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of this payment trade settlement."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedTradeSettlement",
-            "comment": "A trade settlement payment specified for this trade settlement payment."
+            "uri": "unece:specifiedPaymentTradeSettlement"
         }
     ]
 }

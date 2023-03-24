@@ -4,6 +4,12 @@
     "uri": "unece:globalId",
     "comment": [
         "A global identifier for this supply chain consignment item.",
+        "A global identifier of this facility production unit.",
+        "A global identifier of this product batch.",
+        "A global identifier of this production facility.",
+        "A global identifier of this referenced location.",
+        "A global identifier of this supply chain consignment.",
+        "A global identifier, at header level, for this trade delivery.",
         "A globally unique identifier of this trade party.",
         "A unique global identifier for this referenced document.",
         "A unique global identifier for this referenced product.",
@@ -14,33 +20,61 @@
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of ..."
+        },
+        {
             "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
+            "comment": "A reference to an item ..."
         },
         {
             "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:ExchangedDocument",
             "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
         },
         {
+            "uri": "unece:HeaderTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
+        },
+        {
+            "uri": "unece:Location",
+            "comment": "A reference to a physical location or place."
+        },
+        {
             "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
+            "comment": "A self-contained wrapping or container ..."
         },
         {
             "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes."
+        },
+        {
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
+        },
+        {
+            "uri": "unece:ProductionFacility",
+            "comment": "A man made physical structure, such as a building, in which something is produced."
+        },
+        {
+            "uri": "unece:ProductionUnit",
+            "comment": "A defined set of production processes under the single management of a facility."
         },
         {
             "uri": "unece:TradeParty",
             "comment": "An individual, a group, or a body having a role in a trade business function."
+        },
+        {
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
 title: latestReceivedGeographicalCoordinate
-permalink: latestReceivedGeographicalCoordinate
+permalink: latestReceivedGeographicalCoordinate.html
 jsonid: latestreceivedgeographicalcoordinate
 ---

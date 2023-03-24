@@ -1,5 +1,5 @@
 ---
 title: customerInventory
-permalink: customerInventory
+permalink: customerInventory.html
 jsonid: customerinventory
 ---

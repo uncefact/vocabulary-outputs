@@ -1,5 +1,5 @@
 ---
 title: transportServiceRequirementCode
-permalink: transportServiceRequirementCode
+permalink: transportServiceRequirementCode.html
 jsonid: transportservicerequirementcode
 ---

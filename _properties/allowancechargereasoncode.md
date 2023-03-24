@@ -1,5 +1,5 @@
 ---
 title: allowanceChargeReasonCode
-permalink: allowanceChargeReasonCode
+permalink: allowanceChargeReasonCode.html
 jsonid: allowancechargereasoncode
 ---

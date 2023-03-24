@@ -1,5 +1,5 @@
 ---
 title: germanBankleitzahlId
-permalink: germanBankleitzahlId
+permalink: germanBankleitzahlId.html
 jsonid: germanbankleitzahlid
 ---

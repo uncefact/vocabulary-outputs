@@ -1,5 +1,5 @@
 ---
 title: standard
-permalink: standardProperty
+permalink: standardProperty.html
 jsonid: standardproperty
 ---

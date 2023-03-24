@@ -1,5 +1,5 @@
 ---
 title: specifiedTransactionId
-permalink: specifiedTransactionId
+permalink: specifiedTransactionId.html
 jsonid: specifiedtransactionid
 ---

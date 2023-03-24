@@ -1,5 +1,5 @@
 ---
 title: nVOCCCarrierParty
-permalink: nVOCCCarrierParty
+permalink: nVOCCCarrierParty.html
 jsonid: nvocccarrierparty
 ---

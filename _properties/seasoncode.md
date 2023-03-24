@@ -1,5 +1,5 @@
 ---
 title: seasonCode
-permalink: seasonCode
+permalink: seasonCode.html
 jsonid: seasoncode
 ---

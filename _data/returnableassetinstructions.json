@@ -3,33 +3,31 @@
     "label": "ReturnableAssetInstructions",
     "uri": "unece:ReturnableAssetInstructions",
     "comment": "The procedures to follow for returnable assets, such as reusable packaging (pallets, crates).",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:depositValueSpecifiedAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "A deposit value specified in these returnable asset instructions."
         },
         {
+            "uri": "unece:depositValueValidityPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
+        },
+        {
             "uri": "unece:materialId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "An identifier of the material to which these returnable asset instructions apply."
         },
         {
             "uri": "unece:returnableAssetInstructionsTermsAndConditionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
+            "type": "xsd:string",
             "comment": "The code specifying the description of the terms and conditions for these returnable asset instructions."
         },
         {
             "uri": "unece:termsAndConditionsDescription",
             "type": "xsd:string",
             "comment": "A textual description of the terms and conditions for these returnable asset instructions."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:depositValueValidityPeriod",
-            "type": "unece:Period",
-            "comment": "The specified period during which the deposit value specified in these returnable asset instructions is valid."
         }
     ],
     "referencedBy": [

@@ -1,5 +1,5 @@
 ---
 title: destroyedQuantity
-permalink: destroyedQuantity
+permalink: destroyedQuantity.html
 jsonid: destroyedquantity
 ---

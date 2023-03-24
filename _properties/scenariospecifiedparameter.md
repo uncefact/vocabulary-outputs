@@ -1,5 +1,5 @@
 ---
 title: scenarioSpecifiedParameter
-permalink: scenarioSpecifiedParameter
+permalink: scenarioSpecifiedParameter.html
 jsonid: scenariospecifiedparameter
 ---

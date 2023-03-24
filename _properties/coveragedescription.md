@@ -1,5 +1,5 @@
 ---
 title: coverageDescription
-permalink: coverageDescription
+permalink: coverageDescription.html
 jsonid: coveragedescription
 ---

@@ -1,5 +1,5 @@
 ---
 title: status
-permalink: status
+permalink: status.html
 jsonid: status
 ---

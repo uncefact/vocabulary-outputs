@@ -1,5 +1,5 @@
 ---
 title: endDateTime
-permalink: endDateTime
+permalink: endDateTime.html
 jsonid: enddatetime
 ---

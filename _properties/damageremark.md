@@ -1,5 +1,5 @@
 ---
 title: damageRemark
-permalink: damageRemark
+permalink: damageRemark.html
 jsonid: damageremark
 ---

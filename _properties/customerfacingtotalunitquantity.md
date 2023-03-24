@@ -1,5 +1,5 @@
 ---
 title: customerFacingTotalUnitQuantity
-permalink: customerFacingTotalUnitQuantity
+permalink: customerFacingTotalUnitQuantity.html
 jsonid: customerfacingtotalunitquantity
 ---

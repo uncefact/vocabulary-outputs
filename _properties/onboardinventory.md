@@ -1,5 +1,5 @@
 ---
 title: onboardInventory
-permalink: onboardInventory
+permalink: onboardInventory.html
 jsonid: onboardinventory
 ---

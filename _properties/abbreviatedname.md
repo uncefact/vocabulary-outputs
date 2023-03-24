@@ -1,5 +1,5 @@
 ---
 title: abbreviatedName
-permalink: abbreviatedName
+permalink: abbreviatedName.html
 jsonid: abbreviatedname
 ---

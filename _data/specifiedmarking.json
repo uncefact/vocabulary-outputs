@@ -2,17 +2,24 @@
 {
     "label": "specifiedMarking",
     "uri": "unece:specifiedMarking",
-    "comment": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership, quality, manufacture or origin.",
+    "comment": [
+        "A marking specified for this logistics packaging.",
+        "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership, quality, manufacture or origin."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:Marking",
-            "comment": "An inscription, stamp or label such as to indicate date, ownership, quality, manufacture or origin."
+            "comment": "An inscription, stamp or label on packaging, such as to indicate date, ownership, quality, manufacture or origin."
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Packaging",
-            "comment": "Any wrapping or containment, such as a box or a barrel, of goods."
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

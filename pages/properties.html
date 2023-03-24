@@ -17,8 +17,11 @@ type: property
     <tbody>
     {% for property in site.properties %}
         {%- assign propertyJson = site.data[property.jsonid] -%}
+        {%- assign propertyUrl = propertyJson.uri | split: ":" -%}
+        {%- assign propertyMappingKey = propertyUrl[0] -%}
+
         <tr>
-            <td><a href="{{ property.url | absolute_url }}">{{ propertyJson.uri }}</a></td>
+            <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ propertyJson.uri }}</a></td>
             <td>{{ propertyJson.comment }}</td>
         </tr>
     {% endfor %}

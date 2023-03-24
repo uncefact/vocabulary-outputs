@@ -1,5 +1,5 @@
 ---
 title: landlineTelephoneCommunication
-permalink: landlineTelephoneCommunication
+permalink: landlineTelephoneCommunication.html
 jsonid: landlinetelephonecommunication
 ---

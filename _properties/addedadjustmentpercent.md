@@ -1,5 +1,5 @@
 ---
 title: addedAdjustmentPercent
-permalink: addedAdjustmentPercent
+permalink: addedAdjustmentPercent.html
 jsonid: addedadjustmentpercent
 ---

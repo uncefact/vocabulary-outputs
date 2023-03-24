@@ -1,5 +1,5 @@
 ---
 title: rateCode
-permalink: rateCode
+permalink: rateCode.html
 jsonid: ratecode
 ---

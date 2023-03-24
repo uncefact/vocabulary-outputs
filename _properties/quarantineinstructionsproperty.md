@@ -1,5 +1,5 @@
 ---
 title: quarantineInstructions
-permalink: quarantineInstructionsProperty
+permalink: quarantineInstructionsProperty.html
 jsonid: quarantineinstructionsproperty
 ---

@@ -1,0 +1,104 @@
+
+{
+    "label": "PayloadInstance",
+    "uri": "unece:PayloadInstance",
+    "comment": "An individual set of transmitted data in an XHE (Exchange Header Envelope).",
+    "objectProperties": [
+        {
+            "uri": "unece:contentTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the content type of this XHE payload instance."
+        },
+        {
+            "uri": "unece:customizationId",
+            "type": "xsd:string",
+            "comment": "The customization identifier for this XHE payload instance."
+        },
+        {
+            "uri": "unece:decryptionKeyReference",
+            "type": "unece:XHEReference",
+            "comment": "The reference to the decryption key for this XHE payload instance."
+        },
+        {
+            "uri": "unece:decryptionReference",
+            "type": "unece:XHEReference",
+            "comment": "The reference to the decryption for this XHE payload instance."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this XHE payload instance."
+        },
+        {
+            "uri": "unece:documentTypeCode",
+            "type": "unece:DocumentCodeList",
+            "comment": "The code specifying the document type for this XHE payload instance."
+        },
+        {
+            "uri": "unece:encryptedIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this XHE payload instance is encrypted."
+        },
+        {
+            "uri": "unece:encryptionHashValue",
+            "type": "xsd:string",
+            "comment": "The encryption hash value, expressed as text, for this XHE payload instance."
+        },
+        {
+            "uri": "unece:encryptionMethod",
+            "type": "xsd:string",
+            "comment": "The encryption method, expressed as text, for this XHE payload instance."
+        },
+        {
+            "uri": "unece:encryptionMethodCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the encryption method for this XHE payload instance."
+        },
+        {
+            "uri": "unece:handlingServiceId",
+            "type": "xsd:string",
+            "comment": "The handling service identifier for this XHE payload instance."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier of this XHE payload instance."
+        },
+        {
+            "uri": "unece:payloadReference",
+            "type": "unece:XHEReference",
+            "comment": "The reference to the payload for this XHE payload instance."
+        },
+        {
+            "uri": "unece:profileExecutionId",
+            "type": "xsd:string",
+            "comment": "The profile execution identifier for this XHE payload instance."
+        },
+        {
+            "uri": "unece:profileId",
+            "type": "xsd:string",
+            "comment": "The profile identifier for this XHE payload instance."
+        },
+        {
+            "uri": "unece:relevantReference",
+            "type": "unece:XHEReference",
+            "comment": "A reference relevant to this XHE payload instance."
+        },
+        {
+            "uri": "unece:validationTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the validation type of this XHE payload instance."
+        },
+        {
+            "uri": "unece:validationVersionId",
+            "type": "xsd:string",
+            "comment": "The validation version identifier for this XHE payload instance."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:includedPayloadInstance",
+            "comment": "A payload instance included in this XHE payload."
+        }
+    ]
+}

@@ -4,22 +4,47 @@
     "uri": "unece:applicablePeriod",
     "comment": [
         "A period applicable to this cross-border regulatory procedure.",
+        "A period applicable to this production process.",
+        "A period applicable to this supply chain trade transaction.",
+        "A specified period applicable to this product batch.",
+        "A specified period applicable to this trade product.",
+        "An applicable period for this specified experience item.",
         "The period applicable for this supply chain supply plan."
     ],
     "rangeIncludes": [
         {
-            "uri": "unece:Period",
-            "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date."
+            "uri": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:ExperienceItem",
+            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
+        },
+        {
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
+        },
+        {
+            "uri": "unece:ProductionProcess",
+            "comment": "A naturally occurring or designed sequence of operations or events in order to produce something."
+        },
+        {
             "uri": "unece:RegulatoryProcedure",
-            "comment": "A set of formal steps to satisfy a regulation, law or convention."
+            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+        },
+        {
+            "uri": "unece:SupplyChainTradeTransaction",
+            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         },
         {
             "uri": "unece:SupplyPlan",
-            "comment": "Specification of the delivery time and quantity bucket in a demand forecast or supply schedule."
+            "comment": "Specification of the delivery quantities and date/time values in a supply schedule."
+        },
+        {
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

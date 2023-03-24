@@ -1,5 +1,5 @@
 ---
 title: service
-permalink: serviceProperty
+permalink: serviceProperty.html
 jsonid: serviceproperty
 ---

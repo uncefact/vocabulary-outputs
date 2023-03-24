@@ -1,5 +1,5 @@
 ---
 title: lineTradeDeliveryQuantityVariationTypeCode
-permalink: lineTradeDeliveryQuantityVariationTypeCode
+permalink: lineTradeDeliveryQuantityVariationTypeCode.html
 jsonid: linetradedeliveryquantityvariationtypecode
 ---

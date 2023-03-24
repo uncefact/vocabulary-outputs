@@ -2,45 +2,42 @@
 {
     "label": "Seal",
     "uri": "unece:Seal",
-    "comment": "A device used to secure an object and protect from unauthorized entry or tampering such as a seal affixed to a piece of transport equipment.",
-    "datatypeProperties": [
+    "comment": "A device used to secure an object and protect it from unauthorized entry or tampering during transport or other logistics operations.",
+    "objectProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier for this logistics seal."
         },
-        {
-            "uri": "unece:logisticsSealingPartyRoleCode",
-            "type": "unece:UNCL9303Code",
-            "comment": "The code specifying the role of the party responsible for the sealing of this logistics seal."
-        },
-        {
-            "uri": "unece:maximumId",
-            "type": "xsd:token",
-            "comment": "The maximum unique identifier used for these logistics seals."
-        },
-        {
-            "uri": "unece:sealConditionCode",
-            "type": "unece:UNCL4517Code",
-            "comment": "A code specifying a condition of this logistics seal."
-        },
-        {
-            "uri": "unece:sealTypeCode",
-            "type": "unece:UNCL4525Code",
-            "comment": "The code specifying the type of logistics seal."
-        }
-    ],
-    "objectProperties": [
         {
             "uri": "unece:issuingParty",
             "type": "unece:TradeParty",
             "comment": "The party issuing this logistics seal."
+        },
+        {
+            "uri": "unece:logisticsSealTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of logistics seal."
+        },
+        {
+            "uri": "unece:logisticsSealingPartyRoleCode",
+            "type": "unece:SealingPartyRoleCodeList",
+            "comment": "The code specifying the role of the party responsible for the sealing of this logistics seal."
+        },
+        {
+            "uri": "unece:maximumId",
+            "type": "xsd:string",
+            "comment": "The maximum unique identifier used for these logistics seals."
+        },
+        {
+            "uri": "unece:sealConditionCode",
+            "type": "unece:SealConditionCodeList",
+            "comment": "A code specifying a condition of this logistics seal."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:affixedSeal",
-            "comment": "A seal affixed to this ..."
+            "uri": "unece:affixedSeal"
         },
         {
             "uri": "unece:requiredSeal",

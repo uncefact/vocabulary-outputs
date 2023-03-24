@@ -1,5 +1,5 @@
 ---
 title: acceptablePeriod
-permalink: acceptablePeriod
+permalink: acceptablePeriod.html
 jsonid: acceptableperiod
 ---

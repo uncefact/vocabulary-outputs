@@ -1,5 +1,5 @@
 ---
 title: patternCode
-permalink: patternCode
+permalink: patternCode.html
 jsonid: patterncode
 ---

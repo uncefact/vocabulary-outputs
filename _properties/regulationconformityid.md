@@ -1,5 +1,5 @@
 ---
 title: regulationConformityId
-permalink: regulationConformityId
+permalink: regulationConformityId.html
 jsonid: regulationconformityid
 ---

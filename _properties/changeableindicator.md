@@ -1,5 +1,5 @@
 ---
 title: changeableIndicator
-permalink: changeableIndicator
+permalink: changeableIndicator.html
 jsonid: changeableindicator
 ---

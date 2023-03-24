@@ -1,5 +1,5 @@
 ---
 title: logisticsStatusReasonCode
-permalink: logisticsStatusReasonCode
+permalink: logisticsStatusReasonCode.html
 jsonid: logisticsstatusreasoncode
 ---

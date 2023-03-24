@@ -2,16 +2,24 @@
 {
     "label": "contentLayerQuantity",
     "uri": "unece:contentLayerQuantity",
-    "comment": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet.",
+    "comment": [
+        "A number of content layers in this logistics packaging.",
+        "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:QuantityType",
+            "comment": "Missing description"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Packaging",
-            "comment": "Any wrapping or containment, such as a box or a barrel, of goods."
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

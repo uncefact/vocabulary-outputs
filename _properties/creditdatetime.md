@@ -1,5 +1,5 @@
 ---
 title: creditDateTime
-permalink: creditDateTime
+permalink: creditDateTime.html
 jsonid: creditdatetime
 ---

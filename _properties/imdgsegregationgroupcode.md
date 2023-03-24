@@ -1,5 +1,5 @@
 ---
 title: iMDGSegregationGroupCode
-permalink: iMDGSegregationGroupCode
+permalink: iMDGSegregationGroupCode.html
 jsonid: imdgsegregationgroupcode
 ---

@@ -1,5 +1,5 @@
 ---
 title: DirectPositionList
-permalink: DirectPositionList
+permalink: DirectPositionList.html
 jsonid: directpositionlist
 ---

@@ -1,5 +1,5 @@
 ---
 title: endPointURICommunication
-permalink: endPointURICommunication
+permalink: endPointURICommunication.html
 jsonid: endpointuricommunication
 ---

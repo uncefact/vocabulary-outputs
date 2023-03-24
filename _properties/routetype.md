@@ -1,5 +1,5 @@
 ---
 title: routeType
-permalink: routeType
+permalink: routeType.html
 jsonid: routetype
 ---

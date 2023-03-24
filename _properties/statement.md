@@ -1,5 +1,5 @@
 ---
 title: statement
-permalink: statement
+permalink: statement.html
 jsonid: statement
 ---

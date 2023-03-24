@@ -1,5 +1,5 @@
 ---
 title: turnInReceivedQuantity
-permalink: turnInReceivedQuantity
+permalink: turnInReceivedQuantity.html
 jsonid: turninreceivedquantity
 ---

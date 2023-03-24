@@ -1,5 +1,5 @@
 ---
 title: jurisdictionEntryDateTime
-permalink: jurisdictionEntryDateTime
+permalink: jurisdictionEntryDateTime.html
 jsonid: jurisdictionentrydatetime
 ---

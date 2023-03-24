@@ -1,5 +1,5 @@
 ---
 title: hazardTypeCode
-permalink: hazardTypeCode
+permalink: hazardTypeCode.html
 jsonid: hazardtypecode
 ---

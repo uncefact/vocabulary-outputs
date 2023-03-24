@@ -1,5 +1,5 @@
 ---
 title: Classification
-permalink: Classification
+permalink: Classification.html
 jsonid: classification
 ---

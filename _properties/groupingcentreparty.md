@@ -1,5 +1,5 @@
 ---
 title: groupingCentreParty
-permalink: groupingCentreParty
+permalink: groupingCentreParty.html
 jsonid: groupingcentreparty
 ---

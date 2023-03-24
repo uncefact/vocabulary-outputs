@@ -2,16 +2,23 @@
 {
     "label": "receiptDateTime",
     "uri": "unece:receiptDateTime",
-    "comment": "The date, time, date time, or other date time value for the formal receipt of this referenced document.",
+    "comment": [
+        "The date, time, date time, or other date time value for the formal receipt of this referenced document.",
+        "The receipt date, time, date time, or other date time value for this payment trade settlement."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         }
     ]
 }

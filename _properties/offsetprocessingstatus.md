@@ -1,5 +1,5 @@
 ---
 title: offsetProcessingStatus
-permalink: offsetProcessingStatus
+permalink: offsetProcessingStatus.html
 jsonid: offsetprocessingstatus
 ---

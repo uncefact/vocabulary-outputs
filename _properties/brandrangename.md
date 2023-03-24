@@ -1,5 +1,5 @@
 ---
 title: brandRangeName
-permalink: brandRangeName
+permalink: brandRangeName.html
 jsonid: brandrangename
 ---

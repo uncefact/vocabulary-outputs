@@ -1,5 +1,5 @@
 ---
 title: requiredChemicalTreatment
-permalink: requiredChemicalTreatment
+permalink: requiredChemicalTreatment.html
 jsonid: requiredchemicaltreatment
 ---

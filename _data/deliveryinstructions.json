@@ -3,10 +3,10 @@
     "label": "DeliveryInstructions",
     "uri": "unece:DeliveryInstructions",
     "comment": "Delivery information of an instructive nature.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:deliveryInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
+            "type": "xsd:string",
             "comment": "The code specifying a description of these delivery instructions."
         },
         {
@@ -21,18 +21,16 @@
         },
         {
             "uri": "unece:handlingCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying delivery handling instructions."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:deliveryInstructions",
-            "comment": "Delivery instructions for this piece ..."
+            "uri": "unece:deliveryInstructions"
         },
         {
-            "uri": "unece:specifiedDeliveryInstructions",
-            "comment": "Delivery instructions, at header level, ..."
+            "uri": "unece:specifiedDeliveryInstructions"
         }
     ]
 }

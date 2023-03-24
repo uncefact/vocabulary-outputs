@@ -3,7 +3,7 @@
     "label": "ControlSettingParameter",
     "uri": "unece:ControlSettingParameter",
     "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:changeableIndicator",
             "type": "xsd:boolean",
@@ -16,7 +16,7 @@
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of this control setting parameter."
         },
         {
@@ -25,13 +25,18 @@
             "comment": "The name, expressed as text, of this control setting parameter."
         },
         {
+            "uri": "unece:requestedRange",
+            "type": "unece:Range",
+            "comment": "A requested range specified for this control setting parameter."
+        },
+        {
             "uri": "unece:statusCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the status of this control setting parameter."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying a type of parameter for this control setting parameter."
         },
         {
@@ -46,20 +51,13 @@
         },
         {
             "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:MeasureType",
             "comment": "The measure value for this control setting parameter."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:requestedRange",
-            "type": "unece:Range",
-            "comment": "A requested range specified for this control setting parameter."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:definedParameter",
+            "uri": "unece:definedControlSettingParameter",
             "comment": "A control setting parameter defined for this monitoring sensor."
         }
     ]

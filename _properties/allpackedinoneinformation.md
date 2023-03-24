@@ -1,5 +1,5 @@
 ---
 title: allPackedInOneInformation
-permalink: allPackedInOneInformation
+permalink: allPackedInOneInformation.html
 jsonid: allpackedinoneinformation
 ---

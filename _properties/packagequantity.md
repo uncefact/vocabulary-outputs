@@ -1,5 +1,5 @@
 ---
 title: packageQuantity
-permalink: packageQuantity
+permalink: packageQuantity.html
 jsonid: packagequantity
 ---

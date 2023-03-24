@@ -1,5 +1,5 @@
 ---
 title: attachmentBinaryObject
-permalink: attachmentBinaryObject
+permalink: attachmentBinaryObject.html
 jsonid: attachmentbinaryobject
 ---

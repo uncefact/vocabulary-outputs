@@ -1,5 +1,5 @@
 ---
 title: totalRetailValueInformationAmount
-permalink: totalRetailValueInformationAmount
+permalink: totalRetailValueInformationAmount.html
 jsonid: totalretailvalueinformationamount
 ---

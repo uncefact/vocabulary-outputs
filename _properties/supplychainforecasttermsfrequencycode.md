@@ -1,5 +1,5 @@
 ---
 title: supplyChainForecastTermsFrequencyCode
-permalink: supplyChainForecastTermsFrequencyCode
+permalink: supplyChainForecastTermsFrequencyCode.html
 jsonid: supplychainforecasttermsfrequencycode
 ---

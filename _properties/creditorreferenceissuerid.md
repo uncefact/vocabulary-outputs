@@ -1,5 +1,5 @@
 ---
 title: creditorReferenceIssuerId
-permalink: creditorReferenceIssuerId
+permalink: creditorReferenceIssuerId.html
 jsonid: creditorreferenceissuerid
 ---

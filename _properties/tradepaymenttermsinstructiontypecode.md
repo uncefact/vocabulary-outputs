@@ -1,5 +1,5 @@
 ---
 title: tradePaymentTermsInstructionTypeCode
-permalink: tradePaymentTermsInstructionTypeCode
+permalink: tradePaymentTermsInstructionTypeCode.html
 jsonid: tradepaymenttermsinstructiontypecode
 ---

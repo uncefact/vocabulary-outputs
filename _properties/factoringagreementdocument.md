@@ -1,5 +1,5 @@
 ---
 title: factoringAgreementDocument
-permalink: factoringAgreementDocument
+permalink: factoringAgreementDocument.html
 jsonid: factoringagreementdocument
 ---

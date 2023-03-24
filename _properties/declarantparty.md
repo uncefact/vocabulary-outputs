@@ -1,5 +1,5 @@
 ---
 title: declarantParty
-permalink: declarantParty
+permalink: declarantParty.html
 jsonid: declarantparty
 ---

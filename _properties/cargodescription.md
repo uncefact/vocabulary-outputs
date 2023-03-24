@@ -1,5 +1,5 @@
 ---
 title: cargoDescription
-permalink: cargoDescription
+permalink: cargoDescription.html
 jsonid: cargodescription
 ---

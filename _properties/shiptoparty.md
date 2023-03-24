@@ -1,5 +1,5 @@
 ---
 title: shipToParty
-permalink: shipToParty
+permalink: shipToParty.html
 jsonid: shiptoparty
 ---

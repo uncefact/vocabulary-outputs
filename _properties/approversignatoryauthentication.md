@@ -1,5 +1,5 @@
 ---
 title: approverSignatoryAuthentication
-permalink: approverSignatoryAuthentication
+permalink: approverSignatoryAuthentication.html
 jsonid: approversignatoryauthentication
 ---

@@ -1,5 +1,5 @@
 ---
 title: serviceCategoryCode
-permalink: serviceCategoryCode
+permalink: serviceCategoryCode.html
 jsonid: servicecategorycode
 ---

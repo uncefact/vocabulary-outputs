@@ -1,5 +1,5 @@
 ---
 title: barcodeLabel
-permalink: barcodeLabel
+permalink: barcodeLabel.html
 jsonid: barcodelabel
 ---

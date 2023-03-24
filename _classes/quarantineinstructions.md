@@ -1,5 +1,5 @@
 ---
 title: QuarantineInstructions
-permalink: QuarantineInstructions
+permalink: QuarantineInstructions.html
 jsonid: quarantineinstructions
 ---

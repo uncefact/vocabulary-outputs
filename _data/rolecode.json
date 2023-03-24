@@ -2,16 +2,28 @@
 {
     "label": "roleCode",
     "uri": "unece:roleCode",
-    "comment": "A code specifying a role of this transport person.",
+    "comment": [
+        "The code specifying the role for this cooperating organization.",
+        "The code specifying the role for this payment financial institution, such as intermediary or settlement agent.",
+        "The code specifying the role of this guest person."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:TransportPerson",
-            "comment": "A transport related person, such as a member of a crew or a passenger."
+            "uri": "unece:CooperatingOrganization",
+            "comment": "An organized structure set up for a particular purpose, such as a business, government body, department, charity, or financial institution that is working together with another organization, business, or person."
+        },
+        {
+            "uri": "unece:GuestPerson",
+            "comment": "An individual guest."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution",
+            "comment": "An institution that provides financial services and financial transactions for payment."
         }
     ]
 }

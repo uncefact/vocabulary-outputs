@@ -1,5 +1,5 @@
 ---
 title: manifestRelatedDocument
-permalink: manifestRelatedDocument
+permalink: manifestRelatedDocument.html
 jsonid: manifestrelateddocument
 ---

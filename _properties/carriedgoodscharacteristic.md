@@ -1,5 +1,5 @@
 ---
 title: carriedGoodsCharacteristic
-permalink: carriedGoodsCharacteristic
+permalink: carriedGoodsCharacteristic.html
 jsonid: carriedgoodscharacteristic
 ---

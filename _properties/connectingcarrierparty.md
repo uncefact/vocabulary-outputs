@@ -1,5 +1,5 @@
 ---
 title: connectingCarrierParty
-permalink: connectingCarrierParty
+permalink: connectingCarrierParty.html
 jsonid: connectingcarrierparty
 ---

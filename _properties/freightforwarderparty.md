@@ -1,5 +1,5 @@
 ---
 title: freightForwarderParty
-permalink: freightForwarderParty
+permalink: freightForwarderParty.html
 jsonid: freightforwarderparty
 ---

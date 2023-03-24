@@ -1,5 +1,5 @@
 ---
 title: tradePaymentTermsPaymentMeansId
-permalink: tradePaymentTermsPaymentMeansId
+permalink: tradePaymentTermsPaymentMeansId.html
 jsonid: tradepaymenttermspaymentmeansid
 ---

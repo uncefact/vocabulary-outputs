@@ -1,5 +1,5 @@
 ---
 title: queryId
-permalink: queryId
+permalink: queryId.html
 jsonid: queryid
 ---

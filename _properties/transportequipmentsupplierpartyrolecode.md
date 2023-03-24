@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentSupplierPartyRoleCode
-permalink: transportEquipmentSupplierPartyRoleCode
+permalink: transportEquipmentSupplierPartyRoleCode.html
 jsonid: transportequipmentsupplierpartyrolecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: contentLayerQuantity
-permalink: contentLayerQuantity
+permalink: contentLayerQuantity.html
 jsonid: contentlayerquantity
 ---

@@ -1,5 +1,5 @@
 ---
 title: promotionalVariantId
-permalink: promotionalVariantId
+permalink: promotionalVariantId.html
 jsonid: promotionalvariantid
 ---

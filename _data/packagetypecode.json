@@ -2,16 +2,25 @@
 {
     "label": "packageTypeCode",
     "uri": "unece:packageTypeCode",
-    "comment": "The code specifying the package type for the transported dangerous goods.",
+    "comment": [
+        "A code specifying the type of logistics package.",
+        "The code specifying the type of referenced logistics package.",
+        "The code specifying the type of supply chain packaging."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "unece:PackageTypeCodeList",
+            "comment": "A character string used to replace or represent a type of package."
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:DangerousGoods",
-            "comment": "A hazardous or non-hazardous substance which may pose risks to people and/or the environment for which the transportation is regulated by dangerous goods regulations."
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container ..."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

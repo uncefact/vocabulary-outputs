@@ -1,5 +1,5 @@
 ---
 title: callEvent
-permalink: callEvent
+permalink: callEvent.html
 jsonid: callevent
 ---

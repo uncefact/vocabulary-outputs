@@ -1,5 +1,5 @@
 ---
 title: latestOccurrenceDateTime
-permalink: latestOccurrenceDateTime
+permalink: latestOccurrenceDateTime.html
 jsonid: latestoccurrencedatetime
 ---

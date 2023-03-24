@@ -1,5 +1,5 @@
 ---
 title: compositionDescription
-permalink: compositionDescription
+permalink: compositionDescription.html
 jsonid: compositiondescription
 ---

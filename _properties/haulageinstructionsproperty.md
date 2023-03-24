@@ -1,5 +1,5 @@
 ---
 title: haulageInstructions
-permalink: haulageInstructionsProperty
+permalink: haulageInstructionsProperty.html
 jsonid: haulageinstructionsproperty
 ---

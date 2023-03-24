@@ -1,5 +1,5 @@
 ---
 title: Circle
-permalink: Circle
+permalink: Circle.html
 jsonid: circle
 ---

@@ -1,5 +1,5 @@
 ---
 title: contactTypeCode
-permalink: contactTypeCode
+permalink: contactTypeCode.html
 jsonid: contacttypecode
 ---

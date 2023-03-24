@@ -1,5 +1,5 @@
 ---
 title: accountingDocumentSetTriggerCode
-permalink: accountingDocumentSetTriggerCode
+permalink: accountingDocumentSetTriggerCode.html
 jsonid: accountingdocumentsettriggercode
 ---

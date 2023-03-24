@@ -1,5 +1,5 @@
 ---
 title: ValidationStatus
-permalink: ValidationStatus
+permalink: ValidationStatus.html
 jsonid: validationstatus
 ---

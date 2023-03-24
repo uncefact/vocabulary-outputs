@@ -1,5 +1,5 @@
 ---
 title: signatoryImageBinaryObject
-permalink: signatoryImageBinaryObject
+permalink: signatoryImageBinaryObject.html
 jsonid: signatoryimagebinaryobject
 ---

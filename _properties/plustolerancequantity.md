@@ -1,5 +1,5 @@
 ---
 title: plusToleranceQuantity
-permalink: plusToleranceQuantity
+permalink: plusToleranceQuantity.html
 jsonid: plustolerancequantity
 ---

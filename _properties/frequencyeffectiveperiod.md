@@ -1,5 +1,5 @@
 ---
 title: frequencyEffectivePeriod
-permalink: frequencyEffectivePeriod
+permalink: frequencyEffectivePeriod.html
 jsonid: frequencyeffectiveperiod
 ---

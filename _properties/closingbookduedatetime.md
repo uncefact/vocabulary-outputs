@@ -1,5 +1,5 @@
 ---
 title: closingBookDueDateTime
-permalink: closingBookDueDateTime
+permalink: closingBookDueDateTime.html
 jsonid: closingbookduedatetime
 ---

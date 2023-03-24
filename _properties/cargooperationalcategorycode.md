@@ -1,5 +1,5 @@
 ---
 title: cargoOperationalCategoryCode
-permalink: cargoOperationalCategoryCode
+permalink: cargoOperationalCategoryCode.html
 jsonid: cargooperationalcategorycode
 ---

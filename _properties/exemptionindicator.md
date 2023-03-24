@@ -1,5 +1,5 @@
 ---
 title: exemptionIndicator
-permalink: exemptionIndicator
+permalink: exemptionIndicator.html
 jsonid: exemptionindicator
 ---

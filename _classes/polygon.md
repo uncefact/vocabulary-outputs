@@ -1,5 +1,5 @@
 ---
 title: Polygon
-permalink: Polygon
+permalink: Polygon.html
 jsonid: polygon
 ---

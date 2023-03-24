@@ -1,5 +1,5 @@
 ---
 title: electronicPresentationIndicator
-permalink: electronicPresentationIndicator
+permalink: electronicPresentationIndicator.html
 jsonid: electronicpresentationindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: expiryDate
-permalink: expiryDate
+permalink: expiryDate.html
 jsonid: expirydate
 ---

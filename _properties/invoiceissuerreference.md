@@ -1,5 +1,5 @@
 ---
 title: invoiceIssuerReference
-permalink: invoiceIssuerReference
+permalink: invoiceIssuerReference.html
 jsonid: invoiceissuerreference
 ---

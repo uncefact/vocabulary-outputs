@@ -3,33 +3,31 @@
     "label": "TransportSettingTemperature",
     "uri": "unece:TransportSettingTemperature",
     "comment": "Temperature settings for a transport movement, such as a required storage temperature range.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:maximumValueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen degrees Celsius."
-        },
-        {
-            "uri": "unece:minimumValueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four degrees Celsius."
-        },
-        {
-            "uri": "unece:temperatureTypeCode",
-            "type": "unece:UNCL6245Code",
-            "comment": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
-        }
-    ],
     "objectProperties": [
         {
             "uri": "unece:informationInstructions",
             "type": "unece:TemperatureSettingInstructions",
             "comment": "Informational instructions for achieving, maintaining, using or responding to this transport setting temperature."
+        },
+        {
+            "uri": "unece:maximumValueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen degrees Celsius."
+        },
+        {
+            "uri": "unece:minimumValueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four degrees Celsius."
+        },
+        {
+            "uri": "unece:temperatureTypeCode",
+            "type": "unece:TemperatureTypeCodeList",
+            "comment": "The code specifying the type of transport setting temperature [Reference United Nations Code List (UNCL) 6245]."
+        },
+        {
+            "uri": "unece:temperatureUnitValueMeasure",
+            "type": "unece:TemperatureUnitMeasureType",
+            "comment": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
         }
     ],
     "referencedBy": [
@@ -38,8 +36,7 @@
             "comment": "A transport related temperature setting applicable to these handling instructions."
         },
         {
-            "uri": "unece:settingTemperature",
-            "comment": "A temperature setting for this ..."
+            "uri": "unece:settingTemperature"
         },
         {
             "uri": "unece:transportTemperature",

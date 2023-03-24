@@ -1,5 +1,5 @@
 ---
 title: crossBorderRegulatoryProcedurePaymentMethodCode
-permalink: crossBorderRegulatoryProcedurePaymentMethodCode
+permalink: crossBorderRegulatoryProcedurePaymentMethodCode.html
 jsonid: crossborderregulatoryprocedurepaymentmethodcode
 ---

@@ -1,5 +1,5 @@
 ---
 title: LegalRegistration
-permalink: LegalRegistration
+permalink: LegalRegistration.html
 jsonid: legalregistration
 ---

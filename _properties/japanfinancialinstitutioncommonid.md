@@ -1,5 +1,5 @@
 ---
 title: japanFinancialInstitutionCommonId
-permalink: japanFinancialInstitutionCommonId
+permalink: japanFinancialInstitutionCommonId.html
 jsonid: japanfinancialinstitutioncommonid
 ---

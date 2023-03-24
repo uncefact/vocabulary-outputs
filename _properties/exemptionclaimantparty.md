@@ -1,5 +1,5 @@
 ---
 title: exemptionClaimantParty
-permalink: exemptionClaimantParty
+permalink: exemptionClaimantParty.html
 jsonid: exemptionclaimantparty
 ---

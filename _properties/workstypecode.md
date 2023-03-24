@@ -1,5 +1,5 @@
 ---
 title: worksTypeCode
-permalink: worksTypeCode
+permalink: worksTypeCode.html
 jsonid: workstypecode
 ---

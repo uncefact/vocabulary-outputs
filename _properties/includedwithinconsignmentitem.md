@@ -1,5 +1,5 @@
 ---
 title: includedWithinConsignmentItem
-permalink: includedWithinConsignmentItem
+permalink: includedWithinConsignmentItem.html
 jsonid: includedwithinconsignmentitem
 ---

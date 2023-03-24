@@ -1,5 +1,5 @@
 ---
 title: buyerSignatoryAuthentication
-permalink: buyerSignatoryAuthentication
+permalink: buyerSignatoryAuthentication.html
 jsonid: buyersignatoryauthentication
 ---

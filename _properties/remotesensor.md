@@ -1,5 +1,5 @@
 ---
 title: remoteSensor
-permalink: remoteSensor
+permalink: remoteSensor.html
 jsonid: remotesensor
 ---

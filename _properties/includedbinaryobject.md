@@ -1,5 +1,5 @@
 ---
 title: includedBinaryObject
-permalink: includedBinaryObject
+permalink: includedBinaryObject.html
 jsonid: includedbinaryobject
 ---

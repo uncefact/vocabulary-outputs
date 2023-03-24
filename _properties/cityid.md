@@ -1,5 +1,5 @@
 ---
 title: cityId
-permalink: cityId
+permalink: cityId.html
 jsonid: cityid
 ---

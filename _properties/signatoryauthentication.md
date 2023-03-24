@@ -1,5 +1,5 @@
 ---
 title: signatoryAuthentication
-permalink: signatoryAuthentication
+permalink: signatoryAuthentication.html
 jsonid: signatoryauthentication
 ---

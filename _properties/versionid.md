@@ -1,5 +1,5 @@
 ---
 title: versionId
-permalink: versionId
+permalink: versionId.html
 jsonid: versionid
 ---

@@ -1,5 +1,5 @@
 ---
 title: totalConsignmentValueAmount
-permalink: totalConsignmentValueAmount
+permalink: totalConsignmentValueAmount.html
 jsonid: totalconsignmentvalueamount
 ---

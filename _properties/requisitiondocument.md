@@ -1,5 +1,5 @@
 ---
 title: requisitionDocument
-permalink: requisitionDocument
+permalink: requisitionDocument.html
 jsonid: requisitiondocument
 ---

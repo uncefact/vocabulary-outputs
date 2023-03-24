@@ -1,5 +1,5 @@
 ---
 title: depositValueSpecifiedAmount
-permalink: depositValueSpecifiedAmount
+permalink: depositValueSpecifiedAmount.html
 jsonid: depositvaluespecifiedamount
 ---

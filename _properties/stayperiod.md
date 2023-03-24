@@ -1,5 +1,5 @@
 ---
 title: stayPeriod
-permalink: stayPeriod
+permalink: stayPeriod.html
 jsonid: stayperiod
 ---

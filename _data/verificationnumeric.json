@@ -2,16 +2,23 @@
 {
     "label": "verificationNumeric",
     "uri": "unece:verificationNumeric",
-    "comment": "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card.",
+    "comment": [
+        "The unique card verification number for security purposes to help verify the card user is in actual possession of this trade settlement financial card.",
+        "The verification number for this digital method used for payment."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:DigitalMethod",
+            "comment": "The use of online and digital technologies to collect monetary payment amounts."
+        },
+        {
             "uri": "unece:FinancialCard",
-            "comment": "A card used to represent a financial account."
+            "comment": "A card used to represent a financial account for a trade settlement."
         }
     ]
 }

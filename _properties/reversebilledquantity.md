@@ -1,5 +1,5 @@
 ---
 title: reverseBilledQuantity
-permalink: reverseBilledQuantity
+permalink: reverseBilledQuantity.html
 jsonid: reversebilledquantity
 ---

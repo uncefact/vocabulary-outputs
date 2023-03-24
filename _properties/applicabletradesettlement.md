@@ -1,5 +1,5 @@
 ---
 title: applicableTradeSettlement
-permalink: applicableTradeSettlement
+permalink: applicableTradeSettlement.html
 jsonid: applicabletradesettlement
 ---

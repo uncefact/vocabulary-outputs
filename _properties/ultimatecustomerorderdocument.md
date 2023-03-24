@@ -1,5 +1,5 @@
 ---
 title: ultimateCustomerOrderDocument
-permalink: ultimateCustomerOrderDocument
+permalink: ultimateCustomerOrderDocument.html
 jsonid: ultimatecustomerorderdocument
 ---

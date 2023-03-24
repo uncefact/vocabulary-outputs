@@ -1,5 +1,5 @@
 ---
 title: shipmentId
-permalink: shipmentId
+permalink: shipmentId.html
 jsonid: shipmentid
 ---

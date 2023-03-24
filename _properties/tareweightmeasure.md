@@ -1,5 +1,5 @@
 ---
 title: tareWeightMeasure
-permalink: tareWeightMeasure
+permalink: tareWeightMeasure.html
 jsonid: tareweightmeasure
 ---

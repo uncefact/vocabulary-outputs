@@ -2,34 +2,32 @@
 {
     "label": "Convoy",
     "uri": "unece:Convoy",
-    "comment": "A number of means of transport following each other with a common transport purpose.",
-    "datatypeProperties": [
+    "comment": "A number of means of transport following each other with a common logistics purpose.",
+    "objectProperties": [
         {
             "uri": "unece:maximumWidthMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:LinearUnitMeasureType",
             "comment": "The maximum width measure for this logistics convoy."
         },
         {
             "uri": "unece:overallLengthMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:LinearUnitMeasureType",
             "comment": "The overall length measure of this logistics convoy."
         },
         {
-            "uri": "unece:transportMeansQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of means of transport in this logistics convoy."
-        }
-    ],
-    "objectProperties": [
-        {
             "uri": "unece:powerActiveTransportMeans",
-            "type": "unece:TransportMeans",
+            "type": "unece:LogisticsTransportMeans",
             "comment": "A means of transport actively powering this logistics convoy."
         },
         {
             "uri": "unece:powerInactiveTransportMeans",
-            "type": "unece:TransportMeans",
+            "type": "unece:LogisticsTransportMeans",
             "comment": "A means of transport not actively powering this logistics convoy."
+        },
+        {
+            "uri": "unece:transportMeansQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of means of transport in this logistics convoy."
         }
     ],
     "referencedBy": [

@@ -1,5 +1,5 @@
 ---
 title: buyerOrderDateTime
-permalink: buyerOrderDateTime
+permalink: buyerOrderDateTime.html
 jsonid: buyerorderdatetime
 ---

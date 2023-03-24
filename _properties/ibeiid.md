@@ -1,5 +1,5 @@
 ---
 title: iBEIId
-permalink: iBEIId
+permalink: iBEIId.html
 jsonid: ibeiid
 ---

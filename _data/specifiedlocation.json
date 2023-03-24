@@ -1,36 +1,62 @@
 
 {
-    "label": "specifiedLocation",
-    "uri": "unece:specifiedLocation",
-    "comment": [
-        "A location specified for this logistics status.",
-        "A location specified for this stores inventory item.",
-        "A location specified for this supply chain supply plan.",
-        "A logistics related location or place specified for this trade party.",
-        "The location specified for this supply chain inventory."
-    ],
-    "rangeIncludes": [
+    "label": "SpecifiedLocation",
+    "uri": "unece:SpecifiedLocation",
+    "comment": "A specified physical location or place.",
+    "objectProperties": [
         {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description for this specified location."
+        },
+        {
+            "uri": "unece:directions",
+            "type": "xsd:string",
+            "comment": "Directions, expressed as text, for this specified location."
+        },
+        {
+            "uri": "unece:geopoliticalRegionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the geopolitical region for this specified location."
+        },
+        {
+            "uri": "unece:geopoliticalRegionName",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, of the geopolitical region for this specified location."
+        },
+        {
+            "uri": "unece:mapURIId",
+            "type": "xsd:string",
+            "comment": "The identifier of a URI (Uniform Resource Identifier) for a map of this specified location."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "A name, expressed as text, for this specified location."
+        },
+        {
+            "uri": "unece:specifiedLocationTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of this specified location."
+        },
+        {
+            "uri": "unece:specifiedTradeAddress",
+            "type": "unece:TradeAddress",
+            "comment": "A address specified for this location."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:Inventory",
-            "comment": "Material held in stock."
+            "uri": "unece:accessibleLocation",
+            "comment": "An accessible location specified for this trade contact."
         },
         {
-            "uri": "unece:LogisticsStatus",
-            "comment": "The information relevant to a condition or a position related to logistics."
+            "uri": "unece:physicalSpecifiedLocation",
+            "comment": "A physical location specified for this experience facility."
         },
         {
-            "uri": "unece:SupplyPlan",
-            "comment": "Specification of the delivery time and quantity bucket in a demand forecast or supply schedule."
-        },
-        {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "unece:signedLocation",
+            "comment": "A location where this trade contract was or will be signed."
         }
     ]
 }

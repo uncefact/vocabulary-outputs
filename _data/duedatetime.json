@@ -3,14 +3,14 @@
     "label": "dueDateTime",
     "uri": "unece:dueDateTime",
     "comment": [
-        "The date, time, date time, or other date time value for a due date specified by these trade payment terms.",
         "The date, time, date time, or other date time value of the due date specified by these trade payment terms.",
         "The due date for this instalment payment.",
+        "The due date, time, date time, or other date time value for this payment trade settlement.",
         "The due date, time, date time, or other date time value of this supply chain event."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:dateTime"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
@@ -20,7 +20,11 @@
         },
         {
             "uri": "unece:PaymentTerms",
-            "comment": "Terms and conditions by which payment has been or will be made."
+            "comment": "Terms and conditions by which payment has been or will be made for trade purposes."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         },
         {
             "uri": "unece:SupplyChainEvent",

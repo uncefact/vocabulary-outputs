@@ -1,5 +1,5 @@
 ---
 title: groupedTransactionSpecifiedQuantity
-permalink: groupedTransactionSpecifiedQuantity
+permalink: groupedTransactionSpecifiedQuantity.html
 jsonid: groupedtransactionspecifiedquantity
 ---

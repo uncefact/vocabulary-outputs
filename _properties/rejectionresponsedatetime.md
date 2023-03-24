@@ -1,5 +1,5 @@
 ---
 title: rejectionResponseDateTime
-permalink: rejectionResponseDateTime
+permalink: rejectionResponseDateTime.html
 jsonid: rejectionresponsedatetime
 ---

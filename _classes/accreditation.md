@@ -1,5 +1,5 @@
 ---
 title: Accreditation
-permalink: Accreditation
+permalink: Accreditation.html
 jsonid: accreditation
 ---

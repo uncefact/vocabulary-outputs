@@ -1,5 +1,5 @@
 ---
 title: SecurityTag
-permalink: SecurityTag
+permalink: SecurityTag.html
 jsonid: securitytag
 ---

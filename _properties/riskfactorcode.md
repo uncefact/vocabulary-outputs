@@ -1,5 +1,5 @@
 ---
 title: riskFactorCode
-permalink: riskFactorCode
+permalink: riskFactorCode.html
 jsonid: riskfactorcode
 ---

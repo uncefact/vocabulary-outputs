@@ -1,5 +1,5 @@
 ---
 title: axisLabelList
-permalink: axisLabelList
+permalink: axisLabelList.html
 jsonid: axislabellist
 ---

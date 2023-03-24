@@ -1,5 +1,5 @@
 ---
 title: marketDeliveryApplicableTemperature
-permalink: marketDeliveryApplicableTemperature
+permalink: marketDeliveryApplicableTemperature.html
 jsonid: marketdeliveryapplicabletemperature
 ---

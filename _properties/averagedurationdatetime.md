@@ -1,5 +1,5 @@
 ---
 title: averageDurationDateTime
-permalink: averageDurationDateTime
+permalink: averageDurationDateTime.html
 jsonid: averagedurationdatetime
 ---

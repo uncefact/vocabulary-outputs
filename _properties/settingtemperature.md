@@ -1,5 +1,5 @@
 ---
 title: settingTemperature
-permalink: settingTemperature
+permalink: settingTemperature.html
 jsonid: settingtemperature
 ---

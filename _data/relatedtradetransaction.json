@@ -3,19 +3,34 @@
     "label": "relatedTradeTransaction",
     "uri": "unece:relatedTradeTransaction",
     "comment": [
+        "A supply chain trade transaction related to this specified assessment.",
+        "A supply chain trade transaction related to this specified certificate.",
+        "A supply chain trade transaction related to this trade product.",
         "A trade transaction related to this referenced supply chain consignment.",
         "A trade transaction related to this supply chain consignment."
     ],
     "rangeIncludes": [
         {
-            "uri": "unece:TradeTransaction",
-            "comment": "Agreement, contract, exchange, understanding, or transfer of cash or property that occurs between two or more parties."
+            "uri": "unece:SupplyChainTradeTransaction",
+            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:Assessment",
+            "comment": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or condition."
+        },
+        {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+            "comment": "A separately identifiable collection of ..."
+        },
+        {
+            "uri": "unece:SpecifiedCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

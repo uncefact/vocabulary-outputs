@@ -1,5 +1,5 @@
 ---
 title: bestBeforeDateTime
-permalink: bestBeforeDateTime
+permalink: bestBeforeDateTime.html
 jsonid: bestbeforedatetime
 ---

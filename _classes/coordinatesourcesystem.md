@@ -1,5 +1,5 @@
 ---
 title: CoordinateSourceSystem
-permalink: CoordinateSourceSystem
+permalink: CoordinateSourceSystem.html
 jsonid: coordinatesourcesystem
 ---

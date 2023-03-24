@@ -1,5 +1,5 @@
 ---
 title: primaryClassificationCode
-permalink: primaryClassificationCode
+permalink: primaryClassificationCode.html
 jsonid: primaryclassificationcode
 ---

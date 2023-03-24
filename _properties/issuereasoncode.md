@@ -1,5 +1,5 @@
 ---
 title: issueReasonCode
-permalink: issueReasonCode
+permalink: issueReasonCode.html
 jsonid: issuereasoncode
 ---

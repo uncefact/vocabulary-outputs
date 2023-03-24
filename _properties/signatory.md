@@ -1,5 +1,5 @@
 ---
 title: signatory
-permalink: signatory
+permalink: signatory.html
 jsonid: signatory
 ---

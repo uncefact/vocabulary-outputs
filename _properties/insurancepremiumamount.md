@@ -1,5 +1,5 @@
 ---
 title: insurancePremiumAmount
-permalink: insurancePremiumAmount
+permalink: insurancePremiumAmount.html
 jsonid: insurancepremiumamount
 ---

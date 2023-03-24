@@ -3,15 +3,20 @@
     "label": "TransportPerson",
     "uri": "unece:TransportPerson",
     "comment": "A transport related person, such as a member of a crew or a passenger.",
-    "datatypeProperties": [
+    "objectProperties": [
+        {
+            "uri": "unece:attainedAcademicQualification",
+            "type": "unece:AcademicQualification",
+            "comment": "An academic qualification attained by this transport person."
+        },
         {
             "uri": "unece:birthCountryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the birth country of this transport person."
         },
         {
             "uri": "unece:birthDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The birth date of this transport person."
         },
         {
@@ -21,65 +26,18 @@
         },
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a category for this transport person, such as a member of crew or passenger."
-        },
-        {
-            "uri": "unece:familyName",
-            "type": "xsd:string",
-            "comment": "A family name, expressed as text, for this transport person."
-        },
-        {
-            "uri": "unece:genderCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the gender of this transport person."
-        },
-        {
-            "uri": "unece:givenName",
-            "type": "xsd:string",
-            "comment": "A given name, expressed as text, for this transport person."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this transport person."
-        },
-        {
-            "uri": "unece:inTransitIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this transport person is in transit."
-        },
-        {
-            "uri": "unece:languageId",
-            "type": "xsd:token",
-            "comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
-        },
-        {
-            "uri": "unece:role",
-            "type": "xsd:string",
-            "comment": "A role, expressed as text, of this transport person."
-        },
-        {
-            "uri": "unece:roleCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a role of this transport person."
-        },
-        {
-            "uri": "unece:transportPersonName",
-            "type": "unece:UNCL3403Code",
-            "comment": "The name or set of names, expressed as text, by which this transport person is known."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:attainedQualification",
-            "type": "unece:Qualification",
-            "comment": "An academic qualification attained by this transport person."
         },
         {
             "uri": "unece:declaredPersonalEffects",
             "type": "unece:PersonalEffects",
             "comment": "Personal effects use declared by a transport person."
+        },
+        {
+            "uri": "unece:disembarkationDateTime",
+            "type": "xsd:dateTime",
+            "comment": "A date, time, date time, or other date time value that this person disembarked from a means of transport."
         },
         {
             "uri": "unece:disembarkationLocation",
@@ -88,8 +46,13 @@
         },
         {
             "uri": "unece:emailURICommunication",
-            "type": "unece:UniversalCommunication",
+            "type": "unece:Communication",
             "comment": "The email URI (Uniform Resource Identifier) communication for this transport person."
+        },
+        {
+            "uri": "unece:embarkationDateTime",
+            "type": "xsd:dateTime",
+            "comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport."
         },
         {
             "uri": "unece:embarkationLocation",
@@ -97,13 +60,43 @@
             "comment": "An embarkation location for this transport person."
         },
         {
+            "uri": "unece:familyName",
+            "type": "xsd:string",
+            "comment": "A family name, expressed as text, for this transport person."
+        },
+        {
+            "uri": "unece:genderCode",
+            "type": "xsd:string",
+            "comment": "A code specifying the gender of this transport person."
+        },
+        {
+            "uri": "unece:givenName",
+            "type": "xsd:string",
+            "comment": "A given name, expressed as text, for this transport person."
+        },
+        {
+            "uri": "unece:identifiedStowaway",
+            "type": "unece:Stowaway",
+            "comment": "A transport person identified as a found stowaway."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The unique identifier for this transport person."
+        },
+        {
+            "uri": "unece:inTransitIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this transport person is in transit."
+        },
+        {
             "uri": "unece:landlineTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
+            "type": "unece:Communication",
             "comment": "Landline telephone communication information for this transport person."
         },
         {
             "uri": "unece:mobileTelephoneCommunication",
-            "type": "unece:UniversalCommunication",
+            "type": "unece:Communication",
             "comment": "Mobile telephone communication information for this transport person."
         },
         {
@@ -112,9 +105,34 @@
             "comment": "A country that constitutes a nationality by origin, birth, or naturalization for this transport person."
         },
         {
+            "uri": "unece:partyRoleCode",
+            "type": "unece:PartyRoleCodeList",
+            "comment": "A code specifying a role of this transport person."
+        },
+        {
+            "uri": "unece:reportedIllness",
+            "type": "unece:Illness",
+            "comment": "An MDH (Maritime Declaration of Health) reported illness or disease for this transport person."
+        },
+        {
+            "uri": "unece:role",
+            "type": "xsd:string",
+            "comment": "A role, expressed as text, of this transport person."
+        },
+        {
             "uri": "unece:specificAccreditation",
             "type": "unece:Accreditation",
             "comment": "A certified accreditation specific to this transport person."
+        },
+        {
+            "uri": "unece:transportPersonLanguageId",
+            "type": "unece:LanguageId",
+            "comment": "A unique identifier of a language related to this transport person, such as their spoken or correspondence language."
+        },
+        {
+            "uri": "unece:transportPersonName",
+            "type": "xsd:string",
+            "comment": "The name or set of names, expressed as text, by which this transport person is known."
         },
         {
             "uri": "unece:travelIdentityDocument",

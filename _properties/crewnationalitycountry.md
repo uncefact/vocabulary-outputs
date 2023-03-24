@@ -1,5 +1,5 @@
 ---
 title: crewNationalityCountry
-permalink: crewNationalityCountry
+permalink: crewNationalityCountry.html
 jsonid: crewnationalitycountry
 ---

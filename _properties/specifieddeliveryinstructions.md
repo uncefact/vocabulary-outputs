@@ -1,5 +1,5 @@
 ---
 title: specifiedDeliveryInstructions
-permalink: specifiedDeliveryInstructions
+permalink: specifiedDeliveryInstructions.html
 jsonid: specifieddeliveryinstructions
 ---

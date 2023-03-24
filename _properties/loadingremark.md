@@ -1,5 +1,5 @@
 ---
 title: loadingRemark
-permalink: loadingRemark
+permalink: loadingRemark.html
 jsonid: loadingremark
 ---

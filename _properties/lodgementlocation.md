@@ -1,5 +1,5 @@
 ---
 title: lodgementLocation
-permalink: lodgementLocation
+permalink: lodgementLocation.html
 jsonid: lodgementlocation
 ---

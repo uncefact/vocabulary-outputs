@@ -1,5 +1,5 @@
 ---
 title: recordedStatusConditionCode
-permalink: recordedStatusConditionCode
+permalink: recordedStatusConditionCode.html
 jsonid: recordedstatusconditioncode
 ---

@@ -1,5 +1,5 @@
 ---
 title: governmentActionResponsibleAgencyActionCode
-permalink: governmentActionResponsibleAgencyActionCode
+permalink: governmentActionResponsibleAgencyActionCode.html
 jsonid: governmentactionresponsibleagencyactioncode
 ---

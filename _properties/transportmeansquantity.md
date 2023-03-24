@@ -1,5 +1,5 @@
 ---
 title: transportMeansQuantity
-permalink: transportMeansQuantity
+permalink: transportMeansQuantity.html
 jsonid: transportmeansquantity
 ---

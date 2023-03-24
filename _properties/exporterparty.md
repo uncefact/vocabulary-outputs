@@ -1,5 +1,5 @@
 ---
 title: exporterParty
-permalink: exporterParty
+permalink: exporterParty.html
 jsonid: exporterparty
 ---

@@ -1,5 +1,5 @@
 ---
 title: criticalitySafetyIndexNumeric
-permalink: criticalitySafetyIndexNumeric
+permalink: criticalitySafetyIndexNumeric.html
 jsonid: criticalitysafetyindexnumeric
 ---

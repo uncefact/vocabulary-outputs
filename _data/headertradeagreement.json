@@ -3,53 +3,6 @@
     "label": "HeaderTradeAgreement",
     "uri": "unece:HeaderTradeAgreement",
     "comment": "The contractual terms of a header trade agreement.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:buyerApprovedDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement."
-        },
-        {
-            "uri": "unece:buyerReference",
-            "type": "xsd:string",
-            "comment": "A buyer reference, expressed as text, for this header trade agreement."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "An identifier for this header trade agreement."
-        },
-        {
-            "uri": "unece:impactCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the impact for this header trade agreement."
-        },
-        {
-            "uri": "unece:priorityCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the priority for this header trade agreement."
-        },
-        {
-            "uri": "unece:priorityDescriptionCode",
-            "type": "unece:UNCL4037Code",
-            "comment": "The code specifying the delivery priority for this header trade agreement."
-        },
-        {
-            "uri": "unece:reference",
-            "type": "xsd:string",
-            "comment": "A reference, expressed as text, for this header trade agreement."
-        },
-        {
-            "uri": "unece:revisionId",
-            "type": "xsd:token",
-            "comment": "An identifier for the revision of this header trade agreement."
-        },
-        {
-            "uri": "unece:sellerReference",
-            "type": "xsd:string",
-            "comment": "A seller reference, expressed as text, for this header trade agreement."
-        }
-    ],
     "objectProperties": [
         {
             "uri": "unece:additionalDocument",
@@ -92,6 +45,11 @@
             "comment": "The buyer agent party for this header trade agreement."
         },
         {
+            "uri": "unece:buyerApprovedDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement."
+        },
+        {
             "uri": "unece:buyerAssignedAccountantParty",
             "type": "unece:TradeParty",
             "comment": "The party assigned as an accountant by the buyer for this header trade agreement."
@@ -105,6 +63,11 @@
             "uri": "unece:buyerParty",
             "type": "unece:TradeParty",
             "comment": "The buyer party for this header trade agreement."
+        },
+        {
+            "uri": "unece:buyerReference",
+            "type": "xsd:string",
+            "comment": "A buyer reference, expressed as text, for this header trade agreement."
         },
         {
             "uri": "unece:buyerRequisitionerParty",
@@ -167,6 +130,16 @@
             "comment": "The export licence document referenced in this header trade agreement."
         },
         {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "An identifier for this header trade agreement."
+        },
+        {
+            "uri": "unece:impactCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the impact for this header trade agreement."
+        },
+        {
             "uri": "unece:importLicenceDocument",
             "type": "unece:Document",
             "comment": "The import licence document referenced in this header trade agreement."
@@ -222,6 +195,16 @@
             "comment": "The seller party acting as the prime contractor for this header trade agreement."
         },
         {
+            "uri": "unece:priorityCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the priority for this header trade agreement."
+        },
+        {
+            "uri": "unece:priorityDescriptionCode",
+            "type": "unece:PriorityDescriptionCodeList",
+            "comment": "The code specifying the delivery priority for this header trade agreement."
+        },
+        {
             "uri": "unece:procurementParty",
             "type": "unece:TradeParty",
             "comment": "The procurement party for this header trade agreement."
@@ -272,6 +255,11 @@
             "comment": "The quote trade workflow object referenced in this header trade agreement."
         },
         {
+            "uri": "unece:reference",
+            "type": "xsd:string",
+            "comment": "A reference, expressed as text, for this header trade agreement."
+        },
+        {
             "uri": "unece:relevantParty",
             "type": "unece:TradeParty",
             "comment": "A relevant party for this header trade agreement."
@@ -285,6 +273,11 @@
             "uri": "unece:requisitionerDocument",
             "type": "unece:Document",
             "comment": "A requisitioner document referenced in this header trade agreement."
+        },
+        {
+            "uri": "unece:revisionId",
+            "type": "xsd:string",
+            "comment": "An identifier for the revision of this header trade agreement."
         },
         {
             "uri": "unece:salesAgentParty",
@@ -317,13 +310,18 @@
             "comment": "The seller party for this header trade agreement."
         },
         {
+            "uri": "unece:sellerReference",
+            "type": "xsd:string",
+            "comment": "A seller reference, expressed as text, for this header trade agreement."
+        },
+        {
             "uri": "unece:sellerTaxRepresentativeParty",
             "type": "unece:TradeParty",
             "comment": "The party acting as a tax representative for the seller for this header trade agreement."
         },
         {
             "uri": "unece:shippingPeriod",
-            "type": "unece:Period",
+            "type": "unece:SpecifiedPeriod",
             "comment": "The shipping period specified in this header trade agreement."
         },
         {
@@ -349,7 +347,7 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableTradeAgreement",
+            "uri": "unece:applicableHeaderTradeAgreement",
             "comment": "A trade agreement header applicable to this supply chain trade transaction, such as payment or delivery terms."
         }
     ]

@@ -1,5 +1,5 @@
 ---
 title: carrierProvidedInformation
-permalink: carrierProvidedInformation
+permalink: carrierProvidedInformation.html
 jsonid: carrierprovidedinformation
 ---

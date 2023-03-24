@@ -1,5 +1,5 @@
 ---
 title: FinancialInstitutionAddress
-permalink: FinancialInstitutionAddress
+permalink: FinancialInstitutionAddress.html
 jsonid: financialinstitutionaddress
 ---

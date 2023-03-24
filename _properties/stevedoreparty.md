@@ -1,5 +1,5 @@
 ---
 title: stevedoreParty
-permalink: stevedoreParty
+permalink: stevedoreParty.html
 jsonid: stevedoreparty
 ---

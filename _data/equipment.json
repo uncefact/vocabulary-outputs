@@ -2,12 +2,17 @@
 {
     "label": "Equipment",
     "uri": "unece:Equipment",
-    "comment": "A necessary item or object for a particular purpose.",
-    "datatypeProperties": [
+    "comment": "Hardware or software typically marketed by a company other than the original manufacturer.",
+    "objectProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "An identifier of this OEM equipment."
+        },
+        {
+            "uri": "unece:manufacturerParty",
+            "type": "unece:TradeParty",
+            "comment": "The manufacturer party for this OEM equipment."
         },
         {
             "uri": "unece:pollingCapabilityIndicator",
@@ -16,25 +21,13 @@
         },
         {
             "uri": "unece:pollingRateMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:MeasureType",
             "comment": "The measure of the polling rate for this OEM equipment."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a type of OEM equipment."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableCharacteristic",
-            "type": "unece:Characteristic",
-            "comment": "A physical characteristic applicable to this OEM equipment."
-        },
-        {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this OEM equipment."
         }
     ],
     "referencedBy": [

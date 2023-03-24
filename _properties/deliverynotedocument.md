@@ -1,5 +1,5 @@
 ---
 title: deliveryNoteDocument
-permalink: deliveryNoteDocument
+permalink: deliveryNoteDocument.html
 jsonid: deliverynotedocument
 ---

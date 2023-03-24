@@ -1,5 +1,5 @@
 ---
 title: mode
-permalink: mode
+permalink: mode.html
 jsonid: mode
 ---

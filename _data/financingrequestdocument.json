@@ -3,7 +3,12 @@
     "label": "FinancingRequestDocument",
     "uri": "unece:FinancingRequestDocument",
     "comment": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
-    "datatypeProperties": [
+    "objectProperties": [
+        {
+            "uri": "unece:additionalInformationIncludedNote",
+            "type": "unece:Note",
+            "comment": "An additional information note included for this financing request document."
+        },
         {
             "uri": "unece:agreementInformation",
             "type": "xsd:string",
@@ -20,51 +25,44 @@
             "comment": "A cancellation reason, expressed as text, in this financing request document."
         },
         {
+            "uri": "unece:contractualClause",
+            "type": "unece:Clause",
+            "comment": "A contractual document clause specified for this financing request document."
+        },
+        {
             "uri": "unece:copyIndicator",
             "type": "xsd:boolean",
             "comment": "The indication of whether or not this financing request document is a copy rather than an original."
         },
         {
             "uri": "unece:creationDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value for the creation of this financing request document."
         },
         {
-            "uri": "unece:currencyCode",
-            "type": "xsd:token",
+            "uri": "unece:financingRequestDocumentCurrencyCode",
+            "type": "unece:CurrencyCodeList",
             "comment": "The code specifying the currency in this financing request document."
-        },
-        {
-            "uri": "unece:groupId",
-            "type": "xsd:token",
-            "comment": "The group identifier in this financing request document."
-        },
-        {
-            "uri": "unece:groupedTransactionSpecifiedQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of grouped transactions specified in this financing request document."
-        },
-        {
-            "uri": "unece:groupedTransactionTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A total monetary value of grouped transactions in this financing request document."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:additionalInformationIncludedNote",
-            "type": "unece:Note",
-            "comment": "An additional information note included for this financing request document."
-        },
-        {
-            "uri": "unece:contractualClause",
-            "type": "unece:Clause",
-            "comment": "A contractual document clause specified for this financing request document."
         },
         {
             "uri": "unece:firstAgentSpecifiedFinancialInstitution",
             "type": "unece:CreditorFinancialInstitution",
             "comment": "The creditor financial institution specified as the first agent in this financing request document."
+        },
+        {
+            "uri": "unece:groupId",
+            "type": "xsd:string",
+            "comment": "The group identifier in this financing request document."
+        },
+        {
+            "uri": "unece:groupedTransactionSpecifiedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of grouped transactions specified in this financing request document."
+        },
+        {
+            "uri": "unece:groupedTransactionTotalAmount",
+            "type": "unece:AmountType",
+            "comment": "A total monetary value of grouped transactions in this financing request document."
         },
         {
             "uri": "unece:intermediarySpecifiedFinancialInstitution",
@@ -77,7 +75,7 @@
             "comment": "A status of a cancellation specified for this financing request document, such as accepted."
         },
         {
-            "uri": "unece:specifiedParty",
+            "uri": "unece:specifiedRequestingParty",
             "type": "unece:RequestingParty",
             "comment": "The requesting party specified in this financing request document."
         },

@@ -1,5 +1,5 @@
 ---
 title: importLicenceDocument
-permalink: importLicenceDocument
+permalink: importLicenceDocument.html
 jsonid: importlicencedocument
 ---

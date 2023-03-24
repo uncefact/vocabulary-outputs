@@ -1,5 +1,5 @@
 ---
 title: serialId
-permalink: serialId
+permalink: serialId.html
 jsonid: serialid
 ---

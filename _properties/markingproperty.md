@@ -1,5 +1,5 @@
 ---
 title: marking
-permalink: markingProperty
+permalink: markingProperty.html
 jsonid: markingproperty
 ---

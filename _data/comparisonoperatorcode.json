@@ -2,16 +2,28 @@
 {
     "label": "comparisonOperatorCode",
     "uri": "unece:comparisonOperatorCode",
-    "comment": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures.",
+    "comment": [
+        "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures.",
+        "The code specifying the operator, such as less than, for comparing this inspection result characteristic with one or more other characteristics.",
+        "The code specifying the operator, such as less than, greater than or equal to, for comparing the measured value for this sample observation result characteristic."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:InspectionResultCharacteristic",
+            "comment": "A property of a collection of diagnostic data, visual or technical data, obtained by a performed inspection."
+        },
+        {
             "uri": "unece:Measurement",
             "comment": "An amount, size, or extent as established by measuring."
+        },
+        {
+            "uri": "unece:ObservationResultCharacteristic",
+            "comment": "Specifies the type of the performed observation and the acquired values of this observation on the sample."
         }
     ]
 }

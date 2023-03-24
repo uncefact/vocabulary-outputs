@@ -1,5 +1,5 @@
 ---
 title: drainedNetWeightMeasure
-permalink: drainedNetWeightMeasure
+permalink: drainedNetWeightMeasure.html
 jsonid: drainednetweightmeasure
 ---

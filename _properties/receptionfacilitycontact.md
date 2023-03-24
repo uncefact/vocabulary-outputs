@@ -1,5 +1,5 @@
 ---
 title: receptionFacilityContact
-permalink: receptionFacilityContact
+permalink: receptionFacilityContact.html
 jsonid: receptionfacilitycontact
 ---

@@ -1,5 +1,5 @@
 ---
 title: RegisteredTax
-permalink: RegisteredTax
+permalink: RegisteredTax.html
 jsonid: registeredtax
 ---

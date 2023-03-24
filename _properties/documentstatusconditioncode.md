@@ -1,5 +1,5 @@
 ---
 title: documentStatusConditionCode
-permalink: documentStatusConditionCode
+permalink: documentStatusConditionCode.html
 jsonid: documentstatusconditioncode
 ---

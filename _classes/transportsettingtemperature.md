@@ -1,5 +1,5 @@
 ---
 title: TransportSettingTemperature
-permalink: TransportSettingTemperature
+permalink: TransportSettingTemperature.html
 jsonid: transportsettingtemperature
 ---

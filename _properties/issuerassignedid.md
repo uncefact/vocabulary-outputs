@@ -1,5 +1,5 @@
 ---
 title: issuerAssignedId
-permalink: issuerAssignedId
+permalink: issuerAssignedId.html
 jsonid: issuerassignedid
 ---

@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentCategoryCode
-permalink: transportEquipmentCategoryCode
+permalink: transportEquipmentCategoryCode.html
 jsonid: transportequipmentcategorycode
 ---

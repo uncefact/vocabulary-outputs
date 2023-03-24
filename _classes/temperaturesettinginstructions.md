@@ -1,5 +1,5 @@
 ---
 title: TemperatureSettingInstructions
-permalink: TemperatureSettingInstructions
+permalink: TemperatureSettingInstructions.html
 jsonid: temperaturesettinginstructions
 ---

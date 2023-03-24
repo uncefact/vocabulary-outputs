@@ -1,5 +1,5 @@
 ---
 title: subordinateSubordinateSubordinateLocation
-permalink: subordinateSubordinateSubordinateLocation
+permalink: subordinateSubordinateSubordinateLocation.html
 jsonid: subordinatesubordinatesubordinatelocation
 ---

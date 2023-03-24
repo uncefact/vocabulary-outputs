@@ -1,5 +1,5 @@
 ---
 title: FinancingSummaryDocument
-permalink: FinancingSummaryDocument
+permalink: FinancingSummaryDocument.html
 jsonid: financingsummarydocument
 ---

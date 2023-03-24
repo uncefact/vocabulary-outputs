@@ -6,17 +6,32 @@
         "A number of units for this supply chain event.",
         "A unit quantity of this referenced product.",
         "The number of units for this communication event.",
+        "The number of units for this specified experience item.",
         "The number of units for this transport event.",
         "The number of units of attached transport equipment.",
+        "The number of units of this TT event element.",
+        "The number of units of this type of associated transport equipment.",
         "The number of units of this type of logistics transport equipment.",
-        "The number of units of this type of referenced logistics transport equipment."
+        "The number of units of this type of referenced logistics transport equipment.",
+        "The number of units, expressed as a quantity, for this animal batch.",
+        "The number of units, expressed as a quantity, for this crop produce batch.",
+        "The number of units, expressed as a quantity, for this product batch."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:QuantityType",
+            "comment": "Missing description"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:AnimalBatch",
+            "comment": "A group of animals dealt with together."
+        },
+        {
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+        },
         {
             "uri": "unece:AttachedTransportEquipment",
             "comment": "A piece of attached transport equipment, such as a chain or a tarpaulin."
@@ -26,12 +41,28 @@
             "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet."
         },
         {
+            "uri": "unece:CropProduceBatch",
+            "comment": "A group of crop produce considered or dealt with together."
+        },
+        {
+            "uri": "unece:EventElement",
+            "comment": "Information about an event in which a Track and Trace (TT) element of one of more physical or digital objects is identified by a specific object class identifier (such as an electronic product class), either a specific quantity or an unspecified quantity."
+        },
+        {
+            "uri": "unece:ExperienceItem",
+            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
+        },
+        {
             "uri": "unece:LogisticsTransportEquipment",
             "comment": "A piece of equipment used ..."
         },
         {
             "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes."
+        },
+        {
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
         },
         {
             "uri": "unece:SupplyChainEvent",

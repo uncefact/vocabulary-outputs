@@ -1,25 +1,33 @@
 
 {
-    "label": "inspectionEvent",
-    "uri": "unece:inspectionEvent",
-    "comment": [
-        "A supply chain inspection event at this logistics location.",
-        "The inspection event for this trade product instance."
-    ],
-    "rangeIncludes": [
+    "label": "InspectionEvent",
+    "uri": "unece:InspectionEvent",
+    "comment": "A significant occurrence or happening related to an inspection.",
+    "objectProperties": [
         {
-            "uri": "unece:SupplyChainEvent",
-            "comment": "A significant occurrence or happening in a supply chain."
-        }
-    ],
-    "domainIncludes": [
-        {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of the inspection for this event."
         },
         {
-            "uri": "unece:ProductInstance",
-            "comment": "An instance of an individual product or batch of similar products produced by human or mechanical effort or by a natural process."
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the occurrence of this inspection event."
+        },
+        {
+            "uri": "unece:occurrenceLocation",
+            "type": "unece:Location",
+            "comment": "The referenced location where this inspection event will occur or has occurred."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of inspection for this event."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedInspectionEvent"
         }
     ]
 }

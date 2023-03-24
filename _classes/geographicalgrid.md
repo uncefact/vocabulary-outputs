@@ -1,5 +1,5 @@
 ---
 title: GeographicalGrid
-permalink: GeographicalGrid
+permalink: GeographicalGrid.html
 jsonid: geographicalgrid
 ---

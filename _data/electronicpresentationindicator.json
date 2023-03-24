@@ -2,7 +2,10 @@
 {
     "label": "electronicPresentationIndicator",
     "uri": "unece:electronicPresentationIndicator",
-    "comment": "The indication of whether or not this referenced document is presented in an electronic format.",
+    "comment": [
+        "The indication of whether or not this exchanged document is presented in an electronic format.",
+        "The indication of whether or not this referenced document is presented in an electronic format."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:boolean"
@@ -11,7 +14,11 @@
     "domainIncludes": [
         {
             "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:ExchangedDocument",
+            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
         }
     ]
 }

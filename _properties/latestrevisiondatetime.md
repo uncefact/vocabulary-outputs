@@ -1,5 +1,5 @@
 ---
 title: latestRevisionDateTime
-permalink: latestRevisionDateTime
+permalink: latestRevisionDateTime.html
 jsonid: latestrevisiondatetime
 ---

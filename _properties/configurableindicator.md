@@ -1,5 +1,5 @@
 ---
 title: configurableIndicator
-permalink: configurableIndicator
+permalink: configurableIndicator.html
 jsonid: configurableindicator
 ---

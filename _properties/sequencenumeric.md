@@ -1,5 +1,5 @@
 ---
 title: sequenceNumeric
-permalink: sequenceNumeric
+permalink: sequenceNumeric.html
 jsonid: sequencenumeric
 ---

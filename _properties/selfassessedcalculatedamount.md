@@ -1,5 +1,5 @@
 ---
 title: selfAssessedCalculatedAmount
-permalink: selfAssessedCalculatedAmount
+permalink: selfAssessedCalculatedAmount.html
 jsonid: selfassessedcalculatedamount
 ---

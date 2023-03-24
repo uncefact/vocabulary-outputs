@@ -1,5 +1,5 @@
 ---
 title: accompaniedIndicator
-permalink: accompaniedIndicator
+permalink: accompaniedIndicator.html
 jsonid: accompaniedindicator
 ---

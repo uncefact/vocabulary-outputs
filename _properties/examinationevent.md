@@ -1,5 +1,5 @@
 ---
 title: examinationEvent
-permalink: examinationEvent
+permalink: examinationEvent.html
 jsonid: examinationevent
 ---

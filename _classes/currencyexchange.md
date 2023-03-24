@@ -1,5 +1,5 @@
 ---
 title: CurrencyExchange
-permalink: CurrencyExchange
+permalink: CurrencyExchange.html
 jsonid: currencyexchange
 ---

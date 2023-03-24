@@ -1,5 +1,5 @@
 ---
 title: containerizationIndicator
-permalink: containerizationIndicator
+permalink: containerizationIndicator.html
 jsonid: containerizationindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: substitutedProduct
-permalink: substitutedProduct
+permalink: substitutedProduct.html
 jsonid: substitutedproduct
 ---

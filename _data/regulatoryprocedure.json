@@ -2,32 +2,57 @@
 {
     "label": "RegulatoryProcedure",
     "uri": "unece:RegulatoryProcedure",
-    "comment": "A set of formal steps to satisfy a regulation, law or convention.",
-    "datatypeProperties": [
+    "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention.",
+    "objectProperties": [
         {
             "uri": "unece:acquisitionDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value of an acquisition for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:amendmentReasonCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a reason for an amendment to this cross-border regulatory procedure."
         },
         {
             "uri": "unece:annualQuotaQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The annual quota quantity under this cross-border regulatory procedure."
         },
         {
+            "uri": "unece:applicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The applicable currency exchange for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:applicablePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A period applicable to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:applicableTax",
+            "type": "unece:TradeTax",
+            "comment": "A tax, levy or duty applicable to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:borderClearanceInstructions",
+            "type": "unece:TransportInstructions",
+            "comment": "Border clearance instructions for this cross-border regulatory procedure."
+        },
+        {
             "uri": "unece:categoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
             "uri": "unece:certificationBasis",
             "type": "xsd:string",
             "comment": "A basis for a certification, expressed as text, for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:consignmentDestinationSpecifiedLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A consignment destination location specified for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:controlRequirementIndicator",
@@ -46,22 +71,32 @@
         },
         {
             "uri": "unece:crossBorderRegulatoryProcedurePaymentMethodCode",
-            "type": "unece:UNCL4439Code",
+            "type": "unece:PaymentMethodCodeList",
             "comment": "The code specifying the payment method for this cross-border regulatory procedure, such as by deferred payment method."
         },
         {
             "uri": "unece:crossBorderRegulatoryProcedureTypeCode",
-            "type": "unece:UNCL9353Code",
+            "type": "xsd:string",
             "comment": "A code specifying a type of cross-border regulatory procedure."
         },
         {
+            "uri": "unece:customsProcedureGuaranteeCode",
+            "type": "unece:CustomsProcedureGuaranteeCodeList",
+            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
+        },
+        {
             "uri": "unece:declarantAssignedDeclarationId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The declarant assigned identifier of a declaration for this cross-border regulatory procedure."
         },
         {
+            "uri": "unece:declarationLodgementLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "The location at which a declaration has been lodged for this cross-border regulatory procedure."
+        },
+        {
             "uri": "unece:deferredPayableTotalChargeAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "A monetary value of the total charges, including tariff and non-tariff charges, deferred for this cross-border regulatory procedure."
         },
         {
@@ -70,161 +105,9 @@
             "comment": "The indication of whether or not the deferred payment method is applicable to this cross-border regulatory procedure."
         },
         {
-            "uri": "unece:exportLicenceControlClassificationId",
-            "type": "xsd:token",
-            "comment": "The identifier of the export licence classification for control purposes relevant to this cross-border regulatory procedure, such as per the Wassenaar agreement concerning trade in weapons and dual-use goods and technologies."
-        },
-        {
-            "uri": "unece:goodsStatusCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the goods status for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:governmentActionResponsibleAgencyActionCode",
-            "type": "unece:UNCL9417Code",
-            "comment": "A code specifying an action for a responsible agency in this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:guarantee",
-            "type": "xsd:string",
-            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:guaranteeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:immediatePayableTotalChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total charges, including tariff and non-tariff charges, immediately payable for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:nonTariffChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of all non-tariff charges for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:originCriteria",
-            "type": "xsd:string",
-            "comment": "The origin criteria, expressed as text, for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:performanceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "A date, time, date time, or other date time value on which this cross-border regulatory procedure was, or will be, performed."
-        },
-        {
-            "uri": "unece:previousProcedureTypeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a type of previous procedure for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:quotaId",
-            "type": "xsd:token",
-            "comment": "A quota identifier for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:registeredDeferredPaymentPayerId",
-            "type": "xsd:token",
-            "comment": "The identifier of the registered deferred payment payer for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:remark",
-            "type": "xsd:string",
-            "comment": "A remark, expressed as text, for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:requestOverrideCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a request, including a reason, to override previously submitted information for this cross-border regulatory procedure, such as due to an error condition."
-        },
-        {
-            "uri": "unece:responsibleGovernmentAgencyInvolvementResponsibleAgencyInvolvementCode",
-            "type": "unece:UNCL9411Code",
-            "comment": "A code specifying a responsible agency involved in this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:responsibleGovernmentAgencyResponsibleAgencyCode",
-            "type": "unece:UNCL9415Code",
-            "comment": "The code specifying the agency responsible for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:tariffAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a tariff for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:tariffDeductionQuantity",
-            "type": "xsd:decimal",
-            "comment": "A quantity to be deducted from the tariff quantity for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:tariffQuantity",
-            "type": "xsd:decimal",
-            "comment": "A tariff quantity for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:totalChargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the total charges, including tariff and non-tariff charges, for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:totalConsignmentValueAmount",
-            "type": "xsd:decimal",
-            "comment": "The total monetary value for a consignment for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:transactionNatureCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the nature of a transaction for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:transportMovementTypeCode",
-            "type": "unece:UNCL8323Code",
-            "comment": "A code specifying the transport movement type, such as import, export, transit, for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:usedToDateQuotaQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity of the quota used to date under this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:valuationBasisAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the basis on which the valuation is, or will be, calculated for this cross-border regulatory procedure."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableCurrencyExchange",
-            "type": "unece:CurrencyExchange",
-            "comment": "The applicable currency exchange for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:applicablePeriod",
-            "type": "unece:Period",
-            "comment": "A period applicable to this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:applicableTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax, levy or duty applicable to this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:borderClearanceInstructions",
-            "type": "unece:TransportInstructions",
-            "comment": "Border clearance instructions for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:consignmentDestinationSpecifiedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A consignment destination location specified for this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:declarationLodgementLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The location at which a declaration has been lodged for this cross-border regulatory procedure."
+            "uri": "unece:document",
+            "type": "unece:Document",
+            "comment": "A document referenced by this cross-border regulatory procedure."
         },
         {
             "uri": "unece:entryCustomsOfficeSpecifiedLocation",
@@ -252,9 +135,49 @@
             "comment": "The location of the specified customs office which is responsible for export formalities for the goods which are subject to this cross-border regulatory procedure."
         },
         {
+            "uri": "unece:exportLicenceControlClassificationId",
+            "type": "xsd:string",
+            "comment": "The identifier of the export licence classification for control purposes relevant to this cross-border regulatory procedure, such as per the Wassenaar agreement concerning trade in weapons and dual-use goods and technologies."
+        },
+        {
+            "uri": "unece:freeTradeAgreementName",
+            "type": "xsd:string",
+            "comment": "The name of a free trade agreement, expressed as text, for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:goodsStatusCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the goods status for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:governmentActionResponsibleAgencyActionCode",
+            "type": "unece:GovernmentActionCodeList",
+            "comment": "A code specifying an action for a responsible agency in this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:guarantee",
+            "type": "xsd:string",
+            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:immediatePayableTotalChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the total charges, including tariff and non-tariff charges, immediately payable for this cross-border regulatory procedure."
+        },
+        {
             "uri": "unece:importCustomsOfficeSpecifiedLocation",
             "type": "unece:LogisticsLocation",
             "comment": "The location of the specified customs office which is responsible for import formalities for the goods which are subject to this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:nonTariffChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of all non-tariff charges for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:originCriteria",
+            "type": "xsd:string",
+            "comment": "The origin criteria, expressed as text, for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:paymentOfficeLocation",
@@ -262,23 +185,48 @@
             "comment": "The location of an office at which a payment relevant to this cross-border regulatory procedure is made."
         },
         {
+            "uri": "unece:performanceDateTime",
+            "type": "xsd:string",
+            "comment": "A date, time, date time, or other date time value on which this cross-border regulatory procedure was, or will be, performed."
+        },
+        {
             "uri": "unece:previousDocument",
             "type": "unece:Document",
             "comment": "A previous document related to this cross-border regulatory procedure."
         },
         {
-            "uri": "unece:referencedDocument",
-            "type": "unece:Document",
-            "comment": "A document referenced by this cross-border regulatory procedure."
+            "uri": "unece:previousProcedureTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of previous procedure for this cross-border regulatory procedure."
         },
         {
-            "uri": "unece:reportedStatus",
+            "uri": "unece:quotaId",
+            "type": "xsd:string",
+            "comment": "A quota identifier for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:registeredDeferredPaymentPayerId",
+            "type": "xsd:string",
+            "comment": "The identifier of the registered deferred payment payer for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:remark",
+            "type": "xsd:string",
+            "comment": "A remark, expressed as text, for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:reportedLogisticsStatus",
             "type": "unece:LogisticsStatus",
             "comment": "A logistics status reported for this cross-border regulatory procedure."
         },
         {
+            "uri": "unece:requestOverrideCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a request, including a reason, to override previously submitted information for this cross-border regulatory procedure, such as due to an error condition."
+        },
+        {
             "uri": "unece:requiredChemicalTreatment",
-            "type": "unece:ChemicalTreatment",
+            "type": "unece:AppliedChemicalTreatment",
             "comment": "A chemical treatment applied as required by this cross-border regulatory procedure."
         },
         {
@@ -292,9 +240,14 @@
             "comment": "A report of a certification test and its attributes that is required for this cross-border regulatory procedure."
         },
         {
-            "uri": "unece:specifiedCustomsProcedure",
-            "type": "unece:CustomsProcedure",
-            "comment": "A customs procedure specified for this cross-border regulatory procedure."
+            "uri": "unece:responsibleGovernmentAgencyInvolvementResponsibleAgencyInvolvementCode",
+            "type": "unece:ResponsibleGovernmentAgencyInvolvementCodeList",
+            "comment": "A code specifying a responsible agency involved in this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:responsibleGovernmentAgencyResponsibleAgencyCode",
+            "type": "unece:ResponsibleGovernmentAgencyCodeList",
+            "comment": "The code specifying the agency responsible for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:specifiedDebtorFinancialAccount",
@@ -307,6 +260,36 @@
             "comment": "A statement note for this cross-border regulatory procedure."
         },
         {
+            "uri": "unece:tariffAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of a tariff for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:tariffDeductionQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A quantity to be deducted from the tariff quantity for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:tariffQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A tariff quantity for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:totalChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the total charges, including tariff and non-tariff charges, for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:totalConsignmentValueAmount",
+            "type": "unece:AmountType",
+            "comment": "The total monetary value for a consignment for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:transactionNatureCode",
+            "type": "xsd:string",
+            "comment": "A code specifying the nature of a transaction for this cross-border regulatory procedure."
+        },
+        {
             "uri": "unece:transitCustomsOfficeSpecifiedLocation",
             "type": "unece:LogisticsLocation",
             "comment": "A location of a specified customs office which is responsible for transit formalities en route for the goods which are subject to this cross-border regulatory procedure."
@@ -317,15 +300,29 @@
             "comment": "A location of a specified customs office at which the goods which are subject to this cross-border regulatory procedure are released from a customs transit regime."
         },
         {
+            "uri": "unece:transportMovementTypeCode",
+            "type": "unece:TransportMovementTypeCodeList",
+            "comment": "A code specifying the transport movement type, such as import, export, transit, for this cross-border regulatory procedure."
+        },
+        {
             "uri": "unece:treatmentEvent",
             "type": "unece:TransportEvent",
             "comment": "A treatment event for this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:usedToDateQuotaQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity of the quota used to date under this cross-border regulatory procedure."
+        },
+        {
+            "uri": "unece:valuationBasisAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the basis on which the valuation is, or will be, calculated for this cross-border regulatory procedure."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableRegulatoryProcedure",
-            "comment": "A cross-border regulatory procedure applicable ..."
+            "uri": "unece:applicableRegulatoryProcedure"
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
 title: securityLevelCode
-permalink: securityLevelCode
+permalink: securityLevelCode.html
 jsonid: securitylevelcode
 ---

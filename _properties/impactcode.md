@@ -1,5 +1,5 @@
 ---
 title: impactCode
-permalink: impactCode
+permalink: impactCode.html
 jsonid: impactcode
 ---

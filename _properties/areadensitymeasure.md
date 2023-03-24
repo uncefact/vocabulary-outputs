@@ -1,5 +1,5 @@
 ---
 title: areaDensityMeasure
-permalink: areaDensityMeasure
+permalink: areaDensityMeasure.html
 jsonid: areadensitymeasure
 ---

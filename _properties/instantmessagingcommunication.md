@@ -1,5 +1,5 @@
 ---
 title: instantMessagingCommunication
-permalink: instantMessagingCommunication
+permalink: instantMessagingCommunication.html
 jsonid: instantmessagingcommunication
 ---

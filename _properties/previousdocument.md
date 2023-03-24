@@ -1,5 +1,5 @@
 ---
 title: previousDocument
-permalink: previousDocument
+permalink: previousDocument.html
 jsonid: previousdocument
 ---

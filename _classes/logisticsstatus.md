@@ -1,5 +1,5 @@
 ---
 title: LogisticsStatus
-permalink: LogisticsStatus
+permalink: LogisticsStatus.html
 jsonid: logisticsstatus
 ---

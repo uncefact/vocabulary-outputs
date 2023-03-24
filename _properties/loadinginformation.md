@@ -1,5 +1,5 @@
 ---
 title: loadingInformation
-permalink: loadingInformation
+permalink: loadingInformation.html
 jsonid: loadinginformation
 ---

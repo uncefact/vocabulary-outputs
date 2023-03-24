@@ -1,5 +1,5 @@
 ---
 title: constraintIndicator
-permalink: constraintIndicator
+permalink: constraintIndicator.html
 jsonid: constraintindicator
 ---

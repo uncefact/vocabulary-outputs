@@ -1,5 +1,5 @@
 ---
 title: buyerReference
-permalink: buyerReference
+permalink: buyerReference.html
 jsonid: buyerreference
 ---

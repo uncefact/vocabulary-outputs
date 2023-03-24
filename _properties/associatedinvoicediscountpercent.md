@@ -1,5 +1,5 @@
 ---
 title: associatedInvoiceDiscountPercent
-permalink: associatedInvoiceDiscountPercent
+permalink: associatedInvoiceDiscountPercent.html
 jsonid: associatedinvoicediscountpercent
 ---

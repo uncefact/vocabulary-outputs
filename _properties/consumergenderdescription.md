@@ -1,5 +1,5 @@
 ---
 title: consumerGenderDescription
-permalink: consumerGenderDescription
+permalink: consumerGenderDescription.html
 jsonid: consumergenderdescription
 ---

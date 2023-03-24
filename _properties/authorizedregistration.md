@@ -1,5 +1,5 @@
 ---
 title: authorizedRegistration
-permalink: authorizedRegistration
+permalink: authorizedRegistration.html
 jsonid: authorizedregistration
 ---

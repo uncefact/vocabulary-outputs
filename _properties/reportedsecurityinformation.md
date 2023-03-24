@@ -1,5 +1,5 @@
 ---
 title: reportedSecurityInformation
-permalink: reportedSecurityInformation
+permalink: reportedSecurityInformation.html
 jsonid: reportedsecurityinformation
 ---

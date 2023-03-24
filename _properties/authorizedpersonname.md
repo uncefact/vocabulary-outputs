@@ -1,5 +1,5 @@
 ---
 title: authorizedPersonName
-permalink: authorizedPersonName
+permalink: authorizedPersonName.html
 jsonid: authorizedpersonname
 ---

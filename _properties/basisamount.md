@@ -1,5 +1,5 @@
 ---
 title: basisAmount
-permalink: basisAmount
+permalink: basisAmount.html
 jsonid: basisamount
 ---

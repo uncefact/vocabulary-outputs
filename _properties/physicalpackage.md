@@ -1,5 +1,5 @@
 ---
 title: physicalPackage
-permalink: physicalPackage
+permalink: physicalPackage.html
 jsonid: physicalpackage
 ---

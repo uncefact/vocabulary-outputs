@@ -1,5 +1,5 @@
 ---
 title: requestedFinancingAmount
-permalink: requestedFinancingAmount
+permalink: requestedFinancingAmount.html
 jsonid: requestedfinancingamount
 ---

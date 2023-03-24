@@ -1,5 +1,5 @@
 ---
 title: packingInstructionTypeCode
-permalink: packingInstructionTypeCode
+permalink: packingInstructionTypeCode.html
 jsonid: packinginstructiontypecode
 ---

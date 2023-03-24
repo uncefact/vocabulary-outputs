@@ -1,5 +1,5 @@
 ---
 title: originAssociatedDirectPositionList
-permalink: originAssociatedDirectPositionList
+permalink: originAssociatedDirectPositionList.html
 jsonid: originassociateddirectpositionlist
 ---

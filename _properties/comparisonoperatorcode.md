@@ -1,5 +1,5 @@
 ---
 title: comparisonOperatorCode
-permalink: comparisonOperatorCode
+permalink: comparisonOperatorCode.html
 jsonid: comparisonoperatorcode
 ---

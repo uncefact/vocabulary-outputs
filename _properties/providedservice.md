@@ -1,5 +1,5 @@
 ---
 title: providedService
-permalink: providedService
+permalink: providedService.html
 jsonid: providedservice
 ---

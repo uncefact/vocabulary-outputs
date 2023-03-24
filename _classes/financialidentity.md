@@ -1,5 +1,5 @@
 ---
 title: FinancialIdentity
-permalink: FinancialIdentity
+permalink: FinancialIdentity.html
 jsonid: financialidentity
 ---

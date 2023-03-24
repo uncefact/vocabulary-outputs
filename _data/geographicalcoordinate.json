@@ -3,30 +3,30 @@
     "label": "GeographicalCoordinate",
     "uri": "unece:GeographicalCoordinate",
     "comment": "A set of geographical coordinates of a specific point such as the longitude, latitude and altitude.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:acquisitionDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value of the acquisition of this geographical coordinate."
         },
         {
             "uri": "unece:alternativeSourceSystemId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "An alternative source system identifier for this geographical coordinate."
         },
         {
             "uri": "unece:altimetricSystemId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of the system used for measuring the altitude."
         },
         {
             "uri": "unece:altitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this specified geographical coordinate (Reference ISO 6709)."
+            "type": "unece:MeasureType",
+            "comment": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this geographical coordinate (Reference ISO 6709)."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier for this geographical coordinate."
         },
         {
@@ -36,22 +36,22 @@
         },
         {
             "uri": "unece:latitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the latitude as an angular distance north or south from the Equator meridian to the meridian of a specific place for this specified geographical coordinate. (Reference ISO 6709)."
+            "type": "unece:MeasureType",
+            "comment": "The measure of the latitude as an angular distance north or south from the Equator meridian to the meridian of a specific place for this geographical coordinate (Reference ISO 6709)."
         },
         {
             "uri": "unece:longitudeDirectionIndicator",
             "type": "xsd:boolean",
-            "comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this specified geographical coordinate. (Reference ISO 6709)."
+            "comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this geographical coordinate (Reference ISO 6709)."
         },
         {
             "uri": "unece:longitudeMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a specific place for this specified geographical coordinate. (Reference ISO 6709)."
+            "type": "unece:MeasureType",
+            "comment": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a specific place (Reference ISO 6709)."
         },
         {
             "uri": "unece:systemId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of the reference system used for measuring a geographical coordinate."
         },
         {
@@ -61,16 +61,14 @@
         },
         {
             "uri": "unece:timeZoneCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the time zone of this geographical coordinate."
         },
         {
             "uri": "unece:timeZoneDateTime",
             "type": "xsd:dateTime",
             "comment": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
-        }
-    ],
-    "objectProperties": [
+        },
         {
             "uri": "unece:usedCoordinateReferenceSystem",
             "type": "unece:CoordinateReferenceSystem",
@@ -92,12 +90,7 @@
             "comment": "The latest geographical coordinates received by this monitoring IOT device, from the perspective of the receiver."
         },
         {
-            "uri": "unece:physicalGeographicalCoordinate",
-            "comment": "Geographical coordinate information for this ..."
-        },
-        {
-            "uri": "unece:specifiedGeographicalCoordinate",
-            "comment": "Geographical coordinate information specified for this linear ring."
+            "uri": "unece:physicalGeographicalCoordinate"
         }
     ]
 }

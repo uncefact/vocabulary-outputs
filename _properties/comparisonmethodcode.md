@@ -1,5 +1,5 @@
 ---
 title: comparisonMethodCode
-permalink: comparisonMethodCode
+permalink: comparisonMethodCode.html
 jsonid: comparisonmethodcode
 ---

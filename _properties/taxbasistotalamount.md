@@ -1,5 +1,5 @@
 ---
 title: taxBasisTotalAmount
-permalink: taxBasisTotalAmount
+permalink: taxBasisTotalAmount.html
 jsonid: taxbasistotalamount
 ---

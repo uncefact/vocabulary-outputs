@@ -1,5 +1,5 @@
 ---
 title: actualAmount
-permalink: actualAmount
+permalink: actualAmount.html
 jsonid: actualamount
 ---

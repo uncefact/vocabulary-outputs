@@ -1,5 +1,5 @@
 ---
 title: stowagePositionId
-permalink: stowagePositionId
+permalink: stowagePositionId.html
 jsonid: stowagepositionid
 ---

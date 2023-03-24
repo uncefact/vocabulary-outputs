@@ -1,5 +1,5 @@
 ---
 title: imageBinaryObject
-permalink: imageBinaryObject
+permalink: imageBinaryObject.html
 jsonid: imagebinaryobject
 ---

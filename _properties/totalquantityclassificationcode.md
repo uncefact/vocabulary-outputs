@@ -1,5 +1,5 @@
 ---
 title: totalQuantityClassificationCode
-permalink: totalQuantityClassificationCode
+permalink: totalQuantityClassificationCode.html
 jsonid: totalquantityclassificationcode
 ---

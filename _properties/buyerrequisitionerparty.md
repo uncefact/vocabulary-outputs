@@ -1,5 +1,5 @@
 ---
 title: buyerRequisitionerParty
-permalink: buyerRequisitionerParty
+permalink: buyerRequisitionerParty.html
 jsonid: buyerrequisitionerparty
 ---

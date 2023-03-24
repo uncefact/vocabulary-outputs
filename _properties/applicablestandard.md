@@ -1,5 +1,5 @@
 ---
 title: applicableStandard
-permalink: applicableStandard
+permalink: applicableStandard.html
 jsonid: applicablestandard
 ---

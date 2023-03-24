@@ -1,5 +1,5 @@
 ---
 title: associatedGeographicalFeature
-permalink: associatedGeographicalFeature
+permalink: associatedGeographicalFeature.html
 jsonid: associatedgeographicalfeature
 ---

@@ -1,5 +1,5 @@
 ---
 title: tradePaymentTermsDirectDebitMandateId
-permalink: tradePaymentTermsDirectDebitMandateId
+permalink: tradePaymentTermsDirectDebitMandateId.html
 jsonid: tradepaymenttermsdirectdebitmandateid
 ---

@@ -1,0 +1,29 @@
+
+{
+    "label": "LineTradeTransaction",
+    "uri": "unece:LineTradeTransaction",
+    "comment": "A group of trade line items, trade line agreement, trade line delivery and trade line settlement details.",
+    "objectProperties": [
+        {
+            "uri": "unece:applicableLineTradeAgreement",
+            "type": "unece:LineTradeAgreement",
+            "comment": "A trade agreement applicable to this line trade transaction, such as payment or delivery terms."
+        },
+        {
+            "uri": "unece:applicableLineTradeDelivery",
+            "type": "unece:LineTradeDelivery",
+            "comment": "A trade delivery applicable to this line trade transaction."
+        },
+        {
+            "uri": "unece:includedTradeProduct",
+            "type": "unece:TradeProduct",
+            "comment": "A trade product included in this line trade transaction."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:tradeTransaction",
+            "comment": "A trade transaction referenced in this line trade settlement."
+        }
+    ]
+}

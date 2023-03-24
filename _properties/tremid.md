@@ -1,5 +1,5 @@
 ---
 title: tREMId
-permalink: tREMId
+permalink: tREMId.html
 jsonid: tremid
 ---

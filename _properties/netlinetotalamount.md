@@ -1,5 +1,5 @@
 ---
 title: netLineTotalAmount
-permalink: netLineTotalAmount
+permalink: netLineTotalAmount.html
 jsonid: netlinetotalamount
 ---

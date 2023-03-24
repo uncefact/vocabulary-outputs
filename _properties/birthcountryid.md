@@ -1,5 +1,5 @@
 ---
 title: birthCountryId
-permalink: birthCountryId
+permalink: birthCountryId.html
 jsonid: birthcountryid
 ---

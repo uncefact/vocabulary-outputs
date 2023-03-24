@@ -1,5 +1,5 @@
 ---
 title: performanceDateTime
-permalink: performanceDateTime
+permalink: performanceDateTime.html
 jsonid: performancedatetime
 ---

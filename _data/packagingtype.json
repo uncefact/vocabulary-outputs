@@ -2,7 +2,10 @@
 {
     "label": "packagingType",
     "uri": "unece:packagingType",
-    "comment": "The type, expressed as text, of supply chain packaging.",
+    "comment": [
+        "The type, expressed as text, of supply chain packaging.",
+        "The type, expressed as text, of this logistics packaging."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -10,8 +13,12 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Packaging",
-            "comment": "Any wrapping or containment, such as a box or a barrel, of goods."
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

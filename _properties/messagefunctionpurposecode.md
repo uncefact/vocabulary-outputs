@@ -1,5 +1,5 @@
 ---
 title: messageFunctionPurposeCode
-permalink: messageFunctionPurposeCode
+permalink: messageFunctionPurposeCode.html
 jsonid: messagefunctionpurposecode
 ---

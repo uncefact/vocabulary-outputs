@@ -1,5 +1,5 @@
 ---
 title: requiredTestSpecificationReport
-permalink: requiredTestSpecificationReport
+permalink: requiredTestSpecificationReport.html
 jsonid: requiredtestspecificationreport
 ---

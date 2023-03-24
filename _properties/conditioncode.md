@@ -1,5 +1,5 @@
 ---
 title: conditionCode
-permalink: conditionCode
+permalink: conditionCode.html
 jsonid: conditioncode
 ---

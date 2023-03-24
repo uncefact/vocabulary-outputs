@@ -1,5 +1,5 @@
 ---
 title: payerReference
-permalink: payerReference
+permalink: payerReference.html
 jsonid: payerreference
 ---

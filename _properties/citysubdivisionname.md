@@ -1,5 +1,5 @@
 ---
 title: citySubDivisionName
-permalink: citySubDivisionName
+permalink: citySubDivisionName.html
 jsonid: citysubdivisionname
 ---

@@ -1,5 +1,5 @@
 ---
 title: reportableQuantity
-permalink: reportableQuantity
+permalink: reportableQuantity.html
 jsonid: reportablequantity
 ---

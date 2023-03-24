@@ -1,5 +1,5 @@
 ---
 title: minimumStorageHumidityApplicableMeasure
-permalink: minimumStorageHumidityApplicableMeasure
+permalink: minimumStorageHumidityApplicableMeasure.html
 jsonid: minimumstoragehumidityapplicablemeasure
 ---

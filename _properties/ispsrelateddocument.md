@@ -1,5 +1,5 @@
 ---
 title: iSPSRelatedDocument
-permalink: iSPSRelatedDocument
+permalink: iSPSRelatedDocument.html
 jsonid: ispsrelateddocument
 ---

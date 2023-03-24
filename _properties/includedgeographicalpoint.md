@@ -1,5 +1,5 @@
 ---
 title: includedGeographicalPoint
-permalink: includedGeographicalPoint
+permalink: includedGeographicalPoint.html
 jsonid: includedgeographicalpoint
 ---

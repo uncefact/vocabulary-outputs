@@ -1,5 +1,5 @@
 ---
 title: certificationBasis
-permalink: certificationBasis
+permalink: certificationBasis.html
 jsonid: certificationbasis
 ---

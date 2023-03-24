@@ -1,5 +1,5 @@
 ---
 title: notifiedParty
-permalink: notifiedParty
+permalink: notifiedParty.html
 jsonid: notifiedparty
 ---

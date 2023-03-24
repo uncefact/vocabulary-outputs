@@ -1,5 +1,5 @@
 ---
 title: cargoToleranceInformation
-permalink: cargoToleranceInformation
+permalink: cargoToleranceInformation.html
 jsonid: cargotoleranceinformation
 ---

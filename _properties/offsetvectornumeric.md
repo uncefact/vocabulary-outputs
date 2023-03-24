@@ -1,5 +1,5 @@
 ---
 title: offsetVectorNumeric
-permalink: offsetVectorNumeric
+permalink: offsetVectorNumeric.html
 jsonid: offsetvectornumeric
 ---

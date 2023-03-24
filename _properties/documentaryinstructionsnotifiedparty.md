@@ -1,5 +1,5 @@
 ---
 title: documentaryInstructionsNotifiedParty
-permalink: documentaryInstructionsNotifiedParty
+permalink: documentaryInstructionsNotifiedParty.html
 jsonid: documentaryinstructionsnotifiedparty
 ---

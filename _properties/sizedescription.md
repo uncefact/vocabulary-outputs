@@ -1,5 +1,5 @@
 ---
 title: sizeDescription
-permalink: sizeDescription
+permalink: sizeDescription.html
 jsonid: sizedescription
 ---

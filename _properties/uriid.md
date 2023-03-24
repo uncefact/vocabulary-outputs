@@ -1,5 +1,5 @@
 ---
 title: uRIId
-permalink: uRIId
+permalink: uRIId.html
 jsonid: uriid
 ---

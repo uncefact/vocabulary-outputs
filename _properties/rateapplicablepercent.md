@@ -1,5 +1,5 @@
 ---
 title: rateApplicablePercent
-permalink: rateApplicablePercent
+permalink: rateApplicablePercent.html
 jsonid: rateapplicablepercent
 ---

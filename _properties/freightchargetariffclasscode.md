@@ -1,5 +1,5 @@
 ---
 title: freightChargeTariffClassCode
-permalink: freightChargeTariffClassCode
+permalink: freightChargeTariffClassCode.html
 jsonid: freightchargetariffclasscode
 ---

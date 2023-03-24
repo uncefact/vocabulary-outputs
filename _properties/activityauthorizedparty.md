@@ -1,5 +1,5 @@
 ---
 title: activityAuthorizedParty
-permalink: activityAuthorizedParty
+permalink: activityAuthorizedParty.html
 jsonid: activityauthorizedparty
 ---

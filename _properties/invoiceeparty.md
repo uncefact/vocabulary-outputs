@@ -1,5 +1,5 @@
 ---
 title: invoiceeParty
-permalink: invoiceeParty
+permalink: invoiceeParty.html
 jsonid: invoiceeparty
 ---

@@ -1,5 +1,5 @@
 ---
 title: disposalMethodCode
-permalink: disposalMethodCode
+permalink: disposalMethodCode.html
 jsonid: disposalmethodcode
 ---

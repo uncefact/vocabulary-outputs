@@ -1,5 +1,5 @@
 ---
 title: authenticationMethodCode
-permalink: authenticationMethodCode
+permalink: authenticationMethodCode.html
 jsonid: authenticationmethodcode
 ---

@@ -1,5 +1,5 @@
 ---
 title: basisPeriodMeasure
-permalink: basisPeriodMeasure
+permalink: basisPeriodMeasure.html
 jsonid: basisperiodmeasure
 ---

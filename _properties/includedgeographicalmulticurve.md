@@ -1,5 +1,5 @@
 ---
 title: includedGeographicalMultiCurve
-permalink: includedGeographicalMultiCurve
+permalink: includedGeographicalMultiCurve.html
 jsonid: includedgeographicalmulticurve
 ---

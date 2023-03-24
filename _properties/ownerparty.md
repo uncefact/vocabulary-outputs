@@ -1,5 +1,5 @@
 ---
 title: ownerParty
-permalink: ownerParty
+permalink: ownerParty.html
 jsonid: ownerparty
 ---

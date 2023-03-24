@@ -1,5 +1,5 @@
 ---
 title: natureIdentificationCargo
-permalink: natureIdentificationCargo
+permalink: natureIdentificationCargo.html
 jsonid: natureidentificationcargo
 ---

@@ -1,5 +1,5 @@
 ---
 title: partialPaymentPercent
-permalink: partialPaymentPercent
+permalink: partialPaymentPercent.html
 jsonid: partialpaymentpercent
 ---

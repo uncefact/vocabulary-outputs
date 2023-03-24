@@ -1,0 +1,52 @@
+
+{
+    "label": "ProductBatchCertification",
+    "uri": "unece:ProductBatchCertification",
+    "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations.",
+    "objectProperties": [
+        {
+            "uri": "unece:applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this product batch certification."
+        },
+        {
+            "uri": "unece:assertion",
+            "type": "xsd:string",
+            "comment": "An assertion, expressed as text, for this product batch certification, such as a claim that this product is free from gluten."
+        },
+        {
+            "uri": "unece:assertionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the assertion for this product batch certification, such as a claim that a product is free from gluten."
+        },
+        {
+            "uri": "unece:relatedLocation",
+            "type": "unece:Location",
+            "comment": "A referenced location related to this product batch certification."
+        },
+        {
+            "uri": "unece:responsibleAgency",
+            "type": "xsd:string",
+            "comment": "An agency, expressed as text, responsible for this product batch certification."
+        },
+        {
+            "uri": "unece:specifiedAssertion",
+            "type": "unece:Assertion",
+            "comment": "A sustainability assertion specified for this product batch certification."
+        },
+        {
+            "uri": "unece:standard",
+            "type": "xsd:string",
+            "comment": "A standard, expressed as text, used for this product batch certification."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:applicableProductBatchCertification",
+            "comment": "A certification applicable to this product batch."
+        },
+        {
+            "uri": "unece:specifiedProductBatchCertification"
+        }
+    ]
+}

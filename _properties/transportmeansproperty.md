@@ -1,5 +1,5 @@
 ---
 title: transportMeans
-permalink: transportMeansProperty
+permalink: transportMeansProperty.html
 jsonid: transportmeansproperty
 ---

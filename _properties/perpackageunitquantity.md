@@ -1,5 +1,5 @@
 ---
 title: perPackageUnitQuantity
-permalink: perPackageUnitQuantity
+permalink: perPackageUnitQuantity.html
 jsonid: perpackageunitquantity
 ---

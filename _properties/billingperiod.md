@@ -1,5 +1,5 @@
 ---
 title: billingPeriod
-permalink: billingPeriod
+permalink: billingPeriod.html
 jsonid: billingperiod
 ---

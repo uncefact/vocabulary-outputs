@@ -1,5 +1,5 @@
 ---
 title: ContactPerson
-permalink: ContactPerson
+permalink: ContactPerson.html
 jsonid: contactperson
 ---

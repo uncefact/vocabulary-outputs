@@ -1,5 +1,5 @@
 ---
 title: certifiedEmission
-permalink: certifiedEmission
+permalink: certifiedEmission.html
 jsonid: certifiedemission
 ---

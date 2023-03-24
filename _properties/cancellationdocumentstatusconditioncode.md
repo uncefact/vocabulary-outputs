@@ -1,5 +1,5 @@
 ---
 title: cancellationDocumentStatusConditionCode
-permalink: cancellationDocumentStatusConditionCode
+permalink: cancellationDocumentStatusConditionCode.html
 jsonid: cancellationdocumentstatusconditioncode
 ---

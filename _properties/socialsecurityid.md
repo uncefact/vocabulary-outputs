@@ -1,5 +1,5 @@
 ---
 title: socialSecurityId
-permalink: socialSecurityId
+permalink: socialSecurityId.html
 jsonid: socialsecurityid
 ---

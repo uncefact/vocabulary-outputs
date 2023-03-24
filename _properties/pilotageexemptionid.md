@@ -1,5 +1,5 @@
 ---
 title: pilotageExemptionId
-permalink: pilotageExemptionId
+permalink: pilotageExemptionId.html
 jsonid: pilotageexemptionid
 ---

@@ -1,5 +1,5 @@
 ---
 title: timeZone
-permalink: timeZone
+permalink: timeZone.html
 jsonid: timezone
 ---

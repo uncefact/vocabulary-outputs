@@ -1,5 +1,5 @@
 ---
 title: sailingAdviceNotificationInformation
-permalink: sailingAdviceNotificationInformation
+permalink: sailingAdviceNotificationInformation.html
 jsonid: sailingadvicenotificationinformation
 ---

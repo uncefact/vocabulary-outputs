@@ -3,11 +3,26 @@
     "label": "ContactPerson",
     "uri": "unece:ContactPerson",
     "comment": "An individual human being in a position to give assistance or information.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:birthDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time or other date time value which specifies the birth date for this contact person."
+        },
+        {
+            "uri": "unece:contactPersonTitleCode",
+            "type": "unece:TitleCodeList",
+            "comment": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
+        },
+        {
+            "uri": "unece:countryResidenceCountryId",
+            "type": "unece:CountryId",
+            "comment": "The identifier of the residence country of this contact person."
+        },
+        {
+            "uri": "unece:emailURICommunication",
+            "type": "unece:Communication",
+            "comment": "An email Uniform Resource Identifier (URI) communication for this contact person."
         },
         {
             "uri": "unece:familyName",
@@ -15,9 +30,19 @@
             "comment": "The name, expressed as text, that this contact person shares with members of his/her family."
         },
         {
+            "uri": "unece:faxCommunication",
+            "type": "unece:Communication",
+            "comment": "Facsimile communication information for this contact person."
+        },
+        {
             "uri": "unece:givenName",
             "type": "xsd:string",
             "comment": "The name, expressed as text, given to this contact person, usually by parents at birth."
+        },
+        {
+            "uri": "unece:instantMessagingCommunication",
+            "type": "unece:Communication",
+            "comment": "An instant messaging communication for this contact person."
         },
         {
             "uri": "unece:middleName",
@@ -25,34 +50,12 @@
             "comment": "The middle name, expressed as text, of this contact person, usually given by parents at birth."
         },
         {
-            "uri": "unece:residenceCountryId",
-            "type": "xsd:token",
-            "comment": "The identifier of the residence country of this contact person."
-        },
-        {
             "uri": "unece:role",
             "type": "xsd:string",
             "comment": "A role, expressed as text, for this contact person."
         },
         {
-            "uri": "unece:titleCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the title of this contact person, such as Ms., Doctor, Mister."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:emailURIEmailCommunication",
-            "type": "unece:EmailCommunication",
-            "comment": "The email Uniform Resource Identifier (URI) communication for this contact person."
-        },
-        {
-            "uri": "unece:faxTelecommunicationCommunication",
-            "type": "unece:TelecommunicationCommunication",
-            "comment": "Facsimile communication information for this contact person."
-        },
-        {
-            "uri": "unece:specifiedAddress",
+            "uri": "unece:specifiedBirthAddress",
             "type": "unece:BirthAddress",
             "comment": "The birth address specified for this contact person."
         },
@@ -67,20 +70,24 @@
             "comment": "The person identity specified for this contact person."
         },
         {
-            "uri": "unece:specifiedRegistration",
+            "uri": "unece:specifiedTaxRegistration",
             "type": "unece:TaxRegistration",
             "comment": "A tax registration specified for this contact person."
         },
         {
-            "uri": "unece:telephoneTelecommunicationCommunication",
-            "type": "unece:TelecommunicationCommunication",
+            "uri": "unece:telephoneCommunication",
+            "type": "unece:Communication",
             "comment": "Telephone communication information for this contact person."
+        },
+        {
+            "uri": "unece:websiteURICommunication",
+            "type": "unece:Communication",
+            "comment": "A website Uniform Resource Identifier (URI) communication for this contact person."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:specifiedPerson",
-            "comment": "A contact person specified for ..."
+            "uri": "unece:specifiedContactPerson"
         }
     ]
 }
