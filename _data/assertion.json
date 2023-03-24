@@ -1,44 +1,59 @@
 
 {
-    "label": "assertion",
-    "uri": "unece:assertion",
-    "comment": [
-        "An assertion, expressed as text, for this animal certification.",
-        "An assertion, expressed as text, for this organizational certification.",
-        "An assertion, expressed as text, for this process certification.",
-        "An assertion, expressed as text, for this product batch certification, such as a claim that this product is free from gluten.",
-        "An assertion, expressed as text, for this specified certification.",
-        "An assertion, expressed as text, for this trade product certification, such as that this product is free from peanuts."
-    ],
-    "rangeIncludes": [
+    "label": "Assertion",
+    "uri": "unece:Assertion",
+    "comment": "A statement that user needs of the present are met without compromising the needs of future generations.",
+    "objectProperties": [
         {
-            "uri": "xsd:string"
+            "uri": "unece:applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this sustainability assertion."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this sustainability assertion."
+        },
+        {
+            "uri": "unece:descriptionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the description for this sustainability assertion."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "An identifier of this sustainability assertion."
+        },
+        {
+            "uri": "unece:issuingPartyId",
+            "type": "xsd:string",
+            "comment": "An identifier of a party issuing this sustainability assertion."
+        },
+        {
+            "uri": "unece:relatedPolicy",
+            "type": "unece:Policy",
+            "comment": "A compliance policy related to this sustainability assertion."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the status of this sustainability assertion."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:AnimalCertification",
-            "comment": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations."
+            "uri": "unece:applicableAssertion"
         },
         {
-            "uri": "unece:OrganizationalCertification",
-            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
+            "uri": "unece:includedAssertion",
+            "comment": "A sustainability assertion included on this product label."
         },
         {
-            "uri": "unece:ProcessCertification",
-            "comment": "The process of certifying that a process has met performance and quality assurance tests, or qualification requirements."
+            "uri": "unece:obtainedAssertion",
+            "comment": "A sustainability assertion obtained by means of this specified inspection result."
         },
         {
-            "uri": "unece:ProductBatchCertification",
-            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
-        },
-        {
-            "uri": "unece:SpecifiedCertification",
-            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
-        },
-        {
-            "uri": "unece:TradeProductCertification",
-            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
+            "uri": "unece:specifiedAssertion"
         }
     ]
 }

@@ -1,25 +1,36 @@
 
 {
-    "label": "deliveryInstructions",
-    "uri": "unece:deliveryInstructions",
-    "comment": [
-        "Delivery instructions for this piece of logistics transport equipment.",
-        "Delivery instructions for this supply chain consignment."
-    ],
-    "rangeIncludes": [
+    "label": "DeliveryInstructions",
+    "uri": "unece:DeliveryInstructions",
+    "comment": "Delivery information of an instructive nature.",
+    "objectProperties": [
         {
-            "uri": "unece:DeliveryInstructions",
-            "comment": "Delivery information of an instructive nature."
-        }
-    ],
-    "domainIncludes": [
-        {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "uri": "unece:deliveryInstructionsDescriptionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying a description of these delivery instructions."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of these delivery instructions."
+        },
+        {
+            "uri": "unece:handling",
+            "type": "xsd:string",
+            "comment": "Delivery handling instructions expressed as text."
+        },
+        {
+            "uri": "unece:handlingCode",
+            "type": "xsd:string",
+            "comment": "A code specifying delivery handling instructions."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:deliveryInstructions"
+        },
+        {
+            "uri": "unece:specifiedDeliveryInstructions"
         }
     ]
 }

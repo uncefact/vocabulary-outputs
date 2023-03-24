@@ -1,24 +1,34 @@
 
 {
-    "label": "guarantee",
-    "uri": "unece:guarantee",
-    "comment": [
-        "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure.",
-        "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
-    ],
-    "rangeIncludes": [
+    "label": "Guarantee",
+    "uri": "unece:Guarantee",
+    "comment": "An official promise or assurance to fulfil a financial obligation.",
+    "objectProperties": [
         {
-            "uri": "xsd:string"
-        }
-    ],
-    "domainIncludes": [
-        {
-            "uri": "unece:RegulatoryProcedure",
-            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+            "uri": "unece:condition",
+            "type": "xsd:string",
+            "comment": "The condition, expressed as text, for this financial guarantee."
         },
         {
-            "uri": "unece:TradeTax",
-            "comment": "A trade related fiscal levy or duty."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this financial guarantee."
+        },
+        {
+            "uri": "unece:effectiveDelimitedPeriod",
+            "type": "unece:DelimitedPeriod",
+            "comment": "The period within which this financial guarantee is effective."
+        },
+        {
+            "uri": "unece:liabilityAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the liability in this financial guarantee."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:identifiedGuarantee",
+            "comment": "The financial guarantee identified for this payment trade settlement."
         }
     ]
 }

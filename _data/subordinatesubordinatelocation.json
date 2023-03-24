@@ -1,18 +1,34 @@
 
 {
-    "label": "subordinateSubordinateLocation",
-    "uri": "unece:subordinateSubordinateLocation",
-    "comment": "A location subordinate to this logistics related location.",
-    "rangeIncludes": [
+    "label": "SubordinateSubordinateLocation",
+    "uri": "unece:SubordinateSubordinateLocation",
+    "comment": "A physical location or place which is a subordinate location of a subordinate location.",
+    "objectProperties": [
         {
-            "uri": "unece:SubordinateLocation",
-            "comment": "A physical location or place which is a subordinate location of a location."
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The unique identifier for this subordinate of a subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
+        },
+        {
+            "uri": "unece:locationFunctionTypeCode",
+            "type": "unece:LocationFunctionCodeList",
+            "comment": "The code specifying the type of subordinate of a subordinate location."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, of this subordinate of a subordinate location."
+        },
+        {
+            "uri": "unece:physicalGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "Physical geographical coordinate information for this subordinate of a subordinate location."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:LogisticsLocation",
-            "comment": "A logistics related physical location or place."
+            "uri": "unece:subordinateSubordinateSubordinateLocation",
+            "comment": "The location subordinate to this subordinate location."
         }
     ]
 }

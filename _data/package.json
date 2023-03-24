@@ -1,18 +1,189 @@
 
 {
-    "label": "package",
-    "uri": "unece:package",
-    "comment": "A logistics package referenced in this supply chain trade line item.",
-    "rangeIncludes": [
+    "label": "Package",
+    "uri": "unece:Package",
+    "comment": [
+        "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.",
+        "A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
+    ],
+    "objectProperties": [
         {
-            "uri": "unece:Package",
-            "comment": "A self-contained wrapping or container ..."
+            "uri": "unece:additionalLevelCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the additional level of this logistics package."
+        },
+        {
+            "uri": "unece:colourCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the colour of this referenced logistics package."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this referenced logistics package."
+        },
+        {
+            "uri": "unece:despatchNoteAssociatedDocument",
+            "type": "unece:Document",
+            "comment": "A despatch note associated with this logistics package."
+        },
+        {
+            "uri": "unece:globalId",
+            "type": "xsd:string",
+            "comment": "The global identifier for this referenced logistics package."
+        },
+        {
+            "uri": "unece:grossVolumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the gross volume of this logistics package."
+        },
+        {
+            "uri": "unece:grossWeightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the gross weight (mass) of this logistics package and its contents."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier for this referenced logistics package."
+        },
+        {
+            "uri": "unece:includedSupplyChainTradeLineItem",
+            "type": "unece:SupplyChainTradeLineItem",
+            "comment": "A supply chain trade line item included in this logistics package."
+        },
+        {
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, for this logistics package."
+        },
+        {
+            "uri": "unece:itemQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of logistics packages at this level."
+        },
+        {
+            "uri": "unece:linearDimension",
+            "type": "unece:SpatialDimension",
+            "comment": "The linear spatial dimensions of this logistics package."
+        },
+        {
+            "uri": "unece:netVolumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of a net volume of this logistics package."
+        },
+        {
+            "uri": "unece:netWeightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the net weight of this logistics package, i.e. the weight (mass) of the contents."
+        },
+        {
+            "uri": "unece:nominalGrossVolumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the nominal gross volume of this logistics package."
+        },
+        {
+            "uri": "unece:nominalGrossWeightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
+        },
+        {
+            "uri": "unece:packageType",
+            "type": "xsd:string",
+            "comment": "A type, expressed as text, of this logistics package."
+        },
+        {
+            "uri": "unece:packageTypeCode",
+            "type": "unece:PackageTypeCodeList",
+            "comment": "The code specifying the type of referenced logistics package."
+        },
+        {
+            "uri": "unece:packagingLevelCode",
+            "type": "unece:PackagingLevelCodeList",
+            "comment": "The code specifying the level of this logistics package."
+        },
+        {
+            "uri": "unece:parentId",
+            "type": "xsd:string",
+            "comment": "The parent identifier for this referenced logistics package."
+        },
+        {
+            "uri": "unece:perPackageUnitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A number of units per package in this logistics package."
+        },
+        {
+            "uri": "unece:physicalShippingMarks",
+            "type": "unece:ShippingMarks",
+            "comment": "Physical logistics shipping marks in this referenced logistics package."
+        },
+        {
+            "uri": "unece:returnableIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this logistics package is returnable."
+        },
+        {
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
+            "comment": "The sequence number of this logistics package."
+        },
+        {
+            "uri": "unece:seriesEndId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of the end of a series of packages within this logistics package."
+        },
+        {
+            "uri": "unece:seriesStartId",
+            "type": "xsd:string",
+            "comment": "The unique start identifier of a series of packages within this logistics package."
+        },
+        {
+            "uri": "unece:statedCondition",
+            "type": "unece:SpecifiedCondition",
+            "comment": "A stated condition of this logistics package."
+        },
+        {
+            "uri": "unece:usedPackaging",
+            "type": "unece:SupplyChainPackaging",
+            "comment": "Supply chain packaging used for this logistics package."
+        },
+        {
+            "uri": "unece:volumeUnitGrossVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": "The measure of the gross volume of this referenced logistics package."
+        },
+        {
+            "uri": "unece:weightUnitGrossWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "The measure of the gross weight (mass) of this referenced logistics package and its contents."
+        },
+        {
+            "uri": "unece:weightUnitNetWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "The measure of the net weight (mass) of the contents of this referenced logistics package."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:SupplyChainTradeLineItem",
-            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
+            "uri": "unece:containedPackage",
+            "comment": "A package contained in this logistics packaging."
+        },
+        {
+            "uri": "unece:package",
+            "comment": "A logistics package referenced in this supply chain trade line item."
+        },
+        {
+            "uri": "unece:physicalPackage"
+        },
+        {
+            "uri": "unece:relatedPackage",
+            "comment": "A logistics package related to this trade product."
+        },
+        {
+            "uri": "unece:specifiedPackage"
+        },
+        {
+            "uri": "unece:transportPackage"
         }
     ]
 }

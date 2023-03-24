@@ -1,18 +1,49 @@
 
 {
-    "label": "appliedAllowanceCharge",
-    "uri": "unece:appliedAllowanceCharge",
-    "comment": "An allowance or charge applied to the trade price.",
-    "rangeIncludes": [
+    "label": "AppliedAllowanceCharge",
+    "uri": "unece:AppliedAllowanceCharge",
+    "comment": "The applied allowance or charge component of pricing.",
+    "objectProperties": [
         {
-            "uri": "unece:TradeAllowanceCharge",
-            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
+            "uri": "unece:actualAmount",
+            "type": "unece:AmountType",
+            "comment": "The actual monetary value of the applied allowance charge."
+        },
+        {
+            "uri": "unece:appliedAllowanceChargeReasonCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the reason for this applied allowance charge."
+        },
+        {
+            "uri": "unece:basisAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value that is the basis on which the applied allowance charge is calculated."
+        },
+        {
+            "uri": "unece:calculationPercent",
+            "type": "xsd:string",
+            "comment": "The percentage used to calculate the applied allowance charge."
+        },
+        {
+            "uri": "unece:categoryAppliedTax",
+            "type": "unece:AppliedTax",
+            "comment": "The applied tax category of this applied allowance charge."
+        },
+        {
+            "uri": "unece:chargeIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not the applied allowance charge is a charge."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of the applied allowance charge."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:TradePrice",
-            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
+            "uri": "unece:relatedAllowanceCharge",
+            "comment": "Applied allowance charge information related to this calculated price."
         }
     ]
 }

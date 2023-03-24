@@ -1,24 +1,48 @@
 
 {
-    "label": "marking",
-    "uri": "unece:marking",
-    "comment": [
-        "Marking, expressed as text, for these logistics shipping marks.",
-        "Marking, expressed as text, for these transported dangerous goods."
-    ],
-    "rangeIncludes": [
+    "label": "Marking",
+    "uri": "unece:Marking",
+    "comment": "An inscription, stamp or label on packaging, such as to indicate date, ownership, quality, manufacture or origin.",
+    "objectProperties": [
         {
-            "uri": "xsd:string"
-        }
-    ],
-    "domainIncludes": [
-        {
-            "uri": "unece:DangerousGoods",
-            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
+            "uri": "unece:automaticDataCaptureMethodTypeCode",
+            "type": "unece:AutomaticDataCaptureMethodCodeList",
+            "comment": "A code specifying an automatic data capture method type for this packaging marking."
         },
         {
-            "uri": "unece:ShippingMarks",
-            "comment": "Physical markings or labels on individual packages or transport units for logistics purposes."
+            "uri": "unece:content",
+            "type": "xsd:string",
+            "comment": "Content, expressed as text, of this packaging marking."
+        },
+        {
+            "uri": "unece:contentAmount",
+            "type": "unece:AmountType",
+            "comment": "Content, expressed as a monetary amount, for this packaging marking."
+        },
+        {
+            "uri": "unece:contentCode",
+            "type": "xsd:string",
+            "comment": "Content, expressed as a code, of this packaging marking."
+        },
+        {
+            "uri": "unece:contentDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time or other date time value for the content of this packaging marking."
+        },
+        {
+            "uri": "unece:packagingMarkingBarcodeTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of barcode for this packaging marking."
+        },
+        {
+            "uri": "unece:packagingMarkingTypeCode",
+            "type": "unece:PackagingMarkingCodeList",
+            "comment": "A code specifying a type of packaging marking."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:specifiedMarking"
         }
     ]
 }

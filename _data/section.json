@@ -1,17 +1,29 @@
 
 {
-    "label": "section",
-    "uri": "unece:section",
-    "comment": "A section, expressed as text, of this product print.",
-    "rangeIncludes": [
+    "label": "Section",
+    "uri": "unece:Section",
+    "comment": "The parts into which a label is or may be divided.",
+    "objectProperties": [
         {
-            "uri": "xsd:string"
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier of this label section."
+        },
+        {
+            "uri": "unece:includedSegment",
+            "type": "unece:Segment",
+            "comment": "A segment included in this label section."
+        },
+        {
+            "uri": "unece:patternCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the pattern of this label section."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:Print",
-            "comment": "Any text or pattern put on the surface of a product using a specific material such as dye."
+            "uri": "unece:includedSection",
+            "comment": "A section included in this logistics label."
         }
     ]
 }

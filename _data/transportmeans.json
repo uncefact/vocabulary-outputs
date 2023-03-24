@@ -1,24 +1,39 @@
 
 {
-    "label": "transportMeans",
-    "uri": "unece:transportMeans",
-    "comment": [
-        "A means of transport, expressed as text, for this transport route.",
-        "A transport means, expressed as text, for this specified route."
-    ],
-    "rangeIncludes": [
+    "label": "TransportMeans",
+    "uri": "unece:TransportMeans",
+    "comment": "Reference to a device or method used to convey people, goods, or other objects from place to place.",
+    "objectProperties": [
         {
-            "uri": "xsd:string"
-        }
-    ],
-    "domainIncludes": [
-        {
-            "uri": "unece:SpecifiedRoute",
-            "comment": "A specified way or course taken from one location to another."
+            "uri": "unece:driverAccompaniedIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this referenced means of transport is accompanied by a driver."
         },
         {
-            "uri": "unece:TransportRoute",
-            "comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers."
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "An identifier of this referenced transport means, such as the International Maritime Organization number for a vessel."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, of this referenced transport means, such as the vessel name."
+        },
+        {
+            "uri": "unece:transportMeansType",
+            "type": "xsd:string",
+            "comment": "The type, expressed as text, of this referenced transport means."
+        },
+        {
+            "uri": "unece:transportMeansTypeCode",
+            "type": "unece:TransportMeansTypeCodeList",
+            "comment": "The code specifying the type of referenced transport means [Reference UNECE Recommendation 28]."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:carriedInactiveTransportMeans",
+            "comment": "Details of transport means inactively carried during the transport movement, such as trucks on a Roll-On/Roll-Off (RORO) ferry."
         }
     ]
 }

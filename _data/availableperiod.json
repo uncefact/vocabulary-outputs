@@ -1,18 +1,29 @@
 
 {
-    "label": "availablePeriod",
-    "uri": "unece:availablePeriod",
-    "comment": "An available period for this specified experience item.",
-    "rangeIncludes": [
+    "label": "AvailablePeriod",
+    "uri": "unece:AvailablePeriod",
+    "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date for which something is available.",
+    "objectProperties": [
         {
-            "uri": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time."
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this available period."
+        },
+        {
+            "uri": "unece:endDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time or other date time value for the end of this available period of time."
+        },
+        {
+            "uri": "unece:startDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time or other date time value for the start of this available period of time."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:ExperienceItem",
-            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
+            "uri": "unece:orderingAvailablePeriod",
+            "comment": "An available ordering period for this specified marketplace."
         }
     ]
 }

@@ -1,17 +1,162 @@
 
 {
-    "label": "service",
-    "uri": "unece:service",
-    "comment": "The service, expressed as text, of this logistics transport movement.",
-    "rangeIncludes": [
+    "label": "Service",
+    "uri": "unece:Service",
+    "comment": [
+        "A service associated with a transport movement.",
+        "A referenced service associated with a specified event during transport movement."
+    ],
+    "objectProperties": [
         {
-            "uri": "xsd:string"
+            "uri": "unece:actualPerformancePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "An actual period of performance for this referenced transport service."
+        },
+        {
+            "uri": "unece:chargeAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the charge for this transport service."
+        },
+        {
+            "uri": "unece:contractId",
+            "type": "xsd:string",
+            "comment": "The contract identifier of this referenced transport service."
+        },
+        {
+            "uri": "unece:deliverySpecifiedLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A logistics location specified for a delivery by this referenced transport service."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this transport service."
+        },
+        {
+            "uri": "unece:effectiveSpecifiedPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "The specified period during which this transport service is effective."
+        },
+        {
+            "uri": "unece:estimatedPerformancePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "An estimated period of performance for this referenced transport service."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "An identifier of this referenced transport service."
+        },
+        {
+            "uri": "unece:information",
+            "type": "xsd:string",
+            "comment": "Information, expressed as text, for this referenced transport service."
+        },
+        {
+            "uri": "unece:itemQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A quantity of items for this referenced transport service."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, of this transport service."
+        },
+        {
+            "uri": "unece:plannedPerformancePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A planned period of performance for this referenced transport service."
+        },
+        {
+            "uri": "unece:preplannedIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this referenced transport service has been planned in advance of its execution."
+        },
+        {
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a reason for this transport service."
+        },
+        {
+            "uri": "unece:relatedSpecifiedLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A related logistics location specified for this referenced transport service."
+        },
+        {
+            "uri": "unece:requestedPerformancePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A requested period of performance for this referenced transport service."
+        },
+        {
+            "uri": "unece:requesterParty",
+            "type": "unece:TradeParty",
+            "comment": "A trade party requesting this referenced transport service."
+        },
+        {
+            "uri": "unece:responsibleParty",
+            "type": "unece:TradeParty",
+            "comment": "A trade party responsible for this transport service."
+        },
+        {
+            "uri": "unece:specifiedRoute",
+            "type": "unece:TransportRoute",
+            "comment": "A transport route specified for this transport service."
+        },
+        {
+            "uri": "unece:transportContractMovementContractMovementTypeCode",
+            "type": "unece:TransportContractMovementCodeList",
+            "comment": "A code specifying a contract movement type of this transport service."
+        },
+        {
+            "uri": "unece:transportServiceCategoryTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying the category type of this referenced transport service."
+        },
+        {
+            "uri": "unece:transportServiceConditionTypeCode",
+            "type": "unece:TransportServiceConditionCodeList",
+            "comment": "A code specifying a type of condition for this transport service, such as a contract or carriage condition."
+        },
+        {
+            "uri": "unece:transportServicePaymentArrangementCode",
+            "type": "unece:TransportServicePaymentArrangementCodeList",
+            "comment": "The code specifying the payment arrangement for this transport service."
+        },
+        {
+            "uri": "unece:transportServicePriorityCode",
+            "type": "unece:TransportServicePriorityCodeList",
+            "comment": "The code specifying the priority of this transport service."
+        },
+        {
+            "uri": "unece:transportServiceRequirementCode",
+            "type": "unece:TransportServiceRequirementCodeList",
+            "comment": "A code specifying a service requirement for this transport service."
+        },
+        {
+            "uri": "unece:uRICommunication",
+            "type": "unece:Communication",
+            "comment": "The Uniform Resource Identifier (URI) communication for this transport service, such as its website or email address."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
+            "uri": "unece:excessTransportService",
+            "comment": "An excess transport service for this logistics transport movement."
+        },
+        {
+            "uri": "unece:providedService"
+        },
+        {
+            "uri": "unece:requestedRelatedService",
+            "comment": "A requested service related to this transport event."
+        },
+        {
+            "uri": "unece:requiredService",
+            "comment": "A transport service required for this logistics means of transport."
+        },
+        {
+            "uri": "unece:transportService",
+            "comment": "A transport service for this supply chain consignment."
         }
     ]
 }
