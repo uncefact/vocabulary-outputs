@@ -18,13 +18,14 @@ type: code-list
         {% for codeList in site.code-lists %}
             {%- if codeList.excludeFromList != true -%}
                 {%- assign codeListJson = site.data[codeList.jsonid] -%}
+                {% assign referenceUrl = codeList | absolute_url | split: "."  %}
                 <tr>
                     <td>
-                        <a href="{{ codeList | absolute_url }}">
+                        <a href="{{ referenceUrl[0] }}">
                             {%- if codeList.label -%}
                                 {{ codeList.label }}
                             {%- else -%}
-                                {{ codeList.permalink }}
+                                {{ codeListJson.uri }}
                             {%- endif -%}
                         </a>
                     </td>
