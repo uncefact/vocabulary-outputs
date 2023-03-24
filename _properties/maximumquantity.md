@@ -1,5 +1,5 @@
 ---
 title: maximumQuantity
-permalink: maximumQuantity
+permalink: maximumQuantity.html
 jsonid: maximumquantity
 ---

@@ -1,5 +1,5 @@
 ---
 title: associatedDirectPositionList
-permalink: associatedDirectPositionList
+permalink: associatedDirectPositionList.html
 jsonid: associateddirectpositionlist
 ---

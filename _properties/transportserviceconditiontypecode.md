@@ -1,5 +1,5 @@
 ---
 title: transportServiceConditionTypeCode
-permalink: transportServiceConditionTypeCode
+permalink: transportServiceConditionTypeCode.html
 jsonid: transportserviceconditiontypecode
 ---

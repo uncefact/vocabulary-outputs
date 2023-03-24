@@ -1,5 +1,5 @@
 ---
 title: productReorderableIndicator
-permalink: productReorderableIndicator
+permalink: productReorderableIndicator.html
 jsonid: productreorderableindicator
 ---

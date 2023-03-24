@@ -1,5 +1,5 @@
 ---
 title: requestingQuery
-permalink: requestingQuery
+permalink: requestingQuery.html
 jsonid: requestingquery
 ---

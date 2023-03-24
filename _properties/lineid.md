@@ -1,5 +1,5 @@
 ---
 title: lineId
-permalink: lineId
+permalink: lineId.html
 jsonid: lineid
 ---

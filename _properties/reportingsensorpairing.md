@@ -1,5 +1,5 @@
 ---
 title: reportingSensorPairing
-permalink: reportingSensorPairing
+permalink: reportingSensorPairing.html
 jsonid: reportingsensorpairing
 ---

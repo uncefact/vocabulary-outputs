@@ -1,5 +1,5 @@
 ---
 title: HeaderTradeDelivery
-permalink: HeaderTradeDelivery
+permalink: HeaderTradeDelivery.html
 jsonid: headertradedelivery
 ---

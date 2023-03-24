@@ -1,5 +1,5 @@
 ---
 title: hazardClassVersionId
-permalink: hazardClassVersionId
+permalink: hazardClassVersionId.html
 jsonid: hazardclassversionid
 ---

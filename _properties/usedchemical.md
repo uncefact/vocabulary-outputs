@@ -1,5 +1,5 @@
 ---
 title: usedChemical
-permalink: usedChemical
+permalink: usedChemical.html
 jsonid: usedchemical
 ---

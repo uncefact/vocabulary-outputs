@@ -1,5 +1,5 @@
 ---
 title: responsibility
-permalink: responsibility
+permalink: responsibility.html
 jsonid: responsibility
 ---

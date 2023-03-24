@@ -1,5 +1,5 @@
 ---
 title: previousOrderResponseDocument
-permalink: previousOrderResponseDocument
+permalink: previousOrderResponseDocument.html
 jsonid: previousorderresponsedocument
 ---

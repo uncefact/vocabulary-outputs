@@ -4,6 +4,8 @@
     "uri": "unece:sequenceNumeric",
     "comment": [
         "A sequence number for these specified personal effects.",
+        "A sequence number for this document status.",
+        "A sequence number for this specified certificate.",
         "A sequence number for this specified period.",
         "A sequence number for this stores inventory item.",
         "A sequence number for this supply chain consignment.",
@@ -11,34 +13,47 @@
         "The sequence number differentiating this logistics transport means from others.",
         "The sequence number differentiating this piece of logistics transport equipment from others in a set of transport equipment.",
         "The sequence number for applying this trade allowance charge.",
+        "The sequence number for this electronic negotiation exchange.",
+        "The sequence number for this logistics packaging.",
         "The sequence number for this referenced supply chain consignment item.",
         "The sequence number for this referenced supply chain consignment.",
+        "The sequence number for this specified production cycle.",
         "The sequence number for this supply chain consignment item.",
         "The sequence number of this logistics package.",
         "The sequence number of this logistics status, such as within a status report.",
-        "The sequence number of this referenced logistics package."
+        "The sequence number of this referenced logistics package.",
+        "The sequence number of this set of inspection instructions.",
+        "The sequence number of this set of laboratory observation instructions."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:AllowanceCharge",
-            "comment": "A component of pricing, such as a service, promotion, allowance or charge."
-        },
-        {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+            "comment": "A separately identifiable collection of ..."
         },
         {
             "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
+            "comment": "A reference to an item ..."
         },
         {
-            "uri": "unece:Inventory",
-            "comment": "Material held in stock."
+            "uri": "unece:DocumentStatus",
+            "comment": "The information relevant to a condition related to a document."
+        },
+        {
+            "uri": "unece:InspectionInstructions",
+            "comment": "Information of an instructive nature that describes how to conduct an inspection."
+        },
+        {
+            "uri": "unece:LaboratoryObservationInstructions",
+            "comment": "Information of an instructive nature that describes how to conduct this laboratory observation."
+        },
+        {
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
         },
         {
             "uri": "unece:LogisticsStatus",
@@ -49,24 +64,44 @@
             "comment": "A piece of equipment used ..."
         },
         {
-            "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
+            "uri": "unece:LogisticsTransportMeans",
+            "comment": "The devices used to convey goods or other objects from place to place during logistics cargo movements."
         },
         {
-            "uri": "unece:Period",
-            "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date."
+            "uri": "unece:NegotiationExchange",
+            "comment": "An offer exchanged between parties for an electronic negotiation."
+        },
+        {
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container ..."
         },
         {
             "uri": "unece:PersonalEffects",
-            "comment": "Privately owned articles for personal use by an individual."
+            "comment": "Specified privately owned articles for personal use by an individual."
         },
         {
-            "uri": "unece:TradeLineItem",
-            "comment": "A collection of information specific to an item being used or reported on for trade purposes."
+            "uri": "unece:ProductionCycle",
+            "comment": "A series of activities associated with the processing of a product."
         },
         {
-            "uri": "unece:TransportMeans",
-            "comment": "The device or method used to convey people, goods, animals or other objects from place to place."
+            "uri": "unece:SpecifiedCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
+        },
+        {
+            "uri": "unece:StoresItemInventory",
+            "comment": "A stores item, such as for onboard use during a journey."
+        },
+        {
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         }
     ]
 }

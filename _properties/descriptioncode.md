@@ -1,5 +1,5 @@
 ---
 title: descriptionCode
-permalink: descriptionCode
+permalink: descriptionCode.html
 jsonid: descriptioncode
 ---

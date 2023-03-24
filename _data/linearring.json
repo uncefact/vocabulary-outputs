@@ -2,14 +2,7 @@
 {
     "label": "LinearRing",
     "uri": "unece:LinearRing",
-    "comment": "An array of points which define a closed loop which is not self intersecting.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:coordinate",
-            "type": "xsd:string",
-            "comment": "A coordinate, expressed as text, for this specified linear ring. linear ring must contain min 3 points"
-        }
-    ],
+    "comment": "A specified array of points which define a closed loop which is not self intersecting.",
     "objectProperties": [
         {
             "uri": "unece:associatedGeographicalObjectCharacteristic",
@@ -17,14 +10,14 @@
             "comment": "The geographical object characteristic associated with this linear ring."
         },
         {
+            "uri": "unece:coordinate",
+            "type": "xsd:string",
+            "comment": "A coordinate, expressed as text, for this specified linear ring."
+        },
+        {
             "uri": "unece:coordinateDirectPosition",
             "type": "unece:DirectPosition",
             "comment": "The specified direct position of a coordinate for this linear ring."
-        },
-        {
-            "uri": "unece:specifiedGeographicalCoordinate",
-            "type": "unece:GeographicalCoordinate",
-            "comment": "Geographical coordinate information specified for this linear ring. If used, linear ring must contain a minimum of 3 geographical coordinate points"
         }
     ],
     "referencedBy": [

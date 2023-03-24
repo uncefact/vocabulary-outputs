@@ -1,5 +1,5 @@
 ---
 title: specifiedSubordinateLineTradeDelivery
-permalink: specifiedSubordinateLineTradeDelivery
+permalink: specifiedSubordinateLineTradeDelivery.html
 jsonid: specifiedsubordinatelinetradedelivery
 ---

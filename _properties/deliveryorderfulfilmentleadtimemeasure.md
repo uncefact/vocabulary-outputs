@@ -1,5 +1,5 @@
 ---
 title: deliveryOrderFulfilmentLeadTimeMeasure
-permalink: deliveryOrderFulfilmentLeadTimeMeasure
+permalink: deliveryOrderFulfilmentLeadTimeMeasure.html
 jsonid: deliveryorderfulfilmentleadtimemeasure
 ---

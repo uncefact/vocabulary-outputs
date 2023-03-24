@@ -1,5 +1,5 @@
 ---
 title: exemptionReason
-permalink: exemptionReason
+permalink: exemptionReason.html
 jsonid: exemptionreason
 ---

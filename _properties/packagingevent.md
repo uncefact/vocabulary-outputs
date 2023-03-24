@@ -1,5 +1,5 @@
 ---
 title: packagingEvent
-permalink: packagingEvent
+permalink: packagingEvent.html
 jsonid: packagingevent
 ---

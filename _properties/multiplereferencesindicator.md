@@ -1,5 +1,5 @@
 ---
 title: multipleReferencesIndicator
-permalink: multipleReferencesIndicator
+permalink: multipleReferencesIndicator.html
 jsonid: multiplereferencesindicator
 ---

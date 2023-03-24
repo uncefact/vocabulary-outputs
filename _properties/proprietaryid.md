@@ -1,5 +1,5 @@
 ---
 title: proprietaryId
-permalink: proprietaryId
+permalink: proprietaryId.html
 jsonid: proprietaryid
 ---

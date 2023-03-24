@@ -1,5 +1,5 @@
 ---
 title: ForecastTerms
-permalink: ForecastTerms
+permalink: ForecastTerms.html
 jsonid: forecastterms
 ---

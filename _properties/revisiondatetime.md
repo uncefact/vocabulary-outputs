@@ -1,5 +1,5 @@
 ---
 title: revisionDateTime
-permalink: revisionDateTime
+permalink: revisionDateTime.html
 jsonid: revisiondatetime
 ---

@@ -1,5 +1,5 @@
 ---
 title: timeZoneDateTime
-permalink: timeZoneDateTime
+permalink: timeZoneDateTime.html
 jsonid: timezonedatetime
 ---

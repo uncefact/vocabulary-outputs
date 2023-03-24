@@ -1,5 +1,5 @@
 ---
 title: unloadingInstructions
-permalink: unloadingInstructions
+permalink: unloadingInstructions.html
 jsonid: unloadinginstructions
 ---

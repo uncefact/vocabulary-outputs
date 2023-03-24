@@ -1,5 +1,5 @@
 ---
 title: economicOrderQuantity
-permalink: economicOrderQuantity
+permalink: economicOrderQuantity.html
 jsonid: economicorderquantity
 ---

@@ -4,16 +4,21 @@
     "uri": "unece:specifiedPaymentMeans",
     "comment": [
         "A payment means specified for this header trade settlement.",
+        "A trade settlement payment means specified for this guest person.",
         "The payment means specified for this payment trade settlement.",
         "The trade settlement payment means specified for this logistics service charge."
     ],
     "rangeIncludes": [
         {
             "uri": "unece:PaymentMeans",
-            "comment": "Details of the means by which the payment will be or has been made."
+            "comment": "The means by which a payment will be or has been made for trade settlement purposes."
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:GuestPerson",
+            "comment": "An individual guest."
+        },
         {
             "uri": "unece:HeaderTradeSettlement",
             "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
@@ -24,7 +29,7 @@
         },
         {
             "uri": "unece:ServiceCharge",
-            "comment": "A charge made for services rendered or assessed, such as banking, freight charges, charges for a medical service such as provision of a private room, provision of a television, medical supplies, massage."
+            "comment": "A charge made for a logistics related service."
         }
     ]
 }

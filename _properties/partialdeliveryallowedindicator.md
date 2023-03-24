@@ -1,5 +1,5 @@
 ---
 title: partialDeliveryAllowedIndicator
-permalink: partialDeliveryAllowedIndicator
+permalink: partialDeliveryAllowedIndicator.html
 jsonid: partialdeliveryallowedindicator
 ---

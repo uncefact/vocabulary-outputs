@@ -1,5 +1,5 @@
 ---
 title: actualRoute
-permalink: actualRoute
+permalink: actualRoute.html
 jsonid: actualroute
 ---

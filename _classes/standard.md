@@ -1,5 +1,5 @@
 ---
 title: Standard
-permalink: Standard
+permalink: Standard.html
 jsonid: standard
 ---

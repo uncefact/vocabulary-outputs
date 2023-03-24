@@ -1,5 +1,5 @@
 ---
 title: sellerRefundableTaxSpecifiedAccountingAccount
-permalink: sellerRefundableTaxSpecifiedAccountingAccount
+permalink: sellerRefundableTaxSpecifiedAccountingAccount.html
 jsonid: sellerrefundabletaxspecifiedaccountingaccount
 ---

@@ -1,5 +1,5 @@
 ---
 title: freightInvoiceTypeCode
-permalink: freightInvoiceTypeCode
+permalink: freightInvoiceTypeCode.html
 jsonid: freightinvoicetypecode
 ---

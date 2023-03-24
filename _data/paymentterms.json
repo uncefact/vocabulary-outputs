@@ -2,69 +2,7 @@
 {
     "label": "PaymentTerms",
     "uri": "unece:PaymentTerms",
-    "comment": "Terms and conditions by which payment has been or will be made.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these trade payment terms."
-        },
-        {
-            "uri": "unece:dueDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value for a due date specified by these trade payment terms. Deprecated - Use Trade_ Payment Terms. Due. Date Time instead."
-        },
-        {
-            "uri": "unece:instructionCode",
-            "type": "xsd:token",
-            "comment": "A code specifying an instruction for these trade payment terms."
-        },
-        {
-            "uri": "unece:partialPaymentAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of a partial payment in these trade payment terms."
-        },
-        {
-            "uri": "unece:partialPaymentPercent",
-            "type": "xsd:decimal",
-            "comment": "A partial payment, expressed as a percent, in these trade payment terms."
-        },
-        {
-            "uri": "unece:paymentTermsEventTimeReferenceFromEventCode",
-            "type": "unece:UNCL2475Code",
-            "comment": "The code specifying the event from which these trade payment terms are offered for a length of time."
-        },
-        {
-            "uri": "unece:paymentTermsId",
-            "type": "unece:UNCL4277Code",
-            "comment": "The unique identifier of these trade payment terms."
-        },
-        {
-            "uri": "unece:paymentTermsTypeCode",
-            "type": "unece:UNCL4279Code",
-            "comment": "A code specifying the type of trade payment terms."
-        },
-        {
-            "uri": "unece:settlementPeriodMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
-        },
-        {
-            "uri": "unece:tradePaymentTermsDirectDebitMandateId",
-            "type": "unece:UNCL4277Code",
-            "comment": "An identifier of a direct debit mandate in these trade payment terms."
-        },
-        {
-            "uri": "unece:tradePaymentTermsInstructionTypeCode",
-            "type": "unece:UNCL4279Code",
-            "comment": "A code specifying a type of instruction for these trade payment terms."
-        },
-        {
-            "uri": "unece:tradePaymentTermsPaymentMeansId",
-            "type": "unece:UNCL4277Code",
-            "comment": "An identifier of a payment means in these trade payment terms."
-        }
-    ],
+    "comment": "Terms and conditions by which payment has been or will be made for trade purposes.",
     "objectProperties": [
         {
             "uri": "unece:applicablePaymentDiscountTerms",
@@ -77,9 +15,74 @@
             "comment": "Trade payment penalty terms applicable to these trade payment terms."
         },
         {
+            "uri": "unece:billStartDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the bill start specified by these trade payment terms."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of these trade payment terms."
+        },
+        {
+            "uri": "unece:dueDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
+        },
+        {
+            "uri": "unece:instructionCode",
+            "type": "xsd:string",
+            "comment": "A code specifying an instruction for these trade payment terms."
+        },
+        {
+            "uri": "unece:partialPaymentAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of a partial payment in these trade payment terms."
+        },
+        {
+            "uri": "unece:partialPaymentPercent",
+            "type": "xsd:string",
+            "comment": "A partial payment, expressed as a percent, in these trade payment terms."
+        },
+        {
             "uri": "unece:payeeParty",
             "type": "unece:TradeParty",
             "comment": "A payee party in these trade payment terms."
+        },
+        {
+            "uri": "unece:paymentTermsEventTimeReferenceFromEventCode",
+            "type": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "comment": "The code specifying the event from which these trade payment terms are offered for a length of time."
+        },
+        {
+            "uri": "unece:paymentTermsId",
+            "type": "unece:PaymentTermsId",
+            "comment": "The unique identifier of these trade payment terms."
+        },
+        {
+            "uri": "unece:paymentTermsTypeCode",
+            "type": "unece:PaymentTermsTypeCodeList",
+            "comment": "A code specifying the type of trade payment terms."
+        },
+        {
+            "uri": "unece:settlementPeriodMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the number of settlement periods from this trade payment term time reference to the latest payment date, such as 30 days, 3 months."
+        },
+        {
+            "uri": "unece:tradePaymentTermsDirectDebitMandateId",
+            "type": "xsd:string",
+            "comment": "An identifier of a direct debit mandate in these trade payment terms."
+        },
+        {
+            "uri": "unece:tradePaymentTermsInstructionTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of instruction for these trade payment terms."
+        },
+        {
+            "uri": "unece:tradePaymentTermsPaymentMeansId",
+            "type": "xsd:string",
+            "comment": "An identifier of a payment means in these trade payment terms."
         }
     ],
     "referencedBy": [
@@ -88,8 +91,7 @@
             "comment": "The payment terms applicable to this header trade agreement."
         },
         {
-            "uri": "unece:specifiedPaymentTerms",
-            "comment": "Payment terms specified for this ..."
+            "uri": "unece:specifiedPaymentTerms"
         }
     ]
 }

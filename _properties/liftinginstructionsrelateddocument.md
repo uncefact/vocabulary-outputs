@@ -1,5 +1,5 @@
 ---
 title: liftingInstructionsRelatedDocument
-permalink: liftingInstructionsRelatedDocument
+permalink: liftingInstructionsRelatedDocument.html
 jsonid: liftinginstructionsrelateddocument
 ---

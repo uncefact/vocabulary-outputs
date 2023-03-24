@@ -1,5 +1,5 @@
 ---
 title: plannedStockCalculationDateTime
-permalink: plannedStockCalculationDateTime
+permalink: plannedStockCalculationDateTime.html
 jsonid: plannedstockcalculationdatetime
 ---

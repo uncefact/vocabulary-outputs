@@ -1,5 +1,5 @@
 ---
 title: encodingCode
-permalink: encodingCode
+permalink: encodingCode.html
 jsonid: encodingcode
 ---

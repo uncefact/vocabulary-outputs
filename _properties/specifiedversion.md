@@ -1,5 +1,5 @@
 ---
 title: specifiedVersion
-permalink: specifiedVersion
+permalink: specifiedVersion.html
 jsonid: specifiedversion
 ---

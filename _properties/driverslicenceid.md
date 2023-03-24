@@ -1,5 +1,5 @@
 ---
 title: driversLicenceId
-permalink: driversLicenceId
+permalink: driversLicenceId.html
 jsonid: driverslicenceid
 ---

@@ -1,5 +1,5 @@
 ---
 title: humidityPercent
-permalink: humidityPercent
+permalink: humidityPercent.html
 jsonid: humiditypercent
 ---

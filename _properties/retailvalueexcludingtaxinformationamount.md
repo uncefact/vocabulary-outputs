@@ -1,5 +1,5 @@
 ---
 title: retailValueExcludingTaxInformationAmount
-permalink: retailValueExcludingTaxInformationAmount
+permalink: retailValueExcludingTaxInformationAmount.html
 jsonid: retailvalueexcludingtaxinformationamount
 ---

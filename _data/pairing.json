@@ -2,11 +2,16 @@
 {
     "label": "Pairing",
     "uri": "unece:Pairing",
-    "comment": "The process by which two potentially entities are linked.",
-    "datatypeProperties": [
+    "comment": "The process by which two potentially communicating entities are linked.",
+    "objectProperties": [
+        {
+            "uri": "unece:matchingEvent",
+            "type": "unece:CommunicationEvent",
+            "comment": "A matching event for this communication pairing."
+        },
         {
             "uri": "unece:methodCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the method of this communication pairing."
         },
         {
@@ -16,15 +21,8 @@
         },
         {
             "uri": "unece:targetEntityId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the target entity for this communication pairing."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:matchingEvent",
-            "type": "unece:CommunicationEvent",
-            "comment": "A matching event for this communication pairing."
         }
     ],
     "referencedBy": [

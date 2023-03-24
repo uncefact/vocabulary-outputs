@@ -1,5 +1,5 @@
 ---
 title: associatedConvoy
-permalink: associatedConvoy
+permalink: associatedConvoy.html
 jsonid: associatedconvoy
 ---

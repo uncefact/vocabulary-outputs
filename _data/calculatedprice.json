@@ -1,35 +1,30 @@
 
 {
-    "label": "CalculatedPrice",
-    "uri": "unece:CalculatedPrice",
-    "comment": "Information related to a calculated price.",
-    "datatypeProperties": [
+    "label": "calculatedPrice",
+    "uri": "unece:calculatedPrice",
+    "comment": [
+        "A calculated price for this experience event.",
+        "A calculated price for this experience product.",
+        "A calculated price for this specified experience item."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "unece:calculatedPriceTypeCode",
-            "type": "unece:UNCL5375Code",
-            "comment": "A code specifying the type of calculated price."
-        },
-        {
-            "uri": "unece:chargeAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the calculated price to be charged."
+            "uri": "unece:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:relatedAllowanceCharge",
-            "type": "unece:AllowanceCharge",
-            "comment": "Applied allowance charge information related to this calculated price."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:totalPrice",
-            "comment": "A total calculated price for ..."
+            "uri": "unece:ExperienceEvent",
+            "comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
         },
         {
-            "uri": "unece:unitPrice",
-            "comment": "A unit calculated price for this basic work item."
+            "uri": "unece:ExperienceItem",
+            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
+        },
+        {
+            "uri": "unece:ExperienceProduct",
+            "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience."
         }
     ]
 }

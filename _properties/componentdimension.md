@@ -1,5 +1,5 @@
 ---
 title: componentDimension
-permalink: componentDimension
+permalink: componentDimension.html
 jsonid: componentdimension
 ---

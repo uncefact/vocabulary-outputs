@@ -2,21 +2,21 @@
 {
     "label": "WorkflowObject",
     "uri": "unece:WorkflowObject",
-    "comment": "An object used in the management of the state changes in a business process.",
-    "datatypeProperties": [
+    "comment": "An object used in the management of the status changes in a business process.",
+    "objectProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of this trade workflow object."
         },
         {
             "uri": "unece:previousStatusCode",
-            "type": "xsd:token",
+            "type": "unece:WorkflowStatusCodeList",
             "comment": "The code specifying the previous status of this trade workflow object."
         },
         {
-            "uri": "unece:statusCode",
-            "type": "xsd:token",
+            "uri": "unece:workflowStatusCode",
+            "type": "unece:WorkflowStatusCodeList",
             "comment": "The code specifying the status of this trade workflow object."
         }
     ],

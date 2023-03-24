@@ -1,5 +1,5 @@
 ---
 title: sellByDateTime
-permalink: sellByDateTime
+permalink: sellByDateTime.html
 jsonid: sellbydatetime
 ---

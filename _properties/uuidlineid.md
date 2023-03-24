@@ -1,5 +1,5 @@
 ---
 title: uUIDLineId
-permalink: uUIDLineId
+permalink: uUIDLineId.html
 jsonid: uuidlineid
 ---

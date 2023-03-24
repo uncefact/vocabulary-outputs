@@ -2,16 +2,16 @@
 {
     "label": "GoodsCharacteristic",
     "uri": "unece:GoodsCharacteristic",
-    "comment": "A distinguishing feature or quality of goods.",
-    "datatypeProperties": [
+    "comment": "A distinctive feature of a material contained within physical goods.",
+    "objectProperties": [
         {
             "uri": "unece:absolutePresenceVolumeMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:MeasureType",
             "comment": "The volume measure of the absolute presence of this material goods characteristic."
         },
         {
             "uri": "unece:absolutePresenceWeightMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:MeasureType",
             "comment": "The weight measure of the absolute presence of this material goods characteristic."
         },
         {
@@ -21,19 +21,18 @@
         },
         {
             "uri": "unece:proportionalConstituentPercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The percentage presence of the material within the goods for this material goods characteristic."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the type of material goods characteristic."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableGoodsCharacteristic",
-            "comment": "A distinguishing material feature applicable ..."
+            "uri": "unece:applicableGoodsCharacteristic"
         },
         {
             "uri": "unece:carriedGoodsCharacteristic",

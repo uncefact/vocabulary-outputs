@@ -1,5 +1,5 @@
 ---
 title: documentTypeCode
-permalink: documentTypeCode
+permalink: documentTypeCode.html
 jsonid: documenttypecode
 ---

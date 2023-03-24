@@ -1,5 +1,5 @@
 ---
 title: quoteReferencedWorkflowObject
-permalink: quoteReferencedWorkflowObject
+permalink: quoteReferencedWorkflowObject.html
 jsonid: quotereferencedworkflowobject
 ---

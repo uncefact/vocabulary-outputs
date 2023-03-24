@@ -4,17 +4,22 @@
     "uri": "unece:bEIId",
     "comment": [
         "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity.",
-        "The unique Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this requesting party."
+        "The unique Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this requesting party.",
+        "The unique Business Entity Identifier (BEI) as defined in ISO 9362 for this payment financial institution."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:FinancialIdentity",
             "comment": "A financial identification for an organization."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution",
+            "comment": "An institution that provides financial services and financial transactions for payment."
         },
         {
             "uri": "unece:RequestingParty",

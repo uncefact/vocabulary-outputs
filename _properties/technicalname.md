@@ -1,5 +1,5 @@
 ---
 title: technicalName
-permalink: technicalName
+permalink: technicalName.html
 jsonid: technicalname
 ---

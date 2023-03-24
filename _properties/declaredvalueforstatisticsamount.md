@@ -1,5 +1,5 @@
 ---
 title: declaredValueForStatisticsAmount
-permalink: declaredValueForStatisticsAmount
+permalink: declaredValueForStatisticsAmount.html
 jsonid: declaredvalueforstatisticsamount
 ---

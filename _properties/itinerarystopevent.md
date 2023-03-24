@@ -1,5 +1,5 @@
 ---
 title: itineraryStopEvent
-permalink: itineraryStopEvent
+permalink: itineraryStopEvent.html
 jsonid: itinerarystopevent
 ---

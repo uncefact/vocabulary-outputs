@@ -1,5 +1,5 @@
 ---
 title: acceptedTransactionOriginalTotalAmount
-permalink: acceptedTransactionOriginalTotalAmount
+permalink: acceptedTransactionOriginalTotalAmount.html
 jsonid: acceptedtransactionoriginaltotalamount
 ---

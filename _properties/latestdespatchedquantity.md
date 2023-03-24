@@ -1,5 +1,5 @@
 ---
 title: latestDespatchedQuantity
-permalink: latestDespatchedQuantity
+permalink: latestDespatchedQuantity.html
 jsonid: latestdespatchedquantity
 ---

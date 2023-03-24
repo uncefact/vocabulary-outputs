@@ -1,5 +1,5 @@
 ---
 title: contractGeneralConditions
-permalink: contractGeneralConditions
+permalink: contractGeneralConditions.html
 jsonid: contractgeneralconditions
 ---

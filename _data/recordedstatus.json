@@ -3,10 +3,10 @@
     "label": "RecordedStatus",
     "uri": "unece:RecordedStatus",
     "comment": "Recorded information relevant to a condition or a position of an object.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:changedDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value when this recorded status changed."
         },
         {
@@ -16,14 +16,13 @@
         },
         {
             "uri": "unece:recordedStatusConditionCode",
-            "type": "unece:UNCL4405Code",
+            "type": "xsd:string",
             "comment": "The code specifying the condition for this recorded status."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:changedStatus",
-            "comment": "A changed recorded status for ..."
+            "uri": "unece:changedStatus"
         }
     ]
 }

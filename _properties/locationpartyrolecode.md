@@ -1,5 +1,5 @@
 ---
 title: locationPartyRoleCode
-permalink: locationPartyRoleCode
+permalink: locationPartyRoleCode.html
 jsonid: locationpartyrolecode
 ---

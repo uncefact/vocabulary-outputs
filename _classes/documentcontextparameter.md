@@ -1,5 +1,5 @@
 ---
 title: DocumentContextParameter
-permalink: DocumentContextParameter
+permalink: DocumentContextParameter.html
 jsonid: documentcontextparameter
 ---

@@ -1,5 +1,5 @@
 ---
 title: targetEntityId
-permalink: targetEntityId
+permalink: targetEntityId.html
 jsonid: targetentityid
 ---

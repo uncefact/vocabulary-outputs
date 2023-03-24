@@ -1,5 +1,5 @@
 ---
 title: loadingSequenceNumeric
-permalink: loadingSequenceNumeric
+permalink: loadingSequenceNumeric.html
 jsonid: loadingsequencenumeric
 ---

@@ -1,5 +1,5 @@
 ---
 title: declarantAssignedDeclarationId
-permalink: declarantAssignedDeclarationId
+permalink: declarantAssignedDeclarationId.html
 jsonid: declarantassigneddeclarationid
 ---

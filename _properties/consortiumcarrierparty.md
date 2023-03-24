@@ -1,5 +1,5 @@
 ---
 title: consortiumCarrierParty
-permalink: consortiumCarrierParty
+permalink: consortiumCarrierParty.html
 jsonid: consortiumcarrierparty
 ---

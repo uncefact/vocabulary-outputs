@@ -1,5 +1,5 @@
 ---
 title: confirmedDeliveryEvent
-permalink: confirmedDeliveryEvent
+permalink: confirmedDeliveryEvent.html
 jsonid: confirmeddeliveryevent
 ---

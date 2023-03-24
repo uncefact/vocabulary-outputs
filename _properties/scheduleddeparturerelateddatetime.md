@@ -1,5 +1,5 @@
 ---
 title: scheduledDepartureRelatedDateTime
-permalink: scheduledDepartureRelatedDateTime
+permalink: scheduledDepartureRelatedDateTime.html
 jsonid: scheduleddeparturerelateddatetime
 ---

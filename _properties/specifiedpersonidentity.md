@@ -1,5 +1,5 @@
 ---
 title: specifiedPersonIdentity
-permalink: specifiedPersonIdentity
+permalink: specifiedPersonIdentity.html
 jsonid: specifiedpersonidentity
 ---

@@ -1,5 +1,5 @@
 ---
 title: coordinateReferenceDimension
-permalink: coordinateReferenceDimension
+permalink: coordinateReferenceDimension.html
 jsonid: coordinatereferencedimension
 ---

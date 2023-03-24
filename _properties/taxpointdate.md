@@ -1,5 +1,5 @@
 ---
 title: taxPointDate
-permalink: taxPointDate
+permalink: taxPointDate.html
 jsonid: taxpointdate
 ---

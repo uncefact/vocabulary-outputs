@@ -1,5 +1,5 @@
 ---
 title: deferredPaymentMethodIndicator
-permalink: deferredPaymentMethodIndicator
+permalink: deferredPaymentMethodIndicator.html
 jsonid: deferredpaymentmethodindicator
 ---

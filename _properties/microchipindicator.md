@@ -1,5 +1,5 @@
 ---
 title: microchipIndicator
-permalink: microchipIndicator
+permalink: microchipIndicator.html
 jsonid: microchipindicator
 ---

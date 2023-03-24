@@ -1,5 +1,5 @@
 ---
 title: totalExportExitToImportEntryChargeAmount
-permalink: totalExportExitToImportEntryChargeAmount
+permalink: totalExportExitToImportEntryChargeAmount.html
 jsonid: totalexportexittoimportentrychargeamount
 ---

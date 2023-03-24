@@ -1,5 +1,5 @@
 ---
 title: modificationForecastedQuantity
-permalink: modificationForecastedQuantity
+permalink: modificationForecastedQuantity.html
 jsonid: modificationforecastedquantity
 ---

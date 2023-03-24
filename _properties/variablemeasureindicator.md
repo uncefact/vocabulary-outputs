@@ -1,5 +1,5 @@
 ---
 title: variableMeasureIndicator
-permalink: variableMeasureIndicator
+permalink: variableMeasureIndicator.html
 jsonid: variablemeasureindicator
 ---

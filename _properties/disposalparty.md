@@ -1,5 +1,5 @@
 ---
 title: disposalParty
-permalink: disposalParty
+permalink: disposalParty.html
 jsonid: disposalparty
 ---

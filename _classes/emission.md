@@ -1,5 +1,5 @@
 ---
 title: Emission
-permalink: Emission
+permalink: Emission.html
 jsonid: emission
 ---

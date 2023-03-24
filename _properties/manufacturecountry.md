@@ -1,5 +1,5 @@
 ---
 title: manufactureCountry
-permalink: manufactureCountry
+permalink: manufactureCountry.html
 jsonid: manufacturecountry
 ---

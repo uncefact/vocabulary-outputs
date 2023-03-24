@@ -1,5 +1,5 @@
 ---
 title: tradeCurrencyExchangeMarketId
-permalink: tradeCurrencyExchangeMarketId
+permalink: tradeCurrencyExchangeMarketId.html
 jsonid: tradecurrencyexchangemarketid
 ---

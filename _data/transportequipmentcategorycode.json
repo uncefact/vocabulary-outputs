@@ -3,16 +3,22 @@
     "label": "transportEquipmentCategoryCode",
     "uri": "unece:transportEquipmentCategoryCode",
     "comment": [
+        "A code specifying a category of this piece of associated transport equipment.",
         "A code specifying a category of this piece of attached transport equipment.",
         "The code specifying the category for this piece of logistics transport equipment, such as container or trailer.",
         "The code specifying the category of this referenced piece of logistics transport equipment."
     ],
     "rangeIncludes": [
         {
-            "uri": "unece:UNCL8053Code"
+            "uri": "unece:TransportEquipmentCategoryCodeList",
+            "comment": "A character string used to represent the transport equipment category."
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+        },
         {
             "uri": "unece:AttachedTransportEquipment",
             "comment": "A piece of attached transport equipment, such as a chain or a tarpaulin."

@@ -1,5 +1,5 @@
 ---
 title: quotationRequestDocument
-permalink: quotationRequestDocument
+permalink: quotationRequestDocument.html
 jsonid: quotationrequestdocument
 ---

@@ -1,5 +1,5 @@
 ---
 title: transportServicePaymentArrangementCode
-permalink: transportServicePaymentArrangementCode
+permalink: transportServicePaymentArrangementCode.html
 jsonid: transportservicepaymentarrangementcode
 ---

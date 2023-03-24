@@ -1,5 +1,5 @@
 ---
 title: intermediarySpecifiedFinancialInstitution
-permalink: intermediarySpecifiedFinancialInstitution
+permalink: intermediarySpecifiedFinancialInstitution.html
 jsonid: intermediaryspecifiedfinancialinstitution
 ---

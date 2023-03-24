@@ -1,5 +1,5 @@
 ---
 title: pickUpOrderFulfilmentLeadTimeMeasure
-permalink: pickUpOrderFulfilmentLeadTimeMeasure
+permalink: pickUpOrderFulfilmentLeadTimeMeasure.html
 jsonid: pickuporderfulfilmentleadtimemeasure
 ---

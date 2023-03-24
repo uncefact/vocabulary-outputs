@@ -1,5 +1,5 @@
 ---
 title: agreementInformation
-permalink: agreementInformation
+permalink: agreementInformation.html
 jsonid: agreementinformation
 ---

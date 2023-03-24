@@ -1,5 +1,5 @@
 ---
 title: productWeightLossInformationAmount
-permalink: productWeightLossInformationAmount
+permalink: productWeightLossInformationAmount.html
 jsonid: productweightlossinformationamount
 ---

@@ -1,5 +1,5 @@
 ---
 title: payerSpecifiedFinancialInstitution
-permalink: payerSpecifiedFinancialInstitution
+permalink: payerSpecifiedFinancialInstitution.html
 jsonid: payerspecifiedfinancialinstitution
 ---

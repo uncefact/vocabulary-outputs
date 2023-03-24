@@ -2,16 +2,23 @@
 {
     "label": "businessTypeCode",
     "uri": "unece:businessTypeCode",
-    "comment": "A code specifying the type of business of this legally set up organization.",
+    "comment": [
+        "A code specifying the type of business of this legally set up organization.",
+        "The code specifying the business type of this trade party."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Organization",
-            "comment": "An organized structure set up for a particular purpose, such as a business, government body, department, charity, or financial institution."
+            "uri": "unece:LegalOrganization",
+            "comment": "An organization set up on a legal basis as a business, government body, department, charity, or financial institution."
+        },
+        {
+            "uri": "unece:TradeParty",
+            "comment": "An individual, a group, or a body having a role in a trade business function."
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
 title: buyerAssignedId
-permalink: buyerAssignedId
+permalink: buyerAssignedId.html
 jsonid: buyerassignedid
 ---

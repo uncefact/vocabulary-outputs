@@ -1,5 +1,5 @@
 ---
 title: tradedParcelQuantity
-permalink: tradedParcelQuantity
+permalink: tradedParcelQuantity.html
 jsonid: tradedparcelquantity
 ---

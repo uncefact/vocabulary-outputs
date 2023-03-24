@@ -1,5 +1,5 @@
 ---
 title: transportInformationNote
-permalink: transportInformationNote
+permalink: transportInformationNote.html
 jsonid: transportinformationnote
 ---

@@ -1,5 +1,5 @@
 ---
 title: resaleProductUnitMeasureCode
-permalink: resaleProductUnitMeasureCode
+permalink: resaleProductUnitMeasureCode.html
 jsonid: resaleproductunitmeasurecode
 ---

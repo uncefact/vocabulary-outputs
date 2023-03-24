@@ -1,5 +1,5 @@
 ---
 title: changerName
-permalink: changerName
+permalink: changerName.html
 jsonid: changername
 ---

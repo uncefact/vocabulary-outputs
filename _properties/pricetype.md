@@ -1,5 +1,5 @@
 ---
 title: priceType
-permalink: priceType
+permalink: priceType.html
 jsonid: pricetype
 ---

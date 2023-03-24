@@ -1,5 +1,5 @@
 ---
 title: invoiceAssociatedDocument
-permalink: invoiceAssociatedDocument
+permalink: invoiceAssociatedDocument.html
 jsonid: invoiceassociateddocument
 ---

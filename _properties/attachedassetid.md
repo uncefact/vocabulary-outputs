@@ -1,5 +1,5 @@
 ---
 title: attachedAssetId
-permalink: attachedAssetId
+permalink: attachedAssetId.html
 jsonid: attachedassetid
 ---

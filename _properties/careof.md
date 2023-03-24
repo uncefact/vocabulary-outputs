@@ -1,5 +1,5 @@
 ---
 title: careOf
-permalink: careOf
+permalink: careOf.html
 jsonid: careof
 ---

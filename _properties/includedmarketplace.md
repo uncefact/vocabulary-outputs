@@ -1,5 +1,5 @@
 ---
 title: includedMarketplace
-permalink: includedMarketplace
+permalink: includedMarketplace.html
 jsonid: includedmarketplace
 ---

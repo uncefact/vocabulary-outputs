@@ -1,5 +1,5 @@
 ---
 title: specifiedLineTradeAgreement
-permalink: specifiedLineTradeAgreement
+permalink: specifiedLineTradeAgreement.html
 jsonid: specifiedlinetradeagreement
 ---

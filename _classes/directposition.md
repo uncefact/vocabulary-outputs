@@ -1,5 +1,5 @@
 ---
 title: DirectPosition
-permalink: DirectPosition
+permalink: DirectPosition.html
 jsonid: directposition
 ---

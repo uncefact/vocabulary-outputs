@@ -2,8 +2,8 @@
 {
     "label": "Project",
     "uri": "unece:Project",
-    "comment": "An endeavour carefully planned to achieve a unique product, service, or other particular aim such as a construction project.",
-    "datatypeProperties": [
+    "comment": "An endeavour carefully planned to achieve a procurement of goods, works and service.",
+    "objectProperties": [
         {
             "uri": "unece:constraintIndicator",
             "type": "xsd:boolean",
@@ -16,7 +16,7 @@
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of this procuring project."
         },
         {
@@ -26,35 +26,31 @@
         },
         {
             "uri": "unece:netBudgetAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the net budget for this procuring project. This excludes tax, the costs of installing equipment, and material costs from the total size of budget."
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the net budget for this procuring project."
         },
         {
             "uri": "unece:subWorksTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying the type of sub works, such as land surveying or information technology consulting, for this procuring project."
         },
         {
             "uri": "unece:totalBudgetAmount",
-            "type": "xsd:decimal",
-            "comment": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project. It includes all expenses, for example, the construction amount, tax and instalment costs for the supplier’s service as well as material costs paid by the owner institution, because construction materials can be ordered separately from the construction service itself."
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the total budget which includes net amount, taxes, and material and instalment costs for this procuring project."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the type of procuring project, such as goods, works and service."
         },
         {
             "uri": "unece:worksTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying the type of work, such as surveying or consulting, for this procuring project."
         }
     ],
     "referencedBy": [
-        {
-            "uri": "unece:programProject",
-            "comment": "A mission project program for this line trade agreement."
-        },
         {
             "uri": "unece:specifiedProject",
             "comment": "The procuring project specified for this header trade agreement."

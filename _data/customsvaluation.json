@@ -2,17 +2,22 @@
 {
     "label": "CustomsValuation",
     "uri": "unece:CustomsValuation",
-    "comment": "An assessment of the worth of an object, such as its monetary value, for customs purposes.",
-    "datatypeProperties": [
+    "comment": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes.",
+    "objectProperties": [
         {
             "uri": "unece:addedAdjustmentAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "The monetary value of the adjustment added for this cross-border customs valuation."
         },
         {
             "uri": "unece:addedAdjustmentPercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The adjustment added, expressed as a percentage, for this cross-border customs valuation."
+        },
+        {
+            "uri": "unece:applicableCurrencyExchange",
+            "type": "unece:CurrencyExchange",
+            "comment": "The trade related currency exchange applicable to this cross-border customs valuation."
         },
         {
             "uri": "unece:buyerSellerRelationshipIndicator",
@@ -26,27 +31,27 @@
         },
         {
             "uri": "unece:chargeApportionMethodCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the method of the apportion of charges for this cross-border customs valuation."
         },
         {
             "uri": "unece:deductedAdjustmentAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "The monetary value of the adjustment deducted for this cross-border customs valuation."
         },
         {
             "uri": "unece:deductedAdjustmentPercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The adjustment deducted, expressed as a percentage, for this cross-border customs valuation."
         },
         {
             "uri": "unece:methodCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the method by which this cross-border customs valuation is determined."
         },
         {
             "uri": "unece:otherChargeAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "A monetary value added or subtracted from the total invoice price not previously taken into account for this cross-border customs valuation."
         },
         {
@@ -71,26 +76,18 @@
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the type of cross-border customs valuation."
         },
         {
             "uri": "unece:wTOAdditionCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying any additions necessary under the World Trade Organization (WTO) Valuation Agreement used for the assessment of this cross-border customs valuation."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:applicableCurrencyExchange",
-            "type": "unece:CurrencyExchange",
-            "comment": "The trade related currency exchange applicable to this cross-border customs valuation."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableCustomsValuation",
-            "comment": "A cross-border customs valuation applicable ..."
+            "uri": "unece:applicableCustomsValuation"
         }
     ]
 }

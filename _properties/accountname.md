@@ -1,5 +1,5 @@
 ---
 title: accountName
-permalink: accountName
+permalink: accountName.html
 jsonid: accountname
 ---

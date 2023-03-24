@@ -1,5 +1,5 @@
 ---
 title: remainingBatteryChargePercent
-permalink: remainingBatteryChargePercent
+permalink: remainingBatteryChargePercent.html
 jsonid: remainingbatterychargepercent
 ---

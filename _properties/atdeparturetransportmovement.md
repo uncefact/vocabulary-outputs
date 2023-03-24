@@ -1,5 +1,5 @@
 ---
 title: atDepartureTransportMovement
-permalink: atDepartureTransportMovement
+permalink: atDepartureTransportMovement.html
 jsonid: atdeparturetransportmovement
 ---

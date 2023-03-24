@@ -1,5 +1,5 @@
 ---
 title: cancellationReason
-permalink: cancellationReason
+permalink: cancellationReason.html
 jsonid: cancellationreason
 ---

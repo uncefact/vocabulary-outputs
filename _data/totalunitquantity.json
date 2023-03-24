@@ -2,16 +2,24 @@
 {
     "label": "totalUnitQuantity",
     "uri": "unece:totalUnitQuantity",
-    "comment": "A total number of units contained in this supply chain packaging.",
+    "comment": [
+        "A total number of units contained in this logistics packaging.",
+        "A total number of units contained in this supply chain packaging."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:QuantityType",
+            "comment": "Missing description"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Packaging",
-            "comment": "Any wrapping or containment, such as a box or a barrel, of goods."
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

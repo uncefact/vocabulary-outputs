@@ -1,5 +1,5 @@
 ---
 title: despatchNoteAssociatedDocument
-permalink: despatchNoteAssociatedDocument
+permalink: despatchNoteAssociatedDocument.html
 jsonid: despatchnoteassociateddocument
 ---

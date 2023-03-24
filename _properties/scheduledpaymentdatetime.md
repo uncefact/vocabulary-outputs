@@ -1,5 +1,5 @@
 ---
 title: scheduledPaymentDateTime
-permalink: scheduledPaymentDateTime
+permalink: scheduledPaymentDateTime.html
 jsonid: scheduledpaymentdatetime
 ---

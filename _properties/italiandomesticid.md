@@ -1,5 +1,5 @@
 ---
 title: italianDomesticId
-permalink: italianDomesticId
+permalink: italianDomesticId.html
 jsonid: italiandomesticid
 ---

@@ -1,5 +1,5 @@
 ---
 title: supportCentreParty
-permalink: supportCentreParty
+permalink: supportCentreParty.html
 jsonid: supportcentreparty
 ---

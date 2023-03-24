@@ -1,5 +1,5 @@
 ---
 title: loadedDangerousGoods
-permalink: loadedDangerousGoods
+permalink: loadedDangerousGoods.html
 jsonid: loadeddangerousgoods
 ---

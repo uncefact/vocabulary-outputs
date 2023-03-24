@@ -1,5 +1,5 @@
 ---
 title: timeReferenceDueDateTypeCode
-permalink: timeReferenceDueDateTypeCode
+permalink: timeReferenceDueDateTypeCode.html
 jsonid: timereferenceduedatetypecode
 ---

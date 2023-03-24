@@ -1,5 +1,5 @@
 ---
 title: partId
-permalink: partId
+permalink: partId.html
 jsonid: partid
 ---

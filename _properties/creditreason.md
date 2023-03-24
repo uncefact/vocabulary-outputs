@@ -1,5 +1,5 @@
 ---
 title: creditReason
-permalink: creditReason
+permalink: creditReason.html
 jsonid: creditreason
 ---

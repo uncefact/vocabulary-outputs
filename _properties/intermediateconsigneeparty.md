@@ -1,5 +1,5 @@
 ---
 title: intermediateConsigneeParty
-permalink: intermediateConsigneeParty
+permalink: intermediateConsigneeParty.html
 jsonid: intermediateconsigneeparty
 ---

@@ -1,5 +1,5 @@
 ---
 title: uNDGIdentificationCode
-permalink: uNDGIdentificationCode
+permalink: uNDGIdentificationCode.html
 jsonid: undgidentificationcode
 ---

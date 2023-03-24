@@ -2,16 +2,23 @@
 {
     "label": "contractId",
     "uri": "unece:contractId",
-    "comment": "The contract identifier of this referenced transport service.",
+    "comment": [
+        "A contract identifier for this supply chain consignment.",
+        "The contract identifier of this referenced transport service."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of ..."
+        },
+        {
             "uri": "unece:Service",
-            "comment": "Work or the doing of work for another or community to include utilities and transport."
+            "comment": "A service associated with a ..."
         }
     ]
 }

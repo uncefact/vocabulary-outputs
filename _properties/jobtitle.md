@@ -1,5 +1,5 @@
 ---
 title: jobTitle
-permalink: jobTitle
+permalink: jobTitle.html
 jsonid: jobtitle
 ---

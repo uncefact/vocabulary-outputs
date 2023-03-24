@@ -1,5 +1,5 @@
 ---
 title: austrianBankleitzahlId
-permalink: austrianBankleitzahlId
+permalink: austrianBankleitzahlId.html
 jsonid: austrianbankleitzahlid
 ---

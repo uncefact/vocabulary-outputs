@@ -1,5 +1,5 @@
 ---
 title: freightForwarderAssignedId
-permalink: freightForwarderAssignedId
+permalink: freightForwarderAssignedId.html
 jsonid: freightforwarderassignedid
 ---

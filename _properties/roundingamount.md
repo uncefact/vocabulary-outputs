@@ -1,5 +1,5 @@
 ---
 title: roundingAmount
-permalink: roundingAmount
+permalink: roundingAmount.html
 jsonid: roundingamount
 ---

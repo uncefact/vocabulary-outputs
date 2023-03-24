@@ -1,5 +1,5 @@
 ---
 title: affixedSeal
-permalink: affixedSeal
+permalink: affixedSeal.html
 jsonid: affixedseal
 ---

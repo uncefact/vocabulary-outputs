@@ -1,5 +1,5 @@
 ---
 title: identityCardId
-permalink: identityCardId
+permalink: identityCardId.html
 jsonid: identitycardid
 ---

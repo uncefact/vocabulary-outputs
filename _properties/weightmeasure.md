@@ -1,5 +1,5 @@
 ---
 title: weightMeasure
-permalink: weightMeasure
+permalink: weightMeasure.html
 jsonid: weightmeasure
 ---

@@ -1,5 +1,5 @@
 ---
 title: maximumOrderQuantityOrderingPeriod
-permalink: maximumOrderQuantityOrderingPeriod
+permalink: maximumOrderQuantityOrderingPeriod.html
 jsonid: maximumorderquantityorderingperiod
 ---

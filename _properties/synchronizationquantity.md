@@ -1,5 +1,5 @@
 ---
 title: synchronizationQuantity
-permalink: synchronizationQuantity
+permalink: synchronizationQuantity.html
 jsonid: synchronizationquantity
 ---

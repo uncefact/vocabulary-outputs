@@ -1,5 +1,5 @@
 ---
 title: creationDateTime
-permalink: creationDateTime
+permalink: creationDateTime.html
 jsonid: creationdatetime
 ---

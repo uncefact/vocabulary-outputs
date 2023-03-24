@@ -1,5 +1,5 @@
 ---
 title: uPICId
-permalink: uPICId
+permalink: uPICId.html
 jsonid: upicid
 ---

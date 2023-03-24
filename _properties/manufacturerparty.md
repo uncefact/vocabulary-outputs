@@ -1,5 +1,5 @@
 ---
 title: manufacturerParty
-permalink: manufacturerParty
+permalink: manufacturerParty.html
 jsonid: manufacturerparty
 ---

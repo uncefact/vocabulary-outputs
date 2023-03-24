@@ -1,5 +1,5 @@
 ---
 title: minimumValueMeasure
-permalink: minimumValueMeasure
+permalink: minimumValueMeasure.html
 jsonid: minimumvaluemeasure
 ---

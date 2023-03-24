@@ -1,5 +1,5 @@
 ---
 title: requestedRelatedService
-permalink: requestedRelatedService
+permalink: requestedRelatedService.html
 jsonid: requestedrelatedservice
 ---

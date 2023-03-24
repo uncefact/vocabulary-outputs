@@ -1,5 +1,5 @@
 ---
 title: cefactBieDomainClass
-permalink: cefactBieDomainClass
+permalink: cefactBieDomainClass.html
 jsonid: cefactbiedomainclass
 ---

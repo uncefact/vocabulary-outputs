@@ -1,5 +1,5 @@
 ---
 title: mIMECode
-permalink: mIMECode
+permalink: mIMECode.html
 jsonid: mimecode
 ---

@@ -1,5 +1,5 @@
 ---
 title: actualReportedMeasurement
-permalink: actualReportedMeasurement
+permalink: actualReportedMeasurement.html
 jsonid: actualreportedmeasurement
 ---

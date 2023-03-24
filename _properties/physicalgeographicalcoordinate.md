@@ -1,5 +1,5 @@
 ---
 title: physicalGeographicalCoordinate
-permalink: physicalGeographicalCoordinate
+permalink: physicalGeographicalCoordinate.html
 jsonid: physicalgeographicalcoordinate
 ---

@@ -1,5 +1,5 @@
 ---
 title: transshipmentIntermediateEvent
-permalink: transshipmentIntermediateEvent
+permalink: transshipmentIntermediateEvent.html
 jsonid: transshipmentintermediateevent
 ---

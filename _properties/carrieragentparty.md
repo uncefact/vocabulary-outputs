@@ -1,5 +1,5 @@
 ---
 title: carrierAgentParty
-permalink: carrierAgentParty
+permalink: carrierAgentParty.html
 jsonid: carrieragentparty
 ---

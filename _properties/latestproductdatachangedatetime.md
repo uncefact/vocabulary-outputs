@@ -1,5 +1,5 @@
 ---
 title: latestProductDataChangeDateTime
-permalink: latestProductDataChangeDateTime
+permalink: latestProductDataChangeDateTime.html
 jsonid: latestproductdatachangedatetime
 ---

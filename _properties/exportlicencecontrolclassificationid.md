@@ -1,5 +1,5 @@
 ---
 title: exportLicenceControlClassificationId
-permalink: exportLicenceControlClassificationId
+permalink: exportLicenceControlClassificationId.html
 jsonid: exportlicencecontrolclassificationid
 ---

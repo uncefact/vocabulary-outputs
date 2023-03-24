@@ -1,5 +1,5 @@
 ---
 title: AssociationBIE
-permalink: AssociationBIE
+permalink: AssociationBIE.html
 jsonid: associationbie
 ---

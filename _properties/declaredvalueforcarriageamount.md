@@ -1,5 +1,5 @@
 ---
 title: declaredValueForCarriageAmount
-permalink: declaredValueForCarriageAmount
+permalink: declaredValueForCarriageAmount.html
 jsonid: declaredvalueforcarriageamount
 ---

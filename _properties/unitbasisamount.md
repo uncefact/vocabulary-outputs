@@ -1,5 +1,5 @@
 ---
 title: unitBasisAmount
-permalink: unitBasisAmount
+permalink: unitBasisAmount.html
 jsonid: unitbasisamount
 ---

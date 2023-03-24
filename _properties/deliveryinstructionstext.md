@@ -1,5 +1,5 @@
 ---
 title: deliveryInstructionsText
-permalink: deliveryInstructionsText
+permalink: deliveryInstructionsText.html
 jsonid: deliveryinstructionstext
 ---

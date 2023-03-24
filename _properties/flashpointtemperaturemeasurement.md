@@ -1,5 +1,5 @@
 ---
 title: flashpointTemperatureMeasurement
-permalink: flashpointTemperatureMeasurement
+permalink: flashpointTemperatureMeasurement.html
 jsonid: flashpointtemperaturemeasurement
 ---

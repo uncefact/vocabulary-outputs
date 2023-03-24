@@ -3,24 +3,22 @@
     "label": "SubordinateLocation",
     "uri": "unece:SubordinateLocation",
     "comment": "A physical location or place which is a subordinate location of a location.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier for this subordinate location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
         },
         {
             "uri": "unece:locationFunctionTypeCode",
-            "type": "unece:UNCL3227Code",
+            "type": "unece:LocationFunctionCodeList",
             "comment": "The code specifying the type of subordinate location."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
             "comment": "The name, expressed as text, of this subordinate location."
-        }
-    ],
-    "objectProperties": [
+        },
         {
             "uri": "unece:physicalGeographicalCoordinate",
             "type": "unece:GeographicalCoordinate",
@@ -34,7 +32,7 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:subordinateLocation",
+            "uri": "unece:subordinateSubordinateLocation",
             "comment": "A location subordinate to this logistics related location."
         }
     ]

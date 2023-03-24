@@ -1,5 +1,5 @@
 ---
 title: SupplyPlan
-permalink: SupplyPlan
+permalink: SupplyPlan.html
 jsonid: supplyplan
 ---

@@ -1,5 +1,5 @@
 ---
 title: operatorParty
-permalink: operatorParty
+permalink: operatorParty.html
 jsonid: operatorparty
 ---

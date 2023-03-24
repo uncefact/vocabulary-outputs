@@ -2,17 +2,24 @@
 {
     "label": "specifiedEmission",
     "uri": "unece:specifiedEmission",
-    "comment": "A calculated emission specified for this logistics transport movement.",
+    "comment": [
+        "A calculated emission specified for this logistics transport means.",
+        "A calculated emission specified for this logistics transport movement."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:Emission",
-            "comment": "Pollution (including noise, heat, and radiation) discharged into the environment by residential, commercial, or industrial facilities or by a means of transport."
+            "comment": "A calculation of the pollution (including noise, heat, and radiation etc.) discharged into the environment by a residential, commercial, or industrial facility or by a means of transport, such as a vessel, aircraft or truck."
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:LogisticsTransportMeans",
+            "comment": "The devices used to convey goods or other objects from place to place during logistics cargo movements."
+        },
+        {
             "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

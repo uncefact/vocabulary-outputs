@@ -1,5 +1,5 @@
 ---
 title: associatedTax
-permalink: associatedTax
+permalink: associatedTax.html
 jsonid: associatedtax
 ---

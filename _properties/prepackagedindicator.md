@@ -1,5 +1,5 @@
 ---
 title: prePackagedIndicator
-permalink: prePackagedIndicator
+permalink: prePackagedIndicator.html
 jsonid: prepackagedindicator
 ---

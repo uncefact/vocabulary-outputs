@@ -1,5 +1,5 @@
 ---
 title: subordinateId
-permalink: subordinateId
+permalink: subordinateId.html
 jsonid: subordinateid
 ---

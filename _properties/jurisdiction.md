@@ -1,5 +1,5 @@
 ---
 title: jurisdiction
-permalink: jurisdiction
+permalink: jurisdiction.html
 jsonid: jurisdiction
 ---

@@ -1,5 +1,5 @@
 ---
 title: confirmedPickUpEvent
-permalink: confirmedPickUpEvent
+permalink: confirmedPickUpEvent.html
 jsonid: confirmedpickupevent
 ---

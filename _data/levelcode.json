@@ -2,16 +2,23 @@
 {
     "label": "levelCode",
     "uri": "unece:levelCode",
-    "comment": "The code specifying the level for this logistics risk analysis result.",
+    "comment": [
+        "The code specifying the level for this logistics risk analysis result.",
+        "The code specifying the level of this logistics packaging."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
+        },
+        {
             "uri": "unece:RiskAnalysisResult",
-            "comment": "The results of a risk analysis calculation."
+            "comment": "The result of a logistics risk analysis calculation."
         }
     ]
 }

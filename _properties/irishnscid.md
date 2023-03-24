@@ -1,5 +1,5 @@
 ---
 title: irishNSCId
-permalink: irishNSCId
+permalink: irishNSCId.html
 jsonid: irishnscid
 ---

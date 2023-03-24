@@ -1,5 +1,5 @@
 ---
 title: subBrandName
-permalink: subBrandName
+permalink: subBrandName.html
 jsonid: subbrandname
 ---

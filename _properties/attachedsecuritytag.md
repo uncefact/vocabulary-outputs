@@ -1,5 +1,5 @@
 ---
 title: attachedSecurityTag
-permalink: attachedSecurityTag
+permalink: attachedSecurityTag.html
 jsonid: attachedsecuritytag
 ---

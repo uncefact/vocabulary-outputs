@@ -1,5 +1,5 @@
 ---
 title: explosiveCargoNetWeightMeasure
-permalink: explosiveCargoNetWeightMeasure
+permalink: explosiveCargoNetWeightMeasure.html
 jsonid: explosivecargonetweightmeasure
 ---

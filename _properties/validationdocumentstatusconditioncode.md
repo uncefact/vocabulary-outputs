@@ -1,5 +1,5 @@
 ---
 title: validationDocumentStatusConditionCode
-permalink: validationDocumentStatusConditionCode
+permalink: validationDocumentStatusConditionCode.html
 jsonid: validationdocumentstatusconditioncode
 ---

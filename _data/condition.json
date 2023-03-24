@@ -1,29 +1,34 @@
 
 {
-    "label": "Condition",
-    "uri": "unece:Condition",
-    "comment": "A state of a person or thing.",
-    "datatypeProperties": [
+    "label": "condition",
+    "uri": "unece:condition",
+    "comment": [
+        "A condition or status, expressed as text, for this process characteristic.",
+        "A condition or status, expressed as text, of this organization characteristic.",
+        "A condition, expressed as text, for this document status.",
+        "The condition, expressed as text, for this financial guarantee."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this product characteristic condition."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of product characteristic condition."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the value for this product characteristic condition."
+            "uri": "xsd:string"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:applicableCondition",
-            "comment": "A condition applicable to this product characteristic."
+            "uri": "unece:DocumentStatus",
+            "comment": "The information relevant to a condition related to a document."
+        },
+        {
+            "uri": "unece:Guarantee",
+            "comment": "An official promise or assurance to fulfil a financial obligation."
+        },
+        {
+            "uri": "unece:OrganizationCharacteristic",
+            "comment": "A prominent attribute or aspect of an organization."
+        },
+        {
+            "uri": "unece:ProcessCharacteristic",
+            "comment": "A prominent attribute or aspect of a process."
         }
     ]
 }

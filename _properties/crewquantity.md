@@ -1,5 +1,5 @@
 ---
 title: crewQuantity
-permalink: crewQuantity
+permalink: crewQuantity.html
 jsonid: crewquantity
 ---

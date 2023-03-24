@@ -1,5 +1,5 @@
 ---
 title: verificationNumeric
-permalink: verificationNumeric
+permalink: verificationNumeric.html
 jsonid: verificationnumeric
 ---

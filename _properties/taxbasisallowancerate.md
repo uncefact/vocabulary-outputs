@@ -1,5 +1,5 @@
 ---
 title: taxBasisAllowanceRate
-permalink: taxBasisAllowanceRate
+permalink: taxBasisAllowanceRate.html
 jsonid: taxbasisallowancerate
 ---

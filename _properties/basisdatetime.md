@@ -1,5 +1,5 @@
 ---
 title: basisDateTime
-permalink: basisDateTime
+permalink: basisDateTime.html
 jsonid: basisdatetime
 ---

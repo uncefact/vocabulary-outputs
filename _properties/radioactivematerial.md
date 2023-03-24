@@ -1,5 +1,5 @@
 ---
 title: radioactiveMaterial
-permalink: radioactiveMaterial
+permalink: radioactiveMaterial.html
 jsonid: radioactivematerial
 ---

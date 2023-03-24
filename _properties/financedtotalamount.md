@@ -1,5 +1,5 @@
 ---
 title: financedTotalAmount
-permalink: financedTotalAmount
+permalink: financedTotalAmount.html
 jsonid: financedtotalamount
 ---

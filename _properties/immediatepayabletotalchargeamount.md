@@ -1,5 +1,5 @@
 ---
 title: immediatePayableTotalChargeAmount
-permalink: immediatePayableTotalChargeAmount
+permalink: immediatePayableTotalChargeAmount.html
 jsonid: immediatepayabletotalchargeamount
 ---

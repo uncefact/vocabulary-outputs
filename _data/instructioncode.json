@@ -4,21 +4,26 @@
     "uri": "unece:instructionCode",
     "comment": [
         "A code specifying an instruction for these trade payment terms.",
+        "A code specifying an instruction for this logistics packaging.",
         "A code specifying an instruction for this supply chain packaging."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Packaging",
-            "comment": "Any wrapping or containment, such as a box or a barrel, of goods."
+            "uri": "unece:LogisticsPackaging",
+            "comment": "Any wrapping or containment, such as a box or a barrel, whether or not any goods are contained within."
         },
         {
             "uri": "unece:PaymentTerms",
-            "comment": "Terms and conditions by which payment has been or will be made."
+            "comment": "Terms and conditions by which payment has been or will be made for trade purposes."
+        },
+        {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
         }
     ]
 }

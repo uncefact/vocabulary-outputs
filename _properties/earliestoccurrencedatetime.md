@@ -1,5 +1,5 @@
 ---
 title: earliestOccurrenceDateTime
-permalink: earliestOccurrenceDateTime
+permalink: earliestOccurrenceDateTime.html
 jsonid: earliestoccurrencedatetime
 ---

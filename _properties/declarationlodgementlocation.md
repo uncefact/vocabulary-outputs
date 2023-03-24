@@ -1,5 +1,5 @@
 ---
 title: declarationLodgementLocation
-permalink: declarationLodgementLocation
+permalink: declarationLodgementLocation.html
 jsonid: declarationlodgementlocation
 ---

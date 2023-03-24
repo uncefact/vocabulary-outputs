@@ -1,5 +1,5 @@
 ---
 title: transportEquipmentOperationalStatusCode
-permalink: transportEquipmentOperationalStatusCode
+permalink: transportEquipmentOperationalStatusCode.html
 jsonid: transportequipmentoperationalstatuscode
 ---

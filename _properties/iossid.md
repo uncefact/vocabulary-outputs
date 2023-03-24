@@ -1,5 +1,5 @@
 ---
 title: iOSSId
-permalink: iOSSId
+permalink: iOSSId.html
 jsonid: iossid
 ---

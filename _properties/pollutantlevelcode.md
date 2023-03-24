@@ -1,5 +1,5 @@
 ---
 title: pollutantLevelCode
-permalink: pollutantLevelCode
+permalink: pollutantLevelCode.html
 jsonid: pollutantlevelcode
 ---

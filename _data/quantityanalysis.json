@@ -2,59 +2,27 @@
 {
     "label": "QuantityAnalysis",
     "uri": "unece:QuantityAnalysis",
-    "comment": "The analytic breakdown of a quantity to include its supporting information, such as a complex quantity that consists of multiple pieces of information that together constitute a single quantity.",
-    "datatypeProperties": [
+    "comment": "The quantity analysis for this work item.",
+    "objectProperties": [
         {
             "uri": "unece:actualQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The actual quantity for this work item quantity analysis."
         },
         {
+            "uri": "unece:actualQuantityDimension",
+            "type": "unece:WorkItemDimension",
+            "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+        },
+        {
             "uri": "unece:actualQuantityPercent",
-            "type": "xsd:decimal",
-            "comment": "The percentage of a total quantity that the actual quantity of this work item quantity analysis represents. Definition corrected. Industry context value changed from \"Construction\" to \"In All Contexts\"."
+            "type": "xsd:string",
+            "comment": "The percentage of a total quantity that the actual quantity of this work item quantity analysis represents."
         },
         {
             "uri": "unece:alternativeClassificationCode",
-            "type": "xsd:token",
-            "comment": "A code specifying an alternative classification value for this work item quantity analysis."
-        },
-        {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the contractual language for this work item quantity analysis."
-        },
-        {
-            "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "The textual description of this work item quantity analysis."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier for this work item quantity analysis."
-        },
-        {
-            "uri": "unece:primaryClassificationCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a primary classification value for this work item quantity analysis."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the status of this work item quantity analysis, such as partial, approved, not approved. Deprecated - Use ASBIE to Recorded Status instead."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of work item quantity analysis."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:actualQuantityDimension",
-            "type": "unece:Dimension",
-            "comment": "A work item dimension of the actual quantity in this work item quantity analysis."
+            "comment": "A code specifying an alternative classification value for this work item quantity analysis."
         },
         {
             "uri": "unece:breakdownQuantityAnalysis",
@@ -65,6 +33,31 @@
             "uri": "unece:changedStatus",
             "type": "unece:RecordedStatus",
             "comment": "A changed recorded status for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:contractualLanguageCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the contractual language for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this work item quantity analysis."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The unique identifier for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:primaryClassificationCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a primary classification value for this work item quantity analysis."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of work item quantity analysis."
         }
     ],
     "referencedBy": [

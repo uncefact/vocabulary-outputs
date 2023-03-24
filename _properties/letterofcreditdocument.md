@@ -1,5 +1,5 @@
 ---
 title: letterOfCreditDocument
-permalink: letterOfCreditDocument
+permalink: letterOfCreditDocument.html
 jsonid: letterofcreditdocument
 ---

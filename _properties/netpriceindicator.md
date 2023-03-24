@@ -1,5 +1,5 @@
 ---
 title: netPriceIndicator
-permalink: netPriceIndicator
+permalink: netPriceIndicator.html
 jsonid: netpriceindicator
 ---

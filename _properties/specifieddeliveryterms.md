@@ -1,5 +1,5 @@
 ---
 title: specifiedDeliveryTerms
-permalink: specifiedDeliveryTerms
+permalink: specifiedDeliveryTerms.html
 jsonid: specifieddeliveryterms
 ---

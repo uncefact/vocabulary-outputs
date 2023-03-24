@@ -1,5 +1,5 @@
 ---
 title: chargeableTransportationStageQuantity
-permalink: chargeableTransportationStageQuantity
+permalink: chargeableTransportationStageQuantity.html
 jsonid: chargeabletransportationstagequantity
 ---

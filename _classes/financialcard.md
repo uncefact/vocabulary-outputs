@@ -1,5 +1,5 @@
 ---
 title: FinancialCard
-permalink: FinancialCard
+permalink: FinancialCard.html
 jsonid: financialcard
 ---

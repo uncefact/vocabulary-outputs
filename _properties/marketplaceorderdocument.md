@@ -1,5 +1,5 @@
 ---
 title: marketplaceOrderDocument
-permalink: marketplaceOrderDocument
+permalink: marketplaceOrderDocument.html
 jsonid: marketplaceorderdocument
 ---

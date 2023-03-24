@@ -1,5 +1,5 @@
 ---
 title: urgencyCode
-permalink: urgencyCode
+permalink: urgencyCode.html
 jsonid: urgencycode
 ---

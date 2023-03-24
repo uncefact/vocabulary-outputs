@@ -1,5 +1,5 @@
 ---
 title: disbursementAmount
-permalink: disbursementAmount
+permalink: disbursementAmount.html
 jsonid: disbursementamount
 ---

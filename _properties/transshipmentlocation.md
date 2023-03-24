@@ -1,5 +1,5 @@
 ---
 title: transshipmentLocation
-permalink: transshipmentLocation
+permalink: transshipmentLocation.html
 jsonid: transshipmentlocation
 ---

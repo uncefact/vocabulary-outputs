@@ -1,5 +1,5 @@
 ---
 title: receivedDateTime
-permalink: receivedDateTime
+permalink: receivedDateTime.html
 jsonid: receiveddatetime
 ---

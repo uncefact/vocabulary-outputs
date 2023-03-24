@@ -3,58 +3,56 @@
     "label": "GovernmentRegistration",
     "uri": "unece:GovernmentRegistration",
     "comment": "The recording of items or details for a governmental purpose.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a category of this government registration."
         },
         {
             "uri": "unece:countryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the country for this government registration."
         },
         {
             "uri": "unece:countrySubDivisionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the country sub-division for this registration."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "An identifier for this government registration."
         },
         {
             "uri": "unece:lastRegisteredYearDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The last registered year of this government registration."
         },
         {
             "uri": "unece:licenceId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of a licence for this government registration."
         },
         {
             "uri": "unece:recordedDate",
-            "type": "xsd:base64Binary",
+            "type": "xsd:string",
             "comment": "The date that this government registration was recorded."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a type of government registration."
         },
         {
-            "uri": "unece:versionId",
-            "type": "xsd:token",
-            "comment": "The identifier of the version of this government registration."
-        }
-    ],
-    "objectProperties": [
-        {
             "uri": "unece:validityPeriod",
-            "type": "unece:Period",
+            "type": "unece:SpecifiedPeriod",
             "comment": "The period of time during which this government registration is valid."
+        },
+        {
+            "uri": "unece:versionId",
+            "type": "xsd:string",
+            "comment": "The identifier of the version of this government registration."
         }
     ],
     "referencedBy": [

@@ -1,5 +1,5 @@
 ---
 title: calculationBasis
-permalink: calculationBasis
+permalink: calculationBasis.html
 jsonid: calculationbasis
 ---

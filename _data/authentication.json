@@ -2,27 +2,32 @@
 {
     "label": "Authentication",
     "uri": "unece:Authentication",
-    "comment": "A proof that something is genuine.",
-    "datatypeProperties": [
+    "comment": "A proof that a document is genuine.",
+    "objectProperties": [
         {
             "uri": "unece:actualDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:string",
             "comment": "The actual date, time, date time, or other date time value of this document authentication."
         },
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a category for this document authentication."
         },
         {
             "uri": "unece:governmentActionTypeCode",
-            "type": "unece:UNCL9417Code",
+            "type": "unece:GovernmentActionCodeList",
             "comment": "The code specifying the type of document authentication."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier for this document authentication."
+        },
+        {
+            "uri": "unece:includedClause",
+            "type": "unece:Clause",
+            "comment": "A document clause included in this document authentication."
         },
         {
             "uri": "unece:information",
@@ -30,8 +35,23 @@
             "comment": "Information, expressed as text, for this document authentication."
         },
         {
+            "uri": "unece:issueLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "The issue location for this document authentication."
+        },
+        {
+            "uri": "unece:locationProviderParty",
+            "type": "unece:TradeParty",
+            "comment": "The trade party providing the location for this document authentication."
+        },
+        {
+            "uri": "unece:providerParty",
+            "type": "unece:TradeParty",
+            "comment": "The trade party providing this document authentication."
+        },
+        {
             "uri": "unece:representationTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the type of representation of this document authentication, such as direct or indirect."
         },
         {
@@ -51,35 +71,8 @@
         },
         {
             "uri": "unece:statementCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the statement for this document authentication."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:includedClause",
-            "type": "unece:Clause",
-            "comment": "A document clause included in this document authentication."
-        },
-        {
-            "uri": "unece:issueLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The issue location for this document authentication."
-        },
-        {
-            "uri": "unece:locationProviderParty",
-            "type": "unece:TradeParty",
-            "comment": "The trade party providing the location for this document authentication."
-        },
-        {
-            "uri": "unece:providerParty",
-            "type": "unece:Party",
-            "comment": "The referenced party providing this document authentication."
-        },
-        {
-            "uri": "unece:providerTradeParty",
-            "type": "unece:TradeParty",
-            "comment": "The trade party providing this document authentication."
         }
     ],
     "referencedBy": [
@@ -112,8 +105,7 @@
             "comment": "The second signature, also known as the first counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
         },
         {
-            "uri": "unece:signatoryAuthentication",
-            "comment": "A signatory authentication for this ..."
+            "uri": "unece:signatoryAuthentication"
         },
         {
             "uri": "unece:thirdSignatoryAuthentication",

@@ -1,5 +1,5 @@
 ---
 title: suppliedFromCountry
-permalink: suppliedFromCountry
+permalink: suppliedFromCountry.html
 jsonid: suppliedfromcountry
 ---

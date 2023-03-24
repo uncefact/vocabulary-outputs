@@ -1,5 +1,5 @@
 ---
 title: virtualIndicator
-permalink: virtualIndicator
+permalink: virtualIndicator.html
 jsonid: virtualindicator
 ---

@@ -2,7 +2,11 @@
 {
     "label": "marketingPhrase",
     "uri": "unece:marketingPhrase",
-    "comment": "A catch phrase, expressed as text, for marketing of this trade product feature.",
+    "comment": [
+        "A catch phrase, expressed as text, for marketing of this trade product feature.",
+        "A marketing phrase, expressed as text, for this specified feature.",
+        "A marketing phrase, expressed as text, for this water source."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -10,8 +14,16 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Feature",
-            "comment": "Distinctive or characteristic parts of an object."
+            "uri": "unece:Source",
+            "comment": "A place from which water originates, such as a hot spring or lake that provides water to public drinking water supplies and private wells."
+        },
+        {
+            "uri": "unece:SpecifiedFeature",
+            "comment": "A distinctive or characteristic part of something."
+        },
+        {
+            "uri": "unece:TradeProductFeature",
+            "comment": "Distinctive or characteristic parts of a trade product."
         }
     ]
 }

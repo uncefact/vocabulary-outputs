@@ -2,7 +2,10 @@
 {
     "label": "statement",
     "uri": "unece:statement",
-    "comment": "The statement, expressed as text, for this document authentication.",
+    "comment": [
+        "A statement, expressed as text, for this specified inspection result.",
+        "The statement, expressed as text, for this document authentication."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -11,7 +14,11 @@
     "domainIncludes": [
         {
             "uri": "unece:Authentication",
-            "comment": "A proof that something is genuine."
+            "comment": "A proof that a document is genuine."
+        },
+        {
+            "uri": "unece:InspectionResult",
+            "comment": "Results obtained by performing an inspection."
         }
     ]
 }

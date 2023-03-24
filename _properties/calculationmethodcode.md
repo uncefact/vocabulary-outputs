@@ -1,5 +1,5 @@
 ---
 title: calculationMethodCode
-permalink: calculationMethodCode
+permalink: calculationMethodCode.html
 jsonid: calculationmethodcode
 ---

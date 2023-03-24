@@ -1,5 +1,5 @@
 ---
 title: pollutionMeasure
-permalink: pollutionMeasure
+permalink: pollutionMeasure.html
 jsonid: pollutionmeasure
 ---

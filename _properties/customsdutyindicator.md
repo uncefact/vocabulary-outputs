@@ -1,5 +1,5 @@
 ---
 title: customsDutyIndicator
-permalink: customsDutyIndicator
+permalink: customsDutyIndicator.html
 jsonid: customsdutyindicator
 ---

@@ -1,5 +1,5 @@
 ---
 title: sealConditionCode
-permalink: sealConditionCode
+permalink: sealConditionCode.html
 jsonid: sealconditioncode
 ---

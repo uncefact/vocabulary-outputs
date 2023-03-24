@@ -1,5 +1,5 @@
 ---
 title: measurementMethodCode
-permalink: measurementMethodCode
+permalink: measurementMethodCode.html
 jsonid: measurementmethodcode
 ---

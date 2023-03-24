@@ -1,5 +1,5 @@
 ---
 title: PaymentPenaltyTerms
-permalink: PaymentPenaltyTerms
+permalink: PaymentPenaltyTerms.html
 jsonid: paymentpenaltyterms
 ---

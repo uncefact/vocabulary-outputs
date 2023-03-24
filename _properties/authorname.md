@@ -1,5 +1,5 @@
 ---
 title: authorName
-permalink: authorName
+permalink: authorName.html
 jsonid: authorname
 ---

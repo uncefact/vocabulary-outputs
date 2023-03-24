@@ -1,5 +1,5 @@
 ---
 title: importTypeCode
-permalink: importTypeCode
+permalink: importTypeCode.html
 jsonid: importtypecode
 ---

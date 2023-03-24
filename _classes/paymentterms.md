@@ -1,5 +1,5 @@
 ---
 title: PaymentTerms
-permalink: PaymentTerms
+permalink: PaymentTerms.html
 jsonid: paymentterms
 ---

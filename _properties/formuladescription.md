@@ -1,5 +1,5 @@
 ---
 title: formulaDescription
-permalink: formulaDescription
+permalink: formulaDescription.html
 jsonid: formuladescription
 ---

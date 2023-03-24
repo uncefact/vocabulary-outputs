@@ -1,5 +1,5 @@
 ---
 title: vINLabel
-permalink: vINLabel
+permalink: vINLabel.html
 jsonid: vinlabel
 ---

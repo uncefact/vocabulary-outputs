@@ -1,5 +1,5 @@
 ---
 title: mFAGId
-permalink: mFAGId
+permalink: mFAGId.html
 jsonid: mfagid
 ---

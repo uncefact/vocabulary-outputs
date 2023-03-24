@@ -1,5 +1,5 @@
 ---
 title: PersonIdentity
-permalink: PersonIdentity
+permalink: PersonIdentity.html
 jsonid: personidentity
 ---

@@ -1,5 +1,5 @@
 ---
 title: colourDescription
-permalink: colourDescription
+permalink: colourDescription.html
 jsonid: colourdescription
 ---

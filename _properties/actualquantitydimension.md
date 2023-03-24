@@ -1,5 +1,5 @@
 ---
 title: actualQuantityDimension
-permalink: actualQuantityDimension
+permalink: actualQuantityDimension.html
 jsonid: actualquantitydimension
 ---

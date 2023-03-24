@@ -1,5 +1,5 @@
 ---
 title: taxCategoryCode
-permalink: taxCategoryCode
+permalink: taxCategoryCode.html
 jsonid: taxcategorycode
 ---

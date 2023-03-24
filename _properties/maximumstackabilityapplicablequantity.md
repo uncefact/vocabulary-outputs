@@ -1,5 +1,5 @@
 ---
 title: maximumStackabilityApplicableQuantity
-permalink: maximumStackabilityApplicableQuantity
+permalink: maximumStackabilityApplicableQuantity.html
 jsonid: maximumstackabilityapplicablequantity
 ---

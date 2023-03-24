@@ -1,5 +1,5 @@
 ---
 title: customerAssignedId
-permalink: customerAssignedId
+permalink: customerAssignedId.html
 jsonid: customerassignedid
 ---

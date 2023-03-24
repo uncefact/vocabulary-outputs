@@ -1,5 +1,5 @@
 ---
 title: standardName
-permalink: standardName
+permalink: standardName.html
 jsonid: standardname
 ---

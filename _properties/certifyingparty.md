@@ -1,5 +1,5 @@
 ---
 title: certifyingParty
-permalink: certifyingParty
+permalink: certifyingParty.html
 jsonid: certifyingparty
 ---

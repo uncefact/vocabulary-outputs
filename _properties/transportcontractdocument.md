@@ -1,5 +1,5 @@
 ---
 title: transportContractDocument
-permalink: transportContractDocument
+permalink: transportContractDocument.html
 jsonid: transportcontractdocument
 ---

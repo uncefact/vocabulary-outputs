@@ -1,5 +1,5 @@
 ---
 title: arrivalReportedEvent
-permalink: arrivalReportedEvent
+permalink: arrivalReportedEvent.html
 jsonid: arrivalreportedevent
 ---

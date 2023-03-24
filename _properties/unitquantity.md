@@ -1,5 +1,5 @@
 ---
 title: unitQuantity
-permalink: unitQuantity
+permalink: unitQuantity.html
 jsonid: unitquantity
 ---

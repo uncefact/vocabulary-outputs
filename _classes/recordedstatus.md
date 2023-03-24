@@ -1,5 +1,5 @@
 ---
 title: RecordedStatus
-permalink: RecordedStatus
+permalink: RecordedStatus.html
 jsonid: recordedstatus
 ---

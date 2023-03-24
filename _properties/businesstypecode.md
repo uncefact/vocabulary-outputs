@@ -1,5 +1,5 @@
 ---
 title: businessTypeCode
-permalink: businessTypeCode
+permalink: businessTypeCode.html
 jsonid: businesstypecode
 ---

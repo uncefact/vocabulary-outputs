@@ -1,5 +1,5 @@
 ---
 title: HeaderTradeSettlement
-permalink: HeaderTradeSettlement
+permalink: HeaderTradeSettlement.html
 jsonid: headertradesettlement
 ---

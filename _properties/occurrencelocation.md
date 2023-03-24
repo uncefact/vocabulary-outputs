@@ -1,5 +1,5 @@
 ---
 title: occurrenceLocation
-permalink: occurrenceLocation
+permalink: occurrenceLocation.html
 jsonid: occurrencelocation
 ---

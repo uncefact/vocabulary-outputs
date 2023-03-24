@@ -4,26 +4,27 @@
     "uri": "unece:netVolumeMeasure",
     "comment": [
         "A measure of a net volume for this trade product.",
-        "A measure of the net volume of this supply chain consignment item which excludes all packaging.",
-        "The measure, at line level, of the net volume of this line trade delivery."
+        "A measure of a net volume of this logistics package.",
+        "A measure of the net volume of this product batch."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:MeasureType",
+            "comment": "Missing description"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container ..."
         },
         {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
         },
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

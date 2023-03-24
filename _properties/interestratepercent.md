@@ -1,5 +1,5 @@
 ---
 title: interestRatePercent
-permalink: interestRatePercent
+permalink: interestRatePercent.html
 jsonid: interestratepercent
 ---

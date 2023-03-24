@@ -1,31 +1,17 @@
 
 {
-    "label": "Section",
-    "uri": "unece:Section",
-    "comment": "A part separated within or cut off from an object, such as the subdivision of a book or a piece of pipe.",
-    "datatypeProperties": [
+    "label": "section",
+    "uri": "unece:section",
+    "comment": "A section, expressed as text, of this product print.",
+    "rangeIncludes": [
         {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this label section."
-        },
-        {
-            "uri": "unece:patternCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the pattern of this label section."
+            "uri": "xsd:string"
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:includedSegment",
-            "type": "unece:Segment",
-            "comment": "A segment included in this label section."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:includedSection",
-            "comment": "A section included in this logistics label."
+            "uri": "unece:Print",
+            "comment": "Any text or pattern put on the surface of a product using a specific material such as dye."
         }
     ]
 }

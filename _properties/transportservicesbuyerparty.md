@@ -1,5 +1,5 @@
 ---
 title: transportServicesBuyerParty
-permalink: transportServicesBuyerParty
+permalink: transportServicesBuyerParty.html
 jsonid: transportservicesbuyerparty
 ---

@@ -1,5 +1,5 @@
 ---
 title: Authentication
-permalink: Authentication
+permalink: Authentication.html
 jsonid: authentication
 ---

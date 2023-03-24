@@ -1,5 +1,5 @@
 ---
 title: originLocation
-permalink: originLocation
+permalink: originLocation.html
 jsonid: originlocation
 ---

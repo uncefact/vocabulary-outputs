@@ -1,5 +1,5 @@
 ---
 title: birthplaceName
-permalink: birthplaceName
+permalink: birthplaceName.html
 jsonid: birthplacename
 ---

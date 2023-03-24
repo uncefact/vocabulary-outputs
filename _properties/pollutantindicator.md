@@ -1,5 +1,5 @@
 ---
 title: pollutantIndicator
-permalink: pollutantIndicator
+permalink: pollutantIndicator.html
 jsonid: pollutantindicator
 ---

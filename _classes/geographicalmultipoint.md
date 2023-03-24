@@ -1,5 +1,5 @@
 ---
 title: GeographicalMultiPoint
-permalink: GeographicalMultiPoint
+permalink: GeographicalMultiPoint.html
 jsonid: geographicalmultipoint
 ---

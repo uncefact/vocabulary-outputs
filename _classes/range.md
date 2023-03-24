@@ -1,5 +1,5 @@
 ---
 title: Range
-permalink: Range
+permalink: Range.html
 jsonid: range
 ---

@@ -1,85 +1,35 @@
 
 {
-    "label": "HandlingInstructions",
-    "uri": "unece:HandlingInstructions",
-    "comment": "Handling information of an instructive nature.",
-    "datatypeProperties": [
+    "label": "handlingInstructions",
+    "uri": "unece:handlingInstructions",
+    "comment": [
+        "Handling instructions for the transported dangerous goods.",
+        "Handling instructions for this piece of logistics transport equipment.",
+        "Handling instructions for this supply chain consignment item.",
+        "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be loaded on a means of transport."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these handling instructions."
-        },
-        {
-            "uri": "unece:handlingCode",
-            "type": "xsd:token",
-            "comment": "A code specifying these handling instructions."
-        },
-        {
-            "uri": "unece:handlingInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "A code specifying a description of these handling instructions."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this handling instructions."
-        },
-        {
-            "uri": "unece:maximumStackabilityApplicableQuantity",
-            "type": "xsd:decimal",
-            "comment": "The maximum number of units which can be stacked on top of each other according to these handling instructions."
-        },
-        {
-            "uri": "unece:maximumStackabilityWeightApplicableMeasure",
-            "type": "xsd:decimal",
-            "comment": "The maximum stackability weight applicable to these handling instructions."
-        },
-        {
-            "uri": "unece:maximumStorageHumidityApplicableMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the maximum storage humidity applicable to these handling instructions."
-        },
-        {
-            "uri": "unece:minimumStorageHumidityApplicableMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of the minimum storage humidity applicable to these handling instructions."
-        },
-        {
-            "uri": "unece:procedure",
-            "type": "xsd:string",
-            "comment": "A procedure, expressed as text, for these handling instructions."
+            "uri": "unece:HandlingInstructions",
+            "comment": "Handling information of an instructive nature."
         }
     ],
-    "objectProperties": [
+    "domainIncludes": [
         {
-            "uri": "unece:applicableTransportSettingTemperature",
-            "type": "unece:TransportSettingTemperature",
-            "comment": "A transport related temperature setting applicable to these handling instructions."
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of ..."
         },
         {
-            "uri": "unece:deliveryApplicableTemperature",
-            "type": "unece:InstructedTemperature",
-            "comment": "The instructed temperature for delivery applicable to these handling instructions."
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item ..."
         },
         {
-            "uri": "unece:marketDeliveryApplicableTemperature",
-            "type": "unece:InstructedTemperature",
-            "comment": "The instructed temperature for market delivery applicable to these handling instructions."
+            "uri": "unece:DangerousGoods",
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         },
         {
-            "uri": "unece:storageApplicableTemperature",
-            "type": "unece:InstructedTemperature",
-            "comment": "The instructed temperature for storage applicable to these handling instructions."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "unece:handlingInstructions",
-            "comment": "Handling instructions for the transported ..."
-        },
-        {
-            "uri": "unece:specifiedInstructions",
-            "comment": "Handling instructions specified for this ..."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used ..."
         }
     ]
 }

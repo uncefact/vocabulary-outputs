@@ -1,5 +1,5 @@
 ---
 title: cancellationAnnouncedLaunchDateTime
-permalink: cancellationAnnouncedLaunchDateTime
+permalink: cancellationAnnouncedLaunchDateTime.html
 jsonid: cancellationannouncedlaunchdatetime
 ---

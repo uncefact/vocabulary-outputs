@@ -3,7 +3,7 @@
     "label": "FinancialInstitutionAddress",
     "uri": "unece:FinancialInstitutionAddress",
     "comment": "The location at which a financial institution may be found or reached.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:buildingNumber",
             "type": "xsd:string",
@@ -11,7 +11,7 @@
         },
         {
             "uri": "unece:cityId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of the city for this financial institution address, such as United Nations Location Code (UNLOCODE)."
         },
         {
@@ -21,7 +21,7 @@
         },
         {
             "uri": "unece:countryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of a country for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
         },
         {
@@ -31,7 +31,7 @@
         },
         {
             "uri": "unece:countrySubDivisionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of a country sub-division for this financial institution address (Reference ISO 3166 and UN/ECE Rec 3)."
         },
         {
@@ -46,7 +46,7 @@
         },
         {
             "uri": "unece:financialInstitutionAddressTypeCode",
-            "type": "unece:UNCL3131Code",
+            "type": "xsd:string",
             "comment": "The code specifying the type of financial institution address."
         },
         {
@@ -81,7 +81,7 @@
         },
         {
             "uri": "unece:postcodeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the postcode for this financial institution address."
         },
         {
@@ -92,8 +92,7 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:locationAddress",
-            "comment": "The location address for this ..."
+            "uri": "unece:locationAddress"
         }
     ]
 }

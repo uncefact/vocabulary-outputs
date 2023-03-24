@@ -2,7 +2,10 @@
 {
     "label": "freightForwarderParty",
     "uri": "unece:freightForwarderParty",
-    "comment": "The freight forwarder party for this supply chain consignment.",
+    "comment": [
+        "A freight forwarder party, at header level, for this trade delivery.",
+        "The freight forwarder party for this supply chain consignment."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:TradeParty",
@@ -12,7 +15,11 @@
     "domainIncludes": [
         {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+            "comment": "A separately identifiable collection of ..."
+        },
+        {
+            "uri": "unece:HeaderTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
         }
     ]
 }

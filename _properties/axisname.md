@@ -1,5 +1,5 @@
 ---
 title: axisName
-permalink: axisName
+permalink: axisName.html
 jsonid: axisname
 ---

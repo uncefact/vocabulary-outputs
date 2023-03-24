@@ -1,5 +1,5 @@
 ---
 title: coordinateDirectPosition
-permalink: coordinateDirectPosition
+permalink: coordinateDirectPosition.html
 jsonid: coordinatedirectposition
 ---

@@ -1,5 +1,5 @@
 ---
 title: Project
-permalink: Project
+permalink: Project.html
 jsonid: project
 ---

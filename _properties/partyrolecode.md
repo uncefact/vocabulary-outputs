@@ -1,5 +1,5 @@
 ---
 title: partyRoleCode
-permalink: partyRoleCode
+permalink: partyRoleCode.html
 jsonid: partyrolecode
 ---

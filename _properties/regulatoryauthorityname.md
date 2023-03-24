@@ -1,5 +1,5 @@
 ---
 title: regulatoryAuthorityName
-permalink: regulatoryAuthorityName
+permalink: regulatoryAuthorityName.html
 jsonid: regulatoryauthorityname
 ---

@@ -1,5 +1,5 @@
 ---
 title: logisticsShippingMarksMarkingInstructionCode
-permalink: logisticsShippingMarksMarkingInstructionCode
+permalink: logisticsShippingMarksMarkingInstructionCode.html
 jsonid: logisticsshippingmarksmarkinginstructioncode
 ---

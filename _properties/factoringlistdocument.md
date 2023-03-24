@@ -1,5 +1,5 @@
 ---
 title: factoringListDocument
-permalink: factoringListDocument
+permalink: factoringListDocument.html
 jsonid: factoringlistdocument
 ---

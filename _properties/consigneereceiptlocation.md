@@ -1,5 +1,5 @@
 ---
 title: consigneeReceiptLocation
-permalink: consigneeReceiptLocation
+permalink: consigneeReceiptLocation.html
 jsonid: consigneereceiptlocation
 ---

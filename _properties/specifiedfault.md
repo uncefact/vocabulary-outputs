@@ -1,5 +1,5 @@
 ---
 title: specifiedFault
-permalink: specifiedFault
+permalink: specifiedFault.html
 jsonid: specifiedfault
 ---

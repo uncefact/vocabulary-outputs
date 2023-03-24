@@ -1,5 +1,5 @@
 ---
 title: tradeComparisonPrice
-permalink: tradeComparisonPrice
+permalink: tradeComparisonPrice.html
 jsonid: tradecomparisonprice
 ---

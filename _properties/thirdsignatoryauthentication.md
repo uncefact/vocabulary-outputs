@@ -1,5 +1,5 @@
 ---
 title: thirdSignatoryAuthentication
-permalink: thirdSignatoryAuthentication
+permalink: thirdSignatoryAuthentication.html
 jsonid: thirdsignatoryauthentication
 ---

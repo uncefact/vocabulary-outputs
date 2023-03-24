@@ -1,44 +1,44 @@
 
 {
-    "label": "Standard",
-    "uri": "unece:Standard",
-    "comment": "A norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas.",
-    "datatypeProperties": [
+    "label": "standard",
+    "uri": "unece:standard",
+    "comment": [
+        "A standard, expressed as text, for this specified certification.",
+        "A standard, expressed as text, used for this animal certification.",
+        "A standard, expressed as text, used for this organizational certification.",
+        "A standard, expressed as text, used for this process certification.",
+        "A standard, expressed as text, used for this product batch certification.",
+        "The standard, expressed as text, for this trade product certification."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "unece:agencyId",
-            "type": "xsd:token",
-            "comment": "The identifier of the agency for this referenced standard."
-        },
-        {
-            "uri": "unece:elementVersionId",
-            "type": "xsd:token",
-            "comment": "The identifier of the version of a specific element within the referenced standard, such as the version of a data element."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier of this referenced standard."
-        },
-        {
-            "uri": "unece:partId",
-            "type": "xsd:token",
-            "comment": "The identifier of a part of this referenced standard, such as a section or topic."
-        },
-        {
-            "uri": "unece:uRIId",
-            "type": "xsd:token",
-            "comment": "The Uniform Resource Identifier (URI) for this referenced standard."
-        },
-        {
-            "uri": "unece:versionId",
-            "type": "xsd:token",
-            "comment": "The identifier of the version of this referenced standard."
+            "uri": "xsd:string"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:applicableStandard",
-            "comment": "The referenced standard that is ..."
+            "uri": "unece:AnimalCertification",
+            "comment": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations."
+        },
+        {
+            "uri": "unece:OrganizationalCertification",
+            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
+        },
+        {
+            "uri": "unece:ProcessCertification",
+            "comment": "The process of certifying that a process has met performance and quality assurance tests, or qualification requirements."
+        },
+        {
+            "uri": "unece:ProductBatchCertification",
+            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
+        },
+        {
+            "uri": "unece:SpecifiedCertification",
+            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
+        },
+        {
+            "uri": "unece:TradeProductCertification",
+            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         }
     ]
 }

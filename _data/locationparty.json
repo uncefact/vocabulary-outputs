@@ -3,38 +3,36 @@
     "label": "LocationParty",
     "uri": "unece:LocationParty",
     "comment": "An individual, a group, or a body having a role related to a location.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:countryId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique country identifier for this location party."
         },
         {
+            "uri": "unece:definedContact",
+            "type": "unece:TradeContact",
+            "comment": "A trade contact defined for this location party."
+        },
+        {
+            "uri": "unece:faxCommunication",
+            "type": "unece:Communication",
+            "comment": "Fax communication information for this location party."
+        },
+        {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier of this location party."
         },
         {
             "uri": "unece:locationPartyRoleCode",
-            "type": "unece:UNCL3035Code",
+            "type": "xsd:string",
             "comment": "A code specifying a role of this location party."
         },
         {
             "uri": "unece:name",
             "type": "xsd:string",
             "comment": "A name, expressed as text, for this location party."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:definedContact",
-            "type": "unece:Contact",
-            "comment": "A trade contact defined for this location party."
-        },
-        {
-            "uri": "unece:faxCommunication",
-            "type": "unece:UniversalCommunication",
-            "comment": "Fax communication information for this location party."
         },
         {
             "uri": "unece:postalAddress",
@@ -53,12 +51,12 @@
         },
         {
             "uri": "unece:telephoneCommunication",
-            "type": "unece:UniversalCommunication",
+            "type": "unece:Communication",
             "comment": "Telephone communication information for this location party."
         },
         {
             "uri": "unece:uRICommunication",
-            "type": "unece:UniversalCommunication",
+            "type": "unece:Communication",
             "comment": "Uniform Resource Identifier (URI) communication information for this location party, such as a web or email address."
         }
     ],

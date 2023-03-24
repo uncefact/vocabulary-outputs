@@ -1,5 +1,5 @@
 ---
 title: includedSegment
-permalink: includedSegment
+permalink: includedSegment.html
 jsonid: includedsegment
 ---

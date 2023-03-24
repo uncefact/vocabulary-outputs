@@ -1,5 +1,5 @@
 ---
 title: typeExtensionCode
-permalink: typeExtensionCode
+permalink: typeExtensionCode.html
 jsonid: typeextensioncode
 ---

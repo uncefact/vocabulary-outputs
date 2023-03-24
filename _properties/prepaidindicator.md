@@ -1,5 +1,5 @@
 ---
 title: prepaidIndicator
-permalink: prepaidIndicator
+permalink: prepaidIndicator.html
 jsonid: prepaidindicator
 ---

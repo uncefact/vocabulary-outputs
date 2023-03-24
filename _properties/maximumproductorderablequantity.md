@@ -1,5 +1,5 @@
 ---
 title: maximumProductOrderableQuantity
-permalink: maximumProductOrderableQuantity
+permalink: maximumProductOrderableQuantity.html
 jsonid: maximumproductorderablequantity
 ---

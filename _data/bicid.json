@@ -5,11 +5,12 @@
     "comment": [
         "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity.",
         "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this creditor financial institution.",
-        "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this debtor financial institution."
+        "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this debtor financial institution.",
+        "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this payment financial institution."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
@@ -24,6 +25,10 @@
         {
             "uri": "unece:FinancialIdentity",
             "comment": "A financial identification for an organization."
+        },
+        {
+            "uri": "unece:PaymentFinancialInstitution",
+            "comment": "An institution that provides financial services and financial transactions for payment."
         }
     ]
 }

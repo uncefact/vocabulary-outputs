@@ -1,0 +1,39 @@
+
+{
+    "label": "TTLocation",
+    "uri": "unece:TTLocation",
+    "comment": "A physical place related to a Track and Trace (TT) process.",
+    "objectProperties": [
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this TT location."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier for this TT location."
+        },
+        {
+            "uri": "unece:locationFunctionTypeCode",
+            "type": "unece:LocationFunctionCodeList",
+            "comment": "The code specifying the type of TT location."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "A name, expressed as text, of this TT location."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:businessRelatedLocation"
+        },
+        {
+            "uri": "unece:readPointRelatedLocation"
+        },
+        {
+            "uri": "unece:relatedTTLocation"
+        }
+    ]
+}

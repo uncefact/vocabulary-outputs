@@ -1,5 +1,5 @@
 ---
 title: licenceId
-permalink: licenceId
+permalink: licenceId.html
 jsonid: licenceid
 ---

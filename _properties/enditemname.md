@@ -1,5 +1,5 @@
 ---
 title: endItemName
-permalink: endItemName
+permalink: endItemName.html
 jsonid: enditemname
 ---

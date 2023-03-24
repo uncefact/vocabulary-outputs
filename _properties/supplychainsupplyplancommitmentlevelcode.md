@@ -1,5 +1,5 @@
 ---
 title: supplyChainSupplyPlanCommitmentLevelCode
-permalink: supplyChainSupplyPlanCommitmentLevelCode
+permalink: supplyChainSupplyPlanCommitmentLevelCode.html
 jsonid: supplychainsupplyplancommitmentlevelcode
 ---

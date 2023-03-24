@@ -1,5 +1,5 @@
 ---
 title: iSPSSecurityLevelCode
-permalink: iSPSSecurityLevelCode
+permalink: iSPSSecurityLevelCode.html
 jsonid: ispssecuritylevelcode
 ---

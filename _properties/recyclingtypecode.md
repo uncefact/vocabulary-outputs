@@ -1,5 +1,5 @@
 ---
 title: recyclingTypeCode
-permalink: recyclingTypeCode
+permalink: recyclingTypeCode.html
 jsonid: recyclingtypecode
 ---

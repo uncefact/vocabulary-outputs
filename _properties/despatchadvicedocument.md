@@ -1,5 +1,5 @@
 ---
 title: despatchAdviceDocument
-permalink: despatchAdviceDocument
+permalink: despatchAdviceDocument.html
 jsonid: despatchadvicedocument
 ---

@@ -1,0 +1,49 @@
+
+{
+    "label": "IngredientRangeMeasurement",
+    "uri": "unece:IngredientRangeMeasurement",
+    "comment": "A measurement of the variation limits of an ingredient.",
+    "objectProperties": [
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "The textual description of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:lowerLimitActualMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The actual lower limit measure of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:lowerLimitComparisonOperatorCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the comparison operator for the lower limit of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:lowerLimitPressureConditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the pressure condition at which this lower limit ingredient range measurement is taken."
+        },
+        {
+            "uri": "unece:upperLimitActualMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The actual upper limit measure of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:upperLimitComparisonOperatorCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the comparison operator for the upper limit of this ingredient range measurement."
+        },
+        {
+            "uri": "unece:upperLimitPressureConditionMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of the pressure condition at which this upper limit ingredient range measurement is taken."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "unece:presenceMeasurement",
+            "comment": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 ---
 title: respondingResponse
-permalink: respondingResponse
+permalink: respondingResponse.html
 jsonid: respondingresponse
 ---

@@ -1,5 +1,5 @@
 ---
 title: defaultLanguageCode
-permalink: defaultLanguageCode
+permalink: defaultLanguageCode.html
 jsonid: defaultlanguagecode
 ---

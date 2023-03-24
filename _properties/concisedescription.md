@@ -1,5 +1,5 @@
 ---
 title: conciseDescription
-permalink: conciseDescription
+permalink: conciseDescription.html
 jsonid: concisedescription
 ---

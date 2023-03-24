@@ -1,5 +1,5 @@
 ---
 title: ShippingMarks
-permalink: ShippingMarks
+permalink: ShippingMarks.html
 jsonid: shippingmarks
 ---

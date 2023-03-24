@@ -1,5 +1,5 @@
 ---
 title: mapBinaryObject
-permalink: mapBinaryObject
+permalink: mapBinaryObject.html
 jsonid: mapbinaryobject
 ---

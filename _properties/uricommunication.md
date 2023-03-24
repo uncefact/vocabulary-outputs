@@ -1,5 +1,5 @@
 ---
 title: uRICommunication
-permalink: uRICommunication
+permalink: uRICommunication.html
 jsonid: uricommunication
 ---

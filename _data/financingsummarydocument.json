@@ -3,29 +3,27 @@
     "label": "FinancingSummaryDocument",
     "uri": "unece:FinancingSummaryDocument",
     "comment": "A collection of financing related data that provides an overview of key points.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:acceptedTransactionOriginalTotalAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "An original total monetary value of accepted transactions in this financing summary document."
         },
         {
             "uri": "unece:financedAppliedRatePercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The financed applied rate, expressed as a percentage, in this financing summary document."
         },
         {
             "uri": "unece:financedTotalAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "A financed total monetary value in this financing summary document."
         },
         {
             "uri": "unece:financedTransactionSpecifiedQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The number of financed transactions specified in this financing summary document."
-        }
-    ],
-    "objectProperties": [
+        },
         {
             "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
             "type": "unece:FinancingFinancialAccount",
@@ -37,7 +35,7 @@
             "comment": "The financial booking related to this financing summary document."
         },
         {
-            "uri": "unece:specifiedFinancialAccount",
+            "uri": "unece:specifiedCreditorFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
             "comment": "The creditor financial account, used for crediting, specified for this financing summary document."
         }

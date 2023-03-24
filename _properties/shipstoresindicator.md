@@ -1,5 +1,5 @@
 ---
 title: shipStoresIndicator
-permalink: shipStoresIndicator
+permalink: shipStoresIndicator.html
 jsonid: shipstoresindicator
 ---

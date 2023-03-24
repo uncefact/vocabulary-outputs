@@ -1,5 +1,5 @@
 ---
 title: portugueseNCCId
-permalink: portugueseNCCId
+permalink: portugueseNCCId.html
 jsonid: portuguesenccid
 ---

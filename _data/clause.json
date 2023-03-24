@@ -2,24 +2,7 @@
 {
     "label": "Clause",
     "uri": "unece:Clause",
-    "comment": "A distinct article or provision in a contract, treaty, will, or other formal or legal written document, which requires compliance.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, of this document clause."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The unique identifier of this document clause."
-        },
-        {
-            "uri": "unece:uRLId",
-            "type": "xsd:token",
-            "comment": "The Uniform Resource Locator (URL) for this document clause."
-        }
-    ],
+    "comment": "A distinct article or provision in a document, which requires compliance.",
     "objectProperties": [
         {
             "uri": "unece:associatedMeasurement",
@@ -28,14 +11,32 @@
         },
         {
             "uri": "unece:associatedPeriod",
-            "type": "unece:Period",
+            "type": "unece:SpecifiedPeriod",
             "comment": "A period of time associated with this document clause."
+        },
+        {
+            "uri": "unece:content",
+            "type": "xsd:string",
+            "comment": "Content, expressed as text, of this document clause."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The unique identifier of this document clause."
+        },
+        {
+            "uri": "unece:uRLId",
+            "type": "xsd:string",
+            "comment": "The Uniform Resource Locator (URL) for this document clause."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:contractualClause",
-            "comment": "A contractual clause of this ..."
+            "uri": "unece:applicableClause",
+            "comment": "A clause applicable to this specified certificate."
+        },
+        {
+            "uri": "unece:contractualClause"
         },
         {
             "uri": "unece:includedClause",

@@ -1,5 +1,5 @@
 ---
 title: iSSCDocument
-permalink: iSSCDocument
+permalink: iSSCDocument.html
 jsonid: isscdocument
 ---

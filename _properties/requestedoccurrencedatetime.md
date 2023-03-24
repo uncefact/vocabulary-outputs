@@ -1,5 +1,5 @@
 ---
 title: requestedOccurrenceDateTime
-permalink: requestedOccurrenceDateTime
+permalink: requestedOccurrenceDateTime.html
 jsonid: requestedoccurrencedatetime
 ---

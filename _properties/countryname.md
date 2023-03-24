@@ -1,5 +1,5 @@
 ---
 title: countryName
-permalink: countryName
+permalink: countryName.html
 jsonid: countryname
 ---

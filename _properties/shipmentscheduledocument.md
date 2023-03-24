@@ -1,5 +1,5 @@
 ---
 title: shipmentScheduleDocument
-permalink: shipmentScheduleDocument
+permalink: shipmentScheduleDocument.html
 jsonid: shipmentscheduledocument
 ---

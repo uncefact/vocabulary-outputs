@@ -1,5 +1,5 @@
 ---
 title: sizeMeasure
-permalink: sizeMeasure
+permalink: sizeMeasure.html
 jsonid: sizemeasure
 ---

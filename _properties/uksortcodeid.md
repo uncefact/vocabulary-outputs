@@ -1,5 +1,5 @@
 ---
 title: uKSortCodeId
-permalink: uKSortCodeId
+permalink: uKSortCodeId.html
 jsonid: uksortcodeid
 ---

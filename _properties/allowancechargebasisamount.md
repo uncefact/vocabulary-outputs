@@ -1,5 +1,5 @@
 ---
 title: allowanceChargeBasisAmount
-permalink: allowanceChargeBasisAmount
+permalink: allowanceChargeBasisAmount.html
 jsonid: allowancechargebasisamount
 ---

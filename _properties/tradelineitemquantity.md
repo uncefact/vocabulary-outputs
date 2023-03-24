@@ -1,5 +1,5 @@
 ---
 title: tradeLineItemQuantity
-permalink: tradeLineItemQuantity
+permalink: tradeLineItemQuantity.html
 jsonid: tradelineitemquantity
 ---

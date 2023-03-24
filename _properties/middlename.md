@@ -1,5 +1,5 @@
 ---
 title: middleName
-permalink: middleName
+permalink: middleName.html
 jsonid: middlename
 ---

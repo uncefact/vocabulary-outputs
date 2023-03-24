@@ -2,33 +2,32 @@
 {
     "label": "ForecastTerms",
     "uri": "unece:ForecastTerms",
-    "comment": "A set of terms and conditions by which a forecast has been or will be made.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:commitmentLevelCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a commitment level in these supply chain forecast terms."
-        },
+    "comment": "A set of terms and conditions by which a supply chain forecast has been or will be made.",
+    "objectProperties": [
         {
             "uri": "unece:dateTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying a type of date in these supply chain forecast terms."
         },
         {
             "uri": "unece:forecastTypeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the forecast type in these supply chain forecast terms."
         },
         {
+            "uri": "unece:supplyChainForecastTermsCommitmentLevelCode",
+            "type": "unece:CommitmentLevelCodeList",
+            "comment": "A code specifying a commitment level in these supply chain forecast terms."
+        },
+        {
             "uri": "unece:supplyChainForecastTermsFrequencyCode",
-            "type": "unece:UNCL2013Code",
+            "type": "xsd:string",
             "comment": "A code specifying a frequency in these supply chain forecast terms."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableForecastTerms",
-            "comment": "The supply chain forecast terms ..."
+            "uri": "unece:applicableForecastTerms"
         }
     ]
 }

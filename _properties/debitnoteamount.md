@@ -1,5 +1,5 @@
 ---
 title: debitNoteAmount
-permalink: debitNoteAmount
+permalink: debitNoteAmount.html
 jsonid: debitnoteamount
 ---

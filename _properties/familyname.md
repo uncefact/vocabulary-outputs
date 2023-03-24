@@ -1,5 +1,5 @@
 ---
 title: familyName
-permalink: familyName
+permalink: familyName.html
 jsonid: familyname
 ---

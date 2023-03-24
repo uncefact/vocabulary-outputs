@@ -1,5 +1,5 @@
 ---
 title: certificationEvidenceReferenceDocument
-permalink: certificationEvidenceReferenceDocument
+permalink: certificationEvidenceReferenceDocument.html
 jsonid: certificationevidencereferencedocument
 ---

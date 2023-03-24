@@ -1,5 +1,5 @@
 ---
 title: overDeliveryAllowedIndicator
-permalink: overDeliveryAllowedIndicator
+permalink: overDeliveryAllowedIndicator.html
 jsonid: overdeliveryallowedindicator
 ---

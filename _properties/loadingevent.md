@@ -1,5 +1,5 @@
 ---
 title: loadingEvent
-permalink: loadingEvent
+permalink: loadingEvent.html
 jsonid: loadingevent
 ---

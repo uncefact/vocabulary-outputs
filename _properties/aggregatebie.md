@@ -1,5 +1,5 @@
 ---
 title: AggregateBIE
-permalink: AggregateBIE
+permalink: AggregateBIE.html
 jsonid: aggregatebie
 ---

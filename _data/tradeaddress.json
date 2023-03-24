@@ -3,11 +3,16 @@
     "label": "TradeAddress",
     "uri": "unece:TradeAddress",
     "comment": "The location at which a particular trade related organization or person may be found or reached.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:additionalStreetName",
             "type": "xsd:string",
             "comment": "The additional name of a street, expressed as text, for this trade address."
+        },
+        {
+            "uri": "unece:addressTypeCode",
+            "type": "unece:AddressTypeCodeList",
+            "comment": "A code specifying the type of this trade address, such as business address or home address."
         },
         {
             "uri": "unece:attentionOf",
@@ -31,7 +36,7 @@
         },
         {
             "uri": "unece:cityId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the city for this trade address, such as United Nations Location Code (UNLOCODE)."
         },
         {
@@ -45,18 +50,13 @@
             "comment": "A name, expressed as text, of a sub-division of a city for this trade address, for example a district or borough."
         },
         {
-            "uri": "unece:countryId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of a country for this trade address."
-        },
-        {
             "uri": "unece:countryName",
             "type": "xsd:string",
             "comment": "A name, expressed as text, of the country for this trade address."
         },
         {
             "uri": "unece:countrySubDivisionId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier of the country sub-division for this trade address."
         },
         {
@@ -70,9 +70,29 @@
             "comment": "The name, expressed as text, of a department for this trade address."
         },
         {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this trade address."
+        },
+        {
+            "uri": "unece:freeForm",
+            "type": "xsd:string",
+            "comment": "A free form representation, expressed as text, of this trade address."
+        },
+        {
+            "uri": "unece:geoCoordinateIdentificationGeographicalCoordinate",
+            "type": "unece:GeographicalCoordinate",
+            "comment": "An identification of a set of geographical coordinates for this trade address."
+        },
+        {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A unique identifier for this trade address."
+        },
+        {
+            "uri": "unece:invalidIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this trade address is invalid."
         },
         {
             "uri": "unece:lineFive",
@@ -106,7 +126,7 @@
         },
         {
             "uri": "unece:postcodeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "A code specifying the postcode of this trade address."
         },
         {
@@ -115,22 +135,26 @@
             "comment": "A name, expressed as text, of a street or thoroughfare for this trade address."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "A code specifying the type of this trade address, such as business address or home address."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:geoCoordinateIdentificationGeographicalCoordinate",
-            "type": "unece:GeographicalCoordinate",
-            "comment": "An identification of a set of geographical coordinates for this trade address."
+            "uri": "unece:tradeAddressCountryId",
+            "type": "unece:CountryId",
+            "comment": "The unique identifier of a country for this trade address."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:postalAddress",
-            "comment": "A postal address for this ..."
+            "uri": "unece:homeAddress",
+            "comment": "A home address for this found stowaway."
+        },
+        {
+            "uri": "unece:officeAddress",
+            "comment": "The office address of this laboratory observation party."
+        },
+        {
+            "uri": "unece:postalAddress"
+        },
+        {
+            "uri": "unece:specifiedTradeAddress",
+            "comment": "A address specified for this location."
         }
     ]
 }

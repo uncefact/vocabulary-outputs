@@ -1,5 +1,5 @@
 ---
 title: totalPrepaidAmount
-permalink: totalPrepaidAmount
+permalink: totalPrepaidAmount.html
 jsonid: totalprepaidamount
 ---

@@ -1,5 +1,5 @@
 ---
 title: consumptionReportDocument
-permalink: consumptionReportDocument
+permalink: consumptionReportDocument.html
 jsonid: consumptionreportdocument
 ---

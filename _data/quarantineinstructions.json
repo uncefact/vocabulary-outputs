@@ -1,24 +1,25 @@
 
 {
-    "label": "QuarantineInstructions",
-    "uri": "unece:QuarantineInstructions",
-    "comment": "Instructions for a period of imposed isolation or detention.",
-    "datatypeProperties": [
+    "label": "quarantineInstructions",
+    "uri": "unece:quarantineInstructions",
+    "comment": [
+        "Quarantine instructions for this piece of logistics transport equipment.",
+        "Quarantine instructions for this supply chain consignment item."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of these quarantine instructions."
-        },
-        {
-            "uri": "unece:quarantineInstructionsDescriptionCode",
-            "type": "unece:UNCL4401Code",
-            "comment": "The code specifying the description of these quarantine instructions."
+            "uri": "unece:QuarantineInstructions",
+            "comment": "Instructions for a period of imposed isolation or detention."
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:quarantineInstructions",
-            "comment": "Quarantine instructions for this piece ..."
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item ..."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used ..."
         }
     ]
 }

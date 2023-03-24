@@ -1,5 +1,5 @@
 ---
 title: royaltyLicenseFeeIndicator
-permalink: royaltyLicenseFeeIndicator
+permalink: royaltyLicenseFeeIndicator.html
 jsonid: royaltylicensefeeindicator
 ---

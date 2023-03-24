@@ -1,5 +1,5 @@
 ---
 title: endItemTypeCode
-permalink: endItemTypeCode
+permalink: endItemTypeCode.html
 jsonid: enditemtypecode
 ---

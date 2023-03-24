@@ -1,5 +1,5 @@
 ---
 title: taxType
-permalink: taxType
+permalink: taxType.html
 jsonid: taxtype
 ---

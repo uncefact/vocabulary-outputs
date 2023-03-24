@@ -1,5 +1,5 @@
 ---
 title: stayId
-permalink: stayId
+permalink: stayId.html
 jsonid: stayid
 ---

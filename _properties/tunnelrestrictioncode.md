@@ -1,5 +1,5 @@
 ---
 title: tunnelRestrictionCode
-permalink: tunnelRestrictionCode
+permalink: tunnelRestrictionCode.html
 jsonid: tunnelrestrictioncode
 ---

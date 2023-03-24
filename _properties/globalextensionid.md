@@ -1,5 +1,5 @@
 ---
 title: globalExtensionId
-permalink: globalExtensionId
+permalink: globalExtensionId.html
 jsonid: globalextensionid
 ---

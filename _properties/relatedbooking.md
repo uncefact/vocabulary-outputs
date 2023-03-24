@@ -1,5 +1,5 @@
 ---
 title: relatedBooking
-permalink: relatedBooking
+permalink: relatedBooking.html
 jsonid: relatedbooking
 ---

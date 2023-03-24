@@ -1,5 +1,5 @@
 ---
 title: conferenceCode
-permalink: conferenceCode
+permalink: conferenceCode.html
 jsonid: conferencecode
 ---

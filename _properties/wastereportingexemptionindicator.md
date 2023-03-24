@@ -1,5 +1,5 @@
 ---
 title: wasteReportingExemptionIndicator
-permalink: wasteReportingExemptionIndicator
+permalink: wasteReportingExemptionIndicator.html
 jsonid: wastereportingexemptionindicator
 ---

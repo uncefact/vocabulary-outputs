@@ -2,7 +2,10 @@
 {
     "label": "embarkationLocation",
     "uri": "unece:embarkationLocation",
-    "comment": "An embarkation location for this transport person.",
+    "comment": [
+        "A logistics location where a found stowaway embarked upon the transport means on which they were discovered.",
+        "An embarkation location for this transport person."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:LogisticsLocation",
@@ -10,6 +13,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:Stowaway",
+            "comment": "A person who is found hiding aboard a ship or other conveyance, such as in order to obtain free passage or elude detection."
+        },
         {
             "uri": "unece:TransportPerson",
             "comment": "A transport related person, such as a member of a crew or a passenger."

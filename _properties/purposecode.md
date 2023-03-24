@@ -1,5 +1,5 @@
 ---
 title: purposeCode
-permalink: purposeCode
+permalink: purposeCode.html
 jsonid: purposecode
 ---

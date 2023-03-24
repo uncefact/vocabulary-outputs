@@ -1,5 +1,5 @@
 ---
 title: applicableLineTradeDelivery
-permalink: applicableLineTradeDelivery
+permalink: applicableLineTradeDelivery.html
 jsonid: applicablelinetradedelivery
 ---

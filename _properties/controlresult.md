@@ -1,5 +1,5 @@
 ---
 title: controlResult
-permalink: controlResult
+permalink: controlResult.html
 jsonid: controlresult
 ---

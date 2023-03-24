@@ -1,5 +1,5 @@
 ---
 title: exportTypeCode
-permalink: exportTypeCode
+permalink: exportTypeCode.html
 jsonid: exporttypecode
 ---

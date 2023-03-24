@@ -4,49 +4,32 @@
     "uri": "unece:grossVolumeMeasure",
     "comment": [
         "A measure of the gross volume for this trade product.",
-        "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item.",
-        "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment.",
-        "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height, of this referenced supply chain consignment.",
+        "A measure of the gross volume of this product batch.",
         "The measure of the gross volume of this logistics package.",
-        "The measure of the gross volume of this piece of logistics transport equipment.",
-        "The measure of the gross volume of this piece of referenced logistics transport equipment.",
-        "The measure of the gross volume of this referenced logistics package.",
-        "The measure of the gross volume, normally calculated by multiplying the maximum length, width and height dimensions of these transported dangerous goods.",
-        "The measure, at line level, of the gross volume of this trade delivery."
+        "The measure of the gross volume of this piece of associated transport equipment."
     ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:MeasureType",
+            "comment": "Missing description"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "An item within a consignment of goods separately identified for transport and customs purposes."
-        },
-        {
-            "uri": "unece:DangerousGoods",
-            "comment": "A hazardous or non-hazardous substance which may pose risks to people and/or the environment for which the transportation is regulated by dangerous goods regulations."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
         },
         {
             "uri": "unece:Package",
-            "comment": "Any self-contained wrapping or container within which goods can be contained, such as a box or a barrel which can be filled, partially filled or empty."
+            "comment": "A self-contained wrapping or container ..."
         },
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
+        },
+        {
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         }
     ]
 }

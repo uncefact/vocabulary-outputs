@@ -1,5 +1,5 @@
 ---
 title: documentStatusReasonCode
-permalink: documentStatusReasonCode
+permalink: documentStatusReasonCode.html
 jsonid: documentstatusreasoncode
 ---

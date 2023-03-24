@@ -1,5 +1,5 @@
 ---
 title: orderApplicableCurrencyExchange
-permalink: orderApplicableCurrencyExchange
+permalink: orderApplicableCurrencyExchange.html
 jsonid: orderapplicablecurrencyexchange
 ---

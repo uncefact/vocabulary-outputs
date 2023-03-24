@@ -1,5 +1,5 @@
 ---
 title: includedGeographicalMultiPoint
-permalink: includedGeographicalMultiPoint
+permalink: includedGeographicalMultiPoint.html
 jsonid: includedgeographicalmultipoint
 ---

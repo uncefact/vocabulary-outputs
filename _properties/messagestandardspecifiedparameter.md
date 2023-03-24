@@ -1,5 +1,5 @@
 ---
 title: messageStandardSpecifiedParameter
-permalink: messageStandardSpecifiedParameter
+permalink: messageStandardSpecifiedParameter.html
 jsonid: messagestandardspecifiedparameter
 ---

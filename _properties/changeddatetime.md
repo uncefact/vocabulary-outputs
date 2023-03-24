@@ -1,5 +1,5 @@
 ---
 title: changedDateTime
-permalink: changedDateTime
+permalink: changedDateTime.html
 jsonid: changeddatetime
 ---

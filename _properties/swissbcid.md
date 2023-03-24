@@ -1,5 +1,5 @@
 ---
 title: swissBCId
-permalink: swissBCId
+permalink: swissBCId.html
 jsonid: swissbcid
 ---

@@ -1,5 +1,5 @@
 ---
 title: warehouseArrivalDateTime
-permalink: warehouseArrivalDateTime
+permalink: warehouseArrivalDateTime.html
 jsonid: warehousearrivaldatetime
 ---

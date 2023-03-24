@@ -1,5 +1,5 @@
 ---
 title: recipientAssignedId
-permalink: recipientAssignedId
+permalink: recipientAssignedId.html
 jsonid: recipientassignedid
 ---

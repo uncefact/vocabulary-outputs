@@ -1,5 +1,5 @@
 ---
 title: guarantee
-permalink: guarantee
+permalink: guarantee.html
 jsonid: guarantee
 ---

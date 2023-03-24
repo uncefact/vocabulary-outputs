@@ -1,5 +1,5 @@
 ---
 title: exportIndicator
-permalink: exportIndicator
+permalink: exportIndicator.html
 jsonid: exportindicator
 ---

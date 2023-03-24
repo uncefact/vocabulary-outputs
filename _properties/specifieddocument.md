@@ -1,5 +1,5 @@
 ---
 title: specifiedDocument
-permalink: specifiedDocument
+permalink: specifiedDocument.html
 jsonid: specifieddocument
 ---

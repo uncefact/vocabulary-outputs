@@ -1,5 +1,5 @@
 ---
 title: AuthoritativeSignatoryPerson
-permalink: AuthoritativeSignatoryPerson
+permalink: AuthoritativeSignatoryPerson.html
 jsonid: authoritativesignatoryperson
 ---

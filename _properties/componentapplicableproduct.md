@@ -1,5 +1,5 @@
 ---
 title: componentApplicableProduct
-permalink: componentApplicableProduct
+permalink: componentApplicableProduct.html
 jsonid: componentapplicableproduct
 ---

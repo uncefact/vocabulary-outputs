@@ -3,43 +3,6 @@
     "label": "CommunicationEvent",
     "uri": "unece:CommunicationEvent",
     "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet.",
-    "datatypeProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this communication event."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:token",
-            "comment": "The identifier for this communication event."
-        },
-        {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time, or other date time value of an occurrence of this communication event."
-        },
-        {
-            "uri": "unece:reasonCode",
-            "type": "xsd:token",
-            "comment": "The code specifying a reason for this communication event."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the type of communication event."
-        },
-        {
-            "uri": "unece:unitQuantity",
-            "type": "xsd:decimal",
-            "comment": "The number of units for this communication event."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "xsd:decimal",
-            "comment": "The measure of a value for this communication event."
-        }
-    ],
     "objectProperties": [
         {
             "uri": "unece:associatedGeographicalFeature",
@@ -47,7 +10,22 @@
             "comment": "A geographical feature associated with this communication event."
         },
         {
-            "uri": "unece:occurrenceLocation",
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this communication event."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier for this communication event."
+        },
+        {
+            "uri": "unece:occurrenceDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of an occurrence of this communication event."
+        },
+        {
+            "uri": "unece:occurrenceLogisticsLocation",
             "type": "unece:LogisticsLocation",
             "comment": "The logistics location where this communication event will occur or has occurred."
         },
@@ -55,6 +33,26 @@
             "uri": "unece:operationalResponsibleParty",
             "type": "unece:TradeParty",
             "comment": "The operational responsible party for this communication event."
+        },
+        {
+            "uri": "unece:reasonCode",
+            "type": "xsd:string",
+            "comment": "The code specifying a reason for this communication event."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of communication event."
+        },
+        {
+            "uri": "unece:unitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of units for this communication event."
+        },
+        {
+            "uri": "unece:valueMeasure",
+            "type": "unece:MeasureType",
+            "comment": "The measure of a value for this communication event."
         }
     ],
     "referencedBy": [
@@ -63,8 +61,7 @@
             "comment": "A matching event for this communication pairing."
         },
         {
-            "uri": "unece:relatedEvent",
-            "comment": "A communication event related to ..."
+            "uri": "unece:relatedEvent"
         }
     ]
 }

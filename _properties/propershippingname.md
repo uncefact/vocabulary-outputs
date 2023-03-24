@@ -1,5 +1,5 @@
 ---
 title: properShippingName
-permalink: properShippingName
+permalink: properShippingName.html
 jsonid: propershippingname
 ---

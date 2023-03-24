@@ -1,5 +1,5 @@
 ---
 title: measurementMethodId
-permalink: measurementMethodId
+permalink: measurementMethodId.html
 jsonid: measurementmethodid
 ---

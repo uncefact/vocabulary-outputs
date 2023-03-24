@@ -1,5 +1,5 @@
 ---
 title: inspectionEvent
-permalink: inspectionEvent
+permalink: inspectionEvent.html
 jsonid: inspectionevent
 ---

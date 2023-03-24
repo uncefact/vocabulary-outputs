@@ -1,5 +1,5 @@
 ---
 title: logisticsSealingPartyRoleCode
-permalink: logisticsSealingPartyRoleCode
+permalink: logisticsSealingPartyRoleCode.html
 jsonid: logisticssealingpartyrolecode
 ---

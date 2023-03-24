@@ -1,5 +1,5 @@
 ---
 title: companySecurityOfficerPerson
-permalink: companySecurityOfficerPerson
+permalink: companySecurityOfficerPerson.html
 jsonid: companysecurityofficerperson
 ---

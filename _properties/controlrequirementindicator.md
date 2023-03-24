@@ -1,5 +1,5 @@
 ---
 title: controlRequirementIndicator
-permalink: controlRequirementIndicator
+permalink: controlRequirementIndicator.html
 jsonid: controlrequirementindicator
 ---

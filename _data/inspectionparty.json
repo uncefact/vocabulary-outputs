@@ -2,7 +2,10 @@
 {
     "label": "inspectionParty",
     "uri": "unece:inspectionParty",
-    "comment": "An inspection party for this logistics transport movement.",
+    "comment": [
+        "An inspection party for this logistics transport movement.",
+        "An inspection party specified for this inspection result."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:TradeParty",
@@ -11,8 +14,12 @@
     ],
     "domainIncludes": [
         {
+            "uri": "unece:InspectionResult",
+            "comment": "Results obtained by performing an inspection."
+        },
+        {
             "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of people, animals, goods, or other objects from place to place."
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

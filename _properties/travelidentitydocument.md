@@ -1,5 +1,5 @@
 ---
 title: travelIdentityDocument
-permalink: travelIdentityDocument
+permalink: travelIdentityDocument.html
 jsonid: travelidentitydocument
 ---

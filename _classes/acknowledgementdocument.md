@@ -1,5 +1,5 @@
 ---
 title: AcknowledgementDocument
-permalink: AcknowledgementDocument
+permalink: AcknowledgementDocument.html
 jsonid: acknowledgementdocument
 ---

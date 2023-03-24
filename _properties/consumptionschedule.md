@@ -1,5 +1,5 @@
 ---
 title: consumptionSchedule
-permalink: consumptionSchedule
+permalink: consumptionSchedule.html
 jsonid: consumptionschedule
 ---

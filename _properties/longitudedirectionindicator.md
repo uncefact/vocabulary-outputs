@@ -1,5 +1,5 @@
 ---
 title: longitudeDirectionIndicator
-permalink: longitudeDirectionIndicator
+permalink: longitudeDirectionIndicator.html
 jsonid: longitudedirectionindicator
 ---

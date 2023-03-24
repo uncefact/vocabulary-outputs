@@ -2,16 +2,24 @@
 {
     "label": "referenceTypeCode",
     "uri": "unece:referenceTypeCode",
-    "comment": "The code specifying the reference type of this referenced document.",
+    "comment": [
+        "The code specifying the reference type of this referenced document.",
+        "The code specifying the reference type of this referenced location."
+    ],
     "rangeIncludes": [
         {
-            "uri": "unece:UNCL1153Code"
+            "uri": "unece:ReferenceCodeList",
+            "comment": "A character string used to represent a reference."
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:Document",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that provides information or evidence."
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:Location",
+            "comment": "A reference to a physical location or place."
         }
     ]
 }

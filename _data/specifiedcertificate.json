@@ -1,18 +1,227 @@
 
 {
-    "label": "specifiedCertificate",
-    "uri": "unece:specifiedCertificate",
-    "comment": "A product certificate specified for this trade product.",
-    "rangeIncludes": [
+    "label": "SpecifiedCertificate",
+    "uri": "unece:SpecifiedCertificate",
+    "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object.",
+    "objectProperties": [
         {
-            "uri": "unece:Certificate",
-            "comment": "A legal proof of ownership or worthiness of an item."
+            "uri": "unece:actualEffectiveDateTime",
+            "type": "xsd:string",
+            "comment": "The actual effective date, time, date time or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:aliasNameCode",
+            "type": "xsd:string",
+            "comment": "A code specifying an alias name of this specified certificate."
+        },
+        {
+            "uri": "unece:applicableClause",
+            "type": "unece:Clause",
+            "comment": "A clause applicable to this specified certificate."
+        },
+        {
+            "uri": "unece:applicableGeographicRegion",
+            "type": "xsd:string",
+            "comment": "A geographic region, expressed as text, applicable for this specified certificate."
+        },
+        {
+            "uri": "unece:applicableStandard",
+            "type": "unece:Standard",
+            "comment": "A referenced standard applicable to this specified certificate."
+        },
+        {
+            "uri": "unece:applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A sustainability characteristic applicable to this specified certificate."
+        },
+        {
+            "uri": "unece:assuranceLevelCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the assurance level, such as certified by third party, for this specified certificate."
+        },
+        {
+            "uri": "unece:attachedBinaryFile",
+            "type": "unece:BinaryFile",
+            "comment": "A binary file attached to this specified certificate."
+        },
+        {
+            "uri": "unece:availableLanguageCode",
+            "type": "unece:LanguageCodeList",
+            "comment": "A code specifying an available language for this specified certificate."
+        },
+        {
+            "uri": "unece:capabilityLevel",
+            "type": "xsd:string",
+            "comment": "A capability level, expressed as text, in this specified certificate."
+        },
+        {
+            "uri": "unece:categoryCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a category for this specified certificate."
+        },
+        {
+            "uri": "unece:certificateTypeCode",
+            "type": "unece:CertificateTypeCodeList",
+            "comment": "A code specifying a type of specified certificate."
+        },
+        {
+            "uri": "unece:certifiedObject",
+            "type": "unece:Object",
+            "comment": "An object certified by this specified certificate."
+        },
+        {
+            "uri": "unece:certifiedParty",
+            "type": "unece:TradeParty",
+            "comment": "The certified party for this specified certificate."
+        },
+        {
+            "uri": "unece:certifiedPersonQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of certified persons for this specified certificate."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this specified certificate."
+        },
+        {
+            "uri": "unece:effectiveFromDateTime",
+            "type": "xsd:dateTime",
+            "comment": "The date, time, date time, or other date time value from which this specified certificate is effective."
+        },
+        {
+            "uri": "unece:endorsementDateTime",
+            "type": "xsd:dateTime",
+            "comment": "An endorsement date, time, date time or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:expiryDateTime",
+            "type": "xsd:string",
+            "comment": "The expiry date, time, date time, or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier for this specified certificate."
+        },
+        {
+            "uri": "unece:issuanceLocation",
+            "type": "unece:TradeLocation",
+            "comment": "An issuance location for this specified certificate."
+        },
+        {
+            "uri": "unece:issueDateTime",
+            "type": "xsd:string",
+            "comment": "The issue date, time, date time, or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:issueReasonCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the reason why this specified certificate was issued."
+        },
+        {
+            "uri": "unece:issuerParty",
+            "type": "unece:TradeParty",
+            "comment": "The issuer party for this specified certificate."
+        },
+        {
+            "uri": "unece:latestEndorsementDateTime",
+            "type": "xsd:dateTime",
+            "comment": "A latest endorsement date, time, date time or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:name",
+            "type": "xsd:string",
+            "comment": "A name, expressed as text, for this specified certificate."
+        },
+        {
+            "uri": "unece:partyId",
+            "type": "xsd:string",
+            "comment": "An identifier of a party for this specified certificate."
+        },
+        {
+            "uri": "unece:providingParty",
+            "type": "unece:TradeParty",
+            "comment": "The party, other than the issuer, providing this specified certificate."
+        },
+        {
+            "uri": "unece:purposeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a purpose of this specified certificate."
+        },
+        {
+            "uri": "unece:relatedTradeTransaction",
+            "type": "unece:SupplyChainTradeTransaction",
+            "comment": "A supply chain trade transaction related to this specified certificate."
+        },
+        {
+            "uri": "unece:reportedDocumentStatus",
+            "type": "unece:DocumentStatus",
+            "comment": "A reported status for this specified certificate."
+        },
+        {
+            "uri": "unece:requestedEffectiveDateTime",
+            "type": "xsd:string",
+            "comment": "The requested effective date, time, date time or other date time value for this specified certificate."
+        },
+        {
+            "uri": "unece:requiredIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this specified certificate is required."
+        },
+        {
+            "uri": "unece:sequenceNumeric",
+            "type": "xsd:string",
+            "comment": "A sequence number for this specified certificate."
+        },
+        {
+            "uri": "unece:statusCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the status of this specified certificate."
+        },
+        {
+            "uri": "unece:subjectTypeCode",
+            "type": "unece:SubjectCodeList",
+            "comment": "A code specifying a subject type for this specified certificate."
+        },
+        {
+            "uri": "unece:validIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this specified certificate is valid."
+        },
+        {
+            "uri": "unece:validityExtendedUntilDateTime",
+            "type": "xsd:dateTime",
+            "comment": "A date, time, date time or other date time value until which this specified certificate will remain valid under the terms of an approved extension period."
+        },
+        {
+            "uri": "unece:validityTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of validity for this specified certificate."
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:Product",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process."
+            "uri": "unece:applicableSpecifiedCertificate"
+        },
+        {
+            "uri": "unece:carriedCertificate",
+            "comment": "A certificate carried by this guest person."
+        },
+        {
+            "uri": "unece:maritimeApplicableCertificate",
+            "comment": "A certificate applicable to a maritime logistics transport means."
+        },
+        {
+            "uri": "unece:obtainedSpecifiedCertificate",
+            "comment": "A certificate obtained by means of this specified inspection result."
+        },
+        {
+            "uri": "unece:providedCertificate"
+        },
+        {
+            "uri": "unece:travelInsuranceCertificate",
+            "comment": "A travel insurance certificate for this guest person."
         }
     ]
 }

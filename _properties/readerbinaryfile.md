@@ -1,5 +1,5 @@
 ---
 title: readerBinaryFile
-permalink: readerBinaryFile
+permalink: readerBinaryFile.html
 jsonid: readerbinaryfile
 ---

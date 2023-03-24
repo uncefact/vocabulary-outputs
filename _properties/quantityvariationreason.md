@@ -1,5 +1,5 @@
 ---
 title: quantityVariationReason
-permalink: quantityVariationReason
+permalink: quantityVariationReason.html
 jsonid: quantityvariationreason
 ---

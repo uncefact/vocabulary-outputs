@@ -3,23 +3,21 @@
     "label": "DocumentContextParameter",
     "uri": "unece:DocumentContextParameter",
     "comment": "A feature that is fixed for a particular document context.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The unique identifier of this document context parameter."
+        },
+        {
+            "uri": "unece:specifiedVersion",
+            "type": "unece:Version",
+            "comment": "The document version specified for this document context parameter."
         },
         {
             "uri": "unece:value",
             "type": "xsd:string",
             "comment": "The value, expressed as text, of this document context parameter."
-        }
-    ],
-    "objectProperties": [
-        {
-            "uri": "unece:specifiedVersion",
-            "type": "unece:Version",
-            "comment": "The document version specified for this document context parameter."
         }
     ],
     "referencedBy": [

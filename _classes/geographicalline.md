@@ -1,5 +1,5 @@
 ---
 title: GeographicalLine
-permalink: GeographicalLine
+permalink: GeographicalLine.html
 jsonid: geographicalline
 ---

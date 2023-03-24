@@ -1,5 +1,5 @@
 ---
 title: accessAvailabilityPeriod
-permalink: accessAvailabilityPeriod
+permalink: accessAvailabilityPeriod.html
 jsonid: accessavailabilityperiod
 ---

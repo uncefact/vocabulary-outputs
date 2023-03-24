@@ -1,5 +1,5 @@
 ---
 title: forecastTypeCode
-permalink: forecastTypeCode
+permalink: forecastTypeCode.html
 jsonid: forecasttypecode
 ---

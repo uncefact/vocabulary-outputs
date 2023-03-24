@@ -3,7 +3,7 @@
     "label": "DisposalInstructions",
     "uri": "unece:DisposalInstructions",
     "comment": "A set of instructions detailing how to properly dispose of a material.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:description",
             "type": "xsd:string",
@@ -11,12 +11,12 @@
         },
         {
             "uri": "unece:disposalInstructionsRecyclingDescriptionCode",
-            "type": "unece:UNCL4401Code",
+            "type": "xsd:string",
             "comment": "A code describing recycling in these disposal instructions."
         },
         {
             "uri": "unece:materialId",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The identifier of the material to which these disposal instructions apply."
         },
         {
@@ -27,8 +27,14 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableInstructions",
-            "comment": "Disposal instructions applicable to this ..."
+            "uri": "unece:applicableDisposalInstructions"
+        },
+        {
+            "uri": "unece:productionWasteInstructions"
+        },
+        {
+            "uri": "unece:transportWasteSpecifiedInstructions",
+            "comment": "Transport waste disposal instructions specified for this logistics transport movement."
         }
     ]
 }

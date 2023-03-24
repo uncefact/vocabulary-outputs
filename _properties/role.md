@@ -1,5 +1,5 @@
 ---
 title: role
-permalink: role
+permalink: role.html
 jsonid: role
 ---

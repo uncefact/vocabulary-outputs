@@ -1,5 +1,5 @@
 ---
 title: storageEvent
-permalink: storageEvent
+permalink: storageEvent.html
 jsonid: storageevent
 ---

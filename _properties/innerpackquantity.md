@@ -1,5 +1,5 @@
 ---
 title: innerPackQuantity
-permalink: innerPackQuantity
+permalink: innerPackQuantity.html
 jsonid: innerpackquantity
 ---

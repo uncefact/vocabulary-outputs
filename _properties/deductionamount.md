@@ -1,5 +1,5 @@
 ---
 title: deductionAmount
-permalink: deductionAmount
+permalink: deductionAmount.html
 jsonid: deductionamount
 ---

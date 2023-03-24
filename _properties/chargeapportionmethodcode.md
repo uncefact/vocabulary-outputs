@@ -1,5 +1,5 @@
 ---
 title: chargeApportionMethodCode
-permalink: chargeApportionMethodCode
+permalink: chargeApportionMethodCode.html
 jsonid: chargeapportionmethodcode
 ---

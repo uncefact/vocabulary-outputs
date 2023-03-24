@@ -1,5 +1,5 @@
 ---
 title: productEndUserParty
-permalink: productEndUserParty
+permalink: productEndUserParty.html
 jsonid: productenduserparty
 ---

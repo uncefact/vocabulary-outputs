@@ -2,13 +2,25 @@
 {
     "label": "genderCode",
     "uri": "unece:genderCode",
-    "comment": "A code specifying the gender of this transport person.",
+    "comment": [
+        "A code specifying the gender of this transport person.",
+        "The code specifying the gender in this specified customer class.",
+        "The code specifying the gender of this guest, such as male, female."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:token"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:CustomerClass",
+            "comment": "The conditions and requirements of the type of person who may use or purchase a product or service."
+        },
+        {
+            "uri": "unece:GuestPerson",
+            "comment": "An individual guest."
+        },
         {
             "uri": "unece:TransportPerson",
             "comment": "A transport related person, such as a member of a crew or a passenger."

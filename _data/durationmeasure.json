@@ -2,16 +2,24 @@
 {
     "label": "durationMeasure",
     "uri": "unece:durationMeasure",
-    "comment": "A measure of the length of time for this specified time period such as hours, days, weeks, months, years.",
+    "comment": [
+        "A measure of the length of time for this specified time period such as hours, days, weeks, months, years.",
+        "The measure of the length of time for this delimited period such as hours, days, weeks, months or years."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "unece:MeasureType",
+            "comment": "Missing description"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Period",
-            "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date."
+            "uri": "unece:DelimitedPeriod",
+            "comment": "A period of time from a start date time onwards up to an end date time."
+        },
+        {
+            "uri": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
         }
     ]
 }

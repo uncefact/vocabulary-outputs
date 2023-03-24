@@ -1,5 +1,5 @@
 ---
 title: lineTotalAmount
-permalink: lineTotalAmount
+permalink: lineTotalAmount.html
 jsonid: linetotalamount
 ---

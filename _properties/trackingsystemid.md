@@ -1,5 +1,5 @@
 ---
 title: trackingSystemId
-permalink: trackingSystemId
+permalink: trackingSystemId.html
 jsonid: trackingsystemid
 ---

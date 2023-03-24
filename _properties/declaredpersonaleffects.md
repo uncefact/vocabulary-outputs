@@ -1,5 +1,5 @@
 ---
 title: declaredPersonalEffects
-permalink: declaredPersonalEffects
+permalink: declaredPersonalEffects.html
 jsonid: declaredpersonaleffects
 ---

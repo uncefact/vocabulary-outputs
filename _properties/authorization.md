@@ -1,5 +1,5 @@
 ---
 title: authorization
-permalink: authorization
+permalink: authorization.html
 jsonid: authorization
 ---

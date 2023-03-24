@@ -1,5 +1,5 @@
 ---
 title: specifiedTransportMovement
-permalink: specifiedTransportMovement
+permalink: specifiedTransportMovement.html
 jsonid: specifiedtransportmovement
 ---

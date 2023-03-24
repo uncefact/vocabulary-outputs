@@ -1,5 +1,5 @@
 ---
 title: projectedSupplyPlan
-permalink: projectedSupplyPlan
+permalink: projectedSupplyPlan.html
 jsonid: projectedsupplyplan
 ---

@@ -1,49 +1,24 @@
 
 {
-    "label": "Marking",
-    "uri": "unece:Marking",
-    "comment": "An inscription, stamp or label such as to indicate date, ownership, quality, manufacture or origin.",
-    "datatypeProperties": [
+    "label": "marking",
+    "uri": "unece:marking",
+    "comment": [
+        "Marking, expressed as text, for these logistics shipping marks.",
+        "Marking, expressed as text, for these transported dangerous goods."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "unece:automaticDataCaptureMethodTypeCode",
-            "type": "unece:UNCL7233Code",
-            "comment": "A code specifying an automatic data capture method type for this packaging marking."
-        },
-        {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, of this packaging marking."
-        },
-        {
-            "uri": "unece:contentAmount",
-            "type": "xsd:decimal",
-            "comment": "Content, expressed as a monetary amount, for this packaging marking."
-        },
-        {
-            "uri": "unece:contentCode",
-            "type": "xsd:token",
-            "comment": "Content, expressed as a code, of this packaging marking."
-        },
-        {
-            "uri": "unece:contentDateTime",
-            "type": "xsd:dateTime",
-            "comment": "The date, time, date time or other date time value for the content of this packaging marking."
-        },
-        {
-            "uri": "unece:packagingMarkingBarcodeTypeCode",
-            "type": "unece:UNCL7511Code",
-            "comment": "A code specifying a type of barcode for this packaging marking."
-        },
-        {
-            "uri": "unece:packagingMarkingTypeCode",
-            "type": "unece:UNCL7511Code",
-            "comment": "A code specifying a type of packaging marking."
+            "uri": "xsd:string"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:specifiedMarking",
-            "comment": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership, quality, manufacture or origin."
+            "uri": "unece:DangerousGoods",
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
+        },
+        {
+            "uri": "unece:ShippingMarks",
+            "comment": "Physical markings or labels on individual packages or transport units for logistics purposes."
         }
     ]
 }

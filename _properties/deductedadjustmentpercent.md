@@ -1,5 +1,5 @@
 ---
 title: deductedAdjustmentPercent
-permalink: deductedAdjustmentPercent
+permalink: deductedAdjustmentPercent.html
 jsonid: deductedadjustmentpercent
 ---

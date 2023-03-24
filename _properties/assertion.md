@@ -1,5 +1,5 @@
 ---
 title: assertion
-permalink: assertion
+permalink: assertion.html
 jsonid: assertion
 ---

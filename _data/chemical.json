@@ -2,8 +2,23 @@
 {
     "label": "Chemical",
     "uri": "unece:Chemical",
-    "comment": "Any substance having a defined molecular composition.",
-    "datatypeProperties": [
+    "comment": "Any clearly defined substance having a defined molecular composition.",
+    "objectProperties": [
+        {
+            "uri": "unece:applicableHazardousMaterial",
+            "type": "unece:HazardousMaterial",
+            "comment": "An applicable toxicological hazardous material for this distinct chemical."
+        },
+        {
+            "uri": "unece:applicableProductCharacteristic",
+            "type": "unece:ProductCharacteristic",
+            "comment": "A product characteristic applicable to this distinct chemical."
+        },
+        {
+            "uri": "unece:applicableSustainabilityCharacteristic",
+            "type": "unece:SustainabilityCharacteristic",
+            "comment": "A sustainability characteristic applicable to this distinct chemical."
+        },
         {
             "uri": "unece:commonName",
             "type": "xsd:string",
@@ -20,14 +35,44 @@
             "comment": "The textual description of the formula for this distinct chemical."
         },
         {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "An identifier of this distinct chemical."
+        },
+        {
+            "uri": "unece:massMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the mass of this distinct chemical."
+        },
+        {
+            "uri": "unece:massRatioMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A mass measure of this distinct chemical expressed as a ratio to another mass, such as the total mass."
+        },
+        {
             "uri": "unece:molecularWeightMeasure",
-            "type": "xsd:decimal",
+            "type": "unece:MeasureType",
             "comment": "The measure of the molecular weight (in grams) for this distinct chemical."
+        },
+        {
+            "uri": "unece:presenceMeasurement",
+            "type": "unece:IngredientRangeMeasurement",
+            "comment": "A measurement of the range of the presence of an ingredient in this distinct chemical."
+        },
+        {
+            "uri": "unece:presencePercent",
+            "type": "xsd:string",
+            "comment": "The percentage of the presence of distinct chemical."
         },
         {
             "uri": "unece:scientificName",
             "type": "xsd:string",
             "comment": "The scientific name, expressed as text, for this distinct chemical."
+        },
+        {
+            "uri": "unece:specifiedProductCertificate",
+            "type": "unece:ProductCertificate",
+            "comment": "A product certificate specified for this distinct chemical."
         },
         {
             "uri": "unece:synonymName",
@@ -36,14 +81,28 @@
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:token",
+            "type": "xsd:string",
             "comment": "The code specifying the type of distinct chemical."
+        },
+        {
+            "uri": "unece:volumeMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the volume of this distinct chemical."
+        },
+        {
+            "uri": "unece:volumeRatioMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the volume of this distinct chemical expressed as a ratio to another volume, such as the total volume."
+        },
+        {
+            "uri": "unece:weightMeasure",
+            "type": "unece:MeasureType",
+            "comment": "A measure of the weight of this distinct chemical."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:usedChemical",
-            "comment": "A chemical used during this applied chemical treatment."
+            "uri": "unece:usedChemical"
         }
     ]
 }

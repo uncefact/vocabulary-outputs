@@ -3,209 +3,27 @@
     "label": "TradeTax",
     "uri": "unece:TradeTax",
     "comment": "A trade related fiscal levy or duty.",
-    "datatypeProperties": [
+    "objectProperties": [
         {
             "uri": "unece:allowanceChargeBasisAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "A monetary value used as the allowance and charge basis on which this trade related tax, levy or duty is calculated."
         },
         {
             "uri": "unece:applicablePercent",
-            "type": "xsd:decimal",
+            "type": "xsd:string",
             "comment": "The percent of trade tax applicable, such as to an object or an activity."
         },
         {
             "uri": "unece:basisAmount",
-            "type": "xsd:decimal",
+            "type": "unece:AmountType",
             "comment": "A monetary value used as the basis on which this trade related tax, levy or duty is calculated."
         },
         {
             "uri": "unece:basisQuantity",
-            "type": "xsd:decimal",
+            "type": "unece:QuantityType",
             "comment": "The quantity used as the basis for calculating the amount of this trade related tax, levy or duty."
         },
-        {
-            "uri": "unece:calculatedAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value resulting from the calculation of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:calculatedRate",
-            "type": "xsd:decimal",
-            "comment": "The rate used to calculate the amount of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:calculationMethodCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the method by which this trade related tax, levy or duty is calculated, such as codes for \"tax calculated after line total summation\", \"tax calculated before line total summation\", \"tax back calculated based on grand total\"."
-        },
-        {
-            "uri": "unece:calculationSequenceNumeric",
-            "type": "xsd:decimal",
-            "comment": "A numeric expression of the sequence in which this trade related tax is to be or has been applied when multiple taxes are applicable per calculation, such as first \"Value Added Tax (VAT)\", second \"Transfer\"."
-        },
-        {
-            "uri": "unece:categoryName",
-            "type": "xsd:string",
-            "comment": "A category name, expressed as text, of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:currencyCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the currency for this trade related tax, levy or duty [UNCL 6345]."
-        },
-        {
-            "uri": "unece:customsDutyIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade related tax, levy or duty is a customs duty."
-        },
-        {
-            "uri": "unece:customsDutyRegimeTypeCode",
-            "type": "unece:UNCL9213Code",
-            "comment": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
-        },
-        {
-            "uri": "unece:deductionAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the deduction from this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:exemptionAuthorizationId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the exemption authorization for this trade tax."
-        },
-        {
-            "uri": "unece:exemptionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not there is an exemption from this trade tax."
-        },
-        {
-            "uri": "unece:exemptionReason",
-            "type": "xsd:string",
-            "comment": "The reason, expressed as text, for exemption from this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:exemptionReasonCode",
-            "type": "xsd:token",
-            "comment": "A code specifying a reason for exemption from this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:grandTotalAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the grand total of the basis plus tax for this trade tax."
-        },
-        {
-            "uri": "unece:guarantee",
-            "type": "xsd:string",
-            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:guaranteeCode",
-            "type": "xsd:token",
-            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:informationAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of an amount being reported for information for this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:jurisdiction",
-            "type": "xsd:string",
-            "comment": "A jurisdiction, expressed as text, to which this trade related tax, levy or duty applies."
-        },
-        {
-            "uri": "unece:lineTotalBasisAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value used as the line total basis on which this trade related tax, levy or duty is calculated."
-        },
-        {
-            "uri": "unece:paymentId",
-            "type": "xsd:token",
-            "comment": "The unique identifier of the payment of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:paymentMethodCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the payment method for this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:rateApplicablePercent",
-            "type": "xsd:decimal",
-            "comment": "The applicable rate, expressed as a percentage, for this trade tax, levy or duty."
-        },
-        {
-            "uri": "unece:rateCode",
-            "type": "xsd:token",
-            "comment": "The code specifying the rate for this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:refundAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the refund of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:selfAssessedBasisAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
-        },
-        {
-            "uri": "unece:selfAssessedBasisQuantity",
-            "type": "xsd:decimal",
-            "comment": "The quantity on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
-        },
-        {
-            "uri": "unece:selfAssessedCalculatedAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value of the self-assessed calculated amount of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:tariffDeductionQuantity",
-            "type": "xsd:decimal",
-            "comment": "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy."
-        },
-        {
-            "uri": "unece:taxBasisAllowanceRate",
-            "type": "xsd:decimal",
-            "comment": "The rate of the tax basis allowance (deduction or discount) used to calculate the trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:taxCategoryCode",
-            "type": "unece:UNCL5305Code",
-            "comment": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from Tax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
-        },
-        {
-            "uri": "unece:taxExemptionAuthorityId",
-            "type": "xsd:token",
-            "comment": "The unique tax exemption authority identifier for this trade tax."
-        },
-        {
-            "uri": "unece:taxPointDate",
-            "type": "xsd:base64Binary",
-            "comment": "The date of the tax point when this trade related tax, levy or duty becomes applicable. Deprecated - Use Tax. Specified Tax Point. Date Time instead."
-        },
-        {
-            "uri": "unece:taxType",
-            "type": "xsd:string",
-            "comment": "The type, expressed as text, of this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:taxTypeCode",
-            "type": "unece:UNCL5153Code",
-            "comment": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference United Nations Code List (UNCL) 5153]."
-        },
-        {
-            "uri": "unece:timeReferenceDueDateTypeCode",
-            "type": "unece:UNCL5307Code",
-            "comment": "The code specifying a type of due date for this trade tax."
-        },
-        {
-            "uri": "unece:unitBasisAmount",
-            "type": "xsd:decimal",
-            "comment": "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated."
-        }
-    ],
-    "objectProperties": [
         {
             "uri": "unece:buyerDeductibleTaxSpecifiedAccountingAccount",
             "type": "unece:AccountingAccount",
@@ -222,9 +40,144 @@
             "comment": "The buyer repayable tax specified accounting account for this trade related tax, levy or duty."
         },
         {
+            "uri": "unece:calculatedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value resulting from the calculation of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:calculatedRate",
+            "type": "xsd:string",
+            "comment": "The rate used to calculate the amount of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:calculationMethodCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the method by which this trade related tax, levy or duty is calculated, such as codes for \"tax calculated after line total summation\", \"tax calculated before line total summation\", \"tax back calculated based on grand total\"."
+        },
+        {
+            "uri": "unece:calculationSequenceNumeric",
+            "type": "xsd:string",
+            "comment": "A numeric expression of the sequence in which this trade related tax is to be or has been applied when multiple taxes are applicable per calculation, such as first \"Value Added Tax (VAT)\", second \"Transfer\"."
+        },
+        {
+            "uri": "unece:categoryName",
+            "type": "xsd:string",
+            "comment": "A category name, expressed as text, of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:customsDutyIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this trade related tax, levy or duty is a customs duty."
+        },
+        {
+            "uri": "unece:customsDutyRegimeTypeCode",
+            "type": "unece:CustomsDutyRegimeTypeCodeList",
+            "comment": "The code specifying a type of regime applicable to the assessment or calculation of this trade related tax, levy or duty, such as a preferential duty rate."
+        },
+        {
+            "uri": "unece:customsProcedureGuaranteeCode",
+            "type": "unece:CustomsProcedureGuaranteeCodeList",
+            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:deductionAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the deduction from this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:exemptionAuthorizationId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of the exemption authorization for this trade tax."
+        },
+        {
+            "uri": "unece:exemptionIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not there is an exemption from this trade tax."
+        },
+        {
+            "uri": "unece:exemptionReason",
+            "type": "xsd:string",
+            "comment": "The reason, expressed as text, for exemption from this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:grandTotalAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the grand total of the basis plus tax for this trade tax."
+        },
+        {
+            "uri": "unece:guarantee",
+            "type": "xsd:string",
+            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "The identifier of this trade tax."
+        },
+        {
+            "uri": "unece:informationAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of an amount being reported for information for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:jurisdiction",
+            "type": "xsd:string",
+            "comment": "A jurisdiction, expressed as text, to which this trade related tax, levy or duty applies."
+        },
+        {
+            "uri": "unece:lineTotalBasisAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value used as the line total basis on which this trade related tax, levy or duty is calculated."
+        },
+        {
+            "uri": "unece:localTaxSystemId",
+            "type": "xsd:string",
+            "comment": "The identifier of the local tax system for this trade tax."
+        },
+        {
+            "uri": "unece:paymentId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of the payment of this trade related tax, levy or duty."
+        },
+        {
             "uri": "unece:placeApplicableLocation",
             "type": "unece:TradeLocation",
             "comment": "A location where this trade tax is applicable."
+        },
+        {
+            "uri": "unece:rateApplicablePercent",
+            "type": "xsd:string",
+            "comment": "The applicable rate, expressed as a percentage, for this trade tax, levy or duty."
+        },
+        {
+            "uri": "unece:rateCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the rate for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:refundAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the refund of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:selfAssessedBasisAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the amount on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+        },
+        {
+            "uri": "unece:selfAssessedBasisQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The quantity on which this trade related tax, levy or duty has been calculated on a self-assessment basis."
+        },
+        {
+            "uri": "unece:selfAssessedCalculatedAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of the self-assessed calculated amount of this trade related tax, levy or duty."
         },
         {
             "uri": "unece:sellerPayableTaxSpecifiedAccountingAccount",
@@ -245,28 +198,89 @@
             "uri": "unece:specifiedAccountingAccount",
             "type": "unece:AccountingAccount",
             "comment": "A specified accounting account for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:tariffDeductionQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy."
+        },
+        {
+            "uri": "unece:taxBasisAllowanceRate",
+            "type": "xsd:string",
+            "comment": "The rate of the tax basis allowance (deduction or discount) used to calculate the trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:taxCategoryCode",
+            "type": "unece:TaxCategoryCodeList",
+            "comment": "The code specifying the category to which this trade related tax, levy or duty applies, such as codes for \"Exempt from Tax\", \"Standard Rate\", \"Free Export Item - Tax Not Charged\" [Reference United Nations Code List (UNCL) 5305]."
+        },
+        {
+            "uri": "unece:taxExemptionAuthorityId",
+            "type": "xsd:string",
+            "comment": "The unique tax exemption authority identifier for this trade tax."
+        },
+        {
+            "uri": "unece:taxExemptionReasonExemptionReasonCode",
+            "type": "unece:TaxExemptionReasonCodeList",
+            "comment": "A code specifying a reason for exemption from this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:taxPointDate",
+            "type": "xsd:string",
+            "comment": "The date of the tax point when this trade related tax, levy or duty becomes applicable."
+        },
+        {
+            "uri": "unece:taxType",
+            "type": "xsd:string",
+            "comment": "The type, expressed as text, of this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:taxTypeCode",
+            "type": "unece:TaxTypeCodeList",
+            "comment": "The code specifying the type of trade related tax, levy or duty, such as a code for a Value Added Tax (VAT) [Reference United Nations Code List (UNCL) 5153]."
+        },
+        {
+            "uri": "unece:timeReferenceDueDateTypeCode",
+            "type": "unece:TimeReferenceCodeList",
+            "comment": "The code specifying a type of due date for this trade tax."
+        },
+        {
+            "uri": "unece:tradeTaxCurrencyCode",
+            "type": "unece:CurrencyCodeList",
+            "comment": "The code specifying the currency for this trade related tax, levy or duty [UNCL 6345]."
+        },
+        {
+            "uri": "unece:tradeTaxPaymentMethodCode",
+            "type": "unece:PaymentMethodCodeList",
+            "comment": "The code specifying the payment method for this trade related tax, levy or duty."
+        },
+        {
+            "uri": "unece:unitBasisAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value that constitutes the per unit basis on which this trade related tax, levy or duty is calculated."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableTax",
-            "comment": "A tax applicable to this ..."
+            "uri": "unece:applicableTax"
         },
         {
             "uri": "unece:appliedTax",
             "comment": "A tax that is applied to this logistics service charge."
         },
         {
-            "uri": "unece:categoryTax",
+            "uri": "unece:categoryTradeTax",
             "comment": "A tax category of this trade allowance charge."
         },
         {
-            "uri": "unece:includedTax",
-            "comment": "A tax included in this ..."
+            "uri": "unece:includedTax"
         },
         {
-            "uri": "unece:subtotalCalculatedTax",
-            "comment": "A tax subtotal calculated for ..."
+            "uri": "unece:relatedTax",
+            "comment": "A trade tax related to this financial adjustment."
+        },
+        {
+            "uri": "unece:subtotalCalculatedTax"
         }
     ]
 }

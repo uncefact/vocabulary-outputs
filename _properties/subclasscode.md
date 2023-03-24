@@ -1,5 +1,5 @@
 ---
 title: subClassCode
-permalink: subClassCode
+permalink: subClassCode.html
 jsonid: subclasscode
 ---

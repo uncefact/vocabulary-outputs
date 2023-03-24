@@ -1,5 +1,5 @@
 ---
 title: borderCrossingTransportMovement
-permalink: borderCrossingTransportMovement
+permalink: borderCrossingTransportMovement.html
 jsonid: bordercrossingtransportmovement
 ---

@@ -1,5 +1,5 @@
 ---
 title: breakdownBalanceOut
-permalink: breakdownBalanceOut
+permalink: breakdownBalanceOut.html
 jsonid: breakdownbalanceout
 ---

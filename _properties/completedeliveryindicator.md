@@ -1,5 +1,5 @@
 ---
 title: completeDeliveryIndicator
-permalink: completeDeliveryIndicator
+permalink: completeDeliveryIndicator.html
 jsonid: completedeliveryindicator
 ---
