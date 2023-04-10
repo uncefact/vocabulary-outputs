@@ -1,0 +1,5 @@
+---
+title: 1_rest_day_off_in7_days_period_or_more_stringent_policy
+permalink: 1_rest_day_off_in7_days_period_or_more_stringent_policy.html
+jsonid: 1_rest_day_off_in7_days_period_or_more_stringent_policy
+---

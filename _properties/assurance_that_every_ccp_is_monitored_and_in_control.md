@@ -1,0 +1,5 @@
+---
+title: assurance_that_every_ccp_is_monitored_and_in_control
+permalink: assurance_that_every_ccp_is_monitored_and_in_control.html
+jsonid: assurance_that_every_ccp_is_monitored_and_in_control
+---

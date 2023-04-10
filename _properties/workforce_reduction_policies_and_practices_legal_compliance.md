@@ -1,0 +1,5 @@
+---
+title: workforce_reduction_policies_and_practices_legal_compliance
+permalink: workforce_reduction_policies_and_practices_legal_compliance.html
+jsonid: workforce_reduction_policies_and_practices_legal_compliance
+---

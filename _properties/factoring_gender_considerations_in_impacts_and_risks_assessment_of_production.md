@@ -1,0 +1,5 @@
+---
+title: factoring_gender_considerations_in_impacts_and_risks_assessment_of_production
+permalink: factoring_gender_considerations_in_impacts_and_risks_assessment_of_production.html
+jsonid: factoring_gender_considerations_in_impacts_and_risks_assessment_of_production
+---

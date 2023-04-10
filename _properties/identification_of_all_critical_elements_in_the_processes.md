@@ -1,0 +1,5 @@
+---
+title: identification_of_all_critical_elements_in_the_processes
+permalink: identification_of_all_critical_elements_in_the_processes.html
+jsonid: identification_of_all_critical_elements_in_the_processes
+---

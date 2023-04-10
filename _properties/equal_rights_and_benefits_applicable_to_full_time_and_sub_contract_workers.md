@@ -1,0 +1,5 @@
+---
+title: equal_rights_and_benefits_applicable_to_full_time_and_sub_contract_workers
+permalink: equal_rights_and_benefits_applicable_to_full_time_and_sub_contract_workers.html
+jsonid: equal_rights_and_benefits_applicable_to_full_time_and_sub_contract_workers
+---

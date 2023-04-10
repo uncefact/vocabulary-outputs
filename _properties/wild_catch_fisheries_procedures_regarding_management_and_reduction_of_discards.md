@@ -1,0 +1,5 @@
+---
+title: wild_catch_fisheries_procedures_regarding_management_and_reduction_of_discards
+permalink: wild_catch_fisheries_procedures_regarding_management_and_reduction_of_discards.html
+jsonid: wild_catch_fisheries_procedures_regarding_management_and_reduction_of_discards
+---

@@ -1,0 +1,5 @@
+---
+title: practices_and_open_pit_underground_extractive_metals_practices
+permalink: practices_and_open_pit_underground_extractive_metals_practices.html
+jsonid: practices_and_open_pit_underground_extractive_metals_practices
+---

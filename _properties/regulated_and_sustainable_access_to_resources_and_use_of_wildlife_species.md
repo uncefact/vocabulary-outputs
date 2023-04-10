@@ -1,0 +1,5 @@
+---
+title: regulated_and_sustainable_access_to_resources_and_use_of_wildlife_species
+permalink: regulated_and_sustainable_access_to_resources_and_use_of_wildlife_species.html
+jsonid: regulated_and_sustainable_access_to_resources_and_use_of_wildlife_species
+---

@@ -1,0 +1,5 @@
+---
+title: gender_policies_upgrading_the_status_of_and_wages_for_traditional_areas_of_women_s_work
+permalink: gender_policies_upgrading_the_status_of_and_wages_for_traditional_areas_of_women_s_work.html
+jsonid: gender_policies_upgrading_the_status_of_and_wages_for_traditional_areas_of_women_s_work
+---

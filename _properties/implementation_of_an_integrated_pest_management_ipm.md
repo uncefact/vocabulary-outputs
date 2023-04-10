@@ -1,0 +1,5 @@
+---
+title: implementation_of_an_integrated_pest_management_ipm
+permalink: implementation_of_an_integrated_pest_management_ipm.html
+jsonid: implementation_of_an_integrated_pest_management_ipm
+---

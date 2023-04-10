@@ -1,0 +1,5 @@
+---
+title: determination_of_criteria_and_methods_to_ensure_effective_operation
+permalink: determination_of_criteria_and_methods_to_ensure_effective_operation.html
+jsonid: determination_of_criteria_and_methods_to_ensure_effective_operation
+---

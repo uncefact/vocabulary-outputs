@@ -1,0 +1,5 @@
+---
+title: safe_and_appropriate_housing_conditions_incl_dormitories_and_canteens_for_workers
+permalink: safe_and_appropriate_housing_conditions_incl_dormitories_and_canteens_for_workers.html
+jsonid: safe_and_appropriate_housing_conditions_incl_dormitories_and_canteens_for_workers
+---

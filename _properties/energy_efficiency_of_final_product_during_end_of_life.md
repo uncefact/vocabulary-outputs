@@ -1,0 +1,5 @@
+---
+title: energy_efficiency_of_final_product_during_end_of_life
+permalink: energy_efficiency_of_final_product_during_end_of_life.html
+jsonid: energy_efficiency_of_final_product_during_end_of_life
+---

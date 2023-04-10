@@ -1,0 +1,5 @@
+---
+title: specification_of_locations_and_sites_covered_under_the_scope
+permalink: specification_of_locations_and_sites_covered_under_the_scope.html
+jsonid: specification_of_locations_and_sites_covered_under_the_scope
+---
