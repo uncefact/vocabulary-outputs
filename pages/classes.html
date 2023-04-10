@@ -16,6 +16,7 @@ type: class
     </thead>
     <tbody>
         {% for class in site.classes %}
+            {% unless class.vocab == "sustainability" %}
             {%- assign classJson = site.data[class.jsonid] -%}
             {% assign referenceUrl = class | absolute_url | split: "."  %}
             <tr>
@@ -24,6 +25,7 @@ type: class
                     {{ classJson.comment }}
                 </td>
             </tr>
+            {% endunless %}
         {% endfor %}
     </tbody>
 </table>

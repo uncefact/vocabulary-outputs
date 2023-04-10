@@ -5,7 +5,7 @@ const search = {
         url = 'https://test.uncefact.org/search' + '?' + new URLSearchParams({
             q: searchQuery,
             size: 1000,
-            fq: "dataset:'22A'",
+            fq: "dataset:'sustainability'",
             sort: 'type asc'
         })
 

@@ -107,7 +107,7 @@ layout: default
                 {% assign referenceUrl = reference.uri | split: ":"  %}
                 {% assign mappingKey = referenceUrl[0]  %}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
+                    <td><a {% if mappingKey != 'sustainability' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
                     <td>{{ reference.comment }}</td>
                 </tr>
             {% endfor %}
