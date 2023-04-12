@@ -1,0 +1,3659 @@
+{
+    "@context": {
+        "rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl":"http://www.w3.org/2002/07/owl#",
+        "rdfs":"http://www.w3.org/2000/01/rdf-schema#",
+        "schema":"https://schema.org/",
+        "sustainability":"http://vocabulary.uncefact.org/sustainability/",
+        "id": "@id",
+        "type": "@type",
+        "compliancePolicies": {
+            "@id": "sustainability:compliancePolicies",
+            "@type": "@id"
+        },
+        "environment": {
+            "@id": "sustainability:environment",
+            "@type": "@id"
+        },
+        "social": {
+            "@id": "sustainability:social",
+            "@type": "@id"
+        },
+        "management": {
+            "@id": "sustainability:management",
+            "@type": "@id"
+        },
+        "quality": {
+            "@id": "sustainability:quality",
+            "@type": "@id"
+        },
+        "ethics": {
+            "@id": "sustainability:ethics",
+            "@type": "@id"
+        },
+        "soil": {
+            "@id": "sustainability:soil",
+            "@type": "@id"
+        },
+        "forests": {
+            "@id": "sustainability:forests",
+            "@type": "@id"
+        },
+        "chemicalInputs": {
+            "@id": "sustainability:chemicalInputs",
+            "@type": "@id"
+        },
+        "biodiversity": {
+            "@id": "sustainability:biodiversity",
+            "@type": "@id"
+        },
+        "livestock": {
+            "@id": "sustainability:livestock",
+            "@type": "@id"
+        },
+        "waste": {
+            "@id": "sustainability:waste",
+            "@type": "@id"
+        },
+        "water": {
+            "@id": "sustainability:water",
+            "@type": "@id"
+        },
+        "energy": {
+            "@id": "sustainability:energy",
+            "@type": "@id"
+        },
+        "climateCarbon": {
+            "@id": "sustainability:climateCarbon",
+            "@type": "@id"
+        },
+        "ssctAndOther": {
+            "@id": "sustainability:ssctAndOther",
+            "@type": "@id"
+        },
+        "humanRights": {
+            "@id": "sustainability:humanRights",
+            "@type": "@id"
+        },
+        "conditionsOfWork": {
+            "@id": "sustainability:conditionsOfWork",
+            "@type": "@id"
+        },
+        "employment": {
+            "@id": "sustainability:employment",
+            "@type": "@id"
+        },
+        "humanDevelopment": {
+            "@id": "sustainability:humanDevelopment",
+            "@type": "@id"
+        },
+        "economicViability": {
+            "@id": "sustainability:economicViability",
+            "@type": "@id"
+        },
+        "sustainabilityManagement": {
+            "@id": "sustainability:sustainabilityManagement",
+            "@type": "@id"
+        },
+        "supplyChain": {
+            "@id": "sustainability:supplyChain",
+            "@type": "@id"
+        },
+        "qualityManagement": {
+            "@id": "sustainability:qualityManagement",
+            "@type": "@id"
+        },
+        "nonFoodProducts": {
+            "@id": "sustainability:nonFoodProducts",
+            "@type": "@id"
+        },
+        "foodProducts": {
+            "@id": "sustainability:foodProducts",
+            "@type": "@id"
+        },
+        "feedManagement": {
+            "@id": "sustainability:feedManagement",
+            "@type": "@id"
+        },
+        "technicalSpecifications": {
+            "@id": "sustainability:technicalSpecifications",
+            "@type": "@id"
+        },
+        "traceabilityAndRecall": {
+            "@id": "sustainability:traceabilityAndRecall",
+            "@type": "@id"
+        },
+        "staffRequirements": {
+            "@id": "sustainability:staffRequirements",
+            "@type": "@id"
+        },
+        "workersRequirements": {
+            "@id": "sustainability:workersRequirements",
+            "@type": "@id"
+        },
+        "safetyHaccpSystem": {
+            "@id": "sustainability:safetyHaccpSystem",
+            "@type": "@id"
+        },
+        "productionSite": {
+            "@id": "sustainability:productionSite",
+            "@type": "@id"
+        },
+        "tracebilityRecallAndAllergens": {
+            "@id": "sustainability:tracebilityRecallAndAllergens",
+            "@type": "@id"
+        },
+        "foreignBodiesAndContamination": {
+            "@id": "sustainability:foreignBodiesAndContamination",
+            "@type": "@id"
+        },
+        "processAndProductControl": {
+            "@id": "sustainability:processAndProductControl",
+            "@type": "@id"
+        },
+        "managementSystem": {
+            "@id": "sustainability:managementSystem",
+            "@type": "@id"
+        },
+        "specifications": {
+            "@id": "sustainability:specifications",
+            "@type": "@id"
+        },
+        "documentation": {
+            "@id": "sustainability:documentation",
+            "@type": "@id"
+        },
+        "managementResponsibility": {
+            "@id": "sustainability:managementResponsibility",
+            "@type": "@id"
+        },
+        "verificationAndImprovement": {
+            "@id": "sustainability:verificationAndImprovement",
+            "@type": "@id"
+        },
+        "prerequisiteProgrammes": {
+            "@id": "sustainability:prerequisiteProgrammes",
+            "@type": "@id"
+        },
+        "purchase": {
+            "@id": "sustainability:purchase",
+            "@type": "@id"
+        },
+        "production": {
+            "@id": "sustainability:production",
+            "@type": "@id"
+        },
+        "outsourcedActivities": {
+            "@id": "sustainability:outsourcedActivities",
+            "@type": "@id"
+        },
+        "formulation": {
+            "@id": "sustainability:formulation",
+            "@type": "@id"
+        },
+        "labeling": {
+            "@id": "sustainability:labeling",
+            "@type": "@id"
+        },
+        "controlOfNonConformity": {
+            "@id": "sustainability:controlOfNonConformity",
+            "@type": "@id"
+        },
+        "haccp": {
+            "@id": "sustainability:haccp",
+            "@type": "@id"
+        },
+        "monitoringAndVerification": {
+            "@id": "sustainability:monitoringAndVerification",
+            "@type": "@id"
+        },
+        "antiCorruption": {
+            "@id": "sustainability:antiCorruption",
+            "@type": "@id"
+        },
+        "complianceToLegislation": {
+            "@id": "sustainability:complianceToLegislation",
+            "@type": "@id"
+        },
+        "degree_of_obligation": {
+            "@id": "sustainability:degree_of_obligation",
+            "@type": "sustainability:DegreeOfObligation"
+        },
+        "degree_of_criticality": {
+            "@id": "sustainability:degree_of_criticality",
+            "@type": "sustainability:DegreeOfCriticality"
+        },
+        "verification_of_compliance": {
+            "@id": "sustainability:verification_of_compliance",
+            "@type": "sustainability:VerificationOfCompliance"
+        },
+        "soil_general_principle": {
+            "@id": "sustainability:soil_general_principle",
+            "@type": "xsd:string"
+        },
+        "soil_preparation_for_specific_crops_plant_spacing": {
+            "@id": "sustainability:soil_preparation_for_specific_crops_plant_spacing",
+            "@type": "xsd:boolean"
+        },
+        "soil_enhancement_by_crop_rotation_or_intercropping": {
+            "@id": "sustainability:soil_enhancement_by_crop_rotation_or_intercropping",
+            "@type": "xsd:boolean"
+        },
+        "soil_enhancement_by_use_of_cover_crops": {
+            "@id": "sustainability:soil_enhancement_by_use_of_cover_crops",
+            "@type": "xsd:boolean"
+        },
+        "soil_compaction": {
+            "@id": "sustainability:soil_compaction",
+            "@type": "sustainability:SoilCompaction"
+        },
+        "other_soil": {
+            "@id": "sustainability:other_soil",
+            "@type": "xsd:string"
+        },
+        "soil_erosion": {
+            "@id": "sustainability:soil_erosion",
+            "@type": "sustainability:SoilErosion"
+        },
+        "soil_conservation": {
+            "@id": "sustainability:soil_conservation",
+            "@type": "xsd:boolean"
+        },
+        "soil_quality": {
+            "@id": "sustainability:soil_quality",
+            "@type": "xsd:boolean"
+        },
+        "soil_nutrients": {
+            "@id": "sustainability:soil_nutrients",
+            "@type": "xsd:boolean"
+        },
+        "soil_fertility": {
+            "@id": "sustainability:soil_fertility",
+            "@type": "sustainability:SoilFertility"
+        },
+        "soil_productivity": {
+            "@id": "sustainability:soil_productivity",
+            "@type": "xsd:boolean"
+        },
+        "soil_biodiversity": {
+            "@id": "sustainability:soil_biodiversity",
+            "@type": "xsd:boolean"
+        },
+        "soil_contamination": {
+            "@id": "sustainability:soil_contamination",
+            "@type": "sustainability:SoilContamination"
+        },
+        "forestry_issues_general_principle": {
+            "@id": "sustainability:forestry_issues_general_principle",
+            "@type": "xsd:string"
+        },
+        "inclusion_of_all_forest_resources_in_at_least_long_term_objectives_of_forest_management_plan_fmp": {
+            "@id": "sustainability:inclusion_of_all_forest_resources_in_at_least_long_term_objectives_of_forest_management_plan_fmp",
+            "@type": "xsd:boolean"
+        },
+        "use_of_verifiable_targets_in_fmp_by_which_progress_can_be_assessed": {
+            "@id": "sustainability:use_of_verifiable_targets_in_fmp_by_which_progress_can_be_assessed",
+            "@type": "xsd:boolean"
+        },
+        "fmp_annual_allowable_cut": {
+            "@id": "sustainability:fmp_annual_allowable_cut",
+            "@type": "xsd:boolean"
+        },
+        "fmp_annual_allowable_exploitation_of_non_timber_forest_products": {
+            "@id": "sustainability:fmp_annual_allowable_exploitation_of_non_timber_forest_products",
+            "@type": "xsd:boolean"
+        },
+        "fmp_results_be_incorporated_in_a_consistent_and_replicable_monitoring_system": {
+            "@id": "sustainability:fmp_results_be_incorporated_in_a_consistent_and_replicable_monitoring_system",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_of_forests_resources_and_management_practices_that_reflect_natural_disturbance": {
+            "@id": "sustainability:monitoring_of_forests_resources_and_management_practices_that_reflect_natural_disturbance",
+            "@type": "xsd:boolean"
+        },
+        "making_publicly_available_fmp_monitoring_results": {
+            "@id": "sustainability:making_publicly_available_fmp_monitoring_results",
+            "@type": "xsd:boolean"
+        },
+        "legal_compliance_harvest_rights": {
+            "@id": "sustainability:legal_compliance_harvest_rights",
+            "@type": "xsd:boolean"
+        },
+        "legal_compliance_payments_for_harvest_rights": {
+            "@id": "sustainability:legal_compliance_payments_for_harvest_rights",
+            "@type": "xsd:boolean"
+        },
+        "other_forestry_conservation_e_g_prohibition_of_genetically_modified_trees_natural_semi_natural_forests_reflecting_natural_disturbance_scenic_landscapes": {
+            "@id": "sustainability:other_forestry_conservation_e_g_prohibition_of_genetically_modified_trees_natural_semi_natural_forests_reflecting_natural_disturbance_scenic_landscapes",
+            "@type": "xsd:string"
+        },
+        "regeneration_of_tree_cover_after_logging_e_g_to_pre_harvesting_situation": {
+            "@id": "sustainability:regeneration_of_tree_cover_after_logging_e_g_to_pre_harvesting_situation",
+            "@type": "xsd:boolean"
+        },
+        "prevent_and_or_remediate_deforestation_e_g_use_tree_species_for_regeneration_that_are_well_adapted_to_site_conditions": {
+            "@id": "sustainability:prevent_and_or_remediate_deforestation_e_g_use_tree_species_for_regeneration_that_are_well_adapted_to_site_conditions",
+            "@type": "xsd:boolean"
+        },
+        "enhance_conservation_of_forests": {
+            "@id": "sustainability:enhance_conservation_of_forests",
+            "@type": "xsd:boolean"
+        },
+        "the_conversion_of_forests_into_production_lands": {
+            "@id": "sustainability:the_conversion_of_forests_into_production_lands",
+            "@type": "sustainability:TheConversionOfForestsIntoProductionLands"
+        },
+        "the_conversion_of_agriculture_land_to_non_agriculture_purposes": {
+            "@id": "sustainability:the_conversion_of_agriculture_land_to_non_agriculture_purposes",
+            "@type": "xsd:boolean"
+        },
+        "maintenance_of_records_of_forests_at_least5_years_period": {
+            "@id": "sustainability:maintenance_of_records_of_forests_at_least5_years_period",
+            "@type": "xsd:boolean"
+        },
+        "forest_management_plan_fmp_baseline_objectives_and_assessment_of_current_conditions_stockings_species_age_classes_of_trees_etc": {
+            "@id": "sustainability:forest_management_plan_fmp_baseline_objectives_and_assessment_of_current_conditions_stockings_species_age_classes_of_trees_etc",
+            "@type": "xsd:boolean"
+        },
+        "preparation_of_public_summary_of_the_forest_management_plan_fmp": {
+            "@id": "sustainability:preparation_of_public_summary_of_the_forest_management_plan_fmp",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_natural_organic_inputs_general_principle": {
+            "@id": "sustainability:chemicals_natural_organic_inputs_general_principle",
+            "@type": "xsd:string"
+        },
+        "implementation_of_an_integrated_pest_management_ipm": {
+            "@id": "sustainability:implementation_of_an_integrated_pest_management_ipm",
+            "@type": "xsd:boolean"
+        },
+        "training_on_integrated_pest_management_ipm": {
+            "@id": "sustainability:training_on_integrated_pest_management_ipm",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_and_related_materials_general_principle": {
+            "@id": "sustainability:chemicals_and_related_materials_general_principle",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_use_and_application_records": {
+            "@id": "sustainability:chemicals_use_and_application_records",
+            "@type": "sustainability:ChemicalsUseAndApplicationRecords"
+        },
+        "chemicals_storage_and_labeling": {
+            "@id": "sustainability:chemicals_storage_and_labeling",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_equipment_and_containers_storage_cleaning": {
+            "@id": "sustainability:chemicals_equipment_and_containers_storage_cleaning",
+            "@type": "xsd:boolean"
+        },
+        "protection_of_non_target_areas_from_agro_chemical_use": {
+            "@id": "sustainability:protection_of_non_target_areas_from_agro_chemical_use",
+            "@type": "xsd:boolean"
+        },
+        "regular_re_calibration_of_agro_chemicals_application_equipment": {
+            "@id": "sustainability:regular_re_calibration_of_agro_chemicals_application_equipment",
+            "@type": "xsd:boolean"
+        },
+        "production_process_chemicals_extractive_industries_cleaning_food_non_food_manufacturing": {
+            "@id": "sustainability:production_process_chemicals_extractive_industries_cleaning_food_non_food_manufacturing",
+            "@type": "xsd:boolean"
+        },
+        "organic_natural_inputs_general_principles_practices": {
+            "@id": "sustainability:organic_natural_inputs_general_principles_practices",
+            "@type": "xsd:boolean"
+        },
+        "prohibition_of_use_of_any_pesticides_biological_control_of_pests_and_other_related_chemical_substances": {
+            "@id": "sustainability:prohibition_of_use_of_any_pesticides_biological_control_of_pests_and_other_related_chemical_substances",
+            "@type": "xsd:boolean"
+        },
+        "use_of_organic_fertilizer": {
+            "@id": "sustainability:use_of_organic_fertilizer",
+            "@type": "sustainability:UseOfOrganicFertilizer"
+        },
+        "equipment_maintenance_cleaning_and_warehousing_procedures": {
+            "@id": "sustainability:equipment_maintenance_cleaning_and_warehousing_procedures",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_selective_targeted_application": {
+            "@id": "sustainability:chemicals_selective_targeted_application",
+            "@type": "xsd:boolean"
+        },
+        "training_on_chemicals_handling_and_exposure": {
+            "@id": "sustainability:training_on_chemicals_handling_and_exposure",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_variation_to_prevent_pest_resistance": {
+            "@id": "sustainability:chemicals_variation_to_prevent_pest_resistance",
+            "@type": "xsd:boolean"
+        },
+        "chemical_substances_storage_disposal_waste_labeling": {
+            "@id": "sustainability:chemical_substances_storage_disposal_waste_labeling",
+            "@type": "xsd:boolean"
+        },
+        "treatment_of_waste_of_chemical_substances_and_related_materials": {
+            "@id": "sustainability:treatment_of_waste_of_chemical_substances_and_related_materials",
+            "@type": "xsd:boolean"
+        },
+        "use_and_management_of_hazardous_chemicals": {
+            "@id": "sustainability:use_and_management_of_hazardous_chemicals",
+            "@type": "xsd:boolean"
+        },
+        "biodegradability_of_chemicals": {
+            "@id": "sustainability:biodegradability_of_chemicals",
+            "@type": "xsd:boolean"
+        },
+        "general_prohibition_of_use_of_gmos": {
+            "@id": "sustainability:general_prohibition_of_use_of_gmos",
+            "@type": "xsd:boolean"
+        },
+        "prohibition_of_use_of_hazardous_chemicals_as_defined_by_who1a_and_b2_and_the_stockholm_and_rotterdam_conventions": {
+            "@id": "sustainability:prohibition_of_use_of_hazardous_chemicals_as_defined_by_who1a_and_b2_and_the_stockholm_and_rotterdam_conventions",
+            "@type": "sustainability:ProhibitionOfUseOfHazardousChemicalsAsDefinedByWho1aAndB2AndTheStockholmAndRotterdamConventions"
+        },
+        "use_and_management_of_gmos": {
+            "@id": "sustainability:use_and_management_of_gmos",
+            "@type": "sustainability:UseAndManagementOfGmos"
+        },
+        "risk_prevention_with_regards_to_use_of_gmos": {
+            "@id": "sustainability:risk_prevention_with_regards_to_use_of_gmos",
+            "@type": "sustainability:RiskPreventionWithRegardsToUseOfGmos"
+        },
+        "traceability_and_labeling_of_genetically_modified_crops_and_products": {
+            "@id": "sustainability:traceability_and_labeling_of_genetically_modified_crops_and_products",
+            "@type": "xsd:boolean"
+        },
+        "other": {
+            "@id": "sustainability:other",
+            "@type": "xsd:string"
+        },
+        "prohibition_of_use_of_hazardous_chemicals_as_defined_by_the_pan_international_list_of_highly_hazardous_pesticides": {
+            "@id": "sustainability:prohibition_of_use_of_hazardous_chemicals_as_defined_by_the_pan_international_list_of_highly_hazardous_pesticides",
+            "@type": "sustainability:ProhibitionOfUseOfHazardousChemicalsAsDefinedByThePanInternationalListOfHighlyHazardousPesticides"
+        },
+        "respect_of_list_of_permitted_chemicals_of_low_concern_for_the_intended_use_of_product": {
+            "@id": "sustainability:respect_of_list_of_permitted_chemicals_of_low_concern_for_the_intended_use_of_product",
+            "@type": "xsd:boolean"
+        },
+        "respect_list_of_prohibited_chemicals_as_harmful_to_human_health_h_statements_h340_h350_h360": {
+            "@id": "sustainability:respect_list_of_prohibited_chemicals_as_harmful_to_human_health_h_statements_h340_h350_h360",
+            "@type": "sustainability:RespectListOfProhibitedChemicalsAsHarmfulToHumanHealthHStatementsH340H350H360"
+        },
+        "the_restrictions_on_surfactants_cleaning_agents_and_foam_inhibitors": {
+            "@id": "sustainability:the_restrictions_on_surfactants_cleaning_agents_and_foam_inhibitors",
+            "@type": "xsd:boolean"
+        },
+        "appropriate_tests_of_toxicity": {
+            "@id": "sustainability:appropriate_tests_of_toxicity",
+            "@type": "xsd:boolean"
+        },
+        "use_of_biological_control_agents_must_comply_with_internationally_recognized_standards_e_g_authorized_list_of_substances": {
+            "@id": "sustainability:use_of_biological_control_agents_must_comply_with_internationally_recognized_standards_e_g_authorized_list_of_substances",
+            "@type": "xsd:boolean"
+        },
+        "overarching_policy_or_set_of_principles_on_biodiversity": {
+            "@id": "sustainability:overarching_policy_or_set_of_principles_on_biodiversity",
+            "@type": "xsd:string"
+        },
+        "wildlife_general_principle": {
+            "@id": "sustainability:wildlife_general_principle",
+            "@type": "xsd:boolean"
+        },
+        "regulated_and_sustainable_access_to_resources_and_use_of_wildlife_species": {
+            "@id": "sustainability:regulated_and_sustainable_access_to_resources_and_use_of_wildlife_species",
+            "@type": "sustainability:RegulatedAndSustainableAccessToResourcesAndUseOfWildlifeSpecies"
+        },
+        "specific_rare_threatened_or_endangered_wildlife_species": {
+            "@id": "sustainability:specific_rare_threatened_or_endangered_wildlife_species",
+            "@type": "sustainability:SpecificRareThreatenedOrEndangeredWildlifeSpecies"
+        },
+        "regulated_and_suitable_housing_of_wildlife_living_specimens": {
+            "@id": "sustainability:regulated_and_suitable_housing_of_wildlife_living_specimens",
+            "@type": "xsd:boolean"
+        },
+        "minimized_impacts_on_wildlife_populations": {
+            "@id": "sustainability:minimized_impacts_on_wildlife_populations",
+            "@type": "xsd:boolean"
+        },
+        "spatial_management_criteria": {
+            "@id": "sustainability:spatial_management_criteria",
+            "@type": "xsd:boolean"
+        },
+        "safeguards_against_fragmentation_of_ecosystems": {
+            "@id": "sustainability:safeguards_against_fragmentation_of_ecosystems",
+            "@type": "xsd:boolean"
+        },
+        "maintaining_or_protecting_rare_threatened_or_endangered_ecosystems": {
+            "@id": "sustainability:maintaining_or_protecting_rare_threatened_or_endangered_ecosystems",
+            "@type": "xsd:boolean"
+        },
+        "criteria_to_avoid_crop_disease_cross_contamination": {
+            "@id": "sustainability:criteria_to_avoid_crop_disease_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_and_preserving_aquaculture_diversity": {
+            "@id": "sustainability:monitoring_and_preserving_aquaculture_diversity",
+            "@type": "xsd:boolean"
+        },
+        "conventions_on_biodiversity_cites_cbd_cms_ccd": {
+            "@id": "sustainability:conventions_on_biodiversity_cites_cbd_cms_ccd",
+            "@type": "xsd:boolean"
+        },
+        "diversity_of_planting_materials_seeds_and_crops_genotypes": {
+            "@id": "sustainability:diversity_of_planting_materials_seeds_and_crops_genotypes",
+            "@type": "xsd:boolean"
+        },
+        "maintaining_restoring_prioritizing_native_species": {
+            "@id": "sustainability:maintaining_restoring_prioritizing_native_species",
+            "@type": "xsd:boolean"
+        },
+        "the_protection_of_ecosystems_against_invasive_species": {
+            "@id": "sustainability:the_protection_of_ecosystems_against_invasive_species",
+            "@type": "sustainability:TheProtectionOfEcosystemsAgainstInvasiveSpecies"
+        },
+        "monitoring_and_protection_of_high_conservation_value_areas": {
+            "@id": "sustainability:monitoring_and_protection_of_high_conservation_value_areas",
+            "@type": "xsd:boolean"
+        },
+        "prohibition_of_production_on_land_with_high_conservation_value": {
+            "@id": "sustainability:prohibition_of_production_on_land_with_high_conservation_value",
+            "@type": "xsd:boolean"
+        },
+        "hcv_as_intended_in_the_hcv_resource_network": {
+            "@id": "sustainability:hcv_as_intended_in_the_hcv_resource_network",
+            "@type": "xsd:boolean"
+        },
+        "prohibition_of_production_on_land_with_high_conservation_area_recognized_by_independent_expertise": {
+            "@id": "sustainability:prohibition_of_production_on_land_with_high_conservation_area_recognized_by_independent_expertise",
+            "@type": "xsd:boolean"
+        },
+        "legally_protected_and_internationally_recognized_areas_for_their_biodiversity": {
+            "@id": "sustainability:legally_protected_and_internationally_recognized_areas_for_their_biodiversity",
+            "@type": "xsd:boolean"
+        },
+        "identifying_risks_and_impacts_on_ecosystem_services": {
+            "@id": "sustainability:identifying_risks_and_impacts_on_ecosystem_services",
+            "@type": "xsd:boolean"
+        },
+        "use_of_biotechnologies": {
+            "@id": "sustainability:use_of_biotechnologies",
+            "@type": "xsd:boolean"
+        },
+        "sustainable_management_and_use_of_natural_resources": {
+            "@id": "sustainability:sustainable_management_and_use_of_natural_resources",
+            "@type": "xsd:boolean"
+        },
+        "practices_and_open_pit_underground_extractive_metals_practices": {
+            "@id": "sustainability:practices_and_open_pit_underground_extractive_metals_practices",
+            "@type": "xsd:boolean"
+        },
+        "criteria_and_practices_relating_to_the_clearing_of_land_with_fire_or_explosives": {
+            "@id": "sustainability:criteria_and_practices_relating_to_the_clearing_of_land_with_fire_or_explosives",
+            "@type": "sustainability:CriteriaAndPracticesRelatingToTheClearingOfLandWithFireOrExplosives"
+        },
+        "post_production_practices_impact_assessment_rotation_of_crops": {
+            "@id": "sustainability:post_production_practices_impact_assessment_rotation_of_crops",
+            "@type": "xsd:boolean"
+        },
+        "human_settlements_in_or_close_to_production_areas": {
+            "@id": "sustainability:human_settlements_in_or_close_to_production_areas",
+            "@type": "xsd:boolean"
+        },
+        "other_biodiversity_e_g_offsets_compensation_policies": {
+            "@id": "sustainability:other_biodiversity_e_g_offsets_compensation_policies",
+            "@type": "xsd:boolean"
+        },
+        "natural_wetlands_and_or_watercourses_affected_by_production": {
+            "@id": "sustainability:natural_wetlands_and_or_watercourses_affected_by_production",
+            "@type": "sustainability:NaturalWetlandsAndOrWatercoursesAffectedByProduction"
+        },
+        "sustainable_harvesting": {
+            "@id": "sustainability:sustainable_harvesting",
+            "@type": "xsd:boolean"
+        },
+        "wild_catch_fisheries_procedures_regarding_management_and_reduction_of_discards": {
+            "@id": "sustainability:wild_catch_fisheries_procedures_regarding_management_and_reduction_of_discards",
+            "@type": "xsd:boolean"
+        },
+        "wild_catch_fisheries_prohibition_of_of_destructive_fishing_methods_such_as_dynamite_and_poison": {
+            "@id": "sustainability:wild_catch_fisheries_prohibition_of_of_destructive_fishing_methods_such_as_dynamite_and_poison",
+            "@type": "xsd:boolean"
+        },
+        "wild_catch_fisheries_sustainable_exploitation_of_marine_resources_including_restoration": {
+            "@id": "sustainability:wild_catch_fisheries_sustainable_exploitation_of_marine_resources_including_restoration",
+            "@type": "xsd:boolean"
+        },
+        "habitat_eco_system_restoration_rehabilitation": {
+            "@id": "sustainability:habitat_eco_system_restoration_rehabilitation",
+            "@type": "xsd:boolean"
+        },
+        "impact_assessment_policy_for_new_production": {
+            "@id": "sustainability:impact_assessment_policy_for_new_production",
+            "@type": "xsd:boolean"
+        },
+        "requirements_for_net_positive_gain_in_biodiversity": {
+            "@id": "sustainability:requirements_for_net_positive_gain_in_biodiversity",
+            "@type": "xsd:boolean"
+        },
+        "protection_of_rare_and_threatened_species_and_their_habitats": {
+            "@id": "sustainability:protection_of_rare_and_threatened_species_and_their_habitats",
+            "@type": "xsd:boolean"
+        },
+        "requirements_for_no_net_loss_in_biodiversity": {
+            "@id": "sustainability:requirements_for_no_net_loss_in_biodiversity",
+            "@type": "xsd:boolean"
+        },
+        "impact_mitigation_prior_to_production_harvesting_operations": {
+            "@id": "sustainability:impact_mitigation_prior_to_production_harvesting_operations",
+            "@type": "xsd:boolean"
+        },
+        "animals_livestock_general_principles": {
+            "@id": "sustainability:animals_livestock_general_principles",
+            "@type": "xsd:string"
+        },
+        "general_animals_welfare": {
+            "@id": "sustainability:general_animals_welfare",
+            "@type": "xsd:boolean"
+        },
+        "animal_testing": {
+            "@id": "sustainability:animal_testing",
+            "@type": "xsd:boolean"
+        },
+        "transport_of_animals": {
+            "@id": "sustainability:transport_of_animals",
+            "@type": "sustainability:TransportOfAnimals"
+        },
+        "slaughter_slaughtering_process_minimum_age": {
+            "@id": "sustainability:slaughter_slaughtering_process_minimum_age",
+            "@type": "xsd:boolean"
+        },
+        "the_use_of_electric_prods_with_livestock": {
+            "@id": "sustainability:the_use_of_electric_prods_with_livestock",
+            "@type": "sustainability:TheUseOfElectricProdsWithLivestock"
+        },
+        "techniques_to_be_used_for_animal_identification_and_or_castration": {
+            "@id": "sustainability:techniques_to_be_used_for_animal_identification_and_or_castration",
+            "@type": "sustainability:TechniquesToBeUsedForAnimalIdentificationAndOrCastration"
+        },
+        "animal_physical_integrity_eg_removing_of_tails_ears_nose_wings_horns_or_other_body_parts": {
+            "@id": "sustainability:animal_physical_integrity_eg_removing_of_tails_ears_nose_wings_horns_or_other_body_parts",
+            "@type": "sustainability:AnimalPhysicalIntegrityEgRemovingOfTailsEarsNoseWingsHornsOrOtherBodyParts"
+        },
+        "litter_manure": {
+            "@id": "sustainability:litter_manure",
+            "@type": "xsd:boolean"
+        },
+        "livestock_density_following_at_least_official_regulations_e_g_ec_regulation8892008": {
+            "@id": "sustainability:livestock_density_following_at_least_official_regulations_e_g_ec_regulation8892008",
+            "@type": "sustainability:LivestockDensityFollowingAtLeastOfficialRegulationsEGEcRegulation8892008"
+        },
+        "outdoor_access_livestock": {
+            "@id": "sustainability:outdoor_access_livestock",
+            "@type": "sustainability:OutdoorAccessLivestock"
+        },
+        "breeding": {
+            "@id": "sustainability:breeding",
+            "@type": "xsd:boolean"
+        },
+        "animal_housing": {
+            "@id": "sustainability:animal_housing",
+            "@type": "sustainability:AnimalHousing"
+        },
+        "specific_beekeeping_interior_exterior_housing": {
+            "@id": "sustainability:specific_beekeeping_interior_exterior_housing",
+            "@type": "xsd:boolean"
+        },
+        "specific_beekeeping_honey_extraction_process": {
+            "@id": "sustainability:specific_beekeeping_honey_extraction_process",
+            "@type": "xsd:boolean"
+        },
+        "specific_aquaculture_polyculture": {
+            "@id": "sustainability:specific_aquaculture_polyculture",
+            "@type": "xsd:boolean"
+        },
+        "specific_aquaculture_analysis_of_water_quality": {
+            "@id": "sustainability:specific_aquaculture_analysis_of_water_quality",
+            "@type": "xsd:boolean"
+        },
+        "specific_aquaculture_systems_in_place_to_minimize_the_unintentional_release_or_escape_of_farmed_species": {
+            "@id": "sustainability:specific_aquaculture_systems_in_place_to_minimize_the_unintentional_release_or_escape_of_farmed_species",
+            "@type": "xsd:boolean"
+        },
+        "specific_aquaculture_use_of_hatchery_raised_seed": {
+            "@id": "sustainability:specific_aquaculture_use_of_hatchery_raised_seed",
+            "@type": "xsd:boolean"
+        },
+        "specific_aquaculture_prohibition_of_prophylactic_use_of_antimicrobials": {
+            "@id": "sustainability:specific_aquaculture_prohibition_of_prophylactic_use_of_antimicrobials",
+            "@type": "xsd:boolean"
+        },
+        "other_animals_treatment": {
+            "@id": "sustainability:other_animals_treatment",
+            "@type": "xsd:string"
+        },
+        "general_animals_feeding": {
+            "@id": "sustainability:general_animals_feeding",
+            "@type": "xsd:boolean"
+        },
+        "animal_feed_responsible_sourcing_policy": {
+            "@id": "sustainability:animal_feed_responsible_sourcing_policy",
+            "@type": "xsd:boolean"
+        },
+        "specific_origin_of_animal_feed": {
+            "@id": "sustainability:specific_origin_of_animal_feed",
+            "@type": "sustainability:SpecificOriginOfAnimalFeed"
+        },
+        "special_quality_of_animal_feed": {
+            "@id": "sustainability:special_quality_of_animal_feed",
+            "@type": "sustainability:SpecialQualityOfAnimalFeed"
+        },
+        "special_requirements_for_organic_animal_feed": {
+            "@id": "sustainability:special_requirements_for_organic_animal_feed",
+            "@type": "sustainability:SpecialRequirementsForOrganicAnimalFeed"
+        },
+        "animals_medication": {
+            "@id": "sustainability:animals_medication",
+            "@type": "sustainability:AnimalsMedication"
+        },
+        "procedures_to_prevent_the_spread_of_animal_disease": {
+            "@id": "sustainability:procedures_to_prevent_the_spread_of_animal_disease",
+            "@type": "xsd:boolean"
+        },
+        "waste_management_general_principle": {
+            "@id": "sustainability:waste_management_general_principle",
+            "@type": "xsd:string"
+        },
+        "prevention_of_run_off_of_waste_chemicals_mineral_and_organic_substances": {
+            "@id": "sustainability:prevention_of_run_off_of_waste_chemicals_mineral_and_organic_substances",
+            "@type": "xsd:boolean"
+        },
+        "air_quality_pollution_monitoring": {
+            "@id": "sustainability:air_quality_pollution_monitoring",
+            "@type": "sustainability:AirQualityPollutionMonitoring"
+        },
+        "air_pollution_along_the_textiles_production_process_ssct": {
+            "@id": "sustainability:air_pollution_along_the_textiles_production_process_ssct",
+            "@type": "sustainability:AirPollutionAlongTheTextilesProductionProcessSsct"
+        },
+        "s_and_nox_emissions_for_paper_industry_ssct": {
+            "@id": "sustainability:s_and_nox_emissions_for_paper_industry_ssct",
+            "@type": "xsd:boolean"
+        },
+        "pollution_incidents_mitigation_procedures_for_risks_monitoring_and_records_keeping": {
+            "@id": "sustainability:pollution_incidents_mitigation_procedures_for_risks_monitoring_and_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "mitigation_of_transboundary_effects_of_air_pollution": {
+            "@id": "sustainability:mitigation_of_transboundary_effects_of_air_pollution",
+            "@type": "xsd:boolean"
+        },
+        "noise_odour_and_other_pollution_nuisance": {
+            "@id": "sustainability:noise_odour_and_other_pollution_nuisance",
+            "@type": "xsd:boolean"
+        },
+        "principles_and_practices_related_to_composting": {
+            "@id": "sustainability:principles_and_practices_related_to_composting",
+            "@type": "xsd:boolean"
+        },
+        "principles_and_practices_related_to_tailings": {
+            "@id": "sustainability:principles_and_practices_related_to_tailings",
+            "@type": "xsd:boolean"
+        },
+        "principles_and_practices_related_to_packaging": {
+            "@id": "sustainability:principles_and_practices_related_to_packaging",
+            "@type": "xsd:boolean"
+        },
+        "waste_management_principles": {
+            "@id": "sustainability:waste_management_principles",
+            "@type": "xsd:boolean"
+        },
+        "waste_disposal_incl_solid_waste_non_solid_waste_excl_hazardous_waste": {
+            "@id": "sustainability:waste_disposal_incl_solid_waste_non_solid_waste_excl_hazardous_waste",
+            "@type": "xsd:boolean"
+        },
+        "specific_disposal_of_hazardous_waste": {
+            "@id": "sustainability:specific_disposal_of_hazardous_waste",
+            "@type": "xsd:boolean"
+        },
+        "specific_requirements_for_handling_disposal_of_waste_by_third_parties": {
+            "@id": "sustainability:specific_requirements_for_handling_disposal_of_waste_by_third_parties",
+            "@type": "sustainability:SpecificRequirementsForHandlingDisposalOfWasteByThirdParties"
+        },
+        "practices_related_to_the_use_of_fire_to_eliminate_waste": {
+            "@id": "sustainability:practices_related_to_the_use_of_fire_to_eliminate_waste",
+            "@type": "sustainability:PracticesRelatedToTheUseOfFireToEliminateWaste"
+        },
+        "principles_and_practices_related_to_avoidance_of_uncontrolled_waste_landfilling": {
+            "@id": "sustainability:principles_and_practices_related_to_avoidance_of_uncontrolled_waste_landfilling",
+            "@type": "sustainability:PrinciplesAndPracticesRelatedToAvoidanceOfUncontrolledWasteLandfilling"
+        },
+        "other_waste_management": {
+            "@id": "sustainability:other_waste_management",
+            "@type": "xsd:boolean"
+        },
+        "environmental_friendly_purchasing_policy": {
+            "@id": "sustainability:environmental_friendly_purchasing_policy",
+            "@type": "xsd:boolean"
+        },
+        "disposables_measured_reduced": {
+            "@id": "sustainability:disposables_measured_reduced",
+            "@type": "xsd:boolean"
+        },
+        "disposal_of_the_product_ssct_paper_specific": {
+            "@id": "sustainability:disposal_of_the_product_ssct_paper_specific",
+            "@type": "xsd:boolean"
+        },
+        "treatment_and_use_of_solid_waste": {
+            "@id": "sustainability:treatment_and_use_of_solid_waste",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_and_measuring_solid_waste_volumes": {
+            "@id": "sustainability:monitoring_and_measuring_solid_waste_volumes",
+            "@type": "sustainability:MonitoringAndMeasuringSolidWasteVolumes"
+        },
+        "reducing_solid_waste_volumes": {
+            "@id": "sustainability:reducing_solid_waste_volumes",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_and_measuring_waste_toxicity": {
+            "@id": "sustainability:monitoring_and_measuring_waste_toxicity",
+            "@type": "sustainability:MonitoringAndMeasuringWasteToxicity"
+        },
+        "reducing_re_use_recycle_solid_waste": {
+            "@id": "sustainability:reducing_re_use_recycle_solid_waste",
+            "@type": "xsd:boolean"
+        },
+        "treatment_and_use_of_non_solid_waste": {
+            "@id": "sustainability:treatment_and_use_of_non_solid_waste",
+            "@type": "xsd:boolean"
+        },
+        "waste_segregation": {
+            "@id": "sustainability:waste_segregation",
+            "@type": "xsd:boolean"
+        },
+        "water_resources_monitoring_use_and_consumption": {
+            "@id": "sustainability:water_resources_monitoring_use_and_consumption",
+            "@type": "sustainability:WaterResourcesMonitoringUseAndConsumption"
+        },
+        "surface_and_ground_water_contamination_pollution": {
+            "@id": "sustainability:surface_and_ground_water_contamination_pollution",
+            "@type": "xsd:boolean"
+        },
+        "mitigation_of_transboundary_effects_of_water_pollution": {
+            "@id": "sustainability:mitigation_of_transboundary_effects_of_water_pollution",
+            "@type": "xsd:boolean"
+        },
+        "quality_of_water_used_in_production_agriculture_forestry": {
+            "@id": "sustainability:quality_of_water_used_in_production_agriculture_forestry",
+            "@type": "sustainability:QualityOfWaterUsedInProductionAgricultureForestry"
+        },
+        "principles_and_practices_related_to_water_disposal_storage": {
+            "@id": "sustainability:principles_and_practices_related_to_water_disposal_storage",
+            "@type": "xsd:boolean"
+        },
+        "water_extraction_irrigation": {
+            "@id": "sustainability:water_extraction_irrigation",
+            "@type": "xsd:boolean"
+        },
+        "natural_wetlands_are_maintained_in_undrained_conditions": {
+            "@id": "sustainability:natural_wetlands_are_maintained_in_undrained_conditions",
+            "@type": "xsd:boolean"
+        },
+        "water_usage_records_keeping": {
+            "@id": "sustainability:water_usage_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "other_water": {
+            "@id": "sustainability:other_water",
+            "@type": "xsd:string"
+        },
+        "water_management_plan": {
+            "@id": "sustainability:water_management_plan",
+            "@type": "xsd:boolean"
+        },
+        "water_dependencies_and_water_scarcity": {
+            "@id": "sustainability:water_dependencies_and_water_scarcity",
+            "@type": "xsd:boolean"
+        },
+        "water_reuse_recycling_and_harvesting": {
+            "@id": "sustainability:water_reuse_recycling_and_harvesting",
+            "@type": "xsd:boolean"
+        },
+        "wastewater_quality_management_and_treatment": {
+            "@id": "sustainability:wastewater_quality_management_and_treatment",
+            "@type": "sustainability:WastewaterQualityManagementAndTreatment"
+        },
+        "limitations_of_wastewater_volume": {
+            "@id": "sustainability:limitations_of_wastewater_volume",
+            "@type": "sustainability:LimitationsOfWastewaterVolume"
+        },
+        "wastewater_basic_parameters_for_textile_industry": {
+            "@id": "sustainability:wastewater_basic_parameters_for_textile_industry",
+            "@type": "sustainability:WastewaterBasicParametersForTextileIndustry"
+        },
+        "wastewater_advanced_parameters_for_textile_industry": {
+            "@id": "sustainability:wastewater_advanced_parameters_for_textile_industry",
+            "@type": "sustainability:WastewaterAdvancedParametersForTextileIndustry"
+        },
+        "wastewater_parameters_for_paper_industry": {
+            "@id": "sustainability:wastewater_parameters_for_paper_industry",
+            "@type": "sustainability:WastewaterParametersForPaperIndustry"
+        },
+        "energy_consumption_monitoring_recording": {
+            "@id": "sustainability:energy_consumption_monitoring_recording",
+            "@type": "sustainability:EnergyConsumptionMonitoringRecording"
+        },
+        "use_of_biofuels": {
+            "@id": "sustainability:use_of_biofuels",
+            "@type": "xsd:boolean"
+        },
+        "use_of_non_renewable_energies": {
+            "@id": "sustainability:use_of_non_renewable_energies",
+            "@type": "xsd:boolean"
+        },
+        "use_of_non_renewable_energies_general_principle": {
+            "@id": "sustainability:use_of_non_renewable_energies_general_principle",
+            "@type": "xsd:boolean"
+        },
+        "other_energy_consumption_and_management": {
+            "@id": "sustainability:other_energy_consumption_and_management",
+            "@type": "xsd:string"
+        },
+        "the_application_of_a_set_of_clean_production_practices": {
+            "@id": "sustainability:the_application_of_a_set_of_clean_production_practices",
+            "@type": "xsd:boolean"
+        },
+        "criteria_to_reduce_use_of_energy_resources": {
+            "@id": "sustainability:criteria_to_reduce_use_of_energy_resources",
+            "@type": "xsd:boolean"
+        },
+        "storage_of_energy_incl_fuel_electricity": {
+            "@id": "sustainability:storage_of_energy_incl_fuel_electricity",
+            "@type": "xsd:boolean"
+        },
+        "use_of_alternative_energies_including_solar_wind_etc": {
+            "@id": "sustainability:use_of_alternative_energies_including_solar_wind_etc",
+            "@type": "xsd:boolean"
+        },
+        "use_of_solar_energy": {
+            "@id": "sustainability:use_of_solar_energy",
+            "@type": "xsd:boolean"
+        },
+        "use_of_hydropower_energy": {
+            "@id": "sustainability:use_of_hydropower_energy",
+            "@type": "xsd:boolean"
+        },
+        "use_of_wind_energy": {
+            "@id": "sustainability:use_of_wind_energy",
+            "@type": "xsd:boolean"
+        },
+        "use_of_wood_based_energy": {
+            "@id": "sustainability:use_of_wood_based_energy",
+            "@type": "xsd:boolean"
+        },
+        "carbon_policies_general_principle": {
+            "@id": "sustainability:carbon_policies_general_principle",
+            "@type": "xsd:string"
+        },
+        "the_protection_of_high_carbon_landscapes_land_with_high_carbon_stock_hcs": {
+            "@id": "sustainability:the_protection_of_high_carbon_landscapes_land_with_high_carbon_stock_hcs",
+            "@type": "sustainability:TheProtectionOfHighCarbonLandscapesLandWithHighCarbonStockHcs"
+        },
+        "using_offsets": {
+            "@id": "sustainability:using_offsets",
+            "@type": "xsd:boolean"
+        },
+        "specific_climate_adaptation_activities": {
+            "@id": "sustainability:specific_climate_adaptation_activities",
+            "@type": "xsd:boolean"
+        },
+        "carbon_neutrality": {
+            "@id": "sustainability:carbon_neutrality",
+            "@type": "xsd:boolean"
+        },
+        "carbon_standards_specific_offset_externalities": {
+            "@id": "sustainability:carbon_standards_specific_offset_externalities",
+            "@type": "xsd:boolean"
+        },
+        "carbon_standards_specific_additionality_tests": {
+            "@id": "sustainability:carbon_standards_specific_additionality_tests",
+            "@type": "xsd:boolean"
+        },
+        "carbon_standards_specific_registry_of_carbon_project": {
+            "@id": "sustainability:carbon_standards_specific_registry_of_carbon_project",
+            "@type": "xsd:boolean"
+        },
+        "carbon_standards_specific_type_of_project": {
+            "@id": "sustainability:carbon_standards_specific_type_of_project",
+            "@type": "xsd:boolean"
+        },
+        "carbon_standards_specific_crediting_periods": {
+            "@id": "sustainability:carbon_standards_specific_crediting_periods",
+            "@type": "xsd:boolean"
+        },
+        "other_carbon_policies_and_management": {
+            "@id": "sustainability:other_carbon_policies_and_management",
+            "@type": "xsd:string"
+        },
+        "monitoring_ghg_carbon_emissions": {
+            "@id": "sustainability:monitoring_ghg_carbon_emissions",
+            "@type": "sustainability:MonitoringGhgCarbonEmissions"
+        },
+        "requirements_to_perform_analysis_of_possible_alternatives_to_reduce_ghg_emissions": {
+            "@id": "sustainability:requirements_to_perform_analysis_of_possible_alternatives_to_reduce_ghg_emissions",
+            "@type": "xsd:boolean"
+        },
+        "requirements_to_quantify_ghg_emissions": {
+            "@id": "sustainability:requirements_to_quantify_ghg_emissions",
+            "@type": "xsd:boolean"
+        },
+        "reducing_ghg_emissions": {
+            "@id": "sustainability:reducing_ghg_emissions",
+            "@type": "xsd:boolean"
+        },
+        "sequestration_of_green_house_gases": {
+            "@id": "sustainability:sequestration_of_green_house_gases",
+            "@type": "xsd:boolean"
+        },
+        "sequestration_of_green_house_gases_general_principle": {
+            "@id": "sustainability:sequestration_of_green_house_gases_general_principle",
+            "@type": "xsd:boolean"
+        },
+        "soil_or_trees_sequestration": {
+            "@id": "sustainability:soil_or_trees_sequestration",
+            "@type": "xsd:boolean"
+        },
+        "high_carbon_stock_areas_monitoring_and_management": {
+            "@id": "sustainability:high_carbon_stock_areas_monitoring_and_management",
+            "@type": "xsd:boolean"
+        },
+        "the_use_of_synthetic_pesticides": {
+            "@id": "sustainability:the_use_of_synthetic_pesticides",
+            "@type": "sustainability:TheUseOfSyntheticPesticides"
+        },
+        "the_use_of_chlorine_gas_as_bleaching_agent": {
+            "@id": "sustainability:the_use_of_chlorine_gas_as_bleaching_agent",
+            "@type": "sustainability:TheUseOfChlorineGasAsBleachingAgent"
+        },
+        "chemicals_described_as_a_risk_to_the_environment": {
+            "@id": "sustainability:chemicals_described_as_a_risk_to_the_environment",
+            "@type": "sustainability:ChemicalsDescribedAsARiskToTheEnvironment"
+        },
+        "chemicals_described_as_a_risk_to_human_health": {
+            "@id": "sustainability:chemicals_described_as_a_risk_to_human_health",
+            "@type": "sustainability:ChemicalsDescribedAsARiskToHumanHealth"
+        },
+        "testing_the_final_product_regarding_accumulation_of_chemical_residues": {
+            "@id": "sustainability:testing_the_final_product_regarding_accumulation_of_chemical_residues",
+            "@type": "sustainability:TestingTheFinalProductRegardingAccumulationOfChemicalResidues"
+        },
+        "biological_control_to_prevent_or_suppress_harmful_organisms": {
+            "@id": "sustainability:biological_control_to_prevent_or_suppress_harmful_organisms",
+            "@type": "xsd:boolean"
+        },
+        "the_monitoring_harmful_organisms_by_observations_in_the_field": {
+            "@id": "sustainability:the_monitoring_harmful_organisms_by_observations_in_the_field",
+            "@type": "xsd:boolean"
+        },
+        "the_principle_to_use_pesticides_as_last_resort_only": {
+            "@id": "sustainability:the_principle_to_use_pesticides_as_last_resort_only",
+            "@type": "xsd:boolean"
+        },
+        "the_production_of_natural_fibres": {
+            "@id": "sustainability:the_production_of_natural_fibres",
+            "@type": "sustainability:TheProductionOfNaturalFibres"
+        },
+        "the_production_of_synthetic_fibers": {
+            "@id": "sustainability:the_production_of_synthetic_fibers",
+            "@type": "sustainability:TheProductionOfSyntheticFibers"
+        },
+        "the_usage_of_recycled_fibres": {
+            "@id": "sustainability:the_usage_of_recycled_fibres",
+            "@type": "sustainability:TheUsageOfRecycledFibres"
+        },
+        "on_synthetic_fertilizers": {
+            "@id": "sustainability:on_synthetic_fertilizers",
+            "@type": "sustainability:OnSyntheticFertilizers"
+        },
+        "the_use_of_wooden_fibres": {
+            "@id": "sustainability:the_use_of_wooden_fibres",
+            "@type": "sustainability:TheUseOfWoodenFibres"
+        },
+        "energy_consumption_in_the_production_phase": {
+            "@id": "sustainability:energy_consumption_in_the_production_phase",
+            "@type": "sustainability:EnergyConsumptionInTheProductionPhase"
+        },
+        "the_usage_of_renewable_energy_in_the_production_phase_of_the_hardware": {
+            "@id": "sustainability:the_usage_of_renewable_energy_in_the_production_phase_of_the_hardware",
+            "@type": "sustainability:TheUsageOfRenewableEnergyInTheProductionPhaseOfTheHardware"
+        },
+        "f_ghg_emissions": {
+            "@id": "sustainability:f_ghg_emissions",
+            "@type": "sustainability:FGhgEmissions"
+        },
+        "power_consumption_and_power_management_during_the_use_phase": {
+            "@id": "sustainability:power_consumption_and_power_management_during_the_use_phase",
+            "@type": "sustainability:PowerConsumptionAndPowerManagementDuringTheUsePhase"
+        },
+        "providing_information_concerning_possible_power_savings_to_the_user": {
+            "@id": "sustainability:providing_information_concerning_possible_power_savings_to_the_user",
+            "@type": "xsd:boolean"
+        },
+        "h_statements_h340_h341_h350_h351_h360_h361": {
+            "@id": "sustainability:h_statements_h340_h341_h350_h351_h360_h361",
+            "@type": "sustainability:HStatementsH340H341H350H351H360H361"
+        },
+        "the_use_of_mercury_cadmium_lead_chromium_vi": {
+            "@id": "sustainability:the_use_of_mercury_cadmium_lead_chromium_vi",
+            "@type": "sustainability:TheUseOfMercuryCadmiumLeadChromiumVi"
+        },
+        "the_use_of_flame_retardants": {
+            "@id": "sustainability:the_use_of_flame_retardants",
+            "@type": "sustainability:TheUseOfFlameRetardants"
+        },
+        "the_use_of_plasticizers_with_adverse_environmental_and_health_impact": {
+            "@id": "sustainability:the_use_of_plasticizers_with_adverse_environmental_and_health_impact",
+            "@type": "sustainability:TheUseOfPlasticizersWithAdverseEnvironmentalAndHealthImpact"
+        },
+        "the_use_of_biocides_in_the_finishing_process": {
+            "@id": "sustainability:the_use_of_biocides_in_the_finishing_process",
+            "@type": "sustainability:TheUseOfBiocidesInTheFinishingProcess"
+        },
+        "the_use_of_polymers_containing_halogens": {
+            "@id": "sustainability:the_use_of_polymers_containing_halogens",
+            "@type": "sustainability:TheUseOfPolymersContainingHalogens"
+        },
+        "clear_coding_of_used_materials": {
+            "@id": "sustainability:clear_coding_of_used_materials",
+            "@type": "xsd:boolean"
+        },
+        "the_recyclability_of_plastics_used": {
+            "@id": "sustainability:the_recyclability_of_plastics_used",
+            "@type": "sustainability:TheRecyclabilityOfPlasticsUsed"
+        },
+        "disassembly_of_the_product_for_recycling": {
+            "@id": "sustainability:disassembly_of_the_product_for_recycling",
+            "@type": "xsd:boolean"
+        },
+        "a_take_back_system_for_the_product": {
+            "@id": "sustainability:a_take_back_system_for_the_product",
+            "@type": "xsd:boolean"
+        },
+        "environmental_responsible_mining_practices": {
+            "@id": "sustainability:environmental_responsible_mining_practices",
+            "@type": "sustainability:EnvironmentalResponsibleMiningPractices"
+        },
+        "the_use_of_recycled_material_in_the_packaging": {
+            "@id": "sustainability:the_use_of_recycled_material_in_the_packaging",
+            "@type": "sustainability:TheUseOfRecycledMaterialInThePackaging"
+        },
+        "the_use_of_postconsumer_recycled_content_in_the_product": {
+            "@id": "sustainability:the_use_of_postconsumer_recycled_content_in_the_product",
+            "@type": "sustainability:TheUseOfPostconsumerRecycledContentInTheProduct"
+        },
+        "noise_emissions_during_the_use_phase": {
+            "@id": "sustainability:noise_emissions_during_the_use_phase",
+            "@type": "xsd:boolean"
+        },
+        "environmental_management_instruments_like_emas_or_iso14001": {
+            "@id": "sustainability:environmental_management_instruments_like_emas_or_iso14001",
+            "@type": "sustainability:EnvironmentalManagementInstrumentsLikeEmasOrIso14001"
+        },
+        "the_use_of_formaldehyde": {
+            "@id": "sustainability:the_use_of_formaldehyde",
+            "@type": "sustainability:TheUseOfFormaldehyde"
+        },
+        "an_additional_lifetime_guarantee_for_the_product_beyond_the_legal_obligations": {
+            "@id": "sustainability:an_additional_lifetime_guarantee_for_the_product_beyond_the_legal_obligations",
+            "@type": "sustainability:AnAdditionalLifetimeGuaranteeForTheProductBeyondTheLegalObligations"
+        },
+        "the_quality_durability_of_specific_components": {
+            "@id": "sustainability:the_quality_durability_of_specific_components",
+            "@type": "xsd:boolean"
+        },
+        "a_modular_design_of_the_product": {
+            "@id": "sustainability:a_modular_design_of_the_product",
+            "@type": "xsd:boolean"
+        },
+        "the_availability_of_spare_parts_for_the_product": {
+            "@id": "sustainability:the_availability_of_spare_parts_for_the_product",
+            "@type": "sustainability:TheAvailabilityOfSparePartsForTheProduct"
+        },
+        "properties_of_the_battery": {
+            "@id": "sustainability:properties_of_the_battery",
+            "@type": "xsd:boolean"
+        },
+        "expansion_facilities_of_the_product": {
+            "@id": "sustainability:expansion_facilities_of_the_product",
+            "@type": "xsd:boolean"
+        },
+        "repairability_upgradeability_and_usage_of_the_battery_to_the_user": {
+            "@id": "sustainability:repairability_upgradeability_and_usage_of_the_battery_to_the_user",
+            "@type": "xsd:boolean"
+        },
+        "conflict_minerals": {
+            "@id": "sustainability:conflict_minerals",
+            "@type": "xsd:boolean"
+        },
+        "compliance_with_all_ilo_core_labour_standards_are_verified_by_a_third_party": {
+            "@id": "sustainability:compliance_with_all_ilo_core_labour_standards_are_verified_by_a_third_party",
+            "@type": "xsd:boolean"
+        },
+        "forced_and_compulsory_labour_as_defined_in_ilo105": {
+            "@id": "sustainability:forced_and_compulsory_labour_as_defined_in_ilo105",
+            "@type": "xsd:boolean"
+        },
+        "the_use_of_nanomaterials": {
+            "@id": "sustainability:the_use_of_nanomaterials",
+            "@type": "sustainability:TheUseOfNanomaterials"
+        },
+        "requirements_to_train_workers_on_labour_rights": {
+            "@id": "sustainability:requirements_to_train_workers_on_labour_rights",
+            "@type": "xsd:boolean"
+        },
+        "setting_up_policies_or_procedures_to_manage_basic_labour_rights_in_the_workplace": {
+            "@id": "sustainability:setting_up_policies_or_procedures_to_manage_basic_labour_rights_in_the_workplace",
+            "@type": "xsd:boolean"
+        },
+        "the_biodegradability_of_substances": {
+            "@id": "sustainability:the_biodegradability_of_substances",
+            "@type": "xsd:boolean"
+        },
+        "the_use_of_dyes_or_pigments_based_on_lead_copper_chromium_nickel_and_aluminum": {
+            "@id": "sustainability:the_use_of_dyes_or_pigments_based_on_lead_copper_chromium_nickel_and_aluminum",
+            "@type": "sustainability:TheUseOfDyesOrPigmentsBasedOnLeadCopperChromiumNickelAndAluminum"
+        },
+        "the_use_of_azo_dyes_that_may_cleave_aromatic_amines_which_are_harmful_to_human_health": {
+            "@id": "sustainability:the_use_of_azo_dyes_that_may_cleave_aromatic_amines_which_are_harmful_to_human_health",
+            "@type": "sustainability:TheUseOfAzoDyesThatMayCleaveAromaticAminesWhichAreHarmfulToHumanHealth"
+        },
+        "human_rights_and_local_communities_general_principle": {
+            "@id": "sustainability:human_rights_and_local_communities_general_principle",
+            "@type": "xsd:string"
+        },
+        "gender_policies_and_best_practices": {
+            "@id": "sustainability:gender_policies_and_best_practices",
+            "@type": "xsd:boolean"
+        },
+        "women_s_access_to_health_and_safety_services": {
+            "@id": "sustainability:women_s_access_to_health_and_safety_services",
+            "@type": "xsd:boolean"
+        },
+        "factoring_gender_considerations_in_impacts_and_risks_assessment_of_production": {
+            "@id": "sustainability:factoring_gender_considerations_in_impacts_and_risks_assessment_of_production",
+            "@type": "xsd:boolean"
+        },
+        "factoring_gender_considerations_in_stakeholder_engagement_process": {
+            "@id": "sustainability:factoring_gender_considerations_in_stakeholder_engagement_process",
+            "@type": "xsd:boolean"
+        },
+        "indigenous_peoples_as_defined_in_ilo_convention169": {
+            "@id": "sustainability:indigenous_peoples_as_defined_in_ilo_convention169",
+            "@type": "xsd:boolean"
+        },
+        "the_protection_of_minority_rights_of_indigenous_peoples": {
+            "@id": "sustainability:the_protection_of_minority_rights_of_indigenous_peoples",
+            "@type": "xsd:boolean"
+        },
+        "the_protection_of_minority_rights_of_marginalized_groups": {
+            "@id": "sustainability:the_protection_of_minority_rights_of_marginalized_groups",
+            "@type": "xsd:boolean"
+        },
+        "socio_cultural_sites": {
+            "@id": "sustainability:socio_cultural_sites",
+            "@type": "sustainability:SocioCulturalSites"
+        },
+        "historical_cultural_and_archeological_artifacts_trade": {
+            "@id": "sustainability:historical_cultural_and_archeological_artifacts_trade",
+            "@type": "xsd:boolean"
+        },
+        "using_local_art_architecture_and_or_cultural_heritage_in_design_for_commercial_purposes": {
+            "@id": "sustainability:using_local_art_architecture_and_or_cultural_heritage_in_design_for_commercial_purposes",
+            "@type": "xsd:boolean"
+        },
+        "basic_human_rights_and_local_communities_engagement": {
+            "@id": "sustainability:basic_human_rights_and_local_communities_engagement",
+            "@type": "xsd:boolean"
+        },
+        "internationally_recognized_legally_protected_sites_and_cultural_heritage": {
+            "@id": "sustainability:internationally_recognized_legally_protected_sites_and_cultural_heritage",
+            "@type": "xsd:boolean"
+        },
+        "community_access_to_cultural_heritage": {
+            "@id": "sustainability:community_access_to_cultural_heritage",
+            "@type": "xsd:boolean"
+        },
+        "behavior_guidelines_for_access_to_and_use_of_natural_resources_cultural_sites": {
+            "@id": "sustainability:behavior_guidelines_for_access_to_and_use_of_natural_resources_cultural_sites",
+            "@type": "xsd:boolean"
+        },
+        "local_access_to_historical_cultural_archeological_and_spiritually_important_properties_and_sites": {
+            "@id": "sustainability:local_access_to_historical_cultural_archeological_and_spiritually_important_properties_and_sites",
+            "@type": "xsd:boolean"
+        },
+        "establishment_of_a_code_of_conduct_for_working_with_local_and_indigenous_communities": {
+            "@id": "sustainability:establishment_of_a_code_of_conduct_for_working_with_local_and_indigenous_communities",
+            "@type": "xsd:boolean"
+        },
+        "services_and_benefits_offered_to_communities_beyond_the_business_operations_education_health_sanitation": {
+            "@id": "sustainability:services_and_benefits_offered_to_communities_beyond_the_business_operations_education_health_sanitation",
+            "@type": "xsd:boolean"
+        },
+        "compensation_for_use_of_local_communities_facilities": {
+            "@id": "sustainability:compensation_for_use_of_local_communities_facilities",
+            "@type": "sustainability:CompensationForUseOfLocalCommunitiesFacilities"
+        },
+        "engagement_consultation_with_local_communities": {
+            "@id": "sustainability:engagement_consultation_with_local_communities",
+            "@type": "xsd:boolean"
+        },
+        "land_title_and_use_rights": {
+            "@id": "sustainability:land_title_and_use_rights",
+            "@type": "xsd:boolean"
+        },
+        "supporting_local_communities_economic_development": {
+            "@id": "sustainability:supporting_local_communities_economic_development",
+            "@type": "xsd:boolean"
+        },
+        "assessing_possible_impacts_of_production_practices_on_food_security": {
+            "@id": "sustainability:assessing_possible_impacts_of_production_practices_on_food_security",
+            "@type": "xsd:boolean"
+        },
+        "hiring_workers_from_local_communities": {
+            "@id": "sustainability:hiring_workers_from_local_communities",
+            "@type": "xsd:boolean"
+        },
+        "purchasing_local_materials_goods_products_and_services": {
+            "@id": "sustainability:purchasing_local_materials_goods_products_and_services",
+            "@type": "xsd:boolean"
+        },
+        "traditional_and_cultural_production_practices": {
+            "@id": "sustainability:traditional_and_cultural_production_practices",
+            "@type": "xsd:boolean"
+        },
+        "grievance_mechanisms_for_affected_communities": {
+            "@id": "sustainability:grievance_mechanisms_for_affected_communities",
+            "@type": "sustainability:GrievanceMechanismsForAffectedCommunities"
+        },
+        "conduct_of_security_personnel_towards_communities": {
+            "@id": "sustainability:conduct_of_security_personnel_towards_communities",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_impacts_of_local_activities_on_human_rights_issues_such_as_health_safety_and_security": {
+            "@id": "sustainability:assessment_of_impacts_of_local_activities_on_human_rights_issues_such_as_health_safety_and_security",
+            "@type": "xsd:boolean"
+        },
+        "impact_assessment_on_access_to_basic_services_for_local_communities": {
+            "@id": "sustainability:impact_assessment_on_access_to_basic_services_for_local_communities",
+            "@type": "xsd:boolean"
+        },
+        "involuntary_resettlement_physical_displacement_and_or_economic_displacement": {
+            "@id": "sustainability:involuntary_resettlement_physical_displacement_and_or_economic_displacement",
+            "@type": "xsd:boolean"
+        },
+        "compensation_and_benefits_for_displaced_persons": {
+            "@id": "sustainability:compensation_and_benefits_for_displaced_persons",
+            "@type": "xsd:boolean"
+        },
+        "planning_implementation_of_resettlement_activities": {
+            "@id": "sustainability:planning_implementation_of_resettlement_activities",
+            "@type": "xsd:boolean"
+        },
+        "production_practices_promoting_healthy_high_nutritional_value_foods": {
+            "@id": "sustainability:production_practices_promoting_healthy_high_nutritional_value_foods",
+            "@type": "xsd:boolean"
+        },
+        "livelihood_restoration_for_displaced_persons": {
+            "@id": "sustainability:livelihood_restoration_for_displaced_persons",
+            "@type": "xsd:boolean"
+        },
+        "hazardous_chemicals_reach": {
+            "@id": "sustainability:hazardous_chemicals_reach",
+            "@type": "xsd:boolean"
+        },
+        "free_prior_and_informed_consent_fpic_of_local_communities": {
+            "@id": "sustainability:free_prior_and_informed_consent_fpic_of_local_communities",
+            "@type": "xsd:boolean"
+        },
+        "requirement_to_identify_legal_and_customary_rights_of_tenure": {
+            "@id": "sustainability:requirement_to_identify_legal_and_customary_rights_of_tenure",
+            "@type": "xsd:boolean"
+        },
+        "activities_not_adversely_affecting_local_communities_access_to_livelihoods": {
+            "@id": "sustainability:activities_not_adversely_affecting_local_communities_access_to_livelihoods",
+            "@type": "xsd:string"
+        },
+        "production_practices_that_reduce_food_and_feed_waste": {
+            "@id": "sustainability:production_practices_that_reduce_food_and_feed_waste",
+            "@type": "xsd:boolean"
+        },
+        "the_promotion_enhancement_of_education": {
+            "@id": "sustainability:the_promotion_enhancement_of_education",
+            "@type": "xsd:boolean"
+        },
+        "the_promotion_enhancement_of_medical_care_services": {
+            "@id": "sustainability:the_promotion_enhancement_of_medical_care_services",
+            "@type": "xsd:boolean"
+        },
+        "the_promotion_enhancement_of_housing_and_sanitary_facilities": {
+            "@id": "sustainability:the_promotion_enhancement_of_housing_and_sanitary_facilities",
+            "@type": "xsd:boolean"
+        },
+        "gender_issues_general_principle": {
+            "@id": "sustainability:gender_issues_general_principle",
+            "@type": "xsd:boolean"
+        },
+        "working_conditions_overarching_principles": {
+            "@id": "sustainability:working_conditions_overarching_principles",
+            "@type": "xsd:string"
+        },
+        "publicly_available_evacuation_procedures": {
+            "@id": "sustainability:publicly_available_evacuation_procedures",
+            "@type": "xsd:boolean"
+        },
+        "emergency_exists_maintenance": {
+            "@id": "sustainability:emergency_exists_maintenance",
+            "@type": "xsd:boolean"
+        },
+        "training_on_health_safety_issues": {
+            "@id": "sustainability:training_on_health_safety_issues",
+            "@type": "xsd:boolean"
+        },
+        "occupational_health_and_safety_as_defined_in_ilo155": {
+            "@id": "sustainability:occupational_health_and_safety_as_defined_in_ilo155",
+            "@type": "sustainability:OccupationalHealthAndSafetyAsDefinedInIlo155"
+        },
+        "workplace_safety": {
+            "@id": "sustainability:workplace_safety",
+            "@type": "xsd:boolean"
+        },
+        "safety_equipments_personal_protective_equipment_ppe": {
+            "@id": "sustainability:safety_equipments_personal_protective_equipment_ppe",
+            "@type": "xsd:boolean"
+        },
+        "maintenance_of_safety_of_machinery_equipment_and_materials": {
+            "@id": "sustainability:maintenance_of_safety_of_machinery_equipment_and_materials",
+            "@type": "xsd:boolean"
+        },
+        "emergency_first_aid_kits": {
+            "@id": "sustainability:emergency_first_aid_kits",
+            "@type": "xsd:boolean"
+        },
+        "safety_procedures_for_handling_chemicals": {
+            "@id": "sustainability:safety_procedures_for_handling_chemicals",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_of_accidents_records": {
+            "@id": "sustainability:monitoring_of_accidents_records",
+            "@type": "xsd:boolean"
+        },
+        "women_s_rights_at_work": {
+            "@id": "sustainability:women_s_rights_at_work",
+            "@type": "xsd:boolean"
+        },
+        "training_of_workers_on_procedures_to_deal_with_accidents": {
+            "@id": "sustainability:training_of_workers_on_procedures_to_deal_with_accidents",
+            "@type": "xsd:boolean"
+        },
+        "regular_medical_checks": {
+            "@id": "sustainability:regular_medical_checks",
+            "@type": "xsd:boolean"
+        },
+        "workers_access_to_safe_drinking_water": {
+            "@id": "sustainability:workers_access_to_safe_drinking_water",
+            "@type": "xsd:boolean"
+        },
+        "workers_access_to_decent_sanitary_facilities_at_work_showers_wc_changing_rooms_etc": {
+            "@id": "sustainability:workers_access_to_decent_sanitary_facilities_at_work_showers_wc_changing_rooms_etc",
+            "@type": "xsd:boolean"
+        },
+        "workplace_conditions_air_quality_lighting_noise": {
+            "@id": "sustainability:workplace_conditions_air_quality_lighting_noise",
+            "@type": "sustainability:WorkplaceConditionsAirQualityLightingNoise"
+        },
+        "safe_and_appropriate_housing_conditions_incl_dormitories_and_canteens_for_workers": {
+            "@id": "sustainability:safe_and_appropriate_housing_conditions_incl_dormitories_and_canteens_for_workers",
+            "@type": "xsd:boolean"
+        },
+        "workers_entitlement_to_breaks_e_g_meal_breaks": {
+            "@id": "sustainability:workers_entitlement_to_breaks_e_g_meal_breaks",
+            "@type": "xsd:boolean"
+        },
+        "workers_access_to_basic_medical_services": {
+            "@id": "sustainability:workers_access_to_basic_medical_services",
+            "@type": "sustainability:WorkersAccessToBasicMedicalServices"
+        },
+        "policies_that_prohibit_the_use_of_physical_violence_intimidation_etc": {
+            "@id": "sustainability:policies_that_prohibit_the_use_of_physical_violence_intimidation_etc",
+            "@type": "xsd:boolean"
+        },
+        "keeping_records_of_disciplinary_measures": {
+            "@id": "sustainability:keeping_records_of_disciplinary_measures",
+            "@type": "xsd:boolean"
+        },
+        "sexual_exploitation_harassment": {
+            "@id": "sustainability:sexual_exploitation_harassment",
+            "@type": "xsd:boolean"
+        },
+        "security_issues_role_and_behavior_of_security_guards": {
+            "@id": "sustainability:security_issues_role_and_behavior_of_security_guards",
+            "@type": "xsd:boolean"
+        },
+        "privacy_protection": {
+            "@id": "sustainability:privacy_protection",
+            "@type": "xsd:boolean"
+        },
+        "worst_forms_of_child_labor_ilo182": {
+            "@id": "sustainability:worst_forms_of_child_labor_ilo182",
+            "@type": "xsd:boolean"
+        },
+        "other_conditions_of_work": {
+            "@id": "sustainability:other_conditions_of_work",
+            "@type": "xsd:string"
+        },
+        "safety_at_work_ilo184": {
+            "@id": "sustainability:safety_at_work_ilo184",
+            "@type": "sustainability:SafetyAtWorkIlo184"
+        },
+        "safety_at_work_legal_compliance": {
+            "@id": "sustainability:safety_at_work_legal_compliance",
+            "@type": "xsd:boolean"
+        },
+        "electrical_equipments_safety": {
+            "@id": "sustainability:electrical_equipments_safety",
+            "@type": "xsd:boolean"
+        },
+        "policies_in_place_for_verification_and_maintenance_of_buildings_safety": {
+            "@id": "sustainability:policies_in_place_for_verification_and_maintenance_of_buildings_safety",
+            "@type": "xsd:boolean"
+        },
+        "fire_preparedness_drills_equipment_signs": {
+            "@id": "sustainability:fire_preparedness_drills_equipment_signs",
+            "@type": "xsd:boolean"
+        },
+        "documented_emergency_management_plan": {
+            "@id": "sustainability:documented_emergency_management_plan",
+            "@type": "xsd:boolean"
+        },
+        "conditions_of_employment_general_principle": {
+            "@id": "sustainability:conditions_of_employment_general_principle",
+            "@type": "xsd:string"
+        },
+        "workers_access_to_medical_insurance": {
+            "@id": "sustainability:workers_access_to_medical_insurance",
+            "@type": "xsd:boolean"
+        },
+        "human_resources_management_general_principle": {
+            "@id": "sustainability:human_resources_management_general_principle",
+            "@type": "xsd:boolean"
+        },
+        "employment_hiring_practices_legal_compliance": {
+            "@id": "sustainability:employment_hiring_practices_legal_compliance",
+            "@type": "xsd:boolean"
+        },
+        "migrant_workers_employment_and_contract_management": {
+            "@id": "sustainability:migrant_workers_employment_and_contract_management",
+            "@type": "xsd:boolean"
+        },
+        "workforce_reduction_policies_and_practices_legal_compliance": {
+            "@id": "sustainability:workforce_reduction_policies_and_practices_legal_compliance",
+            "@type": "xsd:boolean"
+        },
+        "payroll_records_and_pay_slips": {
+            "@id": "sustainability:payroll_records_and_pay_slips",
+            "@type": "xsd:boolean"
+        },
+        "workers_performance_for_promotion_trainings": {
+            "@id": "sustainability:workers_performance_for_promotion_trainings",
+            "@type": "xsd:boolean"
+        },
+        "illegal_excessive_deductions_or_fees_incl_recruitment_fees": {
+            "@id": "sustainability:illegal_excessive_deductions_or_fees_incl_recruitment_fees",
+            "@type": "xsd:boolean"
+        },
+        "workers_equipment_costs_incl_uniforms": {
+            "@id": "sustainability:workers_equipment_costs_incl_uniforms",
+            "@type": "xsd:boolean"
+        },
+        "retention_of_workers_documentation_id_passport": {
+            "@id": "sustainability:retention_of_workers_documentation_id_passport",
+            "@type": "xsd:boolean"
+        },
+        "existence_of_publicly_available_policy_defining_workers_rights": {
+            "@id": "sustainability:existence_of_publicly_available_policy_defining_workers_rights",
+            "@type": "xsd:boolean"
+        },
+        "use_of_legally_binding_labour_contracts_in_written_form": {
+            "@id": "sustainability:use_of_legally_binding_labour_contracts_in_written_form",
+            "@type": "xsd:boolean"
+        },
+        "scope_of_workers_rights_and_benefits_applicable_equally_to_all_types_of_workers": {
+            "@id": "sustainability:scope_of_workers_rights_and_benefits_applicable_equally_to_all_types_of_workers",
+            "@type": "xsd:boolean"
+        },
+        "distinct_home_workers": {
+            "@id": "sustainability:distinct_home_workers",
+            "@type": "xsd:boolean"
+        },
+        "equal_rights_and_benefits_applicable_to_full_time_and_sub_contract_workers": {
+            "@id": "sustainability:equal_rights_and_benefits_applicable_to_full_time_and_sub_contract_workers",
+            "@type": "xsd:boolean"
+        },
+        "workers_mobility_and_freedom_of_movement": {
+            "@id": "sustainability:workers_mobility_and_freedom_of_movement",
+            "@type": "xsd:boolean"
+        },
+        "paid_leave_general_policy_public_holidays_annual_leave_sick_leave_casual_leave": {
+            "@id": "sustainability:paid_leave_general_policy_public_holidays_annual_leave_sick_leave_casual_leave",
+            "@type": "sustainability:PaidLeaveGeneralPolicyPublicHolidaysAnnualLeaveSickLeaveCasualLeave"
+        },
+        "1_rest_day_off_in7_days_period_or_more_stringent_policy": {
+            "@id": "sustainability:1_rest_day_off_in7_days_period_or_more_stringent_policy",
+            "@type": "xsd:boolean"
+        },
+        "specific_maternity_paternity_leave_days": {
+            "@id": "sustainability:specific_maternity_paternity_leave_days",
+            "@type": "sustainability:SpecificMaternityPaternityLeaveDays"
+        },
+        "specific_special_leave_sickness_marriage_paternity_family_leave": {
+            "@id": "sustainability:specific_special_leave_sickness_marriage_paternity_family_leave",
+            "@type": "xsd:boolean"
+        },
+        "fair_and_timely_payment_of_wages": {
+            "@id": "sustainability:fair_and_timely_payment_of_wages",
+            "@type": "sustainability:FairAndTimelyPaymentOfWages"
+        },
+        "voluntary_employment_no_forced_labor_ilo29105": {
+            "@id": "sustainability:voluntary_employment_no_forced_labor_ilo29105",
+            "@type": "xsd:boolean"
+        },
+        "pensions_and_social_security_benefits": {
+            "@id": "sustainability:pensions_and_social_security_benefits",
+            "@type": "xsd:boolean"
+        },
+        "waivers_national_exemptions_to_full_scope_coverage_of_social_benefits_for_all_employees": {
+            "@id": "sustainability:waivers_national_exemptions_to_full_scope_coverage_of_social_benefits_for_all_employees",
+            "@type": "xsd:boolean"
+        },
+        "transportation_of_workers_to_production_site": {
+            "@id": "sustainability:transportation_of_workers_to_production_site",
+            "@type": "xsd:boolean"
+        },
+        "securing_a_minimum_wage_based_on_sector_or_region_specificities": {
+            "@id": "sustainability:securing_a_minimum_wage_based_on_sector_or_region_specificities",
+            "@type": "xsd:boolean"
+        },
+        "living_wage_based_on_sector_or_region_specificities": {
+            "@id": "sustainability:living_wage_based_on_sector_or_region_specificities",
+            "@type": "xsd:boolean"
+        },
+        "wage_compensation_issues_and_policies_forced_days_of_lock_outs_meetings_outside_pay_time": {
+            "@id": "sustainability:wage_compensation_issues_and_policies_forced_days_of_lock_outs_meetings_outside_pay_time",
+            "@type": "xsd:boolean"
+        },
+        "child_labor_and_minimum_age_ilo138": {
+            "@id": "sustainability:child_labor_and_minimum_age_ilo138",
+            "@type": "xsd:boolean"
+        },
+        "child_labour_legal_compliance_policy": {
+            "@id": "sustainability:child_labour_legal_compliance_policy",
+            "@type": "xsd:boolean"
+        },
+        "maintaining_age_records_of_workers": {
+            "@id": "sustainability:maintaining_age_records_of_workers",
+            "@type": "xsd:boolean"
+        },
+        "child_labour_remediation_policy_including_assistance_to_child_workers_and_their_families": {
+            "@id": "sustainability:child_labour_remediation_policy_including_assistance_to_child_workers_and_their_families",
+            "@type": "xsd:boolean"
+        },
+        "waivers_national_exemptions_to_maximum_working_hours": {
+            "@id": "sustainability:waivers_national_exemptions_to_maximum_working_hours",
+            "@type": "xsd:boolean"
+        },
+        "hiring_and_employing_young_workers": {
+            "@id": "sustainability:hiring_and_employing_young_workers",
+            "@type": "xsd:boolean"
+        },
+        "good_conditions_of_work_for_young_workers": {
+            "@id": "sustainability:good_conditions_of_work_for_young_workers",
+            "@type": "xsd:boolean"
+        },
+        "young_workers_working_hours": {
+            "@id": "sustainability:young_workers_working_hours",
+            "@type": "xsd:boolean"
+        },
+        "training_programs_for_young_workers": {
+            "@id": "sustainability:training_programs_for_young_workers",
+            "@type": "xsd:boolean"
+        },
+        "young_workers_access_to_effective_grievance_mechanisms": {
+            "@id": "sustainability:young_workers_access_to_effective_grievance_mechanisms",
+            "@type": "xsd:boolean"
+        },
+        "young_workers_trained_on_occupational_health_and_safety": {
+            "@id": "sustainability:young_workers_trained_on_occupational_health_and_safety",
+            "@type": "xsd:boolean"
+        },
+        "equal_remuneration_ilo100": {
+            "@id": "sustainability:equal_remuneration_ilo100",
+            "@type": "xsd:boolean"
+        },
+        "maximum_working_hours": {
+            "@id": "sustainability:maximum_working_hours",
+            "@type": "xsd:boolean"
+        },
+        "hours_of_work_overtime_monitoring": {
+            "@id": "sustainability:hours_of_work_overtime_monitoring",
+            "@type": "xsd:boolean"
+        },
+        "other_the_conditions_of_employment": {
+            "@id": "sustainability:other_the_conditions_of_employment",
+            "@type": "xsd:string"
+        },
+        "right_to_refuse_overtime": {
+            "@id": "sustainability:right_to_refuse_overtime",
+            "@type": "xsd:boolean"
+        },
+        "overtime_is_voluntary_and_compensated": {
+            "@id": "sustainability:overtime_is_voluntary_and_compensated",
+            "@type": "xsd:boolean"
+        },
+        "the_use_of_prison_labor": {
+            "@id": "sustainability:the_use_of_prison_labor",
+            "@type": "xsd:boolean"
+        },
+        "use_of_formal_format_or_template_for_labour_contracts": {
+            "@id": "sustainability:use_of_formal_format_or_template_for_labour_contracts",
+            "@type": "xsd:boolean"
+        },
+        "workers_compensation_for_medical_costs_in_case_of_work_related_accidents": {
+            "@id": "sustainability:workers_compensation_for_medical_costs_in_case_of_work_related_accidents",
+            "@type": "sustainability:WorkersCompensationForMedicalCostsInCaseOfWorkRelatedAccidents"
+        },
+        "freedom_of_association_ilo87": {
+            "@id": "sustainability:freedom_of_association_ilo87",
+            "@type": "xsd:boolean"
+        },
+        "formation_of_workers_representation_in_countries_where_freedom_of_association_and_collective_bargaining_is_not_supported_by_legislation": {
+            "@id": "sustainability:formation_of_workers_representation_in_countries_where_freedom_of_association_and_collective_bargaining_is_not_supported_by_legislation",
+            "@type": "sustainability:FormationOfWorkersRepresentationInCountriesWhereFreedomOfAssociationAndCollectiveBargainingIsNotSupportedByLegislation"
+        },
+        "workers_awareness_of_procedures_and_best_practices": {
+            "@id": "sustainability:workers_awareness_of_procedures_and_best_practices",
+            "@type": "xsd:boolean"
+        },
+        "policies_and_procedures_to_address_workers_grievances": {
+            "@id": "sustainability:policies_and_procedures_to_address_workers_grievances",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_at_work_general_principles": {
+            "@id": "sustainability:gender_policies_at_work_general_principles",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_family_friendly_policies_to_increase_the_labour_force_participation_of_women": {
+            "@id": "sustainability:gender_policies_family_friendly_policies_to_increase_the_labour_force_participation_of_women",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_development_assistance_policies_which_promote_the_economic_role_of_women": {
+            "@id": "sustainability:gender_policies_development_assistance_policies_which_promote_the_economic_role_of_women",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_upgrading_the_status_of_and_wages_for_traditional_areas_of_women_s_work": {
+            "@id": "sustainability:gender_policies_upgrading_the_status_of_and_wages_for_traditional_areas_of_women_s_work",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_incentives_to_women_to_develop_their_careers_e_g_specific_training": {
+            "@id": "sustainability:gender_policies_incentives_to_women_to_develop_their_careers_e_g_specific_training",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_increased_access_to_finance_and_support_services_for_women_entrepreneurs": {
+            "@id": "sustainability:gender_policies_increased_access_to_finance_and_support_services_for_women_entrepreneurs",
+            "@type": "xsd:boolean"
+        },
+        "gender_policies_integration_of_women_migrants_into_labor_force": {
+            "@id": "sustainability:gender_policies_integration_of_women_migrants_into_labor_force",
+            "@type": "xsd:boolean"
+        },
+        "collective_bargaining_ilo98": {
+            "@id": "sustainability:collective_bargaining_ilo98",
+            "@type": "xsd:boolean"
+        },
+        "policies_and_procedures_to_monitor_workers_satisfaction_at_work": {
+            "@id": "sustainability:policies_and_procedures_to_monitor_workers_satisfaction_at_work",
+            "@type": "xsd:boolean"
+        },
+        "other_empowerment_of_workers": {
+            "@id": "sustainability:other_empowerment_of_workers",
+            "@type": "xsd:string"
+        },
+        "no_discrimination_at_work_ilo111": {
+            "@id": "sustainability:no_discrimination_at_work_ilo111",
+            "@type": "xsd:boolean"
+        },
+        "non_discrimination_based_on_gender": {
+            "@id": "sustainability:non_discrimination_based_on_gender",
+            "@type": "xsd:boolean"
+        },
+        "non_discrimination_of_persons_with_disabilities": {
+            "@id": "sustainability:non_discrimination_of_persons_with_disabilities",
+            "@type": "xsd:boolean"
+        },
+        "ensuring_participation_of_women_minorities_in_management": {
+            "@id": "sustainability:ensuring_participation_of_women_minorities_in_management",
+            "@type": "xsd:boolean"
+        },
+        "workers_access_to_training_programs": {
+            "@id": "sustainability:workers_access_to_training_programs",
+            "@type": "xsd:boolean"
+        },
+        "apprentice_programs_for_young_workers": {
+            "@id": "sustainability:apprentice_programs_for_young_workers",
+            "@type": "xsd:boolean"
+        },
+        "joint_committees_trade_unions_labour_associations": {
+            "@id": "sustainability:joint_committees_trade_unions_labour_associations",
+            "@type": "xsd:boolean"
+        },
+        "business_operations_economic_viability_general_principle": {
+            "@id": "sustainability:business_operations_economic_viability_general_principle",
+            "@type": "xsd:string"
+        },
+        "fair_competition": {
+            "@id": "sustainability:fair_competition",
+            "@type": "xsd:boolean"
+        },
+        "production_efficiency_productivity": {
+            "@id": "sustainability:production_efficiency_productivity",
+            "@type": "xsd:boolean"
+        },
+        "diversification_of_business_operations": {
+            "@id": "sustainability:diversification_of_business_operations",
+            "@type": "xsd:boolean"
+        },
+        "long_term_sustainability_management_plan_continuous_improvement": {
+            "@id": "sustainability:long_term_sustainability_management_plan_continuous_improvement",
+            "@type": "xsd:boolean"
+        },
+        "administration_and_management_business_plan": {
+            "@id": "sustainability:administration_and_management_business_plan",
+            "@type": "xsd:boolean"
+        },
+        "environment_and_social_e_s_management_systems_general_principles": {
+            "@id": "sustainability:environment_and_social_e_s_management_systems_general_principles",
+            "@type": "xsd:string"
+        },
+        "organizational_capacity_for_continuous_improvement_of_environmental_and_social_management": {
+            "@id": "sustainability:organizational_capacity_for_continuous_improvement_of_environmental_and_social_management",
+            "@type": "xsd:boolean"
+        },
+        "procedures_to_monitor_and_measure_effectiveness_of_e_s_management_systems": {
+            "@id": "sustainability:procedures_to_monitor_and_measure_effectiveness_of_e_s_management_systems",
+            "@type": "xsd:boolean"
+        },
+        "reporting_on_and_making_publicly_available_e_s_management_systems": {
+            "@id": "sustainability:reporting_on_and_making_publicly_available_e_s_management_systems",
+            "@type": "xsd:boolean"
+        },
+        "emergency_response_plans_or_strategies_to_climate_related_hazards": {
+            "@id": "sustainability:emergency_response_plans_or_strategies_to_climate_related_hazards",
+            "@type": "xsd:boolean"
+        },
+        "evacuation_safety_procedure": {
+            "@id": "sustainability:evacuation_safety_procedure",
+            "@type": "xsd:boolean"
+        },
+        "stakeholder_analysis_and_engagement_planning_in_e_s_management_systems": {
+            "@id": "sustainability:stakeholder_analysis_and_engagement_planning_in_e_s_management_systems",
+            "@type": "xsd:boolean"
+        },
+        "verification_of_mandatory_certificates_and_permits_e_g_water_use_rights_land_use_rights_etc": {
+            "@id": "sustainability:verification_of_mandatory_certificates_and_permits_e_g_water_use_rights_land_use_rights_etc",
+            "@type": "xsd:boolean"
+        },
+        "occupation_health_and_safety_ohs_management_system": {
+            "@id": "sustainability:occupation_health_and_safety_ohs_management_system",
+            "@type": "xsd:boolean"
+        },
+        "establishing_and_making_publicly_available_the_management_unit_csr_policy": {
+            "@id": "sustainability:establishing_and_making_publicly_available_the_management_unit_csr_policy",
+            "@type": "xsd:boolean"
+        },
+        "staff_training_on_sustainability_issues_environment_social_economic_quality_culture_health_and_safety": {
+            "@id": "sustainability:staff_training_on_sustainability_issues_environment_social_economic_quality_culture_health_and_safety",
+            "@type": "xsd:boolean"
+        },
+        "establishing_and_making_publicly_available_the_management_unit_internal_control_system": {
+            "@id": "sustainability:establishing_and_making_publicly_available_the_management_unit_internal_control_system",
+            "@type": "xsd:boolean"
+        },
+        "respect_the_natural_or_cultural_heritage_surroundings": {
+            "@id": "sustainability:respect_the_natural_or_cultural_heritage_surroundings",
+            "@type": "xsd:boolean"
+        },
+        "use_of_locally_appropriate_principles_for_scenic_sites": {
+            "@id": "sustainability:use_of_locally_appropriate_principles_for_scenic_sites",
+            "@type": "xsd:boolean"
+        },
+        "provision_of_access_for_persons_or_workers_with_special_needs": {
+            "@id": "sustainability:provision_of_access_for_persons_or_workers_with_special_needs",
+            "@type": "xsd:boolean"
+        },
+        "other_administration_and_management_issues": {
+            "@id": "sustainability:other_administration_and_management_issues",
+            "@type": "xsd:string"
+        },
+        "assess_risks_and_impacts_on_water_usage": {
+            "@id": "sustainability:assess_risks_and_impacts_on_water_usage",
+            "@type": "xsd:boolean"
+        },
+        "risks_and_impacts_on_water_levels_of_water_resources_used_surface_and_or_ground_water": {
+            "@id": "sustainability:risks_and_impacts_on_water_levels_of_water_resources_used_surface_and_or_ground_water",
+            "@type": "sustainability:RisksAndImpactsOnWaterLevelsOfWaterResourcesUsedSurfaceAndOrGroundWater"
+        },
+        "risks_and_impacts_on_water_quality_of_water_resources_used_surface_and_or_ground_water": {
+            "@id": "sustainability:risks_and_impacts_on_water_quality_of_water_resources_used_surface_and_or_ground_water",
+            "@type": "sustainability:RisksAndImpactsOnWaterQualityOfWaterResourcesUsedSurfaceAndOrGroundWater"
+        },
+        "environmental_risks_and_impacts": {
+            "@id": "sustainability:environmental_risks_and_impacts",
+            "@type": "sustainability:EnvironmentalRisksAndImpacts"
+        },
+        "risks_and_impacts_on_soil_resources_condition": {
+            "@id": "sustainability:risks_and_impacts_on_soil_resources_condition",
+            "@type": "xsd:boolean"
+        },
+        "risks_and_impacts_on_biodiversity_in_as_well_as_outside_management_or_production_unit": {
+            "@id": "sustainability:risks_and_impacts_on_biodiversity_in_as_well_as_outside_management_or_production_unit",
+            "@type": "xsd:boolean"
+        },
+        "environment_and_social_risks_mitigation_and_performance_improvement": {
+            "@id": "sustainability:environment_and_social_risks_mitigation_and_performance_improvement",
+            "@type": "xsd:boolean"
+        },
+        "market_data_and_analysis": {
+            "@id": "sustainability:market_data_and_analysis",
+            "@type": "xsd:string"
+        },
+        "distribution_networks_and_access_to_markets_buyers": {
+            "@id": "sustainability:distribution_networks_and_access_to_markets_buyers",
+            "@type": "xsd:boolean"
+        },
+        "non_discriminatory_lending_practices": {
+            "@id": "sustainability:non_discriminatory_lending_practices",
+            "@type": "xsd:boolean"
+        },
+        "lending_practices_promoting_local_entities": {
+            "@id": "sustainability:lending_practices_promoting_local_entities",
+            "@type": "xsd:boolean"
+        },
+        "access_and_selection_of_inputs_and_varieties_traditional_versus_improved_engineered": {
+            "@id": "sustainability:access_and_selection_of_inputs_and_varieties_traditional_versus_improved_engineered",
+            "@type": "xsd:boolean"
+        },
+        "traceability_of_inputs_varieties_and_records_of_materials_used": {
+            "@id": "sustainability:traceability_of_inputs_varieties_and_records_of_materials_used",
+            "@type": "xsd:boolean"
+        },
+        "access_to_technology_and_innovation": {
+            "@id": "sustainability:access_to_technology_and_innovation",
+            "@type": "xsd:boolean"
+        },
+        "infrastructure_transport_storage_testing_laboratories": {
+            "@id": "sustainability:infrastructure_transport_storage_testing_laboratories",
+            "@type": "xsd:boolean"
+        },
+        "responsible_intensification_expansion_of_cultivation_or_infrastructures": {
+            "@id": "sustainability:responsible_intensification_expansion_of_cultivation_or_infrastructures",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_measure_of_customer_client_satisfaction": {
+            "@id": "sustainability:monitoring_measure_of_customer_client_satisfaction",
+            "@type": "xsd:boolean"
+        },
+        "clients_staff_and_suppliers_to_consider_sustainability_issues_reduce_ghg_emissions_waste_water_use": {
+            "@id": "sustainability:clients_staff_and_suppliers_to_consider_sustainability_issues_reduce_ghg_emissions_waste_water_use",
+            "@type": "xsd:boolean"
+        },
+        "supply_chain_stakeholders_mapping": {
+            "@id": "sustainability:supply_chain_stakeholders_mapping",
+            "@type": "xsd:boolean"
+        },
+        "fair_marketing_based_on_factual_and_unbiased_information": {
+            "@id": "sustainability:fair_marketing_based_on_factual_and_unbiased_information",
+            "@type": "xsd:boolean"
+        },
+        "group_organization_and_management_for_example_cooperatives": {
+            "@id": "sustainability:group_organization_and_management_for_example_cooperatives",
+            "@type": "xsd:boolean"
+        },
+        "distinct_subcontracting_disclosure_of_prior_approval_auditor_s_access_to": {
+            "@id": "sustainability:distinct_subcontracting_disclosure_of_prior_approval_auditor_s_access_to",
+            "@type": "xsd:boolean"
+        },
+        "local_micro_businesses_incubation_facilitation": {
+            "@id": "sustainability:local_micro_businesses_incubation_facilitation",
+            "@type": "xsd:boolean"
+        },
+        "setting_up_specific_delivery_times_for_suppliers_and_related_possible_sanctions_for_late_delivery": {
+            "@id": "sustainability:setting_up_specific_delivery_times_for_suppliers_and_related_possible_sanctions_for_late_delivery",
+            "@type": "xsd:boolean"
+        },
+        "access_to_financial_services_payment_credit_savings_subsidies": {
+            "@id": "sustainability:access_to_financial_services_payment_credit_savings_subsidies",
+            "@type": "xsd:boolean"
+        },
+        "guarantee_of_premium_on_sales_of_certified_product": {
+            "@id": "sustainability:guarantee_of_premium_on_sales_of_certified_product",
+            "@type": "xsd:boolean"
+        },
+        "minimum_price_guarantees": {
+            "@id": "sustainability:minimum_price_guarantees",
+            "@type": "xsd:boolean"
+        },
+        "setting_up_contracts_with_traders": {
+            "@id": "sustainability:setting_up_contracts_with_traders",
+            "@type": "xsd:boolean"
+        },
+        "inclusion_of_suppliers_sustainability_strategy": {
+            "@id": "sustainability:inclusion_of_suppliers_sustainability_strategy",
+            "@type": "xsd:boolean"
+        },
+        "supply_chain_responsibility_beyond_primary_production": {
+            "@id": "sustainability:supply_chain_responsibility_beyond_primary_production",
+            "@type": "sustainability:SupplyChainResponsibilityBeyondPrimaryProduction"
+        },
+        "advance_payments_requests": {
+            "@id": "sustainability:advance_payments_requests",
+            "@type": "xsd:boolean"
+        },
+        "quality_policy_general_requirements": {
+            "@id": "sustainability:quality_policy_general_requirements",
+            "@type": "xsd:string"
+        },
+        "using_organic_inputs_to_production": {
+            "@id": "sustainability:using_organic_inputs_to_production",
+            "@type": "xsd:boolean"
+        },
+        "energy_used_during_manufacturing_processes": {
+            "@id": "sustainability:energy_used_during_manufacturing_processes",
+            "@type": "xsd:boolean"
+        },
+        "energy_efficiency_of_production_process": {
+            "@id": "sustainability:energy_efficiency_of_production_process",
+            "@type": "xsd:boolean"
+        },
+        "energy_efficiency_of_final_product_during_consumption": {
+            "@id": "sustainability:energy_efficiency_of_final_product_during_consumption",
+            "@type": "xsd:boolean"
+        },
+        "energy_efficiency_of_final_product_during_end_of_life": {
+            "@id": "sustainability:energy_efficiency_of_final_product_during_end_of_life",
+            "@type": "xsd:boolean"
+        },
+        "quality_of_products_packaging_and_transportation": {
+            "@id": "sustainability:quality_of_products_packaging_and_transportation",
+            "@type": "xsd:boolean"
+        },
+        "quality_of_product_storage_facilities_warehouses_containers_etc": {
+            "@id": "sustainability:quality_of_product_storage_facilities_warehouses_containers_etc",
+            "@type": "xsd:boolean"
+        },
+        "quality_manual_available_to_staff_workers": {
+            "@id": "sustainability:quality_manual_available_to_staff_workers",
+            "@type": "xsd:boolean"
+        },
+        "control_process_established_and_documented": {
+            "@id": "sustainability:control_process_established_and_documented",
+            "@type": "xsd:boolean"
+        },
+        "traceability_and_records_keeping": {
+            "@id": "sustainability:traceability_and_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "quality_compliance_to_national_and_international_legislation": {
+            "@id": "sustainability:quality_compliance_to_national_and_international_legislation",
+            "@type": "xsd:boolean"
+        },
+        "procedures_established_and_monitored": {
+            "@id": "sustainability:procedures_established_and_monitored",
+            "@type": "xsd:boolean"
+        },
+        "customer_focus_performance_indicators": {
+            "@id": "sustainability:customer_focus_performance_indicators",
+            "@type": "xsd:boolean"
+        },
+        "complaint_management_system_implemented": {
+            "@id": "sustainability:complaint_management_system_implemented",
+            "@type": "xsd:boolean"
+        },
+        "complaints_records_keeping": {
+            "@id": "sustainability:complaints_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "control_process_periodic_review_and_assessment": {
+            "@id": "sustainability:control_process_periodic_review_and_assessment",
+            "@type": "xsd:boolean"
+        },
+        "internal_audit_self_assessment_system_established_and_monitored": {
+            "@id": "sustainability:internal_audit_self_assessment_system_established_and_monitored",
+            "@type": "xsd:boolean"
+        },
+        "incidences_monitoring_and_records_keeping": {
+            "@id": "sustainability:incidences_monitoring_and_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "corrective_actions_implemented_and_documented": {
+            "@id": "sustainability:corrective_actions_implemented_and_documented",
+            "@type": "xsd:boolean"
+        },
+        "quality_risk_assessment_and_hazard_control_procedures": {
+            "@id": "sustainability:quality_risk_assessment_and_hazard_control_procedures",
+            "@type": "xsd:boolean"
+        },
+        "quality_documentation_and_monitoring_procedures": {
+            "@id": "sustainability:quality_documentation_and_monitoring_procedures",
+            "@type": "xsd:boolean"
+        },
+        "quality_technical_specifications": {
+            "@id": "sustainability:quality_technical_specifications",
+            "@type": "xsd:boolean"
+        },
+        "product_safety_specifications_excl_food_safety": {
+            "@id": "sustainability:product_safety_specifications_excl_food_safety",
+            "@type": "xsd:boolean"
+        },
+        "testing_quality_of_inputs_to_production": {
+            "@id": "sustainability:testing_quality_of_inputs_to_production",
+            "@type": "xsd:boolean"
+        },
+        "testing_quality_of_semi_final_products": {
+            "@id": "sustainability:testing_quality_of_semi_final_products",
+            "@type": "xsd:boolean"
+        },
+        "testing_quality_of_final_products": {
+            "@id": "sustainability:testing_quality_of_final_products",
+            "@type": "xsd:boolean"
+        },
+        "defined_controlled_and_monitored_technical_processes_for_non_food_manufactured_products": {
+            "@id": "sustainability:defined_controlled_and_monitored_technical_processes_for_non_food_manufactured_products",
+            "@type": "xsd:boolean"
+        },
+        "production_site_specifications_established_and_monitored_through_inspections": {
+            "@id": "sustainability:production_site_specifications_established_and_monitored_through_inspections",
+            "@type": "xsd:boolean"
+        },
+        "waste_management_system_established_and_monitored_volume_toxicity_discharge": {
+            "@id": "sustainability:waste_management_system_established_and_monitored_volume_toxicity_discharge",
+            "@type": "xsd:boolean"
+        },
+        "water_usage_management_system_established_and_monitored_volume_quality_use_re_use_and_recycling_wastewater_discharge": {
+            "@id": "sustainability:water_usage_management_system_established_and_monitored_volume_quality_use_re_use_and_recycling_wastewater_discharge",
+            "@type": "xsd:boolean"
+        },
+        "chemicals_usage_management_system_established_and_monitored_volume_quality_prohibited_substances_storage_and_hazardous_waste_discharge": {
+            "@id": "sustainability:chemicals_usage_management_system_established_and_monitored_volume_quality_prohibited_substances_storage_and_hazardous_waste_discharge",
+            "@type": "xsd:boolean"
+        },
+        "risk_assessment_for_contamination_of_non_food_products": {
+            "@id": "sustainability:risk_assessment_for_contamination_of_non_food_products",
+            "@type": "xsd:boolean"
+        },
+        "food_products_compliance_to_national_and_international_legislation": {
+            "@id": "sustainability:food_products_compliance_to_national_and_international_legislation",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_complaints_and_non_conformities_records_keeping": {
+            "@id": "sustainability:food_safety_complaints_and_non_conformities_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_non_conformities_corrective_action_plan_established": {
+            "@id": "sustainability:food_safety_non_conformities_corrective_action_plan_established",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_procedures_established_and_documented": {
+            "@id": "sustainability:food_safety_procedures_established_and_documented",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_instructions_including_hygiene_requirements_established_and_communicated_to_staff_workers": {
+            "@id": "sustainability:food_safety_instructions_including_hygiene_requirements_established_and_communicated_to_staff_workers",
+            "@type": "xsd:boolean"
+        },
+        "hygiene_instructions_clearly_signed_and_communicated_to_external_visitors": {
+            "@id": "sustainability:hygiene_instructions_clearly_signed_and_communicated_to_external_visitors",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_training_for_all_staff_handling_food_products": {
+            "@id": "sustainability:food_safety_training_for_all_staff_handling_food_products",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_incidences_management_procedures_established_and_communicated_to_staff_workers": {
+            "@id": "sustainability:food_safety_incidences_management_procedures_established_and_communicated_to_staff_workers",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_incidences_management_plan_testing_and_regular_training_of_staff_workers": {
+            "@id": "sustainability:food_safety_incidences_management_plan_testing_and_regular_training_of_staff_workers",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_incidences_records_keeping": {
+            "@id": "sustainability:food_safety_incidences_records_keeping",
+            "@type": "xsd:boolean"
+        },
+        "food_safety_incidences_external_communication_plan": {
+            "@id": "sustainability:food_safety_incidences_external_communication_plan",
+            "@type": "xsd:boolean"
+        },
+        "inputs_purchasing_policies_and_suppliers_clearance_process_established_and_monitored": {
+            "@id": "sustainability:inputs_purchasing_policies_and_suppliers_clearance_process_established_and_monitored",
+            "@type": "xsd:boolean"
+        },
+        "technical_processes_for_manufacturing_processing_of_non_food_products": {
+            "@id": "sustainability:technical_processes_for_manufacturing_processing_of_non_food_products",
+            "@type": "xsd:boolean"
+        },
+        "final_products_technical_specifications_and_suitability_of_non_food_products": {
+            "@id": "sustainability:final_products_technical_specifications_and_suitability_of_non_food_products",
+            "@type": "xsd:boolean"
+        },
+        "assess_final_product_potential_for_re_use_and_recycling_of_non_food_products": {
+            "@id": "sustainability:assess_final_product_potential_for_re_use_and_recycling_of_non_food_products",
+            "@type": "xsd:boolean"
+        },
+        "does_the_standard_cover_the_quality_of_textiles": {
+            "@id": "sustainability:does_the_standard_cover_the_quality_of_textiles",
+            "@type": "sustainability:DoesTheStandardCoverTheQualityOfTextiles"
+        },
+        "does_the_standard_include_the_suitability_of_use": {
+            "@id": "sustainability:does_the_standard_include_the_suitability_of_use",
+            "@type": "xsd:boolean"
+        },
+        "quality_management_systems_transportation_of_non_food_products": {
+            "@id": "sustainability:quality_management_systems_transportation_of_non_food_products",
+            "@type": "xsd:boolean"
+        },
+        "traceability_system_established_and_monitored": {
+            "@id": "sustainability:traceability_system_established_and_monitored",
+            "@type": "xsd:boolean"
+        },
+        "traceability_records_maintained_through_entire_chain_of_production": {
+            "@id": "sustainability:traceability_records_maintained_through_entire_chain_of_production",
+            "@type": "xsd:boolean"
+        },
+        "labeling_system_of_all_inputs_through_entire_production_chain": {
+            "@id": "sustainability:labeling_system_of_all_inputs_through_entire_production_chain",
+            "@type": "xsd:boolean"
+        },
+        "product_recall_policy_established_tested_and_monitored": {
+            "@id": "sustainability:product_recall_policy_established_tested_and_monitored",
+            "@type": "xsd:boolean"
+        },
+        "identity_preservation_model_established_and_monitored_modus_operandi": {
+            "@id": "sustainability:identity_preservation_model_established_and_monitored_modus_operandi",
+            "@type": "xsd:boolean"
+        },
+        "segregation_model_established_and_monitored_modus_operandi": {
+            "@id": "sustainability:segregation_model_established_and_monitored_modus_operandi",
+            "@type": "xsd:boolean"
+        },
+        "establishing_and_implementation_of_a_t_t_system_focused_on_a_quick_identification_separation_blocking_and_withdrawal_from_market": {
+            "@id": "sustainability:establishing_and_implementation_of_a_t_t_system_focused_on_a_quick_identification_separation_blocking_and_withdrawal_from_market",
+            "@type": "xsd:boolean"
+        },
+        "communication_including_list_of_stakeholders_both_internally_as_externally": {
+            "@id": "sustainability:communication_including_list_of_stakeholders_both_internally_as_externally",
+            "@type": "xsd:boolean"
+        },
+        "notification_of_clients": {
+            "@id": "sustainability:notification_of_clients",
+            "@type": "xsd:boolean"
+        },
+        "notification_of_competent_authority": {
+            "@id": "sustainability:notification_of_competent_authority",
+            "@type": "xsd:boolean"
+        },
+        "notification_of_certification_body": {
+            "@id": "sustainability:notification_of_certification_body",
+            "@type": "xsd:boolean"
+        },
+        "notification_of_scheme_manager": {
+            "@id": "sustainability:notification_of_scheme_manager",
+            "@type": "xsd:boolean"
+        },
+        "continuous_update_of_recall_procedure": {
+            "@id": "sustainability:continuous_update_of_recall_procedure",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_to_evaluate_executed_recalls_and_define_improvements": {
+            "@id": "sustainability:a_procedure_to_evaluate_executed_recalls_and_define_improvements",
+            "@type": "xsd:boolean"
+        },
+        "performance_of_a_recall_simulation_with_a_risk_based_frequency": {
+            "@id": "sustainability:performance_of_a_recall_simulation_with_a_risk_based_frequency",
+            "@type": "xsd:boolean"
+        },
+        "performance_of_a_recall_simulation_at_least_once_a_year": {
+            "@id": "sustainability:performance_of_a_recall_simulation_at_least_once_a_year",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_to_evaluate_the_recall_simulation": {
+            "@id": "sustainability:a_procedure_to_evaluate_the_recall_simulation",
+            "@type": "xsd:boolean"
+        },
+        "record_at_least_relevant_information_related_to_received_products_downstream_and_suppliers": {
+            "@id": "sustainability:record_at_least_relevant_information_related_to_received_products_downstream_and_suppliers",
+            "@type": "xsd:boolean"
+        },
+        "establishing_a_crisis_management_team": {
+            "@id": "sustainability:establishing_a_crisis_management_team",
+            "@type": "xsd:boolean"
+        },
+        "record_at_least_relevant_information_related_to_delivered_products_upstream_and_customers": {
+            "@id": "sustainability:record_at_least_relevant_information_related_to_delivered_products_upstream_and_customers",
+            "@type": "xsd:boolean"
+        },
+        "implementation_a_system_for_internal_t_t": {
+            "@id": "sustainability:implementation_a_system_for_internal_t_t",
+            "@type": "xsd:boolean"
+        },
+        "provision_of_relevant_information_about_products_and_their_delivery": {
+            "@id": "sustainability:provision_of_relevant_information_about_products_and_their_delivery",
+            "@type": "xsd:boolean"
+        },
+        "provision_of_relevant_information_about_products_and_their_delivery_within_a_certain_time_limit": {
+            "@id": "sustainability:provision_of_relevant_information_about_products_and_their_delivery_within_a_certain_time_limit",
+            "@type": "xsd:boolean"
+        },
+        "establishing_a_recall_team_including_roles_tasks_responsibilities_and_mandates": {
+            "@id": "sustainability:establishing_a_recall_team_including_roles_tasks_responsibilities_and_mandates",
+            "@type": "xsd:boolean"
+        },
+        "a_recall_team_including_provision_of_all_necessary_means": {
+            "@id": "sustainability:a_recall_team_including_provision_of_all_necessary_means",
+            "@type": "xsd:boolean"
+        },
+        "recall": {
+            "@id": "sustainability:recall",
+            "@type": "xsd:boolean"
+        },
+        "mass_balance_model_established_and_monitored_modus_operandi": {
+            "@id": "sustainability:mass_balance_model_established_and_monitored_modus_operandi",
+            "@type": "xsd:boolean"
+        },
+        "workers_staff_skills_requirements": {
+            "@id": "sustainability:workers_staff_skills_requirements",
+            "@type": "xsd:boolean"
+        },
+        "workers_staff_training_programs": {
+            "@id": "sustainability:workers_staff_training_programs",
+            "@type": "xsd:boolean"
+        },
+        "workers_staff_protective_clothing": {
+            "@id": "sustainability:workers_staff_protective_clothing",
+            "@type": "xsd:boolean"
+        },
+        "general_principle_about_food_safety": {
+            "@id": "sustainability:general_principle_about_food_safety",
+            "@type": "xsd:string"
+        },
+        "general_principle_about_irradiation": {
+            "@id": "sustainability:general_principle_about_irradiation",
+            "@type": "xsd:boolean"
+        },
+        "general_principle_about_chilling_storage_and_transportation": {
+            "@id": "sustainability:general_principle_about_chilling_storage_and_transportation",
+            "@type": "xsd:boolean"
+        },
+        "transportation_of_food_products": {
+            "@id": "sustainability:transportation_of_food_products",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle1_is_a_hazard_analysis_conducted_for_each_process_step_in_the_manufacturing_of_the_food_item": {
+            "@id": "sustainability:haccp_principle1_is_a_hazard_analysis_conducted_for_each_process_step_in_the_manufacturing_of_the_food_item",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle2_if_the_hazard_analysis_indicates_any_hazards_present_within_the_food_manufacturing_process_are_critical_control_points_ccps_identified": {
+            "@id": "sustainability:haccp_principle2_if_the_hazard_analysis_indicates_any_hazards_present_within_the_food_manufacturing_process_are_critical_control_points_ccps_identified",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle3_are_critical_limits_established_for_each_ccp": {
+            "@id": "sustainability:haccp_principle3_are_critical_limits_established_for_each_ccp",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle4_are_monitoring_procedures_established_for_each_ccp": {
+            "@id": "sustainability:haccp_principle4_are_monitoring_procedures_established_for_each_ccp",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle5_are_corrective_actions_established_for_each_ccp_in_the_event_critical_limits_are_exceeded": {
+            "@id": "sustainability:haccp_principle5_are_corrective_actions_established_for_each_ccp_in_the_event_critical_limits_are_exceeded",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle6_are_verification_procedures_established": {
+            "@id": "sustainability:haccp_principle6_are_verification_procedures_established",
+            "@type": "xsd:boolean"
+        },
+        "haccp_principle7_are_record_keeping_and_documentation_for_haccp_procedures_established": {
+            "@id": "sustainability:haccp_principle7_are_record_keeping_and_documentation_for_haccp_procedures_established",
+            "@type": "xsd:boolean"
+        },
+        "haccp_existence_of_a_haccp_system": {
+            "@id": "sustainability:haccp_existence_of_a_haccp_system",
+            "@type": "xsd:boolean"
+        },
+        "haccp_system_team_composed_of_multidisciplinary_skills": {
+            "@id": "sustainability:haccp_system_team_composed_of_multidisciplinary_skills",
+            "@type": "xsd:boolean"
+        },
+        "haccp_system_team_leader_mandatory_training": {
+            "@id": "sustainability:haccp_system_team_leader_mandatory_training",
+            "@type": "xsd:boolean"
+        },
+        "haccp_system_critical_control_points_critical_limits_monitoring_procedures_established_and_monitored": {
+            "@id": "sustainability:haccp_system_critical_control_points_critical_limits_monitoring_procedures_established_and_monitored",
+            "@type": "xsd:boolean"
+        },
+        "haccp_system_established_documented_and_monitored_corrective_actions": {
+            "@id": "sustainability:haccp_system_established_documented_and_monitored_corrective_actions",
+            "@type": "xsd:boolean"
+        },
+        "haccp_system_procedures_in_place_to_verify_efficiency_of_the_haccp_system": {
+            "@id": "sustainability:haccp_system_procedures_in_place_to_verify_efficiency_of_the_haccp_system",
+            "@type": "xsd:boolean"
+        },
+        "established_and_documented_policy_relating_to_control_measures_implemented_to_mitigate_food_safety_hazards": {
+            "@id": "sustainability:established_and_documented_policy_relating_to_control_measures_implemented_to_mitigate_food_safety_hazards",
+            "@type": "xsd:boolean"
+        },
+        "established_and_documented_policy_relating_to_food_contamination": {
+            "@id": "sustainability:established_and_documented_policy_relating_to_food_contamination",
+            "@type": "xsd:boolean"
+        },
+        "contamination_in_food_harvesting": {
+            "@id": "sustainability:contamination_in_food_harvesting",
+            "@type": "xsd:boolean"
+        },
+        "contamination_in_food_handling_incl_washing": {
+            "@id": "sustainability:contamination_in_food_handling_incl_washing",
+            "@type": "xsd:boolean"
+        },
+        "contamination_in_food_transportation": {
+            "@id": "sustainability:contamination_in_food_transportation",
+            "@type": "xsd:boolean"
+        },
+        "contamination_in_food_processing": {
+            "@id": "sustainability:contamination_in_food_processing",
+            "@type": "xsd:boolean"
+        },
+        "contamination_in_food_packaging": {
+            "@id": "sustainability:contamination_in_food_packaging",
+            "@type": "xsd:boolean"
+        },
+        "site_location": {
+            "@id": "sustainability:site_location",
+            "@type": "xsd:boolean"
+        },
+        "site_and_facilities_disinfection_procedures": {
+            "@id": "sustainability:site_and_facilities_disinfection_procedures",
+            "@type": "xsd:boolean"
+        },
+        "staff_facilities_hand_washing_and_toilets_hygiene_requirements": {
+            "@id": "sustainability:staff_facilities_hand_washing_and_toilets_hygiene_requirements",
+            "@type": "xsd:boolean"
+        },
+        "staff_facilities_changing_facilities_lockers_and_catering_specifications": {
+            "@id": "sustainability:staff_facilities_changing_facilities_lockers_and_catering_specifications",
+            "@type": "xsd:boolean"
+        },
+        "staff_facilities_eating_places_segregated_from_production_areas": {
+            "@id": "sustainability:staff_facilities_eating_places_segregated_from_production_areas",
+            "@type": "xsd:boolean"
+        },
+        "food_feed_production_site_pest_control_procedures": {
+            "@id": "sustainability:food_feed_production_site_pest_control_procedures",
+            "@type": "xsd:boolean"
+        },
+        "access_to_the_site": {
+            "@id": "sustainability:access_to_the_site",
+            "@type": "xsd:boolean"
+        },
+        "risk_assessment_of_site_and_processes_risks_of_contamination": {
+            "@id": "sustainability:risk_assessment_of_site_and_processes_risks_of_contamination",
+            "@type": "xsd:boolean"
+        },
+        "food_harvesting_processing_utensils_cleaned_disinfected_sanitized_maintained_and_protected_from_contamination": {
+            "@id": "sustainability:food_harvesting_processing_utensils_cleaned_disinfected_sanitized_maintained_and_protected_from_contamination",
+            "@type": "xsd:boolean"
+        },
+        "site_construction_materials_appropriate_risks_of_contamination": {
+            "@id": "sustainability:site_construction_materials_appropriate_risks_of_contamination",
+            "@type": "xsd:boolean"
+        },
+        "water_supply_volume_and_quality_monitored": {
+            "@id": "sustainability:water_supply_volume_and_quality_monitored",
+            "@type": "xsd:boolean"
+        },
+        "waste_management_system_volume_toxicity_recycling_discharge": {
+            "@id": "sustainability:waste_management_system_volume_toxicity_recycling_discharge",
+            "@type": "xsd:boolean"
+        },
+        "waste_water_drainage_discharge_re_using_recycling_processes": {
+            "@id": "sustainability:waste_water_drainage_discharge_re_using_recycling_processes",
+            "@type": "xsd:boolean"
+        },
+        "site_and_facilities_cleaning_procedures": {
+            "@id": "sustainability:site_and_facilities_cleaning_procedures",
+            "@type": "xsd:boolean"
+        },
+        "gmo_handling_procedures_and_staff_training": {
+            "@id": "sustainability:gmo_handling_procedures_and_staff_training",
+            "@type": "xsd:boolean"
+        },
+        "gmo_inputs_selection_and_technical_specifications": {
+            "@id": "sustainability:gmo_inputs_selection_and_technical_specifications",
+            "@type": "xsd:boolean"
+        },
+        "allergen_handling_procedures_and_staff_training": {
+            "@id": "sustainability:allergen_handling_procedures_and_staff_training",
+            "@type": "xsd:boolean"
+        },
+        "allergen_inputs_selection_and_technical_specifications": {
+            "@id": "sustainability:allergen_inputs_selection_and_technical_specifications",
+            "@type": "xsd:boolean"
+        },
+        "risk_of_contamination_from_raw_material_control_of_inputs_and_ingredients": {
+            "@id": "sustainability:risk_of_contamination_from_raw_material_control_of_inputs_and_ingredients",
+            "@type": "xsd:boolean"
+        },
+        "contamination_waste_disposal_contamination_risk_assessment_and_discharge_procedures": {
+            "@id": "sustainability:contamination_waste_disposal_contamination_risk_assessment_and_discharge_procedures",
+            "@type": "xsd:boolean"
+        },
+        "contamination_foreign_body_control_detector_monitoring_procedures": {
+            "@id": "sustainability:contamination_foreign_body_control_detector_monitoring_procedures",
+            "@type": "xsd:boolean"
+        },
+        "food_products_handling_general_policy": {
+            "@id": "sustainability:food_products_handling_general_policy",
+            "@type": "xsd:boolean"
+        },
+        "food_products_handling_equipment_specifications_maintenance_and_testing": {
+            "@id": "sustainability:food_products_handling_equipment_specifications_maintenance_and_testing",
+            "@type": "xsd:boolean"
+        },
+        "food_products_handling_storage_facilities_specifications_hygiene_maintenance_and_verification": {
+            "@id": "sustainability:food_products_handling_storage_facilities_specifications_hygiene_maintenance_and_verification",
+            "@type": "xsd:boolean"
+        },
+        "food_products_handling_storage_conditions_hygiene_requirements_and_verification_processes": {
+            "@id": "sustainability:food_products_handling_storage_conditions_hygiene_requirements_and_verification_processes",
+            "@type": "xsd:boolean"
+        },
+        "food_products_handling_packaging_and_labeling_requirements": {
+            "@id": "sustainability:food_products_handling_packaging_and_labeling_requirements",
+            "@type": "xsd:boolean"
+        },
+        "semi_final_product_specifications_and_controls_of_risk_foreign_bodies": {
+            "@id": "sustainability:semi_final_product_specifications_and_controls_of_risk_foreign_bodies",
+            "@type": "xsd:boolean"
+        },
+        "final_product_specifications_and_controls_for_contamination": {
+            "@id": "sustainability:final_product_specifications_and_controls_for_contamination",
+            "@type": "xsd:boolean"
+        },
+        "harvested_semi_processed_products_packaging_protection_against_contamination": {
+            "@id": "sustainability:harvested_semi_processed_products_packaging_protection_against_contamination",
+            "@type": "xsd:boolean"
+        },
+        "harvested_semi_processed_final_products_treatment_before_retail": {
+            "@id": "sustainability:harvested_semi_processed_final_products_treatment_before_retail",
+            "@type": "xsd:boolean"
+        },
+        "contamination_glass_and_wood_foreign_bodies_inspection": {
+            "@id": "sustainability:contamination_glass_and_wood_foreign_bodies_inspection",
+            "@type": "xsd:boolean"
+        },
+        "contamination_water_contamination_mitigation_controls_and_procedures": {
+            "@id": "sustainability:contamination_water_contamination_mitigation_controls_and_procedures",
+            "@type": "xsd:boolean"
+        },
+        "contamination_chemical_storage": {
+            "@id": "sustainability:contamination_chemical_storage",
+            "@type": "xsd:boolean"
+        },
+        "contamination_site_and_equipment_inspection": {
+            "@id": "sustainability:contamination_site_and_equipment_inspection",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_raw_material_intermediate_final_product_specifications": {
+            "@id": "sustainability:food_production_process_control_raw_material_intermediate_final_product_specifications",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_product_transportation_procedures": {
+            "@id": "sustainability:food_production_process_control_product_transportation_procedures",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_product_development_process": {
+            "@id": "sustainability:food_production_process_control_product_development_process",
+            "@type": "xsd:boolean"
+        },
+        "food_feed_production_process_control_nutritional_requirements": {
+            "@id": "sustainability:food_feed_production_process_control_nutritional_requirements",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_packaging_material_procedures": {
+            "@id": "sustainability:food_production_process_control_packaging_material_procedures",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_product_analysis_and_testing": {
+            "@id": "sustainability:food_production_process_control_product_analysis_and_testing",
+            "@type": "xsd:boolean"
+        },
+        "food_feed_production_process_control_health_and_nutrition_requirements": {
+            "@id": "sustainability:food_feed_production_process_control_health_and_nutrition_requirements",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_quantity_control_procedures": {
+            "@id": "sustainability:food_production_process_control_quantity_control_procedures",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_management_of_non_conforming_products": {
+            "@id": "sustainability:food_production_process_control_management_of_non_conforming_products",
+            "@type": "xsd:boolean"
+        },
+        "food_production_process_control_verification_calibration_of_monitoring_devices": {
+            "@id": "sustainability:food_production_process_control_verification_calibration_of_monitoring_devices",
+            "@type": "xsd:boolean"
+        },
+        "food_production_personnel_skills_training_records": {
+            "@id": "sustainability:food_production_personnel_skills_training_records",
+            "@type": "xsd:boolean"
+        },
+        "food_production_workers_staff_training_programs": {
+            "@id": "sustainability:food_production_workers_staff_training_programs",
+            "@type": "xsd:boolean"
+        },
+        "food_production_personal_hygiene": {
+            "@id": "sustainability:food_production_personal_hygiene",
+            "@type": "xsd:boolean"
+        },
+        "food_production_medical_screening": {
+            "@id": "sustainability:food_production_medical_screening",
+            "@type": "xsd:boolean"
+        },
+        "food_production_protective_clothing": {
+            "@id": "sustainability:food_production_protective_clothing",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_scope": {
+            "@id": "sustainability:definition_of_scope",
+            "@type": "xsd:string"
+        },
+        "determination_of_all_necessary_inspections_monitoring_and_measurements": {
+            "@id": "sustainability:determination_of_all_necessary_inspections_monitoring_and_measurements",
+            "@type": "xsd:boolean"
+        },
+        "implementation_of_actions_to_achieve_planned_results": {
+            "@id": "sustainability:implementation_of_actions_to_achieve_planned_results",
+            "@type": "xsd:boolean"
+        },
+        "compliance_with_all_relevant_legal_feed_safety_requirements": {
+            "@id": "sustainability:compliance_with_all_relevant_legal_feed_safety_requirements",
+            "@type": "xsd:boolean"
+        },
+        "keep_up_with_all_relevant_legal_developments": {
+            "@id": "sustainability:keep_up_with_all_relevant_legal_developments",
+            "@type": "xsd:boolean"
+        },
+        "communication_within_the_organisation_and_upstream_downstream_in_the_chain": {
+            "@id": "sustainability:communication_within_the_organisation_and_upstream_downstream_in_the_chain",
+            "@type": "xsd:boolean"
+        },
+        "determination_of_processes_and_their_interactions": {
+            "@id": "sustainability:determination_of_processes_and_their_interactions",
+            "@type": "xsd:boolean"
+        },
+        "identification_of_all_critical_elements_in_the_processes": {
+            "@id": "sustainability:identification_of_all_critical_elements_in_the_processes",
+            "@type": "xsd:boolean"
+        },
+        "determination_of_criteria_and_methods_to_ensure_effective_operation": {
+            "@id": "sustainability:determination_of_criteria_and_methods_to_ensure_effective_operation",
+            "@type": "xsd:boolean"
+        },
+        "determination_of_criteria_and_methods_to_control_the_risks": {
+            "@id": "sustainability:determination_of_criteria_and_methods_to_control_the_risks",
+            "@type": "xsd:boolean"
+        },
+        "establish_and_implement_prerequisite_programmes": {
+            "@id": "sustainability:establish_and_implement_prerequisite_programmes",
+            "@type": "xsd:boolean"
+        },
+        "establish_and_implement_a_haccp_plan": {
+            "@id": "sustainability:establish_and_implement_a_haccp_plan",
+            "@type": "xsd:boolean"
+        },
+        "availability_of_information_to_support_correct_operation_and_control": {
+            "@id": "sustainability:availability_of_information_to_support_correct_operation_and_control",
+            "@type": "xsd:boolean"
+        },
+        "availability_of_resources": {
+            "@id": "sustainability:availability_of_resources",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_feed_products_and_or_feed_services_covered_under_the_scope": {
+            "@id": "sustainability:specification_of_feed_products_and_or_feed_services_covered_under_the_scope",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_legal_aspects": {
+            "@id": "sustainability:specification_of_legal_aspects",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_locations_and_sites_covered_under_the_scope": {
+            "@id": "sustainability:specification_of_locations_and_sites_covered_under_the_scope",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_processes_covered_under_the_scope": {
+            "@id": "sustainability:specification_of_processes_covered_under_the_scope",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_outsourced_activities_covered_under_the_scope": {
+            "@id": "sustainability:specification_of_outsourced_activities_covered_under_the_scope",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_exclusions": {
+            "@id": "sustainability:specification_of_exclusions",
+            "@type": "xsd:boolean"
+        },
+        "documentation_of_the_policy_and_related_feed_objectives": {
+            "@id": "sustainability:documentation_of_the_policy_and_related_feed_objectives",
+            "@type": "xsd:boolean"
+        },
+        "safe_storage_of_data": {
+            "@id": "sustainability:safe_storage_of_data",
+            "@type": "xsd:boolean"
+        },
+        "documentation_of_the_scope_description_as_specified_above": {
+            "@id": "sustainability:documentation_of_the_scope_description_as_specified_above",
+            "@type": "xsd:boolean"
+        },
+        "documentation_of_the_required_procedures_and_instructions": {
+            "@id": "sustainability:documentation_of_the_required_procedures_and_instructions",
+            "@type": "xsd:boolean"
+        },
+        "documentation_of_other_documents_needed_to_ensure_an_effective_operation_of_fms": {
+            "@id": "sustainability:documentation_of_other_documents_needed_to_ensure_an_effective_operation_of_fms",
+            "@type": "xsd:boolean"
+        },
+        "documentation_of_the_structure_of_the_controlled_documentation_system": {
+            "@id": "sustainability:documentation_of_the_structure_of_the_controlled_documentation_system",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_to_draft_approve_issue_review_update_implement_and_control_the_documents": {
+            "@id": "sustainability:a_procedure_to_draft_approve_issue_review_update_implement_and_control_the_documents",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_to_register_and_store_data_and_records": {
+            "@id": "sustainability:a_procedure_to_register_and_store_data_and_records",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_to_guarantee_security_of_data_to_exclude_unauthorised_and_unwanted_change_of_data_and_to_exclude_fraud": {
+            "@id": "sustainability:a_procedure_to_guarantee_security_of_data_to_exclude_unauthorised_and_unwanted_change_of_data_and_to_exclude_fraud",
+            "@type": "xsd:boolean"
+        },
+        "a_time_period_for_retaining_records": {
+            "@id": "sustainability:a_time_period_for_retaining_records",
+            "@type": "xsd:boolean"
+        },
+        "demonstration_of_commitment_to_feed_safety_assurance": {
+            "@id": "sustainability:demonstration_of_commitment_to_feed_safety_assurance",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_a_policy_which_includes_activities_needed_to_achieve_feed_safety_and_quality_requirements_of_customers": {
+            "@id": "sustainability:definition_of_a_policy_which_includes_activities_needed_to_achieve_feed_safety_and_quality_requirements_of_customers",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_smart_objectives_related_to_the_policy": {
+            "@id": "sustainability:definition_of_smart_objectives_related_to_the_policy",
+            "@type": "xsd:boolean"
+        },
+        "creation_of_awareness_in_the_organization_about_importance_of_feed_safety_assurance": {
+            "@id": "sustainability:creation_of_awareness_in_the_organization_about_importance_of_feed_safety_assurance",
+            "@type": "xsd:boolean"
+        },
+        "operation_of_an_effective_fms": {
+            "@id": "sustainability:operation_of_an_effective_fms",
+            "@type": "xsd:boolean"
+        },
+        "job_descriptions_addressing_responsibilities_and_authorities_regarding_feed_safety_assurance": {
+            "@id": "sustainability:job_descriptions_addressing_responsibilities_and_authorities_regarding_feed_safety_assurance",
+            "@type": "xsd:boolean"
+        },
+        "an_organogram": {
+            "@id": "sustainability:an_organogram",
+            "@type": "xsd:boolean"
+        },
+        "establishing_a_haccp_team": {
+            "@id": "sustainability:establishing_a_haccp_team",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_all_relevant_departments_are_represented_in_the_haccp_team": {
+            "@id": "sustainability:assurance_that_all_relevant_departments_are_represented_in_the_haccp_team",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_skills_and_competences_for_each_member_of_the_haccp_team": {
+            "@id": "sustainability:definition_of_skills_and_competences_for_each_member_of_the_haccp_team",
+            "@type": "xsd:boolean"
+        },
+        "appointment_of_a_haccp_team_leader": {
+            "@id": "sustainability:appointment_of_a_haccp_team_leader",
+            "@type": "xsd:boolean"
+        },
+        "internal_communication_of_the_importance_of_feed_safety_assurance": {
+            "@id": "sustainability:internal_communication_of_the_importance_of_feed_safety_assurance",
+            "@type": "xsd:boolean"
+        },
+        "arrangement_of_external_communication": {
+            "@id": "sustainability:arrangement_of_external_communication",
+            "@type": "xsd:boolean"
+        },
+        "arrangement_of_internal_communication": {
+            "@id": "sustainability:arrangement_of_internal_communication",
+            "@type": "xsd:boolean"
+        },
+        "review_of_monitoring_plan": {
+            "@id": "sustainability:review_of_monitoring_plan",
+            "@type": "xsd:boolean"
+        },
+        "review_of_external_audit": {
+            "@id": "sustainability:review_of_external_audit",
+            "@type": "xsd:boolean"
+        },
+        "review_of_internal_audit": {
+            "@id": "sustainability:review_of_internal_audit",
+            "@type": "xsd:boolean"
+        },
+        "review_of_customer_satisfaction": {
+            "@id": "sustainability:review_of_customer_satisfaction",
+            "@type": "xsd:boolean"
+        },
+        "review_of_verification_report_of_the_fms": {
+            "@id": "sustainability:review_of_verification_report_of_the_fms",
+            "@type": "xsd:boolean"
+        },
+        "review_of_verification_report_of_the_haccp": {
+            "@id": "sustainability:review_of_verification_report_of_the_haccp",
+            "@type": "xsd:boolean"
+        },
+        "review_of_supplier_evaluation": {
+            "@id": "sustainability:review_of_supplier_evaluation",
+            "@type": "xsd:boolean"
+        },
+        "review_of_other_relevant_input_for_mr": {
+            "@id": "sustainability:review_of_other_relevant_input_for_mr",
+            "@type": "xsd:boolean"
+        },
+        "organize_and_implement_quality_feed_safety_into_the_organization": {
+            "@id": "sustainability:organize_and_implement_quality_feed_safety_into_the_organization",
+            "@type": "xsd:boolean"
+        },
+        "the_frequency_for_conducting_the_mr": {
+            "@id": "sustainability:the_frequency_for_conducting_the_mr",
+            "@type": "xsd:boolean"
+        },
+        "decision_of_about_effectiveness_of_the_fms": {
+            "@id": "sustainability:decision_of_about_effectiveness_of_the_fms",
+            "@type": "xsd:boolean"
+        },
+        "decision_of_about_improvements": {
+            "@id": "sustainability:decision_of_about_improvements",
+            "@type": "xsd:boolean"
+        },
+        "review_of_objectives_as_defined_in_the_previous_period": {
+            "@id": "sustainability:review_of_objectives_as_defined_in_the_previous_period",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_smart_feed_safety_objectives": {
+            "@id": "sustainability:definition_of_smart_feed_safety_objectives",
+            "@type": "xsd:boolean"
+        },
+        "provision_of_financial_resources_needed_for_improvements": {
+            "@id": "sustainability:provision_of_financial_resources_needed_for_improvements",
+            "@type": "xsd:boolean"
+        },
+        "provision_of_resources_needed_for_improvements": {
+            "@id": "sustainability:provision_of_resources_needed_for_improvements",
+            "@type": "xsd:boolean"
+        },
+        "assigning_a_responsible_person_to_execute_this": {
+            "@id": "sustainability:assigning_a_responsible_person_to_execute_this",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_a_clear_feed_safety_and_quality_statement": {
+            "@id": "sustainability:definition_of_a_clear_feed_safety_and_quality_statement",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_a_policy_which_fits_to_the_size_and_role_of_the_organization": {
+            "@id": "sustainability:definition_of_a_policy_which_fits_to_the_size_and_role_of_the_organization",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_a_policy_which_is_in_compliance_with_legal_market_and_customer_requirements": {
+            "@id": "sustainability:definition_of_a_policy_which_is_in_compliance_with_legal_market_and_customer_requirements",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_policy_which_includes_activities_needed_to_achieve_feed_safety_and_quality_regulatory_requirements": {
+            "@id": "sustainability:definition_of_policy_which_includes_activities_needed_to_achieve_feed_safety_and_quality_regulatory_requirements",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_a_policy_which_includes_activities_needed_to_achieve_feed_safety_and_quality_requirements_of_the_market": {
+            "@id": "sustainability:definition_of_a_policy_which_includes_activities_needed_to_achieve_feed_safety_and_quality_requirements_of_the_market",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_for_managing_internal_complaints_effectively": {
+            "@id": "sustainability:a_procedure_for_managing_internal_complaints_effectively",
+            "@type": "xsd:boolean"
+        },
+        "execution_of_the_internal_audit_at_least_every_year": {
+            "@id": "sustainability:execution_of_the_internal_audit_at_least_every_year",
+            "@type": "xsd:boolean"
+        },
+        "analysis_of_results_of_all_verification_activities_including_the_results_of_monitoring_plan_complaints_and_internal_audits": {
+            "@id": "sustainability:analysis_of_results_of_all_verification_activities_including_the_results_of_monitoring_plan_complaints_and_internal_audits",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_updates_or_improvements_of_the_system": {
+            "@id": "sustainability:definition_of_updates_or_improvements_of_the_system",
+            "@type": "xsd:boolean"
+        },
+        "communication_of_results_of_verification_activities": {
+            "@id": "sustainability:communication_of_results_of_verification_activities",
+            "@type": "xsd:boolean"
+        },
+        "assurance_of_possibilities_for_continually_improvement": {
+            "@id": "sustainability:assurance_of_possibilities_for_continually_improvement",
+            "@type": "xsd:boolean"
+        },
+        "assurance_of_continuous_update_of_the_system": {
+            "@id": "sustainability:assurance_of_continuous_update_of_the_system",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_for_managing_external_complaints_effectively": {
+            "@id": "sustainability:a_procedure_for_managing_external_complaints_effectively",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_for_reviewing_complaints_to_establish_corrective_actions": {
+            "@id": "sustainability:a_procedure_for_reviewing_complaints_to_establish_corrective_actions",
+            "@type": "xsd:boolean"
+        },
+        "a_procedure_for_reviewing_complaints_to_establish_preventive_actions": {
+            "@id": "sustainability:a_procedure_for_reviewing_complaints_to_establish_preventive_actions",
+            "@type": "xsd:boolean"
+        },
+        "implementation_of_a_complete_internal_audit_programme": {
+            "@id": "sustainability:implementation_of_a_complete_internal_audit_programme",
+            "@type": "xsd:boolean"
+        },
+        "the_qualifications_for_internal_auditors": {
+            "@id": "sustainability:the_qualifications_for_internal_auditors",
+            "@type": "xsd:boolean"
+        },
+        "assurance_of_independency_and_impartiality_of_auditors": {
+            "@id": "sustainability:assurance_of_independency_and_impartiality_of_auditors",
+            "@type": "xsd:boolean"
+        },
+        "planning_of_audits_which_cover_all_parts_of_the_system": {
+            "@id": "sustainability:planning_of_audits_which_cover_all_parts_of_the_system",
+            "@type": "xsd:boolean"
+        },
+        "execution_of_the_internal_audit_with_a_risk_based_frequency": {
+            "@id": "sustainability:execution_of_the_internal_audit_with_a_risk_based_frequency",
+            "@type": "xsd:boolean"
+        },
+        "awareness_and_competence_about_feed_safety_assurance": {
+            "@id": "sustainability:awareness_and_competence_about_feed_safety_assurance",
+            "@type": "xsd:boolean"
+        },
+        "implementation_of_protective_measures_against_sabotage_vandalism_or_terrorism": {
+            "@id": "sustainability:implementation_of_protective_measures_against_sabotage_vandalism_or_terrorism",
+            "@type": "xsd:boolean"
+        },
+        "design_construction_and_maintenance_which_is_fit_for_safe_feed_production_that_results_in_clean_well_facilitating_buildings_and_protect_against_cross_contamination_of_the_feed": {
+            "@id": "sustainability:design_construction_and_maintenance_which_is_fit_for_safe_feed_production_that_results_in_clean_well_facilitating_buildings_and_protect_against_cross_contamination_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "clear_identification_of_buildings": {
+            "@id": "sustainability:clear_identification_of_buildings",
+            "@type": "xsd:boolean"
+        },
+        "prevention_of_pests_and_other_animals_to_enter_the_buildings": {
+            "@id": "sustainability:prevention_of_pests_and_other_animals_to_enter_the_buildings",
+            "@type": "xsd:boolean"
+        },
+        "assuring_enough_daylight_or_artificial_light_to_guarantee_safe_production_of_feed": {
+            "@id": "sustainability:assuring_enough_daylight_or_artificial_light_to_guarantee_safe_production_of_feed",
+            "@type": "xsd:boolean"
+        },
+        "design_construction_and_maintenance_which_is_fit_for_safe_feed_production_that_results_in_a_dry_clean_well_ventilated_area_protected_from_dust_condensation_or_other_sources_of_cross_contamination": {
+            "@id": "sustainability:design_construction_and_maintenance_which_is_fit_for_safe_feed_production_that_results_in_a_dry_clean_well_ventilated_area_protected_from_dust_condensation_or_other_sources_of_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "addressing_possible_cross_contamination_in_the_risk_assessment_to_assure_that_it_is_controlled_and_does_not_exceed_established_limits": {
+            "@id": "sustainability:addressing_possible_cross_contamination_in_the_risk_assessment_to_assure_that_it_is_controlled_and_does_not_exceed_established_limits",
+            "@type": "xsd:boolean"
+        },
+        "clear_identification_of_the_areas": {
+            "@id": "sustainability:clear_identification_of_the_areas",
+            "@type": "xsd:boolean"
+        },
+        "assurance_of_possibilities_to_carry_out_proper_cleaning_maintenance_and_pest_control_programme": {
+            "@id": "sustainability:assurance_of_possibilities_to_carry_out_proper_cleaning_maintenance_and_pest_control_programme",
+            "@type": "xsd:boolean"
+        },
+        "design_construction_and_maintenance_of_the_storage_areas_that_results_in_a_dry_clean_well_ventilated_area_protected_from_dust_condensation_or_other_sources_of_cross_contamination": {
+            "@id": "sustainability:design_construction_and_maintenance_of_the_storage_areas_that_results_in_a_dry_clean_well_ventilated_area_protected_from_dust_condensation_or_other_sources_of_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "training_and_education_especially_about_haccp_and_feed_safety": {
+            "@id": "sustainability:training_and_education_especially_about_haccp_and_feed_safety",
+            "@type": "xsd:boolean"
+        },
+        "design_construction_and_maintenance_of_the_internal_transport_equipment_that_results_in_clean_well_working_equipment_and_protect_against_cross_contamination_of_the_feed": {
+            "@id": "sustainability:design_construction_and_maintenance_of_the_internal_transport_equipment_that_results_in_clean_well_working_equipment_and_protect_against_cross_contamination_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "ensure_clear_identification_of_the_storage_areas_and_the_internal_transport_equipment": {
+            "@id": "sustainability:ensure_clear_identification_of_the_storage_areas_and_the_internal_transport_equipment",
+            "@type": "xsd:boolean"
+        },
+        "ensure_separation_or_zoning_of_facilities_so_that_safety_of_feeds_is_always_guaranteed": {
+            "@id": "sustainability:ensure_separation_or_zoning_of_facilities_so_that_safety_of_feeds_is_always_guaranteed",
+            "@type": "xsd:boolean"
+        },
+        "storage_of_feed_medicines_including_storage_facilities_accessibility_and_handling_by_personnel": {
+            "@id": "sustainability:storage_of_feed_medicines_including_storage_facilities_accessibility_and_handling_by_personnel",
+            "@type": "xsd:boolean"
+        },
+        "prevention_of_pests_and_other_animals_entering_the_storage_areas": {
+            "@id": "sustainability:prevention_of_pests_and_other_animals_entering_the_storage_areas",
+            "@type": "xsd:boolean"
+        },
+        "design_construction_and_maintenance_which_is_fit_for_safe_feed_production_that_results_in_clean_well_working_equipment_and_protect_against_cross_contamination_of_the_feed": {
+            "@id": "sustainability:design_construction_and_maintenance_which_is_fit_for_safe_feed_production_that_results_in_clean_well_working_equipment_and_protect_against_cross_contamination_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "avoidance_of_cross_contamination": {
+            "@id": "sustainability:avoidance_of_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "identification_of_any_potential_risk_for_cross_contamination": {
+            "@id": "sustainability:identification_of_any_potential_risk_for_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "facilities_for_personnel_hygiene": {
+            "@id": "sustainability:facilities_for_personnel_hygiene",
+            "@type": "xsd:boolean"
+        },
+        "implementation_of_measures_to_control_the_risks_for_cross_contamination": {
+            "@id": "sustainability:implementation_of_measures_to_control_the_risks_for_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_water_and_steam_used_during_feed_production_does_not_cause_any_risk_to_the_safety_of_the_feed": {
+            "@id": "sustainability:assurance_that_water_and_steam_used_during_feed_production_does_not_cause_any_risk_to_the_safety_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_any_processing_aid_used_during_feed_production_does_not_cause_any_risk_to_the_safety_of_the_feed": {
+            "@id": "sustainability:assurance_that_any_processing_aid_used_during_feed_production_does_not_cause_any_risk_to_the_safety_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_air_and_air_systems_do_not_affect_feed_safety": {
+            "@id": "sustainability:assurance_that_air_and_air_systems_do_not_affect_feed_safety",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_the_packaging_materials_used_do_not_cause_any_risk_to_the_safety_of_the_feed": {
+            "@id": "sustainability:assurance_that_the_packaging_materials_used_do_not_cause_any_risk_to_the_safety_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "definition_and_implementation_of_a_proper_and_complete_maintenance_programme": {
+            "@id": "sustainability:definition_and_implementation_of_a_proper_and_complete_maintenance_programme",
+            "@type": "xsd:boolean"
+        },
+        "maintenance_of_all_sites_buildings_areas_and_equipment": {
+            "@id": "sustainability:maintenance_of_all_sites_buildings_areas_and_equipment",
+            "@type": "xsd:boolean"
+        },
+        "definition_and_implementation_a_proper_and_complete_cleaning_programme": {
+            "@id": "sustainability:definition_and_implementation_a_proper_and_complete_cleaning_programme",
+            "@type": "xsd:boolean"
+        },
+        "cleaning_of_all_sites_buildings_areas_and_equipment": {
+            "@id": "sustainability:cleaning_of_all_sites_buildings_areas_and_equipment",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_cleaning_and_sanitizing_agents_do_not_cause_any_risk_to_the_safety_of_the_feed": {
+            "@id": "sustainability:assurance_that_cleaning_and_sanitizing_agents_do_not_cause_any_risk_to_the_safety_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "prohibition_to_eat_drink_and_smoke_in_production_storage_areas": {
+            "@id": "sustainability:prohibition_to_eat_drink_and_smoke_in_production_storage_areas",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_cleaning_and_sanitizing_agents_comply_with_legal_aspects": {
+            "@id": "sustainability:assurance_that_cleaning_and_sanitizing_agents_comply_with_legal_aspects",
+            "@type": "xsd:boolean"
+        },
+        "water_for_cleaning_or_applications_where_there_is_a_risk_of_indirect_product_contact_to_meet_specified_animal_food_safety_requirements_relevant_to_the_application": {
+            "@id": "sustainability:water_for_cleaning_or_applications_where_there_is_a_risk_of_indirect_product_contact_to_meet_specified_animal_food_safety_requirements_relevant_to_the_application",
+            "@type": "xsd:boolean"
+        },
+        "definition_and_implementation_of_a_proper_and_pest_control_programme": {
+            "@id": "sustainability:definition_and_implementation_of_a_proper_and_pest_control_programme",
+            "@type": "xsd:boolean"
+        },
+        "qualifications_for_personnel_involved_in_the_execution_of_the_pest_control_program": {
+            "@id": "sustainability:qualifications_for_personnel_involved_in_the_execution_of_the_pest_control_program",
+            "@type": "xsd:boolean"
+        },
+        "training_of_own_personnel_involved_in_the_execution_of_the_pest_control_program": {
+            "@id": "sustainability:training_of_own_personnel_involved_in_the_execution_of_the_pest_control_program",
+            "@type": "xsd:boolean"
+        },
+        "certification_of_external_people_involved_in_the_execution_of_the_pest_control_program": {
+            "@id": "sustainability:certification_of_external_people_involved_in_the_execution_of_the_pest_control_program",
+            "@type": "xsd:boolean"
+        },
+        "keeping_all_sites_buildings_areas_and_equipment_free_of_pests_and_other_animals": {
+            "@id": "sustainability:keeping_all_sites_buildings_areas_and_equipment_free_of_pests_and_other_animals",
+            "@type": "xsd:boolean"
+        },
+        "prevention_of_pest_and_other_animals_to_enter_buildings_and_areas": {
+            "@id": "sustainability:prevention_of_pest_and_other_animals_to_enter_buildings_and_areas",
+            "@type": "xsd:boolean"
+        },
+        "identification_collection_removal_and_disposal_of_waste_in_such_a_way_that_cross_contamination_is_prevented": {
+            "@id": "sustainability:identification_collection_removal_and_disposal_of_waste_in_such_a_way_that_cross_contamination_is_prevented",
+            "@type": "xsd:boolean"
+        },
+        "prevention_of_cross_contamination_with_validated_procedures": {
+            "@id": "sustainability:prevention_of_cross_contamination_with_validated_procedures",
+            "@type": "xsd:boolean"
+        },
+        "provision_of_protective_clothing_equipment_if_there_is_potential_risk_for_cross_contamination": {
+            "@id": "sustainability:provision_of_protective_clothing_equipment_if_there_is_potential_risk_for_cross_contamination",
+            "@type": "xsd:boolean"
+        },
+        "prevention_of_cross_contamination_of_feed_medicines_with_validated_procedures": {
+            "@id": "sustainability:prevention_of_cross_contamination_of_feed_medicines_with_validated_procedures",
+            "@type": "xsd:boolean"
+        },
+        "a_design_construction_and_maintenance_which_is_fit_for_safe_feed_production": {
+            "@id": "sustainability:a_design_construction_and_maintenance_which_is_fit_for_safe_feed_production",
+            "@type": "xsd:boolean"
+        },
+        "facilities_for_eating_and_drinking": {
+            "@id": "sustainability:facilities_for_eating_and_drinking",
+            "@type": "xsd:boolean"
+        },
+        "controlled_access_to_the_site_including_visitors": {
+            "@id": "sustainability:controlled_access_to_the_site_including_visitors",
+            "@type": "xsd:boolean"
+        },
+        "overview_of_all_suppliers_and_services": {
+            "@id": "sustainability:overview_of_all_suppliers_and_services",
+            "@type": "xsd:boolean"
+        },
+        "specifications_of_raw_materials_and_services": {
+            "@id": "sustainability:specifications_of_raw_materials_and_services",
+            "@type": "xsd:boolean"
+        },
+        "specifications_of_suppliers": {
+            "@id": "sustainability:specifications_of_suppliers",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_potential_supplier": {
+            "@id": "sustainability:assessment_of_potential_supplier",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_liability_and_credibility_of_a_supplier": {
+            "@id": "sustainability:assessment_of_liability_and_credibility_of_a_supplier",
+            "@type": "xsd:boolean"
+        },
+        "a_system_to_approve_the_ingredient_supplier_combination": {
+            "@id": "sustainability:a_system_to_approve_the_ingredient_supplier_combination",
+            "@type": "xsd:boolean"
+        },
+        "lay_down_of_agreements_in_a_contract": {
+            "@id": "sustainability:lay_down_of_agreements_in_a_contract",
+            "@type": "xsd:boolean"
+        },
+        "re_assessment_of_suppliers_periodically_supplier_evaluation": {
+            "@id": "sustainability:re_assessment_of_suppliers_periodically_supplier_evaluation",
+            "@type": "xsd:boolean"
+        },
+        "recording_of_all_purchasing_activities": {
+            "@id": "sustainability:recording_of_all_purchasing_activities",
+            "@type": "xsd:boolean"
+        },
+        "establishing_flowcharts_of_the_whole_production_including_reception_of_goods_production_packaging_storage_and_transport": {
+            "@id": "sustainability:establishing_flowcharts_of_the_whole_production_including_reception_of_goods_production_packaging_storage_and_transport",
+            "@type": "xsd:boolean"
+        },
+        "use_of_medicated_rework_only_in_feed_with_the_same_medication_and_in_compliance_with_legal_requirements": {
+            "@id": "sustainability:use_of_medicated_rework_only_in_feed_with_the_same_medication_and_in_compliance_with_legal_requirements",
+            "@type": "xsd:boolean"
+        },
+        "proper_identification_of_rework": {
+            "@id": "sustainability:proper_identification_of_rework",
+            "@type": "xsd:boolean"
+        },
+        "record_usage_of_rework_t_t": {
+            "@id": "sustainability:record_usage_of_rework_t_t",
+            "@type": "xsd:boolean"
+        },
+        "establishing_and_implementation_of_procedures_to_plan_and_control_production": {
+            "@id": "sustainability:establishing_and_implementation_of_procedures_to_plan_and_control_production",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_produced_products_meet_the_specified_criteria_including_the_feed_safety_standards": {
+            "@id": "sustainability:assurance_that_produced_products_meet_the_specified_criteria_including_the_feed_safety_standards",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_potential_risks_related_to_drying_especially_direct_drying_are_identified_and_controlled": {
+            "@id": "sustainability:assurance_that_potential_risks_related_to_drying_especially_direct_drying_are_identified_and_controlled",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_defined_risks_related_to_dosing_weighing_mixing_pelleting_extruding_expanding_are_identified_and_controlled": {
+            "@id": "sustainability:assurance_that_defined_risks_related_to_dosing_weighing_mixing_pelleting_extruding_expanding_are_identified_and_controlled",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_validated_procedures_including_measurements_are_in_place_to_control_unintended_cross_contamination_of_products_that_affect_the_safety_of_the_feed": {
+            "@id": "sustainability:assurance_that_validated_procedures_including_measurements_are_in_place_to_control_unintended_cross_contamination_of_products_that_affect_the_safety_of_the_feed",
+            "@type": "xsd:boolean"
+        },
+        "establishing_a_procedure_and_implement_measurements_to_define_if_and_how_the_rework_shall_be_used_before_the_rework_is_entering_the_site": {
+            "@id": "sustainability:establishing_a_procedure_and_implement_measurements_to_define_if_and_how_the_rework_shall_be_used_before_the_rework_is_entering_the_site",
+            "@type": "xsd:boolean"
+        },
+        "correct_handling_and_use_of_rework_related_to_safety_traceability_and_legal_requirements": {
+            "@id": "sustainability:correct_handling_and_use_of_rework_related_to_safety_traceability_and_legal_requirements",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_the_outsourced_activity": {
+            "@id": "sustainability:specification_of_the_outsourced_activity",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_potential_contractor": {
+            "@id": "sustainability:assessment_of_potential_contractor",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_liability_and_credibility_of_a_contractor": {
+            "@id": "sustainability:assessment_of_liability_and_credibility_of_a_contractor",
+            "@type": "xsd:boolean"
+        },
+        "re_assessment_of_suppliers_periodically": {
+            "@id": "sustainability:re_assessment_of_suppliers_periodically",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_analysing_products_produced_by_services_provided_by_contractors_in_relation_to_agreed_specifications": {
+            "@id": "sustainability:monitoring_analysing_products_produced_by_services_provided_by_contractors_in_relation_to_agreed_specifications",
+            "@type": "xsd:boolean"
+        },
+        "evaluation_of_contractors_and_their_services_related_to_defined_agreements": {
+            "@id": "sustainability:evaluation_of_contractors_and_their_services_related_to_defined_agreements",
+            "@type": "xsd:boolean"
+        },
+        "establish_procedures_to_ensure_that_formulation_of_diets_does_not_introduce_any_feed_safety_risks": {
+            "@id": "sustainability:establish_procedures_to_ensure_that_formulation_of_diets_does_not_introduce_any_feed_safety_risks",
+            "@type": "xsd:boolean"
+        },
+        "establish_procedure_how_to_communicate_formula_s_to_the_production_area_in_such_a_way_that_there_is_no_feed_safety_risk_introduced": {
+            "@id": "sustainability:establish_procedure_how_to_communicate_formula_s_to_the_production_area_in_such_a_way_that_there_is_no_feed_safety_risk_introduced",
+            "@type": "xsd:boolean"
+        },
+        "labeling_of_products_in_compliance_with_applicable_legal_requirements": {
+            "@id": "sustainability:labeling_of_products_in_compliance_with_applicable_legal_requirements",
+            "@type": "xsd:boolean"
+        },
+        "registration_and_managing_non_conformities": {
+            "@id": "sustainability:registration_and_managing_non_conformities",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_non_conformities_to_define_if_they_need_follow_up": {
+            "@id": "sustainability:assessment_of_non_conformities_to_define_if_they_need_follow_up",
+            "@type": "xsd:boolean"
+        },
+        "immediate_prevention_of_the_production_and_delivery_of_a_product_when_critical_limits_are_exceeded": {
+            "@id": "sustainability:immediate_prevention_of_the_production_and_delivery_of_a_product_when_critical_limits_are_exceeded",
+            "@type": "xsd:boolean"
+        },
+        "prevention_of_unintended_use_of_materials_that_do_not_comply_with_relevant_specifications": {
+            "@id": "sustainability:prevention_of_unintended_use_of_materials_that_do_not_comply_with_relevant_specifications",
+            "@type": "xsd:boolean"
+        },
+        "elimination_of_the_cause_of_the_non_conformity": {
+            "@id": "sustainability:elimination_of_the_cause_of_the_non_conformity",
+            "@type": "xsd:boolean"
+        },
+        "periodically_evaluation_of_non_conformities_and_corrective_action_for_improvement_of_the_fms": {
+            "@id": "sustainability:periodically_evaluation_of_non_conformities_and_corrective_action_for_improvement_of_the_fms",
+            "@type": "xsd:boolean"
+        },
+        "prevention_non_conformities": {
+            "@id": "sustainability:prevention_non_conformities",
+            "@type": "xsd:boolean"
+        },
+        "establish_management_commitment": {
+            "@id": "sustainability:establish_management_commitment",
+            "@type": "xsd:boolean"
+        },
+        "identification_of_all_potential_hazards": {
+            "@id": "sustainability:identification_of_all_potential_hazards",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_occurrence_and_severity_including_calculation_matrix": {
+            "@id": "sustainability:definition_of_occurrence_and_severity_including_calculation_matrix",
+            "@type": "xsd:boolean"
+        },
+        "conducting_a_hazard_analysis": {
+            "@id": "sustainability:conducting_a_hazard_analysis",
+            "@type": "xsd:boolean"
+        },
+        "likely_occurrence": {
+            "@id": "sustainability:likely_occurrence",
+            "@type": "xsd:boolean"
+        },
+        "severity": {
+            "@id": "sustainability:severity",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_control_measures": {
+            "@id": "sustainability:definition_of_control_measures",
+            "@type": "xsd:boolean"
+        },
+        "determination_of_ccp_s": {
+            "@id": "sustainability:determination_of_ccp_s",
+            "@type": "xsd:boolean"
+        },
+        "establishing_critical_limits": {
+            "@id": "sustainability:establishing_critical_limits",
+            "@type": "xsd:boolean"
+        },
+        "validation_of_the_haccp_by_independent_qualified_personal": {
+            "@id": "sustainability:validation_of_the_haccp_by_independent_qualified_personal",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_every_ccp_is_monitored_and_in_control": {
+            "@id": "sustainability:assurance_that_every_ccp_is_monitored_and_in_control",
+            "@type": "xsd:boolean"
+        },
+        "assembling_a_haccp_team": {
+            "@id": "sustainability:assembling_a_haccp_team",
+            "@type": "xsd:boolean"
+        },
+        "assurance_that_every_other_hazard_is_adequately_monitored": {
+            "@id": "sustainability:assurance_that_every_other_hazard_is_adequately_monitored",
+            "@type": "xsd:boolean"
+        },
+        "responsibilities_methods_frequencies_evaluation_and_follow_up_of_results": {
+            "@id": "sustainability:responsibilities_methods_frequencies_evaluation_and_follow_up_of_results",
+            "@type": "xsd:boolean"
+        },
+        "establishing_corrective_actions": {
+            "@id": "sustainability:establishing_corrective_actions",
+            "@type": "xsd:boolean"
+        },
+        "verification_of_the_haccp_plan_including_frequency": {
+            "@id": "sustainability:verification_of_the_haccp_plan_including_frequency",
+            "@type": "xsd:boolean"
+        },
+        "records_of_data_to_demonstrate_effectiveness_in_controlling_the_hazards": {
+            "@id": "sustainability:records_of_data_to_demonstrate_effectiveness_in_controlling_the_hazards",
+            "@type": "xsd:boolean"
+        },
+        "assessment_whether_and_how_the_haccp_plan_needs_update": {
+            "@id": "sustainability:assessment_whether_and_how_the_haccp_plan_needs_update",
+            "@type": "xsd:boolean"
+        },
+        "validation_of_the_haccp_plan_after_each_update": {
+            "@id": "sustainability:validation_of_the_haccp_plan_after_each_update",
+            "@type": "xsd:boolean"
+        },
+        "appoint_a_haccp_team_leader": {
+            "@id": "sustainability:appoint_a_haccp_team_leader",
+            "@type": "xsd:boolean"
+        },
+        "define_roles_responsibilities_and_mandates": {
+            "@id": "sustainability:define_roles_responsibilities_and_mandates",
+            "@type": "xsd:boolean"
+        },
+        "scope_definition_and_description": {
+            "@id": "sustainability:scope_definition_and_description",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_feed": {
+            "@id": "sustainability:specification_of_feed",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_intended_use": {
+            "@id": "sustainability:specification_of_intended_use",
+            "@type": "xsd:boolean"
+        },
+        "specification_of_the_process_flow_diagram": {
+            "@id": "sustainability:specification_of_the_process_flow_diagram",
+            "@type": "xsd:boolean"
+        },
+        "implementation_of_the_prerequisite_programmes": {
+            "@id": "sustainability:implementation_of_the_prerequisite_programmes",
+            "@type": "xsd:boolean"
+        },
+        "definition_of_all_monitoring_activities_to_demonstrate_control_the_ccp_s": {
+            "@id": "sustainability:definition_of_all_monitoring_activities_to_demonstrate_control_the_ccp_s",
+            "@type": "xsd:boolean"
+        },
+        "establish_a_quarantine_procedure_based_on_risk_assessment": {
+            "@id": "sustainability:establish_a_quarantine_procedure_based_on_risk_assessment",
+            "@type": "xsd:boolean"
+        },
+        "implementation_of_a_release_procedure": {
+            "@id": "sustainability:implementation_of_a_release_procedure",
+            "@type": "xsd:boolean"
+        },
+        "sampling_procedures_for_incoming_goods_finished_products_and_products_during_production": {
+            "@id": "sustainability:sampling_procedures_for_incoming_goods_finished_products_and_products_during_production",
+            "@type": "xsd:boolean"
+        },
+        "establish_sampling_frequency": {
+            "@id": "sustainability:establish_sampling_frequency",
+            "@type": "xsd:boolean"
+        },
+        "qualifications_for_persons_involved_in_sampling": {
+            "@id": "sustainability:qualifications_for_persons_involved_in_sampling",
+            "@type": "xsd:boolean"
+        },
+        "training_of_personal": {
+            "@id": "sustainability:training_of_personal",
+            "@type": "xsd:boolean"
+        },
+        "sampling_equipment": {
+            "@id": "sustainability:sampling_equipment",
+            "@type": "xsd:boolean"
+        },
+        "sampling_methods": {
+            "@id": "sustainability:sampling_methods",
+            "@type": "xsd:boolean"
+        },
+        "storage_conditions_for_samples": {
+            "@id": "sustainability:storage_conditions_for_samples",
+            "@type": "xsd:boolean"
+        },
+        "minimum_storage_period_for_samples": {
+            "@id": "sustainability:minimum_storage_period_for_samples",
+            "@type": "xsd:boolean"
+        },
+        "verification_of_the_effectiveness_of_the_prp_s": {
+            "@id": "sustainability:verification_of_the_effectiveness_of_the_prp_s",
+            "@type": "xsd:boolean"
+        },
+        "laboratory_general_qualifications": {
+            "@id": "sustainability:laboratory_general_qualifications",
+            "@type": "xsd:boolean"
+        },
+        "accreditation_of_laboratory": {
+            "@id": "sustainability:accreditation_of_laboratory",
+            "@type": "xsd:boolean"
+        },
+        "methods_of_analysis": {
+            "@id": "sustainability:methods_of_analysis",
+            "@type": "xsd:boolean"
+        },
+        "accreditation_of_methods": {
+            "@id": "sustainability:accreditation_of_methods",
+            "@type": "xsd:boolean"
+        },
+        "contracts_to_lay_down_agreements": {
+            "@id": "sustainability:contracts_to_lay_down_agreements",
+            "@type": "xsd:boolean"
+        },
+        "assessment_of_laboratory_and_contracts": {
+            "@id": "sustainability:assessment_of_laboratory_and_contracts",
+            "@type": "xsd:boolean"
+        },
+        "evaluation_of_laboratories": {
+            "@id": "sustainability:evaluation_of_laboratories",
+            "@type": "xsd:boolean"
+        },
+        "proper_working_of_measuring_equipment": {
+            "@id": "sustainability:proper_working_of_measuring_equipment",
+            "@type": "xsd:boolean"
+        },
+        "maintenance_of_measuring_equipment": {
+            "@id": "sustainability:maintenance_of_measuring_equipment",
+            "@type": "xsd:boolean"
+        },
+        "calibration_of_measuring_equipment": {
+            "@id": "sustainability:calibration_of_measuring_equipment",
+            "@type": "xsd:boolean"
+        },
+        "verification_of_the_effectiveness_all_other_procedures": {
+            "@id": "sustainability:verification_of_the_effectiveness_all_other_procedures",
+            "@type": "xsd:boolean"
+        },
+        "record_all_monitoring_results": {
+            "@id": "sustainability:record_all_monitoring_results",
+            "@type": "xsd:boolean"
+        },
+        "analysis_of_all_monitoring_results": {
+            "@id": "sustainability:analysis_of_all_monitoring_results",
+            "@type": "xsd:boolean"
+        },
+        "review_of_the_monitoring_results": {
+            "@id": "sustainability:review_of_the_monitoring_results",
+            "@type": "xsd:boolean"
+        },
+        "establish_monitoring_of_incoming_goods_including_frequency_and_analysis_based_on_risk_assessment": {
+            "@id": "sustainability:establish_monitoring_of_incoming_goods_including_frequency_and_analysis_based_on_risk_assessment",
+            "@type": "xsd:boolean"
+        },
+        "a_check_on_incoming_products_on_compliance_with_product_specification": {
+            "@id": "sustainability:a_check_on_incoming_products_on_compliance_with_product_specification",
+            "@type": "xsd:boolean"
+        },
+        "verification_on_product_characteristics_by_means_of_analysis": {
+            "@id": "sustainability:verification_on_product_characteristics_by_means_of_analysis",
+            "@type": "xsd:boolean"
+        },
+        "ethics_general_policy_or_set_of_principles": {
+            "@id": "sustainability:ethics_general_policy_or_set_of_principles",
+            "@type": "xsd:string"
+        },
+        "anti_bribery_internal_controls_records_keeping_m_e": {
+            "@id": "sustainability:anti_bribery_internal_controls_records_keeping_m_e",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_external_reporting_and_communication": {
+            "@id": "sustainability:anti_bribery_external_reporting_and_communication",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_mitigation_and_corrective_actions": {
+            "@id": "sustainability:anti_bribery_mitigation_and_corrective_actions",
+            "@type": "xsd:boolean"
+        },
+        "transparency_across_types_of_information_obtained_during_audit_discrepancies_between_the_interviews_and_types_of_records": {
+            "@id": "sustainability:transparency_across_types_of_information_obtained_during_audit_discrepancies_between_the_interviews_and_types_of_records",
+            "@type": "xsd:boolean"
+        },
+        "audit_access_general_policy_auditor_s_freedom_of_access_to_facility_grounds_workers_production_areas": {
+            "@id": "sustainability:audit_access_general_policy_auditor_s_freedom_of_access_to_facility_grounds_workers_production_areas",
+            "@type": "xsd:boolean"
+        },
+        "denial_of_audit_access_auditor_prevented_from_fulfilling_full_scope_audit_requirements": {
+            "@id": "sustainability:denial_of_audit_access_auditor_prevented_from_fulfilling_full_scope_audit_requirements",
+            "@type": "xsd:boolean"
+        },
+        "monitoring_following_up_on_bribery_corruption_allegations": {
+            "@id": "sustainability:monitoring_following_up_on_bribery_corruption_allegations",
+            "@type": "xsd:boolean"
+        },
+        "records_keeping_practices_allegations_fraud_grievances_historical_fines": {
+            "@id": "sustainability:records_keeping_practices_allegations_fraud_grievances_historical_fines",
+            "@type": "xsd:boolean"
+        },
+        "verification_of_business_license_and_legality_of_activities_settlement": {
+            "@id": "sustainability:verification_of_business_license_and_legality_of_activities_settlement",
+            "@type": "xsd:boolean"
+        },
+        "intellectual_property_or_customer_information_protection": {
+            "@id": "sustainability:intellectual_property_or_customer_information_protection",
+            "@type": "xsd:boolean"
+        },
+        "corruption_bribery_prevention": {
+            "@id": "sustainability:corruption_bribery_prevention",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_procedures_and_risk_assessment": {
+            "@id": "sustainability:anti_bribery_procedures_and_risk_assessment",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_political_contributions": {
+            "@id": "sustainability:anti_bribery_political_contributions",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_charitable_contributions_and_sponsorships": {
+            "@id": "sustainability:anti_bribery_charitable_contributions_and_sponsorships",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_facilitation_payments": {
+            "@id": "sustainability:anti_bribery_facilitation_payments",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_gifts_hospitality_and_expenses": {
+            "@id": "sustainability:anti_bribery_gifts_hospitality_and_expenses",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_due_diligence_assessment_of_business_partners_incl_subsidiaries_and_contractors": {
+            "@id": "sustainability:anti_bribery_due_diligence_assessment_of_business_partners_incl_subsidiaries_and_contractors",
+            "@type": "xsd:boolean"
+        },
+        "anti_bribery_staff_workers_awareness_training_and_support": {
+            "@id": "sustainability:anti_bribery_staff_workers_awareness_training_and_support",
+            "@type": "xsd:boolean"
+        },
+        "compliance_to_international_conventions_is_required_and_assessed_regardless_of_official_ratification_by_the_country_of_operations": {
+            "@id": "sustainability:compliance_to_international_conventions_is_required_and_assessed_regardless_of_official_ratification_by_the_country_of_operations",
+            "@type": "xsd:boolean"
+        },
+        "compliance_to_national_and_regional_environmental_laws_and_regulations": {
+            "@id": "sustainability:compliance_to_national_and_regional_environmental_laws_and_regulations",
+            "@type": "sustainability:ComplianceToNationalAndRegionalEnvironmentalLawsAndRegulations"
+        },
+        "explicit_policy_or_set_of_criteria_addressing_cultural_and_religion_rights": {
+            "@id": "sustainability:explicit_policy_or_set_of_criteria_addressing_cultural_and_religion_rights",
+            "@type": "xsd:boolean"
+        },
+        "obligation_to_comply_with_relevant_local_regional_and_national_laws_and_regulations_including_legal_land_tenure_title_having_legal_rights_to_use_the_production_or_management_unit": {
+            "@id": "sustainability:obligation_to_comply_with_relevant_local_regional_and_national_laws_and_regulations_including_legal_land_tenure_title_having_legal_rights_to_use_the_production_or_management_unit",
+            "@type": "xsd:boolean"
+        },
+        "compliance_with_local_zoning_and_protected_or_heritage_area_regulations_and_laws": {
+            "@id": "sustainability:compliance_with_local_zoning_and_protected_or_heritage_area_regulations_and_laws",
+            "@type": "xsd:boolean"
+        }
+    }
+}
