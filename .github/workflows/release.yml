@@ -42,5 +42,5 @@ jobs:
     - name: "Build Site"
       run: bundle exec jekyll build --config _config.yml
     - name: "Deploy to AWS S3"
-      run: aws s3 sync ./_site/ s3://uncefact-vocabulary-mock --delete --cache-control max-age=604800
+      run: aws s3 sync ./_site/ s3://uncefact-vocabulary-mock --delete --exclude "sustainability/*" --cache-control max-age=604800
     
