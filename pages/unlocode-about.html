@@ -1,49 +1,33 @@
 ---
 title: About
-permalink: about
+permalink: unlocode-about
 type: default
-class: white
+class: white unlocode
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UN/CEFACT Web Vocabulary</h1>
+    <h1 class="home-content__title">UN/CEFACT Web Vocabularies</h1>
     <p class="home-content__description">The UN/CEFACT Web Vocabulary is a linked data representation of the UN/CEFACT
         Buy-Ship-Pay Reference Data Model.</p>
-    <div class="search-block">
-        <form action="{{ '/search' | prepend: site.baseurl }}" method="get" class="search-block">
-            <div class="search-block__container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" class="search-block__icon">
-                    <g fill="none" fill-rule="evenodd" stroke="#4C4845" stroke-width="1.5"
-                       transform="rotate(-45 18.328 7.257)">
-                        <ellipse cx="10.5" cy="10.471" rx="9.75" ry="9.721"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.481 20.942V25"/>
-                    </g>
-                </svg>
-                <input type="text" name="q" class="search-block__field" value="" placeholder="Enter Classes and more…">
-                <button class="search-block__submit" type="submit">Search</button>
-            </div>
-        </form>
-    </div>
     <div class="home-content__inner">
         <ul class="browse-types">
             <li class="browse-type browse-types__item">
-                <a href="{{ 'classes' | absolute_url }}" class="browse-type__title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20">
+                <a href="{{ 'unlocode-countries' | absolute_url }}" class="browse-type__title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                         <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
                            stroke-linejoin="round"
                            stroke-width="1.2">
-                            <path d="m8.816 18.867 6.71-4.88c.143-.116.268-.229.347-.389.08-.16.127-.33.127-.49v-8.48a.44.44 0 0 0-.237-.4.497.497 0 0 0-.474 0L8.5 9.188c-.133.092-.274.22-.353.38-.08.16-.12.34-.12.5v8.48c0 .16.078.32.236.4.237.08.395.08.553-.08ZM8.184 1l-6.79 5.12c-.078.08-.236.24-.315.4C1 6.68 1 7.08 1 7.08v8.56"/>
-                            <path d="m11.737 2.454-6.79 5.2c-.079.08-.236.24-.315.4-.08.16-.08.48-.08.48v8.64"/>
+                            <path d="M1.383 19V1M1.384 15.096l2.469-.777a7.387 7.387 0 0 1 6.158.8 7.387 7.387 0 0 0 6.011.846l2.339-.683a.897.897 0 0 0 .639-.866V4.118a.908.908 0 0 0-.35-.718.867.867 0 0 0-.773-.148l-1.855.542a7.384 7.384 0 0 1-6.01-.845 7.39 7.39 0 0 0-6.16-.8l-2.468.775v12.172Z"/>
                         </g>
                     </svg>
-                    Classes
+                    Countries
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
-                    <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
+                    <a class="browse-type__action" href="{{ 'unlocode-countries' | absolute_url }}">Browse Countries</a>
                 </div>
             </li>
             <li class="browse-type browse-types__item">
-                <a href="{{ 'properties' | absolute_url }}" class="browse-type__title">
+                <a href="{{ 'unlocode-subdivisions' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                         <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
                            stroke-linejoin="round"
@@ -52,15 +36,15 @@ class: white
                             <path d="M18.788 4.161 10 7.236 1.212 4.161"/>
                         </g>
                     </svg>
-                    Properties
+                    Country Subdivisions
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
-                    <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
+                    <a class="browse-type__action" href="{{ 'unlocode-subdivisions' | absolute_url }}">Browse Country Subdivisions</a>
                 </div>
             </li>
             <li class="browse-type browse-types__item">
-                <a href="{{ 'code-lists' | absolute_url }}" class="browse-type__title">
+                <a href="{{ 'unlocode-functions' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20">
                         <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
                            stroke-linejoin="round"
@@ -69,29 +53,13 @@ class: white
                             <path d="m13.149 7.107 4.109 4.05-4.109 4.05M9.851 7.107l-4.109 4.05 4.109 4.05"/>
                         </g>
                     </svg>
-                    Code Lists
+                    Functions
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
-                    <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
+                    <a class="browse-type__action" href="{{ 'unlocode-functions' | absolute_url }}">Browse Functions</a>
                 </div>
             </li>
-            <!--li class="browse-type browse-types__item">
-                <a href="{{ 'locodes' | absolute_url }}" class="browse-type__title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                        <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
-                           stroke-linejoin="round"
-                           stroke-width="1.2">
-                            <path d="M1.383 19V1M1.384 15.096l2.469-.777a7.387 7.387 0 0 1 6.158.8 7.387 7.387 0 0 0 6.011.846l2.339-.683a.897.897 0 0 0 .639-.866V4.118a.908.908 0 0 0-.35-.718.867.867 0 0 0-.773-.148l-1.855.542a7.384 7.384 0 0 1-6.01-.845 7.39 7.39 0 0 0-6.16-.8l-2.468.775v12.172Z"/>
-                        </g>
-                    </svg>
-                    Taxonomies
-                </a>
-                <div class="browse-type__info">
-                    <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
-                    <a class="browse-type__action" href="/">Browse Taxonomies</a>
-                </div>
-            </li-->
         </ul>
 
         <h2 class="home-content__subtitle">Contexts</h2>

@@ -2,12 +2,10 @@
 title: Code List
 permalink: code-lists
 type: code-list
+layout: table
 ---
 
-<h1>Code list</h1>
-<p class="page-description">All code lists</p>
-
-<table>
+<table class="table-grid">
     <thead>
         <tr>
             <th>URI</th>
@@ -21,11 +19,11 @@ type: code-list
                 {% assign referenceUrl = codeList | absolute_url | split: "."  %}
                 <tr>
                     <td>
-                        <a href="{{ referenceUrl[0] }}">
+                        <a href="{{ referenceUrl[0] }}" title="{%- if codeList.label -%}{{ codeList.label }}{%- else -%}{{ codeListJson.uri }}{%- endif -%}">
                             {%- if codeList.label -%}
-                                {{ codeList.label }}
+                                {{ codeList.label | truncate: 40 }}
                             {%- else -%}
-                                {{ codeListJson.uri }}
+                                {{ codeListJson.uri | truncate: 40 }}
                             {%- endif -%}
                         </a>
                     </td>

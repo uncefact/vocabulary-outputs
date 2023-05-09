@@ -1,15 +1,36 @@
 {% assign pageType = page.type %}
 <header class="header">
     <div class="header__content">
-        <a href="{{site.baseurl}}/" class="header__logo">
-            <img src="{{site.baseurl}}/images/logo.svg" class="header__logo-img" alt="">
-        </a>
-        {% include search.html %}
-        <nav class="main-nav">
-            <a class="main-nav__link{% if pageType == 'default' %} main-nav__link--active{% endif %}" href="{{ 'about' | absolute_url }}">About</a>
-            <a class="main-nav__link{% if pageType == 'class' %} main-nav__link--active{% endif %}" href="{{ 'classes' | absolute_url }}">Classes</a>
-            <a class="main-nav__link{% if pageType == 'property' %} main-nav__link--active{% endif %}" href="{{ 'properties' | absolute_url }}">Properties</a>
-            <a class="main-nav__link{% if pageType == 'code-list' %} main-nav__link--active{% endif %}" href="{{ 'code-lists' | absolute_url }}">Code Lists</a>
-        </nav>
+        <div class="header__logo">
+            <a href="{{site.baseurl}}/" class="header__logo-link">
+                <img src="{{site.baseurl}}/images/logo.svg" class="header__logo-img" alt="">
+            </a>
+        </div>
+        <div class="header__nav">
+            {% include search.html %}
+            <div class="main-nav" id="js-main-nav">
+                <button type="button" class="mobile-nav-btn" id="js-mobile-nav-toggle">
+                    <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                           stroke-linecap="round" stroke-linejoin="round">
+                            <g id="Mobile---Header" transform="translate(-341.000000, -38.000000)" stroke="#4C4845"
+                               stroke-width="2">
+                                <g id="Navigation-Icon" transform="translate(342.000000, 39.000000)">
+                                    <line x1="21" y1="0.954545455" x2="0" y2="0.954545455" id="Path"></line>
+                                    <line x1="21" y1="10.5" x2="0" y2="10.5" id="Path"></line>
+                                    <line x1="21" y1="20.0454545" x2="0" y2="20.0454545" id="Path"></line>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+                <nav class="main-nav__menu">
+                    <a class="main-nav__link{% if pageType == 'class' %} main-nav__link--active{% endif %}" href="{{ 'classes' | absolute_url }}">Classes</a>
+                    <a class="main-nav__link{% if pageType == 'property' %} main-nav__link--active{% endif %}" href="{{ 'properties' | absolute_url }}">Properties</a>
+                    <a class="main-nav__link{% if pageType == 'code-list' %} main-nav__link--active{% endif %}" href="{{ 'code-lists' | absolute_url }}">Code Lists</a>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>

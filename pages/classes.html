@@ -2,12 +2,10 @@
 title: Classes
 permalink: classes
 type: class
+layout: table
 ---
 
-<h1>Classes</h1>
-<p class="page-description">A list of all classes</p>
-
-<table>
+<table class="table-grid">
     <thead>
         <tr>
             <th>URI</th>
@@ -19,7 +17,7 @@ type: class
             {%- assign classJson = site.data[class.jsonid] -%}
             {% assign referenceUrl = class | absolute_url | split: "."  %}
             <tr>
-                <td><a href="{{ referenceUrl[0] }}">{{ classJson.uri }}</a></td>
+                <td><a href="{{ referenceUrl[0] }}" title="{{ classJson.uri }}">{{ classJson.uri | truncate: 40 }}</a></td>
                 <td>
                     {{ classJson.comment }}
                 </td>
@@ -27,3 +25,6 @@ type: class
         {% endfor %}
     </tbody>
 </table>
+
+
+

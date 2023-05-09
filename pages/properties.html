@@ -2,12 +2,10 @@
 title: Properties
 permalink: properties
 type: property
+layout: table
 ---
 
-<h1>Properties</h1>
-<p class="page-description">A list of all properties</p>
-
-<table>
+<table class="table-grid">
     <thead>
         <tr>
             <th>URI</th>
@@ -21,7 +19,13 @@ type: property
         {%- assign propertyMappingKey = propertyUrl[0] -%}
 
         <tr>
-            <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ propertyJson.uri }}</a></td>
+            <td>
+                <a {% if propertyMappingKey !='unece' %}target="_blank" {% endif %}
+                   href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}"
+                   title="{{ propertyJson.uri }}">
+                    {{ propertyJson.uri | truncate: 40 }}
+                </a>
+            </td>
             <td>{{ propertyJson.comment }}</td>
         </tr>
     {% endfor %}

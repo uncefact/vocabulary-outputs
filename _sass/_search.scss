@@ -1,31 +1,69 @@
 .search-form {
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 8px;
+
+  &__toggle-btn{
+    border: 0;
+    background: none;
+
+    @media screen and (min-width: $tablet-md) {
+      padding-top: 5px;
+    }
+  }
 
   &__container {
-    position: relative;
-    display: flex;
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+  }
+
+  &--active &__container {
+    display: block;
   }
 
   &__field {
-    border: 1px solid $app-blue;
-    padding: 0 50px 0 10px;
-    height: 34px;
+    border: 1px solid #4C4845;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0 50px 0 50px;
+    height: 43px;
+
+    @media screen and (min-width: $tablet-md) {
+      min-width: 500px;
+    }
   }
 
-  &__action {
+  &__submit {
     position: absolute;
-    right: 0;
-    padding: 5px;
+    left: 0;
     top: 0;
+    display: flex;
+    height: 43px;
+    align-items: center;
+    padding: 2px 5px 0 5px;
     background: none;
     border: 0;
+  }
 
-    &-icon {
-      width: 24px;
-      height: 24px;
-      fill: $app-blue;
+  &__close {
+    position: absolute;
+    display: flex;
+    height: 43px;
+    align-items: center;
+    border: 0;
+    background: none;
+    right: 0;
+    padding: 0 14px;
+    top: 0;
+  }
+
+  &__mobile-btn {
+    border: 0;
+    background: none;
+    display: none;
+
+    @media screen and (max-width: $tablet-md) {
+      display: block;
     }
   }
 }
@@ -62,17 +100,29 @@
 }
 
 .search-results {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
 
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin: 0 0 20px 0;
+
+    @media screen and (max-width: $tablet-md - 1) {
+      flex-direction: column;
+    }
   }
 
   & &__title {
     margin: 0;
     padding: 0;
+
+    &-value {
+      color: #006AB1;
+    }
   }
 
   & &__list {
@@ -83,16 +133,31 @@
   }
 
   & &__label {
-    padding: 0;
 
     a {
-      padding: 8px 6px;
       font-size: 16px;
 
       &:hover {
         background: none;
         text-decoration: underline;
       }
+    }
+  }
+
+  &__filter {
+    &-label {
+      font-size: 16px;
+      color: $app-text;
+      padding-right: 10px;
+    }
+
+    &-input {
+      height: 40px;
+      border: 1px solid $border-color;
+      color: $app-text;
+      font-size: 14px;
+      padding: 4px 10px;
+      border-radius: 10px;
     }
   }
 
@@ -122,12 +187,17 @@
     li {
       margin: 0 3px;
       padding: 0;
+
+      &.active {
+        background: $app-light-blue;
+        color: $app-text;
+      }
     }
 
     a {
       display: block;
-      font-size: 14px;
-      padding: 5px 10px;
+      font-size: 16px;
+      padding: 7px 12px;
       border: 1px solid $app-blue;
 
       &:hover {
@@ -146,6 +216,10 @@
 
   &__loading {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
   }
 
   .svg-loader {
@@ -163,7 +237,6 @@
     fill: #d8d8d2;
     animation: flyby 1s infinite ease;
   }
-
 
   @keyframes search {
     0% {
@@ -193,20 +266,62 @@
   }
 }
 
-.search-filter {
+.search-block {
   display: flex;
+  justify-content: center;
+  width: 100%;
 
-  &__control {
-    height: 28px;
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: 645px;
+    margin: 0 0 17px 0;
+
+    @media screen and (min-width: $tablet-md) {
+      margin-bottom: 46px;
+    }
   }
 
-  &__item {
+  &__field {
+    height: 48px;
+    border: 1px solid #4C4845;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 0 75px 0 50px;
+    width: 100%;
+
+    @media screen and (min-width: $tablet-md) {
+      height: 60px;
+    }
+  }
+
+  &__icon {
+    pointer-events: none;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0;
+    top: 0;
     display: flex;
     align-items: center;
-    margin: 0 0 0 15px;
-  }
+    justify-content: center;
+    height: 48px;
+    width: 90px;
+    color: #fff;
+    background: #006AB1;
+    border: 1px solid #006AB1;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
 
-  &__label {
-    margin: 0 5px 0 0;
+    @media screen and (min-width: $tablet-md) {
+      height: 60px;
+    }
   }
 }

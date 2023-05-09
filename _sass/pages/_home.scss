@@ -1,0 +1,162 @@
+.home-content {
+  color: #232221;
+
+  &__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 40px 0 6px 0;
+
+    @media screen and (min-width: $tablet-md) {
+      font-size: 37px;
+      margin: 90px 0 12px 0;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    max-width: 645px;
+    margin: 0 auto 20px auto;
+
+    @media screen and (min-width: $tablet-md) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__inner {
+    max-width: 918px;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    margin: 17px 0 25px 0;
+
+    @media screen and (min-width: $tablet-md) {
+      margin-top: 35px;
+    }
+  }
+}
+
+
+.browse-types {
+  list-style: none;
+  margin: 0;
+
+  @media screen and (min-width: $tablet-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet-md) {
+      width: calc(33% - 20px);
+    }
+  }
+}
+
+.browse-type {
+  background: #f5f9fb;
+  border-radius: 10px;
+  margin: 0 0 8px 0;
+  padding: 0;
+
+  @media screen and (min-width: $tablet-md) {
+    padding: 15px 0 0 0;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 75px 0 49px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $app-text;
+
+    @media screen and (min-width: $tablet-md) {
+      pointer-events: none;
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 500;
+      padding: 0 0 0 59px;
+    }
+
+    svg {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @media screen and (min-width: $tablet-md) {
+        left: 20px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      border: solid #006AB1;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      transform: rotate(-45deg);
+      padding: 3px;
+      right: 20px;
+
+      @media screen and (min-width: $tablet-md) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__info {
+    display: none;
+
+    @media screen and (min-width: $tablet-md) {
+      display: block;
+      padding: 15px 20px 15px 20px;
+    }
+  }
+
+  &__description {
+    @media screen and (min-width: $tablet-md) {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 300;
+      margin: 0 0 11px 0;
+    }
+  }
+
+  &__action {
+    @media screen and (min-width: $tablet-md) {
+      font-size: 14px;
+      line-height: 22px;
+      color: #006AB1;
+      display: inline-block;
+      position: relative;
+      padding: 4px 15px 4px 0;
+
+      &:after {
+        content: '';
+        position: absolute;
+        border: solid #006AB1;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        transform: rotate(-45deg);
+        padding: 3px;
+        right: 0;
+        top: 11px;
+      }
+    }
+  }
+}
