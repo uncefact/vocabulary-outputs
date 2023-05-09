@@ -32,4 +32,15 @@ jobs:
         zipBall: false
         extract: false
 
+    - name: snapshot PR
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: "chore: update UN/LOCODEs vocabulary"
+        delete-branch: true
+        title: 'chore: update UN/LOCODEs vocabulary'
+        body: |
+          Updates UN/LOCODEs JSON-LD vocabulary published as an artifact as a part of unece/codes-locode release
+        base: 'main'
+        branch: create-pull-request/unlocode-vocabularies
+        draft: true
 
