@@ -8,7 +8,8 @@ name: Update UN/LOCODEs vocabulary files
 
 on:
   # Runs on pull requests against main branch
-  workflow_dispatch:
+  repository_dispatch:
+    types: [ 'update-unlocodes' ]
 
 jobs:
   # Build job
