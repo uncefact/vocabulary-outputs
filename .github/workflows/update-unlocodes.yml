@@ -1,0 +1,35 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# Workflow to update UN/LOCODEs vocabulary from uncefact/codes-locode repo
+name: Update UN/LOCODEs vocabulary files
+
+on:
+  # Runs on pull requests against main branch
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: robinraju/release-downloader@v1.8
+      with:
+        repository: "uncefact/codes-locode"
+        latest: true
+        fileName: "*.jsonld"
+        tarBall: false
+        zipBall: false
+        extract: false
+
+
