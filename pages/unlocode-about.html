@@ -26,6 +26,11 @@ hideMenu: true
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
                     <a class="browse-type__action" href="{{ 'unlocode-countries' | absolute_url }}">Browse Countries</a>
                 </div>
+                {% if site.versions.un-locodes %}
+                    <span class="browse-type__version">
+                        {{ site.versions.un-locodes }}
+                    </span>
+                {% endif %}
             </li>
             <li class="browse-type browse-types__item">
                 <a href="{{ 'unlocode-subdivisions' | absolute_url }}" class="browse-type__title">
@@ -43,6 +48,11 @@ hideMenu: true
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
                     <a class="browse-type__action" href="{{ 'unlocode-subdivisions' | absolute_url }}">Browse Country Subdivisions</a>
                 </div>
+                {% if site.versions.un-locodes %}
+                    <span class="browse-type__version">
+                        {{ site.versions.un-locodes }}
+                    </span>
+                {% endif %}
             </li>
             <li class="browse-type browse-types__item">
                 <a href="{{ 'unlocode-functions' | absolute_url }}" class="browse-type__title">
@@ -60,6 +70,11 @@ hideMenu: true
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
                     <a class="browse-type__action" href="{{ 'unlocode-functions' | absolute_url }}">Browse Functions</a>
                 </div>
+                {% if site.versions.un-locodes %}
+                    <span class="browse-type__version">
+                        {{ site.versions.un-locodes }}
+                    </span>
+                {% endif %}
             </li>
         </ul>
 

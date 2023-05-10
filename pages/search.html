@@ -8,16 +8,32 @@ type: default
     <div class="search-results__top">
         <h1 class="search-results__title">Search results for: <span class="search-results__title-value">“<span id="js-search-text"></span>”</span></h1>
         <div class="search-results__filter filter">
-            <label class="search-results__filter-label" for="search-filter">Filter: </label>
-            <input type="search" id="search-filter" class="search-results__filter-input js-search-filter" />
+            <div class="search-results__filter search-filter">
+                <div class="search-filter__item">
+                    <label for="search-filter" class="search-filter__label">Filter:</label>
+                    <input type="search" id="search-filter" class="search-filter__control search-results__filter-input js-search-filter" />
+                </div>
+                <div class="search-filter__item">
+                    <label for="item_type" class="search-filter__label">Type:</label>
+                    <select name="type" id="item_type" class="search-filter__control">
+                        <option value="all">All</option>
+                        <option>Class</option>
+                        <option>Data Property</option>
+                        <option>Object Property</option>
+                        <option>Code List</option>
+                        <option>Code List Value</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
     <table class="table-grid search-results__list" id="js-table-results" style="display: none;">
         <thead id="js-table-results-head">
-            <tr>
-                <th>Label</th>
-                <th>Comment</th>
-            </tr>
+        <tr>
+            <th>Label</th>
+            <th>Type</th>
+            <th>Comment</th>
+        </tr>
         </thead>
         <tbody class="list"></tbody>
     </table>
@@ -42,5 +58,3 @@ type: default
 </div>
 <script src="{{ "/js/list.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>
-
-

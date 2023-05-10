@@ -1,7 +1,7 @@
 .search-form {
   display: flex;
 
-  &__toggle-btn{
+  &__toggle-btn {
     border: 0;
     background: none;
 
@@ -141,23 +141,6 @@
         background: none;
         text-decoration: underline;
       }
-    }
-  }
-
-  &__filter {
-    &-label {
-      font-size: 16px;
-      color: $app-text;
-      padding-right: 10px;
-    }
-
-    &-input {
-      height: 40px;
-      border: 1px solid $border-color;
-      color: $app-text;
-      font-size: 14px;
-      padding: 4px 10px;
-      border-radius: 10px;
     }
   }
 
@@ -323,5 +306,30 @@
     @media screen and (min-width: $tablet-md) {
       height: 60px;
     }
+  }
+}
+
+.search-filter {
+  display: flex;
+
+  &__label {
+    font-size: 16px;
+    color: $app-text;
+    padding-right: 10px;
+  }
+
+  &__control {
+    height: 40px;
+    border: 1px solid $border-color;
+    color: $app-text;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 15px;
   }
 }

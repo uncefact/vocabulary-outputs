@@ -41,6 +41,11 @@ class: white
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
                     <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
                 </div>
+                {% if site.versions.bsp %}
+                    <span class="browse-type__version">
+                        {{ site.versions.bsp }}
+                    </span>
+                {% endif %}
             </li>
             <li class="browse-type browse-types__item">
                 <a href="{{ 'properties' | absolute_url }}" class="browse-type__title">
@@ -58,6 +63,11 @@ class: white
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
                     <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
                 </div>
+                {% if site.versions.bsp %}
+                    <span class="browse-type__version">
+                        {{ site.versions.bsp }}
+                    </span>
+                {% endif %}
             </li>
             <li class="browse-type browse-types__item">
                 <a href="{{ 'code-lists' | absolute_url }}" class="browse-type__title">
@@ -75,23 +85,12 @@ class: white
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
                     <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
                 </div>
+                {% if site.versions.bsp %}
+                    <span class="browse-type__version">
+                        {{ site.versions.bsp }}
+                    </span>
+                {% endif %}
             </li>
-            <!--li class="browse-type browse-types__item">
-                <a href="{{ 'locodes' | absolute_url }}" class="browse-type__title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                        <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
-                           stroke-linejoin="round"
-                           stroke-width="1.2">
-                            <path d="M1.383 19V1M1.384 15.096l2.469-.777a7.387 7.387 0 0 1 6.158.8 7.387 7.387 0 0 0 6.011.846l2.339-.683a.897.897 0 0 0 .639-.866V4.118a.908.908 0 0 0-.35-.718.867.867 0 0 0-.773-.148l-1.855.542a7.384 7.384 0 0 1-6.01-.845 7.39 7.39 0 0 0-6.16-.8l-2.468.775v12.172Z"/>
-                        </g>
-                    </svg>
-                    Taxonomies
-                </a>
-                <div class="browse-type__info">
-                    <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
-                    <a class="browse-type__action" href="/">Browse Taxonomies</a>
-                </div>
-            </li-->
         </ul>
 
         <h2 class="home-content__subtitle">Contexts</h2>
