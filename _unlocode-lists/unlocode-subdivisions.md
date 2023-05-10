@@ -3,7 +3,6 @@ title: UN/LOCODE Country Subdivisions
 permalink: unlocode-subdivisions
 jsonid: unlocode-subdivisions
 label: UN/LOCODE Country Subdivisions
-comment: desc
 columns:
   - 
     title: Label

@@ -6,8 +6,8 @@ class: white unlocode
 hideMenu: true
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UN/CEFACT Web Vocabularies</h1>
-    <p class="home-content__description">The UN/CEFACT Web Vocabulary is a linked data representation of the UN/CEFACT
+    <h1 class="home-content__title">UN/LOCODEs Web Vocabulary</h1>
+    <p class="home-content__description">The UN/LOCODE Web Vocabulary is a linked data representation of the UN/CEFACT
         Buy-Ship-Pay Reference Data Model.</p>
     <div class="home-content__inner">
         <ul class="browse-types">
@@ -23,7 +23,7 @@ hideMenu: true
                     Countries
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
+                    <p class="browse-type__description">List of UN/LOCODE Countries</p>
                     <a class="browse-type__action" href="{{ 'unlocode-countries' | absolute_url }}">Browse Countries</a>
                 </div>
                 {% if site.versions.un-locodes %}
@@ -45,7 +45,7 @@ hideMenu: true
                     Country Subdivisions
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
+                    <p class="browse-type__description">List of UN/LOCODE Country Subdivisions</p>
                     <a class="browse-type__action" href="{{ 'unlocode-subdivisions' | absolute_url }}">Browse Country Subdivisions</a>
                 </div>
                 {% if site.versions.un-locodes %}
@@ -67,7 +67,7 @@ hideMenu: true
                     Functions
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
+                    <p class="browse-type__description">List of UN/LOCODE Functions</p>
                     <a class="browse-type__action" href="{{ 'unlocode-functions' | absolute_url }}">Browse Functions</a>
                 </div>
                 {% if site.versions.un-locodes %}
@@ -81,28 +81,15 @@ hideMenu: true
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="https://vocabulary.uncefact.org/unece-context.jsonld">https://vocabulary.uncefact.org/unece-context.jsonld</a>
-        </p>
-        <p>
             <a class="link-box" href="https://vocabulary.uncefact.org/unlocode-vocab-context.jsonld">https://vocabulary.uncefact.org/unlocode-vocab-context.jsonld</a>
         </p>
 
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
             <div class="copy-box__text" id="content-negotiation-1">
-                curl https://vocabulary.uncefact.org/ -H 'Accept: application/ld+json'
-            </div>
-            <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
-                <svg class="copy-box__btn-icon">
-                    <use xlink:href="#duplicate"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="copy-box">
-            <div class="copy-box__text" id="content-negotiation-2">
                 curl https://vocabulary.uncefact.org/unlocode# -H 'Accept: application/ld+json'
             </div>
-            <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-2">
+            <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
                 <svg class="copy-box__btn-icon">
                     <use xlink:href="#duplicate"></use>
                 </svg>
@@ -111,7 +98,7 @@ hideMenu: true
 
         <h2 class="home-content__subtitle">Links</h2>
         <p>
-            <a class="link-box" target="_blank" href="https://unece.org/trade/uncefact/mainstandards">https://unece.org/trade/uncefact/mainstandards</a>
+            <a class="link-box" target="_blank" href="https://unece.org/trade/uncefact/unlocode">https://unece.org/trade/uncefact/unlocode</a>
         </p>
         <p>
             <a class="link-box" target="_blank" href="https://github.com/uncefact">https://github.com/uncefact</a>
