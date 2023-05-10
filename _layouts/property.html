@@ -41,7 +41,7 @@ layout: default
                 {%- assign rangeUrl = range.uri | split: ":" -%}
                 {%- assign mappingKey = rangeUrl[0] -%}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri | truncate: 40 }}</a></td>
                 </tr>
             {%- endfor -%}
         </tbody>
@@ -62,7 +62,7 @@ layout: default
                 {% assign domainUrl = domain.uri | split: ":"  %}
                 {%- assign mappingKey = domainUrl[0] -%}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ domainUrl[1] }}">{{ domain.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ domainUrl[1] }}">{{ domain.uri | truncate: 40 }}</a></td>
                     <td>{{ domain.comment }}</td>
                 </tr>
             {% endfor %}

@@ -49,7 +49,7 @@ layout: default
                 {%- assign mappingKey = typeUrl[0] -%}
                 {%- assign propertyMappingKey = propertyUrl[0] -%}
                 <tr>
-                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri }}</a></td>
+                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri | truncate: 40 }}</a></td>
                     <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
                     <td>{{ property.comment }}</td>
                 </tr>
@@ -75,7 +75,7 @@ layout: default
                 {% assign propertyMappingKey = propertyUrl[0]  %}
                 {% assign mappingKey = typeUrl[0]  %}
                 <tr>
-                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri }}</a></td>
+                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri | truncate: 40 }}</a></td>
                     <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
                     <td>{{ property.comment }}</td>
                 </tr>
@@ -98,7 +98,7 @@ layout: default
                 {% assign referenceUrl = reference.uri | split: ":"  %}
                 {% assign mappingKey = referenceUrl[0]  %}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri | truncate: 40 }}</a></td>
                     <td>{{ reference.comment }}</td>
                 </tr>
             {% endfor %}
