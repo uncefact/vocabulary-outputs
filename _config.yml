@@ -18,6 +18,9 @@ collections:
   code-lists:
     output: true
     permalink: /:name
+  unlocode-lists:
+    output: true
+    permalink: /:name
 
 defaults:
   -
@@ -46,6 +49,13 @@ defaults:
     values:
       layout: "code-list"
       type: "code-list"
+  -
+    scope:
+      path: ""
+      type: "unlocode-lists"
+    values:
+      layout: "code-list"
+      type: "unlocode-list"
 
 sass:
   sourcemap: development
