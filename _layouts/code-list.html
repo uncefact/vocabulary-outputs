@@ -26,7 +26,7 @@ layout: default
     {%- if initialCodeList.seeAlso -%}
         <p>See also the corresponding <a href="{{ initialCodeList.seeAlso }}">class</a></p>
     {%- endif -%}
-    <p id="back-text" style="display: none;">Back to the <a id="back-country-link" href="/unlocode-countries">country</a></p>
+    <p id="back-text" style="display: none;">Back to the <a id="back-country-link" href="/22A/unlocode-countries">country</a></p>
     <script>
         const url = new URL(document.URL);
 
@@ -34,7 +34,7 @@ layout: default
             let countryCode = url.searchParams.get('country').toUpperCase();
             document.getElementById('back-text').style.display = 'block';
             if (countryCode !== '') {
-                document.getElementById('back-country-link').setAttribute('href', "/unlocode-countries#" + countryCode);
+                document.getElementById('back-country-link').setAttribute('href', "/22A/unlocode-countries#" + countryCode);
             }
         }
     </script>
