@@ -1,0 +1,5 @@
+---
+title: an_additional_lifetime_guarantee_for_the_product_beyond_the_legal_obligations
+permalink: an_additional_lifetime_guarantee_for_the_product_beyond_the_legal_obligations.html
+jsonid: an_additional_lifetime_guarantee_for_the_product_beyond_the_legal_obligations
+---

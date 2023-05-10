@@ -1,0 +1,5 @@
+---
+title: human_rights_and_local_communities_general_principle
+permalink: human_rights_and_local_communities_general_principle.html
+jsonid: human_rights_and_local_communities_general_principle
+---

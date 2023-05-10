@@ -1,0 +1,5 @@
+---
+title: activities_not_adversely_affecting_local_communities_access_to_livelihoods
+permalink: activities_not_adversely_affecting_local_communities_access_to_livelihoods.html
+jsonid: activities_not_adversely_affecting_local_communities_access_to_livelihoods
+---

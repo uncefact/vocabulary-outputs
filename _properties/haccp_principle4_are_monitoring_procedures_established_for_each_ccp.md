@@ -1,0 +1,5 @@
+---
+title: haccp_principle4_are_monitoring_procedures_established_for_each_ccp
+permalink: haccp_principle4_are_monitoring_procedures_established_for_each_ccp.html
+jsonid: haccp_principle4_are_monitoring_procedures_established_for_each_ccp
+---

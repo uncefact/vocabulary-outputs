@@ -14,6 +14,7 @@ layout: table
     </thead>
     <tbody>
     {% for property in site.properties %}
+        {% unless property.vocab == "sustainability" %}
         {%- assign propertyJson = site.data[property.jsonid] -%}
         {%- assign propertyUrl = propertyJson.uri | split: ":" -%}
         {%- assign propertyMappingKey = propertyUrl[0] -%}
@@ -28,6 +29,7 @@ layout: table
             </td>
             <td>{{ propertyJson.comment }}</td>
         </tr>
+        {% endunless %}
     {% endfor %}
     </tbody>
 </table>

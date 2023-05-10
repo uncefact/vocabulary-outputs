@@ -1,0 +1,5 @@
+---
+title: documentation_of_the_structure_of_the_controlled_documentation_system
+permalink: documentation_of_the_structure_of_the_controlled_documentation_system.html
+jsonid: documentation_of_the_structure_of_the_controlled_documentation_system
+---

@@ -1,0 +1,5 @@
+---
+title: the_protection_of_minority_rights_of_marginalized_groups
+permalink: the_protection_of_minority_rights_of_marginalized_groups.html
+jsonid: the_protection_of_minority_rights_of_marginalized_groups
+---

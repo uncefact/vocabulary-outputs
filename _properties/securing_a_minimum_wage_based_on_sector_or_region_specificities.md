@@ -1,0 +1,5 @@
+---
+title: securing_a_minimum_wage_based_on_sector_or_region_specificities
+permalink: securing_a_minimum_wage_based_on_sector_or_region_specificities.html
+jsonid: securing_a_minimum_wage_based_on_sector_or_region_specificities
+---

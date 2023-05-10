@@ -14,6 +14,7 @@ layout: table
     </thead>
     <tbody>
         {% for codeList in site.code-lists %}
+            {% unless codeList.vocab == "sustainability" %}
             {%- if codeList.excludeFromList != true -%}
                 {%- assign codeListJson = site.data[codeList.jsonid] -%}
                 {% assign referenceUrl = codeList | absolute_url | split: "."  %}
@@ -36,6 +37,7 @@ layout: table
                     </td>
                 </tr>
             {%- endif -%}
+            {% endunless %}
         {% endfor %}
     </tbody>
 </table>

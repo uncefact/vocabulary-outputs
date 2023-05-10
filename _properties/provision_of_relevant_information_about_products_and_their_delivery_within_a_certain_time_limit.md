@@ -1,0 +1,5 @@
+---
+title: provision_of_relevant_information_about_products_and_their_delivery_within_a_certain_time_limit
+permalink: provision_of_relevant_information_about_products_and_their_delivery_within_a_certain_time_limit.html
+jsonid: provision_of_relevant_information_about_products_and_their_delivery_within_a_certain_time_limit
+---

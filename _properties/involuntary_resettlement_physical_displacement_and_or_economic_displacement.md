@@ -1,0 +1,5 @@
+---
+title: involuntary_resettlement_physical_displacement_and_or_economic_displacement
+permalink: involuntary_resettlement_physical_displacement_and_or_economic_displacement.html
+jsonid: involuntary_resettlement_physical_displacement_and_or_economic_displacement
+---

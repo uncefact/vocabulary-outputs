@@ -1,0 +1,5 @@
+---
+title: principles_and_practices_related_to_avoidance_of_uncontrolled_waste_landfilling
+permalink: principles_and_practices_related_to_avoidance_of_uncontrolled_waste_landfilling.html
+jsonid: principles_and_practices_related_to_avoidance_of_uncontrolled_waste_landfilling
+---

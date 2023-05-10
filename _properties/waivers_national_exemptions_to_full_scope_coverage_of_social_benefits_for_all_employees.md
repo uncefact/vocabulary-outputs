@@ -1,0 +1,5 @@
+---
+title: waivers_national_exemptions_to_full_scope_coverage_of_social_benefits_for_all_employees
+permalink: waivers_national_exemptions_to_full_scope_coverage_of_social_benefits_for_all_employees.html
+jsonid: waivers_national_exemptions_to_full_scope_coverage_of_social_benefits_for_all_employees
+---

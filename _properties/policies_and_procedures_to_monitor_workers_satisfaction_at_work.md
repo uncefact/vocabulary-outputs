@@ -1,0 +1,5 @@
+---
+title: policies_and_procedures_to_monitor_workers_satisfaction_at_work
+permalink: policies_and_procedures_to_monitor_workers_satisfaction_at_work.html
+jsonid: policies_and_procedures_to_monitor_workers_satisfaction_at_work
+---

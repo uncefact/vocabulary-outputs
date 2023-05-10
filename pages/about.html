@@ -5,10 +5,13 @@ type: default
 class: white
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UN/CEFACT Web Vocabulary</h1>
-    <p class="home-content__description">The UN/CEFACT Web Vocabulary is a linked data representation of the UN/CEFACT
-        Buy-Ship-Pay Reference Data Model.</p>
-    <div class="search-block">
+    <h1 class="home-content__title">UN/CEFACT Sustainability</h1>
+    <p class="home-content__description">The UN/CEFACT Sustainability Web Vocabulary is a linked data representation
+    of the International Trade Centre (ITC) harmonised sustainability criteria.
+    It has been developed from an analysis of over 300 sustainability standards
+    in use around the world and represents a harmonised language
+    for Environmental and Social Governance (ESDG) sustainability criteria.</p>
+    <!--<div class="search-block">
         <form action="{{ '/search' | prepend: site.baseurl }}" method="get" class="search-block">
             <div class="search-block__container">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" class="search-block__icon">
@@ -22,7 +25,7 @@ class: white
                 <button class="search-block__submit" type="submit">Search</button>
             </div>
         </form>
-    </div>
+    </div>-->
     <div class="home-content__inner">
         <ul class="browse-types">
             <li class="browse-type browse-types__item">
@@ -96,28 +99,15 @@ class: white
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="https://vocabulary.uncefact.org/unece-context.jsonld">https://vocabulary.uncefact.org/unece-context.jsonld</a>
-        </p>
-        <p>
-            <a class="link-box" href="https://vocabulary.uncefact.org/unlocode-vocab-context.jsonld">https://vocabulary.uncefact.org/unlocode-vocab-context.jsonld</a>
+            <a class="link-box" href="/sustainability/context.jsonld">https://vocabulary.uncefact.org/sustainability/context.jsonld</a>
         </p>
 
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
             <div class="copy-box__text" id="content-negotiation-1">
-                curl https://vocabulary.uncefact.org/ -H 'Accept: application/ld+json'
+                curl https://vocabulary.uncefact.org/sustainability/ -H 'Accept: application/ld+json'
             </div>
             <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
-                <svg class="copy-box__btn-icon">
-                    <use xlink:href="#duplicate"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="copy-box">
-            <div class="copy-box__text" id="content-negotiation-2">
-                curl https://vocabulary.uncefact.org/unlocode# -H 'Accept: application/ld+json'
-            </div>
-            <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-2">
                 <svg class="copy-box__btn-icon">
                     <use xlink:href="#duplicate"></use>
                 </svg>

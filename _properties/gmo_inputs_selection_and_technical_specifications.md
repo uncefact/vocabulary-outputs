@@ -1,0 +1,5 @@
+---
+title: gmo_inputs_selection_and_technical_specifications
+permalink: gmo_inputs_selection_and_technical_specifications.html
+jsonid: gmo_inputs_selection_and_technical_specifications
+---
