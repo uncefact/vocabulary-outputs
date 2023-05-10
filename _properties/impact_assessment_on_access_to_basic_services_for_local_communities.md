@@ -1,0 +1,5 @@
+---
+title: impact_assessment_on_access_to_basic_services_for_local_communities
+permalink: impact_assessment_on_access_to_basic_services_for_local_communities.html
+jsonid: impact_assessment_on_access_to_basic_services_for_local_communities
+---

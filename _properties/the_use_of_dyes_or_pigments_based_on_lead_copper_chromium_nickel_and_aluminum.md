@@ -1,0 +1,5 @@
+---
+title: the_use_of_dyes_or_pigments_based_on_lead_copper_chromium_nickel_and_aluminum
+permalink: the_use_of_dyes_or_pigments_based_on_lead_copper_chromium_nickel_and_aluminum.html
+jsonid: the_use_of_dyes_or_pigments_based_on_lead_copper_chromium_nickel_and_aluminum
+---

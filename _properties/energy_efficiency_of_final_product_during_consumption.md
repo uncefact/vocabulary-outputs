@@ -1,0 +1,5 @@
+---
+title: energy_efficiency_of_final_product_during_consumption
+permalink: energy_efficiency_of_final_product_during_consumption.html
+jsonid: energy_efficiency_of_final_product_during_consumption
+---

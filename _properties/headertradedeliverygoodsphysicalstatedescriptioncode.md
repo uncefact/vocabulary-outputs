@@ -1,5 +1,0 @@
----
-title: headerTradeDeliveryGoodsPhysicalStateDescriptionCode
-permalink: headerTradeDeliveryGoodsPhysicalStateDescriptionCode.html
-jsonid: headertradedeliverygoodsphysicalstatedescriptioncode
----

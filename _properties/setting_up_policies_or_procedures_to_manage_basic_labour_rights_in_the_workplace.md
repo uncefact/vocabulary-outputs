@@ -1,0 +1,5 @@
+---
+title: setting_up_policies_or_procedures_to_manage_basic_labour_rights_in_the_workplace
+permalink: setting_up_policies_or_procedures_to_manage_basic_labour_rights_in_the_workplace.html
+jsonid: setting_up_policies_or_procedures_to_manage_basic_labour_rights_in_the_workplace
+---

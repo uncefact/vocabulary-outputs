@@ -1,0 +1,5 @@
+---
+title: qualifications_for_persons_involved_in_sampling
+permalink: qualifications_for_persons_involved_in_sampling.html
+jsonid: qualifications_for_persons_involved_in_sampling
+---

@@ -1,0 +1,5 @@
+---
+title: training_of_workers_on_procedures_to_deal_with_accidents
+permalink: training_of_workers_on_procedures_to_deal_with_accidents.html
+jsonid: training_of_workers_on_procedures_to_deal_with_accidents
+---

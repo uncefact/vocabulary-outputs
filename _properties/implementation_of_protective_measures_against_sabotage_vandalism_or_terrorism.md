@@ -1,0 +1,5 @@
+---
+title: implementation_of_protective_measures_against_sabotage_vandalism_or_terrorism
+permalink: implementation_of_protective_measures_against_sabotage_vandalism_or_terrorism.html
+jsonid: implementation_of_protective_measures_against_sabotage_vandalism_or_terrorism
+---

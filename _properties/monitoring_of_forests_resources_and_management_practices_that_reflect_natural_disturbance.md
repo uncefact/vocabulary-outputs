@@ -1,0 +1,5 @@
+---
+title: monitoring_of_forests_resources_and_management_practices_that_reflect_natural_disturbance
+permalink: monitoring_of_forests_resources_and_management_practices_that_reflect_natural_disturbance.html
+jsonid: monitoring_of_forests_resources_and_management_practices_that_reflect_natural_disturbance
+---

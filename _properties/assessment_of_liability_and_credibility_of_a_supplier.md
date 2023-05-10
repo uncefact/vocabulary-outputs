@@ -1,0 +1,5 @@
+---
+title: assessment_of_liability_and_credibility_of_a_supplier
+permalink: assessment_of_liability_and_credibility_of_a_supplier.html
+jsonid: assessment_of_liability_and_credibility_of_a_supplier
+---

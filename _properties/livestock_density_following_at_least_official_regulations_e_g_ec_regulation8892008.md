@@ -1,0 +1,5 @@
+---
+title: livestock_density_following_at_least_official_regulations_e_g_ec_regulation8892008
+permalink: livestock_density_following_at_least_official_regulations_e_g_ec_regulation8892008.html
+jsonid: livestock_density_following_at_least_official_regulations_e_g_ec_regulation8892008
+---

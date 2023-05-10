@@ -1,0 +1,5 @@
+---
+title: ensure_clear_identification_of_the_storage_areas_and_the_internal_transport_equipment
+permalink: ensure_clear_identification_of_the_storage_areas_and_the_internal_transport_equipment.html
+jsonid: ensure_clear_identification_of_the_storage_areas_and_the_internal_transport_equipment
+---

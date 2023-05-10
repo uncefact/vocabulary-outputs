@@ -1,0 +1,5 @@
+---
+title: the_application_of_a_set_of_clean_production_practices
+permalink: the_application_of_a_set_of_clean_production_practices.html
+jsonid: the_application_of_a_set_of_clean_production_practices
+---

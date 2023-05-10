@@ -1,0 +1,5 @@
+---
+title: workers_compensation_for_medical_costs_in_case_of_work_related_accidents
+permalink: workers_compensation_for_medical_costs_in_case_of_work_related_accidents.html
+jsonid: workers_compensation_for_medical_costs_in_case_of_work_related_accidents
+---

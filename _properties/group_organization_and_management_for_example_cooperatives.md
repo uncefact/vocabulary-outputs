@@ -1,0 +1,5 @@
+---
+title: group_organization_and_management_for_example_cooperatives
+permalink: group_organization_and_management_for_example_cooperatives.html
+jsonid: group_organization_and_management_for_example_cooperatives
+---

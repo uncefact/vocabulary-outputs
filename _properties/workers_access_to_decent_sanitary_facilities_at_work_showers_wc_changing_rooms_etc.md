@@ -1,0 +1,5 @@
+---
+title: workers_access_to_decent_sanitary_facilities_at_work_showers_wc_changing_rooms_etc
+permalink: workers_access_to_decent_sanitary_facilities_at_work_showers_wc_changing_rooms_etc.html
+jsonid: workers_access_to_decent_sanitary_facilities_at_work_showers_wc_changing_rooms_etc
+---

@@ -1,0 +1,5 @@
+---
+title: denial_of_audit_access_auditor_prevented_from_fulfilling_full_scope_audit_requirements
+permalink: denial_of_audit_access_auditor_prevented_from_fulfilling_full_scope_audit_requirements.html
+jsonid: denial_of_audit_access_auditor_prevented_from_fulfilling_full_scope_audit_requirements
+---

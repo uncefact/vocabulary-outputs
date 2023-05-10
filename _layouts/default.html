@@ -4,13 +4,14 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
+  <body {% if page.class %}class="{{page.class}}"{% endif %}>
     <div class="page-wrapper">
       {% include header.html %}
       <div class="page-content">
         {{ content }}
       </div>
     </div>
+    {% include footer.html %}
     <button type="button" onclick="scrollTopFunction();" id="scroll-to-top" style="display: none;"></button>
     <script>
       const scrollButton = document.getElementById("scroll-to-top");
@@ -34,5 +35,15 @@ layout: compress
       {%- assign mapping = site.data.mapping -%}
       localStorage.setItem('mapping', '{{ mapping | jsonify }}');
     </script>
+    <script src="{{ site.baseurl }}/js/clipboard.min.js"></script>
+    <script src="{{ site.baseurl }}/js/app.js"></script>
+    <svg width="0" height="0" class="hidden">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="duplicate">
+        <g fill="none" fill-rule="evenodd" stroke="#006AB1" stroke-linejoin="round">
+          <path stroke-linecap="round" d="M13.522 4.913v-3.13A.783.783 0 0 0 12.739 1H1.783A.783.783 0 0 0 1 1.783V12.74c0 .432.35.782.783.782h3.13"></path>
+          <path d="M6.478 7.26c0-.432.35-.782.783-.782h10.956c.433 0 .783.35.783.782v10.957c0 .433-.35.783-.783.783H7.261a.783.783 0 0 1-.783-.783V7.26Z"></path>
+        </g>
+      </symbol>
+    </svg>
   </body>
 </html>

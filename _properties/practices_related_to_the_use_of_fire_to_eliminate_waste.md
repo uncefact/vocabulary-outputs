@@ -1,0 +1,5 @@
+---
+title: practices_related_to_the_use_of_fire_to_eliminate_waste
+permalink: practices_related_to_the_use_of_fire_to_eliminate_waste.html
+jsonid: practices_related_to_the_use_of_fire_to_eliminate_waste
+---

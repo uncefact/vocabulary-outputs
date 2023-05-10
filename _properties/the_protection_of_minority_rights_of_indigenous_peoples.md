@@ -1,0 +1,5 @@
+---
+title: the_protection_of_minority_rights_of_indigenous_peoples
+permalink: the_protection_of_minority_rights_of_indigenous_peoples.html
+jsonid: the_protection_of_minority_rights_of_indigenous_peoples
+---

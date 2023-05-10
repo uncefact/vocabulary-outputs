@@ -1,0 +1,5 @@
+---
+title: existence_of_publicly_available_policy_defining_workers_rights
+permalink: existence_of_publicly_available_policy_defining_workers_rights.html
+jsonid: existence_of_publicly_available_policy_defining_workers_rights
+---

@@ -1,0 +1,5 @@
+---
+title: requirements_to_train_workers_on_labour_rights
+permalink: requirements_to_train_workers_on_labour_rights.html
+jsonid: requirements_to_train_workers_on_labour_rights
+---

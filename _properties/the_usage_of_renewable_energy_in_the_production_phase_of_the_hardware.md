@@ -1,0 +1,5 @@
+---
+title: the_usage_of_renewable_energy_in_the_production_phase_of_the_hardware
+permalink: the_usage_of_renewable_energy_in_the_production_phase_of_the_hardware.html
+jsonid: the_usage_of_renewable_energy_in_the_production_phase_of_the_hardware
+---

@@ -1,0 +1,5 @@
+---
+title: wild_catch_fisheries_prohibition_of_of_destructive_fishing_methods_such_as_dynamite_and_poison
+permalink: wild_catch_fisheries_prohibition_of_of_destructive_fishing_methods_such_as_dynamite_and_poison.html
+jsonid: wild_catch_fisheries_prohibition_of_of_destructive_fishing_methods_such_as_dynamite_and_poison
+---

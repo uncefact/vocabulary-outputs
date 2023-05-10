@@ -1,0 +1,5 @@
+---
+title: sequestration_of_green_house_gases_general_principle
+permalink: sequestration_of_green_house_gases_general_principle.html
+jsonid: sequestration_of_green_house_gases_general_principle
+---

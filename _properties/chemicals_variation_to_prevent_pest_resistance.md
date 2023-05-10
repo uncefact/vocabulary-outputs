@@ -1,0 +1,5 @@
+---
+title: chemicals_variation_to_prevent_pest_resistance
+permalink: chemicals_variation_to_prevent_pest_resistance.html
+jsonid: chemicals_variation_to_prevent_pest_resistance
+---

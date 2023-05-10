@@ -1,0 +1,5 @@
+---
+title: definition_of_smart_objectives_related_to_the_policy
+permalink: definition_of_smart_objectives_related_to_the_policy.html
+jsonid: definition_of_smart_objectives_related_to_the_policy
+---

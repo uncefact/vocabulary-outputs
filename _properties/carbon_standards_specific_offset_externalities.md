@@ -1,0 +1,5 @@
+---
+title: carbon_standards_specific_offset_externalities
+permalink: carbon_standards_specific_offset_externalities.html
+jsonid: carbon_standards_specific_offset_externalities
+---

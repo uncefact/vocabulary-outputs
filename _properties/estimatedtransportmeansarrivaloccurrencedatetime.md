@@ -1,5 +1,0 @@
----
-title: estimatedTransportMeansArrivalOccurrenceDateTime
-permalink: estimatedTransportMeansArrivalOccurrenceDateTime.html
-jsonid: estimatedtransportmeansarrivaloccurrencedatetime
----

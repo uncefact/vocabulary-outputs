@@ -1,0 +1,5 @@
+---
+title: definition_of_a_policy_which_fits_to_the_size_and_role_of_the_organization
+permalink: definition_of_a_policy_which_fits_to_the_size_and_role_of_the_organization.html
+jsonid: definition_of_a_policy_which_fits_to_the_size_and_role_of_the_organization
+---

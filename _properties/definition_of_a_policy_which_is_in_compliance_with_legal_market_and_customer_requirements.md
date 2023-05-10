@@ -1,0 +1,5 @@
+---
+title: definition_of_a_policy_which_is_in_compliance_with_legal_market_and_customer_requirements
+permalink: definition_of_a_policy_which_is_in_compliance_with_legal_market_and_customer_requirements.html
+jsonid: definition_of_a_policy_which_is_in_compliance_with_legal_market_and_customer_requirements
+---

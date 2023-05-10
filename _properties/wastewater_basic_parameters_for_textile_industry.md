@@ -1,0 +1,5 @@
+---
+title: wastewater_basic_parameters_for_textile_industry
+permalink: wastewater_basic_parameters_for_textile_industry.html
+jsonid: wastewater_basic_parameters_for_textile_industry
+---

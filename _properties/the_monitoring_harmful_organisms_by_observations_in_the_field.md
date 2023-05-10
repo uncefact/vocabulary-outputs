@@ -1,0 +1,5 @@
+---
+title: the_monitoring_harmful_organisms_by_observations_in_the_field
+permalink: the_monitoring_harmful_organisms_by_observations_in_the_field.html
+jsonid: the_monitoring_harmful_organisms_by_observations_in_the_field
+---

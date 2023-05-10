@@ -1,0 +1,5 @@
+---
+title: monitoring_measure_of_customer_client_satisfaction
+permalink: monitoring_measure_of_customer_client_satisfaction.html
+jsonid: monitoring_measure_of_customer_client_satisfaction
+---

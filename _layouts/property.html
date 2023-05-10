@@ -4,8 +4,21 @@ layout: default
 
 {%- assign property = site.data[page.jsonid] -%}
 
+{% include breadcrumbs.html %}
 <!--suppress ALL -->
-<h1>{{ property.label }}</h1>
+<div class="page-title">
+    <a href="{{ 'properties' | absolute_url }}" class="page-title__action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" class="page-title__action-arrow">
+            <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.6">
+                <path d="M28 10.5H1M10.45 20 1 10.5 10.45 1"/>
+            </g>
+        </svg>
+        <span class="page-title__action-text">Back</span>
+    </a>
+    <h1 class="breakall">{{ property.label }}</h1>
+</div>
+
 <div class="page-description">
     {%- if property.comment.first -%}
         {%- for comment in property.comment -%}
@@ -17,7 +30,7 @@ layout: default
 </div>
 {% if property.rangeIncludes %}
     <h2>Range includes:</h2>
-    <table>
+    <table class="table-grid">
         <thead>
             <tr>
                 <th>URI</th>
@@ -28,7 +41,7 @@ layout: default
                 {%- assign rangeUrl = range.uri | split: ":" -%}
                 {%- assign mappingKey = rangeUrl[0] -%}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ rangeUrl[1] }}">{{ range.uri | truncate: 40 }}</a></td>
                 </tr>
             {%- endfor -%}
         </tbody>
@@ -37,7 +50,7 @@ layout: default
 
 {% if property.domainIncludes %}
     <h2>Domains:</h2>
-    <table>
+    <table class="table-grid">
         <thead>
             <tr>
                 <th>URI</th>
@@ -49,7 +62,7 @@ layout: default
                 {% assign domainUrl = domain.uri | split: ":"  %}
                 {%- assign mappingKey = domainUrl[0] -%}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ domainUrl[1] }}">{{ domain.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ domainUrl[1] }}">{{ domain.uri | truncate: 40 }}</a></td>
                     <td>{{ domain.comment }}</td>
                 </tr>
             {% endfor %}

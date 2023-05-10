@@ -1,0 +1,5 @@
+---
+title: use_of_verifiable_targets_in_fmp_by_which_progress_can_be_assessed
+permalink: use_of_verifiable_targets_in_fmp_by_which_progress_can_be_assessed.html
+jsonid: use_of_verifiable_targets_in_fmp_by_which_progress_can_be_assessed
+---

@@ -1,0 +1,5 @@
+---
+title: assurance_that_every_other_hazard_is_adequately_monitored
+permalink: assurance_that_every_other_hazard_is_adequately_monitored.html
+jsonid: assurance_that_every_other_hazard_is_adequately_monitored
+---

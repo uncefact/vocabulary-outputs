@@ -1,0 +1,5 @@
+---
+title: the_principle_to_use_pesticides_as_last_resort_only
+permalink: the_principle_to_use_pesticides_as_last_resort_only.html
+jsonid: the_principle_to_use_pesticides_as_last_resort_only
+---

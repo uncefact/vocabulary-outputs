@@ -1,0 +1,5 @@
+---
+title: a_procedure_to_register_and_store_data_and_records
+permalink: a_procedure_to_register_and_store_data_and_records.html
+jsonid: a_procedure_to_register_and_store_data_and_records
+---

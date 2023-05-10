@@ -1,0 +1,5 @@
+---
+title: re_assessment_of_suppliers_periodically_supplier_evaluation
+permalink: re_assessment_of_suppliers_periodically_supplier_evaluation.html
+jsonid: re_assessment_of_suppliers_periodically_supplier_evaluation
+---

@@ -1,0 +1,5 @@
+---
+title: living_wage_based_on_sector_or_region_specificities
+permalink: living_wage_based_on_sector_or_region_specificities.html
+jsonid: living_wage_based_on_sector_or_region_specificities
+---

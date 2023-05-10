@@ -1,0 +1,5 @@
+---
+title: does_the_standard_cover_the_quality_of_textiles
+permalink: does_the_standard_cover_the_quality_of_textiles.html
+jsonid: does_the_standard_cover_the_quality_of_textiles
+---

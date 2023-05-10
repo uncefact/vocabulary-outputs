@@ -1,0 +1,5 @@
+---
+title: animal_physical_integrity_eg_removing_of_tails_ears_nose_wings_horns_or_other_body_parts
+permalink: animal_physical_integrity_eg_removing_of_tails_ears_nose_wings_horns_or_other_body_parts.html
+jsonid: animal_physical_integrity_eg_removing_of_tails_ears_nose_wings_horns_or_other_body_parts
+---

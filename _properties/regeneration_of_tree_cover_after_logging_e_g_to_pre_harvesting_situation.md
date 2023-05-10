@@ -1,0 +1,5 @@
+---
+title: regeneration_of_tree_cover_after_logging_e_g_to_pre_harvesting_situation
+permalink: regeneration_of_tree_cover_after_logging_e_g_to_pre_harvesting_situation.html
+jsonid: regeneration_of_tree_cover_after_logging_e_g_to_pre_harvesting_situation
+---

@@ -1,0 +1,5 @@
+---
+title: prevention_of_pests_and_other_animals_entering_the_storage_areas
+permalink: prevention_of_pests_and_other_animals_entering_the_storage_areas.html
+jsonid: prevention_of_pests_and_other_animals_entering_the_storage_areas
+---

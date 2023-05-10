@@ -1,0 +1,5 @@
+---
+title: water_resources_monitoring_use_and_consumption
+permalink: water_resources_monitoring_use_and_consumption.html
+jsonid: water_resources_monitoring_use_and_consumption
+---
