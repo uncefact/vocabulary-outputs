@@ -310,7 +310,9 @@
 }
 
 .search-filter {
-  display: flex;
+  @media screen and (min-width: $tablet-md) {
+    display: flex;
+  }
 
   &__label {
     font-size: 16px;
@@ -330,6 +332,10 @@
   &__item {
     display: flex;
     align-items: center;
-    margin: 0 0 0 15px;
+    margin: 10px 0 0 0;
+
+    @media screen and (min-width: $tablet-md) {
+      margin: 0 0 0 15px;
+    }
   }
 }
