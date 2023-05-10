@@ -61,9 +61,9 @@ layout: default
                 <tr id="{{rangeUrl[1]}}">
                     {%- assign mappingUrl = mapping[mappingKey] | strip -%}
                     {%- if mappingUrl != '' -%}
-                    <td data-title="URI"><a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}">{{ range.uri }}</a></td>
+                    <td data-title="URI"><a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}">{{ range.uri | truncate: 40 }}</a></td>
                     {%- else -%}
-                    <td data-title="URI"><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri }}</a></td>                    {%- endif -%}
+                    <td data-title="URI"><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri | truncate: 40 }}</a></td>                    {%- endif -%}
                     {%- for column in columns -%}
                        {%- if column.type == 'uri' -%}
                             {%- assign links = range[column.code] | split: "," -%}
@@ -108,7 +108,7 @@ layout: default
                 {% assign referenceUrl = reference.uri | split: ":"  %}
                 {% assign mappingKey = referenceUrl[0]  %}
                 <tr>
-                    <td><a {% if mappingKey != 'sustainability' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
+                    <td><a {% if mappingKey != 'sustainability' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri | truncate: 40 }}</a></td>
                     <td>{{ reference.comment }}</td>
                 </tr>
             {% endfor %}
