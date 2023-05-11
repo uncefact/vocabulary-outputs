@@ -10,8 +10,9 @@ layout: default
     {% assign codeList = initialCodeList %}
 {%- endif -%}
 
+{% include breadcrumbs.html %}
 
-<h1>{{ page.title }}</h1>
+<h1 class="breakall">{{ page.title }}</h1>
 <div class="page-description">
     {%- if initialCodeList.comment.first -%}
         {%- for comment in initialCodeList.comment -%}
@@ -44,7 +45,7 @@ layout: default
     <div class="table-wrapper">
         {% assign columns = page.columns %}
         {% assign mapping = site.data.mapping %}
-        <table>
+        <table class="table-grid table-grid--code-list">
             <thead>
                 <tr>
                     <th>URI</th>
@@ -60,13 +61,13 @@ layout: default
                 <tr id="{{rangeUrl[1]}}">
                     {%- assign mappingUrl = mapping[mappingKey] | strip -%}
                     {%- if mappingUrl != '' -%}
-                    <td><a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}">{{ range.uri }}</a></td>
+                    <td data-title="URI"><a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}">{{ range.uri | truncate: 40 }}</a></td>
                     {%- else -%}
-                    <td><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri }}</a></td>                    {%- endif -%}
+                    <td data-title="URI"><a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}">{{ range.uri | truncate: 40 }}</a></td>                    {%- endif -%}
                     {%- for column in columns -%}
                        {%- if column.type == 'uri' -%}
                             {%- assign links = range[column.code] | split: "," -%}
-                            <td>
+                            <td data-title="{{column.title}}">
                                 {%- for link in links -%}
                                     {%- assign linkUrl = link | split: ":" -%}
                                     {%- assign mappingKey = linkUrl[0] | strip -%}
@@ -80,10 +81,10 @@ layout: default
                                 {%- endfor -%}
                             </td>
                         {%- elsif column.type == 'unlocode-link' -%}
-                            <td>
+                            <td class="action">
                                 <a href="{{ '/' | absolute_url }}unlocode?country={{rangeUrl[1] | downcase }}">View UN/LOCODEs</a></td>
                         {%- else -%}
-                            <td>{{ range[column.code] }}</td>
+                            <td data-title="{{column.title}}">{{ range[column.code] }}</td>
                         {%- endif -%}
                     {%- endfor -%}
                 </tr>
@@ -95,7 +96,7 @@ layout: default
 
 {% if initialCodeList.referencedBy %}
     <h2>Referenced by</h2>
-    <table>
+    <table class="table-grid">
         <thead>
             <tr>
                 <th>URI</th>
@@ -107,7 +108,7 @@ layout: default
                 {% assign referenceUrl = reference.uri | split: ":"  %}
                 {% assign mappingKey = referenceUrl[0]  %}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri | truncate: 40 }}</a></td>
                     <td>{{ reference.comment }}</td>
                 </tr>
             {% endfor %}

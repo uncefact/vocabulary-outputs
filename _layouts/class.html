@@ -4,7 +4,21 @@ layout: default
 
 {%- assign class = site.data[page.jsonid] -%}
 
-<h1>{{ class.label }}</h1>
+{% include breadcrumbs.html %}
+
+<div class="page-title">
+    <a href="{{ 'classes' | absolute_url }}" class="page-title__action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" class="page-title__action-arrow">
+            <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round" stroke-linejoin="round"
+               stroke-width="1.6">
+                <path d="M28 10.5H1M10.45 20 1 10.5 10.45 1"/>
+            </g>
+        </svg>
+        <span class="page-title__action-text">Back</span>
+    </a>
+    <h1 class="breakall">{{ class.label }}</h1>
+</div>
+
 <div class="page-description">
     {%- if class.comment.first -%}
         {%- for comment in class.comment -%}
@@ -20,7 +34,7 @@ layout: default
 
 {% if class.objectProperties %}
     <h2>Object Properties</h2>
-    <table>
+    <table class="table-grid table-grid--properties">
         <thead>
         <tr>
             <th>URI</th>
@@ -35,8 +49,8 @@ layout: default
                 {%- assign mappingKey = typeUrl[0] -%}
                 {%- assign propertyMappingKey = propertyUrl[0] -%}
                 <tr>
-                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri }}</a></td>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
+                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri | truncate: 40 }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type | truncate: 40 }}</a></td>
                     <td>{{ property.comment }}</td>
                 </tr>
             {%- endfor -%}
@@ -46,7 +60,7 @@ layout: default
 
 {% if class.datatypeProperties %}
     <h2>Data Properties</h2>
-    <table>
+    <table class="table-grid">
         <thead>
             <tr>
                 <th>URI</th>
@@ -61,8 +75,8 @@ layout: default
                 {% assign propertyMappingKey = propertyUrl[0]  %}
                 {% assign mappingKey = typeUrl[0]  %}
                 <tr>
-                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri }}</a></td>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type }}</a></td>
+                    <td><a {% if propertyMappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[propertyMappingKey] }}{{ propertyUrl[1] }}">{{ property.uri | truncate: 40 }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ typeUrl[1] }}">{{ property.type | truncate: 40 }}</a></td>
                     <td>{{ property.comment }}</td>
                 </tr>
             {% endfor %}
@@ -72,7 +86,7 @@ layout: default
 
 {% if class.referencedBy %}
     <h2>Referenced by</h2>
-    <table>
+    <table class="table-grid">
         <thead>
             <tr>
                 <th>URI</th>
@@ -84,7 +98,7 @@ layout: default
                 {% assign referenceUrl = reference.uri | split: ":"  %}
                 {% assign mappingKey = referenceUrl[0]  %}
                 <tr>
-                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri }}</a></td>
+                    <td><a {% if mappingKey != 'unece' %}target="_blank"{% endif %} href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}">{{ reference.uri | truncate: 40 }}</a></td>
                     <td>{{ reference.comment }}</td>
                 </tr>
             {% endfor %}

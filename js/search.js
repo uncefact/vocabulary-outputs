@@ -2,6 +2,7 @@ const search = {
     mapping: JSON.parse(localStorage.getItem('mapping')),
     container: document.getElementById('js-search-results'),
     dataSet: document.getElementById('js-search-dataset').value,
+
     async postData(searchQuery) {
         url = 'https://test.uncefact.org/search' + '?' + new URLSearchParams({
             q: searchQuery,
@@ -28,7 +29,7 @@ const search = {
         const searchQuery = urlParams.get('q');
 
         document.getElementById('js-search-field').value = searchQuery;
-
+        document.getElementById('js-search-text').innerHTML = searchQuery;
 
         this.postData(searchQuery).then((data) => {
             const values = data.hits.hit;
@@ -104,3 +105,4 @@ const search = {
 document.addEventListener("DOMContentLoaded", () => {
     search.init();
 });
+

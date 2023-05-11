@@ -1,126 +1,293 @@
 .page-content {
-  color: $app-text;
-  font-size: 16px;
-  line-height: 1.5;
+  width: 100%;
   max-width: $container__max-width;
   padding: $container__padding;
   margin: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 500;
+  color: $app-text;
+  margin: 0 0 30px 0;
+
+  @media screen and (min-width: $tablet-md) {
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0 0 20px 0;
+  }
+}
+
+h2 {
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: $app-text;
+
+  @media screen and (min-width: $tablet-md) {
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: $app-text;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 15px 0;
+  text-align: justify;
+  font-weight: 300;
+}
+
+ul, ol {
+  margin: 0 0 15px 35px;
+  padding: 0;
+  text-align: justify;
+
+  li {
+    padding: 5px 0;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.page-title {
+  margin: 0 0 14px 0;
+
+  @media screen and (min-width: $tablet-md) {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 30px 0;
+  }
+
+  &__action {
+    margin: 0 30px 0 0;
+
+    &-arrow {
+      @media screen and (max-width: $tablet-md - 1) {
+        display: none;
+      }
+    }
+
+    &-text {
+      @media screen and (min-width: $tablet-md) {
+        display: none;
+      }
+    }
+  }
 
   h1 {
-    font-size: 33px;
-    font-weight: 700;
-    margin: 0 0 15px 0;
-    padding: 10px 0 0 0;
-    word-break: break-all;
-  }
+    margin: 20px 0 0 0;
 
-  h2 {
-    font-size: 26px;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-    padding: 0;
-  }
-
-  h3 {
-    font-size: 23px;
-    font-weight: 600;
-    margin: 0 0 15px 0;
-    padding: 0;
-  }
-
-  h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 10px 0;
-    padding: 0;
-  }
-
-  p {
-    margin: 0 0 15px 0;
-    text-align: justify;
-  }
-
-  ul, ol {
-    margin: 0 0 15px 35px;
-    padding: 0;
-    text-align: justify;
-
-    li {
-      padding: 5px 0;
-
-      &:first-child {
-        padding-top: 0;
-      }
-
-      p {
-        margin: 0;
-      }
+    @media screen and (min-width: $tablet-md) {
+      margin: 0;
     }
   }
+}
 
-  .page-description {
-    font-size: 1.2em;
+.page-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: $app-text;
+  margin: 0 0 40px 0;
+}
+
+h1 + .page-description {
+  margin-top: -10px;
+  margin-bottom: 2em;
+}
+
+a {
+  color: $content-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+table {
+  width: 100%;
+  margin: 0 0 29px 0;
+  border: 0;
+  border-spacing: 0 7px;
+
+  tr {
+    border-bottom: 7px solid #F8F9F9;
   }
 
-  h1 + .page-description {
-    margin-top: -10px;
-    margin-bottom: 2em;
+  thead tr {
+    border: 0;
   }
 
-  a {
-    color: $content-link;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  th, td {
+    padding: 6px 8px;
   }
 
+  th {
+    border-top: 1px solid $border-color;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #888583;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 15px 30px 8px 30px;
+  }
 
-  table {
-    display: block;
-    width: 100%;
-    overflow: auto;
-    word-break: normal;
-    word-break: keep-all;
-    margin: 0 0 29px 0;
+  td {
+    padding: 12px 30px;
     font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: $app-text;
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+    background: #fff;
+  }
 
-    tr:nth-child(2n) {
-      background-color: $table-ntn-row-bg;
+  @media screen and (min-width: $tablet-md) {
+    td:first-child {
+      border-left: 1px solid $border-color;
+      border-radius: 10px 0 0 10px;
+    }
+
+    td:last-child {
+      border-right: 1px solid $border-color;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+}
+
+.table-grid {
+  @media screen and (max-width: $tablet-md - 1) {
+    thead tr {
+      display: none;
+    }
+    tr {
+      border: 1px solid $border-color;
+      background: #fff;
+      margin: 0 0 12px 0;
+      display: block;
+      border-radius: 8px;
+      padding: 18px;
+
+      td {
+        padding: 8px 0 0 0;
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
     }
 
     th {
-      font-weight: bold;
-      font-size: 1em;
+      display: none;
     }
 
-    th, td {
-      padding: 6px 8px;
-      border: 1px solid $app-light-grey;
+    td {
+      display: block;
+      word-break: break-all;
+      padding: 0;
+      background: none;
+      border: 0;
+      font-size: 14px;
+      line-height: 22px;
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet-md - 1) {
+    &--properties {
+      tbody tr {
+        display: flex;
+        flex-direction: column;
+
+        td:first-child {
+          order: 1;
+        }
+
+        td:nth-child(2) {
+          order: 3;
+
+          &::before {
+            content: 'Type: ';
+            color: #888583;
+          }
+
+          a {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+
+        td:nth-child(3) {
+          order: 2;
+        }
+      }
     }
 
-  }
+    &--code-list {
+      td {
+        display: block;
 
-  code {
-    background: rgba(0, 0, 0, 0.04);
-    border-radius: 3px;
-    display: inline-block;
-    padding: 5px;
-    font-size: 0.9em;
+        &:before {
+          color: #888583;
+          content: attr(data-title)': ';
+        }
+      }
+    }
   }
+}
 
-  pre {
-    overflow: auto;
-  }
+code {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px;
+  font-size: 0.9em;
+}
 
-  pre code {
-    padding: 15px;
-    margin: 0 0 10px 0;
-  }
+pre {
+  overflow: auto;
+}
 
-  code, pre {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  }
+pre code {
+  padding: 15px;
+  margin: 0 0 10px 0;
+}
 
+code, pre {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.breakall {
+  word-break: break-all;
 }
