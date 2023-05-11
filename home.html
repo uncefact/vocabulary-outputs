@@ -55,7 +55,7 @@ class: home
                 {% endif %}
             </li>
             <li class="browse-type browse-types__item">
-                <a href="{{ '/sustainability/about' }}" class="browse-type__title">
+                <a href="{{ 'sustainability/about' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                         <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
                            stroke-linejoin="round"
@@ -67,7 +67,7 @@ class: home
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">Lorem Ipsum is simply dumy text of the printing</p>
-                    <a class="browse-type__action" href="{{ '/sustainability/about' }}">Browse</a>
+                    <a class="browse-type__action" href="{{ 'sustainability/about' | absolute_url }}">Browse</a>
                 </div>
                 {% if site.versions.taxonomies %}
                     <span class="browse-type__version">

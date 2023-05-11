@@ -28,6 +28,7 @@ const search = {
         const urlParams = new URLSearchParams(queryString);
         const searchQuery = urlParams.get('q');
 
+        document.getElementById('js-search-field').value = searchQuery;
         document.getElementById('js-search-text').innerHTML = searchQuery;
 
         this.postData(searchQuery).then((data) => {
