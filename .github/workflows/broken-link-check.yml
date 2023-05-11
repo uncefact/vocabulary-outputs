@@ -1,0 +1,18 @@
+# Sample workflow for broken links check
+name: Check deployment for broken links
+
+on:
+  # Manually run the deployment
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'URL to check'
+        required: true
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Build Site"
+      run: npx linkinator ${{ github.event.inputs.url }}
