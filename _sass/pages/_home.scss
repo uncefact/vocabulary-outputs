@@ -135,8 +135,12 @@
     font-weight: 300;
     color: $text-color;
     position: absolute;
-    top: 11px;
+    top: 0;
     right: 13px;
+
+    @media screen and (min-width: $tablet-md) {
+      top: 11px;
+    }
   }
 
   &__description {
