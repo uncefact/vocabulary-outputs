@@ -11,8 +11,8 @@ on:
 
 jobs:
   # Build job
-  build:
+  linkinator:
     runs-on: ubuntu-latest
     steps:
-    - name: "Build Site"
-      run: npx linkinator ${{ github.event.inputs.url }}
+    - name: "Run check for broken links"
+      run: npx linkinator ${{ github.event.inputs.url }} --recurse
