@@ -8,29 +8,29 @@
     },
     "@graph": [
         {
+            "@id": "unlcdv:Country",
             "@type": "rdfs:Class",
-            "rdfs:comment": "The two-letter alphabetic country codes, adopted in International Standard ISO 3166-1.",
-            "@id": "unlcdv:Country"
+            "rdfs:comment": "The two-letter alphabetic country codes, adopted in International Standard ISO 3166-1."
         },
         {
+            "@id": "unlcdv:Function",
             "@type": "rdfs:Class",
-            "rdfs:comment": "1-character function classifier code which identifies the existence of either a facility providing a connection with a specific mode of transport 1 or some other significant function not directly related to any mode of transport at this location",
-            "@id": "unlcdv:Function"
+            "rdfs:comment": "1-character function classifier code which identifies the existence of either a facility providing a connection with a specific mode of transport 1 or some other significant function not directly related to any mode of transport at this location"
         },
         {
+            "@id": "unlcdv:Subdivision",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Code for the administrative division of the country concerned (state, province, department, etc.).",
-            "@id": "unlcdv:Subdivision"
+            "rdfs:comment": "Code for the administrative division of the country concerned (state, province, department, etc.)."
         },
         {
+            "@id": "unlcdv:UNLOCODE",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Identifies an administrative or economic area, relevant to international trade and transport, as defined by the competent national authority in each country.",
-            "@id": "unlcdv:UNLOCODE"
+            "rdfs:comment": "Identifies an administrative or economic area, relevant to international trade and transport, as defined by the competent national authority in each country."
         },
         {
+            "@id": "unlcdv:countryCode",
             "@type": "rdf:Property",
             "rdfs:comment": "Related ISO 3166-1 country code.",
-            "@id": "unlcdv:countryCode",
             "schema:rangeIncludes": {
                 "@id": "unlcdv:Country"
             },
@@ -44,9 +44,9 @@
             ]
         },
         {
+            "@id": "unlcdv:countrySubdivision",
             "@type": "rdf:Property",
             "rdfs:comment": "Related ISO 3166-2 country subdivision code.",
-            "@id": "unlcdv:countrySubdivision",
             "schema:rangeIncludes": {
                 "@id": "unlcdv:Subdivision"
             },
@@ -55,9 +55,9 @@
             }
         },
         {
+            "@id": "unlcdv:functions",
             "@type": "rdf:Property",
             "rdfs:comment": "Related function codes.",
-            "@id": "unlcdv:functions",
             "schema:rangeIncludes": {
                 "@id": "unlcdv:Function"
             },
@@ -66,10 +66,12 @@
             }
         },
         {
-            "@type": "rdf:Property",
-            "schema:rangeIncludes": "xsd:string",
-            "rdfs:comment": "The administrative division (state,province, department, etc.).",
             "@id": "unlcdv:subdivisionType",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The administrative division (state,province, department, etc.).",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
             "schema:domainIncludes": {
                 "@id": "unlcdv:Subdivision"
             }
