@@ -57,20 +57,20 @@ jobs:
         zipBall: false
         extract: false
     - run: |
-        'rm -rf _classes'
-        'rm -rf _properties'
-        'rm -rf _code-lists'
-        'mv _data/mapping.json .'
-        'mv _data/*.csv .'
-        'rm -rf _data'
+        rm -rf _classes
+        rm -rf _properties
+        rm -rf _code-lists
+        mv _data/mapping.json .
+        mv _data/*.csv .
+        rm -rf _data
     - uses: actions/setup-java@v2
       with:
         distribution: 'adopt'
         java-version: '11'
     - run: java -jar vocab-md-generation-1.0.0.jar
     - run: |
-        'mv mapping.json _data/'
-        'mv *.csv _data/'
+        mv mapping.json _data/
+        mv *.csv _data/
     - run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
