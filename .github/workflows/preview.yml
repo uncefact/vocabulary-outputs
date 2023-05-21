@@ -7,12 +7,8 @@
 name: Deploy site preview to AWS S3
 
 on:
-  workflow_call:
-    inputs:
-      vocabulary_name:
-        description: 'Vocabulary name'
-        type: string
-        required: true
+  repository_dispatch:
+    types: [ 'update-vocabulary' ]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -40,7 +36,7 @@ jobs:
     - id: download-merged-vocabulary
       uses: robinraju/release-downloader@v1.8
       with:
-        repository: "uncefact/vocab-${{ inputs.vocabulary_name }}"
+        repository: "uncefact/vocab-${{ github.event.client_payload.vocabulary_name }}"
         latest: true
         fileName: "merged.jsonld"
         out-file-path: ""
@@ -78,7 +74,7 @@ jobs:
         git add _classes
         git add _properties
         git add _data
-        git commit -m "release: ${{ github.event.client_payload.release.version }}"
+        git commit -m "release: ${{ github.event.client_payload.vocabulary_name }} - ${{ github.event.client_payload.release.version }}"
         git push
 
     - name: Set up Ruby
