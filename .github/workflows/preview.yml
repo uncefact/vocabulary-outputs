@@ -36,11 +36,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        repository: uncefact/vocabulary-outputs
+        ref: jargon-pages
+
     - id: download-merged-vocabulary
       uses: robinraju/release-downloader@v1.8
       with:
-        repository: "uncefact/vocab-${{ github.event.client_payload.vocabulary_name }}"
+        repository: "uncefact/vocab-${{ inputs.vocabulary_name }}"
         latest: true
         fileName: "merged.jsonld"
         out-file-path: ""
@@ -78,7 +83,7 @@ jobs:
         git add _classes
         git add _properties
         git add _data
-        git commit -m "release: ${{ github.event.client_payload.vocabulary_name }} - ${{ github.event.client_payload.release.version }}"
+        git commit -m "release: ${{ inputs.vocabulary_name }}"
         git push
 
     - name: Set up Ruby
