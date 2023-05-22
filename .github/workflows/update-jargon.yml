@@ -1,0 +1,77 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# Sample workflow for building and deploying a Jekyll site to AWS S3
+name: Update Jargon vocabulary files
+
+on:
+  workflow_call:
+    inputs:
+      vocabulary_name:
+        description: 'Vocabulary name'
+        type: string
+        required: true
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+  
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        repository: uncefact/vocabulary-outputs
+        ref: jargon-pages
+
+    - id: download-merged-vocabulary
+      uses: robinraju/release-downloader@v1.8
+      with:
+        repository: "uncefact/vocab-${{ inputs.vocabulary_name }}"
+        latest: true
+        fileName: "merged.jsonld"
+        out-file-path: ""
+        tarBall: false
+        zipBall: false
+        extract: false
+    - id: download-md-utility
+      uses: robinraju/release-downloader@v1.8
+      with:
+        repository: "uncefact/utilities"
+        latest: true
+        fileName: "vocab-md-generation-1.0.0.jar"
+        tarBall: false
+        zipBall: false
+        extract: false
+    - run: |
+        rm -rf _classes
+        rm -rf _properties
+        rm -rf _code-lists
+        mv _data/mapping.json .
+        mv _data/*.csv .
+        rm -rf _data
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '11'
+    - run: java -jar vocab-md-generation-1.0.0.jar
+    - run: |
+        mv mapping.json _data/
+        mv *.csv _data/
+    - name: snapshot PR
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: "chore: update jargon merged vocabulary"
+        delete-branch: true
+        title: 'chore: update jargon merged vocabulary'
+        body: |
+          Updates jargon merged JSON-LD vocabulary published as an artifact as a part of unece/codes-locode release
+        base: 'main'
+        branch: create-pull-request/unlocode-vocabularies
+        draft: true
