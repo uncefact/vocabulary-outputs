@@ -58,7 +58,7 @@ layout: default
             {% for range in codeList %}
                 {%- assign rangeUrl = range.uri | split: ":" -%}
                 {%- assign mappingKey = rangeUrl[0] -%}
-                <tr id="{{rangeUrl[1]}}">
+                <tr id="{{range.value}}">
                     {%- assign mappingUrl = mapping[mappingKey] | strip -%}
                     {%- if mappingUrl != '' -%}
                     <td data-title="URI"><a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}">{{ range.uri | truncate: 40 }}</a></td>
