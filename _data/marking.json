@@ -3,7 +3,7 @@
     "label": "Marking",
     "uri": "unece:Marking",
     "comment": "An inscription, stamp or label on packaging, such as to indicate date, ownership, quality, manufacture or origin.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
             "uri": "unece:automaticDataCaptureMethodTypeCode",
             "type": "unece:AutomaticDataCaptureMethodCodeList",
@@ -12,17 +12,12 @@
         {
             "uri": "unece:content",
             "type": "xsd:string",
-            "comment": "Content, expressed as text, of this packaging marking."
-        },
-        {
-            "uri": "unece:contentAmount",
-            "type": "unece:AmountType",
-            "comment": "Content, expressed as a monetary amount, for this packaging marking."
+            "comment": "A content, expressed as text, of this note."
         },
         {
             "uri": "unece:contentCode",
             "type": "xsd:string",
-            "comment": "Content, expressed as a code, of this packaging marking."
+            "comment": "A code specifying the content of this note."
         },
         {
             "uri": "unece:contentDateTime",
@@ -40,10 +35,17 @@
             "comment": "A code specifying a type of packaging marking."
         }
     ],
+    "objectProperties": [
+        {
+            "uri": "unece:contentAmount",
+            "type": "unece:AmountType",
+            "comment": "Content, expressed as a monetary amount, for this packaging marking."
+        }
+    ],
     "referencedBy": [
         {
             "uri": "unece:specifiedMarking",
-            "comment": "A marking specified for this ..."
+            "comment": "A marking specified for this logistics packaging."
         }
     ]
 }

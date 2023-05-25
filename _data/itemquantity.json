@@ -2,25 +2,20 @@
 {
     "label": "itemQuantity",
     "uri": "unece:itemQuantity",
-    "comment": [
-        "A quantity of items for this referenced transport service.",
-        "The number of logistics packages at this level.",
-        "The number of referenced logistics packages at this level."
-    ],
+    "comment": "A quantity of items for this referenced transport service.",
     "rangeIncludes": [
         {
-            "uri": "unece:QuantityType",
-            "comment": "Missing description"
+            "uri": "unece:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Package",
-            "comment": "A self-contained wrapping or container ..."
+            "uri": "unece:Service",
+            "comment": "A service associated with a transport movement.,A referenced service associated with a specified event during transport movement."
         },
         {
-            "uri": "unece:Service",
-            "comment": "A service associated with a ..."
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         }
     ]
 }

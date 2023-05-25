@@ -3,31 +3,21 @@
     "label": "LogisticsLocation",
     "uri": "unece:LogisticsLocation",
     "comment": "A logistics related physical location or place.",
-    "objectProperties": [
-        {
-            "uri": "unece:associatedGeographicalFeature",
-            "type": "unece:GeographicalFeature",
-            "comment": "A geographical feature associated with this logistics location."
-        },
+    "datatypeProperties": [
         {
             "uri": "unece:countryName",
             "type": "xsd:string",
-            "comment": "The country name, expressed as text, of this logistics location."
+            "comment": "A name, expressed as text, of the country for this trade address."
         },
         {
             "uri": "unece:countrySubDivisionId",
             "type": "xsd:string",
-            "comment": "The identifier of the country sub-division for this logistics related location."
+            "comment": "A unique identifier of the country sub-division for this trade address."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this logistics related location."
-        },
-        {
-            "uri": "unece:facilityLocation",
-            "type": "unece:Location",
-            "comment": "A facility location referenced for this logistics location."
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:healthAffectedAreaIndicator",
@@ -37,12 +27,7 @@
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "A unique identifier for this logistics related location, such as a United Nations Location Code (UNLOCODE) or GS1 Global Location Number (GLN)."
-        },
-        {
-            "uri": "unece:inspectionEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain inspection event at this logistics location."
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:locationFunctionTypeCode",
@@ -57,7 +42,24 @@
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, of this logistics related location."
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:associatedGeographicalFeature",
+            "type": "unece:GeographicalFeature",
+            "comment": "A geographical feature associated with this communication event."
+        },
+        {
+            "uri": "unece:facilityLocation",
+            "type": "unece:Location",
+            "comment": "A facility location referenced for this logistics location."
+        },
+        {
+            "uri": "unece:inspectionEvent",
+            "type": "unece:SupplyChainEvent",
+            "comment": "A supply chain inspection event at this logistics location."
         },
         {
             "uri": "unece:physicalGeographicalCoordinate",
@@ -66,8 +68,8 @@
         },
         {
             "uri": "unece:postalAddress",
-            "type": "unece:TradeAddress",
-            "comment": "The postal trade address information for this logistics related location."
+            "type": "unece:Address",
+            "comment": "A postal address for this legally set up organization."
         },
         {
             "uri": "unece:previousAssociatedGeographicalFeature",
@@ -82,7 +84,7 @@
         {
             "uri": "unece:specifiedInspectionEvent",
             "type": "unece:InspectionEvent",
-            "comment": "An inspection event specified for this logistics location."
+            "comment": "A specified inspection event for this sustainability inspection."
         },
         {
             "uri": "unece:stayPeriod",
@@ -102,10 +104,6 @@
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableLocation",
-            "comment": "A logistics location or place applicable to this header trade agreement."
-        },
-        {
             "uri": "unece:appliedFromLocation",
             "comment": "The start location from which this logistics service charge should be applied."
         },
@@ -114,36 +112,24 @@
             "comment": "The end location at which this logistics service charge is no longer to be applied."
         },
         {
-            "uri": "unece:associatedLocation",
-            "comment": "A logistics location associated with ..."
-        },
-        {
             "uri": "unece:cargoFacilityRelatedLocation",
             "comment": "The location of a cargo facility related to this transport event."
         },
         {
             "uri": "unece:carrierAcceptanceLocation",
-            "comment": "The location where this referenced ..."
+            "comment": "The location where this referenced supply chain consignment will be or has been accepted by the carrier."
         },
         {
             "uri": "unece:consigneeReceiptLocation",
             "comment": "The location at which this supply chain consignment will be or has been received by the consignee."
         },
         {
-            "uri": "unece:consignmentDestinationSpecifiedLocation",
-            "comment": "A consignment destination location specified for this cross-border regulatory procedure."
-        },
-        {
             "uri": "unece:conveyanceFacilityRelatedLocation",
             "comment": "A location of a conveyance facility related to this transport event."
         },
         {
-            "uri": "unece:declarationLodgementLocation",
-            "comment": "The location at which a declaration has been lodged for this cross-border regulatory procedure."
-        },
-        {
             "uri": "unece:declaredForCustomsLocation",
-            "comment": "The location of this supply ..."
+            "comment": "The location of this supply chain consignment as declared for customs."
         },
         {
             "uri": "unece:deliverySpecifiedLocation",
@@ -155,35 +141,15 @@
         },
         {
             "uri": "unece:embarkationLocation",
-            "comment": "A logistics location where a ..."
-        },
-        {
-            "uri": "unece:entryCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office at which the goods subject to this cross-border regulatory procedure, enter the customs territory of entry."
+            "comment": "A logistics location where a found stowaway embarked upon the transport means on which they were discovered."
         },
         {
             "uri": "unece:evacuationLocation",
             "comment": "A logistics evacuation location for this MDH illness."
         },
         {
-            "uri": "unece:exitCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office at which the goods which are subject to this cross-border regulatory procedure leave the customs territory of destination."
-        },
-        {
-            "uri": "unece:exportCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office which is responsible for export formalities for the goods which are subject to this cross-border regulatory procedure."
-        },
-        {
             "uri": "unece:finalDestinationLocation",
             "comment": "The final destination location for this supply chain consignment."
-        },
-        {
-            "uri": "unece:importCustomsOfficeSpecifiedLocation",
-            "comment": "The location of the specified customs office which is responsible for import formalities for the goods which are subject to this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:issueLocation",
-            "comment": "The issue location for this ..."
         },
         {
             "uri": "unece:loadingBaseportLocation",
@@ -194,36 +160,20 @@
             "comment": "The logistics location where the supply chain consignment is loaded."
         },
         {
-            "uri": "unece:lodgementLocation",
-            "comment": "The location where this exchanged ..."
-        },
-        {
             "uri": "unece:occurrenceLogisticsLocation",
-            "comment": "A logistics location where this ..."
+            "comment": "A logistics location where this supply chain event occurs."
         },
         {
             "uri": "unece:onwardRoutingLocation",
             "comment": "An onward routing location for this supply chain consignment."
         },
         {
-            "uri": "unece:originLocation",
-            "comment": "A location of origin for ..."
-        },
-        {
             "uri": "unece:originalDespatchLocation",
             "comment": "The location from which this supply chain consignment was originally despatched."
         },
         {
-            "uri": "unece:paymentOfficeLocation",
-            "comment": "The location of an office at which a payment relevant to this cross-border regulatory procedure is made."
-        },
-        {
             "uri": "unece:paymentPlaceLocation",
             "comment": "The location of the place of payment of this logistics service charge."
-        },
-        {
-            "uri": "unece:pricingBaseApplicableLocation",
-            "comment": "The logistics location applicable to the pricing base for this header trade agreement."
         },
         {
             "uri": "unece:relatedSpecifiedLocation",
@@ -231,27 +181,15 @@
         },
         {
             "uri": "unece:specifiedLogisticsLocation",
-            "comment": "A location specified for this ..."
-        },
-        {
-            "uri": "unece:submissionLocation",
-            "comment": "The submission location for this exchanged declaration."
+            "comment": "A location specified for this logistics status."
         },
         {
             "uri": "unece:subordinateRelatedLocation",
             "comment": "A logistics location subordinate to this logistics location."
         },
         {
-            "uri": "unece:transitCustomsOfficeSpecifiedLocation",
-            "comment": "A location of a specified customs office which is responsible for transit formalities en route for the goods which are subject to this cross-border regulatory procedure."
-        },
-        {
             "uri": "unece:transitLocation",
             "comment": "A location of transit for this supply chain consignment."
-        },
-        {
-            "uri": "unece:transitReleaseCustomsOfficeSpecifiedLocation",
-            "comment": "A location of a specified customs office at which the goods which are subject to this cross-border regulatory procedure are released from a customs transit regime."
         },
         {
             "uri": "unece:transshipmentLocation",

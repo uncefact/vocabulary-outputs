@@ -2,34 +2,20 @@
 {
     "label": "classificationDocument",
     "uri": "unece:classificationDocument",
-    "comment": [
-        "The referenced classification document for this supply chain consignment item.",
-        "The referenced classification document for this supply chain consignment.",
-        "The referenced classification document, at header level, for this trade delivery.",
-        "The referenced classification document, at line level, for this trade delivery."
-    ],
+    "comment": "The referenced classification document for this supply chain consignment item.",
     "rangeIncludes": [
         {
-            "uri": "unece:Document",
-            "comment": "Written, printed or electronic matter that is referenced."
+            "uri": "unece:Document"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         },
         {
             "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

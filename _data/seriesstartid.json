@@ -2,12 +2,7 @@
 {
     "label": "seriesStartId",
     "uri": "unece:seriesStartId",
-    "comment": [
-        "The identifier of the start of a series of packages within this referenced logistics package.",
-        "The identifier of the start of a series of product labels.",
-        "The unique identifier of the start of a series of logistics labels.",
-        "The unique start identifier of a series of packages within this logistics package."
-    ],
+    "comment": "The identifier of the start of a series of packages within this referenced logistics package.",
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -15,16 +10,12 @@
     ],
     "domainIncludes": [
         {
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
+        },
+        {
             "uri": "unece:LogisticsLabel",
             "comment": "A label used for identifying goods for logistics purposes, such as a barcode, a radio frequency tag or a Vehicle Identification Number (VIN)."
-        },
-        {
-            "uri": "unece:Package",
-            "comment": "A self-contained wrapping or container ..."
-        },
-        {
-            "uri": "unece:ProductLabel",
-            "comment": "A label, such as a garment label or a radio frequency tag, used for identifying a product."
         }
     ]
 }

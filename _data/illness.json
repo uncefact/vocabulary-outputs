@@ -3,7 +3,7 @@
     "label": "Illness",
     "uri": "unece:Illness",
     "comment": "A WHO MDH (Maritime Declaration of Health) reported illness or disease for an onboard person.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
             "uri": "unece:caseDispositionCode",
             "type": "xsd:string",
@@ -13,11 +13,6 @@
             "uri": "unece:comment",
             "type": "xsd:string",
             "comment": "A comment, expressed as text for this MDH illness."
-        },
-        {
-            "uri": "unece:evacuationLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics evacuation location for this MDH illness."
         },
         {
             "uri": "unece:healthStatusCode",
@@ -36,13 +31,20 @@
         },
         {
             "uri": "unece:symptomOnsetDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "A symptom onset date, time, date time or other date time value for this MDH illness."
         },
         {
             "uri": "unece:treatment",
             "type": "xsd:string",
             "comment": "A treatment, expressed as text, for this MDH illness."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:evacuationLocation",
+            "type": "unece:LogisticsLocation",
+            "comment": "A logistics evacuation location for this MDH illness."
         }
     ],
     "referencedBy": [

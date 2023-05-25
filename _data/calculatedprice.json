@@ -1,33 +1,25 @@
 
 {
-    "label": "CalculatedPrice",
-    "uri": "unece:CalculatedPrice",
-    "comment": "Information related to a calculated price.",
-    "objectProperties": [
+    "label": "calculatedPrice",
+    "uri": "unece:calculatedPrice",
+    "comment": "A calculated price for this experience event.",
+    "rangeIncludes": [
         {
-            "uri": "unece:calculatedPriceTypeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying the type of calculated price."
-        },
-        {
-            "uri": "unece:chargeAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value of the calculated price to be charged."
-        },
-        {
-            "uri": "unece:relatedAllowanceCharge",
-            "type": "unece:AppliedAllowanceCharge",
-            "comment": "Applied allowance charge information related to this calculated price."
+            "uri": "unece:TradePrice"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:totalPrice",
-            "comment": "A total calculated price for ..."
+            "uri": "unece:ExperienceItem",
+            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
         },
         {
-            "uri": "unece:unitPrice",
-            "comment": "A unit calculated price for this basic work item."
+            "uri": "unece:ExperienceProduct",
+            "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience."
+        },
+        {
+            "uri": "unece:ExperienceEvent",
+            "comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
         }
     ]
 }

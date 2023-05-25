@@ -3,16 +3,11 @@
     "label": "MDHHealthIndication",
     "uri": "unece:MDHHealthIndication",
     "comment": "Information related to a specific transportation indication to be reported on a WHO MDH (Maritime Declaration of Health).",
-    "objectProperties": [
-        {
-            "uri": "unece:appliedSanitaryMeasure",
-            "type": "unece:SanitaryMeasure",
-            "comment": "A sanitary measure applied for this MDH health indication."
-        },
+    "datatypeProperties": [
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this MDH health indication."
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:locationId",
@@ -26,13 +21,8 @@
         },
         {
             "uri": "unece:reportedDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "A reported date, time, date time or other date time value for this MDH health indication."
-        },
-        {
-            "uri": "unece:reportedQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A reported quantity for this MDH health indication."
         },
         {
             "uri": "unece:statusIndicator",
@@ -43,6 +33,18 @@
             "uri": "unece:typeCode",
             "type": "xsd:string",
             "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:appliedSanitaryMeasure",
+            "type": "unece:SanitaryMeasure",
+            "comment": "A sanitary measure applied for this MDH health indication."
+        },
+        {
+            "uri": "unece:reportedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A reported quantity for this MDH health indication."
         }
     ],
     "referencedBy": [

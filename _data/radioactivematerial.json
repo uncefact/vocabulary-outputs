@@ -1,69 +1,17 @@
 
 {
-    "label": "RadioactiveMaterial",
-    "uri": "unece:RadioactiveMaterial",
-    "comment": "Material capable of undergoing spontaneous nuclear decay involving emission of ionizing radiation in the form of particles or gamma rays.",
-    "objectProperties": [
+    "label": "radioactiveMaterial",
+    "uri": "unece:radioactiveMaterial",
+    "comment": "The radioactive material (Class 7) transported as dangerous goods.",
+    "rangeIncludes": [
         {
-            "uri": "unece:applicableRadioactiveIsotope",
-            "type": "unece:RadioactiveIsotope",
-            "comment": "An isotope applicable to this radioactive material."
-        },
-        {
-            "uri": "unece:compositionDescription",
-            "type": "xsd:string",
-            "comment": "The textual description of the composition of this radioactive material."
-        },
-        {
-            "uri": "unece:criticalitySafetyIndexNumeric",
-            "type": "xsd:string",
-            "comment": "The criticality safety index number of this radioactive material."
-        },
-        {
-            "uri": "unece:fissileCriticalitySafetyIndexNumeric",
-            "type": "xsd:string",
-            "comment": "The number (rounded up to the next tenth) assigned to and placed on the label of a fissile radioactive material package, to designate the degree of control of accumulation of packages, overpacks or freight containers containing fissile material during transportation."
-        },
-        {
-            "uri": "unece:fissileExceptionIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this radioactive material is a fissile exception."
-        },
-        {
-            "uri": "unece:lowDispersibleInformation",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, describing the low dispersion properties of this radioactive material."
-        },
-        {
-            "uri": "unece:radioactivePackageTransportIndexCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a package transport index for this radioactive material."
-        },
-        {
-            "uri": "unece:radionuclideName",
-            "type": "xsd:string",
-            "comment": "The name of the radionuclide, expressed as text, of this radioactive material."
-        },
-        {
-            "uri": "unece:specialFormInformation",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, describing the special form for this radioactive material."
-        },
-        {
-            "uri": "unece:transportIndexNumeric",
-            "type": "xsd:string",
-            "comment": "The transport index number of this radioactive material."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of this radioactive material."
+            "uri": "unece:RadioactiveMaterial"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:radioactiveMaterial",
-            "comment": "The radioactive material (Class 7) transported as dangerous goods."
+            "uri": "unece:DangerousGoods",
+            "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         }
     ]
 }

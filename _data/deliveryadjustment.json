@@ -3,21 +3,11 @@
     "label": "DeliveryAdjustment",
     "uri": "unece:DeliveryAdjustment",
     "comment": "A correction or modification to reflect actual delivery conditions.",
-    "objectProperties": [
-        {
-            "uri": "unece:actualAmount",
-            "type": "unece:AmountType",
-            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
-        },
+    "datatypeProperties": [
         {
             "uri": "unece:actualDateTime",
             "type": "xsd:string",
-            "comment": "The actual date, time, date time, or other date time value of this delivery adjustment."
-        },
-        {
-            "uri": "unece:actualQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
+            "comment": "An actual date, time, date time, or other date time value of this financial booking."
         },
         {
             "uri": "unece:adjustmentReasonCode",
@@ -27,13 +17,19 @@
         {
             "uri": "unece:reason",
             "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this delivery adjustment."
+            "comment": "A reason, expressed as text, for this cancellation status."
         }
     ],
-    "referencedBy": [
+    "objectProperties": [
         {
-            "uri": "unece:specifiedDeliveryAdjustment",
-            "comment": "A delivery adjustment, at line level, specified for this trade delivery."
+            "uri": "unece:actualAmount",
+            "type": "unece:AmountType",
+            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
+        },
+        {
+            "uri": "unece:actualQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
         }
     ]
 }

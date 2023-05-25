@@ -2,29 +2,25 @@
 {
     "label": "pickUpEvent",
     "uri": "unece:pickUpEvent",
-    "comment": [
-        "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier.",
-        "A pick-up transport event for this supply chain consignment item.",
-        "The pick-up event for this supply chain consignment."
-    ],
+    "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier.",
     "rangeIncludes": [
         {
             "uri": "unece:TransportEvent",
-            "comment": "A significant occurrence or happening ..."
+            "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport."
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.TBR: description update to excersize GitHub update"
+        },
+        {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         },
         {
             "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

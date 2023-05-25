@@ -2,35 +2,24 @@
 {
     "label": "applicableRegulatoryProcedure",
     "uri": "unece:applicableRegulatoryProcedure",
-    "comment": [
-        "A cross-border regulatory procedure applicable to this header trade agreement.",
-        "A cross-border regulatory procedure applicable to this logistics transport movement.",
-        "A cross-border regulatory procedure applicable to this referenced supply chain consignment.",
-        "A cross-border regulatory procedure applicable to this supply chain consignment item.",
-        "A cross-border regulatory procedure applicable to this supply chain consignment."
-    ],
+    "comment": "A cross-border regulatory procedure applicable to this header trade agreement.",
     "rangeIncludes": [
         {
-            "uri": "unece:RegulatoryProcedure",
-            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+            "uri": "unece:RegulatoryProcedure"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
+        },
+        {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         },
         {
             "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
-            "uri": "unece:HeaderTradeAgreement",
-            "comment": "The contractual terms of a header trade agreement."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

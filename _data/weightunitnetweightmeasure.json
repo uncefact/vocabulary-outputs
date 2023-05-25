@@ -2,51 +2,36 @@
 {
     "label": "weightUnitNetWeightMeasure",
     "uri": "unece:weightUnitNetWeightMeasure",
-    "comment": [
-        "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment.",
-        "A measure of the net weight (mass) of this referenced consignment which excludes the weight of packaging and the weight of any transport equipment.",
-        "A measure of the net weight (mass) of this supply chain consignment item which excludes all packaging.",
-        "The measure of the net weight (mass) of the contents of this referenced logistics package.",
-        "The measure of the net weight (mass) of these transported dangerous goods.",
-        "The measure of the net weight (mass) of this logistics means of transport, such as the net tonnage of a vessel determined in accordance with the provisions of the International Convention on Tonnage Measurement of Ships, 1969.",
-        "The measure of the net weight (mass) of this piece of logistics transport equipment.",
-        "The measure of the net weight (mass) of this piece of referenced logistics transport equipment.",
-        "The measure, at line level, of the net weight (mass) of this trade delivery."
-    ],
+    "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment.",
     "rangeIncludes": [
         {
-            "uri": "unece:WeightUnitMeasureType",
-            "comment": "The numeric value determined by weight measuring."
+            "uri": "unece:WeightUnitMeasureType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.TBR: description update to excersize GitHub update"
         },
         {
             "uri": "unece:DangerousGoods",
             "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         },
         {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "uri": "unece:Package",
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         },
         {
             "uri": "unece:LogisticsTransportMeans",
             "comment": "The devices used to convey goods or other objects from place to place during logistics cargo movements."
         },
         {
-            "uri": "unece:Package",
-            "comment": "A self-contained wrapping or container ..."
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+        },
+        {
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }
