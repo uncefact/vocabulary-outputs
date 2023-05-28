@@ -64,15 +64,22 @@ jobs:
     - run: |
         mv mapping.json _data/
         mv *.csv _data/
+    - name: Generate a token
+      id: generate_token
+      uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92
+      with:
+        app_id: ${{ secrets.APP_ID }}
+        private_key:
+          ${{ secrets.APP_PRIVATE_KEY }}
     - name: snapshot PR
       uses: peter-evans/create-pull-request@v5
       with:
         commit-message: "chore: update jargon merged vocabulary"
-        token: ${{ secrets.PAT_TOKEN }}
+        token: ${{ steps.generate_token.outputs.token }}
         delete-branch: true
         title: 'chore: update jargon merged vocabulary'
         body: |
           Updates jargon merged JSON-LD vocabulary published as an artifact as a part of unece/codes-locode release
-        base: 'main'
+        base: 'jargon-pages'
         branch: create-pull-request/jargon-pages
         draft: true
