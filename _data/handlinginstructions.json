@@ -3,6 +3,33 @@
     "label": "HandlingInstructions",
     "uri": "unece:HandlingInstructions",
     "comment": "Handling information of an instructive nature.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:description",
+            "type": "xsd:string",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
+        },
+        {
+            "uri": "unece:handlingCode",
+            "type": "xsd:string",
+            "comment": "A code specifying delivery handling instructions."
+        },
+        {
+            "uri": "unece:handlingInstructionsDescriptionCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a description of these handling instructions."
+        },
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:procedure",
+            "type": "xsd:string",
+            "comment": "A procedure, expressed as text, for a set of inspection instructions."
+        }
+    ],
     "objectProperties": [
         {
             "uri": "unece:applicableTransportSettingTemperature",
@@ -13,26 +40,6 @@
             "uri": "unece:deliveryApplicableTemperature",
             "type": "unece:InstructedTemperature",
             "comment": "The instructed temperature for delivery applicable to these handling instructions."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these handling instructions."
-        },
-        {
-            "uri": "unece:handlingCode",
-            "type": "xsd:string",
-            "comment": "A code specifying these handling instructions."
-        },
-        {
-            "uri": "unece:handlingInstructionsDescriptionCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a description of these handling instructions."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this handling instructions."
         },
         {
             "uri": "unece:marketDeliveryApplicableTemperature",
@@ -60,11 +67,6 @@
             "comment": "The measure of the minimum storage humidity applicable to these handling instructions."
         },
         {
-            "uri": "unece:procedure",
-            "type": "xsd:string",
-            "comment": "A procedure, expressed as text, for these handling instructions."
-        },
-        {
             "uri": "unece:storageApplicableTemperature",
             "type": "unece:InstructedTemperature",
             "comment": "The instructed temperature for storage applicable to these handling instructions."
@@ -73,11 +75,11 @@
     "referencedBy": [
         {
             "uri": "unece:handlingInstructions",
-            "comment": "Handling instructions for the transported ..."
+            "comment": "Handling instructions for the transported dangerous goods."
         },
         {
             "uri": "unece:specifiedHandlingInstructions",
-            "comment": "Handling instructions specified for this ..."
+            "comment": "Handling instructions specified for this logistics means of transport."
         }
     ]
 }

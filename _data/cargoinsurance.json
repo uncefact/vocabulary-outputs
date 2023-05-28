@@ -3,7 +3,7 @@
     "label": "CargoInsurance",
     "uri": "unece:CargoInsurance",
     "comment": "Insurance coverage for cargo during transport movements.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
             "uri": "unece:contractGeneralConditions",
             "type": "xsd:string",
@@ -18,10 +18,12 @@
             "uri": "unece:coverageDescription",
             "type": "xsd:string",
             "comment": "The textual description of the coverage of this transport cargo insurance."
-        },
+        }
+    ],
+    "objectProperties": [
         {
             "uri": "unece:coverageParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "The coverage party for this transport cargo insurance."
         }
     ],

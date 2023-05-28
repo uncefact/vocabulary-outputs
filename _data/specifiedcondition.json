@@ -3,7 +3,7 @@
     "label": "SpecifiedCondition",
     "uri": "unece:SpecifiedCondition",
     "comment": "A state, such as of a specified person or thing.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
             "uri": "unece:actionCode",
             "type": "xsd:string",
@@ -12,28 +12,30 @@
         {
             "uri": "unece:name",
             "type": "xsd:string",
-            "comment": "A name, expressed as text, for this specified condition."
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
         },
+        {
+            "uri": "unece:subjectTypeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a subject type for this licence."
+        }
+    ],
+    "objectProperties": [
         {
             "uri": "unece:specifiedMeasurement",
             "type": "unece:CalibratedMeasurement",
             "comment": "A calibrated measurement specified for this specified condition."
         },
         {
-            "uri": "unece:subjectTypeCode",
-            "type": "unece:SubjectCodeList",
-            "comment": "A code specifying a subject type for this specified condition."
-        },
-        {
             "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of a value for this specified condition."
+            "comment": "A measure of a value for this document characteristic."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:statedCondition",
-            "comment": "A stated condition of these ..."
+            "comment": "A stated condition of these transported dangerous goods."
         }
     ]
 }

@@ -3,16 +3,11 @@
     "label": "LogisticsLabel",
     "uri": "unece:LogisticsLabel",
     "comment": "A label used for identifying goods for logistics purposes, such as a barcode, a radio frequency tag or a Vehicle Identification Number (VIN).",
-    "objectProperties": [
+    "datatypeProperties": [
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "The unique identifier of this logistics label."
-        },
-        {
-            "uri": "unece:includedSection",
-            "type": "unece:Section",
-            "comment": "A section included in this logistics label."
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:layoutTypeCode",
@@ -27,17 +22,24 @@
         {
             "uri": "unece:seriesEndId",
             "type": "xsd:string",
-            "comment": "The unique identifier of the end of a series of logistics labels."
+            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
         },
         {
             "uri": "unece:seriesStartId",
             "type": "xsd:string",
-            "comment": "The unique identifier of the start of a series of logistics labels."
+            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
         },
         {
             "uri": "unece:sizeCode",
             "type": "xsd:string",
             "comment": "The code specifying the size of this logistics label."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:includedSection",
+            "type": "unece:Section",
+            "comment": "A section included in this logistics label."
         }
     ],
     "referencedBy": [
@@ -52,10 +54,6 @@
         {
             "uri": "unece:radioactiveLabel",
             "comment": "Radioactive labelling that is a part of these logistics shipping marks."
-        },
-        {
-            "uri": "unece:usedLabel",
-            "comment": "A logistics label, at line level, used for this trade delivery."
         },
         {
             "uri": "unece:vINLabel",

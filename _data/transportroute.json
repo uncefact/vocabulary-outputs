@@ -3,21 +3,16 @@
     "label": "TransportRoute",
     "uri": "unece:TransportRoute",
     "comment": "A way or course taken from one location to another for the purpose of transporting cargo and or passengers.",
-    "objectProperties": [
+    "datatypeProperties": [
         {
             "uri": "unece:departurePoint",
             "type": "xsd:string",
-            "comment": "A departure point, expressed as text, for this transport route."
+            "comment": "A departure point, expressed as text, for this specified route."
         },
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "The textual description of this transport route."
-        },
-        {
-            "uri": "unece:frequencyEffectivePeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time for which a frequency is effective for this transport route."
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:frequencyTypeCode",
@@ -27,27 +22,17 @@
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "The unique identifier of this transport route."
-        },
-        {
-            "uri": "unece:itineraryStopEvent",
-            "type": "unece:TransportEvent",
-            "comment": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:mapBinaryObject",
-            "type": "xsd:base64Binary",
+            "type": "xsd:string",
             "comment": "Binary object data that is the map of this transport route."
         },
         {
             "uri": "unece:routeType",
             "type": "xsd:string",
-            "comment": "A type, expressed as text, for this transport route."
-        },
-        {
-            "uri": "unece:scheduledPeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "The specified period during which this transport route is scheduled."
+            "comment": "A type, expressed as text, for this specified route."
         },
         {
             "uri": "unece:securityLevelCode",
@@ -63,6 +48,23 @@
             "uri": "unece:transportRouteStatusCode",
             "type": "unece:StatusCodeList",
             "comment": "The code specifying a status for a transport route, such as planned or actual."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:frequencyEffectivePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time for which a frequency is effective for this transport route."
+        },
+        {
+            "uri": "unece:itineraryStopEvent",
+            "type": "unece:TransportEvent",
+            "comment": "An itinerary stop event for this transport route, such as a port call in a vessel schedule."
+        },
+        {
+            "uri": "unece:scheduledPeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "The specified period during which this transport route is scheduled."
         }
     ],
     "referencedBy": [

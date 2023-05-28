@@ -3,12 +3,7 @@
     "label": "ShippingMarks",
     "uri": "unece:ShippingMarks",
     "comment": "Physical markings or labels on individual packages or transport units for logistics purposes.",
-    "objectProperties": [
-        {
-            "uri": "unece:barcodeLabel",
-            "type": "unece:LogisticsLabel",
-            "comment": "A barcode label that is a part of these logistics shipping marks."
-        },
+    "datatypeProperties": [
         {
             "uri": "unece:logisticsShippingMarksMarkingInstructionCode",
             "type": "unece:MarkingInstructionCodeList",
@@ -18,6 +13,13 @@
             "uri": "unece:marking",
             "type": "xsd:string",
             "comment": "Marking, expressed as text, for these logistics shipping marks."
+        }
+    ],
+    "objectProperties": [
+        {
+            "uri": "unece:barcodeLabel",
+            "type": "unece:LogisticsLabel",
+            "comment": "A barcode label that is a part of these logistics shipping marks."
         },
         {
             "uri": "unece:rFIDLabel",
@@ -38,7 +40,7 @@
     "referencedBy": [
         {
             "uri": "unece:physicalShippingMarks",
-            "comment": "Physical logistics shipping marks and ..."
+            "comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
         }
     ]
 }

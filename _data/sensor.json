@@ -3,6 +3,28 @@
     "label": "Sensor",
     "uri": "unece:Sensor",
     "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
+    "datatypeProperties": [
+        {
+            "uri": "unece:identifier",
+            "type": "xsd:string",
+            "comment": "A proprietary identifier."
+        },
+        {
+            "uri": "unece:positionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying a position of this monitoring sensor."
+        },
+        {
+            "uri": "unece:remainingBatteryChargePercent",
+            "type": "xsd:string",
+            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
+        },
+        {
+            "uri": "unece:typeCode",
+            "type": "xsd:string",
+            "comment": "A code specifying a type of MDH health indication."
+        }
+    ],
     "objectProperties": [
         {
             "uri": "unece:actualReportedMeasurement",
@@ -22,27 +44,17 @@
         {
             "uri": "unece:grantedCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate granted for this monitoring sensor."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this monitoring sensor."
+            "comment": "A product certificate granted for this monitoring IOT device."
         },
         {
             "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this monitoring sensor."
+            "type": "unece:Party",
+            "comment": "A manufacturer party for this production process."
         },
         {
             "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner party of this monitoring sensor."
-        },
-        {
-            "uri": "unece:positionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a position of this monitoring sensor."
+            "type": "unece:Party",
+            "comment": "A party who owns this piece of logistics transport equipment."
         },
         {
             "uri": "unece:precisionMeasurement",
@@ -50,24 +62,14 @@
             "comment": "A calibrated measurement of precision for this monitoring sensor."
         },
         {
-            "uri": "unece:remainingBatteryChargePercent",
-            "type": "xsd:string",
-            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
-        },
-        {
             "uri": "unece:scheduledReportedMeasurement",
             "type": "unece:CalibratedMeasurement",
             "comment": "A scheduled calibrated measurement reported for this monitoring sensor."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a type of monitoring sensor."
-        },
-        {
             "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the value for this monitoring sensor."
+            "comment": "A measure of a value for this document characteristic."
         }
     ],
     "referencedBy": [
