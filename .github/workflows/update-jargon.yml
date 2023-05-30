@@ -64,6 +64,7 @@ jobs:
     - run: |
         mv mapping.json _data/
         mv *.csv _data/
+        mv merged.jsonld unece.jsonld
     - name: Generate a token
       id: generate_token
       uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92
@@ -79,7 +80,7 @@ jobs:
         delete-branch: true
         title: 'chore: update jargon merged vocabulary'
         body: |
-          Updates jargon merged JSON-LD vocabulary published as an artifact as a part of unece/codes-locode release
+          Updates jargon merged JSON-LD vocabulary published as an artifact as a part of unece/vocab-${{ inputs.vocabulary_name }} release
         base: 'jargon-pages'
         branch: create-pull-request/jargon-pages
         draft: true
