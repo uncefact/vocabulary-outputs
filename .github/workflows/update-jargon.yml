@@ -13,6 +13,14 @@ on:
         description: 'Vocabulary name'
         type: string
         required: true
+      branch_name:
+        description: 'Branch name'
+        type: string
+        required: false
+      version:
+        description: 'Release version'
+        type: string
+        required: false
 
 # Allow one concurrent deployment
 concurrency:
@@ -30,7 +38,21 @@ jobs:
         repository: uncefact/vocabulary-outputs
         ref: jargon-pages
 
+    - name: Checkout Vocab repo
+      if: ${{ inputs.branch_name != '' }}
+      uses: actions/checkout@v3
+      with:
+        repository: "uncefact/vocab-${{ inputs.vocabulary_name }}"
+        ref: "{{inputs.branch_name}}"
+        path: "vocab-${{ inputs.vocabulary_name }}"
+
+    - run: |
+      if: ${{ inputs.branch_name != '' }}
+        mv "vocab-${{ inputs.vocabulary_name }}"/vocab/merged.json .
+        rm -rf "vocab-${{ inputs.vocabulary_name }}"
+
     - id: download-merged-vocabulary
+      if: ${{ inputs.branch_name == '' }}
       uses: robinraju/release-downloader@v1.8
       with:
         repository: "uncefact/vocab-${{ inputs.vocabulary_name }}"
