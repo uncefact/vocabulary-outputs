@@ -49,7 +49,7 @@ jobs:
     - id: move-merged-vocabulary
       if: ${{ inputs.branch_name != '' }}
       run: |
-        mv vocab-${{ inputs.vocabulary_name }}/vocab/merged.json .
+        mv vocab-${{ inputs.vocabulary_name }}/vocab/merged.jsonld .
         rm -rf "vocab-${{ inputs.vocabulary_name }}"
 
     - id: download-merged-vocabulary
