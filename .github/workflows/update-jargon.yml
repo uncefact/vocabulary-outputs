@@ -68,7 +68,7 @@ jobs:
       with:
         repository: "uncefact/utilities"
         latest: true
-        fileName: "vocab-md-generation-1.0.1.jar"
+        fileName: "vocab-jsonld-utility-1.0.0.jar"
         tarBall: false
         zipBall: false
         extract: false
@@ -83,7 +83,7 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: '11'
-    - run: java -jar vocab-md-generation-1.0.1.jar
+    - run: java -jar vocab-jsonld-utility-1.0.0.jar -m "md"
     - run: |
         mv mapping.json _data/
         mv *.csv _data/
