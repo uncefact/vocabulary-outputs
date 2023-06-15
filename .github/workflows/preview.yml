@@ -46,4 +46,11 @@ jobs:
       run: bundle exec jekyll build --config _config_preview.yml
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary --delete --cache-control max-age=604800
-    
+    - name: Invalidate CloudFront
+      uses: chetan/invalidate-cloudfront-action@v2
+      env:
+        DISTRIBUTION: ${{ secrets.TEST_DISTRIBUTION }}
+        PATHS: "/vocabulary/*"
+        AWS_REGION: "us-east-1"
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
