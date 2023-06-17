@@ -53,8 +53,16 @@
   }
 
   &__item {
-    @media screen and (min-width: $tablet-md) {
-      width: calc(50% - 20px);
+    .browse-types--two-columns & {
+      @media screen and (min-width: $tablet-md) {
+        width: calc(50% - 20px);
+      }
+    }
+
+    .browse-types--three-columns & {
+      @media screen and (min-width: $tablet-md) {
+        width: calc(33.3% - 20px);
+      }
     }
   }
 }
@@ -144,6 +152,8 @@
   }
 
   &__description {
+    text-align: left;
+
     @media screen and (min-width: $tablet-md) {
       font-size: 14px;
       line-height: 22px;
