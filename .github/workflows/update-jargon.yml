@@ -11,12 +11,12 @@ on:
         description: 'Branch name'
         type: string
         required: false
-      release_version:
-        description: 'Release version'
-        type: string
-        required: false
       pull_request_url:
         description: 'Pull request URL'
+        type: string
+        required: false
+      release_url:
+        description: 'Release HTML URL'
         type: string
         required: false
 
@@ -118,7 +118,7 @@ jobs:
         delete-branch: true
         title: 'chore: Vocabulary vocab-${{ inputs.vocabulary_name }} release update'
         body: |
-          Vocabulary update due to vocab-${{ inputs.vocabulary_name }} release [${{ inputs.release_version }}](https://github.com/uncefact/vocab-${{ inputs.vocabulary_name }}/releases/tag/${{ inputs.release_version }})
+          Vocabulary update due to vocab-${{ inputs.vocabulary_name }} release [${{ inputs.release_version }}](${{ inputs.release_url }})
         base: 'jargon-pages'
         branch: create-pull-request/jargon-pages
         draft: true
