@@ -1,9 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# Sample workflow for building and deploying a Jekyll site to AWS S3
 name: Update Jargon vocabulary files
 
 on:
@@ -17,8 +11,12 @@ on:
         description: 'Branch name'
         type: string
         required: false
-      version:
+      release_version:
         description: 'Release version'
+        type: string
+        required: false
+      pull_request_url:
+        description: 'Pull request URL'
         type: string
         required: false
 
@@ -95,15 +93,32 @@ jobs:
         app_id: ${{ secrets.APP_ID }}
         private_key:
           ${{ secrets.APP_PRIVATE_KEY }}
+
     - name: snapshot PR
+      if: ${{ inputs.branch_name != '' }}
       uses: peter-evans/create-pull-request@v5
       with:
-        commit-message: "chore: update jargon merged vocabulary"
+        commit-message: "chore: vocab-${{ inputs.vocabulary_name }} snapshot update"
         token: ${{ steps.generate_token.outputs.token }}
         delete-branch: true
-        title: 'chore: update jargon merged vocabulary'
+        title: 'chore: Vocabulary vocab-${{ inputs.vocabulary_name }} snapshot update'
         body: |
-          Updates jargon merged JSON-LD vocabulary published as an artifact as a part of unece/vocab-${{ inputs.vocabulary_name }} release
+          Vocabulary update due to vocab-${{ inputs.vocabulary_name }} snapshot update. 
+          Corresponding PR - ${{ inputs.pull_request_url }}
+        base: 'jargon-pages'
+        branch: create-pull-request/jargon-pages
+        draft: true
+
+    - name: release PR
+      if: ${{ inputs.branch_name == '' }}
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: 'chore: Vocabulary vocab-${{ inputs.vocabulary_name }} release update'
+        token: ${{ steps.generate_token.outputs.token }}
+        delete-branch: true
+        title: 'chore: Vocabulary vocab-${{ inputs.vocabulary_name }} release update'
+        body: |
+          Vocabulary update due to vocab-${{ inputs.vocabulary_name }} release [${{ inputs.release_version }}](https://github.com/uncefact/vocab-${{ inputs.vocabulary_name }}/releases/tag/${{ inputs.release_version }})
         base: 'jargon-pages'
         branch: create-pull-request/jargon-pages
         draft: true
