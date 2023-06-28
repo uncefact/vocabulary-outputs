@@ -24,6 +24,10 @@ on:
         type: string
         required: false
 
+env:
+  # Setting an environment variable with the value of a configuration variable
+  utility_jar: vocab-jsonld-utility-${{ vars.VOCAB_JSONLD_UTILITY_VERSION }}.jar
+
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
@@ -70,7 +74,7 @@ jobs:
       with:
         repository: "uncefact/utilities"
         latest: true
-        fileName: "vocab-jsonld-utility-1.1.0.jar"
+        fileName: "${{ env.utility_jar }}"
         tarBall: false
         zipBall: false
         extract: false
@@ -85,7 +89,7 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: '11'
-    - run: java -jar vocab-jsonld-utility-1.1.0.jar -m "md"
+    - run: java -jar ${{ env.utility_jar }} -m "md"
     - run: |
         mv mapping.json _data/
         mv *.csv _data/
