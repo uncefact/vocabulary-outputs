@@ -43,14 +43,17 @@ jobs:
     - name: "Bundle install"
       run: bundle install
     - name: "Build Site"
-      run: bundle exec jekyll build --config _config_preview.yml
+      run: |
+        export BSP_VERSION=${{ github.event.pull_request.number }}
+        envsubst '$BSP_VERSION' < _config_preview.yml > _config_preview_subst.yml
+        bundle exec jekyll build --config _config_preview_subst.yml
     - name: "Deploy to AWS S3"
-      run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary --delete --cache-control max-age=604800
+      run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/${{ github.event.pull_request.number }} --delete --cache-control max-age=604800
     - name: Invalidate CloudFront
       uses: chetan/invalidate-cloudfront-action@v2
       env:
         DISTRIBUTION: ${{ secrets.TEST_DISTRIBUTION }}
-        PATHS: "/vocabulary/*"
+        PATHS: "/vocabulary/${{ github.event.pull_request.number }}/*"
         AWS_REGION: "us-east-1"
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
