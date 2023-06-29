@@ -1,29 +1,19 @@
-
 {
     "label": "Error",
     "uri": "unece:Error",
     "comment": "A notification that an error has occurred.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:associatedEvent",
-            "type": "unece:CorrectiveEvent",
+            "type": "unece:Event",
             "comment": "A corrective event associated with this declared error."
-        },
-        {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:string",
-            "comment": "An issue date, time, date time or other date time value for this declared error."
-        },
-        {
-            "uri": "unece:reasonCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a reason for the declared error."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedError",
-            "comment": "A declared error specified for ..."
+            "comment": "A notification that an error has occurred."
         }
     ]
 }

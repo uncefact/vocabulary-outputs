@@ -1,30 +1,17 @@
-
 {
     "label": "specifiedPaymentTradeSettlement",
     "uri": "unece:specifiedPaymentTradeSettlement",
-    "comment": [
-        "A payment trade settlement specified for this trade price.",
-        "A trade settlement payment specified for this trade settlement payment.",
-        "The payment trade settlement for this specified requirement."
-    ],
+    "comment": "A payment trade settlement specified for this trade price.",
+    "businessDomain": "finance",
     "rangeIncludes": [
         {
-            "uri": "unece:PaymentTradeSettlement",
-            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
+            "uri": "unece:PaymentTradeSettlement"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Requirement",
-            "comment": "Common conditions contained in a contract or agreement applicable between trading partners."
-        },
-        {
             "uri": "unece:TradePrice",
             "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
-        },
-        {
-            "uri": "unece:TradeSettlementPayment",
-            "comment": "The specific discharge obligations in respect of funds or securities transferred between two or more parties as part of a trade settlement."
         }
     ]
 }

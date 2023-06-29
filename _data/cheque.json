@@ -1,13 +1,13 @@
-
 {
     "label": "Cheque",
     "uri": "unece:Cheque",
     "comment": "A written payment order to a bank to pay the stated sum from the drawer's account.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableIndicator",
             "type": "xsd:boolean",
-            "comment": "The indication of whether or not this payment cheque is applicable."
+            "comment": "The indication of whether or not this cash used for payment. is applicable."
         },
         {
             "uri": "unece:clearingRegion",
@@ -23,16 +23,6 @@
             "uri": "unece:deliveryMethodCode",
             "type": "xsd:string",
             "comment": "The code specifying the delivery method for this payment cheque."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this payment cheque."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this payment cheque."
         },
         {
             "uri": "unece:instructionPriorityCode",
@@ -63,11 +53,6 @@
             "uri": "unece:printLocation",
             "type": "xsd:string",
             "comment": "The print location, expressed as text, for this payment cheque."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of payment cheque."
         }
     ],
     "referencedBy": [

@@ -1,34 +1,19 @@
-
 {
     "label": "InspectionEvent",
     "uri": "unece:InspectionEvent",
     "comment": "A significant occurrence or happening related to an inspection.",
-    "objectProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of the inspection for this event."
-        },
-        {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value of the occurrence of this inspection event."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:occurrenceLocation",
             "type": "unece:Location",
-            "comment": "The referenced location where this inspection event will occur or has occurred."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of inspection for this event."
+            "comment": "A reference to a physical location or place."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedInspectionEvent",
-            "comment": "A specified inspection event for ..."
+            "comment": "A specified inspection event for this sustainability inspection."
         }
     ]
 }

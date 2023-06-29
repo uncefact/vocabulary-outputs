@@ -1,9 +1,9 @@
-
 {
     "label": "ServiceCharge",
     "uri": "unece:ServiceCharge",
     "comment": "A charge made for a logistics related service.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:allowanceCharge",
             "type": "xsd:string",
@@ -21,7 +21,7 @@
         },
         {
             "uri": "unece:appliedTax",
-            "type": "unece:TradeTax",
+            "type": "unece:Tax",
             "comment": "A tax that is applied to this logistics service charge."
         },
         {
@@ -48,11 +48,6 @@
             "uri": "unece:chargePayingPartyRoleCode",
             "type": "unece:ChargePayingPartyRoleCodeList",
             "comment": "The code specifying the role of the party responsible for paying this logistics service charge."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this logistics service charge."
         },
         {
             "uri": "unece:disbursementAmount",
@@ -95,11 +90,6 @@
             "comment": "The code specifying the category of service for this logistics service charge."
         },
         {
-            "uri": "unece:specifiedPaymentMeans",
-            "type": "unece:PaymentMeans",
-            "comment": "The trade settlement payment means specified for this logistics service charge."
-        },
-        {
             "uri": "unece:transportServiceCategoryCode",
             "type": "unece:TransportServiceCategoryCodeList",
             "comment": "The code specifying the category of this logistics service charge [Reference United Nations Code List (UNCL) 5237]."
@@ -113,7 +103,7 @@
     "referencedBy": [
         {
             "uri": "unece:applicableServiceCharge",
-            "comment": "A logistics service charge applicable ..."
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
         },
         {
             "uri": "unece:estimatedApplicableServiceCharge",
@@ -121,7 +111,7 @@
         },
         {
             "uri": "unece:specifiedServiceCharge",
-            "comment": "A logistics service charge specified ..."
+            "comment": "A charge made for a logistics related service."
         }
     ]
 }

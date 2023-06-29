@@ -1,48 +1,48 @@
-
 {
     "label": "SpecifiedMaterial",
     "uri": "unece:SpecifiedMaterial",
     "comment": "A substance from which something is or could be made.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableAssessment",
             "type": "unece:Assessment",
-            "comment": "An assessment applicable for this specified material."
+            "comment": "A specified assessment applicable to this referenced standard."
         },
         {
             "uri": "unece:applicableGoodsCharacteristic",
             "type": "unece:GoodsCharacteristic",
-            "comment": "A goods characteristic applicable to this specified material."
+            "comment": "A distinguishing material feature applicable to this trade product instance."
         },
         {
             "uri": "unece:applicableProductCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate applicable to this specified material."
+            "comment": "A product certificate applicable to this production waste material component."
         },
         {
             "uri": "unece:applicableProductCharacteristic",
             "type": "unece:ProductCharacteristic",
-            "comment": "A product characteristic applicable to this specified material."
+            "comment": "A characteristic applicable to this trade product."
         },
         {
             "uri": "unece:applicableQuantity",
             "type": "unece:QuantityType",
-            "comment": "The quantity applicable to this specified material."
+            "comment": ""
         },
         {
             "uri": "unece:applicableSpecifiedCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate applicable to this specified material."
+            "comment": "A certificate applicable to this product batch."
         },
         {
             "uri": "unece:applicableSustainabilityCharacteristic",
             "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this specified material."
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
         {
             "uri": "unece:applicableTradeProductCertification",
             "type": "unece:TradeProductCertification",
-            "comment": "A product certification applicable to this specified material."
+            "comment": "A certification applicable to this trade product."
         },
         {
             "uri": "unece:applicableWasteMaterialRecoveryDisposalProcess",
@@ -51,135 +51,105 @@
         },
         {
             "uri": "unece:classificationId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An identifier of the classification of this specified material."
         },
         {
             "uri": "unece:componentMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Component material for this specified material."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified material."
+            "comment": "A material component of this trade product."
         },
         {
             "uri": "unece:descriptionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the description of this material."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this specified material."
-        },
-        {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this specified material."
+            "type": "schema:Text",
+            "comment": "A code specifying a description of this technical characteristic."
         },
         {
             "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "A manufacturer party for this specified material."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:massMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the mass of this specified material."
+            "comment": ""
         },
         {
             "uri": "unece:massRatioMeasure",
             "type": "unece:MeasureType",
-            "comment": "A mass measure of this specified material expressed as a ratio to another mass, such as the total mass."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this specified material."
+            "comment": ""
         },
         {
             "uri": "unece:presencePercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The percentage of the presence for this specified material."
         },
         {
             "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location specified for this material."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this material."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of material."
+            "comment": "A reference to a physical location or place."
         },
         {
             "uri": "unece:usedChemical",
             "type": "unece:Chemical",
-            "comment": "A distinct chemical used for this specified material."
+            "comment": "A chemical used during this applied chemical treatment."
         },
         {
             "uri": "unece:volumeMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the volume of this specified material."
+            "comment": ""
         },
         {
             "uri": "unece:volumeRatioMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the volume of this specified material expressed as a ratio to another volume, such as the total volume."
+            "comment": ""
         },
         {
             "uri": "unece:weightMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the weight of this specified material."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableMaterial",
-            "comment": "Material applicable for this supply ..."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:appliedMaterial",
-            "comment": "Specified material applied to this agricultural application."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:componentMaterial",
-            "comment": "A material component of this ..."
+            "comment": "A material component of this trade product."
         },
         {
             "uri": "unece:includedMaterial",
-            "comment": "Material included in this supply chain inventory."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:inputApplicableMaterial",
-            "comment": "Input material applicable to this ..."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:outputApplicableMaterial",
-            "comment": "Output material applicable to this ..."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:relatedMaterial",
-            "comment": "Material related to this trade party."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:substituteApplicableMaterial",
-            "comment": "Substitute material applicable for this supply chain trade line item."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:substitutedApplicableMaterial",
-            "comment": "Substituted material applicable for this supply chain trade line item."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:usedMaterial",
-            "comment": "Material used for this specified ..."
+            "comment": "A substance from which something is or could be made."
         }
     ]
 }

@@ -1,14 +1,9 @@
-
 {
     "label": "SpatialDimension",
     "uri": "unece:SpatialDimension",
     "comment": "A measure of spatial extent of an object, such as the length, breadth or height of a shipping container.",
-    "objectProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this spatial dimension."
-        },
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:dimensionTypeCode",
             "type": "unece:DimensionTypeCodeList",
@@ -18,11 +13,6 @@
             "uri": "unece:heightMeasure",
             "type": "unece:MeasureType",
             "comment": "The measure of the height component of this spatial dimension."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier of this spatial dimension."
         },
         {
             "uri": "unece:lengthMeasure",
@@ -37,7 +27,7 @@
         {
             "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the value of this spatial dimension."
+            "comment": ""
         },
         {
             "uri": "unece:widthMeasure",
@@ -48,15 +38,15 @@
     "referencedBy": [
         {
             "uri": "unece:linearDimension",
-            "comment": "A linear dimension or a ..."
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
         },
         {
             "uri": "unece:maximumLinearDimension",
-            "comment": "Maximum linear spatial dimensions of ..."
+            "comment": "Maximum linear spatial dimensions of this trade product."
         },
         {
             "uri": "unece:minimumLinearDimension",
-            "comment": "Minimum linear spatial dimensions of ..."
+            "comment": "Minimum linear spatial dimensions of this trade product."
         },
         {
             "uri": "unece:specifiedDimension",

@@ -1,13 +1,13 @@
-
 {
     "label": "FinancingFinancialAccount",
     "uri": "unece:FinancingFinancialAccount",
     "comment": "A financial account used internally by a bank to manage the line of credit granted to financing requesting party.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:accountName",
             "type": "xsd:string",
-            "comment": "The account name, expressed as text, of this financing financial account."
+            "comment": "An account name, expressed as text, of this payment financial account."
         },
         {
             "uri": "unece:bBANId",
@@ -27,7 +27,7 @@
         {
             "uri": "unece:iBANId",
             "type": "xsd:string",
-            "comment": "The unique International Bank Account Number (IBAN) identifier for this financing financial account."
+            "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
         },
         {
             "uri": "unece:proprietaryId",
@@ -37,18 +37,18 @@
         {
             "uri": "unece:proprietaryType",
             "type": "xsd:string",
-            "comment": "The proprietary type, expressed as text, of this financing financial account, such as the nature or use."
+            "comment": "A proprietary type, expressed as text, for this referenced document."
         },
         {
             "uri": "unece:uPICId",
             "type": "xsd:string",
-            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this financing financial account."
+            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
-            "comment": "The financing financial account, used ..."
+            "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
         }
     ]
 }

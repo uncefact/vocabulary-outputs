@@ -1,18 +1,18 @@
-
 {
     "label": "FinancialCard",
     "uri": "unece:FinancialCard",
     "comment": "A card used to represent a financial account for a trade settlement.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableIndicator",
             "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade settlement financial card is applicable."
+            "comment": "The indication of whether or not this cash used for payment. is applicable."
         },
         {
             "uri": "unece:cardholderName",
             "type": "xsd:string",
-            "comment": "The cardholder name as it appears on this trade settlement financial card. This may include both an individual authorized to use the card as well as the organization that owns the card."
+            "comment": "A cardholder's name, expressed as text, for this digital method used for payment."
         },
         {
             "uri": "unece:creditAvailableAmount",
@@ -25,11 +25,6 @@
             "comment": "A monetary value of the credit limit for this trade settlement financial card."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this trade settlement financial card."
-        },
-        {
             "uri": "unece:expiryDate",
             "type": "xsd:string",
             "comment": "The date of expiry up to which this trade settlement financial card is valid."
@@ -37,12 +32,7 @@
         {
             "uri": "unece:expiryDateTime",
             "type": "xsd:string",
-            "comment": "The date of expiry up to which this trade settlement financial card is valid."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier, commonly known as the card number, of this trade settlement financial card."
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
         },
         {
             "uri": "unece:interestRatePercent",
@@ -52,17 +42,12 @@
         {
             "uri": "unece:issuingCompanyName",
             "type": "xsd:string",
-            "comment": "The issuing company name, expressed as text, for this trade settlement financial card."
+            "comment": "A name, expressed as text, of the company issuing this experience item voucher."
         },
         {
             "uri": "unece:microchipIndicator",
             "type": "xsd:boolean",
             "comment": "The indication of whether or not this trade settlement financial card has a microchip."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of this trade settlement financial card, such as debit or credit."
         },
         {
             "uri": "unece:validFromDateTime",
@@ -86,7 +71,7 @@
         },
         {
             "uri": "unece:specifiedFinancialCard",
-            "comment": "A financial card specified in ..."
+            "comment": "A card used to represent a financial account for a trade settlement."
         }
     ]
 }

@@ -1,9 +1,9 @@
-
 {
     "label": "BasicWorkItem",
     "uri": "unece:BasicWorkItem",
     "comment": "A basic item of work.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:actualComplexDescription",
             "type": "unece:ComplexDescription",
@@ -27,17 +27,12 @@
         {
             "uri": "unece:comment",
             "type": "xsd:string",
-            "comment": "A comment, expressed as text, for this basic work item."
+            "comment": "A comment, expressed as text for this MDH illness."
         },
         {
             "uri": "unece:contractualLanguageCode",
             "type": "xsd:string",
             "comment": "The code specifying the contractual language for this basic work item."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this basic work item."
         },
         {
             "uri": "unece:index",
@@ -52,12 +47,12 @@
         {
             "uri": "unece:priceListItemId",
             "type": "xsd:string",
-            "comment": "The unique identifier of a price list item for this basic work item."
+            "comment": "The identifier of a price list item for this grouped work item."
         },
         {
             "uri": "unece:primaryClassificationCode",
             "type": "xsd:string",
-            "comment": "A code specifying the primary classification for this basic work item."
+            "comment": "A code specifying a primary classification value for this work item quantity analysis."
         },
         {
             "uri": "unece:referenceId",
@@ -90,11 +85,6 @@
             "comment": "The code specifying the classification of the total quantity for this basic work item."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying the type of basic work item."
-        },
-        {
             "uri": "unece:unitPrice",
             "type": "unece:CalculatedPrice",
             "comment": "A unit calculated price for this basic work item."
@@ -103,7 +93,7 @@
     "referencedBy": [
         {
             "uri": "unece:itemBasicWorkItem",
-            "comment": "A basic work item in ..."
+            "comment": "A basic work item in this basic work item."
         }
     ]
 }
