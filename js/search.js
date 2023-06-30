@@ -4,7 +4,7 @@ const search = {
     dataSet: document.getElementById('js-search-dataset').value,
 
     async postData(searchQuery) {
-        url = 'https://test.uncefact.org/search' + '?' + new URLSearchParams({
+        url = '$SEARCH_URL' + '?' + new URLSearchParams({
             q: searchQuery,
             size: 1000,
             fq: search.dataSet,

@@ -45,7 +45,13 @@ jobs:
     - name: "Build Site"
       run: |
         export BSP_VERSION=${{ github.event.pull_request.number }}
-        envsubst '$BSP_VERSION' < _config_preview.yml > _config_preview_subst.yml
+        export BASEURL="/vocabulary/$BSP_VERSION"
+        envsubst '$BSP_VERSION,$BASEURL' < _config_preview.yml > _config_preview_subst.yml
+        envsubst '$BASEURL' < _data/mapping.json > _data/_mapping.json
+        mv _data/_mapping.json _data/mapping.json
+        export SEARCH_URL="https://test.uncefact.org/search"
+        envsubst '$SEARCH_URL' < js/search.js > js/_search.js
+        mv js/_search.js js/search.js
         bundle exec jekyll build --config _config_preview_subst.yml
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/${{ github.event.pull_request.number }} --delete --cache-control max-age=604800
