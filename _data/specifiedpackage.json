@@ -1,30 +1,17 @@
-
 {
     "label": "specifiedPackage",
     "uri": "unece:specifiedPackage",
-    "comment": [
-        "A logistics package specified for these transported dangerous goods.",
-        "A logistics package specified for this supply chain trade transaction.",
-        "A logistics package, at line level, specified for this trade delivery."
-    ],
+    "comment": "A logistics package specified for these transported dangerous goods.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
-            "uri": "unece:Package",
-            "comment": "A self-contained wrapping or container ..."
+            "uri": "unece:Package"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:DangerousGoods",
             "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
-        },
-        {
-            "uri": "unece:SupplyChainTradeTransaction",
-            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         }
     ]
 }

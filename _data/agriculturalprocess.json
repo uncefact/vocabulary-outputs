@@ -1,32 +1,27 @@
-
 {
     "label": "AgriculturalProcess",
     "uri": "unece:AgriculturalProcess",
     "comment": "A practice of cultivating land, raising crops, or treatment of the agricultural produce.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:actualEndDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value of the actual end for the crop production in this agricultural process."
         },
         {
             "uri": "unece:actualStartDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value for the actual start of the crop production in this agricultural process."
         },
         {
             "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "An agricultural application applied to a crop production agricultural process."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of the agricultural process for this crop production."
+            "comment": "A specified agricultural application applied to this agricultural zone area."
         },
         {
             "uri": "unece:earliestStartDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value for the earliest start of the crop production in this agricultural process."
         },
         {
@@ -36,18 +31,18 @@
         },
         {
             "uri": "unece:latestEndDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value of the latest end for the crop production in this agricultural process."
         },
         {
             "uri": "unece:productionWasteInstructions",
             "type": "unece:DisposalInstructions",
-            "comment": "Disposal instructions related to production waste for this agricultural crop production process."
+            "comment": "A set of instructions detailing how to properly dispose of a material."
         },
         {
             "uri": "unece:reportedProductionWasteMaterial",
             "type": "unece:ProductionWasteMaterial",
-            "comment": "Production waste material reported for this agricultural crop production process."
+            "comment": "Any materials unused and rejected as unwanted during a production process."
         },
         {
             "uri": "unece:specifiedFieldCrop",
@@ -55,25 +50,15 @@
             "comment": "A field crop specified for this crop production agricultural process."
         },
         {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of the agricultural process for this crop production."
-        },
-        {
             "uri": "unece:subordinateTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the subordinate type of the agricultural process for this crop production."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of agricultural process for this crop production."
+            "type": "schema:Text",
+            "comment": "The code specifying the subordinate type for this production device."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableAgriculturalProcess",
-            "comment": "An agricultural process crop production ..."
+            "comment": "An agricultural process crop production applicable for this field crop."
         }
     ]
 }

@@ -1,9 +1,9 @@
-
 {
     "label": "FinancialAdjustment",
     "uri": "unece:FinancialAdjustment",
     "comment": "A correction or modification to reflect actual financial conditions.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:accountingDebitCreditStatusDirectionCode",
             "type": "unece:AccountingDebitCreditStatusCodeList",
@@ -12,21 +12,21 @@
         {
             "uri": "unece:actualAmount",
             "type": "unece:AmountType",
-            "comment": "An actual monetary value added or subtracted as a result of this financial adjustment."
+            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
         },
         {
             "uri": "unece:actualDateTime",
             "type": "xsd:string",
-            "comment": "The actual date, time, date time, or other date time value of this financial adjustment."
+            "comment": "An actual date, time, date time, or other date time value of this financial booking."
         },
         {
             "uri": "unece:actualQuantity",
             "type": "unece:QuantityType",
-            "comment": "The actual quantity added or subtracted as a result of this financial adjustment."
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
         },
         {
             "uri": "unece:claimRelatedParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "The claim related party for this financial adjustment."
         },
         {
@@ -42,22 +42,22 @@
         {
             "uri": "unece:reason",
             "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this financial adjustment."
+            "comment": "A reason, expressed as text, for this cancellation status."
         },
         {
             "uri": "unece:relatedTax",
-            "type": "unece:TradeTax",
+            "type": "unece:Tax",
             "comment": "A trade tax related to this financial adjustment."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:grandTotalSpecifiedAdjustment",
-            "comment": "The financial adjustment of the grand total specified for this trade settlement header monetary summation."
+            "comment": "A correction or modification to reflect actual financial conditions."
         },
         {
             "uri": "unece:specifiedFinancialAdjustment",
-            "comment": "A financial adjustment specified for ..."
+            "comment": "A correction or modification to reflect actual financial conditions."
         }
     ]
 }

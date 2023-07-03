@@ -1,9 +1,9 @@
-
 {
     "label": "CustomsValuation",
     "uri": "unece:CustomsValuation",
     "comment": "A cross-border trade related assessment of the worth of an object, such as its monetary value, for customs purposes.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:addedAdjustmentAmount",
             "type": "unece:AmountType",
@@ -17,7 +17,7 @@
         {
             "uri": "unece:applicableCurrencyExchange",
             "type": "unece:CurrencyExchange",
-            "comment": "The trade related currency exchange applicable to this cross-border customs valuation."
+            "comment": "A currency exchange applicable to this supply chain consignment."
         },
         {
             "uri": "unece:buyerSellerRelationshipIndicator",
@@ -75,11 +75,6 @@
             "comment": "The indication of whether or not there is any restriction imposed on the sale of the goods for this cross-border customs valuation."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of cross-border customs valuation."
-        },
-        {
             "uri": "unece:wTOAdditionCode",
             "type": "xsd:string",
             "comment": "The code specifying any additions necessary under the World Trade Organization (WTO) Valuation Agreement used for the assessment of this cross-border customs valuation."
@@ -88,7 +83,7 @@
     "referencedBy": [
         {
             "uri": "unece:applicableCustomsValuation",
-            "comment": "A cross-border customs valuation applicable ..."
+            "comment": "A cross-border customs valuation applicable to this supply chain consignment."
         }
     ]
 }

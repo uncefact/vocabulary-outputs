@@ -1,13 +1,13 @@
-
 {
     "label": "AppliedAllowanceCharge",
     "uri": "unece:AppliedAllowanceCharge",
     "comment": "The applied allowance or charge component of pricing.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:actualAmount",
             "type": "unece:AmountType",
-            "comment": "The actual monetary value of the applied allowance charge."
+            "comment": "An actual monetary value added or subtracted as a result of this delivery adjustment."
         },
         {
             "uri": "unece:appliedAllowanceChargeReasonCode",
@@ -17,12 +17,12 @@
         {
             "uri": "unece:basisAmount",
             "type": "unece:AmountType",
-            "comment": "The monetary value that is the basis on which the applied allowance charge is calculated."
+            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
         },
         {
             "uri": "unece:calculationPercent",
             "type": "xsd:string",
-            "comment": "The percentage used to calculate the applied allowance charge."
+            "comment": "The calculation percentage for this trade price."
         },
         {
             "uri": "unece:categoryAppliedTax",
@@ -33,11 +33,6 @@
             "uri": "unece:chargeIndicator",
             "type": "xsd:boolean",
             "comment": "The indication of whether or not the applied allowance charge is a charge."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of the applied allowance charge."
         }
     ],
     "referencedBy": [

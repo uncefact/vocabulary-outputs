@@ -1,78 +1,63 @@
-
 {
     "label": "AgriculturalCharacteristic",
     "uri": "unece:AgriculturalCharacteristic",
     "comment": "A prominent attribute or aspect of an agricultural object.",
-    "objectProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this agricultural characteristic."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this agricultural characteristic."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of agricultural characteristic."
-        },
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "The value, expressed as text, for this agricultural characteristic."
+            "type": "schema:Text",
+            "comment": "A value, expressed as text, for this document characteristic."
         },
         {
             "uri": "unece:valueAmount",
             "type": "unece:AmountType",
-            "comment": "The value, expressed as an amount, for this agricultural characteristic."
+            "comment": ""
         },
         {
             "uri": "unece:valueCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the value of this agricultural characteristic."
+            "type": "schema:Text",
+            "comment": "A code specifying a value for this specified range."
         },
         {
             "uri": "unece:valueDateTime",
-            "type": "xsd:string",
-            "comment": "The value, expressed as a date, time, date time, or other date time value, of this agricultural characteristic."
+            "type": "schema:Text",
+            "comment": "A date, time, date time or other date time value for this document characteristic."
         },
         {
             "uri": "unece:valueIndicator",
-            "type": "xsd:boolean",
-            "comment": "The value, expressed as an indicator, for this agricultural characteristic."
+            "type": "schema:Boolean",
+            "comment": "The value for this metric characteristic expressed as an indicator."
         },
         {
             "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of a value for this agricultural characteristic."
+            "comment": ""
         },
         {
             "uri": "unece:valueMethod",
             "type": "unece:SpecifiedMethod",
-            "comment": "A method specified for the value of this agricultural characteristic."
+            "comment": "A defined way of performing something."
         },
         {
             "uri": "unece:valueNumeric",
-            "type": "xsd:string",
-            "comment": "The value, expressed as a number, for this agricultural characteristic."
+            "type": "schema:Text",
+            "comment": "A value, expressed as a number, for this document characteristic."
         },
         {
             "uri": "unece:valueParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "A parameter specified for the value of this agricultural characteristic."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:valueRange",
             "type": "unece:Range",
-            "comment": "A range specified for the value of this agricultural characteristic."
+            "comment": "A row, line or series, commonly used to express the difference between lowest and highest values."
         },
         {
             "uri": "unece:valueTolerance",
             "type": "unece:Tolerance",
-            "comment": "A tolerance specified for the value of this agricultural characteristic."
+            "comment": "Permissible limit or limits of variation that is fixed for the case in question but may be different in other cases."
         }
     ],
     "referencedBy": [
@@ -82,7 +67,7 @@
         },
         {
             "uri": "unece:specifiedAgriculturalCharacteristic",
-            "comment": "An agricultural characteristic specified for ..."
+            "comment": "An agricultural characteristic specified for this crop plot."
         }
     ]
 }

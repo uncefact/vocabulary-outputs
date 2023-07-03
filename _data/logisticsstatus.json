@@ -1,9 +1,9 @@
-
 {
     "label": "LogisticsStatus",
     "uri": "unece:LogisticsStatus",
     "comment": "The information relevant to a condition or a position related to logistics.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:arrivalReportedEvent",
             "type": "unece:TransportEvent",
@@ -13,11 +13,6 @@
             "uri": "unece:departureReportedEvent",
             "type": "unece:TransportEvent",
             "comment": "A transport departure event reported for this logistics status."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this logistics status."
         },
         {
             "uri": "unece:loadingReportedEvent",
@@ -35,24 +30,9 @@
             "comment": "A code specifying a reason for this logistics status [UNECE Recommendation 24]."
         },
         {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this logistics status."
-        },
-        {
-            "uri": "unece:referenceDateTime",
-            "type": "xsd:string",
-            "comment": "The reference date, time, date time or other date time value for this logistics status."
-        },
-        {
             "uri": "unece:reportedSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
             "comment": "A supply chain event reported for this logistics status."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:string",
-            "comment": "The sequence number of this logistics status, such as within a status report."
         },
         {
             "uri": "unece:specifiedLogisticsLocation",
@@ -63,21 +43,16 @@
             "uri": "unece:unloadingReportedEvent",
             "type": "unece:TransportEvent",
             "comment": "A transport unloading event reported for this logistics status."
-        },
-        {
-            "uri": "unece:validityPeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "A specific validity period for this logistics status."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:reportedLogisticsStatus",
-            "comment": "A logistics status reported for ..."
+            "comment": "A logistics status reported for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:specifiedLogisticsStatus",
-            "comment": "A status specified for this ..."
+            "comment": "A status specified for this logistics transport movement."
         }
     ]
 }
