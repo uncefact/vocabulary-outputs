@@ -55,9 +55,8 @@ jobs:
         bundle exec jekyll build --config _config_preview_subst.yml
     - name: "Upload batch to CloudSearch domain"
       run: | 
-        export DATASET=${{ github.event.pull_request.number }}
-        envsubst '$DATASET' < batch-add.json > batch-add-fixed.json
-        mv batch-add-fixed.json batch-add.json
+        sed 's/$DATASET/${{ github.event.pull_request.number }}/g' batch-add.json > batch-add-updated.json
+        mv batch-add-updated.json batch-add.json
         aws cloudsearchdomain upload-documents --endpoint-url http://doc-un-vocab-search-domain-bncds7z75oh72nto75ujlq4ib4.ap-southeast-2.cloudsearch.amazonaws.com --content-type application/json --documents batch-add.json --region ap-southeast-2
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/${{ github.event.pull_request.number }} --delete --cache-control max-age=604800
