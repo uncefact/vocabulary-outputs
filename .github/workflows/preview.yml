@@ -88,8 +88,8 @@ jobs:
       uses: peter-evans/create-or-update-comment@v3
       id: couc
       with:
-        issue-number: ${{ steps.split.outputs.issue-number }
-        repository: ${{ steps.split.outputs.repository }
+        issue-number: ${{ steps.split.outputs.issue-number }}
+        repository: ${{ steps.split.outputs.repository }}
         token: ${{ steps.generate_token.outputs.token }}
         body: |
           The vocabulary has been deployed to https://test.uncefact.org/vocabulary/${{ github.event.pull_request.number }}/home
