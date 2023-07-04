@@ -68,3 +68,28 @@ jobs:
         AWS_REGION: "us-east-1"
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    - name: Split PR number
+      env:
+        PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+      id: split
+      run: |
+        echo "::set-output name=repository::${PR_BRANCH%%/pull*}"
+        echo "::set-output name=issue-number::${PR_BRANCH##*pull/}"
+    - name: Generate a token
+      id: generate_token
+      uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92
+      with:
+        app_id: ${{ secrets.APP_ID }}
+        private_key:
+          ${{ secrets.APP_PRIVATE_KEY }}
+
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v3
+      id: couc
+      with:
+        issue-number: ${{ steps.split.outputs.issue-number }
+        repository: ${{ steps.split.outputs.repository }
+        token: ${{ steps.generate_token.outputs.token }}
+        body: |
+          The vocabulary has been deployed to https://test.uncefact.org/vocabulary/${{ github.event.pull_request.number }}/home

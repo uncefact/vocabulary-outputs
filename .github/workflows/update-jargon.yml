@@ -105,6 +105,13 @@ jobs:
         private_key:
           ${{ secrets.APP_PRIVATE_KEY }}
 
+    - name: Split PR number
+      if: ${{ inputs.pull_request_url != '' }}
+      env:
+        PR_URL: ${{ inputs.pull_request_url }}
+      id: split
+      run: echo "::set-output name=pr::${PR_URL##*github.com/}"
+
     - name: snapshot PR
       if: ${{ inputs.branch_name != '' }}
       uses: peter-evans/create-pull-request@v5
@@ -117,7 +124,7 @@ jobs:
           Vocabulary update due to vocab-${{ inputs.vocabulary_name }} snapshot update. 
           Corresponding PR - ${{ inputs.pull_request_url }}
         base: 'jargon-pages'
-        branch: create-pull-request/jargon-pages
+        branch: ${{ steps.split.outputs.pr }}
         draft: true
 
     - name: release PR
