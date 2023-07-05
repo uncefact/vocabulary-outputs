@@ -1,0 +1,47 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# Sample workflow for building and deploying a Jekyll site to AWS S3
+name: Cleanup site preview on AWS S3
+
+on:
+  # Runs on pull requests against main branch
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+      - jargon-pages
+
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: 'us-west-1'
+
+
+jobs:
+  # Build job
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+    - name: "Delete batch to CloudSearch domain"
+      run: | 
+        sed 's/$DATASET/${{ github.event.pull_request.number }}/g' batch-delete.json > batch-delete-updated.json
+        mv batch-delete-updated.json batch-delete.json
+        aws cloudsearchdomain upload-documents --endpoint-url http://doc-un-vocab-search-domain-bncds7z75oh72nto75ujlq4ib4.ap-southeast-2.cloudsearch.amazonaws.com --content-type application/json --documents batch-delete.json --region ap-southeast-2
+    - name: "Remove content from AWS S3"
+      run: aws s3 rm s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/${{ github.event.pull_request.number }} --recursive
+    - name: Invalidate CloudFront
+      uses: chetan/invalidate-cloudfront-action@v2
+      env:
+        DISTRIBUTION: ${{ secrets.TEST_DISTRIBUTION }}
+        PATHS: "/vocabulary/${{ github.event.pull_request.number }}/*"
+        AWS_REGION: "us-east-1"
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
