@@ -53,6 +53,12 @@ jobs:
         envsubst '$SEARCH_URL' < js/search.js > js/_search.js
         mv js/_search.js js/search.js
         bundle exec jekyll build --config _config_preview_subst.yml
+        sed 's/https:\/\/vocabulary.uncefact.org\//https:\/\/test.uncefact.org\/vocabulary\/${{ github.event.pull_request.number }}\//g' unece.jsonld > unece-updated.jsonld
+        mv unece-updated.jsonld unece.jsonld
+        sed 's/https:\/\/vocabulary.uncefact.org\//https:\/\/test.uncefact.org\/vocabulary\/${{ github.event.pull_request.number }}\//g' unece-context.jsonld > unece-context-updated.jsonld
+        mv unece-context-updated.jsonld unece-context.jsonld
+        sed 's/https:\/\/vocabulary.uncefact.org\//https:\/\/test.uncefact.org\/vocabulary\/${{ github.event.pull_request.number }}\//g' pages/about.html > pages/about-updated.html
+        mv pages/about-updated.html pages/about.html
     - name: "Upload batch to CloudSearch domain"
       run: | 
         sed 's/$DATASET/${{ github.event.pull_request.number }}/g' batch-add.json > batch-add-updated.json
