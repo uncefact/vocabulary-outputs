@@ -1,9 +1,9 @@
-
 {
     "label": "HeaderBalanceOut",
     "uri": "unece:HeaderBalanceOut",
     "comment": "Offset header information to ensure that debits and credits are equal for a transaction.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:breakdownBalanceOut",
             "type": "unece:HeaderBalanceOut",
@@ -15,24 +15,14 @@
             "comment": "A monetary value calculated for this header balance out."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this header balance out."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this header balance out."
-        },
-        {
             "uri": "unece:occurrenceDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value of an occurrence of this header balance out."
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
         },
         {
             "uri": "unece:reasonCode",
             "type": "xsd:string",
-            "comment": "The code specifying the reason for this header balance out."
+            "comment": "A code specifying a reason for the declared error."
         },
         {
             "uri": "unece:reasonDescription",
@@ -43,7 +33,7 @@
     "referencedBy": [
         {
             "uri": "unece:applicableHeaderBalanceOut",
-            "comment": "A header balance out applicable to this trade settlement header monetary summation."
+            "comment": "Offset header information to ensure that debits and credits are equal for a transaction."
         },
         {
             "uri": "unece:breakdownBalanceOut",

@@ -1,24 +1,21 @@
-
 {
     "label": "generalCharacteristic",
     "uri": "unece:generalCharacteristic",
-    "comment": [
-        "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this specified inspection result.",
-        "The general characteristic, expressed as text, for this sample observation result, such as length, volume, density, titre, sensitivity, conductivity."
-    ],
+    "comment": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this specified inspection result.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:InspectionResult",
-            "comment": "Results obtained by performing an inspection."
-        },
-        {
             "uri": "unece:ObservationResult",
             "comment": "A collection of diagnostic data, visual or technical, and processing data, performed on a sample."
+        },
+        {
+            "uri": "unece:InspectionResult",
+            "comment": "Results obtained by performing an inspection."
         }
     ]
 }

@@ -1,23 +1,18 @@
-
 {
     "label": "ComplexDescription",
     "uri": "unece:ComplexDescription",
     "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a work item complex description.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:abstract",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A textual abstract of the content of the work item complex description."
         },
         {
             "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, for this work item complex description."
-        },
-        {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the contractual language for this work item complex description."
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
         },
         {
             "uri": "unece:requestingQuery",
@@ -38,7 +33,7 @@
     "referencedBy": [
         {
             "uri": "unece:actualComplexDescription",
-            "comment": "An actual complex description for ..."
+            "comment": "An actual complex description for this basic work item."
         },
         {
             "uri": "unece:subsetComplexDescription",

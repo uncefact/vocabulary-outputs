@@ -1,9 +1,9 @@
-
 {
     "label": "PaymentTerms",
     "uri": "unece:PaymentTerms",
     "comment": "Terms and conditions by which payment has been or will be made for trade purposes.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicablePaymentDiscountTerms",
             "type": "unece:PaymentDiscountTerms",
@@ -18,11 +18,6 @@
             "uri": "unece:billStartDateTime",
             "type": "xsd:string",
             "comment": "The date, time, date time, or other date time value of the bill start specified by these trade payment terms."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of these trade payment terms."
         },
         {
             "uri": "unece:dueDateTime",
@@ -46,8 +41,8 @@
         },
         {
             "uri": "unece:payeeParty",
-            "type": "unece:TradeParty",
-            "comment": "A payee party in these trade payment terms."
+            "type": "unece:Party",
+            "comment": "A payee party for this header trade settlement."
         },
         {
             "uri": "unece:paymentTermsEventTimeReferenceFromEventCode",
@@ -88,11 +83,11 @@
     "referencedBy": [
         {
             "uri": "unece:applicablePaymentTerms",
-            "comment": "The payment terms applicable to this header trade agreement."
+            "comment": "Terms and conditions by which payment has been or will be made for trade purposes."
         },
         {
             "uri": "unece:specifiedPaymentTerms",
-            "comment": "Payment terms specified for this ..."
+            "comment": "Terms and conditions by which payment has been or will be made for trade purposes."
         }
     ]
 }

@@ -1,34 +1,29 @@
-
 {
     "label": "valueAllowedIndicator",
     "uri": "unece:valueAllowedIndicator",
-    "comment": [
-        "The indication of whether or not the value for this specified parameter is allowed.",
-        "The indication of whether or not this control setting parameter value is allowed.",
-        "The indication of whether or not this operational parameter value is allowed.",
-        "The indication of whether or not this value is allowed for this parameter observation objective."
-    ],
+    "comment": "The indication of whether or not the value for this specified parameter is allowed.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "xsd:boolean"
+            "uri": "schema:Boolean"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ControlSettingParameter",
-            "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
+            "uri": "unece:SpecifiedParameter",
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
-            "uri": "unece:ObservationObjectiveParameter",
-            "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
+            "uri": "unece:ControlSettingParameter",
+            "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
         },
         {
             "uri": "unece:OperationalParameter",
             "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
         },
         {
-            "uri": "unece:SpecifiedParameter",
-            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
+            "uri": "unece:ObservationObjectiveParameter",
+            "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
         }
     ]
 }

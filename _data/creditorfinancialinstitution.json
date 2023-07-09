@@ -1,9 +1,9 @@
-
 {
     "label": "CreditorFinancialInstitution",
     "uri": "unece:CreditorFinancialInstitution",
     "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalClearingSystemId",
             "type": "xsd:string",
@@ -27,7 +27,7 @@
         {
             "uri": "unece:bICId",
             "type": "xsd:string",
-            "comment": "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this creditor financial institution."
+            "comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
         },
         {
             "uri": "unece:cHIPSParticipantId",
@@ -37,7 +37,7 @@
         {
             "uri": "unece:cHIPSUniversalId",
             "type": "xsd:string",
-            "comment": "The unique (United States) Clearing House Interbank Payments System (CHIPS) Universal Identification (UID) as assigned by the New York Clearing House for this creditor financial institution."
+            "comment": "The (United States) Clearing House Interbank Payments System (CHIPS) Universal Identification (UID) as assigned by the New York Clearing House for this financial identity."
         },
         {
             "uri": "unece:canadianPaymentsAssociationId",
@@ -92,12 +92,7 @@
         {
             "uri": "unece:locationAddress",
             "type": "unece:FinancialInstitutionAddress",
-            "comment": "The location address for this creditor financial institution."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this creditor financial institution."
+            "comment": "The location address for this branch of a financial institution."
         },
         {
             "uri": "unece:newZealandNCCId",
@@ -137,7 +132,7 @@
         {
             "uri": "unece:specifiedProprietaryIdentity",
             "type": "unece:ProprietaryIdentity",
-            "comment": "A proprietary identity specified for this creditor financial institution."
+            "comment": "A proprietary Identity specified for this person."
         },
         {
             "uri": "unece:subDivisionFinancialInstitution",
@@ -170,7 +165,7 @@
         },
         {
             "uri": "unece:specifiedCreditorFinancialInstitution",
-            "comment": "A creditor financial institution specified for this trade party."
+            "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money."
         }
     ]
 }

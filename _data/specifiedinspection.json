@@ -1,23 +1,18 @@
-
 {
     "label": "SpecifiedInspection",
     "uri": "unece:SpecifiedInspection",
     "comment": "The process of performing documented checks, such as on materials or processes, with a focus on discovering deviations, errors or faults related to documented requirements.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file attached to this specified inspection."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified inspection."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
             "uri": "unece:executionParty",
-            "type": "unece:TradeParty",
-            "comment": "The party executing this specified inspection."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:executionPerson",
@@ -25,18 +20,8 @@
             "comment": "The inspector executing this specified inspection."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this specified inspection."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this specified inspection."
-        },
-        {
             "uri": "unece:outsourcedIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this specified inspection is outsourced."
         },
         {
@@ -47,28 +32,23 @@
         {
             "uri": "unece:specifiedDocument",
             "type": "unece:Document",
-            "comment": "A referenced document for this specified inspection."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:specifiedInspectionEvent",
             "type": "unece:InspectionEvent",
-            "comment": "An inspection event for this specified inspection."
+            "comment": "A specified inspection event for this sustainability inspection."
         },
         {
             "uri": "unece:specifiedInspectionStatus",
             "type": "unece:InspectionStatus",
-            "comment": "The status for this specified inspection."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of inspection."
+            "comment": "The inspection status specified for this sustainability inspection."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableSpecifiedInspection",
-            "comment": "A specified inspection applicable to ..."
+            "comment": "A specified inspection applicable to this logistics transport movement."
         }
     ]
 }

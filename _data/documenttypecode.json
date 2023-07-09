@@ -1,40 +1,21 @@
-
 {
     "label": "documentTypeCode",
     "uri": "unece:documentTypeCode",
-    "comment": [
-        "A code specifying a type of acknowledgement document.",
-        "The code specifying the document type for this XHE payload instance.",
-        "The code specifying the type of exchanged document.",
-        "The code specifying the type of referenced document.",
-        "The code specifying the type of this exchanged declaration."
-    ],
+    "comment": "A code specifying a type of acknowledgement document.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "unece:DocumentCodeList",
-            "comment": "A character string denoting the type of a document. [Reference United Nations Code List (UNCL) 1001]"
+            "uri": "unece:DocumentCodeList"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:AcknowledgementDocument",
-            "comment": "A document exchanged between parties for a business application level acknowledgement of the receipt of information."
-        },
         {
             "uri": "unece:Document",
             "comment": "Written, printed or electronic matter that is referenced."
         },
         {
-            "uri": "unece:ExchangedDeclaration",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two parties as a formal declaration."
-        },
-        {
             "uri": "unece:ExchangedDocument",
             "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
-        },
-        {
-            "uri": "unece:PayloadInstance",
-            "comment": "An individual set of transmitted data in an XHE (Exchange Header Envelope)."
         }
     ]
 }

@@ -1,29 +1,17 @@
-
 {
     "label": "basisAmount",
     "uri": "unece:basisAmount",
-    "comment": [
-        "A monetary value used as a basis to calculate the discount in these trade payment discount terms.",
-        "A monetary value used as a basis to calculate these trade payment penalty terms.",
-        "A monetary value used as the basis on which this trade related tax, levy or duty is calculated.",
-        "The monetary value that is the basis on which the applied allowance charge is calculated.",
-        "The monetary value that is the basis on which this trade allowance charge is calculated.",
-        "The monetary value used as the basis in calculating the applied tax."
-    ],
+    "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms.",
+    "businessDomain": "finance",
     "rangeIncludes": [
         {
-            "uri": "unece:AmountType",
-            "comment": "A number of monetary units specified in a currency where the unit of the currency is explicit or implied."
+            "uri": "unece:AmountType"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:AppliedAllowanceCharge",
             "comment": "The applied allowance or charge component of pricing."
-        },
-        {
-            "uri": "unece:AppliedTax",
-            "comment": "A total levy or payment for the support of a government that is required of persons, groups, or businesses within the domain of that government."
         },
         {
             "uri": "unece:PaymentDiscountTerms",
@@ -34,12 +22,16 @@
             "comment": "Trade terms and conditions by which a penalty is or can be applied to a payable amount."
         },
         {
-            "uri": "unece:TradeAllowanceCharge",
-            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
+            "uri": "unece:AppliedTax",
+            "comment": "A total levy or payment for the support of a government that is required of persons, groups, or businesses within the domain of that government."
         },
         {
-            "uri": "unece:TradeTax",
+            "uri": "unece:Tax",
             "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         }
     ]
 }
