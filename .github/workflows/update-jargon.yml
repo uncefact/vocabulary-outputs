@@ -113,8 +113,7 @@ jobs:
       env:
         PR_URL: ${{ inputs.pull_request_url }}
       id: split
-      run: echo "::set-output name=pr::${PR_URL##*github.com/}"
-
+      run: echo "PR_PATH=${PR_URL##*github.com/}" >> "$GITHUB_OUTPUT"
     - name: snapshot PR
       if: ${{ inputs.branch_name != '' }}
       uses: peter-evans/create-pull-request@v5
@@ -127,7 +126,7 @@ jobs:
           Vocabulary update due to vocab-${{ inputs.vocabulary_name }} snapshot update. 
           Corresponding PR - ${{ inputs.pull_request_url }}
         base: 'jargon-pages'
-        branch: ${{ steps.split.outputs.pr }}
+        branch: ${{ steps.split.outputs.PR_PATH }}
         draft: true
 
     - name: release PR
