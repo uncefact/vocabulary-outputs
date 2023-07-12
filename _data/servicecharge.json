@@ -1,9 +1,9 @@
-
 {
     "label": "ServiceCharge",
     "uri": "unece:ServiceCharge",
     "comment": "A charge made for a logistics related service.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:allowanceCharge",
             "type": "xsd:string",
@@ -21,7 +21,7 @@
         },
         {
             "uri": "unece:appliedTax",
-            "type": "unece:TradeTax",
+            "type": "unece:Tax",
             "comment": "A tax that is applied to this logistics service charge."
         },
         {
@@ -52,7 +52,7 @@
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this logistics service charge."
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:disbursementAmount",
@@ -97,7 +97,7 @@
         {
             "uri": "unece:specifiedPaymentMeans",
             "type": "unece:PaymentMeans",
-            "comment": "The trade settlement payment means specified for this logistics service charge."
+            "comment": "A payment means specified for this header trade settlement."
         },
         {
             "uri": "unece:transportServiceCategoryCode",
@@ -113,7 +113,7 @@
     "referencedBy": [
         {
             "uri": "unece:applicableServiceCharge",
-            "comment": "A logistics service charge applicable ..."
+            "comment": "A logistics service charge applicable to this supply chain consignment item."
         },
         {
             "uri": "unece:estimatedApplicableServiceCharge",
@@ -121,7 +121,7 @@
         },
         {
             "uri": "unece:specifiedServiceCharge",
-            "comment": "A logistics service charge specified ..."
+            "comment": "A charge made for a logistics related service."
         }
     ]
 }

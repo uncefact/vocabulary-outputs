@@ -1,14 +1,9 @@
-
 {
     "label": "TTObjectEvent",
     "uri": "unece:TTObjectEvent",
     "comment": "Information about an event concerning one or more physical or digital Track and Trace (TT) objects identified by instance or class level identifiers.",
-    "objectProperties": [
-        {
-            "uri": "unece:actionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the action for this TT object event."
-        },
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:businessRelatedLocation",
             "type": "unece:TTLocation",
@@ -16,68 +11,58 @@
         },
         {
             "uri": "unece:businessStepCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the business step for this TT object event."
+            "type": "schema:Text",
+            "comment": "The code specifying the business step for this TT aggregation event."
         },
         {
             "uri": "unece:destinationRelatedParty",
             "type": "unece:TTParty",
-            "comment": "A destination related party for this TT object event."
+            "comment": "A destination related party for this TT aggregation event."
         },
         {
             "uri": "unece:dispositionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the disposition related to this TT object event."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this TT object event."
+            "type": "schema:Text",
+            "comment": "The code specifying the disposition related to this TT aggregation event."
         },
         {
             "uri": "unece:objectInstanceId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An instance identifier for an object of this TT object event."
-        },
-        {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value at which this TT object event occurred."
         },
         {
             "uri": "unece:quantitySpecifiedEventElement",
             "type": "unece:EventElement",
-            "comment": "A quantity event element specified for this TT object event."
+            "comment": "Information about an event in which a Track and Trace (TT) element of one of more physical or digital objects is identified by a specific object class identifier (such as an electronic product class), either a specific quantity or an unspecified quantity."
         },
         {
             "uri": "unece:readPointRelatedLocation",
             "type": "unece:TTLocation",
-            "comment": "The read point related location of this TT object event."
+            "comment": "The read point related location of this TT aggregation event."
         },
         {
             "uri": "unece:recordedDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value at which this TT object event was recorded."
+            "type": "schema:Text",
+            "comment": "The date, time, date time, or other date time value at which this TT aggregation event was recorded."
         },
         {
             "uri": "unece:relatedCertification",
             "type": "unece:SpecifiedCertification",
-            "comment": "A certification related to this TT object event."
+            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
         },
         {
             "uri": "unece:sourceRelatedParty",
             "type": "unece:TTParty",
-            "comment": "A source related party for this TT object event."
+            "comment": "A source related party for this TT aggregation event."
         },
         {
             "uri": "unece:specifiedError",
             "type": "unece:Error",
-            "comment": "A declared error specified for this TT object event."
+            "comment": "A notification that an error has occurred."
         },
         {
             "uri": "unece:specifiedTradeTransaction",
             "type": "unece:TTTradeTransaction",
-            "comment": "A trade transaction specified for this TT object event."
+            "comment": "A trade transaction specified for this TT aggregation event."
         }
     ]
 }

@@ -1,23 +1,23 @@
-
 {
     "label": "ProcessCertificate",
     "uri": "unece:ProcessCertificate",
     "comment": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required criteria.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:actualEffectiveDateTime",
-            "type": "xsd:string",
-            "comment": "The actual effective date, time, date time or other date time value for this process certificate."
+            "type": "schema:Text",
+            "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
         },
         {
             "uri": "unece:applicableAssertion",
             "type": "unece:Assertion",
-            "comment": "The sustainability assertion applicable to this process certificate."
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
         },
         {
             "uri": "unece:applicableObjectCode",
-            "type": "xsd:string",
-            "comment": "A code specifying an object for which this process certificate is applicable."
+            "type": "schema:Text",
+            "comment": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
         },
         {
             "uri": "unece:applicableProcessCertification",
@@ -27,73 +27,58 @@
         {
             "uri": "unece:applicableProcessCharacteristic",
             "type": "unece:ProcessCharacteristic",
-            "comment": "A process characteristic applicable to this process certificate."
+            "comment": "A prominent attribute or aspect of a process."
         },
         {
             "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this process certificate."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this process certificate."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
             "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file attached to this process certificate."
+            "comment": "A binary file attached for this sustainability inspection."
         },
         {
             "uri": "unece:certificateTypeCode",
             "type": "unece:CertificateTypeCodeList",
-            "comment": "The code specifying the type of process certificate."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this process certificate."
+            "comment": "A code specifying a type of specified certificate."
         },
         {
             "uri": "unece:expiryDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value when this process certificate expires."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this process certificate."
+            "type": "schema:Text",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
         },
         {
             "uri": "unece:issueDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the issuance of this process certificate."
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
         },
         {
             "uri": "unece:issueReasonCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the reason for the issue of this process certificate."
         },
         {
             "uri": "unece:issuingPartyId",
-            "type": "xsd:string",
-            "comment": "An identifier of the party issuing this process certificate."
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
         },
         {
             "uri": "unece:purposeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the purpose of this process certificate."
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
         },
         {
             "uri": "unece:requestedEffectiveDateTime",
-            "type": "xsd:string",
-            "comment": "The requested effective date, time, date time or other date time value for this process certificate."
+            "type": "schema:Text",
+            "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableProcessCertificate",
-            "comment": "A process certificate applicable to ..."
+            "comment": "A piece of written, printed or electronic matter that provides information or evidence that a process has met required criteria."
         },
         {
             "uri": "unece:obtainedProcessCertificate",
@@ -101,7 +86,7 @@
         },
         {
             "uri": "unece:specifiedProcessCertificate",
-            "comment": "A process certificate for this ..."
+            "comment": "A process certificate for this specified chemical treatment."
         }
     ]
 }

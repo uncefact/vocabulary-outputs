@@ -1,37 +1,27 @@
-
 {
     "label": "Marketplace",
     "uri": "unece:Marketplace",
     "comment": "An actual or virtual place where buyers and sellers interact, directly or through intermediaries, to trade goods or services.",
-    "objectProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this specified marketplace."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this specified marketplace."
-        },
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:orderingAvailablePeriod",
             "type": "unece:AvailablePeriod",
-            "comment": "An available ordering period for this specified marketplace."
+            "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date for which something is available."
         },
         {
             "uri": "unece:salesMethodCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying a sales method, such as an auction clock or mediation, for this specified marketplace."
         },
         {
             "uri": "unece:virtualIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this specified marketplace is virtual, such as a web-based marketplace."
         },
         {
             "uri": "unece:websiteURIId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A website Uniform Resource Identifier (URI) for this specified marketplace."
         }
     ],

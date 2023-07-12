@@ -1,9 +1,9 @@
-
 {
     "label": "InspectionPerson",
     "uri": "unece:InspectionPerson",
     "comment": "An individual human being who conducts an inspection.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:attainedSpecifiedQualification",
             "type": "unece:SpecifiedQualification",
@@ -11,14 +11,14 @@
         },
         {
             "uri": "unece:inspectionPersonName",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The name or set of names, expressed as text, by which this inspection person is known."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:executionPerson",
-            "comment": "The inspector executing this specified ..."
+            "comment": "The inspector executing this specified inspection."
         }
     ]
 }

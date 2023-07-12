@@ -1,35 +1,29 @@
-
 {
     "label": "handlingInstructions",
     "uri": "unece:handlingInstructions",
-    "comment": [
-        "Handling instructions for the transported dangerous goods.",
-        "Handling instructions for this piece of logistics transport equipment.",
-        "Handling instructions for this supply chain consignment item.",
-        "Handling instructions for this supply chain consignment, such as where or how specified packages or containers are to be loaded on a means of transport."
-    ],
+    "comment": "Handling instructions for the transported dangerous goods.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
-            "uri": "unece:HandlingInstructions",
-            "comment": "Handling information of an instructive nature."
+            "uri": "unece:HandlingInstructions"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.TBR: description update to excersize GitHub update"
         },
         {
             "uri": "unece:DangerousGoods",
             "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+        },
+        {
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }
