@@ -1,25 +1,14 @@
-
 {
     "label": "assertionCode",
     "uri": "unece:assertionCode",
-    "comment": [
-        "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals.",
-        "A code specifying an assertion for this trade product certification, such as claims that a product is free from peanuts.",
-        "The code specifying the assertion for this process certification, such as a claim that the process is free from child labour.",
-        "The code specifying the assertion for this product batch certification, such as a claim that a product is free from gluten.",
-        "The code specifying the assertion, such as a claim that an organization does not practise child labour, of this organizational certification.",
-        "The code specifying the assertion, such as a claim that the process is free from child labour, for this animal certification."
-    ],
+    "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:AnimalCertification",
-            "comment": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations."
-        },
         {
             "uri": "unece:OrganizationalCertification",
             "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
@@ -39,6 +28,10 @@
         {
             "uri": "unece:TradeProductCertification",
             "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
+        },
+        {
+            "uri": "unece:AnimalCertification",
+            "comment": "The process of certifying that a certain animal has met performance and quality assurance requirements, or qualification requirements as stipulated in regulations."
         }
     ]
 }
