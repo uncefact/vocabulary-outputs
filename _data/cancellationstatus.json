@@ -1,34 +1,24 @@
-
 {
     "label": "CancellationStatus",
     "uri": "unece:CancellationStatus",
     "comment": "Information relevant to a condition of a cancellation.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:cancellationDocumentStatusConditionCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the condition of this cancellation status."
         },
         {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "A reason, expressed as text, for this cancellation status."
-        },
-        {
-            "uri": "unece:reasonCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the reason for this cancellation status."
-        },
-        {
             "uri": "unece:reasonInformation",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "Information, expressed as text, related to the reason for this cancellation status."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedCancellationStatus",
-            "comment": "A status of a cancellation specified for this financing request document, such as accepted."
+            "comment": "Information relevant to a condition of a cancellation."
         }
     ]
 }

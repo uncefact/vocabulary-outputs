@@ -1,36 +1,21 @@
-
 {
     "label": "includedSupplyChainTradeLineItem",
     "uri": "unece:includedSupplyChainTradeLineItem",
-    "comment": [
-        "A supply chain trade line item included in this logistics package.",
-        "A supply chain trade line item which is included in this trade product group.",
-        "A trade line item included in this referenced supply chain consignment item.",
-        "A trade line item included in this supply chain consignment item.",
-        "A trade line item included in this supply chain trade transaction."
-    ],
+    "comment": "A supply chain trade line item included in this logistics package.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:SupplyChainTradeLineItem",
-            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
+            "uri": "unece:SupplyChainTradeLineItem"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
-            "uri": "unece:Package",
-            "comment": "A self-contained wrapping or container ..."
+            "uri": "unece:SupplyChainTradeTransaction",
+            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         },
         {
             "uri": "unece:ProductGroup",
             "comment": "A grouping of trade products."
-        },
-        {
-            "uri": "unece:SupplyChainTradeTransaction",
-            "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         }
     ]
 }

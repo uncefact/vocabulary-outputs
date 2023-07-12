@@ -1,16 +1,20 @@
-
 {
     "label": "exemptionIndicator",
     "uri": "unece:exemptionIndicator",
     "comment": "The indication of whether or not there is an exemption from this trade tax.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:boolean"
+            "uri": "schema:Boolean"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:Tax",
             "comment": "A trade related fiscal levy or duty."
         }
     ]

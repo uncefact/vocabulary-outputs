@@ -1,27 +1,17 @@
-
 {
     "label": "Range",
     "uri": "unece:Range",
     "comment": "A row, line or series, commonly used to express the difference between lowest and highest values.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:endId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of the end of this specified range."
         },
         {
-            "uri": "unece:maximumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the maximum value for this specified range."
-        },
-        {
-            "uri": "unece:minimumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the minimum value for this specified range."
-        },
-        {
             "uri": "unece:startId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of the start of this specified range."
         },
         {
@@ -30,38 +20,23 @@
             "comment": "The total number of items in this specified range."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a type of this specified range."
-        },
-        {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "A value, expressed as text, for this specified range."
-        },
-        {
             "uri": "unece:valueBaseSystemCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the value base system, such as Arabic numerals, for this specified range."
-        },
-        {
-            "uri": "unece:valueCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a value for this specified range."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:definedRange",
-            "comment": "A defined range specified for this operational parameter."
+            "comment": "A row, line or series, commonly used to express the difference between lowest and highest values."
         },
         {
             "uri": "unece:requestedRange",
-            "comment": "A requested range specified for this control setting parameter."
+            "comment": "A row, line or series, commonly used to express the difference between lowest and highest values."
         },
         {
             "uri": "unece:valueRange",
-            "comment": "A range specified for a ..."
+            "comment": "A range specified for a value of this metric characteristic."
         }
     ]
 }
