@@ -1,14 +1,9 @@
-
 {
     "label": "TradeAllowanceCharge",
     "uri": "unece:TradeAllowanceCharge",
     "comment": "A component of pricing, such as an allowance or charge for trade purposes.",
-    "objectProperties": [
-        {
-            "uri": "unece:actualAmount",
-            "type": "unece:AmountType",
-            "comment": "An actual monetary value of the trade allowance charge."
-        },
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:actualCurrencyExchange",
             "type": "unece:CurrencyExchange",
@@ -27,57 +22,37 @@
         {
             "uri": "unece:basisAmount",
             "type": "unece:AmountType",
-            "comment": "The monetary value that is the basis on which this trade allowance charge is calculated."
+            "comment": ""
         },
         {
             "uri": "unece:basisQuantity",
             "type": "unece:QuantityType",
-            "comment": "The quantity on which this trade allowance charge is based."
+            "comment": ""
         },
         {
             "uri": "unece:calculationPercent",
-            "type": "xsd:string",
-            "comment": "The percentage applied to calculate this trade allowance charge."
+            "type": "schema:Text",
+            "comment": "The calculation percentage for this trade price."
         },
         {
             "uri": "unece:categoryTradeTax",
-            "type": "unece:TradeTax",
+            "type": "unece:Tax",
             "comment": "A tax category of this trade allowance charge."
         },
         {
             "uri": "unece:chargeIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not the trade allowance charge is a charge."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this trade allowance charge."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this trade allowance charge."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the applied allowance charge is a charge."
         },
         {
             "uri": "unece:prepaidIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this trade allowance charge is prepaid."
-        },
-        {
-            "uri": "unece:reason",
-            "type": "xsd:string",
-            "comment": "The reason, expressed as text, for this trade allowance charge."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:string",
-            "comment": "The sequence number for applying this trade allowance charge."
         },
         {
             "uri": "unece:unitBasisAmount",
             "type": "unece:AmountType",
-            "comment": "The monetary value of the unit basis on which the allowance or charge is calculated."
+            "comment": ""
         }
     ],
     "referencedBy": [
@@ -91,7 +66,7 @@
         },
         {
             "uri": "unece:specifiedAllowanceCharge",
-            "comment": "An allowance or charge specified ..."
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
         }
     ]
 }

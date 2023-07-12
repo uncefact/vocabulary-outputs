@@ -1,22 +1,22 @@
-
 {
     "label": "ExchangedDocument",
     "uri": "unece:ExchangedDocument",
     "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:acceptanceDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value for the acceptance of this exchanged document."
         },
         {
             "uri": "unece:agentParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "A party representing another party for this exchanged document."
         },
         {
             "uri": "unece:amendmentPurpose",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An amendment purpose, expressed in text, for this exchanged document."
         },
         {
@@ -27,7 +27,7 @@
         {
             "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file attached to this exchanged document."
+            "comment": "A binary file attached for this sustainability inspection."
         },
         {
             "uri": "unece:buyerSignatoryAuthentication",
@@ -36,13 +36,8 @@
         },
         {
             "uri": "unece:cancellationDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value of a cancellation of the exchanged document."
-        },
-        {
-            "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a category for this exchanged document."
         },
         {
             "uri": "unece:contractualClause",
@@ -51,13 +46,13 @@
         },
         {
             "uri": "unece:controlRequirementIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this exchanged document has specific control requirements."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not a control is required for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:copyIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this exchanged document is a copy."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the referenced document is a copy."
         },
         {
             "uri": "unece:copyIssuedQuantity",
@@ -71,42 +66,27 @@
         },
         {
             "uri": "unece:creationDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value of a creation of this exchanged document."
-        },
-        {
-            "uri": "unece:customsId",
-            "type": "xsd:string",
-            "comment": "A unique identifier, for customs purposes, for this exchanged document."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this exchanged document."
+            "type": "schema:Text",
+            "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
         },
         {
             "uri": "unece:documentStatusCode",
             "type": "unece:DocumentStatusCodeList",
-            "comment": "The code specifying the status of this exchanged document."
+            "comment": "The code specifying the status for this referenced document."
         },
         {
             "uri": "unece:documentTypeCode",
             "type": "unece:DocumentCodeList",
-            "comment": "The code specifying the type of exchanged document."
-        },
-        {
-            "uri": "unece:effectiveSpecifiedPeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "The specified period within which this exchanged document is effective."
+            "comment": "A code specifying a type of acknowledgement document."
         },
         {
             "uri": "unece:electronicPresentationIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this exchanged document is presented in an electronic format."
         },
         {
             "uri": "unece:exchangedDocumentAmendmentPurposeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying a purpose of an amendment to this exchanged document."
         },
         {
@@ -121,7 +101,7 @@
         },
         {
             "uri": "unece:firstVersionIssueDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value when the first version of this exchanged document was issued."
         },
         {
@@ -130,58 +110,43 @@
             "comment": "The fourth signature, also known as the third counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
         },
         {
-            "uri": "unece:globalId",
-            "type": "xsd:string",
-            "comment": "The unique global identifier for this exchanged document."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier of this exchanged document."
-        },
-        {
             "uri": "unece:includedNote",
             "type": "unece:Note",
-            "comment": "A note included in this exchanged document."
-        },
-        {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this exchanged document."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:issueDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value for the issuance of this exchanged document."
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
         },
         {
             "uri": "unece:issueLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The location where this exchanged document has been issued."
+            "type": "unece:Location",
+            "comment": "The issue location for this document authentication."
         },
         {
             "uri": "unece:issuerParty",
-            "type": "unece:TradeParty",
-            "comment": "The party that issues this exchanged document."
+            "type": "unece:Party",
+            "comment": "A party that issues this specified declaration."
         },
         {
             "uri": "unece:languageId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A unique identifier for a language used in this exchanged document."
         },
         {
             "uri": "unece:lineCountNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The count of the number of lines in this exchanged document."
         },
         {
             "uri": "unece:lineItemQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of line items in this exchanged document."
+            "comment": ""
         },
         {
             "uri": "unece:lodgementLocation",
-            "type": "unece:LogisticsLocation",
+            "type": "unece:Location",
             "comment": "The location where this exchanged document has been lodged."
         },
         {
@@ -190,13 +155,8 @@
             "comment": "A code specifying the purpose of this exchanged document, such as request or reminder."
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of this exchanged document."
-        },
-        {
             "uri": "unece:offsetProcessingStatus",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A status of an offset processing, expressed as text, for this exchanged document, such as the process offsetted by this document."
         },
         {
@@ -211,58 +171,58 @@
         },
         {
             "uri": "unece:previousRevisionId",
-            "type": "xsd:string",
-            "comment": "The unique identifier of the previous revision of this exchanged document."
+            "type": "schema:Text",
+            "comment": "An identifier for a previous revision of this referenced document."
         },
         {
             "uri": "unece:purpose",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The purpose, expressed as text, of this exchanged document."
         },
         {
             "uri": "unece:recipientAssignedId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A unique recipient assigned identifier for this exchanged document."
         },
         {
             "uri": "unece:recipientTradeParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "A trade party that receives this exchanged document."
         },
         {
             "uri": "unece:referenceDocument",
             "type": "unece:Document",
-            "comment": "Other documents referenced by this exchanged document."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:rejectionResponseDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A date, time, date time, or other date time value of a rejection response of the exchanged document."
         },
         {
             "uri": "unece:remarks",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A remark, expressed as text, regarding this exchanged document."
         },
         {
             "uri": "unece:responseDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A date, time, date time, or other date time value of a response of the exchanged document."
         },
         {
             "uri": "unece:responseReasonCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying a response reason for this exchanged document."
         },
         {
             "uri": "unece:revisionDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value for the revision of this exchanged document."
         },
         {
             "uri": "unece:revisionId",
-            "type": "xsd:string",
-            "comment": "The unique identifier of the revision of this exchanged document."
+            "type": "schema:Text",
+            "comment": "A unique identifier for a revision of this referenced document."
         },
         {
             "uri": "unece:secondSignatoryAuthentication",
@@ -271,28 +231,28 @@
         },
         {
             "uri": "unece:senderAssignedId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A unique sender assigned identifier for this exchanged document."
         },
         {
             "uri": "unece:senderTradeParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "The party that sends this exchanged document."
         },
         {
             "uri": "unece:signatoryAuthentication",
             "type": "unece:Authentication",
-            "comment": "A signatory document authentication for this exchanged document."
+            "comment": "A signatory authentication for this referenced document."
         },
         {
             "uri": "unece:submissionDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value for the formal submission of this exchanged document to a receiver by a sender."
         },
         {
             "uri": "unece:subtypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the subtype of this exchanged document."
+            "type": "schema:Text",
+            "comment": "A code specifying a subtype of this referenced document."
         },
         {
             "uri": "unece:thirdSignatoryAuthentication",
@@ -301,23 +261,23 @@
         },
         {
             "uri": "unece:traderAssignedId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A unique trader assigned identifier for this exchanged document."
         },
         {
             "uri": "unece:urgency",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An urgency, expressed as text, of this exchanged document."
         },
         {
             "uri": "unece:urgencyCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the urgency for this exchanged document."
         },
         {
             "uri": "unece:versionId",
-            "type": "xsd:string",
-            "comment": "The unique identifier for the version of this exchanged document."
+            "type": "schema:Text",
+            "comment": "The identifier for the version of this exchanged declaration."
         }
     ]
 }
