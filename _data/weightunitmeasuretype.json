@@ -1,20 +1,18 @@
-
 {
     "label": "WeightUnitMeasureType",
     "uri": "unece:WeightUnitMeasureType",
-    "comment": "The numeric value determined by weight measuring.",
+    "comment": "",
+    "businessDomain": "core",
     "datatypeProperties": [
-        {
-            "uri": "unece:WeightUnitMeasureTypeValue",
-            "type": "xsd:decimal",
-            "comment": "The numeric value."
-        }
-    ],
-    "objectProperties": [
         {
             "uri": "unece:WeightUnitMeasureTypeCode",
             "type": "unece:WeightUnitMeasureCode",
             "comment": "The unit code."
+        },
+        {
+            "uri": "unece:WeightUnitMeasureTypeValue",
+            "type": "schema:Float",
+            "comment": "The numeric value."
         }
     ],
     "referencedBy": [
@@ -24,11 +22,15 @@
         },
         {
             "uri": "unece:grossWeightSpecifiedMeasure",
-            "comment": "The gross weight measure specified in this exchanged declaration."
+            "comment": ""
         },
         {
             "uri": "unece:maximumStackabilityWeightApplicableMeasure",
             "comment": "The maximum stackability weight applicable to these handling instructions."
+        },
+        {
+            "uri": "unece:nominalGrossWeightMeasure",
+            "comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
         },
         {
             "uri": "unece:weightUnitCargoGrossWeightMeasure",
@@ -36,7 +38,7 @@
         },
         {
             "uri": "unece:weightUnitChargeableWeightMeasure",
-            "comment": "A measure of a chargeable ..."
+            "comment": "A measure of a chargeable weight of this supply chain consignment."
         },
         {
             "uri": "unece:weightUnitDeadweightTonnageMeasure",
@@ -44,19 +46,19 @@
         },
         {
             "uri": "unece:weightUnitGrossWeightMeasure",
-            "comment": "A measure of the gross ..."
+            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
         },
         {
             "uri": "unece:weightUnitNetWeightMeasure",
-            "comment": "A measure of the net ..."
+            "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
         },
         {
             "uri": "unece:weightUnitTareWeightMeasure",
-            "comment": "The measure of the tare ..."
+            "comment": "The measure of the tare weight (mass) of this logistics means of transport which is the weight (mass) including permanent equipment but excluding goods and loose accessories."
         },
         {
             "uri": "unece:weightUnitTheoreticalWeightMeasure",
-            "comment": "The measure, at line level, of the theoretical weight of this trade delivery."
+            "comment": ""
         },
         {
             "uri": "unece:weightUnitWeightMeasure",

@@ -1,9 +1,9 @@
-
 {
     "label": "PaymentMeans",
     "uri": "unece:PaymentMeans",
     "comment": "The means by which a payment will be or has been made for trade settlement purposes.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableFinancialCard",
             "type": "unece:FinancialCard",
@@ -45,11 +45,6 @@
             "comment": "An experience item voucher identified for this trade settlement payment means."
         },
         {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this trade settlement payment means."
-        },
-        {
             "uri": "unece:payeePartyFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
             "comment": "A creditor financial account of the payee party for this trade settlement payment means."
@@ -86,7 +81,7 @@
         },
         {
             "uri": "unece:paymentMethodCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the method by which a payment may be made for this trade settlement payment means."
         },
         {
@@ -101,14 +96,14 @@
         },
         {
             "uri": "unece:tradeSettlementPaymentMeansId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An identifier for this trade settlement payment means."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedPaymentMeans",
-            "comment": "A payment means specified for ..."
+            "comment": "A payment means specified for this header trade settlement."
         }
     ]
 }

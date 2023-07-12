@@ -1,17 +1,12 @@
-
 {
     "label": "CalibratedMeasurement",
     "uri": "unece:CalibratedMeasurement",
     "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy.",
-    "objectProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this calibrated measurement."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:quantificationTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying a quantification type for this calibrated measurement, such as measured, calculated, or estimated."
         },
         {
@@ -21,23 +16,13 @@
         },
         {
             "uri": "unece:tolerancePercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The percent of tolerance of this calibrated measurement."
         },
         {
-            "uri": "unece:valueCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a value for this calibrated measurement."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The value of a measure for this calibrated measurement."
-        },
-        {
             "uri": "unece:versionId",
-            "type": "xsd:string",
-            "comment": "The identifier of a version of this calibrated measurement."
+            "type": "schema:Text",
+            "comment": "The identifier for the version of this exchanged declaration."
         }
     ],
     "referencedBy": [

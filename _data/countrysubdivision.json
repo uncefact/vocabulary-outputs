@@ -1,33 +1,18 @@
-
 {
     "label": "CountrySubDivision",
     "uri": "unece:CountrySubDivision",
     "comment": "A political or physical area or region within the political boundaries of a country used or referenced for trade purposes.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:activityAuthorizedParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "A party that is authorized to perform an activity in this trade country sub-division."
         },
         {
             "uri": "unece:hierarchicalLevelCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the hierarchical level of this trade country sub-division."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this trade country sub-division."
-        },
-        {
-            "uri": "unece:locationFunctionTypeCode",
-            "type": "unece:LocationFunctionCodeList",
-            "comment": "The code specifying the function type of this trade country sub-division."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of this trade country sub-division."
         },
         {
             "uri": "unece:subordinateCountrySubDivision",
@@ -38,17 +23,12 @@
             "uri": "unece:superordinateCountrySubDivision",
             "type": "unece:CountrySubDivision",
             "comment": "A superordinate country sub-division for this trade country sub-division."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a type of country sub-division for trade purposes."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:subordinateCountrySubDivision",
-            "comment": "A subordinate country sub-division within ..."
+            "comment": "A subordinate country sub-division within this trade country sub-division."
         },
         {
             "uri": "unece:superordinateCountrySubDivision",

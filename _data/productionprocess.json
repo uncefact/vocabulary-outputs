@@ -1,13 +1,13 @@
-
 {
     "label": "ProductionProcess",
     "uri": "unece:ProductionProcess",
     "comment": "A naturally occurring or designed sequence of operations or events in order to produce something.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalInformationNote",
             "type": "unece:Note",
-            "comment": "An additional information note for this production process."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:allocatedMachine",
@@ -22,32 +22,32 @@
         {
             "uri": "unece:applicableAssessment",
             "type": "unece:Assessment",
-            "comment": "An assessment applicable to this production process."
+            "comment": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or condition."
         },
         {
             "uri": "unece:applicableDeclaration",
             "type": "unece:SpecifiedDeclaration",
-            "comment": "A specified declaration applicable to this production process."
+            "comment": "An act of notification by formal documentation or action, in any form prescribed or accepted, such as a self-declaration."
         },
         {
             "uri": "unece:applicableFault",
             "type": "unece:SpecifiedFault",
-            "comment": "A specified fault applicable to this production process."
+            "comment": "An unattractive or unsatisfactory characteristic."
         },
         {
             "uri": "unece:applicableLicence",
             "type": "unece:Licence",
-            "comment": "A specified licence applicable to this production process."
+            "comment": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade."
         },
         {
             "uri": "unece:applicableParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "A specified parameter applicable to this production process."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:applicablePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A period applicable to this production process."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:applicableProductionCycle",
@@ -57,22 +57,7 @@
         {
             "uri": "unece:applicableSpecifiedCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate applicable to this production process."
-        },
-        {
-            "uri": "unece:applicableSpecifiedInspection",
-            "type": "unece:SpecifiedInspection",
-            "comment": "A specified inspection applicable to this production process."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this production process."
-        },
-        {
-            "uri": "unece:applicableSustainabilityInspection",
-            "type": "unece:SustainabilityInspection",
-            "comment": "A sustainability inspection applicable to this production process."
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
         },
         {
             "uri": "unece:appliedChemicalTreatment",
@@ -82,7 +67,7 @@
         {
             "uri": "unece:appliedCropProtectionTreatment",
             "type": "unece:CropProtectionTreatment",
-            "comment": "A crop protection treatment applied during this production process."
+            "comment": "A method or substance, such as chemical fertilizers and crop protection products, applied to plant growth whilst managing and controlling diseases and pests."
         },
         {
             "uri": "unece:appliedProductFinishingTreatment",
@@ -92,137 +77,112 @@
         {
             "uri": "unece:associatedStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard associated with this production process."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
             "uri": "unece:criticalIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this production process is critical."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this production process."
-        },
-        {
             "uri": "unece:disclosureLevelCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying a disclosure level for this production process."
         },
         {
             "uri": "unece:finalIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this production process is a final one."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this production process."
         },
         {
             "uri": "unece:inputApplicableBatch",
             "type": "unece:ProductBatch",
-            "comment": "An input product batch applicable to this production process."
+            "comment": "An input batch applicable to this production machine."
         },
         {
             "uri": "unece:inputApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Input material applicable to this production process."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:inputApplicableProduct",
             "type": "unece:TradeProduct",
-            "comment": "An input product applicable to this production process."
+            "comment": "An input product applicable to this facility production unit."
         },
         {
             "uri": "unece:inventoryTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the inventory type for this production process."
-        },
-        {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "A manufacturer party for this production process."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this production process."
-        },
-        {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value of the occurrence of this production process."
         },
         {
             "uri": "unece:occurrenceEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "An occurrence of an event for this production process."
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
             "uri": "unece:operationReferenceCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the operation reference for this production process."
         },
         {
             "uri": "unece:operationTechnologyCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the operation technology for this production process."
         },
         {
             "uri": "unece:outputApplicableBatch",
             "type": "unece:ProductBatch",
-            "comment": "An output product batch applicable to this production process."
+            "comment": "An output batch applicable to this specified production device."
         },
         {
             "uri": "unece:outputApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Output material applicable to this production process."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:outputApplicableProduct",
             "type": "unece:TradeProduct",
-            "comment": "An output product applicable to this production process."
+            "comment": "An output product applicable to this facility production unit."
         },
         {
             "uri": "unece:performedWorkItem",
             "type": "unece:ProcessWorkItem",
-            "comment": "A work item performed for this production process."
+            "comment": "A distinct operation or task that is part of a process."
         },
         {
             "uri": "unece:productionWasteInstructions",
             "type": "unece:DisposalInstructions",
-            "comment": "Disposal instructions for the waste resulting from this production process."
+            "comment": "A set of instructions detailing how to properly dispose of a material."
         },
         {
             "uri": "unece:recyclingIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this is a recycling production process."
         },
         {
             "uri": "unece:relatedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file related to this production process."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
             "uri": "unece:reportedProductionWasteMaterial",
             "type": "unece:ProductionWasteMaterial",
-            "comment": "Waste material reported for this production process."
+            "comment": "Any materials unused and rejected as unwanted during a production process."
         },
         {
             "uri": "unece:specificationDocument",
             "type": "unece:Document",
-            "comment": "A specification document referenced for this production process."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:specifiedAssertion",
             "type": "unece:Assertion",
-            "comment": "A sustainability assertion specified for this production process."
+            "comment": "A statement that user needs of the present are met without compromising the needs of future generations."
         },
         {
             "uri": "unece:specifiedDocument",
             "type": "unece:Document",
-            "comment": "A referenced document specified for this production process."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:specifiedFacility",
@@ -230,54 +190,39 @@
             "comment": "A production facility specified for this production process."
         },
         {
-            "uri": "unece:specifiedOrganizationalCertificate",
-            "type": "unece:OrganizationalCertificate",
-            "comment": "An organizational certificate specified for this production process."
-        },
-        {
             "uri": "unece:specifiedOrganizationalCertification",
             "type": "unece:OrganizationalCertification",
-            "comment": "An organizational certification specified for this production process."
-        },
-        {
-            "uri": "unece:specifiedProcessCertificate",
-            "type": "unece:ProcessCertificate",
-            "comment": "A process certificate specified for this production process."
+            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
         },
         {
             "uri": "unece:specifiedProcessCertification",
             "type": "unece:ProcessCertification",
-            "comment": "A process certification specified for this production process."
+            "comment": "The process of certifying that a process has met performance and quality assurance tests, or qualification requirements."
         },
         {
             "uri": "unece:specifiedProductBatchCertification",
             "type": "unece:ProductBatchCertification",
-            "comment": "A product batch certification specified for this production process."
+            "comment": "The process of certifying that a certain product batch has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
             "uri": "unece:specifiedTradeProductCertification",
             "type": "unece:TradeProductCertification",
-            "comment": "A trade product certification specified for this production process."
-        },
-        {
-            "uri": "unece:status",
-            "type": "xsd:string",
-            "comment": "A status, expressed as text, of this production process."
+            "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations."
         },
         {
             "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this production process."
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
         },
         {
             "uri": "unece:stepCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the step in this production process."
         },
         {
             "uri": "unece:subcontractorParty",
             "type": "unece:TradeParty",
-            "comment": "A subcontractor party specified for this production process."
+            "comment": "A subcontractor for this trade party."
         },
         {
             "uri": "unece:subordinateProcess",
@@ -286,19 +231,14 @@
         },
         {
             "uri": "unece:subordinateTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the subordinate type of production process."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of production process."
+            "type": "schema:Text",
+            "comment": "The code specifying the subordinate type for this production device."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableProductionProcess",
-            "comment": "A process applicable to this ..."
+            "comment": "A process applicable to this specified production cycle."
         },
         {
             "uri": "unece:providedProcess",
@@ -306,7 +246,7 @@
         },
         {
             "uri": "unece:specifiedProcess",
-            "comment": "A production process specified for ..."
+            "comment": "A production process specified for this product batch."
         },
         {
             "uri": "unece:subordinateProcess",
