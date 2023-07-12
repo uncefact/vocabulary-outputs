@@ -1,42 +1,61 @@
-
 {
     "label": "statusCode",
     "uri": "unece:statusCode",
-    "comment": [
-        "A code specifying a status for this trade product.",
-        "A code specifying the status of this supply chain schedule.",
-        "The code specifying a status for this supply chain inventory.",
-        "The code specifying the status for this specified experience item.",
-        "The code specifying the status of the agricultural process for this crop production.",
-        "The code specifying the status of this control setting parameter.",
-        "The code specifying the status of this experience program action.",
-        "The code specifying the status of this inspection result.",
-        "The code specifying the status of this line trade settlement.",
-        "The code specifying the status of this material.",
-        "The code specifying the status of this observation objective parameter.",
-        "The code specifying the status of this operational parameter.",
-        "The code specifying the status of this payment trade settlement.",
-        "The code specifying the status of this product batch.",
-        "The code specifying the status of this production process.",
-        "The code specifying the status of this set of inspection instructions.",
-        "The code specifying the status of this set of laboratory observation instructions.",
-        "The code specifying the status of this specified assessment.",
-        "The code specifying the status of this specified certificate.",
-        "The code specifying the status of this specified parameter.",
-        "The code specifying the status of this specified route.",
-        "The code specifying the status of this sustainability assertion.",
-        "The code specifying the status, at header level, for this trade delivery.",
-        "The code specifying the status, at line level, for this trade delivery."
-    ],
+    "comment": "A code specifying a status for this trade product.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:AgriculturalProcess",
-            "comment": "A practice of cultivating land, raising crops, or treatment of the agricultural produce."
+            "uri": "unece:HeaderTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
+        },
+        {
+            "uri": "unece:LineTradeDelivery",
+            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+        },
+        {
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
+        },
+        {
+            "uri": "unece:LineTradeSettlement",
+            "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:ProductionProcess",
+            "comment": "A naturally occurring or designed sequence of operations or events in order to produce something."
+        },
+        {
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
+        },
+        {
+            "uri": "unece:SupplyChainInventory",
+            "comment": "Supply chain goods and materials held in stock."
+        },
+        {
+            "uri": "unece:Schedule",
+            "comment": "A series of planned activities or things to be done in this supply chain."
+        },
+        {
+            "uri": "unece:SpecifiedParameter",
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:SpecifiedCertificate",
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:InspectionResult",
+            "comment": "Results obtained by performing an inspection."
         },
         {
             "uri": "unece:Assertion",
@@ -51,84 +70,39 @@
             "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
         },
         {
-            "uri": "unece:ExperienceItem",
-            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
-        },
-        {
-            "uri": "unece:ExperienceProgramAction",
-            "comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience."
-        },
-        {
-            "uri": "unece:HeaderTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a header level."
+            "uri": "unece:OperationalParameter",
+            "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
         },
         {
             "uri": "unece:InspectionInstructions",
             "comment": "Information of an instructive nature that describes how to conduct an inspection."
         },
         {
-            "uri": "unece:InspectionResult",
-            "comment": "Results obtained by performing an inspection."
-        },
-        {
             "uri": "unece:LaboratoryObservationInstructions",
             "comment": "Information of an instructive nature that describes how to conduct this laboratory observation."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
-        },
-        {
-            "uri": "unece:LineTradeSettlement",
-            "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
         },
         {
             "uri": "unece:ObservationObjectiveParameter",
             "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
         },
         {
-            "uri": "unece:OperationalParameter",
-            "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
-        },
-        {
-            "uri": "unece:PaymentTradeSettlement",
-            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
-        },
-        {
-            "uri": "unece:ProductBatch",
-            "comment": "A group of products considered or dealt with together."
-        },
-        {
-            "uri": "unece:ProductionProcess",
-            "comment": "A naturally occurring or designed sequence of operations or events in order to produce something."
-        },
-        {
-            "uri": "unece:Schedule",
-            "comment": "A series of planned activities or things to be done in this supply chain."
-        },
-        {
-            "uri": "unece:SpecifiedCertificate",
-            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
-        },
-        {
             "uri": "unece:SpecifiedMaterial",
             "comment": "A substance from which something is or could be made."
         },
         {
-            "uri": "unece:SpecifiedParameter",
-            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
+            "uri": "unece:ExperienceProgramAction",
+            "comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience."
         },
         {
-            "uri": "unece:SpecifiedRoute",
-            "comment": "A specified way or course taken from one location to another."
+            "uri": "unece:ExperienceItem",
+            "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
         },
         {
-            "uri": "unece:SupplyChainInventory",
-            "comment": "Supply chain goods and materials held in stock."
+            "uri": "unece:AgriculturalProcess",
+            "comment": "A practice of cultivating land, raising crops, or treatment of the agricultural produce."
         },
         {
-            "uri": "unece:TradeProduct",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
+            "uri": "unece:SpecifiedRoute"
         }
     ]
 }

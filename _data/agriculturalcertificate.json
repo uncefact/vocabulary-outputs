@@ -1,12 +1,12 @@
-
 {
     "label": "AgriculturalCertificate",
     "uri": "unece:AgriculturalCertificate",
     "comment": "A legal proof of ownership, worthiness or qualification to operate an agricultural item.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:actualEffectiveDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The actual effective date, time, date time or other date time value for this agricultural certificate."
         },
         {
@@ -16,67 +16,52 @@
         },
         {
             "uri": "unece:applicableObjectCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying an applicable object, such as item, animal, person or organization, for this agricultural certificate."
         },
         {
             "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this agricultural certificate."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this agricultural certificate."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
             "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file attached to this agricultural certificate."
+            "comment": "A binary file attached for this sustainability inspection."
         },
         {
             "uri": "unece:certificateTypeCode",
             "type": "unece:CertificateTypeCodeList",
-            "comment": "The code specifying the type of agricultural certificate."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this agricultural certificate."
+            "comment": "A code specifying a type of specified certificate."
         },
         {
             "uri": "unece:expiryDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value when this agricultural certificate expires."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this agricultural certificate."
+            "type": "schema:Text",
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
         },
         {
             "uri": "unece:issueDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value when this agricultural certificate was issued."
+            "type": "schema:Text",
+            "comment": "An issue date, time, date time or other date time value for this declared error."
         },
         {
             "uri": "unece:issueReasonCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the reason why the agricultural certificate was issued."
+            "type": "schema:Text",
+            "comment": "The code specifying the reason for the issue of this process certificate."
         },
         {
             "uri": "unece:issuingPartyId",
-            "type": "xsd:string",
-            "comment": "The identifier for the issuing party of this agricultural certificate."
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
         },
         {
             "uri": "unece:purposeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying the purpose of this agricultural certificate."
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
         },
         {
             "uri": "unece:requestedEffectiveDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The requested effective date, time, date time or other date time value for this agricultural certificate."
         }
     ],
@@ -87,7 +72,7 @@
         },
         {
             "uri": "unece:specifiedAgriculturalCertificate",
-            "comment": "An agricultural certificate specified for ..."
+            "comment": "A legal proof of ownership, worthiness or qualification to operate an agricultural item."
         }
     ]
 }

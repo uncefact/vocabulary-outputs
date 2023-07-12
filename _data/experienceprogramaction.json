@@ -1,33 +1,23 @@
-
 {
     "label": "ExperienceProgramAction",
     "uri": "unece:ExperienceProgramAction",
     "comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience.",
-    "objectProperties": [
+    "businessDomain": "tourism",
+    "datatypeProperties": [
         {
             "uri": "unece:actionType",
-            "type": "xsd:string",
-            "comment": "A type, expressed as text, of experience program action."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this experience program action."
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, for this corrective action."
         },
         {
             "uri": "unece:specifiedTradeParty",
-            "type": "unece:TradeParty",
-            "comment": "A party specified for this experience program action."
+            "type": "unece:Party",
+            "comment": "A party specified for this experience event."
         },
         {
             "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this experience program action."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of experience program action."
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
         }
     ]
 }

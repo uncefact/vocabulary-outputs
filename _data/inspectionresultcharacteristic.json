@@ -1,18 +1,18 @@
-
 {
     "label": "InspectionResultCharacteristic",
     "uri": "unece:InspectionResultCharacteristic",
     "comment": "A property of a collection of diagnostic data, visual or technical data, obtained by a performed inspection.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableMethod",
             "type": "unece:SpecifiedMethod",
-            "comment": "A specified method applicable to this inspection result characteristic."
+            "comment": "A defined way of performing something."
         },
         {
             "uri": "unece:comparisonOperatorCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the operator, such as less than, for comparing this inspection result characteristic with one or more other characteristics."
+            "type": "schema:Text",
+            "comment": "A code specifying the operator, such as, less than, greater than or equal to, for comparing two actual measures."
         },
         {
             "uri": "unece:interpretationResultApplicableParameter",
@@ -22,36 +22,36 @@
         {
             "uri": "unece:measuredAccuracyMeasure",
             "type": "unece:MeasureType",
-            "comment": "Accuracy, expressed as a measure, of the measurement for this inspection result characteristic."
+            "comment": ""
         },
         {
             "uri": "unece:measuredValue",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The measured value, expressed as text, for this inspection result characteristic."
         },
         {
             "uri": "unece:measuredValueMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measured value for this inspection result characteristic."
+            "comment": ""
         },
         {
             "uri": "unece:qualityResultCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the quality of the result for this inspection result characteristic."
         },
         {
             "uri": "unece:qualityResultDescription",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A textual description of the quality of the result for this inspection result characteristic."
         },
         {
             "uri": "unece:qualityResultReferenceLevelDescription",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A textual description of the reference level for the quality of the result for this inspection result characteristic."
         },
         {
             "uri": "unece:range",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The range, expressed as text, of the values of the measurements performed for this inspection result characteristic."
         }
     ],

@@ -1,28 +1,28 @@
-
 {
     "label": "Plot",
     "uri": "unece:Plot",
     "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableAgriculturalProcess",
             "type": "unece:AgriculturalProcess",
-            "comment": "An agricultural process crop production specified for this crop plot."
+            "comment": "An agricultural process crop production applicable for this field crop."
         },
         {
             "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this crop plot."
+            "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product."
         },
         {
             "uri": "unece:areaMeasure",
             "type": "unece:MeasureType",
-            "comment": "The area measure for this crop plot."
+            "comment": ""
         },
         {
             "uri": "unece:endDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the end of this crop plot."
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the end of this available period of time."
         },
         {
             "uri": "unece:grownCrop",
@@ -30,29 +30,24 @@
             "comment": "A field crop grown on this crop plot."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this crop plot."
-        },
-        {
             "uri": "unece:regulatoryOrganicIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this crop plot is certified as regulatory organic."
         },
         {
             "uri": "unece:regulatorySoilTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the type of regulatory soil for this crop plot."
         },
         {
             "uri": "unece:specifiedAgriculturalCertificate",
             "type": "unece:AgriculturalCertificate",
-            "comment": "An agricultural certificate specified for this crop plot."
+            "comment": "A legal proof of ownership, worthiness or qualification to operate an agricultural item."
         },
         {
             "uri": "unece:specifiedAgriculturalCharacteristic",
             "type": "unece:AgriculturalCharacteristic",
-            "comment": "An agricultural characteristic specified for this crop plot."
+            "comment": "A prominent attribute or aspect of an agricultural object."
         },
         {
             "uri": "unece:specifiedArea",
@@ -62,12 +57,12 @@
         {
             "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "The referenced location specified for this crop plot."
+            "comment": "A reference to a physical location or place."
         },
         {
             "uri": "unece:startDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the start of this crop plot."
+            "type": "schema:Text",
+            "comment": "The date, time, date time or other date time value for the start of this available period of time."
         }
     ],
     "referencedBy": [
@@ -77,7 +72,7 @@
         },
         {
             "uri": "unece:specifiedPlot",
-            "comment": "A crop plot specified for ..."
+            "comment": "A crop plot specified for this agricultural application."
         }
     ]
 }

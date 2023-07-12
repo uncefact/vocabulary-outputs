@@ -1,23 +1,14 @@
-
 {
     "label": "currencyCode",
     "uri": "unece:currencyCode",
-    "comment": [
-        "The code specifying a currency of this cash used for payment.",
-        "The code specifying the currency for this registered tax.",
-        "The code specifying the currency of this creditor financial account (Reference ISO 4217 codes).",
-        "The code specifying the currency of this debtor financial account (Reference ISO 4217 codes)."
-    ],
+    "comment": "The code specifying a currency of this cash used for payment.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:Cash",
-            "comment": "Coins, banknotes paid by the recipient of goods or services to the provider."
-        },
         {
             "uri": "unece:CreditorFinancialAccount",
             "comment": "A specific business arrangement whereby credits arising from transactions are recorded."
@@ -25,6 +16,10 @@
         {
             "uri": "unece:DebtorFinancialAccount",
             "comment": "A specific business arrangement whereby debits arising from transactions are recorded."
+        },
+        {
+            "uri": "unece:Cash",
+            "comment": "Coins, banknotes paid by the recipient of goods or services to the provider."
         },
         {
             "uri": "unece:RegisteredTax",

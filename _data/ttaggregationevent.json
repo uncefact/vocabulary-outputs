@@ -1,28 +1,23 @@
-
 {
     "label": "TTAggregationEvent",
     "uri": "unece:TTAggregationEvent",
     "comment": "A Track and Trace (TT) event where objects or processes are grouped.",
-    "objectProperties": [
-        {
-            "uri": "unece:actionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the action for this TT aggregation event."
-        },
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:businessStepCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the business step for this TT aggregation event."
         },
         {
             "uri": "unece:childObjectInstanceId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An instance identifier for a child object of this TT aggregation event."
         },
         {
             "uri": "unece:childQuantitySpecifiedEventElement",
             "type": "unece:EventElement",
-            "comment": "A quantity event element specified for a child of this TT aggregation event."
+            "comment": "Information about an event in which a Track and Trace (TT) element of one of more physical or digital objects is identified by a specific object class identifier (such as an electronic product class), either a specific quantity or an unspecified quantity."
         },
         {
             "uri": "unece:destinationRelatedParty",
@@ -31,22 +26,12 @@
         },
         {
             "uri": "unece:dispositionCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the disposition related to this TT aggregation event."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this TT aggregation event."
-        },
-        {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value at which this TT aggregation event occurred."
-        },
-        {
             "uri": "unece:parentObjectId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of the parent object for this TT aggregation event."
         },
         {
@@ -56,18 +41,18 @@
         },
         {
             "uri": "unece:recordedDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value at which this TT aggregation event was recorded."
         },
         {
             "uri": "unece:relatedCertification",
             "type": "unece:SpecifiedCertification",
-            "comment": "A certification related to this TT aggregation event."
+            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
         },
         {
             "uri": "unece:relatedTTLocation",
             "type": "unece:TTLocation",
-            "comment": "The location related to this TT aggregation event."
+            "comment": "A location related to this TT animal."
         },
         {
             "uri": "unece:sourceRelatedParty",
@@ -77,7 +62,7 @@
         {
             "uri": "unece:specifiedError",
             "type": "unece:Error",
-            "comment": "A declared error specified for this TT aggregation event."
+            "comment": "A notification that an error has occurred."
         },
         {
             "uri": "unece:specifiedTradeTransaction",
