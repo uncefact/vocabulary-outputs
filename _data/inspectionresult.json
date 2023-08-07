@@ -1,9 +1,9 @@
-
 {
     "label": "InspectionResult",
     "uri": "unece:InspectionResult",
     "comment": "Results obtained by performing an inspection.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableCorrectiveAction",
             "type": "unece:CorrectiveAction",
@@ -17,7 +17,7 @@
         {
             "uri": "unece:applicableMethod",
             "type": "unece:SpecifiedMethod",
-            "comment": "A method applicable to this specified inspection result."
+            "comment": "A defined way of performing something."
         },
         {
             "uri": "unece:applicablePreventiveAction",
@@ -27,17 +27,17 @@
         {
             "uri": "unece:applicableSpecifiedAction",
             "type": "unece:SpecifiedAction",
-            "comment": "An action applicable to this specified inspection result."
+            "comment": "The process of doing something in order to make something happen or to deal with a situation."
         },
         {
             "uri": "unece:approvalDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value for the approval of this specified inspection result."
         },
         {
             "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A binary file attached to this specified inspection result."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
             "uri": "unece:attachedInspectionNote",
@@ -51,23 +51,23 @@
         },
         {
             "uri": "unece:generalCharacteristic",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A general characteristic, such as length, volume, density, sensitivity, conductivity, expressed as text, of this specified inspection result."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this specified inspection result."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:inspectionDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value of the inspection for this specified inspection result."
         },
         {
             "uri": "unece:inspectionParty",
-            "type": "unece:TradeParty",
-            "comment": "An inspection party specified for this inspection result."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:inspectionStandard",
@@ -126,8 +126,8 @@
         },
         {
             "uri": "unece:outsourcedInspectionParty",
-            "type": "unece:TradeParty",
-            "comment": "An outsourced inspection party for this specified inspection result."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:relatedAssessment",
@@ -141,18 +141,18 @@
         },
         {
             "uri": "unece:relatedMaterialType",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A material type, expressed as text, related to this specified inspection result."
         },
         {
             "uri": "unece:relatedProductType",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A product type, expressed as text, related to this specified inspection result."
         },
         {
             "uri": "unece:shareableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this specified inspection result is shareable."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this sample observation result characteristic is shareable."
         },
         {
             "uri": "unece:specifiedInspectionReference",
@@ -161,19 +161,19 @@
         },
         {
             "uri": "unece:statement",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A statement, expressed as text, for this specified inspection result."
         },
         {
             "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this inspection result."
+            "type": "schema:Text",
+            "comment": "A code specifying a status for this trade product."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableInspectionResult",
-            "comment": "A specified inspection result applicable ..."
+            "comment": "A specified inspection result applicable to this sustainability characteristic."
         },
         {
             "uri": "unece:reportedInspectionResult",

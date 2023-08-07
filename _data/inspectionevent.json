@@ -1,34 +1,34 @@
-
 {
     "label": "InspectionEvent",
     "uri": "unece:InspectionEvent",
     "comment": "A significant occurrence or happening related to an inspection.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of the inspection for this event."
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:occurrenceDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value of the occurrence of this inspection event."
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time of an occurrence in this supply chain schedule."
         },
         {
             "uri": "unece:occurrenceLocation",
             "type": "unece:Location",
-            "comment": "The referenced location where this inspection event will occur or has occurred."
+            "comment": "A reference to a physical location or place."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of inspection for this event."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedInspectionEvent",
-            "comment": "A specified inspection event for ..."
+            "comment": "A specified inspection event for this sustainability inspection."
         }
     ]
 }

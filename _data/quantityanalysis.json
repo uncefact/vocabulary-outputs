@@ -1,13 +1,13 @@
-
 {
     "label": "QuantityAnalysis",
     "uri": "unece:QuantityAnalysis",
     "comment": "The quantity analysis for this work item.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:actualQuantity",
             "type": "unece:QuantityType",
-            "comment": "The actual quantity for this work item quantity analysis."
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
         },
         {
             "uri": "unece:actualQuantityDimension",
@@ -16,13 +16,13 @@
         },
         {
             "uri": "unece:actualQuantityPercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The percentage of a total quantity that the actual quantity of this work item quantity analysis represents."
         },
         {
             "uri": "unece:alternativeClassificationCode",
-            "type": "xsd:string",
-            "comment": "A code specifying an alternative classification value for this work item quantity analysis."
+            "type": "schema:Text",
+            "comment": "A code specifying an alternative classification for this basic work item."
         },
         {
             "uri": "unece:breakdownQuantityAnalysis",
@@ -32,32 +32,32 @@
         {
             "uri": "unece:changedStatus",
             "type": "unece:RecordedStatus",
-            "comment": "A changed recorded status for this work item quantity analysis."
+            "comment": "A changed recorded status for this basic work item."
         },
         {
             "uri": "unece:contractualLanguageCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the contractual language for this work item quantity analysis."
+            "type": "schema:Text",
+            "comment": "The code specifying the contractual language for this basic work item."
         },
         {
             "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this work item quantity analysis."
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this work item quantity analysis."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:primaryClassificationCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying a primary classification value for this work item quantity analysis."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of work item quantity analysis."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "referencedBy": [
@@ -67,7 +67,7 @@
         },
         {
             "uri": "unece:totalQuantityAnalysis",
-            "comment": "An analysis of the total quantity for this basic work item."
+            "comment": "The quantity analysis for this work item."
         }
     ]
 }

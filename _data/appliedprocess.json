@@ -1,25 +1,21 @@
-
 {
     "label": "appliedProcess",
     "uri": "unece:appliedProcess",
-    "comment": [
-        "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage.",
-        "A product handling process applied to this trade product instance, such as manufacturing or storage."
-    ],
+    "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:ProductHandlingProcess",
-            "comment": "A naturally occurring or designed sequence of operations or events that create, transform, or touch a product, such as manufacturing, treating, packaging, and storing."
+            "uri": "unece:ProductHandlingProcess"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ProductInstance",
-            "comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process."
-        },
-        {
             "uri": "unece:SupplyChainTradeLineItem",
             "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
+        },
+        {
+            "uri": "unece:ProductInstance",
+            "comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process."
         }
     ]
 }

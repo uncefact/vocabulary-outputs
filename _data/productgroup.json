@@ -1,33 +1,18 @@
-
 {
     "label": "ProductGroup",
     "uri": "unece:ProductGroup",
     "comment": "A grouping of trade products.",
-    "objectProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this trade product group."
-        },
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:includedSupplyChainTradeLineItem",
             "type": "unece:SupplyChainTradeLineItem",
-            "comment": "A supply chain trade line item which is included in this trade product group."
+            "comment": "A supply chain trade line item included in this logistics package."
         },
         {
             "uri": "unece:includedTradeProduct",
             "type": "unece:TradeProduct",
-            "comment": "A product included in this trade product group."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this trade product group."
-        },
-        {
-            "uri": "unece:specifiedDocument",
-            "type": "unece:Document",
-            "comment": "A referenced document specified for this trade product group."
+            "comment": "A product included in this supply chain inventory."
         },
         {
             "uri": "unece:subordinateProductGroup",
