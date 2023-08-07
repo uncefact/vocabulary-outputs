@@ -1,22 +1,14 @@
-
 {
     "label": "reservationGuarantee",
     "uri": "unece:reservationGuarantee",
-    "comment": [
-        "A reservation guarantee, expressed as text, for this experience event.",
-        "A reservation guarantee, expressed as text, for this experience product.",
-        "A reservation guarantee, expressed as text, for this specified experience item."
-    ],
+    "comment": "A reservation guarantee, expressed as text, for this experience event.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:ExperienceEvent",
-            "comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
-        },
         {
             "uri": "unece:ExperienceItem",
             "comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
@@ -24,6 +16,10 @@
         {
             "uri": "unece:ExperienceProduct",
             "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience."
+        },
+        {
+            "uri": "unece:ExperienceEvent",
+            "comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
         }
     ]
 }

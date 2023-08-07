@@ -1,18 +1,13 @@
-
 {
     "label": "Equipment",
     "uri": "unece:Equipment",
     "comment": "Hardware or software typically marketed by a company other than the original manufacturer.",
-    "objectProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this OEM equipment."
-        },
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this OEM equipment."
+            "type": "unece:Party",
+            "comment": "A manufacturer party for this production process."
         },
         {
             "uri": "unece:pollingCapabilityIndicator",
@@ -23,11 +18,6 @@
             "uri": "unece:pollingRateMeasure",
             "type": "unece:MeasureType",
             "comment": "The measure of the polling rate for this OEM equipment."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a type of OEM equipment."
         }
     ],
     "referencedBy": [

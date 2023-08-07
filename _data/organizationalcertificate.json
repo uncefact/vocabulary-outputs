@@ -1,24 +1,9 @@
-
 {
     "label": "OrganizationalCertificate",
     "uri": "unece:OrganizationalCertificate",
     "comment": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met required organizational criteria.",
-    "objectProperties": [
-        {
-            "uri": "unece:actualEffectiveDateTime",
-            "type": "xsd:string",
-            "comment": "The actual effective date, time, date time or other date time value for this organizational certificate."
-        },
-        {
-            "uri": "unece:applicableAssertion",
-            "type": "unece:Assertion",
-            "comment": "A sustainability assertion applicable to this organizational certificate."
-        },
-        {
-            "uri": "unece:applicableObjectCode",
-            "type": "xsd:string",
-            "comment": "A code specifying an object for which this organizational certificate is applicable."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableOrganizationCharacteristic",
             "type": "unece:OrganizationCharacteristic",
@@ -27,73 +12,13 @@
         {
             "uri": "unece:applicableOrganizationalCertification",
             "type": "unece:OrganizationalCertification",
-            "comment": "An organizational certification applicable to this organizational certificate."
-        },
-        {
-            "uri": "unece:applicableStandard",
-            "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this organizational certificate."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this organizational certificate."
-        },
-        {
-            "uri": "unece:attachedBinaryFile",
-            "type": "unece:BinaryFile",
-            "comment": "A binary file attached to this organizational certificate."
-        },
-        {
-            "uri": "unece:certificateTypeCode",
-            "type": "unece:CertificateTypeCodeList",
-            "comment": "The code specifying the type of organizational certificate."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this organizational certificate."
-        },
-        {
-            "uri": "unece:expiryDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value when this organizational certificate expires."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this organizational certificate."
-        },
-        {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the issuance of this organizational certificate."
-        },
-        {
-            "uri": "unece:issueReasonCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the reason why this organizational certificate was issued."
-        },
-        {
-            "uri": "unece:issuingPartyId",
-            "type": "xsd:string",
-            "comment": "An identifier of the party issuing this organizational certificate."
-        },
-        {
-            "uri": "unece:purposeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the purpose of this organizational certificate."
-        },
-        {
-            "uri": "unece:requestedEffectiveDateTime",
-            "type": "xsd:string",
-            "comment": "The requested effective date, time, date time or other date time value for this organizational certificate."
+            "comment": "The process of certifying organizational performance or qualification requirements as stipulated in regulations."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableOrganizationalCertificate",
-            "comment": "An organizational certificate applicable to this trade party."
+            "comment": "A piece of written, printed or electronic matter that provides information or evidence that an organization has met required organizational criteria."
         },
         {
             "uri": "unece:obtainedOrganizationalCertificate",
@@ -101,7 +26,7 @@
         },
         {
             "uri": "unece:specifiedOrganizationalCertificate",
-            "comment": "An organizational certificate specified for ..."
+            "comment": "An organizational certificate specified for this facility production unit."
         }
     ]
 }

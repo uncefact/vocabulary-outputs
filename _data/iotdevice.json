@@ -1,9 +1,9 @@
-
 {
     "label": "IOTDevice",
     "uri": "unece:IOTDevice",
     "comment": "An IOT (Internet of Things) piece of mechanical or electronic equipment which can collect, report and autonomously transmit digital data.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:attachedAssetId",
             "type": "xsd:string",
@@ -25,11 +25,6 @@
             "comment": "A product certificate granted for this monitoring IOT device."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this monitoring IOT device."
-        },
-        {
             "uri": "unece:interfaceEquipment",
             "type": "unece:Equipment",
             "comment": "An interface between an OEM (Original Equipment Manufacturer) equipment and this monitoring IOT device."
@@ -46,8 +41,8 @@
         },
         {
             "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party of this monitoring IOT device."
+            "type": "unece:Party",
+            "comment": "A manufacturer party for this production process."
         },
         {
             "uri": "unece:modelId",
@@ -61,18 +56,18 @@
         },
         {
             "uri": "unece:operatorParty",
-            "type": "unece:TradeParty",
-            "comment": "The operator party, such as terminal operator, service provider, network operator of this monitoring IOT device."
+            "type": "unece:Party",
+            "comment": "A trade party who is an operator of this product handling process."
         },
         {
             "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner party of this monitoring IOT device."
+            "type": "unece:Party",
+            "comment": "A party who owns this piece of logistics transport equipment."
         },
         {
             "uri": "unece:positionCode",
             "type": "xsd:string",
-            "comment": "The code specifying the position of this monitoring IOT device."
+            "comment": "The code specifying a position of this monitoring sensor."
         },
         {
             "uri": "unece:powerSourceTypeCode",
@@ -81,7 +76,7 @@
         },
         {
             "uri": "unece:providerParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "The provider party for this monitoring IOT device."
         },
         {
@@ -108,17 +103,12 @@
             "uri": "unece:reportingSensorPairing",
             "type": "unece:Pairing",
             "comment": "A sensor communication pairing reported for this monitoring IOT device."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of monitoring IOT device."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:attachedIOTDevice",
-            "comment": "An IOT device attached to ..."
+            "comment": "An IOT device attached to this logistics transport means."
         },
         {
             "uri": "unece:reportingIOTDevice",

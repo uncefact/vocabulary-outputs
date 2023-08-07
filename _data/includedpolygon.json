@@ -1,23 +1,14 @@
-
 {
     "label": "includedPolygon",
     "uri": "unece:includedPolygon",
-    "comment": [
-        "A polygon included in this geographical multi-surface.",
-        "The polygon included in this geographical feature.",
-        "The polygon included in this geographical surface."
-    ],
+    "comment": "A polygon included in this geographical multi-surface.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:Polygon",
-            "comment": "A planar surface, defined by one exterior boundary and zero or more interior boundaries. Each interior boundary defines a hole in the polygon."
+            "uri": "unece:Polygon"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:GeographicalFeature",
-            "comment": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings, roads, rivers, forests and lakes."
-        },
         {
             "uri": "unece:GeographicalMultiSurface",
             "comment": "A collection of surfaces on the Earth (reference ISO 19136)."
@@ -25,6 +16,10 @@
         {
             "uri": "unece:GeographicalSurface",
             "comment": "A figure on the Earth having only two dimensions (reference ISO 19136)."
+        },
+        {
+            "uri": "unece:GeographicalFeature",
+            "comment": "Representation of real world phenomenon associated with a location relative to the Earth, such as cities, buildings, roads, rivers, forests and lakes."
         }
     ]
 }

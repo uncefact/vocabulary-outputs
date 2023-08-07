@@ -1,24 +1,21 @@
-
 {
     "label": "parameterType",
     "uri": "unece:parameterType",
-    "comment": [
-        "A type, expressed as text, for this observation objective parameter.",
-        "A type, expressed as text, for this specified parameter."
-    ],
+    "comment": "A type, expressed as text, for this observation objective parameter.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ObservationObjectiveParameter",
-            "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
-        },
-        {
             "uri": "unece:SpecifiedParameter",
             "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
+        },
+        {
+            "uri": "unece:ObservationObjectiveParameter",
+            "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
         }
     ]
 }

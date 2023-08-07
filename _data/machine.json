@@ -1,9 +1,9 @@
-
 {
     "label": "Machine",
     "uri": "unece:Machine",
     "comment": "An apparatus specified to be used to perform an activity to produce something.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:combinedMachine",
             "type": "unece:Machine",
@@ -16,13 +16,8 @@
         },
         {
             "uri": "unece:functionDescription",
-            "type": "xsd:string",
-            "comment": "A textual description of the function of this production machine."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this production machine."
+            "type": "schema:Text",
+            "comment": "A textual description of a function for this trade product."
         },
         {
             "uri": "unece:inputApplicableBatch",
@@ -32,77 +27,62 @@
         {
             "uri": "unece:inputApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Input material applicable to this production machine."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:inputApplicableProduct",
             "type": "unece:TradeProduct",
-            "comment": "An input product applicable to this production machine."
+            "comment": "An input product applicable to this facility production unit."
         },
         {
             "uri": "unece:inputCapacityMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the input capacity of this production machine."
+            "comment": ""
         },
         {
             "uri": "unece:machineType",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A type, expressed as text, for this production machine."
         },
         {
             "uri": "unece:operationalApplicableParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "An operational parameter applicable to this production machine."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:outputApplicableBatch",
             "type": "unece:ProductBatch",
-            "comment": "An output product batch applicable to this production machine."
+            "comment": "An output batch applicable to this specified production device."
         },
         {
             "uri": "unece:outputApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Output material applicable to this production machine."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:outputApplicableProduct",
             "type": "unece:TradeProduct",
-            "comment": "An output product applicable to this production machine."
+            "comment": "An output product applicable to this facility production unit."
         },
         {
             "uri": "unece:outputCapacityMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the output capacity of this production machine."
+            "comment": ""
         },
         {
             "uri": "unece:reportingIOTDeviceSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "An IOT (Internet of Things) device or scanning device reporting event for this production machine."
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
             "uri": "unece:requestedOperationalApplicableParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "A requested operational parameter applicable to this production machine."
-        },
-        {
-            "uri": "unece:specifiedLocation",
-            "type": "unece:Location",
-            "comment": "A referenced location specified for this production machine."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:specifiedProductionUnit",
             "type": "unece:ProductionUnit",
-            "comment": "A facility production unit specified for this production machine."
-        },
-        {
-            "uri": "unece:subordinateTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the subordinate type of this production machine."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of production machine."
+            "comment": "A facility production unit for this specified production device."
         }
     ],
     "referencedBy": [
@@ -112,11 +92,11 @@
         },
         {
             "uri": "unece:applicableMachine",
-            "comment": "A production machine applicable to ..."
+            "comment": "A production machine applicable to this facility production unit."
         },
         {
             "uri": "unece:combinedMachine",
-            "comment": "A production machine combined with ..."
+            "comment": "A production machine combined with this production machine."
         },
         {
             "uri": "unece:specifiedMachine",
