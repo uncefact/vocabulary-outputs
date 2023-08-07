@@ -1,9 +1,9 @@
-
 {
     "label": "GeographicalGrid",
     "uri": "unece:GeographicalGrid",
     "comment": "The combination of the latitude and longitude forming a graticule, used for specifying the position of any location on the surface of the Earth, without consideration of altitude or depth (reference ISO 19136).",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:associatedGeographicalObjectCharacteristic",
             "type": "unece:GeographicalObjectCharacteristic",
@@ -11,42 +11,37 @@
         },
         {
             "uri": "unece:associatedLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics location associated with this specified geographical grid."
+            "type": "unece:Location",
+            "comment": "A logistics location associated with this specified circle."
         },
         {
             "uri": "unece:axisName",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An axis name, expressed as text, for this geographical grid."
         },
         {
             "uri": "unece:cell",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The cell value, expressed as text, for this geographical grid."
         },
         {
             "uri": "unece:dimensionNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The dimension, expressed as a number, of this geographical grid."
         },
         {
             "uri": "unece:highLimit",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The tuple of elements, expressed as text, indicating the high limit of this geographical grid specifying the diagonally opposing corner of each axis."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this geographical grid."
-        },
-        {
             "uri": "unece:lowLimit",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The tuple of elements, expressed as text, indicating the low limit of this geographical grid specifying the offset of each axis."
         },
         {
             "uri": "unece:offsetVectorNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The offset vector, expressed as a number, which indicates the offset of cells along each axis for this geographical grid."
         },
         {

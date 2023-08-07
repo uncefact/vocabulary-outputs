@@ -1,18 +1,18 @@
-
 {
     "label": "Plot",
     "uri": "unece:Plot",
     "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableAgriculturalProcess",
             "type": "unece:AgriculturalProcess",
-            "comment": "An agricultural process crop production specified for this crop plot."
+            "comment": "An agricultural process crop production applicable for this field crop."
         },
         {
             "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this crop plot."
+            "comment": "A specified agricultural application applied to this agricultural zone area."
         },
         {
             "uri": "unece:areaMeasure",
@@ -22,7 +22,7 @@
         {
             "uri": "unece:endDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the end of this crop plot."
+            "comment": "The date, time, date time or other date time value for the end of this available period of time."
         },
         {
             "uri": "unece:grownCrop",
@@ -32,7 +32,7 @@
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "The identifier for this crop plot."
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:regulatoryOrganicIndicator",
@@ -62,12 +62,12 @@
         {
             "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "The referenced location specified for this crop plot."
+            "comment": "A referenced location specified for this material."
         },
         {
             "uri": "unece:startDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the start of this crop plot."
+            "comment": "The date, time, date time or other date time value for the start of this available period of time."
         }
     ],
     "referencedBy": [
@@ -77,7 +77,7 @@
         },
         {
             "uri": "unece:specifiedPlot",
-            "comment": "A crop plot specified for ..."
+            "comment": "A crop plot specified for this agricultural application."
         }
     ]
 }

@@ -1,12 +1,9 @@
-
 {
     "label": "Service",
     "uri": "unece:Service",
-    "comment": [
-        "A service associated with a transport movement.",
-        "A referenced service associated with a specified event during transport movement."
-    ],
-    "objectProperties": [
+    "comment": "A service associated with a transport movement.,A referenced service associated with a specified event during transport movement.",
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:actualPerformancePeriod",
             "type": "unece:SpecifiedPeriod",
@@ -15,12 +12,12 @@
         {
             "uri": "unece:chargeAmount",
             "type": "unece:AmountType",
-            "comment": "The monetary value of the charge for this transport service."
+            "comment": "A monetary value of the calculated price to be charged."
         },
         {
             "uri": "unece:contractId",
             "type": "xsd:string",
-            "comment": "The contract identifier of this referenced transport service."
+            "comment": "A contract identifier for this supply chain consignment."
         },
         {
             "uri": "unece:deliverySpecifiedLocation",
@@ -28,14 +25,9 @@
             "comment": "A logistics location specified for a delivery by this referenced transport service."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this transport service."
-        },
-        {
             "uri": "unece:effectiveSpecifiedPeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The specified period during which this transport service is effective."
+            "comment": "The period within which this document line is effective."
         },
         {
             "uri": "unece:estimatedPerformancePeriod",
@@ -43,24 +35,14 @@
             "comment": "An estimated period of performance for this referenced transport service."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this referenced transport service."
-        },
-        {
             "uri": "unece:information",
             "type": "xsd:string",
-            "comment": "Information, expressed as text, for this referenced transport service."
+            "comment": "Information, expressed as text, concerning the transport of these dangerous goods."
         },
         {
             "uri": "unece:itemQuantity",
             "type": "unece:QuantityType",
             "comment": "A quantity of items for this referenced transport service."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this transport service."
         },
         {
             "uri": "unece:plannedPerformancePeriod",
@@ -75,7 +57,7 @@
         {
             "uri": "unece:reasonCode",
             "type": "xsd:string",
-            "comment": "A code specifying a reason for this transport service."
+            "comment": "A code specifying a reason for the declared error."
         },
         {
             "uri": "unece:relatedSpecifiedLocation",
@@ -89,13 +71,13 @@
         },
         {
             "uri": "unece:requesterParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "A trade party requesting this referenced transport service."
         },
         {
             "uri": "unece:responsibleParty",
-            "type": "unece:TradeParty",
-            "comment": "A trade party responsible for this transport service."
+            "type": "unece:Party",
+            "comment": "A party responsible for providing this referenced transport service."
         },
         {
             "uri": "unece:specifiedRoute",
@@ -110,7 +92,7 @@
         {
             "uri": "unece:transportServiceCategoryTypeCode",
             "type": "xsd:string",
-            "comment": "A code specifying the category type of this referenced transport service."
+            "comment": "A code specifying a type of category for this transport service."
         },
         {
             "uri": "unece:transportServiceConditionTypeCode",
@@ -120,7 +102,7 @@
         {
             "uri": "unece:transportServicePaymentArrangementCode",
             "type": "unece:TransportServicePaymentArrangementCodeList",
-            "comment": "The code specifying the payment arrangement for this transport service."
+            "comment": "The code specifying the payment arrangement for this logistics service charge [Reference United Nations Code List (UNCL) 4237]."
         },
         {
             "uri": "unece:transportServicePriorityCode",
@@ -135,7 +117,7 @@
         {
             "uri": "unece:uRICommunication",
             "type": "unece:Communication",
-            "comment": "The Uniform Resource Identifier (URI) communication for this transport service, such as its website or email address."
+            "comment": "A Uniform Resource Identifier (URI) communication for this trade party, such as a web or email address."
         }
     ],
     "referencedBy": [
@@ -145,7 +127,7 @@
         },
         {
             "uri": "unece:providedService",
-            "comment": "A transport service provided by ..."
+            "comment": "A transport service provided by this location party."
         },
         {
             "uri": "unece:requestedRelatedService",
