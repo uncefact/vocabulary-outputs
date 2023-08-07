@@ -1,68 +1,48 @@
-
 {
     "label": "PaymentFinancialInstitution",
     "uri": "unece:PaymentFinancialInstitution",
     "comment": "An institution that provides financial services and financial transactions for payment.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:bEIId",
-            "type": "xsd:string",
-            "comment": "The unique Business Entity Identifier (BEI) as defined in ISO 9362 for this payment financial institution."
+            "type": "schema:Text",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
         },
         {
             "uri": "unece:bICId",
-            "type": "xsd:string",
-            "comment": "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this payment financial institution."
+            "type": "schema:Text",
+            "comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
         },
         {
             "uri": "unece:branchName",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A branch name, expressed as text, for this payment financial institution."
         },
         {
             "uri": "unece:branchNameId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of the branch name for this payment financial institution."
         },
         {
             "uri": "unece:gLNId",
-            "type": "xsd:string",
-            "comment": "The unique Global Location Number (GLN) as defined by GS1 for this payment financial institution."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this payment financial institution."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this payment financial institution."
+            "type": "schema:Text",
+            "comment": "A Global Location Number (GLN) identifier for this trade party."
         },
         {
             "uri": "unece:nameId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of the name for this payment financial institution."
-        },
-        {
-            "uri": "unece:roleCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the role for this payment financial institution, such as intermediary or settlement agent."
         },
         {
             "uri": "unece:specifiedCommunication",
             "type": "unece:Communication",
-            "comment": "A communication specified for this payment financial institution."
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         },
         {
             "uri": "unece:specifiedPaymentFinancialAccount",
             "type": "unece:PaymentFinancialAccount",
             "comment": "A payment financial account specified for this payment financial institution."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of payment financial institution."
         }
     ],
     "referencedBy": [

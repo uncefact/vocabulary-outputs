@@ -1,31 +1,11 @@
-
 {
     "label": "value",
     "uri": "unece:value",
-    "comment": [
-        "A value, expressed as text, for this document characteristic.",
-        "A value, expressed as text, for this inspection reference.",
-        "A value, expressed as text, for this metric characteristic.",
-        "A value, expressed as text, for this organization characteristic.",
-        "A value, expressed as text, for this process characteristic.",
-        "A value, expressed as text, for this product batch characteristic.",
-        "A value, expressed as text, for this product characteristic.",
-        "A value, expressed as text, for this specified range.",
-        "A value, expressed as text, for this supply chain reference.",
-        "A value, expressed as text, for this sustainability characteristic.",
-        "A value, expressed as text, for this technical characteristic.",
-        "The value, expressed as text, for this agricultural characteristic.",
-        "The value, expressed as text, for this laboratory observation reference.",
-        "The value, expressed as text, for this specified parameter.",
-        "The value, expressed as text, of this XHE parameter.",
-        "The value, expressed as text, of this control setting parameter.",
-        "The value, expressed as text, of this document context parameter.",
-        "The value, expressed as text, of this observation objective parameter.",
-        "The value, expressed as text, of this operational parameter."
-    ],
+    "comment": "A value, expressed as text, for this document characteristic.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
@@ -34,12 +14,20 @@
             "comment": "A prominent attribute or aspect of an agricultural object."
         },
         {
-            "uri": "unece:ControlSettingParameter",
-            "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
+            "uri": "unece:MetricCharacteristic",
+            "comment": "A prominent attribute or aspect of a metric (a standard of measurement)."
         },
         {
             "uri": "unece:DocumentCharacteristic",
             "comment": "A prominent attribute or aspect of a document."
+        },
+        {
+            "uri": "unece:SpecifiedParameter",
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
+        },
+        {
+            "uri": "unece:Range",
+            "comment": "A row, line or series, commonly used to express the difference between lowest and highest values."
         },
         {
             "uri": "unece:DocumentContextParameter",
@@ -54,56 +42,40 @@
             "comment": "The direction to related information for this laboratory observation."
         },
         {
-            "uri": "unece:MetricCharacteristic",
-            "comment": "A prominent attribute or aspect of a metric (a standard of measurement)."
-        },
-        {
-            "uri": "unece:ObservationObjectiveParameter",
-            "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
-        },
-        {
-            "uri": "unece:OperationalParameter",
-            "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
-        },
-        {
-            "uri": "unece:OrganizationCharacteristic",
-            "comment": "A prominent attribute or aspect of an organization."
-        },
-        {
-            "uri": "unece:ProcessCharacteristic",
-            "comment": "A prominent attribute or aspect of a process."
+            "uri": "unece:ProductCharacteristic",
+            "comment": "A prominent attribute or aspect of a product."
         },
         {
             "uri": "unece:ProductBatchCharacteristic",
             "comment": "A prominent attribute or aspect of a group of products considered or dealt with together."
         },
         {
-            "uri": "unece:ProductCharacteristic",
-            "comment": "A prominent attribute or aspect of a product."
-        },
-        {
-            "uri": "unece:Range",
-            "comment": "A row, line or series, commonly used to express the difference between lowest and highest values."
-        },
-        {
-            "uri": "unece:SpecifiedParameter",
-            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
-        },
-        {
-            "uri": "unece:SupplyChainReference",
-            "comment": "The identification of related information in a supply chain context."
-        },
-        {
             "uri": "unece:SustainabilityCharacteristic",
             "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
+        },
+        {
+            "uri": "unece:ProcessCharacteristic",
+            "comment": "A prominent attribute or aspect of a process."
         },
         {
             "uri": "unece:TechnicalCharacteristic",
             "comment": "A prominent technical attribute or aspect."
         },
         {
-            "uri": "unece:XHEParameter",
-            "comment": "A feature that is fixed for an XHE (Exchange Header Envelope) but may be different in other cases."
+            "uri": "unece:ControlSettingParameter",
+            "comment": "A set of measurable factors that specifies the conditions of its operation within a specific context."
+        },
+        {
+            "uri": "unece:OperationalParameter",
+            "comment": "A set of measurable factors that specifies the conditions within which an entity operates correctly."
+        },
+        {
+            "uri": "unece:ObservationObjectiveParameter",
+            "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective."
+        },
+        {
+            "uri": "unece:OrganizationCharacteristic",
+            "comment": "A prominent attribute or aspect of an organization."
         }
     ]
 }

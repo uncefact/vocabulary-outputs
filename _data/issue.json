@@ -1,13 +1,13 @@
-
 {
     "label": "Issue",
     "uri": "unece:Issue",
     "comment": "A targeted topic for debate or resolution.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this target issue."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:maximumSpecifiedCharacteristic",
@@ -26,14 +26,14 @@
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of target issue, such as a value or a range."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedIssue",
-            "comment": "A target issue specified for this electronic negotiation exchange."
+            "comment": "A targeted topic for debate or resolution."
         }
     ]
 }

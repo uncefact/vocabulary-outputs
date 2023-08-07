@@ -1,94 +1,49 @@
-
 {
     "label": "GroupedWorkItem",
     "uri": "unece:GroupedWorkItem",
     "comment": "A grouping of related work items.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:actualComplexDescription",
             "type": "unece:ComplexDescription",
-            "comment": "An actual complex description for this work item group."
-        },
-        {
-            "uri": "unece:alternativeClassificationCode",
-            "type": "xsd:string",
-            "comment": "A code specifying an alternative classification for this work item group."
+            "comment": "An aggregation of descriptive information consisting of different but related characteristics that together constitute a work item complex description."
         },
         {
             "uri": "unece:binaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A specified binary file referenced by this grouped work item."
-        },
-        {
-            "uri": "unece:changedStatus",
-            "type": "unece:RecordedStatus",
-            "comment": "A changed recorded status for this grouped work item."
-        },
-        {
-            "uri": "unece:comment",
-            "type": "xsd:string",
-            "comment": "A comment, expressed as text, for this work item group."
-        },
-        {
-            "uri": "unece:contractualLanguageCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the contractual language for this grouped work item."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this work item group."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
             "uri": "unece:index",
-            "type": "xsd:string",
-            "comment": "The index, expressed as text, to be used for this grouped work item."
+            "type": "schema:Text",
+            "comment": "The index, expressed as text, to be used for this basic work item."
         },
         {
             "uri": "unece:itemBasicWorkItem",
             "type": "unece:BasicWorkItem",
-            "comment": "A basic work item within this grouped work item."
+            "comment": "A basic work item in this basic work item."
         },
         {
             "uri": "unece:itemGroupedWorkItem",
             "type": "unece:GroupedWorkItem",
-            "comment": "A grouped work item within this grouped work item."
+            "comment": "A grouped work item in this valuation breakdown statement."
         },
         {
             "uri": "unece:priceListItemId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of a price list item for this grouped work item."
-        },
-        {
-            "uri": "unece:primaryClassificationCode",
-            "type": "xsd:string",
-            "comment": "A code specifying the primary classification for this work item group."
-        },
-        {
-            "uri": "unece:requestedActionCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a requested action for this grouped work item."
         },
         {
             "uri": "unece:totalPrice",
             "type": "unece:CalculatedPrice",
-            "comment": "A total calculated price for this work item group."
-        },
-        {
-            "uri": "unece:totalQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The total quantity of this work item group."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying the type of this work item group."
+            "comment": "A total calculated price for this basic work item."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:itemGroupedWorkItem",
-            "comment": "A grouped work item in ..."
+            "comment": "A grouped work item in this valuation breakdown statement."
         }
     ]
 }

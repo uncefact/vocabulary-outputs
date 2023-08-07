@@ -1,34 +1,34 @@
-
 {
     "label": "AnimalIdentity",
     "uri": "unece:AnimalIdentity",
     "comment": "Information about an animal which uniquely identifies it.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this animal identity."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:identifierLengthNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The length, expressed as the number of characters, of the identifier in this animal identity."
         },
         {
             "uri": "unece:issuerPartyName",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The name, expressed as text, of the party issuing this animal identity."
         },
         {
             "uri": "unece:legalBasis",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The legal basis, expressed as text, for this animal identity."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedAnimalIdentity",
-            "comment": "An animal identity specified for this TT animal."
+            "comment": "Information about an animal which uniquely identifies it."
         }
     ]
 }

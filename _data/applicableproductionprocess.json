@@ -1,30 +1,25 @@
-
 {
     "label": "applicableProductionProcess",
     "uri": "unece:applicableProductionProcess",
-    "comment": [
-        "A process applicable to this specified production cycle.",
-        "A production process applicable to this facility production unit.",
-        "A production process applicable to this trade product."
-    ],
+    "comment": "A process applicable to this specified production cycle.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:ProductionProcess",
-            "comment": "A naturally occurring or designed sequence of operations or events in order to produce something."
+            "uri": "unece:ProductionProcess"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ProductionCycle",
-            "comment": "A series of activities associated with the processing of a product."
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         },
         {
             "uri": "unece:ProductionUnit",
             "comment": "A defined set of production processes under the single management of a facility."
         },
         {
-            "uri": "unece:TradeProduct",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
+            "uri": "unece:ProductionCycle",
+            "comment": "A series of activities associated with the processing of a product."
         }
     ]
 }

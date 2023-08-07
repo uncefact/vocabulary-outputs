@@ -1,0 +1,4 @@
+unece:AssociatedTransportEquipment
+unece:CommunicationEvent
+unece:SpecifiedRoute
+unece:Contact
