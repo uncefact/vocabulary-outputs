@@ -1,12 +1,12 @@
-
 {
     "label": "SpecifiedFault",
     "uri": "unece:SpecifiedFault",
     "comment": "An unattractive or unsatisfactory characteristic.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:actualSpecifiedPercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The actual percentage of this specified fault."
         },
         {
@@ -15,45 +15,25 @@
             "comment": "The actual total quantity of this specified fault."
         },
         {
-            "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the category for this fault."
-        },
-        {
-            "uri": "unece:classificationCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the classification for this fault."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified fault."
-        },
-        {
             "uri": "unece:estimatedSpecifiedPercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The estimated percentage of this specified fault."
         },
         {
             "uri": "unece:faultType",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A type, expressed as text, of this specified fault."
         },
         {
             "uri": "unece:operationalApplicableTolerance",
             "type": "unece:Tolerance",
             "comment": "An applicable operational tolerance of this specified fault."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of fault."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableFault",
-            "comment": "A fault applicable to this ..."
+            "comment": "An unattractive or unsatisfactory characteristic."
         }
     ]
 }

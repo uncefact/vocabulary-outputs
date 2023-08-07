@@ -1,9 +1,9 @@
-
 {
     "label": "DangerousGoods",
     "uri": "unece:DangerousGoods",
     "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalHazardClassificationId",
             "type": "xsd:string",
@@ -22,7 +22,7 @@
         {
             "uri": "unece:associatedTransportEquipment",
             "type": "unece:LogisticsTransportEquipment",
-            "comment": "Referenced transport equipment associated with the dangerous goods."
+            "comment": "A piece of transport equipment associated with this referenced supply chain consignment item."
         },
         {
             "uri": "unece:authorizationInformation",
@@ -61,7 +61,7 @@
         },
         {
             "uri": "unece:emergencyContact",
-            "type": "unece:TradeContact",
+            "type": "unece:Contact",
             "comment": "The person or department to be contacted in the event of any emergency related to these transported dangerous goods."
         },
         {
@@ -147,7 +147,7 @@
         {
             "uri": "unece:marking",
             "type": "xsd:string",
-            "comment": "Marking, expressed as text, for these transported dangerous goods."
+            "comment": "Marking, expressed as text, for these logistics shipping marks."
         },
         {
             "uri": "unece:overpackInformation",
@@ -256,7 +256,7 @@
         },
         {
             "uri": "unece:transportExpertContact",
-            "type": "unece:TradeContact",
+            "type": "unece:Contact",
             "comment": "The expert to be contacted for details about the transport of these dangerous goods."
         },
         {
@@ -282,7 +282,7 @@
         {
             "uri": "unece:volumeUnitGrossVolumeMeasure",
             "type": "unece:VolumeUnitMeasureType",
-            "comment": "The measure of the gross volume, normally calculated by multiplying the maximum length, width and height dimensions of these transported dangerous goods."
+            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
         },
         {
             "uri": "unece:volumeUnitMarinePollutantVolumeMeasure",
@@ -292,22 +292,22 @@
         {
             "uri": "unece:weightUnitGrossWeightMeasure",
             "type": "unece:WeightUnitMeasureType",
-            "comment": "The measure of the weight (mass) of these transported dangerous goods including packaging but excluding the transport equipment."
+            "comment": "A measure of the gross weight (mass) of this referenced supply chain consignment which includes the weight of packaging but which excludes the weight of any transport equipment."
         },
         {
             "uri": "unece:weightUnitNetWeightMeasure",
             "type": "unece:WeightUnitMeasureType",
-            "comment": "The measure of the net weight (mass) of these transported dangerous goods."
+            "comment": "A measure of the net weight (mass) of this consignment which excludes the weight of packaging of this supply chain consignment and that of any transport equipment."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableDangerousGoods",
-            "comment": "Dangerous goods applicable to the ..."
+            "comment": "Dangerous goods applicable to the transport of this supply chain consignment."
         },
         {
             "uri": "unece:loadedDangerousGoods",
-            "comment": "Dangerous goods loaded into or ..."
+            "comment": "Dangerous goods loaded into or onto this piece of associated transport equipment."
         }
     ]
 }

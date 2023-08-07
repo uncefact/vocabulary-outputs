@@ -1,64 +1,29 @@
-
 {
     "label": "ObservationObjectiveParameter",
     "uri": "unece:ObservationObjectiveParameter",
     "comment": "A feature that is fixed for the case in question but may be different in other cases for this observation objective.",
-    "objectProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this observation objective parameter."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this observation objective parameter."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this observation objective parameter."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:parameterType",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A type, expressed as text, for this observation objective parameter."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this observation objective parameter."
         },
         {
             "uri": "unece:statusValueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the status value for this observation objective parameter."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of observation objective parameter, such as retailer, country, toxic standard or examination type."
-        },
-        {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "The value, expressed as text, of this observation objective parameter."
+            "comment": "A measure of a value of the status for this specified parameter."
         },
         {
             "uri": "unece:valueAllowedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this value is allowed for this parameter observation objective."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the value for this observation objective parameter."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not the value for this specified parameter is allowed."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:interpretationResultApplicableParameter",
-            "comment": "An applicable objective observation parameter ..."
+            "comment": "An applicable objective observation parameter of the interpretation result for this inspection result characteristic."
         }
     ]
 }

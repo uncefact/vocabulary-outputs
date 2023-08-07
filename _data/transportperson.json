@@ -1,23 +1,18 @@
-
 {
     "label": "TransportPerson",
     "uri": "unece:TransportPerson",
     "comment": "A transport related person, such as a member of a crew or a passenger.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:attainedAcademicQualification",
             "type": "unece:AcademicQualification",
-            "comment": "An academic qualification attained by this transport person."
+            "comment": "An academic qualification attained by this authoritative signatory person."
         },
         {
             "uri": "unece:birthCountryId",
             "type": "xsd:string",
             "comment": "The identifier of the birth country of this transport person."
-        },
-        {
-            "uri": "unece:birthDateTime",
-            "type": "xsd:string",
-            "comment": "The birth date of this transport person."
         },
         {
             "uri": "unece:birthplaceName",
@@ -27,7 +22,7 @@
         {
             "uri": "unece:categoryCode",
             "type": "xsd:string",
-            "comment": "A code specifying a category for this transport person, such as a member of crew or passenger."
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
             "uri": "unece:declaredPersonalEffects",
@@ -36,7 +31,7 @@
         },
         {
             "uri": "unece:disembarkationDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "A date, time, date time, or other date time value that this person disembarked from a means of transport."
         },
         {
@@ -47,17 +42,17 @@
         {
             "uri": "unece:emailURICommunication",
             "type": "unece:Communication",
-            "comment": "The email URI (Uniform Resource Identifier) communication for this transport person."
+            "comment": "An email Uniform Resource Identifier (URI) communication for this contact person."
         },
         {
             "uri": "unece:embarkationDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport."
         },
         {
             "uri": "unece:embarkationLocation",
             "type": "unece:LogisticsLocation",
-            "comment": "An embarkation location for this transport person."
+            "comment": "A logistics location where a found stowaway embarked upon the transport means on which they were discovered."
         },
         {
             "uri": "unece:familyName",
@@ -78,11 +73,6 @@
             "uri": "unece:identifiedStowaway",
             "type": "unece:Stowaway",
             "comment": "A transport person identified as a found stowaway."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this transport person."
         },
         {
             "uri": "unece:inTransitIndicator",
@@ -117,7 +107,7 @@
         {
             "uri": "unece:role",
             "type": "xsd:string",
-            "comment": "A role, expressed as text, of this transport person."
+            "comment": "A role, expressed as text, for this contact person."
         },
         {
             "uri": "unece:specificAccreditation",

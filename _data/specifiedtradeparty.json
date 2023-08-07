@@ -1,24 +1,21 @@
-
 {
     "label": "specifiedTradeParty",
     "uri": "unece:specifiedTradeParty",
-    "comment": [
-        "A party specified for this experience event.",
-        "A party specified for this experience product.",
-        "A party specified for this experience program action.",
-        "A party specified for this specified experience item.",
-        "A trade party specified for this referenced location."
-    ],
+    "comment": "A party specified for this experience event.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "uri": "unece:Party"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ExperienceEvent",
-            "comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
+            "uri": "unece:Location",
+            "comment": "A reference to a physical location or place."
+        },
+        {
+            "uri": "unece:ExperienceProgramAction",
+            "comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience."
         },
         {
             "uri": "unece:ExperienceItem",
@@ -29,12 +26,8 @@
             "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience."
         },
         {
-            "uri": "unece:ExperienceProgramAction",
-            "comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience."
-        },
-        {
-            "uri": "unece:Location",
-            "comment": "A reference to a physical location or place."
+            "uri": "unece:ExperienceEvent",
+            "comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
         }
     ]
 }
