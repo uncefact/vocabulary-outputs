@@ -1,54 +1,54 @@
-
 {
     "label": "CustomerClass",
     "uri": "unece:CustomerClass",
     "comment": "The conditions and requirements of the type of person who may use or purchase a product or service.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the category, such as adult or child, of this specified customer class,"
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
             "uri": "unece:categoryName",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A category name, expressed as text, of this specified customer class."
         },
         {
             "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified customer class."
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:genderCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the gender in this specified customer class."
+            "type": "schema:Text",
+            "comment": "A code specifying the gender of this transport person."
         },
         {
             "uri": "unece:lowerAgeLimitNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The value, expressed as a number of years, for the lower age limit for the category of this specified customer class."
         },
         {
             "uri": "unece:mealServiceCategoryCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the meal service category for this specified customer class."
         },
         {
             "uri": "unece:specialBeddingServiceOfferedIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not special bedding service is offered for this specified customer class."
         },
         {
             "uri": "unece:upperAgeLimitNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The value, expressed as a number of years, for the upper age limit for the category of this specified customer class."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableCustomerClass",
-            "comment": "An applicable customer class for this trade price."
+            "comment": "The conditions and requirements of the type of person who may use or purchase a product or service."
         }
     ]
 }

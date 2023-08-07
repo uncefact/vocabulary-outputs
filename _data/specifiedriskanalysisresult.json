@@ -1,41 +1,29 @@
-
 {
     "label": "specifiedRiskAnalysisResult",
     "uri": "unece:specifiedRiskAnalysisResult",
-    "comment": [
-        "A result of a logistics risk analysis calculation specified for this supply chain consignment.",
-        "A result of a logistics risk analysis calculation specified for this trade party.",
-        "A result of a logistics risk analysis calculation specified for this transport equipment.",
-        "A result of a logistics risk analysis calculation specified for this transport movement.",
-        "A result of a logistics risk analysis specified for this referenced supply chain consignment.",
-        "Results of a logistics risk analysis specified for this supply chain consignment item."
-    ],
+    "comment": "A result of a logistics risk analysis calculation specified for this supply chain consignment.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
-            "uri": "unece:RiskAnalysisResult",
-            "comment": "The result of a logistics risk analysis calculation."
+            "uri": "unece:RiskAnalysisResult"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
-        },
-        {
-            "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
             "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
-        },
-        {
-            "uri": "unece:TradeParty",
-            "comment": "An individual, a group, or a body having a role in a trade business function."
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
             "uri": "unece:TransportMovement",
             "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
+        },
+        {
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
+        },
+        {
+            "uri": "unece:ConsignmentItem",
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

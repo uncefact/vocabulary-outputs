@@ -1,9 +1,9 @@
-
 {
     "label": "GuestPerson",
     "uri": "unece:GuestPerson",
     "comment": "An individual guest.",
-    "objectProperties": [
+    "businessDomain": "tourism",
+    "datatypeProperties": [
         {
             "uri": "unece:accompanyingAnimal",
             "type": "unece:PetAnimal",
@@ -12,52 +12,17 @@
         {
             "uri": "unece:applicableSpecifiedNote",
             "type": "unece:SpecifiedNote",
-            "comment": "A note applicable to this guest person."
-        },
-        {
-            "uri": "unece:birthDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value which specifies the birth date for this guest."
+            "comment": "A specified textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:carriedCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate carried by this guest person."
-        },
-        {
-            "uri": "unece:claimedLanguageProficiency",
-            "type": "unece:LanguageProficiency",
-            "comment": "Personal language proficiency skills claimed by this guest person."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this guest."
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
         },
         {
             "uri": "unece:durationUnitAgeMeasure",
             "type": "unece:DurationUnitMeasureType",
-            "comment": "The measure of the age of this guest person."
-        },
-        {
-            "uri": "unece:genderCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the gender of this guest, such as male, female."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this guest."
-        },
-        {
-            "uri": "unece:languageId",
-            "type": "xsd:string",
-            "comment": "The identifier of the language of this guest."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, by which this guest is known."
+            "comment": ""
         },
         {
             "uri": "unece:notifiedAllergy",
@@ -92,27 +57,17 @@
         {
             "uri": "unece:notifiedProtectionMeans",
             "type": "unece:ProtectionMeans",
-            "comment": "A disease protection means notified for this guest person."
-        },
-        {
-            "uri": "unece:passportId",
-            "type": "xsd:string",
-            "comment": "The identifier of the passport of this guest."
+            "comment": "A way to protect something, such as human beings, animals or environment, from getting infected or becoming ill."
         },
         {
             "uri": "unece:raisedQuery",
             "type": "unece:SpecialQuery",
-            "comment": "A special query raised for this guest person."
+            "comment": "A special question or request for information."
         },
         {
             "uri": "unece:residenceCountryId",
-            "type": "xsd:string",
-            "comment": "The identifier of the residence country of this guest person."
-        },
-        {
-            "uri": "unece:roleCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the role of this guest person."
+            "type": "schema:Text",
+            "comment": "The identifier for the country of residence for this TT party, such as the country in which a person lives or in which a corporation has its place of incorporation."
         },
         {
             "uri": "unece:specifiedCarriedEquipment",
@@ -120,35 +75,25 @@
             "comment": "Carried equipment specified for this guest person."
         },
         {
-            "uri": "unece:specifiedPaymentMeans",
-            "type": "unece:PaymentMeans",
-            "comment": "A trade settlement payment means specified for this guest person."
-        },
-        {
-            "uri": "unece:title",
-            "type": "xsd:string",
-            "comment": "The title, expressed as text, associated with this guest, such as Doctor, Mr., Mrs., Ms."
-        },
-        {
             "uri": "unece:titleCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the title of this guest person."
         },
         {
             "uri": "unece:travelInsuranceCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A travel insurance certificate for this guest person."
+            "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
         },
         {
             "uri": "unece:usedCommunication",
             "type": "unece:Communication",
-            "comment": "A universal communication used by this guest."
+            "comment": "The exchange of thoughts, messages, or information, as universally exchanged by speech, signals, writing, or behaviour between persons and/or organizations."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedGuestPerson",
-            "comment": "A guest person specified by this trade party."
+            "comment": "An individual guest."
         }
     ]
 }

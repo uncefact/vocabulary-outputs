@@ -1,44 +1,44 @@
-
 {
     "label": "ProcessWorkItem",
     "uri": "unece:ProcessWorkItem",
     "comment": "A distinct operation or task that is part of a process.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:alternativeClassificationCode",
-            "type": "xsd:string",
-            "comment": "The code specifying an alternative classification for this process work item."
+            "type": "schema:Text",
+            "comment": "A code specifying an alternative classification for this basic work item."
         },
         {
             "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this process work item."
+            "type": "schema:Text",
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this process work item."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:primaryClassificationCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the primary classification for this process work item."
+            "type": "schema:Text",
+            "comment": "A code specifying a primary classification value for this work item quantity analysis."
         },
         {
             "uri": "unece:totalQuantity",
             "type": "unece:QuantityType",
-            "comment": "The total quantity for this process work item."
+            "comment": ""
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of process work item."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:performedWorkItem",
-            "comment": "A work item performed for this production process."
+            "comment": "A distinct operation or task that is part of a process."
         }
     ]
 }

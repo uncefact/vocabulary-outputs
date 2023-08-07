@@ -1,17 +1,20 @@
-
 {
     "label": "buyerDeductibleTaxSpecifiedAccountingAccount",
     "uri": "unece:buyerDeductibleTaxSpecifiedAccountingAccount",
-    "comment": "The buyer deductible tax specified accounting account for this trade related tax, levy or duty.",
+    "comment": "A specific trade account for recording debits and credits to general accounting, cost accounting or budget accounting.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:AccountingAccount",
-            "comment": "A specific trade account for recording debits and credits to general accounting, cost accounting or budget accounting."
+            "uri": "unece:AccountingAccount"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:Tax",
             "comment": "A trade related fiscal levy or duty."
         }
     ]

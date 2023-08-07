@@ -1,18 +1,18 @@
-
 {
     "label": "TradePrice",
     "uri": "unece:TradePrice",
     "comment": "A sum of money for which something is or may be bought or sold for trade purposes.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableCustomerClass",
             "type": "unece:CustomerClass",
-            "comment": "An applicable customer class for this trade price."
+            "comment": "The conditions and requirements of the type of person who may use or purchase a product or service."
         },
         {
             "uri": "unece:applicableSpecifiedNote",
             "type": "unece:SpecifiedNote",
-            "comment": "A specified note applicable to this trade price."
+            "comment": "A specified textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:appliedAllowanceCharge",
@@ -20,128 +20,98 @@
             "comment": "An allowance or charge applied to the trade price."
         },
         {
-            "uri": "unece:associatedDocument",
-            "type": "unece:Document",
-            "comment": "An associated document referenced for this trade price."
-        },
-        {
             "uri": "unece:basisDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value used as the basis for this trade price."
         },
         {
             "uri": "unece:basisQuantity",
             "type": "unece:QuantityType",
-            "comment": "The quantity on which the trade price is based."
+            "comment": ""
         },
         {
             "uri": "unece:bracketTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the type of bracket for this trade price."
         },
         {
             "uri": "unece:calculationPercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The calculation percentage for this trade price."
         },
         {
             "uri": "unece:cancellationPercent",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The cancellation percentage for this trade price."
         },
         {
             "uri": "unece:categoryTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the type of category, such as refund or service charge, for this trade price."
         },
         {
             "uri": "unece:changeReason",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A reason, expressed as text, for a change of this trade price."
-        },
-        {
-            "uri": "unece:chargeAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value of the trade price charge."
         },
         {
             "uri": "unece:customerServicePointQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of customer service points for this trade price."
-        },
-        {
-            "uri": "unece:dayQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The number of days related to this trade price."
+            "comment": ""
         },
         {
             "uri": "unece:deliveryLocation",
-            "type": "unece:TradeLocation",
-            "comment": "A delivery location for this trade price."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this trade price."
+            "type": "unece:Location",
+            "comment": "A reference to a physical location or place."
         },
         {
             "uri": "unece:determinationCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the determination of this trade price."
-        },
-        {
-            "uri": "unece:expiryDateTime",
-            "type": "xsd:string",
-            "comment": "The expiry date, time, date time, or other date time value for this trade price."
         },
         {
             "uri": "unece:grandTotalChargeAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the grand total charge of this trade price."
+            "comment": ""
         },
         {
             "uri": "unece:includedTax",
-            "type": "unece:TradeTax",
-            "comment": "A tax included in this trade price."
-        },
-        {
-            "uri": "unece:information",
-            "type": "xsd:string",
-            "comment": "Information, expressed as text, for this trade price."
+            "type": "unece:Tax",
+            "comment": "A tax included in this advance payment."
         },
         {
             "uri": "unece:maximumQuantity",
             "type": "unece:QuantityType",
-            "comment": "The maximum quantity in a range for which the trade price applies."
+            "comment": ""
         },
         {
             "uri": "unece:minimumQuantity",
             "type": "unece:QuantityType",
-            "comment": "The minimum quantity in a range for which this trade price applies."
+            "comment": ""
         },
         {
             "uri": "unece:multipleReasonIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not multiple reasons affect this trade price."
         },
         {
             "uri": "unece:netPriceIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not the trade price is the net price."
+            "type": "schema:Boolean",
+            "comment": "An indication of whether or not the reference price is a net price."
         },
         {
             "uri": "unece:operationalApplicablePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "An operational period applicable for this trade price."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:orderUnitConversionFactorNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The value used as the factor to convert the order unit into the price unit for this trade price."
         },
         {
             "uri": "unece:priceType",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A type, expressed as text, for this trade price."
         },
         {
@@ -150,29 +120,14 @@
             "comment": "The code specifying the type of trade price."
         },
         {
-            "uri": "unece:reasonCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a reason for this trade price."
-        },
-        {
             "uri": "unece:seasonalApplicablePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A seasonal period applicable for this trade price."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:seasonalRankCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the seasonal rank of this trade price."
-        },
-        {
-            "uri": "unece:specifiedPaymentTradeSettlement",
-            "type": "unece:PaymentTradeSettlement",
-            "comment": "A payment trade settlement specified for this trade price."
-        },
-        {
-            "uri": "unece:totalChargeAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value of the total charge of this trade price."
         },
         {
             "uri": "unece:tradeComparisonPrice",
@@ -182,22 +137,17 @@
         {
             "uri": "unece:unitAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the unit of this trade price."
-        },
-        {
-            "uri": "unece:validityPeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "A specified period for which this trade price is valid."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:agreedPriceProductPrice",
-            "comment": "An agreed product price for this line trade agreement."
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         },
         {
             "uri": "unece:calculatedPrice",
-            "comment": "A calculated price for this ..."
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         },
         {
             "uri": "unece:calculationBasisPrice",
@@ -205,19 +155,19 @@
         },
         {
             "uri": "unece:grossPriceProductPrice",
-            "comment": "A gross product price in ..."
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         },
         {
             "uri": "unece:mSRPPrice",
-            "comment": "The MSRP (Manufacturer Suggested Retail Price) for this trade product."
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         },
         {
             "uri": "unece:netPriceProductPrice",
-            "comment": "A net product price in ..."
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         },
         {
             "uri": "unece:orderPriceProductPrice",
-            "comment": "An order price for a product in this line trade agreement."
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ]
 }

@@ -1,13 +1,13 @@
-
 {
     "label": "ProductionWasteMaterial",
     "uri": "unece:ProductionWasteMaterial",
     "comment": "Any materials unused and rejected as unwanted during a production process.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableProductCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate applicable to this production waste material."
+            "comment": "A product certificate applicable to this production waste material component."
         },
         {
             "uri": "unece:applicableProductionWasteRecoveryDisposalProcess",
@@ -17,7 +17,7 @@
         {
             "uri": "unece:applicableSustainabilityCharacteristic",
             "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this production waste material."
+            "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
         {
             "uri": "unece:includedProductionWasteMaterialComponent",
@@ -26,24 +26,24 @@
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of production waste material."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         },
         {
             "uri": "unece:volumeMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the volume of this production waste material."
+            "comment": ""
         },
         {
             "uri": "unece:weightMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the weight of this production waste material."
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:reportedProductionWasteMaterial",
-            "comment": "Production waste material reported for ..."
+            "comment": "Any materials unused and rejected as unwanted during a production process."
         }
     ]
 }

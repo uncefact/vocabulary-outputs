@@ -1,13 +1,13 @@
-
 {
     "label": "GeopoliticalRegion",
     "uri": "unece:GeopoliticalRegion",
     "comment": "A collection of countries and/or economies united for trade purposes.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this trade geopolitical region."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:includedCountry",
@@ -16,23 +16,23 @@
         },
         {
             "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this trade geopolitical region."
+            "type": "schema:Text",
+            "comment": "A name or symbol, expressed as text, of a radioactive radionuclide."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of trade geopolitical region."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:exportGeopoliticalRegion",
-            "comment": "The geopolitical region of export ..."
+            "comment": "The geopolitical region of export for this supply chain consignment item."
         },
         {
             "uri": "unece:originGeopoliticalRegion",
-            "comment": "The geopolitical region of origin ..."
+            "comment": "The geopolitical region of origin for this supply chain consignment item."
         }
     ]
 }

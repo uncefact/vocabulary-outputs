@@ -1,34 +1,34 @@
-
 {
     "label": "IndividualTTAnimal",
     "uri": "unece:IndividualTTAnimal",
     "comment": "A Track and Trace (TT) animal, such as one kept or raised on a farm, ranch.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:birthDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The birth date for this individual TT animal."
         },
         {
             "uri": "unece:deathDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The death date for this individual TT animal."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this TT animal, such as the number appearing on an animal ear tag."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:specifiedPeriod",
             "type": "unece:DelimitedPeriod",
-            "comment": "The delimited period specified for this individual TT animal."
+            "comment": "A period of time from a start date time onwards up to an end date time."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedIndividualTTAnimal",
-            "comment": "The individual tracking animal specified for this TT animal."
+            "comment": "A Track and Trace (TT) animal, such as one kept or raised on a farm, ranch."
         }
     ]
 }

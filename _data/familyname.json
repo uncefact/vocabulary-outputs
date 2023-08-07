@@ -1,29 +1,21 @@
-
 {
     "label": "familyName",
     "uri": "unece:familyName",
-    "comment": [
-        "A family name, expressed as text, for this transport person.",
-        "The family name expressed as text for this distinct chemical.",
-        "The name, expressed as text, that this contact person shares with members of his/her family."
-    ],
+    "comment": "A date, time, date time, or other date time value that this person embarked upon a means of transport.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:Person",
+            "comment": "A transport related person, such as a member of a crew or a passenger."
+        },
+        {
             "uri": "unece:Chemical",
             "comment": "Any clearly defined substance having a defined molecular composition."
-        },
-        {
-            "uri": "unece:ContactPerson",
-            "comment": "An individual human being in a position to give assistance or information."
-        },
-        {
-            "uri": "unece:TransportPerson",
-            "comment": "A transport related person, such as a member of a crew or a passenger."
         }
     ]
 }

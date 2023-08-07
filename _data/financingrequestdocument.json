@@ -1,43 +1,28 @@
-
 {
     "label": "FinancingRequestDocument",
     "uri": "unece:FinancingRequestDocument",
     "comment": "The set of characteristics shared by all individual transactions grouped for this financing request document.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalInformationIncludedNote",
             "type": "unece:Note",
-            "comment": "An additional information note included for this financing request document."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:agreementInformation",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "Agreement information, expressed as text, in this financing request document, such as a collection mandate."
         },
         {
             "uri": "unece:authorization",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An authorization, expressed as text, for this financing request document."
         },
         {
             "uri": "unece:cancellationReason",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A cancellation reason, expressed as text, in this financing request document."
-        },
-        {
-            "uri": "unece:contractualClause",
-            "type": "unece:Clause",
-            "comment": "A contractual document clause specified for this financing request document."
-        },
-        {
-            "uri": "unece:copyIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this financing request document is a copy rather than an original."
-        },
-        {
-            "uri": "unece:creationDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value for the creation of this financing request document."
         },
         {
             "uri": "unece:financingRequestDocumentCurrencyCode",
@@ -51,18 +36,18 @@
         },
         {
             "uri": "unece:groupId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The group identifier in this financing request document."
         },
         {
             "uri": "unece:groupedTransactionSpecifiedQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of grouped transactions specified in this financing request document."
+            "comment": ""
         },
         {
             "uri": "unece:groupedTransactionTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A total monetary value of grouped transactions in this financing request document."
+            "comment": ""
         },
         {
             "uri": "unece:intermediarySpecifiedFinancialInstitution",
@@ -72,7 +57,7 @@
         {
             "uri": "unece:specifiedCancellationStatus",
             "type": "unece:CancellationStatus",
-            "comment": "A status of a cancellation specified for this financing request document, such as accepted."
+            "comment": "Information relevant to a condition of a cancellation."
         },
         {
             "uri": "unece:specifiedRequestingParty",
@@ -82,7 +67,7 @@
         {
             "uri": "unece:specifiedValidationStatus",
             "type": "unece:ValidationStatus",
-            "comment": "The status of the validation specified for this financing request document, such as error."
+            "comment": "Information relevant to a condition of a validation."
         }
     ]
 }

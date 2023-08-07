@@ -1,64 +1,64 @@
-
 {
     "label": "GovernmentRegistration",
     "uri": "unece:GovernmentRegistration",
     "comment": "The recording of items or details for a governmental purpose.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a category of this government registration."
+            "type": "schema:Text",
+            "comment": "A code specifying a category for this cross-border regulatory procedure, such as the appendices of the CITES Convention."
         },
         {
             "uri": "unece:countryId",
-            "type": "xsd:string",
-            "comment": "The identifier of the country for this government registration."
+            "type": "schema:Text",
+            "comment": "A unique country identifier for this location party."
         },
         {
             "uri": "unece:countrySubDivisionId",
-            "type": "xsd:string",
-            "comment": "The identifier of the country sub-division for this registration."
+            "type": "schema:Text",
+            "comment": "A unique identifier of the country sub-division for this trade address."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this government registration."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:lastRegisteredYearDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The last registered year of this government registration."
         },
         {
             "uri": "unece:licenceId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The identifier of a licence for this government registration."
         },
         {
             "uri": "unece:recordedDate",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date that this government registration was recorded."
         },
         {
             "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a type of government registration."
+            "type": "schema:Text",
+            "comment": "A code specifying a type of MDH health indication."
         },
         {
             "uri": "unece:validityPeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "The period of time during which this government registration is valid."
+            "comment": "A period of validity specified for this referenced document."
         },
         {
             "uri": "unece:versionId",
-            "type": "xsd:string",
-            "comment": "The identifier of the version of this government registration."
+            "type": "schema:Text",
+            "comment": "The identifier for the version of this exchanged declaration."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:specifiedGovernmentRegistration",
-            "comment": "A governmental registration specified for this trade party."
+            "comment": "The recording of items or details for a governmental purpose."
         }
     ]
 }

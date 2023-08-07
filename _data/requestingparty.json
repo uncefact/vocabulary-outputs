@@ -1,9 +1,9 @@
-
 {
     "label": "RequestingParty",
     "uri": "unece:RequestingParty",
     "comment": "An individual, a group, or a body having a role as a requestor.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:accessRightsTypeAccessRightsCode",
             "type": "unece:AccessRightsTypeCodeList",
@@ -11,48 +11,28 @@
         },
         {
             "uri": "unece:bEIId",
-            "type": "xsd:string",
-            "comment": "The unique Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this requesting party."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "The textual description of this requesting party."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this requesting party."
+            "type": "schema:Text",
+            "comment": "The Business Entity Identifier (BEI) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity."
         },
         {
             "uri": "unece:languageCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying a language for this requesting party."
         },
         {
             "uri": "unece:lineOfCreditSpecifiedFinancialAccount",
             "type": "unece:FinancingFinancialAccount",
-            "comment": "The financing financial account, used for managing the line of credit, specified for this requesting party."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this requesting party."
+            "comment": "The financing financial account, used for managing the line of credit, specified for this financing summary document."
         },
         {
             "uri": "unece:partyTypeCode",
             "type": "unece:PartyTypeCodeList",
-            "comment": "The code specifying the type of requesting party."
+            "comment": "A code specifying the type of TT party."
         },
         {
             "uri": "unece:specifiedCreditorFinancialAccount",
             "type": "unece:CreditorFinancialAccount",
-            "comment": "The creditor financial account, used for crediting, specified for this requesting party."
-        },
-        {
-            "uri": "unece:specifiedProprietaryIdentity",
-            "type": "unece:ProprietaryIdentity",
-            "comment": "A proprietary identity specified for this requesting party."
+            "comment": "A creditor financial account specified for this trade settlement payment means."
         }
     ],
     "referencedBy": [

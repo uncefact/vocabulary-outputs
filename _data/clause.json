@@ -1,9 +1,9 @@
-
 {
     "label": "Clause",
     "uri": "unece:Clause",
     "comment": "A distinct article or provision in a document, which requires compliance.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:associatedMeasurement",
             "type": "unece:Measurement",
@@ -16,28 +16,28 @@
         },
         {
             "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, of this document clause."
+            "type": "schema:Text",
+            "comment": "A content, expressed as text, of this note."
         },
         {
             "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier of this document clause."
+            "type": "schema:Text",
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:uRLId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The Uniform Resource Locator (URL) for this document clause."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableClause",
-            "comment": "A clause applicable to this specified certificate."
+            "comment": "A distinct article or provision in a document, which requires compliance."
         },
         {
             "uri": "unece:contractualClause",
-            "comment": "A contractual clause of this ..."
+            "comment": "A contractual clause of this exchanged document."
         },
         {
             "uri": "unece:includedClause",

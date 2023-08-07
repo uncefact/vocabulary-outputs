@@ -1,54 +1,49 @@
-
 {
     "label": "CreditorFinancialAccount",
     "uri": "unece:CreditorFinancialAccount",
     "comment": "A specific business arrangement whereby credits arising from transactions are recorded.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:accountName",
-            "type": "xsd:string",
-            "comment": "The account name, expressed as text, of this creditor financial account."
+            "type": "schema:Text",
+            "comment": "An account name, expressed as text, of this payment financial account."
         },
         {
             "uri": "unece:bBANId",
-            "type": "xsd:string",
-            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this creditor financial account."
+            "type": "schema:Text",
+            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account."
         },
         {
             "uri": "unece:creditorFinancialAccountTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the type of creditor financial account."
         },
         {
             "uri": "unece:currencyCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the currency of this creditor financial account (Reference ISO 4217 codes)."
+            "type": "schema:Text",
+            "comment": "The code specifying a currency of this cash used for payment."
         },
         {
             "uri": "unece:iBANId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
         },
         {
             "uri": "unece:proprietaryId",
-            "type": "xsd:string",
-            "comment": "The unique proprietary identifier for this creditor financial account."
-        },
-        {
-            "uri": "unece:proprietaryType",
-            "type": "xsd:string",
-            "comment": "The proprietary type, expressed as text, of this creditor financial account, such as the nature or use of the creditor account."
+            "type": "schema:Text",
+            "comment": "The proprietary identifier for this financing financial account."
         },
         {
             "uri": "unece:uPICId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:ownedFinancialAccount",
-            "comment": "The creditor financial account owned by this trade party."
+            "comment": "A specific business arrangement whereby credits arising from transactions are recorded."
         },
         {
             "uri": "unece:payeePartyFinancialAccount",
@@ -56,7 +51,7 @@
         },
         {
             "uri": "unece:specifiedCreditorFinancialAccount",
-            "comment": "A creditor financial account specified ..."
+            "comment": "A creditor financial account specified for this trade settlement payment means."
         }
     ]
 }

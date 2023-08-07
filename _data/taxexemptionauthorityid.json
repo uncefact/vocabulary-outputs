@@ -1,16 +1,20 @@
-
 {
     "label": "taxExemptionAuthorityId",
     "uri": "unece:taxExemptionAuthorityId",
     "comment": "The unique tax exemption authority identifier for this trade tax.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:Tax",
             "comment": "A trade related fiscal levy or duty."
         }
     ]

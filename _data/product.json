@@ -1,58 +1,33 @@
-
 {
     "label": "Product",
     "uri": "unece:Product",
     "comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:buyerAssignedId",
-            "type": "xsd:string",
-            "comment": "The unique buyer assigned identifier for this referenced product."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this referenced product."
-        },
-        {
-            "uri": "unece:globalId",
-            "type": "xsd:string",
-            "comment": "A unique global identifier for this referenced product."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "A unique identifier for this referenced product."
+            "type": "schema:Text",
+            "comment": "A buyer assigned identifier of this product batch."
         },
         {
             "uri": "unece:industryAssignedId",
-            "type": "xsd:string",
-            "comment": "A unique industry assigned identifier for this referenced product."
+            "type": "schema:Text",
+            "comment": "A unique industry assigned identifier for this product."
         },
         {
             "uri": "unece:manufacturerAssignedId",
-            "type": "xsd:string",
-            "comment": "A unique manufacturer assigned identifier for this referenced product."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this referenced product."
+            "type": "schema:Text",
+            "comment": "A manufacturer assigned identifier of this product batch."
         },
         {
             "uri": "unece:relationshipTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A code specifying a type of relationship for this referenced product."
         },
         {
             "uri": "unece:sellerAssignedId",
-            "type": "xsd:string",
-            "comment": "The unique seller assigned identifier for this referenced product."
-        },
-        {
-            "uri": "unece:unitQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A unit quantity of this referenced product."
+            "type": "schema:Text",
+            "comment": "A seller assigned identifier of this product batch."
         }
     ],
     "referencedBy": [
@@ -94,7 +69,7 @@
         },
         {
             "uri": "unece:substitutedProduct",
-            "comment": "A referenced product substituted for ..."
+            "comment": "A referenced product substituted for this supply chain trade line item."
         }
     ]
 }

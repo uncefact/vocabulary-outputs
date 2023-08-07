@@ -1,59 +1,28 @@
-
 {
     "label": "reasonCode",
     "uri": "unece:reasonCode",
-    "comment": [
-        "A code specifying a reason for the declared error.",
-        "A code specifying a reason for this trade price.",
-        "A code specifying a reason for this transport service.",
-        "The code specifying a reason for this communication event.",
-        "The code specifying the reason for this cancellation status.",
-        "The code specifying the reason for this header balance out.",
-        "The code specifying the reason for this logistics transport movement.",
-        "The code specifying the reason for this payment balance out.",
-        "The code specifying the reason for this validation status."
-    ],
+    "comment": "A code specifying a reason for the declared error.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:CancellationStatus",
-            "comment": "Information relevant to a condition of a cancellation."
-        },
-        {
-            "uri": "unece:CommunicationEvent",
-            "comment": "A significant occurrence or happening communicated by means of sending or receiving information, such as transmitting digital data by using the internet."
+            "uri": "unece:ValidationStatus",
+            "comment": "Information relevant to a condition of a validation."
         },
         {
             "uri": "unece:Error",
             "comment": "A notification that an error has occurred."
         },
         {
-            "uri": "unece:HeaderBalanceOut",
-            "comment": "Offset header information to ensure that debits and credits are equal for a transaction."
+            "uri": "unece:CommunicationEvent"
         },
         {
-            "uri": "unece:PaymentBalanceOut",
-            "comment": "Offset information to ensure that debits and credits are equal for a transaction."
-        },
-        {
-            "uri": "unece:Service",
-            "comment": "A service associated with a ..."
-        },
-        {
-            "uri": "unece:TradePrice",
-            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
-        },
-        {
-            "uri": "unece:TransportMovement",
-            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
-        },
-        {
-            "uri": "unece:ValidationStatus",
-            "comment": "Information relevant to a condition of a validation."
+            "uri": "unece:CancellationStatus",
+            "comment": "Information relevant to a condition of a cancellation."
         }
     ]
 }

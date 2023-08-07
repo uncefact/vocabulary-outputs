@@ -1,25 +1,21 @@
-
 {
     "label": "storageEvent",
     "uri": "unece:storageEvent",
-    "comment": [
-        "A storage event for this supply chain consignment.",
-        "A storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
-    ],
+    "comment": "A storage event for this supply chain consignment.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
-            "uri": "unece:TransportEvent",
-            "comment": "A significant occurrence or happening ..."
+            "uri": "unece:TransportEvent"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         }
     ]
 }
