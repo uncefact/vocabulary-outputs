@@ -1,23 +1,24 @@
-
 {
     "label": "jurisdiction",
     "uri": "unece:jurisdiction",
-    "comment": [
-        "A jurisdiction, expressed as text, for this registered tax.",
-        "A jurisdiction, expressed as text, to which this trade related tax, levy or duty applies."
-    ],
+    "comment": "A jurisdiction, expressed as text, for this registered tax.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:TradeTax",
+            "comment": "A trade related fiscal levy or duty."
+        },
         {
             "uri": "unece:RegisteredTax",
             "comment": "A registered tax or duty system pertaining to an authority."
         },
         {
-            "uri": "unece:TradeTax",
+            "uri": "unece:Tax",
             "comment": "A trade related fiscal levy or duty."
         }
     ]

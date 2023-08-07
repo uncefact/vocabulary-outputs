@@ -1,24 +1,21 @@
-
 {
     "label": "barcodeId",
     "uri": "unece:barcodeId",
-    "comment": [
-        "A unique barcode identifier for this supply chain trade line item.",
-        "The barcode identifier of this product label."
-    ],
+    "comment": "A unique barcode identifier for this supply chain trade line item.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ProductLabel",
-            "comment": "A label, such as a garment label or a radio frequency tag, used for identifying a product."
-        },
-        {
             "uri": "unece:SupplyChainTradeLineItem",
             "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
+        },
+        {
+            "uri": "unece:ProductLabel",
+            "comment": "A label, such as a garment label or a radio frequency tag, used for identifying a product."
         }
     ]
 }

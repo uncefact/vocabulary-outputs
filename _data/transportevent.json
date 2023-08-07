@@ -1,12 +1,9 @@
-
 {
     "label": "TransportEvent",
     "uri": "unece:TransportEvent",
-    "comment": [
-        "A significant occurrence or happening during transport.",
-        "A referenced significant occurrence or happening during transport."
-    ],
-    "objectProperties": [
+    "comment": "A significant occurrence or happening during transport.,A referenced significant occurrence or happening during transport.",
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:actualArrivalRelatedDateTime",
             "type": "xsd:string",
@@ -45,7 +42,7 @@
         {
             "uri": "unece:applicableNote",
             "type": "unece:Note",
-            "comment": "A note providing information applicable to this transport event."
+            "comment": "A note providing information applicable to this piece of logistics transport equipment."
         },
         {
             "uri": "unece:arrivalRelatedDateTime",
@@ -55,7 +52,7 @@
         {
             "uri": "unece:associatedGeographicalFeature",
             "type": "unece:GeographicalFeature",
-            "comment": "A geographical feature associated with this transport event."
+            "comment": "A geographical feature associated with this communication event."
         },
         {
             "uri": "unece:cargoFacilityRelatedLocation",
@@ -64,7 +61,7 @@
         },
         {
             "uri": "unece:certifyingParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "A certifying party for this transport event."
         },
         {
@@ -88,11 +85,6 @@
             "comment": "A departure date, time, date time, or other date time value related to this transport event."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this transport event."
-        },
-        {
             "uri": "unece:estimatedOccurrenceDateTime",
             "type": "xsd:string",
             "comment": "The estimated date, time, date time, or other date time value of the occurrence of this transport event."
@@ -108,11 +100,6 @@
             "comment": "The indication of whether or not this transport event is or was expected."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this transport event."
-        },
-        {
             "uri": "unece:laycanOccurrencePeriod",
             "type": "unece:SpecifiedPeriod",
             "comment": "The specified period of laycan time during which this transport event occurs."
@@ -125,12 +112,12 @@
         {
             "uri": "unece:occurrenceLogisticsLocation",
             "type": "unece:LogisticsLocation",
-            "comment": "The logistics location where this transport event occurs."
+            "comment": "A logistics location where this supply chain event occurs."
         },
         {
             "uri": "unece:occurrencePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time during which this transport event occurs."
+            "comment": "A specified period of time during which this supply chain event occurs."
         },
         {
             "uri": "unece:pilotBoardingPlace",
@@ -140,7 +127,7 @@
         {
             "uri": "unece:previousAssociatedGeographicalFeature",
             "type": "unece:GeographicalFeature",
-            "comment": "A geographical feature previously associated with this transport event."
+            "comment": "A geographical feature previously associated with this logistics location."
         },
         {
             "uri": "unece:reasonTypeCode",
@@ -149,7 +136,7 @@
         },
         {
             "uri": "unece:receivedDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "The date, time, date time, or other date time value when information related to this transport event was received, from the perspective of the receiver."
         },
         {
@@ -185,12 +172,12 @@
         {
             "uri": "unece:scheduledArrivalRelatedDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value of the scheduled arrival related to this transport event."
+            "comment": "The date, time, date time or other date time value of the scheduled arrival related to this referenced transport event."
         },
         {
             "uri": "unece:scheduledDepartureRelatedDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value of the scheduled departure related to this transport event."
+            "comment": "The date, time, date time or other date time value of the scheduled departure related to this referenced transport event."
         },
         {
             "uri": "unece:scheduledOccurrenceDateTime",
@@ -205,7 +192,7 @@
         {
             "uri": "unece:securityLevelCode",
             "type": "xsd:string",
-            "comment": "A security level code for this transport event."
+            "comment": "A code specifying a security level for this transport route."
         },
         {
             "uri": "unece:specifiedTransportInstructions",
@@ -221,16 +208,6 @@
             "uri": "unece:transportMeansStayOccurrencePeriod",
             "type": "unece:SpecifiedPeriod",
             "comment": "The specified period during which the transport means is held at a location."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of transport event."
-        },
-        {
-            "uri": "unece:unitQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The number of units for this transport event."
         },
         {
             "uri": "unece:unitValueMeasure",
@@ -249,7 +226,7 @@
         },
         {
             "uri": "unece:bondedWarehouseStorageEvent",
-            "comment": "A bonded warehouse storage event ..."
+            "comment": "A bonded warehouse storage event for this supply chain consignment."
         },
         {
             "uri": "unece:borderCrossingEvent",
@@ -277,7 +254,7 @@
         },
         {
             "uri": "unece:deliveryTransportEvent",
-            "comment": "A delivery event for this ..."
+            "comment": "A delivery event for this piece of logistics transport equipment."
         },
         {
             "uri": "unece:departureEvent",
@@ -289,11 +266,11 @@
         },
         {
             "uri": "unece:devanningEvent",
-            "comment": "A transport devanning event for ..."
+            "comment": "A transport devanning event for this referenced supply chain consignment, i.e. the unloading of this consignment at the place of delivery."
         },
         {
             "uri": "unece:examinationEvent",
-            "comment": "An examination event for this ..."
+            "comment": "An examination event for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:firstArrivalEvent",
@@ -305,7 +282,7 @@
         },
         {
             "uri": "unece:loadingEvent",
-            "comment": "The loading event during which ..."
+            "comment": "The loading event during which goods will be or have been loaded into or onto the means of transport used for this logistics transport movement."
         },
         {
             "uri": "unece:loadingReportedEvent",
@@ -317,7 +294,7 @@
         },
         {
             "uri": "unece:pickUpEvent",
-            "comment": "A pick-up event specifying when ..."
+            "comment": "A pick-up event specifying when and where this piece of logistics transport equipment will be, or has been, collected, i.e. picked-up by the carrier."
         },
         {
             "uri": "unece:positioningEvent",
@@ -357,7 +334,7 @@
         },
         {
             "uri": "unece:storageEvent",
-            "comment": "A storage event for this ..."
+            "comment": "A storage event for this supply chain consignment."
         },
         {
             "uri": "unece:transportEvent",
@@ -368,12 +345,8 @@
             "comment": "A transshipment intermediate event during this logistics transport movement."
         },
         {
-            "uri": "unece:treatmentEvent",
-            "comment": "A treatment event for this cross-border regulatory procedure."
-        },
-        {
             "uri": "unece:unloadingEvent",
-            "comment": "The unloading event during which ..."
+            "comment": "The unloading event during which goods will be or have been unloaded from the means of transport used for this logistics transport movement."
         },
         {
             "uri": "unece:unloadingReportedEvent",
@@ -381,7 +354,7 @@
         },
         {
             "uri": "unece:vanningEvent",
-            "comment": "The vanning event (the loading ..."
+            "comment": "The vanning event (the loading of this consignment at the place of its original despatch) for this referenced supply chain consignment."
         },
         {
             "uri": "unece:warehouseStorageEvent",

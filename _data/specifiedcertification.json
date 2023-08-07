@@ -1,38 +1,13 @@
-
 {
     "label": "SpecifiedCertification",
     "uri": "unece:SpecifiedCertification",
     "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation.",
-    "objectProperties": [
-        {
-            "uri": "unece:assertion",
-            "type": "xsd:string",
-            "comment": "An assertion, expressed as text, for this specified certification."
-        },
-        {
-            "uri": "unece:assertionCode",
-            "type": "xsd:string",
-            "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:auditDateTime",
-            "type": "xsd:dateTime",
+            "type": "schema:DateTime",
             "comment": "An audit date, time, date time or other date time value for this specified certification."
-        },
-        {
-            "uri": "unece:endDateTime",
-            "type": "xsd:string",
-            "comment": "The end date value for this specified certification."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this specified certification."
-        },
-        {
-            "uri": "unece:relatedLocation",
-            "type": "unece:Location",
-            "comment": "A referenced location related to this specified certification."
         },
         {
             "uri": "unece:relatedStandard",
@@ -40,35 +15,15 @@
             "comment": "A referenced standard related to this specified certification."
         },
         {
-            "uri": "unece:responsibleAgency",
-            "type": "xsd:string",
-            "comment": "A responsible agency, expressed as text, for this specified certification."
-        },
-        {
-            "uri": "unece:specifiedAssertion",
-            "type": "unece:Assertion",
-            "comment": "A sustainability assertion for this specified certification."
-        },
-        {
-            "uri": "unece:standard",
-            "type": "xsd:string",
-            "comment": "A standard, expressed as text, for this specified certification."
-        },
-        {
-            "uri": "unece:startDateTime",
-            "type": "xsd:string",
-            "comment": "The start date value for this specified certification."
-        },
-        {
             "uri": "unece:uRIId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A Uniform Resource Identifier (URI) for this specified certification."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:relatedCertification",
-            "comment": "A certification related to this ..."
+            "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
         }
     ]
 }

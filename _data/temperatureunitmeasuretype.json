@@ -1,20 +1,18 @@
-
 {
     "label": "TemperatureUnitMeasureType",
     "uri": "unece:TemperatureUnitMeasureType",
-    "comment": "The numeric value determined by temperature measuring.",
+    "comment": "",
+    "businessDomain": "core",
     "datatypeProperties": [
-        {
-            "uri": "unece:TemperatureUnitMeasureTypeValue",
-            "type": "xsd:decimal",
-            "comment": "The numeric value."
-        }
-    ],
-    "objectProperties": [
         {
             "uri": "unece:TemperatureUnitMeasureTypeCode",
             "type": "unece:TemperatureUnitMeasureCode",
             "comment": "The unit code."
+        },
+        {
+            "uri": "unece:TemperatureUnitMeasureTypeValue",
+            "type": "schema:Float",
+            "comment": "The numeric value."
         }
     ],
     "referencedBy": [
@@ -24,7 +22,7 @@
         },
         {
             "uri": "unece:temperatureUnitValueMeasure",
-            "comment": "The measure of the value ..."
+            "comment": "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius."
         }
     ]
 }

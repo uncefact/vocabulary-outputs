@@ -1,28 +1,28 @@
-
 {
     "label": "SupplyChainInventory",
     "uri": "unece:SupplyChainInventory",
     "comment": "Supply chain goods and materials held in stock.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:averageDemandQuantity",
             "type": "unece:QuantityType",
-            "comment": "The average demand quantity for this supply chain inventory."
+            "comment": ""
         },
         {
             "uri": "unece:averageDurationDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time of the average duration for this supply chain inventory."
         },
         {
             "uri": "unece:calculationDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value of the calculation of this supply chain inventory."
         },
         {
             "uri": "unece:dispositionDocument",
             "type": "unece:Document",
-            "comment": "A disposition document referenced in this supply chain inventory."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:includedBatch",
@@ -32,7 +32,7 @@
         {
             "uri": "unece:includedMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Material included in this supply chain inventory."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:includedTradeProduct",
@@ -42,57 +42,47 @@
         {
             "uri": "unece:maximumStockLevelMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the maximum stock level for this supply chain inventory."
+            "comment": ""
         },
         {
             "uri": "unece:maximumStockQuantity",
             "type": "unece:QuantityType",
-            "comment": "The maximum stock quantity in this CI supply chain inventory."
+            "comment": ""
         },
         {
             "uri": "unece:minimumStockLevelMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the minimum stock level for this supply chain inventory."
+            "comment": ""
         },
         {
             "uri": "unece:minimumStockQuantity",
             "type": "unece:QuantityType",
-            "comment": "The minimum stock quantity in this CI supply chain inventory."
+            "comment": ""
         },
         {
             "uri": "unece:plannedStockCalculationDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time, or other date time value of the planned stock calculation of this supply chain inventory."
         },
         {
             "uri": "unece:plannedStockQuantity",
             "type": "unece:QuantityType",
-            "comment": "The planned stock quantity for this supply chain inventory."
+            "comment": ""
         },
         {
             "uri": "unece:remarkNote",
             "type": "unece:Note",
-            "comment": "A note containing a remark for this supply chain inventory."
-        },
-        {
-            "uri": "unece:specifiedLogisticsLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The location specified for this supply chain inventory."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:specifiedSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain event specified for this supply chain inventory."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a status for this supply chain inventory."
+            "comment": "A significant occurrence or happening in a supply chain."
         },
         {
             "uri": "unece:stockQuantity",
             "type": "unece:QuantityType",
-            "comment": "The quantity of stock in this supply chain inventory."
+            "comment": ""
         }
     ],
     "referencedBy": [
@@ -107,10 +97,6 @@
         {
             "uri": "unece:customerInventory",
             "comment": "Supply chain customer inventory, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:specifiedInventory",
-            "comment": "Supply chain inventory specified for this referenced location."
         }
     ]
 }
