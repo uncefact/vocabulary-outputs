@@ -1,33 +1,28 @@
-
 {
     "label": "TTTransformationEvent",
     "uri": "unece:TTTransformationEvent",
     "comment": "Information about an event that captures the relationship between one or more physical or digital objects identified by identifiers, such as an EPC (Electronic Product Code) or EPC class, that are fully or partially consumed as inputs or as outputs.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:businessRelatedLocation",
             "type": "unece:TTLocation",
-            "comment": "The business location related to this TT transformation event."
+            "comment": "The business location related to this TT object event."
         },
         {
             "uri": "unece:businessStepCode",
             "type": "xsd:string",
-            "comment": "The code specifying the business step for this TT transformation event."
+            "comment": "The code specifying the business step for this TT aggregation event."
         },
         {
             "uri": "unece:destinationRelatedParty",
             "type": "unece:TTParty",
-            "comment": "A destination related party for this TT transformation event."
+            "comment": "A destination related party for this TT aggregation event."
         },
         {
             "uri": "unece:dispositionCode",
             "type": "xsd:string",
-            "comment": "The code specifying the disposition related to this TT transformation event."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this TT transformation event."
+            "comment": "The code specifying the disposition related to this TT aggregation event."
         },
         {
             "uri": "unece:inputObjectInstanceId",
@@ -38,11 +33,6 @@
             "uri": "unece:inputQuantitySpecifiedEventElement",
             "type": "unece:EventElement",
             "comment": "A quantity event element specified for an input of this TT transformation event."
-        },
-        {
-            "uri": "unece:occurrenceDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value at which this TT transformation event occurred."
         },
         {
             "uri": "unece:outputObjectInstanceId",
@@ -57,32 +47,32 @@
         {
             "uri": "unece:readPointRelatedLocation",
             "type": "unece:TTLocation",
-            "comment": "The read point related location of this TT transformation event."
+            "comment": "The read point related location of this TT aggregation event."
         },
         {
             "uri": "unece:recordedDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value at which this TT transformation event was recorded."
+            "comment": "The date, time, date time, or other date time value at which this TT aggregation event was recorded."
         },
         {
             "uri": "unece:relatedCertification",
             "type": "unece:SpecifiedCertification",
-            "comment": "A certification related to this TT transformation event."
+            "comment": "A certification related to this TT aggregation event."
         },
         {
             "uri": "unece:sourceRelatedParty",
             "type": "unece:TTParty",
-            "comment": "A source related party for this TT transformation event."
+            "comment": "A source related party for this TT aggregation event."
         },
         {
             "uri": "unece:specifiedError",
             "type": "unece:Error",
-            "comment": "A declared error specified for this TT transformation event."
+            "comment": "A declared error specified for this TT aggregation event."
         },
         {
             "uri": "unece:specifiedTradeTransaction",
             "type": "unece:TTTradeTransaction",
-            "comment": "A trade transaction specified for this TT transformation event."
+            "comment": "A trade transaction specified for this TT aggregation event."
         }
     ]
 }

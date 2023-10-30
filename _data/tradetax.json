@@ -1,9 +1,9 @@
-
 {
     "label": "TradeTax",
     "uri": "unece:TradeTax",
     "comment": "A trade related fiscal levy or duty.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:allowanceChargeBasisAmount",
             "type": "unece:AmountType",
@@ -17,12 +17,12 @@
         {
             "uri": "unece:basisAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value used as the basis on which this trade related tax, levy or duty is calculated."
+            "comment": "A monetary value used as a basis to calculate the discount in these trade payment discount terms."
         },
         {
             "uri": "unece:basisQuantity",
             "type": "unece:QuantityType",
-            "comment": "The quantity used as the basis for calculating the amount of this trade related tax, levy or duty."
+            "comment": "A quantity on which the reference price is based."
         },
         {
             "uri": "unece:buyerDeductibleTaxSpecifiedAccountingAccount",
@@ -42,7 +42,7 @@
         {
             "uri": "unece:calculatedAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value resulting from the calculation of this trade related tax, levy or duty."
+            "comment": "A monetary value calculated for this header balance out."
         },
         {
             "uri": "unece:calculatedRate",
@@ -62,12 +62,12 @@
         {
             "uri": "unece:categoryName",
             "type": "xsd:string",
-            "comment": "A category name, expressed as text, of this trade related tax, levy or duty."
+            "comment": "A category name, expressed as text, of this specified customer class."
         },
         {
             "uri": "unece:customsDutyIndicator",
             "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade related tax, levy or duty is a customs duty."
+            "comment": "The indication of whether or not this registered tax is a customs duty."
         },
         {
             "uri": "unece:customsDutyRegimeTypeCode",
@@ -77,17 +77,12 @@
         {
             "uri": "unece:customsProcedureGuaranteeCode",
             "type": "unece:CustomsProcedureGuaranteeCodeList",
-            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
+            "comment": "The code specifying an undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:deductionAmount",
             "type": "unece:AmountType",
             "comment": "A monetary value of the deduction from this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this trade related tax, levy or duty."
         },
         {
             "uri": "unece:exemptionAuthorizationId",
@@ -102,22 +97,17 @@
         {
             "uri": "unece:exemptionReason",
             "type": "xsd:string",
-            "comment": "The reason, expressed as text, for exemption from this trade related tax, levy or duty."
+            "comment": "A reason, expressed as text, for exemption from this registered tax."
         },
         {
             "uri": "unece:grandTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the grand total of the basis plus tax for this trade tax."
+            "comment": "A monetary value of a grand total reported in this trade settlement payment monetary summation."
         },
         {
             "uri": "unece:guarantee",
             "type": "xsd:string",
-            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this trade related tax, levy or duty."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this trade tax."
+            "comment": "The undertaking, expressed as text, given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:informationAmount",
@@ -127,7 +117,7 @@
         {
             "uri": "unece:jurisdiction",
             "type": "xsd:string",
-            "comment": "A jurisdiction, expressed as text, to which this trade related tax, levy or duty applies."
+            "comment": "A jurisdiction, expressed as text, for this registered tax."
         },
         {
             "uri": "unece:lineTotalBasisAmount",
@@ -227,7 +217,7 @@
         {
             "uri": "unece:taxPointDate",
             "type": "xsd:string",
-            "comment": "The date of the tax point when this trade related tax, levy or duty becomes applicable."
+            "comment": "The date of the tax point when taxes, such as VAT, are to be applied."
         },
         {
             "uri": "unece:taxType",
@@ -263,27 +253,11 @@
     "referencedBy": [
         {
             "uri": "unece:applicableTax",
-            "comment": "A tax applicable to this ..."
-        },
-        {
-            "uri": "unece:appliedTax",
-            "comment": "A tax that is applied to this logistics service charge."
-        },
-        {
-            "uri": "unece:categoryTradeTax",
-            "comment": "A tax category of this trade allowance charge."
-        },
-        {
-            "uri": "unece:includedTax",
-            "comment": "A tax included in this ..."
-        },
-        {
-            "uri": "unece:relatedTax",
-            "comment": "A trade tax related to this financial adjustment."
+            "comment": "A tax applicable to this header trade settlement."
         },
         {
             "uri": "unece:subtotalCalculatedTax",
-            "comment": "A tax subtotal calculated for ..."
+            "comment": "A tax subtotal calculated for this header trade settlement."
         }
     ]
 }

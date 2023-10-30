@@ -1,30 +1,25 @@
-
 {
     "label": "applicableFault",
     "uri": "unece:applicableFault",
-    "comment": [
-        "A fault applicable to this trade product.",
-        "A specified fault applicable to this product batch.",
-        "A specified fault applicable to this production process."
-    ],
+    "comment": "A fault applicable to this trade product.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:SpecifiedFault",
-            "comment": "An unattractive or unsatisfactory characteristic."
+            "uri": "unece:SpecifiedFault"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:ProductBatch",
-            "comment": "A group of products considered or dealt with together."
+            "uri": "unece:TradeProduct",
+            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
         },
         {
             "uri": "unece:ProductionProcess",
             "comment": "A naturally occurring or designed sequence of operations or events in order to produce something."
         },
         {
-            "uri": "unece:TradeProduct",
-            "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes."
+            "uri": "unece:ProductBatch",
+            "comment": "A group of products considered or dealt with together."
         }
     ]
 }

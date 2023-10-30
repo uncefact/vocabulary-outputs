@@ -1,32 +1,27 @@
-
 {
     "label": "SpecifiedPeriod",
     "uri": "unece:SpecifiedPeriod",
     "comment": "A specified period of time.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:completeDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value for a complete specified period of time expressed as a specific month, a specific week, etc."
         },
         {
             "uri": "unece:continuousIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not this specified period is continuous."
         },
         {
             "uri": "unece:dayQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of days in this specified period."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified period of time."
+            "comment": ""
         },
         {
             "uri": "unece:duration",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A duration, expressed as text, for this specified period."
         },
         {
@@ -35,23 +30,13 @@
             "comment": "A measure of the length of time for this specified time period such as hours, days, weeks, months, years."
         },
         {
-            "uri": "unece:endDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value for the end of this specified period of time."
-        },
-        {
             "uri": "unece:endDayOfWeekCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the end day of the week for this specified period."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier of this specified period."
-        },
-        {
             "uri": "unece:inclusiveIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not the start and end dates are included in this specified period."
         },
         {
@@ -65,54 +50,29 @@
             "comment": "The measure of the minimum length of time for this specified period, such as hours, days, weeks, months, years."
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of this specified period."
-        },
-        {
             "uri": "unece:nightQuantity",
             "type": "unece:QuantityType",
             "comment": "The number of nights in this specified period."
         },
         {
             "uri": "unece:openIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not an entity is open during this specified period."
         },
         {
             "uri": "unece:purposeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the purpose of this specified period."
-        },
-        {
-            "uri": "unece:seasonCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the season for this specified period."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:string",
-            "comment": "A sequence number for this specified period."
+            "type": "schema:Text",
+            "comment": "A code specifying a purpose for this field crop."
         },
         {
             "uri": "unece:startDateFlexibilityCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the flexibility of the start date of this specified period."
         },
         {
-            "uri": "unece:startDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value for the start of this specified period of time."
-        },
-        {
             "uri": "unece:startDayOfWeekCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the start day of the week for this specified period."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of specified period."
         }
     ],
     "referencedBy": [
@@ -134,11 +94,11 @@
         },
         {
             "uri": "unece:applicablePeriod",
-            "comment": "A period applicable to this ..."
+            "comment": "A period applicable to this cross-border regulatory procedure."
         },
         {
             "uri": "unece:appliedPeriod",
-            "comment": "A period during which this chemical treatment is applied."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:associatedPeriod",
@@ -150,7 +110,7 @@
         },
         {
             "uri": "unece:billingPeriod",
-            "comment": "A billing period specified for ..."
+            "comment": "A billing period specified for this header trade settlement."
         },
         {
             "uri": "unece:completionPeriod",
@@ -166,7 +126,7 @@
         },
         {
             "uri": "unece:effectiveSpecifiedPeriod",
-            "comment": "The period within which this ..."
+            "comment": "The period within which this document line is effective."
         },
         {
             "uri": "unece:estimatedPerformancePeriod",
@@ -198,15 +158,15 @@
         },
         {
             "uri": "unece:occurrencePeriod",
-            "comment": "A specified period of time ..."
+            "comment": "A specified period of time during which this supply chain event occurs."
         },
         {
             "uri": "unece:operationalApplicablePeriod",
-            "comment": "An operational period applicable for this trade price."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:operationalPeriod",
-            "comment": "A operational period for this ..."
+            "comment": "A operational period for this experience product."
         },
         {
             "uri": "unece:orderingSpecifiedPeriod",
@@ -234,7 +194,7 @@
         },
         {
             "uri": "unece:seasonalApplicablePeriod",
-            "comment": "A seasonal period applicable for this trade price."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:shippingPeriod",
@@ -250,11 +210,11 @@
         },
         {
             "uri": "unece:validityPeriod",
-            "comment": "A period of validity specified ..."
+            "comment": "A period of validity specified for this referenced document."
         },
         {
             "uri": "unece:valuePeriod",
-            "comment": "A period specified for the value of this sustainability characteristic."
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:visitingPeriod",

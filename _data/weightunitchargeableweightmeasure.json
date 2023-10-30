@@ -1,30 +1,21 @@
-
 {
     "label": "weightUnitChargeableWeightMeasure",
     "uri": "unece:weightUnitChargeableWeightMeasure",
-    "comment": [
-        "A measure of a chargeable weight of this supply chain consignment.",
-        "A measure of the supply chain consignment item weight on which charges are to be based.",
-        "The measure of the chargeable weight, at line level, for this trade delivery."
-    ],
+    "comment": "A measure of a chargeable weight of this supply chain consignment.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
-            "uri": "unece:WeightUnitMeasureType",
-            "comment": "The numeric value determined by weight measuring."
+            "uri": "unece:WeightUnitMeasureType"
         }
     ],
     "domainIncludes": [
         {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         },
         {
             "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
-            "uri": "unece:LineTradeDelivery",
-            "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

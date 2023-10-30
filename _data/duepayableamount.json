@@ -1,23 +1,14 @@
-
 {
     "label": "duePayableAmount",
     "uri": "unece:duePayableAmount",
-    "comment": [
-        "A monetary value that is an amount due and payable for this trade settlement header monetary summation, such as the amount due to the creditor.",
-        "A monetary value that is an amount due and payable for this trade settlement line monetary summation, such as the amount due to the creditor.",
-        "A monetary value that is an exact amount due and payable for this header trade settlement, such as the amount due to the creditor."
-    ],
+    "comment": "A monetary value that is an amount due and payable for this trade settlement header monetary summation, such as the amount due to the creditor.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:AmountType",
-            "comment": "A number of monetary units specified in a currency where the unit of the currency is explicit or implied."
+            "uri": "unece:AmountType"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
         {
             "uri": "unece:TradeSettlementHeaderMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
@@ -25,6 +16,10 @@
         {
             "uri": "unece:TradeSettlementLineMonetarySummation",
             "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

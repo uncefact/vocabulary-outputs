@@ -1,30 +1,21 @@
-
 {
     "label": "paymentAmount",
     "uri": "unece:paymentAmount",
-    "comment": [
-        "A monetary value of a payment for this header trade settlement.",
-        "A monetary value of a payment for this line trade settlement.",
-        "The monetary value of the payment for this trade settlement payment."
-    ],
+    "comment": "A monetary value of a payment for this header trade settlement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:AmountType",
-            "comment": "A number of monetary units specified in a currency where the unit of the currency is explicit or implied."
+            "uri": "unece:AmountType"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
         {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
         },
         {
-            "uri": "unece:PaymentTradeSettlement",
-            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

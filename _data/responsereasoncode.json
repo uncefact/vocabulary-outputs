@@ -1,12 +1,8 @@
-
 {
     "label": "responseReasonCode",
     "uri": "unece:responseReasonCode",
-    "comment": [
-        "A code specifying a response reason for this exchanged document.",
-        "The code specifying the response reason of this document line.",
-        "The code specifying the response reason of this subordinate trade line item."
-    ],
+    "comment": "A code specifying a response reason for this exchanged document.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -14,16 +10,12 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:DocumentLineDocument",
-            "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence."
-        },
-        {
-            "uri": "unece:ExchangedDocument",
-            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
-        },
-        {
             "uri": "unece:SubordinateTradeLineItem",
             "comment": "A collection of information specific to a subordinate item being used or reported on for trade purposes."
+        },
+        {
+            "uri": "unece:DocumentLineDocument",
+            "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence."
         }
     ]
 }

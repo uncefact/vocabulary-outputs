@@ -1,19 +1,9 @@
-
 {
     "label": "SupplyPlan",
     "uri": "unece:SupplyPlan",
     "comment": "Specification of the delivery quantities and date/time values in a supply schedule.",
-    "objectProperties": [
-        {
-            "uri": "unece:actualQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The actual quantity in this supply chain supply plan."
-        },
-        {
-            "uri": "unece:applicablePeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "The period applicable for this supply chain supply plan."
-        },
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:confirmedDeliveryEvent",
             "type": "unece:SupplyChainEvent",
@@ -22,7 +12,7 @@
         {
             "uri": "unece:contractDocument",
             "type": "unece:Document",
-            "comment": "A referenced contract document for this supply chain supply plan."
+            "comment": "A contract document referenced in this header trade agreement."
         },
         {
             "uri": "unece:deliveryNoteDocument",
@@ -55,19 +45,9 @@
             "comment": "A scheduled delivery event in this supply chain supply plan."
         },
         {
-            "uri": "unece:shipToParty",
-            "type": "unece:TradeParty",
-            "comment": "The ship to trade party for this supply chain supply plan."
-        },
-        {
-            "uri": "unece:specifiedLogisticsLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A location specified for this supply chain supply plan."
-        },
-        {
             "uri": "unece:specifiedSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "An event specified for this supply chain supply plan."
+            "comment": "A supply chain event specified for this product batch."
         },
         {
             "uri": "unece:supplyChainSupplyPlanCommitmentLevelCode",

@@ -1,18 +1,18 @@
-
 {
     "label": "reasonInformation",
     "uri": "unece:reasonInformation",
-    "comment": [
-        "Information, expressed as text, related to the reason for this cancellation status.",
-        "Information, expressed as text, related to the reason for this financing status.",
-        "Reason information, expressed as text, for this document status."
-    ],
+    "comment": "Information, expressed as text, related to the reason for this cancellation status.",
+    "businessDomain": "finance",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:FinancingStatus",
+            "comment": "Information relevant to a condition of financing."
+        },
         {
             "uri": "unece:CancellationStatus",
             "comment": "Information relevant to a condition of a cancellation."
@@ -20,10 +20,6 @@
         {
             "uri": "unece:DocumentStatus",
             "comment": "The information relevant to a condition related to a document."
-        },
-        {
-            "uri": "unece:FinancingStatus",
-            "comment": "Information relevant to a condition of financing."
         }
     ]
 }

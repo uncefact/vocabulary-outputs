@@ -1,19 +1,18 @@
-
 {
     "label": "applicableMaterial",
     "uri": "unece:applicableMaterial",
-    "comment": [
-        "Material applicable for this supply chain trade line item.",
-        "Material applicable to this product print.",
-        "Specified material applicable to this product colour."
-    ],
+    "comment": "Material applicable for this supply chain trade line item.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:SpecifiedMaterial",
-            "comment": "A substance from which something is or could be made."
+            "uri": "unece:SpecifiedMaterial"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:SupplyChainTradeLineItem",
+            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
+        },
         {
             "uri": "unece:Colour",
             "comment": "A colour of a product."
@@ -21,10 +20,6 @@
         {
             "uri": "unece:Print",
             "comment": "Any text or pattern put on the surface of a product using a specific material such as dye."
-        },
-        {
-            "uri": "unece:SupplyChainTradeLineItem",
-            "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         }
     ]
 }

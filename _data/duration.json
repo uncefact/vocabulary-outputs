@@ -1,24 +1,21 @@
-
 {
     "label": "duration",
     "uri": "unece:duration",
-    "comment": [
-        "A duration, expressed as text, for this specified period.",
-        "A duration, expressed as text, for this specified usage condition."
-    ],
+    "comment": "A duration, expressed as text, for this specified period.",
+    "businessDomain": "finance",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time."
-        },
-        {
             "uri": "unece:UsageCondition",
             "comment": "The particular state of something, affected by use, that should be respected."
+        },
+        {
+            "uri": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
         }
     ]
 }

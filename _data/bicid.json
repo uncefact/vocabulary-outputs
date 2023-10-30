@@ -1,16 +1,11 @@
-
 {
     "label": "bICId",
     "uri": "unece:bICId",
-    "comment": [
-        "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity.",
-        "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this creditor financial institution.",
-        "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this debtor financial institution.",
-        "The unique Bank Identification Code (BIC) as defined in ISO 9362 for this payment financial institution."
-    ],
+    "comment": "The Bank Identifier Code (BIC) as defined by ISO 9362 (Banking telecommunication messages, Bank Identifier Codes) for this financial identity.",
+    "businessDomain": "finance",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
@@ -19,12 +14,12 @@
             "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that receives money."
         },
         {
-            "uri": "unece:DebtorFinancialInstitution",
-            "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that owes money."
-        },
-        {
             "uri": "unece:FinancialIdentity",
             "comment": "A financial identification for an organization."
+        },
+        {
+            "uri": "unece:DebtorFinancialInstitution",
+            "comment": "A bank, building society, credit union, stock brokerage, or similar business of the party that owes money."
         },
         {
             "uri": "unece:PaymentFinancialInstitution",

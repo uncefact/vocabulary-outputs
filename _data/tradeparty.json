@@ -1,9 +1,9 @@
-
 {
     "label": "TradeParty",
     "uri": "unece:TradeParty",
     "comment": "An individual, a group, or a body having a role in a trade business function.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:agreedContract",
             "type": "unece:Contract",
@@ -17,17 +17,17 @@
         {
             "uri": "unece:applicableAssessment",
             "type": "unece:Assessment",
-            "comment": "An assessment applicable to this trade party."
+            "comment": "A specified assessment applicable to this referenced standard."
         },
         {
             "uri": "unece:applicableDeclaration",
             "type": "unece:SpecifiedDeclaration",
-            "comment": "A specified declaration applicable to this trade party."
+            "comment": "A specified declaration applicable to this production process."
         },
         {
             "uri": "unece:applicableLicence",
             "type": "unece:Licence",
-            "comment": "A specified licence applicable to this trade party."
+            "comment": "A specified licence applicable to this production process."
         },
         {
             "uri": "unece:applicableOrganizationalCertificate",
@@ -37,12 +37,12 @@
         {
             "uri": "unece:applicableOrganizationalCertification",
             "type": "unece:OrganizationalCertification",
-            "comment": "An organizational certification applicable to this trade party."
+            "comment": "An organizational certification applicable to this organizational certificate."
         },
         {
             "uri": "unece:applicableProcessCertificate",
             "type": "unece:ProcessCertificate",
-            "comment": "A process certificate applicable to this trade party."
+            "comment": "A process certificate applicable to this specified crop protection treatment."
         },
         {
             "uri": "unece:applicableProductBatchCertificate",
@@ -50,49 +50,19 @@
             "comment": "A product batch certificate applicable to this trade party."
         },
         {
-            "uri": "unece:applicableProductCertificate",
-            "type": "unece:ProductCertificate",
-            "comment": "A product certificate applicable to this trade party."
-        },
-        {
-            "uri": "unece:applicableServiceCharge",
-            "type": "unece:ServiceCharge",
-            "comment": "A logistics service charge applicable to this trade party."
-        },
-        {
             "uri": "unece:applicableSpecifiedCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate applicable to this trade party."
-        },
-        {
-            "uri": "unece:applicableSpecifiedInspection",
-            "type": "unece:SpecifiedInspection",
-            "comment": "A specified inspection applicable to this trade party."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this trade party."
-        },
-        {
-            "uri": "unece:applicableSustainabilityInspection",
-            "type": "unece:SustainabilityInspection",
-            "comment": "A sustainability inspection applicable to this trade party."
+            "comment": "A certificate applicable to this product batch."
         },
         {
             "uri": "unece:applicableTechnicalCharacteristic",
             "type": "unece:TechnicalCharacteristic",
-            "comment": "A technical characteristic applicable to this trade party."
+            "comment": "A technical characteristic applicable to this product colour."
         },
         {
             "uri": "unece:associatedMembership",
             "type": "unece:Membership",
             "comment": "A membership associated with this trade party."
-        },
-        {
-            "uri": "unece:associatedParty",
-            "type": "unece:TradeParty",
-            "comment": "A party associated with this trade party, such as a local agent of a shipping line."
         },
         {
             "uri": "unece:availableExperienceItem",
@@ -105,24 +75,14 @@
             "comment": "An experience facility made available for or by this trade party."
         },
         {
-            "uri": "unece:brandName",
-            "type": "xsd:string",
-            "comment": "The brand name, expressed as text, for this trade party."
-        },
-        {
             "uri": "unece:businessTypeCode",
             "type": "xsd:string",
-            "comment": "The code specifying the business type of this trade party."
+            "comment": "A code specifying the type of business of this legally set up organization."
         },
         {
             "uri": "unece:chainName",
             "type": "xsd:string",
             "comment": "A chain name, expressed as text, for this trade party."
-        },
-        {
-            "uri": "unece:claimedLanguageProficiency",
-            "type": "unece:LanguageProficiency",
-            "comment": "Personal language proficiency skills claimed by this trade party."
         },
         {
             "uri": "unece:commentedReviewNote",
@@ -140,19 +100,9 @@
             "comment": "The unique nine-digit Data Universal Numbering System (DUNS) identifier for this trade party."
         },
         {
-            "uri": "unece:definedContact",
-            "type": "unece:TradeContact",
-            "comment": "A trade contact defined for this trade party."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this trade party."
-        },
-        {
             "uri": "unece:disclosureLevelCode",
             "type": "xsd:string",
-            "comment": "A code specifying a disclosure level for this trade party."
+            "comment": "A code specifying a disclosure level for this production process."
         },
         {
             "uri": "unece:endPointURICommunication",
@@ -165,24 +115,9 @@
             "comment": "A Global Location Number (GLN) identifier for this trade party."
         },
         {
-            "uri": "unece:globalId",
-            "type": "xsd:string",
-            "comment": "A globally unique identifier of this trade party."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "A unique identifier of this trade party."
-        },
-        {
             "uri": "unece:logoAssociatedBinaryFile",
             "type": "unece:BinaryFile",
             "comment": "A file containing a specified binary representation of a logo associated with this trade party."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this trade party."
         },
         {
             "uri": "unece:ownedFinancialAccount",
@@ -190,29 +125,14 @@
             "comment": "The creditor financial account owned by this trade party."
         },
         {
-            "uri": "unece:partyRoleCode",
-            "type": "unece:PartyRoleCodeList",
-            "comment": "A code specifying the role of this trade party."
-        },
-        {
             "uri": "unece:partyTypeCode",
             "type": "unece:PartyTypeCodeList",
-            "comment": "A code specifying the type of trade party that is independent of its role."
-        },
-        {
-            "uri": "unece:postalAddress",
-            "type": "unece:TradeAddress",
-            "comment": "The postal address for this trade party."
+            "comment": "A code specifying the type of TT party."
         },
         {
             "uri": "unece:providedProcess",
             "type": "unece:ProductionProcess",
             "comment": "A production process provided by this trade party."
-        },
-        {
-            "uri": "unece:providedService",
-            "type": "unece:Service",
-            "comment": "A transport service provided by this trade party."
         },
         {
             "uri": "unece:qualityAssuranceIndicator",
@@ -245,11 +165,6 @@
             "comment": "An experience item reserved for or by this trade party."
         },
         {
-            "uri": "unece:role",
-            "type": "xsd:string",
-            "comment": "A role, expressed as text, for this trade party."
-        },
-        {
             "uri": "unece:salesManagerName",
             "type": "xsd:string",
             "comment": "A name of a sales manager, expressed as text, for this trade party."
@@ -262,7 +177,7 @@
         {
             "uri": "unece:specifiedAssertion",
             "type": "unece:Assertion",
-            "comment": "The sustainability assertion specified for this trade party."
+            "comment": "A sustainability assertion for this specified certification."
         },
         {
             "uri": "unece:specifiedAuthoritativeSignatoryPerson",
@@ -271,7 +186,7 @@
         },
         {
             "uri": "unece:specifiedContactPerson",
-            "type": "unece:ContactPerson",
+            "type": "unece:Contact",
             "comment": "A contact person specified for this trade party."
         },
         {
@@ -287,7 +202,7 @@
         {
             "uri": "unece:specifiedFacility",
             "type": "unece:ProductionFacility",
-            "comment": "A production facility specified for this trade party."
+            "comment": "A production facility specified for this production process."
         },
         {
             "uri": "unece:specifiedFinancialIdentity",
@@ -310,29 +225,19 @@
             "comment": "The legally constituted organization specified for this trade party."
         },
         {
-            "uri": "unece:specifiedLogisticsLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "A logistics related location or place specified for this trade party."
-        },
-        {
             "uri": "unece:specifiedProprietaryIdentity",
             "type": "unece:ProprietaryIdentity",
-            "comment": "A proprietary identity specified for this trade party."
-        },
-        {
-            "uri": "unece:specifiedRiskAnalysisResult",
-            "type": "unece:RiskAnalysisResult",
-            "comment": "A result of a logistics risk analysis calculation specified for this trade party."
+            "comment": "A proprietary Identity specified for this person."
         },
         {
             "uri": "unece:specifiedTaxRegistration",
             "type": "unece:TaxRegistration",
-            "comment": "A tax registration specified for this trade party."
+            "comment": "A tax registration specified for this contact person."
         },
         {
             "uri": "unece:specifiedTradeProduct",
             "type": "unece:TradeProduct",
-            "comment": "A product specified for this trade party."
+            "comment": "A product specified for this supply chain trade line item."
         },
         {
             "uri": "unece:subcontractorParty",
@@ -340,38 +245,12 @@
             "comment": "A subcontractor for this trade party."
         },
         {
-            "uri": "unece:telephoneCommunication",
-            "type": "unece:Communication",
-            "comment": "A telephone communication for this trade party."
-        },
-        {
             "uri": "unece:tradePartyLanguageCode",
             "type": "unece:LanguageCodeList",
             "comment": "A code specifying a language for this trade party."
-        },
-        {
-            "uri": "unece:uRICommunication",
-            "type": "unece:Communication",
-            "comment": "A Uniform Resource Identifier (URI) communication for this trade party, such as a web or email address."
         }
     ],
     "referencedBy": [
-        {
-            "uri": "unece:activityAuthorizedParty",
-            "comment": "A party that is authorized to perform an activity in this trade country sub-division."
-        },
-        {
-            "uri": "unece:agentParty",
-            "comment": "A party representing another party for this exchanged document."
-        },
-        {
-            "uri": "unece:assessorParty",
-            "comment": "The assessor party for this specified assessment."
-        },
-        {
-            "uri": "unece:associatedParty",
-            "comment": "A party associated with this ..."
-        },
         {
             "uri": "unece:brandOwnerParty",
             "comment": "The party that owns the brand of this trade product."
@@ -386,99 +265,23 @@
         },
         {
             "uri": "unece:buyerParty",
-            "comment": "The buyer party for this ..."
+            "comment": "The buyer party for this header trade agreement."
         },
         {
             "uri": "unece:buyerRequisitionerParty",
-            "comment": "A party who is a ..."
+            "comment": "A party who is a buyer requisitioner in this header trade agreement."
         },
         {
             "uri": "unece:buyerTaxRepresentativeParty",
             "comment": "The party acting as a tax representative for the buyer for this header trade agreement."
         },
         {
-            "uri": "unece:carrierAgentParty",
-            "comment": "The carrier agent trade party ..."
-        },
-        {
-            "uri": "unece:carrierParty",
-            "comment": "A carrier party for this ..."
-        },
-        {
             "uri": "unece:catalogueInformationProviderParty",
-            "comment": "The party that provides catalogue ..."
+            "comment": "The party that provides catalogue information for this header trade agreement."
         },
         {
             "uri": "unece:catalogueInformationReceiverParty",
             "comment": "The party that receives catalogue information for this header trade agreement."
-        },
-        {
-            "uri": "unece:certifiedParty",
-            "comment": "The certified party for this specified certificate."
-        },
-        {
-            "uri": "unece:certifyingParty",
-            "comment": "A certifying party for this transport event."
-        },
-        {
-            "uri": "unece:claimRelatedParty",
-            "comment": "The claim related party for this financial adjustment."
-        },
-        {
-            "uri": "unece:commodityConsolidatorAgentParty",
-            "comment": "The commodity consolidator agent party for this logistics transport movement."
-        },
-        {
-            "uri": "unece:commodityConsolidatorParty",
-            "comment": "The commodity consolidator party for this logistics transport movement."
-        },
-        {
-            "uri": "unece:connectingCarrierParty",
-            "comment": "A connecting carrier party for this supply chain consignment."
-        },
-        {
-            "uri": "unece:consigneeAgentParty",
-            "comment": "The party authorized to act for or on behalf of the consignee for this supply chain consignment."
-        },
-        {
-            "uri": "unece:consigneeParty",
-            "comment": "The consignee party for this ..."
-        },
-        {
-            "uri": "unece:consignorAgentParty",
-            "comment": "The party authorized to act for or on behalf of the consignor for this supply chain consignment."
-        },
-        {
-            "uri": "unece:consignorParty",
-            "comment": "The consignor party for this ..."
-        },
-        {
-            "uri": "unece:consolidatorParty",
-            "comment": "The party responsible for the consolidation of this supply chain consignment."
-        },
-        {
-            "uri": "unece:consortiumCarrierParty",
-            "comment": "A consortium carrier party for this logistics transport movement."
-        },
-        {
-            "uri": "unece:coverageParty",
-            "comment": "The coverage party for this transport cargo insurance."
-        },
-        {
-            "uri": "unece:customsExportAgentParty",
-            "comment": "The party acting as an agent for, or on behalf of, the consignor with respect to the customs export procedures for this supply chain consignment."
-        },
-        {
-            "uri": "unece:customsImportAgentParty",
-            "comment": "The party acting as an agent for, or on behalf of, the consignee with respect to the customs import procedures for this supply chain consignment."
-        },
-        {
-            "uri": "unece:customsTransitAgentParty",
-            "comment": "The party acting as an agent for, or on behalf of, the consignor with respect to customs transit procedures for this supply chain consignment."
-        },
-        {
-            "uri": "unece:dangerousGoodsNotifierParty",
-            "comment": "The party responsible for providing the dangerous goods notification in accordance with the dangerous goods regulations relevant for this supply chain consignment."
         },
         {
             "uri": "unece:declarantAgentParty",
@@ -489,92 +292,24 @@
             "comment": "The trade party acting as the declarant for this exchanged declaration."
         },
         {
-            "uri": "unece:deconsolidatorParty",
-            "comment": "The party responsible for the deconsolidation of this supply chain consignment."
-        },
-        {
-            "uri": "unece:deliveryParty",
-            "comment": "The party to whom this ..."
-        },
-        {
-            "uri": "unece:despatchParty",
-            "comment": "The party from whom this ..."
-        },
-        {
             "uri": "unece:disposalParty",
-            "comment": "A disposal party, at header ..."
-        },
-        {
-            "uri": "unece:documentaryInstructionsNotifiedParty",
-            "comment": "A party to be notified of the documentary instructions for this logistics transport movement."
+            "comment": "A disposal party, at header level, for this trade delivery."
         },
         {
             "uri": "unece:endUserParty",
             "comment": "An end user party for this trade product."
         },
         {
-            "uri": "unece:executionParty",
-            "comment": "The party executing this specified ..."
-        },
-        {
-            "uri": "unece:exemptionClaimantParty",
-            "comment": "A party who claims an exemption from this cross-border regulatory procedure."
-        },
-        {
-            "uri": "unece:exporterParty",
-            "comment": "The party who exports this supply chain consignment."
-        },
-        {
-            "uri": "unece:freightForwarderParty",
-            "comment": "A freight forwarder party, at ..."
-        },
-        {
-            "uri": "unece:grantedParty",
-            "comment": "A party granted this specified licence."
-        },
-        {
-            "uri": "unece:groupingCentreParty",
-            "comment": "A grouping centre party for this supply chain consignment."
-        },
-        {
-            "uri": "unece:iSSCIssuingAuthorityParty",
-            "comment": "The trade party authorized to issue the International Ship Security Certificate (ISSC) for this logistics means of transport."
-        },
-        {
-            "uri": "unece:importerParty",
-            "comment": "The party who imports this supply chain consignment."
-        },
-        {
-            "uri": "unece:inspectionParty",
-            "comment": "An inspection party for this ..."
-        },
-        {
-            "uri": "unece:intermediateConsigneeParty",
-            "comment": "A party that is an intermediate consignee for this supply chain consignment."
-        },
-        {
             "uri": "unece:inventoryManagerParty",
-            "comment": "An inventory manager party, at ..."
-        },
-        {
-            "uri": "unece:invoiceeAssociatedParty",
-            "comment": "An invoicee trade party associated with this supply chain consignment."
+            "comment": "An inventory manager party, at header level, for this trade delivery."
         },
         {
             "uri": "unece:invoiceeParty",
-            "comment": "The party to whom an ..."
+            "comment": "The party to whom an invoice is issued for this header trade settlement."
         },
         {
             "uri": "unece:invoicerParty",
             "comment": "The party issuing the invoice for this header trade settlement."
-        },
-        {
-            "uri": "unece:issuerParty",
-            "comment": "A party that issues this ..."
-        },
-        {
-            "uri": "unece:issuingParty",
-            "comment": "The party issuing this logistics seal."
         },
         {
             "uri": "unece:itemBuyerParty",
@@ -589,76 +324,20 @@
             "comment": "The party that owns the legal rights for this trade product."
         },
         {
-            "uri": "unece:loadingInspectionParty",
-            "comment": "The loading inspection party for this logistics transport movement."
-        },
-        {
-            "uri": "unece:loadingParty",
-            "comment": "The party that loads this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:localConsigneeAgentParty",
-            "comment": "The local party authorized to act for or on behalf of the consignee for this supply chain consignment."
-        },
-        {
-            "uri": "unece:locationProviderParty",
-            "comment": "The trade party providing the location for this document authentication."
-        },
-        {
             "uri": "unece:logisticsServiceProviderParty",
             "comment": "A logistics service provider party, at line level, for this trade delivery."
         },
         {
-            "uri": "unece:manufacturerParty",
-            "comment": "A manufacturer party for this ..."
-        },
-        {
-            "uri": "unece:nVOCCCarrierParty",
-            "comment": "A Non-Vessel Operating Common Carrier (NVOCC) carrier party for this logistics transport movement."
-        },
-        {
-            "uri": "unece:notifiedParty",
-            "comment": "A party to be notified ..."
-        },
-        {
-            "uri": "unece:operatingParty",
-            "comment": "The party that operates this piece of logistics transport equipment."
-        },
-        {
-            "uri": "unece:operationalResponsibleParty",
-            "comment": "The operational responsible party for this communication event."
-        },
-        {
-            "uri": "unece:operatorParty",
-            "comment": "A trade party who is ..."
-        },
-        {
-            "uri": "unece:outsourcedInspectionParty",
-            "comment": "An outsourced inspection party for this specified inspection result."
-        },
-        {
-            "uri": "unece:ownerAgentParty",
-            "comment": "The owner agent trade party for this logistics means of transport."
-        },
-        {
-            "uri": "unece:ownerParty",
-            "comment": "A party who owns this ..."
-        },
-        {
             "uri": "unece:payeeParty",
-            "comment": "A payee party for this ..."
+            "comment": "A payee party for this header trade settlement."
         },
         {
             "uri": "unece:payerParty",
-            "comment": "The payer party for this ..."
-        },
-        {
-            "uri": "unece:pickUpParty",
-            "comment": "The pick-up trade party for this supply chain consignment."
+            "comment": "The payer party for this header trade settlement."
         },
         {
             "uri": "unece:primeContractSellerParty",
-            "comment": "The seller party acting as ..."
+            "comment": "The seller party acting as the prime contractor for this header trade agreement."
         },
         {
             "uri": "unece:principalAssociatedParty",
@@ -666,47 +345,19 @@
         },
         {
             "uri": "unece:procurementParty",
-            "comment": "The procurement party for this ..."
+            "comment": "The procurement party for this header trade agreement."
         },
         {
             "uri": "unece:productEndUserParty",
-            "comment": "The party acting as the ..."
-        },
-        {
-            "uri": "unece:providerParty",
-            "comment": "The provider party for this ..."
-        },
-        {
-            "uri": "unece:providingParty",
-            "comment": "The party, other than the issuer, providing this specified certificate."
-        },
-        {
-            "uri": "unece:recipientTradeParty",
-            "comment": "A trade party that receives ..."
+            "comment": "The party acting as the end user for the products in this header trade agreement."
         },
         {
             "uri": "unece:relatedParty",
-            "comment": "A trade party related to ..."
+            "comment": "A trade party related to this facility production unit."
         },
         {
             "uri": "unece:relevantParty",
-            "comment": "A party relevant for this ..."
-        },
-        {
-            "uri": "unece:requesterParty",
-            "comment": "A trade party requesting this ..."
-        },
-        {
-            "uri": "unece:requiringParty",
-            "comment": "A party requiring this specified usage condition."
-        },
-        {
-            "uri": "unece:responsibleParty",
-            "comment": "A party responsible for providing ..."
-        },
-        {
-            "uri": "unece:sailingAdviceNotifiedParty",
-            "comment": "A party to be notified of the sailing advice for this logistics transport movement."
+            "comment": "A party relevant for this line trade agreement."
         },
         {
             "uri": "unece:salesAgentParty",
@@ -718,55 +369,19 @@
         },
         {
             "uri": "unece:sellerParty",
-            "comment": "The seller party for this ..."
+            "comment": "The seller party for this header trade agreement."
         },
         {
             "uri": "unece:sellerTaxRepresentativeParty",
             "comment": "The party acting as a tax representative for the seller for this header trade agreement."
         },
         {
-            "uri": "unece:senderTradeParty",
-            "comment": "The party that sends this ..."
-        },
-        {
-            "uri": "unece:serviceProviderParty",
-            "comment": "A trade party providing services for this logistics means of transport."
-        },
-        {
-            "uri": "unece:shipFromParty",
-            "comment": "The ship from party for ..."
-        },
-        {
-            "uri": "unece:shipToParty",
-            "comment": "A ship to party for ..."
-        },
-        {
-            "uri": "unece:specifiedTradeParty",
-            "comment": "A party specified for this ..."
-        },
-        {
-            "uri": "unece:specifyingParty",
-            "comment": "The party specifying this specified requirement."
-        },
-        {
-            "uri": "unece:stevedoreParty",
-            "comment": "A stevedore party for this logistics transport movement."
-        },
-        {
             "uri": "unece:subcontractorParty",
-            "comment": "A subcontractor for this trade ..."
+            "comment": "A subcontractor for this trade party."
         },
         {
             "uri": "unece:supportCentreParty",
             "comment": "The support centre party for this line trade agreement."
-        },
-        {
-            "uri": "unece:terminalOperatorParty",
-            "comment": "A terminal operator party for this logistics transport movement."
-        },
-        {
-            "uri": "unece:transportServicesBuyerParty",
-            "comment": "The party which is the ..."
         },
         {
             "uri": "unece:ultimatePayeeParty",
@@ -774,27 +389,7 @@
         },
         {
             "uri": "unece:ultimateShipToParty",
-            "comment": "The ultimate ship to party, ..."
-        },
-        {
-            "uri": "unece:unloadingInspectionParty",
-            "comment": "The inspection party for the unloading of this logistics transport movement."
-        },
-        {
-            "uri": "unece:verifierParty",
-            "comment": "A verifier party for this specified assessment."
-        },
-        {
-            "uri": "unece:warehouseDepositorParty",
-            "comment": "A party depositing goods in a warehouse for this supply chain consignment."
-        },
-        {
-            "uri": "unece:warehouseKeeperParty",
-            "comment": "A party taking responsibility for goods stored in a warehouse for this supply chain consignment."
-        },
-        {
-            "uri": "unece:warehouseOperatorParty",
-            "comment": "A party that operates a warehouse in which goods are stored for this supply chain consignment."
+            "comment": "The ultimate ship to party, at header level, for this trade delivery."
         }
     ]
 }

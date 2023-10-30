@@ -1,18 +1,13 @@
-
 {
     "label": "DocumentLineDocument",
     "uri": "unece:DocumentLineDocument",
     "comment": "A collection of data for a line on a piece of written, printed or electronic matter that provides information or evidence.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:buyerAssignedCategoryCode",
             "type": "xsd:string",
             "comment": "The code specifying the category assigned by the buyer for this document line."
-        },
-        {
-            "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the category of this document line."
         },
         {
             "uri": "unece:documentLineStatusCode",
@@ -20,24 +15,14 @@
             "comment": "The code specifying the status of this document line."
         },
         {
-            "uri": "unece:effectiveSpecifiedPeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "The period within which this document line is effective."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this document line document."
-        },
-        {
             "uri": "unece:includedNote",
             "type": "unece:Note",
-            "comment": "A note included in this document line."
+            "comment": "A note included for this document status."
         },
         {
             "uri": "unece:issueDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value for the issuance of this document line."
+            "comment": "An issue date, time, date time or other date time value for this declared error."
         },
         {
             "uri": "unece:latestRevisionDateTime",
@@ -47,7 +32,7 @@
         {
             "uri": "unece:lineId",
             "type": "xsd:string",
-            "comment": "The unique identifier of this document line."
+            "comment": "The unique identifier of a line in this referenced document."
         },
         {
             "uri": "unece:lineStatusReason",
@@ -77,12 +62,12 @@
         {
             "uri": "unece:referenceDocument",
             "type": "unece:Document",
-            "comment": "A document referenced from this document line."
+            "comment": "A document referenced by this acknowledgement document."
         },
         {
             "uri": "unece:responseReasonCode",
             "type": "xsd:string",
-            "comment": "The code specifying the response reason of this document line."
+            "comment": "A code specifying a response reason for this exchanged document."
         },
         {
             "uri": "unece:subordinateLineId",
@@ -98,7 +83,7 @@
     "referencedBy": [
         {
             "uri": "unece:associatedDocumentLineDocument",
-            "comment": "A document line associated with ..."
+            "comment": "A document line associated with this line trade settlement."
         }
     ]
 }

@@ -1,9 +1,9 @@
-
 {
     "label": "TradeProduct",
     "uri": "unece:TradeProduct",
     "comment": "Any tangible output or service produced by human or mechanical effort or by a natural process for trade purposes.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalDescription",
             "type": "xsd:string",
@@ -17,32 +17,17 @@
         {
             "uri": "unece:applicableAssessment",
             "type": "unece:Assessment",
-            "comment": "An assessment applicable to this trade product."
-        },
-        {
-            "uri": "unece:applicableDangerousGoods",
-            "type": "unece:DangerousGoods",
-            "comment": "Transport dangerous goods information applicable for this trade product."
+            "comment": "A specified assessment applicable to this referenced standard."
         },
         {
             "uri": "unece:applicableDeclaration",
             "type": "unece:SpecifiedDeclaration",
-            "comment": "A specified declaration applicable to this trade product."
-        },
-        {
-            "uri": "unece:applicableDisposalInstructions",
-            "type": "unece:DisposalInstructions",
-            "comment": "Disposal instructions applicable to this trade product."
+            "comment": "A specified declaration applicable to this production process."
         },
         {
             "uri": "unece:applicableFault",
             "type": "unece:SpecifiedFault",
             "comment": "A fault applicable to this trade product."
-        },
-        {
-            "uri": "unece:applicableGoodsCharacteristic",
-            "type": "unece:GoodsCharacteristic",
-            "comment": "A material goods characteristic applicable to this trade product."
         },
         {
             "uri": "unece:applicableKeyword",
@@ -52,17 +37,12 @@
         {
             "uri": "unece:applicableLicence",
             "type": "unece:Licence",
-            "comment": "A specified licence applicable to this trade product."
+            "comment": "A specified licence applicable to this production process."
         },
         {
             "uri": "unece:applicableLogisticsPackaging",
             "type": "unece:LogisticsPackaging",
             "comment": "Logistics packaging applicable to this trade product."
-        },
-        {
-            "uri": "unece:applicablePeriod",
-            "type": "unece:SpecifiedPeriod",
-            "comment": "A specified period applicable to this trade product."
         },
         {
             "uri": "unece:applicableProductCharacteristic",
@@ -72,37 +52,22 @@
         {
             "uri": "unece:applicableProductionProcess",
             "type": "unece:ProductionProcess",
-            "comment": "A production process applicable to this trade product."
+            "comment": "A process applicable to this specified production cycle."
         },
         {
             "uri": "unece:applicableSpecifiedCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate applicable to this trade product."
-        },
-        {
-            "uri": "unece:applicableSpecifiedInspection",
-            "type": "unece:SpecifiedInspection",
-            "comment": "An inspection applicable to this trade product."
+            "comment": "A certificate applicable to this product batch."
         },
         {
             "uri": "unece:applicableSupplyChainPackaging",
             "type": "unece:SupplyChainPackaging",
-            "comment": "Packaging applicable for use with this trade product."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this trade product."
-        },
-        {
-            "uri": "unece:applicableSustainabilityInspection",
-            "type": "unece:SustainabilityInspection",
-            "comment": "A sustainability inspection applicable to this trade product."
+            "comment": "Packaging applicable for use with this product batch."
         },
         {
             "uri": "unece:applicableTechnicalCharacteristic",
             "type": "unece:TechnicalCharacteristic",
-            "comment": "A technical characteristic applicable to this trade product."
+            "comment": "A technical characteristic applicable to this product colour."
         },
         {
             "uri": "unece:applicableTradeProductCertification",
@@ -112,12 +77,12 @@
         {
             "uri": "unece:appliedChemicalTreatment",
             "type": "unece:SpecifiedChemicalTreatment",
-            "comment": "A chemical treatment applied to this trade product."
+            "comment": "A chemical treatment applied during this production process."
         },
         {
             "uri": "unece:appliedProductFinishingTreatment",
             "type": "unece:ProductFinishingTreatment",
-            "comment": "A product finishing treatment applied to this trade product."
+            "comment": "A product finishing treatment applied during this production process."
         },
         {
             "uri": "unece:areaDensityMeasure",
@@ -140,11 +105,6 @@
             "comment": "The indication of whether or not this trade product is biologically based."
         },
         {
-            "uri": "unece:brandName",
-            "type": "xsd:string",
-            "comment": "The brand name, expressed as text, for this trade product."
-        },
-        {
             "uri": "unece:brandOwnerParty",
             "type": "unece:TradeParty",
             "comment": "The party that owns the brand of this trade product."
@@ -157,7 +117,7 @@
         {
             "uri": "unece:buyerAssignedId",
             "type": "xsd:string",
-            "comment": "The unique buyer assigned identifier for this trade product."
+            "comment": "A buyer assigned identifier of this product batch."
         },
         {
             "uri": "unece:buyerSuppliedPartsReferenceDocument",
@@ -171,7 +131,7 @@
         },
         {
             "uri": "unece:cancellationAnnouncedLaunchDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "The formatted date, time, date time, or other date time value of the cancellation of the announced launch of this trade product."
         },
         {
@@ -195,11 +155,6 @@
             "comment": "The code specifying the collection status of this trade product."
         },
         {
-            "uri": "unece:colourCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the colour for this trade product."
-        },
-        {
             "uri": "unece:colourDescription",
             "type": "xsd:string",
             "comment": "A textual description of the colour of this trade product."
@@ -217,7 +172,7 @@
         {
             "uri": "unece:commonName",
             "type": "xsd:string",
-            "comment": "A common name, expressed as text, for this trade product."
+            "comment": "A common name, expressed as text, for this distinct chemical."
         },
         {
             "uri": "unece:componentMaterial",
@@ -272,17 +227,12 @@
         {
             "uri": "unece:dNAMarkerId",
             "type": "xsd:string",
-            "comment": "The DNA marker identifier of this trade product."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this trade product."
+            "comment": "The DNA marker identifier of this product batch."
         },
         {
             "uri": "unece:descriptionCode",
             "type": "xsd:string",
-            "comment": "The code specifying the description of this trade product."
+            "comment": "A code specifying a description of this technical characteristic."
         },
         {
             "uri": "unece:designatedClassification",
@@ -297,7 +247,7 @@
         {
             "uri": "unece:digitalPlatformAssignedId",
             "type": "xsd:string",
-            "comment": "The digital platform assigned identifier for this trade product."
+            "comment": "The digital platform assigned identifier for this production facility."
         },
         {
             "uri": "unece:drainedNetWeightMeasure",
@@ -307,7 +257,7 @@
         {
             "uri": "unece:ePCId",
             "type": "xsd:string",
-            "comment": "The EPC (Electronic Product Code) identifier of this trade product."
+            "comment": "The EPC (Electronic Product Code) identifier of this trade product instance."
         },
         {
             "uri": "unece:endItemName",
@@ -375,26 +325,6 @@
             "comment": "A global extension identifier for this trade product, such as a prefix or a suffix."
         },
         {
-            "uri": "unece:globalId",
-            "type": "xsd:string",
-            "comment": "A unique global identifier for this trade product."
-        },
-        {
-            "uri": "unece:grossVolumeMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the gross volume for this trade product."
-        },
-        {
-            "uri": "unece:grossWeightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the gross weight (mass) of this trade product."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "A unique identifier for this trade product."
-        },
-        {
             "uri": "unece:includedProduct",
             "type": "unece:Product",
             "comment": "An included product referenced from this trade product."
@@ -422,7 +352,7 @@
         {
             "uri": "unece:informationNote",
             "type": "unece:Note",
-            "comment": "An information note for this trade product."
+            "comment": "A note with information, at header level, for this trade delivery."
         },
         {
             "uri": "unece:innerPackContentUnitQuantity",
@@ -442,11 +372,11 @@
         {
             "uri": "unece:intendedUse",
             "type": "xsd:string",
-            "comment": "An intended use, expressed as text, for this trade product."
+            "comment": "An intended use, expressed as text, for this photographic picture."
         },
         {
             "uri": "unece:latestProductDataChangeDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "The formatted date, time, date time, or other date time value of the latest change in the product data for this trade product."
         },
         {
@@ -463,11 +393,6 @@
             "uri": "unece:line",
             "type": "xsd:string",
             "comment": "A product line, such as a fashion product line, expressed as text, for this trade product."
-        },
-        {
-            "uri": "unece:linearDimension",
-            "type": "unece:SpatialDimension",
-            "comment": "Linear spatial dimensions of this trade product."
         },
         {
             "uri": "unece:mSDSReferenceDocument",
@@ -487,12 +412,7 @@
         {
             "uri": "unece:manufacturerAssignedId",
             "type": "xsd:string",
-            "comment": "A unique manufacturer assigned identifier for this trade product."
-        },
-        {
-            "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "A manufacturer party for this trade product."
+            "comment": "A manufacturer assigned identifier of this product batch."
         },
         {
             "uri": "unece:markedSerialNumberIndicator",
@@ -515,49 +435,14 @@
             "comment": "A marketing feature of this trade product."
         },
         {
-            "uri": "unece:maximumLinearDimension",
-            "type": "unece:SpatialDimension",
-            "comment": "Maximum linear spatial dimensions of this trade product."
-        },
-        {
-            "uri": "unece:minimumLinearDimension",
-            "type": "unece:SpatialDimension",
-            "comment": "Minimum linear spatial dimensions of this trade product."
-        },
-        {
-            "uri": "unece:modelId",
-            "type": "xsd:string",
-            "comment": "A unique model identifier for this trade product."
-        },
-        {
             "uri": "unece:modelName",
             "type": "xsd:string",
             "comment": "The model name, expressed as text, for this trade product."
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this trade product."
-        },
-        {
-            "uri": "unece:netVolumeMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a net volume for this trade product."
-        },
-        {
-            "uri": "unece:netWeightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the net weight (mass) of this trade product."
-        },
-        {
-            "uri": "unece:originCountry",
-            "type": "unece:Country",
-            "comment": "A country of origin for this trade product."
-        },
-        {
             "uri": "unece:originLocation",
             "type": "unece:LogisticsLocation",
-            "comment": "A location of origin for this trade product."
+            "comment": "A location of origin for this supply chain product instance."
         },
         {
             "uri": "unece:physicalFormDescription",
@@ -620,21 +505,6 @@
             "comment": "A quality parameter specified for this trade product."
         },
         {
-            "uri": "unece:recyclableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade product is recyclable."
-        },
-        {
-            "uri": "unece:recycledMaterialIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this trade product is made of recycled material."
-        },
-        {
-            "uri": "unece:recycledMaterialPercent",
-            "type": "xsd:string",
-            "comment": "The percentage of recycled material in this trade product."
-        },
-        {
             "uri": "unece:recyclingTypeCode",
             "type": "xsd:string",
             "comment": "The code specifying the type of recycling for this trade product."
@@ -652,7 +522,7 @@
         {
             "uri": "unece:relatedLocation",
             "type": "unece:Location",
-            "comment": "A referenced location related to this trade product."
+            "comment": "A referenced location related to this animal certification."
         },
         {
             "uri": "unece:relatedPackage",
@@ -662,12 +532,7 @@
         {
             "uri": "unece:relatedTradeTransaction",
             "type": "unece:SupplyChainTradeTransaction",
-            "comment": "A supply chain trade transaction related to this trade product."
-        },
-        {
-            "uri": "unece:responsibleParty",
-            "type": "unece:TradeParty",
-            "comment": "A party responsible for this trade product."
+            "comment": "A supply chain trade transaction related to this specified assessment."
         },
         {
             "uri": "unece:reusableIndicator",
@@ -697,7 +562,7 @@
         {
             "uri": "unece:sectionCode",
             "type": "xsd:string",
-            "comment": "The code specifying the section of this trade product."
+            "comment": "The code specifying the section for this product print."
         },
         {
             "uri": "unece:securityInformationNote",
@@ -707,12 +572,7 @@
         {
             "uri": "unece:sellerAssignedId",
             "type": "xsd:string",
-            "comment": "The unique seller assigned identifier for this trade product."
-        },
-        {
-            "uri": "unece:sizeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the size of this trade product."
+            "comment": "A seller assigned identifier of this product batch."
         },
         {
             "uri": "unece:sizeDescription",
@@ -727,7 +587,7 @@
         {
             "uri": "unece:specifiedAssertion",
             "type": "unece:Assertion",
-            "comment": "A sustainability assertion specified for this trade product."
+            "comment": "A sustainability assertion for this specified certification."
         },
         {
             "uri": "unece:specifiedColour",
@@ -737,7 +597,7 @@
         {
             "uri": "unece:specifiedFacility",
             "type": "unece:ProductionFacility",
-            "comment": "A production facility specified for this trade product."
+            "comment": "A production facility specified for this production process."
         },
         {
             "uri": "unece:specifiedLabel",
@@ -747,7 +607,7 @@
         {
             "uri": "unece:specifiedPicture",
             "type": "unece:Picture",
-            "comment": "A photographic picture specified for this trade product."
+            "comment": "A photographic picture specified for this product batch."
         },
         {
             "uri": "unece:specifiedPrint",
@@ -757,7 +617,7 @@
         {
             "uri": "unece:specifiedProductCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate specified for this trade product."
+            "comment": "A product certificate specified for this distinct chemical."
         },
         {
             "uri": "unece:specifiedProductGroup",
@@ -767,17 +627,12 @@
         {
             "uri": "unece:specifiedSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain event specified for this trade product."
+            "comment": "A supply chain event specified for this product batch."
         },
         {
             "uri": "unece:specifiedSupplyPlan",
             "type": "unece:SupplyPlan",
             "comment": "The specification of the delivery quantities and delivery date/time values in a supply plan for this trade product."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a status for this trade product."
         },
         {
             "uri": "unece:storageInformationNote",
@@ -792,12 +647,12 @@
         {
             "uri": "unece:subcontractorParty",
             "type": "unece:TradeParty",
-            "comment": "A subcontractor party for this trade product."
+            "comment": "A subcontractor for this trade party."
         },
         {
             "uri": "unece:subordinateTypeCode",
             "type": "xsd:string",
-            "comment": "The code specifying the subordinate type of trade product."
+            "comment": "The code specifying the subordinate type for this production device."
         },
         {
             "uri": "unece:subordinateTypeDescription",
@@ -812,7 +667,7 @@
         {
             "uri": "unece:substitutedProduct",
             "type": "unece:Product",
-            "comment": "A referenced product that is substituted by this trade product."
+            "comment": "A referenced product substituted for this supply chain trade line item."
         },
         {
             "uri": "unece:suppliedFromCountry",
@@ -835,11 +690,6 @@
             "comment": "A transport information note for this trade product."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying the type of trade product."
-        },
-        {
             "uri": "unece:typeDescription",
             "type": "xsd:string",
             "comment": "A textual description of the type for this trade product."
@@ -847,7 +697,7 @@
         {
             "uri": "unece:uRIId",
             "type": "xsd:string",
-            "comment": "The URI (Uniform Resource Identifier), such as a web or an email address, for this trade product."
+            "comment": "A Uniform Resource Identifier (URI) for this specified certification."
         },
         {
             "uri": "unece:ultimateCustomerAssignedExtensionId",
@@ -891,15 +741,15 @@
         },
         {
             "uri": "unece:includedTradeProduct",
-            "comment": "A product included in this ..."
+            "comment": "A product included in this supply chain inventory."
         },
         {
             "uri": "unece:inputApplicableProduct",
-            "comment": "An input product applicable to ..."
+            "comment": "An input product applicable to this facility production unit."
         },
         {
             "uri": "unece:outputApplicableProduct",
-            "comment": "An output product applicable to ..."
+            "comment": "An output product applicable to this facility production unit."
         },
         {
             "uri": "unece:requisitionerSpecifiedProduct",
@@ -907,7 +757,7 @@
         },
         {
             "uri": "unece:specifiedTradeProduct",
-            "comment": "A product specified for this ..."
+            "comment": "A product specified for this supply chain trade line item."
         }
     ]
 }

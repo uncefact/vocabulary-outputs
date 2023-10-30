@@ -1,33 +1,23 @@
-
 {
     "label": "ProductInstance",
     "uri": "unece:ProductInstance",
     "comment": "An individual trade product or batch of similar trade products produced by human or mechanical effort or by a natural process.",
-    "objectProperties": [
-        {
-            "uri": "unece:actualQuantity",
-            "type": "unece:QuantityType",
-            "comment": "The actual quantity of items in this trade product instance."
-        },
-        {
-            "uri": "unece:applicableGoodsCharacteristic",
-            "type": "unece:GoodsCharacteristic",
-            "comment": "A distinguishing material feature applicable to this trade product instance."
-        },
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableProductCharacteristic",
             "type": "unece:ProductCharacteristic",
-            "comment": "A product characteristic applicable to this trade product instance."
+            "comment": "A characteristic applicable to this trade product."
         },
         {
             "uri": "unece:appliedProcess",
             "type": "unece:ProductHandlingProcess",
-            "comment": "A product handling process applied to this trade product instance, such as manufacturing or storage."
+            "comment": "A product handling process applied to this supply chain trade line item, such as manufacturing, treatment or storage."
         },
         {
             "uri": "unece:batchId",
             "type": "xsd:string",
-            "comment": "The unique batch identifier for this trade product instance."
+            "comment": "A batch identifier for this trade product."
         },
         {
             "uri": "unece:bestBeforeDateTime",
@@ -42,7 +32,7 @@
         {
             "uri": "unece:dNAMarkerId",
             "type": "xsd:string",
-            "comment": "The DNA marker identifier of this trade product instance."
+            "comment": "The DNA marker identifier of this product batch."
         },
         {
             "uri": "unece:ePCId",
@@ -52,22 +42,12 @@
         {
             "uri": "unece:expiryDateTime",
             "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value of expiry of the items contained in the trade product instance."
+            "comment": "An expiry date, time, date time or other date time value for this specified licence."
         },
         {
             "uri": "unece:globalSerialId",
             "type": "xsd:string",
             "comment": "The unique global serial identifier for this trade product instance."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "A unique identifier for this trade product instance."
-        },
-        {
-            "uri": "unece:inspectionEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "The inspection event for this trade product instance."
         },
         {
             "uri": "unece:kanbanId",

@@ -1,19 +1,18 @@
-
 {
     "label": "contractualClause",
     "uri": "unece:contractualClause",
-    "comment": [
-        "A contractual clause of this exchanged document.",
-        "A contractual clause of this referenced document.",
-        "A contractual document clause specified for this financing request document."
-    ],
+    "comment": "A distinct article or provision in a document, which requires compliance.",
+    "businessDomain": "finance",
     "rangeIncludes": [
         {
-            "uri": "unece:Clause",
-            "comment": "A distinct article or provision in a document, which requires compliance."
+            "uri": "unece:Clause"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:FinancingRequestDocument",
+            "comment": "The set of characteristics shared by all individual transactions grouped for this financing request document."
+        },
         {
             "uri": "unece:Document",
             "comment": "Written, printed or electronic matter that is referenced."
@@ -21,10 +20,6 @@
         {
             "uri": "unece:ExchangedDocument",
             "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
-        },
-        {
-            "uri": "unece:FinancingRequestDocument",
-            "comment": "The set of characteristics shared by all individual transactions grouped for this financing request document."
         }
     ]
 }

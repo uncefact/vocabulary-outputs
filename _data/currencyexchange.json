@@ -1,22 +1,17 @@
-
 {
     "label": "CurrencyExchange",
     "uri": "unece:CurrencyExchange",
     "comment": "The conversion of one currency to another for trade purposes.",
-    "objectProperties": [
-        {
-            "uri": "unece:associatedDocument",
-            "type": "unece:Document",
-            "comment": "An associated document referenced for this trade related currency exchange."
-        },
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:conversionRate",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The rate factor used for conversion from the source currency to the target currency for trade purposes."
         },
         {
             "uri": "unece:conversionRateDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value of the conversion rate for this trade related currency exchange."
         },
         {
@@ -31,17 +26,17 @@
         },
         {
             "uri": "unece:sourceUnitBasisNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The numeric unit basis of the source currency used in this trade related currency exchange rate calculation."
         },
         {
             "uri": "unece:targetUnitBaseNumeric",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The numeric unit basis of the target currency used in this trade related currency exchange rate calculation."
         },
         {
             "uri": "unece:tradeCurrencyExchangeMarketId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The unique identifier of the currency exchange market from which the exchange rate is taken for trade purposes."
         }
     ],
@@ -52,7 +47,7 @@
         },
         {
             "uri": "unece:applicableCurrencyExchange",
-            "comment": "A currency exchange applicable to ..."
+            "comment": "A currency exchange applicable to this supply chain consignment."
         },
         {
             "uri": "unece:insuranceApplicableCurrencyExchange",
@@ -60,7 +55,7 @@
         },
         {
             "uri": "unece:invoiceApplicableCurrencyExchange",
-            "comment": "A currency exchange applicable to ..."
+            "comment": "A currency exchange applicable to the invoice for this supply chain consignment."
         },
         {
             "uri": "unece:orderApplicableCurrencyExchange",
@@ -68,7 +63,7 @@
         },
         {
             "uri": "unece:paymentApplicableCurrencyExchange",
-            "comment": "The currency exchange applicable to ..."
+            "comment": "The currency exchange applicable to the payment in this header trade settlement."
         },
         {
             "uri": "unece:priceApplicableCurrencyExchange",

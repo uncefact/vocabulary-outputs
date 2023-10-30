@@ -1,58 +1,28 @@
-
 {
     "label": "MetricCharacteristic",
     "uri": "unece:MetricCharacteristic",
     "comment": "A prominent attribute or aspect of a metric (a standard of measurement).",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:contentTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the content type of this metric characteristic."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this metric characteristic."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this metric characteristic."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of metric characteristic."
-        },
-        {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "A value, expressed as text, for this metric characteristic."
+            "type": "schema:Text",
+            "comment": "A code specifying the content type of this product characteristic."
         },
         {
             "uri": "unece:valueAmount",
             "type": "unece:AmountType",
-            "comment": "The monetary value for this metric characteristic."
-        },
-        {
-            "uri": "unece:valueCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the value of this metric characteristic."
+            "comment": "A value, expressed as a monetary value, for this document characteristic."
         },
         {
             "uri": "unece:valueDateTime",
-            "type": "xsd:string",
-            "comment": "The value for this metric characteristic, expressed as a date, time, date time, or other date time value."
+            "type": "schema:Text",
+            "comment": "A date, time, date time or other date time value for this document characteristic."
         },
         {
             "uri": "unece:valueIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The value for this metric characteristic expressed as an indicator."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a value for this metric characteristic."
         },
         {
             "uri": "unece:valueMethod",
@@ -61,8 +31,8 @@
         },
         {
             "uri": "unece:valueNumeric",
-            "type": "xsd:string",
-            "comment": "The value, expressed as a number, for this metric characteristic."
+            "type": "schema:Text",
+            "comment": "A value, expressed as a number, for this document characteristic."
         },
         {
             "uri": "unece:valueParameter",
@@ -72,7 +42,7 @@
         {
             "uri": "unece:valueQuantity",
             "type": "unece:QuantityType",
-            "comment": "The value, expressed as a quantity, for this metric characteristic."
+            "comment": "A value, expressed as a quantity, for this document characteristic."
         },
         {
             "uri": "unece:valueRange",
@@ -88,7 +58,7 @@
     "referencedBy": [
         {
             "uri": "unece:applicableMetricCharacteristic",
-            "comment": "A metric characteristic applicable to this referenced standard."
+            "comment": "A prominent attribute or aspect of a metric (a standard of measurement)."
         },
         {
             "uri": "unece:maximumSpecifiedCharacteristic",

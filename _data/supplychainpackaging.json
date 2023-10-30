@@ -1,9 +1,9 @@
-
 {
     "label": "SupplyChainPackaging",
     "uri": "unece:SupplyChainPackaging",
     "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalInstructionCode",
             "type": "xsd:string",
@@ -17,17 +17,17 @@
         {
             "uri": "unece:applicableDisposalInstructions",
             "type": "unece:DisposalInstructions",
-            "comment": "Disposal instructions for this supply chain packaging."
+            "comment": "Disposal instructions applicable to this product batch."
         },
         {
             "uri": "unece:applicableGoodsCharacteristic",
             "type": "unece:GoodsCharacteristic",
-            "comment": "Material goods characteristic applicable to this supply chain packaging."
+            "comment": "A distinguishing material feature applicable to this trade product instance."
         },
         {
             "uri": "unece:applicablePackagingInstructions",
             "type": "unece:PackagingInstructions",
-            "comment": "Packaging instructions applicable to this supply chain packaging."
+            "comment": "Instructions applicable to this logistics packaging."
         },
         {
             "uri": "unece:applicableReturnableAssetInstructions",
@@ -37,12 +37,12 @@
         {
             "uri": "unece:conditionCode",
             "type": "xsd:string",
-            "comment": "A code specifying the condition of this supply chain packaging."
+            "comment": "A code specifying a condition of this logistics packaging."
         },
         {
             "uri": "unece:contentLayerQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of content layers that are or may be packaged with this supply chain packaging, such as the number of layers of product on a pallet."
+            "comment": "A number of content layers in this logistics packaging."
         },
         {
             "uri": "unece:customerFacingTotalUnitQuantity",
@@ -52,17 +52,17 @@
         {
             "uri": "unece:description",
             "type": "xsd:string",
-            "comment": "A textual description of this supply chain packaging."
+            "comment": "A textual description for the type of transportation waste recovery disposal process."
         },
         {
             "uri": "unece:disposalMethodCode",
             "type": "xsd:string",
-            "comment": "A code specifying the disposal method of this supply chain packaging."
+            "comment": "A code specifying a disposal method for this logistics packaging."
         },
         {
             "uri": "unece:instructionCode",
             "type": "xsd:string",
-            "comment": "A code specifying an instruction for this supply chain packaging."
+            "comment": "A code specifying an instruction for these trade payment terms."
         },
         {
             "uri": "unece:layerTotalUnitQuantity",
@@ -72,17 +72,17 @@
         {
             "uri": "unece:linearDimension",
             "type": "unece:SpatialDimension",
-            "comment": "The linear spatial dimensions of this supply chain packaging."
+            "comment": "A linear dimension or a set of linear dimensions of this logistics packaging."
         },
         {
             "uri": "unece:maximumLinearDimension",
             "type": "unece:SpatialDimension",
-            "comment": "The maximum linear spatial dimensions of this supply chain packaging."
+            "comment": "Maximum linear spatial dimensions of this trade product."
         },
         {
             "uri": "unece:maximumStackabilityQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of units of this type of supply chain packaging which can be stacked on top of each other."
+            "comment": "The number of units of this type of logistics packaging which can be stacked on top of each other."
         },
         {
             "uri": "unece:maximumStackabilityWeightMeasure",
@@ -92,12 +92,12 @@
         {
             "uri": "unece:minimumLinearDimension",
             "type": "unece:SpatialDimension",
-            "comment": "The minimum linear spatial dimensions of this supply chain packaging."
+            "comment": "Minimum linear spatial dimensions of this trade product."
         },
         {
             "uri": "unece:packageTypeCode",
             "type": "unece:PackageTypeCodeList",
-            "comment": "The code specifying the type of supply chain packaging."
+            "comment": "A code specifying the type of logistics package."
         },
         {
             "uri": "unece:packagingType",
@@ -122,32 +122,32 @@
         {
             "uri": "unece:returnableIndicator",
             "type": "xsd:boolean",
-            "comment": "The indication of whether or not this supply chain packaging is returnable."
+            "comment": "The indication of whether or not this logistics package is returnable."
         },
         {
             "uri": "unece:specifiedMarking",
             "type": "unece:Marking",
-            "comment": "A marking specified for this supply chain packaging, such as an inscription, stamp or label to indicate date, ownership, quality, manufacture or origin."
+            "comment": "A marking specified for this logistics packaging."
         },
         {
             "uri": "unece:totalUnitQuantity",
             "type": "unece:QuantityType",
-            "comment": "A total number of units contained in this supply chain packaging."
+            "comment": "A total number of units contained in this logistics packaging."
         },
         {
             "uri": "unece:weightMeasure",
             "type": "unece:MeasureType",
-            "comment": "A measure of the weight of this supply chain packaging."
+            "comment": "A measure of a weight (mass) of this logistics packaging."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableSupplyChainPackaging",
-            "comment": "Packaging applicable for use with ..."
+            "comment": "Packaging applicable for use with this product batch."
         },
         {
             "uri": "unece:includedPackaging",
-            "comment": "Packaging included in this subordinate ..."
+            "comment": "Packaging included in this subordinate line trade delivery."
         },
         {
             "uri": "unece:usedPackaging",
