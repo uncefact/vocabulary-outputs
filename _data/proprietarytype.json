@@ -1,19 +1,18 @@
-
 {
     "label": "proprietaryType",
     "uri": "unece:proprietaryType",
-    "comment": [
-        "A proprietary type, expressed as text, for this referenced document.",
-        "The proprietary type, expressed as text, of this creditor financial account, such as the nature or use of the creditor account.",
-        "The proprietary type, expressed as text, of this debtor financial account, such as the nature or use of the debtor account.",
-        "The proprietary type, expressed as text, of this financing financial account, such as the nature or use."
-    ],
+    "comment": "A proprietary type, expressed as text, for this referenced document.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
         {
             "uri": "unece:CreditorFinancialAccount",
             "comment": "A specific business arrangement whereby credits arising from transactions are recorded."
@@ -21,10 +20,6 @@
         {
             "uri": "unece:DebtorFinancialAccount",
             "comment": "A specific business arrangement whereby debits arising from transactions are recorded."
-        },
-        {
-            "uri": "unece:Document",
-            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:FinancingFinancialAccount",

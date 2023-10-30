@@ -1,20 +1,18 @@
-
 {
     "label": "VolumeUnitMeasureType",
     "uri": "unece:VolumeUnitMeasureType",
-    "comment": "The numeric value determined by volume measuring.",
+    "comment": "",
+    "businessDomain": "core",
     "datatypeProperties": [
-        {
-            "uri": "unece:VolumeUnitMeasureTypeValue",
-            "type": "xsd:decimal",
-            "comment": "The numeric value."
-        }
-    ],
-    "objectProperties": [
         {
             "uri": "unece:VolumeUnitMeasureTypeCode",
             "type": "unece:VolumeUnitMeasureCode",
             "comment": "The unit code."
+        },
+        {
+            "uri": "unece:VolumeUnitMeasureTypeValue",
+            "type": "schema:Float",
+            "comment": "The numeric value."
         }
     ],
     "referencedBy": [
@@ -27,12 +25,16 @@
             "comment": "The measure of the maximum dedicated storage capacity for this transportation waste material component."
         },
         {
+            "uri": "unece:nominalGrossVolumeMeasure",
+            "comment": "The measure of the nominal gross volume of this logistics package."
+        },
+        {
             "uri": "unece:plannedDischargedMeasure",
             "comment": "The planned measure for this discharged transportation waste material component."
         },
         {
             "uri": "unece:volumeUnitGrossVolumeMeasure",
-            "comment": "A measure of the gross ..."
+            "comment": "A measure of the gross volume, normally calculated by multiplying the maximum length, width and height of this supply chain consignment item."
         },
         {
             "uri": "unece:volumeUnitMarinePollutantVolumeMeasure",
@@ -40,7 +42,7 @@
         },
         {
             "uri": "unece:volumeUnitNetVolumeMeasure",
-            "comment": "A measure of the net ..."
+            "comment": "A measure of the net volume of this supply chain consignment item which excludes all packaging."
         },
         {
             "uri": "unece:volumeUnitRetainedMeasure",

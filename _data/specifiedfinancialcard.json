@@ -1,25 +1,21 @@
-
 {
     "label": "specifiedFinancialCard",
     "uri": "unece:specifiedFinancialCard",
-    "comment": [
-        "A financial card specified in this header trade settlement.",
-        "A financial card specified in this line trade settlement."
-    ],
+    "comment": "A card used to represent a financial account for a trade settlement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:FinancialCard",
-            "comment": "A card used to represent a financial account for a trade settlement."
+            "uri": "unece:FinancialCard"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

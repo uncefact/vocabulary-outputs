@@ -1,9 +1,9 @@
-
 {
     "label": "Sensor",
     "uri": "unece:Sensor",
     "comment": "An object which can detect and measure physical properties and which can record, indicate and transmit such measurements.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:actualReportedMeasurement",
             "type": "unece:CalibratedMeasurement",
@@ -22,22 +22,22 @@
         {
             "uri": "unece:grantedCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate granted for this monitoring sensor."
+            "comment": "A product certificate granted for this monitoring IOT device."
         },
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "An identifier of this monitoring sensor."
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:manufacturerParty",
-            "type": "unece:TradeParty",
-            "comment": "The manufacturer party for this monitoring sensor."
+            "type": "unece:Party",
+            "comment": "A manufacturer party for this production process."
         },
         {
             "uri": "unece:ownerParty",
-            "type": "unece:TradeParty",
-            "comment": "The owner party of this monitoring sensor."
+            "type": "unece:Party",
+            "comment": "A party who owns this piece of logistics transport equipment."
         },
         {
             "uri": "unece:positionCode",
@@ -52,7 +52,7 @@
         {
             "uri": "unece:remainingBatteryChargePercent",
             "type": "xsd:string",
-            "comment": "The percentage of the remaining battery charge of this monitoring sensor."
+            "comment": "The percentage of the remaining battery charge of this monitoring IOT device."
         },
         {
             "uri": "unece:scheduledReportedMeasurement",
@@ -62,12 +62,12 @@
         {
             "uri": "unece:typeCode",
             "type": "xsd:string",
-            "comment": "The code specifying a type of monitoring sensor."
+            "comment": "A code specifying a type of MDH health indication."
         },
         {
             "uri": "unece:valueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the value for this monitoring sensor."
+            "comment": "A measure of a value for this document characteristic."
         }
     ],
     "referencedBy": [

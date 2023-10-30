@@ -1,38 +1,18 @@
-
 {
     "label": "ProcessCharacteristic",
     "uri": "unece:ProcessCharacteristic",
     "comment": "A prominent attribute or aspect of a process.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this process characteristic."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this process characteristic."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
             "uri": "unece:condition",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A condition or status, expressed as text, for this process characteristic."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this process characteristic."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this process characteristic."
-        },
-        {
-            "uri": "unece:maximumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the maximum value for this process characteristic."
         },
         {
             "uri": "unece:measuredAttributeTypeCode",
@@ -40,70 +20,50 @@
             "comment": "The code specifying the type of this process characteristic."
         },
         {
-            "uri": "unece:minimumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the minimum value for this process characteristic."
-        },
-        {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "A value, expressed as text, for this process characteristic."
-        },
-        {
             "uri": "unece:valueAmount",
             "type": "unece:AmountType",
-            "comment": "The value, expressed as an amount, for this process characteristic."
-        },
-        {
-            "uri": "unece:valueCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the value of this process characteristic."
+            "comment": "A value, expressed as a monetary value, for this document characteristic."
         },
         {
             "uri": "unece:valueDateTime",
-            "type": "xsd:string",
-            "comment": "The value, expressed as a date, time, date time, or other date time value, for this process characteristic."
+            "type": "schema:Text",
+            "comment": "A date, time, date time or other date time value for this document characteristic."
         },
         {
             "uri": "unece:valueIndicator",
-            "type": "xsd:boolean",
-            "comment": "The value, expressed as an indicator, for this process characteristic."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the value for this process characteristic."
+            "type": "schema:Boolean",
+            "comment": "The value for this metric characteristic expressed as an indicator."
         },
         {
             "uri": "unece:valueMethod",
             "type": "unece:SpecifiedMethod",
-            "comment": "A method specified for the value of this process characteristic."
+            "comment": "A method specified for a value of this metric characteristic."
         },
         {
             "uri": "unece:valueNumeric",
-            "type": "xsd:string",
-            "comment": "The measure of the value, expressed as a number, for this process characteristic."
+            "type": "schema:Text",
+            "comment": "A value, expressed as a number, for this document characteristic."
         },
         {
             "uri": "unece:valueParameter",
             "type": "unece:SpecifiedParameter",
-            "comment": "A parameter specified for the value of this process characteristic."
+            "comment": "A parameter specified for a value for this metric characteristic."
         },
         {
             "uri": "unece:valueRange",
             "type": "unece:Range",
-            "comment": "A range specified for the value of this process characteristic."
+            "comment": "A range specified for a value of this metric characteristic."
         },
         {
             "uri": "unece:valueTolerance",
             "type": "unece:Tolerance",
-            "comment": "A tolerance specified for the value of this process characteristic."
+            "comment": "A tolerance specified for a value of this metric characteristic."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableProcessCharacteristic",
-            "comment": "A process characteristic applicable to ..."
+            "comment": "A prominent attribute or aspect of a process."
         }
     ]
 }

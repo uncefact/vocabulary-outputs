@@ -1,9 +1,9 @@
-
 {
     "label": "Area",
     "uri": "unece:Area",
     "comment": "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform agricultural treatment.",
-    "objectProperties": [
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableAgriculturalCharacteristic",
             "type": "unece:AgriculturalCharacteristic",
@@ -12,11 +12,11 @@
         {
             "uri": "unece:appliedAgriculturalApplication",
             "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this agricultural zone area."
+            "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product."
         },
         {
             "uri": "unece:designatedSection",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The designated section, expressed as text, of this agricultural zone area."
         },
         {
@@ -25,29 +25,19 @@
             "comment": "Crop produce harvested from this agricultural zone area."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this agricultural zone area."
-        },
-        {
             "uri": "unece:multiSurfaceTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the multi-surface type for this agricultural zone area."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this agricultural zone area."
         },
         {
             "uri": "unece:specifiedLocation",
             "type": "unece:Location",
-            "comment": "The referenced location specified for this agricultural zone area."
+            "comment": "A reference to a physical location or place."
         },
         {
             "uri": "unece:specifiedPlot",
             "type": "unece:Plot",
-            "comment": "A crop plot specified for this agricultural zone area."
+            "comment": "A crop plot specified for this agricultural application."
         },
         {
             "uri": "unece:subordinateArea",
@@ -56,8 +46,8 @@
         },
         {
             "uri": "unece:thirdPartyIssuedId",
-            "type": "xsd:string",
-            "comment": "An identifier issued by a third party for this agricultural zone area."
+            "type": "schema:Text",
+            "comment": "An alternate identifier issued by a third party for this laboratory observation party."
         }
     ],
     "referencedBy": [

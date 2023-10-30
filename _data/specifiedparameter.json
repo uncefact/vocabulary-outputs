@@ -1,33 +1,13 @@
-
 {
     "label": "SpecifiedParameter",
     "uri": "unece:SpecifiedParameter",
     "comment": "A specified feature that is fixed for the case in question but may be different in other cases.",
-    "objectProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this specified parameter."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this specified parameter."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this specified parameter."
-        },
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:parameterType",
-            "type": "xsd:string",
-            "comment": "A type, expressed as text, for this specified parameter."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this specified parameter."
+            "type": "schema:Text",
+            "comment": "A type, expressed as text, for this observation objective parameter."
         },
         {
             "uri": "unece:statusValueMeasure",
@@ -35,51 +15,36 @@
             "comment": "A measure of a value of the status for this specified parameter."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of parameter."
-        },
-        {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "The value, expressed as text, for this specified parameter."
-        },
-        {
             "uri": "unece:valueAllowedIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether or not the value for this specified parameter is allowed."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a value for this specified parameter."
         },
         {
             "uri": "unece:valueTolerance",
             "type": "unece:Tolerance",
-            "comment": "A tolerance specified for the value of this parameter."
+            "comment": "A tolerance specified for a value of this metric characteristic."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableParameter",
-            "comment": "A parameter applicable to this ..."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:operationalApplicableParameter",
-            "comment": "An operational parameter applicable to this production machine."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:qualityParameter",
-            "comment": "A quality parameter specified for this trade product."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:requestedOperationalApplicableParameter",
-            "comment": "A requested operational parameter applicable ..."
+            "comment": "A specified feature that is fixed for the case in question but may be different in other cases."
         },
         {
             "uri": "unece:valueParameter",
-            "comment": "A parameter specified for a ..."
+            "comment": "A parameter specified for a value for this metric characteristic."
         }
     ]
 }

@@ -1,39 +1,29 @@
-
 {
     "label": "Requirement",
     "uri": "unece:Requirement",
     "comment": "Common conditions contained in a contract or agreement applicable between trading partners.",
-    "objectProperties": [
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified requirement."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:rule",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A rule, expressed as text, for this specified requirement."
         },
         {
             "uri": "unece:specifiedPaymentTradeSettlement",
             "type": "unece:PaymentTradeSettlement",
-            "comment": "The payment trade settlement for this specified requirement."
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         },
         {
             "uri": "unece:specifyingParty",
-            "type": "unece:TradeParty",
-            "comment": "The party specifying this specified requirement."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of specified requirement."
+            "type": "unece:Party",
+            "comment": ""
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:providedRequirement",
-            "comment": "A requirement provided for this ..."
+            "comment": "A requirement provided for this experience product."
         }
     ]
 }

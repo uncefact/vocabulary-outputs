@@ -1,23 +1,18 @@
-
 {
     "label": "SustainabilityInspection",
     "uri": "unece:SustainabilityInspection",
     "comment": "The process of performing documented checks of sustainability characteristics, with a focus on discovering deviations, related to documented sustainability requirements.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableInspectionResult",
             "type": "unece:InspectionResult",
-            "comment": "The specified inspection result applicable to this sustainability inspection."
+            "comment": "A specified inspection result applicable to this sustainability characteristic."
         },
         {
             "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this sustainability inspection."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A characteristic applicable to this sustainability inspection."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
             "uri": "unece:attachedBinaryFile",
@@ -25,60 +20,35 @@
             "comment": "A binary file attached for this sustainability inspection."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this sustainability inspection."
-        },
-        {
             "uri": "unece:executionParty",
-            "type": "unece:TradeParty",
-            "comment": "The party responsible for the execution of this sustainability inspection."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:executionPerson",
             "type": "unece:InspectionPerson",
-            "comment": "The inspector responsible for the execution of this sustainability inspection."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this sustainability inspection."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this sustainability inspection."
+            "comment": "The inspector executing this specified inspection."
         },
         {
             "uri": "unece:outsourcedIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this sustainability inspection is outsourced."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this specified inspection is outsourced."
         },
         {
             "uri": "unece:specifiedDocument",
             "type": "unece:Document",
-            "comment": "A referenced document specified for this sustainability inspection."
-        },
-        {
-            "uri": "unece:specifiedInspectionEvent",
-            "type": "unece:InspectionEvent",
-            "comment": "A specified inspection event for this sustainability inspection."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:specifiedInspectionStatus",
             "type": "unece:InspectionStatus",
             "comment": "The inspection status specified for this sustainability inspection."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of sustainability inspection."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableSustainabilityInspection",
-            "comment": "A sustainability inspection applicable to ..."
+            "comment": "A sustainability inspection applicable to this logistics transport movement."
         }
     ]
 }

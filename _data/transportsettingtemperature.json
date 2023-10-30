@@ -1,9 +1,9 @@
-
 {
     "label": "TransportSettingTemperature",
     "uri": "unece:TransportSettingTemperature",
     "comment": "Temperature settings for a transport movement, such as a required storage temperature range.",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:informationInstructions",
             "type": "unece:TemperatureSettingInstructions",
@@ -12,12 +12,12 @@
         {
             "uri": "unece:maximumValueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the highest value of this transport setting temperature, such as a maximum temperature value of fourteen degrees Celsius."
+            "comment": "A measure of a maximum value for this sustainability characteristic."
         },
         {
             "uri": "unece:minimumValueMeasure",
             "type": "unece:MeasureType",
-            "comment": "The measure of the lowest value of this transport setting temperature, such as a minimum temperature value of four degrees Celsius."
+            "comment": "A measure of a minimum value for this sustainability characteristic."
         },
         {
             "uri": "unece:temperatureTypeCode",
@@ -27,7 +27,7 @@
         {
             "uri": "unece:temperatureUnitValueMeasure",
             "type": "unece:TemperatureUnitMeasureType",
-            "comment": "The measure of the value of this transport setting temperature, such as a temperature value of ten degrees Celsius."
+            "comment": "The measure of the value of this specified temperature, such as a temperature value of ten degrees Celsius."
         }
     ],
     "referencedBy": [
@@ -37,7 +37,7 @@
         },
         {
             "uri": "unece:settingTemperature",
-            "comment": "A temperature setting for this ..."
+            "comment": "A temperature setting for this piece of associated transport equipment, such as storage temperature or operational temperature."
         },
         {
             "uri": "unece:transportTemperature",
