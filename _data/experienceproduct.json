@@ -1,9 +1,9 @@
-
 {
     "label": "ExperienceProduct",
     "uri": "unece:ExperienceProduct",
     "comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience.",
-    "objectProperties": [
+    "businessDomain": "tourism",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableQuantityUnitTypeCode",
             "type": "xsd:string",
@@ -22,12 +22,7 @@
         {
             "uri": "unece:calculatedPrice",
             "type": "unece:TradePrice",
-            "comment": "A calculated price for this experience product."
-        },
-        {
-            "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the category of this experience product."
+            "comment": "A calculated price for this experience event."
         },
         {
             "uri": "unece:certifiedPersonArrangementIndicator",
@@ -35,19 +30,9 @@
             "comment": "The indication of whether or not a certified person arrangement is made for this experience product."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this experience product."
-        },
-        {
             "uri": "unece:distinctiveFeature",
             "type": "unece:SpecifiedFeature",
             "comment": "A distinctive feature of this experience product."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier of this experience product."
         },
         {
             "uri": "unece:includedEvent",
@@ -57,17 +42,12 @@
         {
             "uri": "unece:indemnityClause",
             "type": "xsd:string",
-            "comment": "An indemnity clause, expressed as text, for this experience product."
+            "comment": "An indemnity clause, expressed as text, for this experience event."
         },
         {
             "uri": "unece:instruction",
             "type": "xsd:string",
-            "comment": "An instruction, expressed as text, for this experience product."
-        },
-        {
-            "uri": "unece:location",
-            "type": "xsd:string",
-            "comment": "A location, expressed as text, specified for this experience product."
+            "comment": "An instruction, expressed as text, for this experience event."
         },
         {
             "uri": "unece:maximumUnitQuantity",
@@ -78,11 +58,6 @@
             "uri": "unece:minimumUnitQuantity",
             "type": "unece:QuantityType",
             "comment": "The minimum number of units of this experience product."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this experience product."
         },
         {
             "uri": "unece:objective",
@@ -122,12 +97,12 @@
         {
             "uri": "unece:reservationGuarantee",
             "type": "xsd:string",
-            "comment": "A reservation guarantee, expressed as text, for this experience product."
+            "comment": "A reservation guarantee, expressed as text, for this experience event."
         },
         {
             "uri": "unece:specifiedTradeParty",
-            "type": "unece:TradeParty",
-            "comment": "A party specified for this experience product."
+            "type": "unece:Party",
+            "comment": "A party specified for this experience event."
         },
         {
             "uri": "unece:theme",

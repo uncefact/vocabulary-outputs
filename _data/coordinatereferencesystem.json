@@ -1,28 +1,18 @@
-
 {
     "label": "CoordinateReferenceSystem",
     "uri": "unece:CoordinateReferenceSystem",
     "comment": "A coordinate reference system that is used in a contextually local sense to describe the relative locations of objects in which coordinates of points are recorded in a Coordinate System (CS) (reference ISO 19111).",
-    "objectProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this CS engineering coordinate reference system."
-        },
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:level",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The level, expressed as text, of this CS engineering coordinate reference system."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, for this CS engineering coordinate reference system."
         },
         {
             "uri": "unece:specifiedPeriod",
             "type": "unece:DelimitedPeriod",
-            "comment": "A delimited period specified for this CS engineering coordinate reference system."
+            "comment": "A period of time from a start date time onwards up to an end date time."
         },
         {
             "uri": "unece:subordinateCoordinateReferenceSystem",
@@ -37,7 +27,7 @@
         },
         {
             "uri": "unece:usedCoordinateReferenceSystem",
-            "comment": "The CS (Coordinate System) engineering ..."
+            "comment": "The CS (Coordinate System) engineering coordinate reference system used for this geographical coordinate."
         }
     ]
 }

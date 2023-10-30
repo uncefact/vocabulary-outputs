@@ -1,53 +1,38 @@
-
 {
     "label": "Assertion",
     "uri": "unece:Assertion",
     "comment": "A statement that user needs of the present are met without compromising the needs of future generations.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableStandard",
             "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this sustainability assertion."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this sustainability assertion."
+            "comment": "A referenced norm or requirement that establishes uniform criteria, methods, processes and practices, such as in engineering or technical areas."
         },
         {
             "uri": "unece:descriptionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the description for this sustainability assertion."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this sustainability assertion."
+            "type": "schema:Text",
+            "comment": "A code specifying a description of this technical characteristic."
         },
         {
             "uri": "unece:issuingPartyId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An identifier of a party issuing this sustainability assertion."
         },
         {
             "uri": "unece:relatedPolicy",
             "type": "unece:Policy",
             "comment": "A compliance policy related to this sustainability assertion."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the status of this sustainability assertion."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableAssertion",
-            "comment": "A sustainability assertion applicable to ..."
+            "comment": "A sustainability assertion applicable to this agricultural certificate."
         },
         {
             "uri": "unece:includedAssertion",
-            "comment": "A sustainability assertion included on this product label."
+            "comment": "A statement that user needs of the present are met without compromising the needs of future generations."
         },
         {
             "uri": "unece:obtainedAssertion",
@@ -55,7 +40,7 @@
         },
         {
             "uri": "unece:specifiedAssertion",
-            "comment": "A sustainability assertion for this ..."
+            "comment": "A statement that user needs of the present are met without compromising the needs of future generations."
         }
     ]
 }

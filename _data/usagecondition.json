@@ -1,49 +1,44 @@
-
 {
     "label": "UsageCondition",
     "uri": "unece:UsageCondition",
     "comment": "The particular state of something, affected by use, that should be respected.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:ageLimitation",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An age limitation, expressed as text, for this specified usage condition."
         },
         {
             "uri": "unece:appropriateClothing",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "Appropriate clothing, expressed as text, for this specified usage condition."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this specified usage condition."
-        },
-        {
             "uri": "unece:duration",
-            "type": "xsd:string",
-            "comment": "A duration, expressed as text, for this specified usage condition."
+            "type": "schema:Text",
+            "comment": "A duration, expressed as text, for this specified period."
         },
         {
             "uri": "unece:genderLimitation",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A gender limitation, expressed as text, for this specified usage condition."
         },
         {
             "uri": "unece:occupancy",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "Occupancy, expressed as text, for this specified usage condition."
         },
         {
             "uri": "unece:requiringParty",
-            "type": "unece:TradeParty",
+            "type": "unece:Party",
             "comment": "A party requiring this specified usage condition."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:requiredUsageCondition",
-            "comment": "A required usage condition for ..."
+            "comment": "A required usage condition for this experience product."
         }
     ]
 }

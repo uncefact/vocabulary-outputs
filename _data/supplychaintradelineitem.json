@@ -1,9 +1,9 @@
-
 {
     "label": "SupplyChainTradeLineItem",
     "uri": "unece:SupplyChainTradeLineItem",
     "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:accessoryApplicableProduct",
             "type": "unece:Product",
@@ -16,13 +16,13 @@
         },
         {
             "uri": "unece:additionalId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An additional unique identifier for this supply chain trade line item."
         },
         {
             "uri": "unece:additionalInformationNote",
             "type": "unece:Note",
-            "comment": "A note providing additional information for this supply chain trade line item."
+            "comment": "A textual or coded description, such as a remark or additional information."
         },
         {
             "uri": "unece:applicableBatch",
@@ -32,7 +32,7 @@
         {
             "uri": "unece:applicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Material applicable for this supply chain trade line item."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:appliedProcess",
@@ -42,21 +42,16 @@
         {
             "uri": "unece:assertedAuthentication",
             "type": "unece:Authentication",
-            "comment": "A document authentication asserted for this supply chain trade line item."
+            "comment": "A proof that a document is genuine."
         },
         {
             "uri": "unece:associatedDocumentLineDocument",
             "type": "unece:DocumentLineDocument",
-            "comment": "The document line associated with this trade line item."
-        },
-        {
-            "uri": "unece:associatedTransportEquipment",
-            "type": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of transport equipment associated with this supply chain trade line item."
+            "comment": "A document line associated with this line trade settlement."
         },
         {
             "uri": "unece:barcodeId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A unique barcode identifier for this supply chain trade line item."
         },
         {
@@ -71,18 +66,13 @@
         },
         {
             "uri": "unece:descriptionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a description of this supply chain trade line item."
+            "type": "schema:Text",
+            "comment": "A code specifying a description of this technical characteristic."
         },
         {
             "uri": "unece:generalInformationDescription",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "A textual description providing general information for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this supply chain trade line item."
         },
         {
             "uri": "unece:includedSubordinateTradeLineItem",
@@ -92,27 +82,27 @@
         {
             "uri": "unece:includedWithinConsignmentItem",
             "type": "unece:ConsignmentItem",
-            "comment": "The consignment item within which this supply chain trade line item is included."
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         },
         {
             "uri": "unece:invoiceAssociatedDocument",
             "type": "unece:Document",
-            "comment": "An invoice document associated to this supply chain trade line item."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:package",
             "type": "unece:Package",
-            "comment": "A logistics package referenced in this supply chain trade line item."
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         },
         {
             "uri": "unece:physicalPackage",
             "type": "unece:Package",
-            "comment": "A physical logistics package for this supply chain trade line item."
+            "comment": "A self-contained wrapping or container within which goods can be contained for logistics purposes, such as a box or a barrel which can be filled, partially filled or empty.,A referenced self-contained wrapping or container within which goods can be contained for logistics purposes."
         },
         {
             "uri": "unece:referenceDocument",
             "type": "unece:Document",
-            "comment": "A document referenced for this supply chain trade line item."
+            "comment": "Written, printed or electronic matter that is referenced."
         },
         {
             "uri": "unece:requiredApplicableProduct",
@@ -123,11 +113,6 @@
             "uri": "unece:requisitionerSpecifiedProduct",
             "type": "unece:TradeProduct",
             "comment": "The product specified by the requisitioner for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:sequenceNumeric",
-            "type": "xsd:string",
-            "comment": "A sequence number for this supply chain trade line item."
         },
         {
             "uri": "unece:specifiedLineTradeAgreement",
@@ -162,7 +147,7 @@
         {
             "uri": "unece:substituteApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Substitute material applicable for this supply chain trade line item."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:substituteApplicableProduct",
@@ -177,7 +162,7 @@
         {
             "uri": "unece:substitutedApplicableMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Substituted material applicable for this supply chain trade line item."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:substitutedProduct",
@@ -185,20 +170,15 @@
             "comment": "A referenced product substituted for this supply chain trade line item."
         },
         {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of supply chain trade line item."
-        },
-        {
             "uri": "unece:typeExtensionCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code used as an extension to the type code for further specifying a type of supply chain trade line item."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:includedSupplyChainTradeLineItem",
-            "comment": "A supply chain trade line ..."
+            "comment": "A supply chain trade line item included in this logistics package."
         },
         {
             "uri": "unece:specifiedTradeLineItem",

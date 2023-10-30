@@ -1,54 +1,45 @@
-
 {
     "label": "endDateTime",
     "uri": "unece:endDateTime",
-    "comment": [
-        "The date, time, date time or other date time value for the end of this available period of time.",
-        "The date, time, date time or other date time value for the end of this delimited period.",
-        "The date, time, date time or other date time value for the end of this specified assessment.",
-        "The date, time, date time or other date time value for the end of this specified period of time.",
-        "The date, time, date time, or other date time value for the end of this crop plot.",
-        "The date, time, date time, or other date time value of the end of this specified membership.",
-        "The date, time, date time, or other date time value of the end of this specified production cycle.",
-        "The end date value for this specified certification."
-    ],
+    "comment": "The date, time, date time or other date time value for the end of this available period of time.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:Text"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Assessment",
-            "comment": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or condition."
+            "uri": "unece:ProductionCycle",
+            "comment": "A series of activities associated with the processing of a product."
+        },
+        {
+            "uri": "unece:SpecifiedPeriod",
+            "comment": "A specified period of time."
         },
         {
             "uri": "unece:AvailablePeriod",
             "comment": "A specific period of time such as the length of time between two known date/time points, from a start date onwards, or up to an end date for which something is available."
         },
         {
-            "uri": "unece:DelimitedPeriod",
-            "comment": "A period of time from a start date time onwards up to an end date time."
-        },
-        {
             "uri": "unece:Membership",
             "comment": "The state of belonging to a group, such as a club or trade association."
         },
         {
-            "uri": "unece:Plot",
-            "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop."
+            "uri": "unece:DelimitedPeriod",
+            "comment": "A period of time from a start date time onwards up to an end date time."
         },
         {
-            "uri": "unece:ProductionCycle",
-            "comment": "A series of activities associated with the processing of a product."
+            "uri": "unece:Assessment",
+            "comment": "The evaluation of an object, such as a product, process, or organization, with respect to the object's worth or condition."
         },
         {
             "uri": "unece:SpecifiedCertification",
             "comment": "The process of certifying that a certain product, process or organization has passed performance tests, or qualification requirements stipulated in a standard or regulation."
         },
         {
-            "uri": "unece:SpecifiedPeriod",
-            "comment": "A specified period of time."
+            "uri": "unece:Plot",
+            "comment": "A small piece of land or water used for a crop such as an agricultural or aquacultural crop."
         }
     ]
 }
