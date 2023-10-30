@@ -1,11 +1,8 @@
-
 {
     "label": "contractId",
     "uri": "unece:contractId",
-    "comment": [
-        "A contract identifier for this supply chain consignment.",
-        "The contract identifier of this referenced transport service."
-    ],
+    "comment": "A contract identifier for this supply chain consignment.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -13,12 +10,12 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "uri": "unece:Service",
+            "comment": "A service associated with a transport movement.,A referenced service associated with a specified event during transport movement."
         },
         {
-            "uri": "unece:Service",
-            "comment": "A service associated with a ..."
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         }
     ]
 }

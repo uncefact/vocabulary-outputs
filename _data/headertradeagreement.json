@@ -1,9 +1,9 @@
-
 {
     "label": "HeaderTradeAgreement",
     "uri": "unece:HeaderTradeAgreement",
     "comment": "The contractual terms of a header trade agreement.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:additionalDocument",
             "type": "unece:Document",
@@ -30,11 +30,6 @@
             "comment": "The payment terms applicable to this header trade agreement."
         },
         {
-            "uri": "unece:applicableRegulatoryProcedure",
-            "type": "unece:RegulatoryProcedure",
-            "comment": "A cross-border regulatory procedure applicable to this header trade agreement."
-        },
-        {
             "uri": "unece:blanketOrderDocument",
             "type": "unece:Document",
             "comment": "The blanket order document referenced in this header trade agreement."
@@ -46,7 +41,7 @@
         },
         {
             "uri": "unece:buyerApprovedDateTime",
-            "type": "xsd:dateTime",
+            "type": "xsd:datetime",
             "comment": "The date, time, date time, or other date time value of approval by the buyer for this header trade agreement."
         },
         {
@@ -57,7 +52,7 @@
         {
             "uri": "unece:buyerOrderDocument",
             "type": "unece:Document",
-            "comment": "The buyer generated order document referenced in this header trade agreement."
+            "comment": "A buyer generated order document referenced in this line trade agreement."
         },
         {
             "uri": "unece:buyerParty",
@@ -80,14 +75,9 @@
             "comment": "The party acting as a tax representative for the buyer for this header trade agreement."
         },
         {
-            "uri": "unece:carrierParty",
-            "type": "unece:TradeParty",
-            "comment": "The carrier party, at header level, for this trade agreement."
-        },
-        {
             "uri": "unece:catalogueDocument",
             "type": "unece:Document",
-            "comment": "A catalogue document referenced in this header trade agreement."
+            "comment": "A catalogue document referenced by this line trade agreement."
         },
         {
             "uri": "unece:catalogueInformationProviderParty",
@@ -128,11 +118,6 @@
             "uri": "unece:exportLicenceDocument",
             "type": "unece:Document",
             "comment": "The export licence document referenced in this header trade agreement."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this header trade agreement."
         },
         {
             "uri": "unece:impactCode",
@@ -262,7 +247,7 @@
         {
             "uri": "unece:relevantParty",
             "type": "unece:TradeParty",
-            "comment": "A relevant party for this header trade agreement."
+            "comment": "A party relevant for this line trade agreement."
         },
         {
             "uri": "unece:requisitionDocument",
@@ -277,7 +262,7 @@
         {
             "uri": "unece:revisionId",
             "type": "xsd:string",
-            "comment": "An identifier for the revision of this header trade agreement."
+            "comment": "A unique identifier for a revision of this referenced document."
         },
         {
             "uri": "unece:salesAgentParty",
@@ -287,7 +272,7 @@
         {
             "uri": "unece:salesConditionsDocument",
             "type": "unece:Document",
-            "comment": "A sales conditions document referenced in this header trade agreement."
+            "comment": "A sales conditions document referenced by this line trade agreement."
         },
         {
             "uri": "unece:salesReportDocument",

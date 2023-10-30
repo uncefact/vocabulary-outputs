@@ -1,26 +1,24 @@
-
 {
     "label": "QuantityType",
     "uri": "unece:QuantityType",
-    "comment": "Missing description",
+    "comment": "",
+    "businessDomain": "core",
     "datatypeProperties": [
-        {
-            "uri": "unece:QuantityTypeValue",
-            "type": "xsd:decimal",
-            "comment": "The numeric value."
-        }
-    ],
-    "objectProperties": [
         {
             "uri": "unece:QuantityTypeCode",
             "type": "unece:QuantityCode",
             "comment": "The unit code."
+        },
+        {
+            "uri": "unece:QuantityTypeValue",
+            "type": "schema:Float",
+            "comment": "The numeric value."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:actualQuantity",
-            "comment": "The actual quantity added or ..."
+            "comment": "The actual quantity added or subtracted as a result of this delivery adjustment."
         },
         {
             "uri": "unece:actualSpecifiedQuantity",
@@ -32,15 +30,15 @@
         },
         {
             "uri": "unece:agreedQuantity",
-            "comment": "The quantity, at header level, ..."
+            "comment": "The quantity, at header level, agreed for this trade delivery."
         },
         {
             "uri": "unece:annualQuotaQuantity",
-            "comment": "The annual quota quantity under this cross-border regulatory procedure."
+            "comment": ""
         },
         {
             "uri": "unece:applicableQuantity",
-            "comment": "The quantity applicable to this specified material."
+            "comment": ""
         },
         {
             "uri": "unece:availableQuantity",
@@ -56,11 +54,11 @@
         },
         {
             "uri": "unece:basisQuantity",
-            "comment": "A quantity on which the ..."
+            "comment": "A quantity on which the reference price is based."
         },
         {
             "uri": "unece:billedQuantity",
-            "comment": "A billed quantity of this ..."
+            "comment": "A billed quantity of this subordinate line trade delivery."
         },
         {
             "uri": "unece:cancelledQuantity",
@@ -68,7 +66,7 @@
         },
         {
             "uri": "unece:certifiedPersonQuantity",
-            "comment": "The number of certified persons for this specified certificate."
+            "comment": ""
         },
         {
             "uri": "unece:chargeFreeQuantity",
@@ -80,7 +78,7 @@
         },
         {
             "uri": "unece:consignmentItemQuantity",
-            "comment": "The number of consignment items ..."
+            "comment": "The number of consignment items separately defined for transport or customs purposes within this referenced supply chain consignment."
         },
         {
             "uri": "unece:consignmentQuantity",
@@ -92,7 +90,7 @@
         },
         {
             "uri": "unece:contentLayerQuantity",
-            "comment": "A number of content layers ..."
+            "comment": "A number of content layers in this logistics packaging."
         },
         {
             "uri": "unece:contentUnitQuantity",
@@ -116,15 +114,15 @@
         },
         {
             "uri": "unece:customerServicePointQuantity",
-            "comment": "The number of customer service points for this trade price."
+            "comment": ""
         },
         {
             "uri": "unece:dayQuantity",
-            "comment": "The number of days in ..."
+            "comment": ""
         },
         {
             "uri": "unece:despatchedQuantity",
-            "comment": "The quantity, at header level, ..."
+            "comment": "The quantity, at header level, despatched in this trade delivery."
         },
         {
             "uri": "unece:destroyedQuantity",
@@ -132,15 +130,15 @@
         },
         {
             "uri": "unece:dueInAvailableQuantity",
-            "comment": "The due in available quantity, ..."
+            "comment": "The due in available quantity, at header level, for this trade delivery."
         },
         {
             "uri": "unece:dueInForecastedQuantity",
-            "comment": "The due in forecasted quantity, ..."
+            "comment": "The due in forecasted quantity, at header level, for this trade delivery."
         },
         {
             "uri": "unece:dueInRequestedQuantity",
-            "comment": "The due in requested quantity, ..."
+            "comment": "The due in requested quantity, at header level, for this trade delivery."
         },
         {
             "uri": "unece:dueInReturnedQuantity",
@@ -148,11 +146,11 @@
         },
         {
             "uri": "unece:economicOrderQuantity",
-            "comment": "The economic order quantity for ..."
+            "comment": "The economic order quantity for this line trade agreement."
         },
         {
             "uri": "unece:financedTransactionSpecifiedQuantity",
-            "comment": "The number of financed transactions specified in this financing summary document."
+            "comment": ""
         },
         {
             "uri": "unece:gFMTransferRejectedQuantity",
@@ -160,7 +158,7 @@
         },
         {
             "uri": "unece:groupedTransactionSpecifiedQuantity",
-            "comment": "The number of grouped transactions specified in this financing request document."
+            "comment": ""
         },
         {
             "uri": "unece:includedProductContentUnitQuantity",
@@ -188,7 +186,7 @@
         },
         {
             "uri": "unece:itemQuantity",
-            "comment": "A quantity of items for ..."
+            "comment": "A quantity of items for this referenced transport service."
         },
         {
             "uri": "unece:latestDespatchedQuantity",
@@ -200,11 +198,11 @@
         },
         {
             "uri": "unece:lineItemQuantity",
-            "comment": "The number of line items ..."
+            "comment": "The number of line items for this supply chain trade transaction."
         },
         {
             "uri": "unece:loadedPackageQuantity",
-            "comment": "The number of packages loaded ..."
+            "comment": "The number of packages loaded into or onto this piece of associated transport equipment."
         },
         {
             "uri": "unece:loadingListQuantity",
@@ -220,7 +218,7 @@
         },
         {
             "uri": "unece:maximumQuantity",
-            "comment": "The maximum quantity in a range for which the trade price applies."
+            "comment": ""
         },
         {
             "uri": "unece:maximumStackabilityApplicableQuantity",
@@ -228,7 +226,7 @@
         },
         {
             "uri": "unece:maximumStackabilityQuantity",
-            "comment": "The number of units of ..."
+            "comment": "The number of units of this type of logistics packaging which can be stacked on top of each other."
         },
         {
             "uri": "unece:maximumStockQuantity",
@@ -248,7 +246,7 @@
         },
         {
             "uri": "unece:minimumQuantity",
-            "comment": "The minimum quantity in a range for which this trade price applies."
+            "comment": ""
         },
         {
             "uri": "unece:minimumStockQuantity",
@@ -268,7 +266,7 @@
         },
         {
             "uri": "unece:modificationForecastedQuantity",
-            "comment": "The modification of a forecasted ..."
+            "comment": "The modification of a forecasted quantity, at line level, for this trade delivery."
         },
         {
             "uri": "unece:nightQuantity",
@@ -280,7 +278,7 @@
         },
         {
             "uri": "unece:onboardQuantity",
-            "comment": "An onboard number of these ..."
+            "comment": "An onboard number of these specified personal effects."
         },
         {
             "uri": "unece:orderQuantity",
@@ -296,7 +294,7 @@
         },
         {
             "uri": "unece:packageQuantity",
-            "comment": "The number of packages in ..."
+            "comment": "The number of packages in this logistics transport movement."
         },
         {
             "uri": "unece:passengerQuantity",
@@ -304,7 +302,7 @@
         },
         {
             "uri": "unece:perPackageUnitQuantity",
-            "comment": "A number of units per ..."
+            "comment": "A number of units per package in this logistics package."
         },
         {
             "uri": "unece:plannedQuantity",
@@ -324,7 +322,7 @@
         },
         {
             "uri": "unece:productUnitQuantity",
-            "comment": "The number of product units ..."
+            "comment": "The number of product units in this subordinate line trade delivery."
         },
         {
             "uri": "unece:professionalMedicalPersonnelOnboardQuantity",
@@ -340,7 +338,7 @@
         },
         {
             "uri": "unece:remainingRequestedQuantity",
-            "comment": "The remaining quantity, at header ..."
+            "comment": "The remaining quantity, at header level, requested for this trade delivery."
         },
         {
             "uri": "unece:reportableQuantity",
@@ -352,7 +350,7 @@
         },
         {
             "uri": "unece:requestedQuantity",
-            "comment": "The quantity, at header level, ..."
+            "comment": "The quantity, at header level, requested for this trade delivery."
         },
         {
             "uri": "unece:returnedQuantity",
@@ -364,7 +362,7 @@
         },
         {
             "uri": "unece:sealQuantity",
-            "comment": "A quantity of seals for ..."
+            "comment": "A quantity of seals for this associated piece of transport equipment."
         },
         {
             "uri": "unece:selfAssessedBasisQuantity",
@@ -376,7 +374,7 @@
         },
         {
             "uri": "unece:specifiedQuantity",
-            "comment": "The quantity specified for this crop produce batch."
+            "comment": ""
         },
         {
             "uri": "unece:stockQuantity",
@@ -392,11 +390,11 @@
         },
         {
             "uri": "unece:tariffDeductionQuantity",
-            "comment": "A quantity to be deducted ..."
+            "comment": "A quantity to be deducted from the tariff quantity for the calculation of this trade related tax, duty or levy."
         },
         {
             "uri": "unece:tariffQuantity",
-            "comment": "A tariff quantity for this ..."
+            "comment": "A tariff quantity for this cross-border regulatory procedure."
         },
         {
             "uri": "unece:toleranceQuantity",
@@ -412,15 +410,15 @@
         },
         {
             "uri": "unece:totalQuantity",
-            "comment": "The total quantity for this ..."
+            "comment": ""
         },
         {
             "uri": "unece:totalUnitQuantity",
-            "comment": "A total number of units ..."
+            "comment": "A total number of units contained in this logistics packaging."
         },
         {
             "uri": "unece:tradeLineItemQuantity",
-            "comment": "The number of trade line ..."
+            "comment": "The number of trade line items in this referenced supply chain consignment item."
         },
         {
             "uri": "unece:tradedParcelQuantity",
@@ -432,7 +430,7 @@
         },
         {
             "uri": "unece:transportEquipmentQuantity",
-            "comment": "A number of pieces of ..."
+            "comment": "A number of pieces of transport equipment, such as containers or similar unit load devices, in this supply chain consignment."
         },
         {
             "uri": "unece:transportMeansQuantity",
@@ -448,7 +446,7 @@
         },
         {
             "uri": "unece:unitQuantity",
-            "comment": "A number of units for ..."
+            "comment": "A number of units for this supply chain event."
         },
         {
             "uri": "unece:usedSignalSourceQuantity",
@@ -456,11 +454,11 @@
         },
         {
             "uri": "unece:usedToDateQuotaQuantity",
-            "comment": "The quantity of the quota used to date under this cross-border regulatory procedure."
+            "comment": ""
         },
         {
             "uri": "unece:valueQuantity",
-            "comment": "A value, expressed as a ..."
+            "comment": "A value, expressed as a quantity, for this document characteristic."
         }
     ]
 }

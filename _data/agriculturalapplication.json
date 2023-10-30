@@ -1,14 +1,9 @@
-
 {
     "label": "AgriculturalApplication",
     "uri": "unece:AgriculturalApplication",
     "comment": "Any substance such as seed, fertilizer, water, gas or chemical applied to an agricultural field, substrate, construction, plant, animal or product.",
-    "objectProperties": [
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this agricultural application."
-        },
+    "businessDomain": "agriculture",
+    "datatypeProperties": [
         {
             "uri": "unece:appliedArea",
             "type": "unece:Area",
@@ -20,40 +15,20 @@
             "comment": "An agricultural certificate applied to this specified agricultural application."
         },
         {
-            "uri": "unece:appliedChemicalTreatment",
-            "type": "unece:SpecifiedChemicalTreatment",
-            "comment": "A specified chemical treatment applied to this agricultural application."
-        },
-        {
             "uri": "unece:appliedMaterial",
             "type": "unece:SpecifiedMaterial",
-            "comment": "Specified material applied to this agricultural application."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this specified agricultural application."
-        },
-        {
-            "uri": "unece:specifiedLocation",
-            "type": "unece:Location",
-            "comment": "A referenced location specified for this specified agricultural application."
+            "comment": "A substance from which something is or could be made."
         },
         {
             "uri": "unece:specifiedPlot",
             "type": "unece:Plot",
             "comment": "A crop plot specified for this agricultural application."
-        },
-        {
-            "uri": "unece:specifiedProductBatch",
-            "type": "unece:ProductBatch",
-            "comment": "A product batch specified for this specified agricultural application."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:appliedAgriculturalApplication",
-            "comment": "A specified agricultural application applied ..."
+            "comment": "A specified agricultural application applied to this agricultural zone area."
         }
     ]
 }

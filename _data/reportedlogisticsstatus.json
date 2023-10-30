@@ -1,35 +1,25 @@
-
 {
     "label": "reportedLogisticsStatus",
     "uri": "unece:reportedLogisticsStatus",
-    "comment": [
-        "A logistics status reported for this cross-border regulatory procedure.",
-        "A logistics status reported for this supply chain consignment item.",
-        "A logistics status reported for this supply chain consignment.",
-        "A status reported for this piece of logistics transport equipment."
-    ],
+    "comment": "A logistics status reported for this cross-border regulatory procedure.",
+    "businessDomain": "transport",
     "rangeIncludes": [
         {
-            "uri": "unece:LogisticsStatus",
-            "comment": "The information relevant to a condition or a position related to logistics."
+            "uri": "unece:LogisticsStatus"
         }
     ],
     "domainIncludes": [
         {
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.TBR: description update to excersize GitHub update"
+        },
+        {
             "uri": "unece:Consignment",
-            "comment": "A separately identifiable collection of ..."
+            "comment": "A separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee in a supply chain via one or more modes of transport where each consignment is the subject of one single transport contract.,A referenced, separately identifiable collection of goods items to be transported or available to be transported from one consignor to one consignee via one or more modes of transport where each consignment is the subject of one single transport contract."
         },
         {
             "uri": "unece:ConsignmentItem",
-            "comment": "A reference to an item ..."
-        },
-        {
-            "uri": "unece:LogisticsTransportEquipment",
-            "comment": "A piece of equipment used ..."
-        },
-        {
-            "uri": "unece:RegulatoryProcedure",
-            "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+            "comment": "A reference to an item within a supply chain consignment of goods separately identified for transport and customs purposes.,An item within a supply chain consignment of goods separately identified for transport and customs purposes."
         }
     ]
 }

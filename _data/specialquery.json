@@ -1,53 +1,33 @@
-
 {
     "label": "SpecialQuery",
     "uri": "unece:SpecialQuery",
     "comment": "A special question or request for information.",
-    "objectProperties": [
-        {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "The content, expressed as text, of this special query."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The identifier for this special query."
-        },
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:latestResponseDateTime",
-            "type": "xsd:dateTime",
+            "type": "schema:DateTime",
             "comment": "The date, time, date time, or other date time value for the latest response to this special query."
         },
         {
             "uri": "unece:responseDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value of the response for this special query."
-        },
-        {
-            "uri": "unece:responseStatusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the response status for this special query."
+            "type": "schema:Text",
+            "comment": "A date, time, date time, or other date time value of a response of the exchanged document."
         },
         {
             "uri": "unece:subject",
-            "type": "xsd:string",
-            "comment": "The subject, expressed as text, of this special query."
+            "type": "schema:Text",
+            "comment": "A subject, expressed as text, of this specified note."
         },
         {
             "uri": "unece:submittedDateTime",
-            "type": "xsd:dateTime",
+            "type": "schema:DateTime",
             "comment": "The date, time, date time, or other date time value when this special query was submitted."
         },
         {
             "uri": "unece:submittingPersonName",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The name, expressed as text, of the person submitting this special query."
-        },
-        {
-            "uri": "unece:versionId",
-            "type": "xsd:string",
-            "comment": "The identifier of the version for this special query."
         }
     ],
     "referencedBy": [

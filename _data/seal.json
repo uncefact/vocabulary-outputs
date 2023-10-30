@@ -1,22 +1,17 @@
-
 {
     "label": "Seal",
     "uri": "unece:Seal",
     "comment": "A device used to secure an object and protect it from unauthorized entry or tampering during transport or other logistics operations.",
-    "objectProperties": [
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "A unique identifier for this logistics seal."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:issuingParty",
-            "type": "unece:TradeParty",
-            "comment": "The party issuing this logistics seal."
+            "type": "unece:Party",
+            "comment": ""
         },
         {
             "uri": "unece:logisticsSealTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the type of logistics seal."
         },
         {
@@ -26,7 +21,7 @@
         },
         {
             "uri": "unece:maximumId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The maximum unique identifier used for these logistics seals."
         },
         {
@@ -38,7 +33,7 @@
     "referencedBy": [
         {
             "uri": "unece:affixedSeal",
-            "comment": "A logistics seal affixed to ..."
+            "comment": "A logistics seal affixed to this piece of associated transport equipment."
         },
         {
             "uri": "unece:requiredSeal",

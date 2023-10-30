@@ -1,53 +1,38 @@
-
 {
     "label": "TradeProductCertification",
     "uri": "unece:TradeProductCertification",
     "comment": "The process of certifying that a certain product has passed performance and quality assurance tests, or qualification requirements stipulated in regulations.",
-    "objectProperties": [
-        {
-            "uri": "unece:applicableStandard",
-            "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this trade product certification."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:assertion",
-            "type": "xsd:string",
-            "comment": "An assertion, expressed as text, for this trade product certification, such as that this product is free from peanuts."
+            "type": "schema:Text",
+            "comment": "An assertion, expressed as text, for this animal certification."
         },
         {
             "uri": "unece:assertionCode",
-            "type": "xsd:string",
-            "comment": "A code specifying an assertion for this trade product certification, such as claims that a product is free from peanuts."
-        },
-        {
-            "uri": "unece:relatedLocation",
-            "type": "unece:Location",
-            "comment": "A referenced location related to this trade product certification."
+            "type": "schema:Text",
+            "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
         },
         {
             "uri": "unece:responsibleAgency",
-            "type": "xsd:string",
-            "comment": "The agency, expressed as text, responsible for this trade product certification."
-        },
-        {
-            "uri": "unece:specifiedAssertion",
-            "type": "unece:Assertion",
-            "comment": "A sustainability assertion specified for this trade product certification."
+            "type": "schema:Text",
+            "comment": "A responsible agency, expressed as text, for this specified certification."
         },
         {
             "uri": "unece:standard",
-            "type": "xsd:string",
-            "comment": "The standard, expressed as text, for this trade product certification."
+            "type": "schema:Text",
+            "comment": "A standard, expressed as text, for this specified certification."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableTradeProductCertification",
-            "comment": "A certification applicable to this ..."
+            "comment": "A certification applicable to this trade product."
         },
         {
             "uri": "unece:specifiedTradeProductCertification",
-            "comment": "A trade product certification specified ..."
+            "comment": "A trade product certification specified for this production facility."
         }
     ]
 }

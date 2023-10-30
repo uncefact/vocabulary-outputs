@@ -1,25 +1,21 @@
-
 {
     "label": "economicOrderQuantity",
     "uri": "unece:economicOrderQuantity",
-    "comment": [
-        "The economic order quantity for this line trade agreement.",
-        "The economic order quantity, at line level, for this trade delivery."
-    ],
+    "comment": "The economic order quantity for this line trade agreement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:QuantityType",
-            "comment": "Missing description"
+            "uri": "unece:QuantityType"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:LineTradeAgreement",
-            "comment": "The contractual terms of a line trade agreement."
-        },
-        {
             "uri": "unece:LineTradeDelivery",
             "comment": "Shipping arrangements and movement of products and or services including despatch and delivery at a line level."
+        },
+        {
+            "uri": "unece:LineTradeAgreement",
+            "comment": "The contractual terms of a line trade agreement."
         }
     ]
 }

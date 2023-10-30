@@ -1,23 +1,14 @@
-
 {
     "label": "specifiedFinancialAdjustment",
     "uri": "unece:specifiedFinancialAdjustment",
-    "comment": [
-        "A financial adjustment specified for this header trade settlement.",
-        "A financial adjustment specified for this line trade settlement.",
-        "A financial adjustment specified for this subordinate line trade settlement."
-    ],
+    "comment": "A financial adjustment specified for this header trade settlement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:FinancialAdjustment",
-            "comment": "A correction or modification to reflect actual financial conditions."
+            "uri": "unece:FinancialAdjustment"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
         {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
@@ -25,6 +16,10 @@
         {
             "uri": "unece:SubordinateLineTradeSettlement",
             "comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

@@ -1,9 +1,9 @@
-
 {
     "label": "SupplyChainInventory",
     "uri": "unece:SupplyChainInventory",
     "comment": "Supply chain goods and materials held in stock.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:averageDemandQuantity",
             "type": "unece:QuantityType",
@@ -75,19 +75,9 @@
             "comment": "A note containing a remark for this supply chain inventory."
         },
         {
-            "uri": "unece:specifiedLogisticsLocation",
-            "type": "unece:LogisticsLocation",
-            "comment": "The location specified for this supply chain inventory."
-        },
-        {
             "uri": "unece:specifiedSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain event specified for this supply chain inventory."
-        },
-        {
-            "uri": "unece:statusCode",
-            "type": "xsd:string",
-            "comment": "The code specifying a status for this supply chain inventory."
+            "comment": "A supply chain event specified for this product batch."
         },
         {
             "uri": "unece:stockQuantity",
@@ -107,10 +97,6 @@
         {
             "uri": "unece:customerInventory",
             "comment": "Supply chain customer inventory, at line level, for this trade delivery."
-        },
-        {
-            "uri": "unece:specifiedInventory",
-            "comment": "Supply chain inventory specified for this referenced location."
         }
     ]
 }

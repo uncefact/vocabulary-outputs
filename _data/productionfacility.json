@@ -1,33 +1,18 @@
-
 {
     "label": "ProductionFacility",
     "uri": "unece:ProductionFacility",
     "comment": "A man made physical structure, such as a building, in which something is produced.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableAssessment",
             "type": "unece:Assessment",
-            "comment": "An assessment applicable to this production facility."
+            "comment": "A specified assessment applicable to this referenced standard."
         },
         {
             "uri": "unece:applicableSpecifiedCertificate",
             "type": "unece:SpecifiedCertificate",
-            "comment": "A certificate applicable to this production facility."
-        },
-        {
-            "uri": "unece:applicableSpecifiedInspection",
-            "type": "unece:SpecifiedInspection",
-            "comment": "A specified inspection applicable to this production facility."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this production facility."
-        },
-        {
-            "uri": "unece:applicableSustainabilityInspection",
-            "type": "unece:SustainabilityInspection",
-            "comment": "A sustainability inspection applicable to this production facility."
+            "comment": "A certificate applicable to this product batch."
         },
         {
             "uri": "unece:bufferCapacityMeasure",
@@ -35,14 +20,9 @@
             "comment": "A measure of the buffer capacity for this production facility."
         },
         {
-            "uri": "unece:capacityMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of the capacity of this production facility."
-        },
-        {
             "uri": "unece:certificationTypeCode",
             "type": "xsd:string",
-            "comment": "The code specifying the type of certification for this production facility."
+            "comment": "The code specifying the certification type of this method."
         },
         {
             "uri": "unece:completionDate",
@@ -55,11 +35,6 @@
             "comment": "The construction date for this production facility."
         },
         {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this production facility."
-        },
-        {
             "uri": "unece:digitalPlatformAssignedId",
             "type": "xsd:string",
             "comment": "The digital platform assigned identifier for this production facility."
@@ -68,16 +43,6 @@
             "uri": "unece:functionCode",
             "type": "xsd:string",
             "comment": "The code specifying the function of this production facility."
-        },
-        {
-            "uri": "unece:globalId",
-            "type": "xsd:string",
-            "comment": "A global identifier of this production facility."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this production facility."
         },
         {
             "uri": "unece:inputCapacityMeasure",
@@ -90,11 +55,6 @@
             "comment": "A licence, expressed as text, for this production facility."
         },
         {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this production facility."
-        },
-        {
             "uri": "unece:outputCapacityMeasure",
             "type": "unece:MeasureType",
             "comment": "A measure of the output capacity for this production facility."
@@ -102,12 +62,12 @@
         {
             "uri": "unece:physicalLocation",
             "type": "unece:Location",
-            "comment": "A physical location referenced for this production facility."
+            "comment": "A physical location referenced for this facility production unit."
         },
         {
             "uri": "unece:relatedProductionUnit",
             "type": "unece:ProductionUnit",
-            "comment": "A production unit related to this production facility."
+            "comment": "A facility production unit related to this referenced location."
         },
         {
             "uri": "unece:renovationDate",
@@ -122,17 +82,12 @@
         {
             "uri": "unece:specifiedAnimalCertificate",
             "type": "unece:AnimalCertificate",
-            "comment": "An animal certificate specified for this production facility."
+            "comment": "An animal certificate specified for this TT animal."
         },
         {
             "uri": "unece:specifiedAnimalCertification",
             "type": "unece:AnimalCertification",
             "comment": "An animal certification specified for this production facility."
-        },
-        {
-            "uri": "unece:specifiedOrganizationalCertificate",
-            "type": "unece:OrganizationalCertificate",
-            "comment": "An organizational certificate specified for this production facility."
         },
         {
             "uri": "unece:specifiedOrganizationalCertification",
@@ -142,12 +97,7 @@
         {
             "uri": "unece:specifiedProcess",
             "type": "unece:ProductionProcess",
-            "comment": "A production process specified for this production facility."
-        },
-        {
-            "uri": "unece:specifiedProcessCertificate",
-            "type": "unece:ProcessCertificate",
-            "comment": "A process certificate specified for this production facility."
+            "comment": "A production process specified for this product batch."
         },
         {
             "uri": "unece:specifiedProcessCertification",
@@ -157,7 +107,7 @@
         {
             "uri": "unece:specifiedProductBatchCertificate",
             "type": "unece:ProductBatchCertificate",
-            "comment": "A product batch certificate specified for this production facility."
+            "comment": "A certificate specified for this product batch."
         },
         {
             "uri": "unece:specifiedProductBatchCertification",
@@ -167,12 +117,12 @@
         {
             "uri": "unece:specifiedProductCertificate",
             "type": "unece:ProductCertificate",
-            "comment": "A product certificate specified for this production facility."
+            "comment": "A product certificate specified for this distinct chemical."
         },
         {
             "uri": "unece:specifiedSupplyChainEvent",
             "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain event specified for this production facility."
+            "comment": "A supply chain event specified for this product batch."
         },
         {
             "uri": "unece:specifiedTradeProductCertification",
@@ -187,12 +137,7 @@
         {
             "uri": "unece:subordinateTypeCode",
             "type": "xsd:string",
-            "comment": "The code specifying the subordinate type for this production facility."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of production facility."
+            "comment": "The code specifying the subordinate type for this production device."
         }
     ],
     "referencedBy": [
@@ -202,7 +147,7 @@
         },
         {
             "uri": "unece:specifiedFacility",
-            "comment": "A production facility specified for ..."
+            "comment": "A production facility specified for this production process."
         },
         {
             "uri": "unece:subordinateFacility",

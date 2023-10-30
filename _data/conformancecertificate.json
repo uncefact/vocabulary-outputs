@@ -1,32 +1,22 @@
-
 {
     "label": "ConformanceCertificate",
     "uri": "unece:ConformanceCertificate",
     "comment": "The label delivered by a trusted third party to assess the compliance of a product or a service with an agreed standard.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:certificateTypeCode",
             "type": "unece:CertificateTypeCodeList",
-            "comment": "The code specifying the type of conformance certificate."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier of this conformance certificate."
-        },
-        {
-            "uri": "unece:issueDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time, or other date time value when this conformance certificate was issued."
+            "comment": "A code specifying a type of specified certificate."
         },
         {
             "uri": "unece:issuingPartyId",
-            "type": "xsd:string",
-            "comment": "An identifier of the issuing party of this conformance certificate."
+            "type": "schema:Text",
+            "comment": "An identifier of a party issuing this sustainability assertion."
         },
         {
             "uri": "unece:softwareOperatingSystem",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The software operating system, expressed as text, for which this conformance certificate is produced."
         }
     ],

@@ -1,144 +1,44 @@
-
 {
     "label": "SustainabilityCharacteristic",
     "uri": "unece:SustainabilityCharacteristic",
     "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs.",
-    "objectProperties": [
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:applicableInspectionResult",
             "type": "unece:InspectionResult",
             "comment": "A specified inspection result applicable to this sustainability characteristic."
         },
         {
-            "uri": "unece:applicableStandard",
-            "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this sustainability characteristic."
-        },
-        {
-            "uri": "unece:categoryCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the category of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:contentTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the content type of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:maximumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a maximum value for this sustainability characteristic."
-        },
-        {
             "uri": "unece:measurementMethodCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the measurement method for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:minimumValueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a minimum value for this sustainability characteristic."
+            "type": "schema:Text",
+            "comment": "A code specifying a measurement method for this product characteristic."
         },
         {
             "uri": "unece:shareableIndicator",
-            "type": "xsd:boolean",
-            "comment": "The indication of whether or not this sustainability characteristic is shareable."
-        },
-        {
-            "uri": "unece:specifiedSupplyChainEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain event specified for this sustainability characteristic."
+            "type": "schema:Boolean",
+            "comment": "The indication of whether or not this sample observation result characteristic is shareable."
         },
         {
             "uri": "unece:subordinateCategoryCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The subordinate category for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:subordinateTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the subordinate type of sustainability characteristic."
-        },
-        {
-            "uri": "unece:typeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of sustainability characteristic."
-        },
-        {
-            "uri": "unece:value",
-            "type": "xsd:string",
-            "comment": "A value, expressed as text, for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueAmount",
-            "type": "unece:AmountType",
-            "comment": "The value, expressed as an amount, for this sustainability characteristic."
         },
         {
             "uri": "unece:valueBinaryFile",
             "type": "unece:BinaryFile",
-            "comment": "A value, expressed in a binary file, for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the value of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueDateTime",
-            "type": "xsd:string",
-            "comment": "The value, expressed as a date, time, date time, or other date time value, for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueIndicator",
-            "type": "xsd:boolean",
-            "comment": "The value, expressed as an indicator, for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "A measure of a value for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueNumeric",
-            "type": "xsd:string",
-            "comment": "The value, expressed as a number, for this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueParameter",
-            "type": "unece:SpecifiedParameter",
-            "comment": "A parameter specified for the value of this sustainability characteristic."
+            "comment": "A specified computer file or program stored in a binary format."
         },
         {
             "uri": "unece:valuePeriod",
             "type": "unece:SpecifiedPeriod",
-            "comment": "A period specified for the value of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueRange",
-            "type": "unece:Range",
-            "comment": "A range specified for the value of this sustainability characteristic."
-        },
-        {
-            "uri": "unece:valueTolerance",
-            "type": "unece:Tolerance",
-            "comment": "A tolerance specified for the value of this sustainability characteristic."
+            "comment": "A specified period of time."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:applicableSustainabilityCharacteristic",
-            "comment": "A characteristic applicable to this ..."
+            "comment": "A characteristic applicable to this sustainability inspection."
         },
         {
             "uri": "unece:relatedSustainabilityCharacteristic",

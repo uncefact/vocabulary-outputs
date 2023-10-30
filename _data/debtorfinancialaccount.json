@@ -1,58 +1,54 @@
-
 {
     "label": "DebtorFinancialAccount",
     "uri": "unece:DebtorFinancialAccount",
     "comment": "A specific business arrangement whereby debits arising from transactions are recorded.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:accountName",
-            "type": "xsd:string",
-            "comment": "The account name, expressed as text, of this debtor financial account."
+            "type": "schema:Text",
+            "comment": "An account name, expressed as text, of this payment financial account."
         },
         {
             "uri": "unece:bBANId",
-            "type": "xsd:string",
-            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme(s) for this debtor financial account."
+            "type": "schema:Text",
+            "comment": "The unique Basic Bank Account Number (BBAN) identifier used as part of a National Account Numbering Scheme for this financing financial account."
         },
         {
             "uri": "unece:currencyCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the currency of this debtor financial account (Reference ISO 4217 codes)."
+            "type": "schema:Text",
+            "comment": "The code specifying a currency of this cash used for payment."
         },
         {
             "uri": "unece:debtorFinancialAccountTypeCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the type of debtor financial account."
         },
         {
             "uri": "unece:iBANId",
-            "type": "xsd:string",
-            "comment": "The unique International Bank Account Number (IBAN) identifier for this debtor financial account."
+            "type": "schema:Text",
+            "comment": "The unique International Bank Account Number (IBAN) identifier for this creditor financial account."
         },
         {
             "uri": "unece:proprietaryId",
-            "type": "xsd:string",
-            "comment": "The unique proprietary identifier for this debtor financial account."
+            "type": "schema:Text",
+            "comment": "The proprietary identifier for this financing financial account."
         },
         {
             "uri": "unece:proprietaryType",
-            "type": "xsd:string",
-            "comment": "The proprietary type, expressed as text, of this debtor financial account, such as the nature or use of the debtor account."
+            "type": "schema:Text",
+            "comment": "A proprietary type, expressed as text, for this referenced document."
         },
         {
             "uri": "unece:uPICId",
-            "type": "xsd:string",
-            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this debtor financial account."
+            "type": "schema:Text",
+            "comment": "The unique Universal Payment Identification Code (UPIC) identifier used by the New York Clearing House for this creditor financial account."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:payerPartyFinancialAccount",
             "comment": "The debtor financial account of the payer party for this trade settlement payment means."
-        },
-        {
-            "uri": "unece:specifiedDebtorFinancialAccount",
-            "comment": "A debtor financial account specified for this cross-border regulatory procedure."
         }
     ]
 }

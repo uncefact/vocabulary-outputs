@@ -1,25 +1,21 @@
-
 {
     "label": "invoiceDocument",
     "uri": "unece:invoiceDocument",
-    "comment": [
-        "An invoice document referenced by this header trade settlement.",
-        "An invoice document referenced in this line trade settlement."
-    ],
+    "comment": "An invoice document referenced by this header trade settlement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:Document",
-            "comment": "Written, printed or electronic matter that is referenced."
+            "uri": "unece:Document"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }

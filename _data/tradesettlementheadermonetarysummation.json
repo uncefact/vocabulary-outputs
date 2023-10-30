@@ -1,9 +1,9 @@
-
 {
     "label": "TradeSettlementHeaderMonetarySummation",
     "uri": "unece:TradeSettlementHeaderMonetarySummation",
     "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement.",
-    "objectProperties": [
+    "businessDomain": "trade",
+    "datatypeProperties": [
         {
             "uri": "unece:adjustedBalanceOutAmount",
             "type": "unece:AmountType",
@@ -42,7 +42,7 @@
         {
             "uri": "unece:grandTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the grand total of this trade settlement header monetary summation, to include addition and subtraction of individual summation amounts."
+            "comment": "A monetary value of a grand total reported in this trade settlement payment monetary summation."
         },
         {
             "uri": "unece:grandTotalSpecifiedAdjustment",
@@ -57,12 +57,12 @@
         {
             "uri": "unece:includingTaxesLineTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the total of all line amounts, including all duties and taxes, being reported in this trade settlement header monetary summation."
+            "comment": "A monetary value of the line total, including taxes, being reported in this trade settlement line monetary summation."
         },
         {
             "uri": "unece:informationAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of an amount being reported for information in this trade settlement header monetary summation."
+            "comment": "A monetary value of an amount being reported for information for this trade related tax, levy or duty."
         },
         {
             "uri": "unece:insuranceChargeTotalAmount",
@@ -82,7 +82,7 @@
         {
             "uri": "unece:netLineTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the total of all line amounts, including line level allowances and charges and excluding line level taxes, being reported in this trade settlement header monetary summation."
+            "comment": "A monetary value of the net total of all line amounts, including line level allowances and charges and excluding line level taxes, being reported in this trade settlement payment monetary summation."
         },
         {
             "uri": "unece:paymentTotalAmount",
@@ -107,17 +107,12 @@
         {
             "uri": "unece:taxBasisTotalAmount",
             "type": "unece:AmountType",
-            "comment": "A monetary value of the total of all tax basis amounts being reported in this trade settlement monetary summation."
+            "comment": "A monetary value of the total of all tax basis amounts being reported in this trade settlement line monetary summation."
         },
         {
             "uri": "unece:taxTotalAmount",
             "type": "unece:AmountType",
             "comment": "A monetary value of the total of all tax amounts being reported in this trade settlement header monetary summation."
-        },
-        {
-            "uri": "unece:totalAllowanceChargeAmount",
-            "type": "unece:AmountType",
-            "comment": "A monetary value of a total allowance and charge reported in this trade settlement header monetary summation."
         },
         {
             "uri": "unece:totalDepositFeeInformationAmount",

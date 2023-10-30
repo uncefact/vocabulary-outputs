@@ -1,13 +1,13 @@
-
 {
     "label": "LogisticsLabel",
     "uri": "unece:LogisticsLabel",
     "comment": "A label used for identifying goods for logistics purposes, such as a barcode, a radio frequency tag or a Vehicle Identification Number (VIN).",
-    "objectProperties": [
+    "businessDomain": "transport",
+    "datatypeProperties": [
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "The unique identifier of this logistics label."
+            "comment": "A proprietary identifier."
         },
         {
             "uri": "unece:includedSection",
@@ -27,12 +27,12 @@
         {
             "uri": "unece:seriesEndId",
             "type": "xsd:string",
-            "comment": "The unique identifier of the end of a series of logistics labels."
+            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
         },
         {
             "uri": "unece:seriesStartId",
             "type": "xsd:string",
-            "comment": "The unique identifier of the start of a series of logistics labels."
+            "comment": "The identifier of the start of a series of packages within this referenced logistics package."
         },
         {
             "uri": "unece:sizeCode",

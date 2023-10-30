@@ -1,9 +1,9 @@
-
 {
     "label": "AccountingAccount",
     "uri": "unece:AccountingAccount",
     "comment": "A specific trade account for recording debits and credits to general accounting, cost accounting or budget accounting.",
-    "objectProperties": [
+    "businessDomain": "finance",
+    "datatypeProperties": [
         {
             "uri": "unece:accountingAccountTypeCode",
             "type": "unece:AccountingAccountTypeCodeList",
@@ -21,18 +21,8 @@
         },
         {
             "uri": "unece:costReferenceDimensionPattern",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The cost reference dimension pattern, expressed as text, for this trade accounting account."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this trade accounting account."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "The name, expressed as text, of this trade accounting account."
         }
     ],
     "referencedBy": [
@@ -50,19 +40,19 @@
         },
         {
             "uri": "unece:payableSpecifiedAccountingAccount",
-            "comment": "A payable accounting account specified ..."
+            "comment": "A payable accounting account specified for this header trade settlement."
         },
         {
             "uri": "unece:purchaseSpecifiedAccountingAccount",
-            "comment": "A purchase accounting account specified ..."
+            "comment": "A purchase accounting account specified for this header trade settlement."
         },
         {
             "uri": "unece:receivableSpecifiedAccountingAccount",
-            "comment": "A receivable accounting account specified ..."
+            "comment": "A receivable accounting account specified for this header trade settlement."
         },
         {
             "uri": "unece:salesSpecifiedAccountingAccount",
-            "comment": "A sales accounting account specified ..."
+            "comment": "A sales accounting account specified for this header trade settlement."
         },
         {
             "uri": "unece:sellerPayableTaxSpecifiedAccountingAccount",

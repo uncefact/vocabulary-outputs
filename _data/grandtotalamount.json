@@ -1,17 +1,11 @@
-
 {
     "label": "grandTotalAmount",
     "uri": "unece:grandTotalAmount",
-    "comment": [
-        "A monetary value of a grand total reported in this trade settlement payment monetary summation.",
-        "A monetary value of the grand total of the basis plus tax for this trade tax.",
-        "A monetary value of the grand total of this trade settlement header monetary summation, to include addition and subtraction of individual summation amounts.",
-        "A monetary value of the grand total of this trade settlement line monetary summation, to include addition and subtraction of individual summation amounts."
-    ],
+    "comment": "A monetary value of a grand total reported in this trade settlement payment monetary summation.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:AmountType",
-            "comment": "A number of monetary units specified in a currency where the unit of the currency is explicit or implied."
+            "uri": "unece:AmountType"
         }
     ],
     "domainIncludes": [
@@ -20,16 +14,12 @@
             "comment": "A collection of monetary amount totals, specified at header level, for a trade settlement."
         },
         {
-            "uri": "unece:TradeSettlementLineMonetarySummation",
-            "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
-        },
-        {
-            "uri": "unece:TradeSettlementPaymentMonetarySummation",
-            "comment": "A collection of monetary amount totals specified for a trade settlement payment."
-        },
-        {
             "uri": "unece:TradeTax",
             "comment": "A trade related fiscal levy or duty."
+        },
+        {
+            "uri": "unece:TradeSettlementLineMonetarySummation",
+            "comment": "A collection of monetary amount totals, specified at line level, for a trade settlement."
         }
     ]
 }

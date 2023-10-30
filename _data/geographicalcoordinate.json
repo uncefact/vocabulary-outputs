@@ -1,22 +1,22 @@
-
 {
     "label": "GeographicalCoordinate",
     "uri": "unece:GeographicalCoordinate",
     "comment": "A set of geographical coordinates of a specific point such as the longitude, latitude and altitude.",
-    "objectProperties": [
+    "businessDomain": "core",
+    "datatypeProperties": [
         {
             "uri": "unece:acquisitionDateTime",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The date, time, date time or other date time value of the acquisition of this geographical coordinate."
         },
         {
             "uri": "unece:alternativeSourceSystemId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "An alternative source system identifier for this geographical coordinate."
         },
         {
             "uri": "unece:altimetricSystemId",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The unique identifier of the system used for measuring the altitude."
         },
         {
@@ -25,13 +25,8 @@
             "comment": "The measure of the altitude that reflects the vertical elevation of an object above a surface for this geographical coordinate (Reference ISO 6709)."
         },
         {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "The unique identifier for this geographical coordinate."
-        },
-        {
             "uri": "unece:latitudeDirectionIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether the latitude compass direction from the Equator meridian to the meridian of a specific place is North (+) or South (-)  (Reference ISO 6709)."
         },
         {
@@ -41,7 +36,7 @@
         },
         {
             "uri": "unece:longitudeDirectionIndicator",
-            "type": "xsd:boolean",
+            "type": "schema:Boolean",
             "comment": "The indication of whether the longitude as a compass direction from the Greenwich meridian to the meridian of a specific place is East (+) or West (-) for this geographical coordinate (Reference ISO 6709)."
         },
         {
@@ -50,23 +45,18 @@
             "comment": "The measure of the longitude as an angular distance east or west from the Greenwich meridian to the meridian of a specific place (Reference ISO 6709)."
         },
         {
-            "uri": "unece:systemId",
-            "type": "xsd:string",
-            "comment": "The unique identifier of the reference system used for measuring a geographical coordinate."
-        },
-        {
             "uri": "unece:timeZone",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The time zone, expressed as text, for this geographical coordinate."
         },
         {
             "uri": "unece:timeZoneCode",
-            "type": "xsd:string",
+            "type": "schema:Text",
             "comment": "The code specifying the time zone of this geographical coordinate."
         },
         {
             "uri": "unece:timeZoneDateTime",
-            "type": "xsd:dateTime",
+            "type": "schema:DateTime",
             "comment": "The date, time, date time, or other date time value for the time zone of this geographical coordinate."
         },
         {
@@ -91,7 +81,7 @@
         },
         {
             "uri": "unece:physicalGeographicalCoordinate",
-            "comment": "Geographical coordinate information for this ..."
+            "comment": "Geographical coordinate information for this logistics related location."
         }
     ]
 }

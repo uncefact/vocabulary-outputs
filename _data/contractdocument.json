@@ -1,19 +1,18 @@
-
 {
     "label": "contractDocument",
     "uri": "unece:contractDocument",
-    "comment": [
-        "A contract document referenced in this header trade agreement.",
-        "A contract document referenced in this line trade agreement.",
-        "A referenced contract document for this supply chain supply plan."
-    ],
+    "comment": "A contract document referenced in this header trade agreement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
-            "uri": "unece:Document",
-            "comment": "Written, printed or electronic matter that is referenced."
+            "uri": "unece:Document"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:SupplyPlan",
+            "comment": "Specification of the delivery quantities and date/time values in a supply schedule."
+        },
         {
             "uri": "unece:HeaderTradeAgreement",
             "comment": "The contractual terms of a header trade agreement."
@@ -21,10 +20,6 @@
         {
             "uri": "unece:LineTradeAgreement",
             "comment": "The contractual terms of a line trade agreement."
-        },
-        {
-            "uri": "unece:SupplyPlan",
-            "comment": "Specification of the delivery quantities and date/time values in a supply schedule."
         }
     ]
 }

@@ -1,43 +1,28 @@
-
 {
     "label": "ProcessCertification",
     "uri": "unece:ProcessCertification",
     "comment": "The process of certifying that a process has met performance and quality assurance tests, or qualification requirements.",
-    "objectProperties": [
-        {
-            "uri": "unece:applicableStandard",
-            "type": "unece:Standard",
-            "comment": "A referenced standard applicable to this process certification."
-        },
+    "businessDomain": "compliance",
+    "datatypeProperties": [
         {
             "uri": "unece:assertion",
-            "type": "xsd:string",
-            "comment": "An assertion, expressed as text, for this process certification."
+            "type": "schema:Text",
+            "comment": "An assertion, expressed as text, for this animal certification."
         },
         {
             "uri": "unece:assertionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the assertion for this process certification, such as a claim that the process is free from child labour."
-        },
-        {
-            "uri": "unece:relatedLocation",
-            "type": "unece:Location",
-            "comment": "A referenced location related to this process certification."
+            "type": "schema:Text",
+            "comment": "A code specifying an assertion for this specified certification, such as a claim that a product is free of hazardous chemicals."
         },
         {
             "uri": "unece:responsibleAgency",
-            "type": "xsd:string",
-            "comment": "An agency, expressed as text, responsible for this process certification."
-        },
-        {
-            "uri": "unece:specifiedAssertion",
-            "type": "unece:Assertion",
-            "comment": "A sustainability assertion specified for this process certification."
+            "type": "schema:Text",
+            "comment": "A responsible agency, expressed as text, for this specified certification."
         },
         {
             "uri": "unece:standard",
-            "type": "xsd:string",
-            "comment": "A standard, expressed as text, used for this process certification."
+            "type": "schema:Text",
+            "comment": "A standard, expressed as text, for this specified certification."
         }
     ],
     "referencedBy": [
@@ -47,7 +32,7 @@
         },
         {
             "uri": "unece:specifiedProcessCertification",
-            "comment": "A process certification specified for ..."
+            "comment": "A process certification specified for this production facility."
         }
     ]
 }

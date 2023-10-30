@@ -1,24 +1,21 @@
-
 {
     "label": "validIndicator",
     "uri": "unece:validIndicator",
-    "comment": [
-        "The indication of whether or not this specified certificate is valid.",
-        "The indication of whether or not this specified licence is valid."
-    ],
+    "comment": "The indication of whether or not this specified certificate is valid.",
+    "businessDomain": "agriculture",
     "rangeIncludes": [
         {
-            "uri": "xsd:boolean"
+            "uri": "schema:Boolean"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "unece:Licence",
-            "comment": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade."
-        },
-        {
             "uri": "unece:SpecifiedCertificate",
             "comment": "A document issued by a government, public organization or association to certify a property of a person, entity, process or object."
+        },
+        {
+            "uri": "unece:Licence",
+            "comment": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade."
         }
     ]
 }

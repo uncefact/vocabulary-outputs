@@ -1,11 +1,8 @@
-
 {
     "label": "invoiceIssuerReference",
     "uri": "unece:invoiceIssuerReference",
-    "comment": [
-        "The invoice issuer reference, expressed as text, for this header trade settlement.",
-        "The invoice issuer reference, expressed as text, for this line settlement."
-    ],
+    "comment": "The invoice issuer reference, expressed as text, for this header trade settlement.",
+    "businessDomain": "trade",
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -13,12 +10,12 @@
     ],
     "domainIncludes": [
         {
-            "uri": "unece:HeaderTradeSettlement",
-            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
-        },
-        {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:HeaderTradeSettlement",
+            "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
         }
     ]
 }
