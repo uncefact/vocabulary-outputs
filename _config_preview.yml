@@ -1,12 +1,12 @@
 # Site settings
 title: Vocabulary UNECE
-baseurl: "/22A" # the subpath of your site, e.g. /blog
+baseurl: "/vocabulary" # the subpath of your site, e.g. /blog
 
 dataSet: "dataset:'22A'"
 versions:
   bsp: v22A
   un-locodes: v2022-1
-  taxonomies: v0.1 raw draft
+  vocab-codes: v1.0
 
 markdown: kramdown
 kramwdown:
@@ -23,6 +23,9 @@ collections:
     output: true
     permalink: /:name
   unlocode-lists:
+    output: true
+    permalink: /:name
+  vocab-codes:
     output: true
     permalink: /:name
 
@@ -60,6 +63,13 @@ defaults:
     values:
       layout: "code-list"
       type: "unlocode-list"
+  -
+    scope:
+      path: ""
+      type: "vocab-codes"
+    values:
+      layout: "code-list"
+      type: "vocab-code"
 
 sass:
   sourcemap: development
