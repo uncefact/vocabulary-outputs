@@ -4,9 +4,7 @@
     <a href="/vocabulary/home">Home</a>
     {% if pageType == 'unlocode-lists' %}
       /  <a href="{{ 'unlocode-about' | absolute_url }}">UN/LOCODEs</a>
-    {% elsif pageType == 'vocab-code'%}
-        / <a href="{{ 'vocab-codes' | absolute_url }}">CLRs</a>
-    {% else %}
+    {% elsif pageType != 'vocab-codes'%}
         / <a href="{{ 'about' | absolute_url }}">BSP</a>
     {% endif %}
     {% if pageType == 'classes' %}
