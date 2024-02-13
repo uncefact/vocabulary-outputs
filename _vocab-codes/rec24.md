@@ -1,14 +1,20 @@
 ---
-title: unece:rec24
-permalink: rec24.html
-jsonid: rec24
+title: unece:rec28
+permalink: rec28.html
+jsonid: rec28
 columns:
   - 
     title: CI
     code: CI
   - 
-    title: Code
-    code: Code
+    title: Mode
+    code: Mode
+  - 
+    title: Code-A
+    code: Code-A
+  - 
+    title: Code-B
+    code: Code-B
   - 
     title: Name
     code: Name
