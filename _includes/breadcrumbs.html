@@ -1,16 +1,14 @@
 {% assign pageType = page.collection %}
 <div class="breadcrumbs">
     {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-    <a href="/vocabulary/home">Home</a>
+    <a href="/">Home</a>
     {% if pageType == 'unlocode-lists' %}
       /  <a href="{{ 'unlocode-about' | absolute_url }}">UN/LOCODEs</a>
-    {% elsif pageType != 'vocab-codes'%}
-        / <a href="{{ 'about' | absolute_url }}">BSP</a>
+    {% else %}
+        / <a href="{{ 'about' | absolute_url }}">Conformity Credential</a>
     {% endif %}
     {% if pageType == 'classes' %}
        / <a href="{{ 'classes' | absolute_url }}">Classes</a>
-    {% elsif pageType == 'vocab-codes'%}
-       / <a href="{{ 'vocab-codes' | absolute_url }}">CLRs</a>
     {% endif %}
     {% if pageType == 'properties' %}
        / <a href="{{ 'properties' | absolute_url }}">Properties</a>
