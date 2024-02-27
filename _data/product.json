@@ -1,100 +1,43 @@
-
 {
     "label": "Product",
-    "uri": "unece:Product",
-    "comment": "A reference to a product or service produced by human or mechanical effort or by a natural process for trading purposes.",
-    "objectProperties": [
+    "uri": "ConformityCredential:Product",
+    "comment": "The facility (fatctory, farm, etc) or product or produciton batch that this conformity attestation is about.",
+    "datatypeProperties": [
         {
-            "uri": "unece:buyerAssignedId",
-            "type": "xsd:string",
-            "comment": "The unique buyer assigned identifier for this referenced product."
+            "uri": "ConformityCredential:classification",
+            "type": "ConformityCredential:UNCPC",
+            "comment": "The UN CPC service calssificaiton for the activities undertaken at this facility."
         },
         {
-            "uri": "unece:description",
+            "uri": "ConformityCredential:marking",
             "type": "xsd:string",
-            "comment": "A textual description for this referenced product."
+            "comment": "Markings or codes on the product that can be used to match the physical product to this confomity assessment. if not provided then the productID MUST be marked on the product."
         },
         {
-            "uri": "unece:globalId",
+            "uri": "ConformityCredential:name",
             "type": "xsd:string",
-            "comment": "A unique global identifier for this referenced product."
+            "comment": "The name of the conformity scheme (eg ACRS structural steel certification)"
         },
         {
-            "uri": "unece:identifier",
+            "uri": "ConformityCredential:productId",
             "type": "xsd:string",
-            "comment": "A unique identifier for this referenced product."
+            "comment": "A unique, resolvable, and verifiable identifier for the product (eg id.gs1.org/gtin/5000127163096)"
         },
         {
-            "uri": "unece:industryAssignedId",
+            "uri": "ConformityCredential:testedBatchId",
             "type": "xsd:string",
-            "comment": "A unique industry assigned identifier for this referenced product."
+            "comment": "A unique, resolvable, and verifiable identifier for the product serial number or batch (eg id.gs1.org/gtin/614141123452/lot/ABC1/ser/12345?exp=180426)"
         },
         {
-            "uri": "unece:manufacturerAssignedId",
-            "type": "xsd:string",
-            "comment": "A unique manufacturer assigned identifier for this referenced product."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, for this referenced product."
-        },
-        {
-            "uri": "unece:relationshipTypeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a type of relationship for this referenced product."
-        },
-        {
-            "uri": "unece:sellerAssignedId",
-            "type": "xsd:string",
-            "comment": "The unique seller assigned identifier for this referenced product."
-        },
-        {
-            "uri": "unece:unitQuantity",
-            "type": "unece:QuantityType",
-            "comment": "A unit quantity of this referenced product."
+            "uri": "ConformityCredential:verfifiedByCAB",
+            "type": "xsd:boolean",
+            "comment": "Indicates whether the conformity assessment body has verified the identity of the subject of the assement (a facility or product / batch)."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:accessoryApplicableProduct",
-            "comment": "A referenced accessory product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:additionalApplicableProduct",
-            "comment": "A referenced product additionally applicable with this supply chain trade line item."
-        },
-        {
-            "uri": "unece:complementaryApplicableProduct",
-            "comment": "A referenced complementary product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:componentApplicableProduct",
-            "comment": "A referenced component product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:includedProduct",
-            "comment": "An included product referenced from this trade product."
-        },
-        {
-            "uri": "unece:requiredApplicableProduct",
-            "comment": "A required product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:specifiedProduct",
-            "comment": "The referenced product specified for this subordinate trade line item."
-        },
-        {
-            "uri": "unece:substituteApplicableProduct",
-            "comment": "A referenced substitute product applicable for this supply chain trade line item."
-        },
-        {
-            "uri": "unece:substituteProduct",
-            "comment": "A referenced product that may substitute for this trade product."
-        },
-        {
-            "uri": "unece:substitutedProduct",
-            "comment": "A referenced product substituted for ..."
+            "uri": "ConformityCredential:subjectProducts",
+            "comment": "The list of products that are the subject of this conformity assessment"
         }
     ]
 }

@@ -1,49 +1,16 @@
-
 {
-    "label": "Marking",
-    "uri": "unece:Marking",
-    "comment": "An inscription, stamp or label on packaging, such as to indicate date, ownership, quality, manufacture or origin.",
-    "objectProperties": [
+    "label": "marking",
+    "uri": "ConformityCredential:marking",
+    "comment": "Markings or codes on the product that can be used to match the physical product to this confomity assessment. if not provided then the productID MUST be marked on the product.",
+    "rangeIncludes": [
         {
-            "uri": "unece:automaticDataCaptureMethodTypeCode",
-            "type": "unece:AutomaticDataCaptureMethodCodeList",
-            "comment": "A code specifying an automatic data capture method type for this packaging marking."
-        },
-        {
-            "uri": "unece:content",
-            "type": "xsd:string",
-            "comment": "Content, expressed as text, of this packaging marking."
-        },
-        {
-            "uri": "unece:contentAmount",
-            "type": "unece:AmountType",
-            "comment": "Content, expressed as a monetary amount, for this packaging marking."
-        },
-        {
-            "uri": "unece:contentCode",
-            "type": "xsd:string",
-            "comment": "Content, expressed as a code, of this packaging marking."
-        },
-        {
-            "uri": "unece:contentDateTime",
-            "type": "xsd:string",
-            "comment": "The date, time, date time or other date time value for the content of this packaging marking."
-        },
-        {
-            "uri": "unece:packagingMarkingBarcodeTypeCode",
-            "type": "xsd:string",
-            "comment": "A code specifying a type of barcode for this packaging marking."
-        },
-        {
-            "uri": "unece:packagingMarkingTypeCode",
-            "type": "unece:PackagingMarkingCodeList",
-            "comment": "A code specifying a type of packaging marking."
+            "uri": "xsd:string"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "unece:specifiedMarking",
-            "comment": "A marking specified for this ..."
+            "uri": "ConformityCredential:Product",
+            "comment": "The facility (fatctory, farm, etc) or product or produciton batch that this conformity attestation is about."
         }
     ]
 }

@@ -1,5 +1,6 @@
 ---
-title: encryptionMethod
-permalink: encryptionMethod.html
-jsonid: encryptionmethod
+title: EncryptionMethod
+permalink: EncryptionMethod
+redirect_to:
+  - EncryptionMethodProperty
 ---

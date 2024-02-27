@@ -1,17 +1,18 @@
-
 {
-    "label": "encryptionMethod",
-    "uri": "unece:encryptionMethod",
-    "comment": "The encryption method, expressed as text, for this XHE payload instance.",
-    "rangeIncludes": [
+    "label": "EncryptionMethod",
+    "uri": "ConformityCredential:EncryptionMethod",
+    "comment": "",
+    "values": [
         {
-            "uri": "xsd:string"
+            "uri": "ConformityCredential:EncryptionMethod#none",
+            "comment": "no encryption",
+            "value": ""
         }
     ],
-    "domainIncludes": [
+    "referencedBy": [
         {
-            "uri": "unece:PayloadInstance",
-            "comment": "An individual set of transmitted data in an XHE (Exchange Header Envelope)."
+            "uri": "ConformityCredential:EncryptionMethod",
+            "comment": "A code indicating the encryption method applied to the file."
         }
     ]
 }

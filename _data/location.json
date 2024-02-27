@@ -1,140 +1,23 @@
-
 {
     "label": "Location",
-    "uri": "unece:Location",
-    "comment": "A reference to a physical location or place.",
-    "objectProperties": [
+    "uri": "ConformityCredential:Location",
+    "comment": "A physical facility at a specified geolocation.",
+    "datatypeProperties": [
         {
-            "uri": "unece:applicableSpecifiedInspection",
-            "type": "unece:SpecifiedInspection",
-            "comment": "A specified inspection applicable to this referenced location."
-        },
-        {
-            "uri": "unece:applicableSustainabilityCharacteristic",
-            "type": "unece:SustainabilityCharacteristic",
-            "comment": "A sustainability characteristic applicable to this referenced location."
-        },
-        {
-            "uri": "unece:applicableSustainabilityInspection",
-            "type": "unece:SustainabilityInspection",
-            "comment": "A sustainability inspection applicable to this referenced location."
-        },
-        {
-            "uri": "unece:appliedAgriculturalApplication",
-            "type": "unece:AgriculturalApplication",
-            "comment": "A specified agricultural application applied to this referenced location."
-        },
-        {
-            "uri": "unece:associatedGeographicalFeature",
-            "type": "unece:GeographicalFeature",
-            "comment": "A geographical feature associated with this referenced location."
-        },
-        {
-            "uri": "unece:countryName",
+            "uri": "ConformityCredential:Geolocation",
             "type": "xsd:string",
-            "comment": "The country name, expressed as text, of this referenced location."
+            "comment": "The geolocated point or area that can be used to place the location on a map. Should be a PlusCode - eg https://plus.codes/4RQGGVGP+"
         },
         {
-            "uri": "unece:countrySubDivisionId",
+            "uri": "ConformityCredential:locationId",
             "type": "xsd:string",
-            "comment": "The identifier of the country sub-division for this referenced location."
-        },
-        {
-            "uri": "unece:description",
-            "type": "xsd:string",
-            "comment": "A textual description for this referenced location."
-        },
-        {
-            "uri": "unece:globalId",
-            "type": "xsd:string",
-            "comment": "A global identifier of this referenced location."
-        },
-        {
-            "uri": "unece:identifier",
-            "type": "xsd:string",
-            "comment": "An identifier for this referenced location such as a United Nations Blue Number (UNBN) or GS1 Global Location Number (GLN)."
-        },
-        {
-            "uri": "unece:locationCountryId",
-            "type": "unece:CountryId",
-            "comment": "The identifier of the country for this referenced location."
-        },
-        {
-            "uri": "unece:locationTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of referenced location."
-        },
-        {
-            "uri": "unece:name",
-            "type": "xsd:string",
-            "comment": "A name, expressed as text, of this referenced location."
-        },
-        {
-            "uri": "unece:postalAddress",
-            "type": "unece:TradeAddress",
-            "comment": "The postal trade address for this referenced location."
-        },
-        {
-            "uri": "unece:referenceTypeCode",
-            "type": "unece:ReferenceCodeList",
-            "comment": "The code specifying the reference type of this referenced location."
-        },
-        {
-            "uri": "unece:relatedProductionUnit",
-            "type": "unece:ProductionUnit",
-            "comment": "A facility production unit related to this referenced location."
-        },
-        {
-            "uri": "unece:specifiedAssertion",
-            "type": "unece:Assertion",
-            "comment": "A sustainability assertion specified for this referenced location."
-        },
-        {
-            "uri": "unece:specifiedFacility",
-            "type": "unece:ProductionFacility",
-            "comment": "A production facility specified for this referenced location."
-        },
-        {
-            "uri": "unece:specifiedInventory",
-            "type": "unece:SupplyChainInventory",
-            "comment": "Supply chain inventory specified for this referenced location."
-        },
-        {
-            "uri": "unece:specifiedSupplyChainEvent",
-            "type": "unece:SupplyChainEvent",
-            "comment": "A supply chain event specified for this referenced location."
-        },
-        {
-            "uri": "unece:specifiedTradeParty",
-            "type": "unece:TradeParty",
-            "comment": "A trade party specified for this referenced location."
-        },
-        {
-            "uri": "unece:uTCOffsetNumeric",
-            "type": "xsd:string",
-            "comment": "The UTC (Universal Time Coordinate) time offset value for this referenced location."
+            "comment": "Identfier of the facility at which the assessment was undertaken. Eg A GLN."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:facilityLocation",
-            "comment": "A facility location referenced for this logistics location."
-        },
-        {
-            "uri": "unece:occurrenceLocation",
-            "comment": "The referenced location for the ..."
-        },
-        {
-            "uri": "unece:physicalLocation",
-            "comment": "A physical location referenced for ..."
-        },
-        {
-            "uri": "unece:relatedLocation",
-            "comment": "A referenced location related to ..."
-        },
-        {
-            "uri": "unece:specifiedLocation",
-            "comment": "A referenced location specified for ..."
+            "uri": "ConformityCredential:location",
+            "comment": "The physical location of this facility."
         }
     ]
 }

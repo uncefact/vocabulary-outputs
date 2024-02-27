@@ -5,9 +5,8 @@ type: default
 class: white
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UN/CEFACT Web Vocabulary</h1>
-    <p class="home-content__description">The UN/CEFACT Web Vocabulary is a linked data representation of the UN/CEFACT
-        Buy-Ship-Pay Reference Data Model.</p>
+    <h1 class="home-content__title">UNTP Conformity Credential Vocabulary</h1>
+    <p class="home-content__description">The UNTP Conformity Credential Vocabulary is a linked data representation of Conformity Credential Data Model.</p>
     <div class="search-block">
         <form action="{{ '/search' | prepend: site.baseurl }}" method="get" class="search-block">
             <div class="search-block__container">
@@ -38,12 +37,12 @@ class: white
                     Classes
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of BSP Classes</p>
+                    <p class="browse-type__description">List of Conformity Credential Classes</p>
                     <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
                 </div>
-                {% if site.versions.bsp %}
+                {% if site.versions.cc %}
                     <span class="browse-type__version">
-                        {{ site.versions.bsp }}
+                        {{ site.versions.cc }}
                     </span>
                 {% endif %}
             </li>
@@ -60,12 +59,12 @@ class: white
                     Properties
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of BSP Properties</p>
+                    <p class="browse-type__description">List of Conformity Credential Properties</p>
                     <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
                 </div>
-                {% if site.versions.bsp %}
+                {% if site.versions.cc %}
                     <span class="browse-type__version">
-                        {{ site.versions.bsp }}
+                        {{ site.versions.cc }}
                     </span>
                 {% endif %}
             </li>
@@ -82,12 +81,12 @@ class: white
                     Code Lists
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of BSP Codes</p>
+                    <p class="browse-type__description">List of Conformity Credential Codes</p>
                     <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
                 </div>
-                {% if site.versions.bsp %}
+                {% if site.versions.cc %}
                     <span class="browse-type__version">
-                        {{ site.versions.bsp }}
+                        {{ site.versions.cc }}
                     </span>
                 {% endif %}
             </li>

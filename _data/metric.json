@@ -1,0 +1,32 @@
+{
+    "label": "Metric",
+    "uri": "ConformityCredential:Metric",
+    "comment": "A numric value of the conformity claim - eg this product scope 1 emissions intensity is 5 KgCo2e/Kg",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:metric",
+            "type": "xsd:string",
+            "comment": "A pointer to the definition of the metric - should be a vocabulary item URI mantained by the standards authority or regulator."
+        },
+        {
+            "uri": "ConformityCredential:unit",
+            "type": "ConformityCredential:UOM",
+            "comment": "The unit of measurement for the metric from UNECE Rec 20 UoM code list."
+        },
+        {
+            "uri": "ConformityCredential:value",
+            "type": "xsd:decimal",
+            "comment": "The measured value.  "
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "ConformityCredential:measuredResults",
+            "comment": "The list of specific values measured as part of this assessment (eg tensile strength)"
+        },
+        {
+            "uri": "ConformityCredential:thresholdValue",
+            "comment": "A conformity threshold defined by the specification (eg minimum compressive strength)"
+        }
+    ]
+}

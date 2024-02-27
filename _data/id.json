@@ -1,0 +1,32 @@
+{
+    "label": "id",
+    "uri": "ConformityCredential:id",
+    "comment": "The unique identifier of this conformity attestation",
+    "rangeIncludes": [
+        {
+            "uri": "xsd:string"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "ConformityCredential:ConformityAttestation",
+            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
+        },
+        {
+            "uri": "ConformityCredential:SchemeOrProgram",
+            "comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)"
+        },
+        {
+            "uri": "ConformityCredential:StandardOrRegulation",
+            "comment": "A standard (eg ISO 14000) or regulation (eg EU deforestation regulation) that specifies the criteria for conformance."
+        },
+        {
+            "uri": "ConformityCredential:Criteria",
+            "comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard."
+        },
+        {
+            "uri": "ConformityCredential:Party",
+            "comment": "A party in the conformity domain such as the manufacturer, assessment body, standards authority, accreditation authority, etc"
+        }
+    ]
+}

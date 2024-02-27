@@ -1,0 +1,82 @@
+{
+    "label": "ConformityAttestation",
+    "uri": "ConformityCredential:ConformityAttestation",
+    "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:accreditation",
+            "type": "ConformityCredential:Authority",
+            "comment": "The accreditation that from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+        },
+        {
+            "uri": "ConformityCredential:assessments",
+            "type": "ConformityCredential:ConformityAssessment",
+            "comment": "The list of specific assessments made within this conformity attestation."
+        },
+        {
+            "uri": "ConformityCredential:certificate",
+            "type": "ConformityCredential:File",
+            "comment": ""
+        },
+        {
+            "uri": "ConformityCredential:class",
+            "type": "ConformityCredential:AssuranceClass",
+            "comment": "The type of attestation (formal conformity, industry or communituy, self assessed)"
+        },
+        {
+            "uri": "ConformityCredential:description",
+            "type": "xsd:string",
+            "comment": "A textual description of the scope or purpose of this confomrity attestation"
+        },
+        {
+            "uri": "ConformityCredential:evidence",
+            "type": "ConformityCredential:ConformityEvidence",
+            "comment": "Evidence supporting the assessment"
+        },
+        {
+            "uri": "ConformityCredential:id",
+            "type": "xsd:string",
+            "comment": "The unique identifier of this conformity attestation"
+        },
+        {
+            "uri": "ConformityCredential:issuedBy",
+            "type": "ConformityCredential:Party",
+            "comment": "The party that issued the conformity attestation."
+        },
+        {
+            "uri": "ConformityCredential:issuedTo",
+            "type": "ConformityCredential:Party",
+            "comment": "The party to whom the conformity attestation was issued."
+        },
+        {
+            "uri": "ConformityCredential:regulatoryApproval",
+            "type": "ConformityCredential:Authority",
+            "comment": "The regulatory approval under which this conformity attestation is issued. "
+        },
+        {
+            "uri": "ConformityCredential:scope",
+            "type": "ConformityCredential:SchemeOrProgram",
+            "comment": "A list of relevant standards and/or regulations against which apply to this attestation (eg AS1163:2016)."
+        },
+        {
+            "uri": "ConformityCredential:status",
+            "type": "ConformityCredential:Status",
+            "comment": "The status of this conformity attestation (eg pending, valid, expired, revoked)"
+        },
+        {
+            "uri": "ConformityCredential:type",
+            "type": "ConformityCredential:AttestationType",
+            "comment": "The type of criterion (optional or mandatory)."
+        },
+        {
+            "uri": "ConformityCredential:validFrom",
+            "type": "xsd:string",
+            "comment": "The date from which the conformity attestation is valid."
+        },
+        {
+            "uri": "ConformityCredential:validTo",
+            "type": "xsd:string",
+            "comment": "The date until which the conformity attestation is valid."
+        }
+    ]
+}

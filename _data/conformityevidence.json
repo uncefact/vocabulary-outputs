@@ -1,0 +1,33 @@
+{
+    "label": "ConformityEvidence",
+    "uri": "ConformityCredential:ConformityEvidence",
+    "comment": "The specific collection of evidence that was used to inform the conformity claim. Eg satellite images and supporting declarations in support of a deforestation claim.",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:decryptionKeyRequest",
+            "type": "xsd:string",
+            "comment": "A URI to request the decryption key for the evidence."
+        },
+        {
+            "uri": "ConformityCredential:description",
+            "type": "xsd:string",
+            "comment": "A textual description of the scope or purpose of this confomrity attestation"
+        },
+        {
+            "uri": "ConformityCredential:evidenceData",
+            "type": "ConformityCredential:File",
+            "comment": "Files that constitute the evidence."
+        },
+        {
+            "uri": "ConformityCredential:evidenceRootHash",
+            "type": "xsd:string",
+            "comment": "An MD5 hash representing the root of the evidence."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "ConformityCredential:evidence",
+            "comment": "Evidence supporting the assessment"
+        }
+    ]
+}

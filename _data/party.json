@@ -1,0 +1,35 @@
+{
+    "label": "Party",
+    "uri": "ConformityCredential:Party",
+    "comment": "A party in the conformity domain such as the manufacturer, assessment body, standards authority, accreditation authority, etc",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:id",
+            "type": "xsd:string",
+            "comment": "The unique identifier of this conformity attestation"
+        },
+        {
+            "uri": "ConformityCredential:name",
+            "type": "xsd:string",
+            "comment": "The name of the conformity scheme (eg ACRS structural steel certification)"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "ConformityCredential:authority",
+            "comment": "The competent authority that issued the accreditation."
+        },
+        {
+            "uri": "ConformityCredential:issuedBy",
+            "comment": "The party that issued the conformity attestation."
+        },
+        {
+            "uri": "ConformityCredential:issuedTo",
+            "comment": "The party to whom the conformity attestation was issued."
+        },
+        {
+            "uri": "ConformityCredential:issuingBody",
+            "comment": "The issuing body of the conformity scheme."
+        }
+    ]
+}

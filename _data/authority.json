@@ -1,0 +1,42 @@
+{
+    "label": "Authority",
+    "uri": "ConformityCredential:Authority",
+    "comment": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. ",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:authority",
+            "type": "ConformityCredential:Party",
+            "comment": "The competent authority that issued the accreditation."
+        },
+        {
+            "uri": "ConformityCredential:credential",
+            "type": "xsd:string",
+            "comment": "The pointer to the credential issued by a trust anchor that accredits the party making the assessment."
+        },
+        {
+            "uri": "ConformityCredential:credentialType",
+            "type": "ConformityCredential:EvidenceType",
+            "comment": "A code specifying the accreditaiotn evidence type (eg VC, web page, DAKKS seal)"
+        },
+        {
+            "uri": "ConformityCredential:number",
+            "type": "xsd:string",
+            "comment": "The reference number for the accreditation - issued by the accreditation body (AB) to the confomrity assessment body (CAB)"
+        },
+        {
+            "uri": "ConformityCredential:trustmark",
+            "type": "xsd:string",
+            "comment": "The trust mark that represents the conformity assessment scheme."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "ConformityCredential:accreditation",
+            "comment": "The accreditation that from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+        },
+        {
+            "uri": "ConformityCredential:regulatoryApproval",
+            "comment": "The regulatory approval under which this conformity attestation is issued. "
+        }
+    ]
+}

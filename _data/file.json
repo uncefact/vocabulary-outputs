@@ -1,0 +1,37 @@
+{
+    "label": "File",
+    "uri": "ConformityCredential:File",
+    "comment": "A file representing a data snapshot that is used to infomr the conformity assessment.",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:EncryptionMethod",
+            "type": "ConformityCredential:EncryptionMethod",
+            "comment": "A code indicating the encryption method applied to the file."
+        },
+        {
+            "uri": "ConformityCredential:fileHash",
+            "type": "xsd:string",
+            "comment": "The MD5 hash of the file."
+        },
+        {
+            "uri": "ConformityCredential:fileLocation",
+            "type": "xsd:string",
+            "comment": "The location of the evidence file."
+        },
+        {
+            "uri": "ConformityCredential:fileType",
+            "type": "ConformityCredential:mimeType",
+            "comment": "The type of file, represented as a MIME type."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "ConformityCredential:certificate",
+            "comment": ""
+        },
+        {
+            "uri": "ConformityCredential:evidenceData",
+            "comment": "Files that constitute the evidence."
+        }
+    ]
+}

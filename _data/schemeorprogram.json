@@ -1,0 +1,38 @@
+{
+    "label": "SchemeOrProgram",
+    "uri": "ConformityCredential:SchemeOrProgram",
+    "comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)",
+    "datatypeProperties": [
+        {
+            "uri": "ConformityCredential:dateOfIssue",
+            "type": "xsd:string",
+            "comment": "The date of issue of the scheme."
+        },
+        {
+            "uri": "ConformityCredential:id",
+            "type": "xsd:string",
+            "comment": "The unique identifier of this conformity attestation"
+        },
+        {
+            "uri": "ConformityCredential:issuingBody",
+            "type": "ConformityCredential:Party",
+            "comment": "The issuing body of the conformity scheme."
+        },
+        {
+            "uri": "ConformityCredential:name",
+            "type": "xsd:string",
+            "comment": "The name of the conformity scheme (eg ACRS structural steel certification)"
+        },
+        {
+            "uri": "ConformityCredential:trustmark",
+            "type": "xsd:string",
+            "comment": "The trust mark that represents the conformity assessment scheme."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "ConformityCredential:scope",
+            "comment": "A list of relevant standards and/or regulations against which apply to this attestation (eg AS1163:2016)."
+        }
+    ]
+}
