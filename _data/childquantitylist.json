@@ -1,0 +1,16 @@
+{
+    "label": "childQuantityList",
+    "uri": "traceabilityEvents:childQuantityList",
+    "comment": "List of quantified product classes that have been aggregated into the parent.  Used whwn the child items do not have unique identifiers (eg 100 Kg of cotton bales)",
+    "rangeIncludes": [
+        {
+            "uri": "traceabilityEvents:QuantityElement"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "traceabilityEvents:AggregationEvent",
+            "comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking."
+        }
+    ]
+}

@@ -1,35 +1,31 @@
 {
     "label": "Party",
-    "uri": "ConformityCredential:Party",
-    "comment": "A party in the conformity domain such as the manufacturer, assessment body, standards authority, accreditation authority, etc",
+    "uri": "traceabilityEvents:Party",
+    "comment": "A trade party ",
     "datatypeProperties": [
         {
-            "uri": "ConformityCredential:id",
+            "uri": "traceabilityEvents:name",
             "type": "xsd:string",
-            "comment": "The unique identifier of this conformity attestation"
+            "comment": "The entity name of the identified party - usually the business anme from the corresponding natinal registery -eg ACME LTD"
         },
         {
-            "uri": "ConformityCredential:name",
+            "uri": "traceabilityEvents:partyID",
             "type": "xsd:string",
-            "comment": "The name of the conformity scheme (eg ACRS structural steel certification)"
+            "comment": "The globally unique identifier of the party. This must be expressed as a URI that is (preferably) resolvable to an entity register such as a national business register - eg https://abr.business.gov.au/ABN/View?abn=41161080146 "
         }
     ],
     "referencedBy": [
         {
-            "uri": "ConformityCredential:authority",
-            "comment": "The competent authority that issued the accreditation."
+            "uri": "traceabilityEvents:destinationParty",
+            "comment": "The destination party for this supply chain transaction - typcially the buyer party."
         },
         {
-            "uri": "ConformityCredential:issuedBy",
-            "comment": "The party that issued the conformity attestation."
+            "uri": "traceabilityEvents:responsibleAgency",
+            "comment": "The issuing authority of the certificate."
         },
         {
-            "uri": "ConformityCredential:issuedTo",
-            "comment": "The party to whom the conformity attestation was issued."
-        },
-        {
-            "uri": "ConformityCredential:issuingBody",
-            "comment": "The issuing body of the conformity scheme."
+            "uri": "traceabilityEvents:sourceParty",
+            "comment": "The source party for this supply chain transaction - typcially the seller party"
         }
     ]
 }

@@ -1,0 +1,58 @@
+{
+    "label": "Event",
+    "uri": "traceabilityEvents:Event",
+    "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class represenitng all common properties of an EPCIS event.  ",
+    "datatypeProperties": [
+        {
+            "uri": "traceabilityEvents:actionCode",
+            "type": "traceabilityEvents:ActionCode",
+            "comment": "The Action type says how an event relates to the lifecycle of the entity being described. For example, AggregationEvent is used to capture events related to aggregations of objects, such as cases aggregated to a pallet. Throughout its life, the pallet load participates in many business process steps, each of which may generate an EPCIS event. The action field of each event says how the aggregation itself has changed during the event: have objects been added to the aggregation, have objects been removed from the aggregation, or has the aggregation simply been observed without change to its membership? The action is independent of the bizStep (of type BusinessStepID) which identifies the specific business process step in which the action took place.  allowed values are: - ADD (The entity in question has been created or added to.) - OBSERVE (Theentityinquestionhasnotbeenchanged:ithasneitherbeencreated,addedto,destroyed,orremovedfrom.) - DELETE (The entity in question has been removed from or destroyed altogether.)"
+        },
+        {
+            "uri": "traceabilityEvents:businessStepCode",
+            "type": "traceabilityEvents:BusinessStepCode",
+            "comment": "BusinessStepID is a vocabulary whose elements denote steps in business processes. An example is an identifier that denotes “shipping.” The business step field of an event specifies the business context of an event: what business process step was taking place that caused the event to be captured? This specification has chosena 5 of the 41 possible bizstep values defined by GS1 that are appropriate for the sustainbility use case."
+        },
+        {
+            "uri": "traceabilityEvents:certification",
+            "type": "traceabilityEvents:CertificationInfo",
+            "comment": "Any test result or certification related to this EPCIS event.Could be self-assessed or independent and has asssociated sustainabiloity claims from the ITC vocabulary."
+        },
+        {
+            "uri": "traceabilityEvents:dispositionCode",
+            "type": "traceabilityEvents:DispositionCode",
+            "comment": "Disposition code is a vocabulary whose elements denote a business state of an object. An example is a code that denotes “recalled\". The disposition field of an event specifies the business condition of the event’s objects, subsequent to the event. The disposition is assumed to hold true until another event indicates a change of disposition. Intervening events that do not specify a disposition field have no effect on the presumed disposition of the object.  The GS1 vocabulary (CBV v2.0) defines 33 possible disposition codes but this specification restricts the options to the minimum set of values that are relevant for supply chain traceability.  "
+        },
+        {
+            "uri": "traceabilityEvents:eventID",
+            "type": "xsd:string",
+            "comment": "The unique identifier of this event - SHOULD be a UUID"
+        },
+        {
+            "uri": "traceabilityEvents:eventTime",
+            "type": "xsd:string",
+            "comment": "The ISO-8601 date time when the event occured."
+        },
+        {
+            "uri": "traceabilityEvents:eventType",
+            "type": "traceabilityEvents:EventType",
+            "comment": "The event type - object, aggregation, transformation, transaction."
+        },
+        {
+            "uri": "traceabilityEvents:locationId",
+            "type": "xsd:string",
+            "comment": "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. This specification requires the use of https://maps.google.com/pluscodes/ as geospatial identifiers rather than identifier schemes that cannot be reolved to a geogrpahic point or area."
+        },
+        {
+            "uri": "traceabilityEvents:readPointId",
+            "type": "xsd:string",
+            "comment": "A Read Point is a discretely recorded location that is meant to identify the most specific place at which an EPCIS event took place. Read Points are determined by the EPCIS Capturing Application, perhaps inferred as a function of logical reader if stationary readers are used, perhaps determined overtly by reading a location tag if the reader is mobile, or in general determined by any other means the EPCIS Capturing Application chooses to use. Conceptually, the Read Point is designed to identify “where objects were at the time of the EPCIS event.”"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "traceabilityEvents:verificationData",
+            "comment": "The event data that is to be verified by the counter party"
+        }
+    ]
+}

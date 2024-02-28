@@ -1,0 +1,43 @@
+{
+    "label": "CertificationInfo",
+    "uri": "traceabilityEvents:CertificationInfo",
+    "comment": "Details of a self asssessed or independently verified set of sustainability claims about a product or an establishment.",
+    "datatypeProperties": [
+        {
+            "uri": "traceabilityEvents:assessmentLevel",
+            "type": "traceabilityEvents:assessmentLevel",
+            "comment": "The integrity level of the sustainability claims. Self asssed or independently certified.  "
+        },
+        {
+            "uri": "traceabilityEvents:certificateID",
+            "type": "xsd:string",
+            "comment": "The ID of the certificate document"
+        },
+        {
+            "uri": "traceabilityEvents:criteriaList",
+            "type": "xsd:string",
+            "comment": "Optional list of specific sustainability criteria that the certificate claims are met."
+        },
+        {
+            "uri": "traceabilityEvents:evidenceURL",
+            "type": "xsd:string",
+            "comment": "The URL of the certificate document. For privacy and integrity reasons, it is recommended (but not required) that * the documentURL is a hashlink (https://w3c-ccg.github.io/hashlink/) so that if the document the URL is changed then the hash verification will fail.* the document is encrypted for privacy reasons and that the symmetric key for decruption is provided as a URL parameter.* the document filename is a GUID so that there is no leakage of possibly identifying information in the URL.https://domain/GUID?h1={document_hash}&key={decryption_key}For examplehttps://docstore.com/ef1e69fbbeaf47b4af97e29c69dc09cf.pdf?h1=zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e&key=462D4A614E645267556B587032733576"
+        },
+        {
+            "uri": "traceabilityEvents:referenceStandard",
+            "type": "xsd:string",
+            "comment": "The identifier (as a URI) of the sustainability standard against whichthe certificate is issued.  For example abvtex.org.br/v4.0"
+        },
+        {
+            "uri": "traceabilityEvents:responsibleAgency",
+            "type": "traceabilityEvents:Party",
+            "comment": "The issuing authority of the certificate."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "traceabilityEvents:certification",
+            "comment": "Any test result or certification related to this EPCIS event.Could be self-assessed or independent and has asssociated sustainabiloity claims from the ITC vocabulary."
+        }
+    ]
+}

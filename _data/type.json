@@ -1,20 +1,16 @@
 {
     "label": "type",
-    "uri": "ConformityCredential:type",
-    "comment": "The type of criterion (optional or mandatory).",
+    "uri": "traceabilityEvents:type",
+    "comment": "The document type representing the trade transaciton. This profile for supply chain traceability defines a simple subset of 5 document types that may be referenced by a transaction event.",
     "rangeIncludes": [
         {
-            "uri": "ConformityCredential:AttestationType"
+            "uri": "traceabilityEvents:DocumentTypeCode"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "ConformityCredential:ConformityAttestation",
-            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
-        },
-        {
-            "uri": "ConformityCredential:StandardOrRegulation",
-            "comment": "A standard (eg ISO 14000) or regulation (eg EU deforestation regulation) that specifies the criteria for conformance."
+            "uri": "traceabilityEvents:TradeTransaction",
+            "comment": "A trade transaction between two parties such as an invoice, purchase order, or shipping notificaiotn."
         }
     ]
 }

@@ -1,0 +1,16 @@
+{
+    "label": "actionCode",
+    "uri": "traceabilityEvents:actionCode",
+    "comment": "The Action type says how an event relates to the lifecycle of the entity being described. For example, AggregationEvent is used to capture events related to aggregations of objects, such as cases aggregated to a pallet. Throughout its life, the pallet load participates in many business process steps, each of which may generate an EPCIS event. The action field of each event says how the aggregation itself has changed during the event: have objects been added to the aggregation, have objects been removed from the aggregation, or has the aggregation simply been observed without change to its membership? The action is independent of the bizStep (of type BusinessStepID) which identifies the specific business process step in which the action took place.  allowed values are: - ADD (The entity in question has been created or added to.) - OBSERVE (Theentityinquestionhasnotbeenchanged:ithasneitherbeencreated,addedto,destroyed,orremovedfrom.) - DELETE (The entity in question has been removed from or destroyed altogether.)",
+    "rangeIncludes": [
+        {
+            "uri": "traceabilityEvents:ActionCode"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "traceabilityEvents:Event",
+            "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class represenitng all common properties of an EPCIS event.  "
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "label": "name",
-    "uri": "ConformityCredential:name",
-    "comment": "The name of the conformity scheme (eg ACRS structural steel certification)",
+    "uri": "traceabilityEvents:name",
+    "comment": "The entity name of the identified party - usually the business anme from the corresponding natinal registery -eg ACME LTD",
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -9,24 +9,12 @@
     ],
     "domainIncludes": [
         {
-            "uri": "ConformityCredential:SchemeOrProgram",
-            "comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)"
+            "uri": "traceabilityEvents:Item",
+            "comment": "A specific trade item /product code which could be either a product serial number or a consignment identifier "
         },
         {
-            "uri": "ConformityCredential:Facility",
-            "comment": ""
-        },
-        {
-            "uri": "ConformityCredential:Product",
-            "comment": "The facility (fatctory, farm, etc) or product or produciton batch that this conformity attestation is about."
-        },
-        {
-            "uri": "ConformityCredential:StandardOrRegulation",
-            "comment": "A standard (eg ISO 14000) or regulation (eg EU deforestation regulation) that specifies the criteria for conformance."
-        },
-        {
-            "uri": "ConformityCredential:Party",
-            "comment": "A party in the conformity domain such as the manufacturer, assessment body, standards authority, accreditation authority, etc"
+            "uri": "traceabilityEvents:Party",
+            "comment": "A trade party "
         }
     ]
 }

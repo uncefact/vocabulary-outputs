@@ -1,0 +1,16 @@
+{
+    "label": "outputQuantityList",
+    "uri": "traceabilityEvents:outputQuantityList",
+    "comment": "The quantified list of product classes that are the output of this transformation event - usend when each item does not have a unique identity.  for example a count of the bales of cleaned cotton that are the output of a ginning process.",
+    "rangeIncludes": [
+        {
+            "uri": "traceabilityEvents:QuantityElement"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "traceabilityEvents:TransformationEvent",
+            "comment": "Transformation represents an event in which input objects are fully or partially consumed and output objects are produced, such that any of the input objects may have contributed to all of the output objects - for example consuming bales of cotton to produce yarn."
+        }
+    ]
+}

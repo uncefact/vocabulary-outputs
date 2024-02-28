@@ -1,0 +1,32 @@
+{
+    "label": "Document",
+    "uri": "traceabilityEvents:Document",
+    "comment": "A Secure binary document store.  ",
+    "datatypeProperties": [
+        {
+            "uri": "traceabilityEvents:file",
+            "type": "xsd:string",
+            "comment": "Base64 eoncided blob that is the document to be stored."
+        },
+        {
+            "uri": "traceabilityEvents:fileType",
+            "type": "traceabilityEvents:MIMEType",
+            "comment": "MIME type of stored document"
+        },
+        {
+            "uri": "traceabilityEvents:hash",
+            "type": "xsd:string",
+            "comment": "Multi-hash of the stored document object which is also used as the ID of the document.  "
+        },
+        {
+            "uri": "traceabilityEvents:key",
+            "type": "xsd:string",
+            "comment": "symmetric encryption key used to encrypt the stored document."
+        },
+        {
+            "uri": "traceabilityEvents:url",
+            "type": "xsd:string",
+            "comment": "The storage URL of the document which is of the form {path}/{hash}#{key}"
+        }
+    ]
+}

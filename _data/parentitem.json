@@ -1,0 +1,16 @@
+{
+    "label": "parentItem",
+    "uri": "traceabilityEvents:parentItem",
+    "comment": "The unique item identifier that is the result of this aggreation. Typcially a packaging ID used in shipments that represents a box/ pallet / container of contained items.",
+    "rangeIncludes": [
+        {
+            "uri": "traceabilityEvents:Item"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "traceabilityEvents:AggregationEvent",
+            "comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking."
+        }
+    ]
+}

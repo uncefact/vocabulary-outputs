@@ -1,0 +1,16 @@
+{
+    "label": "dispositionCode",
+    "uri": "traceabilityEvents:dispositionCode",
+    "comment": "Disposition code is a vocabulary whose elements denote a business state of an object. An example is a code that denotes “recalled\". The disposition field of an event specifies the business condition of the event’s objects, subsequent to the event. The disposition is assumed to hold true until another event indicates a change of disposition. Intervening events that do not specify a disposition field have no effect on the presumed disposition of the object.  The GS1 vocabulary (CBV v2.0) defines 33 possible disposition codes but this specification restricts the options to the minimum set of values that are relevant for supply chain traceability.  ",
+    "rangeIncludes": [
+        {
+            "uri": "traceabilityEvents:DispositionCode"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "traceabilityEvents:Event",
+            "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class represenitng all common properties of an EPCIS event.  "
+        }
+    ]
+}
