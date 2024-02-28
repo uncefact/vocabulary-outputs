@@ -1,0 +1,427 @@
+{
+    "@context": {
+        "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "@id",
+        "type": "@type",
+        "@vocab": "https://test.uncefact.org/vocabulary/untp/cc/",
+        "class": {
+            "@id": "cc:class",
+            "@type": "xsd:string"
+        },
+        "description": "xsd:string",
+        "scope": {
+            "@id": "cc:scope",
+            "@type": "@id",
+            "@context": {
+                "id": {
+                    "@id": "cc:id",
+                    "@type": "xsd:string"
+                },
+                "name": {
+                    "@id": "cc:name",
+                    "@type": "xsd:string"
+                },
+                "trustmark": {
+                    "@id": "cc:trustmark",
+                    "@type": "xsd:string"
+                },
+                "issuingBody": {
+                    "@context": {
+                        "id": {
+                            "@id": "cc:id",
+                            "@type": "xsd:string"
+                        },
+                        "name": {
+                            "@id": "cc:name",
+                            "@type": "xsd:string"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:issuingBody"
+                },
+                "dateOfIssue": {
+                    "@id": "cc:dateOfIssue",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "issuedBy": {
+            "@context": {
+                "id": {
+                    "@id": "cc:id",
+                    "@type": "xsd:string"
+                },
+                "name": {
+                    "@id": "cc:name",
+                    "@type": "xsd:string"
+                }
+            },
+            "@type": "@id",
+            "@id": "cc:issuedBy"
+        },
+        "issuedTo": {
+            "@context": {
+                "id": {
+                    "@id": "cc:id",
+                    "@type": "xsd:string"
+                },
+                "name": {
+                    "@id": "cc:name",
+                    "@type": "xsd:string"
+                }
+            },
+            "@type": "@id",
+            "@id": "xsd:string"
+        },
+        "validFrom": {
+            "@id": "cc:validFrom",
+            "@type": "xsd:string"
+        },
+        "validTo": {
+            "@id": "cc:validTo",
+            "@type": "xsd:string"
+        },
+        "status": {
+            "@id": "cc:valstatusidFrom",
+            "@type": "xsd:string"
+        },
+        "assessments": {
+            "@context": {
+                "requirementReference": {
+                    "@context": {
+                        "id": {
+                            "@id": "cc:id",
+                            "@type": "xsd:string"
+                        },
+                        "name": {
+                            "@id": "cc:name",
+                            "@type": "xsd:string"
+                        },
+                        "issuingBody": {
+                            "@context": {
+                                "id": {
+                                    "@id": "cc:id",
+                                    "@type": "xsd:string"
+                                },
+                                "name": {
+                                    "@id": "cc:name",
+                                    "@type": "xsd:string"
+                                }
+                            },
+                            "@type": "@id",
+                            "@id": "cc:issuingBody"
+                        },
+                        "dateOfIssue": {
+                            "@id": "cc:dateOfIssue",
+                            "@type": "xsd:string"
+                        },
+                        "criteria": {
+                            "@context": {
+                                "id": {
+                                    "@id": "cc:id",
+                                    "@type": "xsd:string"
+                                },
+                                "thresholdValue": {
+                                    "@context": {
+                                        "metric": {
+                                            "@id": "cc:metric",
+                                            "@type": "xsd:string"
+                                        },
+                                        "unit": {
+                                            "@id": "cc:unit",
+                                            "@type": "xsd:string"
+                                        },
+                                        "value": {
+                                            "@id": "cc:value",
+                                            "@type": "xsd:string"
+                                        }
+                                    },
+                                    "@type": "@id",
+                                    "@id": "cc:thresholdValue",
+                                    "@container": "@list"
+                                },
+                                "description": {
+                                    "@id": "cc:description",
+                                    "@type": "xsd:string"
+                                }
+                            },
+                            "@type": "@id",
+                            "@id": "cc:criteria",
+                            "@container": "@list"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:requirementReference"
+                },
+                "assessmentCriterion": {
+                    "@context": {
+                        "id": {
+                            "@id": "cc:id",
+                            "@type": "xsd:string"
+                        },
+                        "thresholdValue": {
+                            "@context": {
+                                "metric": {
+                                    "@id": "cc:metric",
+                                    "@type": "xsd:string"
+                                },
+                                "unit": {
+                                    "@id": "cc:unit",
+                                    "@type": "xsd:string"
+                                },
+                                "value": {
+                                    "@id": "cc:value",
+                                    "@type": "xsd:string"
+                                }
+                            },
+                            "@type": "@id",
+                            "@id": "cc:thresholdValue",
+                            "@container": "@list"
+                        },
+                        "description": {
+                            "@id": "cc:description",
+                            "@type": "xsd:string"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:assessmentCriterion"
+                },
+                "subjectProducts": {
+                    "@context": {
+                        "productId": {
+                            "@id": "cc:productId",
+                            "@type": "xsd:string"
+                        },
+                        "marking": {
+                            "@id": "cc:marking",
+                            "@type": "xsd:string"
+                        },
+                        "name": {
+                            "@id": "cc:name",
+                            "@type": "xsd:string"
+                        },
+                        "classification": {
+                            "@id": "cc:classification",
+                            "@type": "xsd:string"
+                        },
+                        "testedBatchId": {
+                            "@id": "cc:testedBatchId",
+                            "@type": "xsd:string"
+                        },
+                        "verfifiedByCAB": {
+                            "@id": "cc:verfifiedByCAB",
+                            "@type": "xsd:boolean"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:subjectProducts",
+                    "@container": "@list"
+                },
+                "subjectFacilities": {
+                    "@context": {
+                        "facilityId": {
+                            "@id": "cc:facilityId",
+                            "@type": "xsd:string"
+                        },
+                        "name": {
+                            "@id": "cc:name",
+                            "@type": "xsd:string"
+                        },
+                        "classification": {
+                            "@id": "cc:classification",
+                            "@type": "xsd:string"
+                        },
+                        "location": {
+                            "@context": {
+                                "locationId": {
+                                    "@id": "cc:locationId",
+                                    "@type": "xsd:string"
+                                },
+                                "Geolocation": {
+                                    "@id": "cc:Geolocation",
+                                    "@type": "xsd:string"
+                                }
+                            },
+                            "@type": "@id",
+                            "@id": "cc:location"
+                        },
+                        "verfifiedByCAB": {
+                            "@id": "cc:verfifiedByCAB",
+                            "@type": "xsd:boolean"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:subjectFacilities",
+                    "@container": "@list"
+                },
+                "measuredResults": {
+                    "@context": {
+                        "metric": {
+                            "@id": "cc:metric",
+                            "@type": "xsd:string"
+                        },
+                        "unit": {
+                            "@id": "cc:unit",
+                            "@type": "xsd:string"
+                        },
+                        "value": {
+                            "@id": "cc:value",
+                            "@type": "xsd:string"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:measuredResults",
+                    "@container": "@list"
+                },
+                "compliance": {
+                    "@id": "cc:compliance",
+                    "@type": "xsd:boolean"
+                },
+                "ESGtopic": {
+                    "@id": "cc:ESGtopic",
+                    "@type": "xsd:string"
+                }
+            },
+            "@type": "@id",
+            "@id": "cc:assessments",
+            "@container": "@list"
+        },
+        "evidence": {
+            "@context": {
+                "evidenceRootHash": {
+                    "@id": "cc:evidenceRootHash",
+                    "@type": "xsd:string"
+                },
+                "description": {
+                    "@id": "cc:description",
+                    "@type": "xsd:string"
+                },
+                "evidenceData": {
+                    "@context": {
+                        "fileHash": {
+                            "@id": "cc:fileHash",
+                            "@type": "xsd:string"
+                        },
+                        "fileLocation": {
+                            "@id": "cc:fileLocation",
+                            "@type": "xsd:string"
+                        },
+                        "fileType": {
+                            "@id": "cc:fileType",
+                            "@type": "xsd:string"
+                        },
+                        "EncryptionMethod": {
+                            "@id": "cc:EncryptionMethod",
+                            "@type": "xsd:string"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:evidenceData",
+                    "@container": "@list"
+                },
+                "decryptionKeyRequest": {
+                    "@id": "cc:decryptionKeyRequest",
+                    "@type": "xsd:string"
+                }
+            },
+            "@type": "@id",
+            "@id": "cc:evidence"
+        },
+        "accreditation": {
+            "@context": {
+                "number": {
+                    "@id": "cc:number",
+                    "@type": "xsd:string"
+                },
+                "credential": {
+                    "@id": "cc:credential",
+                    "@type": "xsd:string"
+                },
+                "credentialType": {
+                    "@id": "cc:credentialType",
+                    "@type": "xsd:string"
+                },
+                "trustmark": {
+                    "@id": "cc:trustmark",
+                    "@type": "xsd:string"
+                },
+                "authority": {
+                    "@context": {
+                        "id": {
+                            "@id": "cc:id",
+                            "@type": "xsd:string"
+                        },
+                        "name": {
+                            "@id": "cc:name",
+                            "@type": "xsd:string"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:authority"
+                }
+            },
+            "@type": "@id",
+            "@id": "cc:accreditation"
+        },
+        "regulatoryApproval": {
+            "@context": {
+                "number": {
+                    "@id": "cc:number",
+                    "@type": "xsd:string"
+                },
+                "credential": {
+                    "@id": "cc:credential",
+                    "@type": "xsd:string"
+                },
+                "credentialType": {
+                    "@id": "cc:credentialType",
+                    "@type": "xsd:string"
+                },
+                "trustmark": {
+                    "@id": "cc:trustmark",
+                    "@type": "xsd:string"
+                },
+                "authority": {
+                    "@context": {
+                        "id": {
+                            "@id": "cc:id",
+                            "@type": "xsd:string"
+                        },
+                        "name": {
+                            "@id": "cc:name",
+                            "@type": "xsd:string"
+                        }
+                    },
+                    "@type": "@id",
+                    "@id": "cc:authority"
+                }
+            },
+            "@type": "@id",
+            "@id": "cc:regulatoryApproval"
+        },
+        "certificate": {
+            "@context": {
+                "fileHash": {
+                    "@id": "cc:fileHash",
+                    "@type": "xsd:string"
+                },
+                "fileLocation": {
+                    "@id": "cc:fileLocation",
+                    "@type": "xsd:string"
+                },
+                "fileType": {
+                    "@id": "cc:fileType",
+                    "@type": "xsd:string"
+                },
+                "EncryptionMethod": {
+                    "@id": "cc:EncryptionMethod",
+                    "@type": "xsd:string"
+                }
+            },
+            "@type": "@id",
+            "@id": "cc:certificate"
+        },
+        "@version": 1.1
+    }
+}

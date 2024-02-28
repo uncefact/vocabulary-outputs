@@ -1,0 +1,194 @@
+{
+    "@context": {
+        "class": "xsd:string",
+        "description": "xsd:string",
+        "scope": {
+            "@context": {
+                "id": "xsd:string",
+                "name": "xsd:string",
+                "trustmark": "xsd:string",
+                "issuingBody": {
+                    "@context": {
+                        "id": "xsd:string",
+                        "name": "xsd:string"
+                    },
+                    "@id": "xsd:string"
+                },
+                "dateOfIssue": "xsd:string"
+            },
+            "@id": "xsd:string"
+        },
+        "issuedBy": {
+            "@context": {
+                "id": "xsd:string",
+                "name": "xsd:string"
+            },
+            "@id": "xsd:string"
+        },
+        "issuedTo": {
+            "@context": {
+                "id": "xsd:string",
+                "name": "xsd:string"
+            },
+            "@id": "xsd:string"
+        },
+        "validFrom": "xsd:string",
+        "validTo": "xsd:string",
+        "status": "xsd:string",
+        "assessments": {
+            "@context": {
+                "requirementReference": {
+                    "@context": {
+                        "id": "xsd:string",
+                        "name": "xsd:string",
+                        "issuingBody": {
+                            "@context": {
+                                "id": "xsd:string",
+                                "name": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "dateOfIssue": "xsd:string",
+                        "criteria": {
+                            "@context": {
+                                "id": "xsd:string",
+                                "thresholdValue": {
+                                    "@context": {
+                                        "metric": "xsd:string",
+                                        "unit": "xsd:string",
+                                        "value": "xsd:decimal"
+                                    },
+                                    "@id": "xsd:string",
+                                    "@container": "@list"
+                                },
+                                "description": "xsd:string"
+                            },
+                            "@id": "xsd:string",
+                            "@container": "@list"
+                        }
+                    },
+                    "@id": "xsd:string"
+                },
+                "assessmentCriterion": {
+                    "@context": {
+                        "id": "xsd:string",
+                        "thresholdValue": {
+                            "@context": {
+                                "metric": "xsd:string",
+                                "unit": "xsd:string",
+                                "value": "xsd:decimal"
+                            },
+                            "@id": "xsd:string",
+                            "@container": "@list"
+                        },
+                        "description": "xsd:string"
+                    },
+                    "@id": "xsd:string"
+                },
+                "subjectProducts": {
+                    "@context": {
+                        "productId": "xsd:string",
+                        "marking": "xsd:string",
+                        "name": "xsd:string",
+                        "classification": "xsd:string",
+                        "testedBatchId": "xsd:string",
+                        "verfifiedByCAB": "xsd:boolean"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "subjectFacilities": {
+                    "@context": {
+                        "facilityId": "xsd:string",
+                        "name": "xsd:string",
+                        "classification": "xsd:string",
+                        "location": {
+                            "@context": {
+                                "locationId": "xsd:string",
+                                "Geolocation": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "verfifiedByCAB": "xsd:boolean"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "measuredResults": {
+                    "@context": {
+                        "metric": "xsd:string",
+                        "unit": "xsd:string",
+                        "value": "xsd:decimal"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "compliance": "xsd:boolean",
+                "ESGtopic": "xsd:string"
+            },
+            "@id": "xsd:string",
+            "@container": "@list"
+        },
+        "evidence": {
+            "@context": {
+                "evidenceRootHash": "xsd:string",
+                "description": "xsd:string",
+                "evidenceData": {
+                    "@context": {
+                        "fileHash": "xsd:string",
+                        "fileLocation": "xsd:string",
+                        "fileType": "xsd:string",
+                        "EncryptionMethod": "xsd:string"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "decryptionKeyRequest": "xsd:string"
+            },
+            "@id": "xsd:string"
+        },
+        "accreditation": {
+            "@context": {
+                "number": "xsd:string",
+                "credential": "xsd:string",
+                "credentialType": "xsd:string",
+                "trustmark": "xsd:string",
+                "authority": {
+                    "@context": {
+                        "id": "xsd:string",
+                        "name": "xsd:string"
+                    },
+                    "@id": "xsd:string"
+                }
+            },
+            "@id": "xsd:string"
+        },
+        "regulatoryApproval": {
+            "@context": {
+                "number": "xsd:string",
+                "credential": "xsd:string",
+                "credentialType": "xsd:string",
+                "trustmark": "xsd:string",
+                "authority": {
+                    "@context": {
+                        "id": "xsd:string",
+                        "name": "xsd:string"
+                    },
+                    "@id": "xsd:string"
+                }
+            },
+            "@id": "xsd:string"
+        },
+        "certificate": {
+            "@context": {
+                "fileHash": "xsd:string",
+                "fileLocation": "xsd:string",
+                "fileType": "xsd:string",
+                "EncryptionMethod": "xsd:string"
+            },
+            "@id": "xsd:string"
+        },
+        "@version": 1.1
+    },
+    "@id": "xsd:string"
+}
