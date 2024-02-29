@@ -1,0 +1,12 @@
+---
+title: DigitalProductPassport:topic
+permalink: topic.html
+jsonid: topic
+columns:
+  - 
+    title: Comment
+    code: comment
+  - 
+    title: Value
+    code: value
+---

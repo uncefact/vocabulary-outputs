@@ -1,7 +1,7 @@
 {
-    "label": "Party",
-    "uri": "DigitalProductPassport:Party",
-    "comment": "The Party class represents an entity such as an organization, or a company that manufactured the product.",
+    "label": "Facility",
+    "uri": "DigitalProductPassport:Facility",
+    "comment": "The Facility class embodies information about a specific facility, which manufactured the product.",
     "datatypeProperties": [
         {
             "uri": "DigitalProductPassport:id",
@@ -12,20 +12,17 @@
             "uri": "DigitalProductPassport:name",
             "type": "xsd:string",
             "comment": "The name of the organization or company, represented as a text string."
+        },
+        {
+            "uri": "DigitalProductPassport:operatedBy",
+            "type": "DigitalProductPassport:Party",
+            "comment": "The Party entity responsible for operating the facility."
         }
     ],
     "referencedBy": [
         {
-            "uri": "DigitalProductPassport:issuedBy",
-            "comment": "The Party entity that issued the product passport."
-        },
-        {
-            "uri": "DigitalProductPassport:manufacturer",
-            "comment": "The Party entity that manufactured the product."
-        },
-        {
-            "uri": "DigitalProductPassport:operatedBy",
-            "comment": "The Party entity responsible for operating the facility."
+            "uri": "DigitalProductPassport:manufacturedAt",
+            "comment": "The Facility where the product batch was manufactured."
         }
     ]
 }

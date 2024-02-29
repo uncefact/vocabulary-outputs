@@ -1,6 +1,5 @@
 ---
 title: eventType
-permalink: eventType
-redirect_to:
-  - eventTypeProperty
+permalink: eventType.html
+jsonid: eventtype
 ---
