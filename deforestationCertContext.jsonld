@@ -1,6 +1,7 @@
 {
   "@context": {
     "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+    "cred": "https://www.w3.org/2018/credentials#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "id": "@id",
     "type": "@type",
@@ -9,10 +10,7 @@
       "@id": "cc:description",
       "@type": "xsd:string"
     },
-    "validFrom": {
-      "@id": "cc:validFrom",
-      "@type": "xsd:string"
-    },
+    "validFrom": {"@id": "cred:validFrom", "@type": "xsd:dateTime"},
     "validTo": {
         "@id": "cc:validTo",
         "@type": "xsd:string"
@@ -248,7 +246,7 @@
           "@type": "xsd:string"
         },
         "validTo": {
-          "@id": "cc:validFrom",
+          "@id": "cc:validTo",
           "@type": "xsd:string"
         }
     },
