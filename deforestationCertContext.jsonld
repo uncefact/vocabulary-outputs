@@ -1,7 +1,5 @@
 {
   "@context": {
-    "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "id": "@id",
     "type": "@type",
     "@version": 1.1,
@@ -17,7 +15,7 @@
           "@id": "cc:description",
           "@type": "xsd:string"
         },
-        "validFrom": {"@id": "cred:validFrom", "@type": "xsd:dateTime"},
+        "validFrom": {"@id": "cc:validFrom", "@type": "xsd:dateTime"},
         "validTo": {
             "@id": "cc:validTo",
             "@type": "xsd:string"
@@ -26,8 +24,13 @@
           "@id": "cc:scope",
           "@type": "@id",
           "@context": {
-            "id": {
-              "@id": "cc:id",
+            "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "id": "@id",
+            "type": "@type",
+            "@version": 1.1,
+            "scopeId": {
+              "@id": "cc:scopeId",
               "@type": "xsd:string"
             },
             "name": {
@@ -42,8 +45,13 @@
               "@id": "cc:issuingBody",
               "@type": "@id",
               "@context": {
-                  "id": {
-                      "@id": "cc:id",
+                  "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                  "xsd": "http://www.w3.org/2001/XMLSchema#",
+                  "id": "@id",
+                  "type": "@type",
+                  "@version": 1.1,
+                  "issuingBodyId": {
+                      "@id": "cc:issuingBodyId",
                       "@type": "xsd:string"
                   },
                   "name": {
@@ -57,16 +65,21 @@
               "@type": "@id",
               "@container": "@list",
               "@context": {
-                "id": {
-                  "@id": "cc:id",
+                "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "id": "@id",
+                "type": "@type",
+                "@version": 1.1,
+                "criteriaId": {
+                  "@id": "cc:criteriaId",
                   "@type": "xsd:string"
                 },
                 "description": {
                     "@id": "cc:description",
                     "@type": "xsd:string"
                 },
-                "type": {
-                  "@id": "cc:type",
+                "criteriaType": {
+                  "@id": "cc:criteriaType",
                   "@type": "xsd:string"
                 },
                 "validationService": {
@@ -81,16 +94,21 @@
           "@id": "cc:issuedBy",
           "@type": "@id",
           "@context": {
-              "id": {
-                  "@id": "cc:id",
+              "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+              "xsd": "http://www.w3.org/2001/XMLSchema#",
+              "id": "@id",
+              "type": "@type",
+              "@version": 1.1,
+              "issuedById": {
+                  "@id": "cc:issuedById",
                   "@type": "xsd:string"
               },
               "name": {
                   "@id": "cc:name",
                   "@type": "xsd:string"
               },
-              "type": {
-                  "@id": "cc:type",
+              "issuedByType": {
+                  "@id": "cc:issuedByType",
                   "@type": "xsd:string"
               }
           }
@@ -99,16 +117,21 @@
           "@id": "cc:issuedTo",
           "@type": "@id",
           "@context": {
-              "id": {
-                  "@id": "cc:id",
+              "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+              "xsd": "http://www.w3.org/2001/XMLSchema#",
+              "id": "@id",
+              "type": "@type",
+              "@version": 1.1,
+              "issuedToId": {
+                  "@id": "cc:issuedToId",
                   "@type": "xsd:string"
               },
               "name": {
                   "@id": "cc:name",
                   "@type": "xsd:string"
               },
-              "type": {
-                  "@id": "cc:type",
+              "issuedToType": {
+                  "@id": "cc:issuedToType",
                   "@type": "xsd:string"
               }
           }
@@ -118,6 +141,11 @@
           "@type": "@id",
           "@container": "@list",
           "@context": {
+            "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "id": "@id",
+            "type": "@type",
+            "@version": 1.1,
             "facilityId": {
               "@id": "cc:facilityId",
               "@type": "xsd:string"
@@ -129,6 +157,11 @@
           "@type": "@id",
           "@container": "@list",
           "@context": {
+            "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "id": "@id",
+            "type": "@type",
+            "@version": 1.1,
             "scope": {
               "@id": "cc:scope",
               "@type": "xsd:string"
@@ -137,6 +170,11 @@
               "@id": "cc:threshold",
               "@type": "@id",
               "@context": {
+                "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "id": "@id",
+                "type": "@type",
+                "@version": 1.1,
                 "Metric": {
                   "@id": "cc:Metric",
                   "@type": "xsd:string"
@@ -156,6 +194,11 @@
               "@type": "@id",
               "@container": "@list",
               "@context": {
+                "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "id": "@id",
+                "type": "@type",
+                "@version": 1.1,
                 "Metric": {
                   "@id": "cc:Metric",
                   "@type": "xsd:string"
@@ -174,6 +217,11 @@
               "@id": "cc:evidence",
               "@type": "@id",
               "@context": {
+                "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "id": "@id",
+                "type": "@type",
+                "@version": 1.1,
                 "evidenceRootHash": {
                   "@id": "cc:evidenceRootHash",
                   "@type": "xsd:string"
@@ -187,6 +235,11 @@
                   "@type": "@id",
                   "@container": "@list",
                   "@context": {
+                    "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "id": "@id",
+                    "type": "@type",
+                    "@version": 1.1,
                     "fileHash": {
                       "@id": "cc:fileHash",
                       "@type": "xsd:string"
@@ -225,6 +278,11 @@
           "@id": "cc:accreditation",
           "@type": "@id",
           "@context": {
+              "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+              "xsd": "http://www.w3.org/2001/XMLSchema#",
+              "id": "@id",
+              "type": "@type",
+              "@version": 1.1,
               "credential": {
                 "@id": "cc:credential",
                 "@type": "xsd:string"
@@ -233,21 +291,25 @@
                 "@id": "cc:authority",
                 "@type": "@id",
                 "@context": {
-                    "id": {
-                        "@id": "cc:id",
+                    "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "id": "@id",
+                    "type": "@type",
+                    "@version": 1.1,
+                    "authorityId": {
+                        "@id": "cc:authorityId",
                         "@type": "xsd:string"
                     },
                     "name": {
                         "@id": "cc:name",
                         "@type": "xsd:string"
                     },
-                    "type": {
-                        "@id": "cc:type",
+                    "authorityType": {
+                        "@id": "cc:authorityType",
                         "@type": "xsd:string"
                     }
                 }
-              }
-            },
+              },
             "validFrom": {
               "@id": "cc:validFrom",
               "@type": "xsd:string"
@@ -256,6 +318,7 @@
               "@id": "cc:validTo",
               "@type": "xsd:string"
             }
+          }
         },
         "compliant": {
           "@id": "cc:compliant",
