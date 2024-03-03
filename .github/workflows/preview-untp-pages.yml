@@ -45,4 +45,4 @@ jobs:
     - name: "Deploy to AWS S3"
       run: |
         aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/untp --cache-control max-age=604800
-        aws cloudfront create-invalidation --distribution-id "E32QP2QS6SXRHC" --paths "/vocabulary/untp/te/*"
+        aws cloudfront create-invalidation --distribution-id "E32QP2QS6SXRHC" --paths "/vocabulary/untp/*"
