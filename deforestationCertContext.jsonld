@@ -1,38 +1,84 @@
 {
   "@context": {
     "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
-    "cred": "https://www.w3.org/2018/credentials#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "id": "@id",
     "type": "@type",
     "@version": 1.1,
-    "description": {
-      "@id": "cc:description",
-      "@type": "xsd:string"
-    },
-    "validFrom": {"@id": "cred:validFrom", "@type": "xsd:dateTime"},
-    "validTo": {
-        "@id": "cc:validTo",
-        "@type": "xsd:string"
-    },
-    "scope": {
-      "@id": "cc:scope",
-      "@type": "@id",
-      "@context": {
-        "id": {
-          "@id": "cc:id",
+    "DeforestationCertificate": {
+      "@id": "cc:DeforestationCertificate",
+      "@context":{
+        "cc": "https://test.uncefact.org/vocabulary/untp/cc/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "@id",
+        "type": "@type",
+        "@version": 1.1,
+        "description": {
+          "@id": "cc:description",
           "@type": "xsd:string"
         },
-        "name": {
-            "@id": "cc:name",
+        "validFrom": {"@id": "cred:validFrom", "@type": "xsd:dateTime"},
+        "validTo": {
+            "@id": "cc:validTo",
             "@type": "xsd:string"
         },
-        "dateOfIssue": {
-            "@id": "cc:dateOfIssue",
-            "@type": "xsd:string"
+        "scope": {
+          "@id": "cc:scope",
+          "@type": "@id",
+          "@context": {
+            "id": {
+              "@id": "cc:id",
+              "@type": "xsd:string"
+            },
+            "name": {
+                "@id": "cc:name",
+                "@type": "xsd:string"
+            },
+            "dateOfIssue": {
+                "@id": "cc:dateOfIssue",
+                "@type": "xsd:string"
+            },
+            "issuingBody": {
+              "@id": "cc:issuingBody",
+              "@type": "@id",
+              "@context": {
+                  "id": {
+                      "@id": "cc:id",
+                      "@type": "xsd:string"
+                  },
+                  "name": {
+                      "@id": "cc:name",
+                      "@type": "xsd:string"
+                  }
+              }
+            },
+            "criteria": {
+              "@id": "cc:criteria",
+              "@type": "@id",
+              "@container": "@list",
+              "@context": {
+                "id": {
+                  "@id": "cc:id",
+                  "@type": "xsd:string"
+                },
+                "description": {
+                    "@id": "cc:description",
+                    "@type": "xsd:string"
+                },
+                "type": {
+                  "@id": "cc:type",
+                  "@type": "xsd:string"
+                },
+                "validationService": {
+                  "@id": "cc:validationService",
+                  "@type": "xsd:string"
+                }
+              }
+            }
+          }
         },
-        "issuingBody": {
-          "@id": "cc:issuingBody",
+        "issuedBy": {
+          "@id": "cc:issuedBy",
           "@type": "@id",
           "@context": {
               "id": {
@@ -42,217 +88,180 @@
               "name": {
                   "@id": "cc:name",
                   "@type": "xsd:string"
+              },
+              "type": {
+                  "@id": "cc:type",
+                  "@type": "xsd:string"
               }
           }
         },
-        "criteria": {
-          "@id": "cc:criteria",
+        "issuedTo": {
+          "@id": "cc:issuedTo",
+          "@type": "@id",
+          "@context": {
+              "id": {
+                  "@id": "cc:id",
+                  "@type": "xsd:string"
+              },
+              "name": {
+                  "@id": "cc:name",
+                  "@type": "xsd:string"
+              },
+              "type": {
+                  "@id": "cc:type",
+                  "@type": "xsd:string"
+              }
+          }
+        },
+        "subjects": {
+          "@id": "cc:subjects",
           "@type": "@id",
           "@container": "@list",
           "@context": {
-            "id": {
-              "@id": "cc:id",
-              "@type": "xsd:string"
-            },
-            "description": {
-                "@id": "cc:description",
-                "@type": "xsd:string"
-            },
-            "type": {
-              "@id": "cc:type",
-              "@type": "xsd:string"
-            },
-            "validationService": {
-              "@id": "cc:validationService",
+            "facilityId": {
+              "@id": "cc:facilityId",
               "@type": "xsd:string"
             }
           }
-        }
-      }
-    },
-    "issuedBy": {
-      "@id": "cc:issuedBy",
-      "@type": "@id",
-      "@context": {
-          "id": {
-              "@id": "cc:id",
-              "@type": "xsd:string"
-          },
-          "name": {
-              "@id": "cc:name",
-              "@type": "xsd:string"
-          },
-          "type": {
-              "@id": "cc:type",
-              "@type": "xsd:string"
-          }
-      }
-    },
-    "issuedTo": {
-      "@id": "cc:issuedTo",
-      "@type": "@id",
-      "@context": {
-          "id": {
-              "@id": "cc:id",
-              "@type": "xsd:string"
-          },
-          "name": {
-              "@id": "cc:name",
-              "@type": "xsd:string"
-          },
-          "type": {
-              "@id": "cc:type",
-              "@type": "xsd:string"
-          }
-      }
-    },
-    "subjects": {
-      "@id": "cc:subjects",
-      "@type": "@id",
-      "@container": "@list",
-      "@context": {
-        "facilityId": {
-          "@id": "cc:facilityId",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "claims": {
-      "@id": "cc:claims",
-      "@type": "@id",
-      "@container": "@list",
-      "@context": {
-        "scope": {
-          "@id": "cc:scope",
-          "@type": "xsd:string"
         },
-        "threshold": {
-          "@id": "cc:threshold",
-          "@type": "@id",
-          "@context": {
-            "Metric": {
-              "@id": "cc:Metric",
-              "@type": "xsd:string"
-            },
-            "Unit": {
-                "@id": "cc:Unit",
-                "@type": "@vocab"
-            },
-            "Value": {
-                "@id": "cc:Value",
-                "@type": "xsd:string"
-            }
-          }
-        },
-        "metric": {
-          "@id": "cc:metric",
+        "claims": {
+          "@id": "cc:claims",
           "@type": "@id",
           "@container": "@list",
           "@context": {
-            "Metric": {
-              "@id": "cc:Metric",
+            "scope": {
+              "@id": "cc:scope",
               "@type": "xsd:string"
             },
-            "Unit": {
-                "@id": "cc:Unit",
-                "@type": "@vocab"
+            "threshold": {
+              "@id": "cc:threshold",
+              "@type": "@id",
+              "@context": {
+                "Metric": {
+                  "@id": "cc:Metric",
+                  "@type": "xsd:string"
+                },
+                "Unit": {
+                    "@id": "cc:Unit",
+                    "@type": "@vocab"
+                },
+                "Value": {
+                    "@id": "cc:Value",
+                    "@type": "xsd:string"
+                }
+              }
             },
-            "Value": {
-                "@id": "cc:Value",
-                "@type": "xsd:string"
-            }
-          }
-        },
-        "evidence": {
-          "@id": "cc:evidence",
-          "@type": "@id",
-          "@context": {
-            "evidenceRootHash": {
-              "@id": "cc:evidenceRootHash",
-              "@type": "xsd:string"
-            },
-            "description": {
-                "@id": "cc:description",
-                "@type": "xsd:string"
-            },
-            "evidenceData": {
-              "@id": "cc:evidenceData",
+            "metric": {
+              "@id": "cc:metric",
               "@type": "@id",
               "@container": "@list",
               "@context": {
-                "fileHash": {
-                  "@id": "cc:fileHash",
+                "Metric": {
+                  "@id": "cc:Metric",
                   "@type": "xsd:string"
                 },
-                "fileLocation": {
-                    "@id": "cc:fileLocation",
-                    "@type": "xsd:string"
-                },
-                "fileType": {
-                    "@id": "cc:fileType",
+                "Unit": {
+                    "@id": "cc:Unit",
                     "@type": "@vocab"
                 },
-                "inEncrypted": {
-                  "@id": "cc:inEncrypted",
-                  "@type": "xsd:boolean"
+                "Value": {
+                    "@id": "cc:Value",
+                    "@type": "xsd:string"
                 }
               }
-            }
-          }
-        },
-        "snapshotDate": {
-          "@id": "cc:snapshotDate",
-          "@type": "xsd:string"
-        },
-        "decryptionKeyRequest": {
-          "@id": "cc:decryptionKeyRequest",
-          "@type": "xsd:string"
-        },
-        "compliance": {
-          "@id": "cc:compliance",
-          "@type": "xsd:boolean"
-        }
-      }
-    },
-    "accreditation": {
-      "@id": "cc:accreditation",
-      "@type": "@id",
-      "@context": {
-          "credential": {
-            "@id": "cc:credential",
-            "@type": "xsd:string"
-          },
-          "authority": {
-            "@id": "cc:authority",
-            "@type": "@id",
-            "@context": {
-                "id": {
-                    "@id": "cc:id",
+            },
+            "evidence": {
+              "@id": "cc:evidence",
+              "@type": "@id",
+              "@context": {
+                "evidenceRootHash": {
+                  "@id": "cc:evidenceRootHash",
+                  "@type": "xsd:string"
+                },
+                "description": {
+                    "@id": "cc:description",
                     "@type": "xsd:string"
                 },
-                "name": {
-                    "@id": "cc:name",
-                    "@type": "xsd:string"
-                },
-                "type": {
-                    "@id": "cc:type",
-                    "@type": "xsd:string"
+                "evidenceData": {
+                  "@id": "cc:evidenceData",
+                  "@type": "@id",
+                  "@container": "@list",
+                  "@context": {
+                    "fileHash": {
+                      "@id": "cc:fileHash",
+                      "@type": "xsd:string"
+                    },
+                    "fileLocation": {
+                        "@id": "cc:fileLocation",
+                        "@type": "xsd:string"
+                    },
+                    "fileType": {
+                        "@id": "cc:fileType",
+                        "@type": "@vocab"
+                    },
+                    "inEncrypted": {
+                      "@id": "cc:inEncrypted",
+                      "@type": "xsd:boolean"
+                    }
+                  }
                 }
+              }
+            },
+            "snapshotDate": {
+              "@id": "cc:snapshotDate",
+              "@type": "xsd:string"
+            },
+            "decryptionKeyRequest": {
+              "@id": "cc:decryptionKeyRequest",
+              "@type": "xsd:string"
+            },
+            "compliance": {
+              "@id": "cc:compliance",
+              "@type": "xsd:boolean"
             }
           }
         },
-        "validFrom": {
-          "@id": "cc:validFrom",
-          "@type": "xsd:string"
+        "accreditation": {
+          "@id": "cc:accreditation",
+          "@type": "@id",
+          "@context": {
+              "credential": {
+                "@id": "cc:credential",
+                "@type": "xsd:string"
+              },
+              "authority": {
+                "@id": "cc:authority",
+                "@type": "@id",
+                "@context": {
+                    "id": {
+                        "@id": "cc:id",
+                        "@type": "xsd:string"
+                    },
+                    "name": {
+                        "@id": "cc:name",
+                        "@type": "xsd:string"
+                    },
+                    "type": {
+                        "@id": "cc:type",
+                        "@type": "xsd:string"
+                    }
+                }
+              }
+            },
+            "validFrom": {
+              "@id": "cc:validFrom",
+              "@type": "xsd:string"
+            },
+            "validTo": {
+              "@id": "cc:validTo",
+              "@type": "xsd:string"
+            }
         },
-        "validTo": {
-          "@id": "cc:validTo",
-          "@type": "xsd:string"
-        }
-    },
-    "compliant": {
-      "@id": "cc:compliant",
-      "@type": "xsd:boolean"
-    }
+        "compliant": {
+          "@id": "cc:compliant",
+          "@type": "xsd:boolean"
+        }        
+      }
+    }    
   }
 }
