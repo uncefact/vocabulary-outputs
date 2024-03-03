@@ -5,9 +5,8 @@ class: home
 ---
 
 <div class="home-content">
-    <h1 class="home-content__title">UN/CEFACT Web Vocabularies</h1>
-    <p class="home-content__description">The UN/CEFACT Web Vocabularies are linked data representations of the UN/CEFACT
-        Buy-Ship-Pay Reference Data Model, UN/LOCODE and Sustainability.</p>
+    <h1 class="home-content__title">UNTP Web Vocabularies</h1>
+    <p class="home-content__description">UNTP Web Vocabularies.</p>
     <div class="home-content__inner">
         <ul class="browse-types browse-types--three-columns">
             <li class="browse-type browse-types__item">
@@ -20,15 +19,15 @@ class: home
                             <path d="m11.737 2.454-6.79 5.2c-.079.08-.236.24-.315.4-.08.16-.08.48-.08.48v8.64"/>
                         </g>
                     </svg>
-                    BSP
+                    Conformity Credential
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">The Buy-Ship-Pay international trade & transport vocabulary</p>
-                    <a class="browse-type__action" href="{{ 'about' | absolute_url }}">Browse</a>
+                    <p class="browse-type__description">Information domain for conformity claims against criteria defined in a standard or regulation</p>
+                    <a class="browse-type__action" href="{{ 'about' | 'cc' | | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.bsp %}
+                {% if site.versions.cc %}
                     <span class="browse-type__version">
-                        {{ site.versions.bsp }}
+                        {{ site.versions.cc }}
                     </span>
                 {% endif %}
             </li>
@@ -42,15 +41,15 @@ class: home
                             <path d="M18.788 4.161 10 7.236 1.212 4.161"/>
                         </g>
                     </svg>
-                    UN/LOCODEs
+                    B2B Digital Product Passport
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">The UN authoritative list of location codes in all countries</p>
-                    <a class="browse-type__action" href="{{ 'unlocode-about' | absolute_url }}">Browse</a>
+                    <p class="browse-type__description">A data model for a digital product passport that is designed to provide traceability & transparency into supply chains - with a focus on sustainability measures and outcomes.</p>
+                    <a class="browse-type__action" href="{{ 'about' | 'dpp' | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.un-locodes %}
+                {% if site.versions.dpp %}
                     <span class="browse-type__version">
-                        {{ site.versions.un-locodes }}
+                        {{ site.versions.dpp }}
                     </span>
                 {% endif %}
             </li>
@@ -64,15 +63,15 @@ class: home
                             <path d="M18.788 4.161 10 7.236 1.212 4.161"/>
                         </g>
                     </svg>
-                    CLRs
+                    Traceability Events
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">UN/CEFACT Code List Recommendations</p>
-                    <a class="browse-type__action" href="{{ 'vocab-codes' | absolute_url }}">Browse</a>
+                    <p class="browse-type__description">A collection of events that can be used to build supply chain traceability graphs.</p>
+                    <a class="browse-type__action" href="{{ 'about' | 'te' |  | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.vocab-codes %}
+                {% if site.versions.te %}
                     <span class="browse-type__version">
-                        {{ site.versions.vocab-codes }}
+                        {{ site.versions.te }}
                     </span>
                 {% endif %}
             </li>
