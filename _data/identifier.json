@@ -1,0 +1,45 @@
+{
+    "label": "Identifier",
+    "uri": "DigitalProductPassport:Identifier",
+    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence ",
+    "datatypeProperties": [
+        {
+            "uri": "DigitalProductPassport:identiferValue",
+            "type": "xsd:string",
+            "comment": "The value of the identifier within the scheme"
+        },
+        {
+            "uri": "DigitalProductPassport:identifierURI",
+            "type": "xsd:string",
+            "comment": "The fully qualified URI representing the globally unique record for this identifier."
+        },
+        {
+            "uri": "DigitalProductPassport:scheme",
+            "type": "xsd:string",
+            "comment": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
+        },
+        {
+            "uri": "DigitalProductPassport:verificationEvidence",
+            "type": "DigitalProductPassport:Evidence",
+            "comment": "Link to evidence that attests to the validity and ownership of the identifer. "
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "DigitalProductPassport:batchIdentifiers",
+            "comment": "Information regarding the specific production batch of the product."
+        },
+        {
+            "uri": "DigitalProductPassport:identifiers",
+            "comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
+        },
+        {
+            "uri": "DigitalProductPassport:itemIdentifiers",
+            "comment": "An array of identifiers representing a specific serialised item of the product."
+        },
+        {
+            "uri": "DigitalProductPassport:productIdentifiers",
+            "comment": "An array of unique identifiers assigned to the product or model. "
+        }
+    ]
+}

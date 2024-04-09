@@ -4,9 +4,9 @@
     "comment": "The Party class represents an entity such as an organization, or a company that manufactured the product.",
     "datatypeProperties": [
         {
-            "uri": "DigitalProductPassport:id",
-            "type": "xsd:string",
-            "comment": "A unique identifier assigned to the credential, typically formatted as a URI of the stored credential."
+            "uri": "DigitalProductPassport:identifiers",
+            "type": "DigitalProductPassport:Identifier",
+            "comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
         },
         {
             "uri": "DigitalProductPassport:name",
@@ -17,7 +17,7 @@
     "referencedBy": [
         {
             "uri": "DigitalProductPassport:issuedBy",
-            "comment": "The Party entity that issued the product passport."
+            "comment": "The Party that issued the product passport."
         },
         {
             "uri": "DigitalProductPassport:manufacturer",

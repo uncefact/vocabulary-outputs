@@ -1,0 +1,37 @@
+{
+    "label": "Classification",
+    "uri": "DigitalProductPassport:Classification",
+    "comment": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
+    "datatypeProperties": [
+        {
+            "uri": "DigitalProductPassport:classifierName",
+            "type": "xsd:string",
+            "comment": "Name of the classifier - eg \"Asparagus\" for code \"01211\" in UNCPC"
+        },
+        {
+            "uri": "DigitalProductPassport:classifierURL",
+            "type": "xsd:string",
+            "comment": "Linked data URL to a web vocabulary entery for this classificaiton code. When this property is provided, the scheme, value, and name properties of the classifer are not required.  eg https://vocabulary.uncefact.org/unlocode?country=au#AUBNE represensign the port of Brisbane in the UN/LOCODE classification scheme."
+        },
+        {
+            "uri": "DigitalProductPassport:classifierValue",
+            "type": "xsd:string",
+            "comment": "classifier value within the scheme - eg \"01211\" in UN CPC"
+        },
+        {
+            "uri": "DigitalProductPassport:scheme",
+            "type": "xsd:string",
+            "comment": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "DigitalProductPassport:classifications",
+            "comment": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+        },
+        {
+            "uri": "DigitalProductPassport:materialType",
+            "comment": "The type of this material - as a value drawn from a controlled vocabulary eg textileexchange.org/materials/rm01014 - representing organic cotton."
+        }
+    ]
+}

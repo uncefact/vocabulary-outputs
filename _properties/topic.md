@@ -1,6 +1,5 @@
 ---
 title: topic
-permalink: topic
-redirect_to:
-  - topicProperty
+permalink: topic.html
+jsonid: topic
 ---
