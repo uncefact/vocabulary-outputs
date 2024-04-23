@@ -1,1 +1,1276 @@
-{"@context":{"rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","owl":"http://www.w3.org/2002/07/owl#","rdfs":"http://www.w3.org/2000/01/rdf-schema#","schema":"https://schema.org/","DigitalProductPassport":"https://jargon.sh/user/unece/DigitalProductPassport/v/working/artefacts/jsonld/render.jsonld#"},"@graph":[{"rdfs:label":"epcisType","@type":"rdfs:Class","@id":"DigitalProductPassport:epcisType","rdfs:comment":""},{"@id":"DigitalProductPassport:epcisType#aggregation","@type":"DigitalProductPassport:epcisType","DigitalProductPassport:Name":"aggregation","rdf:value":"","rdfs:comment":""},{"@id":"DigitalProductPassport:epcisType#transformation","@type":"DigitalProductPassport:epcisType","DigitalProductPassport:Name":"transformation","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:epcisType#object","@type":"DigitalProductPassport:epcisType","DigitalProductPassport:Name":"object","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:epcisType#transaction","@type":"DigitalProductPassport:epcisType","DigitalProductPassport:Name":"transaction","rdf:value":null,"rdfs:comment":null},{"rdfs:label":"topic","@type":"rdfs:Class","@id":"DigitalProductPassport:topic","rdfs:comment":""},{"@id":"DigitalProductPassport:topic#environment.emissions","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"environment.emissions","rdf:value":"","rdfs:comment":""},{"@id":"DigitalProductPassport:topic#environment.water","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"environment.water","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#environment.waste","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"environment.waste","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#environment.deforestation","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"environment.deforestation","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#environment.emissions","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"environment.emissions","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#social.employment","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"social.employment","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#social.safety","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"social.safety","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#social.biosecurity","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"social.biosecurity","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:topic#governance.ethics","@type":"DigitalProductPassport:topic","DigitalProductPassport:Name":"governance.ethics","rdf:value":null,"rdfs:comment":null},{"@id":"DigitalProductPassport:VerifiableCredential","@type":"rdfs:Class","rdfs:label":"VerifiableCredential","schema:source":{"@id":"VerifiableCredential"},"rdfs:comment":"A cryptographically verifiable set of claims about a product."},{"@id":"DigitalProductPassport:ProductPassport","@type":"rdfs:Class","rdfs:label":"ProductPassport","schema:source":{"@id":"ProductPassport"},"rdfs:comment":"The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, and different scores relating to sustainability and trustworthiness."},{"@id":"DigitalProductPassport:Party","@type":"rdfs:Class","rdfs:label":"Party","schema:source":{"@id":"Party"},"rdfs:comment":"The Party class represents an entity such as an organization, or a company that manufactured the product."},{"@id":"DigitalProductPassport:Facility","@type":"rdfs:Class","rdfs:label":"Facility","schema:source":{"@id":"Facility"},"rdfs:comment":"The Facility class embodies information about a specific facility, which manufactured the product."},{"@id":"DigitalProductPassport:ProductInformation","@type":"rdfs:Class","rdfs:label":"ProductInformation","schema:source":{"@id":"ProductInformation"},"rdfs:comment":"The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."},{"@id":"DigitalProductPassport:ProductBatch","@type":"rdfs:Class","rdfs:label":"ProductBatch","schema:source":{"@id":"ProductBatch"},"rdfs:comment":"The ProductBatch class holds information related to a specific batch of products, including manufacturing details, sustainability claims and provenance information."},{"@id":"DigitalProductPassport:SustainabilityClaim","@type":"rdfs:Class","rdfs:label":"SustainabilityClaim","schema:source":{"@id":"SustainabilityClaim"},"rdfs:comment":"The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim."},{"@id":"DigitalProductPassport:SustainabilityMetric","@type":"rdfs:Class","rdfs:label":"SustainabilityMetric","schema:source":{"@id":"SustainabilityMetric"},"rdfs:comment":"A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  "},{"@id":"DigitalProductPassport:TraceabilityEvent","@type":"rdfs:Class","rdfs:label":"TraceabilityEvent","schema:source":{"@id":"TraceabilityEvent"},"rdfs:comment":"The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference."},{"@id":"DigitalProductPassport:Provenance","@type":"rdfs:Class","rdfs:label":"Provenance","schema:source":{"@id":"Provenance"},"rdfs:comment":"The Provenance class encapsulates details about the origin or source of components or ingredients in a product, including the country of origin and the percentage composition."},{"@id":"DigitalProductPassport:id","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"id","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":[{"@id":"DigitalProductPassport:VerifiableCredential"},{"@id":"DigitalProductPassport:ProductPassport"},{"@id":"DigitalProductPassport:Party"},{"@id":"DigitalProductPassport:Facility"}],"rdfs:comment":"A unique identifier assigned to the credential, typically formatted as a URI of the stored credential."},{"@id":"DigitalProductPassport:issuer","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"issuer","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:VerifiableCredential"},"rdfs:comment":"A unique identifier of the entity that issued the credential. Typically expessed as a DID."},{"@id":"DigitalProductPassport:validFrom","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"validFrom","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:VerifiableCredential"},"rdfs:comment":"The ISO-8601 date time from which the credential is valid."},{"@id":"DigitalProductPassport:status","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"status","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:VerifiableCredential"},"rdfs:comment":"The current status of the credential, represented by a specific code."},{"@id":"DigitalProductPassport:subject","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"subject","schema:rangeIncludes":{"@id":"DigitalProductPassport:ProductPassport"},"schema:domainIncludes":{"@id":"DigitalProductPassport:VerifiableCredential"},"rdfs:comment":"The ProductPassport object that the credential pertains to."},{"@id":"DigitalProductPassport:issuedBy","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"issuedBy","schema:rangeIncludes":{"@id":"DigitalProductPassport:Party"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductPassport"},"rdfs:comment":"The Party entity that issued the product passport."},{"@id":"DigitalProductPassport:product","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"product","schema:rangeIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductPassport"},"rdfs:comment":"Detailed information about the product encapsulated in a ProductInformation object."},{"@id":"DigitalProductPassport:batch","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"batch","schema:rangeIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductPassport"},"rdfs:comment":"Information regarding the specific batch the product belongs to, encapsulated in a ProductBatch object."},{"@id":"DigitalProductPassport:sustainabilityScore","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"sustainabilityScore","schema:rangeIncludes":{"@id":"xsd:decimal"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductPassport"},"rdfs:comment":"An aggregate numeric metric calculated based on the various sustainability claims associated with the product. It amalgamates scores assigned to individual sustainability claims, which are validated by various issuing bodies. The score provides a comprehensive view of the product's overall sustainability performance, giving users a quantifiable measure of the product's environmental and social impacts."},{"@id":"DigitalProductPassport:trustScore","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"trustScore","schema:rangeIncludes":{"@id":"xsd:decimal"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductPassport"},"rdfs:comment":"An aggregate numeric metric that represents the level of trustworthiness associated with the product. This score is derived based on the credibility and reliability of the issuing bodies that substantiate the claims being made about the product. The trustworthiness of each issuing body is assessed to compute an overall trust score, giving users a quantifiable measure of the trust they can place in the product's claims."},{"@id":"DigitalProductPassport:name","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"name","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":[{"@id":"DigitalProductPassport:Party"},{"@id":"DigitalProductPassport:Facility"}],"rdfs:comment":"The name of the organization or company, represented as a text string."},{"@id":"DigitalProductPassport:operatedBy","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"operatedBy","schema:rangeIncludes":{"@id":"DigitalProductPassport:Party"},"schema:domainIncludes":{"@id":"DigitalProductPassport:Facility"},"rdfs:comment":"The Party entity responsible for operating the facility."},{"@id":"DigitalProductPassport:productId","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"productId","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"A unique identifier (URI) assigned to the product. (Link Resolver - GS1 GTIN?)"},{"@id":"DigitalProductPassport:model","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"model","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"The model name or number of the product, represented as text."},{"@id":"DigitalProductPassport:productClass","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"productClass","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"A code representing the product's class, typically using the UNSPSC (United Nations Standard Products and Services Code) classification."},{"@id":"DigitalProductPassport:image","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"image","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"A unique identifier (URI) pointing to an image of the product."},{"@id":"DigitalProductPassport:description","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"description","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"A textual description providing details about the product."},{"@id":"DigitalProductPassport:recyclingInfo","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"recyclingInfo","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"A URI pointing to information regarding the recycling aspects of the product."},{"@id":"DigitalProductPassport:manufacturer","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"manufacturer","schema:rangeIncludes":{"@id":"DigitalProductPassport:Party"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductInformation"},"rdfs:comment":"The Party entity that manufactured the product."},{"@id":"DigitalProductPassport:batchId","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"batchId","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"A unique identifier (URI) assigned to the product batch. (Link Resolver - GS1-128?)"},{"@id":"DigitalProductPassport:serialNumber","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"serialNumber","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"The serial number(s) of the product or products in the batch, represented as text."},{"@id":"DigitalProductPassport:manufacturedAt","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"manufacturedAt","schema:rangeIncludes":{"@id":"DigitalProductPassport:Facility"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"The Facility where the product batch was manufactured."},{"@id":"DigitalProductPassport:manufacturedDate","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"manufacturedDate","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"The ISO 8601 date on which the product batch was manufactured."},{"@id":"DigitalProductPassport:provenance","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"provenance","schema:rangeIncludes":{"@id":"DigitalProductPassport:Provenance"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"An array of Provenance objects providing details on the origin of components or ingredients of the product batch."},{"@id":"DigitalProductPassport:sustainabilityInfo","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"sustainabilityInfo","schema:rangeIncludes":{"@id":"DigitalProductPassport:SustainabilityClaim"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"An array of SustainabilityClaim objects representing various sustainability claims about the product batch."},{"@id":"DigitalProductPassport:traceabilityInfo","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"traceabilityInfo","schema:rangeIncludes":{"@id":"DigitalProductPassport:TraceabilityEvent"},"schema:domainIncludes":{"@id":"DigitalProductPassport:ProductBatch"},"rdfs:comment":"An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch."},{"@id":"DigitalProductPassport:topic","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"topic","schema:rangeIncludes":{"@id":"DigitalProductPassport:topic"},"schema:domainIncludes":{"@id":"DigitalProductPassport:SustainabilityClaim"},"rdfs:comment":"A code representing the topic of the sustainability claim. E.g. environment.deforestation, environment.ghg-emission-intensity, etc..  Drawn from a standard code list.  "},{"@id":"DigitalProductPassport:criteria","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"criteria","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:SustainabilityClaim"},"rdfs:comment":"A URI pointing to the regulation or standard governing the claim."},{"@id":"DigitalProductPassport:sustainabilityCredential","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"sustainabilityCredential","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:SustainabilityClaim"},"rdfs:comment":"A URI pointing to the evidence supporting the claim. Most likely in the form of a verifiable credential."},{"@id":"DigitalProductPassport:metric","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"metric","schema:rangeIncludes":{"@id":"DigitalProductPassport:SustainabilityMetric"},"schema:domainIncludes":[{"@id":"DigitalProductPassport:SustainabilityClaim"},{"@id":"DigitalProductPassport:SustainabilityMetric"}],"rdfs:comment":"One or more actual measures supporting the claim. For example for GHG emissions there may be a metric for total emissions intensity and also a metric for amount of offsets included."},{"@id":"DigitalProductPassport:compliance","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"compliance","schema:rangeIncludes":{"@id":"xsd:boolean"},"schema:domainIncludes":{"@id":"DigitalProductPassport:SustainabilityClaim"},"rdfs:comment":"and indicator (boolean) that expresses whether or not this product has acehived compliance against the rule.  for example, if the topic is environment.deforstation and the rule is EU.2023.1115 then the product is complianct if it has not touched any facility throughout it's lifecycle that is not deforestation free since dec 2020."},{"@id":"DigitalProductPassport:unit","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"unit","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:SustainabilityMetric"},"rdfs:comment":"The unit of measure. for example, energy generaiton intensity in Kg Co2e per kWh produced. Or Kg Co2e per Kg of livestock gross weight.  "},{"@id":"DigitalProductPassport:value","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"value","schema:rangeIncludes":{"@id":"xsd:decimal"},"schema:domainIncludes":{"@id":"DigitalProductPassport:SustainabilityMetric"},"rdfs:comment":"A numeric value representing the measurement or evaluation outcome for the claim."},{"@id":"DigitalProductPassport:eventReference","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"eventReference","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:TraceabilityEvent"},"rdfs:comment":"A URI pointing to the detailed information about the EPCIS event. Most likely in the form of a verifiable credential."},{"@id":"DigitalProductPassport:eventType","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"eventType","schema:rangeIncludes":{"@id":"DigitalProductPassport:epcisType"},"schema:domainIncludes":{"@id":"DigitalProductPassport:TraceabilityEvent"},"rdfs:comment":"A code representing the type of EPCIS event. ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent, ObjectEvent."},{"@id":"DigitalProductPassport:country","@type":["rdf:Property","owl:ObjectProperty"],"rdfs:label":"country","schema:rangeIncludes":{"@id":"DigitalProductPassport:country"},"schema:domainIncludes":{"@id":"DigitalProductPassport:Provenance"},"rdfs:comment":"A ISO 3166-1 code representing the country of origin of the component or ingredient."},{"@id":"DigitalProductPassport:percentage","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"percentage","schema:rangeIncludes":{"@id":"xsd:decimal"},"schema:domainIncludes":{"@id":"DigitalProductPassport:Provenance"},"rdfs:comment":"A numeric value representing the percentage composition of the component or ingredient in the product."},{"@id":"DigitalProductPassport:guaranteeOfOriginCredential","@type":["rdf:Property","owl:DatatypeProperty"],"rdfs:label":"guaranteeOfOriginCredential","schema:rangeIncludes":{"@id":"xsd:string"},"schema:domainIncludes":{"@id":"DigitalProductPassport:Provenance"},"rdfs:comment":""}]}
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "https://schema.org/",
+        "DigitalProductPassport": "https://test.uncefact.org/vocabulary/untp/dpp/",
+        "unece": "https://vocabulary.uncefact.org/"
+    },
+    "@graph": [
+        {
+            "rdfs:label": "assuranceLevelCode",
+            "@type": "rdfs:Class",
+            "@id": "DigitalProductPassport:assuranceLevelCode",
+            "rdfs:comment": "Code that describes the assurance level of the conformity assessment"
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevelCode#Self",
+            "@type": "DigitalProductPassport:assuranceLevelCode",
+            "rdf:value": "Self",
+            "rdfs:comment": " self-assessment"
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevelCode#Commercial",
+            "@type": "DigitalProductPassport:assuranceLevelCode",
+            "rdf:value": "Commercial",
+            "rdfs:comment": " conformity assessment by related body or under commercial contract"
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevelCode#Buyer",
+            "@type": "DigitalProductPassport:assuranceLevelCode",
+            "rdf:value": "Buyer",
+            "rdfs:comment": " conformity assessment by potential purchaser"
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevelCode#Membership",
+            "@type": "DigitalProductPassport:assuranceLevelCode",
+            "rdf:value": "Membership",
+            "rdfs:comment": " conformity assessment by industry representative body or membership body"
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevelCode#Unspecified",
+            "@type": "DigitalProductPassport:assuranceLevelCode",
+            "rdf:value": "Unspecified",
+            "rdfs:comment": " conformity assessment by party with unspecified relationship "
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevelCode#3rdParty",
+            "@type": "DigitalProductPassport:assuranceLevelCode",
+            "rdf:value": "3rdParty",
+            "rdfs:comment": " 3rd party (independent) conformity assessment"
+        },
+        {
+            "rdfs:label": "conformityTopic",
+            "@type": "rdfs:Class",
+            "@id": "DigitalProductPassport:conformityTopic",
+            "rdfs:comment": "A high level category scheme for conformity claims in the digital product passport"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#environment.energy",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "environment.energy",
+            "rdfs:comment": "claims supporting clean energy transition"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#environment.emissions",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "environment.emissions",
+            "rdfs:comment": "claims supporting GHG emissions reduction"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#environment.water",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "environment.water",
+            "rdfs:comment": "claims supporting minimising water usage impact"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#environment.waste",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "environment.waste",
+            "rdfs:comment": "claims supporting waste processing and reduction"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#environment.deforestation",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "environment.deforestation",
+            "rdfs:comment": "claims supporting native forest restoration"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#environment.biodiversity",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "environment.biodiversity",
+            "rdfs:comment": "claims supporting improved biodiversity outcomes"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#circularity.content",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "circularity.content",
+            "rdfs:comment": "claims supporting the use of recycled content in products"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#circularity.design",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "circularity.design",
+            "rdfs:comment": "claims supporting product design for circularity outcomes"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#social.labour",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "social.labour",
+            "rdfs:comment": "claims supporting labour rights including fair wages"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#social.rights",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "social.rights",
+            "rdfs:comment": "claims supporting human rights and anti-discrimination"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#social.community",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "social.community",
+            "rdfs:comment": "claims supporting local community development"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#social.safety",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "social.safety",
+            "rdfs:comment": "claims supporting process and product safety"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#governance.ethics",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "governance.ethics",
+            "rdfs:comment": "claims supporting ethical conduct and corporate governance"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#governance.compliance",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "governance.compliance",
+            "rdfs:comment": "claims supporting regulatory compliance including taxation and community protection"
+        },
+        {
+            "@id": "DigitalProductPassport:conformityTopic#governance.transparency",
+            "@type": "DigitalProductPassport:conformityTopic",
+            "rdf:value": "governance.transparency",
+            "rdfs:comment": "claims supporting transparency and traceability"
+        },
+        {
+            "rdfs:label": "eventTypeCode",
+            "@type": "rdfs:Class",
+            "@id": "DigitalProductPassport:eventTypeCode",
+            "rdfs:comment": "A code describing the traceability event type - drawn from GS1 EPCIS 2.0"
+        },
+        {
+            "@id": "DigitalProductPassport:eventTypeCode#aggregation",
+            "@type": "DigitalProductPassport:eventTypeCode",
+            "rdf:value": "aggregation",
+            "rdfs:comment": "event describing the grouping of products such as placing bales of cotton on a pallet"
+        },
+        {
+            "@id": "DigitalProductPassport:eventTypeCode#transformation",
+            "@type": "DigitalProductPassport:eventTypeCode",
+            "rdf:value": "transformation",
+            "rdfs:comment": "event describing the consumption of input products to create output products in a manufacturing process such as spinning thread from cotton bales."
+        },
+        {
+            "@id": "DigitalProductPassport:eventTypeCode#object",
+            "@type": "DigitalProductPassport:eventTypeCode",
+            "rdf:value": "object",
+            "rdfs:comment": "event describing an action on a single product such as an inspection or test"
+        },
+        {
+            "@id": "DigitalProductPassport:eventTypeCode#transaction",
+            "@type": "DigitalProductPassport:eventTypeCode",
+            "rdf:value": "transaction",
+            "rdfs:comment": "event describing commercial transactions such as the sale of a collection of products from seller to buyer"
+        },
+        {
+            "@id": "DigitalProductPassport:eventTypeCode#association",
+            "@type": "DigitalProductPassport:eventTypeCode",
+            "rdf:value": "association",
+            "rdfs:comment": "event describing the creation of relationships between products such as a bill of material of components in an assembly"
+        },
+        {
+            "rdfs:label": "evidenceFormat",
+            "@type": "rdfs:Class",
+            "@id": "DigitalProductPassport:evidenceFormat",
+            "rdfs:comment": "A code describing the format of the conformity evidence"
+        },
+        {
+            "@id": "DigitalProductPassport:evidenceFormat#w3c_vc",
+            "@type": "DigitalProductPassport:evidenceFormat",
+            "rdf:value": "w3c_vc",
+            "rdfs:comment": "A W3C Verifiable Credential"
+        },
+        {
+            "@id": "DigitalProductPassport:evidenceFormat#iso_mdl",
+            "@type": "DigitalProductPassport:evidenceFormat",
+            "rdf:value": "iso_mdl",
+            "rdfs:comment": "an ISO 108013 identity credential"
+        },
+        {
+            "@id": "DigitalProductPassport:evidenceFormat#document",
+            "@type": "DigitalProductPassport:evidenceFormat",
+            "rdf:value": "document",
+            "rdfs:comment": "a binary document for human consumption such as a PDF"
+        },
+        {
+            "@id": "DigitalProductPassport:evidenceFormat#website",
+            "@type": "DigitalProductPassport:evidenceFormat",
+            "rdf:value": "website",
+            "rdfs:comment": "a reference to an entry on a public website."
+        },
+        {
+            "@id": "DigitalProductPassport:evidenceFormat#other",
+            "@type": "DigitalProductPassport:evidenceFormat",
+            "rdf:value": "other",
+            "rdfs:comment": "some other representation"
+        },
+        {
+            "@id": "DigitalProductPassport:ProductPassport",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ProductPassport",
+            "schema:source": {
+                "@id": "ProductPassport"
+            },
+            "rdfs:comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, and different scores relating to sustainability and trustworthiness."
+        },
+        {
+            "@id": "DigitalProductPassport:Party",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Party",
+            "schema:source": {
+                "@id": "Party"
+            },
+            "rdfs:comment": "The Party class represents an entity such as an organization, or a company that manufactured the product."
+        },
+        {
+            "@id": "DigitalProductPassport:Facility",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Facility",
+            "schema:source": {
+                "@id": "Facility"
+            },
+            "rdfs:comment": "The Facility class embodies information about a specific facility, which manufactured the product."
+        },
+        {
+            "@id": "DigitalProductPassport:Product",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Product",
+            "schema:source": {
+                "@id": "Product"
+            },
+            "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+        },
+        {
+            "@id": "DigitalProductPassport:Claim",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Claim",
+            "schema:source": {
+                "@id": "Claim"
+            },
+            "rdfs:comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim."
+        },
+        {
+            "@id": "DigitalProductPassport:Metric",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Metric",
+            "schema:source": {
+                "@id": "Metric"
+            },
+            "rdfs:comment": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  "
+        },
+        {
+            "@id": "DigitalProductPassport:TraceabilityEvent",
+            "@type": "rdfs:Class",
+            "rdfs:label": "TraceabilityEvent",
+            "schema:source": {
+                "@id": "TraceabilityEvent"
+            },
+            "rdfs:comment": "The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference."
+        },
+        {
+            "@id": "DigitalProductPassport:Material",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Material",
+            "schema:source": {
+                "@id": "Material"
+            },
+            "rdfs:comment": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction."
+        },
+        {
+            "@id": "DigitalProductPassport:Evidence",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Evidence",
+            "schema:source": {
+                "@id": "Evidence"
+            },
+            "rdfs:comment": "Evidence to support a conformity or identity claim. "
+        },
+        {
+            "@id": "DigitalProductPassport:Dimension",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Dimension",
+            "schema:source": {
+                "@id": "Dimension"
+            },
+            "rdfs:comment": "Overall (length, width, height) dimensions and weight/volume of an item."
+        },
+        {
+            "@id": "DigitalProductPassport:Classification",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Classification",
+            "schema:source": {
+                "@id": "Classification"
+            },
+            "rdfs:comment": "A classification scheme and code / name representing a category value for a product, entity, or facility."
+        },
+        {
+            "@id": "DigitalProductPassport:Identifier",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Identifier",
+            "schema:source": {
+                "@id": "Identifier"
+            },
+            "rdfs:comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence "
+        },
+        {
+            "@id": "DigitalProductPassport:Measure",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Measure",
+            "schema:source": {
+                "@id": "Measure"
+            },
+            "rdfs:comment": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG)."
+        },
+        {
+            "@id": "DigitalProductPassport:Characteristic",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Characteristic",
+            "schema:source": {
+                "@id": "Characteristic"
+            },
+            "rdfs:comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity."
+        },
+        {
+            "@id": "DigitalProductPassport:id",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "id",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:ProductPassport"
+            },
+            "rdfs:comment": "A unique identifier (URI) assigned to the product passport."
+        },
+        {
+            "@id": "DigitalProductPassport:issuedBy",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "issuedBy",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Party"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:ProductPassport"
+            },
+            "rdfs:comment": "The Party that issued the product passport."
+        },
+        {
+            "@id": "DigitalProductPassport:product",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "product",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:ProductPassport"
+            },
+            "rdfs:comment": "Detailed information about the product encapsulated in a ProductInformation object."
+        },
+        {
+            "@id": "DigitalProductPassport:guaranteeOfOriginCredential",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "guaranteeOfOriginCredential",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:ProductPassport"
+            },
+            "rdfs:comment": "A conformity credential issued by a trusted authority that confirms some or all of the claims made in this product passport"
+        },
+        {
+            "@id": "DigitalProductPassport:trustScore",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "trustScore",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:ProductPassport"
+            },
+            "rdfs:comment": "An aggregate numeric metric that represents the level of trustworthiness associated with the product. This score is derived based on the credibility and reliability of the issuing bodies that substantiate the claims being made about the product. The calculation rules are defined in the UNTP trust graph specification."
+        },
+        {
+            "@id": "DigitalProductPassport:sustainabilityScore",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "sustainabilityScore",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:ProductPassport"
+            },
+            "rdfs:comment": "An aggregate numeric metric calculated based on the various sustainability claims vs benchmarks associated with the product. It amalgamates scores assigned to individual sustainability claims, which are validated by various issuing bodies. The score provides a comprehensive view of the product's overall sustainability performance, giving users a quantifiable measure of the product's environmental and social impacts."
+        },
+        {
+            "@id": "DigitalProductPassport:identifiers",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "identifiers",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "DigitalProductPassport:Party"
+                },
+                {
+                    "@id": "DigitalProductPassport:Facility"
+                }
+            ],
+            "rdfs:comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
+        },
+        {
+            "@id": "DigitalProductPassport:name",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "name",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "DigitalProductPassport:Party"
+                },
+                {
+                    "@id": "DigitalProductPassport:Facility"
+                },
+                {
+                    "@id": "DigitalProductPassport:Metric"
+                }
+            ],
+            "rdfs:comment": "The name of the organization or company, represented as a text string."
+        },
+        {
+            "@id": "DigitalProductPassport:location",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "location",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Facility"
+            },
+            "rdfs:comment": ""
+        },
+        {
+            "@id": "DigitalProductPassport:operatedBy",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "operatedBy",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Party"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Facility"
+            },
+            "rdfs:comment": "The Party entity responsible for operating the facility."
+        },
+        {
+            "@id": "DigitalProductPassport:productIdentifiers",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "productIdentifiers",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "An array of unique identifiers assigned to the product or model. "
+        },
+        {
+            "@id": "DigitalProductPassport:batchIdentifiers",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "batchIdentifiers",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "Information regarding the specific production batch of the product."
+        },
+        {
+            "@id": "DigitalProductPassport:itemIdentifiers",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "itemIdentifiers",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "An array of identifiers representing a specific serialised item of the product."
+        },
+        {
+            "@id": "DigitalProductPassport:classifications",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "classifications",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Classification"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+        },
+        {
+            "@id": "DigitalProductPassport:modelName",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "modelName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "The model name or number of the product, represented as text."
+        },
+        {
+            "@id": "DigitalProductPassport:image",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "image",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "A unique identifier (URI) pointing to an image of the product."
+        },
+        {
+            "@id": "DigitalProductPassport:description",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "description",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "A textual description providing details about the product."
+        },
+        {
+            "@id": "DigitalProductPassport:furtherInformation",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "furtherInformation",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "A URL pointing to further human readable information about the product."
+        },
+        {
+            "@id": "DigitalProductPassport:manufacturedDate",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "manufacturedDate",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "The ISO 8601 date on which the product batch was manufactured."
+        },
+        {
+            "@id": "DigitalProductPassport:dimensions",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "dimensions",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Dimension"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
+        },
+        {
+            "@id": "DigitalProductPassport:characteristics",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "characteristics",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Characteristic"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": ""
+        },
+        {
+            "@id": "DigitalProductPassport:manufacturer",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "manufacturer",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Party"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "The Party entity that manufactured the product."
+        },
+        {
+            "@id": "DigitalProductPassport:manufacturedAt",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "manufacturedAt",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Facility"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "The Facility where the product batch was manufactured."
+        },
+        {
+            "@id": "DigitalProductPassport:materialsProvenance",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "materialsProvenance",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Material"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
+        },
+        {
+            "@id": "DigitalProductPassport:conformityClaims",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "conformityClaims",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
+        },
+        {
+            "@id": "DigitalProductPassport:recyclingInstructions",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "recyclingInstructions",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "A URI pointing to information regarding the recycling aspects of the product."
+        },
+        {
+            "@id": "DigitalProductPassport:traceabilityInformation",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "traceabilityInformation",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:TraceabilityEvent"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Product"
+            },
+            "rdfs:comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch."
+        },
+        {
+            "@id": "DigitalProductPassport:topic",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "topic",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:conformityTopic"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "A code representing the topic of the sustainability claim. E.g. environment.deforestation, environment.ghg-emission-intensity, etc..  Drawn from a standard code list.  "
+        },
+        {
+            "@id": "DigitalProductPassport:standardOrRegulation",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "standardOrRegulation",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "The standard or regulation against which this conformity claim is made. Expressed as a URI and should match a value in the UN catalogue of reference vocabularies. "
+        },
+        {
+            "@id": "DigitalProductPassport:criteriaReference",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "criteriaReference",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "A URI pointing to the specific criteria within the standard or regulation against which this claim is made."
+        },
+        {
+            "@id": "DigitalProductPassport:claimedValues",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "claimedValues",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Metric"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "One or more actual measures supporting the claim. For example for GHG emissions there may be a metric for total emissions intensity and also a metric for amount of offsets included."
+        },
+        {
+            "@id": "DigitalProductPassport:benchmarkValue",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "benchmarkValue",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Metric"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "A benchmark value against which the claimed value can be assessed. THis could be a value specified by a standard or regulation or could be an industry benchmark."
+        },
+        {
+            "@id": "DigitalProductPassport:benchmarkReference",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "benchmarkReference",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "A refernce to evidence to support the benchmark value."
+        },
+        {
+            "@id": "DigitalProductPassport:conformance",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "conformance",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "and indicator (boolean) that expresses whether or not this product has achieved compliance against the criteria.  for example, if the topic is environment.deforstation and the criteria is EU.2023.1115 then the product is conformant if it has not touched any facility throughout it's lifecycle that is not deforestation free since dec 2020."
+        },
+        {
+            "@id": "DigitalProductPassport:conformityEvidence",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "conformityEvidence",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Evidence"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Claim"
+            },
+            "rdfs:comment": "A URI pointing to the evidence supporting the claim. Most likely in the form of a verifiable credential."
+        },
+        {
+            "@id": "DigitalProductPassport:value",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "value",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "DigitalProductPassport:Metric"
+                },
+                {
+                    "@id": "DigitalProductPassport:Measure"
+                }
+            ],
+            "rdfs:comment": "A numeric value representing the measurement or evaluation outcome for the claim."
+        },
+        {
+            "@id": "DigitalProductPassport:accuracy",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "accuracy",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Metric"
+            },
+            "rdfs:comment": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+        },
+        {
+            "@id": "DigitalProductPassport:unit",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "unit",
+            "schema:rangeIncludes": {
+                "@id": "unece:UnitMeasureCode"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "DigitalProductPassport:Metric"
+                },
+                {
+                    "@id": "DigitalProductPassport:Measure"
+                }
+            ],
+            "rdfs:comment": "The unit of measure. for example, emissions intensity in Kg Co2e per kWh produced. Or Kg Co2e per Kg of livestock gross weight.  "
+        },
+        {
+            "@id": "DigitalProductPassport:eventReference",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "eventReference",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:TraceabilityEvent"
+            },
+            "rdfs:comment": "A URI pointing to the detailed information about the EPCIS event. Most likely in the form of a verifiable credential."
+        },
+        {
+            "@id": "DigitalProductPassport:eventType",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "eventType",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:eventTypeCode"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:TraceabilityEvent"
+            },
+            "rdfs:comment": "A code representing the type of EPCIS event. ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent, ObjectEvent."
+        },
+        {
+            "@id": "DigitalProductPassport:originCountry",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "originCountry",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:countryCode"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Material"
+            },
+            "rdfs:comment": "A ISO 3166-1 code representing the country of origin of the component or ingredient."
+        },
+        {
+            "@id": "DigitalProductPassport:materialType",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "materialType",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Classification"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Material"
+            },
+            "rdfs:comment": "The type of this material - as a value drawn from a controlled vocabulary eg textileexchange.org/materials/rm01014 - representing organic cotton."
+        },
+        {
+            "@id": "DigitalProductPassport:massFraction",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "massFraction",
+            "schema:rangeIncludes": {
+                "@id": "xsd:decimal"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Material"
+            },
+            "rdfs:comment": "A numeric value representing the mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 100."
+        },
+        {
+            "@id": "DigitalProductPassport:recycled",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "recycled",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Material"
+            },
+            "rdfs:comment": "Indicator is true if this material input is from a recycled source."
+        },
+        {
+            "@id": "DigitalProductPassport:hazardous",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "hazardous",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Material"
+            },
+            "rdfs:comment": "Indicates whether this material is hazardous. If true then "
+        },
+        {
+            "@id": "DigitalProductPassport:format",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "format",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:evidenceFormat"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Evidence"
+            },
+            "rdfs:comment": "Format of the evidence (verifiable credential, document, website, etc)"
+        },
+        {
+            "@id": "DigitalProductPassport:assuranceLevel",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "assuranceLevel",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:assuranceLevelCode"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Evidence"
+            },
+            "rdfs:comment": "The assurance level of the evidence (self declaration, 2nd party, 3rd party, accredited auditor)"
+        },
+        {
+            "@id": "DigitalProductPassport:credentialReference",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "credentialReference",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Evidence"
+            },
+            "rdfs:comment": "The URL of the evidence credential. Should be a hashlink to avoid post-issue tampering."
+        },
+        {
+            "@id": "DigitalProductPassport:weight",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "weight",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Measure"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Dimension"
+            },
+            "rdfs:comment": "the weight of the product"
+        },
+        {
+            "@id": "DigitalProductPassport:length",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "length",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Measure"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Dimension"
+            },
+            "rdfs:comment": "The length of the product or packaging"
+        },
+        {
+            "@id": "DigitalProductPassport:width",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "width",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Measure"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Dimension"
+            },
+            "rdfs:comment": "The width of the product or packaging"
+        },
+        {
+            "@id": "DigitalProductPassport:height",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "height",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Measure"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Dimension"
+            },
+            "rdfs:comment": "The height of the product or packaging"
+        },
+        {
+            "@id": "DigitalProductPassport:volume",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "volume",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Measure"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Dimension"
+            },
+            "rdfs:comment": "The displacement volume of the product."
+        },
+        {
+            "@id": "DigitalProductPassport:scheme",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "scheme",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "DigitalProductPassport:Classification"
+                },
+                {
+                    "@id": "DigitalProductPassport:Identifier"
+                }
+            ],
+            "rdfs:comment": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
+        },
+        {
+            "@id": "DigitalProductPassport:classifierValue",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "classifierValue",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Classification"
+            },
+            "rdfs:comment": "classifier value within the scheme - eg \"01211\" in UN CPC"
+        },
+        {
+            "@id": "DigitalProductPassport:classifierName",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "classifierName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Classification"
+            },
+            "rdfs:comment": "Name of the classifier - eg \"Asparagus\" for code \"01211\" in UNCPC"
+        },
+        {
+            "@id": "DigitalProductPassport:classifierURL",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "classifierURL",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Classification"
+            },
+            "rdfs:comment": "Linked data URL to a web vocabulary entery for this classificaiton code. When this property is provided, the scheme, value, and name properties of the classifer are not required.  eg https://vocabulary.uncefact.org/unlocode#AUBNE represensign the port of Brisbane in the UN/LOCODE classification scheme."
+        },
+        {
+            "@id": "DigitalProductPassport:identiferValue",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "identiferValue",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "rdfs:comment": "The value of the identifier within the scheme"
+        },
+        {
+            "@id": "DigitalProductPassport:identifierURI",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "identifierURI",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "rdfs:comment": "The fully qualified URI representing the globally unique record for this identifier."
+        },
+        {
+            "@id": "DigitalProductPassport:verificationEvidence",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "verificationEvidence",
+            "schema:rangeIncludes": {
+                "@id": "DigitalProductPassport:Evidence"
+            },
+            "schema:domainIncludes": {
+                "@id": "DigitalProductPassport:Identifier"
+            },
+            "rdfs:comment": "Link to evidence that attests to the validity and ownership of the identifer. "
+        }
+    ]
+}
