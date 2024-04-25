@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/uncefact/spec-JSONschema/main/JSONschema2020-12/meta-library/BuyShipPay/D22B/AirConsignmentSecurityDeclaration",
+    "$id": "https://test.uncefact.org/vocabulary/untp/dpp/ProductPassport.json",
     "title": "ProductPassport Declaration",
     "description": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, and different scores relating to sustainability and trustworthiness.",
     "type": "object",
@@ -32,7 +32,7 @@
             "type": "number",
             "description": "An aggregate numeric metric calculated based on the various sustainability claims vs benchmarks associated with the product. It amalgamates scores assigned to individual sustainability claims, which are validated by various issuing bodies. The score provides a comprehensive view of the product's overall sustainability performance, giving users a quantifiable measure of the product's environmental and social impacts."
         }
-    },
+    }, 
     "$defs": {
         "Party": {
             "type": "object",
@@ -173,7 +173,7 @@
                     "$ref": "#/$defs/Dimension",
                     "description": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
                 },
-                "charcteristics": {
+                "characteristics": {
                     "$ref": "#/$defs/Characteristic",
                     "description": ""
                 },
@@ -234,7 +234,7 @@
                 "classifierURL": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Linked data URL to a web vocabulary entery for this classificaiton code. When this property is provided, the scheme, value, and name properties of the classifer are not required.  eg https://vocabulary.uncefact.org/unlocode?country=au#AUBNE represensign the port of Brisbane in the UN/LOCODE classification scheme."
+                    "description": "Linked data URL to a web vocabulary entery for this classificaiton code. When this property is provided, the scheme, value, and name properties of the classifer are not required.  eg https://vocabulary.uncefact.org/unlocode#AUBNE represensign the port of Brisbane in the UN/LOCODE classification scheme."
                 }
             },
             "description": "A classification scheme and code / name representing a category value for a product, entity, or facility."
