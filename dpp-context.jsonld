@@ -48,7 +48,7 @@
                                     }
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "name": {
                             "@id": "dpp:name",
@@ -95,7 +95,7 @@
                                     }
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "batchIdentifiers": {
                             "@id": "dpp:batchIdentifiers",
@@ -132,7 +132,7 @@
                                     }
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "itemIdentifiers": {
                             "@id": "dpp:itemIdentifiers",
@@ -169,7 +169,7 @@
                                     }
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "classifications": {
                             "@id": "dpp:classifications",
@@ -192,7 +192,7 @@
                                     "@type": "xsd:string"
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "modelName": {
                             "@id": "dpp:modelName",
@@ -218,75 +218,36 @@
                             "@id": "dpp:dimensions",
                             "@type": "@id",
                             "@context": {
+                                "value": {
+                                    "@id": "dpp:value",
+                                    "@type": "xsd:decimal"
+                                },
+                                "unit": {
+                                    "@id": "dpp:unit",
+                                    "@type": "@vocab",
+                                    "@context": {
+                                        "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
+                                    }
+                                },
                                 "weight": {
                                     "@id": "dpp:weight",
-                                    "@type": "@id",
-                                    "@context": {
-                                        "value": {
-                                            "@id": "dpp:value",
-                                            "@type": "xsd:decimal"
-                                        },
-                                        "unit": {
-                                            "@id": "dpp:unit",
-                                            "@type": "@vocab"
-                                        }
-                                    }
+                                    "@type": "@id"
                                 },
                                 "length": {
                                     "@id": "dpp:length",
-                                    "@type": "@id",
-                                    "@context": {
-                                        "value": {
-                                            "@id": "dpp:value",
-                                            "@type": "xsd:decimal"
-                                        },
-                                        "unit": {
-                                            "@id": "dpp:unit",
-                                            "@type": "@vocab"
-                                        }
-                                    }
+                                    "@type": "@id"
                                 },
                                 "width": {
                                     "@id": "dpp:width",
-                                    "@type": "@id",
-                                    "@context": {
-                                        "value": {
-                                            "@id": "dpp:value",
-                                            "@type": "xsd:decimal"
-                                        },
-                                        "unit": {
-                                            "@id": "dpp:unit",
-                                            "@type": "@vocab"
-                                        }
-                                    }
+                                    "@type": "@id"
                                 },
                                 "height": {
                                     "@id": "dpp:height",
-                                    "@type": "@id",
-                                    "@context": {
-                                        "value": {
-                                            "@id": "dpp:value",
-                                            "@type": "xsd:decimal"
-                                        },
-                                        "unit": {
-                                            "@id": "dpp:unit",
-                                            "@type": "@vocab"
-                                        }
-                                    }
+                                    "@type": "@id"
                                 },
                                 "volume": {
                                     "@id": "dpp:volume",
-                                    "@type": "@id",
-                                    "@context": {
-                                        "value": {
-                                            "@id": "dpp:value",
-                                            "@type": "xsd:decimal"
-                                        },
-                                        "unit": {
-                                            "@id": "dpp:unit",
-                                            "@type": "@vocab"
-                                        }
-                                    }
+                                    "@type": "@id"
                                 }
                             }
                         },
@@ -333,7 +294,7 @@
                                             }
                                         }
                                     },
-                                    "@container": "@list"
+                                    "@container": "@set"
                                 },
                                 "name": {
                                     "@id": "dpp:name",
@@ -380,7 +341,7 @@
                                             }
                                         }
                                     },
-                                    "@container": "@list"
+                                    "@container": "@set"
                                 },
                                 "name": {
                                     "@id": "dpp:name",
@@ -429,7 +390,7 @@
                                                     }
                                                 }
                                             },
-                                            "@container": "@list"
+                                            "@container": "@set"
                                         },
                                         "name": {
                                             "@id": "dpp:name",
@@ -445,7 +406,10 @@
                             "@context": {
                                 "originCountry": {
                                     "@id": "dpp:originCountry",
-                                    "@type": "@vocab"
+                                    "@type": "@vocab",
+                                    "@context": {
+                                        "@vocab": "https://vocabulary.uncefact.org/CountryId#"
+                                    }
                                 },
                                 "materialType": {
                                     "@id": "dpp:materialType",
@@ -482,7 +446,7 @@
                                     "@type": "xsd:boolean"
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "conformityClaims": {
                             "@id": "dpp:conformityClaims",
@@ -490,7 +454,10 @@
                             "@context": {
                                 "topic": {
                                     "@id": "dpp:topic",
-                                    "@type": "@vocab"
+                                    "@type": "@vocab",
+                                    "@context": {
+                                        "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/conformityTopic#"
+                                    }
                                 },
                                 "standardOrRegulation": {
                                     "@id": "dpp:standardOrRegulation",
@@ -518,10 +485,13 @@
                                         },
                                         "unit": {
                                             "@id": "dpp:unit",
-                                            "@type": "@vocab"
+                                            "@type": "@vocab",
+                                            "@context": {
+                                                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
+                                            }
                                         }
                                     },
-                                    "@container": "@list"
+                                    "@container": "@set"
                                 },
                                 "benchmarkValue": {
                                     "@id": "dpp:benchmarkValue",
@@ -541,7 +511,10 @@
                                         },
                                         "unit": {
                                             "@id": "dpp:unit",
-                                            "@type": "@vocab"
+                                            "@type": "@vocab",
+                                            "@context": {
+                                                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
+                                            }
                                         }
                                     }
                                 },
@@ -559,11 +532,17 @@
                                     "@context": {
                                         "format": {
                                             "@id": "dpp:format",
-                                            "@type": "@vocab"
+                                            "@type": "@vocab",
+                                            "@context": {
+                                                "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/evidenceFormat#"
+                                            }
                                         },
                                         "assuranceLevel": {
                                             "@id": "dpp:assuranceLevel",
-                                            "@type": "@vocab"
+                                            "@type": "@vocab",
+                                            "@context": {
+                                                "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/assuranceLevelCode#"
+                                            }
                                         },
                                         "credentialReference": {
                                             "@id": "dpp:credentialReference",
@@ -572,7 +551,7 @@
                                     }
                                 }
                             },
-                            "@container": "@list"
+                            "@container": "@set"
                         },
                         "recyclingInstructions": {
                             "@id": "dpp:recyclingInstructions",
@@ -588,7 +567,10 @@
                                 },
                                 "eventType": {
                                     "@id": "dpp:eventType",
-                                    "@type": "@vocab"
+                                    "@type": "@vocab",
+                                    "@context": {
+                                        "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/eventTypeCode#"
+                                    }
                                 }
                             },
                             "@container": "@list"
