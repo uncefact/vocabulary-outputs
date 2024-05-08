@@ -38,7 +38,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "identifiers": {
+                "identifier": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Identifier"
@@ -118,28 +118,28 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "productIdentifiers": {
+                "productIdentifier": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Identifier"
                     },
                     "description": "An array of unique identifiers assigned to the product or model. "
                 },
-                "batchIdentifiers": {
+                "batchIdentifier": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Identifier"
                     },
                     "description": "Information regarding the specific production batch of the product."
                 },
-                "itemIdentifiers": {
+                "itemIdentifier": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Identifier"
                     },
                     "description": "An array of identifiers representing a specific serialised item of the product."
                 },
-                "classifications": {
+                "classification": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Classification"
@@ -169,11 +169,11 @@
                     "format": "date",
                     "description": "The ISO 8601 date on which the product batch was manufactured."
                 },
-                "dimensions": {
+                "dimension": {
                     "$ref": "#/$defs/Dimension",
                     "description": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
                 },
-                "characteristics": {
+                "characteristic": {
                     "$ref": "#/$defs/Characteristic",
                     "description": ""
                 },
@@ -192,14 +192,14 @@
                     },
                     "description": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
                 },
-                "conformityClaims": {
+                "conformityClaim": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Claim"
                     },
                     "description": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
                 },
-                "recyclingInstructions": {
+                "recyclingInstruction": {
                     "type": "string",
                     "format": "uri",
                     "description": "A URI pointing to information regarding the recycling aspects of the product."
@@ -292,7 +292,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "identifiers": {
+                "identifier": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Identifier"
