@@ -1,39 +1,45 @@
 
 {
     "@context": {
-        "@vocab": "https://vocabulary.uncefact.org/unlocode-vocab/",
         "unlcdv": "https://vocabulary.uncefact.org/unlocode-vocab/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "unlcd": "https://vocabulary.uncefact.org/unlocode#",
         "unlcdc": "https://vocabulary.uncefact.org/unlocode-countries#",
+        "unlcdf": "https://vocabulary.uncefact.org/unlocode-functions#",
         "unlcds": "https://vocabulary.uncefact.org/unlocode-subdivisions#",
         "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "schema": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
         "Country": {
-            "@id": "Country"
+            "@id": "unlcdv:Country"
         },
         "Function": {
-            "@id": "Function"
+            "@id": "unlcdv:Function"
         },
         "Subdivision": {
-            "@id": "Subdivision"
+            "@id": "unlcdv:Subdivision"
         },
         "UNLOCODE": {
-            "@id": "UNLOCODE"
+            "@id": "unlcdv:UNLOCODE"
         },
         "countryCode": {
-            "@id": "countryCode"
+            "@id": "unlcdv:countryCode",
+            "@type": "@vocab"
         },
         "countrySubdivision": {
-            "@id": "countrySubdivision"
+            "@id": "unlcdv:countrySubdivision",
+            "@type": "@vocab"
         },
         "functions": {
-            "@id": "functions"
+            "@id": "unlcdv:functions",
+            "@type": "@vocab"
         },
         "subdivisionType": {
-            "@id": "subdivisionType"
+            "@id": "unlcdv:subdivisionType",
+            "@type": "xsd:string"
         }
     }
 }
