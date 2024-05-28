@@ -1,88 +1,87 @@
-
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "unlcdv": "https://vocabulary.uncefact.org/unlocode-vocab/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "unlcdf": "https://vocabulary.uncefact.org/unlocode-functions#"
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "unlcdf": "https://vocabulary.uncefact.org/unlocode-functions#",
+    "unlcdv": "https://vocabulary.uncefact.org/unlocode-vocab/"
+  },
+  "@graph": [
+    {
+      "@id": "unlcdf:0",
+      "@type": "unlcdv:Function",
+      "rdf:value": "0",
+      "rdfs:comment": "Digit \"0\" means that the criteria for inclusion apply, but that no information is available or used which is recognized by the competent authority regarding the specific transport mode or function(s) of the location.",
+      "rdfs:label": "Not officially functional"
     },
-    "@graph": [
-        {
-            "@id": "unlcdf:0",
-            "rdfs:comment": "Digit \"0\" means that the criteria for inclusion apply, but that no information is available or used which is recognized by the competent authority regarding the specific transport mode or function(s) of the location.",
-            "rdfs:label": "Not officially functional",
-            "rdf:value": "0",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:1",
-            "rdfs:comment": "Any location with permanent facilities at which seagoing vessels can load or discharge cargo moving in maritime traffic.",
-            "rdfs:label": "Maritime transport (sea port or maritime port)",
-            "rdf:value": "1",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:2",
-            "rdfs:comment": "Any location that has one or more railway terminals like cargo terminals or train stations (excluding passenger terminals). Specific terminals located inside a location shall not be considered individually as a location.",
-            "rdfs:label": "Rail transport",
-            "rdf:value": "2",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:3",
-            "rdfs:comment": "Any location that is connected to other ones by means of roads. Specific terminals located inside a location shall not be considered individually as a location.",
-            "rdfs:label": "Road transport",
-            "rdf:value": "3",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:4",
-            "rdfs:comment": "Any location with permanent facilities at which aircraft can load or discharge cargo moving in air traffic.",
-            "rdfs:label": "Air transport (airport) or space transport (spaceport)",
-            "rdf:value": "4",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:5",
-            "rdfs:comment": "A mail processing facility, recognized by UPU, that has significance for the processing of inter-operator mail, either because they generate or receive dispatches or because they act as transit centres for mail exchanged between other IMPCs. Each IMPC has a well-defined physical location, is operated by or under the responsibility of a single organization and handles a specific set of mail flows. (This was known as a postal exchange office in the former edition of the Recommendation.)",
-            "rdfs:label": "International Mail Processing Centre (IMPC) recognized by the Universal Postal Union (UPU)",
-            "rdf:value": "5",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:6",
-            "rdfs:comment": "Any location where one or more of the below facilities can be found: Inland Clearance Depot (ICD): a multimodal transport facility, other than a sea port or an airport, which is approved by a competent body, equipped with fixed installations and offering services for the handling and temporary storage of any kind of goods (including containers) carried under customs transit by any applicable mode of transport, placed under customs control and, with customs and other agencies, competent to clear goods for home use, warehousing, temporary admission, re-export, temporary storage for onward transit and outright export. (Definition applies also to synonyms like Dry Port, Inland Clearance Terminal, etc.) Container Depot: a multimodal transport facility which offers services for storage, repair and maintenance of containers. Inland freight terminal: a multimodal transport facility, other than a sea port or an airport, operated on a common- user basis, at which trade cargo is received or dispatched.",
-            "rdfs:label": "Multimodal transport facility",
-            "rdf:value": "6",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:7",
-            "rdfs:comment": "Any location with permanent facilities to load or discharge cargo that doesn’t fit in the previous definitions (e.g. oil platform).",
-            "rdfs:label": "Fixed Transport Installation (oil pipeline terminal, electric power lines, ropeway terminals, etc.)",
-            "rdf:value": "7",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:8",
-            "rdfs:comment": "Any location with permanent facilities at which vessels can load or discharge cargo moving in inland waterway traffic.",
-            "rdfs:label": "Inland water transport (river ports, and lake ports)",
-            "rdf:value": "8",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:A",
-            "rdfs:comment": "Any geographic region that has economic laws different from a country's typical economic laws for the purposes of trade operations and duties and tariffs.",
-            "rdfs:label": "Special Economic Zone (SEZ)",
-            "rdf:value": "A",
-            "@type": "unlcdv:Function"
-        },
-        {
-            "@id": "unlcdf:B",
-            "rdfs:comment": "Any location that is located on the border with other",
-            "rdfs:label": "Cross Border (former code; not to be used) ",
-            "rdf:value": "B",
-            "@type": "unlcdv:Function"
-        }
-    ]
+    {
+      "@id": "unlcdf:1",
+      "@type": "unlcdv:Function",
+      "rdf:value": "1",
+      "rdfs:comment": "Any location with permanent facilities at which seagoing vessels can load or discharge cargo moving in maritime traffic.",
+      "rdfs:label": "Maritime transport (sea port or maritime port)"
+    },
+    {
+      "@id": "unlcdf:2",
+      "@type": "unlcdv:Function",
+      "rdf:value": "2",
+      "rdfs:comment": "Any location that has one or more railway terminals like cargo terminals or train stations (excluding passenger terminals). Specific terminals located inside a location shall not be considered individually as a location.",
+      "rdfs:label": "Rail transport"
+    },
+    {
+      "@id": "unlcdf:3",
+      "@type": "unlcdv:Function",
+      "rdf:value": "3",
+      "rdfs:comment": "Any location that is connected to other ones by means of roads. Specific terminals located inside a location shall not be considered individually as a location.",
+      "rdfs:label": "Road transport"
+    },
+    {
+      "@id": "unlcdf:4",
+      "@type": "unlcdv:Function",
+      "rdf:value": "4",
+      "rdfs:comment": "Any location with permanent facilities at which aircraft can load or discharge cargo moving in air traffic.",
+      "rdfs:label": "Air transport (airport) or space transport (spaceport)"
+    },
+    {
+      "@id": "unlcdf:5",
+      "@type": "unlcdv:Function",
+      "rdf:value": "5",
+      "rdfs:comment": "A mail processing facility, recognized by UPU, that has significance for the processing of inter-operator mail, either because they generate or receive dispatches or because they act as transit centres for mail exchanged between other IMPCs. Each IMPC has a well-defined physical location, is operated by or under the responsibility of a single organization and handles a specific set of mail flows. (This was known as a postal exchange office in the former edition of the Recommendation.)",
+      "rdfs:label": "International Mail Processing Centre (IMPC) recognized by the Universal Postal Union (UPU)"
+    },
+    {
+      "@id": "unlcdf:6",
+      "@type": "unlcdv:Function",
+      "rdf:value": "6",
+      "rdfs:comment": "Any location where one or more of the below facilities can be found: Inland Clearance Depot (ICD): a multimodal transport facility, other than a sea port or an airport, which is approved by a competent body, equipped with fixed installations and offering services for the handling and temporary storage of any kind of goods (including containers) carried under customs transit by any applicable mode of transport, placed under customs control and, with customs and other agencies, competent to clear goods for home use, warehousing, temporary admission, re-export, temporary storage for onward transit and outright export. (Definition applies also to synonyms like Dry Port, Inland Clearance Terminal, etc.) Container Depot: a multimodal transport facility which offers services for storage, repair and maintenance of containers. Inland freight terminal: a multimodal transport facility, other than a sea port or an airport, operated on a common- user basis, at which trade cargo is received or dispatched.",
+      "rdfs:label": "Multimodal transport facility"
+    },
+    {
+      "@id": "unlcdf:7",
+      "@type": "unlcdv:Function",
+      "rdf:value": "7",
+      "rdfs:comment": "Any location with permanent facilities to load or discharge cargo that doesn’t fit in the previous definitions (e.g. oil platform).",
+      "rdfs:label": "Fixed Transport Installation (oil pipeline terminal, electric power lines, ropeway terminals, etc.)"
+    },
+    {
+      "@id": "unlcdf:8",
+      "@type": "unlcdv:Function",
+      "rdf:value": "8",
+      "rdfs:comment": "Any location with permanent facilities at which vessels can load or discharge cargo moving in inland waterway traffic.",
+      "rdfs:label": "Inland water transport (river ports, and lake ports)"
+    },
+    {
+      "@id": "unlcdf:A",
+      "@type": "unlcdv:Function",
+      "rdf:value": "A",
+      "rdfs:comment": "Any geographic region that has economic laws different from a country's typical economic laws for the purposes of trade operations and duties and tariffs.",
+      "rdfs:label": "Special Economic Zone (SEZ)"
+    },
+    {
+      "@id": "unlcdf:B",
+      "@type": "unlcdv:Function",
+      "rdf:value": "B",
+      "rdfs:comment": "Any location that is located on the border with other",
+      "rdfs:label": "Cross Border (former code; not to be used) "
+    }
+  ]
 }
