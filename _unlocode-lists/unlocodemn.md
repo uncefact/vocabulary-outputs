@@ -3,7 +3,6 @@ title: UN/LOCODE
 permalink: unlocodemn
 jsonid: unlocodemn
 label: UN/LOCODE
-comment: desc
 excludeFromList: true
 columns:
   - 
