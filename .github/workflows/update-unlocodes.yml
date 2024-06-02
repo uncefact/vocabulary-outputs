@@ -27,6 +27,20 @@ jobs:
         zipBall: false
         extract: false
 
+    - uses: robinraju/release-downloader@v1.8
+      with:
+        repository: "uncefact/utilities"
+        latest: true
+        fileName: "*.jar"
+        tarBall: false
+        zipBall: false
+        extract: false
+
+    - name: generate md files
+      run: |
+        java -jar "$(find -name *.jar)" -m md-locode -d "."
+        rm -rf *.jar
+
     - name: snapshot PR
       uses: peter-evans/create-pull-request@v5
       with:
