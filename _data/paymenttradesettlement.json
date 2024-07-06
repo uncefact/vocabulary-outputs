@@ -11,7 +11,7 @@
         {
             "uri": "unece:additionalDescription",
             "type": "xsd:string",
-            "comment": "The description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
+            "comment": "A description, expressed as text, of additional information supplied to enable the matching of an entry with the items that the payment is intended to settle."
         },
         {
             "uri": "unece:applicableTax",
@@ -24,9 +24,39 @@
             "comment": "The creation date, time, date time, or other date time value for this payment trade settlement."
         },
         {
+            "uri": "unece:creditNoteAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the credit note for this payment trade settlement."
+        },
+        {
+            "uri": "unece:creditorReferenceId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of the creditor reference for this payment trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction."
+        },
+        {
+            "uri": "unece:creditorReferenceIssuerId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of the issuer of the creditor reference for this payment trade settlement."
+        },
+        {
+            "uri": "unece:creditorReferenceTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of creditor reference for this payment trade settlement."
+        },
+        {
+            "uri": "unece:discountAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the payment that is the discount for this trade settlement, such as from the application of an agreed discount to the amount due."
+        },
+        {
             "uri": "unece:dueDateTime",
             "type": "xsd:string",
             "comment": "The due date, time, date time, or other date time value for this payment trade settlement."
+        },
+        {
+            "uri": "unece:duePayableAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the payment that is the exact amount due and payable for this trade settlement, such as the amount due to the creditor."
         },
         {
             "uri": "unece:identifiedGuarantee",
@@ -56,7 +86,7 @@
         {
             "uri": "unece:paymentAmount",
             "type": "unece:AmountType",
-            "comment": "The monetary value of the payment for this trade settlement payment."
+            "comment": "A monetary value of the payment for this trade settlement payment."
         },
         {
             "uri": "unece:paymentApplicableCurrencyExchange",
@@ -77,6 +107,11 @@
             "uri": "unece:priorityCode",
             "type": "xsd:string",
             "comment": "The code specifying the priority for this payment trade settlement."
+        },
+        {
+            "uri": "unece:proprietaryCreditorReferenceType",
+            "type": "xsd:string",
+            "comment": "The type of proprietary creditor reference, expressed as text, for this payment trade settlement."
         },
         {
             "uri": "unece:receiptDateTime",
@@ -119,6 +154,11 @@
             "comment": "A monetary value of the tax related to this payment trade settlement."
         },
         {
+            "uri": "unece:totalTaxAmount",
+            "type": "unece:AmountType",
+            "comment": "The monetary value of the total tax for this payment trade settlement."
+        },
+        {
             "uri": "unece:transferFeeInclusiveIndicator",
             "type": "xsd:boolean",
             "comment": "The indication of whether or not this payment trade settlement includes a transfer fee."
@@ -127,6 +167,11 @@
             "uri": "unece:typeCode",
             "type": "xsd:string",
             "comment": "The code specifying the type of this payment trade settlement."
+        },
+        {
+            "uri": "unece:unstructuredDescription",
+            "type": "xsd:string",
+            "comment": "An unstructured description, expressed as text, for this payment trade settlement."
         }
     ],
     "referencedBy": [

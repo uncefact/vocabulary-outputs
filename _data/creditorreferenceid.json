@@ -1,7 +1,10 @@
 {
     "label": "creditorReferenceId",
     "uri": "unece:creditorReferenceId",
-    "comment": "The identifier of the creditor reference for this header trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction.",
+    "comment": [
+        "The identifier of the creditor reference for this header trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction.",
+        "The unique identifier of the creditor reference for this payment trade settlement, such as a specific identifier assigned by the creditor to reference the financial transaction."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -11,6 +14,10 @@
         {
             "uri": "unece:HeaderTradeSettlement",
             "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         }
     ]
 }
