@@ -1,14 +1,21 @@
 {
     "label": "statementNote",
     "uri": "unece:statementNote",
-    "comment": "A statement note for this cross-border regulatory procedure.",
+    "comment": [
+        "A statement note for this cross-border regulatory procedure.",
+        "A statement note for this referenced supply chain consignment.",
+        "A statement note for this supply chain consignment."
+    ],
     "rangeIncludes": [
         {
-            "uri": "unece:Note",
-            "comment": "A textual or coded description, such as a remark or additional information."
+            "uri": "unece:Note"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:Consignment",
+            "comment": "A separately identifiable collection of ..."
+        },
         {
             "uri": "unece:RegulatoryProcedure",
             "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."

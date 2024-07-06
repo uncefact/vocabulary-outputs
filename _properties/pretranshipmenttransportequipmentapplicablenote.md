@@ -1,0 +1,5 @@
+---
+title: preTranshipmentTransportEquipmentApplicableNote
+permalink: preTranshipmentTransportEquipmentApplicableNote.html
+jsonid: pretranshipmenttransportequipmentapplicablenote
+---
