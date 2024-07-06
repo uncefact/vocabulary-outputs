@@ -1,13 +1,20 @@
 {
     "label": "pilotBoardingPlace",
     "uri": "unece:pilotBoardingPlace",
-    "comment": "A pilot boarding place, expressed as text, for this transport event.",
+    "comment": [
+        "A pilot boarding place, expressed as text, for this port movement event.",
+        "A pilot boarding place, expressed as text, for this transport event."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:PortMovementEvent",
+            "comment": "A movement of a vessel during a port call."
+        },
         {
             "uri": "unece:TransportEvent",
             "comment": "A significant occurrence or happening ..."

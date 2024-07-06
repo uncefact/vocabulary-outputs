@@ -1,7 +1,10 @@
 {
     "label": "attachmentBinaryObject",
     "uri": "unece:attachmentBinaryObject",
-    "comment": "A binary object that is attached or otherwise appended to this referenced document.",
+    "comment": [
+        "A binary object that is attached or otherwise appended to this exchanged document.",
+        "A binary object that is attached or otherwise appended to this referenced document."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:base64Binary"
@@ -11,6 +14,10 @@
         {
             "uri": "unece:Document",
             "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:ExchangedDocument",
+            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
         }
     ]
 }

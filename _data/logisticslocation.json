@@ -11,7 +11,7 @@
         {
             "uri": "unece:countryName",
             "type": "xsd:string",
-            "comment": "The country name, expressed as text, of this logistics location."
+            "comment": "A country name, expressed as text, of this logistics location."
         },
         {
             "uri": "unece:countrySubDivisionId",
@@ -97,11 +97,16 @@
             "uri": "unece:subordinateSubordinateLocation",
             "type": "unece:SubordinateLocation",
             "comment": "A location subordinate to this logistics related location."
+        },
+        {
+            "uri": "unece:uTCOffsetNumeric",
+            "type": "xsd:string",
+            "comment": "The time offset value from the Universal Time Coordinate (UTC) for this logistics related location."
         }
     ],
     "referencedBy": [
         {
-            "uri": "unece:applicableLocation",
+            "uri": "unece:applicableLogisticsLocation",
             "comment": "A logistics location or place applicable to this header trade agreement."
         },
         {
@@ -111,6 +116,10 @@
         {
             "uri": "unece:appliedToLocation",
             "comment": "The end location at which this logistics service charge is no longer to be applied."
+        },
+        {
+            "uri": "unece:arrivalRelatedLocation",
+            "comment": "An arrival location related to this port movement event."
         },
         {
             "uri": "unece:associatedLocation",
@@ -181,7 +190,7 @@
             "comment": "The location of the specified customs office which is responsible for import formalities for the goods which are subject to this cross-border regulatory procedure."
         },
         {
-            "uri": "unece:issueLocation",
+            "uri": "unece:issueLogisticsLocation",
             "comment": "The issue location for this ..."
         },
         {

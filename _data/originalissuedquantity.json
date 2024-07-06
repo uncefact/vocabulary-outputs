@@ -1,7 +1,10 @@
 {
     "label": "originalIssuedQuantity",
     "uri": "unece:originalIssuedQuantity",
-    "comment": "The number of originals issued of this exchanged document.",
+    "comment": [
+        "The number of originals issued of this exchanged document.",
+        "The number of originals issued of this referenced document."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:QuantityType",
@@ -9,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:Document",
+            "comment": "Written, printed or electronic matter that is referenced."
+        },
         {
             "uri": "unece:ExchangedDocument",
             "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."

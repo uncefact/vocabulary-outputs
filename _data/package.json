@@ -7,9 +7,9 @@
     ],
     "objectProperties": [
         {
-            "uri": "unece:additionalLevelCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the additional level of this logistics package."
+            "uri": "unece:associatedDocument",
+            "type": "unece:Document",
+            "comment": "A referenced document associated with this logistics package."
         },
         {
             "uri": "unece:colourCode",
@@ -42,6 +42,11 @@
             "comment": "The measure of the gross weight (mass) of this logistics package and its contents."
         },
         {
+            "uri": "unece:hierarchicalLevelId",
+            "type": "xsd:string",
+            "comment": "The level identifier for this logistics package."
+        },
+        {
             "uri": "unece:identifier",
             "type": "xsd:string",
             "comment": "The identifier for this referenced logistics package."
@@ -65,6 +70,11 @@
             "uri": "unece:linearDimension",
             "type": "unece:SpatialDimension",
             "comment": "The linear spatial dimensions of this logistics package."
+        },
+        {
+            "uri": "unece:logisticsPackageAdditionalLevelCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the additional level of this logistics package."
         },
         {
             "uri": "unece:netVolumeMeasure",
@@ -94,7 +104,7 @@
         {
             "uri": "unece:packageTypeCode",
             "type": "unece:PackageTypeCodeList",
-            "comment": "A code specifying the type of logistics package."
+            "comment": "The code specifying the type of referenced logistics package."
         },
         {
             "uri": "unece:packagingLevelCode",
@@ -109,7 +119,7 @@
         {
             "uri": "unece:perPackageUnitQuantity",
             "type": "unece:QuantityType",
-            "comment": "A number of units per package in this referenced logistics package."
+            "comment": "A number of units per package in this logistics package."
         },
         {
             "uri": "unece:physicalShippingMarks",
@@ -129,12 +139,17 @@
         {
             "uri": "unece:seriesEndId",
             "type": "xsd:string",
-            "comment": "The unique identifier of the end of a series of packages within this logistics package."
+            "comment": "The identifier of the end of a series of packages within this referenced logistics package."
         },
         {
             "uri": "unece:seriesStartId",
             "type": "xsd:string",
             "comment": "The identifier of the start of a series of packages within this referenced logistics package."
+        },
+        {
+            "uri": "unece:specifiedLineTradeDelivery",
+            "type": "unece:LineTradeDelivery",
+            "comment": "The line trade delivery specified for this logistics package."
         },
         {
             "uri": "unece:statedCondition",
@@ -160,12 +175,21 @@
             "uri": "unece:weightUnitNetWeightMeasure",
             "type": "unece:WeightUnitMeasureType",
             "comment": "The measure of the net weight (mass) of the contents of this referenced logistics package."
+        },
+        {
+            "uri": "unece:weightUnitTareWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "The measure of the tare weight of this logistics package."
         }
     ],
     "referencedBy": [
         {
             "uri": "unece:containedPackage",
             "comment": "A package contained in this logistics packaging."
+        },
+        {
+            "uri": "unece:logisticsPackage",
+            "comment": "A referenced logistics package, at line level, for this trade delivery."
         },
         {
             "uri": "unece:package",

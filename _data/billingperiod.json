@@ -3,7 +3,8 @@
     "uri": "unece:billingPeriod",
     "comment": [
         "A billing period specified for this header trade settlement.",
-        "A billing period specified for this line trade settlement."
+        "A billing period specified for this line trade settlement.",
+        "The billing period specified for the subordinate line of this trade settlement."
     ],
     "rangeIncludes": [
         {
@@ -19,6 +20,10 @@
         {
             "uri": "unece:LineTradeSettlement",
             "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:SubordinateLineTradeSettlement",
+            "comment": "The information, at a subordinate line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
         }
     ]
 }

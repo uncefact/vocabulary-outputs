@@ -4,9 +4,19 @@
     "comment": "The recording of items or details for a specific legal purpose.",
     "objectProperties": [
         {
-            "uri": "unece:countryId",
+            "uri": "unece:categoryCode",
             "type": "xsd:string",
+            "comment": "A code specifying the category of this legal registration."
+        },
+        {
+            "uri": "unece:countryId",
+            "type": "unece:CountryId",
             "comment": "An identifier of the country in which this legal registration is valid."
+        },
+        {
+            "uri": "unece:countrySubDivisionId",
+            "type": "xsd:string",
+            "comment": "A unique identifier of the country sub-division for this legal registration."
         },
         {
             "uri": "unece:identifier",
@@ -17,6 +27,16 @@
             "uri": "unece:lastRegisteredYearDateTime",
             "type": "xsd:string",
             "comment": "The last year in which this legal registration was registered."
+        },
+        {
+            "uri": "unece:licenceId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of a licence for this legal registration."
+        },
+        {
+            "uri": "unece:recordedDate",
+            "type": "xsd:string",
+            "comment": "A date when this legal registration was recorded."
         },
         {
             "uri": "unece:typeCode",

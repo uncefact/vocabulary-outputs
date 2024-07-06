@@ -4,6 +4,11 @@
     "comment": "A significant occurrence or happening in a supply chain.",
     "objectProperties": [
         {
+            "uri": "unece:actualStatus",
+            "type": "unece:InspectionStatus",
+            "comment": "The actual inspection status of this supply chain event."
+        },
+        {
             "uri": "unece:associatedReference",
             "type": "unece:SupplyChainReference",
             "comment": "A reference associated with this supply chain event."
@@ -17,6 +22,11 @@
             "uri": "unece:descriptionBinaryObject",
             "type": "xsd:base64Binary",
             "comment": "Binary object data, such as a photograph, describing this supply chain event."
+        },
+        {
+            "uri": "unece:discretePeriod",
+            "type": "unece:SpecifiedPeriod",
+            "comment": "A discrete period specified for this supply chain event."
         },
         {
             "uri": "unece:dueDateTime",
@@ -183,8 +193,16 @@
             "comment": "A previous delivery event, at header level, for this trade delivery."
         },
         {
+            "uri": "unece:processingEvent",
+            "comment": "The processing event for this trade product instance."
+        },
+        {
             "uri": "unece:productionEvent",
             "comment": "The production event for this trade product instance."
+        },
+        {
+            "uri": "unece:reclassificationEvent",
+            "comment": "A reclassification supply chain event for this trade product instance."
         },
         {
             "uri": "unece:reportedSupplyChainEvent",

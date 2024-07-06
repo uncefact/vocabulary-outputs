@@ -1,7 +1,10 @@
 {
     "label": "specifiedLaboratoryObservationReference",
     "uri": "unece:specifiedLaboratoryObservationReference",
-    "comment": "A laboratory observation reference specified for this sample observation result.",
+    "comment": [
+        "A laboratory observation reference specified for this referenced location.",
+        "A laboratory observation reference specified for this sample observation result."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:LaboratoryObservationReference",
@@ -9,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:Location",
+            "comment": "A reference to a physical location or place."
+        },
         {
             "uri": "unece:ObservationResult",
             "comment": "A collection of diagnostic data, visual or technical, and processing data, performed on a sample."

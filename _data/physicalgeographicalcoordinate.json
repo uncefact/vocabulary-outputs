@@ -3,7 +3,9 @@
     "uri": "unece:physicalGeographicalCoordinate",
     "comment": [
         "Geographical coordinate information for this logistics related location.",
-        "Physical geographical coordinate information for this subordinate location."
+        "Geographical coordinate information for this physical transport service location.",
+        "Physical geographical coordinate information for this subordinate location.",
+        "Physical geographical coordinate information for this subordinate of a subordinate location."
     ],
     "rangeIncludes": [
         {
@@ -19,6 +21,14 @@
         {
             "uri": "unece:SubordinateLocation",
             "comment": "A physical location or place which is a subordinate location of a location."
+        },
+        {
+            "uri": "unece:SubordinateSubordinateLocation",
+            "comment": "A physical location or place which is a subordinate location of a subordinate location."
+        },
+        {
+            "uri": "unece:TransportServiceLocation",
+            "comment": "A location where a transport service takes place."
         }
     ]
 }

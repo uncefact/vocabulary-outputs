@@ -1,13 +1,20 @@
 {
     "label": "stowagePositionId",
     "uri": "unece:stowagePositionId",
-    "comment": "The stowage position identifier for this piece of logistics transport equipment.",
+    "comment": [
+        "The stowage position identifier for this associated transport equipment.",
+        "The stowage position identifier for this piece of logistics transport equipment."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+        },
         {
             "uri": "unece:LogisticsTransportEquipment",
             "comment": "A piece of equipment used ..."

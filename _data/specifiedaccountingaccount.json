@@ -1,7 +1,11 @@
 {
     "label": "specifiedAccountingAccount",
     "uri": "unece:specifiedAccountingAccount",
-    "comment": "A specified accounting account for this trade related tax, levy or duty.",
+    "comment": [
+        "A specified accounting account for this trade related tax, levy or duty.",
+        "An accounting account specified for this line trade settlement.",
+        "An accounting account specified for this trade allowance charge."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:AccountingAccount",
@@ -9,6 +13,14 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:LineTradeSettlement",
+            "comment": "The information, at a line level, that enables the reconciliation of a financial transaction with the item(s) that the financial transaction is intended to settle, for example a commercial invoice."
+        },
+        {
+            "uri": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
+        },
         {
             "uri": "unece:TradeTax",
             "comment": "A trade related fiscal levy or duty."
