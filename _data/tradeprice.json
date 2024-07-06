@@ -34,11 +34,6 @@
             "comment": "The quantity on which the trade price is based."
         },
         {
-            "uri": "unece:bracketTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of bracket for this trade price."
-        },
-        {
             "uri": "unece:calculationPercent",
             "type": "xsd:string",
             "comment": "The calculation percentage for this trade price."
@@ -49,11 +44,6 @@
             "comment": "The cancellation percentage for this trade price."
         },
         {
-            "uri": "unece:categoryTypeCode",
-            "type": "xsd:string",
-            "comment": "The code specifying the type of category, such as refund or service charge, for this trade price."
-        },
-        {
             "uri": "unece:changeReason",
             "type": "xsd:string",
             "comment": "A reason, expressed as text, for a change of this trade price."
@@ -62,6 +52,11 @@
             "uri": "unece:chargeAmount",
             "type": "unece:AmountType",
             "comment": "A monetary value of the trade price charge."
+        },
+        {
+            "uri": "unece:comparisonPrice",
+            "type": "unece:ReferencePrice",
+            "comment": "A price that provides a comparison with this trade price."
         },
         {
             "uri": "unece:customerServicePointQuantity",
@@ -89,6 +84,11 @@
             "comment": "The code specifying the determination of this trade price."
         },
         {
+            "uri": "unece:document",
+            "type": "unece:Document",
+            "comment": "A document referenced for this trade price."
+        },
+        {
             "uri": "unece:expiryDateTime",
             "type": "xsd:string",
             "comment": "The expiry date, time, date time, or other date time value for this trade price."
@@ -109,9 +109,19 @@
             "comment": "Information, expressed as text, for this trade price."
         },
         {
+            "uri": "unece:maximumChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value that is the maximum charge in a range of trade prices."
+        },
+        {
             "uri": "unece:maximumQuantity",
             "type": "unece:QuantityType",
             "comment": "The maximum quantity in a range for which the trade price applies."
+        },
+        {
+            "uri": "unece:minimumChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value that is the minimum charge in a range of trade prices."
         },
         {
             "uri": "unece:minimumQuantity",
@@ -154,6 +164,16 @@
             "comment": "A code specifying a reason for this trade price."
         },
         {
+            "uri": "unece:repackagingChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of a repackaging charge for this trade price."
+        },
+        {
+            "uri": "unece:repairChargeAmount",
+            "type": "unece:AmountType",
+            "comment": "A monetary value of a repair charge for this trade price."
+        },
+        {
             "uri": "unece:seasonalApplicablePeriod",
             "type": "unece:SpecifiedPeriod",
             "comment": "A seasonal period applicable for this trade price."
@@ -177,6 +197,16 @@
             "uri": "unece:tradeComparisonPrice",
             "type": "unece:ReferencePrice",
             "comment": "A price that provides a trade comparison with this trade price."
+        },
+        {
+            "uri": "unece:tradePriceBracketTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of bracket for this trade price."
+        },
+        {
+            "uri": "unece:tradePriceCategoryTypeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the type of category, such as refund or service charge, for this trade price."
         },
         {
             "uri": "unece:unitAmount",

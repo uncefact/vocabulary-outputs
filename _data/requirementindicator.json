@@ -2,6 +2,8 @@
     "label": "requirementIndicator",
     "uri": "unece:requirementIndicator",
     "comment": [
+        "An indication of whether or not a requirement exists for these handling instructions.",
+        "The indication of whether or not a requirement exists for these delivery instructions.",
         "The indication of whether or not a requirement exists for these document handling instructions.",
         "The indication of whether or not there is a requirement for these packaging instructions."
     ],
@@ -12,8 +14,16 @@
     ],
     "domainIncludes": [
         {
+            "uri": "unece:DeliveryInstructions",
+            "comment": "Delivery information of an instructive nature."
+        },
+        {
             "uri": "unece:DocumentHandlingInstructions",
             "comment": "Instructions for handling the document, such as stamping the agent signature."
+        },
+        {
+            "uri": "unece:HandlingInstructions",
+            "comment": "Handling information of an instructive nature."
         },
         {
             "uri": "unece:PackagingInstructions",

@@ -1,7 +1,12 @@
 {
     "label": "reportableQuantity",
     "uri": "unece:reportableQuantity",
-    "comment": "The reportable quantity for these transported dangerous goods.",
+    "comment": [
+        "A reportable quantity for this associated transport equipment.",
+        "A reportable quantity for this logistics transport equipment.",
+        "A reportable quantity for this referenced logistics transport equipment.",
+        "The reportable quantity for these transported dangerous goods."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:QuantityType",
@@ -10,8 +15,16 @@
     ],
     "domainIncludes": [
         {
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+        },
+        {
             "uri": "unece:DangerousGoods",
             "comment": "Goods which may contain a substance which poses risks to people and/or the environment during transportation which is regulated by dangerous goods regulations."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used ..."
         }
     ]
 }

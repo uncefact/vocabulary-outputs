@@ -1,7 +1,10 @@
 {
     "label": "specifiedQuantity",
     "uri": "unece:specifiedQuantity",
-    "comment": "The quantity specified for this crop produce batch.",
+    "comment": [
+        "A quantity specified for this trade country.",
+        "The quantity specified for this crop produce batch."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:QuantityType",
@@ -9,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:Country",
+            "comment": "The area of land that belongs to a nation together with its properties, such as population, political organization, etc., used or referenced for trade purposes."
+        },
         {
             "uri": "unece:CropProduceBatch",
             "comment": "A group of crop produce considered or dealt with together."

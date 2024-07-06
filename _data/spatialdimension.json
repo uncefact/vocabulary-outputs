@@ -4,6 +4,11 @@
     "comment": "A measure of spatial extent of an object, such as the length, breadth or height of a shipping container.",
     "objectProperties": [
         {
+            "uri": "unece:componentSpatialDimension",
+            "type": "unece:SpatialDimension",
+            "comment": "A dimension that is a component of this spatial dimension."
+        },
+        {
             "uri": "unece:description",
             "type": "xsd:string",
             "comment": "A textual description of this spatial dimension."
@@ -14,19 +19,9 @@
             "comment": "The code specifying the type of spatial dimension, such as thickness, area, or volume."
         },
         {
-            "uri": "unece:heightMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the height component of this spatial dimension."
-        },
-        {
             "uri": "unece:identifier",
             "type": "xsd:string",
             "comment": "The unique identifier of this spatial dimension."
-        },
-        {
-            "uri": "unece:lengthMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the length component of this spatial dimension."
         },
         {
             "uri": "unece:linearUnitDiameterMeasure",
@@ -34,17 +29,36 @@
             "comment": "The measure of the diameter component for this spatial dimension."
         },
         {
-            "uri": "unece:valueMeasure",
-            "type": "unece:MeasureType",
-            "comment": "The measure of the value of this spatial dimension."
+            "uri": "unece:linearUnitHeightMeasure",
+            "type": "unece:LinearUnitMeasureType",
+            "comment": "The measure of the height component of this spatial dimension."
         },
         {
-            "uri": "unece:widthMeasure",
-            "type": "unece:MeasureType",
+            "uri": "unece:linearUnitLengthMeasure",
+            "type": "unece:LinearUnitMeasureType",
+            "comment": "The measure of the length component of this spatial dimension."
+        },
+        {
+            "uri": "unece:linearUnitWidthMeasure",
+            "type": "unece:LinearUnitMeasureType",
             "comment": "The measure of the width component of this spatial dimension."
+        },
+        {
+            "uri": "unece:unitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of units with these spatial dimensions."
+        },
+        {
+            "uri": "unece:unitValueMeasure",
+            "type": "unece:UnitMeasureType",
+            "comment": "The measure of the value of this spatial dimension."
         }
     ],
     "referencedBy": [
+        {
+            "uri": "unece:componentSpatialDimension",
+            "comment": "A dimension that is a component of this spatial dimension."
+        },
         {
             "uri": "unece:linearDimension",
             "comment": "A linear dimension or a ..."

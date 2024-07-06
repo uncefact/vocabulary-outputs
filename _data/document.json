@@ -34,9 +34,19 @@
             "comment": "The code specifying the category of this referenced document."
         },
         {
+            "uri": "unece:communicationChannelCode",
+            "type": "unece:CommunicationChannelCodeList",
+            "comment": "The code specifying the channel by which this referenced document is sent, such as mail, email, fax."
+        },
+        {
             "uri": "unece:contractualClause",
             "type": "unece:Clause",
             "comment": "A contractual clause of this referenced document."
+        },
+        {
+            "uri": "unece:controlRequirementIndicator",
+            "type": "xsd:boolean",
+            "comment": "The indication of whether or not this referenced document requires a control."
         },
         {
             "uri": "unece:copyIndicator",
@@ -44,14 +54,39 @@
             "comment": "The indication of whether or not the referenced document is a copy."
         },
         {
+            "uri": "unece:copyIssuedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of copies issued of this referenced document."
+        },
+        {
+            "uri": "unece:copyRequiredQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of copies required of this referenced document."
+        },
+        {
+            "uri": "unece:creationDateTime",
+            "type": "xsd:string",
+            "comment": "The date, time, date time, or other date time value of the creation of this referenced document."
+        },
+        {
             "uri": "unece:description",
             "type": "xsd:string",
             "comment": "A textual description for this referenced document."
         },
         {
+            "uri": "unece:documentAmendmentPurposeCode",
+            "type": "xsd:string",
+            "comment": "The code specifying the purpose of an amendment to this referenced document."
+        },
+        {
             "uri": "unece:documentLanguageId",
             "type": "unece:LanguageId",
             "comment": "An identifier for a language used in this referenced document."
+        },
+        {
+            "uri": "unece:documentLineStatusCode",
+            "type": "unece:LineStatusCodeList",
+            "comment": "The code specifying the status of a line in this referenced document."
         },
         {
             "uri": "unece:documentStatusCode",
@@ -65,7 +100,7 @@
         },
         {
             "uri": "unece:documentTypeCode",
-            "type": "unece:DocumentCodeList",
+            "type": "xsd:string",
             "comment": "The code specifying the type of referenced document."
         },
         {
@@ -109,7 +144,7 @@
             "comment": "The formatted date or date time for the issuance of this referenced document."
         },
         {
-            "uri": "unece:issueLocation",
+            "uri": "unece:issueLogisticsLocation",
             "type": "unece:LogisticsLocation",
             "comment": "The logistics related location where this referenced document has been issued."
         },
@@ -129,9 +164,24 @@
             "comment": "Handling instructions specified by the issuer for this referenced document."
         },
         {
+            "uri": "unece:itemIdentificationId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of an item in this referenced document."
+        },
+        {
+            "uri": "unece:lineCountNumeric",
+            "type": "xsd:string",
+            "comment": "The number of lines for this referenced document."
+        },
+        {
             "uri": "unece:lineId",
             "type": "xsd:string",
             "comment": "The unique identifier of a line in this referenced document."
+        },
+        {
+            "uri": "unece:lineItemQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of line items in this referenced document."
         },
         {
             "uri": "unece:lodgementLocation",
@@ -139,9 +189,24 @@
             "comment": "The logistics related location where this referenced document has been lodged."
         },
         {
+            "uri": "unece:messageFunctionPurposeCode",
+            "type": "unece:MessageFunctionCodeList",
+            "comment": "The code specifying the purpose of this referenced document."
+        },
+        {
             "uri": "unece:name",
             "type": "xsd:string",
             "comment": "A name, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:originalIssuedQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of originals issued of this referenced document."
+        },
+        {
+            "uri": "unece:originalRequiredQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The number of originals required of this referenced document."
         },
         {
             "uri": "unece:pageId",
@@ -197,6 +262,21 @@
             "uri": "unece:remarks",
             "type": "xsd:string",
             "comment": "A remark, expressed as text, regarding this referenced document."
+        },
+        {
+            "uri": "unece:reportCountNumeric",
+            "type": "xsd:string",
+            "comment": "The report count for this referenced document."
+        },
+        {
+            "uri": "unece:revision",
+            "type": "xsd:string",
+            "comment": "A revision, expressed as text, for this referenced document."
+        },
+        {
+            "uri": "unece:revisionDateTime",
+            "type": "xsd:string",
+            "comment": "A date, time, date time or other date time value for the revision of this referenced document."
         },
         {
             "uri": "unece:revisionId",
@@ -297,6 +377,10 @@
             "comment": "A catalogue subscription document referenced in this header trade agreement."
         },
         {
+            "uri": "unece:certificationEvidenceDocument",
+            "comment": "A referenced document providing evidence of certification for this trade product instance."
+        },
+        {
             "uri": "unece:certificationEvidenceReferenceDocument",
             "comment": "A referenced certification evidence document for this trade product."
         },
@@ -342,7 +426,7 @@
         },
         {
             "uri": "unece:document",
-            "comment": "A document referenced by this cross-border regulatory procedure."
+            "comment": "A document referenced by this ..."
         },
         {
             "uri": "unece:engineeringChangeDocument",
@@ -381,6 +465,10 @@
             "comment": "The import licence document referenced ..."
         },
         {
+            "uri": "unece:inspectionDocument",
+            "comment": "A referenced inspection document for this trade product instance."
+        },
+        {
             "uri": "unece:inspectionReferenceDocument",
             "comment": "A referenced inspection document for this trade product."
         },
@@ -405,12 +493,20 @@
             "comment": "An invoice document referenced by this advance payment."
         },
         {
+            "uri": "unece:issuedNotificationReferencedDocument",
+            "comment": "A referenced notification document issued to this trade party."
+        },
+        {
             "uri": "unece:letterOfCreditDocument",
             "comment": "The letter of credit document ..."
         },
         {
             "uri": "unece:liftingInstructionsRelatedDocument",
             "comment": "A referenced lifting instructions document related to this logistics transport movement."
+        },
+        {
+            "uri": "unece:logoReferencedDocument",
+            "comment": "The referenced logo document for this trade party."
         },
         {
             "uri": "unece:mSDSReferenceDocument",
@@ -521,6 +617,10 @@
             "comment": "A document related to these transported dangerous goods."
         },
         {
+            "uri": "unece:requestedNotificationReferencedDocument",
+            "comment": "A referenced notification document requested by this trade party."
+        },
+        {
             "uri": "unece:requisitionDocument",
             "comment": "A requisition document referenced in ..."
         },
@@ -554,7 +654,7 @@
         },
         {
             "uri": "unece:specifiedDocument",
-            "comment": "A referenced document for this ..."
+            "comment": "A document referenced for the ..."
         },
         {
             "uri": "unece:supplyInstructionDocument",

@@ -9,6 +9,11 @@
             "comment": "The date, time, date time, or other date time value for the acceptance of this exchanged document."
         },
         {
+            "uri": "unece:additionalId",
+            "type": "xsd:string",
+            "comment": "An additional identifier of this exchanged document."
+        },
+        {
             "uri": "unece:agentParty",
             "type": "unece:TradeParty",
             "comment": "A party representing another party for this exchanged document."
@@ -27,6 +32,11 @@
             "uri": "unece:attachedBinaryFile",
             "type": "unece:BinaryFile",
             "comment": "A binary file attached to this exchanged document."
+        },
+        {
+            "uri": "unece:attachmentBinaryObject",
+            "type": "xsd:base64Binary",
+            "comment": "A binary object that is attached or otherwise appended to this exchanged document."
         },
         {
             "uri": "unece:buyerSignatoryAuthentication",
@@ -84,13 +94,23 @@
             "comment": "A textual description of this exchanged document."
         },
         {
+            "uri": "unece:disposition",
+            "type": "xsd:string",
+            "comment": "A disposition, expressed as text, for this exchanged document."
+        },
+        {
+            "uri": "unece:documentResponseDocumentTypeCode",
+            "type": "unece:DocumentCodeList",
+            "comment": "A code specifying a type of response document for this exchanged document, such as a requested or required response document type."
+        },
+        {
             "uri": "unece:documentStatusCode",
             "type": "unece:DocumentStatusCodeList",
             "comment": "The code specifying the status of this exchanged document."
         },
         {
             "uri": "unece:documentTypeCode",
-            "type": "unece:DocumentCodeList",
+            "type": "xsd:string",
             "comment": "The code specifying the type of exchanged document."
         },
         {
@@ -134,6 +154,11 @@
             "comment": "The unique global identifier for this exchanged document."
         },
         {
+            "uri": "unece:headerInformation",
+            "type": "xsd:string",
+            "comment": "Header information, expressed as text, for this exchanged document."
+        },
+        {
             "uri": "unece:identifier",
             "type": "xsd:string",
             "comment": "The unique identifier of this exchanged document."
@@ -154,7 +179,7 @@
             "comment": "The date, time, date time or other date time value for the issuance of this exchanged document."
         },
         {
-            "uri": "unece:issueLocation",
+            "uri": "unece:issueLogisticsLocation",
             "type": "unece:LogisticsLocation",
             "comment": "The location where this exchanged document has been issued."
         },
@@ -162,6 +187,11 @@
             "uri": "unece:issuerParty",
             "type": "unece:TradeParty",
             "comment": "The party that issues this exchanged document."
+        },
+        {
+            "uri": "unece:itemIdentificationId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of a specific item in this exchanged document."
         },
         {
             "uri": "unece:languageId",
@@ -207,6 +237,16 @@
             "uri": "unece:originalRequiredQuantity",
             "type": "unece:QuantityType",
             "comment": "The number of originals required of this exchanged document."
+        },
+        {
+            "uri": "unece:ownerParty",
+            "type": "unece:TradeParty",
+            "comment": "The party that owns this exchanged document."
+        },
+        {
+            "uri": "unece:pageId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of a specific page of this exchanged document."
         },
         {
             "uri": "unece:platformProviderParty",
@@ -299,9 +339,24 @@
             "comment": "The code specifying the subtype of this exchanged document."
         },
         {
+            "uri": "unece:suffixId",
+            "type": "xsd:string",
+            "comment": "A unique suffix identifier for this exchanged document."
+        },
+        {
+            "uri": "unece:summaryInformation",
+            "type": "xsd:string",
+            "comment": "Summary information, expressed as text, for this exchanged document."
+        },
+        {
             "uri": "unece:thirdSignatoryAuthentication",
             "type": "unece:Authentication",
             "comment": "The third signature, also known as the second counter signature, that has been authenticated on this exchanged document indicating where appropriate the authentication party."
+        },
+        {
+            "uri": "unece:totalPageQuantity",
+            "type": "unece:QuantityType",
+            "comment": "The total number of pages for this exchanged document."
         },
         {
             "uri": "unece:traderAssignedId",

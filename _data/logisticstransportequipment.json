@@ -24,7 +24,7 @@
         {
             "uri": "unece:affixedSeal",
             "type": "unece:Seal",
-            "comment": "A seal affixed to this piece of referenced logistics transport equipment."
+            "comment": "A seal affixed to this piece of logistics transport equipment."
         },
         {
             "uri": "unece:airFlowUnitAirFlowMeasure",
@@ -67,6 +67,11 @@
             "comment": "A bonded warehouse storage event specifying when and where this piece of logistics transport equipment will be, or has been, stored."
         },
         {
+            "uri": "unece:cargoResidueStatusCode",
+            "type": "xsd:string",
+            "comment": "A code specifying the cargo residue status for this piece of logistics transport equipment, such as required by dangerous goods regulations."
+        },
+        {
             "uri": "unece:carriedTransportEquipment",
             "type": "unece:AssociatedTransportEquipment",
             "comment": "A piece of transport equipment carried on this piece of logistics transport equipment, such as a container placed on a rail wagon."
@@ -85,6 +90,11 @@
             "uri": "unece:characteristic",
             "type": "xsd:string",
             "comment": "The characteristic or characteristics, expressed as text, of a piece of logistics transport equipment, such as its size and type."
+        },
+        {
+            "uri": "unece:consigneeAssignedConsignmentId",
+            "type": "xsd:string",
+            "comment": "The consignee assigned consignment identifier for this piece of logistics transport equipment."
         },
         {
             "uri": "unece:consolidationEvent",
@@ -127,6 +137,21 @@
             "comment": "A delivery event for this piece of logistics transport equipment."
         },
         {
+            "uri": "unece:goodsItemUnitQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A quantity of goods items in this logistics transport equipment."
+        },
+        {
+            "uri": "unece:grossGoodsVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": "A measure of the gross goods volume of this logistics transport equipment."
+        },
+        {
+            "uri": "unece:grossGoodsWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "A measure of the gross goods weight of this logistics transport equipment."
+        },
+        {
             "uri": "unece:handlingInstructions",
             "type": "unece:HandlingInstructions",
             "comment": "Handling instructions for this piece of logistics transport equipment."
@@ -139,12 +164,17 @@
         {
             "uri": "unece:identifier",
             "type": "xsd:string",
-            "comment": "The unique identifier for this referenced piece of logistics transport equipment, such as a number, mark or name."
+            "comment": "The unique identifier of this piece of logistics transport equipment."
         },
         {
             "uri": "unece:information",
             "type": "xsd:string",
             "comment": "Information, expressed as text, for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:invoiceeParty",
+            "type": "unece:TradeParty",
+            "comment": "The invoicee party for this piece of logistics transport equipment."
         },
         {
             "uri": "unece:linearDimension",
@@ -174,7 +204,7 @@
         {
             "uri": "unece:loadedPackageQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of packages loaded into or onto this piece of logistics transport equipment."
+            "comment": "The number of packages loaded into or onto this piece of referenced logistics transport equipment."
         },
         {
             "uri": "unece:loadingEvent",
@@ -207,6 +237,11 @@
             "comment": "The code specifying the characteristic or characteristics of this piece of logistics transport equipment, such as the ISO 6346 transport equipment size and type code."
         },
         {
+            "uri": "unece:mainCarriageTransportMovement",
+            "type": "unece:TransportMovement",
+            "comment": "A main carriage transport movement for this piece of logistic transport equipment."
+        },
+        {
             "uri": "unece:manufacturerParty",
             "type": "unece:TradeParty",
             "comment": "The manufacturer party specified for this piece of logistics transport equipment."
@@ -217,9 +252,24 @@
             "comment": "The manufacturing date, time, date time, or other date time value for this piece of logistics transport equipment."
         },
         {
+            "uri": "unece:netGoodsVolumeMeasure",
+            "type": "unece:VolumeUnitMeasureType",
+            "comment": "A measure of the net goods volume of this logistics transport equipment."
+        },
+        {
+            "uri": "unece:netGoodsWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "A measure of the net goods weight of this logistics transport equipment."
+        },
+        {
             "uri": "unece:notifiedParty",
             "type": "unece:TradeParty",
             "comment": "A party who has been or will be notified about this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:onCarriageTransportMovement",
+            "type": "unece:TransportMovement",
+            "comment": "An on-carriage transport movement for this piece of logistics transport equipment."
         },
         {
             "uri": "unece:operatingParty",
@@ -257,9 +307,19 @@
             "comment": "The code specifying the type of power supply for this piece of logistics transport equipment, such as diesel fuel or electricity."
         },
         {
+            "uri": "unece:preCarriageTransportMovement",
+            "type": "unece:TransportMovement",
+            "comment": "A pre-carriage transport movement for this piece of logistics transport equipment."
+        },
+        {
             "uri": "unece:quarantineInstructions",
             "type": "unece:QuarantineInstructions",
             "comment": "Quarantine instructions for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:registrationCountry",
+            "type": "unece:Country",
+            "comment": "The registration country for this logistics transport equipment."
         },
         {
             "uri": "unece:relatedEvent",
@@ -275,6 +335,11 @@
             "uri": "unece:releaseRestriction",
             "type": "xsd:string",
             "comment": "The release restriction, expressed as text, for this piece of logistics transport equipment."
+        },
+        {
+            "uri": "unece:reportableQuantity",
+            "type": "unece:QuantityType",
+            "comment": "A reportable quantity for this logistics transport equipment."
         },
         {
             "uri": "unece:reportedLogisticsStatus",
@@ -324,7 +389,7 @@
         {
             "uri": "unece:settingTemperature",
             "type": "unece:TransportSettingTemperature",
-            "comment": "A temperature setting for this piece of logistics transport equipment, such as storage temperature or operational temperature."
+            "comment": "A temperature setting for this piece of referenced logistics transport equipment, such as storage temperature or operational temperature."
         },
         {
             "uri": "unece:shipperReferenceInformation",
@@ -354,7 +419,7 @@
         {
             "uri": "unece:transportEquipmentCategoryCode",
             "type": "unece:TransportEquipmentCategoryCodeList",
-            "comment": "The code specifying the category of this referenced piece of logistics transport equipment."
+            "comment": "The code specifying the category for this piece of logistics transport equipment, such as container or trailer."
         },
         {
             "uri": "unece:transportEquipmentFullnessUsedCapacityCode",
@@ -392,6 +457,11 @@
             "comment": "The code specifying the role of the party responsible for supplying this piece of logistics transport equipment, such as the carrier or the buyer."
         },
         {
+            "uri": "unece:transportService",
+            "type": "unece:Service",
+            "comment": "A transport service for this piece of logistics transport equipment."
+        },
+        {
             "uri": "unece:transportServicesBuyerParty",
             "type": "unece:TradeParty",
             "comment": "The transport services buyer party for this piece of logistics transport equipment."
@@ -399,7 +469,7 @@
         {
             "uri": "unece:unitQuantity",
             "type": "unece:QuantityType",
-            "comment": "The number of units of this type of logistics transport equipment."
+            "comment": "The number of units of this type of referenced logistics transport equipment."
         },
         {
             "uri": "unece:unloadingEvent",
@@ -417,6 +487,11 @@
             "comment": "The sequence number differentiating this piece of logistics transport equipment from others during unloading."
         },
         {
+            "uri": "unece:verifiedGrossWeightMeasure",
+            "type": "unece:WeightUnitMeasureType",
+            "comment": "A measure of the verified gross weight (mass) of this piece of logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+        },
+        {
             "uri": "unece:volumeUnitGrossVolumeMeasure",
             "type": "unece:VolumeUnitMeasureType",
             "comment": "The measure of the gross volume of this piece of logistics transport equipment."
@@ -424,12 +499,12 @@
         {
             "uri": "unece:weightUnitGrossWeightMeasure",
             "type": "unece:WeightUnitMeasureType",
-            "comment": "The measure of the gross weight (mass) of this piece of logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
+            "comment": "The measure of the gross weight (mass) of this piece of referenced logistics transport equipment which is the weight (mass) including loaded goods, packing and transport equipment."
         },
         {
             "uri": "unece:weightUnitNetWeightMeasure",
             "type": "unece:WeightUnitMeasureType",
-            "comment": "The measure of the net weight (mass) of this piece of logistics transport equipment."
+            "comment": "A measure of the net weight (mass) of this piece of referenced logistics transport equipment."
         },
         {
             "uri": "unece:weightUnitTareWeightMeasure",

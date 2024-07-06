@@ -1,7 +1,10 @@
 {
     "label": "nationalityCountry",
     "uri": "unece:nationalityCountry",
-    "comment": "A country that constitutes a nationality by origin, birth, or naturalization for this transport person.",
+    "comment": [
+        "A country that constitutes a nationality by origin, birth, or naturalization for this representative person.",
+        "A country that constitutes a nationality by origin, birth, or naturalization for this transport person."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:Country",
@@ -9,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:RepresentativePerson",
+            "comment": "An individual human being acting as a representative."
+        },
         {
             "uri": "unece:TransportPerson",
             "comment": "A transport related person, such as a member of a crew or a passenger."

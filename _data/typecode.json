@@ -2,9 +2,11 @@
     "label": "typeCode",
     "uri": "unece:typeCode",
     "comment": [
+        "A code specifying a type for this supply chain supply plan.",
         "A code specifying a type of MDH health indication.",
         "A code specifying a type of MDH sanitary measure.",
         "A code specifying a type of OEM equipment.",
+        "A code specifying a type of calibrated measurement.",
         "A code specifying a type of country sub-division for trade purposes.",
         "A code specifying a type of document characteristic.",
         "A code specifying a type of government registration.",
@@ -12,6 +14,7 @@
         "A code specifying a type of licence.",
         "A code specifying a type of logistics packaging.",
         "A code specifying a type of measurement.",
+        "A code specifying a type of port movement event.",
         "A code specifying a type of product characteristic.",
         "A code specifying a type of specified certificate.",
         "A code specifying a type of specified personal effects.",
@@ -19,6 +22,7 @@
         "A code specifying a type of transportation waste material component.",
         "A code specifying the type of TT party.",
         "A code specifying the type of basic work item.",
+        "A code specifying the type of location party that is independent of its role.",
         "A code specifying the type of product certificate.",
         "A code specifying the type of stores inventory item.",
         "A code specifying the type of supply chain event.",
@@ -52,7 +56,6 @@
         "The code specifying the type of digital method used for payment.",
         "The code specifying the type of distinct chemical.",
         "The code specifying the type of electronic negotiation exchange, such as prerequisite, offer, suggestion or withdrawal.",
-        "The code specifying the type of experience facility.",
         "The code specifying the type of experience item voucher.",
         "The code specifying the type of experience program action.",
         "The code specifying the type of facility production unit.",
@@ -89,18 +92,16 @@
         "The code specifying the type of product finishing treatment.",
         "The code specifying the type of product print.",
         "The code specifying the type of production device.",
-        "The code specifying the type of production facility.",
         "The code specifying the type of production machine.",
-        "The code specifying the type of production process.",
         "The code specifying the type of production waste material component.",
         "The code specifying the type of production waste material.",
-        "The code specifying the type of production waste recovery disposal process.",
         "The code specifying the type of referenced standard.",
         "The code specifying the type of requesting party.",
         "The code specifying the type of section segment.",
         "The code specifying the type of specification query.",
         "The code specifying the type of specified assessment.",
         "The code specifying the type of specified declaration.",
+        "The code specifying the type of specified fuel.",
         "The code specifying the type of specified object.",
         "The code specifying the type of specified period.",
         "The code specifying the type of specified requirement.",
@@ -120,8 +121,6 @@
         "The code specifying the type of trade product feature.",
         "The code specifying the type of transport event.",
         "The code specifying the type of transportation waste material.",
-        "The code specifying the type of transportation waste recovery disposal process.",
-        "The code specifying the type of waste material recovery disposal process.",
         "The code specifying the type of work item quantity analysis."
     ],
     "rangeIncludes": [
@@ -169,6 +168,10 @@
         {
             "uri": "unece:BreakdownStatement",
             "comment": "A detailed statement of work, prices, and dimensions for this valuation."
+        },
+        {
+            "uri": "unece:CalibratedMeasurement",
+            "comment": "A measurement established by a device which is tested to a calibration standard of known accuracy."
         },
         {
             "uri": "unece:CarriedEquipment",
@@ -247,10 +250,6 @@
             "comment": "Hardware or software typically marketed by a company other than the original manufacturer."
         },
         {
-            "uri": "unece:ExperienceFacility",
-            "comment": "A structure or place, such as a restaurant, hotel, theme park, hot spring bathing pool, parking lot, or meeting room, that provides a particular experience."
-        },
-        {
             "uri": "unece:ExperienceProgramAction",
             "comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience."
         },
@@ -261,6 +260,10 @@
         {
             "uri": "unece:FoodChoice",
             "comment": "A guest's decision which food to buy or eat."
+        },
+        {
+            "uri": "unece:Fuel",
+            "comment": "Any specified material that is burnt or altered in order to obtain energy."
         },
         {
             "uri": "unece:GeopoliticalRegion",
@@ -305,6 +308,10 @@
         {
             "uri": "unece:Licence",
             "comment": "A permit from an authority to own or use something, do a particular thing, or to conduct a trade."
+        },
+        {
+            "uri": "unece:LocationParty",
+            "comment": "An individual, a group, or a body having a role related to a location."
         },
         {
             "uri": "unece:LogisticsPackaging",
@@ -371,6 +378,10 @@
             "comment": "Specified privately owned articles for personal use by an individual."
         },
         {
+            "uri": "unece:PortMovementEvent",
+            "comment": "A movement of a vessel during a port call."
+        },
+        {
             "uri": "unece:PreventiveAction",
             "comment": "An adjustment, such as a change to an organization's processes or products, taken to prevent non-conformities or other undesirable situations, possibly as a result of a risk analysis."
         },
@@ -423,14 +434,6 @@
             "comment": "An object, especially a piece of mechanical or electronic equipment, made or adapted in order to perform a production activity."
         },
         {
-            "uri": "unece:ProductionFacility",
-            "comment": "A man made physical structure, such as a building, in which something is produced."
-        },
-        {
-            "uri": "unece:ProductionProcess",
-            "comment": "A naturally occurring or designed sequence of operations or events in order to produce something."
-        },
-        {
             "uri": "unece:ProductionUnit",
             "comment": "A defined set of production processes under the single management of a facility."
         },
@@ -441,10 +444,6 @@
         {
             "uri": "unece:ProductionWasteMaterialComponent",
             "comment": "A production material component that is unused and rejected as unwanted."
-        },
-        {
-            "uri": "unece:ProductionWasteRecoveryDisposalProcess",
-            "comment": "A process of either regaining waste substances in usable form, or of getting rid of waste substances resulting from production."
         },
         {
             "uri": "unece:Project",
@@ -559,6 +558,10 @@
             "comment": "A group of supply chain trade line items, trade agreement, trade delivery and trade settlement details."
         },
         {
+            "uri": "unece:SupplyPlan",
+            "comment": "Specification of the delivery quantities and date/time values in a supply schedule."
+        },
+        {
             "uri": "unece:SustainabilityCharacteristic",
             "comment": "A prominent attribute or aspect of an object, such as recyclability of a product, which can meet customer needs without compromising the ability of future generations to meet their own needs."
         },
@@ -599,16 +602,8 @@
             "comment": "An unused and rejected as unwanted component of transport material resulting from transportation."
         },
         {
-            "uri": "unece:TransportationWasteRecoveryDisposalProcess",
-            "comment": "A process of either regaining substances in usable form, or of getting rid of substances resulting from transportation."
-        },
-        {
             "uri": "unece:Voucher",
             "comment": "A printed piece of paper or an electronic document that can be used instead of money to pay for an experience, such as a tour, a trip or a meal in a restaurant."
-        },
-        {
-            "uri": "unece:WasteMaterialRecoveryDisposalProcess",
-            "comment": "A process of either regaining substances in usable form, or of getting rid of substances regarding waste material, such as production waste."
         },
         {
             "uri": "unece:XHEParameter",

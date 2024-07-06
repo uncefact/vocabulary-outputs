@@ -1,7 +1,10 @@
 {
     "label": "unitValueMeasure",
     "uri": "unece:unitValueMeasure",
-    "comment": "The measure of a value for this transport event.",
+    "comment": [
+        "The measure of a value for this transport event.",
+        "The measure of the value of this spatial dimension."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:UnitMeasureType",
@@ -9,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:SpatialDimension",
+            "comment": "A measure of spatial extent of an object, such as the length, breadth or height of a shipping container."
+        },
         {
             "uri": "unece:TransportEvent",
             "comment": "A significant occurrence or happening ..."

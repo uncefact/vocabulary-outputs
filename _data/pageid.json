@@ -1,7 +1,10 @@
 {
     "label": "pageId",
     "uri": "unece:pageId",
-    "comment": "The identifier of the page for this referenced document.",
+    "comment": [
+        "The identifier of the page for this referenced document.",
+        "The unique identifier of a specific page of this exchanged document."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -11,6 +14,10 @@
         {
             "uri": "unece:Document",
             "comment": "Written, printed or electronic matter that is referenced."
+        },
+        {
+            "uri": "unece:ExchangedDocument",
+            "comment": "A collection of data for a piece of written, printed or electronic matter that is exchanged between two or more parties."
         }
     ]
 }
