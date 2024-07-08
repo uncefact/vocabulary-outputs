@@ -5,8 +5,8 @@ type: default
 class: white
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UNTP B2B Digital Product Passport Vocabulary</h1>
-    <p class="home-content__description">A data model for a digital product passport that is designed to provide traceability & transparency into supply chains - with a focus on sustainability measures and outcomes.</p>
+    <h1 class="home-content__title">UNTP Core Vocabulary</h1>
+    <p class="home-content__description">A data model for a core UNTP vocabulary that is designed to provide traceability & transparency into supply chains - with a focus on sustainability measures and outcomes.</p>
     <div class="search-block">
         <form action="{{ '/search' | prepend: site.baseurl }}" method="get" class="search-block">
             <div class="search-block__container">
@@ -37,12 +37,12 @@ class: white
                     Classes
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of Digital Product Passport Classes</p>
+                    <p class="browse-type__description">List of UNTP Core Classes</p>
                     <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
                 </div>
-                {% if site.versions.dpp %}
+                {% if site.versions.core %}
                     <span class="browse-type__version">
-                        {{ site.versions.dpp }}
+                        {{ site.versions.core }}
                     </span>
                 {% endif %}
             </li>
@@ -59,12 +59,12 @@ class: white
                     Properties
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of Digital Product Passport Properties</p>
+                    <p class="browse-type__description">List of UNTP Core Properties</p>
                     <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
                 </div>
-                {% if site.versions.dpp %}
+                {% if site.versions.core %}
                     <span class="browse-type__version">
-                        {{ site.versions.dpp }}
+                        {{ site.versions.core }}
                     </span>
                 {% endif %}
             </li>
@@ -81,12 +81,12 @@ class: white
                     Code Lists
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of Digital Product Passport Codes</p>
+                    <p class="browse-type__description">List of UNTP Core Codes</p>
                     <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
                 </div>
-                {% if site.versions.dpp %}
+                {% if site.versions.core %}
                     <span class="browse-type__version">
-                        {{ site.versions.dpp }}
+                        {{ site.versions.core }}
                     </span>
                 {% endif %}
             </li>
@@ -95,13 +95,13 @@ class: white
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld">https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld</a>
+            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/core/untp-core-context.jsonld">https://test.uncefact.org/vocabulary/untp/core/untp-core-context.jsonld</a>
         </p>
         
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
             <div class="copy-box__text" id="content-negotiation-1">
-                curl https://test.uncefact.org/vocabulary/untp/dpp/ -H 'Accept: application/ld+json'
+                curl https://test.uncefact.org/vocabulary/untp/core/ -H 'Accept: application/ld+json'
             </div>
             <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
                 <svg class="copy-box__btn-icon">
@@ -113,7 +113,7 @@ class: white
         <h2 class="home-content__subtitle">JSON Shcemas</h2>
         <p>JSON Schema files are available here:</p>
         <p>
-            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/dpp/dpp-schema.json">https://test.uncefact.org/vocabulary/untp/dpp/dpp-schema.json</a>
+            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/core/untp-core-schema.json">https://test.uncefact.org/vocabulary/untp/core/untp-core-schema.json</a>
         </p>
     </div>
 </div>
