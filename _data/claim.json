@@ -1,0 +1,28 @@
+{
+    "label": "Claim",
+    "uri": "untp-dpp:Claim",
+    "comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dpp:benchmarkReference",
+            "type": "xsd:string",
+            "comment": "A refernce to evidence to support the benchmark value."
+        },
+        {
+            "uri": "untp-dpp:benchmarkValue",
+            "type": "untp-dpp:Metric",
+            "comment": "A benchmark value against which the claimed value can be assessed. THis could be a value specified by a standard or regulation or could be an industry benchmark."
+        },
+        {
+            "uri": "untp-dpp:conformityEvidence",
+            "type": "xsd:string",
+            "comment": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dpp:conformityInformation",
+            "comment": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
+        }
+    ]
+}

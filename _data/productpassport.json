@@ -1,43 +1,38 @@
 {
     "label": "ProductPassport",
     "uri": "untp-dpp:ProductPassport",
-    "comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, and different scores relating to sustainability and trustworthiness.",
+    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
     "datatypeProperties": [
         {
-            "uri": "untp-dpp:batch",
-            "type": "untp-dpp:ProductBatch",
-            "comment": "Information regarding the specific batch the product belongs to, encapsulated in a ProductBatch object."
+            "uri": "untp-dpp:characteristics",
+            "type": "untp-dpp:Characteristic",
+            "comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity."
         },
         {
-            "uri": "untp-dpp:id",
-            "type": "xsd:string",
-            "comment": "A unique identifier assigned to the credential, typically formatted as a URI of the stored credential."
+            "uri": "untp-dpp:circularityInformation",
+            "type": "untp-dpp:Circularity",
+            "comment": "A URI pointing to information regarding the recycling aspects of the product."
         },
         {
-            "uri": "untp-dpp:issuedBy",
-            "type": "untp-dpp:Party",
-            "comment": "The Party entity that issued the product passport."
+            "uri": "untp-dpp:conformityInformation",
+            "type": "untp-dpp:Claim",
+            "comment": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
         },
         {
-            "uri": "untp-dpp:product",
-            "type": "untp-dpp:ProductInformation",
-            "comment": "Detailed information about the product encapsulated in a ProductInformation object."
+            "uri": "untp-dpp:materialsProvenance",
+            "type": "untp-dpp:Material",
+            "comment": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
         },
         {
-            "uri": "untp-dpp:sustainabilityScore",
-            "type": "xsd:decimal",
-            "comment": "An aggregate numeric metric calculated based on the various sustainability claims associated with the product. It amalgamates scores assigned to individual sustainability claims, which are validated by various issuing bodies. The score provides a comprehensive view of the product's overall sustainability performance, giving users a quantifiable measure of the product's environmental and social impacts."
-        },
-        {
-            "uri": "untp-dpp:trustScore",
-            "type": "xsd:decimal",
-            "comment": "An aggregate numeric metric that represents the level of trustworthiness associated with the product. This score is derived based on the credibility and reliability of the issuing bodies that substantiate the claims being made about the product. The trustworthiness of each issuing body is assessed to compute an overall trust score, giving users a quantifiable measure of the trust they can place in the product's claims."
+            "uri": "untp-dpp:traceabilityInformation",
+            "type": "untp-dpp:TraceabilityEvent",
+            "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level."
         }
     ],
     "referencedBy": [
         {
-            "uri": "untp-dpp:subject",
-            "comment": "The ProductPassport object that the credential pertains to."
+            "uri": "untp-dpp:credentialSubject",
+            "comment": "The subject of a digital product passport credential is the identified product."
         }
     ]
 }
