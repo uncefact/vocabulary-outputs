@@ -1,38 +1,42 @@
 {
     "label": "Measure",
-    "uri": "DigitalProductPassport:Measure",
+    "uri": "untp-core:Measure",
     "comment": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
     "datatypeProperties": [
         {
-            "uri": "DigitalProductPassport:unit",
-            "type": "unece:UnitMeasureCode",
-            "comment": "The unit of measure. for example, emissions intensity in Kg Co2e per kWh produced. Or Kg Co2e per Kg of livestock gross weight.  "
+            "uri": "untp-core:unit",
+            "type": "untp-core:unitOfMeasure",
+            "comment": "Unit of measure drawn from the UNECE rec20 measure code list."
         },
         {
-            "uri": "DigitalProductPassport:value",
+            "uri": "untp-core:value",
             "type": "xsd:decimal",
-            "comment": "A numeric value representing the measurement or evaluation outcome for the claim."
+            "comment": "The numeric value of the measure"
         }
     ],
     "referencedBy": [
         {
-            "uri": "DigitalProductPassport:height",
+            "uri": "untp-core:height",
             "comment": "The height of the product or packaging"
         },
         {
-            "uri": "DigitalProductPassport:length",
+            "uri": "untp-core:length",
             "comment": "The length of the product or packaging"
         },
         {
-            "uri": "DigitalProductPassport:volume",
+            "uri": "untp-core:metricValue",
+            "comment": "A numeric value and unit of measure for this metric. Could be a measured value or a specified threshold."
+        },
+        {
+            "uri": "untp-core:volume",
             "comment": "The displacement volume of the product."
         },
         {
-            "uri": "DigitalProductPassport:weight",
+            "uri": "untp-core:weight",
             "comment": "the weight of the product"
         },
         {
-            "uri": "DigitalProductPassport:width",
+            "uri": "untp-core:width",
             "comment": "The width of the product or packaging"
         }
     ]

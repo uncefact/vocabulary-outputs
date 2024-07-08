@@ -1,88 +1,17 @@
 {
     "label": "conformityTopic",
-    "uri": "DigitalProductPassport:conformityTopic",
-    "comment": "A high level category scheme for conformity claims in the digital product passport",
-    "values": [
+    "uri": "untp-core:conformityTopic",
+    "comment": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)",
+    "rangeIncludes": [
         {
-            "uri": "DigitalProductPassport:conformityTopic#circularity.content",
-            "comment": "claims supporting the use of recycled content in products",
-            "value": "circularity.content"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#circularity.design",
-            "comment": "claims supporting product design for circularity outcomes",
-            "value": "circularity.design"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#environment.biodiversity",
-            "comment": "claims supporting improved biodiversity outcomes",
-            "value": "environment.biodiversity"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#environment.deforestation",
-            "comment": "claims supporting native forest restoration",
-            "value": "environment.deforestation"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#environment.emissions",
-            "comment": "claims supporting GHG emissions reduction",
-            "value": "environment.emissions"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#environment.energy",
-            "comment": "claims supporting clean energy transition",
-            "value": "environment.energy"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#environment.waste",
-            "comment": "claims supporting waste processing and reduction",
-            "value": "environment.waste"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#environment.water",
-            "comment": "claims supporting minimising water usage impact",
-            "value": "environment.water"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#governance.compliance",
-            "comment": "claims supporting regulatory compliance including taxation and community protection",
-            "value": "governance.compliance"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#governance.ethics",
-            "comment": "claims supporting ethical conduct and corporate governance",
-            "value": "governance.ethics"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#governance.transparency",
-            "comment": "claims supporting transparency and traceability",
-            "value": "governance.transparency"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#social.community",
-            "comment": "claims supporting local community development",
-            "value": "social.community"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#social.labour",
-            "comment": "claims supporting labour rights including fair wages",
-            "value": "social.labour"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#social.rights",
-            "comment": "claims supporting human rights and anti-discrimination",
-            "value": "social.rights"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityTopic#social.safety",
-            "comment": "claims supporting process and product safety",
-            "value": "social.safety"
+            "uri": "untp-core:conformityTopicCode",
+            "comment": "A high level category scheme for product and facility conformity declarations (claims or attestations)"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "DigitalProductPassport:topic",
-            "comment": "A code representing the topic of the sustainability claim. E.g. environment.deforestation, environment.ghg-emission-intensity, etc..  Drawn from a standard code list.  "
+            "uri": "untp-core:Declaration",
+            "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch."
         }
     ]
 }

@@ -1,45 +1,33 @@
 {
     "label": "Identifier",
-    "uri": "DigitalProductPassport:Identifier",
-    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence ",
+    "uri": "untp-core:Identifier",
+    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value.",
     "datatypeProperties": [
         {
-            "uri": "DigitalProductPassport:identiferValue",
+            "uri": "untp-core:id",
             "type": "xsd:string",
-            "comment": "The value of the identifier within the scheme"
+            "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID"
         },
         {
-            "uri": "DigitalProductPassport:identifierURI",
+            "uri": "untp-core:idScheme",
             "type": "xsd:string",
-            "comment": "The fully qualified URI representing the globally unique record for this identifier."
+            "comment": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
         },
         {
-            "uri": "DigitalProductPassport:scheme",
+            "uri": "untp-core:idSchemeName",
             "type": "xsd:string",
-            "comment": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
+            "comment": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
         },
         {
-            "uri": "DigitalProductPassport:verificationEvidence",
-            "type": "DigitalProductPassport:Evidence",
-            "comment": "Link to evidence that attests to the validity and ownership of the identifer. "
+            "uri": "untp-core:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the identifier within the scheme (eg 90664869327)"
         }
     ],
     "referencedBy": [
         {
-            "uri": "DigitalProductPassport:batchIdentifier",
-            "comment": "Information regarding the specific production batch of the product."
-        },
-        {
-            "uri": "DigitalProductPassport:identifier",
-            "comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
-        },
-        {
-            "uri": "DigitalProductPassport:itemIdentifier",
-            "comment": "An array of identifiers representing a specific serialised item of the product."
-        },
-        {
-            "uri": "DigitalProductPassport:productIdentifier",
-            "comment": "An array of unique identifiers assigned to the product or model. "
+            "uri": "untp-core:otherIdentifiers",
+            "comment": "An optional lsit of other registered identifiers for this organisations"
         }
     ]
 }

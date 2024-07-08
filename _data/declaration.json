@@ -1,0 +1,42 @@
+{
+    "label": "Declaration",
+    "uri": "untp-core:Declaration",
+    "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:assessmentCriterion",
+            "type": "untp-core:Criteria",
+            "comment": "The specification against which the assessment is made."
+        },
+        {
+            "uri": "untp-core:compliance",
+            "type": "xsd:boolean",
+            "comment": "An indicator of whether or not the assessment meets the specification."
+        },
+        {
+            "uri": "untp-core:conformityTopic",
+            "type": "untp-core:conformityTopicCode",
+            "comment": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+        },
+        {
+            "uri": "untp-core:declaredValues",
+            "type": "untp-core:Metric",
+            "comment": "The list of specific values measured as part of this assessment (eg tensile strength)"
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+        },
+        {
+            "uri": "untp-core:referenceRegulation",
+            "type": "untp-core:Regulation",
+            "comment": "The reference to the regulation that defines the assessment criteria"
+        },
+        {
+            "uri": "untp-core:referenceStandard",
+            "type": "untp-core:Standard",
+            "comment": "The reference to the standard that defines the specification / criteria"
+        }
+    ]
+}
