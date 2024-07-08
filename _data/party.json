@@ -1,30 +1,30 @@
 {
     "label": "Party",
-    "uri": "DigitalProductPassport:Party",
+    "uri": "untp-dpp:Party",
     "comment": "The Party class represents an entity such as an organization, or a company that manufactured the product.",
     "datatypeProperties": [
         {
-            "uri": "DigitalProductPassport:identifier",
-            "type": "DigitalProductPassport:Identifier",
-            "comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
+            "uri": "untp-dpp:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier assigned to the credential, typically formatted as a URI of the stored credential."
         },
         {
-            "uri": "DigitalProductPassport:name",
+            "uri": "untp-dpp:name",
             "type": "xsd:string",
             "comment": "The name of the organization or company, represented as a text string."
         }
     ],
     "referencedBy": [
         {
-            "uri": "DigitalProductPassport:issuedBy",
-            "comment": "The Party that issued the product passport."
+            "uri": "untp-dpp:issuedBy",
+            "comment": "The Party entity that issued the product passport."
         },
         {
-            "uri": "DigitalProductPassport:manufacturer",
+            "uri": "untp-dpp:manufacturer",
             "comment": "The Party entity that manufactured the product."
         },
         {
-            "uri": "DigitalProductPassport:operatedBy",
+            "uri": "untp-dpp:operatedBy",
             "comment": "The Party entity responsible for operating the facility."
         }
     ]

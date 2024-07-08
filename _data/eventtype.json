@@ -1,15 +1,16 @@
 {
     "label": "eventType",
-    "uri": "DigitalProductPassport:eventType",
+    "uri": "untp-dpp:eventType",
     "comment": "A code representing the type of EPCIS event. ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent, ObjectEvent.",
     "rangeIncludes": [
         {
-            "uri": "DigitalProductPassport:eventTypeCode"
+            "uri": "untp-dpp:epcisType",
+            "comment": ""
         }
     ],
     "domainIncludes": [
         {
-            "uri": "DigitalProductPassport:TraceabilityEvent",
+            "uri": "untp-dpp:TraceabilityEvent",
             "comment": "The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference."
         }
     ]

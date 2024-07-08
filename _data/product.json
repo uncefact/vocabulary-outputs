@@ -1,98 +1,17 @@
 {
-    "label": "Product",
-    "uri": "DigitalProductPassport:Product",
-    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
-    "datatypeProperties": [
+    "label": "product",
+    "uri": "untp-dpp:product",
+    "comment": "Detailed information about the product encapsulated in a ProductInformation object.",
+    "rangeIncludes": [
         {
-            "uri": "DigitalProductPassport:batchIdentifier",
-            "type": "DigitalProductPassport:Identifier",
-            "comment": "Information regarding the specific production batch of the product."
-        },
-        {
-            "uri": "DigitalProductPassport:characteristic",
-            "type": "DigitalProductPassport:Characteristic",
-            "comment": ""
-        },
-        {
-            "uri": "DigitalProductPassport:classification",
-            "type": "DigitalProductPassport:Classification",
-            "comment": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
-        },
-        {
-            "uri": "DigitalProductPassport:conformityClaim",
-            "type": "DigitalProductPassport:Claim",
-            "comment": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
-        },
-        {
-            "uri": "DigitalProductPassport:description",
-            "type": "xsd:string",
-            "comment": "A textual description providing details about the product."
-        },
-        {
-            "uri": "DigitalProductPassport:dimension",
-            "type": "DigitalProductPassport:Dimension",
-            "comment": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
-        },
-        {
-            "uri": "DigitalProductPassport:furtherInformation",
-            "type": "xsd:string",
-            "comment": "A URL pointing to further human readable information about the product."
-        },
-        {
-            "uri": "DigitalProductPassport:image",
-            "type": "xsd:string",
-            "comment": "A unique identifier (URI) pointing to an image of the product."
-        },
-        {
-            "uri": "DigitalProductPassport:itemIdentifier",
-            "type": "DigitalProductPassport:Identifier",
-            "comment": "An array of identifiers representing a specific serialised item of the product."
-        },
-        {
-            "uri": "DigitalProductPassport:manufacturedAt",
-            "type": "DigitalProductPassport:Facility",
-            "comment": "The Facility where the product batch was manufactured."
-        },
-        {
-            "uri": "DigitalProductPassport:manufacturedDate",
-            "type": "xsd:string",
-            "comment": "The ISO 8601 date on which the product batch was manufactured."
-        },
-        {
-            "uri": "DigitalProductPassport:manufacturer",
-            "type": "DigitalProductPassport:Party",
-            "comment": "The Party entity that manufactured the product."
-        },
-        {
-            "uri": "DigitalProductPassport:materialsProvenance",
-            "type": "DigitalProductPassport:Material",
-            "comment": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
-        },
-        {
-            "uri": "DigitalProductPassport:modelName",
-            "type": "xsd:string",
-            "comment": "The model name or number of the product, represented as text."
-        },
-        {
-            "uri": "DigitalProductPassport:productIdentifier",
-            "type": "DigitalProductPassport:Identifier",
-            "comment": "An array of unique identifiers assigned to the product or model. "
-        },
-        {
-            "uri": "DigitalProductPassport:recyclingInstruction",
-            "type": "xsd:string",
-            "comment": "A URI pointing to information regarding the recycling aspects of the product."
-        },
-        {
-            "uri": "DigitalProductPassport:traceabilityInformation",
-            "type": "DigitalProductPassport:TraceabilityEvent",
-            "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch."
+            "uri": "untp-dpp:ProductInformation",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "DigitalProductPassport:product",
-            "comment": "Detailed information about the product encapsulated in a ProductInformation object."
+            "uri": "untp-dpp:ProductPassport",
+            "comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, and different scores relating to sustainability and trustworthiness."
         }
     ]
 }

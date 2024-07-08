@@ -1,32 +1,27 @@
 {
     "label": "Facility",
-    "uri": "DigitalProductPassport:Facility",
+    "uri": "untp-dpp:Facility",
     "comment": "The Facility class embodies information about a specific facility, which manufactured the product.",
     "datatypeProperties": [
         {
-            "uri": "DigitalProductPassport:identifier",
-            "type": "DigitalProductPassport:Identifier",
-            "comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
-        },
-        {
-            "uri": "DigitalProductPassport:location",
+            "uri": "untp-dpp:id",
             "type": "xsd:string",
-            "comment": ""
+            "comment": "A unique identifier assigned to the credential, typically formatted as a URI of the stored credential."
         },
         {
-            "uri": "DigitalProductPassport:name",
+            "uri": "untp-dpp:name",
             "type": "xsd:string",
             "comment": "The name of the organization or company, represented as a text string."
         },
         {
-            "uri": "DigitalProductPassport:operatedBy",
-            "type": "DigitalProductPassport:Party",
+            "uri": "untp-dpp:operatedBy",
+            "type": "untp-dpp:Party",
             "comment": "The Party entity responsible for operating the facility."
         }
     ],
     "referencedBy": [
         {
-            "uri": "DigitalProductPassport:manufacturedAt",
+            "uri": "untp-dpp:manufacturedAt",
             "comment": "The Facility where the product batch was manufactured."
         }
     ]

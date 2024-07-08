@@ -1,6 +1,5 @@
 ---
 title: product
-permalink: product
-redirect_to:
-  - productProperty
+permalink: product.html
+jsonid: product
 ---
