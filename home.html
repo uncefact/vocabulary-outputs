@@ -8,29 +8,7 @@ class: home
     <h1 class="home-content__title">UNTP Web Vocabularies</h1>
     <p class="home-content__description">UNTP Web Vocabularies.</p>
     <div class="home-content__inner">
-        <ul class="browse-types browse-types--three-columns">
-            <li class="browse-type browse-types__item">
-                <a href="{{ 'cc/about' | absolute_url }}" class="browse-type__title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20">
-                        <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
-                           stroke-linejoin="round"
-                           stroke-width="1.2">
-                            <path d="m8.816 18.867 6.71-4.88c.143-.116.268-.229.347-.389.08-.16.127-.33.127-.49v-8.48a.44.44 0 0 0-.237-.4.497.497 0 0 0-.474 0L8.5 9.188c-.133.092-.274.22-.353.38-.08.16-.12.34-.12.5v8.48c0 .16.078.32.236.4.237.08.395.08.553-.08ZM8.184 1l-6.79 5.12c-.078.08-.236.24-.315.4C1 6.68 1 7.08 1 7.08v8.56"/>
-                            <path d="m11.737 2.454-6.79 5.2c-.079.08-.236.24-.315.4-.08.16-.08.48-.08.48v8.64"/>
-                        </g>
-                    </svg>
-                    Conformity Credential
-                </a>
-                <div class="browse-type__info">
-                    <p class="browse-type__description">Information domain for conformity claims against criteria defined in a standard or regulation</p>
-                    <a class="browse-type__action" href="{{ 'cc/about' | | absolute_url }}">Browse</a>
-                </div>
-                {% if site.versions.cc %}
-                    <span class="browse-type__version">
-                        {{ site.versions.cc }}
-                    </span>
-                {% endif %}
-            </li>
+        <ul class="browse-types browse-types--two-columns">
             <li class="browse-type browse-types__item">
                 <a href="{{ 'dpp/about' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
@@ -50,6 +28,52 @@ class: home
                 {% if site.versions.dpp %}
                     <span class="browse-type__version">
                         {{ site.versions.dpp }}
+                    </span>
+                {% endif %}
+            </li>
+            <li class="browse-type browse-types__item">
+                <a href="{{ 'core/about' | absolute_url }}" class="browse-type__title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="1.2">
+                            <path d="M18.413 3.934a.782.782 0 0 1 .587.782V15.28a.782.782 0 0 1-.533.743l-8.209 2.934a.783.783 0 0 1-.516 0L1.517 16.03A.782.782 0 0 1 1 15.295V4.693a.782.782 0 0 1 .587-.783l8.217-2.887a.83.83 0 0 1 .392 0l8.217 2.911ZM10 7.236v11.759"/>
+                            <path d="M18.788 4.161 10 7.236 1.212 4.161"/>
+                        </g>
+                    </svg>
+                    Core Vocabulary
+                </a>
+                <div class="browse-type__info">
+                    <p class="browse-type__description">UNTP Vocabulary, supporting Digital Product Passport (DPP), Digital Product Conformity (DPC), Digital Traceability Events (DTE), Digital Identity Anchor (DIA), and Sustainability topics.</p>
+                    <a class="browse-type__action" href="{{ 'core/about' | absolute_url }}">Browse</a>
+                </div>
+                {% if site.versions.core %}
+                    <span class="browse-type__version">
+                        {{ site.versions.core }}
+                    </span>
+                {% endif %}
+            </li>
+        </ul>
+        <ul class="browse-types browse-types--two-columns">
+            <li class="browse-type browse-types__item">
+                <a href="{{ 'cc/about' | absolute_url }}" class="browse-type__title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20">
+                        <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="1.2">
+                            <path d="m8.816 18.867 6.71-4.88c.143-.116.268-.229.347-.389.08-.16.127-.33.127-.49v-8.48a.44.44 0 0 0-.237-.4.497.497 0 0 0-.474 0L8.5 9.188c-.133.092-.274.22-.353.38-.08.16-.12.34-.12.5v8.48c0 .16.078.32.236.4.237.08.395.08.553-.08ZM8.184 1l-6.79 5.12c-.078.08-.236.24-.315.4C1 6.68 1 7.08 1 7.08v8.56"/>
+                            <path d="m11.737 2.454-6.79 5.2c-.079.08-.236.24-.315.4-.08.16-.08.48-.08.48v8.64"/>
+                        </g>
+                    </svg>
+                    Conformity Credential
+                </a>
+                <div class="browse-type__info">
+                    <p class="browse-type__description">Information domain for conformity claims against criteria defined in a standard or regulation</p>
+                    <a class="browse-type__action" href="{{ 'cc/about' | | absolute_url }}">Browse</a>
+                </div>
+                {% if site.versions.cc %}
+                    <span class="browse-type__version">
+                        {{ site.versions.cc }}
                     </span>
                 {% endif %}
             </li>
