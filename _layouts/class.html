@@ -32,6 +32,17 @@ layout: default
     {%- endif -%}
 </div>
 
+{% if class.subClassOf %}
+<div class="page-description">
+    {%- assign subClassOf = class.subClassOf | split: ":" -%}
+    {%- assign subClassOfPrefix = subClassOf[0] -%}
+    {%- assign subClassOfName = subClassOf[1] -%}
+
+    <p>Sub-class of: <a href="{{ site.data.mapping[subClassOfPrefix] }}{{ subClassOfName }}">{{subClassOfName}}</a></p>
+</div>
+{% endif %}
+
+
 {% if class.objectProperties %}
     <h2>Object Properties</h2>
     <table class="table-grid table-grid--properties">

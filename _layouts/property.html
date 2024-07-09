@@ -28,6 +28,18 @@ layout: default
         <p>{{ property.comment }}</p>
     {%- endif -%}
 </div>
+
+{% if property.equivalentProperty %}
+<div class="page-description">
+    {%- assign equivalentProperty = property.equivalentProperty | split: ":" -%}
+    {%- assign equivalentPropertyPrefix = equivalentProperty[0] -%}
+    {%- assign equivalentPropertyName = equivalentProperty[1] -%}
+
+    <p>Equivalent Property: <a href="{{ site.data.mapping[equivalentPropertyPrefix] }}{{ equivalentPropertyName }}">{{equivalentPropertyName}}</a></p>
+</div>
+{% endif %}
+
+
 {% if property.rangeIncludes %}
     <h2>Range includes:</h2>
     <table class="table-grid">
