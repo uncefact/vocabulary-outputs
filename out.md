@@ -7,4 +7,3 @@ Class untp-core:Material has no references
 Class untp-core:Party has no references
 Class untp-core:Product has no references
 
-unece:SpecifiedPeriod - null
