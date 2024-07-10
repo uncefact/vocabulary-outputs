@@ -1,6 +1,16 @@
-Exception in thread "main" java.lang.NullPointerException: Value in JsonObjects name/value pair cannot be null
-	at org.glassfish.json.JsonObjectBuilderImpl.validateValue(JsonObjectBuilderImpl.java:223)
-	at org.glassfish.json.JsonObjectBuilderImpl.add(JsonObjectBuilderImpl.java:88)
-	at org.unece.uncefact.vocab.md.DomainsToMD.generate(DomainsToMD.java:672)
-	at org.unece.uncefact.vocab.md.DomainsToMD.generate(DomainsToMD.java:24)
-	at org.unece.uncefact.vocab.Runner.main(Runner.java:115)
+schema:PostalAddress
+untp-core:PartyID
+untp-core:assessorAssuranceCode
+untp-core:countryCode
+untp-core:FacilityID
+untp-core:hashMethodCode
+untp-core:unitOfMeasure
+untp-core:encryptionMethodCode
+untp-core:attestationTypeCode
+untp-core:conformityTopicCode
+untp-core:mimeType
+untp-core:assessmentAssuranceCode
+xsd:boolean
+schema:name
+xsd:string
+xsd:decimal
