@@ -1,0 +1,11 @@
+name: jargon_onRelease
+
+on:
+  repository_dispatch:
+    types: [ 'jargon_onRelease' ]
+
+jobs:
+
+  jargon_snapshot:
+    uses: uncefact/.github/.github/workflows/jargon-release.yml@main
+    secrets: inherit
