@@ -1,18 +1,15 @@
 # Site settings
 title: Vocabulary UNTP
-baseurl: "/vocabulary/untp/core" # the subpath of your site, e.g. /blog
-
+baseurl: "/vocabulary/untp/core/0/2/2" # the subpath of your site, e.g. /blog
 dataSet: "dataset:'22A'"
 versions:
   dpp: draft
   cc: draft
   te: draft
   core: draft
-
 markdown: kramdown
 kramwdown:
   parse_block_html: true
-
 collections:
   classes:
     output: true
@@ -23,39 +20,31 @@ collections:
   code-lists:
     output: true
     permalink: /:name
-
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: ""
       type: "classes"
     values:
       layout: "class"
       type: "class"
-  -
-    scope:
+  - scope:
       path: ""
       type: "properties"
     values:
       layout: "property"
       type: "property"
-  -
-    scope:
+  - scope:
       path: ""
       type: "code-lists"
     values:
       layout: "code-list"
       type: "code-list"
-
-
 sass:
   sourcemap: development
-
 exclude:
   - vendor
   - .idea
