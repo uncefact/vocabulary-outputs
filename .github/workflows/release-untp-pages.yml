@@ -4,13 +4,13 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to AWS S3
-name: Deploy site preview to AWS S3 (untp-core-pages) - release tag
+name: Deploy site preview to AWS S3 (untp-pages) - release tag
 
 on:
   workflow_dispatch:
   push:
     tags:
-      - 'untp*'
+      - 'untp**'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
