@@ -40,9 +40,9 @@ class: white
                     <p class="browse-type__description">List of UNTP Core Classes</p>
                     <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
                 </div>
-                {% if site.versions.core %}
+                {% if site.versions.untp-core %}
                     <span class="browse-type__version">
-                        {{ site.versions.core }}
+                        {{ site.versions.untp-core }}
                     </span>
                 {% endif %}
             </li>
@@ -62,9 +62,9 @@ class: white
                     <p class="browse-type__description">List of UNTP Core Properties</p>
                     <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
                 </div>
-                {% if site.versions.core %}
+                {% if site.versions.untp-core %}
                     <span class="browse-type__version">
-                        {{ site.versions.core }}
+                        {{ site.versions.untp-core }}
                     </span>
                 {% endif %}
             </li>
@@ -84,9 +84,9 @@ class: white
                     <p class="browse-type__description">List of UNTP Core Codes</p>
                     <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
                 </div>
-                {% if site.versions.core %}
+                {% if site.versions.untp-core %}
                     <span class="browse-type__version">
-                        {{ site.versions.core }}
+                        {{ site.versions.untp-core }}
                     </span>
                 {% endif %}
             </li>
@@ -95,13 +95,13 @@ class: white
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/core/untp-core-context.jsonld">https://test.uncefact.org/vocabulary/untp/core/untp-core-context.jsonld</a>
+            <a class="link-box" href="{{ 'untp-core-context.jsonld' | absolute_url }}">{{ 'untp-core-context.jsonld' | absolute_url }}</a>
         </p>
         
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
             <div class="copy-box__text" id="content-negotiation-1">
-                curl https://test.uncefact.org/vocabulary/untp/core/ -H 'Accept: application/ld+json'
+                curl {{ absolute_url }} -H 'Accept: application/ld+json'
             </div>
             <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
                 <svg class="copy-box__btn-icon">
