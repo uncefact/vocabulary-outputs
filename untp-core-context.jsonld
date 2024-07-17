@@ -60,10 +60,6 @@
           "@id": "untp-core:idValue",
           "@type": "xsd:string"
         },
-        "partyName": {
-          "@id": "untp-core:partyName",
-          "@type": "schemaorg:name"
-        },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
           "@type": "@vocab",
@@ -100,10 +96,6 @@
         },
         "idValue": {
           "@id": "untp-core:idValue",
-          "@type": "xsd:string"
-        },
-        "locationName": {
-          "@id": "untp-core:locationName",
           "@type": "xsd:string"
         },
         "areaReference": {
@@ -169,8 +161,8 @@
           "@id": "untp-core:processCategory",
           "@type": "@id"
         },
-        "operatedBy": {
-          "@id": "untp-core:operatedBy",
+        "operatedByParty": {
+          "@id": "untp-core:operatedByParty",
           "@type": "@id"
         },
         "otherIdentifiers": {
@@ -217,7 +209,6 @@
           "@id": "untp-core:idValue",
           "@type": "xsd:string"
         },
-        "productName": "schema:name",
         "serialNumber": {
           "@id": "untp-core:serialNumber",
           "@type": "xsd:string"
@@ -238,12 +229,12 @@
           "@id": "untp-core:furtherInformation",
           "@type": "xsd:string"
         },
-        "producedBy": {
-          "@id": "untp-core:producedBy",
+        "producedByParty": {
+          "@id": "untp-core:producedByParty",
           "@type": "@id"
         },
-        "producedAt": {
-          "@id": "untp-core:producedAt",
+        "producedAtFacility": {
+          "@id": "untp-core:producedAtFacility",
           "@type": "@id"
         },
         "dimensions": {
@@ -398,12 +389,20 @@
       "@protected": true,
       "@id": "untp-core:Standard",
       "@context": {
-        "standardName": {
-          "@id": "untp-core:standardName",
-          "@type": "schemaorg:name"
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "xsd:string"
         },
-        "issuingBody": {
-          "@id": "untp-core:issuingBody",
+        "idSchemeName": {
+          "@id": "untp-core:idSchemeName",
+          "@type": "xsd:string"
+        },
+        "idValue": {
+          "@id": "untp-core:idValue",
+          "@type": "xsd:string"
+        },
+        "issuingParty": {
+          "@id": "untp-core:issuingParty",
           "@type": "@id"
         },
         "issueDate": {
@@ -416,12 +415,20 @@
       "@protected": true,
       "@id": "untp-core:Regulation",
       "@context": {
-        "regulationName": {
-          "@id": "untp-core:regulationName",
-          "@type": "schemaorg:name"
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "xsd:string"
         },
-        "issuingBody": {
-          "@id": "untp-core:issuingBody",
+        "idSchemeName": {
+          "@id": "untp-core:idSchemeName",
+          "@type": "xsd:string"
+        },
+        "idValue": {
+          "@id": "untp-core:idValue",
+          "@type": "xsd:string"
+        },
+        "issuingParty": {
+          "@id": "untp-core:issuingParty",
           "@type": "@id"
         },
         "effectiveDate": {
@@ -522,9 +529,9 @@
         }
       }
     },
-    "Authorisation": {
+    "Endorsement": {
       "@protected": true,
-      "@id": "untp-core:Authorisation",
+      "@id": "untp-core:Endorsement",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -580,8 +587,8 @@
             "@vocab": "https://test.uncefact.org/vocabulary/untp/core/attestationTypeCode#"
           }
         },
-        "issuedTo": {
-          "@id": "untp-core:issuedTo",
+        "issuedToParty": {
+          "@id": "untp-core:issuedToParty",
           "@type": "@id"
         },
         "accreditation": {

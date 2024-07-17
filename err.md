@@ -1,8 +1,6 @@
 schema:PostalAddress
-untp-core:PartyID
 untp-core:assessorAssuranceCode
 untp-core:countryCode
-untp-core:FacilityID
 untp-core:hashMethodCode
 untp-core:unitOfMeasure
 untp-core:encryptionMethodCode
@@ -11,6 +9,5 @@ untp-core:conformityTopicCode
 untp-core:mimeType
 untp-core:assessmentAssuranceCode
 xsd:boolean
-schema:name
 xsd:string
 xsd:decimal
