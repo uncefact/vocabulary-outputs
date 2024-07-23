@@ -43,4 +43,5 @@ jobs:
       run: bundle exec jekyll build --config _config_preview.yml
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/D22A --delete --cache-control max-age=604800
-    
+    - name: "Create CloudFront invalidation"
+      run: aws cloudfront create-invalidation --distribution-id "E32QP2QS6SXRHC" --paths "/D22A/*"
