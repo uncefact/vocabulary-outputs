@@ -40,7 +40,7 @@ jobs:
     - name: "Bundle install"
       run: bundle install
     - name: "Build Site"
-      run: bundle exec jekyll build --config _config.yml
+      run: JEKYLL_ENV=production bundle exec jekyll build --config _config.yml
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://vocabulary-uncefact-sam-private/D22A --delete --cache-control max-age=604800
     - name: "Create CloudFront invalidation"
