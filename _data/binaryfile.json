@@ -1,8 +1,13 @@
 {
     "label": "BinaryFile",
     "uri": "untp-core:BinaryFile",
-    "comment": "A file representing a data snapshot that is used to infomr the conformity assessment.",
+    "comment": "A binary file reference including name and filetype",
     "datatypeProperties": [
+        {
+            "uri": "untp-core:file",
+            "type": "xsd:string",
+            "comment": "The binary file data encoded ..."
+        },
         {
             "uri": "untp-core:fileName",
             "type": "xsd:string",
@@ -12,22 +17,9 @@
             "uri": "untp-core:fileType",
             "type": "untp-core:mimeType",
             "comment": "The type of file, represented ..."
-        },
-        {
-            "uri": "untp-core:id",
-            "type": "xsd:string",
-            "comment": "A linked data URL for ..."
         }
     ],
     "referencedBy": [
-        {
-            "uri": "untp-core:conformityCertificate",
-            "comment": "A reference to the human ..."
-        },
-        {
-            "uri": "untp-core:productImage",
-            "comment": "A unique identifier (URI) pointing ..."
-        },
         {
             "uri": "untp-core:trustmark",
             "comment": "The trust mark image awarded ..."

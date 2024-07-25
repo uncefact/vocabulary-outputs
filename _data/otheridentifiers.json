@@ -2,16 +2,21 @@
     "label": "otherIdentifiers",
     "uri": "untp-core:otherIdentifiers",
     "comment": [
-        "An optional lsit of other registered identifiers for this organisations",
-        "An optional list of other registered identifiers for this facility"
+        "An optional list of other registered identifiers for this credential issuer",
+        "An optional lsit of other registered identifiers for this organisations. For example DUNS, GLN, LEI, etc",
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
     ],
     "rangeIncludes": [
         {
-            "uri": "untp-core:Identifier",
-            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
+            "uri": "untp-core:Entity",
+            "comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "untp-core:CredentialIssuer",
+            "comment": "The issuer party ()person or orgnaition) of a verifiable credential."
+        },
         {
             "uri": "untp-core:Party",
             "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."

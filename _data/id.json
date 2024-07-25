@@ -2,20 +2,19 @@
     "label": "id",
     "uri": "untp-core:id",
     "comment": [
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "The globally unique URI representing the specific classifier value - for example https://vocabulary.uncefact.org/unlocode?country=au#AUSYD is the gloabl URI representing the UN/LOCODE for Sydney Australia.",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "GLobally unique ID for the binary file - usually it's location as a URL.",
-        "GLobally unique ID for the binary file - usually it's location as a URL.",
+        "The W3C DID of the issuer - should be a did:web or did:tdw",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique URI representing the specific classifier value",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique identiifer of this geographic location. Typically a google pin.",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A unique identifier for the criterion - managed by the standards uthority or regulator.",
-        "The globally unique ID of this conformity attestation. ",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327"
+        "The globally unique identifier of this regulation. ",
+        "A unique identifier for the criteria within the standard  or regulation. For example CO2 emissions calaculations for liquid fule combusion.",
+        "The globally unique ID of this conformity attestation.",
+        "Globally unique identifier of an accreditation or authority issued to a confomrity assessment body by a regulator or national accreditation authority."
     ],
     "rangeIncludes": [
         {
@@ -24,12 +23,16 @@
     ],
     "domainIncludes": [
         {
-            "uri": "untp-core:Party",
-            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
+            "uri": "untp-core:CredentialIssuer",
+            "comment": "The issuer party ()person or orgnaition) of a verifiable credential."
         },
         {
-            "uri": "untp-core:Identifier",
-            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
+            "uri": "untp-core:Entity",
+            "comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc"
+        },
+        {
+            "uri": "untp-core:Party",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
         },
         {
             "uri": "untp-core:Classification",
@@ -46,14 +49,6 @@
         {
             "uri": "untp-core:Product",
             "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
-        },
-        {
-            "uri": "untp-core:BinaryFile",
-            "comment": "A file representing a data snapshot that is used to infomr the conformity assessment."
-        },
-        {
-            "uri": "untp-core:SecureBinaryFile",
-            "comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
         },
         {
             "uri": "untp-core:Declaration",

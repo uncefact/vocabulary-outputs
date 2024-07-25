@@ -2,14 +2,18 @@
     "label": "name",
     "uri": "untp-core:name",
     "comment": [
-        "The name of the identified entity.",
-        "The name of the identified entity.",
-        "The name of the identified entity.",
-        "The name of the identified entity.",
-        "The name of the identified entity.",
-        "The name of the identified entity.",
-        "The name of the identified entity.",
-        "The name of the identified entity."
+        "The name of the issuer person or organisation",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "Name of the classification represented by the code",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "The name of the standard",
+        "The name of the regulation or act.",
+        "A name that describes this criteria.",
+        "Name of this material (eg \"Egyptian Cotton\")",
+        "A name of this confomrity attestation",
+        "The name of the accreditation."
     ],
     "rangeIncludes": [
         {
@@ -18,20 +22,24 @@
     ],
     "domainIncludes": [
         {
+            "uri": "untp-core:CredentialIssuer",
+            "comment": "The issuer party ()person or orgnaition) of a verifiable credential."
+        },
+        {
+            "uri": "untp-core:Entity",
+            "comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc"
+        },
+        {
             "uri": "untp-core:Party",
             "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
         },
         {
-            "uri": "untp-core:Identifier",
-            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
+            "uri": "untp-core:Classification",
+            "comment": "A classification scheme and code / name representing a category value for a product, entity, or facility."
         },
         {
             "uri": "untp-core:Facility",
             "comment": "The physical site (eg farm or factory) where the product or materials was produced."
-        },
-        {
-            "uri": "untp-core:Location",
-            "comment": "Location information including address and geolocation of points, areas, and boundaries"
         },
         {
             "uri": "untp-core:Product",
@@ -44,6 +52,18 @@
         {
             "uri": "untp-core:Regulation",
             "comment": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment."
+        },
+        {
+            "uri": "untp-core:Criteria",
+            "comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard."
+        },
+        {
+            "uri": "untp-core:Material",
+            "comment": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction."
+        },
+        {
+            "uri": "untp-core:Attestation",
+            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
         },
         {
             "uri": "untp-core:Endorsement",
