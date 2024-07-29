@@ -27,6 +27,7 @@
                         </svg>
                     </button>
                     <nav class="main-nav__menu">
+                        <a class="main-nav__link{% if pageType == 'version' %} main-nav__link--active{% endif %}" href="{{ 'versions' | absolute_url }}">Versions</a>
                         <a class="main-nav__link{% if pageType == 'class' %} main-nav__link--active{% endif %}" href="{{ 'classes' | absolute_url }}">Classes</a>
                         <a class="main-nav__link{% if pageType == 'property' %} main-nav__link--active{% endif %}" href="{{ 'properties' | absolute_url }}">Properties</a>
                         <a class="main-nav__link{% if pageType == 'code-list' %} main-nav__link--active{% endif %}" href="{{ 'code-lists' | absolute_url }}">Code Lists</a>
