@@ -17,7 +17,7 @@ layout: table
         {% for version in site.data.versions.versions %}
                 <tr>
                     <td>
-                        <a href="{{ {{ version.prefix}} | prepend: site.baseurl }}" title="">
+                        <a href="{{ version.prefix | prepend: site.baseurl }}" title="">
                             {{ version.version}}
                         </a>
                     </td>
