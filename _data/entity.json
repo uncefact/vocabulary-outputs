@@ -1,22 +1,22 @@
 {
-    "label": "Identifier",
-    "uri": "untp-core:Identifier",
-    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value.",
+    "label": "Entity",
+    "uri": "untp-core:Entity",
+    "comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc",
     "datatypeProperties": [
         {
             "uri": "untp-core:id",
             "type": "xsd:string",
-            "comment": "A linked data URL for ..."
+            "comment": "The W3C DID of the ..."
         },
         {
             "uri": "untp-core:idScheme",
             "type": "xsd:string",
-            "comment": "the identifier scheme as defined ..."
+            "comment": "The identifier scheme ID. Exampleproduct ..."
         },
         {
             "uri": "untp-core:idSchemeName",
             "type": "xsd:string",
-            "comment": "The identifier scheme name (eg ..."
+            "comment": "The name of the identifier ..."
         },
         {
             "uri": "untp-core:idValue",
@@ -26,10 +26,14 @@
         {
             "uri": "untp-core:name",
             "type": "xsd:string",
-            "comment": "The name of the identified ..."
+            "comment": "The name of the issuer ..."
         }
     ],
     "referencedBy": [
+        {
+            "uri": "untp-core:administeredBy",
+            "comment": "the issuing body of the ..."
+        },
         {
             "uri": "untp-core:issuedToParty",
             "comment": "The party to whom the ..."
@@ -48,7 +52,7 @@
         },
         {
             "uri": "untp-core:otherIdentifiers",
-            "comment": "An optional lsit of other ..."
+            "comment": "An optional list of other ..."
         },
         {
             "uri": "untp-core:producedAtFacility",

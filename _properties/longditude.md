@@ -1,5 +1,5 @@
 ---
-title: Longditude
-permalink: Longditude.html
+title: longditude
+permalink: longditude.html
 jsonid: longditude
 ---

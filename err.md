@@ -1,13 +1,12 @@
-schema:PostalAddress
-untp-core:assessorAssuranceCode
-untp-core:countryCode
-untp-core:hashMethodCode
+untp-core:assessorLevelCode
 untp-core:unitOfMeasure
 untp-core:encryptionMethodCode
 untp-core:attestationTypeCode
 untp-core:conformityTopicCode
 untp-core:mimeType
-untp-core:assessmentAssuranceCode
+untp-core:countryCode
 xsd:boolean
 xsd:string
 xsd:decimal
+untp-core:assessmentLevelCode
+untp-core:hashMethodCode
