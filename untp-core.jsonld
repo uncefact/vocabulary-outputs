@@ -15,16 +15,16 @@
       "rdfs:label": "Party"
     },
     {
-      "@id": "untp-core:Classification",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
-      "rdfs:label": "Classification"
-    },
-    {
       "@id": "untp-core:Identifier",
       "@type": "rdfs:Class",
       "rdfs:comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value.",
       "rdfs:label": "Identifier"
+    },
+    {
+      "@id": "untp-core:Classification",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
+      "rdfs:label": "Classification"
     },
     {
       "@id": "untp-core:Facility",
@@ -129,10 +129,10 @@
       "rdfs:label": "Attestation"
     },
     {
-      "@id": "untp-core:Authorisation",
+      "@id": "untp-core:Endorsement",
       "@type": "rdfs:Class",
       "rdfs:comment": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. ",
-      "rdfs:label": "Authorisation"
+      "rdfs:label": "Endorsement"
     },
     {
       "@id": "untp-core:id",
@@ -148,10 +148,10 @@
           "@id": "untp-core:Party"
         },
         {
-          "@id": "untp-core:Classification"
+          "@id": "untp-core:Identifier"
         },
         {
-          "@id": "untp-core:Identifier"
+          "@id": "untp-core:Classification"
         },
         {
           "@id": "untp-core:Facility"
@@ -184,24 +184,24 @@
           "@id": "untp-core:Attestation"
         },
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
-        "A globally unique URI for the that identifies this organisation - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
         "The globally unique URI representing the specific classifier value - for example https://vocabulary.uncefact.org/unlocode?country=au#AUSYD is the gloabl URI representing the UN/LOCODE for Sydney Australia.",
         "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "",
-        "The gloablly ubique identifer of this location.  Typically a google pin or a GS1 GLN. Eg https://maps.app.goo.gl/6WuY7AQ8z97HwjDCA",
-        "The globally unique ID of the product. eg )https://id.gs1.org/01/09520123456788/21/12345",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
         "GLobally unique ID for the binary file - usually it's location as a URL.",
         "GLobally unique ID for the binary file - usually it's location as a URL.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
-        "The globally unique ID of the standard - eg https://www.iso.org/standard/60857.html",
-        "The identifier of the regulation - eg https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1115) ",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
         "A unique identifier for the criterion - managed by the standards uthority or regulator.",
         "The globally unique ID of this conformity attestation. ",
-        "The globally unique URI for this authorisation. Use idScheme/idValue if not otherwise defined by the issuing authority"
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327"
       ],
       "rdfs:label": "id"
     },
@@ -231,16 +231,24 @@
           "@id": "untp-core:Product"
         },
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Standard"
+        },
+        {
+          "@id": "untp-core:Regulation"
+        },
+        {
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
-        "The scheme ID for the organisation ID, usually the registry operator - eg abr.business.gov.au",
         "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
-        "remove because did already contains a scheme (ie it is a did:web)",
-        "The scheme of the location identifier. eg maps.app.goo.gl",
-        "The scheme used for the product identifier.  Eg )https://id.gs1.org/01",
-        "A globally unique ID for the authorisation scheme. use issuer authority domainName/schemeName if not otherwise specified."
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
       ],
       "rdfs:label": "idScheme"
     },
@@ -270,16 +278,24 @@
           "@id": "untp-core:Product"
         },
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Standard"
+        },
+        {
+          "@id": "untp-core:Regulation"
+        },
+        {
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
-        "The name of the business registration scheme - eg Austrlaian Business Number",
         "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
-        "removed because this is defiend to be a DID",
-        "the name of the location identifier scheme. Eg Google Pin",
-        "The scheme name of the product identifier - eg SGTIN",
-        "The name given to this authoristion scheme."
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
       ],
       "rdfs:label": "idSchemeName"
     },
@@ -309,37 +325,73 @@
           "@id": "untp-core:Product"
         },
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Standard"
+        },
+        {
+          "@id": "untp-core:Regulation"
+        },
+        {
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
-        "The value of the organisation identifier within the scheme - eg 90664869327",
         "The value of the identifier within the scheme (eg 90664869327)",
-        "removed because the id is the did value.",
-        "The value of the identifier within the scheme - eg 6WuY7AQ8z97HwjDCA",
-        "The value of the identifier within the scheme - eg )09520123.456788.12345",
-        "the authorisation number such as an accreditation number "
+        "The value of the identifier within the scheme (eg 90664869327)",
+        "The value of the identifier within the scheme (eg 90664869327)",
+        "The value of the identifier within the scheme (eg 90664869327)",
+        "The value of the identifier within the scheme (eg 90664869327)",
+        "The value of the identifier within the scheme (eg 90664869327)",
+        "The value of the identifier within the scheme (eg 90664869327)",
+        "The value of the identifier within the scheme (eg 90664869327)"
       ],
       "rdfs:label": "idValue"
     },
     {
-      "@id": "untp-core:partyName",
+      "@id": "untp-core:name",
       "schema:rangeIncludes": {
-        "@id": "schema:name"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
           "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:Identifier"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Location"
+        },
+        {
+          "@id": "untp-core:Product"
+        },
+        {
+          "@id": "untp-core:Standard"
+        },
+        {
+          "@id": "untp-core:Regulation"
+        },
+        {
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
-        "The name of the organization or company, represented as a text string.  SHOULD match the registered name in the identifeir scheme. Eg PYX Industries Pty Ltd"
+        "The name of the identified entity.",
+        "The name of the identified entity.",
+        "The name of the identified entity.",
+        "The name of the identified entity.",
+        "The name of the identified entity.",
+        "The name of the identified entity.",
+        "The name of the identified entity.",
+        "The name of the identified entity."
       ],
-      "rdfs:label": "partyName"
+      "rdfs:label": "name"
     },
     {
       "@id": "untp-core:registrationCountry",
@@ -498,25 +550,6 @@
       "rdfs:label": "classifierName"
     },
     {
-      "@id": "untp-core:facilityName",
-      "schema:rangeIncludes": {
-        "@id": "schema:name"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Facility"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the facility, represented as a text string."
-      ],
-      "rdfs:label": "facilityName"
-    },
-    {
       "@id": "untp-core:countryOfOperation",
       "schema:rangeIncludes": {
         "@id": "untp-core:countryCode"
@@ -555,9 +588,9 @@
       "rdfs:label": "processCategory"
     },
     {
-      "@id": "untp-core:operatedBy",
+      "@id": "untp-core:operatedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:PartyID"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -571,7 +604,7 @@
       "rdfs:comment": [
         "The Party entity responsible for operating the facility."
       ],
-      "rdfs:label": "operatedBy"
+      "rdfs:label": "operatedByParty"
     },
     {
       "@id": "untp-core:locationInformation",
@@ -591,25 +624,6 @@
         "Geolocation and address information for this facility"
       ],
       "rdfs:label": "locationInformation"
-    },
-    {
-      "@id": "untp-core:locationName",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Location"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the location. Eg Australian museum."
-      ],
-      "rdfs:label": "locationName"
     },
     {
       "@id": "untp-core:areaReference",
@@ -726,25 +740,6 @@
       "rdfs:label": "Longditude"
     },
     {
-      "@id": "untp-core:productName",
-      "schema:rangeIncludes": {
-        "@id": "schema:name"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the product - eg ACME Tinned Beans 500g"
-      ],
-      "rdfs:label": "productName"
-    },
-    {
       "@id": "untp-core:serialNumber",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -859,9 +854,9 @@
       "rdfs:label": "furtherInformation"
     },
     {
-      "@id": "untp-core:producedBy",
+      "@id": "untp-core:producedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:PartyID"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -875,12 +870,12 @@
       "rdfs:comment": [
         "The Party entity that manufactured the product."
       ],
-      "rdfs:label": "producedBy"
+      "rdfs:label": "producedByParty"
     },
     {
-      "@id": "untp-core:producedAt",
+      "@id": "untp-core:producedAtFacility",
       "schema:rangeIncludes": {
-        "@id": "untp-core:FacilityID"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -894,7 +889,7 @@
       "rdfs:comment": [
         "The Facility where the product batch was produced / manufactured."
       ],
-      "rdfs:label": "producedAt"
+      "rdfs:label": "producedAtFacility"
     },
     {
       "@id": "untp-core:dimensions",
@@ -1361,28 +1356,9 @@
       "rdfs:label": "conformityTopic"
     },
     {
-      "@id": "untp-core:standardName",
+      "@id": "untp-core:issuingParty",
       "schema:rangeIncludes": {
-        "@id": "schema:name"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Standard"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the standard (eg ISO 14001:2015 Environmental management system)"
-      ],
-      "rdfs:label": "standardName"
-    },
-    {
-      "@id": "untp-core:issuingBody",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:PartyID"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -1400,7 +1376,7 @@
         "The party that issued the standard (ID and Name reference only)",
         "the issuing body of the regulation."
       ],
-      "rdfs:label": "issuingBody"
+      "rdfs:label": "issuingParty"
     },
     {
       "@id": "untp-core:issueDate",
@@ -1422,25 +1398,6 @@
       "rdfs:label": "issueDate"
     },
     {
-      "@id": "untp-core:regulationName",
-      "schema:rangeIncludes": {
-        "@id": "schema:name"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Regulation"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the regulation - eg EU deforestation regulation."
-      ],
-      "rdfs:label": "regulationName"
-    },
-    {
       "@id": "untp-core:effectiveDate",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -1460,7 +1417,7 @@
       "rdfs:label": "effectiveDate"
     },
     {
-      "@id": "untp-core:criteriName",
+      "@id": "untp-core:criteriaName",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -1476,7 +1433,7 @@
       "rdfs:comment": [
         "A name that describes this criteria (eg tensile strength)"
       ],
-      "rdfs:label": "criteriName"
+      "rdfs:label": "criteriaName"
     },
     {
       "@id": "untp-core:thresholdValues",
@@ -1783,9 +1740,9 @@
       "rdfs:label": "attestationDescription"
     },
     {
-      "@id": "untp-core:issuedTo",
+      "@id": "untp-core:issuedToParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:PartyID"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -1799,12 +1756,12 @@
       "rdfs:comment": [
         "The party to whom the conformity attestation was issued."
       ],
-      "rdfs:label": "issuedTo"
+      "rdfs:label": "issuedToParty"
     },
     {
       "@id": "untp-core:accreditation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Authorisation"
+        "@id": "untp-core:Endorsement"
       },
       "@type": [
         "rdf:Property",
@@ -1869,7 +1826,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
@@ -1880,7 +1837,7 @@
     {
       "@id": "untp-core:issuingAuthority",
       "schema:rangeIncludes": {
-        "@id": "untp-core:PartyID"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -1888,7 +1845,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
@@ -1907,7 +1864,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Authorisation"
+          "@id": "untp-core:Endorsement"
         }
       ],
       "rdfs:comment": [
