@@ -8,10 +8,6 @@
       "@protected": true,
       "@id": "untp-core:Entity",
       "@context": {
-        "name": {
-          "@id": "untp-core:name",
-          "@type": "xsd:string"
-        },
         "idValue": {
           "@id": "untp-core:idValue",
           "@type": "xsd:string"
@@ -33,6 +29,28 @@
         "otherIdentifiers": {
           "@id": "untp-core:otherIdentifiers",
           "@type": "@id"
+        }
+      }
+    },
+    "Link": {
+      "@protected": true,
+      "@id": "untp-core:Link",
+      "@context": {
+        "linkName": {
+          "@id": "untp-core:linkName",
+          "@type": "xsd:string"
+        },
+        "linkType": {
+          "@id": "untp-core:linkType",
+          "@type": "xsd:string"
+        },
+        "targetType": {
+          "@id": "untp-core:targetType",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/mimeType#"
+          }
         }
       }
     },
@@ -62,9 +80,18 @@
       "@protected": true,
       "@id": "untp-core:Party",
       "@context": {
-        "idValue": "untp-core:idValue",
-        "idScheme": "untp-core:idScheme",
-        "idSchemeName": "untp-core:idSchemeName",
+        "idValue": {
+          "@id": "untp-core:idValue",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "xsd:string"
+        },
+        "idSchemeName": {
+          "@id": "untp-core:idSchemeName",
+          "@type": "xsd:string"
+        },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
           "@type": "@vocab",
@@ -129,9 +156,18 @@
       "@protected": true,
       "@id": "untp-core:Facility",
       "@context": {
-        "idValue": "untp-core:idValue",
-        "idScheme": "untp-core:idScheme",
-        "idSchemeName": "untp-core:idSchemeName",
+        "idValue": {
+          "@id": "untp-core:idValue",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "xsd:string"
+        },
+        "idSchemeName": {
+          "@id": "untp-core:idSchemeName",
+          "@type": "xsd:string"
+        },
         "countryOfOperation": {
           "@id": "untp-core:countryOfOperation",
           "@type": "@vocab",
@@ -188,31 +224,22 @@
         }
       }
     },
-    "BinaryFile": {
-      "@protected": true,
-      "@id": "untp-core:BinaryFile",
-      "@context": {
-        "name": {
-          "@id": "untp-core:name",
-          "@type": "xsd:string"
-        },
-        "fileType": {
-          "@id": "untp-core:fileType",
-          "@type": "@vocab",
-          "@context": {
-            "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/mimeType#"
-          }
-        }
-      }
-    },
     "Product": {
       "@protected": true,
       "@id": "untp-core:Product",
       "@context": {
-        "idValue": "untp-core:idValue",
-        "idScheme": "untp-core:idScheme",
-        "idSchemeName": "untp-core:idSchemeName",
+        "idValue": {
+          "@id": "untp-core:idValue",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "xsd:string"
+        },
+        "idSchemeName": {
+          "@id": "untp-core:idSchemeName",
+          "@type": "xsd:string"
+        },
         "serialNumber": {
           "@id": "untp-core:serialNumber",
           "@type": "xsd:string"
@@ -231,7 +258,7 @@
         },
         "furtherInformation": {
           "@id": "untp-core:furtherInformation",
-          "@type": "xsd:string"
+          "@type": "@id"
         },
         "producedByParty": {
           "@id": "untp-core:producedByParty",
@@ -351,24 +378,28 @@
         }
       }
     },
-    "SecureBinaryFile": {
+    "SecureLink": {
       "@protected": true,
-      "@id": "untp-core:SecureBinaryFile",
+      "@id": "untp-core:SecureLink",
       "@context": {
-        "name": {
-          "@id": "untp-core:name",
+        "linkName": {
+          "@id": "untp-core:linkName",
           "@type": "xsd:string"
         },
-        "fileType": {
-          "@id": "untp-core:fileType",
+        "linkType": {
+          "@id": "untp-core:linkType",
+          "@type": "xsd:string"
+        },
+        "targetType": {
+          "@id": "untp-core:targetType",
           "@type": "@vocab",
           "@context": {
             "@protected": true,
             "@vocab": "https://test.uncefact.org/vocabulary/untp/core/mimeType#"
           }
         },
-        "fileHash": {
-          "@id": "untp-core:fileHash",
+        "targetHash": {
+          "@id": "untp-core:targetHash",
           "@type": "xsd:string"
         },
         "hashMethod": {
@@ -538,8 +569,26 @@
       "@id": "untp-core:Endorsement",
       "@context": {
         "trustmark": {
+          "@protected": true,
           "@id": "untp-core:trustmark",
-          "@type": "@id"
+          "@context": {
+            "fileName": {
+              "@id": "untp-core:fileName",
+              "@type": "xsd:string"
+            },
+            "fileType": {
+              "@id": "untp-core:fileType",
+              "@type": "@vocab",
+              "@context": {
+                "@protected": true,
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/mimeType#"
+              }
+            },
+            "file": {
+              "@id": "untp-core:file",
+              "@type": "xsd:string"
+            }
+          }
         },
         "issuingAuthority": {
           "@id": "untp-core:issuingAuthority",
@@ -583,8 +632,8 @@
           "@id": "untp-core:issuedToParty",
           "@type": "@id"
         },
-        "accreditation": {
-          "@id": "untp-core:accreditation",
+        "authorisation": {
+          "@id": "untp-core:authorisation",
           "@type": "@id"
         },
         "conformityCertificate": {

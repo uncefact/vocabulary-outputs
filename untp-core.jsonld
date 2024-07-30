@@ -21,6 +21,12 @@
       "rdfs:label": "Entity"
     },
     {
+      "@id": "untp-core:Link",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A structure to provide a URL link plus metadata associated with the link.",
+      "rdfs:label": "Link"
+    },
+    {
       "@id": "untp-core:Party",
       "@type": "rdfs:Class",
       "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
@@ -63,12 +69,6 @@
       "rdfs:label": "Product"
     },
     {
-      "@id": "untp-core:BinaryFile",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A file representing a data snapshot that is used to infomr the conformity assessment.",
-      "rdfs:label": "BinaryFile"
-    },
-    {
       "@id": "untp-core:Dimension",
       "@type": "rdfs:Class",
       "rdfs:comment": "Overall (length, width, height) dimensions and weight/volume of an item.",
@@ -87,10 +87,16 @@
       "rdfs:label": "Metric"
     },
     {
-      "@id": "untp-core:SecureBinaryFile",
+      "@id": "untp-core:BinaryFile",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A binary file reference including name and filetype",
+      "rdfs:label": "BinaryFile"
+    },
+    {
+      "@id": "untp-core:SecureLink",
       "@type": "rdfs:Class",
       "rdfs:comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality).",
-      "rdfs:label": "SecureBinaryFile"
+      "rdfs:label": "SecureLink"
     },
     {
       "@id": "untp-core:Declaration",
@@ -178,12 +184,6 @@
           "@id": "untp-core:Product"
         },
         {
-          "@id": "untp-core:BinaryFile"
-        },
-        {
-          "@id": "untp-core:SecureBinaryFile"
-        },
-        {
           "@id": "untp-core:Declaration"
         },
         {
@@ -205,13 +205,11 @@
       "rdfs:comment": [
         "The W3C DID of the issuer - should be a did:web or did:tdw",
         "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
-        "The globally unique identifier for the party. For example",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
         "The globally unique URI representing the specific classifier value",
-        "A globally unique Identifier for this facility. Given the plethora of faciloity registers for different purposes, this ID will increasingly likely be a DID created by the facility owner. The DID can then be associated with multiple registrations.  ",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
         "The globally unique identiifer of this geographic location. Typically a google pin.",
-        "The globally unique identifier of this product.",
-        "GLobally unique ID for the binary file - usually it's location as a URL. Recommend a UUID if the file is not intended to be easily discoverbale.",
-        "GLobally unique ID for the binary file - usually it's location as a URL. Recommend a UUID if the file is not intended to be easily discoverbale.",
+        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
         "The globally unique identifier of this regulation. ",
@@ -250,12 +248,6 @@
           "@id": "untp-core:Product"
         },
         {
-          "@id": "untp-core:BinaryFile"
-        },
-        {
-          "@id": "untp-core:SecureBinaryFile"
-        },
-        {
           "@id": "untp-core:Standard"
         },
         {
@@ -277,12 +269,10 @@
       "rdfs:comment": [
         "The name of the issuer person or organisation",
         "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
-        "The legal registered name of the party. ",
-        "Name of the classification represented by the code",
-        "The name of this processing facility. ",
         "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
-        "A name for referenced binary file",
-        "A name for referenced binary file",
+        "Name of the classification represented by the code",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
         "The name of the standard",
         "The name of the regulation or act.",
         "A name that describes this criteria.",
@@ -343,10 +333,10 @@
         }
       ],
       "rdfs:comment": [
-        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788.12345. party - 90664869327. facility - 123. ",
-        "The registration number or code within the scheme",
-        "The registration number or code of this facility, unique within the scheme. ",
-        "The number of code for this product, unique withing the scheme.  "
+        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. ",
+        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. ",
+        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. ",
+        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
       ],
       "rdfs:label": "idValue"
     },
@@ -375,9 +365,9 @@
       ],
       "rdfs:comment": [
         "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
-        "The party identification scheme ID. Usually the domain name of the registrar.  ",
-        "the globally unique URI of the facility registration scheme.  ",
-        "The globally unique id for th identifier scheme."
+        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
       ],
       "rdfs:label": "idScheme"
     },
@@ -406,11 +396,103 @@
       ],
       "rdfs:comment": [
         "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  ",
-        "The name of the party identifiaction scheme.  ",
-        "The name of the facilities registration scheme",
-        "The name for this product identifier scheme."
+        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  ",
+        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  ",
+        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
       ],
       "rdfs:label": "idSchemeName"
+    },
+    {
+      "@id": "untp-core:linkURL",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The URL of the target resource. ",
+        "The URL of the target resource. "
+      ],
+      "rdfs:label": "linkURL"
+    },
+    {
+      "@id": "untp-core:linkName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "A display name for the target resource ",
+        "A display name for the target resource "
+      ],
+      "rdfs:label": "linkName"
+    },
+    {
+      "@id": "untp-core:linkType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of the target resource - drawn from a controlled vocabulary ",
+        "The type of the target resource - drawn from a controlled vocabulary "
+      ],
+      "rdfs:label": "linkType"
+    },
+    {
+      "@id": "untp-core:targetType",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:mimeType"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The MIME type of the target ressource.",
+        "The MIME type of the target ressource."
+      ],
+      "rdfs:label": "targetType"
     },
     {
       "@id": "untp-core:registrationCountry",
@@ -852,7 +934,7 @@
     {
       "@id": "untp-core:productImage",
       "schema:rangeIncludes": {
-        "@id": "untp-core:BinaryFile"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -909,11 +991,11 @@
     {
       "@id": "untp-core:furtherInformation",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -1019,29 +1101,6 @@
         "The country in which this item was produced / manufactured."
       ],
       "rdfs:label": "countryOfProduction"
-    },
-    {
-      "@id": "untp-core:fileType",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:mimeType"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:BinaryFile"
-        },
-        {
-          "@id": "untp-core:SecureBinaryFile"
-        }
-      ],
-      "rdfs:comment": [
-        "The type of file, represented as a MIME type.",
-        "The type of file, represented as a MIME type."
-      ],
-      "rdfs:label": "fileType"
     },
     {
       "@id": "untp-core:weight",
@@ -1234,7 +1293,7 @@
       "rdfs:label": "accuracy"
     },
     {
-      "@id": "untp-core:fileHash",
+      "@id": "untp-core:fileName",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -1244,13 +1303,70 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:SecureBinaryFile"
+          "@id": "untp-core:BinaryFile"
+        }
+      ],
+      "rdfs:comment": [
+        "A name for referenced binary file"
+      ],
+      "rdfs:label": "fileName"
+    },
+    {
+      "@id": "untp-core:fileType",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:mimeType"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:BinaryFile"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of file, represented as a MIME type."
+      ],
+      "rdfs:label": "fileType"
+    },
+    {
+      "@id": "untp-core:file",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:BinaryFile"
+        }
+      ],
+      "rdfs:comment": [
+        "The binary file data encoded as Base64 string."
+      ],
+      "rdfs:label": "file"
+    },
+    {
+      "@id": "untp-core:targetHash",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:SecureLink"
         }
       ],
       "rdfs:comment": [
         "The hash of the file "
       ],
-      "rdfs:label": "fileHash"
+      "rdfs:label": "targetHash"
     },
     {
       "@id": "untp-core:hashMethod",
@@ -1263,11 +1379,11 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:SecureBinaryFile"
+          "@id": "untp-core:SecureLink"
         }
       ],
       "rdfs:comment": [
-        "The hashing algorithm used to create the file hash.  SHA-265 is the recommedned standard"
+        "The hashing algorithm used to create the target hash.  SHA-265 is the recommedned standard"
       ],
       "rdfs:label": "hashMethod"
     },
@@ -1282,11 +1398,11 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:SecureBinaryFile"
+          "@id": "untp-core:SecureLink"
         }
       ],
       "rdfs:comment": [
-        "The symmetric encryption algorithm used to encrypt this binary file.  AES is the recommended standard"
+        "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
       ],
       "rdfs:label": "encryptionMethod"
     },
@@ -1616,11 +1732,11 @@
     {
       "@id": "untp-core:materialSafetyInformation",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -1804,7 +1920,7 @@
       "rdfs:label": "issuedToParty"
     },
     {
-      "@id": "untp-core:accreditation",
+      "@id": "untp-core:authorisation",
       "schema:rangeIncludes": {
         "@id": "untp-core:Endorsement"
       },
@@ -1820,12 +1936,12 @@
       "rdfs:comment": [
         "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
       ],
-      "rdfs:label": "accreditation"
+      "rdfs:label": "authorisation"
     },
     {
       "@id": "untp-core:conformityCertificate",
       "schema:rangeIncludes": {
-        "@id": "untp-core:BinaryFile"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
@@ -1844,7 +1960,7 @@
     {
       "@id": "untp-core:auditableEvidence",
       "schema:rangeIncludes": {
-        "@id": "untp-core:SecureBinaryFile"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",

@@ -10,31 +10,31 @@
       ]
     },
     "id": {
-      "example": "did:web:facilities.acme.com:123",
+      "example": "id.gs1.org/01/09520123456788/21/12345",
       "type": "string",
       "format": "uri",
-      "description": "A globally unique Identifier for this facility. Given the plethora of faciloity registers for different purposes, this ID will increasingly likely be a DID created by the facility owner. The DID can then be associated with multiple registrations.  "
+      "description": "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. "
     },
     "name": {
-      "example": "Greenacres canning factory",
+      "example": "Baked beans, tinned, 500g.",
       "type": "string",
-      "description": "The name of this processing facility. "
+      "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory"
     },
     "idValue": {
-      "example": "123",
+      "example": "09520123.456788",
       "type": "string",
-      "description": "The registration number or code of this facility, unique within the scheme. "
+      "description": "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
     },
     "idScheme": {
-      "example": "did:web:facilities.acme.com",
+      "example": "id.gs1.org/01.",
       "type": "string",
       "format": "uri",
-      "description": "the globally unique URI of the facility registration scheme.  "
+      "description": "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
     },
     "idSchemeName": {
-      "example": "ACME Facilities",
+      "example": "GS1 SGTIN",
       "type": "string",
-      "description": "The name of the facilities registration scheme"
+      "description": "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
     },
     "countryOfOperation": {
       "type": "string",
@@ -132,31 +132,37 @@
           ]
         },
         "id": {
+          "example": "id.gs1.org/01/09520123456788/21/12345",
           "type": "string",
           "format": "uri",
           "description": "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. "
         },
         "name": {
+          "example": "Baked beans, tinned, 500g.",
           "type": "string",
           "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory"
         },
         "idValue": {
+          "example": "09520123.456788",
           "type": "string",
-          "description": "The value of the identifier within the scheme. Examplesproduct - 09520123.456788.12345. party - 90664869327. facility - 123. "
+          "description": "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
         },
         "idScheme": {
+          "example": "id.gs1.org/01.",
           "type": "string",
           "format": "uri",
           "description": "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
         },
         "idSchemeName": {
+          "example": "GS1 SGTIN",
           "type": "string",
           "description": "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
         }
       },
       "description": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc",
       "required": [
-        "id"
+        "id",
+        "name"
       ]
     },
     "Location": {
