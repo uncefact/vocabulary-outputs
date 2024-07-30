@@ -1,17 +1,17 @@
 {
     "label": "traceabilityInformation",
-    "uri": "untp-dpp:traceabilityInformation",
-    "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level.",
+    "uri": "dpp:traceabilityInformation",
+    "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch.",
     "rangeIncludes": [
         {
-            "uri": "untp-dpp:TraceabilityEvent",
+            "uri": "dpp:TraceabilityEvent",
             "comment": "The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference."
         }
     ],
     "domainIncludes": [
         {
-            "uri": "untp-dpp:ProductPassport",
-            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. "
+            "uri": "dpp:Product",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
         }
     ]
 }

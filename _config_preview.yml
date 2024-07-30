@@ -2,17 +2,14 @@
 title: Vocabulary UNTP DPP
 baseurl: "/vocabulary/untp/dpp" # the subpath of your site, e.g. /blog
 dest: "https://test.uncefact.org"
-
 dataSet: "dataset:'22A'"
 versions:
-  untp-dpp: draft
+  untp-dpp: 0.2.0
   cc: draft
   te: draft
-
 markdown: kramdown
 kramwdown:
   parse_block_html: true
-
 collections:
   classes:
     output: true
@@ -23,39 +20,31 @@ collections:
   code-lists:
     output: true
     permalink: /:name
-
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: ""
       type: "classes"
     values:
       layout: "class"
       type: "class"
-  -
-    scope:
+  - scope:
       path: ""
       type: "properties"
     values:
       layout: "property"
       type: "property"
-  -
-    scope:
+  - scope:
       path: ""
       type: "code-lists"
     values:
       layout: "code-list"
       type: "code-list"
-
-
 sass:
   sourcemap: development
-
 exclude:
   - vendor
   - .idea

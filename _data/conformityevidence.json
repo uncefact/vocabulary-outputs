@@ -1,15 +1,16 @@
 {
     "label": "conformityEvidence",
-    "uri": "untp-dpp:conformityEvidence",
-    "comment": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)",
+    "uri": "dpp:conformityEvidence",
+    "comment": "A URI pointing to the evidence supporting the claim. Most likely in the form of a verifiable credential.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "dpp:Evidence",
+            "comment": "Evidence to support a conformity or identity claim. "
         }
     ],
     "domainIncludes": [
         {
-            "uri": "untp-dpp:Claim",
+            "uri": "dpp:Claim",
             "comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim."
         }
     ]

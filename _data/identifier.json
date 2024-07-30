@@ -1,0 +1,45 @@
+{
+    "label": "Identifier",
+    "uri": "dpp:Identifier",
+    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence ",
+    "datatypeProperties": [
+        {
+            "uri": "dpp:identiferValue",
+            "type": "xsd:string",
+            "comment": "The value of the identifier within the scheme"
+        },
+        {
+            "uri": "dpp:resolverURL",
+            "type": "xsd:string",
+            "comment": "The ISO-18975 conforming link resolver URL for this identifier. If not provided then the scheme owner should publish the ruleset for resolverURL construction from the identifierValue for the given schemeURI."
+        },
+        {
+            "uri": "dpp:scheme",
+            "type": "xsd:string",
+            "comment": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
+        },
+        {
+            "uri": "dpp:verificationEvidence",
+            "type": "dpp:Evidence",
+            "comment": "Link to evidence that attests to the validity and ownership of the identifer. "
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "dpp:batchIdentifier",
+            "comment": "Information regarding the specific production batch of the product."
+        },
+        {
+            "uri": "dpp:identifier",
+            "comment": "A unique identifier (URI) assigned to the organization or company. (Link Resolver - GS1 company prefix?)"
+        },
+        {
+            "uri": "dpp:itemIdentifier",
+            "comment": "An array of identifiers representing a specific serialised item of the product."
+        },
+        {
+            "uri": "dpp:productIdentifier",
+            "comment": "An array of unique identifiers assigned to the product or model. "
+        }
+    ]
+}

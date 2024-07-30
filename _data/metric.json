@@ -1,0 +1,32 @@
+{
+    "label": "Metric",
+    "uri": "dpp:Metric",
+    "comment": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  ",
+    "datatypeProperties": [
+        {
+            "uri": "dpp:accuracy",
+            "type": "xsd:decimal",
+            "comment": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+        },
+        {
+            "uri": "dpp:name",
+            "type": "xsd:string",
+            "comment": "The name of the organization or company, represented as a text string."
+        },
+        {
+            "uri": "dpp:value",
+            "type": "dpp:Measure",
+            "comment": "A numeric value representing the measurement or evaluation outcome for the claim."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "dpp:benchmarkValue",
+            "comment": "A benchmark value against which the claimed value can be assessed. THis could be a value specified by a standard or regulation or could be an industry benchmark."
+        },
+        {
+            "uri": "dpp:claimedValues",
+            "comment": "One or more actual measures supporting the claim. For example for GHG emissions there may be a metric for total emissions intensity and also a metric for amount of offsets included."
+        }
+    ]
+}
