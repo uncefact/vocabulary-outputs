@@ -2,12 +2,36 @@
     "label": "DigitalProductPassport",
     "uri": "untp-dpp:DigitalProductPassport",
     "comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provernance information, circularity information and a set of verifable product confomrity & sistainability claims.  ",
-    "subClassOf": "untp-core:VerifiableCredential",
     "datatypeProperties": [
+        {
+            "uri": "untp-dpp:@context",
+            "type": "xsd:string",
+            "comment": "A list of JSON-LD context ..."
+        },
         {
             "uri": "untp-dpp:credentialSubject",
             "type": "untp-dpp:Product",
-            "comment": "The subject of a digital product passport credential is the identified product."
+            "comment": "The subject of a digital ..."
+        },
+        {
+            "uri": "untp-dpp:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dpp:issuer",
+            "type": "untp-core:CredentialIssuer",
+            "comment": "The organisation that is the ..."
+        },
+        {
+            "uri": "untp-dpp:validFrom",
+            "type": "xsd:string",
+            "comment": "The date and time from ..."
+        },
+        {
+            "uri": "untp-dpp:validUntil",
+            "type": "xsd:string",
+            "comment": "The expiry date (if applicable) ..."
         }
     ]
 }

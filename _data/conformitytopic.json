@@ -1,11 +1,18 @@
 {
     "label": "conformityTopic",
     "uri": "untp-dpp:conformityTopic",
-    "comment": "A high level category scheme for conformity claims in the digital product passport",
-    "referencedBy": [
+    "comment": [
+        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+    ],
+    "rangeIncludes": [
         {
-            "uri": "untp-dpp:topic",
-            "comment": "A code representing the topic of the sustainability claim. E.g. environment.deforestation, environment.ghg-emission-intensity, etc..  Drawn from a standard code list.  "
+            "uri": "untp-dpp:conformityTopicCode"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-dpp:Claim",
+            "comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim."
         }
     ]
 }

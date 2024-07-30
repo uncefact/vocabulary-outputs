@@ -1,49 +1,118 @@
 {
     "label": "Product",
     "uri": "untp-dpp:Product",
-    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
-    "subClassOf": "untp-core:ItemisedProduct",
+    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
     "datatypeProperties": [
         {
+            "uri": "untp-dpp:batchNumber",
+            "type": "xsd:string",
+            "comment": "Identifier of the specific production ..."
+        },
+        {
             "uri": "untp-dpp:characteristics",
-            "type": "untp-dpp:Characteristic",
-            "comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity."
+            "type": "untp-core:Characteristic",
+            "comment": "Product specific characteristics. This class ..."
         },
         {
             "uri": "untp-dpp:circularityInformation",
-            "type": "untp-dpp:Circularity",
-            "comment": "A URI pointing to information regarding the recycling aspects of the product."
+            "type": "untp-core:Circularity",
+            "comment": "A URI pointing to information ..."
         },
         {
             "uri": "untp-dpp:conformityInformation",
             "type": "untp-dpp:Claim",
-            "comment": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
+            "comment": "An array of claim objects ..."
+        },
+        {
+            "uri": "untp-dpp:countryOfProduction",
+            "type": "untp-dpp:countryCode",
+            "comment": "The country in which this ..."
+        },
+        {
+            "uri": "untp-dpp:description",
+            "type": "xsd:string",
+            "comment": "A textual description providing details ..."
         },
         {
             "uri": "untp-dpp:dimensions",
-            "type": "untp-dpp:Dimension",
-            "comment": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
+            "type": "untp-core:Dimension",
+            "comment": "The physical dimensions of the ..."
         },
         {
-            "uri": "untp-dpp:manufacturedAt",
-            "type": "untp-dpp:Facility",
-            "comment": "The Facility where the product batch was manufactured."
+            "uri": "untp-dpp:furtherInformation",
+            "type": "untp-core:Link",
+            "comment": "A URL pointing to further ..."
+        },
+        {
+            "uri": "untp-dpp:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dpp:idScheme",
+            "type": "xsd:string",
+            "comment": "The identifier scheme ID. Exampleproduct ..."
+        },
+        {
+            "uri": "untp-dpp:idSchemeName",
+            "type": "xsd:string",
+            "comment": "The name of the identifier ..."
+        },
+        {
+            "uri": "untp-dpp:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the identifier ..."
         },
         {
             "uri": "untp-dpp:materialsProvenance",
-            "type": "untp-dpp:Material",
-            "comment": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
+            "type": "untp-core:Material",
+            "comment": "An array of Provenance objects ..."
+        },
+        {
+            "uri": "untp-dpp:name",
+            "type": "xsd:string",
+            "comment": "The registered name of the ..."
+        },
+        {
+            "uri": "untp-dpp:producedAtFacility",
+            "type": "untp-core:Entity",
+            "comment": "The Facility where the product ..."
+        },
+        {
+            "uri": "untp-dpp:producedByParty",
+            "type": "untp-core:Entity",
+            "comment": "The Party entity that manufactured ..."
+        },
+        {
+            "uri": "untp-dpp:productCategory",
+            "type": "untp-core:Classification",
+            "comment": "A code representing the product's ..."
+        },
+        {
+            "uri": "untp-dpp:productImage",
+            "type": "untp-core:Link",
+            "comment": "Reference information (location, type, name) ..."
+        },
+        {
+            "uri": "untp-dpp:productionDate",
+            "type": "xsd:string",
+            "comment": "The ISO 8601 date on ..."
+        },
+        {
+            "uri": "untp-dpp:serialNumber",
+            "type": "xsd:string",
+            "comment": "A number or code representing ..."
         },
         {
             "uri": "untp-dpp:traceabilityInformation",
             "type": "untp-dpp:TraceabilityEvent",
-            "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level."
+            "comment": "An array of TraceabilityEvent objects ..."
         }
     ],
     "referencedBy": [
         {
             "uri": "untp-dpp:credentialSubject",
-            "comment": "The subject of a digital product passport credential is the identified product."
+            "comment": "The subject of a digital ..."
         }
     ]
 }
