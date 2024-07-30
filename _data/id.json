@@ -1,7 +1,22 @@
 {
     "label": "id",
     "uri": "untp-core:id",
-    "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID",
+    "comment": [
+        "A globally unique URI for the that identifies this organisation - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "The globally unique URI representing the specific classifier value - for example https://vocabulary.uncefact.org/unlocode?country=au#AUSYD is the gloabl URI representing the UN/LOCODE for Sydney Australia.",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "",
+        "The gloablly ubique identifer of this location.  Typically a google pin or a GS1 GLN. Eg https://maps.app.goo.gl/6WuY7AQ8z97HwjDCA",
+        "The globally unique ID of the product. eg )https://id.gs1.org/01/09520123456788/21/12345",
+        "GLobally unique ID for the binary file - usually it's location as a URL.",
+        "GLobally unique ID for the binary file - usually it's location as a URL.",
+        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
+        "The globally unique ID of the standard - eg https://www.iso.org/standard/60857.html",
+        "The identifier of the regulation - eg https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1115) ",
+        "A unique identifier for the criterion - managed by the standards uthority or regulator.",
+        "The globally unique ID of this conformity attestation. ",
+        "The globally unique URI for this authorisation. Use idScheme/idValue if not otherwise defined by the issuing authority"
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -9,48 +24,48 @@
     ],
     "domainIncludes": [
         {
-            "uri": "untp-core:VerifiableCredential",
-            "comment": "A verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM)"
-        },
-        {
-            "uri": "untp-core:Identifier",
-            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
-        },
-        {
-            "uri": "untp-core:PartyID",
-            "comment": "The ID and Name of an organisation. Used for lightweight links from other classes."
-        },
-        {
-            "uri": "untp-core:FacilityID",
-            "comment": "The ID and Name of a facility. Used for lightweight links from other classes."
-        },
-        {
-            "uri": "untp-core:LocationID",
-            "comment": "The ID and Name of a location. Used for lightweight links from other classes."
-        },
-        {
-            "uri": "untp-core:ProductID",
-            "comment": "The ID and Name of a product. Used for lightweight links from other classes."
+            "uri": "untp-core:Party",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
         },
         {
             "uri": "untp-core:Classification",
             "comment": "A classification scheme and code / name representing a category value for a product, entity, or facility."
         },
         {
+            "uri": "untp-core:Identifier",
+            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
+        },
+        {
+            "uri": "untp-core:Facility",
+            "comment": "The physical site (eg farm or factory) where the product or materials was produced."
+        },
+        {
+            "uri": "untp-core:Location",
+            "comment": "Location information including address and geolocation of points, areas, and boundaries"
+        },
+        {
+            "uri": "untp-core:Product",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+        },
+        {
             "uri": "untp-core:BinaryFile",
             "comment": "A file representing a data snapshot that is used to infomr the conformity assessment."
+        },
+        {
+            "uri": "untp-core:SecureBinaryFile",
+            "comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
         },
         {
             "uri": "untp-core:Declaration",
             "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch."
         },
         {
-            "uri": "untp-core:StandardID",
-            "comment": "The ID and Name of a conformity standard. Used for lightweight links from other classes."
+            "uri": "untp-core:Standard",
+            "comment": "A standard (eg ISO 14000) that specifies the criteria for conformance."
         },
         {
-            "uri": "untp-core:RegulationID",
-            "comment": "The ID and Name of an act or regulation. Used for lightweight links from other classes."
+            "uri": "untp-core:Regulation",
+            "comment": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment."
         },
         {
             "uri": "untp-core:Criteria",
@@ -61,8 +76,8 @@
             "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
         },
         {
-            "uri": "untp-core:AuthorisationID",
-            "comment": "The ID and Name of an authorisation. Used for lightweight links from other classes."
+            "uri": "untp-core:Authorisation",
+            "comment": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. "
         }
     ]
 }

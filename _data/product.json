@@ -2,62 +2,86 @@
     "label": "Product",
     "uri": "untp-core:Product",
     "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
-    "subClassOf": "untp-core:ProductID",
     "datatypeProperties": [
         {
             "uri": "untp-core:batchNumber",
             "type": "xsd:string",
-            "comment": "Information regarding the specific production batch of the product."
+            "comment": "Information regarding the specific production ..."
         },
         {
             "uri": "untp-core:countryOfProduction",
             "type": "untp-core:countryCode",
-            "comment": "The country in which this item was produced / manufactured."
+            "comment": "The country in which this ..."
         },
         {
             "uri": "untp-core:description",
             "type": "xsd:string",
-            "comment": "A textual description providing details about the product."
+            "comment": "A textual description providing details ..."
         },
         {
             "uri": "untp-core:dimensions",
             "type": "untp-core:Dimension",
-            "comment": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
+            "comment": "The physical dimensions of the ..."
         },
         {
             "uri": "untp-core:furtherInformation",
             "type": "xsd:string",
-            "comment": "A URL pointing to further human readable information about the product."
+            "comment": "A URL pointing to further ..."
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A globally unique URI for ..."
+        },
+        {
+            "uri": "untp-core:idScheme",
+            "type": "xsd:string",
+            "comment": "The scheme ID for the ..."
+        },
+        {
+            "uri": "untp-core:idSchemeName",
+            "type": "xsd:string",
+            "comment": "The name of the business ..."
+        },
+        {
+            "uri": "untp-core:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the organisation ..."
         },
         {
             "uri": "untp-core:producedAt",
             "type": "untp-core:FacilityID",
-            "comment": "The Facility where the product batch was produced / manufactured."
+            "comment": "The Facility where the product ..."
         },
         {
             "uri": "untp-core:producedBy",
             "type": "untp-core:PartyID",
-            "comment": "The Party entity that manufactured the product."
+            "comment": "The Party entity that manufactured ..."
         },
         {
             "uri": "untp-core:productCategory",
             "type": "untp-core:Classification",
-            "comment": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+            "comment": "A code representing the product's ..."
         },
         {
             "uri": "untp-core:productImage",
             "type": "untp-core:BinaryFile",
-            "comment": "A unique identifier (URI) pointing to an image of the product."
+            "comment": "A unique identifier (URI) pointing ..."
+        },
+        {
+            "uri": "untp-core:productName",
+            "type": "schema:name",
+            "comment": "The name of the product ..."
         },
         {
             "uri": "untp-core:productionDate",
             "type": "xsd:string",
-            "comment": "The ISO 8601 date on which the product batch was manufactured."
+            "comment": "The ISO 8601 date on ..."
         },
         {
             "uri": "untp-core:serialNumber",
             "type": "xsd:string",
-            "comment": "An array of identifiers representing a specific serialised item of the product."
+            "comment": "An array of identifiers representing ..."
         }
     ]
 }

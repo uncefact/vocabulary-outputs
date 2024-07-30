@@ -1,17 +1,18 @@
 {
     "label": "regulationName",
     "uri": "untp-core:regulationName",
-    "comment": "The name of the regulation - eg EU deforestation regulation.",
-    "equivalentProperty": "schema:regulationName",
+    "comment": [
+        "The name of the regulation - eg EU deforestation regulation."
+    ],
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "schema:name"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "untp-core:RegulationID",
-            "comment": "The ID and Name of an act or regulation. Used for lightweight links from other classes."
+            "uri": "untp-core:Regulation",
+            "comment": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment."
         }
     ]
 }

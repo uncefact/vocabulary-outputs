@@ -1,14 +1,12 @@
 {
   "@context": {
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/",
-    "schema": "https://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@protected": true,
     "@version": 1.1,
     "Classification": {
       "@protected": true,
       "@id": "untp-core:Classification",
-      "@type": "@id",
       "@context": {
         "classificationSchemeID": {
           "@id": "untp-core:classificationSchemeID",
@@ -31,7 +29,6 @@
     "Identifier": {
       "@protected": true,
       "@id": "untp-core:Identifier",
-      "@type": "@id",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -50,7 +47,6 @@
     "Party": {
       "@protected": true,
       "@id": "untp-core:Party",
-      "@type": "@id",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -82,33 +78,17 @@
         },
         "industryCategory": {
           "@id": "untp-core:industryCategory",
-          "@type": "untp-core:Classification"
+          "@type": "@id"
         },
         "otherIdentifiers": {
           "@id": "untp-core:otherIdentifiers",
-          "@type": "untp-core:Identifier"
-        }
-      }
-    },
-    "Coordinate": {
-      "@protected": true,
-      "@id": "untp-core:Coordinate",
-      "@type": "@id",
-      "@context": {
-        "Latitude": {
-          "@id": "untp-core:Latitude",
-          "@type": "xsd:decimal"
-        },
-        "Longditude": {
-          "@id": "untp-core:Longditude",
-          "@type": "xsd:decimal"
+          "@type": "@id"
         }
       }
     },
     "Location": {
       "@protected": true,
       "@id": "untp-core:Location",
-      "@type": "@id",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -132,8 +112,7 @@
         },
         "geoLocation": {
           "@protected": true,
-          "@id": "untp-core:Coordinate",
-          "@type": "@id",
+          "@id": "untp-core:geoLocation",
           "@context": {
             "Latitude": {
               "@id": "untp-core:Latitude",
@@ -147,8 +126,7 @@
         },
         "boundary": {
           "@protected": true,
-          "@id": "untp-core:Coordinate",
-          "@type": "@id",
+          "@id": "untp-core:boundary",
           "@context": {
             "Latitude": {
               "@id": "untp-core:Latitude",
@@ -160,13 +138,12 @@
             }
           }
         },
-        "postalAddress": "schema:PostalAddress"
+        "postalAddress": "schema:postalAddress"
       }
     },
     "Facility": {
       "@protected": true,
       "@id": "untp-core:Facility",
-      "@type": "@id",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -190,26 +167,25 @@
         },
         "processCategory": {
           "@id": "untp-core:processCategory",
-          "@type": "untp-core:Classification"
+          "@type": "@id"
         },
         "operatedBy": {
           "@id": "untp-core:operatedBy",
-          "@type": "untp-core:Party"
+          "@type": "@id"
         },
         "otherIdentifiers": {
           "@id": "untp-core:otherIdentifiers",
-          "@type": "untp-core:Identifier"
+          "@type": "@id"
         },
         "locationInformation": {
           "@id": "untp-core:locationInformation",
-          "@type": "untp-core:Location"
+          "@type": "@id"
         }
       }
     },
     "BinaryFile": {
       "@protected": true,
       "@id": "untp-core:BinaryFile",
-      "@type": "@id",
       "@context": {
         "fileName": {
           "@id": "untp-core:fileName",
@@ -225,131 +201,9 @@
         }
       }
     },
-    "Measure": {
-      "@protected": true,
-      "@id": "untp-core:Measure",
-      "@type": "@id",
-      "@context": {
-        "value": {
-          "@id": "untp-core:value",
-          "@type": "xsd:decimal"
-        },
-        "unit": {
-          "@id": "untp-core:unit",
-          "@type": "@vocab",
-          "@context": {
-            "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-          }
-        }
-      }
-    },
-    "Dimension": {
-      "@protected": true,
-      "@id": "untp-core:Dimension",
-      "@type": "@id",
-      "@context": {
-        "weight": {
-          "@protected": true,
-          "@id": "untp-core:Measure",
-          "@type": "@id",
-          "@context": {
-            "value": {
-              "@id": "untp-core:value",
-              "@type": "xsd:decimal"
-            },
-            "unit": {
-              "@id": "untp-core:unit",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-              }
-            }
-          }
-        },
-        "length": {
-          "@protected": true,
-          "@id": "untp-core:Measure",
-          "@type": "@id",
-          "@context": {
-            "value": {
-              "@id": "untp-core:value",
-              "@type": "xsd:decimal"
-            },
-            "unit": {
-              "@id": "untp-core:unit",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-              }
-            }
-          }
-        },
-        "width": {
-          "@protected": true,
-          "@id": "untp-core:Measure",
-          "@type": "@id",
-          "@context": {
-            "value": {
-              "@id": "untp-core:value",
-              "@type": "xsd:decimal"
-            },
-            "unit": {
-              "@id": "untp-core:unit",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-              }
-            }
-          }
-        },
-        "height": {
-          "@protected": true,
-          "@id": "untp-core:Measure",
-          "@type": "@id",
-          "@context": {
-            "value": {
-              "@id": "untp-core:value",
-              "@type": "xsd:decimal"
-            },
-            "unit": {
-              "@id": "untp-core:unit",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-              }
-            }
-          }
-        },
-        "volume": {
-          "@protected": true,
-          "@id": "untp-core:Measure",
-          "@type": "@id",
-          "@context": {
-            "value": {
-              "@id": "untp-core:value",
-              "@type": "xsd:decimal"
-            },
-            "unit": {
-              "@id": "untp-core:unit",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-              }
-            }
-          }
-        }
-      }
-    },
     "Product": {
       "@protected": true,
       "@id": "untp-core:Product",
-      "@type": "@id",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -374,11 +228,11 @@
         },
         "productImage": {
           "@id": "untp-core:productImage",
-          "@type": "untp-core:BinaryFile"
+          "@type": "@id"
         },
         "productCategory": {
           "@id": "untp-core:productCategory",
-          "@type": "untp-core:Classification"
+          "@type": "@id"
         },
         "furtherInformation": {
           "@id": "untp-core:furtherInformation",
@@ -386,21 +240,19 @@
         },
         "producedBy": {
           "@id": "untp-core:producedBy",
-          "@type": "untp-core:Party"
+          "@type": "@id"
         },
         "producedAt": {
           "@id": "untp-core:producedAt",
-          "@type": "untp-core:Facility"
+          "@type": "@id"
         },
         "dimensions": {
           "@protected": true,
-          "@id": "untp-core:Dimension",
-          "@type": "@id",
+          "@id": "untp-core:dimensions",
           "@context": {
             "weight": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:weight",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -418,8 +270,7 @@
             },
             "length": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:length",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -437,8 +288,7 @@
             },
             "width": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:width",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -456,8 +306,7 @@
             },
             "height": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:height",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -475,8 +324,7 @@
             },
             "volume": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:volume",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -511,7 +359,6 @@
     "SecureBinaryFile": {
       "@protected": true,
       "@id": "untp-core:SecureBinaryFile",
-      "@type": "@id",
       "@context": {
         "fileName": {
           "@id": "untp-core:fileName",
@@ -550,7 +397,6 @@
     "Standard": {
       "@protected": true,
       "@id": "untp-core:Standard",
-      "@type": "@id",
       "@context": {
         "standardName": {
           "@id": "untp-core:standardName",
@@ -558,7 +404,7 @@
         },
         "issuingBody": {
           "@id": "untp-core:issuingBody",
-          "@type": "untp-core:Party"
+          "@type": "@id"
         },
         "issueDate": {
           "@id": "untp-core:issueDate",
@@ -569,7 +415,6 @@
     "Regulation": {
       "@protected": true,
       "@id": "untp-core:Regulation",
-      "@type": "@id",
       "@context": {
         "regulationName": {
           "@id": "untp-core:regulationName",
@@ -577,7 +422,7 @@
         },
         "issuingBody": {
           "@id": "untp-core:issuingBody",
-          "@type": "untp-core:Party"
+          "@type": "@id"
         },
         "effectiveDate": {
           "@id": "untp-core:effectiveDate",
@@ -585,50 +430,17 @@
         }
       }
     },
-    "Metric": {
-      "@protected": true,
-      "@id": "untp-core:Metric",
-      "@type": "@id",
-      "@context": {
-        "metricValue": {
-          "@protected": true,
-          "@id": "untp-core:Measure",
-          "@type": "@id",
-          "@context": {
-            "value": {
-              "@id": "untp-core:value",
-              "@type": "xsd:decimal"
-            },
-            "unit": {
-              "@id": "untp-core:unit",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/unitOfMeasure#"
-              }
-            }
-          }
-        },
-        "accuracy": {
-          "@id": "untp-core:accuracy",
-          "@type": "xsd:decimal"
-        }
-      }
-    },
     "Criteria": {
       "@protected": true,
       "@id": "untp-core:Criteria",
-      "@type": "@id",
       "@context": {
         "thresholdValues": {
           "@protected": true,
-          "@id": "untp-core:Metric",
-          "@type": "@id",
+          "@id": "untp-core:thresholdValues",
           "@context": {
             "metricValue": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:metricValue",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -655,29 +467,26 @@
     "Declaration": {
       "@protected": true,
       "@id": "untp-core:Declaration",
-      "@type": "@id",
       "@context": {
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
-          "@type": "untp-core:Standard"
+          "@type": "@id"
         },
         "referenceRegulation": {
           "@id": "untp-core:referenceRegulation",
-          "@type": "untp-core:Regulation"
+          "@type": "@id"
         },
         "assessmentCriterion": {
           "@id": "untp-core:assessmentCriterion",
-          "@type": "untp-core:Criteria"
+          "@type": "@id"
         },
         "declaredValues": {
           "@protected": true,
-          "@id": "untp-core:Metric",
-          "@type": "@id",
+          "@id": "untp-core:declaredValues",
           "@context": {
             "metricValue": {
               "@protected": true,
-              "@id": "untp-core:Measure",
-              "@type": "@id",
+              "@id": "untp-core:metricValue",
               "@context": {
                 "value": {
                   "@id": "untp-core:value",
@@ -716,7 +525,6 @@
     "Authorisation": {
       "@protected": true,
       "@id": "untp-core:Authorisation",
-      "@type": "@id",
       "@context": {
         "idScheme": {
           "@id": "untp-core:idScheme",
@@ -732,11 +540,11 @@
         },
         "trustmark": {
           "@id": "untp-core:trustmark",
-          "@type": "untp-core:BinaryFile"
+          "@type": "@id"
         },
         "issuingAuthority": {
           "@id": "untp-core:issuingAuthority",
-          "@type": "untp-core:Party"
+          "@type": "@id"
         },
         "accreditationCertificate": {
           "@id": "untp-core:accreditationCertificate",
@@ -747,7 +555,6 @@
     "Attestation": {
       "@protected": true,
       "@id": "untp-core:Attestation",
-      "@type": "@id",
       "@context": {
         "assessorLevel": {
           "@id": "untp-core:assessorLevel",
@@ -775,19 +582,19 @@
         },
         "issuedTo": {
           "@id": "untp-core:issuedTo",
-          "@type": "untp-core:Party"
+          "@type": "@id"
         },
         "accreditation": {
           "@id": "untp-core:accreditation",
-          "@type": "untp-core:Authorisation"
+          "@type": "@id"
         },
         "conformityCertificate": {
           "@id": "untp-core:conformityCertificate",
-          "@type": "untp-core:BinaryFile"
+          "@type": "@id"
         },
         "auditableEvidence": {
           "@id": "untp-core:auditableEvidence",
-          "@type": "untp-core:SecureBinaryFile"
+          "@type": "@id"
         }
       }
     }

@@ -1,7 +1,14 @@
 {
     "label": "idSchemeName",
     "uri": "untp-core:idSchemeName",
-    "comment": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+    "comment": [
+        "The name of the business registration scheme - eg Austrlaian Business Number",
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
+        "removed because this is defiend to be a DID",
+        "the name of the location identifier scheme. Eg Google Pin",
+        "The scheme name of the product identifier - eg SGTIN",
+        "The name given to this authoristion scheme."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -9,28 +16,28 @@
     ],
     "domainIncludes": [
         {
+            "uri": "untp-core:Party",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
+        },
+        {
             "uri": "untp-core:Identifier",
             "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
         },
         {
-            "uri": "untp-core:PartyID",
-            "comment": "The ID and Name of an organisation. Used for lightweight links from other classes."
+            "uri": "untp-core:Facility",
+            "comment": "The physical site (eg farm or factory) where the product or materials was produced."
         },
         {
-            "uri": "untp-core:FacilityID",
-            "comment": "The ID and Name of a facility. Used for lightweight links from other classes."
+            "uri": "untp-core:Location",
+            "comment": "Location information including address and geolocation of points, areas, and boundaries"
         },
         {
-            "uri": "untp-core:LocationID",
-            "comment": "The ID and Name of a location. Used for lightweight links from other classes."
+            "uri": "untp-core:Product",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
         },
         {
-            "uri": "untp-core:ProductID",
-            "comment": "The ID and Name of a product. Used for lightweight links from other classes."
-        },
-        {
-            "uri": "untp-core:AuthorisationID",
-            "comment": "The ID and Name of an authorisation. Used for lightweight links from other classes."
+            "uri": "untp-core:Authorisation",
+            "comment": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. "
         }
     ]
 }

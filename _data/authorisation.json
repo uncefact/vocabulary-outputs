@@ -2,28 +2,47 @@
     "label": "Authorisation",
     "uri": "untp-core:Authorisation",
     "comment": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. ",
-    "subClassOf": "untp-core:AuthorisationID",
     "datatypeProperties": [
         {
             "uri": "untp-core:accreditationCertificate",
             "type": "xsd:string",
-            "comment": "The evidence that supports the authroty under which the attestation is issued - eg an accreditation certificate."
+            "comment": "The evidence that supports the ..."
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A globally unique URI for ..."
+        },
+        {
+            "uri": "untp-core:idScheme",
+            "type": "xsd:string",
+            "comment": "The scheme ID for the ..."
+        },
+        {
+            "uri": "untp-core:idSchemeName",
+            "type": "xsd:string",
+            "comment": "The name of the business ..."
+        },
+        {
+            "uri": "untp-core:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the organisation ..."
         },
         {
             "uri": "untp-core:issuingAuthority",
             "type": "untp-core:PartyID",
-            "comment": "The competent authority that issued the accreditation."
+            "comment": "The competent authority that issued ..."
         },
         {
             "uri": "untp-core:trustmark",
             "type": "untp-core:BinaryFile",
-            "comment": "The trust mark image awarded by the AB to the CAB to indicate accrediation."
+            "comment": "The trust mark image awarded ..."
         }
     ],
     "referencedBy": [
         {
             "uri": "untp-core:accreditation",
-            "comment": "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+            "comment": "The accreditation from a competent ..."
         }
     ]
 }

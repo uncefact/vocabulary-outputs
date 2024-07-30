@@ -2,23 +2,32 @@
     "label": "Regulation",
     "uri": "untp-core:Regulation",
     "comment": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
-    "subClassOf": "untp-core:RegulationID",
     "datatypeProperties": [
         {
             "uri": "untp-core:effectiveDate",
             "type": "xsd:string",
-            "comment": "the date at which the regulation came into effect."
+            "comment": "the date at which the ..."
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A globally unique URI for ..."
         },
         {
             "uri": "untp-core:issuingBody",
             "type": "untp-core:PartyID",
-            "comment": "The party that issued the standard (ID and Name reference only)"
+            "comment": "The party that issued the ..."
+        },
+        {
+            "uri": "untp-core:regulationName",
+            "type": "schema:name",
+            "comment": "The name of the regulation ..."
         }
     ],
     "referencedBy": [
         {
             "uri": "untp-core:referenceRegulation",
-            "comment": "The reference to the regulation that defines the assessment criteria"
+            "comment": "The reference to the regulation ..."
         }
     ]
 }

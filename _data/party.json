@@ -2,33 +2,51 @@
     "label": "Party",
     "uri": "untp-core:Party",
     "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
-    "subClassOf": "untp-core:PartyID",
     "datatypeProperties": [
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A globally unique URI for ..."
+        },
+        {
+            "uri": "untp-core:idScheme",
+            "type": "xsd:string",
+            "comment": "The scheme ID for the ..."
+        },
+        {
+            "uri": "untp-core:idSchemeName",
+            "type": "xsd:string",
+            "comment": "The name of the business ..."
+        },
+        {
+            "uri": "untp-core:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the organisation ..."
+        },
         {
             "uri": "untp-core:industryCategory",
             "type": "untp-core:Classification",
-            "comment": "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme."
+            "comment": "The industry categories for this ..."
         },
         {
             "uri": "untp-core:organisationWebsite",
             "type": "xsd:string",
-            "comment": "Website for this organisation"
+            "comment": "Website for this organisation "
         },
         {
             "uri": "untp-core:otherIdentifiers",
             "type": "untp-core:Identifier",
-            "comment": "An optional lsit of other registered identifiers for this organisations"
+            "comment": "An optional lsit of other ..."
+        },
+        {
+            "uri": "untp-core:partyName",
+            "type": "schema:name",
+            "comment": "The name of the organization ..."
         },
         {
             "uri": "untp-core:registrationCountry",
             "type": "untp-core:countryCode",
-            "comment": "the country in which this organisation is registered"
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "untp-core:issuer",
-            "comment": "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+            "comment": "the country in which this ..."
         }
     ]
 }

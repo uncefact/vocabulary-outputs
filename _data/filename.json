@@ -1,7 +1,10 @@
 {
     "label": "fileName",
     "uri": "untp-core:fileName",
-    "comment": "A name for referenced binary file",
+    "comment": [
+        "A name for referenced binary file",
+        "A name for referenced binary file"
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
@@ -11,6 +14,10 @@
         {
             "uri": "untp-core:BinaryFile",
             "comment": "A file representing a data snapshot that is used to infomr the conformity assessment."
+        },
+        {
+            "uri": "untp-core:SecureBinaryFile",
+            "comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
         }
     ]
 }

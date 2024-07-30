@@ -2,33 +2,57 @@
     "label": "Location",
     "uri": "untp-core:Location",
     "comment": "Location information including address and geolocation of points, areas, and boundaries",
-    "subClassOf": "untp-core:LocationID",
     "datatypeProperties": [
         {
             "uri": "untp-core:areaReference",
             "type": "xsd:string",
-            "comment": "The area of the facility as a URI - typically a plus code (see https://maps.google.com/pluscodes/) "
+            "comment": "The area of the facility ..."
         },
         {
             "uri": "untp-core:boundary",
             "type": "untp-core:Coordinate",
-            "comment": "The list of coordinates that define a closed area polygon as a location boundary."
+            "comment": "The list of coordinates that ..."
         },
         {
             "uri": "untp-core:geoLocation",
             "type": "untp-core:Coordinate",
-            "comment": "The latitude and logditude coordinates that best represent the specified location "
+            "comment": "The latitude and logditude coordinates ..."
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A globally unique URI for ..."
+        },
+        {
+            "uri": "untp-core:idScheme",
+            "type": "xsd:string",
+            "comment": "The scheme ID for the ..."
+        },
+        {
+            "uri": "untp-core:idSchemeName",
+            "type": "xsd:string",
+            "comment": "The name of the business ..."
+        },
+        {
+            "uri": "untp-core:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the organisation ..."
+        },
+        {
+            "uri": "untp-core:locationName",
+            "type": "xsd:string",
+            "comment": "The name of the location. ..."
         },
         {
             "uri": "untp-core:postalAddress",
-            "type": "untp-core:PostalAddress",
-            "comment": "The textual address of the location."
+            "type": "schema:PostalAddress",
+            "comment": "The textual address of the ..."
         }
     ],
     "referencedBy": [
         {
             "uri": "untp-core:locationInformation",
-            "comment": "Geolocation and address information for this facility"
+            "comment": "Geolocation and address information for ..."
         }
     ]
 }
