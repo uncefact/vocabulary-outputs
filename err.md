@@ -1,0 +1,10 @@
+untp-core:Address
+untp-core:Declaration
+untp-core:Location
+untp-core:Classification
+untp-core:CircularityPerformance
+untp-core:Entity
+untp-core:EmissionsPerformance
+untp-core:CredentialIssuer
+xsd:string
+untp-dfr:countryCode

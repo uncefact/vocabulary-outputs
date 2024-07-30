@@ -1,0 +1,392 @@
+{
+  "@context": {
+    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dfr:DigitalFacilityRecord",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A digital verifiable credential hodling faiclity performance inofmration.",
+      "rdfs:label": "DigitalFacilityRecord",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
+    },
+    {
+      "@id": "untp-dfr:Facility",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A facility sustainabiloty performacne record.",
+      "rdfs:label": "Facility",
+      "rdfs:subClassOf": "untp-core:Facility"
+    },
+    {
+      "@id": "untp-dfr:@context",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
+      ],
+      "rdfs:label": "@context"
+    },
+    {
+      "@id": "untp-dfr:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        },
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "A unique identifier (URI) assigned to the product passport. May be a UUID",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dfr:issuer",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:CredentialIssuer"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+      ],
+      "rdfs:label": "issuer"
+    },
+    {
+      "@id": "untp-dfr:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The date and time from which the credential is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "untp-dfr:validUntil",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The expiry date (if applicable) of this verifiable credential."
+      ],
+      "rdfs:label": "validUntil"
+    },
+    {
+      "@id": "untp-dfr:subject",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The subject of a digitial facility record is a Facility "
+      ],
+      "rdfs:label": "subject"
+    },
+    {
+      "@id": "untp-dfr:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dfr:idValue",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
+      ],
+      "rdfs:label": "idValue"
+    },
+    {
+      "@id": "untp-dfr:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dfr:idSchemeName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
+      ],
+      "rdfs:label": "idSchemeName"
+    },
+    {
+      "@id": "untp-dfr:countryOfOperation",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this facility is operating."
+      ],
+      "rdfs:label": "countryOfOperation"
+    },
+    {
+      "@id": "untp-dfr:processCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The idustrial or production processes performed by this facility.    id:unstats.un.org/isic/1030  code:1030  name:Processing and preserving of fruit and vegetables  schemeID:unstats.un.org/unsd/classifications/Econ/isic  schemeName:ISIC"
+      ],
+      "rdfs:label": "processCategory"
+    },
+    {
+      "@id": "untp-dfr:operatedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Entity"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identifiaction scheme. "
+      ],
+      "rdfs:label": "operatedByParty"
+    },
+    {
+      "@id": "untp-dfr:otherIdentifiers",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Entity"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+      ],
+      "rdfs:label": "otherIdentifiers"
+    },
+    {
+      "@id": "untp-dfr:address",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Address"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Postal address of the location."
+      ],
+      "rdfs:label": "address"
+    },
+    {
+      "@id": "untp-dfr:locationInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Location"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "Physical location details"
+      ],
+      "rdfs:label": "locationInformation"
+    },
+    {
+      "@id": "untp-dfr:circularityScoreCard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:CircularityPerformance"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "circularity scorecard"
+      ],
+      "rdfs:label": "circularityScoreCard"
+    },
+    {
+      "@id": "untp-dfr:emissionsScoreCard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:EmissionsPerformance"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "emissions scorecard - according to GHG Protocol"
+      ],
+      "rdfs:label": "emissionsScoreCard"
+    },
+    {
+      "@id": "untp-dfr:conformityDeclarations",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Declaration"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of conformity declarations agains specific criterai from recognised standards or regulations. "
+      ],
+      "rdfs:label": "conformityDeclarations"
+    }
+  ]
+}
