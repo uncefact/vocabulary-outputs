@@ -1,50 +1,27 @@
 {
     "label": "Classification",
-    "uri": "untp-core:Classification",
+    "uri": "untp:Classification",
     "comment": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
     "datatypeProperties": [
         {
-            "uri": "untp-core:code",
+            "uri": "untp:classifierID",
             "type": "xsd:string",
-            "comment": "classification code within the scheme ..."
+            "comment": "Linked data URL to a web vocabulary entery for this classificaiton code. When this property is provided, the scheme, value, and name properties of the classifer are not required.  eg https://vocabulary.uncefact.org/unlocode#AUBNE represensign the port of Brisbane in the UN/LOCODE classification scheme."
         },
         {
-            "uri": "untp-core:id",
+            "uri": "untp:classifierName",
             "type": "xsd:string",
-            "comment": "The W3C DID of the ..."
+            "comment": "Name of the classifier - eg \"Asparagus\" for code \"01211\" in UNCPC"
         },
         {
-            "uri": "untp-core:name",
+            "uri": "untp:classifierValue",
             "type": "xsd:string",
-            "comment": "The name of the issuer ..."
+            "comment": "classifier value within the scheme - eg \"01211\" in UN CPC"
         },
         {
-            "uri": "untp-core:schemeID",
+            "uri": "untp:schemeID",
             "type": "xsd:string",
-            "comment": "Classification scheme ID "
-        },
-        {
-            "uri": "untp-core:schemeName",
-            "type": "xsd:string",
-            "comment": "The name of the classification ..."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "untp-core:industryCategory",
-            "comment": "The industry categories for this ..."
-        },
-        {
-            "uri": "untp-core:materialType",
-            "comment": "The type of this material ..."
-        },
-        {
-            "uri": "untp-core:processCategory",
-            "comment": "The idustrial or production processes ..."
-        },
-        {
-            "uri": "untp-core:productCategory",
-            "comment": "A code representing the product's ..."
+            "comment": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
         }
     ]
 }

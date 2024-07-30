@@ -1,28 +1,22 @@
 {
     "label": "BinaryFile",
-    "uri": "untp-core:BinaryFile",
-    "comment": "A binary file reference including name and filetype",
+    "uri": "untp:BinaryFile",
+    "comment": "A file representing a data snapshot that is used to infomr the conformity assessment.",
     "datatypeProperties": [
         {
-            "uri": "untp-core:file",
+            "uri": "untp:fileHash",
             "type": "xsd:string",
-            "comment": "The binary file data encoded ..."
+            "comment": "The MD5 hash of the file."
         },
         {
-            "uri": "untp-core:fileName",
+            "uri": "untp:fileLocation",
             "type": "xsd:string",
-            "comment": "A name for referenced binary ..."
+            "comment": "The location of the evidence file."
         },
         {
-            "uri": "untp-core:fileType",
-            "type": "untp-core:mimeType",
-            "comment": "The type of file, represented ..."
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "untp-core:trustmark",
-            "comment": "The trust mark image awarded ..."
+            "uri": "untp:fileType",
+            "type": "untp:mimeType",
+            "comment": "The type of file, represented as a MIME type."
         }
     ]
 }

@@ -1,17 +1,20 @@
 {
     "label": "value",
-    "uri": "untp-core:value",
-    "comment": [
-        "The numeric value of the measure"
-    ],
+    "uri": "untp:value",
+    "comment": "A numeric value representing the measurement or evaluation outcome for the claim.",
     "rangeIncludes": [
         {
-            "uri": "xsd:decimal"
+            "uri": "untp:Measure",
+            "comment": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG)."
         }
     ],
     "domainIncludes": [
         {
-            "uri": "untp-core:Measure",
+            "uri": "untp:Metric",
+            "comment": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  "
+        },
+        {
+            "uri": "untp:Measure",
             "comment": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG)."
         }
     ]

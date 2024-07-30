@@ -1,12 +1,8 @@
-Class untp-core:Attestation has no references
-Class untp-core:Characteristic has no references
-Class untp-core:Circularity has no references
-Class untp-core:CredentialIssuer has no references
-Class untp-core:Declaration has no references
-Class untp-core:Facility has no references
-Class untp-core:Material has no references
-Class untp-core:Party has no references
-Class untp-core:Product has no references
-Properties with the names already allocated by classes:
+Class untp:BinaryFile has no references
+Class untp:Classification has no references
+Class untp:Dimension has no references
+Class untp:Facility has no references
+Class untp:Metric has no references
+Class untp:VerifiableCredential has no references
 
 unece:SpecifiedPeriod - null

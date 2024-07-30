@@ -1,0 +1,27 @@
+{
+    "label": "Identifier",
+    "uri": "untp:Identifier",
+    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence ",
+    "datatypeProperties": [
+        {
+            "uri": "untp:identifierScheme",
+            "type": "xsd:string",
+            "comment": "the identifier scheme as defined by the registrar that manages the identifier registry. If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        },
+        {
+            "uri": "untp:identifierValue",
+            "type": "xsd:string",
+            "comment": "The value of the identifier within the scheme"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp:facilityID",
+            "comment": "A unique identifier (URI) assigned to the facility. (Link Resolver - GS1 GLN?)"
+        },
+        {
+            "uri": "untp:partyID",
+            "comment": "The decentralised identifier of the party - must be a W3C DID."
+        }
+    ]
+}

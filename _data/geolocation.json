@@ -1,19 +1,16 @@
 {
     "label": "geoLocation",
-    "uri": "untp-core:geoLocation",
-    "comment": [
-        "The latitude and logditude coordinates that best represent the specified location   \"geoLocation\":[\"-35.186250\",\"149.301250\"]"
-    ],
+    "uri": "untp:geoLocation",
+    "comment": "The gelocation of the facility as a URI - typically a plus code (see https://maps.google.com/pluscodes/) ",
     "rangeIncludes": [
         {
-            "uri": "untp-core:Coordinate",
-            "comment": "A map coordinate defined by a lattitude & longditude pair."
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "untp-core:Location",
-            "comment": "Location information including address and geolocation of points, areas, and boundaries"
+            "uri": "untp:Facility",
+            "comment": "The physical site (eg farm or factory) where the product or materials was produced."
         }
     ]
 }

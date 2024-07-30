@@ -1,52 +1,27 @@
 {
     "label": "Party",
-    "uri": "untp-core:Party",
-    "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
+    "uri": "untp:Party",
+    "comment": "The Party class represents an entity such as an organization, or a company that manufactured the product.",
     "datatypeProperties": [
         {
-            "uri": "untp-core:id",
+            "uri": "untp:name",
             "type": "xsd:string",
-            "comment": "The W3C DID of the ..."
+            "comment": "The name of the organization or company, represented as a text string."
         },
         {
-            "uri": "untp-core:idScheme",
-            "type": "xsd:string",
-            "comment": "The identifier scheme ID. Exampleproduct ..."
+            "uri": "untp:partyID",
+            "type": "untp:Identifier",
+            "comment": "The decentralised identifier of the party - must be a W3C DID."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp:issuer",
+            "comment": "The Party that issued the verifiable credential."
         },
         {
-            "uri": "untp-core:idSchemeName",
-            "type": "xsd:string",
-            "comment": "The name of the identifier ..."
-        },
-        {
-            "uri": "untp-core:idValue",
-            "type": "xsd:string",
-            "comment": "The value of the identifier ..."
-        },
-        {
-            "uri": "untp-core:industryCategory",
-            "type": "untp-core:Classification",
-            "comment": "The industry categories for this ..."
-        },
-        {
-            "uri": "untp-core:name",
-            "type": "xsd:string",
-            "comment": "The name of the issuer ..."
-        },
-        {
-            "uri": "untp-core:organisationWebsite",
-            "type": "xsd:string",
-            "comment": "Website for this organisation "
-        },
-        {
-            "uri": "untp-core:otherIdentifiers",
-            "type": "untp-core:Entity",
-            "comment": "An optional list of other ..."
-        },
-        {
-            "uri": "untp-core:registrationCountry",
-            "type": "untp-core:countryCode",
-            "comment": "the country in which this ..."
+            "uri": "untp:operatedBy",
+            "comment": "The Party entity responsible for operating the facility."
         }
     ]
 }
