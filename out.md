@@ -1,4 +1,3 @@
-Class dpp:ProductPassport has no references
-Properties with the names already allocated by classes:
+Class untp-dpp:DigitalProductPassport has no references
 
 unece:SpecifiedPeriod - null

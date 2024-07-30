@@ -1,23 +1,23 @@
 {
     "label": "TraceabilityEvent",
-    "uri": "dpp:TraceabilityEvent",
+    "uri": "untp-dpp:TraceabilityEvent",
     "comment": "The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference.",
     "datatypeProperties": [
         {
-            "uri": "dpp:eventReference",
+            "uri": "untp-dpp:eventReference",
             "type": "xsd:string",
-            "comment": "A URI pointing to the detailed information about the EPCIS event. Most likely in the form of a verifiable credential."
+            "comment": "A URI pointing to the detailed information about the EPCIS event. SHOULD be a URL lik to a UNTP Digital Traceability Event (DTE)"
         },
         {
-            "uri": "dpp:eventType",
-            "type": "dpp:eventTypeCode",
+            "uri": "untp-dpp:eventType",
+            "type": "untp-dpp:eventTypeCode",
             "comment": "A code representing the type of EPCIS event. ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent, ObjectEvent."
         }
     ],
     "referencedBy": [
         {
-            "uri": "dpp:traceabilityInformation",
-            "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch."
+            "uri": "untp-dpp:traceabilityInformation",
+            "comment": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level."
         }
     ]
 }

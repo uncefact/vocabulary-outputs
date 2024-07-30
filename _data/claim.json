@@ -1,52 +1,57 @@
 {
     "label": "Claim",
-    "uri": "dpp:Claim",
+    "uri": "untp-dpp:Claim",
     "comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim.",
     "datatypeProperties": [
         {
-            "uri": "dpp:benchmarkReference",
+            "uri": "untp-dpp:benchmarkReference",
             "type": "xsd:string",
             "comment": "A refernce to evidence to support the benchmark value."
         },
         {
-            "uri": "dpp:benchmarkValue",
-            "type": "dpp:Metric",
+            "uri": "untp-dpp:benchmarkValue",
+            "type": "untp-dpp:Metric",
             "comment": "A benchmark value against which the claimed value can be assessed. THis could be a value specified by a standard or regulation or could be an industry benchmark."
         },
         {
-            "uri": "dpp:claimedValues",
-            "type": "dpp:Metric",
+            "uri": "untp-dpp:claimedValues",
+            "type": "untp-dpp:Metric",
             "comment": "One or more actual measures supporting the claim. For example for GHG emissions there may be a metric for total emissions intensity and also a metric for amount of offsets included."
         },
         {
-            "uri": "dpp:conformance",
+            "uri": "untp-dpp:conformance",
             "type": "xsd:boolean",
             "comment": "and indicator (boolean) that expresses whether or not this product has achieved compliance against the criteria.  for example, if the topic is environment.deforstation and the criteria is EU.2023.1115 then the product is conformant if it has not touched any facility throughout it's lifecycle that is not deforestation free since dec 2020."
         },
         {
-            "uri": "dpp:conformityEvidence",
-            "type": "dpp:Evidence",
-            "comment": "A URI pointing to the evidence supporting the claim. Most likely in the form of a verifiable credential."
+            "uri": "untp-dpp:conformityEvidence",
+            "type": "xsd:string",
+            "comment": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)"
         },
         {
-            "uri": "dpp:criteriaReference",
+            "uri": "untp-dpp:criteriaName",
+            "type": "xsd:string",
+            "comment": "A human readable display name that describes this confomrity criteria"
+        },
+        {
+            "uri": "untp-dpp:criteriaReference",
             "type": "xsd:string",
             "comment": "A URI pointing to the specific criteria within the standard or regulation against which this claim is made."
         },
         {
-            "uri": "dpp:standardOrRegulation",
+            "uri": "untp-dpp:standardOrRegulation",
             "type": "xsd:string",
             "comment": "The standard or regulation against which this conformity claim is made. Expressed as a URI and should match a value in the UN catalogue of reference vocabularies. "
         },
         {
-            "uri": "dpp:topic",
-            "type": "dpp:conformityTopic",
+            "uri": "untp-dpp:topic",
+            "type": "untp-dpp:conformityTopic",
             "comment": "A code representing the topic of the sustainability claim. E.g. environment.deforestation, environment.ghg-emission-intensity, etc..  Drawn from a standard code list.  "
         }
     ],
     "referencedBy": [
         {
-            "uri": "dpp:conformityClaim",
+            "uri": "untp-dpp:conformityInformation",
             "comment": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
         }
     ]

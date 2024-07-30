@@ -1,37 +1,37 @@
 {
     "label": "Material",
-    "uri": "dpp:Material",
+    "uri": "untp-dpp:Material",
     "comment": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction.",
     "datatypeProperties": [
         {
-            "uri": "dpp:hazardous",
+            "uri": "untp-dpp:hazardous",
             "type": "xsd:boolean",
             "comment": "Indicates whether this material is hazardous. If true then "
         },
         {
-            "uri": "dpp:massFraction",
+            "uri": "untp-dpp:massFraction",
             "type": "xsd:decimal",
             "comment": "A numeric value representing the mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 100."
         },
         {
-            "uri": "dpp:materialType",
-            "type": "dpp:Classification",
+            "uri": "untp-dpp:materialType",
+            "type": "untp-dpp:Classification",
             "comment": "The type of this material - as a value drawn from a controlled vocabulary eg textileexchange.org/materials/rm01014 - representing organic cotton."
         },
         {
-            "uri": "dpp:originCountry",
-            "type": "dpp:countryCode",
+            "uri": "untp-dpp:originCountry",
+            "type": "untp-dpp:countryCode",
             "comment": "A ISO 3166-1 code representing the country of origin of the component or ingredient."
         },
         {
-            "uri": "dpp:recycled",
+            "uri": "untp-dpp:recycled",
             "type": "xsd:boolean",
             "comment": "Indicator is true if this material input is from a recycled source."
         }
     ],
     "referencedBy": [
         {
-            "uri": "dpp:materialsProvenance",
+            "uri": "untp-dpp:materialsProvenance",
             "comment": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
         }
     ]
