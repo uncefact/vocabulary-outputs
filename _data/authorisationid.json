@@ -1,7 +1,7 @@
 {
-    "label": "OrganisationID",
-    "uri": "untp-core:OrganisationID",
-    "comment": "The ID and Name of an organisation. Used for lightweight links from other classes.",
+    "label": "AuthorisationID",
+    "uri": "untp-core:AuthorisationID",
+    "comment": "The ID and Name of an authorisation. Used for lightweight links from other classes.",
     "datatypeProperties": [
         {
             "uri": "untp-core:id",
@@ -22,25 +22,6 @@
             "uri": "untp-core:idValue",
             "type": "xsd:string",
             "comment": "The value of the identifier within the scheme (eg 90664869327)"
-        },
-        {
-            "uri": "untp-core:name",
-            "type": "xsd:string",
-            "comment": "The name of the organization or company, represented as a text string.  SHOULD match the registered name in the identifeir scheme. Eg PYX Industries Pty Ltd"
-        }
-    ],
-    "referencedBy": [
-        {
-            "uri": "untp-core:issuingBody",
-            "comment": "The party that issued the standard (ID and Name reference only)"
-        },
-        {
-            "uri": "untp-core:operatedBy",
-            "comment": "The Party entity responsible for operating the facility."
-        },
-        {
-            "uri": "untp-core:producedBy",
-            "comment": "The Party entity that manufactured the product."
         }
     ]
 }

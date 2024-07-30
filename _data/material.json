@@ -1,0 +1,42 @@
+{
+    "label": "Material",
+    "uri": "untp-core:Material",
+    "comment": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:MaterialName",
+            "type": "xsd:string",
+            "comment": "Name of this material (eg \"Egyptian Cotton\")"
+        },
+        {
+            "uri": "untp-core:hazardous",
+            "type": "xsd:boolean",
+            "comment": "Indicates whether this material is hazardous. If true then the materialSafetyInformation proerty must be present"
+        },
+        {
+            "uri": "untp-core:massFraction",
+            "type": "xsd:decimal",
+            "comment": "A numeric value representing the mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 100."
+        },
+        {
+            "uri": "untp-core:materialSafetyInformation",
+            "type": "xsd:string",
+            "comment": "Refernece to further information obout safe handling of this hazardous material (for example a link to a material safety data sheet)"
+        },
+        {
+            "uri": "untp-core:materialType",
+            "type": "untp-core:Classification",
+            "comment": "The type of this material - as a value drawn from a controlled vocabulary eg textileexchange.org/materials/rm01014 - representing organic cotton."
+        },
+        {
+            "uri": "untp-core:originCountry",
+            "type": "untp-core:countryCode",
+            "comment": "A ISO 3166-1 code representing the country of origin of the component or ingredient."
+        },
+        {
+            "uri": "untp-core:recycledAmount",
+            "type": "xsd:decimal",
+            "comment": "Percentage of this material that is recycled (eg 80% recycled Cotton)"
+        }
+    ]
+}

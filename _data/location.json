@@ -5,11 +5,6 @@
     "subClassOf": "untp-core:LocationID",
     "datatypeProperties": [
         {
-            "uri": "untp-core:address",
-            "type": "xsd:string",
-            "comment": "The textual address of the location."
-        },
-        {
             "uri": "untp-core:areaReference",
             "type": "xsd:string",
             "comment": "The area of the facility as a URI - typically a plus code (see https://maps.google.com/pluscodes/) "
@@ -23,6 +18,11 @@
             "uri": "untp-core:geoLocation",
             "type": "untp-core:Coordinate",
             "comment": "The latitude and logditude coordinates that best represent the specified location "
+        },
+        {
+            "uri": "untp-core:postalAddress",
+            "type": "untp-core:PostalAddress",
+            "comment": "The textual address of the location."
         }
     ],
     "referencedBy": [

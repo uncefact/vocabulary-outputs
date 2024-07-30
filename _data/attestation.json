@@ -1,0 +1,52 @@
+{
+    "label": "Attestation",
+    "uri": "untp-core:Attestation",
+    "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:accreditation",
+            "type": "untp-core:Authorisation",
+            "comment": "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+        },
+        {
+            "uri": "untp-core:assessmentLevel",
+            "type": "untp-core:assessmentAssuranceCode",
+            "comment": "Assurance pertaining to assessment (any authority or support for the assessment process)"
+        },
+        {
+            "uri": "untp-core:assessorLevel",
+            "type": "untp-core:assessorAssuranceCode",
+            "comment": "Assurance code pertaining to assessor (relation to the object under assessment)"
+        },
+        {
+            "uri": "untp-core:attestationDescription",
+            "type": "xsd:string",
+            "comment": "A textual description of the scope or purpose of this confomrity attestation"
+        },
+        {
+            "uri": "untp-core:attestationType",
+            "type": "untp-core:attestationTypeCode",
+            "comment": "The type of criterion (optional or mandatory)."
+        },
+        {
+            "uri": "untp-core:auditableEvidence",
+            "type": "untp-core:SecureBinaryFile",
+            "comment": "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usally private data and would normally be encrypted."
+        },
+        {
+            "uri": "untp-core:conformityCertificate",
+            "type": "untp-core:BinaryFile",
+            "comment": "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+        },
+        {
+            "uri": "untp-core:issuedTo",
+            "type": "untp-core:PartyID",
+            "comment": "The party to whom the conformity attestation was issued."
+        }
+    ]
+}
