@@ -5,8 +5,8 @@ type: default
 class: white
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UNTP B2B Digital Product Passport Vocabulary</h1>
-    <p class="home-content__description">A data model for a digital product passport that is designed to provide traceability & transparency into supply chains - with a focus on sustainability measures and outcomes.</p>
+    <h1 class="home-content__title">UNTP Digital Facility Record Vocabulary</h1>
+    <p class="home-content__description">A facility level record of sustainability performance.</p>
     <div class="search-block">
         <form action="{{ '/search' | prepend: site.baseurl }}" method="get" class="search-block">
             <div class="search-block__container">
@@ -40,9 +40,9 @@ class: white
                     <p class="browse-type__description">List of Digital Product Passport Classes</p>
                     <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
                 </div>
-                {% if site.versions.untp-dpp %}
+                {% if site.versions.untp-dfr %}
                     <span class="browse-type__version">
-                        {{ site.versions.untp-dpp }}
+                        {{ site.versions.untp-dfr }}
                     </span>
                 {% endif %}
             </li>
@@ -62,9 +62,9 @@ class: white
                     <p class="browse-type__description">List of Digital Product Passport Properties</p>
                     <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
                 </div>
-                {% if site.versions.untp-dpp %}
+                {% if site.versions.untp-dfr %}
                     <span class="browse-type__version">
-                        {{ site.versions.untp-dpp }}
+                        {{ site.versions.untp-dfr }}
                     </span>
                 {% endif %}
             </li>
@@ -84,9 +84,9 @@ class: white
                     <p class="browse-type__description">List of Digital Product Passport Codes</p>
                     <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
                 </div>
-                {% if site.versions.untp-dpp %}
+                {% if site.versions.untp-dfr %}
                     <span class="browse-type__version">
-                        {{ site.versions.untp-dpp }}
+                        {{ site.versions.untp-dfr }}
                     </span>
                 {% endif %}
             </li>
@@ -95,7 +95,7 @@ class: white
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="{{ 'untp-dpp-context.jsonld' | absolute_url }}">{{ '/untp-dpp-context.jsonld'| prepend: site.baseurl | prepend: site.dest }}</a>
+            <a class="link-box" href="{{ 'untp-dfr-context.jsonld' | absolute_url }}">{{ '/untp-dfr-context.jsonld'| prepend: site.baseurl | prepend: site.dest }}</a>
         </p>
         
         <h2 class="home-content__subtitle">Content Negotiation</h2>
@@ -113,7 +113,7 @@ class: white
         <h2 class="home-content__subtitle">JSON Shcemas</h2>
         <p>JSON Schema files are available here:</p>
         <p>
-            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/dpp/dpp-schema.json">https://test.uncefact.org/vocabulary/untp/dpp/dpp-schema.json</a>
+            <a class="link-box" href="https://test.uncefact.org/vocabulary/untp/dfr/dfr-schema.json">https://test.uncefact.org/vocabulary/untp/dfr/dfr-schema.json</a>
         </p>
     </div>
 </div>
