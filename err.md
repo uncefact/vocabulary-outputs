@@ -1,12 +1,13 @@
 untp-core:assessorLevelCode
+untp-core:countryCode
+untp-core:hashMethodCode
+untp-core:operationalScopeCode
 untp-core:unitOfMeasure
 untp-core:encryptionMethodCode
 untp-core:attestationTypeCode
 untp-core:conformityTopicCode
 untp-core:mimeType
-untp-core:countryCode
 xsd:boolean
 xsd:string
 xsd:decimal
 untp-core:assessmentLevelCode
-untp-core:hashMethodCode

@@ -17,7 +17,7 @@
     {
       "@id": "untp-core:Entity",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc",
+      "rdfs:comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id peroperty SHOULD be an identity resolver URL.",
       "rdfs:label": "Entity"
     },
     {
@@ -117,10 +117,10 @@
       "rdfs:label": "Regulation"
     },
     {
-      "@id": "untp-core:Criteria",
+      "@id": "untp-core:Criterion",
       "@type": "rdfs:Class",
       "rdfs:comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
-      "rdfs:label": "Criteria"
+      "rdfs:label": "Criterion"
     },
     {
       "@id": "untp-core:Material",
@@ -129,15 +129,21 @@
       "rdfs:label": "Material"
     },
     {
-      "@id": "untp-core:Circularity",
+      "@id": "untp-core:CircularityPerformance",
       "@type": "rdfs:Class",
       "rdfs:comment": "High level corcularity information about this product.  Note that this doens not substitute for detailed product circularity data sheet (PCDS) criteria which would be represented as a set of conformity claims against individual ISO PCDS criteria.",
-      "rdfs:label": "Circularity"
+      "rdfs:label": "CircularityPerformance"
+    },
+    {
+      "@id": "untp-core:EmissionsPerformance",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity.",
+      "rdfs:label": "EmissionsPerformance"
     },
     {
       "@id": "untp-core:Characteristic",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity.",
+      "rdfs:comment": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc.",
       "rdfs:label": "Characteristic"
     },
     {
@@ -193,7 +199,7 @@
           "@id": "untp-core:Regulation"
         },
         {
-          "@id": "untp-core:Criteria"
+          "@id": "untp-core:Criterion"
         },
         {
           "@id": "untp-core:Attestation"
@@ -204,12 +210,12 @@
       ],
       "rdfs:comment": [
         "The W3C DID of the issuer - should be a did:web or did:tdw",
-        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
-        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "The globally unique URI representing the specific classifier value",
-        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "The globally unique identiifer of this geographic location. Typically a google pin.",
-        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
         "The globally unique identifier of this regulation. ",
@@ -254,7 +260,7 @@
           "@id": "untp-core:Regulation"
         },
         {
-          "@id": "untp-core:Criteria"
+          "@id": "untp-core:Criterion"
         },
         {
           "@id": "untp-core:Material"
@@ -268,11 +274,11 @@
       ],
       "rdfs:comment": [
         "The name of the issuer person or organisation",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
         "Name of the classification represented by the code",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
         "The name of the standard",
         "The name of the regulation or act.",
         "A name that describes this criteria.",
@@ -470,29 +476,6 @@
         "The type of the target resource - drawn from a controlled vocabulary "
       ],
       "rdfs:label": "linkType"
-    },
-    {
-      "@id": "untp-core:targetType",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:mimeType"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Link"
-        },
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The MIME type of the target ressource.",
-        "The MIME type of the target ressource."
-      ],
-      "rdfs:label": "targetType"
     },
     {
       "@id": "untp-core:registrationCountry",
@@ -1445,9 +1428,9 @@
       "rdfs:label": "referenceRegulation"
     },
     {
-      "@id": "untp-core:assessmentCriterion",
+      "@id": "untp-core:assessmentCriteria",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Criteria"
+        "@id": "untp-core:Criterion"
       },
       "@type": [
         "rdf:Property",
@@ -1461,7 +1444,7 @@
       "rdfs:comment": [
         "The specification against which the assessment is made."
       ],
-      "rdfs:label": "assessmentCriterion"
+      "rdfs:label": "assessmentCriteria"
     },
     {
       "@id": "untp-core:declaredValues",
@@ -1626,7 +1609,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Criteria"
+          "@id": "untp-core:Criterion"
         }
       ],
       "rdfs:comment": [
@@ -1668,7 +1651,7 @@
         }
       ],
       "rdfs:comment": [
-        "The type of this material - as a value drawn from a controlled vocabulary eg textileexchange.org/materials/rm01014 - representing organic cotton."
+        "The type of this material - as a value drawn from a controlled vocabulary eg from UN Framework Classification for Resources (UNFC)."
       ],
       "rdfs:label": "materialType"
     },
@@ -1687,7 +1670,7 @@
         }
       ],
       "rdfs:comment": [
-        "A numeric value representing the mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 100."
+        "The mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 1."
       ],
       "rdfs:label": "massFraction"
     },
@@ -1706,7 +1689,7 @@
         }
       ],
       "rdfs:comment": [
-        "Percentage of this material that is recycled (eg 80% recycled Cotton)"
+        "Mass fraction of this material that is recycled (eg 50% recycled Lithium)"
       ],
       "rdfs:label": "recycledAmount"
     },
@@ -1751,15 +1734,15 @@
     {
       "@id": "untp-core:recyclingInformation",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Circularity"
+          "@id": "untp-core:CircularityPerformance"
         }
       ],
       "rdfs:comment": [
@@ -1770,15 +1753,15 @@
     {
       "@id": "untp-core:repairInformation",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Circularity"
+          "@id": "untp-core:CircularityPerformance"
         }
       ],
       "rdfs:comment": [
@@ -1797,11 +1780,11 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Circularity"
+          "@id": "untp-core:CircularityPerformance"
         }
       ],
       "rdfs:comment": [
-        "The percentage of the this product (my mass) that has been designed to be recyclable."
+        "The fraction of the this product (my mass) that has been designed to be recyclable / re-usable. This will be be the total fraction that can avoid waste / landfill."
       ],
       "rdfs:label": "recyclableContent"
     },
@@ -1816,13 +1799,146 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Circularity"
+          "@id": "untp-core:CircularityPerformance"
         }
       ],
       "rdfs:comment": [
-        "The percentage (by mass) of recycled content in this product"
+        "The fraction (by mass) of recycled / repurposed, repaired content in this product.  This will be the total virgin content fraction."
       ],
       "rdfs:label": "recyecledContent"
+    },
+    {
+      "@id": "untp-core:utilityFactor",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "An indicator of durability defined as the lifetime (typically measures as usage cycles) for this product divided by the industry average. For example a battery with a 10,000 cycle lifetime where industry average is 5,000 cycles will have a durability factor of 2. If unknown set to 1 or omit.  "
+      ],
+      "rdfs:label": "utilityFactor"
+    },
+    {
+      "@id": "untp-core:materialCircularityIndicator",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The overall circularity performance indicator for this product. Calculated as 1 - (V+W)/2D where - V = Virgin material proportion by mass (will be 1- recycled content) - W = Waste leakage proportion by mass (will be 1 - recyclableContent)  - D = Utility factor (set to 1 if unknown)."
+      ],
+      "rdfs:label": "materialCircularityIndicator"
+    },
+    {
+      "@id": "untp-core:carbonFootprint",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The carbon footprint of the product in KgCO2e per declared unit."
+      ],
+      "rdfs:label": "carbonFootprint"
+    },
+    {
+      "@id": "untp-core:declaredUnit",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:unitOfMeasure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The unit of product (EA, KGM, LTR, etc) that is the basis for carbon footprint."
+      ],
+      "rdfs:label": "declaredUnit"
+    },
+    {
+      "@id": "untp-core:operationalScope",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:operationalScopeCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The operational scope of the emissions performance. Only scope 1 & 2, or inlcuing upstream scope 3 (cradle to gate) or upstream and downstream scope 3 (cradle to grave)."
+      ],
+      "rdfs:label": "operationalScope"
+    },
+    {
+      "@id": "untp-core:primarySourcedRatio",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The ratio of emissions data from primary sources (ie from supplier / product specific information rather than secondary / industry averages)."
+      ],
+      "rdfs:label": "primarySourcedRatio"
+    },
+    {
+      "@id": "untp-core:reportingStandard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Standard"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The reporting standard (eg GHG Protocol, IFRS S2, ESRS, etc) against which this product emissions performance is assessed."
+      ],
+      "rdfs:label": "reportingStandard"
     },
     {
       "@id": "untp-core:assessorLevel",
@@ -2017,11 +2133,11 @@
     {
       "@id": "untp-core:accreditationCertificate",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -2263,6 +2379,27 @@
       "@type": "untp-core:hashMethodCode",
       "untp-core:Name": "SHA-1",
       "rdf:value": "Secure Hash Algorithm 160 bits",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-core:operationalScopeCode#Scope12",
+      "@type": "untp-core:operationalScopeCode",
+      "untp-core:Name": "Scope12",
+      "rdf:value": "Excludes cope 3",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-core:operationalScopeCode#Scope123toGate",
+      "@type": "untp-core:operationalScopeCode",
+      "untp-core:Name": "Scope123toGate",
+      "rdf:value": "Includes upstream scope 3",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-core:operationalScopeCode#Scope123toGrave",
+      "@type": "untp-core:operationalScopeCode",
+      "untp-core:Name": "Scope123toGrave",
+      "rdf:value": "includes upstream and downstream scope 3",
       "rdfs:comment": null
     }
   ]

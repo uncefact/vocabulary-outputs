@@ -1,27 +1,37 @@
 {
-    "label": "Circularity",
-    "uri": "untp-core:Circularity",
+    "label": "CircularityPerformance",
+    "uri": "untp-core:CircularityPerformance",
     "comment": "High level corcularity information about this product.  Note that this doens not substitute for detailed product circularity data sheet (PCDS) criteria which would be represented as a set of conformity claims against individual ISO PCDS criteria.",
     "datatypeProperties": [
         {
+            "uri": "untp-core:materialCircularityIndicator",
+            "type": "xsd:decimal",
+            "comment": "The overall circularity performance indicator ..."
+        },
+        {
             "uri": "untp-core:recyclableContent",
             "type": "xsd:decimal",
-            "comment": "The percentage of the this ..."
+            "comment": "The fraction of the this ..."
         },
         {
             "uri": "untp-core:recyclingInformation",
-            "type": "xsd:string",
+            "type": "untp-core:Link",
             "comment": "A URI pointing to recycling ..."
         },
         {
             "uri": "untp-core:recyecledContent",
             "type": "xsd:decimal",
-            "comment": "The percentage (by mass) of ..."
+            "comment": "The fraction (by mass) of ..."
         },
         {
             "uri": "untp-core:repairInformation",
-            "type": "xsd:string",
+            "type": "untp-core:Link",
             "comment": "A URI pointing to repair ..."
+        },
+        {
+            "uri": "untp-core:utilityFactor",
+            "type": "xsd:decimal",
+            "comment": "An indicator of durability defined ..."
         }
     ]
 }

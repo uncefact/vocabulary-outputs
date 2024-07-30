@@ -43,14 +43,6 @@
         "linkType": {
           "@id": "untp-core:linkType",
           "@type": "xsd:string"
-        },
-        "targetType": {
-          "@id": "untp-core:targetType",
-          "@type": "@vocab",
-          "@context": {
-            "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/mimeType#"
-          }
         }
       }
     },
@@ -390,14 +382,6 @@
           "@id": "untp-core:linkType",
           "@type": "xsd:string"
         },
-        "targetType": {
-          "@id": "untp-core:targetType",
-          "@type": "@vocab",
-          "@context": {
-            "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/mimeType#"
-          }
-        },
         "targetHash": {
           "@id": "untp-core:targetHash",
           "@type": "xsd:string"
@@ -464,9 +448,9 @@
         }
       }
     },
-    "Criteria": {
+    "Criterion": {
       "@protected": true,
-      "@id": "untp-core:Criteria",
+      "@id": "untp-core:Criterion",
       "@context": {
         "thresholdValues": {
           "@protected": true,
@@ -514,8 +498,8 @@
           "@id": "untp-core:referenceRegulation",
           "@type": "@id"
         },
-        "assessmentCriterion": {
-          "@id": "untp-core:assessmentCriterion",
+        "assessmentCriteria": {
+          "@id": "untp-core:assessmentCriteria",
           "@type": "@id"
         },
         "declaredValues": {
@@ -596,7 +580,7 @@
         },
         "accreditationCertificate": {
           "@id": "untp-core:accreditationCertificate",
-          "@type": "xsd:string"
+          "@type": "@id"
         }
       }
     },
