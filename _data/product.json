@@ -2,6 +2,7 @@
     "label": "Product",
     "uri": "untp-dpp:Product",
     "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
+    "subClassOf": "untp-core:Product",
     "datatypeProperties": [
         {
             "uri": "untp-dpp:batchNumber",
@@ -14,13 +15,13 @@
             "comment": "Product specific characteristics. This class ..."
         },
         {
-            "uri": "untp-dpp:circularityInformation",
-            "type": "untp-core:Circularity",
-            "comment": "A URI pointing to information ..."
+            "uri": "untp-dpp:circularityScorecard",
+            "type": "untp-core:CircularityPerformance",
+            "comment": "A circularity performance scorecard "
         },
         {
-            "uri": "untp-dpp:conformityInformation",
-            "type": "untp-dpp:Claim",
+            "uri": "untp-dpp:conformityDeclarations",
+            "type": "untp-dpp:Declaration",
             "comment": "An array of claim objects ..."
         },
         {
@@ -37,6 +38,11 @@
             "uri": "untp-dpp:dimensions",
             "type": "untp-core:Dimension",
             "comment": "The physical dimensions of the ..."
+        },
+        {
+            "uri": "untp-dpp:emissionsScorecard",
+            "type": "untp-core:EmissionsPerformance",
+            "comment": "An emissions performacne scorecard "
         },
         {
             "uri": "untp-dpp:furtherInformation",

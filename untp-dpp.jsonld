@@ -13,19 +13,22 @@
       "@id": "untp-dpp:DigitalProductPassport",
       "@type": "rdfs:Class",
       "rdfs:comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provernance information, circularity information and a set of verifable product confomrity & sistainability claims.  ",
-      "rdfs:label": "DigitalProductPassport"
+      "rdfs:label": "DigitalProductPassport",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
       "@id": "untp-dpp:Product",
       "@type": "rdfs:Class",
       "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
-      "rdfs:label": "Product"
+      "rdfs:label": "Product",
+      "rdfs:subClassOf": "untp-core:Product"
     },
     {
-      "@id": "untp-dpp:Claim",
+      "@id": "untp-dpp:Declaration",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim.",
-      "rdfs:label": "Claim"
+      "rdfs:comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
+      "rdfs:label": "Declaration",
+      "rdfs:subClassOf": "untp-core:Declaration"
     },
     {
       "@id": "untp-dpp:TraceabilityEvent",
@@ -69,12 +72,12 @@
           "@id": "untp-dpp:Product"
         },
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
-        "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
@@ -170,7 +173,7 @@
         }
       ],
       "rdfs:comment": [
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory"
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
       ],
       "rdfs:label": "name"
     },
@@ -479,9 +482,9 @@
       "rdfs:label": "materialsProvenance"
     },
     {
-      "@id": "untp-dpp:conformityInformation",
+      "@id": "untp-dpp:conformityDeclarations",
       "schema:rangeIncludes": {
-        "@id": "untp-dpp:Claim"
+        "@id": "untp-dpp:Declaration"
       },
       "@type": [
         "rdf:Property",
@@ -495,12 +498,12 @@
       "rdfs:comment": [
         "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
       ],
-      "rdfs:label": "conformityInformation"
+      "rdfs:label": "conformityDeclarations"
     },
     {
-      "@id": "untp-dpp:circularityInformation",
+      "@id": "untp-dpp:circularityScorecard",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Circularity"
+        "@id": "untp-core:CircularityPerformance"
       },
       "@type": [
         "rdf:Property",
@@ -512,9 +515,28 @@
         }
       ],
       "rdfs:comment": [
-        "A URI pointing to information regarding the recycling aspects of the product."
+        "A circularity performance scorecard"
       ],
-      "rdfs:label": "circularityInformation"
+      "rdfs:label": "circularityScorecard"
+    },
+    {
+      "@id": "untp-dpp:emissionsScorecard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:EmissionsPerformance"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "An emissions performacne scorecard"
+      ],
+      "rdfs:label": "emissionsScorecard"
     },
     {
       "@id": "untp-dpp:traceabilityInformation",
@@ -546,7 +568,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
@@ -565,7 +587,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
@@ -574,9 +596,9 @@
       "rdfs:label": "referenceRegulation"
     },
     {
-      "@id": "untp-dpp:assessmentCriterion",
+      "@id": "untp-dpp:assessmentCriteria",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Criteria"
+        "@id": "untp-core:Criterion"
       },
       "@type": [
         "rdf:Property",
@@ -584,13 +606,13 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
         "The specification against which the assessment is made."
       ],
-      "rdfs:label": "assessmentCriterion"
+      "rdfs:label": "assessmentCriteria"
     },
     {
       "@id": "untp-dpp:declaredValues",
@@ -603,7 +625,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
@@ -622,7 +644,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
@@ -641,7 +663,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [
@@ -650,47 +672,9 @@
       "rdfs:label": "conformityTopic"
     },
     {
-      "@id": "untp-dpp:benchmarkValue",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Metric"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "A benchmark value against which the claimed value can be assessed. THis could be a value specified by a standard or regulation or could be an industry benchmark."
-      ],
-      "rdfs:label": "benchmarkValue"
-    },
-    {
-      "@id": "untp-dpp:benchmarkReference",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "A refernce to evidence to support the benchmark value."
-      ],
-      "rdfs:label": "benchmarkReference"
-    },
-    {
       "@id": "untp-dpp:conformityEvidence",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Link"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
@@ -698,7 +682,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Claim"
+          "@id": "untp-dpp:Declaration"
         }
       ],
       "rdfs:comment": [

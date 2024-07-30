@@ -43,14 +43,6 @@
         "linkType": {
           "@id": "untp-core:linkType",
           "@type": "xsd:string"
-        },
-        "targetType": {
-          "@id": "untp-core:targetType",
-          "@type": "@vocab",
-          "@context": {
-            "@protected": true,
-            "@vocab": "undefinedmimeType#"
-          }
         }
       }
     },
@@ -120,9 +112,9 @@
         }
       }
     },
-    "Criteria": {
+    "Criterion": {
       "@protected": true,
-      "@id": "untp-core:Criteria",
+      "@id": "untp-core:Criterion",
       "@context": {
         "thresholdValues": {
           "@protected": true,
@@ -158,9 +150,9 @@
         }
       }
     },
-    "Claim": {
+    "Declaration": {
       "@protected": true,
-      "@id": "untp-dpp:Claim",
+      "@id": "untp-core:Declaration",
       "@context": {
         "referenceStandard": {
           "@id": "untp-dpp:referenceStandard",
@@ -170,8 +162,8 @@
           "@id": "untp-dpp:referenceRegulation",
           "@type": "@id"
         },
-        "assessmentCriterion": {
-          "@id": "untp-dpp:assessmentCriterion",
+        "assessmentCriteria": {
+          "@id": "untp-dpp:assessmentCriteria",
           "@type": "@id"
         },
         "declaredValues": {
@@ -207,23 +199,17 @@
           }
         },
         "compliance": {
-          "@id": "untp-dpp:compliance",
+          "@id": "untp-core:compliance",
           "@type": "xsd:boolean"
         },
         "conformityTopic": {
-          "@id": "untp-dpp:conformityTopic",
+          "@id": "untp-core:conformityTopic",
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/conformityTopicCode#"
+            "@vocab": "undefinedconformityTopicCode#"
           }
-        },
-        "benchmarkValue": "untp-core:benchmarkValue",
-        "benchmarkReference": {
-          "@id": "untp-dpp:benchmarkReference",
-          "@type": "xsd:string"
-        },
-        "conformityEvidence": "untp-core:conformityEvidence"
+        }
       }
     },
     "Product": {
@@ -402,64 +388,36 @@
         }
       }
     },
-    "Declaration": {
+    "SecureLink": {
       "@protected": true,
-      "@id": "untp-core:Declaration",
+      "@id": "untp-core:SecureLink",
       "@context": {
-        "referenceStandard": {
-          "@id": "untp-dpp:referenceStandard",
-          "@type": "@id"
+        "linkName": {
+          "@id": "untp-core:linkName",
+          "@type": "xsd:string"
         },
-        "referenceRegulation": {
-          "@id": "untp-dpp:referenceRegulation",
-          "@type": "@id"
+        "linkType": {
+          "@id": "untp-core:linkType",
+          "@type": "xsd:string"
         },
-        "assessmentCriterion": {
-          "@id": "untp-dpp:assessmentCriterion",
-          "@type": "@id"
+        "targetHash": {
+          "@id": "untp-core:targetHash",
+          "@type": "xsd:string"
         },
-        "declaredValues": {
-          "@protected": true,
-          "@id": "untp-core:declaredValues",
-          "@context": {
-            "metricName": {
-              "@id": "untp-core:metricName",
-              "@type": "xsd:string"
-            },
-            "metricValue": {
-              "@protected": true,
-              "@id": "untp-core:metricValue",
-              "@context": {
-                "value": {
-                  "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
-                },
-                "unit": {
-                  "@id": "untp-core:unit",
-                  "@type": "@vocab",
-                  "@context": {
-                    "@protected": true,
-                    "@vocab": "undefinedunitOfMeasure#"
-                  }
-                }
-              }
-            },
-            "accuracy": {
-              "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
-            }
-          }
-        },
-        "compliance": {
-          "@id": "untp-core:compliance",
-          "@type": "xsd:boolean"
-        },
-        "conformityTopic": {
-          "@id": "untp-core:conformityTopic",
+        "hashMethod": {
+          "@id": "untp-core:hashMethod",
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "undefinedconformityTopicCode#"
+            "@vocab": "undefinedhashMethodCode#"
+          }
+        },
+        "encryptionMethod": {
+          "@id": "untp-core:encryptionMethod",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedencryptionMethodCode#"
           }
         }
       }

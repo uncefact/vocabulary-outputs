@@ -1,11 +1,13 @@
-untp-core:Circularity
 untp-core:Material
 untp-core:Entity
 untp-core:Dimension
+untp-core:EmissionsPerformance
 untp-dpp:conformityTopicCode
+untp-core:SecureLink
 untp-core:Link
 untp-core:Classification
-untp-core:Criteria
+untp-core:CircularityPerformance
+untp-core:Criterion
 untp-dpp:countryCode
 untp-core:Metric
 untp-core:Standard

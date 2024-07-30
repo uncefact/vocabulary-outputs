@@ -1,22 +1,13 @@
 {
-    "label": "Claim",
-    "uri": "untp-dpp:Claim",
-    "comment": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim.",
+    "label": "Declaration",
+    "uri": "untp-dpp:Declaration",
+    "comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
+    "subClassOf": "untp-core:Declaration",
     "datatypeProperties": [
         {
-            "uri": "untp-dpp:assessmentCriterion",
-            "type": "untp-core:Criteria",
+            "uri": "untp-dpp:assessmentCriteria",
+            "type": "untp-core:Criterion",
             "comment": "The specification against which the ..."
-        },
-        {
-            "uri": "untp-dpp:benchmarkReference",
-            "type": "xsd:string",
-            "comment": "A refernce to evidence to ..."
-        },
-        {
-            "uri": "untp-dpp:benchmarkValue",
-            "type": "untp-core:Metric",
-            "comment": "A benchmark value against which ..."
         },
         {
             "uri": "untp-dpp:compliance",
@@ -25,7 +16,7 @@
         },
         {
             "uri": "untp-dpp:conformityEvidence",
-            "type": "untp-core:Link",
+            "type": "untp-core:SecureLink",
             "comment": "A URI pointing to the ..."
         },
         {
@@ -56,7 +47,7 @@
     ],
     "referencedBy": [
         {
-            "uri": "untp-dpp:conformityInformation",
+            "uri": "untp-dpp:conformityDeclarations",
             "comment": "An array of claim objects ..."
         }
     ]

@@ -1,0 +1,631 @@
+{
+  "type": [
+    "DigitalProductPassport",
+    "VerifiableCredential"
+  ],
+  "@context": [
+    [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://test.uncefact.org/vocabulary/untp/dpp/"
+    ],
+    [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://test.uncefact.org/vocabulary/untp/dpp/"
+    ]
+  ],
+  "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "did:web:identifiers.example-company.com:12345",
+    "name": "Example Company Pty Ltd",
+    "otherIdentifiers": [
+      {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://id.gs1.org/01/09520123456788/21/12345",
+        "name": "EV battery 50kWh.",
+        "idValue": "9520123.456788",
+        "idScheme": "https://id.gs1.org/01.",
+        "idSchemeName": "GS1 SGTIN"
+      },
+      {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://id.gs1.org/01/09520123456788/21/12345",
+        "name": "EV battery 50kWh.",
+        "idValue": "9520123.456788",
+        "idScheme": "https://id.gs1.org/01.",
+        "idSchemeName": "GS1 SGTIN"
+      }
+    ]
+  },
+  "validFrom": 2024,
+  "validUntil": 2034,
+  "credentialSubject": {
+    "type": [
+      "Product",
+      "Entity"
+    ],
+    "id": "https://id.gs1.org/01/09520123456788/21/12345",
+    "name": "EV battery 50kWh.",
+    "idValue": "9520123.456788",
+    "idScheme": "https://id.gs1.org/01.",
+    "idSchemeName": "GS1 SGTIN",
+    "serialNumber": "12345",
+    "batchNumber": "6789",
+    "productImage": {
+      "type": [
+        "Link"
+      ],
+      "linkURL": "https://files.example-certifier.com/1234567.json",
+      "linkName": "Guarantee of Origin Certificate",
+      "linkType": "untp.dcc"
+    },
+    "description": "Big and tender Great Northen Beans in tasty tomato sauce. These beans are rich in fiber and low in fat. Fiber rich food helps to maintain a healthier digestive system & reduces cholesterol.",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
+        "code": "AUSYD",
+        "name": "Port of Sydney",
+        "schemeID": "https://vocabulary.uncefact.org/unlocode",
+        "schemeName": "UN/LOCODE"
+      },
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
+        "code": "AUSYD",
+        "name": "Port of Sydney",
+        "schemeID": "https://vocabulary.uncefact.org/unlocode",
+        "schemeName": "UN/LOCODE"
+      }
+    ],
+    "furtherInformation": [
+      {
+        "type": [
+          "Link"
+        ],
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "Guarantee of Origin Certificate",
+        "linkType": "untp.dcc"
+      },
+      {
+        "type": [
+          "Link"
+        ],
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "Guarantee of Origin Certificate",
+        "linkType": "untp.dcc"
+      }
+    ],
+    "producedByParty": {
+      "type": [
+        "Entity"
+      ],
+      "id": "https://id.gs1.org/01/09520123456788/21/12345",
+      "name": "EV battery 50kWh.",
+      "idValue": "9520123.456788",
+      "idScheme": "https://id.gs1.org/01.",
+      "idSchemeName": "GS1 SGTIN"
+    },
+    "producedAtFacility": {
+      "type": [
+        "Entity"
+      ],
+      "id": "https://id.gs1.org/01/09520123456788/21/12345",
+      "name": "EV battery 50kWh.",
+      "idValue": "9520123.456788",
+      "idScheme": "https://id.gs1.org/01.",
+      "idSchemeName": "GS1 SGTIN"
+    },
+    "dimensions": {
+      "type": [
+        "Dimension"
+      ],
+      "weight": {
+        "type": [
+          "Measure"
+        ],
+        "value": 10,
+        "unit": "KGM"
+      },
+      "length": {
+        "type": [
+          "Measure"
+        ],
+        "value": 10,
+        "unit": "KGM"
+      },
+      "width": {
+        "type": [
+          "Measure"
+        ],
+        "value": 10,
+        "unit": "KGM"
+      },
+      "height": {
+        "type": [
+          "Measure"
+        ],
+        "value": 10,
+        "unit": "KGM"
+      },
+      "volume": {
+        "type": [
+          "Measure"
+        ],
+        "value": 10,
+        "unit": "KGM"
+      }
+    },
+    "productionDate": 2024,
+    "countryOfProduction": "AU",
+    "characteristics": {
+      "type": [
+        "Characteristic"
+      ]
+    },
+    "materialsProvenance": [
+      {
+        "type": [
+          "Material"
+        ],
+        "name": "Lithium Spodumene",
+        "originCountry": "AU",
+        "materialType": {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
+          "code": "AUSYD",
+          "name": "Port of Sydney",
+          "schemeID": "https://vocabulary.uncefact.org/unlocode",
+          "schemeName": "UN/LOCODE"
+        },
+        "massFraction": 0.2,
+        "recycledAmount": 0.5,
+        "hazardous": false,
+        "materialSafetyInformation": {
+          "type": [
+            "Link"
+          ],
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "Guarantee of Origin Certificate",
+          "linkType": "untp.dcc"
+        }
+      },
+      {
+        "type": [
+          "Material"
+        ],
+        "name": "Lithium Spodumene",
+        "originCountry": "AU",
+        "materialType": {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
+          "code": "AUSYD",
+          "name": "Port of Sydney",
+          "schemeID": "https://vocabulary.uncefact.org/unlocode",
+          "schemeName": "UN/LOCODE"
+        },
+        "massFraction": 0.2,
+        "recycledAmount": 0.5,
+        "hazardous": false,
+        "materialSafetyInformation": {
+          "type": [
+            "Link"
+          ],
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "Guarantee of Origin Certificate",
+          "linkType": "untp.dcc"
+        }
+      }
+    ],
+    "conformityDeclarations": [
+      {
+        "type": [
+          "Declaration"
+        ],
+        "id": "https://roducts.example-company.com/09520123456788/declarations/12345",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://ghgprotocol.org/product-standard",
+          "name": "GHG protocol product lifecycle standard",
+          "issuingParty": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 50kWh.",
+            "idValue": "9520123.456788",
+            "idScheme": "https://id.gs1.org/01.",
+            "idSchemeName": "GS1 SGTIN"
+          },
+          "issueDate": 2011
+        },
+        "referenceRegulation": {
+          "type": [
+            "Regulation"
+          ],
+          "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+          "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+          "jurisdictionCountry": "Enumeration Value",
+          "administeredBy": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 50kWh.",
+            "idValue": "9520123.456788",
+            "idScheme": "https://id.gs1.org/01.",
+            "idSchemeName": "GS1 SGTIN"
+          },
+          "effectiveDate": 2024
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
+            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "thresholdValues": [
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              },
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              }
+            ]
+          },
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
+            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "thresholdValues": [
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              },
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              }
+            ]
+          }
+        ],
+        "declaredValues": [
+          {
+            "type": [
+              "Metric"
+            ],
+            "metricName": "tensile strength",
+            "metricValue": {
+              "type": [
+                "Measure"
+              ],
+              "value": 10,
+              "unit": "KGM"
+            },
+            "accuracy": 0.05
+          },
+          {
+            "type": [
+              "Metric"
+            ],
+            "metricName": "tensile strength",
+            "metricValue": {
+              "type": [
+                "Measure"
+              ],
+              "value": 10,
+              "unit": "KGM"
+            },
+            "accuracy": 0.05
+          }
+        ],
+        "compliance": true,
+        "conformityTopic": "environment.emissions",
+        "conformityEvidence": {
+          "type": [
+            "SecureLink",
+            "Link"
+          ],
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "Guarantee of Origin Certificate",
+          "linkType": "untp.dcc",
+          "targetHash": "6239119",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        }
+      },
+      {
+        "type": [
+          "Declaration"
+        ],
+        "id": "https://roducts.example-company.com/09520123456788/declarations/12345",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://ghgprotocol.org/product-standard",
+          "name": "GHG protocol product lifecycle standard",
+          "issuingParty": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 50kWh.",
+            "idValue": "9520123.456788",
+            "idScheme": "https://id.gs1.org/01.",
+            "idSchemeName": "GS1 SGTIN"
+          },
+          "issueDate": 2011
+        },
+        "referenceRegulation": {
+          "type": [
+            "Regulation"
+          ],
+          "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+          "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+          "jurisdictionCountry": "Enumeration Value",
+          "administeredBy": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 50kWh.",
+            "idValue": "9520123.456788",
+            "idScheme": "https://id.gs1.org/01.",
+            "idSchemeName": "GS1 SGTIN"
+          },
+          "effectiveDate": 2024
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
+            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "thresholdValues": [
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              },
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              }
+            ]
+          },
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
+            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "thresholdValues": [
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              },
+              {
+                "type": [
+                  "Metric"
+                ],
+                "metricName": "tensile strength",
+                "metricValue": {
+                  "type": [
+                    "Measure"
+                  ],
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "accuracy": 0.05
+              }
+            ]
+          }
+        ],
+        "declaredValues": [
+          {
+            "type": [
+              "Metric"
+            ],
+            "metricName": "tensile strength",
+            "metricValue": {
+              "type": [
+                "Measure"
+              ],
+              "value": 10,
+              "unit": "KGM"
+            },
+            "accuracy": 0.05
+          },
+          {
+            "type": [
+              "Metric"
+            ],
+            "metricName": "tensile strength",
+            "metricValue": {
+              "type": [
+                "Measure"
+              ],
+              "value": 10,
+              "unit": "KGM"
+            },
+            "accuracy": 0.05
+          }
+        ],
+        "compliance": true,
+        "conformityTopic": "environment.emissions",
+        "conformityEvidence": {
+          "type": [
+            "SecureLink",
+            "Link"
+          ],
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "Guarantee of Origin Certificate",
+          "linkType": "untp.dcc",
+          "targetHash": "6239119",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        }
+      }
+    ],
+    "circularityScorecard": {
+      "type": [
+        "CircularityPerformance"
+      ],
+      "recyclingInformation": {
+        "type": [
+          "Link"
+        ],
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "Guarantee of Origin Certificate",
+        "linkType": "untp.dcc"
+      },
+      "repairInformation": {
+        "type": [
+          "Link"
+        ],
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "Guarantee of Origin Certificate",
+        "linkType": "untp.dcc"
+      },
+      "recyclableContent": 0.5,
+      "recyecledContent": 0.3,
+      "utilityFactor": 3.141579,
+      "materialCircularityIndicator": 3.141579
+    },
+    "emissionsScorecard": {
+      "type": [
+        "EmissionsPerformance"
+      ],
+      "carbonFootprint": 1.8,
+      "declaredUnit": "KGM",
+      "operationalScope": "Scope123toGate",
+      "primarySourcedRatio": 0.3,
+      "reportingStandard": {
+        "type": [
+          "Standard"
+        ],
+        "id": "https://ghgprotocol.org/product-standard",
+        "name": "GHG protocol product lifecycle standard",
+        "issuingParty": {
+          "type": [
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 50kWh.",
+          "idValue": "9520123.456788",
+          "idScheme": "https://id.gs1.org/01.",
+          "idSchemeName": "GS1 SGTIN"
+        },
+        "issueDate": 2011
+      }
+    },
+    "traceabilityInformation": [
+      {
+        "type": [
+          "TraceabilityEvent"
+        ],
+        "eventReference": "https://jargon.sh",
+        "eventType": "aggregation"
+      },
+      {
+        "type": [
+          "TraceabilityEvent"
+        ],
+        "eventReference": "https://jargon.sh",
+        "eventType": "aggregation"
+      }
+    ]
+  }
+}
