@@ -49,6 +49,16 @@
       "rdfs:comment": "A verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM)"
     },
     {
+      "@id": "untp-core:CredentialIssuer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "CredentialIssuer",
+      "schema:source": {
+        "@id": "https://test.uncefact.org/vocabulary/untp/core/CredentialIssuer"
+      },
+      "rdfs:subClassOf": "untp-core:Organisation",
+      "rdfs:comment": "This orgabnisaiotn that is the issuer of the verifiable credential.  id MUST be a DID.  Other information describes the issuer organisaiton."
+    },
+    {
       "@id": "untp-core:Identifier",
       "@type": "rdfs:Class",
       "rdfs:label": "Identifier",
@@ -201,6 +211,9 @@
           "@id": "untp-core:VerifiableCredential"
         },
         {
+          "@id": "untp-core:CredentialIssuer"
+        },
+        {
           "@id": "untp-core:Identifier"
         },
         {
@@ -216,31 +229,16 @@
       "@id": "untp-core:issuer",
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "rdfs:label": "issuer",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:CredentialIssuer"
       },
       "schema:domainIncludes": {
         "@id": "untp-core:VerifiableCredential"
       },
       "rdfs:comment": "The W3C DID of the Party that issued the verifiable credential."
-    },
-    {
-      "@id": "untp-core:type",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "rdfs:label": "type",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "schema:domainIncludes": {
-        "@id": "untp-core:VerifiableCredential"
-      },
-      "rdfs:comment": "The credential type.  Must include the string \"VerifiableCredential\" and additionally the specific credential type (eg \"UNTPDigitalProductPassport\")"
     },
     {
       "@id": "untp-core:validFrom",
@@ -273,21 +271,6 @@
       "rdfs:comment": "The expiry date (if applicable) of this verifiable credential."
     },
     {
-      "@id": "untp-core:credentialStatus",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "rdfs:label": "credentialStatus",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "schema:domainIncludes": {
-        "@id": "untp-core:VerifiableCredential"
-      },
-      "rdfs:comment": "The status of the verifiable credential - must be an object that conforms to the W3C VCDM 2.0 Status object - https://www.w3.org/TR/vc-data-model-2.0/#status "
-    },
-    {
       "@id": "untp-core:idScheme",
       "@type": [
         "rdf:Property",
@@ -295,12 +278,17 @@
       ],
       "rdfs:label": "idScheme",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "xsd:Unset"
       },
-      "schema:domainIncludes": {
-        "@id": "untp-core:Identifier"
-      },
-      "rdfs:comment": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CredentialIssuer"
+        },
+        {
+          "@id": "untp-core:Identifier"
+        }
+      ],
+      "rdfs:comment": "remove because did already contains a scheme (ie it is a did:web)"
     },
     {
       "@id": "untp-core:idSchemeName",
@@ -310,12 +298,17 @@
       ],
       "rdfs:label": "idSchemeName",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "xsd:Unset"
       },
-      "schema:domainIncludes": {
-        "@id": "untp-core:Identifier"
-      },
-      "rdfs:comment": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CredentialIssuer"
+        },
+        {
+          "@id": "untp-core:Identifier"
+        }
+      ],
+      "rdfs:comment": "removed because this is defiend to be a DID"
     },
     {
       "@id": "untp-core:idValue",
@@ -325,12 +318,17 @@
       ],
       "rdfs:label": "idValue",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "xsd:Unset"
       },
-      "schema:domainIncludes": {
-        "@id": "untp-core:Identifier"
-      },
-      "rdfs:comment": "The value of the identifier within the scheme (eg 90664869327)"
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CredentialIssuer"
+        },
+        {
+          "@id": "untp-core:Identifier"
+        }
+      ],
+      "rdfs:comment": "removed because the id is the did value."
     },
     {
       "@id": "untp-core:organisationName",

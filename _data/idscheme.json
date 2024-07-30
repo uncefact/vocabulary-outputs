@@ -1,13 +1,17 @@
 {
     "label": "idScheme",
     "uri": "untp-core:idScheme",
-    "comment": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership).",
+    "comment": "remove because did already contains a scheme (ie it is a did:web)",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "xsd:Unset"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "untp-core:CredentialIssuer",
+            "comment": "This orgabnisaiotn that is the issuer of the verifiable credential.  id MUST be a DID.  Other information describes the issuer organisaiton."
+        },
         {
             "uri": "untp-core:Identifier",
             "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence "

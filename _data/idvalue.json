@@ -1,13 +1,17 @@
 {
     "label": "idValue",
     "uri": "untp-core:idValue",
-    "comment": "The value of the identifier within the scheme (eg 90664869327)",
+    "comment": "removed because the id is the did value.",
     "rangeIncludes": [
         {
-            "uri": "xsd:string"
+            "uri": "xsd:Unset"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "untp-core:CredentialIssuer",
+            "comment": "This orgabnisaiotn that is the issuer of the verifiable credential.  id MUST be a DID.  Other information describes the issuer organisaiton."
+        },
         {
             "uri": "untp-core:Identifier",
             "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence "
