@@ -1,11 +1,11 @@
 {
     "label": "issuer",
     "uri": "untp-core:issuer",
-    "comment": "The W3C DID of the Party that issued the verifiable credential.",
+    "comment": "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property.",
     "rangeIncludes": [
         {
-            "uri": "untp-core:CredentialIssuer",
-            "comment": "This orgabnisaiotn that is the issuer of the verifiable credential.  id MUST be a DID.  Other information describes the issuer organisaiton."
+            "uri": "untp-core:Organisation",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
         }
     ],
     "domainIncludes": [

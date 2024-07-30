@@ -2,8 +2,18 @@
     "label": "Product",
     "uri": "untp-core:Product",
     "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
-    "subClassOf": "untp-core:Identifier",
+    "subClassOf": "untp-core:ProductID",
     "datatypeProperties": [
+        {
+            "uri": "untp-core:batchNumber",
+            "type": "xsd:string",
+            "comment": "Information regarding the specific production batch of the product."
+        },
+        {
+            "uri": "untp-core:countryOfProduction",
+            "type": "untp-core:countryCode",
+            "comment": "The country in which this item was produced / manufactured."
+        },
         {
             "uri": "untp-core:description",
             "type": "xsd:string",
@@ -21,7 +31,7 @@
         },
         {
             "uri": "untp-core:producedBy",
-            "type": "untp-core:Organisation",
+            "type": "untp-core:OrganisationID",
             "comment": "The Party entity that manufactured the product."
         },
         {
@@ -35,9 +45,14 @@
             "comment": "A unique identifier (URI) pointing to an image of the product."
         },
         {
-            "uri": "untp-core:productName",
+            "uri": "untp-core:productionDate",
             "type": "xsd:string",
-            "comment": "The model name or number of the product, represented as text."
+            "comment": "The ISO 8601 date on which the product batch was manufactured."
+        },
+        {
+            "uri": "untp-core:serialNumber",
+            "type": "xsd:string",
+            "comment": "An array of identifiers representing a specific serialised item of the product."
         }
     ]
 }

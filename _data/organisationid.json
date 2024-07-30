@@ -1,0 +1,46 @@
+{
+    "label": "OrganisationID",
+    "uri": "untp-core:OrganisationID",
+    "comment": "The ID and Name of an organisation. Used for lightweight links from other classes.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+        },
+        {
+            "uri": "untp-core:idScheme",
+            "type": "xsd:string",
+            "comment": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        },
+        {
+            "uri": "untp-core:idSchemeName",
+            "type": "xsd:string",
+            "comment": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+        },
+        {
+            "uri": "untp-core:idValue",
+            "type": "xsd:string",
+            "comment": "The value of the identifier within the scheme (eg 90664869327)"
+        },
+        {
+            "uri": "untp-core:name",
+            "type": "xsd:string",
+            "comment": "The name of the organization or company, represented as a text string.  SHOULD match the registered name in the identifeir scheme. Eg PYX Industries Pty Ltd"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:issuingBody",
+            "comment": "The party that issued the standard (ID and Name reference only)"
+        },
+        {
+            "uri": "untp-core:operatedBy",
+            "comment": "The Party entity responsible for operating the facility."
+        },
+        {
+            "uri": "untp-core:producedBy",
+            "comment": "The Party entity that manufactured the product."
+        }
+    ]
+}

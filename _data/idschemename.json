@@ -1,20 +1,32 @@
 {
     "label": "idSchemeName",
     "uri": "untp-core:idSchemeName",
-    "comment": "removed because this is defiend to be a DID",
+    "comment": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))",
     "rangeIncludes": [
         {
-            "uri": "xsd:Unset"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
         {
-            "uri": "untp-core:CredentialIssuer",
-            "comment": "This orgabnisaiotn that is the issuer of the verifiable credential.  id MUST be a DID.  Other information describes the issuer organisaiton."
+            "uri": "untp-core:Identifier",
+            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value."
         },
         {
-            "uri": "untp-core:Identifier",
-            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence "
+            "uri": "untp-core:OrganisationID",
+            "comment": "The ID and Name of an organisation. Used for lightweight links from other classes."
+        },
+        {
+            "uri": "untp-core:FacilityID",
+            "comment": "The ID and Name of a facility. Used for lightweight links from other classes."
+        },
+        {
+            "uri": "untp-core:LocationID",
+            "comment": "The ID and Name of a location. Used for lightweight links from other classes."
+        },
+        {
+            "uri": "untp-core:ProductID",
+            "comment": "The ID and Name of a product. Used for lightweight links from other classes."
         }
     ]
 }

@@ -1,27 +1,27 @@
 {
     "label": "Identifier",
     "uri": "untp-core:Identifier",
-    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence ",
+    "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value.",
     "datatypeProperties": [
         {
             "uri": "untp-core:id",
             "type": "xsd:string",
-            "comment": "A unique identifier (URI) assigned to the product passport."
+            "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID"
         },
         {
             "uri": "untp-core:idScheme",
-            "type": "xsd:Unset",
-            "comment": "remove because did already contains a scheme (ie it is a did:web)"
+            "type": "xsd:string",
+            "comment": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
         },
         {
             "uri": "untp-core:idSchemeName",
-            "type": "xsd:Unset",
-            "comment": "removed because this is defiend to be a DID"
+            "type": "xsd:string",
+            "comment": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
         },
         {
             "uri": "untp-core:idValue",
-            "type": "xsd:Unset",
-            "comment": "removed because the id is the did value."
+            "type": "xsd:string",
+            "comment": "The value of the identifier within the scheme (eg 90664869327)"
         }
     ],
     "referencedBy": [

@@ -1,9 +1,12 @@
+Class untp-core:Declaration has no references
 Class untp-core:Facility has no references
-Class untp-core:GeolocatedFacility has no references
-Class untp-core:ItemisedProduct has no references
-Class untp-core:Metric has no references
+Class untp-core:FacilityID has no references
+Class untp-core:LocationID has no references
 Class untp-core:Product has no references
+Class untp-core:ProductID has no references
+Class untp-core:RegulationID has no references
 Class untp-core:SecureBinaryFile has no references
+Class untp-core:StandardID has no references
 Class untp-core:VerifiableCredential has no references
 
 unece:SpecifiedPeriod - null

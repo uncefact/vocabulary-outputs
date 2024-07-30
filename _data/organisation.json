@@ -1,18 +1,13 @@
 {
     "label": "Organisation",
     "uri": "untp-core:Organisation",
-    "comment": "The Party class represents an entity such as an organization, or a company that manufactured the product.",
-    "subClassOf": "untp-core:Identifier",
+    "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
+    "subClassOf": "untp-core:OrganisationID",
     "datatypeProperties": [
         {
             "uri": "untp-core:industryCategory",
             "type": "untp-core:Classification",
             "comment": "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme."
-        },
-        {
-            "uri": "untp-core:organisationName",
-            "type": "xsd:string",
-            "comment": "The name of the organization or company, represented as a text string."
         },
         {
             "uri": "untp-core:organisationWebsite",
@@ -25,19 +20,15 @@
             "comment": "An optional lsit of other registered identifiers for this organisations"
         },
         {
-            "uri": "untp-core:registrationCOuntry",
+            "uri": "untp-core:registrationCountry",
             "type": "untp-core:countryCode",
             "comment": "the country in which this organisation is registered"
         }
     ],
     "referencedBy": [
         {
-            "uri": "untp-core:operatedBy",
-            "comment": "The Party entity responsible for operating the facility."
-        },
-        {
-            "uri": "untp-core:producedBy",
-            "comment": "The Party entity that manufactured the product."
+            "uri": "untp-core:issuer",
+            "comment": "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
         }
     ]
 }

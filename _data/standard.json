@@ -1,0 +1,24 @@
+{
+    "label": "Standard",
+    "uri": "untp-core:Standard",
+    "comment": "A standard (eg ISO 14000) that specifies the criteria for conformance.",
+    "subClassOf": "untp-core:StandardID",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:issueDate",
+            "type": "xsd:string",
+            "comment": "The date when the standard was issued."
+        },
+        {
+            "uri": "untp-core:issuingBody",
+            "type": "untp-core:OrganisationID",
+            "comment": "The party that issued the standard (ID and Name reference only)"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:referenceStandard",
+            "comment": "The reference to the standard that defines the specification / criteria"
+        }
+    ]
+}

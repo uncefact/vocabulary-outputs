@@ -1,0 +1,28 @@
+{
+    "label": "Criteria",
+    "uri": "untp-core:Criteria",
+    "comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+        },
+        {
+            "uri": "untp-core:name",
+            "type": "xsd:string",
+            "comment": "The name of the organization or company, represented as a text string.  SHOULD match the registered name in the identifeir scheme. Eg PYX Industries Pty Ltd"
+        },
+        {
+            "uri": "untp-core:thresholdValues",
+            "type": "untp-core:Metric",
+            "comment": "A conformity threshold defined by the specification (eg minimum compressive strength) "
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:assessmentCriterion",
+            "comment": "The specification against which the assessment is made."
+        }
+    ]
+}

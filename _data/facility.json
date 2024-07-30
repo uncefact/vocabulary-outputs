@@ -2,7 +2,7 @@
     "label": "Facility",
     "uri": "untp-core:Facility",
     "comment": "The physical site (eg farm or factory) where the product or materials was produced.",
-    "subClassOf": "untp-core:Identifier",
+    "subClassOf": "untp-core:FacilityID",
     "datatypeProperties": [
         {
             "uri": "untp-core:countryOfOperation",
@@ -15,8 +15,13 @@
             "comment": "The name of the facility, represented as a text string."
         },
         {
+            "uri": "untp-core:locationInformation",
+            "type": "untp-core:Location",
+            "comment": "Geolocation and address information for this facility"
+        },
+        {
             "uri": "untp-core:operatedBy",
-            "type": "untp-core:Organisation",
+            "type": "untp-core:OrganisationID",
             "comment": "The Party entity responsible for operating the facility."
         },
         {
