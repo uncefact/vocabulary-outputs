@@ -1,0 +1,28 @@
+{
+    "label": "GeolocatedFacility",
+    "uri": "untp-core:GeolocatedFacility",
+    "comment": "A production or manufacturing facility with precise geolaction attributes for both pin and area / boundary.",
+    "subClassOf": "untp-core:Facility",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:areaReference",
+            "type": "xsd:string",
+            "comment": "The area of the facility as a URI - typically a plus code (see https://maps.google.com/pluscodes/) "
+        },
+        {
+            "uri": "untp-core:boundary",
+            "type": "untp-core:Coordinate",
+            "comment": "The list of coordinates that define a closed area polygon as a facility boundary."
+        },
+        {
+            "uri": "untp-core:geoLocation",
+            "type": "untp-core:Coordinate",
+            "comment": "The latitude and logditude coordinates that best represent the location of this facility"
+        },
+        {
+            "uri": "untp-core:pinReference",
+            "type": "xsd:string",
+            "comment": "The pin location of the facility - typically as agoogle pin reference"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "label": "id",
-    "uri": "untp:id",
+    "uri": "untp-core:id",
     "comment": "A unique identifier (URI) assigned to the product passport.",
     "rangeIncludes": [
         {
@@ -9,8 +9,20 @@
     ],
     "domainIncludes": [
         {
-            "uri": "untp:VerifiableCredential",
+            "uri": "untp-core:VerifiableCredential",
             "comment": "A verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM)"
+        },
+        {
+            "uri": "untp-core:Identifier",
+            "comment": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence "
+        },
+        {
+            "uri": "untp-core:Classification",
+            "comment": "A classification scheme and code / name representing a category value for a product, entity, or facility."
+        },
+        {
+            "uri": "untp-core:BinaryFile",
+            "comment": "A file representing a data snapshot that is used to infomr the conformity assessment."
         }
     ]
 }

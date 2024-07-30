@@ -1,0 +1,43 @@
+{
+    "label": "Product",
+    "uri": "untp-core:Product",
+    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
+    "subClassOf": "untp-core:Identifier",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:description",
+            "type": "xsd:string",
+            "comment": "A textual description providing details about the product."
+        },
+        {
+            "uri": "untp-core:dimensions",
+            "type": "untp-core:Dimension",
+            "comment": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
+        },
+        {
+            "uri": "untp-core:furtherInformation",
+            "type": "xsd:string",
+            "comment": "A URL pointing to further human readable information about the product."
+        },
+        {
+            "uri": "untp-core:producedBy",
+            "type": "untp-core:Organisation",
+            "comment": "The Party entity that manufactured the product."
+        },
+        {
+            "uri": "untp-core:productCategory",
+            "type": "untp-core:Classification",
+            "comment": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+        },
+        {
+            "uri": "untp-core:productImage",
+            "type": "untp-core:BinaryFile",
+            "comment": "A unique identifier (URI) pointing to an image of the product."
+        },
+        {
+            "uri": "untp-core:productName",
+            "type": "xsd:string",
+            "comment": "The model name or number of the product, represented as text."
+        }
+    ]
+}

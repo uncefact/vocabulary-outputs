@@ -1,22 +1,28 @@
 {
     "label": "BinaryFile",
-    "uri": "untp:BinaryFile",
+    "uri": "untp-core:BinaryFile",
     "comment": "A file representing a data snapshot that is used to infomr the conformity assessment.",
     "datatypeProperties": [
         {
-            "uri": "untp:fileHash",
+            "uri": "untp-core:fileName",
             "type": "xsd:string",
-            "comment": "The MD5 hash of the file."
+            "comment": "A name for referenced binary file"
         },
         {
-            "uri": "untp:fileLocation",
-            "type": "xsd:string",
-            "comment": "The location of the evidence file."
-        },
-        {
-            "uri": "untp:fileType",
-            "type": "untp:mimeType",
+            "uri": "untp-core:fileType",
+            "type": "untp-core:mimeType",
             "comment": "The type of file, represented as a MIME type."
+        },
+        {
+            "uri": "untp-core:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned to the product passport."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:productImage",
+            "comment": "A unique identifier (URI) pointing to an image of the product."
         }
     ]
 }

@@ -1,0 +1,28 @@
+{
+    "label": "ItemisedProduct",
+    "uri": "untp-core:ItemisedProduct",
+    "comment": "A unique instance of a product class - such as a specific pack of pharmaceuticals. Often part of an identified manufacturing batch.",
+    "subClassOf": "untp-core:Product",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:batchNumber",
+            "type": "xsd:string",
+            "comment": "Information regarding the specific production batch of the product."
+        },
+        {
+            "uri": "untp-core:countryOfProduction",
+            "type": "untp-core:countryCode",
+            "comment": "The country in which this item was produced / manufactured."
+        },
+        {
+            "uri": "untp-core:productionDate",
+            "type": "xsd:string",
+            "comment": "The ISO 8601 date on which the product batch was manufactured."
+        },
+        {
+            "uri": "untp-core:serialNumber",
+            "type": "xsd:string",
+            "comment": "An array of identifiers representing a specific serialised item of the product."
+        }
+    ]
+}

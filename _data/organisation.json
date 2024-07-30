@@ -1,0 +1,43 @@
+{
+    "label": "Organisation",
+    "uri": "untp-core:Organisation",
+    "comment": "The Party class represents an entity such as an organization, or a company that manufactured the product.",
+    "subClassOf": "untp-core:Identifier",
+    "datatypeProperties": [
+        {
+            "uri": "untp-core:industryCategory",
+            "type": "untp-core:Classification",
+            "comment": "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme."
+        },
+        {
+            "uri": "untp-core:organisationName",
+            "type": "xsd:string",
+            "comment": "The name of the organization or company, represented as a text string."
+        },
+        {
+            "uri": "untp-core:organisationWebsite",
+            "type": "xsd:string",
+            "comment": "Website for this organisation"
+        },
+        {
+            "uri": "untp-core:otherIdentifiers",
+            "type": "untp-core:Identifier",
+            "comment": "An optional lsit of other registered identifiers for this organisations"
+        },
+        {
+            "uri": "untp-core:registrationCOuntry",
+            "type": "untp-core:countryCode",
+            "comment": "the country in which this organisation is registered"
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:operatedBy",
+            "comment": "The Party entity responsible for operating the facility."
+        },
+        {
+            "uri": "untp-core:producedBy",
+            "comment": "The Party entity that manufactured the product."
+        }
+    ]
+}
