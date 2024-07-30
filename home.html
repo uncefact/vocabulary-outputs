@@ -1,4 +1,5 @@
 ---
+title: UNTP Web Vocabularies
 layout: default
 permalink: /home
 class: home
@@ -25,9 +26,9 @@ class: home
                     <p class="browse-type__description">A data model for a digital product passport that is designed to provide traceability & transparency into supply chains - with a focus on sustainability measures and outcomes.</p>
                     <a class="browse-type__action" href="{{ 'dpp/about' | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.dpp %}
+                {% if site.versions.untp-dpp %}
                     <span class="browse-type__version">
-                        {{ site.versions.dpp }}
+                        {{ site.versions.untp-dpp }}
                     </span>
                 {% endif %}
             </li>
@@ -47,9 +48,9 @@ class: home
                     <p class="browse-type__description">UNTP Vocabulary, supporting Digital Product Passport (DPP), Digital Product Conformity (DPC), Digital Traceability Events (DTE), Digital Identity Anchor (DIA), and Sustainability topics.</p>
                     <a class="browse-type__action" href="{{ 'core/about' | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.core %}
+                {% if site.versions.untp-core %}
                     <span class="browse-type__version">
-                        {{ site.versions.core }}
+                        {{ site.versions.untp-core }}
                     </span>
                 {% endif %}
             </li>
@@ -71,14 +72,14 @@ class: home
                     <p class="browse-type__description">Information domain for conformity claims against criteria defined in a standard or regulation</p>
                     <a class="browse-type__action" href="{{ 'cc/about' | | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.cc %}
+                {% if site.versions.untp-dcc %}
                     <span class="browse-type__version">
-                        {{ site.versions.cc }}
+                        {{ site.versions.untp-dcc }}
                     </span>
                 {% endif %}
             </li>
             <li class="browse-type browse-types__item">
-                <a href="{{ 'te/about' | absolute_url }}" class="browse-type__title">
+                <a href="{{ 'dfr/about' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                         <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
                            stroke-linejoin="round"
@@ -87,15 +88,15 @@ class: home
                             <path d="M18.788 4.161 10 7.236 1.212 4.161"/>
                         </g>
                     </svg>
-                    Traceability Events
+                    UNTP Digital Facility Record
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">A collection of events that can be used to build supply chain traceability graphs.</p>
-                    <a class="browse-type__action" href="{{ 'te/about' | absolute_url }}">Browse</a>
+                    <p class="browse-type__description">A facility level record of sustainability performance.</p>
+                    <a class="browse-type__action" href="{{ 'drf/about' | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.te %}
+                {% if site.versions.untp-dfr %}
                     <span class="browse-type__version">
-                        {{ site.versions.te }}
+                        {{ site.versions.untp-dfr }}
                     </span>
                 {% endif %}
             </li>
