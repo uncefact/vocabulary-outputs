@@ -2,7 +2,7 @@
 <div class="breadcrumbs">
     {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
     <a href="/home">Home</a>
-    {% if pageType == 'unlocode-lists' %}
+    {% if pageType == 'unlocode-lists' || page.url contains 'unlocode-versions' %}
       /  <a href="{{ 'unlocode-about' | absolute_url }}">UN/LOCODEs</a>
     {% else %}
         / <a href="{{ 'about' | absolute_url }}">BSP</a>

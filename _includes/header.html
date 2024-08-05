@@ -8,8 +8,17 @@
             </a>
         </div>
         <div class="header__nav">
-            {% if pageType != 'unlocode-list' %}
-                {% include search.html %}
+            {% if pageType == 'unlocode-list' || page.url contains 'unlocode-versions' %}
+            <div class="main-nav" id="js-main-nav">
+                <nav class="main-nav__menu">
+                    <a class="main-nav__link{% if permalink == 'unlocode-versions' %} main-nav__link--active{% endif %}" href="/unlocode-versions">UN/LOCODE Versions</a>
+                    <a class="main-nav__link{% if permalink == 'unlocode-countries' %} main-nav__link--active{% endif %}" href="{{ 'unlocode-countries' | absolute_url }}">Countries</a>
+                    <a class="main-nav__link{% if permalink == 'unlocode-subdivisions' %} main-nav__link--active{% endif %}" href="{{ 'unlocode-subdivisions' | absolute_url }}">Country Subdivisions</a>
+                    <a class="main-nav__link{% if permalink == 'unlocode-functions' %} main-nav__link--active{% endif %}" href="{{ 'unlocode-functions' | absolute_url }}">Functions</a>
+                </nav>
+            </div>
+            {% else %}
+            {% include search.html %}
                 <div class="main-nav" id="js-main-nav">
                     <button type="button" class="mobile-nav-btn" id="js-mobile-nav-toggle">
                         <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -32,15 +41,6 @@
                         <a class="main-nav__link{% if pageType == 'class' %} main-nav__link--active{% endif %}" href="{{ 'classes' | absolute_url }}">Classes</a>
                         <a class="main-nav__link{% if pageType == 'property' %} main-nav__link--active{% endif %}" href="{{ 'properties' | absolute_url }}">Properties</a>
                         <a class="main-nav__link{% if pageType == 'code-list' %} main-nav__link--active{% endif %}" href="{{ 'code-lists' | absolute_url }}">Code Lists</a>
-                    </nav>
-                </div>
-            {% else %}
-                <div class="main-nav" id="js-main-nav">
-                    <nav class="main-nav__menu">
-                        <a class="main-nav__link{% if permalink == 'unlocode-versions' %} main-nav__link--active{% endif %}" href="/unlocode-versions">UN/LOCODE Versions</a>
-                        <a class="main-nav__link{% if permalink == 'unlocode-countries' %} main-nav__link--active{% endif %}" href="{{ 'unlocode-countries' | absolute_url }}">Countries</a>
-                        <a class="main-nav__link{% if permalink == 'unlocode-subdivisions' %} main-nav__link--active{% endif %}" href="{{ 'unlocode-subdivisions' | absolute_url }}">Country Subdivisions</a>
-                        <a class="main-nav__link{% if permalink == 'unlocode-functions' %} main-nav__link--active{% endif %}" href="{{ 'unlocode-functions' | absolute_url }}">Functions</a>
                     </nav>
                 </div>
             {% endif %}
