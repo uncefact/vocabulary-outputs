@@ -1,0 +1,33 @@
+---
+title: UN/Locoded Versions
+permalink: unlocode-versions
+type: default
+layout: table
+---
+
+<table class="table-grid">
+    <thead>
+        <tr>
+            <th>Version</th>
+            <th>Date</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for version in site.data.vocab-versions.unlocode %}
+                <tr>
+                    <td>
+                        <a href="{{ version.prefix }}" title="">
+                            {{ version.version}}
+                        </a>
+                    </td>
+                    <td>
+                            {{ version.date }}
+                        </td>
+                        <td>
+                            {{ version.notes }}
+                    </td>
+                </tr>
+        {% endfor %}
+    </tbody>
+</table>
