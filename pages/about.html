@@ -96,13 +96,13 @@ class: white
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="https://vocabulary.uncefact.org/unece-context.jsonld">https://vocabulary.uncefact.org/unece-context.jsonld</a>
+            <a class="link-box" href="{{ 'unece-context.jsonld' | absolute_url }}">{{ '/unece-context.jsonld'| prepend: site.baseurl | prepend: site.dest }}</a>
         </p>
 
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
             <div class="copy-box__text" id="content-negotiation-1">
-                curl https://vocabulary.uncefact.org/ -H 'Accept: application/ld+json'
+                curl {{ '/'| prepend: site.baseurl | prepend: site.dest }} -H 'Accept: application/ld+json'
             </div>
             <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
                 <svg class="copy-box__btn-icon">

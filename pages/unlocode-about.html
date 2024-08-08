@@ -3,7 +3,6 @@ title: About
 permalink: unlocode-about
 type: default
 class: white unlocode
-hideMenu: true
 ---
 <div class="home-content">
     <h1 class="home-content__title">UN/LOCODEs Web Vocabulary</h1>
@@ -81,13 +80,13 @@ hideMenu: true
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="https://vocabulary.uncefact.org/unlocode-vocab-context.jsonld">https://vocabulary.uncefact.org/unlocode-vocab-context.jsonld</a>
+            <a class="link-box" href="{{ 'unlocode-vocab-context.jsonld' | absolute_url }}">{{ '/unlocode-vocab-context.jsonld'| prepend: site.baseurl | prepend: site.dest }}</a>
         </p>
 
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
             <div class="copy-box__text" id="content-negotiation-1">
-                curl https://vocabulary.uncefact.org/unlocode# -H 'Accept: application/ld+json'
+                curl {{ '/unlocode#'| prepend: site.baseurl | prepend: site.dest }} -H 'Accept: application/ld+json'
             </div>
             <button type="button" class="js-copy-btn copy-box__btn" data-clipboard-target="#content-negotiation-1">
                 <svg class="copy-box__btn-icon">
