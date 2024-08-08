@@ -4,11 +4,11 @@
     <div class="header__content">
         <div class="header__logo">
             <a href="/home" class="header__logo-link">
-                <img src="{{site.baseurl}}/images/logo.svg" class="header__logo-img" alt="">
+                <img src="{{site.baseurl}}/images/logo.png" class="header__logo-img" alt="">
             </a>
         </div>
         <div class="header__nav">
-            {% if pageType == 'unlocode-list' or page.url contains 'unlocode-versions' %}
+            {% if pageType == 'unlocode-list' or page.url contains 'unlocode-versions' or page.url contains 'unlocode-about'%}
             <div class="main-nav" id="js-main-nav">
                 <nav class="main-nav__menu">
                     <a class="main-nav__link{% if permalink == 'unlocode-versions' %} main-nav__link--active{% endif %}" href="/unlocode-versions">UN/LOCODE Versions</a>
