@@ -2,11 +2,17 @@
     "label": "SecureLink",
     "uri": "untp-core:SecureLink",
     "comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality).",
+    "subClassOf": "untp-core:Link",
     "datatypeProperties": [
         {
             "uri": "untp-core:encryptionMethod",
             "type": "untp-core:encryptionMethodCode",
             "comment": "The symmetric encryption algorithm used ..."
+        },
+        {
+            "uri": "untp-core:hashDigest",
+            "type": "xsd:string",
+            "comment": "The hash of the file. ..."
         },
         {
             "uri": "untp-core:hashMethod",
@@ -27,11 +33,6 @@
             "uri": "untp-core:linkURL",
             "type": "xsd:string",
             "comment": "The URL of the target ..."
-        },
-        {
-            "uri": "untp-core:targetHash",
-            "type": "xsd:string",
-            "comment": "The hash of the file ..."
         }
     ],
     "referencedBy": [

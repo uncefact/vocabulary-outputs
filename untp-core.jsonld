@@ -21,6 +21,12 @@
       "rdfs:label": "Entity"
     },
     {
+      "@id": "untp-core:IdentifierScheme",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or gloabl authority.",
+      "rdfs:label": "IdentifierScheme"
+    },
+    {
       "@id": "untp-core:Link",
       "@type": "rdfs:Class",
       "rdfs:comment": "A structure to provide a URL link plus metadata associated with the link.",
@@ -30,7 +36,8 @@
       "@id": "untp-core:Party",
       "@type": "rdfs:Class",
       "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
-      "rdfs:label": "Party"
+      "rdfs:label": "Party",
+      "rdfs:subClassOf": "untp-core:Entity"
     },
     {
       "@id": "untp-core:Classification",
@@ -42,7 +49,8 @@
       "@id": "untp-core:Facility",
       "@type": "rdfs:Class",
       "rdfs:comment": "The physical site (eg farm or factory) where the product or materials was produced.",
-      "rdfs:label": "Facility"
+      "rdfs:label": "Facility",
+      "rdfs:subClassOf": "untp-core:Entity"
     },
     {
       "@id": "untp-core:Location",
@@ -51,22 +59,23 @@
       "rdfs:label": "Location"
     },
     {
-      "@id": "untp-core:Coordinate",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A map coordinate defined by a lattitude & longditude pair.",
-      "rdfs:label": "Coordinate"
-    },
-    {
       "@id": "untp-core:Address",
       "@type": "rdfs:Class",
       "rdfs:comment": "A postal address",
       "rdfs:label": "Address"
     },
     {
+      "@id": "untp-core:Coordinate",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A map coordinate defined by a lattitude & longditude pair.",
+      "rdfs:label": "Coordinate"
+    },
+    {
       "@id": "untp-core:Product",
       "@type": "rdfs:Class",
       "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
-      "rdfs:label": "Product"
+      "rdfs:label": "Product",
+      "rdfs:subClassOf": "untp-core:Entity"
     },
     {
       "@id": "untp-core:Dimension",
@@ -96,7 +105,8 @@
       "@id": "untp-core:SecureLink",
       "@type": "rdfs:Class",
       "rdfs:comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality).",
-      "rdfs:label": "SecureLink"
+      "rdfs:label": "SecureLink",
+      "rdfs:subClassOf": "untp-core:Link"
     },
     {
       "@id": "untp-core:Declaration",
@@ -175,6 +185,9 @@
           "@id": "untp-core:Entity"
         },
         {
+          "@id": "untp-core:IdentifierScheme"
+        },
+        {
           "@id": "untp-core:Party"
         },
         {
@@ -211,10 +224,11 @@
       "rdfs:comment": [
         "The W3C DID of the issuer - should be a did:web or did:tdw",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The globally unique identifier of the registraiton scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "The globally unique URI representing the specific classifier value",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
-        "The globally unique identiifer of this geographic location. Typically a google pin.",
+        "The globally unique identiifer of this geographic location. Typically a google pin or a pluscode.",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
@@ -240,6 +254,9 @@
         },
         {
           "@id": "untp-core:Entity"
+        },
+        {
+          "@id": "untp-core:IdentifierScheme"
         },
         {
           "@id": "untp-core:Party"
@@ -275,6 +292,7 @@
       "rdfs:comment": [
         "The name of the issuer person or organisation",
         "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The name of the identifier scheme. ",
         "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
         "Name of the classification represented by the code",
         "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
@@ -316,7 +334,7 @@
       "rdfs:label": "otherIdentifiers"
     },
     {
-      "@id": "untp-core:idValue",
+      "@id": "untp-core:number",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -339,21 +357,21 @@
         }
       ],
       "rdfs:comment": [
-        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. ",
-        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. ",
-        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. ",
-        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
       ],
-      "rdfs:label": "idValue"
+      "rdfs:label": "number"
     },
     {
       "@id": "untp-core:idScheme",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:IdentifierScheme"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -370,43 +388,12 @@
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
-        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
-        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
-        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
       ],
       "rdfs:label": "idScheme"
-    },
-    {
-      "@id": "untp-core:idSchemeName",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Entity"
-        },
-        {
-          "@id": "untp-core:Party"
-        },
-        {
-          "@id": "untp-core:Facility"
-        },
-        {
-          "@id": "untp-core:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  ",
-        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  ",
-        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  ",
-        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
-      ],
-      "rdfs:label": "idSchemeName"
     },
     {
       "@id": "untp-core:linkURL",
@@ -516,7 +503,7 @@
       "rdfs:label": "organisationWebsite"
     },
     {
-      "@id": "untp-core:industryCategory",
+      "@id": "untp-core:industryCategories",
       "schema:rangeIncludes": {
         "@id": "untp-core:Classification"
       },
@@ -532,7 +519,7 @@
       "rdfs:comment": [
         "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme. for example  id:unstats.un.org/isic/1030  code:10  name:Manufacture of food products  schemeID:unstats.un.org/unsd/classifications/Econ/isic  schemeName:ISIC"
       ],
-      "rdfs:label": "industryCategory"
+      "rdfs:label": "industryCategories"
     },
     {
       "@id": "untp-core:code",
@@ -611,7 +598,7 @@
       "rdfs:label": "countryOfOperation"
     },
     {
-      "@id": "untp-core:processCategory",
+      "@id": "untp-core:processCategories",
       "schema:rangeIncludes": {
         "@id": "untp-core:Classification"
       },
@@ -627,7 +614,7 @@
       "rdfs:comment": [
         "The idustrial or production processes performed by this facility.    id:unstats.un.org/isic/1030  code:1030  name:Processing and preserving of fruit and vegetables  schemeID:unstats.un.org/unsd/classifications/Econ/isic  schemeName:ISIC"
       ],
-      "rdfs:label": "processCategory"
+      "rdfs:label": "processCategories"
     },
     {
       "@id": "untp-core:operatedByParty",
@@ -687,28 +674,9 @@
       "rdfs:label": "address"
     },
     {
-      "@id": "untp-core:areaReference",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Location"
-        }
-      ],
-      "rdfs:comment": [
-        "The area of the facility as a URI - typically a plus code"
-      ],
-      "rdfs:label": "areaReference"
-    },
-    {
       "@id": "untp-core:geoLocation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Coordinate"
+        "@id": "undefined:Point"
       },
       "@type": [
         "rdf:Property",
@@ -720,14 +688,14 @@
         }
       ],
       "rdfs:comment": [
-        "The latitude and logditude coordinates that best represent the specified location   \"geoLocation\":[\"-35.186250\",\"149.301250\"]"
+        "The latitude and logditude coordinates that best represent the specified location. Using GeoJSON Point notation."
       ],
       "rdfs:label": "geoLocation"
     },
     {
-      "@id": "untp-core:boundary",
+      "@id": "untp-core:geoBoundary",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Coordinate"
+        "@id": "undefined:Polygon"
       },
       "@type": [
         "rdf:Property",
@@ -739,47 +707,9 @@
         }
       ],
       "rdfs:comment": [
-        "The list of ordered coordinates that define a closed area polygon as a location boundary."
+        "The list of ordered coordinates that define a closed area polygon as a location boundary using GeoJSON polygon notation."
       ],
-      "rdfs:label": "boundary"
-    },
-    {
-      "@id": "untp-core:latitude",
-      "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Coordinate"
-        }
-      ],
-      "rdfs:comment": [
-        "The latitude of a map location expressed in decimal degrees (between +90 and -90) where negative values represent latitudes south of the equator."
-      ],
-      "rdfs:label": "latitude"
-    },
-    {
-      "@id": "untp-core:longditude",
-      "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Coordinate"
-        }
-      ],
-      "rdfs:comment": [
-        "The longditude of a map location expressed in decimal degrees (between +180 and -180) where negative values represent longditudes west of the prime meridian."
-      ],
-      "rdfs:label": "longditude"
+      "rdfs:label": "geoBoundary"
     },
     {
       "@id": "untp-core:streetAddress",
@@ -875,6 +805,44 @@
         "The address country"
       ],
       "rdfs:label": "addressCountry"
+    },
+    {
+      "@id": "untp-core:latitude",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Coordinate"
+        }
+      ],
+      "rdfs:comment": [
+        "The latitude of a map location expressed in decimal degrees (between +90 and -90) where negative values represent latitudes south of the equator."
+      ],
+      "rdfs:label": "latitude"
+    },
+    {
+      "@id": "untp-core:longditude",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Coordinate"
+        }
+      ],
+      "rdfs:comment": [
+        "The longditude of a map location expressed in decimal degrees (between +180 and -180) where negative values represent longditudes west of the prime meridian."
+      ],
+      "rdfs:label": "longditude"
     },
     {
       "@id": "untp-core:serialNumber",
@@ -1333,7 +1301,7 @@
       "rdfs:label": "file"
     },
     {
-      "@id": "untp-core:targetHash",
+      "@id": "untp-core:hashDigest",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -1347,9 +1315,9 @@
         }
       ],
       "rdfs:comment": [
-        "The hash of the file "
+        "The hash of the file."
       ],
-      "rdfs:label": "targetHash"
+      "rdfs:label": "hashDigest"
     },
     {
       "@id": "untp-core:hashMethod",

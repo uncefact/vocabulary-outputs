@@ -1,5 +1,6 @@
 untp-core:assessorLevelCode
 untp-core:countryCode
+undefined:Polygon
 untp-core:hashMethodCode
 untp-core:operationalScopeCode
 untp-core:unitOfMeasure
@@ -11,3 +12,4 @@ xsd:boolean
 xsd:string
 xsd:decimal
 untp-core:assessmentLevelCode
+undefined:Point
