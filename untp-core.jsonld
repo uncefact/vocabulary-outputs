@@ -5,7 +5,8 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "schema": "https://schema.org/"
+    "schema": "https://schema.org/",
+    "geojson": "https://datatracker.ietf.org/doc/html/rfc7946"
   },
   "@graph": [
     {
@@ -197,9 +198,6 @@
           "@id": "untp-core:Facility"
         },
         {
-          "@id": "untp-core:Location"
-        },
-        {
           "@id": "untp-core:Product"
         },
         {
@@ -224,11 +222,10 @@
       "rdfs:comment": [
         "The W3C DID of the issuer - should be a did:web or did:tdw",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
-        "The globally unique identifier of the registraiton scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
+        "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "The globally unique URI representing the specific classifier value",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
-        "The globally unique identiifer of this geographic location. Typically a google pin or a pluscode.",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
@@ -291,12 +288,12 @@
       ],
       "rdfs:comment": [
         "The name of the issuer person or organisation",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
         "The name of the identifier scheme. ",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
         "Name of the classification represented by the code",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
         "The name of the standard",
         "The name of the regulation or act.",
         "A name that describes this criteria.",
@@ -334,7 +331,7 @@
       "rdfs:label": "otherIdentifiers"
     },
     {
-      "@id": "untp-core:number",
+      "@id": "untp-core:registeredId",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -362,7 +359,7 @@
         "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
         "The registration number (alphanumeric) of the entity within the register. Unique within the register."
       ],
-      "rdfs:label": "number"
+      "rdfs:label": "registeredId"
     },
     {
       "@id": "untp-core:idScheme",
@@ -463,6 +460,33 @@
         "The type of the target resource - drawn from a controlled vocabulary "
       ],
       "rdfs:label": "linkType"
+    },
+    {
+      "@id": "untp-core:description",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional short description of the party.",
+        "An optional short description of the facility",
+        "A textual description providing details about the product."
+      ],
+      "rdfs:label": "description"
     },
     {
       "@id": "untp-core:registrationCountry",
@@ -676,7 +700,7 @@
     {
       "@id": "untp-core:geoLocation",
       "schema:rangeIncludes": {
-        "@id": "undefined:Point"
+        "@id": "geojson:Point"
       },
       "@type": [
         "rdf:Property",
@@ -695,7 +719,7 @@
     {
       "@id": "untp-core:geoBoundary",
       "schema:rangeIncludes": {
-        "@id": "undefined:Polygon"
+        "@id": "geojson:Polygon"
       },
       "@type": [
         "rdf:Property",
@@ -900,25 +924,6 @@
         "Reference information (location, type, name) of an image of the product."
       ],
       "rdfs:label": "productImage"
-    },
-    {
-      "@id": "untp-core:description",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A textual description providing details about the product."
-      ],
-      "rdfs:label": "description"
     },
     {
       "@id": "untp-core:productCategory",
@@ -1809,7 +1814,7 @@
         }
       ],
       "rdfs:comment": [
-        "The overall circularity performance indicator for this product. Calculated as 1 - (V+W)/2D where - V = Virgin material proportion by mass (will be 1- recycled content) - W = Waste leakage proportion by mass (will be 1 - recyclableContent)  - D = Utility factor (set to 1 if unknown)."
+        "The overall circularity performance indicator for this product. Calculated as 1 - (V+W)/2D where - V = Virgin material proportion by mass (will be 1- recycled content) - W = Waste leakage proportion by mass (will be 1 - recyclableContent)  - D = Utility factor (set to 1 if unknown).  "
       ],
       "rdfs:label": "materialCircularityIndicator"
     },
@@ -2004,7 +2009,7 @@
       "rdfs:label": "issuedToParty"
     },
     {
-      "@id": "untp-core:authorisation",
+      "@id": "untp-core:authorisations",
       "schema:rangeIncludes": {
         "@id": "untp-core:Endorsement"
       },
@@ -2018,9 +2023,9 @@
         }
       ],
       "rdfs:comment": [
-        "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+        "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard.  "
       ],
-      "rdfs:label": "authorisation"
+      "rdfs:label": "authorisations"
     },
     {
       "@id": "untp-core:conformityCertificate",

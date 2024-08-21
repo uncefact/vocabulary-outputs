@@ -1,10 +1,11 @@
 untp-core:assessorLevelCode
 untp-core:countryCode
-undefined:Polygon
+geojson:Point
 untp-core:hashMethodCode
 untp-core:operationalScopeCode
 untp-core:unitOfMeasure
 untp-core:encryptionMethodCode
+geojson:Polygon
 untp-core:attestationTypeCode
 untp-core:conformityTopicCode
 untp-core:mimeType
@@ -12,4 +13,3 @@ xsd:boolean
 xsd:string
 xsd:decimal
 untp-core:assessmentLevelCode
-undefined:Point

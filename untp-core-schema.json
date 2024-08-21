@@ -16,11 +16,11 @@
       "description": "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
     },
     "name": {
-      "example": "EV battery 50kWh.",
+      "example": "EV battery 300Ah.",
       "type": "string",
-      "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+      "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
     },
-    "number": {
+    "registeredId": {
       "example": "90664869327",
       "type": "string",
       "description": "The registration number (alphanumeric) of the entity within the register. Unique within the register."
@@ -28,6 +28,11 @@
     "idScheme": {
       "$ref": "#/$defs/IdentifierScheme",
       "description": "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+    },
+    "description": {
+      "example": "Manufacturing site for advanced electric vehicle batteries.",
+      "type": "string",
+      "description": "An optional short description of the facility"
     },
     "countryOfOperation": {
       "type": "string",
@@ -80,11 +85,13 @@
           ]
         },
         "id": {
+          "example": "https://id.gs1.org/01/",
           "type": "string",
           "format": "uri",
-          "description": "The globally unique identifier of the registraiton scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes"
+          "description": "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes"
         },
         "name": {
+          "example": "Global Trade Identification Number (GTIN)",
           "type": "string",
           "description": "The name of the identifier scheme. "
         }
@@ -103,29 +110,29 @@
           ]
         },
         "id": {
-          "example": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
           "type": "string",
           "format": "uri",
           "description": "The globally unique URI representing the specific classifier value"
         },
         "code": {
-          "example": "AUSYD",
+          "example": "46410",
           "type": "string",
           "description": "classification code within the scheme"
         },
         "name": {
-          "example": "Port of Sydney",
+          "example": "Primary cells and primary batteries",
           "type": "string",
           "description": "Name of the classification represented by the code"
         },
         "schemeID": {
-          "example": "https://vocabulary.uncefact.org/unlocode",
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
           "type": "string",
           "format": "uri",
           "description": "Classification scheme ID"
         },
         "schemeName": {
-          "example": "UN/LOCODE",
+          "example": "UN Central Product Classification (CPC)",
           "type": "string",
           "description": "The name of the classification scheme"
         }
@@ -154,11 +161,11 @@
           "description": "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
         },
         "name": {
-          "example": "EV battery 50kWh.",
+          "example": "EV battery 300Ah.",
           "type": "string",
-          "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+          "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
         },
-        "number": {
+        "registeredId": {
           "example": "90664869327",
           "type": "string",
           "description": "The registration number (alphanumeric) of the entity within the register. Unique within the register."
@@ -178,19 +185,6 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "type": {
-          "type": "string",
-          "default": "Location",
-          "enum": [
-            "Location"
-          ]
-        },
-        "id": {
-          "example": "https://maps.app.goo.gl/6yyPVdwJDWjtj9fG6",
-          "type": "string",
-          "format": "uri",
-          "description": "The globally unique identiifer of this geographic location. Typically a google pin or a pluscode."
-        },
         "geoLocation": {
           "$ref": "#/$defs/Point",
           "description": "The latitude and logditude coordinates that best represent the specified location. Using GeoJSON Point notation."
@@ -200,10 +194,7 @@
           "description": "The list of ordered coordinates that define a closed area polygon as a location boundary using GeoJSON polygon notation."
         }
       },
-      "description": "Location information including address and geolocation of points, areas, and boundaries",
-      "required": [
-        "id"
-      ]
+      "description": "Location information including address and geolocation of points, areas, and boundaries"
     },
     "Point": {
       "type": "object",
