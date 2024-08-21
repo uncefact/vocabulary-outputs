@@ -12,7 +12,7 @@
     {
       "@id": "untp-dpp:DigitalProductPassport",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provernance information, circularity information and a set of verifable product confomrity & sistainability claims.  ",
+      "rdfs:comment": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provernance information, circularity information and a set of verifable product confomrity & sistainability claims.",
       "rdfs:label": "DigitalProductPassport",
       "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
@@ -29,12 +29,6 @@
       "rdfs:comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
       "rdfs:label": "Declaration",
       "rdfs:subClassOf": "untp-core:Declaration"
-    },
-    {
-      "@id": "untp-dpp:TraceabilityEvent",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference.",
-      "rdfs:label": "TraceabilityEvent"
     },
     {
       "@id": "untp-dpp:@context",
@@ -173,12 +167,12 @@
         }
       ],
       "rdfs:comment": [
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 50kWhparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
       ],
       "rdfs:label": "name"
     },
     {
-      "@id": "untp-dpp:idValue",
+      "@id": "untp-dpp:registeredId",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -192,18 +186,18 @@
         }
       ],
       "rdfs:comment": [
-        "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
       ],
-      "rdfs:label": "idValue"
+      "rdfs:label": "registeredId"
     },
     {
       "@id": "untp-dpp:idScheme",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:IdentifierScheme"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -211,28 +205,9 @@
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
       ],
       "rdfs:label": "idScheme"
-    },
-    {
-      "@id": "untp-dpp:idSchemeName",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
-      ],
-      "rdfs:label": "idSchemeName"
     },
     {
       "@id": "untp-dpp:serialNumber",
@@ -444,25 +419,6 @@
       "rdfs:label": "countryOfProduction"
     },
     {
-      "@id": "untp-dpp:characteristics",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Characteristic"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity."
-      ],
-      "rdfs:label": "characteristics"
-    },
-    {
       "@id": "untp-dpp:materialsProvenance",
       "schema:rangeIncludes": {
         "@id": "untp-core:Material"
@@ -541,7 +497,7 @@
     {
       "@id": "untp-dpp:traceabilityInformation",
       "schema:rangeIncludes": {
-        "@id": "untp-dpp:TraceabilityEvent"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
@@ -553,14 +509,14 @@
         }
       ],
       "rdfs:comment": [
-        "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level. "
+        "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level. Links should include the hash of the target and may point to encrypted targets."
       ],
       "rdfs:label": "traceabilityInformation"
     },
     {
       "@id": "untp-dpp:referenceStandard",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Standard"
+        "@id": "untp-core:referenceStandard"
       },
       "@type": [
         "rdf:Property",
@@ -579,7 +535,7 @@
     {
       "@id": "untp-dpp:referenceRegulation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Regulation"
+        "@id": "untp-core:referenceRegulation"
       },
       "@type": [
         "rdf:Property",
@@ -598,7 +554,7 @@
     {
       "@id": "untp-dpp:assessmentCriteria",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Criterion"
+        "@id": "untp-core:assessmentCriteria"
       },
       "@type": [
         "rdf:Property",
@@ -617,7 +573,7 @@
     {
       "@id": "untp-dpp:declaredValues",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Metric"
+        "@id": "untp-core:declaredValues"
       },
       "@type": [
         "rdf:Property",
@@ -636,11 +592,11 @@
     {
       "@id": "untp-dpp:compliance",
       "schema:rangeIncludes": {
-        "@id": "xsd:boolean"
+        "@id": "untp-core:compliance"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -689,44 +645,6 @@
         "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)"
       ],
       "rdfs:label": "conformityEvidence"
-    },
-    {
-      "@id": "untp-dpp:eventReference",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:TraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "A URI pointing to the detailed information about the EPCIS event. SHOULD be a URL lik to a UNTP Digital Traceability Event (DTE) "
-      ],
-      "rdfs:label": "eventReference"
-    },
-    {
-      "@id": "untp-dpp:eventType",
-      "schema:rangeIncludes": {
-        "@id": "untp-dpp:eventTypeCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:TraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "A code representing the type of EPCIS event. ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent, ObjectEvent."
-      ],
-      "rdfs:label": "eventType"
     },
     {
       "@id": "untp-dpp:eventTypeCode#aggregation",

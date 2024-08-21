@@ -4,14 +4,8 @@
     "VerifiableCredential"
   ],
   "@context": [
-    [
-      "https://www.w3.org/ns/credentials/v2",
-      "https://test.uncefact.org/vocabulary/untp/dpp/"
-    ],
-    [
-      "https://www.w3.org/ns/credentials/v2",
-      "https://test.uncefact.org/vocabulary/untp/dpp/"
-    ]
+    "https://www.w3.org/ns/credentials/v2",
+    "https://test.uncefact.org/vocabulary/untp/dpp/"
   ],
   "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
   "issuer": {
@@ -26,20 +20,30 @@
           "Entity"
         ],
         "id": "https://id.gs1.org/01/09520123456788/21/12345",
-        "name": "EV battery 50kWh.",
-        "idValue": "9520123.456788",
-        "idScheme": "https://id.gs1.org/01.",
-        "idSchemeName": "GS1 SGTIN"
+        "name": "EV battery 300Ah.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
       },
       {
         "type": [
           "Entity"
         ],
         "id": "https://id.gs1.org/01/09520123456788/21/12345",
-        "name": "EV battery 50kWh.",
-        "idValue": "9520123.456788",
-        "idScheme": "https://id.gs1.org/01.",
-        "idSchemeName": "GS1 SGTIN"
+        "name": "EV battery 300Ah.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
       }
     ]
   },
@@ -51,59 +55,55 @@
       "Entity"
     ],
     "id": "https://id.gs1.org/01/09520123456788/21/12345",
-    "name": "EV battery 50kWh.",
-    "idValue": "9520123.456788",
-    "idScheme": "https://id.gs1.org/01.",
-    "idSchemeName": "GS1 SGTIN",
-    "serialNumber": "12345",
+    "name": "EV battery 300Ah.",
+    "registeredId": "90664869327",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    },
+    "serialNumber": "12345678",
     "batchNumber": "6789",
     "productImage": {
-      "type": [
-        "Link"
-      ],
       "linkURL": "https://files.example-certifier.com/1234567.json",
-      "linkName": "Guarantee of Origin Certificate",
-      "linkType": "untp.dcc"
+      "linkName": "GBA rule book conformity certificate",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
     },
-    "description": "Big and tender Great Northen Beans in tasty tomato sauce. These beans are rich in fiber and low in fat. Fiber rich food helps to maintain a healthier digestive system & reduces cholesterol.",
+    "description": "400",
     "productCategory": [
       {
         "type": [
           "Classification"
         ],
-        "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
-        "code": "AUSYD",
-        "name": "Port of Sydney",
-        "schemeID": "https://vocabulary.uncefact.org/unlocode",
-        "schemeName": "UN/LOCODE"
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
       },
       {
         "type": [
           "Classification"
         ],
-        "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
-        "code": "AUSYD",
-        "name": "Port of Sydney",
-        "schemeID": "https://vocabulary.uncefact.org/unlocode",
-        "schemeName": "UN/LOCODE"
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
       }
     ],
     "furtherInformation": [
       {
-        "type": [
-          "Link"
-        ],
         "linkURL": "https://files.example-certifier.com/1234567.json",
-        "linkName": "Guarantee of Origin Certificate",
-        "linkType": "untp.dcc"
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
       },
       {
-        "type": [
-          "Link"
-        ],
         "linkURL": "https://files.example-certifier.com/1234567.json",
-        "linkName": "Guarantee of Origin Certificate",
-        "linkType": "untp.dcc"
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
       }
     ],
     "producedByParty": {
@@ -111,123 +111,98 @@
         "Entity"
       ],
       "id": "https://id.gs1.org/01/09520123456788/21/12345",
-      "name": "EV battery 50kWh.",
-      "idValue": "9520123.456788",
-      "idScheme": "https://id.gs1.org/01.",
-      "idSchemeName": "GS1 SGTIN"
+      "name": "EV battery 300Ah.",
+      "registeredId": "90664869327",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      }
     },
     "producedAtFacility": {
       "type": [
         "Entity"
       ],
       "id": "https://id.gs1.org/01/09520123456788/21/12345",
-      "name": "EV battery 50kWh.",
-      "idValue": "9520123.456788",
-      "idScheme": "https://id.gs1.org/01.",
-      "idSchemeName": "GS1 SGTIN"
+      "name": "EV battery 300Ah.",
+      "registeredId": "90664869327",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      }
     },
     "dimensions": {
-      "type": [
-        "Dimension"
-      ],
       "weight": {
-        "type": [
-          "Measure"
-        ],
         "value": 10,
         "unit": "KGM"
       },
       "length": {
-        "type": [
-          "Measure"
-        ],
         "value": 10,
         "unit": "KGM"
       },
       "width": {
-        "type": [
-          "Measure"
-        ],
         "value": 10,
         "unit": "KGM"
       },
       "height": {
-        "type": [
-          "Measure"
-        ],
         "value": 10,
         "unit": "KGM"
       },
       "volume": {
-        "type": [
-          "Measure"
-        ],
         "value": 10,
         "unit": "KGM"
       }
     },
     "productionDate": 2024,
     "countryOfProduction": "AU",
-    "characteristics": {
-      "type": [
-        "Characteristic"
-      ]
-    },
     "materialsProvenance": [
       {
-        "type": [
-          "Material"
-        ],
         "name": "Lithium Spodumene",
         "originCountry": "AU",
         "materialType": {
           "type": [
             "Classification"
           ],
-          "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
-          "code": "AUSYD",
-          "name": "Port of Sydney",
-          "schemeID": "https://vocabulary.uncefact.org/unlocode",
-          "schemeName": "UN/LOCODE"
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
         },
         "massFraction": 0.2,
         "recycledAmount": 0.5,
         "hazardous": false,
         "materialSafetyInformation": {
-          "type": [
-            "Link"
-          ],
           "linkURL": "https://files.example-certifier.com/1234567.json",
-          "linkName": "Guarantee of Origin Certificate",
-          "linkType": "untp.dcc"
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
         }
       },
       {
-        "type": [
-          "Material"
-        ],
         "name": "Lithium Spodumene",
         "originCountry": "AU",
         "materialType": {
           "type": [
             "Classification"
           ],
-          "id": "https://vocabulary.uncefact.org/unlocode?country=au#AUSYD",
-          "code": "AUSYD",
-          "name": "Port of Sydney",
-          "schemeID": "https://vocabulary.uncefact.org/unlocode",
-          "schemeName": "UN/LOCODE"
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
         },
         "massFraction": 0.2,
         "recycledAmount": 0.5,
         "hazardous": false,
         "materialSafetyInformation": {
-          "type": [
-            "Link"
-          ],
           "linkURL": "https://files.example-certifier.com/1234567.json",
-          "linkName": "Guarantee of Origin Certificate",
-          "linkType": "untp.dcc"
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
         }
       }
     ],
@@ -236,24 +211,29 @@
         "type": [
           "Declaration"
         ],
-        "id": "https://roducts.example-company.com/09520123456788/declarations/12345",
+        "id": "https://jargon.sh",
         "referenceStandard": {
           "type": [
             "Standard"
           ],
-          "id": "https://ghgprotocol.org/product-standard",
-          "name": "GHG protocol product lifecycle standard",
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
           "issuingParty": {
             "type": [
               "Entity"
             ],
             "id": "https://id.gs1.org/01/09520123456788/21/12345",
-            "name": "EV battery 50kWh.",
-            "idValue": "9520123.456788",
-            "idScheme": "https://id.gs1.org/01.",
-            "idSchemeName": "GS1 SGTIN"
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
           },
-          "issueDate": 2011
+          "issueDate": 2023
         },
         "referenceRegulation": {
           "type": [
@@ -267,10 +247,15 @@
               "Entity"
             ],
             "id": "https://id.gs1.org/01/09520123456788/21/12345",
-            "name": "EV battery 50kWh.",
-            "idValue": "9520123.456788",
-            "idScheme": "https://id.gs1.org/01.",
-            "idSchemeName": "GS1 SGTIN"
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
           },
           "effectiveDate": 2024
         },
@@ -279,32 +264,20 @@
             "type": [
               "Criterion"
             ],
-            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
-            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+            "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
             "thresholdValues": [
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
                 "accuracy": 0.05
               },
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
@@ -316,32 +289,20 @@
             "type": [
               "Criterion"
             ],
-            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
-            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+            "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
             "thresholdValues": [
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
                 "accuracy": 0.05
               },
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
@@ -352,28 +313,16 @@
         ],
         "declaredValues": [
           {
-            "type": [
-              "Metric"
-            ],
-            "metricName": "tensile strength",
+            "metricName": "GHG emissions intensity",
             "metricValue": {
-              "type": [
-                "Measure"
-              ],
               "value": 10,
               "unit": "KGM"
             },
             "accuracy": 0.05
           },
           {
-            "type": [
-              "Metric"
-            ],
-            "metricName": "tensile strength",
+            "metricName": "GHG emissions intensity",
             "metricValue": {
-              "type": [
-                "Measure"
-              ],
               "value": 10,
               "unit": "KGM"
             },
@@ -381,16 +330,12 @@
           }
         ],
         "compliance": true,
-        "conformityTopic": "environment.emissions",
+        "conformityTopic": "environment.energy",
         "conformityEvidence": {
-          "type": [
-            "SecureLink",
-            "Link"
-          ],
           "linkURL": "https://files.example-certifier.com/1234567.json",
-          "linkName": "Guarantee of Origin Certificate",
-          "linkType": "untp.dcc",
-          "targetHash": "6239119",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119",
           "hashMethod": "SHA-256",
           "encryptionMethod": "AES"
         }
@@ -399,24 +344,29 @@
         "type": [
           "Declaration"
         ],
-        "id": "https://roducts.example-company.com/09520123456788/declarations/12345",
+        "id": "https://jargon.sh",
         "referenceStandard": {
           "type": [
             "Standard"
           ],
-          "id": "https://ghgprotocol.org/product-standard",
-          "name": "GHG protocol product lifecycle standard",
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
           "issuingParty": {
             "type": [
               "Entity"
             ],
             "id": "https://id.gs1.org/01/09520123456788/21/12345",
-            "name": "EV battery 50kWh.",
-            "idValue": "9520123.456788",
-            "idScheme": "https://id.gs1.org/01.",
-            "idSchemeName": "GS1 SGTIN"
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
           },
-          "issueDate": 2011
+          "issueDate": 2023
         },
         "referenceRegulation": {
           "type": [
@@ -430,10 +380,15 @@
               "Entity"
             ],
             "id": "https://id.gs1.org/01/09520123456788/21/12345",
-            "name": "EV battery 50kWh.",
-            "idValue": "9520123.456788",
-            "idScheme": "https://id.gs1.org/01.",
-            "idSchemeName": "GS1 SGTIN"
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
           },
           "effectiveDate": 2024
         },
@@ -442,32 +397,20 @@
             "type": [
               "Criterion"
             ],
-            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
-            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+            "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
             "thresholdValues": [
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
                 "accuracy": 0.05
               },
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
@@ -479,32 +422,20 @@
             "type": [
               "Criterion"
             ],
-            "id": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
-            "name": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+            "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+            "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
             "thresholdValues": [
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
                 "accuracy": 0.05
               },
               {
-                "type": [
-                  "Metric"
-                ],
-                "metricName": "tensile strength",
+                "metricName": "GHG emissions intensity",
                 "metricValue": {
-                  "type": [
-                    "Measure"
-                  ],
                   "value": 10,
                   "unit": "KGM"
                 },
@@ -515,28 +446,16 @@
         ],
         "declaredValues": [
           {
-            "type": [
-              "Metric"
-            ],
-            "metricName": "tensile strength",
+            "metricName": "GHG emissions intensity",
             "metricValue": {
-              "type": [
-                "Measure"
-              ],
               "value": 10,
               "unit": "KGM"
             },
             "accuracy": 0.05
           },
           {
-            "type": [
-              "Metric"
-            ],
-            "metricName": "tensile strength",
+            "metricName": "GHG emissions intensity",
             "metricValue": {
-              "type": [
-                "Measure"
-              ],
               "value": 10,
               "unit": "KGM"
             },
@@ -544,50 +463,34 @@
           }
         ],
         "compliance": true,
-        "conformityTopic": "environment.emissions",
+        "conformityTopic": "environment.energy",
         "conformityEvidence": {
-          "type": [
-            "SecureLink",
-            "Link"
-          ],
           "linkURL": "https://files.example-certifier.com/1234567.json",
-          "linkName": "Guarantee of Origin Certificate",
-          "linkType": "untp.dcc",
-          "targetHash": "6239119",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119",
           "hashMethod": "SHA-256",
           "encryptionMethod": "AES"
         }
       }
     ],
     "circularityScorecard": {
-      "type": [
-        "CircularityPerformance"
-      ],
       "recyclingInformation": {
-        "type": [
-          "Link"
-        ],
         "linkURL": "https://files.example-certifier.com/1234567.json",
-        "linkName": "Guarantee of Origin Certificate",
-        "linkType": "untp.dcc"
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
       },
       "repairInformation": {
-        "type": [
-          "Link"
-        ],
         "linkURL": "https://files.example-certifier.com/1234567.json",
-        "linkName": "Guarantee of Origin Certificate",
-        "linkType": "untp.dcc"
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
       },
       "recyclableContent": 0.5,
       "recyecledContent": 0.3,
-      "utilityFactor": 3.141579,
-      "materialCircularityIndicator": 3.141579
+      "utilityFactor": 1.2,
+      "materialCircularityIndicator": 0.67
     },
     "emissionsScorecard": {
-      "type": [
-        "EmissionsPerformance"
-      ],
       "carbonFootprint": 1.8,
       "declaredUnit": "KGM",
       "operationalScope": "Scope123toGate",
@@ -596,35 +499,42 @@
         "type": [
           "Standard"
         ],
-        "id": "https://ghgprotocol.org/product-standard",
-        "name": "GHG protocol product lifecycle standard",
+        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
         "issuingParty": {
           "type": [
             "Entity"
           ],
           "id": "https://id.gs1.org/01/09520123456788/21/12345",
-          "name": "EV battery 50kWh.",
-          "idValue": "9520123.456788",
-          "idScheme": "https://id.gs1.org/01.",
-          "idSchemeName": "GS1 SGTIN"
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
         },
-        "issueDate": 2011
+        "issueDate": 2023
       }
     },
     "traceabilityInformation": [
       {
-        "type": [
-          "TraceabilityEvent"
-        ],
-        "eventReference": "https://jargon.sh",
-        "eventType": "aggregation"
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+        "hashDigest": "6239119",
+        "hashMethod": "SHA-256",
+        "encryptionMethod": "AES"
       },
       {
-        "type": [
-          "TraceabilityEvent"
-        ],
-        "eventReference": "https://jargon.sh",
-        "eventType": "aggregation"
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+        "hashDigest": "6239119",
+        "hashMethod": "SHA-256",
+        "encryptionMethod": "AES"
       }
     ]
   }
