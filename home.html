@@ -57,7 +57,7 @@ class: home
         </ul>
         <ul class="browse-types browse-types--two-columns">
             <li class="browse-type browse-types__item">
-                <a href="{{ 'cc/about' | absolute_url }}" class="browse-type__title">
+                <a href="{{ 'dcc/about' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20">
                         <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
                            stroke-linejoin="round"
@@ -70,7 +70,7 @@ class: home
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">Information domain for conformity claims against criteria defined in a standard or regulation</p>
-                    <a class="browse-type__action" href="{{ 'cc/about' | | absolute_url }}">Browse</a>
+                    <a class="browse-type__action" href="{{ 'dcc/about' | | absolute_url }}">Browse</a>
                 </div>
                 {% if site.versions.untp-dcc %}
                     <span class="browse-type__version">
@@ -97,6 +97,30 @@ class: home
                 {% if site.versions.untp-dfr %}
                     <span class="browse-type__version">
                         {{ site.versions.untp-dfr }}
+                    </span>
+                {% endif %}
+            </li>
+        </ul>
+        <ul class="browse-types browse-types--two-columns">
+            <li class="browse-type browse-types__item">
+                <a href="{{ 'dte/about' | absolute_url }}" class="browse-type__title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20">
+                        <g fill="none" fill-rule="evenodd" stroke="#888583" stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="1.2">
+                            <path d="m8.816 18.867 6.71-4.88c.143-.116.268-.229.347-.389.08-.16.127-.33.127-.49v-8.48a.44.44 0 0 0-.237-.4.497.497 0 0 0-.474 0L8.5 9.188c-.133.092-.274.22-.353.38-.08.16-.12.34-.12.5v8.48c0 .16.078.32.236.4.237.08.395.08.553-.08ZM8.184 1l-6.79 5.12c-.078.08-.236.24-.315.4C1 6.68 1 7.08 1 7.08v8.56"/>
+                            <path d="m11.737 2.454-6.79 5.2c-.079.08-.236.24-.315.4-.08.16-.08.48-.08.48v8.64"/>
+                        </g>
+                    </svg>
+                    Traceability Events
+                </a>
+                <div class="browse-type__info">
+                    <p class="browse-type__description">A collection of events that can be used to build supply chain traceability graphs.</p>
+                    <a class="browse-type__action" href="{{ 'dte/about' | | absolute_url }}">Browse</a>
+                </div>
+                {% if site.versions.untp-dte %}
+                    <span class="browse-type__version">
+                        {{ site.versions.untp-dte }}
                     </span>
                 {% endif %}
             </li>
