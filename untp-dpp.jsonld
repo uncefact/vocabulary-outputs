@@ -6,7 +6,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0.3.7/"
   },
   "@graph": [
     {
@@ -19,7 +19,7 @@
     {
       "@id": "untp-dpp:Product",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
+      "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.  ",
       "rdfs:label": "Product",
       "rdfs:subClassOf": "untp-core:Product"
     },
@@ -645,6 +645,12 @@
         "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)"
       ],
       "rdfs:label": "conformityEvidence"
+    },
+    {
+      "@id": "untp-dpp:eventTypeCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "eventTypeCode",
+      "rdfs:comment": "A code describing the traceability event type - drawn from GS1 EPCIS 2.0"
     },
     {
       "@id": "untp-dpp:eventTypeCode#aggregation",
