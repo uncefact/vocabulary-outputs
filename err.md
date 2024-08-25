@@ -1,0 +1,15 @@
+untp-dcc:assessorAssuranceCode
+untp-core:Endorsement
+untp-core:BinaryFile
+untp-dcc:attestationTypeCode
+untp-core:SecureBinaryFile
+untp-core:Criteria
+untp-dcc:assessmentAssuranceCode
+untp-core:Identifier
+untp-dcc:conformityTopicCode
+untp-core:Metric
+untp-core:Party
+untp-core:Standard
+xsd:boolean
+untp-core:Regulation
+xsd:string

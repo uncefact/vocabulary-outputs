@@ -1,0 +1,68 @@
+{
+    "label": "ConformityAttestation",
+    "uri": "untp-dcc:ConformityAttestation",
+    "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dcc:accreditation",
+            "type": "untp-core:Endorsement",
+            "comment": "The accreditation from a competent ..."
+        },
+        {
+            "uri": "untp-dcc:assessmentLevel",
+            "type": "untp-dcc:assessmentAssuranceCode",
+            "comment": "Assurance pertaining to assessment (any ..."
+        },
+        {
+            "uri": "untp-dcc:assessments",
+            "type": "untp-dcc:ConformityAssessment",
+            "comment": "The list of specific assessments ..."
+        },
+        {
+            "uri": "untp-dcc:assessorLevel",
+            "type": "untp-dcc:assessorAssuranceCode",
+            "comment": "Assurance code pertaining to assessor ..."
+        },
+        {
+            "uri": "untp-dcc:attestationDescription",
+            "type": "xsd:string",
+            "comment": "A textual description of the ..."
+        },
+        {
+            "uri": "untp-dcc:attestationType",
+            "type": "untp-dcc:attestationTypeCode",
+            "comment": "The type of criterion (optional ..."
+        },
+        {
+            "uri": "untp-dcc:auditableEvidence",
+            "type": "untp-core:SecureBinaryFile",
+            "comment": "Auditable evidence supporting this assessment ..."
+        },
+        {
+            "uri": "untp-dcc:conformityCertificate",
+            "type": "untp-core:BinaryFile",
+            "comment": "A reference to the human ..."
+        },
+        {
+            "uri": "untp-dcc:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dcc:issuedToParty",
+            "type": "untp-core:Identifier",
+            "comment": "The party to whom the ..."
+        },
+        {
+            "uri": "untp-dcc:scope",
+            "type": "untp-dcc:ConformityAssessmentScheme",
+            "comment": "A list of relevant standards ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dcc:credentialSubject",
+            "comment": "The conformity attestion is the ..."
+        }
+    ]
+}

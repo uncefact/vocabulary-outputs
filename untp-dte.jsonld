@@ -1,0 +1,657 @@
+{
+  "@context": {
+    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dcc:DigitalConformityCredential",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
+      "rdfs:label": "DigitalConformityCredential"
+    },
+    {
+      "@id": "untp-dcc:ConformityAttestation",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
+      "rdfs:label": "ConformityAttestation"
+    },
+    {
+      "@id": "untp-dcc:ConformityAssessmentScheme",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)",
+      "rdfs:label": "ConformityAssessmentScheme"
+    },
+    {
+      "@id": "untp-dcc:ConformityAssessment",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
+      "rdfs:label": "ConformityAssessment"
+    },
+    {
+      "@id": "untp-dcc:@context",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:DigitalConformityCredential"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of JSON-LD contect URIs that define the seamntic meaning of prperties within the credential. "
+      ],
+      "rdfs:label": "@context"
+    },
+    {
+      "@id": "untp-dcc:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:DigitalConformityCredential"
+        },
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        },
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        },
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "A unique identifier (URI) assigned to the product passport. May be a UUID",
+        "The globally unique ID of this conformity attestation. ",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dcc:issuer",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:DigitalConformityCredential"
+        }
+      ],
+      "rdfs:comment": [
+        "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+      ],
+      "rdfs:label": "issuer"
+    },
+    {
+      "@id": "untp-dcc:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:DigitalConformityCredential"
+        }
+      ],
+      "rdfs:comment": [
+        "The date and time from which the credential is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "untp-dcc:validUntil",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:DigitalConformityCredential"
+        }
+      ],
+      "rdfs:comment": [
+        "The expiry date (if applicable) of this verifiable credential."
+      ],
+      "rdfs:label": "validUntil"
+    },
+    {
+      "@id": "untp-dcc:credentialSubject",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:ConformityAttestation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:DigitalConformityCredential"
+        }
+      ],
+      "rdfs:comment": [
+        "The conformity attestion is the subject of the verifiable credential. "
+      ],
+      "rdfs:label": "credentialSubject"
+    },
+    {
+      "@id": "untp-dcc:assessorLevel",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:assessorAssuranceCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "Assurance code pertaining to assessor (relation to the object under assessment)"
+      ],
+      "rdfs:label": "assessorLevel"
+    },
+    {
+      "@id": "untp-dcc:assessmentLevel",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:assessmentAssuranceCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "Assurance pertaining to assessment (any authority or support for the assessment process)"
+      ],
+      "rdfs:label": "assessmentLevel"
+    },
+    {
+      "@id": "untp-dcc:attestationType",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:attestationTypeCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of criterion (optional or mandatory)."
+      ],
+      "rdfs:label": "attestationType"
+    },
+    {
+      "@id": "untp-dcc:attestationDescription",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "A textual description of the scope or purpose of this confomrity attestation"
+      ],
+      "rdfs:label": "attestationDescription"
+    },
+    {
+      "@id": "untp-dcc:issuedToParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Identifier"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The party to whom the conformity attestation was issued."
+      ],
+      "rdfs:label": "issuedToParty"
+    },
+    {
+      "@id": "untp-dcc:accreditation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Endorsement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+      ],
+      "rdfs:label": "accreditation"
+    },
+    {
+      "@id": "untp-dcc:conformityCertificate",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:BinaryFile"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
+      ],
+      "rdfs:label": "conformityCertificate"
+    },
+    {
+      "@id": "untp-dcc:auditableEvidence",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:SecureBinaryFile"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usally private data and would normally be encrypted."
+      ],
+      "rdfs:label": "auditableEvidence"
+    },
+    {
+      "@id": "untp-dcc:scope",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:ConformityAssessmentScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of relevant standards and/or regulations against which apply to this attestation (eg AS1163:2016)."
+      ],
+      "rdfs:label": "scope"
+    },
+    {
+      "@id": "untp-dcc:assessments",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:ConformityAssessment"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of specific assessments made within this conformity attestation."
+      ],
+      "rdfs:label": "assessments"
+    },
+    {
+      "@id": "untp-dcc:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dcc:idSchemeName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+      ],
+      "rdfs:label": "idSchemeName"
+    },
+    {
+      "@id": "untp-dcc:idValue",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The value of the identifier within the scheme (eg 90664869327)"
+      ],
+      "rdfs:label": "idValue"
+    },
+    {
+      "@id": "untp-dcc:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of the identified entity."
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dcc:issuingParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Identifier"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The party that issued the standard (ID and Name reference only)"
+      ],
+      "rdfs:label": "issuingParty"
+    },
+    {
+      "@id": "untp-dcc:issueDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The date when the standard was issued."
+      ],
+      "rdfs:label": "issueDate"
+    },
+    {
+      "@id": "untp-dcc:trustmark",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:BinaryFile"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessmentScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The trust mark that represents the conformity assessment scheme."
+      ],
+      "rdfs:label": "trustmark"
+    },
+    {
+      "@id": "untp-dcc:referenceStandard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Standard"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the standard that defines the specification / criteria"
+      ],
+      "rdfs:label": "referenceStandard"
+    },
+    {
+      "@id": "untp-dcc:referenceRegulation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Regulation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the regulation that defines the assessment criteria"
+      ],
+      "rdfs:label": "referenceRegulation"
+    },
+    {
+      "@id": "untp-dcc:assessmentCriterion",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Criteria"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The specification against which the assessment is made."
+      ],
+      "rdfs:label": "assessmentCriterion"
+    },
+    {
+      "@id": "untp-dcc:declaredValues",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Metric"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of specific values measured as part of this assessment (eg tensile strength)"
+      ],
+      "rdfs:label": "declaredValues"
+    },
+    {
+      "@id": "untp-dcc:compliance",
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "An indicator of whether or not the assessment meets the specification."
+      ],
+      "rdfs:label": "compliance"
+    },
+    {
+      "@id": "untp-dcc:conformityTopic",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:conformityTopicCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+      ],
+      "rdfs:label": "conformityTopic"
+    },
+    {
+      "@id": "untp-dcc:assessedProducts",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Identifier"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of products that are the subject of this conformity assessment"
+      ],
+      "rdfs:label": "assessedProducts"
+    },
+    {
+      "@id": "untp-dcc:assessedFacilities",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Identifier"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of facilities that are the subject of this conformity assessment."
+      ],
+      "rdfs:label": "assessedFacilities"
+    },
+    {
+      "@id": "untp-dcc:verfifiedByCAB",
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "Indicates whether the conformity assessment body has verified the identity of the subject of the assement (a facility or product / batch)."
+      ],
+      "rdfs:label": "verfifiedByCAB"
+    }
+  ]
+}

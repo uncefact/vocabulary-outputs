@@ -1,0 +1,33 @@
+{
+    "label": "id",
+    "uri": "untp-dcc:id",
+    "comment": [
+        "A unique identifier (URI) assigned to the product passport. May be a UUID",
+        "The globally unique ID of this conformity attestation. ",
+        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:string"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-dcc:DigitalConformityCredential",
+            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. "
+        },
+        {
+            "uri": "untp-dcc:ConformityAttestation",
+            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
+        },
+        {
+            "uri": "untp-dcc:ConformityAssessmentScheme",
+            "comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)"
+        },
+        {
+            "uri": "untp-dcc:ConformityAssessment",
+            "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch."
+        }
+    ]
+}
