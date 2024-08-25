@@ -1,0 +1,114 @@
+{
+    "label": "Product",
+    "uri": "untp-dpp:Product",
+    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.  ",
+    "subClassOf": "untp-core:Product",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dpp:batchNumber",
+            "type": "xsd:string",
+            "comment": "Identifier of the specific production ..."
+        },
+        {
+            "uri": "untp-dpp:circularityScorecard",
+            "type": "untp-core:CircularityPerformance",
+            "comment": "A circularity performance scorecard "
+        },
+        {
+            "uri": "untp-dpp:conformityDeclarations",
+            "type": "untp-dpp:Declaration",
+            "comment": "An array of claim objects ..."
+        },
+        {
+            "uri": "untp-dpp:countryOfProduction",
+            "type": "untp-dpp:countryCode",
+            "comment": "The country in which this ..."
+        },
+        {
+            "uri": "untp-dpp:description",
+            "type": "xsd:string",
+            "comment": "A textual description providing details ..."
+        },
+        {
+            "uri": "untp-dpp:dimensions",
+            "type": "untp-core:Dimension",
+            "comment": "The physical dimensions of the ..."
+        },
+        {
+            "uri": "untp-dpp:emissionsScorecard",
+            "type": "untp-core:EmissionsPerformance",
+            "comment": "An emissions performacne scorecard "
+        },
+        {
+            "uri": "untp-dpp:furtherInformation",
+            "type": "untp-core:Link",
+            "comment": "A URL pointing to further ..."
+        },
+        {
+            "uri": "untp-dpp:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dpp:idScheme",
+            "type": "untp-core:IdentifierScheme",
+            "comment": "The identifier scheme. Exampleproduct - ..."
+        },
+        {
+            "uri": "untp-dpp:materialsProvenance",
+            "type": "untp-core:Material",
+            "comment": "An array of Provenance objects ..."
+        },
+        {
+            "uri": "untp-dpp:name",
+            "type": "xsd:string",
+            "comment": "The registered name of the ..."
+        },
+        {
+            "uri": "untp-dpp:producedAtFacility",
+            "type": "untp-core:Entity",
+            "comment": "The Facility where the product ..."
+        },
+        {
+            "uri": "untp-dpp:producedByParty",
+            "type": "untp-core:Entity",
+            "comment": "The Party entity that manufactured ..."
+        },
+        {
+            "uri": "untp-dpp:productCategory",
+            "type": "untp-core:Classification",
+            "comment": "A code representing the product's ..."
+        },
+        {
+            "uri": "untp-dpp:productImage",
+            "type": "untp-core:Link",
+            "comment": "Reference information (location, type, name) ..."
+        },
+        {
+            "uri": "untp-dpp:productionDate",
+            "type": "xsd:string",
+            "comment": "The ISO 8601 date on ..."
+        },
+        {
+            "uri": "untp-dpp:registeredId",
+            "type": "xsd:string",
+            "comment": "The registration number (alphanumeric) of ..."
+        },
+        {
+            "uri": "untp-dpp:serialNumber",
+            "type": "xsd:string",
+            "comment": "A number or code representing ..."
+        },
+        {
+            "uri": "untp-dpp:traceabilityInformation",
+            "type": "untp-core:SecureLink",
+            "comment": "An array of secure links ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dpp:credentialSubject",
+            "comment": "The subject of a digital ..."
+        }
+    ]
+}
