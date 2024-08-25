@@ -78,6 +78,7 @@ class: home
                     </span>
                 {% endif %}
             </li>
+            {%- assign untp_dfr_major = site.versions.untp-dfr | split: . -%}
             <li class="browse-type browse-types__item">
                 <a href="{{ 'dfr/about' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
@@ -92,16 +93,15 @@ class: home
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">A facility level record of sustainability performance.</p>
-                    <a class="browse-type__action" href="{{ 'dfr/about' | absolute_url }}">Browse</a>
+                    <a class="browse-type__action" href="{{ 'about' | untp_dfr_major |'dfr' | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.untp-dfr %}
-                    <span class="browse-type__version">
-                        {{ site.versions.untp-dfr }}
-                    </span>
-                {% endif %}
+                <span class="browse-type__version">
+                    {{ untp_dfr_major }}
+                </span>
             </li>
         </ul>
         <ul class="browse-types browse-types--two-columns">
+            {%- assign untp_dte_major = site.versions.untp-dte | split: . -%}
             <li class="browse-type browse-types__item">
                 <a href="{{ 'dte/about' | absolute_url }}" class="browse-type__title">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20">
@@ -116,13 +116,11 @@ class: home
                 </a>
                 <div class="browse-type__info">
                     <p class="browse-type__description">A collection of events that can be used to build supply chain traceability graphs.</p>
-                    <a class="browse-type__action" href="{{ 'dte/about' | | absolute_url }}">Browse</a>
+                    <a class="browse-type__action" href="{{ 'about' | untp_dte_major |'dte' | absolute_url }}">Browse</a>
                 </div>
-                {% if site.versions.untp-dte %}
-                    <span class="browse-type__version">
-                        {{ site.versions.untp-dte }}
-                    </span>
-                {% endif %}
+                <span class="browse-type__version">
+                    {{ untp_dte_major[0] }}
+                </span>
             </li>
         </ul>
 
