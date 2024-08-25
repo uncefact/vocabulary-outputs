@@ -44,6 +44,6 @@ jobs:
       run: bundle exec jekyll build --config _config_preview.yml
     - name: "Deploy to AWS S3"
       run: |
-        major=$(cat _config_preview.yml | yq e '.versions.untp-dcc | cut -d. -f1)
+        major=$(cat _config_preview.yml | yq e '.versions.untp-dcc' | cut -d. -f1)
         aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/untp/dcc/$major --cache-control max-age=604800
         aws cloudfront create-invalidation --distribution-id "E32QP2QS6SXRHC" --paths "/vocabulary/untp/dcc/$major/*"
