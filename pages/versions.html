@@ -5,6 +5,11 @@ type: default
 layout: table
 ---
 
+{% for major in site.data.versions.majors %}
+<h2>Major version: {{ major.major}}</h2>
+<div class="page-description">
+    <p>Go to the version: <a href="{{ major.prefix }}">{{ '/'| prepend: major.prefix | prepend: site.dest }} </a></p>
+</div>
 <table class="table-grid">
     <thead>
         <tr>
@@ -14,20 +19,19 @@ layout: table
         </tr>
     </thead>
     <tbody>
-        {% for version in site.data.versions.versions %}
+        {% for version in site.data.versions.versions.log %}
                 <tr>
                     <td>
-                        <a href="{{ version.prefix }}" title="">
-                            {{ version.version}}
-                        </a>
+                        {{ version.version}}
                     </td>
                     <td>
-                            {{ version.date }}
-                        </td>
-                        <td>
-                                {{ version.notes }}
+                        {{ version.date }}
+                    </td>
+                    <td>
+                        {{ version.notes }}
                     </td>
                 </tr>
         {% endfor %}
     </tbody>
 </table>
+{% endfor %}
