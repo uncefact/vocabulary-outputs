@@ -95,8 +95,9 @@ class: white
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>JSON-LD Context files are available here:</p>
         <p>
-            <a class="link-box" href="{{ 'untp-dcc-context.jsonld' | absolute_url }}">{{ '/untp-dcc-context.jsonld'| prepend: site.baseurl | prepend: site.dest }}</a>
+            <a class="link-box" href="{{ 'untp-dcc-context.jsonld' | absolute_url }}">{{ '.json' | prepend: site.versions.untp-dcc | prepend: '/untp-dcc-schema-' | prepend: site.baseurl | prepend: site.dest }}</a>
         </p>
+        <p>For all versions checkout the <a href="{{ 'versions' | absolute_url}}">versions page</a>.</p>
         
         <h2 class="home-content__subtitle">Content Negotiation</h2>
         <div class="copy-box">
@@ -113,7 +114,8 @@ class: white
         <h2 class="home-content__subtitle">JSON Shcemas</h2>
         <p>JSON Schema files are available here:</p>
         <p>
-            <a class="link-box" href="{{ 'untp-dcc-schema.json' | absolute_url }}">{{ '/untp-dcc-schema.json' | prepend: site.baseurl | prepend: site.dest }}</a>
+            <a class="link-box" href="{{ 'untp-dcc-schema.json' | absolute_url }}">{{ '.json' | prepend: site.versions.untp-dcc | prepend: '/untp-dcc-schema-' | prepend: site.baseurl | prepend: site.dest }}</a>
         </p>
+        <p>For all versions checkout the <a href="{{ 'versions' | absolute_url}}">versions page</a>.</p>
     </div>
 </div>
