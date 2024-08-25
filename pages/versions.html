@@ -33,10 +33,10 @@ layout: table
                         {{ version.notes }}
                     </td>
                     <td>
-                        <p><a href="{{ versions.context | prepend: major.prefix | prepend: site.dest }}"> </a></p>
+                        <p><a href="{{ version.context | prepend: major.prefix | prepend: site.dest }}"> View</a></p>
                     </td>
                     <td>
-                        <p><a href="{{ versions.schema | prepend: major.prefix | prepend: site.dest }}"> </a></p>
+                        <p><a href="{{ version.schema | prepend: major.prefix | prepend: site.dest }}"> View</a></p>
                     </td>
                 </tr>
         {% endfor %}
