@@ -41,7 +41,10 @@ jobs:
     - name: "Bundle install"
       run: bundle install
     - name: "Build Site"
-      run: bundle exec jekyll build --config _config_preview.yml
+      run: |
+        major=$(cat _config_preview.yml | yq e '.versions.untp-dcc' | cut -d. -f1)
+        yq -i '.versions.untp-dcc="/vocabulary/untp/dcc/$major"' _config_preview.yml 
+        bundle exec jekyll build --config _config_preview.yml
     - name: "Deploy to AWS S3"
       run: |
         major=$(cat _config_preview.yml | yq e '.versions.untp-dcc' | cut -d. -f1)
