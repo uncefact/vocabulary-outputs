@@ -4,12 +4,12 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to AWS S3
-name: preview (untp-dcc-pages)
+name: preview (untp-dpp-pages)
 
 on:
   push:
     branches:
-      - untp-dcc-pages
+      - untp-dpp-pages
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -19,7 +19,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "untp-dcc-pages"
+  group: "untp-dpp-pages"
   cancel-in-progress: true
   
 env:
@@ -41,7 +41,7 @@ jobs:
     - id: set-env
       name: output a major_version for the release
       run: |
-        major_version=$(cat _config_preview.yml | yq e '.versions.untp-dcc' | cut -d. -f1)
+        major_version=$(cat _config_preview.yml | yq e '.versions.untp-dpp' | cut -d. -f1)
         echo "major_version=$major_version" >> "$GITHUB_OUTPUT"
     - name: Print the major_version
       run: |
@@ -50,9 +50,9 @@ jobs:
       run: bundle install
     - name: "Build Site"
       run: |
-        yq -i '.baseurl="/vocabulary/untp/dcc/${{ steps.set-env.outputs.major_version }}"' _config_preview.yml 
+        yq -i '.baseurl="/vocabulary/untp/dpp/${{ steps.set-env.outputs.major_version }}"' _config_preview.yml 
         bundle exec jekyll build --config _config_preview.yml
     - name: "Deploy to AWS S3"
       run: |
-        aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/untp/dcc/${{ steps.set-env.outputs.major_version }} --cache-control max-age=604800
-        aws cloudfront create-invalidation --distribution-id "E32QP2QS6SXRHC" --paths "/vocabulary/untp/dcc/${{ steps.set-env.outputs.major_version }}/*"
+        aws s3 sync ./_site/ s3://uncefact-vocab-preview-sam-bucket-private/vocabulary/untp/dpp/${{ steps.set-env.outputs.major_version }} --cache-control max-age=604800
+        aws cloudfront create-invalidation --distribution-id "E32QP2QS6SXRHC" --paths "/vocabulary/untp/dpp/${{ steps.set-env.outputs.major_version }}/*"
