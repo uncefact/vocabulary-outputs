@@ -1,0 +1,498 @@
+{
+  "@context": {
+    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dfr:DigitalFacilityRecord",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A digital verifiable credential hodling faiclity performance inofmration.",
+      "rdfs:label": "DigitalFacilityRecord",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
+    },
+    {
+      "@id": "untp-dfr:Facility",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A facility sustainabiloty performacne record.",
+      "rdfs:label": "Facility",
+      "rdfs:subClassOf": "untp-core:Facility"
+    },
+    {
+      "@id": "untp-dfr:Declaration",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
+      "rdfs:label": "Declaration",
+      "rdfs:subClassOf": "untp-core:Declaration"
+    },
+    {
+      "@id": "untp-dfr:@context",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
+      ],
+      "rdfs:label": "@context"
+    },
+    {
+      "@id": "untp-dfr:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        },
+        {
+          "@id": "untp-dfr:Facility"
+        },
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "A unique identifier (URI) assigned to the product passport. May be a UUID",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dfr:issuer",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:CredentialIssuer"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+      ],
+      "rdfs:label": "issuer"
+    },
+    {
+      "@id": "untp-dfr:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The date and time from which the credential is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "untp-dfr:validUntil",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The expiry date (if applicable) of this verifiable credential."
+      ],
+      "rdfs:label": "validUntil"
+    },
+    {
+      "@id": "untp-dfr:credentialSubject",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:DigitalFacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The subject of a digitial facility record is a Facility "
+      ],
+      "rdfs:label": "credentialSubject"
+    },
+    {
+      "@id": "untp-dfr:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:registeredId"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-dfr:description",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:description"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional short description of the facility"
+      ],
+      "rdfs:label": "description"
+    },
+    {
+      "@id": "untp-dfr:name",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dfr:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:idScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dfr:countryOfOperation",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this facility is operating."
+      ],
+      "rdfs:label": "countryOfOperation"
+    },
+    {
+      "@id": "untp-dfr:processCategories",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:processCategories"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The idustrial or production processes performed by this facility.    id:unstats.un.org/isic/1030  code:1030  name:Processing and preserving of fruit and vegetables  schemeID:unstats.un.org/unsd/classifications/Econ/isic  schemeName:ISIC"
+      ],
+      "rdfs:label": "processCategories"
+    },
+    {
+      "@id": "untp-dfr:operatedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:operatedByParty"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identifiaction scheme. "
+      ],
+      "rdfs:label": "operatedByParty"
+    },
+    {
+      "@id": "untp-dfr:otherIdentifiers",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:otherIdentifiers"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+      ],
+      "rdfs:label": "otherIdentifiers"
+    },
+    {
+      "@id": "untp-dfr:address",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:address"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Postal address of the location."
+      ],
+      "rdfs:label": "address"
+    },
+    {
+      "@id": "untp-dfr:locationInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Location"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "Physical location details"
+      ],
+      "rdfs:label": "locationInformation"
+    },
+    {
+      "@id": "untp-dfr:conformityDeclarations",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:Declaration"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of conformity declarations agains specific criterai from recognised standards or regulations. "
+      ],
+      "rdfs:label": "conformityDeclarations"
+    },
+    {
+      "@id": "untp-dfr:referenceStandard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:referenceStandard"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the standard that defines the specification / criteria"
+      ],
+      "rdfs:label": "referenceStandard"
+    },
+    {
+      "@id": "untp-dfr:referenceRegulation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:referenceRegulation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the regulation that defines the assessment criteria"
+      ],
+      "rdfs:label": "referenceRegulation"
+    },
+    {
+      "@id": "untp-dfr:assessmentCriteria",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:assessmentCriteria"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "The specification against which the assessment is made."
+      ],
+      "rdfs:label": "assessmentCriteria"
+    },
+    {
+      "@id": "untp-dfr:declaredValues",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:declaredValues"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of specific values measured as part of this assessment (eg tensile strength)"
+      ],
+      "rdfs:label": "declaredValues"
+    },
+    {
+      "@id": "untp-dfr:compliance",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:compliance"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "An indicator of whether or not the assessment meets the specification."
+      ],
+      "rdfs:label": "compliance"
+    },
+    {
+      "@id": "untp-dfr:conformityTopic",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:conformityTopicCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+      ],
+      "rdfs:label": "conformityTopic"
+    },
+    {
+      "@id": "untp-dfr:conformityEvidence",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:SecureLink"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Declaration"
+        }
+      ],
+      "rdfs:comment": [
+        "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
+      ],
+      "rdfs:label": "conformityEvidence"
+    }
+  ]
+}
