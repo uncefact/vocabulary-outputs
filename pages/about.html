@@ -92,9 +92,9 @@ class: white
             </li>
         </ul>
 
-        {%- assign jsonld_context_url = '.jsonld' | prepend: site.versions.untp-dcc | prepend: 'untp-dcc-context-' | prepend: absolute_url  -%}
+        {%- assign jsonld_context_url = '.jsonld' | prepend: site.versions.untp-dcc | prepend: 'untp-dcc-context-' | absolute_url  -%}
         <h2 class="home-content__subtitle">Contexts</h2>
-        <p>JSON-LD Context files are available here:</p>
+        <p>Current JSON-LD Context file is available here:</p>
         <p>
             <a class="link-box" href="{{ jsonld_context_url }}">{{ jsonld_context_url }}</a>
         </p>
@@ -112,10 +112,10 @@ class: white
             </button>
         </div>
 
-        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dcc | prepend: 'untp-dcc-schema-' | prepend: absolute_url  -%}
+        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dcc | prepend: 'untp-dcc-schema-' | absolute_url  -%}
 
         <h2 class="home-content__subtitle">JSON Shcemas</h2>
-        <p>JSON Schema files are available here:</p>
+        <p>Current JSON Schema file is available here:</p>
         <p>
             <a class="link-box" href="{{ json_schema_url }}">{{ json_schema_url }}</a>
         </p>
