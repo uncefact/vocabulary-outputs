@@ -39,10 +39,10 @@ jobs:
       with:
         ruby-version: "2.6.5" # Not needed with a .ruby-version file
     - id: set-env
-      name: output a baseurl for the release
+      name: output a major_version for the release
       run: |
         major_version=$(cat _config_preview.yml | yq e '.versions.untp-dcc' | cut -d. -f1)
-        echo "major=$major_version" >> "$GITHUB_OUTPUT"
+        echo "major_version=$major_version" >> "$GITHUB_OUTPUT"
     - name: Print the major_version
       run: |
         echo "the major_version is ${{ steps.set-env.outputs.major_version }}"
