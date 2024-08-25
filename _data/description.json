@@ -1,0 +1,28 @@
+{
+    "label": "description",
+    "uri": "untp-core:description",
+    "comment": [
+        "An optional short description of the party.",
+        "An optional short description of the facility",
+        "A textual description providing details about the product."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:string"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-core:Party",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
+        },
+        {
+            "uri": "untp-core:Facility",
+            "comment": "The physical site (eg farm or factory) where the product or materials was produced."
+        },
+        {
+            "uri": "untp-core:Product",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+        }
+    ]
+}

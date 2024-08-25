@@ -1,0 +1,34 @@
+{
+    "label": "idScheme",
+    "uri": "untp-core:idScheme",
+    "comment": [
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "untp-core:IdentifierScheme",
+            "comment": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or gloabl authority."
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-core:Entity",
+            "comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id peroperty SHOULD be an identity resolver URL."
+        },
+        {
+            "uri": "untp-core:Party",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
+        },
+        {
+            "uri": "untp-core:Facility",
+            "comment": "The physical site (eg farm or factory) where the product or materials was produced."
+        },
+        {
+            "uri": "untp-core:Product",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+        }
+    ]
+}
