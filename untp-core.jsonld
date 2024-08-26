@@ -6,9 +6,15 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "geojson": "https://datatracker.ietf.org/doc/html/rfc7946"
+    "geojson": "https://datatracker.ietf.org/doc/html/rfc7946#"
   },
   "@graph": [
+    {
+      "@id": "untp-core:VerifiableCredential",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM).",
+      "rdfs:label": "VerifiableCredential"
+    },
     {
       "@id": "untp-core:CredentialIssuer",
       "@type": "rdfs:Class",
@@ -64,12 +70,6 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "A postal address",
       "rdfs:label": "Address"
-    },
-    {
-      "@id": "untp-core:Coordinate",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A map coordinate defined by a lattitude & longditude pair.",
-      "rdfs:label": "Coordinate"
     },
     {
       "@id": "untp-core:Product",
@@ -700,7 +700,7 @@
     {
       "@id": "untp-core:geoLocation",
       "schema:rangeIncludes": {
-        "@id": "geojson:Point"
+        "@id": "geojson:appendix-A.1"
       },
       "@type": [
         "rdf:Property",
@@ -719,7 +719,7 @@
     {
       "@id": "untp-core:geoBoundary",
       "schema:rangeIncludes": {
-        "@id": "geojson:Polygon"
+        "@id": "geojson:appendix-A.3"
       },
       "@type": [
         "rdf:Property",
@@ -829,44 +829,6 @@
         "The address country"
       ],
       "rdfs:label": "addressCountry"
-    },
-    {
-      "@id": "untp-core:latitude",
-      "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Coordinate"
-        }
-      ],
-      "rdfs:comment": [
-        "The latitude of a map location expressed in decimal degrees (between +90 and -90) where negative values represent latitudes south of the equator."
-      ],
-      "rdfs:label": "latitude"
-    },
-    {
-      "@id": "untp-core:longditude",
-      "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Coordinate"
-        }
-      ],
-      "rdfs:comment": [
-        "The longditude of a map location expressed in decimal degrees (between +180 and -180) where negative values represent longditudes west of the prime meridian."
-      ],
-      "rdfs:label": "longditude"
     },
     {
       "@id": "untp-core:serialNumber",
@@ -2126,84 +2088,96 @@
       "@id": "untp-core:assessmentLevelCode",
       "@type": "rdfs:Class",
       "rdfs:label": "assessmentLevelCode",
-      "rdfs:comment": ""
+      "rdfs:comment": "Type of authority endorsement of the assessment process"
     },
     {
       "@id": "untp-core:assessmentLevelCode#GovtApproval",
       "@type": "untp-core:assessmentLevelCode",
       "rdf:value": "GovtApproval",
+      "rdf:label": "Government endorsement",
       "rdfs:comment": "conformity assessment delivered under authority granted by national government"
     },
     {
-      "@id": "untp-core:assessmentLevelCode#GlobalMLA",
+      "@id": "untp-core:assessmentLevelCode#GlobalMRA",
       "@type": "untp-core:assessmentLevelCode",
-      "rdf:value": "GlobalMLA",
+      "rdf:value": "GlobalMRA",
+      "rdf:label": "Global mutual recognition agreement",
       "rdfs:comment": "conformity assessment delivered under authority granted by IAF/ILAC signatory body"
     },
     {
       "@id": "untp-core:assessmentLevelCode#Accredited",
       "@type": "untp-core:assessmentLevelCode",
       "rdf:value": "Accredited",
+      "rdf:label": "National accreditation",
       "rdfs:comment": "conformity assessment delivered under an independent accreditation"
     },
     {
       "@id": "untp-core:assessmentLevelCode#Verified",
       "@type": "untp-core:assessmentLevelCode",
       "rdf:value": "Verified",
+      "rdf:label": "External verification",
       "rdfs:comment": "conformity assessment externally verified"
     },
     {
       "@id": "untp-core:assessmentLevelCode#Validated",
       "@type": "untp-core:assessmentLevelCode",
       "rdf:value": "Validated",
+      "rdf:label": "External validation",
       "rdfs:comment": "conformity assessment externally validated"
     },
     {
       "@id": "untp-core:assessmentLevelCode#Unspecified",
       "@type": "untp-core:assessmentLevelCode",
       "rdf:value": "Unspecified",
+      "rdf:label": "No endorsement.",
       "rdfs:comment": "conformity assessment claiming no external authority or else unspecified"
     },
     {
       "@id": "untp-core:assessorLevelCode",
       "@type": "rdfs:Class",
       "rdfs:label": "assessorLevelCode",
-      "rdfs:comment": "Code that describes the assurance level of the conformity assessment"
+      "rdfs:comment": "Code that describes the level of independent assurance of the specific assessment"
     },
     {
       "@id": "untp-core:assessorLevelCode#Self",
       "@type": "untp-core:assessorLevelCode",
       "rdf:value": "Self",
+      "rdf:label": "Self assessed",
       "rdfs:comment": " self-assessment"
     },
     {
       "@id": "untp-core:assessorLevelCode#Commercial",
       "@type": "untp-core:assessorLevelCode",
       "rdf:value": "Commercial",
+      "rdf:label": "Commercial assessment",
       "rdfs:comment": " conformity assessment by related body or under commercial contract"
     },
     {
       "@id": "untp-core:assessorLevelCode#Buyer",
       "@type": "untp-core:assessorLevelCode",
       "rdf:value": "Buyer",
+      "rdf:label": "Buyer assessment",
       "rdfs:comment": " conformity assessment by potential purchaser"
     },
     {
       "@id": "untp-core:assessorLevelCode#Membership",
       "@type": "untp-core:assessorLevelCode",
       "rdf:value": "Membership",
+      "rdf:label": "Industry body assessment",
       "rdfs:comment": " conformity assessment by industry representative body or membership body"
     },
     {
       "@id": "untp-core:assessorLevelCode#Unspecified",
       "@type": "untp-core:assessorLevelCode",
       "rdf:value": "Unspecified",
+      "rdf:label": "No independent assessment",
       "rdfs:comment": " conformity assessment by party with unspecified relationship "
     },
     {
       "@id": "untp-core:assessorLevelCode#3rdParty",
       "@type": "untp-core:assessorLevelCode",
       "rdf:value": "3rdParty",
+      "rdf:label": "Independent third party assessment",
       "rdfs:comment": " 3rd party (independent) conformity assessment"
     },
     {
@@ -2216,42 +2190,49 @@
       "@id": "untp-core:attestationTypeCode#certification",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "certification",
+      "rdf:label": "certification",
       "rdfs:comment": "A formal third party certification of conformity"
     },
     {
       "@id": "untp-core:attestationTypeCode#declaration",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "declaration",
+      "rdf:label": "declaration",
       "rdfs:comment": "A self assessed declaration of conformity"
     },
     {
       "@id": "untp-core:attestationTypeCode#inspection",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "inspection",
+      "rdf:label": "inspection",
       "rdfs:comment": "An Inspection report "
     },
     {
       "@id": "untp-core:attestationTypeCode#testing",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "testing",
+      "rdf:label": "testing",
       "rdfs:comment": "A test report"
     },
     {
       "@id": "untp-core:attestationTypeCode#verification",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "verification",
+      "rdf:label": "verification",
       "rdfs:comment": "A verification report"
     },
     {
       "@id": "untp-core:attestationTypeCode#validation",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "validation",
+      "rdf:label": "validation",
       "rdfs:comment": "A validation report"
     },
     {
       "@id": "untp-core:attestationTypeCode#calibration",
       "@type": "untp-core:attestationTypeCode",
       "rdf:value": "calibration",
+      "rdf:label": "calibration",
       "rdfs:comment": "An equipment calibration report"
     },
     {
@@ -2264,90 +2245,105 @@
       "@id": "untp-core:conformityTopicCode#environment.energy",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "environment.energy",
+      "rdf:label": "Clean energy",
       "rdfs:comment": "claims supporting clean energy transition"
     },
     {
       "@id": "untp-core:conformityTopicCode#environment.emissions",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "environment.emissions",
+      "rdf:label": "GHG emissions",
       "rdfs:comment": "claims supporting GHG emissions reduction"
     },
     {
       "@id": "untp-core:conformityTopicCode#environment.water",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "environment.water",
+      "rdf:label": "Water usage",
       "rdfs:comment": "claims supporting minimising water usage impact"
     },
     {
       "@id": "untp-core:conformityTopicCode#environment.waste",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "environment.waste",
+      "rdf:label": "Waste reduction",
       "rdfs:comment": "claims supporting waste processing and reduction"
     },
     {
       "@id": "untp-core:conformityTopicCode#environment.deforestation",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "environment.deforestation",
+      "rdf:label": "Deforestation",
       "rdfs:comment": "claims supporting native forest restoration"
     },
     {
       "@id": "untp-core:conformityTopicCode#environment.biodiversity",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "environment.biodiversity",
+      "rdf:label": "Biodiversity",
       "rdfs:comment": "claims supporting improved biodiversity outcomes"
     },
     {
       "@id": "untp-core:conformityTopicCode#circularity.content",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "circularity.content",
+      "rdf:label": "Circular content",
       "rdfs:comment": "claims supporting the use of recycled content in products"
     },
     {
       "@id": "untp-core:conformityTopicCode#circularity.design",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "circularity.design",
+      "rdf:label": "Circular design",
       "rdfs:comment": "claims supporting product design for circularity outcomes"
     },
     {
       "@id": "untp-core:conformityTopicCode#social.labour",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "social.labour",
+      "rdf:label": "Fair work",
       "rdfs:comment": "claims supporting labour rights including fair wages"
     },
     {
       "@id": "untp-core:conformityTopicCode#social.rights",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "social.rights",
+      "rdf:label": "Human rights",
       "rdfs:comment": "claims supporting human rights and anti-discrimination"
     },
     {
       "@id": "untp-core:conformityTopicCode#social.community",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "social.community",
+      "rdf:label": "Community development",
       "rdfs:comment": "claims supporting local community development"
     },
     {
       "@id": "untp-core:conformityTopicCode#social.safety",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "social.safety",
+      "rdf:label": "Safety",
       "rdfs:comment": "claims supporting process and product safety"
     },
     {
       "@id": "untp-core:conformityTopicCode#governance.ethics",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "governance.ethics",
+      "rdf:label": "Ethics",
       "rdfs:comment": "claims supporting ethical conduct and corporate governance"
     },
     {
       "@id": "untp-core:conformityTopicCode#governance.compliance",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "governance.compliance",
+      "rdf:label": "Regulatory compliance",
       "rdfs:comment": "claims supporting regulatory compliance including taxation and community protection"
     },
     {
       "@id": "untp-core:conformityTopicCode#governance.transparency",
       "@type": "untp-core:conformityTopicCode",
       "rdf:value": "governance.transparency",
+      "rdf:label": "Transparency",
       "rdfs:comment": "claims supporting transparency and traceability"
     },
     {
@@ -2360,67 +2356,74 @@
       "@id": "untp-core:encryptionMethodCode",
       "@type": "rdfs:Class",
       "rdfs:label": "encryptionMethodCode",
-      "rdfs:comment": ""
+      "rdfs:comment": "Encryption method code list"
     },
     {
       "@id": "untp-core:encryptionMethodCode#none",
       "@type": "untp-core:encryptionMethodCode",
       "rdf:value": "none",
+      "rdf:label": "No encryption",
       "rdfs:comment": "no encryption"
     },
     {
       "@id": "untp-core:encryptionMethodCode#AES",
       "@type": "untp-core:encryptionMethodCode",
       "rdf:value": "AES",
-      "rdfs:comment": "AES standard"
+      "rdf:label": "AES encrypted",
+      "rdfs:comment": "Advanced Encryption Standard (AES)"
     },
     {
       "@id": "untp-core:hashMethodCode",
       "@type": "rdfs:Class",
       "rdfs:label": "hashMethodCode",
-      "rdfs:comment": ""
+      "rdfs:comment": "Hash method code list"
     },
     {
       "@id": "untp-core:hashMethodCode#SHA-256",
       "@type": "untp-core:hashMethodCode",
       "rdf:value": "SHA-256",
+      "rdf:label": "SHA 256 bit",
       "rdfs:comment": "Secure Hash Algorithm 256 bits"
     },
     {
       "@id": "untp-core:hashMethodCode#SHA-1",
       "@type": "untp-core:hashMethodCode",
       "rdf:value": "SHA-1",
+      "rdf:label": "SHA 160 bit",
       "rdfs:comment": "Secure Hash Algorithm 160 bits"
     },
     {
       "@id": "untp-core:mimeType",
       "@type": "rdfs:Class",
       "rdfs:label": "mimeType",
-      "rdfs:comment": ""
+      "rdfs:comment": "IANA multipart media encoding type "
     },
     {
       "@id": "untp-core:operationalScopeCode",
       "@type": "rdfs:Class",
       "rdfs:label": "operationalScopeCode",
-      "rdfs:comment": ""
+      "rdfs:comment": "Code list to indicate scope 3 emissions operational boundaries"
     },
     {
-      "@id": "untp-core:operationalScopeCode#Scope12",
+      "@id": "untp-core:operationalScopeCode#None",
       "@type": "untp-core:operationalScopeCode",
-      "rdf:value": "Scope12",
-      "rdfs:comment": "Excludes cope 3"
+      "rdf:value": "None",
+      "rdf:label": "Excludes scope 3",
+      "rdfs:comment": "Scope 1 & 2 only"
     },
     {
-      "@id": "untp-core:operationalScopeCode#Scope123toGate",
+      "@id": "untp-core:operationalScopeCode#CradleToGate",
       "@type": "untp-core:operationalScopeCode",
-      "rdf:value": "Scope123toGate",
-      "rdfs:comment": "Includes upstream scope 3"
+      "rdf:value": "CradleToGate",
+      "rdf:label": "Cradle to gate",
+      "rdfs:comment": "Includes upstream scope 3 only"
     },
     {
-      "@id": "untp-core:operationalScopeCode#Scope123toGrave",
+      "@id": "untp-core:operationalScopeCode#CradleToGrave",
       "@type": "untp-core:operationalScopeCode",
-      "rdf:value": "Scope123toGrave",
-      "rdfs:comment": "includes upstream and downstream scope 3"
+      "rdf:value": "CradleToGrave",
+      "rdf:label": "Cradle to grave",
+      "rdfs:comment": "includes full lifecycle (upstream and downstream) scope 3"
     },
     {
       "@id": "untp-core:unitOfMeasure",

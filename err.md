@@ -1,5 +1,5 @@
-geojson:Polygon
 xsd:boolean
+geojson:appendix-A.3
 xsd:string
-geojson:Point
 xsd:decimal
+geojson:appendix-A.1
