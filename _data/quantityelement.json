@@ -1,0 +1,40 @@
+{
+    "label": "QuantityElement",
+    "uri": "untp-dte:QuantityElement",
+    "comment": "The quantity element is used to define the quantities (eg 100), units of measure (eg Kg) and product class (eg GTIN or other class identifier) of products that are inputs or outputs or the subject of supply chain events.  ",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:product",
+            "type": "untp-core:Entity",
+            "comment": "THe identifier of a product ..."
+        },
+        {
+            "uri": "untp-dte:quantity",
+            "type": "xsd:decimal",
+            "comment": "The numeric quantity of the ..."
+        },
+        {
+            "uri": "untp-dte:uom",
+            "type": "untp-dte:UOM",
+            "comment": "the unit of measure for ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dte:childQuantityList",
+            "comment": "List of quantified product classes ..."
+        },
+        {
+            "uri": "untp-dte:inputQuantityList",
+            "comment": "The quantified list of product ..."
+        },
+        {
+            "uri": "untp-dte:outputQuantityList",
+            "comment": "The quantified list of product ..."
+        },
+        {
+            "uri": "untp-dte:quantityList",
+            "comment": "A quantified list of product ..."
+        }
+    ]
+}

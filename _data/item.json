@@ -1,0 +1,54 @@
+{
+    "label": "Item",
+    "uri": "untp-dte:Item",
+    "comment": "A specific serilaised trade item which is a type of a more generic product. Typically an SGTIN",
+    "subClassOf": "untp-core:Entity",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dte:idScheme",
+            "type": "untp-core:IdentifierScheme",
+            "comment": "The identifier scheme. Exampleproduct - ..."
+        },
+        {
+            "uri": "untp-dte:name",
+            "type": "xsd:string",
+            "comment": "The registered name of the ..."
+        },
+        {
+            "uri": "untp-dte:registeredId",
+            "type": "xsd:string",
+            "comment": "The registration number (alphanumeric) of ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dte:childEPCs",
+            "comment": "The list of child items ..."
+        },
+        {
+            "uri": "untp-dte:device",
+            "comment": "The device Identifier for the ..."
+        },
+        {
+            "uri": "untp-dte:epcList",
+            "comment": "A list of uniquely identified ..."
+        },
+        {
+            "uri": "untp-dte:inputEPCList",
+            "comment": "The list of uniquely identified ..."
+        },
+        {
+            "uri": "untp-dte:outputEPCList",
+            "comment": "The list of uniquely identified ..."
+        },
+        {
+            "uri": "untp-dte:parentEPC",
+            "comment": "The unique item identifier that ..."
+        }
+    ]
+}

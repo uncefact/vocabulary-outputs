@@ -1,0 +1,58 @@
+{
+    "label": "AggregationEvent",
+    "uri": "untp-dte:AggregationEvent",
+    "comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking.",
+    "subClassOf": "untp-dte:Event",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:action",
+            "type": "untp-dte:actionCode",
+            "comment": "Code describing how an event ..."
+        },
+        {
+            "uri": "untp-dte:bizLocation",
+            "type": "xsd:string",
+            "comment": "A Business Location is a ..."
+        },
+        {
+            "uri": "untp-dte:bizStep",
+            "type": "untp-dte:bizStepCode",
+            "comment": "A business step code drawn ..."
+        },
+        {
+            "uri": "untp-dte:childEPCs",
+            "type": "untp-dte:Item",
+            "comment": "The list of child items ..."
+        },
+        {
+            "uri": "untp-dte:childQuantityList",
+            "type": "untp-dte:QuantityElement",
+            "comment": "List of quantified product classes ..."
+        },
+        {
+            "uri": "untp-dte:disposition",
+            "type": "untp-dte:dispositionCode",
+            "comment": "Disposition code describing the state ..."
+        },
+        {
+            "uri": "untp-dte:eventTime",
+            "type": "xsd:string",
+            "comment": "The ISO-8601 date time when ..."
+        },
+        {
+            "uri": "untp-dte:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dte:parentEPC",
+            "type": "untp-dte:Item",
+            "comment": "The unique item identifier that ..."
+        },
+        {
+            "uri": "untp-dte:sensorElementList",
+            "type": "untp-dte:SensorElement",
+            "comment": "An array (one for each ..."
+        }
+    ]
+}

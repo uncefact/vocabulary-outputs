@@ -1,0 +1,68 @@
+{
+    "label": "TransactionEvent",
+    "uri": "untp-dte:TransactionEvent",
+    "comment": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller.",
+    "subClassOf": "untp-dte:Event",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:action",
+            "type": "untp-dte:actionCode",
+            "comment": "Code describing how an event ..."
+        },
+        {
+            "uri": "untp-dte:bizLocation",
+            "type": "xsd:string",
+            "comment": "A Business Location is a ..."
+        },
+        {
+            "uri": "untp-dte:bizStep",
+            "type": "untp-dte:bizStepCode",
+            "comment": "A business step code drawn ..."
+        },
+        {
+            "uri": "untp-dte:destinationParty",
+            "type": "untp-core:Entity",
+            "comment": "The destination party for this ..."
+        },
+        {
+            "uri": "untp-dte:disposition",
+            "type": "untp-dte:dispositionCode",
+            "comment": "Disposition code describing the state ..."
+        },
+        {
+            "uri": "untp-dte:epcList",
+            "type": "untp-dte:Item",
+            "comment": "A list of uniquely identified ..."
+        },
+        {
+            "uri": "untp-dte:eventTime",
+            "type": "xsd:string",
+            "comment": "The ISO-8601 date time when ..."
+        },
+        {
+            "uri": "untp-dte:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dte:quantityList",
+            "type": "untp-dte:QuantityElement",
+            "comment": "A quantified list of product ..."
+        },
+        {
+            "uri": "untp-dte:referenceDocument",
+            "type": "untp-dte:TradeDocument",
+            "comment": "The supply chain document reference ..."
+        },
+        {
+            "uri": "untp-dte:sensorElementList",
+            "type": "untp-dte:SensorElement",
+            "comment": "An array (one for each ..."
+        },
+        {
+            "uri": "untp-dte:sourceParty",
+            "type": "untp-core:Entity",
+            "comment": "The source party for this ..."
+        }
+    ]
+}

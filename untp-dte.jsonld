@@ -1,40 +1,101 @@
 {
   "@context": {
-    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/",
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
   },
   "@graph": [
     {
-      "@id": "untp-dcc:DigitalConformityCredential",
+      "@id": "untp-dte:DigitalTraceabilityEvent",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
-      "rdfs:label": "DigitalConformityCredential"
+      "rdfs:comment": "Traceability Event as a VC",
+      "rdfs:label": "DigitalTraceabilityEvent",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
-      "@id": "untp-dcc:ConformityAttestation",
+      "@id": "untp-dte:Event",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
-      "rdfs:label": "ConformityAttestation"
+      "rdfs:comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.  ",
+      "rdfs:label": "Event"
     },
     {
-      "@id": "untp-dcc:ConformityAssessmentScheme",
+      "@id": "untp-dte:SensorElement",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)",
-      "rdfs:label": "ConformityAssessmentScheme"
+      "rdfs:comment": "A SensorElement is used to carry data related to an event that is captured one sensor such as an IoT device. Include one sensor property and an array of sensor data values.",
+      "rdfs:label": "SensorElement"
     },
     {
-      "@id": "untp-dcc:ConformityAssessment",
+      "@id": "untp-dte:Sensor",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
-      "rdfs:label": "ConformityAssessment"
+      "rdfs:comment": "A physical sensor that records a sensor data set.",
+      "rdfs:label": "Sensor"
     },
     {
-      "@id": "untp-dcc:@context",
+      "@id": "untp-dte:Item",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific serilaised trade item which is a type of a more generic product. Typically an SGTIN",
+      "rdfs:label": "Item",
+      "rdfs:subClassOf": "untp-core:Entity"
+    },
+    {
+      "@id": "untp-dte:SensorData",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A data point read by a sensor.",
+      "rdfs:label": "SensorData"
+    },
+    {
+      "@id": "untp-dte:TransformationEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Transformation represents an event in which input objects are fully or partially consumed and output objects are produced, such that any of the input objects may have contributed to all of the output objects - for example consuming bales of cotton to produce yarn.",
+      "rdfs:label": "TransformationEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:QuantityElement",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The quantity element is used to define the quantities (eg 100), units of measure (eg Kg) and product class (eg GTIN or other class identifier) of products that are inputs or outputs or the subject of supply chain events.  ",
+      "rdfs:label": "QuantityElement"
+    },
+    {
+      "@id": "untp-dte:ObjectEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Object represents an event that happened to one or more physical or digital objects - such as an inspection or certification of a product or shipment. The physical objects may be identified either as specific items (eg a unique consignment number) or as a quantified amount of a product class (eg 100Kg of cotton yarn)",
+      "rdfs:label": "ObjectEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:AggregationEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking.",
+      "rdfs:label": "AggregationEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:TransactionEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller.",
+      "rdfs:label": "TransactionEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:TradeDocument",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A trade transaction between two parties such as an invoice, purchase order, or shipping notification.",
+      "rdfs:label": "TradeDocument"
+    },
+    {
+      "@id": "untp-dte:AssociationEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The association event represents the assembly of child sub-components to create a parent assembled item. For example a desktop computer assembled from power supply, hard drive, and motherboard.  The association event is very similar in structure to the aggregation event but is used for physical assembly. An association event may represent a bill of materials used to assemble a  product whilst an aggregation event may represent a packing list or items for transport. ",
+      "rdfs:label": "AssociationEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:@context",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -44,16 +105,16 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:DigitalConformityCredential"
+          "@id": "untp-dte:DigitalTraceabilityEvent"
         }
       ],
       "rdfs:comment": [
-        "A list of JSON-LD contect URIs that define the seamntic meaning of prperties within the credential. "
+        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
       ],
       "rdfs:label": "@context"
     },
     {
-      "@id": "untp-dcc:id",
+      "@id": "untp-dte:id",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -63,30 +124,46 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:DigitalConformityCredential"
+          "@id": "untp-dte:DigitalTraceabilityEvent"
         },
         {
-          "@id": "untp-dcc:ConformityAttestation"
+          "@id": "untp-dte:Event"
         },
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:Item"
         },
         {
-          "@id": "untp-dcc:ConformityAssessment"
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
         }
       ],
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
-        "The globally unique ID of this conformity attestation. ",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID"
       ],
       "rdfs:label": "id"
     },
     {
-      "@id": "untp-dcc:issuer",
+      "@id": "untp-dte:issuer",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Party"
+        "@id": "untp-core:CredentialIssuer"
       },
       "@type": [
         "rdf:Property",
@@ -94,7 +171,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:DigitalConformityCredential"
+          "@id": "untp-dte:DigitalTraceabilityEvent"
         }
       ],
       "rdfs:comment": [
@@ -103,7 +180,7 @@
       "rdfs:label": "issuer"
     },
     {
-      "@id": "untp-dcc:validFrom",
+      "@id": "untp-dte:validFrom",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -113,7 +190,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:DigitalConformityCredential"
+          "@id": "untp-dte:DigitalTraceabilityEvent"
         }
       ],
       "rdfs:comment": [
@@ -122,7 +199,7 @@
       "rdfs:label": "validFrom"
     },
     {
-      "@id": "untp-dcc:validUntil",
+      "@id": "untp-dte:validUntil",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -132,7 +209,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:DigitalConformityCredential"
+          "@id": "untp-dte:DigitalTraceabilityEvent"
         }
       ],
       "rdfs:comment": [
@@ -141,9 +218,9 @@
       "rdfs:label": "validUntil"
     },
     {
-      "@id": "untp-dcc:credentialSubject",
+      "@id": "untp-dte:credentialSubject",
       "schema:rangeIncludes": {
-        "@id": "untp-dcc:ConformityAttestation"
+        "@id": "untp-dte:Event"
       },
       "@type": [
         "rdf:Property",
@@ -151,73 +228,16 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:DigitalConformityCredential"
+          "@id": "untp-dte:DigitalTraceabilityEvent"
         }
       ],
       "rdfs:comment": [
-        "The conformity attestion is the subject of the verifiable credential. "
+        "VC subject is the transaction event structure"
       ],
       "rdfs:label": "credentialSubject"
     },
     {
-      "@id": "untp-dcc:assessorLevel",
-      "schema:rangeIncludes": {
-        "@id": "untp-dcc:assessorAssuranceCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAttestation"
-        }
-      ],
-      "rdfs:comment": [
-        "Assurance code pertaining to assessor (relation to the object under assessment)"
-      ],
-      "rdfs:label": "assessorLevel"
-    },
-    {
-      "@id": "untp-dcc:assessmentLevel",
-      "schema:rangeIncludes": {
-        "@id": "untp-dcc:assessmentAssuranceCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAttestation"
-        }
-      ],
-      "rdfs:comment": [
-        "Assurance pertaining to assessment (any authority or support for the assessment process)"
-      ],
-      "rdfs:label": "assessmentLevel"
-    },
-    {
-      "@id": "untp-dcc:attestationType",
-      "schema:rangeIncludes": {
-        "@id": "untp-dcc:attestationTypeCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAttestation"
-        }
-      ],
-      "rdfs:comment": [
-        "The type of criterion (optional or mandatory)."
-      ],
-      "rdfs:label": "attestationType"
-    },
-    {
-      "@id": "untp-dcc:attestationDescription",
+      "@id": "untp-dte:eventTime",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -227,18 +247,38 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAttestation"
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
         }
       ],
       "rdfs:comment": [
-        "A textual description of the scope or purpose of this confomrity attestation"
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred."
       ],
-      "rdfs:label": "attestationDescription"
+      "rdfs:label": "eventTime"
     },
     {
-      "@id": "untp-dcc:issuedToParty",
+      "@id": "untp-dte:action",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-dte:actionCode"
       },
       "@type": [
         "rdf:Property",
@@ -246,18 +286,38 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAttestation"
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
         }
       ],
       "rdfs:comment": [
-        "The party to whom the conformity attestation was issued."
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event."
       ],
-      "rdfs:label": "issuedToParty"
+      "rdfs:label": "action"
     },
     {
-      "@id": "untp-dcc:accreditation",
+      "@id": "untp-dte:disposition",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Endorsement"
+        "@id": "untp-dte:dispositionCode"
       },
       "@type": [
         "rdf:Property",
@@ -265,18 +325,38 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAttestation"
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
         }
       ],
       "rdfs:comment": [
-        "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. "
       ],
-      "rdfs:label": "accreditation"
+      "rdfs:label": "disposition"
     },
     {
-      "@id": "untp-dcc:conformityCertificate",
+      "@id": "untp-dte:bizStep",
       "schema:rangeIncludes": {
-        "@id": "untp-core:BinaryFile"
+        "@id": "untp-dte:bizStepCode"
       },
       "@type": [
         "rdf:Property",
@@ -284,73 +364,36 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAttestation"
-        }
-      ],
-      "rdfs:comment": [
-        "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
-      ],
-      "rdfs:label": "conformityCertificate"
-    },
-    {
-      "@id": "untp-dcc:auditableEvidence",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:SecureBinaryFile"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
+          "@id": "untp-dte:Event"
+        },
         {
-          "@id": "untp-dcc:ConformityAttestation"
-        }
-      ],
-      "rdfs:comment": [
-        "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usally private data and would normally be encrypted."
-      ],
-      "rdfs:label": "auditableEvidence"
-    },
-    {
-      "@id": "untp-dcc:scope",
-      "schema:rangeIncludes": {
-        "@id": "untp-dcc:ConformityAssessmentScheme"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
+          "@id": "untp-dte:TransformationEvent"
+        },
         {
-          "@id": "untp-dcc:ConformityAttestation"
-        }
-      ],
-      "rdfs:comment": [
-        "A list of relevant standards and/or regulations against which apply to this attestation (eg AS1163:2016)."
-      ],
-      "rdfs:label": "scope"
-    },
-    {
-      "@id": "untp-dcc:assessments",
-      "schema:rangeIncludes": {
-        "@id": "untp-dcc:ConformityAssessment"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
+          "@id": "untp-dte:ObjectEvent"
+        },
         {
-          "@id": "untp-dcc:ConformityAttestation"
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
         }
       ],
       "rdfs:comment": [
-        "The list of specific assessments made within this conformity attestation."
+        "A business step code drawn from a controlled vocabulary. ",
+        "A business step code drawn from a controlled vocabulary. ",
+        "A business step code drawn from a controlled vocabulary. ",
+        "A business step code drawn from a controlled vocabulary. ",
+        "A business step code drawn from a controlled vocabulary. ",
+        "A business step code drawn from a controlled vocabulary. "
       ],
-      "rdfs:label": "assessments"
+      "rdfs:label": "bizStep"
     },
     {
-      "@id": "untp-dcc:idScheme",
+      "@id": "untp-dte:bizLocation",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -360,16 +403,113 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
         }
       ],
       "rdfs:comment": [
-        "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. The bizLocation must be a resolvable URI that links to facility information and geolocation data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. The bizLocation must be a resolvable URI that links to facility information and geolocation data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. The bizLocation must be a resolvable URI that links to facility information and geolocation data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. The bizLocation must be a resolvable URI that links to facility information and geolocation data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. The bizLocation must be a resolvable URI that links to facility information and geolocation data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an EPCIS event until it is reported to be at a different Business Location by a subsequent EPCIS event. The bizLocation must be a resolvable URI that links to facility information and geolocation data."
       ],
-      "rdfs:label": "idScheme"
+      "rdfs:label": "bizLocation"
     },
     {
-      "@id": "untp-dcc:idSchemeName",
+      "@id": "untp-dte:sensorElementList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:SensorElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. "
+      ],
+      "rdfs:label": "sensorElementList"
+    },
+    {
+      "@id": "untp-dte:sensorMetadata",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Sensor"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorElement"
+        }
+      ],
+      "rdfs:comment": [
+        "Data that describes the physical sensor that recorded the sensor data set."
+      ],
+      "rdfs:label": "sensorMetadata"
+    },
+    {
+      "@id": "untp-dte:sensorReport",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:SensorData"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorElement"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of sensor readings from the given sensor relevant to the traceability event context."
+      ],
+      "rdfs:label": "sensorReport"
+    },
+    {
+      "@id": "untp-dte:sensorIntegrityProof",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -379,16 +519,35 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:SensorElement"
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+        "An optional reference to a verifiable credential signed by the sensor device or device manufacturer that contains the digitally signed raw data associated with this sensor report."
       ],
-      "rdfs:label": "idSchemeName"
+      "rdfs:label": "sensorIntegrityProof"
     },
     {
-      "@id": "untp-dcc:idValue",
+      "@id": "untp-dte:device",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Sensor"
+        }
+      ],
+      "rdfs:comment": [
+        "The device Identifier for the sensor as a URI (typically an EPC)"
+      ],
+      "rdfs:label": "device"
+    },
+    {
+      "@id": "untp-dte:dataProcessingMethod",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -398,16 +557,16 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:Sensor"
         }
       ],
       "rdfs:comment": [
-        "The value of the identifier within the scheme (eg 90664869327)"
+        "The data processing method used by the sensor - should reference a documented standard criteria as a URI"
       ],
-      "rdfs:label": "idValue"
+      "rdfs:label": "dataProcessingMethod"
     },
     {
-      "@id": "untp-dcc:name",
+      "@id": "untp-dte:name",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -417,35 +576,16 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:Item"
         }
       ],
       "rdfs:comment": [
-        "The name of the identified entity."
+        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
       ],
       "rdfs:label": "name"
     },
     {
-      "@id": "untp-dcc:issuingParty",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
-        }
-      ],
-      "rdfs:comment": [
-        "The party that issued the standard (ID and Name reference only)"
-      ],
-      "rdfs:label": "issuingParty"
-    },
-    {
-      "@id": "untp-dcc:issueDate",
+      "@id": "untp-dte:registeredId",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -455,18 +595,18 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:Item"
         }
       ],
       "rdfs:comment": [
-        "The date when the standard was issued."
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
       ],
-      "rdfs:label": "issueDate"
+      "rdfs:label": "registeredId"
     },
     {
-      "@id": "untp-dcc:trustmark",
+      "@id": "untp-dte:idScheme",
       "schema:rangeIncludes": {
-        "@id": "untp-core:BinaryFile"
+        "@id": "untp-core:IdentifierScheme"
       },
       "@type": [
         "rdf:Property",
@@ -474,94 +614,18 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
+          "@id": "untp-dte:Item"
         }
       ],
       "rdfs:comment": [
-        "The trust mark that represents the conformity assessment scheme."
+        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
       ],
-      "rdfs:label": "trustmark"
+      "rdfs:label": "idScheme"
     },
     {
-      "@id": "untp-dcc:referenceStandard",
+      "@id": "untp-dte:time",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Standard"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the standard that defines the specification / criteria"
-      ],
-      "rdfs:label": "referenceStandard"
-    },
-    {
-      "@id": "untp-dcc:referenceRegulation",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Regulation"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the regulation that defines the assessment criteria"
-      ],
-      "rdfs:label": "referenceRegulation"
-    },
-    {
-      "@id": "untp-dcc:assessmentCriterion",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Criteria"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The specification against which the assessment is made."
-      ],
-      "rdfs:label": "assessmentCriterion"
-    },
-    {
-      "@id": "untp-dcc:declaredValues",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Metric"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The list of specific values measured as part of this assessment (eg tensile strength)"
-      ],
-      "rdfs:label": "declaredValues"
-    },
-    {
-      "@id": "untp-dcc:compliance",
-      "schema:rangeIncludes": {
-        "@id": "xsd:boolean"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
@@ -569,75 +633,18 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessment"
+          "@id": "untp-dte:SensorData"
         }
       ],
       "rdfs:comment": [
-        "An indicator of whether or not the assessment meets the specification."
+        "the timestamp at which the sensor reading was made."
       ],
-      "rdfs:label": "compliance"
+      "rdfs:label": "time"
     },
     {
-      "@id": "untp-dcc:conformityTopic",
+      "@id": "untp-dte:sensorType",
       "schema:rangeIncludes": {
-        "@id": "untp-dcc:conformityTopicCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
-      ],
-      "rdfs:label": "conformityTopic"
-    },
-    {
-      "@id": "untp-dcc:assessedProducts",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The list of products that are the subject of this conformity assessment"
-      ],
-      "rdfs:label": "assessedProducts"
-    },
-    {
-      "@id": "untp-dcc:assessedFacilities",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "The list of facilities that are the subject of this conformity assessment."
-      ],
-      "rdfs:label": "assessedFacilities"
-    },
-    {
-      "@id": "untp-dcc:verfifiedByCAB",
-      "schema:rangeIncludes": {
-        "@id": "xsd:boolean"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
@@ -645,13 +652,468 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:ConformityAssessment"
+          "@id": "untp-dte:SensorData"
         }
       ],
       "rdfs:comment": [
-        "Indicates whether the conformity assessment body has verified the identity of the subject of the assement (a facility or product / batch)."
+        "the measurement type of the sensor reading, as a URI reference to a measurement method specification."
       ],
-      "rdfs:label": "verfifiedByCAB"
+      "rdfs:label": "sensorType"
+    },
+    {
+      "@id": "untp-dte:value",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorData"
+        }
+      ],
+      "rdfs:comment": [
+        "the sensor reading"
+      ],
+      "rdfs:label": "value"
+    },
+    {
+      "@id": "untp-dte:uom",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:UOM"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorData"
+        },
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "the unit of measure for the sensor reading",
+        "The unit of measure for the quantity value (eg Kg or meters etc) using the UNECE Rec 20 unit of measure codelist."
+      ],
+      "rdfs:label": "uom"
+    },
+    {
+      "@id": "untp-dte:outputEPCList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of uniquely identified items that are the output of this transformation event - for example a list of individually identified bolts of cloth that are the output of a weaving process."
+      ],
+      "rdfs:label": "outputEPCList"
+    },
+    {
+      "@id": "untp-dte:inputEPCList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of uniquely identified items that are the input of this transformation event - for example a list of individually identified bobbins of yarn that are the input of a weaving process."
+      ],
+      "rdfs:label": "inputEPCList"
+    },
+    {
+      "@id": "untp-dte:inputQuantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The quantified list of product classes that are the input of this transformation event - used when each item does not have a unique identity.  for example the weight of raw cotton that is the input to a ginning process."
+      ],
+      "rdfs:label": "inputQuantityList"
+    },
+    {
+      "@id": "untp-dte:outputQuantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The quantified list of product classes that are the output of this transformation event - used when each item does not have a unique identity.  for example a count of the bales of cleaned cotton that are the output of a ginning process."
+      ],
+      "rdfs:label": "outputQuantityList"
+    },
+    {
+      "@id": "untp-dte:processType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "An industry specific process type code.  "
+      ],
+      "rdfs:label": "processType"
+    },
+    {
+      "@id": "untp-dte:product",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Entity"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "THe identifier of a product class (as opposed to a product instance) such as a GTIN code for a manufactured product."
+      ],
+      "rdfs:label": "product"
+    },
+    {
+      "@id": "untp-dte:quantity",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "The numeric quantity of the product class (eg 100 kg of cotton)"
+      ],
+      "rdfs:label": "quantity"
+    },
+    {
+      "@id": "untp-dte:epcList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of uniquely identified items (eg specific items serial numbers or tagged shipments / packages) that are the focus of this object event.  ",
+        "The list of uniquely identified trade items included in this supply chain transaction."
+      ],
+      "rdfs:label": "epcList"
+    },
+    {
+      "@id": "untp-dte:quantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A quantified list of product classes (eg GS1 GTINs) that are the focus of this object event",
+        "List of quantified product classes that are included in this transaction.  Used when the trade items do not have unique identifiers (eg 100 reels of yarn)"
+      ],
+      "rdfs:label": "quantityList"
+    },
+    {
+      "@id": "untp-dte:parentEPC",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The unique item identifier that is the result of this aggregation. Typically a packaging ID used in shipments that represents a box/ pallet / container of contained items.",
+        "The unique item identifier that is the parent of this association. Typically an assembled product ID such as a desktop computer that is built from the associated child components."
+      ],
+      "rdfs:label": "parentEPC"
+    },
+    {
+      "@id": "untp-dte:childEPCs",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of child items that have been aggregated into the parent (or dis-aggregated from the parent). Maybe a list of package references (eg boxes on a pallet) or may be individual items (eg products in a box).",
+        "The list of child items that have been assembled to create the parent - for example the power supply or hard drive components of a desktop computer."
+      ],
+      "rdfs:label": "childEPCs"
+    },
+    {
+      "@id": "untp-dte:childQuantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "List of quantified product classes that have been aggregated into the parent.  Used whwn the child items do not have unique identifiers (eg 100 Kg of cotton bales)",
+        "List of quantified product classes that have been assembled into the parent.  Used when the child items do not have unique identifiers (eg brackets and screws used in the assembly of a desktop computer)"
+      ],
+      "rdfs:label": "childQuantityList"
+    },
+    {
+      "@id": "untp-dte:sourceParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Entity"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The source party for this supply chain transaction - typically the seller party"
+      ],
+      "rdfs:label": "sourceParty"
+    },
+    {
+      "@id": "untp-dte:destinationParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Entity"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The destination party for this supply chain transaction - typically the buyer party."
+      ],
+      "rdfs:label": "destinationParty"
+    },
+    {
+      "@id": "untp-dte:referenceDocument",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:TradeDocument"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The supply chain document reference for this transaction event - eg the invoice, order, or dispatch advice"
+      ],
+      "rdfs:label": "referenceDocument"
+    },
+    {
+      "@id": "untp-dte:documentType",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:documentTypeCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TradeDocument"
+        }
+      ],
+      "rdfs:comment": [
+        "The document type representing the trade transaction drawn from the business transaction type vocabulary."
+      ],
+      "rdfs:label": "documentType"
+    },
+    {
+      "@id": "untp-dte:identifier",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TradeDocument"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier of the trade transaction document - eg an invoice number or bill of lading number.  Must be unique for a given source party"
+      ],
+      "rdfs:label": "identifier"
+    },
+    {
+      "@id": "untp-dte:documentURL",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TradeDocument"
+        }
+      ],
+      "rdfs:comment": [
+        "The URL of the referenced trade document. For integrity reasons, it is recommended (but not required) that the documentURL is a hashlink (https://w3c-ccg.github.io/hashlink/) so that if the document the URL is changed then the hash verification will fail."
+      ],
+      "rdfs:label": "documentURL"
+    },
+    {
+      "@id": "untp-dte:actionCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "actionCode",
+      "rdfs:comment": "The Action type says how an event relates to the lifecycle of the entity being described. For example, AggregationEvent is used to capture events related to aggregations of objects, such as cases aggregated to a pallet. Throughout its life, the pallet load participates in many business process steps, each of which may generate an EPCIS event. The action field of each event says how the aggregation itself has changed during the event: have objects been added to the aggregation, have objects been removed from the aggregation, or has the aggregation simply been observed without change to its membership? The action is independent of the bizStep (of type BusinessStepID) which identifies the specific business process step in which the action took place."
+    },
+    {
+      "@id": "untp-dte:actionCode#observe",
+      "@type": "untp-dte:actionCode",
+      "rdf:value": "observe",
+      "rdf:label": "Observe",
+      "rdfs:comment": "The entity in question has not been changed."
+    },
+    {
+      "@id": "untp-dte:actionCode#add",
+      "@type": "untp-dte:actionCode",
+      "rdf:value": "add",
+      "rdf:label": "Add",
+      "rdfs:comment": "The entity in question has been created or added to."
+    },
+    {
+      "@id": "untp-dte:actionCode#delete",
+      "@type": "untp-dte:actionCode",
+      "rdf:value": "delete",
+      "rdf:label": "Delete",
+      "rdfs:comment": "The entity in question has been removed from or destroyed altogether."
+    },
+    {
+      "@id": "untp-dte:bizStepCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "bizStepCode",
+      "rdfs:comment": "BusinessStep is a vocabulary whose elements denote steps in business processes. An example is an identifier that denotes “shipping.” The business step field of an event specifies the business context of an event: what business process step was taking place that caused the event to be captured?"
+    },
+    {
+      "@id": "untp-dte:dispositionCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dispositionCode",
+      "rdfs:comment": "Disposition code is a vocabulary whose elements denote a business state of an object. An example is a code that denotes “recalled\". The disposition field of an event specifies the business condition of the event’s objects, subsequent to the event. The disposition is assumed to hold true until another event indicates a change of disposition. Intervening events that do not specify a disposition field have no effect on the presumed disposition of the object. "
+    },
+    {
+      "@id": "untp-dte:documentTypeCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "documentTypeCode",
+      "rdfs:comment": "Document type codes for trade and logistics documents supporting the event such as purchase order, invoice, shipping notification, bill of lading, etc."
+    },
+    {
+      "@id": "untp-dte:UOM",
+      "@type": "rdfs:Class",
+      "rdfs:label": "UOM",
+      "rdfs:comment": "UNECE Recommendation 20 Unit of Measure code list."
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+    "label": "DigitalTraceabilityEvent",
+    "uri": "untp-dte:DigitalTraceabilityEvent",
+    "comment": "Traceability Event as a VC",
+    "subClassOf": "untp-core:VerifiableCredential",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:@context",
+            "type": "xsd:string",
+            "comment": "A list of JSON-LD context ..."
+        },
+        {
+            "uri": "untp-dte:credentialSubject",
+            "type": "untp-dte:Event",
+            "comment": "VC subject is the transaction ..."
+        },
+        {
+            "uri": "untp-dte:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dte:issuer",
+            "type": "untp-core:CredentialIssuer",
+            "comment": "The organisation that is the ..."
+        },
+        {
+            "uri": "untp-dte:validFrom",
+            "type": "xsd:string",
+            "comment": "The date and time from ..."
+        },
+        {
+            "uri": "untp-dte:validUntil",
+            "type": "xsd:string",
+            "comment": "The expiry date (if applicable) ..."
+        }
+    ]
+}

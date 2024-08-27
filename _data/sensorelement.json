@@ -1,0 +1,28 @@
+{
+    "label": "SensorElement",
+    "uri": "untp-dte:SensorElement",
+    "comment": "A SensorElement is used to carry data related to an event that is captured one sensor such as an IoT device. Include one sensor property and an array of sensor data values.",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:sensorIntegrityProof",
+            "type": "xsd:string",
+            "comment": "An optional reference to a ..."
+        },
+        {
+            "uri": "untp-dte:sensorMetadata",
+            "type": "untp-dte:Sensor",
+            "comment": "Data that describes the physical ..."
+        },
+        {
+            "uri": "untp-dte:sensorReport",
+            "type": "untp-dte:SensorData",
+            "comment": "A list of sensor readings ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dte:sensorElementList",
+            "comment": "An array (one for each ..."
+        }
+    ]
+}

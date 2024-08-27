@@ -1,0 +1,24 @@
+{
+    "label": "childEPCs",
+    "uri": "untp-dte:childEPCs",
+    "comment": [
+        "The list of child items that have been aggregated into the parent (or dis-aggregated from the parent). Maybe a list of package references (eg boxes on a pallet) or may be individual items (eg products in a box).",
+        "The list of child items that have been assembled to create the parent - for example the power supply or hard drive components of a desktop computer."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "untp-dte:Item",
+            "comment": "A specific serilaised trade item which is a type of a more generic product. Typically an SGTIN"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-dte:AggregationEvent",
+            "comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking."
+        },
+        {
+            "uri": "untp-dte:AssociationEvent",
+            "comment": "The association event represents the assembly of child sub-components to create a parent assembled item. For example a desktop computer assembled from power supply, hard drive, and motherboard.  The association event is very similar in structure to the aggregation event but is used for physical assembly. An association event may represent a bill of materials used to assemble a  product whilst an aggregation event may represent a packing list or items for transport. "
+        }
+    ]
+}

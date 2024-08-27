@@ -1,11 +1,15 @@
 {
     "label": "id",
-    "uri": "untp-dcc:id",
+    "uri": "untp-dte:id",
     "comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
-        "The globally unique ID of this conformity attestation. ",
-        "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID"
     ],
     "rangeIncludes": [
         {
@@ -14,20 +18,36 @@
     ],
     "domainIncludes": [
         {
-            "uri": "untp-dcc:DigitalConformityCredential",
-            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. "
+            "uri": "untp-dte:DigitalTraceabilityEvent",
+            "comment": "Traceability Event as a VC"
         },
         {
-            "uri": "untp-dcc:ConformityAttestation",
-            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
+            "uri": "untp-dte:Event",
+            "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.  "
         },
         {
-            "uri": "untp-dcc:ConformityAssessmentScheme",
-            "comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)"
+            "uri": "untp-dte:Item",
+            "comment": "A specific serilaised trade item which is a type of a more generic product. Typically an SGTIN"
         },
         {
-            "uri": "untp-dcc:ConformityAssessment",
-            "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch."
+            "uri": "untp-dte:TransformationEvent",
+            "comment": "Transformation represents an event in which input objects are fully or partially consumed and output objects are produced, such that any of the input objects may have contributed to all of the output objects - for example consuming bales of cotton to produce yarn."
+        },
+        {
+            "uri": "untp-dte:ObjectEvent",
+            "comment": "Object represents an event that happened to one or more physical or digital objects - such as an inspection or certification of a product or shipment. The physical objects may be identified either as specific items (eg a unique consignment number) or as a quantified amount of a product class (eg 100Kg of cotton yarn)"
+        },
+        {
+            "uri": "untp-dte:AggregationEvent",
+            "comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking."
+        },
+        {
+            "uri": "untp-dte:TransactionEvent",
+            "comment": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller."
+        },
+        {
+            "uri": "untp-dte:AssociationEvent",
+            "comment": "The association event represents the assembly of child sub-components to create a parent assembled item. For example a desktop computer assembled from power supply, hard drive, and motherboard.  The association event is very similar in structure to the aggregation event but is used for physical assembly. An association event may represent a bill of materials used to assemble a  product whilst an aggregation event may represent a packing list or items for transport. "
         }
     ]
 }

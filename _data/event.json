@@ -1,0 +1,48 @@
+{
+    "label": "Event",
+    "uri": "untp-dte:Event",
+    "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.  ",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dte:action",
+            "type": "untp-dte:actionCode",
+            "comment": "Code describing how an event ..."
+        },
+        {
+            "uri": "untp-dte:bizLocation",
+            "type": "xsd:string",
+            "comment": "A Business Location is a ..."
+        },
+        {
+            "uri": "untp-dte:bizStep",
+            "type": "untp-dte:bizStepCode",
+            "comment": "A business step code drawn ..."
+        },
+        {
+            "uri": "untp-dte:disposition",
+            "type": "untp-dte:dispositionCode",
+            "comment": "Disposition code describing the state ..."
+        },
+        {
+            "uri": "untp-dte:eventTime",
+            "type": "xsd:string",
+            "comment": "The ISO-8601 date time when ..."
+        },
+        {
+            "uri": "untp-dte:id",
+            "type": "xsd:string",
+            "comment": "A unique identifier (URI) assigned ..."
+        },
+        {
+            "uri": "untp-dte:sensorElementList",
+            "type": "untp-dte:SensorElement",
+            "comment": "An array (one for each ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dte:credentialSubject",
+            "comment": "VC subject is the transaction ..."
+        }
+    ]
+}

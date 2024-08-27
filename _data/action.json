@@ -1,0 +1,44 @@
+{
+    "label": "action",
+    "uri": "untp-dte:action",
+    "comment": [
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event.",
+        "Code describing how an event relates to the lifecycle of the entity impacted by the event."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "untp-dte:actionCode",
+            "comment": "The Action type says how an event relates to the lifecycle of the entity being described. For example, AggregationEvent is used to capture events related to aggregations of objects, such as cases aggregated to a pallet. Throughout its life, the pallet load participates in many business process steps, each of which may generate an EPCIS event. The action field of each event says how the aggregation itself has changed during the event: have objects been added to the aggregation, have objects been removed from the aggregation, or has the aggregation simply been observed without change to its membership? The action is independent of the bizStep (of type BusinessStepID) which identifies the specific business process step in which the action took place."
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-dte:Event",
+            "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.  "
+        },
+        {
+            "uri": "untp-dte:TransformationEvent",
+            "comment": "Transformation represents an event in which input objects are fully or partially consumed and output objects are produced, such that any of the input objects may have contributed to all of the output objects - for example consuming bales of cotton to produce yarn."
+        },
+        {
+            "uri": "untp-dte:ObjectEvent",
+            "comment": "Object represents an event that happened to one or more physical or digital objects - such as an inspection or certification of a product or shipment. The physical objects may be identified either as specific items (eg a unique consignment number) or as a quantified amount of a product class (eg 100Kg of cotton yarn)"
+        },
+        {
+            "uri": "untp-dte:AggregationEvent",
+            "comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking."
+        },
+        {
+            "uri": "untp-dte:TransactionEvent",
+            "comment": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller."
+        },
+        {
+            "uri": "untp-dte:AssociationEvent",
+            "comment": "The association event represents the assembly of child sub-components to create a parent assembled item. For example a desktop computer assembled from power supply, hard drive, and motherboard.  The association event is very similar in structure to the aggregation event but is used for physical assembly. An association event may represent a bill of materials used to assemble a  product whilst an aggregation event may represent a packing list or items for transport. "
+        }
+    ]
+}
