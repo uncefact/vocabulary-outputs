@@ -155,11 +155,11 @@
     {
       "@id": "untp-dpp:name",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:name"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -174,11 +174,11 @@
     {
       "@id": "untp-dpp:registeredId",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:registeredId"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -193,7 +193,7 @@
     {
       "@id": "untp-dpp:idScheme",
       "schema:rangeIncludes": {
-        "@id": "untp-core:IdentifierScheme"
+        "@id": "untp-core:idScheme"
       },
       "@type": [
         "rdf:Property",
@@ -212,11 +212,11 @@
     {
       "@id": "untp-dpp:serialNumber",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:serialNumber"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -231,11 +231,11 @@
     {
       "@id": "untp-dpp:batchNumber",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:batchNumber"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -250,7 +250,7 @@
     {
       "@id": "untp-dpp:productImage",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Link"
+        "@id": "untp-core:productImage"
       },
       "@type": [
         "rdf:Property",
@@ -269,11 +269,11 @@
     {
       "@id": "untp-dpp:description",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:description"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -288,7 +288,7 @@
     {
       "@id": "untp-dpp:productCategory",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Classification"
+        "@id": "untp-core:productCategory"
       },
       "@type": [
         "rdf:Property",
@@ -307,7 +307,7 @@
     {
       "@id": "untp-dpp:furtherInformation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Link"
+        "@id": "untp-core:furtherInformation"
       },
       "@type": [
         "rdf:Property",
@@ -326,7 +326,7 @@
     {
       "@id": "untp-dpp:producedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Entity"
+        "@id": "untp-core:producedByParty"
       },
       "@type": [
         "rdf:Property",
@@ -345,7 +345,7 @@
     {
       "@id": "untp-dpp:producedAtFacility",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Entity"
+        "@id": "untp-core:producedAtFacility"
       },
       "@type": [
         "rdf:Property",
@@ -364,7 +364,7 @@
     {
       "@id": "untp-dpp:dimensions",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Dimension"
+        "@id": "untp-core:dimensions"
       },
       "@type": [
         "rdf:Property",
@@ -383,11 +383,11 @@
     {
       "@id": "untp-dpp:productionDate",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:productionDate"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -656,30 +656,35 @@
       "@id": "untp-dpp:eventTypeCode#aggregation",
       "@type": "untp-dpp:eventTypeCode",
       "rdf:value": "aggregation",
+      "rdf:label": "Aggregation event",
       "rdfs:comment": "event describing the grouping of products such as placing bales of cotton on a pallet"
     },
     {
       "@id": "untp-dpp:eventTypeCode#transformation",
       "@type": "untp-dpp:eventTypeCode",
       "rdf:value": "transformation",
+      "rdf:label": "Transformation Event",
       "rdfs:comment": "event describing the consumption of input products to create output products in a manufacturing process such as spinning thread from cotton bales."
     },
     {
       "@id": "untp-dpp:eventTypeCode#object",
       "@type": "untp-dpp:eventTypeCode",
       "rdf:value": "object",
+      "rdf:label": "Object event",
       "rdfs:comment": "event describing an action on a single product such as an inspection or test"
     },
     {
       "@id": "untp-dpp:eventTypeCode#transaction",
       "@type": "untp-dpp:eventTypeCode",
       "rdf:value": "transaction",
+      "rdf:label": "Transaction event",
       "rdfs:comment": "event describing commercial transactions such as the sale of a collection of products from seller to buyer"
     },
     {
       "@id": "untp-dpp:eventTypeCode#association",
       "@type": "untp-dpp:eventTypeCode",
       "rdf:value": "association",
+      "rdf:label": "Association event",
       "rdfs:comment": "event describing the creation of relationships between products such as a bill of material of components in an assembly"
     }
   ]
