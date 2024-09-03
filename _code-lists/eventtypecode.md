@@ -4,6 +4,9 @@ permalink: eventTypeCode.html
 jsonid: eventtypecode
 columns:
   - 
+    title: Label
+    code: label
+  - 
     title: Comment
     code: comment
   - 
