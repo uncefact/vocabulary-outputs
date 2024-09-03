@@ -8,7 +8,7 @@ layout: table
 {% for major in site.data.versions.majors %}
 <h2>Major version: {{ major.major}}</h2>
 <div class="page-description">
-    <p>Go to the version: <a href="{{ site.data.versions.prefix }}">{{ site.data.versions.prefix | prepend: site.dest }} </a></p>
+    <p>Go to the version: <a href="{{ site.data.versions.prefix }}">{{ major.major | site.data.versions.prefix | prepend: site.dest }} </a></p>
 </div>
 <table class="table-grid">
     <thead>
