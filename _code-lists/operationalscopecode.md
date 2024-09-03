@@ -4,6 +4,9 @@ permalink: operationalScopeCode.html
 jsonid: operationalscopecode
 columns:
   - 
+    title: Label
+    code: label
+  - 
     title: Comment
     code: comment
   - 
