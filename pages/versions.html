@@ -8,7 +8,8 @@ layout: table
 {% for major in site.data.versions.majors %}
 <h2>Major version: {{ major.major}}</h2>
 <div class="page-description">
-    <p>Go to the version: <a href="{{ major.major | prepend: site.data.versions.prefix | prepend: site.dest  }}">{{ major.major | prepend: site.data.versions.prefix | prepend: site.dest }} </a></p></div>
+    <p>Go to the version: <a href="{{ '/' | prepend: major.major | prepend: site.data.versions.prefix | prepend: site.dest  }}">{{ '/' | prepend: major.major | prepend: site.data.versions.prefix | prepend: site.dest }} </a></p>
+</div>
 <table class="table-grid">
     <thead>
         <tr>
@@ -17,6 +18,7 @@ layout: table
             <th>Notes</th>
             <th>JSON-LD Context</th>
             <th>JSON Schema</th>
+            <th>JSON Instance</th>
         </tr>
     </thead>
     <tbody>
@@ -36,6 +38,9 @@ layout: table
                     </td>
                     <td>
                         <p><a href="{{ version.schema | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
+                    </td>
+                    <td>
+                        <p><a href="{{ version.instance | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
                     </td>
                 </tr>
         {% endfor %}
