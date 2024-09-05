@@ -92,7 +92,7 @@ class: white
             </li>
         </ul>
 
-        {%- assign jsonld_context_url = '.jsonld' | prepend: site.versions.untp-dte | prepend: '/untp-dte-context-' | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign jsonld_context_url = '/' | prepend: site.versions.untp-dte | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>Current JSON-LD Context file is available here:</p>
         <p>
@@ -113,11 +113,19 @@ class: white
         </div>
 
         {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dte | prepend: '/untp-dte-schema-' | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dte | prepend: '/untp-dte-instance-' | prepend: site.artefacts | prepend: site.dest -%}
 
-        <h2 class="home-content__subtitle">JSON Shcemas</h2>
+        <h2 class="home-content__subtitle">JSON Schemas</h2>
         <p>Current JSON Schema file is available here:</p>
         <p>
             <a class="link-box" href="{{ json_schema_url }}">{{ json_schema_url }}</a>
+        </p>
+        <p>For all versions checkout the <a href="{{ 'versions' | absolute_url}}">versions page</a>.</p>
+
+        <h2 class="home-content__subtitle">JSON Instances</h2>
+        <p>Current JSON Schema file is available here:</p>
+        <p>
+            <a class="link-box" href="{{ json_instance_url }}">{{ json_instance_url }}</a>
         </p>
         <p>For all versions checkout the <a href="{{ 'versions' | absolute_url}}">versions page</a>.</p>
     </div>
