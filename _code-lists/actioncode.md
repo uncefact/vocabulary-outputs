@@ -4,6 +4,9 @@ permalink: actionCode.html
 jsonid: actioncode
 columns:
   - 
+    title: Label
+    code: label
+  - 
     title: Comment
     code: comment
   - 

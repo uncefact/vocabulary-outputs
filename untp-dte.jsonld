@@ -82,12 +82,6 @@
       "rdfs:subClassOf": "untp-dte:Event"
     },
     {
-      "@id": "untp-dte:TradeDocument",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A trade transaction between two parties such as an invoice, purchase order, or shipping notification.",
-      "rdfs:label": "TradeDocument"
-    },
-    {
       "@id": "untp-dte:AssociationEvent",
       "@type": "rdfs:Class",
       "rdfs:comment": "The association event represents the assembly of child sub-components to create a parent assembled item. For example a desktop computer assembled from power supply, hard drive, and motherboard.  The association event is very similar in structure to the aggregation event but is used for physical assembly. An association event may represent a bill of materials used to assemble a  product whilst an aggregation event may represent a packing list or items for transport. ",
@@ -95,32 +89,13 @@
       "rdfs:subClassOf": "untp-dte:Event"
     },
     {
-      "@id": "untp-dte:@context",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
-      ],
-      "rdfs:label": "@context"
-    },
-    {
       "@id": "untp-dte:id",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:id"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -161,9 +136,28 @@
       "rdfs:label": "id"
     },
     {
+      "@id": "untp-dte:@context",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:@context"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:DigitalTraceabilityEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
+      ],
+      "rdfs:label": "@context"
+    },
+    {
       "@id": "untp-dte:issuer",
       "schema:rangeIncludes": {
-        "@id": "untp-core:CredentialIssuer"
+        "@id": "untp-core:issuer"
       },
       "@type": [
         "rdf:Property",
@@ -182,11 +176,11 @@
     {
       "@id": "untp-dte:validFrom",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:validFrom"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -197,25 +191,6 @@
         "The date and time from which the credential is valid."
       ],
       "rdfs:label": "validFrom"
-    },
-    {
-      "@id": "untp-dte:validUntil",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "The expiry date (if applicable) of this verifiable credential."
-      ],
-      "rdfs:label": "validUntil"
     },
     {
       "@id": "untp-dte:credentialSubject",
@@ -383,12 +358,12 @@
         }
       ],
       "rdfs:comment": [
-        "A business step code drawn from a controlled vocabulary. ",
-        "A business step code drawn from a controlled vocabulary. ",
-        "A business step code drawn from a controlled vocabulary. ",
-        "A business step code drawn from a controlled vocabulary. ",
-        "A business step code drawn from a controlled vocabulary. ",
-        "A business step code drawn from a controlled vocabulary. "
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary."
       ],
       "rdfs:label": "bizStep"
     },
@@ -568,11 +543,11 @@
     {
       "@id": "untp-dte:name",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:name"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -580,18 +555,18 @@
         }
       ],
       "rdfs:comment": [
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+        "The name of the product class to which the product item belongs.  "
       ],
       "rdfs:label": "name"
     },
     {
       "@id": "untp-dte:registeredId",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:registeredId"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -606,7 +581,7 @@
     {
       "@id": "untp-dte:idScheme",
       "schema:rangeIncludes": {
-        "@id": "untp-core:IdentifierScheme"
+        "@id": "untp-core:idScheme"
       },
       "@type": [
         "rdf:Property",
@@ -697,7 +672,7 @@
         }
       ],
       "rdfs:comment": [
-        "the unit of measure for the sensor reading",
+        "the unit of measure for the sensor reading, drawn from UNECE rec20 code list.",
         "The unit of measure for the quantity value (eg Kg or meters etc) using the UNECE Rec 20 unit of measure codelist."
       ],
       "rdfs:label": "uom"
@@ -989,9 +964,9 @@
       "rdfs:label": "destinationParty"
     },
     {
-      "@id": "untp-dte:referenceDocument",
+      "@id": "untp-dte:bizTransaction",
       "schema:rangeIncludes": {
-        "@id": "untp-dte:TradeDocument"
+        "@id": "untp-dte:documentTypeCode"
       },
       "@type": [
         "rdf:Property",
@@ -1003,66 +978,9 @@
         }
       ],
       "rdfs:comment": [
-        "The supply chain document reference for this transaction event - eg the invoice, order, or dispatch advice"
-      ],
-      "rdfs:label": "referenceDocument"
-    },
-    {
-      "@id": "untp-dte:documentType",
-      "schema:rangeIncludes": {
-        "@id": "untp-dte:documentTypeCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:TradeDocument"
-        }
-      ],
-      "rdfs:comment": [
         "The document type representing the trade transaction drawn from the business transaction type vocabulary."
       ],
-      "rdfs:label": "documentType"
-    },
-    {
-      "@id": "untp-dte:identifier",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:TradeDocument"
-        }
-      ],
-      "rdfs:comment": [
-        "The identifier of the trade transaction document - eg an invoice number or bill of lading number.  Must be unique for a given source party"
-      ],
-      "rdfs:label": "identifier"
-    },
-    {
-      "@id": "untp-dte:documentURL",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:TradeDocument"
-        }
-      ],
-      "rdfs:comment": [
-        "The URL of the referenced trade document. For integrity reasons, it is recommended (but not required) that the documentURL is a hashlink (https://w3c-ccg.github.io/hashlink/) so that if the document the URL is changed then the hash verification will fail."
-      ],
-      "rdfs:label": "documentURL"
+      "rdfs:label": "bizTransaction"
     },
     {
       "@id": "untp-dte:actionCode",
@@ -1074,21 +992,21 @@
       "@id": "untp-dte:actionCode#observe",
       "@type": "untp-dte:actionCode",
       "rdf:value": "observe",
-      "rdf:label": "Observe",
+      "rdfs:label": "Observe",
       "rdfs:comment": "The entity in question has not been changed."
     },
     {
       "@id": "untp-dte:actionCode#add",
       "@type": "untp-dte:actionCode",
       "rdf:value": "add",
-      "rdf:label": "Add",
+      "rdfs:label": "Add",
       "rdfs:comment": "The entity in question has been created or added to."
     },
     {
       "@id": "untp-dte:actionCode#delete",
       "@type": "untp-dte:actionCode",
       "rdf:value": "delete",
-      "rdf:label": "Delete",
+      "rdfs:label": "Delete",
       "rdfs:comment": "The entity in question has been removed from or destroyed altogether."
     },
     {

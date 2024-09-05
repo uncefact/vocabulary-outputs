@@ -1,5 +1,10 @@
+untp-core:name
+untp-core:idScheme
+untp-core:id
+untp-core:issuer
 untp-core:Entity
-untp-core:IdentifierScheme
-untp-core:CredentialIssuer
+untp-core:@context
+untp-core:validFrom
 xsd:string
 xsd:decimal
+untp-core:registeredId
