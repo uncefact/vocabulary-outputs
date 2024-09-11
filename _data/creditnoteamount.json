@@ -1,7 +1,10 @@
 {
     "label": "creditNoteAmount",
     "uri": "unece:creditNoteAmount",
-    "comment": "A monetary value of the credit note for this header trade settlement.",
+    "comment": [
+        "A monetary value of the credit note for this header trade settlement.",
+        "The monetary value of the credit note for this payment trade settlement."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:AmountType",
@@ -12,6 +15,10 @@
         {
             "uri": "unece:HeaderTradeSettlement",
             "comment": "The information, at a header level, that enables the reconciliation of a financial transaction, with the item(s) that the financial transaction is intended to settle, such as a commercial invoice."
+        },
+        {
+            "uri": "unece:PaymentTradeSettlement",
+            "comment": "The information that enables the reconciliation of a payment with the item(s) that the payment is intended to settle, for example a commercial invoice."
         }
     ]
 }
