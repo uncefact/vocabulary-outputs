@@ -23,12 +23,12 @@ layout: table
                     <td>
                         {%- assign resourceUrl = added.new | split: ":" -%}
                         {%- assign mappingKey = resourceUrl[0] -%}
-                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ added.new }}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}">{{ added.new }}</a>
                     </td>
                     <td>
                         {%- assign resourceUrl = added.old | split: ":" -%}
                         {%- assign mappingKey = resourceUrl[0] -%}
-                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ added.old }}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}">{{ added.old }}</a>
                     </td>
                 </tr>
         {% endfor %}
@@ -50,12 +50,12 @@ layout: table
                     <td>
                         {%- assign resourceUrl = deprecated.old | split: ":" -%}
                         {%- assign mappingKey = resourceUrl[0] -%}
-                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ deprecated.old }}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}">{{ deprecated.old }}</a>
                     </td>
                     <td>
                         {%- assign resourceUrl = deprecated.new | split: ":" -%}
                         {%- assign mappingKey = resourceUrl[0] -%}
-                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ deprecated.new }}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}">{{ deprecated.new }}</a>
                     </td>
                 </tr>
         {% endfor %}
