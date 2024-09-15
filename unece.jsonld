@@ -1216,6 +1216,36 @@
             ]
         },
         {
+            "@id": "unece:activityLevelMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:RadioactiveIsotope"
+            },
+            "rdfs:comment": [
+                "A measure of the activity level of this specified radioactive isotope.",
+                "Deprecated since version D23B. Use `unece:unitActivityLevelMeasure` property instead"
+            ],
+            "rdfs:label": "activityLevelMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_RadioactiveIsotope.ActivityLevel.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "activityLevel",
+                    "unece:cefactUNId": "UN01014764",
+                    "unece:cefactBieDomainClass": "cefact:Specified_RadioactiveIsotope.Details",
+                    "unece:cefactBusinessProcess": "Dangerous Goods",
+                    "rdfs:comment": "A measure of the activity level of this specified radioactive isotope.",
+                    "unece:domainName": "RadioactiveIsotope"
+                }
+            ]
+        },
+        {
             "@id": "unece:actualAmount",
             "schema:rangeIncludes": {
                 "@id": "unece:AmountType"
@@ -2901,6 +2931,36 @@
                     "unece:cefactBusinessProcess": "Buy-Ship-Pay",
                     "rdfs:comment": "Additional instructions for this piece of logistics transport equipment.",
                     "unece:domainName": "LogisticsTransportEquipment"
+                }
+            ]
+        },
+        {
+            "@id": "unece:additionalLevelCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Package"
+            },
+            "rdfs:comment": [
+                "The code specifying the additional level of this logistics package.",
+                "Deprecated since version D23B. Use `unece:logisticsPackageAdditionalLevelCode` property instead"
+            ],
+            "rdfs:label": "additionalLevelCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_Package.Additional_Level.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "additionalLevelCode",
+                    "unece:cefactUNId": "UN01013665",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_Package.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the additional level of this logistics package.",
+                    "unece:domainName": "Package"
                 }
             ]
         },
@@ -5979,6 +6039,35 @@
             },
             "rdfs:comment": "A logistics location or place applicable to this header trade agreement.",
             "rdfs:label": "applicableLogisticsLocation",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Header_TradeAgreement.Applicable.Logistics_Location",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011585",
+                    "unece:cefactBieDomainClass": "cefact:Header_TradeAgreement.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A logistics location or place applicable to this header trade agreement.",
+                    "unece:domainName": "HeaderTradeAgreement"
+                }
+            ]
+        },
+        {
+            "@id": "unece:applicableLocation",
+            "schema:rangeIncludes": {
+                "@id": "unece:applicableLogisticsLocation"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:HeaderTradeAgreement"
+            },
+            "rdfs:comment": [
+                "A logistics location or place applicable to this header trade agreement.",
+                "Deprecated since version D23B. Use `unece:unitActivityLevelMeasure` property instead"
+            ],
+            "rdfs:label": "applicableLocation",
             "unece:cefactElementMetadata": [
                 {
                     "@id": "cefact:Header_TradeAgreement.Applicable.Logistics_Location",
@@ -15151,6 +15240,36 @@
             ]
         },
         {
+            "@id": "unece:bracketTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradePrice"
+            },
+            "rdfs:comment": [
+                "The code specifying the type of bracket for this trade price.",
+                "Deprecated since version D23B. Use `unece:tradePriceBracketTypeCode` property instead"
+            ],
+            "rdfs:label": "bracketTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Price.Bracket_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "bracketTypeCode",
+                    "unece:cefactUNId": "UN01015439",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Price.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the type of bracket for this trade price.",
+                    "unece:domainName": "TradePrice"
+                }
+            ]
+        },
+        {
             "@id": "unece:branchName",
             "schema:rangeIncludes": {
                 "@id": "xsd:string"
@@ -19179,6 +19298,36 @@
             ]
         },
         {
+            "@id": "unece:categoryTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradePrice"
+            },
+            "rdfs:comment": [
+                "The code specifying the type of category, such as refund or service charge, for this trade price.",
+                "Deprecated since version D23B. Use `unece:tradePriceCategoryTypeCode` property instead"
+            ],
+            "rdfs:label": "categoryTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Price.Category_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "categoryTypeCode",
+                    "unece:cefactUNId": "UN01015438",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Price.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the type of category, such as refund or service charge, for this trade price.",
+                    "unece:domainName": "TradePrice"
+                }
+            ]
+        },
+        {
             "@id": "unece:cell",
             "schema:rangeIncludes": {
                 "@id": "xsd:string"
@@ -19991,6 +20140,36 @@
             ]
         },
         {
+            "@id": "unece:channelCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:AcknowledgementDocument"
+            },
+            "rdfs:comment": [
+                "The code specifying the channel by which this acknowledgement document is sent, such as mail, email, fax.",
+                "Deprecated since version D23B. Use `unece:acknowledgementDocumentChannelCode` property instead"
+            ],
+            "rdfs:label": "channelCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Acknowledgement_Document.Channel.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "channelCode",
+                    "unece:cefactUNId": "UN01013629",
+                    "unece:cefactBieDomainClass": "cefact:Acknowledgement_Document.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the channel by which this acknowledgement document is sent, such as mail, email, fax.",
+                    "unece:domainName": "AcknowledgementDocument"
+                }
+            ]
+        },
+        {
             "@id": "unece:characterSetCode",
             "schema:rangeIncludes": {
                 "@id": "xsd:string"
@@ -20470,6 +20649,36 @@
                     "unece:cefactBusinessProcess": "Buy-Ship-Pay",
                     "rdfs:comment": "The number of separately chargeable transportation stages to be covered by this supply chain consignment.",
                     "unece:domainName": "Consignment"
+                }
+            ]
+        },
+        {
+            "@id": "unece:chemicalConcentrationMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:AppliedChemicalTreatment"
+            },
+            "rdfs:comment": [
+                "A measure of the chemical concentration of this applied chemical treatment.",
+                "Deprecated since version D23B. Use `unece:unitChemicalConcentrationMeasure` property instead"
+            ],
+            "rdfs:label": "chemicalConcentrationMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Applied_ChemicalTreatment.ChemicalConcentration.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "chemicalConcentration",
+                    "unece:cefactUNId": "UN01009028",
+                    "unece:cefactBieDomainClass": "cefact:Applied_ChemicalTreatment.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A measure of the chemical concentration of this applied chemical treatment.",
+                    "unece:domainName": "AppliedChemicalTreatment"
                 }
             ]
         },
@@ -22278,6 +22487,35 @@
                     "unece:cefactBusinessProcess": "In All Contexts",
                     "rdfs:comment": "A product batch component of this product batch.",
                     "unece:domainName": "ProductBatch"
+                }
+            ]
+        },
+        {
+            "@id": "unece:componentWorkItemDimension",
+            "schema:rangeIncludes": {
+                "@id": "unece:WorkItemDimension"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:WorkItemDimension"
+            },
+            "rdfs:comment": [
+                "A work item component dimension for this work item dimension.",
+                "Deprecated since version D23B. Use `unece:unitActivityLevelMeasure` property instead"
+            ],
+            "rdfs:label": "componentDimension",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:WorkItem_Dimension.Component.WorkItem_Dimension",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01000061",
+                    "unece:cefactBieDomainClass": "cefact:WorkItem_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "A work item component dimension for this work item dimension.",
+                    "unece:domainName": "WorkItemDimension"
                 }
             ]
         },
@@ -29939,6 +30177,36 @@
                     "unece:cefactBusinessProcess": "Buy-Ship-Pay",
                     "rdfs:comment": "Demurrage information, expressed as text, for this supply chain consignment.",
                     "unece:domainName": "Consignment"
+                }
+            ]
+        },
+        {
+            "@id": "unece:densityMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:DangerousGoods"
+            },
+            "rdfs:comment": [
+                "A density measure for these transported dangerous goods.",
+                "Deprecated since version D23B. Use `unece:unitDensityMeasure` property instead"
+            ],
+            "rdfs:label": "densityMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_DangerousGoods.Density.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "density",
+                    "unece:cefactUNId": "UN01015097",
+                    "unece:cefactBieDomainClass": "cefact:Transport_DangerousGoods.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A density measure for these transported dangerous goods.",
+                    "unece:domainName": "DangerousGoods"
                 }
             ]
         },
@@ -38816,6 +39084,33 @@
             ]
         },
         {
+            "@id": "unece:fileName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:BinaryFile"
+            },
+            "rdfs:comment": "The file name, expressed as text, of this specified binary file.",
+            "rdfs:label": "fileName",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_BinaryFile.FileName.Text",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "fileName",
+                    "unece:cefactUNId": "UN01006019",
+                    "unece:cefactBieDomainClass": "cefact:Specified_BinaryFile.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The file name, expressed as text, of this specified binary file.",
+                    "unece:domainName": "BinaryFile"
+                }
+            ]
+        },
+        {
             "@id": "unece:finalAssemblyCountry",
             "schema:rangeIncludes": {
                 "@id": "unece:Country"
@@ -43091,6 +43386,36 @@
                     "unece:cefactBusinessProcess": "Maritime Transportation",
                     "rdfs:comment": "The indication of whether or not the health status has been reported for this MDH illness.",
                     "unece:domainName": "Illness"
+                }
+            ]
+        },
+        {
+            "@id": "unece:heightMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:SpatialDimension"
+            },
+            "rdfs:comment": [
+                "The measure of the height component of this spatial dimension.",
+                "Deprecated since version D23B. Use `unece:linearUnitHeightMeasure` property instead"
+            ],
+            "rdfs:label": "heightMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Spatial_Dimension.Height.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "height",
+                    "unece:cefactUNId": "UN01004081",
+                    "unece:cefactBieDomainClass": "cefact:Spatial_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of the height component of this spatial dimension.",
+                    "unece:domainName": "SpatialDimension"
                 }
             ]
         },
@@ -51345,6 +51670,36 @@
             ]
         },
         {
+            "@id": "unece:inventoryTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ProductionProcess"
+            },
+            "rdfs:comment": [
+                "The code specifying the inventory type for this production process.",
+                "Deprecated since version D23B. Use `unece:productionProcessInventoryTypeCode` property instead"
+            ],
+            "rdfs:label": "inventoryTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Production_Process.Inventory_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "inventoryTypeCode",
+                    "unece:cefactUNId": "UN01014189",
+                    "unece:cefactBieDomainClass": "cefact:Production_Process.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the inventory type for this production process.",
+                    "unece:domainName": "ProductionProcess"
+                }
+            ]
+        },
+        {
             "@id": "unece:invoiceAmount",
             "schema:rangeIncludes": {
                 "@id": "unece:AmountType"
@@ -54320,6 +54675,36 @@
                     "unece:cefactBusinessProcess": "Buy-Ship-Pay",
                     "rdfs:comment": "The party that owns the legal rights for this trade product.",
                     "unece:domainName": "TradeProduct"
+                }
+            ]
+        },
+        {
+            "@id": "unece:lengthMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:SpatialDimension"
+            },
+            "rdfs:comment": [
+                "The measure of the length component of this spatial dimension.",
+                "Deprecated since version D23B. Use `unece:linearUnitLengthMeasure` property instead"
+            ],
+            "rdfs:label": "lengthMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Spatial_Dimension.Length.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "length",
+                    "unece:cefactUNId": "UN01004080",
+                    "unece:cefactBieDomainClass": "cefact:Spatial_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of the length component of this spatial dimension.",
+                    "unece:domainName": "SpatialDimension"
                 }
             ]
         },
@@ -83211,6 +83596,32 @@
             ]
         },
         {
+            "@id": "unece:requiredChemicalTreatment",
+            "schema:rangeIncludes": {
+                "@id": "unece:AppliedChemicalTreatment"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:RegulatoryProcedure"
+            },
+            "rdfs:comment": "A chemical treatment applied as required by this cross-border regulatory procedure.",
+            "rdfs:label": "requiredChemicalTreatment",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Cross-Border_RegulatoryProcedure.Required.Applied_ChemicalTreatment",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01009039",
+                    "unece:cefactBieDomainClass": "cefact:CrossBorder_RegulatoryProcedure.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A chemical treatment applied as required by this cross-border regulatory procedure.",
+                    "unece:domainName": "RegulatoryProcedure"
+                }
+            ]
+        },
+        {
             "@id": "unece:requiredIndicator",
             "schema:rangeIncludes": {
                 "@id": "xsd:boolean"
@@ -84329,6 +84740,60 @@
             ]
         },
         {
+            "@id": "unece:responsibleParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradeParty"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:Service"
+                },
+                {
+                    "@id": "unece:TradeProduct"
+                }
+            ],
+            "rdfs:comment": [
+                "A party responsible for providing this referenced transport service.",
+                "A party responsible for this trade product.",
+                "A trade party responsible for this transport service.",
+                "Deprecated since version D23B. Use `unece:responsibleTradeParty` property instead"
+            ],
+            "rdfs:label": "responsibleParty",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_Service.Responsible.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01010158",
+                    "unece:cefactBieDomainClass": "cefact:Transport_Service.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A trade party responsible for this transport service.",
+                    "unece:domainName": "Service"
+                },
+                {
+                    "@id": "cefact:Trade_Product.Responsible.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01014589",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A party responsible for this trade product.",
+                    "unece:domainName": "TradeProduct"
+                },
+                {
+                    "@id": "cefact:ReferencedTransport_Service.Responsible.Trade_Party",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01014795",
+                    "unece:cefactBieDomainClass": "cefact:ReferencedTransport_Service.Details",
+                    "unece:cefactBusinessProcess": "Transport",
+                    "rdfs:comment": "A party responsible for providing this referenced transport service.",
+                    "unece:domainName": "Service"
+                }
+            ]
+        },
+        {
             "@id": "unece:responsiblePersonStatement",
             "schema:rangeIncludes": {
                 "@id": "xsd:string"
@@ -85185,6 +85650,36 @@
                     "unece:cefactBusinessProcess": "In All Contexts",
                     "rdfs:comment": "The code specifying the role of this guest person.",
                     "unece:domainName": "GuestPerson"
+                }
+            ]
+        },
+        {
+            "@id": "unece:roofTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ProductionFacility"
+            },
+            "rdfs:comment": [
+                "The code specifying the type of roof, such as a glass roof, for this production facility.",
+                "Deprecated since version D23B. Use `unece:productionFacilityRoofTypeCode` property instead."
+            ],
+            "rdfs:label": "roofTypeCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Production_Facility.Roof_Type.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "roofTypeCode",
+                    "unece:cefactUNId": "UN01014125",
+                    "unece:cefactBieDomainClass": "cefact:Production_Facility.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the type of roof, such as a glass roof, for this production facility.",
+                    "unece:domainName": "ProductionFacility"
                 }
             ]
         },
@@ -90647,6 +91142,35 @@
             ]
         },
         {
+            "@id": "unece:specifiedArea",
+            "schema:rangeIncludes": {
+                "@id": "unece:Area"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:Plot"
+            },
+            "rdfs:comment": [
+                "An agricultural zone area specified for this crop plot.",
+                "Deprecated since version D23B. Use `unece:specifiedAgriculturalZoneArea` property instead."
+            ],
+            "rdfs:label": "specifiedArea",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Crop_Plot.Specified.AgriculturalZone_Area",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012146",
+                    "unece:cefactBieDomainClass": "cefact:Crop_Plot.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "An agricultural zone area specified for this crop plot.",
+                    "unece:domainName": "Plot"
+                }
+            ]
+        },
+        {
             "@id": "unece:specifiedAssertion",
             "schema:rangeIncludes": {
                 "@id": "unece:Assertion"
@@ -92553,6 +93077,35 @@
             ]
         },
         {
+            "@id": "unece:specifiedLabel",
+            "schema:rangeIncludes": {
+                "@id": "unece:ProductLabel"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:TradeProduct"
+            },
+            "rdfs:comment": [
+                "A product label specified for this trade product.",
+                "Deprecated since version D23B. Use `unece:specifiedProductLabel` property instead."
+            ],
+            "rdfs:label": "specifiedLabel",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Trade_Product.Specified.Product_Label",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01014602",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Product.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A product label specified for this trade product.",
+                    "unece:domainName": "TradeProduct"
+                }
+            ]
+        },
+        {
             "@id": "unece:specifiedLaboratoryObservationInstructions",
             "schema:rangeIncludes": {
                 "@id": "unece:LaboratoryObservationInstructions"
@@ -93658,6 +94211,76 @@
                     "unece:cefactBusinessProcess": "In All Contexts",
                     "rdfs:comment": "A payment trade settlement specified for this trade price.",
                     "unece:domainName": "TradePrice"
+                }
+            ]
+        },
+        {
+            "@id": "unece:specifiedDelimitedPeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:DelimitedPeriod"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AnimalBatch"
+                },
+                {
+                    "@id": "unece:CoordinateReferenceSystem"
+                },
+                {
+                    "@id": "unece:IndividualTTAnimal"
+                },
+                {
+                    "@id": "unece:TTAnimal"
+                }
+            ],
+            "rdfs:comment": [
+                "A delimited period specified for this CS engineering coordinate reference system.",
+                "A delimited period specified for this TT animal.",
+                "The delimited period specified for this animal batch.",
+                "The delimited period specified for this individual TT animal.",
+                "Deprecated since version D23B. Use `unece:acknowledgementDocumentChannelCode` property instead"
+            ],
+            "rdfs:label": "specifiedPeriod",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Animal_Batch.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011255",
+                    "unece:cefactBieDomainClass": "cefact:Animal_Batch.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "The delimited period specified for this animal batch.",
+                    "unece:domainName": "AnimalBatch"
+                },
+                {
+                    "@id": "cefact:IndividualTT_Animal.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011291",
+                    "unece:cefactBieDomainClass": "cefact:IndividualTT_Animal.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "The delimited period specified for this individual TT animal.",
+                    "unece:domainName": "IndividualTTAnimal"
+                },
+                {
+                    "@id": "cefact:TT_Animal.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011329",
+                    "unece:cefactBieDomainClass": "cefact:TT_Animal.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "A delimited period specified for this TT animal.",
+                    "unece:domainName": "TTAnimal"
+                },
+                {
+                    "@id": "cefact:CSEngineering_CoordinateReferenceSystem.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012167",
+                    "unece:cefactBieDomainClass": "cefact:CSEngineering_CoordinateReferenceSystem.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "A delimited period specified for this CS engineering coordinate reference system.",
+                    "unece:domainName": "CoordinateReferenceSystem"
                 }
             ]
         },
@@ -97836,6 +98459,36 @@
             ]
         },
         {
+            "@id": "unece:subjectCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:SpecifiedNote"
+            },
+            "rdfs:comment": [
+                "The code specifying the subject of this specified note.",
+                "Deprecated since version D23B. Use `unece:specifiedNoteSubjectCode` property instead"
+            ],
+            "rdfs:label": "subjectCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Specified_Note.Subject.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "subjectCode",
+                    "unece:cefactUNId": "UN01015370",
+                    "unece:cefactBieDomainClass": "cefact:Specified_Note.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The code specifying the subject of this specified note.",
+                    "unece:domainName": "SpecifiedNote"
+                }
+            ]
+        },
+        {
             "@id": "unece:subjectTypeCode",
             "schema:rangeIncludes": {
                 "@id": "unece:SubjectCodeList"
@@ -100518,6 +101171,53 @@
                     "unece:cefactBieDomainClass": "cefact:Trade_Tax.Details",
                     "unece:cefactBusinessProcess": "Buy-Ship-Pay",
                     "rdfs:comment": "A code specifying a reason for exemption from this trade related tax, levy or duty.",
+                    "unece:domainName": "TradeTax"
+                }
+            ]
+        },
+        {
+            "@id": "unece:taxPointDate",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AppliedTax"
+                },
+                {
+                    "@id": "unece:TradeTax"
+                }
+            ],
+            "rdfs:comment": [
+                "The date of the tax point when taxes, such as VAT, are to be applied.",
+                "The date of the tax point when this trade related tax, levy or duty becomes applicable.",
+                "Deprecated since version D23B."
+            ],
+            "rdfs:label": "taxPointDate",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Applied_Tax.TaxPoint.Date",
+                    "@type": "unece:BasicBIE",
+                    "unece:tded": "2221",
+                    "unece:propertySchemaName": "taxPointDate",
+                    "unece:cefactUNId": "UN01002070",
+                    "unece:cefactBieDomainClass": "cefact:Applied_Tax.Details",
+                    "unece:cefactBusinessProcess": "Trade",
+                    "rdfs:comment": "The date of the tax point when taxes, such as VAT, are to be applied.",
+                    "unece:domainName": "AppliedTax"
+                },
+                {
+                    "@id": "cefact:Trade_Tax.TaxPoint.Date",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "taxPointDate",
+                    "unece:cefactUNId": "UN01004725",
+                    "unece:cefactBieDomainClass": "cefact:Trade_Tax.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The date of the tax point when this trade related tax, levy or duty becomes applicable.",
                     "unece:domainName": "TradeTax"
                 }
             ]
@@ -108291,6 +108991,36 @@
             ]
         },
         {
+            "@id": "unece:unitCalculationBasisAreaMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:UnitMeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:ServiceCharge"
+            },
+            "rdfs:comment": [
+                "The measure of the area used as the basis for the calculation of this logistics service charge.",
+                "Deprecated since version D23B. Use `unece:calculationBasisAreaMeasure` property instead."
+            ],
+            "rdfs:label": "unitCalculationBasisAreaMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Logistics_ServiceCharge.CalculationBasisArea.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "calculationBasisArea",
+                    "unece:cefactUNId": "UN01015511",
+                    "unece:cefactBieDomainClass": "cefact:Logistics_ServiceCharge.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The measure of the area used as the basis for the calculation of this logistics service charge.",
+                    "unece:domainName": "ServiceCharge"
+                }
+            ]
+        },
+        {
             "@id": "unece:unitPrice",
             "schema:rangeIncludes": {
                 "@id": "unece:CalculatedPrice"
@@ -109223,6 +109953,36 @@
                     "unece:cefactBusinessProcess": "Buy-Ship-Pay",
                     "rdfs:comment": "A textual description of a use of this trade product.",
                     "unece:domainName": "TradeProduct"
+                }
+            ]
+        },
+        {
+            "@id": "unece:usedCapacityCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:AssociatedTransportEquipment"
+            },
+            "rdfs:comment": [
+                "The code specifying the used capacity, such as full or empty, of this associated piece of transport equipment.",
+                "Deprecated since version D23B. Use `unece:associatedTransportEquipmentUsedCapacityCode` property instead."
+            ],
+            "rdfs:label": "usedCapacityCode",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Associated_TransportEquipment.UsedCapacity.Code",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "usedCapacityCode",
+                    "unece:cefactUNId": "UN01014628",
+                    "unece:cefactBieDomainClass": "cefact:Associated_TransportEquipment.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "The code specifying the used capacity, such as full or empty, of this associated piece of transport equipment.",
+                    "unece:domainName": "AssociatedTransportEquipment"
                 }
             ]
         },
@@ -112858,6 +113618,36 @@
             ]
         },
         {
+            "@id": "unece:viscosityMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:DangerousGoods"
+            },
+            "rdfs:comment": [
+                "A viscosity measure for these transported dangerous goods.",
+                "Deprecated since version D23B. Use `unece:unitViscosityMeasure` property instead."
+            ],
+            "rdfs:label": "viscosityMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Transport_DangerousGoods.Viscosity.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "viscosity",
+                    "unece:cefactUNId": "UN01015096",
+                    "unece:cefactBieDomainClass": "cefact:Transport_DangerousGoods.Details",
+                    "unece:cefactBusinessProcess": "Buy-Ship-Pay",
+                    "rdfs:comment": "A viscosity measure for these transported dangerous goods.",
+                    "unece:domainName": "DangerousGoods"
+                }
+            ]
+        },
+        {
             "@id": "unece:visitingPeriod",
             "schema:rangeIncludes": {
                 "@id": "unece:SpecifiedPeriod"
@@ -114346,6 +115136,36 @@
             ]
         },
         {
+            "@id": "unece:widthMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:MeasureType"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": {
+                "@id": "unece:SpatialDimension"
+            },
+            "rdfs:comment": [
+                "The measure of the width component of this spatial dimension.",
+                "Deprecated since version D23B. Use `unece:linearUnitWidthMeasure` property instead."
+            ],
+            "rdfs:label": "widthMeasure",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Spatial_Dimension.Width.Measure",
+                    "@type": "unece:BasicBIE",
+                    "unece:propertySchemaName": "width",
+                    "unece:cefactUNId": "UN01004079",
+                    "unece:cefactBieDomainClass": "cefact:Spatial_Dimension.Details",
+                    "unece:cefactBusinessProcess": "In All Contexts",
+                    "rdfs:comment": "The measure of the width component of this spatial dimension.",
+                    "unece:domainName": "SpatialDimension"
+                }
+            ]
+        },
+        {
             "@id": "unece:workItemDimensionTypeCode",
             "schema:rangeIncludes": {
                 "@id": "xsd:string"
@@ -114854,6 +115674,24 @@
             "unece:relatedClass": [
                 "unece:RegisteredTax",
                 "unece:TradeTax"
+            ]
+        },
+        {
+            "@id": "unece:Area",
+            "@type": "rdfs:Class",
+            "rdfs:comment": [
+                "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform agricultural treatment.",
+                "Deprecated since version D23B. Use `unece:AgriculturalZoneArea` property instead"
+            ],
+            "rdfs:label": "Area",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:AgriculturalZone_Area.Details",
+                    "@type": "unece:AggregateBIE",
+                    "unece:cefactUNId": "UN01012213",
+                    "rdfs:comment": "A named, delimited and identified part of a land and or water surface of the globe subject to dedicated uniform agricultural treatment.",
+                    "unece:cefactBusinessProcess": "Agricultural"
+                }
             ]
         },
         {
@@ -175083,6 +175921,51 @@
             "rdfs:comment": "Mutually defined"
         },
         {
+            "@id": "unece:PaymentTermsEventTimeReferenceCodeList#24",
+            "@type": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "rdf:value": "24",
+            "rdfs:comment": [
+                "Date ex-works",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:PaymentTermsEventTimeReferenceCodeList#29",
+            "@type": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "rdf:value": "29",
+            "rdfs:comment": [
+                "Date of delivery of goods to establishments/domicile/site",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:PaymentTermsEventTimeReferenceCodeList#45",
+            "@type": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "rdf:value": "45",
+            "rdfs:comment": [
+                "Date of bill of lading, consignment note or other transport document",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:PaymentTermsEventTimeReferenceCodeList#5",
+            "@type": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "rdf:value": "5",
+            "rdfs:comment": [
+                "Date of invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:PaymentTermsEventTimeReferenceCodeList#71",
+            "@type": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "rdf:value": "71",
+            "rdfs:comment": [
+                "Date of presentation of documents",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
             "@id": "unece:PaymentTermsId#1",
             "@type": "unece:PaymentTermsId",
             "rdf:value": "1",
@@ -202221,6 +203104,24 @@
             "rdfs:comment": "mutually defined"
         },
         {
+            "@id": "unece:ValidationDocumentStatusCodeList#1",
+            "@type": "unece:ValidationDocumentStatusCodeList",
+            "rdf:value": "1",
+            "rdfs:comment": [
+                "Accepted",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:ValidationDocumentStatusCodeList#42",
+            "@type": "unece:ValidationDocumentStatusCodeList",
+            "rdf:value": "42",
+            "rdfs:comment":  [
+                "In error",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
             "@id": "unece:VolumeUnitMeasureCode#CMQ",
             "@type": "unece:VolumeUnitMeasureCode",
             "rdf:value": "CMQ",
@@ -203319,6 +204220,15 @@
             "rdfs:comment": "A character string used to represent a currency."
         },
         {
+            "@id": "unece:PaymentTermsEventTimeReferenceCodeList",
+            "@type": "rdfs:Class",
+            "rdfs:label": "PaymentTermsEventTimeReferenceCodeList",
+            "rdfs:comment": [
+                "A character string used to represent a time reference for a payment terms event.",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
             "@id": "unece:ResponsibleGovernmentAgencyCodeList",
             "@type": "rdfs:Class",
             "rdfs:label": "ResponsibleGovernmentAgencyCodeList",
@@ -203503,6 +204413,15 @@
             "@type": "rdfs:Class",
             "rdfs:label": "GovernmentActionCodeList",
             "rdfs:comment": "A character string used to replace or represent a government action."
+        },
+        {
+            "@id": "unece:ValidationDocumentStatusCodeList",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ValidationDocumentStatusCodeList",
+            "rdfs:comment": [
+                "A character string used to represent the document status condition of a validation document.",
+                "Deprecated since version D23B."
+            ]
         },
         {
             "@id": "unece:WeightUnitMeasureType",
