@@ -21,10 +21,14 @@ layout: table
         {% for added in version.added %}
                 <tr>
                     <td>
-                        {{ added.new}}
+                        {%- assign resourceUrl = added.new | split: ":" -%}
+                        {%- assign mappingKey = resourceUrl[0] -%}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ added.new }}
                     </td>
                     <td>
-                        {{ added.old }}
+                        {%- assign resourceUrl = added.old | split: ":" -%}
+                        {%- assign mappingKey = resourceUrl[0] -%}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ added.old }}
                     </td>
                 </tr>
         {% endfor %}
@@ -41,13 +45,17 @@ layout: table
         </tr>
     </thead>
     <tbody>
-        {% for added in version.added %}
+        {% for deprecated in version.deprecated %}
                 <tr>
                     <td>
-                        {{ added.new}}
+                        {%- assign resourceUrl = deprecated.old | split: ":" -%}
+                        {%- assign mappingKey = resourceUrl[0] -%}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ deprecated.old }}
                     </td>
                     <td>
-                        {{ added.old }}
+                        {%- assign resourceUrl = deprecated.new | split: ":" -%}
+                        {%- assign mappingKey = resourceUrl[0] -%}
+                        <a href="{{ site.data.mapping[mappingKey] }}{{ resourceUrl[1] }}"></a>{{ deprecated.new }}
                     </td>
                 </tr>
         {% endfor %}
