@@ -1,0 +1,56 @@
+---
+title: Changelog
+permalink: changelog
+type: default
+layout: table
+---
+
+{% for version in site.data.changelog.versions %}
+<h2>Version: {{ version.version}}</h2>
+<div class="page-description">
+    <p>New resources added with {{ version.version}}:</a></p>
+</div>
+<table class="table-grid">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Former name (if applied)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for added in version.added %}
+                <tr>
+                    <td>
+                        {{ added.new}}
+                    </td>
+                    <td>
+                        {{ added.old }}
+                    </td>
+                </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<div class="page-description">
+    <p>Deprecated resources since {{ version.version}}:</a></p>
+</div>
+<table class="table-grid">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Use insted (if applied)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for added in version.added %}
+                <tr>
+                    <td>
+                        {{ added.new}}
+                    </td>
+                    <td>
+                        {{ added.old }}
+                    </td>
+                </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endfor %}
