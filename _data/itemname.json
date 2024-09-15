@@ -1,13 +1,25 @@
 {
     "label": "itemName",
     "uri": "unece:itemName",
-    "comment": "A name, expressed as text, of an item included in these packaging instructions.",
+    "comment": [
+        "A name, expressed as text, of an item included in these delivery instructions.",
+        "A name, expressed as text, of an item included in these handling instructions.",
+        "A name, expressed as text, of an item included in these packaging instructions."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:DeliveryInstructions",
+            "comment": "Delivery information of an instructive nature."
+        },
+        {
+            "uri": "unece:HandlingInstructions",
+            "comment": "Handling information of an instructive nature."
+        },
         {
             "uri": "unece:PackagingInstructions",
             "comment": "Packaging information of an instructive nature."

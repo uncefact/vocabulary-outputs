@@ -2,6 +2,7 @@
     "label": "sequenceNumeric",
     "uri": "unece:sequenceNumeric",
     "comment": [
+        "A sequence number differentiating this logistics transport movement from others in a set of transport movements.",
         "A sequence number for these specified personal effects.",
         "A sequence number for this document status.",
         "A sequence number for this specified certificate.",
@@ -9,11 +10,14 @@
         "A sequence number for this stores inventory item.",
         "A sequence number for this supply chain consignment.",
         "A sequence number for this supply chain trade line item.",
+        "The number of a sequence of the supply chain packaging.",
         "The sequence number differentiating this logistics transport means from others.",
         "The sequence number differentiating this piece of logistics transport equipment from others in a set of transport equipment.",
+        "The sequence number differentiating this piece of transport equipment from others in a set of associated transport equipment.",
         "The sequence number for applying this trade allowance charge.",
         "The sequence number for this electronic negotiation exchange.",
         "The sequence number for this logistics packaging.",
+        "The sequence number for this port movement event.",
         "The sequence number for this referenced supply chain consignment item.",
         "The sequence number for this referenced supply chain consignment.",
         "The sequence number for this specified production cycle.",
@@ -30,6 +34,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+        },
         {
             "uri": "unece:Consignment",
             "comment": "A separately identifiable collection of ..."
@@ -79,6 +87,10 @@
             "comment": "Specified privately owned articles for personal use by an individual."
         },
         {
+            "uri": "unece:PortMovementEvent",
+            "comment": "A movement of a vessel during a port call."
+        },
+        {
             "uri": "unece:ProductionCycle",
             "comment": "A series of activities associated with the processing of a product."
         },
@@ -95,12 +107,20 @@
             "comment": "A stores item, such as for onboard use during a journey."
         },
         {
+            "uri": "unece:SupplyChainPackaging",
+            "comment": "Any material with which supply chain goods are packaged, such as a box or bubble wrap."
+        },
+        {
             "uri": "unece:SupplyChainTradeLineItem",
             "comment": "A collection of information specific to an item being used or reported on for supply chain trade purposes."
         },
         {
             "uri": "unece:TradeAllowanceCharge",
             "comment": "A component of pricing, such as an allowance or charge for trade purposes."
+        },
+        {
+            "uri": "unece:TransportMovement",
+            "comment": "The conveyance (physical carriage) of goods or other objects used for logistics transport purposes."
         }
     ]
 }

@@ -1,7 +1,11 @@
 {
     "label": "registrationCountry",
     "uri": "unece:registrationCountry",
-    "comment": "The country of registration of this logistics means of transport.",
+    "comment": [
+        "A registration country for this associated transport equipment.",
+        "The country of registration of this logistics means of transport.",
+        "The registration country for this logistics transport equipment."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:Country",
@@ -9,6 +13,14 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:AssociatedTransportEquipment",
+            "comment": "A piece of transport equipment that is associated with another piece of transport equipment, such as a maritime container placed on a rail wagon for transportation."
+        },
+        {
+            "uri": "unece:LogisticsTransportEquipment",
+            "comment": "A piece of equipment used ..."
+        },
         {
             "uri": "unece:LogisticsTransportMeans",
             "comment": "The devices used to convey goods or other objects from place to place during logistics cargo movements."

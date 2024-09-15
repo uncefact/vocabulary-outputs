@@ -22491,7 +22491,7 @@
             ]
         },
         {
-            "@id": "unece:componentWorkItemDimension",
+            "@id": "unece:componentDimension",
             "schema:rangeIncludes": {
                 "@id": "unece:WorkItemDimension"
             },
@@ -22504,7 +22504,7 @@
             },
             "rdfs:comment": [
                 "A work item component dimension for this work item dimension.",
-                "Deprecated since version D23B. Use `unece:unitActivityLevelMeasure` property instead"
+                "Deprecated since version D23B. Use `unece:componentWorkItemDimension` property instead"
             ],
             "rdfs:label": "componentDimension",
             "unece:cefactElementMetadata": [
@@ -94285,6 +94285,76 @@
             ]
         },
         {
+            "@id": "unece:specifiedPeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:DelimitedPeriod"
+            },
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:AnimalBatch"
+                },
+                {
+                    "@id": "unece:CoordinateReferenceSystem"
+                },
+                {
+                    "@id": "unece:IndividualTTAnimal"
+                },
+                {
+                    "@id": "unece:TTAnimal"
+                }
+            ],
+            "rdfs:comment": [
+                "A delimited period specified for this CS engineering coordinate reference system.",
+                "A delimited period specified for this TT animal.",
+                "The delimited period specified for this animal batch.",
+                "The delimited period specified for this individual TT animal.",
+                "Deprecated since version D23B. Use `unece:specifiedDelimitedPeriod` property instead"
+            ],
+            "rdfs:label": "specifiedPeriod",
+            "unece:cefactElementMetadata": [
+                {
+                    "@id": "cefact:Animal_Batch.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011255",
+                    "unece:cefactBieDomainClass": "cefact:Animal_Batch.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "The delimited period specified for this animal batch.",
+                    "unece:domainName": "AnimalBatch"
+                },
+                {
+                    "@id": "cefact:IndividualTT_Animal.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011291",
+                    "unece:cefactBieDomainClass": "cefact:IndividualTT_Animal.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "The delimited period specified for this individual TT animal.",
+                    "unece:domainName": "IndividualTTAnimal"
+                },
+                {
+                    "@id": "cefact:TT_Animal.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01011329",
+                    "unece:cefactBieDomainClass": "cefact:TT_Animal.Details",
+                    "unece:cefactBusinessProcess": "Traceability",
+                    "rdfs:comment": "A delimited period specified for this TT animal.",
+                    "unece:domainName": "TTAnimal"
+                },
+                {
+                    "@id": "cefact:CSEngineering_CoordinateReferenceSystem.Specified.Delimited_Period",
+                    "@type": "unece:AssociationBIE",
+                    "unece:cefactUNId": "UN01012167",
+                    "unece:cefactBieDomainClass": "cefact:CSEngineering_CoordinateReferenceSystem.Details",
+                    "unece:cefactBusinessProcess": "Agricultural",
+                    "rdfs:comment": "A delimited period specified for this CS engineering coordinate reference system.",
+                    "unece:domainName": "CoordinateReferenceSystem"
+                }
+            ]
+        },
+        {
             "@id": "unece:specifiedPersonIdentity",
             "schema:rangeIncludes": {
                 "@id": "unece:PersonIdentity"
@@ -156691,6 +156761,159 @@
             "rdfs:comment": "Cargo packaging inspection"
         },
         {
+            "@id": "unece:InvoiceDocumentCodeList#261",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "261",
+            "rdfs:comment": [
+                "Self billed credit note",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#262",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "262",
+            "rdfs:comment": [
+                "Consolidated credit note - goods and services",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#325",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "325",
+            "rdfs:comment": [
+                "Proforma invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#380",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "380",
+            "rdfs:comment": [
+                "Commercial invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#381",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "381",
+            "rdfs:comment": [
+                "Credit note",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#383",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "383",
+            "rdfs:comment": [
+                "Debit note",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#384",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "384",
+            "rdfs:comment": [
+                "Corrected invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#385",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "385",
+            "rdfs:comment": [
+                "Consolidated invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#386",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "386",
+            "rdfs:comment": [
+                "Prepayment invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#389",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "389",
+            "rdfs:comment": [
+                "Self-billed invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#395",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "395",
+            "rdfs:comment": [
+                "Consignment invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#396",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "396",
+            "rdfs:comment": [
+                "Factored credit note",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#80",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "80",
+            "rdfs:comment": [
+                "Debit note related to goods or services",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#81",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "81",
+            "rdfs:comment": [
+                "Credit note related to goods or services",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#82",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "82",
+            "rdfs:comment": [
+                "Metered services invoice",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#83",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "83",
+            "rdfs:comment": [
+                "Credit note related to financial adjustments",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList#84",
+            "@type": "unece:InvoiceDocumentCodeList",
+            "rdf:value": "84",
+            "rdfs:comment": [
+                "Debit note related to financial adjustments",
+                "Deprecated since version D23B."
+            ]
+        },
+        {
             "@id": "unece:LanguageCodeList#AA",
             "@type": "unece:LanguageCodeList",
             "rdf:value": "AA",
@@ -203687,6 +203910,15 @@
             "@type": "rdfs:Class",
             "rdfs:label": "LanguageCodeList",
             "rdfs:comment": "A character string used to represent a language."
+        },
+        {
+            "@id": "unece:InvoiceDocumentCodeList",
+            "@type": "rdfs:Class",
+            "rdfs:label": "InvoiceDocumentCodeList",
+            "rdfs:comment": [
+                "A character string used to represent a type of invoice document.",
+                "Deprecated since version D23B."
+            ]
         },
         {
             "@id": "unece:AllowanceChargeIdCodeList",

@@ -4,17 +4,21 @@
     "comment": "The information relevant to a condition related to an inspection.",
     "objectProperties": [
         {
-            "uri": "unece:conditionCode",
-            "type": "xsd:string",
-            "comment": "The code specifying this inspection status condition."
-        },
-        {
             "uri": "unece:description",
             "type": "xsd:string",
             "comment": "A textual description of this inspection status."
+        },
+        {
+            "uri": "unece:inspectionStatusConditionCode",
+            "type": "xsd:string",
+            "comment": "The code specifying this inspection status condition."
         }
     ],
     "referencedBy": [
+        {
+            "uri": "unece:actualStatus",
+            "comment": "The actual inspection status of this supply chain event."
+        },
         {
             "uri": "unece:specifiedInspectionStatus",
             "comment": "The inspection status specified for ..."

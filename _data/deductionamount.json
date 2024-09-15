@@ -1,7 +1,10 @@
 {
     "label": "deductionAmount",
     "uri": "unece:deductionAmount",
-    "comment": "A monetary value of the deduction from this trade related tax, levy or duty.",
+    "comment": [
+        "A monetary value of the deduction from this trade related tax, levy or duty.",
+        "A monetary value to be deducted from this trade allowance charge."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:AmountType",
@@ -9,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:TradeAllowanceCharge",
+            "comment": "A component of pricing, such as an allowance or charge for trade purposes."
+        },
         {
             "uri": "unece:TradeTax",
             "comment": "A trade related fiscal levy or duty."

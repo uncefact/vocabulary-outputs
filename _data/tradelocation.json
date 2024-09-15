@@ -9,9 +9,24 @@
             "comment": "The name, expressed as text, of a country location used or referenced in trade."
         },
         {
+            "uri": "unece:countrySubDivisionId",
+            "type": "xsd:string",
+            "comment": "The unique identifier of the country sub-division for this trade location."
+        },
+        {
+            "uri": "unece:countrySubDivisionName",
+            "type": "xsd:string",
+            "comment": "The name, expressed as text, of a sub-division of a country location used or referenced in trade."
+        },
+        {
             "uri": "unece:identifier",
             "type": "xsd:string",
             "comment": "The unique identifier for this location used or referenced in trade."
+        },
+        {
+            "uri": "unece:locationFunctionTypeCode",
+            "type": "unece:LocationFunctionCodeList",
+            "comment": "A code specifying the type of trade location."
         },
         {
             "uri": "unece:name",
@@ -25,6 +40,10 @@
         }
     ],
     "referencedBy": [
+        {
+            "uri": "unece:applicableTradeLocation",
+            "comment": "A location where this trade tax is applicable."
+        },
         {
             "uri": "unece:deliveryLocation",
             "comment": "A delivery location for this trade price."

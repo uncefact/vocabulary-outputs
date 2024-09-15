@@ -1,13 +1,20 @@
 {
     "label": "scheduledOccurrenceDateTime",
     "uri": "unece:scheduledOccurrenceDateTime",
-    "comment": "The scheduled date, time, date time, or other date time value of the occurrence of this transport event.",
+    "comment": [
+        "A scheduled date, time, date time, or other date time value of the occurrence of this port movement event.",
+        "The scheduled date, time, date time, or other date time value of the occurrence of this transport event."
+    ],
     "rangeIncludes": [
         {
             "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "unece:PortMovementEvent",
+            "comment": "A movement of a vessel during a port call."
+        },
         {
             "uri": "unece:TransportEvent",
             "comment": "A significant occurrence or happening ..."

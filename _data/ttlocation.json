@@ -4,6 +4,11 @@
     "comment": "A physical place related to a Track and Trace (TT) process.",
     "objectProperties": [
         {
+            "uri": "unece:applicableTechnicalCharacteristic",
+            "type": "unece:TechnicalCharacteristic",
+            "comment": "A technical characteristic applicable to this TT location."
+        },
+        {
             "uri": "unece:description",
             "type": "xsd:string",
             "comment": "A textual description of this TT location."
@@ -22,6 +27,26 @@
             "uri": "unece:name",
             "type": "xsd:string",
             "comment": "A name, expressed as text, of this TT location."
+        },
+        {
+            "uri": "unece:responsibleTTParty",
+            "type": "unece:TTParty",
+            "comment": "The party responsible for this TT location."
+        },
+        {
+            "uri": "unece:specifiedAnimalHoldingEvent",
+            "type": "unece:AnimalHoldingEvent",
+            "comment": "An animal holding event specified for this TT location."
+        },
+        {
+            "uri": "unece:specifiedGeographicalArea",
+            "type": "unece:GeographicalArea",
+            "comment": "The geographical area specified for this TT location."
+        },
+        {
+            "uri": "unece:specifiedTTAnimal",
+            "type": "unece:TTAnimal",
+            "comment": "An animal specified for this TT location."
         }
     ],
     "referencedBy": [
@@ -35,7 +60,11 @@
         },
         {
             "uri": "unece:relatedTTLocation",
-            "comment": "A location related to this ..."
+            "comment": "A Track and Trace (TT) ..."
+        },
+        {
+            "uri": "unece:specifiedTTLocation",
+            "comment": "A location specified for this TT party."
         }
     ]
 }

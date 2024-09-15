@@ -1,7 +1,11 @@
 {
     "label": "document",
     "uri": "unece:document",
-    "comment": "A document referenced by this cross-border regulatory procedure.",
+    "comment": [
+        "A document referenced by this cross-border regulatory procedure.",
+        "A document referenced for this trade price.",
+        "A document referenced for this trade related currency exchange."
+    ],
     "rangeIncludes": [
         {
             "uri": "unece:Document",
@@ -10,8 +14,16 @@
     ],
     "domainIncludes": [
         {
+            "uri": "unece:CurrencyExchange",
+            "comment": "The conversion of one currency to another for trade purposes."
+        },
+        {
             "uri": "unece:RegulatoryProcedure",
             "comment": "A set of formal steps to satisfy a cross-border regulation, law or convention."
+        },
+        {
+            "uri": "unece:TradePrice",
+            "comment": "A sum of money for which something is or may be bought or sold for trade purposes."
         }
     ]
 }

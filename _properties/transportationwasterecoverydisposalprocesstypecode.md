@@ -1,0 +1,5 @@
+---
+title: transportationWasteRecoveryDisposalProcessTypeCode
+permalink: transportationWasteRecoveryDisposalProcessTypeCode.html
+jsonid: transportationwasterecoverydisposalprocesstypecode
+---
