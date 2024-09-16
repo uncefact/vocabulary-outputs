@@ -6065,7 +6065,7 @@
             },
             "rdfs:comment": [
                 "A logistics location or place applicable to this header trade agreement.",
-                "Deprecated since version D23B. Use `unece:unitActivityLevelMeasure` property instead"
+                "Deprecated since version D23B. Use `unece:applicableLogisticsLocation` property instead"
             ],
             "rdfs:label": "applicableLocation",
             "unece:cefactElementMetadata": [
@@ -94211,76 +94211,6 @@
                     "unece:cefactBusinessProcess": "In All Contexts",
                     "rdfs:comment": "A payment trade settlement specified for this trade price.",
                     "unece:domainName": "TradePrice"
-                }
-            ]
-        },
-        {
-            "@id": "unece:specifiedDelimitedPeriod",
-            "schema:rangeIncludes": {
-                "@id": "unece:DelimitedPeriod"
-            },
-            "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
-            ],
-            "schema:domainIncludes": [
-                {
-                    "@id": "unece:AnimalBatch"
-                },
-                {
-                    "@id": "unece:CoordinateReferenceSystem"
-                },
-                {
-                    "@id": "unece:IndividualTTAnimal"
-                },
-                {
-                    "@id": "unece:TTAnimal"
-                }
-            ],
-            "rdfs:comment": [
-                "A delimited period specified for this CS engineering coordinate reference system.",
-                "A delimited period specified for this TT animal.",
-                "The delimited period specified for this animal batch.",
-                "The delimited period specified for this individual TT animal.",
-                "Deprecated since version D23B. Use `unece:acknowledgementDocumentChannelCode` property instead"
-            ],
-            "rdfs:label": "specifiedPeriod",
-            "unece:cefactElementMetadata": [
-                {
-                    "@id": "cefact:Animal_Batch.Specified.Delimited_Period",
-                    "@type": "unece:AssociationBIE",
-                    "unece:cefactUNId": "UN01011255",
-                    "unece:cefactBieDomainClass": "cefact:Animal_Batch.Details",
-                    "unece:cefactBusinessProcess": "Traceability",
-                    "rdfs:comment": "The delimited period specified for this animal batch.",
-                    "unece:domainName": "AnimalBatch"
-                },
-                {
-                    "@id": "cefact:IndividualTT_Animal.Specified.Delimited_Period",
-                    "@type": "unece:AssociationBIE",
-                    "unece:cefactUNId": "UN01011291",
-                    "unece:cefactBieDomainClass": "cefact:IndividualTT_Animal.Details",
-                    "unece:cefactBusinessProcess": "Traceability",
-                    "rdfs:comment": "The delimited period specified for this individual TT animal.",
-                    "unece:domainName": "IndividualTTAnimal"
-                },
-                {
-                    "@id": "cefact:TT_Animal.Specified.Delimited_Period",
-                    "@type": "unece:AssociationBIE",
-                    "unece:cefactUNId": "UN01011329",
-                    "unece:cefactBieDomainClass": "cefact:TT_Animal.Details",
-                    "unece:cefactBusinessProcess": "Traceability",
-                    "rdfs:comment": "A delimited period specified for this TT animal.",
-                    "unece:domainName": "TTAnimal"
-                },
-                {
-                    "@id": "cefact:CSEngineering_CoordinateReferenceSystem.Specified.Delimited_Period",
-                    "@type": "unece:AssociationBIE",
-                    "unece:cefactUNId": "UN01012167",
-                    "unece:cefactBieDomainClass": "cefact:CSEngineering_CoordinateReferenceSystem.Details",
-                    "unece:cefactBusinessProcess": "Agricultural",
-                    "rdfs:comment": "A delimited period specified for this CS engineering coordinate reference system.",
-                    "unece:domainName": "CoordinateReferenceSystem"
                 }
             ]
         },
