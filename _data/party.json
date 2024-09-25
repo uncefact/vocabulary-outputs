@@ -2,7 +2,6 @@
     "label": "Party",
     "uri": "untp-core:Party",
     "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
-    "subClassOf": "untp-core:Entity",
     "datatypeProperties": [
         {
             "uri": "untp-core:description",
@@ -36,7 +35,7 @@
         },
         {
             "uri": "untp-core:otherIdentifiers",
-            "type": "untp-core:Entity",
+            "type": "untp-core:Identifier",
             "comment": "An optional list of other ..."
         },
         {
@@ -48,6 +47,12 @@
             "uri": "untp-core:registrationCountry",
             "type": "untp-core:countryCode",
             "comment": "the country in which this ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:issuedToParty",
+            "comment": "The party to whom the ..."
         }
     ]
 }

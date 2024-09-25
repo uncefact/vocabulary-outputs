@@ -6,7 +6,6 @@ Class untp-core:Declaration has no references
 Class untp-core:EmissionsPerformance has no references
 Class untp-core:Facility has no references
 Class untp-core:Material has no references
-Class untp-core:Party has no references
 Class untp-core:Product has no references
 Class untp-core:VerifiableCredential has no references
 Properties with the names already allocated by classes:
