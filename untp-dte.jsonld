@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0",
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -37,9 +37,8 @@
     {
       "@id": "untp-dte:Item",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A specific serilaised trade item which is a type of a more generic product. Typically an SGTIN",
-      "rdfs:label": "Item",
-      "rdfs:subClassOf": "untp-core:Entity"
+      "rdfs:comment": "A specific serilaised trade item which is a type of a more generic product. ",
+      "rdfs:label": "Item"
     },
     {
       "@id": "untp-dte:SensorData",
@@ -57,7 +56,7 @@
     {
       "@id": "untp-dte:QuantityElement",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The quantity element is used to define the quantities (eg 100), units of measure (eg Kg) and product class (eg GTIN or other class identifier) of products that are inputs or outputs or the subject of supply chain events.  ",
+      "rdfs:comment": "The quantity element is used to define the quantity (eg 100 kg of a product class. Used when serialised items are not applicable.",
       "rdfs:label": "QuantityElement"
     },
     {
@@ -126,7 +125,7 @@
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The unique identifier of this event - SHOULD be a UUID",
-        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The globally unique ID of the product as a URI. Ideall as a resolvable URL according to ISO 18975. ",
         "The unique identifier of this event - SHOULD be a UUID",
         "The unique identifier of this event - SHOULD be a UUID",
         "The unique identifier of this event - SHOULD be a UUID",
@@ -210,6 +209,84 @@
         "VC subject is the transaction event structure"
       ],
       "rdfs:label": "credentialSubject"
+    },
+    {
+      "@id": "untp-dte:type",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:eventType"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The event type.",
+        "The event type.",
+        "The event type.",
+        "The event type.",
+        "The event type.",
+        "The event type."
+      ],
+      "rdfs:label": "type"
+    },
+    {
+      "@id": "untp-dte:processType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A human readable name for industry specific process representerd by this event.",
+        "A human readable name for industry specific process representerd by this event.",
+        "A human readable name for industry specific process representerd by this event.",
+        "A human readable name for industry specific process representerd by this event.",
+        "A human readable name for industry specific process representerd by this event.",
+        "A human readable name for industry specific process representerd by this event."
+      ],
+      "rdfs:label": "processType"
     },
     {
       "@id": "untp-dte:eventTime",
@@ -560,44 +637,6 @@
       "rdfs:label": "name"
     },
     {
-      "@id": "untp-dte:registeredId",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:registeredId"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:Item"
-        }
-      ],
-      "rdfs:comment": [
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
-      ],
-      "rdfs:label": "registeredId"
-    },
-    {
-      "@id": "untp-dte:idScheme",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:idScheme"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:Item"
-        }
-      ],
-      "rdfs:comment": [
-        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
-      ],
-      "rdfs:label": "idScheme"
-    },
-    {
       "@id": "untp-dte:time",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -754,28 +793,9 @@
       "rdfs:label": "outputQuantityList"
     },
     {
-      "@id": "untp-dte:processType",
+      "@id": "untp-dte:productId",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:TransformationEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "An industry specific process type code.  "
-      ],
-      "rdfs:label": "processType"
-    },
-    {
-      "@id": "untp-dte:product",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Entity"
+        "@id": "untp-core:id"
       },
       "@type": [
         "rdf:Property",
@@ -789,7 +809,26 @@
       "rdfs:comment": [
         "THe identifier of a product class (as opposed to a product instance) such as a GTIN code for a manufactured product."
       ],
-      "rdfs:label": "product"
+      "rdfs:label": "productId"
+    },
+    {
+      "@id": "untp-dte:productName",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the product within the identifier scheme. "
+      ],
+      "rdfs:label": "productName"
     },
     {
       "@id": "untp-dte:quantity",
@@ -926,9 +965,9 @@
       "rdfs:label": "childQuantityList"
     },
     {
-      "@id": "untp-dte:sourceParty",
+      "@id": "untp-dte:sourcePartyId",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Entity"
+        "@id": "untp-core:id"
       },
       "@type": [
         "rdf:Property",
@@ -942,12 +981,12 @@
       "rdfs:comment": [
         "The source party for this supply chain transaction - typically the seller party"
       ],
-      "rdfs:label": "sourceParty"
+      "rdfs:label": "sourcePartyId"
     },
     {
-      "@id": "untp-dte:destinationParty",
+      "@id": "untp-dte:destinationPartyId",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Entity"
+        "@id": "untp-core:id"
       },
       "@type": [
         "rdf:Property",
@@ -961,7 +1000,7 @@
       "rdfs:comment": [
         "The destination party for this supply chain transaction - typically the buyer party."
       ],
-      "rdfs:label": "destinationParty"
+      "rdfs:label": "destinationPartyId"
     },
     {
       "@id": "untp-dte:bizTransaction",
@@ -1026,6 +1065,12 @@
       "@type": "rdfs:Class",
       "rdfs:label": "documentTypeCode",
       "rdfs:comment": "Document type codes for trade and logistics documents supporting the event such as purchase order, invoice, shipping notification, bill of lading, etc."
+    },
+    {
+      "@id": "untp-dte:eventType",
+      "@type": "rdfs:Class",
+      "rdfs:label": "eventType",
+      "rdfs:comment": ""
     },
     {
       "@id": "untp-dte:UOM",
