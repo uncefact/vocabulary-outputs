@@ -2,12 +2,17 @@
     "label": "Product",
     "uri": "untp-dcc:Product",
     "comment": "The product which is the subject of this conformity assessment",
-    "subClassOf": "untp-core:Entity",
+    "subClassOf": "untp-core:Product",
     "datatypeProperties": [
         {
             "uri": "untp-dcc:IDverifiedByCAB",
             "type": "xsd:boolean",
             "comment": "Indicates whether the conformity assessment ..."
+        },
+        {
+            "uri": "untp-dcc:batchNumber",
+            "type": "untp-core:batchNumber",
+            "comment": "Identifier of the specific production ..."
         },
         {
             "uri": "untp-dcc:id",
@@ -16,8 +21,8 @@
         },
         {
             "uri": "untp-dcc:idScheme",
-            "type": "untp-core:IdentifierScheme",
-            "comment": "The identifier scheme. Exampleproduct - ..."
+            "type": "untp-core:idScheme",
+            "comment": "The identifier scheme of the ..."
         },
         {
             "uri": "untp-dcc:name",
@@ -26,8 +31,13 @@
         },
         {
             "uri": "untp-dcc:registeredId",
-            "type": "xsd:string",
+            "type": "untp-core:registeredId",
             "comment": "The registration number (alphanumeric) of ..."
+        },
+        {
+            "uri": "untp-dcc:serialNumber",
+            "type": "untp-core:serialNumber",
+            "comment": "A number or code representing ..."
         }
     ],
     "referencedBy": [

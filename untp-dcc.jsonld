@@ -24,6 +24,13 @@
       "rdfs:subClassOf": "untp-core:Attestation"
     },
     {
+      "@id": "untp-dcc:Party",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
+      "rdfs:label": "Party",
+      "rdfs:subClassOf": "untp-core:Party"
+    },
+    {
       "@id": "untp-dcc:ConformityAssessmentScheme",
       "@type": "rdfs:Class",
       "rdfs:comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification) ",
@@ -42,14 +49,14 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "The product which is the subject of this conformity assessment",
       "rdfs:label": "Product",
-      "rdfs:subClassOf": "untp-core:Entity"
+      "rdfs:subClassOf": "untp-core:Product"
     },
     {
       "@id": "untp-dcc:Facility",
       "@type": "rdfs:Class",
       "rdfs:comment": "The facility which is the subject of this conformity assessment",
       "rdfs:label": "Facility",
-      "rdfs:subClassOf": "untp-core:Entity"
+      "rdfs:subClassOf": "untp-core:Facility"
     },
     {
       "@id": "untp-dcc:@context",
@@ -87,6 +94,9 @@
           "@id": "untp-dcc:ConformityAttestation"
         },
         {
+          "@id": "untp-dcc:Party"
+        },
+        {
           "@id": "untp-dcc:ConformityAssessmentScheme"
         },
         {
@@ -102,10 +112,11 @@
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The globally unique ID of this conformity attestation.",
+        "The globally unique ID of the party as a URI, ideall as a resolvable ID. ",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
-        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
-        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
+        "The globally unique ID of the product as a URI. Ideall as a resolvable URL according to ISO 18975. ",
+        "The globally unique ID of the facility as URI, ideally as a resolvable URL."
       ],
       "rdfs:label": "id"
     },
@@ -199,6 +210,9 @@
           "@id": "untp-dcc:ConformityAttestation"
         },
         {
+          "@id": "untp-dcc:Party"
+        },
+        {
           "@id": "untp-dcc:ConformityAssessmentScheme"
         },
         {
@@ -210,9 +224,10 @@
       ],
       "rdfs:comment": [
         "Product GHG Footprint certificate in accordance with GBA Rulebook.",
+        "The registered name of the party within the identifier scheme.",
         "The name of the standard",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory",
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+        "The registered name of the product within the identifier scheme. ",
+        "The registered name of the facility within the identifier scheme.  "
       ],
       "rdfs:label": "name"
     },
@@ -295,7 +310,7 @@
     {
       "@id": "untp-dcc:issuedToParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:issuedToParty"
+        "@id": "untp-dcc:Party"
       },
       "@type": [
         "rdf:Property",
@@ -307,7 +322,7 @@
         }
       ],
       "rdfs:comment": [
-        "The party to whom the conformity attestation was issued."
+        ""
       ],
       "rdfs:label": "issuedToParty"
     },
@@ -407,9 +422,82 @@
       "rdfs:label": "assessments"
     },
     {
+      "@id": "untp-dcc:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:registeredId"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Party"
+        },
+        {
+          "@id": "untp-dcc:Product"
+        },
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the Party within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the facility within the identifir scheme. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-dcc:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:idScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Party"
+        },
+        {
+          "@id": "untp-dcc:Product"
+        },
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme of the party.  Typically a national business register or a global schem such as GLEIF. ",
+        "The identifier scheme for this product.  Eg a GS1 GTIn or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  ",
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the prty ID of the facility owner. "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dcc:description",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:description"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Party"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional short description of the party."
+      ],
+      "rdfs:label": "description"
+    },
+    {
       "@id": "untp-dcc:issuingParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Entity"
+        "@id": "untp-core:Identifier"
       },
       "@type": [
         "rdf:Property",
@@ -462,6 +550,25 @@
         "The trust mark that represents the conformity assessment scheme."
       ],
       "rdfs:label": "trustmark"
+    },
+    {
+      "@id": "untp-dcc:assessmentDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The date on which this assessment was made. "
+      ],
+      "rdfs:label": "assessmentDate"
     },
     {
       "@id": "untp-dcc:referenceStandard",
@@ -616,32 +723,47 @@
       "rdfs:label": "assessedFacilities"
     },
     {
-      "@id": "untp-dcc:registeredId",
+      "@id": "untp-dcc:assessedOrganisation",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-dcc:Party"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dcc:Product"
-        },
-        {
-          "@id": "untp-dcc:Facility"
+          "@id": "untp-dcc:ConformityAssessment"
         }
       ],
       "rdfs:comment": [
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+        "The organisation that is the subject of this assessment."
       ],
-      "rdfs:label": "registeredId"
+      "rdfs:label": "assessedOrganisation"
     },
     {
-      "@id": "untp-dcc:idScheme",
+      "@id": "untp-dcc:auditor",
       "schema:rangeIncludes": {
-        "@id": "untp-core:IdentifierScheme"
+        "@id": "untp-dcc:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "The person or organisations that performed this assessment (if different to the issuer of the parent attestaiton)"
+      ],
+      "rdfs:label": "auditor"
+    },
+    {
+      "@id": "untp-dcc:serialNumber",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:serialNumber"
       },
       "@type": [
         "rdf:Property",
@@ -650,16 +772,31 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-dcc:Product"
-        },
-        {
-          "@id": "untp-dcc:Facility"
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. ",
-        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        "A number or code representing a specific serialised item of the product. Unique within product class."
       ],
-      "rdfs:label": "idScheme"
+      "rdfs:label": "serialNumber"
+    },
+    {
+      "@id": "untp-dcc:batchNumber",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:batchNumber"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "Identifier of the specific production batch of the product.  Unique within the product class."
+      ],
+      "rdfs:label": "batchNumber"
     },
     {
       "@id": "untp-dcc:IDverifiedByCAB",
@@ -683,6 +820,44 @@
         "Indicates whether the conformity assessment body has verified the identity of the facility which is the subject of the assement."
       ],
       "rdfs:label": "IDverifiedByCAB"
+    },
+    {
+      "@id": "untp-dcc:locationInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:locationInformation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "Geolocation information for this facility.  For example  \"id\":\"maps.app.goo.gl/6yyPVdwJDWjtj9fG6\"  \"areaReference\":\"plus.codes/4RPFR872+\"\"  \"geoLocation\":[\"-35.186250\",\"149.301250\"]"
+      ],
+      "rdfs:label": "locationInformation"
+    },
+    {
+      "@id": "untp-dcc:address",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:address"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Postal address of the location."
+      ],
+      "rdfs:label": "address"
     }
   ]
 }
