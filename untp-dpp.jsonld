@@ -24,11 +24,17 @@
       "rdfs:subClassOf": "untp-core:Product"
     },
     {
-      "@id": "untp-dpp:Declaration",
+      "@id": "untp-dpp:Claim",
       "@type": "rdfs:Class",
       "rdfs:comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
-      "rdfs:label": "Declaration",
+      "rdfs:label": "Claim",
       "rdfs:subClassOf": "untp-core:Declaration"
+    },
+    {
+      "@id": "untp-dpp:TraceabilityPerformance",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "",
+      "rdfs:label": "TraceabilityPerformance"
     },
     {
       "@id": "untp-dpp:@context",
@@ -66,12 +72,12 @@
           "@id": "untp-dpp:Product"
         },
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
-        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The globally unique ID of the product as a URI. Ideall as a resolvable URL according to ISO 18975. ",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
@@ -167,7 +173,7 @@
         }
       ],
       "rdfs:comment": [
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+        "The registered name of the product within the identifier scheme. "
       ],
       "rdfs:label": "name"
     },
@@ -205,7 +211,7 @@
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        "The identifier scheme for this product.  Eg a GS1 GTIn or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
       ],
       "rdfs:label": "idScheme"
     },
@@ -419,6 +425,25 @@
       "rdfs:label": "countryOfProduction"
     },
     {
+      "@id": "untp-dpp:dueDiligenceDeclaration",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The due diligence declaration that conforms with the regulations of the market into which the product is sold."
+      ],
+      "rdfs:label": "dueDiligenceDeclaration"
+    },
+    {
       "@id": "untp-dpp:materialsProvenance",
       "schema:rangeIncludes": {
         "@id": "untp-core:Material"
@@ -438,9 +463,9 @@
       "rdfs:label": "materialsProvenance"
     },
     {
-      "@id": "untp-dpp:conformityDeclarations",
+      "@id": "untp-dpp:conformityClaims",
       "schema:rangeIncludes": {
-        "@id": "untp-dpp:Declaration"
+        "@id": "untp-dpp:Claim"
       },
       "@type": [
         "rdf:Property",
@@ -454,7 +479,7 @@
       "rdfs:comment": [
         "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
       ],
-      "rdfs:label": "conformityDeclarations"
+      "rdfs:label": "conformityClaims"
     },
     {
       "@id": "untp-dpp:circularityScorecard",
@@ -497,7 +522,7 @@
     {
       "@id": "untp-dpp:traceabilityInformation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:SecureLink"
+        "@id": "untp-dpp:TraceabilityPerformance"
       },
       "@type": [
         "rdf:Property",
@@ -514,6 +539,25 @@
       "rdfs:label": "traceabilityInformation"
     },
     {
+      "@id": "untp-dpp:assessmentDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The date on which this assessment was made. "
+      ],
+      "rdfs:label": "assessmentDate"
+    },
+    {
       "@id": "untp-dpp:referenceStandard",
       "schema:rangeIncludes": {
         "@id": "untp-core:referenceStandard"
@@ -524,7 +568,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
@@ -543,7 +587,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
@@ -562,7 +606,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
@@ -581,7 +625,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
@@ -600,7 +644,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
@@ -619,7 +663,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
@@ -638,13 +682,70 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Declaration"
+          "@id": "untp-dpp:Claim"
         }
       ],
       "rdfs:comment": [
         "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)"
       ],
       "rdfs:label": "conformityEvidence"
+    },
+    {
+      "@id": "untp-dpp:valueChainProcess",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:TraceabilityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "Hman readable name for the industry specific value chain process representing this traceability data set."
+      ],
+      "rdfs:label": "valueChainProcess"
+    },
+    {
+      "@id": "untp-dpp:verifiedRatio",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:TraceabilityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The proportion (0 to 1) of materials in this value chain process that have been  traced using verifiable traceability event."
+      ],
+      "rdfs:label": "verifiedRatio"
+    },
+    {
+      "@id": "untp-dpp:traceabilityEvents",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:SecureLink"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:TraceabilityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of secure links to digital traceability events that support this traceability performance statement. May be encrypted for confidentiality purposes. "
+      ],
+      "rdfs:label": "traceabilityEvents"
     },
     {
       "@id": "untp-dpp:eventTypeCode",

@@ -22,5 +22,7 @@ untp-core:registeredId
 untp-core:compliance
 untp-core:name
 untp-core:idScheme
+untp-core:Link
 untp-core:productCategory
 xsd:string
+xsd:decimal
