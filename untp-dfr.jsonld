@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/0",
+    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/0/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -24,10 +24,10 @@
       "rdfs:subClassOf": "untp-core:Facility"
     },
     {
-      "@id": "untp-dfr:Declaration",
+      "@id": "untp-dfr:Claim",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
-      "rdfs:label": "Declaration",
+      "rdfs:comment": "A confomrity claim aboutthe facility against a specific standard or regulation.",
+      "rdfs:label": "Claim",
       "rdfs:subClassOf": "untp-core:Declaration"
     },
     {
@@ -66,12 +66,12 @@
           "@id": "untp-dfr:Facility"
         },
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
-        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
+        "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
         "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
@@ -167,7 +167,7 @@
         }
       ],
       "rdfs:comment": [
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+        "The registration number (alphanumeric) of the facility within the identifir scheme. Unique within the register."
       ],
       "rdfs:label": "registeredId"
     },
@@ -205,7 +205,7 @@
         }
       ],
       "rdfs:comment": [
-        "The registered name of the entity within the identifier scheme.  Examplesproduct - EV battery 300Ahparty - Sample Company Pty Ltd. facility - Greenacres battery factory"
+        "The registered name of the facility within the identifier scheme.  "
       ],
       "rdfs:label": "name"
     },
@@ -224,7 +224,7 @@
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the prty ID of the facility owner. "
       ],
       "rdfs:label": "idScheme"
     },
@@ -343,9 +343,9 @@
       "rdfs:label": "locationInformation"
     },
     {
-      "@id": "untp-dfr:conformityDeclarations",
+      "@id": "untp-dfr:conformityClaims",
       "schema:rangeIncludes": {
-        "@id": "untp-dfr:Declaration"
+        "@id": "untp-dfr:Claim"
       },
       "@type": [
         "rdf:Property",
@@ -359,7 +359,26 @@
       "rdfs:comment": [
         "A list of conformity declarations agains specific criterai from recognised standards or regulations. "
       ],
-      "rdfs:label": "conformityDeclarations"
+      "rdfs:label": "conformityClaims"
+    },
+    {
+      "@id": "untp-dfr:assessmentDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The date on which this assessment was made. "
+      ],
+      "rdfs:label": "assessmentDate"
     },
     {
       "@id": "untp-dfr:referenceStandard",
@@ -372,7 +391,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
@@ -391,7 +410,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
@@ -410,7 +429,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
@@ -429,7 +448,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
@@ -448,7 +467,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
@@ -467,7 +486,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [
@@ -486,7 +505,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:Declaration"
+          "@id": "untp-dfr:Claim"
         }
       ],
       "rdfs:comment": [

@@ -1,13 +1,18 @@
 {
-    "label": "Declaration",
-    "uri": "untp-dfr:Declaration",
-    "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
+    "label": "Claim",
+    "uri": "untp-dfr:Claim",
+    "comment": "A confomrity claim aboutthe facility against a specific standard or regulation.",
     "subClassOf": "untp-core:Declaration",
     "datatypeProperties": [
         {
             "uri": "untp-dfr:assessmentCriteria",
             "type": "untp-core:assessmentCriteria",
             "comment": "The specification against which the ..."
+        },
+        {
+            "uri": "untp-dfr:assessmentDate",
+            "type": "xsd:string",
+            "comment": "The date on which this ..."
         },
         {
             "uri": "untp-dfr:compliance",
@@ -47,7 +52,7 @@
     ],
     "referencedBy": [
         {
-            "uri": "untp-dfr:conformityDeclarations",
+            "uri": "untp-dfr:conformityClaims",
             "comment": "A list of conformity declarations ..."
         }
     ]
