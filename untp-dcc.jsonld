@@ -19,14 +19,14 @@
     {
       "@id": "untp-dcc:ConformityAttestation",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
+      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
       "rdfs:label": "ConformityAttestation",
       "rdfs:subClassOf": "untp-core:Attestation"
     },
     {
       "@id": "untp-dcc:Party",
       "@type": "rdfs:Class",
-      "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
+      "rdfs:comment": "The organisation that is the subject of this conformity assessment.",
       "rdfs:label": "Party",
       "rdfs:subClassOf": "untp-core:Party"
     },
@@ -327,9 +327,9 @@
       "rdfs:label": "issuedToParty"
     },
     {
-      "@id": "untp-dcc:authorisations",
+      "@id": "untp-dcc:authorisation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:authorisations"
+        "@id": "untp-core:authorisation"
       },
       "@type": [
         "rdf:Property",
@@ -343,7 +343,7 @@
       "rdfs:comment": [
         "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. "
       ],
-      "rdfs:label": "authorisations"
+      "rdfs:label": "authorisation"
     },
     {
       "@id": "untp-dcc:conformityCertificate",
@@ -403,7 +403,7 @@
       "rdfs:label": "scope"
     },
     {
-      "@id": "untp-dcc:assessments",
+      "@id": "untp-dcc:assessment",
       "schema:rangeIncludes": {
         "@id": "untp-dcc:ConformityAssessment"
       },
@@ -419,7 +419,7 @@
       "rdfs:comment": [
         "The list of specific assessments made within this conformity attestation."
       ],
-      "rdfs:label": "assessments"
+      "rdfs:label": "assessment"
     },
     {
       "@id": "untp-dcc:registeredId",
@@ -628,9 +628,9 @@
       "rdfs:label": "assessmentCriteria"
     },
     {
-      "@id": "untp-dcc:declaredValues",
+      "@id": "untp-dcc:declaredValue",
       "schema:rangeIncludes": {
-        "@id": "untp-core:declaredValues"
+        "@id": "untp-core:declaredValue"
       },
       "@type": [
         "rdf:Property",
@@ -644,7 +644,7 @@
       "rdfs:comment": [
         "The list of specific values measured as part of this assessment (eg tensile strength)"
       ],
-      "rdfs:label": "declaredValues"
+      "rdfs:label": "declaredValue"
     },
     {
       "@id": "untp-dcc:compliance",
@@ -685,7 +685,7 @@
       "rdfs:label": "conformityTopic"
     },
     {
-      "@id": "untp-dcc:assessedProducts",
+      "@id": "untp-dcc:assessedProduct",
       "schema:rangeIncludes": {
         "@id": "untp-dcc:Product"
       },
@@ -701,10 +701,10 @@
       "rdfs:comment": [
         "The list of products that are the subject of this conformity assessment"
       ],
-      "rdfs:label": "assessedProducts"
+      "rdfs:label": "assessedProduct"
     },
     {
-      "@id": "untp-dcc:assessedFacilities",
+      "@id": "untp-dcc:assessedFacilitie",
       "schema:rangeIncludes": {
         "@id": "untp-dcc:Facility"
       },
@@ -720,7 +720,7 @@
       "rdfs:comment": [
         "The list of facilities that are the subject of this conformity assessment."
       ],
-      "rdfs:label": "assessedFacilities"
+      "rdfs:label": "assessedFacilitie"
     },
     {
       "@id": "untp-dcc:assessedOrganisation",

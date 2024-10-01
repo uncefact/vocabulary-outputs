@@ -4,13 +4,12 @@ untp-core:description
 untp-core:BinaryFile
 untp-dcc:attestationTypeCode
 untp-core:batchNumber
-untp-core:declaredValues
 untp-core:Identifier
 untp-dcc:conformityTopicCode
-untp-core:authorisations
 untp-core:CredentialIssuer
 untp-core:conformityCertificate
 untp-core:attestationDescription
+untp-core:declaredValue
 untp-core:referenceRegulation
 untp-core:address
 untp-dcc:assessmentLevelCode
@@ -24,3 +23,4 @@ untp-core:auditableEvidence
 xsd:boolean
 untp-core:locationInformation
 xsd:string
+untp-core:authorisation
