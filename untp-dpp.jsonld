@@ -33,7 +33,7 @@
     {
       "@id": "untp-dpp:TraceabilityPerformance",
       "@type": "rdfs:Class",
-      "rdfs:comment": "",
+      "rdfs:comment": "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. Events are grouped by value chain process (eg \"Weaving\" in textiles supply chain).",
       "rdfs:label": "TraceabilityPerformance"
     },
     {
@@ -154,7 +154,7 @@
         }
       ],
       "rdfs:comment": [
-        "The subject of a digital product passport credential is the identified product. "
+        "The subject of a digital product passport credential is the identified product.  "
       ],
       "rdfs:label": "credentialSubject"
     },
@@ -401,7 +401,7 @@
         }
       ],
       "rdfs:comment": [
-        "The ISO 8601 date on which the product batch was manufactured."
+        "The ISO 8601 date on which the product batch or individual serialised item was manufactured."
       ],
       "rdfs:label": "productionDate"
     },
@@ -423,6 +423,25 @@
         "The country in which this item was produced / manufactured."
       ],
       "rdfs:label": "countryOfProduction"
+    },
+    {
+      "@id": "untp-dpp:granularityLevel",
+      "schema:rangeIncludes": {
+        "@id": "untp-dpp:granularityCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "Code to indicate the granularity of this digital product passport - item level, batch level or product class level."
+      ],
+      "rdfs:label": "granularityLevel"
     },
     {
       "@id": "untp-dpp:dueDiligenceDeclaration",
@@ -463,7 +482,7 @@
       "rdfs:label": "materialsProvenance"
     },
     {
-      "@id": "untp-dpp:conformityClaims",
+      "@id": "untp-dpp:conformityClaim",
       "schema:rangeIncludes": {
         "@id": "untp-dpp:Claim"
       },
@@ -479,7 +498,7 @@
       "rdfs:comment": [
         "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
       ],
-      "rdfs:label": "conformityClaims"
+      "rdfs:label": "conformityClaim"
     },
     {
       "@id": "untp-dpp:circularityScorecard",
@@ -534,7 +553,7 @@
         }
       ],
       "rdfs:comment": [
-        "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level. Links should include the hash of the target and may point to encrypted targets."
+        "An array of traceability events grouped by value chain process.  Where actual traceability events are unavailable or carry sensitive information, passport publishers may specify the extent to which the traceability information has been independently verified. "
       ],
       "rdfs:label": "traceabilityInformation"
     },
@@ -556,6 +575,25 @@
         "The date on which this assessment was made. "
       ],
       "rdfs:label": "assessmentDate"
+    },
+    {
+      "@id": "untp-dpp:declaredValue",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Metric"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of specific values measured as part of this assessment (eg tensile strength)"
+      ],
+      "rdfs:label": "declaredValue"
     },
     {
       "@id": "untp-dpp:referenceStandard",
@@ -617,7 +655,7 @@
     {
       "@id": "untp-dpp:declaredValues",
       "schema:rangeIncludes": {
-        "@id": "untp-core:declaredValues"
+        "@id": "untp-core:declaredValue"
       },
       "@type": [
         "rdf:Property",
@@ -729,7 +767,7 @@
       "rdfs:label": "verifiedRatio"
     },
     {
-      "@id": "untp-dpp:traceabilityEvents",
+      "@id": "untp-dpp:traceabilityEvent",
       "schema:rangeIncludes": {
         "@id": "untp-core:SecureLink"
       },
@@ -745,7 +783,7 @@
       "rdfs:comment": [
         "A list of secure links to digital traceability events that support this traceability performance statement. May be encrypted for confidentiality purposes. "
       ],
-      "rdfs:label": "traceabilityEvents"
+      "rdfs:label": "traceabilityEvent"
     },
     {
       "@id": "untp-dpp:eventTypeCode",
@@ -787,6 +825,33 @@
       "rdf:value": "association",
       "rdfs:label": "Association event",
       "rdfs:comment": "event describing the creation of relationships between products such as a bill of material of components in an assembly"
+    },
+    {
+      "@id": "untp-dpp:granularityCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "granularityCode",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-dpp:granularityCode#item",
+      "@type": "untp-dpp:granularityCode",
+      "rdf:value": "item",
+      "rdfs:label": "serialised item level product passport",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-dpp:granularityCode#batch",
+      "@type": "untp-dpp:granularityCode",
+      "rdf:value": "batch",
+      "rdfs:label": "production batch level product passport",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-dpp:granularityCode#model",
+      "@type": "untp-dpp:granularityCode",
+      "rdf:value": "model",
+      "rdfs:label": "model / class level product passport.",
+      "rdfs:comment": ""
     }
   ]
 }

@@ -5,13 +5,13 @@ untp-core:description
 untp-core:batchNumber
 untp-core:CircularityPerformance
 untp-core:producedByParty
-untp-core:declaredValues
 untp-dpp:countryCode
 untp-core:productionDate
 untp-core:CredentialIssuer
 untp-core:productImage
 untp-core:producedAtFacility
 untp-core:dimensions
+untp-core:declaredValue
 untp-core:Material
 untp-core:referenceRegulation
 untp-core:EmissionsPerformance
@@ -24,5 +24,6 @@ untp-core:name
 untp-core:idScheme
 untp-core:Link
 untp-core:productCategory
+untp-core:Metric
 xsd:string
 xsd:decimal

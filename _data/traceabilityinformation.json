@@ -2,12 +2,12 @@
     "label": "traceabilityInformation",
     "uri": "untp-dpp:traceabilityInformation",
     "comment": [
-        "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level. Links should include the hash of the target and may point to encrypted targets."
+        "An array of traceability events grouped by value chain process.  Where actual traceability events are unavailable or carry sensitive information, passport publishers may specify the extent to which the traceability information has been independently verified. "
     ],
     "rangeIncludes": [
         {
             "uri": "untp-dpp:TraceabilityPerformance",
-            "comment": ""
+            "comment": "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. Events are grouped by value chain process (eg \"Weaving\" in textiles supply chain)."
         }
     ],
     "domainIncludes": [

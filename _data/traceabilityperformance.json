@@ -1,10 +1,10 @@
 {
     "label": "TraceabilityPerformance",
     "uri": "untp-dpp:TraceabilityPerformance",
-    "comment": "",
+    "comment": "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. Events are grouped by value chain process (eg \"Weaving\" in textiles supply chain).",
     "datatypeProperties": [
         {
-            "uri": "untp-dpp:traceabilityEvents",
+            "uri": "untp-dpp:traceabilityEvent",
             "type": "untp-core:SecureLink",
             "comment": "A list of secure links ..."
         },
@@ -22,7 +22,7 @@
     "referencedBy": [
         {
             "uri": "untp-dpp:traceabilityInformation",
-            "comment": "An array of secure links ..."
+            "comment": "An array of traceability events ..."
         }
     ]
 }
