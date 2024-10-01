@@ -1,4 +1,5 @@
 untp-core:assessmentCriteria
+untp-core:declaredValue
 untp-core:referenceRegulation
 untp-core:address
 untp-core:SecureLink
@@ -9,11 +10,10 @@ untp-core:compliance
 untp-core:name
 untp-core:idScheme
 untp-core:description
-untp-core:processCategories
 untp-core:Location
-untp-core:declaredValues
+untp-core:otherIdentifier
 untp-dfr:conformityTopicCode
+untp-core:processCategory
 untp-core:CredentialIssuer
 xsd:string
-untp-core:otherIdentifiers
 untp-dfr:countryCode
