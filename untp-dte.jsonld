@@ -12,14 +12,14 @@
     {
       "@id": "untp-dte:DigitalTraceabilityEvent",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Traceability Event as a VC",
+      "rdfs:comment": "An array of Traceability Events as a VC",
       "rdfs:label": "DigitalTraceabilityEvent",
       "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
       "@id": "untp-dte:Event",
       "@type": "rdfs:Class",
-      "rdfs:comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.  ",
+      "rdfs:comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.",
       "rdfs:label": "Event"
     },
     {
@@ -209,45 +209,6 @@
         "VC subject is the transaction event structure"
       ],
       "rdfs:label": "credentialSubject"
-    },
-    {
-      "@id": "untp-dte:type",
-      "schema:rangeIncludes": {
-        "@id": "untp-dte:eventType"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:Event"
-        },
-        {
-          "@id": "untp-dte:TransformationEvent"
-        },
-        {
-          "@id": "untp-dte:ObjectEvent"
-        },
-        {
-          "@id": "untp-dte:AggregationEvent"
-        },
-        {
-          "@id": "untp-dte:TransactionEvent"
-        },
-        {
-          "@id": "untp-dte:AssociationEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "The event type.",
-        "The event type.",
-        "The event type.",
-        "The event type.",
-        "The event type.",
-        "The event type."
-      ],
-      "rdfs:label": "type"
     },
     {
       "@id": "untp-dte:processType",
@@ -919,7 +880,7 @@
       "rdfs:label": "parentEPC"
     },
     {
-      "@id": "untp-dte:childEPCs",
+      "@id": "untp-dte:childEPCList",
       "schema:rangeIncludes": {
         "@id": "untp-dte:Item"
       },
@@ -939,7 +900,7 @@
         "The list of child items that have been aggregated into the parent (or dis-aggregated from the parent). Maybe a list of package references (eg boxes on a pallet) or may be individual items (eg products in a box).",
         "The list of child items that have been assembled to create the parent - for example the power supply or hard drive components of a desktop computer."
       ],
-      "rdfs:label": "childEPCs"
+      "rdfs:label": "childEPCList"
     },
     {
       "@id": "untp-dte:childQuantityList",
@@ -1065,12 +1026,6 @@
       "@type": "rdfs:Class",
       "rdfs:label": "documentTypeCode",
       "rdfs:comment": "Document type codes for trade and logistics documents supporting the event such as purchase order, invoice, shipping notification, bill of lading, etc."
-    },
-    {
-      "@id": "untp-dte:eventType",
-      "@type": "rdfs:Class",
-      "rdfs:label": "eventType",
-      "rdfs:comment": ""
     },
     {
       "@id": "untp-dte:UOM",
