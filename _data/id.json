@@ -5,16 +5,16 @@
         "The W3C DID of the issuer - should be a did:web or did:tdw",
         "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
         "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
-        "The globally unique ID of the party as a URI, ideall as a resolvable ID. ",
+        "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
         "The globally unique URI representing the specific classifier value",
         "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
-        "The globally unique ID of the product as a URI. Ideall as a resolvable URL according to ISO 18975. ",
-        "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
+        "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
         "The globally unique identifier of this regulation. ",
-        "A unique identifier for the criteria within the standard  or regulation. For example CO2 emissions calaculations for liquid fule combusion.",
+        "A unique identifier for the criterion within the standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion.",
         "The globally unique ID of this conformity attestation.",
-        "Globally unique identifier of an accreditation or authority issued to a confomrity assessment body by a regulator or national accreditation authority."
+        "Globally unique identifier of an accreditation or authority issued to a conformity assessment body by a regulator or national accreditation authority."
     ],
     "rangeIncludes": [
         {
@@ -24,15 +24,15 @@
     "domainIncludes": [
         {
             "uri": "untp-core:CredentialIssuer",
-            "comment": "The issuer party ()person or orgnaition) of a verifiable credential."
+            "comment": "The issuer party (person or organisation) of a verifiable credential."
         },
         {
             "uri": "untp-core:Identifier",
-            "comment": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id peroperty SHOULD be an identity resolver URL."
+            "comment": "The ID and Name of an identified entity such as a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id property SHOULD be an identity resolver URL."
         },
         {
             "uri": "untp-core:IdentifierScheme",
-            "comment": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or gloabl authority."
+            "comment": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
         },
         {
             "uri": "untp-core:Party",
@@ -68,11 +68,11 @@
         },
         {
             "uri": "untp-core:Attestation",
-            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation."
+            "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation."
         },
         {
             "uri": "untp-core:Endorsement",
-            "comment": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. "
+            "comment": "The authority under which a conformity claim is issued.  For example a national accreditation authority may authorise a test lab to issue test certificates about a product against a standard. "
         }
     ]
 }
