@@ -12,21 +12,21 @@
     {
       "@id": "untp-dfr:DigitalFacilityRecord",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A digital verifiable credential hodling faiclity performance inofmration.",
+      "rdfs:comment": "A digital verifiable credential holding facility performance information.",
       "rdfs:label": "DigitalFacilityRecord",
       "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
       "@id": "untp-dfr:Facility",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performacne record. ",
+      "rdfs:comment": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record. ",
       "rdfs:label": "Facility",
       "rdfs:subClassOf": "untp-core:Facility"
     },
     {
       "@id": "untp-dfr:Claim",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A confomrity claim aboutthe facility against a specific standard or regulation.",
+      "rdfs:comment": "A conformity claim about the facility against a specific standard or regulation.",
       "rdfs:label": "Claim",
       "rdfs:subClassOf": "untp-core:Declaration"
     },
@@ -45,7 +45,7 @@
         }
       ],
       "rdfs:comment": [
-        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
+        "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. "
       ],
       "rdfs:label": "@context"
     },
@@ -72,7 +72,7 @@
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
-        "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
     },
@@ -91,7 +91,7 @@
         }
       ],
       "rdfs:comment": [
-        "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+        "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
       ],
       "rdfs:label": "issuer"
     },
@@ -148,7 +148,7 @@
         }
       ],
       "rdfs:comment": [
-        "The subject of a digitial facility record is a Facility "
+        "The subject of a UNTP Digital Facility Record (DFR) is a Facility "
       ],
       "rdfs:label": "credentialSubject"
     },
@@ -167,7 +167,7 @@
         }
       ],
       "rdfs:comment": [
-        "The registration number (alphanumeric) of the facility within the identifir scheme. Unique within the register."
+        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
       ],
       "rdfs:label": "registeredId"
     },
@@ -224,7 +224,7 @@
         }
       ],
       "rdfs:comment": [
-        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the prty ID of the facility owner. "
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
       ],
       "rdfs:label": "idScheme"
     },
@@ -262,7 +262,7 @@
         }
       ],
       "rdfs:comment": [
-        "The idustrial or production processes performed by this facility.    id:unstats.un.org/isic/1030  code:1030  name:Processing and preserving of fruit and vegetables  schemeID:unstats.un.org/unsd/classifications/Econ/isic  schemeName:ISIC"
+        "The industrial or production processes performed by this facility. Example unstats.un.org/isic/1030."
       ],
       "rdfs:label": "processCategory"
     },
@@ -281,7 +281,7 @@
         }
       ],
       "rdfs:comment": [
-        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identifiaction scheme. "
+        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identification scheme. "
       ],
       "rdfs:label": "operatedByParty"
     },
@@ -357,7 +357,7 @@
         }
       ],
       "rdfs:comment": [
-        "A list of conformity declarations agains specific criterai from recognised standards or regulations. "
+        "A list of conformity declarations against specific criteria from recognised standards or regulations. "
       ],
       "rdfs:label": "conformityClaim"
     },
