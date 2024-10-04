@@ -1,7 +1,7 @@
 {
     "label": "ConformityAttestation",
     "uri": "untp-dcc:ConformityAttestation",
-    "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
+    "comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
     "subClassOf": "untp-core:Attestation",
     "datatypeProperties": [
         {
@@ -18,11 +18,6 @@
             "uri": "untp-dcc:assessorLevel",
             "type": "untp-dcc:assessorLevelCode",
             "comment": "Assurance code pertaining to assessor ..."
-        },
-        {
-            "uri": "untp-dcc:attestationDescription",
-            "type": "untp-core:attestationDescription",
-            "comment": "SampleCAB Inc attests that the ..."
         },
         {
             "uri": "untp-dcc:attestationType",
@@ -45,6 +40,11 @@
             "comment": "A reference to the human ..."
         },
         {
+            "uri": "untp-dcc:description",
+            "type": "untp-core:description",
+            "comment": "A textual description of the ..."
+        },
+        {
             "uri": "untp-dcc:id",
             "type": "xsd:string",
             "comment": "A unique identifier (URI) assigned ..."
@@ -52,23 +52,23 @@
         {
             "uri": "untp-dcc:issuedToParty",
             "type": "untp-dcc:Party",
-            "comment": ""
+            "comment": "The party to whom the ..."
         },
         {
             "uri": "untp-dcc:name",
             "type": "untp-core:name",
-            "comment": "Product GHG Footprint certificate in ..."
+            "comment": "A human readable description of ..."
         },
         {
             "uri": "untp-dcc:scope",
             "type": "untp-dcc:ConformityAssessmentScheme",
-            "comment": "A list of relevant standards ..."
+            "comment": "The scheme(s) under which this ..."
         }
     ],
     "referencedBy": [
         {
             "uri": "untp-dcc:credentialSubject",
-            "comment": "The conformity attestion is the ..."
+            "comment": "The conformity attestation is the ..."
         }
     ]
 }

@@ -19,7 +19,7 @@
     {
       "@id": "untp-dcc:ConformityAttestation",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
+      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
       "rdfs:label": "ConformityAttestation",
       "rdfs:subClassOf": "untp-core:Attestation"
     },
@@ -73,7 +73,7 @@
         }
       ],
       "rdfs:comment": [
-        "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. "
+        "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. "
       ],
       "rdfs:label": "@context"
     },
@@ -112,10 +112,10 @@
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The globally unique ID of this conformity attestation.",
-        "The globally unique ID of the party as a URI, ideall as a resolvable ID. ",
+        "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
-        "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
-        "The globally unique ID of the product as a URI. Ideall as a resolvable URL according to ISO 18975. ",
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
+        "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
         "The globally unique ID of the facility as URI, ideally as a resolvable URL."
       ],
       "rdfs:label": "id"
@@ -135,7 +135,7 @@
         }
       ],
       "rdfs:comment": [
-        "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+        "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
       ],
       "rdfs:label": "issuer"
     },
@@ -192,7 +192,7 @@
         }
       ],
       "rdfs:comment": [
-        "The conformity attestion is the subject of the verifiable credential. "
+        "The conformity attestation is the subject of the verifiable credential. "
       ],
       "rdfs:label": "credentialSubject"
     },
@@ -223,7 +223,7 @@
         }
       ],
       "rdfs:comment": [
-        "Product GHG Footprint certificate in accordance with GBA Rulebook.",
+        "A human readable description of this conformity attestation",
         "The registered name of the party within the identifier scheme.",
         "The name of the standard",
         "The registered name of the product within the identifier scheme. ",
@@ -289,9 +289,9 @@
       "rdfs:label": "attestationType"
     },
     {
-      "@id": "untp-dcc:attestationDescription",
+      "@id": "untp-dcc:description",
       "schema:rangeIncludes": {
-        "@id": "untp-core:attestationDescription"
+        "@id": "untp-core:description"
       },
       "@type": [
         "rdf:Property",
@@ -300,12 +300,16 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-dcc:ConformityAttestation"
+        },
+        {
+          "@id": "untp-dcc:Party"
         }
       ],
       "rdfs:comment": [
-        "SampleCAB Inc attests that the product class LiFePO4 EV batteries manufactured at Sample battery facility have reported GHG foorptint that conform to the GBA rulebook version 1.5. "
+        "A textual description of the scope or purpose of this conformity attestation",
+        "An optional short description of the party."
       ],
-      "rdfs:label": "attestationDescription"
+      "rdfs:label": "description"
     },
     {
       "@id": "untp-dcc:issuedToParty",
@@ -322,7 +326,7 @@
         }
       ],
       "rdfs:comment": [
-        ""
+        "The party to whom the conformity attestation was issued."
       ],
       "rdfs:label": "issuedToParty"
     },
@@ -341,7 +345,7 @@
         }
       ],
       "rdfs:comment": [
-        "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. "
+        "The authority under which a conformity claim is issued.  For example a national accreditation authority may authorise a test lab to issue test certificates about a product against a standard.  "
       ],
       "rdfs:label": "authorisation"
     },
@@ -379,7 +383,7 @@
         }
       ],
       "rdfs:comment": [
-        "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usally private data and would normally be encrypted."
+        "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usually private data and would normally be encrypted."
       ],
       "rdfs:label": "auditableEvidence"
     },
@@ -398,7 +402,7 @@
         }
       ],
       "rdfs:comment": [
-        "A list of relevant standards and/or regulations against which apply to this attestation (eg AS1163:2016). "
+        "The scheme(s) under which this conformity assesment is issued. "
       ],
       "rdfs:label": "scope"
     },
@@ -444,7 +448,7 @@
       "rdfs:comment": [
         "The registration number (alphanumeric) of the Party within the register. Unique within the register.",
         "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
-        "The registration number (alphanumeric) of the facility within the identifir scheme. Unique within the register."
+        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
       ],
       "rdfs:label": "registeredId"
     },
@@ -469,30 +473,11 @@
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme of the party.  Typically a national business register or a global schem such as GLEIF. ",
-        "The identifier scheme for this product.  Eg a GS1 GTIn or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  ",
-        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the prty ID of the facility owner. "
+        "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. ",
+        "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  ",
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
       ],
       "rdfs:label": "idScheme"
-    },
-    {
-      "@id": "untp-dcc:description",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:description"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:Party"
-        }
-      ],
-      "rdfs:comment": [
-        "An optional short description of the party."
-      ],
-      "rdfs:label": "description"
     },
     {
       "@id": "untp-dcc:issuingParty",
@@ -704,7 +689,7 @@
       "rdfs:label": "assessedProduct"
     },
     {
-      "@id": "untp-dcc:assessedFacilitie",
+      "@id": "untp-dcc:assessedFacility",
       "schema:rangeIncludes": {
         "@id": "untp-dcc:Facility"
       },
@@ -720,7 +705,7 @@
       "rdfs:comment": [
         "The list of facilities that are the subject of this conformity assessment."
       ],
-      "rdfs:label": "assessedFacilitie"
+      "rdfs:label": "assessedFacility"
     },
     {
       "@id": "untp-dcc:assessedOrganisation",
@@ -756,7 +741,7 @@
         }
       ],
       "rdfs:comment": [
-        "The person or organisations that performed this assessment (if different to the issuer of the parent attestaiton)"
+        "The person or organisations that performed this assessment (if different to the issuer of the parent attestation)"
       ],
       "rdfs:label": "auditor"
     },
@@ -817,7 +802,7 @@
       ],
       "rdfs:comment": [
         "Indicates whether the conformity assessment body has verified the identity product that is the subject of the assessment.",
-        "Indicates whether the conformity assessment body has verified the identity of the facility which is the subject of the assement."
+        "Indicates whether the conformity assessment body has verified the identity of the facility which is the subject of the assessment."
       ],
       "rdfs:label": "IDverifiedByCAB"
     },
@@ -836,7 +821,7 @@
         }
       ],
       "rdfs:comment": [
-        "Geolocation information for this facility.  For example  \"id\":\"maps.app.goo.gl/6yyPVdwJDWjtj9fG6\"  \"areaReference\":\"plus.codes/4RPFR872+\"\"  \"geoLocation\":[\"-35.186250\",\"149.301250\"]"
+        "Geo-location information for this facility as a resolvable geographic area (a Plus Code), and/or a geo-located point (latitude / longitude), and/or a defined boundary (GeoJSON Polygon)."
       ],
       "rdfs:label": "locationInformation"
     },

@@ -8,7 +8,6 @@ untp-core:Identifier
 untp-dcc:conformityTopicCode
 untp-core:CredentialIssuer
 untp-core:conformityCertificate
-untp-core:attestationDescription
 untp-core:declaredValue
 untp-core:referenceRegulation
 untp-core:address
