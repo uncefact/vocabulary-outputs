@@ -17,8 +17,6 @@ layout: table
             <th>Date</th>
             <th>Notes</th>
             <th>JSON-LD Context</th>
-            <th>JSON Schema</th>
-            <th>JSON Instance</th>
         </tr>
     </thead>
     <tbody>
@@ -35,12 +33,6 @@ layout: table
                     </td>
                     <td>
                         <p><a href="{{ version.context | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
-                    </td>
-                    <td>
-                        <p><a href="{{ version.schema | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
-                    </td>
-                    <td>
-                        <p><a href="{{ version.instance | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
                     </td>
                 </tr>
         {% endfor %}
