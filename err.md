@@ -19,11 +19,11 @@ untp-core:SecureLink
 untp-core:referenceStandard
 untp-core:furtherInformation
 untp-core:registeredId
-untp-core:compliance
 untp-core:name
 untp-core:idScheme
 untp-core:Link
 untp-core:productCategory
 untp-core:Metric
+untp-core:conformance
 xsd:string
 xsd:decimal
