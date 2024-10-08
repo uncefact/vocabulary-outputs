@@ -15,10 +15,10 @@ untp-dcc:assessmentLevelCode
 untp-core:referenceStandard
 untp-dcc:assessorLevelCode
 untp-core:registeredId
-untp-core:compliance
 untp-core:name
 untp-core:idScheme
 untp-core:auditableEvidence
+untp-core:conformance
 xsd:boolean
 untp-core:locationInformation
 xsd:string
