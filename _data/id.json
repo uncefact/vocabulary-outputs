@@ -1,0 +1,23 @@
+{
+    "label": "id",
+    "uri": "untp-dia:id",
+    "comment": [
+        "A unique identifier assigned to the identity anchor credential. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "untp-core:id"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-dia:DigitalIdentityAnchor",
+            "comment": "The Digital Identity Anchor (DIA) is a very simple credential that is issued by a trusted authority and asserts an equivalence between a member identity as known to the authority (eg a VAT number) and one or more decentralised identifiers (DIDs) held by the member.  "
+        },
+        {
+            "uri": "untp-dia:RegisteredIdentity",
+            "comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes."
+        }
+    ]
+}

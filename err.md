@@ -1,7 +1,9 @@
 untp-core:name
+untp-core:idScheme
 untp-core:id
 untp-core:issuer
 untp-core:@context
 untp-core:validFrom
+untp-core:validUntil
 xsd:string
-xsd:decimal
+untp-core:registeredId

@@ -1,0 +1,49 @@
+{
+    "label": "RegisteredIdentity",
+    "uri": "untp-dia:RegisteredIdentity",
+    "comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes.",
+    "subClassOf": "untp-core:Identifier",
+    "datatypeProperties": [
+        {
+            "uri": "untp-dia:id",
+            "type": "untp-core:id",
+            "comment": "A unique identifier assigned to ..."
+        },
+        {
+            "uri": "untp-dia:idScheme",
+            "type": "untp-core:idScheme",
+            "comment": "The identifier scheme. Examples : ..."
+        },
+        {
+            "uri": "untp-dia:name",
+            "type": "untp-core:name",
+            "comment": "The registered name of the ..."
+        },
+        {
+            "uri": "untp-dia:registerType",
+            "type": "untp-dia:RegistryTypeCodeList",
+            "comment": "The thematic purpose of the ..."
+        },
+        {
+            "uri": "untp-dia:registeredId",
+            "type": "untp-core:registeredId",
+            "comment": "The registration number (alphanumeric) of ..."
+        },
+        {
+            "uri": "untp-dia:registrationScopeList",
+            "type": "xsd:string",
+            "comment": "List of URIs the represent ..."
+        },
+        {
+            "uri": "untp-dia:verifiedDIDList",
+            "type": "xsd:string",
+            "comment": "List of W3C Decentralised Identifiers ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-dia:credentialSubject",
+            "comment": "The registered identity from the ..."
+        }
+    ]
+}

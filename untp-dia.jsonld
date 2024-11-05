@@ -1,0 +1,307 @@
+{
+  "@context": {
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dia:DigitalIdentityAnchor",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The Digital Identity Anchor (DIA) is a very simple credential that is issued by a trusted authority and asserts an equivalence between a member identity as known to the authority (eg a VAT number) and one or more decentralised identifiers (DIDs) held by the member.  ",
+      "rdfs:label": "DigitalIdentityAnchor",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
+    },
+    {
+      "@id": "untp-dia:RegisteredIdentity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes.",
+      "rdfs:label": "RegisteredIdentity",
+      "rdfs:subClassOf": "untp-core:Identifier"
+    },
+    {
+      "@id": "untp-dia:@context",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:@context"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:DigitalIdentityAnchor"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. "
+      ],
+      "rdfs:label": "@context"
+    },
+    {
+      "@id": "untp-dia:id",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:id"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:DigitalIdentityAnchor"
+        },
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "A unique identifier assigned to the identity anchor credential. ",
+        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dia:issuer",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:issuer"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:DigitalIdentityAnchor"
+        }
+      ],
+      "rdfs:comment": [
+        "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+      ],
+      "rdfs:label": "issuer"
+    },
+    {
+      "@id": "untp-dia:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:validFrom"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:DigitalIdentityAnchor"
+        }
+      ],
+      "rdfs:comment": [
+        "The date and time from which the credential is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "untp-dia:validUntil",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:validUntil"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:DigitalIdentityAnchor"
+        }
+      ],
+      "rdfs:comment": [
+        "The expiry date (if applicable) of this verifiable credential."
+      ],
+      "rdfs:label": "validUntil"
+    },
+    {
+      "@id": "untp-dia:credentialSubject",
+      "schema:rangeIncludes": {
+        "@id": "untp-dia:RegisteredIdentity"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:DigitalIdentityAnchor"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered identity from the authoritative register that is the subject of this credential"
+      ],
+      "rdfs:label": "credentialSubject"
+    },
+    {
+      "@id": "untp-dia:name",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the entity within the identifier scheme.  Examples: product - EV battery 300Ah, Party - Sample Company Pty Ltd,  Facility - Green Acres battery factory"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dia:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:registeredId"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-dia:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:idScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme.  Examples : Product - id.gs1.org/01,  Party - business.gov.au/abn,  Facility - did:web:facilities.acme.com. "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dia:registerType",
+      "schema:rangeIncludes": {
+        "@id": "untp-dia:RegistryTypeCodeList"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The thematic purpose of the register - organisations, facilities, products, trademarks, etc"
+      ],
+      "rdfs:label": "registerType"
+    },
+    {
+      "@id": "untp-dia:verifiedDIDList",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "List of W3C Decentralised Identifiers (DIDs) that the registrar has verified are owned by the registry member. For example [\"did:web:samplebusiness.com:key7\"]"
+      ],
+      "rdfs:label": "verifiedDIDList"
+    },
+    {
+      "@id": "untp-dia:registrationScopeList",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "List of URIs the represent the role/scopes of membership for the register. For example [\"https://abr.business.gov.au/Help/EntityTypeDescription?Id=19\"]"
+      ],
+      "rdfs:label": "registrationScopeList"
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList",
+      "@type": "rdfs:Class",
+      "rdfs:label": "RegistryTypeCodeList",
+      "rdfs:comment": "A registry category code."
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Product",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Product",
+      "rdf:value": "A product register",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Facility",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Facility",
+      "rdf:value": "A facility register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Business",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Business",
+      "rdf:value": "A business register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Trademark",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Trademark",
+      "rdf:value": "A trademark register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Land",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Land",
+      "rdf:value": "A land register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Accreditation",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Accreditation",
+      "rdf:value": "An accreditation register",
+      "rdfs:comment": null
+    }
+  ]
+}
