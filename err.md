@@ -3,6 +3,7 @@ untp-core:declaredValue
 untp-core:referenceRegulation
 untp-core:address
 untp-core:SecureLink
+untp-core:facilityAlsoKnownAs
 untp-core:referenceStandard
 untp-core:operatedByParty
 untp-core:registeredId
@@ -10,7 +11,6 @@ untp-core:name
 untp-core:idScheme
 untp-core:description
 untp-core:Location
-untp-core:otherIdentifier
 untp-dfr:conformityTopicCode
 untp-core:processCategory
 untp-core:conformance
