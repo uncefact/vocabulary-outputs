@@ -24,13 +24,6 @@
       "rdfs:subClassOf": "untp-core:Attestation"
     },
     {
-      "@id": "untp-dcc:Party",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The organisation that is the subject of this conformity assessment.",
-      "rdfs:label": "Party",
-      "rdfs:subClassOf": "untp-core:Party"
-    },
-    {
       "@id": "untp-dcc:ConformityAssessmentScheme",
       "@type": "rdfs:Class",
       "rdfs:comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification) ",
@@ -94,9 +87,6 @@
           "@id": "untp-dcc:ConformityAttestation"
         },
         {
-          "@id": "untp-dcc:Party"
-        },
-        {
           "@id": "untp-dcc:ConformityAssessmentScheme"
         },
         {
@@ -112,7 +102,6 @@
       "rdfs:comment": [
         "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The globally unique ID of this conformity attestation.",
-        "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
         "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
         "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
@@ -199,18 +188,15 @@
     {
       "@id": "untp-dcc:name",
       "schema:rangeIncludes": {
-        "@id": "untp-core:name"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
           "@id": "untp-dcc:ConformityAttestation"
-        },
-        {
-          "@id": "untp-dcc:Party"
         },
         {
           "@id": "untp-dcc:ConformityAssessmentScheme"
@@ -224,7 +210,6 @@
       ],
       "rdfs:comment": [
         "A human readable description of this conformity attestation",
-        "The registered name of the party within the identifier scheme.",
         "The name of the standard",
         "The registered name of the product within the identifier scheme. ",
         "The registered name of the facility within the identifier scheme.  "
@@ -291,30 +276,34 @@
     {
       "@id": "untp-dcc:description",
       "schema:rangeIncludes": {
-        "@id": "untp-core:description"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
           "@id": "untp-dcc:ConformityAttestation"
         },
         {
-          "@id": "untp-dcc:Party"
+          "@id": "untp-dcc:Product"
+        },
+        {
+          "@id": "untp-dcc:Facility"
         }
       ],
       "rdfs:comment": [
         "A textual description of the scope or purpose of this conformity attestation",
-        "An optional short description of the party."
+        "A textual description providing details about the product.",
+        "An optional short description of the facility"
       ],
       "rdfs:label": "description"
     },
     {
       "@id": "untp-dcc:issuedToParty",
       "schema:rangeIncludes": {
-        "@id": "untp-dcc:Party"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -333,7 +322,7 @@
     {
       "@id": "untp-dcc:authorisation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:authorisation"
+        "@id": "untp-core:Endorsement"
       },
       "@type": [
         "rdf:Property",
@@ -352,7 +341,7 @@
     {
       "@id": "untp-dcc:conformityCertificate",
       "schema:rangeIncludes": {
-        "@id": "untp-core:conformityCertificate"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
@@ -371,7 +360,7 @@
     {
       "@id": "untp-dcc:auditableEvidence",
       "schema:rangeIncludes": {
-        "@id": "untp-core:auditableEvidence"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
@@ -426,63 +415,9 @@
       "rdfs:label": "assessment"
     },
     {
-      "@id": "untp-dcc:registeredId",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:registeredId"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:Party"
-        },
-        {
-          "@id": "untp-dcc:Product"
-        },
-        {
-          "@id": "untp-dcc:Facility"
-        }
-      ],
-      "rdfs:comment": [
-        "The registration number (alphanumeric) of the Party within the register. Unique within the register.",
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
-        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
-      ],
-      "rdfs:label": "registeredId"
-    },
-    {
-      "@id": "untp-dcc:idScheme",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:idScheme"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:Party"
-        },
-        {
-          "@id": "untp-dcc:Product"
-        },
-        {
-          "@id": "untp-dcc:Facility"
-        }
-      ],
-      "rdfs:comment": [
-        "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. ",
-        "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  ",
-        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
-      ],
-      "rdfs:label": "idScheme"
-    },
-    {
       "@id": "untp-dcc:issuingParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -710,7 +645,7 @@
     {
       "@id": "untp-dcc:assessedOrganisation",
       "schema:rangeIncludes": {
-        "@id": "untp-dcc:Party"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -729,7 +664,7 @@
     {
       "@id": "untp-dcc:auditor",
       "schema:rangeIncludes": {
-        "@id": "untp-dcc:Party"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -746,13 +681,59 @@
       "rdfs:label": "auditor"
     },
     {
-      "@id": "untp-dcc:serialNumber",
+      "@id": "untp-dcc:registeredId",
       "schema:rangeIncludes": {
-        "@id": "untp-core:serialNumber"
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        },
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-dcc:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:IdentifierScheme"
       },
       "@type": [
         "rdf:Property",
         "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        },
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  ",
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dcc:serialNumber",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -767,7 +748,26 @@
     {
       "@id": "untp-dcc:batchNumber",
       "schema:rangeIncludes": {
-        "@id": "untp-core:batchNumber"
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "Identifier of the specific production batch of the product.  Unique within the product class."
+      ],
+      "rdfs:label": "batchNumber"
+    },
+    {
+      "@id": "untp-dcc:productImage",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -779,9 +779,161 @@
         }
       ],
       "rdfs:comment": [
-        "Identifier of the specific production batch of the product.  Unique within the product class."
+        "Reference information (location, type, name) of an image of the product."
       ],
-      "rdfs:label": "batchNumber"
+      "rdfs:label": "productImage"
+    },
+    {
+      "@id": "untp-dcc:productCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+      ],
+      "rdfs:label": "productCategory"
+    },
+    {
+      "@id": "untp-dcc:characteristics",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Characteristics"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A placeholder for indusutry / product category specific information.  "
+      ],
+      "rdfs:label": "characteristics"
+    },
+    {
+      "@id": "untp-dcc:furtherInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A URL pointing to further human readable information about the product."
+      ],
+      "rdfs:label": "furtherInformation"
+    },
+    {
+      "@id": "untp-dcc:producedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity that manufactured the product."
+      ],
+      "rdfs:label": "producedByParty"
+    },
+    {
+      "@id": "untp-dcc:producedAtFacility",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The Facility where the product batch was produced / manufactured."
+      ],
+      "rdfs:label": "producedAtFacility"
+    },
+    {
+      "@id": "untp-dcc:dimensions",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Dimension"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have weight and volume but not length, with, or height.\"weight\":{\"value\":10, \"unit\":\"KGM\"}"
+      ],
+      "rdfs:label": "dimensions"
+    },
+    {
+      "@id": "untp-dcc:productionDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The ISO 8601 date on which the product batch or individual serialised item was manufactured."
+      ],
+      "rdfs:label": "productionDate"
+    },
+    {
+      "@id": "untp-dcc:countryOfProduction",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this item was produced / manufactured."
+      ],
+      "rdfs:label": "countryOfProduction"
     },
     {
       "@id": "untp-dcc:IDverifiedByCAB",
@@ -807,9 +959,85 @@
       "rdfs:label": "IDverifiedByCAB"
     },
     {
+      "@id": "untp-dcc:countryOfOperation",
+      "schema:rangeIncludes": {
+        "@id": "untp-dcc:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this facility is operating."
+      ],
+      "rdfs:label": "countryOfOperation"
+    },
+    {
+      "@id": "untp-dcc:processCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The industrial or production processes performed by this facility. Example unstats.un.org/isic/1030."
+      ],
+      "rdfs:label": "processCategory"
+    },
+    {
+      "@id": "untp-dcc:operatedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identification scheme. "
+      ],
+      "rdfs:label": "operatedByParty"
+    },
+    {
+      "@id": "untp-dcc:facilityAlsoKnownAs",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+      ],
+      "rdfs:label": "facilityAlsoKnownAs"
+    },
+    {
       "@id": "untp-dcc:locationInformation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:locationInformation"
+        "@id": "untp-core:Location"
       },
       "@type": [
         "rdf:Property",
@@ -828,7 +1056,7 @@
     {
       "@id": "untp-dcc:address",
       "schema:rangeIncludes": {
-        "@id": "untp-core:address"
+        "@id": "untp-core:Address"
       },
       "@type": [
         "rdf:Property",
