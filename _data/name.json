@@ -3,9 +3,8 @@
     "uri": "untp-core:name",
     "comment": [
         "The name of the issuer person or organisation",
-        "The registered name of the entity within the identifier scheme.  Examples: product - EV battery 300Ah, Party - Sample Company Pty Ltd,  Facility - Green Acres battery factory",
-        "The name of the identifier scheme. ",
         "The registered name of the party within the identifier scheme.",
+        "The name of the identifier scheme. ",
         "Name of the classification represented by the code",
         "The registered name of the facility within the identifier scheme.  ",
         "The registered name of the product within the identifier scheme. ",
@@ -27,16 +26,12 @@
             "comment": "The issuer party (person or organisation) of a verifiable credential."
         },
         {
-            "uri": "untp-core:Identifier",
-            "comment": "The ID and Name of an identified entity such as a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id property SHOULD be an identity resolver URL."
+            "uri": "untp-core:Party",
+            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
         },
         {
             "uri": "untp-core:IdentifierScheme",
             "comment": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
-        },
-        {
-            "uri": "untp-core:Party",
-            "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."
         },
         {
             "uri": "untp-core:Classification",

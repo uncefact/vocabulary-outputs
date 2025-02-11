@@ -2,7 +2,6 @@
     "label": "idScheme",
     "uri": "untp-core:idScheme",
     "comment": [
-        "The identifier scheme.  Examples : Product - id.gs1.org/01,  Party - business.gov.au/abn,  Facility - did:web:facilities.acme.com. ",
         "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. ",
         "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. ",
         "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
@@ -14,10 +13,6 @@
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "untp-core:Identifier",
-            "comment": "The ID and Name of an identified entity such as a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id property SHOULD be an identity resolver URL."
-        },
         {
             "uri": "untp-core:Party",
             "comment": "An organisation.  May be a supply chain actor, a certifier, a government agency."

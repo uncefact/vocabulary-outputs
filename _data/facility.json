@@ -19,6 +19,11 @@
             "comment": "An optional short description of ..."
         },
         {
+            "uri": "untp-core:facilityAlsoKnownAs",
+            "type": "untp-core:Facility",
+            "comment": "An optional list of other ..."
+        },
+        {
             "uri": "untp-core:id",
             "type": "xsd:string",
             "comment": "The W3C DID of the ..."
@@ -26,7 +31,7 @@
         {
             "uri": "untp-core:idScheme",
             "type": "untp-core:IdentifierScheme",
-            "comment": "The identifier scheme. Examples : ..."
+            "comment": "The identifier scheme of the ..."
         },
         {
             "uri": "untp-core:locationInformation",
@@ -40,13 +45,8 @@
         },
         {
             "uri": "untp-core:operatedByParty",
-            "type": "untp-core:Identifier",
+            "type": "untp-core:Party",
             "comment": "The Party entity responsible for ..."
-        },
-        {
-            "uri": "untp-core:otherIdentifier",
-            "type": "untp-core:Identifier",
-            "comment": "An optional list of other ..."
         },
         {
             "uri": "untp-core:processCategory",
@@ -57,6 +57,16 @@
             "uri": "untp-core:registeredId",
             "type": "xsd:string",
             "comment": "The registration number (alphanumeric) of ..."
+        }
+    ],
+    "referencedBy": [
+        {
+            "uri": "untp-core:facilityAlsoKnownAs",
+            "comment": "An optional list of other ..."
+        },
+        {
+            "uri": "untp-core:producedAtFacility",
+            "comment": "The Facility where the product ..."
         }
     ]
 }

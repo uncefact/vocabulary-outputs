@@ -22,10 +22,10 @@
       "rdfs:label": "CredentialIssuer"
     },
     {
-      "@id": "untp-core:Identifier",
+      "@id": "untp-core:Party",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The ID and Name of an identified entity such as a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id property SHOULD be an identity resolver URL.",
-      "rdfs:label": "Identifier"
+      "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
+      "rdfs:label": "Party"
     },
     {
       "@id": "untp-core:IdentifierScheme",
@@ -34,22 +34,16 @@
       "rdfs:label": "IdentifierScheme"
     },
     {
-      "@id": "untp-core:Link",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A structure to provide a URL link plus metadata associated with the link.",
-      "rdfs:label": "Link"
-    },
-    {
-      "@id": "untp-core:Party",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
-      "rdfs:label": "Party"
-    },
-    {
       "@id": "untp-core:Classification",
       "@type": "rdfs:Class",
       "rdfs:comment": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
       "rdfs:label": "Classification"
+    },
+    {
+      "@id": "untp-core:Link",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A structure to provide a URL link plus metadata associated with the link.",
+      "rdfs:label": "Link"
     },
     {
       "@id": "untp-core:Facility",
@@ -74,6 +68,12 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
       "rdfs:label": "Product"
+    },
+    {
+      "@id": "untp-core:Characteristics",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc.",
+      "rdfs:label": "Characteristics"
     },
     {
       "@id": "untp-core:Dimension",
@@ -149,12 +149,6 @@
       "rdfs:label": "EmissionsPerformance"
     },
     {
-      "@id": "untp-core:Characteristic",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc.",
-      "rdfs:label": "Characteristic"
-    },
-    {
       "@id": "untp-core:Attestation",
       "@type": "rdfs:Class",
       "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
@@ -180,13 +174,10 @@
           "@id": "untp-core:CredentialIssuer"
         },
         {
-          "@id": "untp-core:Identifier"
+          "@id": "untp-core:Party"
         },
         {
           "@id": "untp-core:IdentifierScheme"
-        },
-        {
-          "@id": "untp-core:Party"
         },
         {
           "@id": "untp-core:Classification"
@@ -218,9 +209,8 @@
       ],
       "rdfs:comment": [
         "The W3C DID of the issuer - should be a did:web or did:tdw",
-        "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. ",
-        "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
+        "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique URI representing the specific classifier value",
         "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
         "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
@@ -247,13 +237,10 @@
           "@id": "untp-core:CredentialIssuer"
         },
         {
-          "@id": "untp-core:Identifier"
+          "@id": "untp-core:Party"
         },
         {
           "@id": "untp-core:IdentifierScheme"
-        },
-        {
-          "@id": "untp-core:Party"
         },
         {
           "@id": "untp-core:Classification"
@@ -285,9 +272,8 @@
       ],
       "rdfs:comment": [
         "The name of the issuer person or organisation",
-        "The registered name of the entity within the identifier scheme.  Examples: product - EV battery 300Ah, Party - Sample Company Pty Ltd,  Facility - Green Acres battery factory",
-        "The name of the identifier scheme. ",
         "The registered name of the party within the identifier scheme.",
+        "The name of the identifier scheme. ",
         "Name of the classification represented by the code",
         "The registered name of the facility within the identifier scheme.  ",
         "The registered name of the product within the identifier scheme. ",
@@ -301,9 +287,9 @@
       "rdfs:label": "name"
     },
     {
-      "@id": "untp-core:otherIdentifier",
+      "@id": "untp-core:issuerAlsoKnownAs",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -312,20 +298,12 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-core:CredentialIssuer"
-        },
-        {
-          "@id": "untp-core:Party"
-        },
-        {
-          "@id": "untp-core:Facility"
         }
       ],
       "rdfs:comment": [
-        "An optional list of other registered identifiers for this credential issuer ",
-        "An optional list of other registered identifiers for this organisation. For example DUNS, GLN, LEI, etc",
-        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+        "An optional list of other registered identifiers for this credential issuer "
       ],
-      "rdfs:label": "otherIdentifier"
+      "rdfs:label": "issuerAlsoKnownAs"
     },
     {
       "@id": "untp-core:registeredId",
@@ -338,9 +316,6 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Identifier"
-        },
-        {
           "@id": "untp-core:Party"
         },
         {
@@ -351,7 +326,6 @@
         }
       ],
       "rdfs:comment": [
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register.",
         "The registration number (alphanumeric) of the Party within the register. Unique within the register.",
         "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register.",
         "The registration number (alphanumeric) of the entity within the register. Unique within the register."
@@ -369,9 +343,6 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-core:Identifier"
-        },
-        {
           "@id": "untp-core:Party"
         },
         {
@@ -382,81 +353,11 @@
         }
       ],
       "rdfs:comment": [
-        "The identifier scheme.  Examples : Product - id.gs1.org/01,  Party - business.gov.au/abn,  Facility - did:web:facilities.acme.com. ",
         "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. ",
         "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. ",
         "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
       ],
       "rdfs:label": "idScheme"
-    },
-    {
-      "@id": "untp-core:linkURL",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Link"
-        },
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The URL of the target resource. ",
-        "The URL of the target resource. "
-      ],
-      "rdfs:label": "linkURL"
-    },
-    {
-      "@id": "untp-core:linkName",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Link"
-        },
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "A display name for the target resource ",
-        "A display name for the target resource "
-      ],
-      "rdfs:label": "linkName"
-    },
-    {
-      "@id": "untp-core:linkType",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Link"
-        },
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The type of the target resource - drawn from a controlled vocabulary ",
-        "The type of the target resource - drawn from a controlled vocabulary "
-      ],
-      "rdfs:label": "linkType"
     },
     {
       "@id": "untp-core:description",
@@ -547,6 +448,25 @@
       "rdfs:label": "industryCategory"
     },
     {
+      "@id": "untp-core:partyAlsoKnownAs",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this organisation. For example DUNS, GLN, LEI, etc"
+      ],
+      "rdfs:label": "partyAlsoKnownAs"
+    },
+    {
       "@id": "untp-core:code",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -604,6 +524,75 @@
       "rdfs:label": "schemeName"
     },
     {
+      "@id": "untp-core:linkURL",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The URL of the target resource. ",
+        "The URL of the target resource. "
+      ],
+      "rdfs:label": "linkURL"
+    },
+    {
+      "@id": "untp-core:linkName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "A display name for the target resource ",
+        "A display name for the target resource "
+      ],
+      "rdfs:label": "linkName"
+    },
+    {
+      "@id": "untp-core:linkType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of the target resource - drawn from a controlled vocabulary ",
+        "The type of the target resource - drawn from a controlled vocabulary "
+      ],
+      "rdfs:label": "linkType"
+    },
+    {
       "@id": "untp-core:countryOfOperation",
       "schema:rangeIncludes": {
         "@id": "untp-core:countryCode"
@@ -644,7 +633,7 @@
     {
       "@id": "untp-core:operatedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -659,6 +648,25 @@
         "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identification scheme. "
       ],
       "rdfs:label": "operatedByParty"
+    },
+    {
+      "@id": "untp-core:facilityAlsoKnownAs",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+      ],
+      "rdfs:label": "facilityAlsoKnownAs"
     },
     {
       "@id": "untp-core:locationInformation",
@@ -927,6 +935,25 @@
       "rdfs:label": "productCategory"
     },
     {
+      "@id": "untp-core:characteristics",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Characteristics"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A placeholder for indusutry / product category specific information.  "
+      ],
+      "rdfs:label": "characteristics"
+    },
+    {
       "@id": "untp-core:furtherInformation",
       "schema:rangeIncludes": {
         "@id": "untp-core:Link"
@@ -948,7 +975,7 @@
     {
       "@id": "untp-core:producedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -967,7 +994,7 @@
     {
       "@id": "untp-core:producedAtFacility",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Facility"
       },
       "@type": [
         "rdf:Property",
@@ -1499,7 +1526,7 @@
     {
       "@id": "untp-core:issuingParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -1556,7 +1583,7 @@
     {
       "@id": "untp-core:administeredBy",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -2126,7 +2153,7 @@
     {
       "@id": "untp-core:issuingAuthority",
       "schema:rangeIncludes": {
-        "@id": "untp-core:Identifier"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
