@@ -2,8 +2,13 @@
     "label": "RegisteredIdentity",
     "uri": "untp-dia:RegisteredIdentity",
     "comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes.",
-    "subClassOf": "untp-core:Identifier",
+    "subClassOf": "untp-core:Party",
     "datatypeProperties": [
+        {
+            "uri": "untp-dia:description",
+            "type": "xsd:string",
+            "comment": "An optional short description of ..."
+        },
         {
             "uri": "untp-dia:id",
             "type": "untp-core:id",
@@ -11,13 +16,28 @@
         },
         {
             "uri": "untp-dia:idScheme",
-            "type": "untp-core:idScheme",
-            "comment": "The identifier scheme. Examples : ..."
+            "type": "untp-core:IdentifierScheme",
+            "comment": "The identifier scheme of the ..."
+        },
+        {
+            "uri": "untp-dia:industryCategory",
+            "type": "untp-core:Classification",
+            "comment": "The industry categories for this ..."
         },
         {
             "uri": "untp-dia:name",
-            "type": "untp-core:name",
+            "type": "xsd:string",
             "comment": "The registered name of the ..."
+        },
+        {
+            "uri": "untp-dia:organisationWebsite",
+            "type": "xsd:string",
+            "comment": "Website for this organisation "
+        },
+        {
+            "uri": "untp-dia:partyAlsoKnownAs",
+            "type": "untp-core:Party",
+            "comment": "An optional list of other ..."
         },
         {
             "uri": "untp-dia:registerType",
@@ -26,8 +46,13 @@
         },
         {
             "uri": "untp-dia:registeredId",
-            "type": "untp-core:registeredId",
+            "type": "xsd:string",
             "comment": "The registration number (alphanumeric) of ..."
+        },
+        {
+            "uri": "untp-dia:registrationCountry",
+            "type": "untp-dia:countryCode",
+            "comment": "the country in which this ..."
         },
         {
             "uri": "untp-dia:registrationScopeList",
