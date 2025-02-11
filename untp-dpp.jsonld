@@ -19,7 +19,7 @@
     {
       "@id": "untp-dpp:Product",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.  ",
+      "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
       "rdfs:label": "Product",
       "rdfs:subClassOf": "untp-core:Product"
     },
@@ -154,18 +154,18 @@
         }
       ],
       "rdfs:comment": [
-        "The subject of a digital product passport credential is the identified product.  "
+        "The subject of a digital product passport credential is the identified product."
       ],
       "rdfs:label": "credentialSubject"
     },
     {
       "@id": "untp-dpp:name",
       "schema:rangeIncludes": {
-        "@id": "untp-core:name"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -180,11 +180,11 @@
     {
       "@id": "untp-dpp:registeredId",
       "schema:rangeIncludes": {
-        "@id": "untp-core:registeredId"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -199,7 +199,7 @@
     {
       "@id": "untp-dpp:idScheme",
       "schema:rangeIncludes": {
-        "@id": "untp-core:idScheme"
+        "@id": "untp-core:IdentifierScheme"
       },
       "@type": [
         "rdf:Property",
@@ -218,11 +218,11 @@
     {
       "@id": "untp-dpp:serialNumber",
       "schema:rangeIncludes": {
-        "@id": "untp-core:serialNumber"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -237,11 +237,11 @@
     {
       "@id": "untp-dpp:batchNumber",
       "schema:rangeIncludes": {
-        "@id": "untp-core:batchNumber"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -256,7 +256,7 @@
     {
       "@id": "untp-dpp:productImage",
       "schema:rangeIncludes": {
-        "@id": "untp-core:productImage"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -275,11 +275,11 @@
     {
       "@id": "untp-dpp:description",
       "schema:rangeIncludes": {
-        "@id": "untp-core:description"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -294,7 +294,7 @@
     {
       "@id": "untp-dpp:productCategory",
       "schema:rangeIncludes": {
-        "@id": "untp-core:productCategory"
+        "@id": "untp-core:Classification"
       },
       "@type": [
         "rdf:Property",
@@ -311,9 +311,28 @@
       "rdfs:label": "productCategory"
     },
     {
+      "@id": "untp-dpp:characteristics",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Characteristics"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A placeholder for indusutry / product category specific information.  "
+      ],
+      "rdfs:label": "characteristics"
+    },
+    {
       "@id": "untp-dpp:furtherInformation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:furtherInformation"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -332,7 +351,7 @@
     {
       "@id": "untp-dpp:producedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:producedByParty"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -351,7 +370,7 @@
     {
       "@id": "untp-dpp:producedAtFacility",
       "schema:rangeIncludes": {
-        "@id": "untp-core:producedAtFacility"
+        "@id": "untp-core:Facility"
       },
       "@type": [
         "rdf:Property",
@@ -370,7 +389,7 @@
     {
       "@id": "untp-dpp:dimensions",
       "schema:rangeIncludes": {
-        "@id": "untp-core:dimensions"
+        "@id": "untp-core:Dimension"
       },
       "@type": [
         "rdf:Property",
@@ -389,11 +408,11 @@
     {
       "@id": "untp-dpp:productionDate",
       "schema:rangeIncludes": {
-        "@id": "untp-core:productionDate"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -577,25 +596,6 @@
       "rdfs:label": "assessmentDate"
     },
     {
-      "@id": "untp-dpp:declaredValue",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Metric"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The list of specific values measured as part of this assessment (eg tensile strength)"
-      ],
-      "rdfs:label": "declaredValue"
-    },
-    {
       "@id": "untp-dpp:referenceStandard",
       "schema:rangeIncludes": {
         "@id": "untp-core:referenceStandard"
@@ -653,7 +653,7 @@
       "rdfs:label": "assessmentCriteria"
     },
     {
-      "@id": "untp-dpp:declaredValues",
+      "@id": "untp-dpp:declaredValue",
       "schema:rangeIncludes": {
         "@id": "untp-core:declaredValue"
       },
@@ -669,7 +669,7 @@
       "rdfs:comment": [
         "The list of specific values measured as part of this assessment (eg tensile strength)"
       ],
-      "rdfs:label": "declaredValues"
+      "rdfs:label": "declaredValue"
     },
     {
       "@id": "untp-dpp:conformance",
