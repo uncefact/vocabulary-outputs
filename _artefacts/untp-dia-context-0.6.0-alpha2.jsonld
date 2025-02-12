@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@protected": true,
+    "@version": 1.1,
+    "DigitalIdentityAnchor": {
+      "@protected": true,
+      "@id": "untp-dia:DigitalIdentityAnchor",
+      "@context": {
+        "credentialSubject": {
+          "@protected": true,
+          "@id": "untp-dia:credentialSubject",
+          "@context": {
+            "identity": "untp-core:identity",
+            "registerType": {
+              "@id": "untp-dia:registerType",
+              "@type": "@vocab",
+              "@context": {
+                "@protected": true,
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/0/RegistryTypeCodeList#"
+              }
+            },
+            "registrationScopeList": {
+              "@id": "untp-dia:registrationScopeList",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      }
+    },
+    "IdentifierScheme": {
+      "@protected": true,
+      "@id": "untp-core:IdentifierScheme"
+    },
+    "Classification": {
+      "@protected": true,
+      "@id": "untp-core:Classification",
+      "@context": {
+        "code": {
+          "@id": "untp-core:code",
+          "@type": "xsd:string"
+        },
+        "schemeID": {
+          "@id": "untp-core:schemeID",
+          "@type": "xsd:string"
+        },
+        "schemeName": {
+          "@id": "untp-core:schemeName",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Party": {
+      "@protected": true,
+      "@id": "untp-core:Party",
+      "@context": {
+        "registeredId": {
+          "@id": "untp-core:registeredId",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "@id"
+        },
+        "registrationCountry": {
+          "@id": "untp-core:registrationCountry",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+          }
+        },
+        "organisationWebsite": {
+          "@id": "untp-core:organisationWebsite",
+          "@type": "xsd:string"
+        },
+        "industryCategory": {
+          "@id": "untp-core:industryCategory",
+          "@type": "@id"
+        },
+        "partyAlsoKnownAs": {
+          "@id": "untp-core:partyAlsoKnownAs",
+          "@type": "@id"
+        }
+      }
+    },
+    "CredentialIssuer": {
+      "@protected": true,
+      "@id": "untp-core:CredentialIssuer",
+      "@context": {
+        "issuerAlsoKnownAs": {
+          "@id": "untp-core:issuerAlsoKnownAs",
+          "@type": "@id"
+        }
+      }
+    }
+  }
+}

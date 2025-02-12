@@ -1,10 +1,7 @@
-untp-core:Classification
 untp-core:id
 untp-core:issuer
 untp-core:@context
 untp-core:validFrom
-untp-core:IdentifierScheme
 untp-core:Party
-untp-dia:countryCode
 untp-core:validUntil
 xsd:string

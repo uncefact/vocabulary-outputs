@@ -20,8 +20,7 @@
       "@id": "untp-dia:RegisteredIdentity",
       "@type": "rdfs:Class",
       "rdfs:comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes.",
-      "rdfs:label": "RegisteredIdentity",
-      "rdfs:subClassOf": "untp-core:Party"
+      "rdfs:label": "RegisteredIdentity"
     },
     {
       "@id": "untp-dia:@context",
@@ -54,14 +53,10 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-dia:DigitalIdentityAnchor"
-        },
-        {
-          "@id": "untp-dia:RegisteredIdentity"
         }
       ],
       "rdfs:comment": [
-        "A unique identifier assigned to the identity anchor credential. ",
-        "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+        "A unique identifier assigned to the identity anchor credential. "
       ],
       "rdfs:label": "id"
     },
@@ -142,140 +137,7 @@
       "rdfs:label": "credentialSubject"
     },
     {
-      "@id": "untp-dia:name",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "The registered name of the party within the identifier scheme."
-      ],
-      "rdfs:label": "name"
-    },
-    {
-      "@id": "untp-dia:registeredId",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "The registration number (alphanumeric) of the Party within the register. Unique within the register."
-      ],
-      "rdfs:label": "registeredId"
-    },
-    {
-      "@id": "untp-dia:idScheme",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:IdentifierScheme"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. "
-      ],
-      "rdfs:label": "idScheme"
-    },
-    {
-      "@id": "untp-dia:description",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "An optional short description of the party."
-      ],
-      "rdfs:label": "description"
-    },
-    {
-      "@id": "untp-dia:registrationCountry",
-      "schema:rangeIncludes": {
-        "@id": "untp-dia:countryCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "the country in which this organisation is registered"
-      ],
-      "rdfs:label": "registrationCountry"
-    },
-    {
-      "@id": "untp-dia:organisationWebsite",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "Website for this organisation"
-      ],
-      "rdfs:label": "organisationWebsite"
-    },
-    {
-      "@id": "untp-dia:industryCategory",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Classification"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dia:RegisteredIdentity"
-        }
-      ],
-      "rdfs:comment": [
-        "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme. for example - unstats.un.org/isic/1030"
-      ],
-      "rdfs:label": "industryCategory"
-    },
-    {
-      "@id": "untp-dia:partyAlsoKnownAs",
+      "@id": "untp-dia:identity",
       "schema:rangeIncludes": {
         "@id": "untp-core:Party"
       },
@@ -289,9 +151,9 @@
         }
       ],
       "rdfs:comment": [
-        "An optional list of other registered identifiers for this organisation. For example DUNS, GLN, LEI, etc"
+        "An organisation.  May be a supply chain actor, a certifier, a government agency."
       ],
-      "rdfs:label": "partyAlsoKnownAs"
+      "rdfs:label": "identity"
     },
     {
       "@id": "untp-dia:registerType",
