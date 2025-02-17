@@ -118,33 +118,6 @@
       "rdfs:label": "name"
     },
     {
-      "@id": "untp-dcc:description",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAttestation"
-        },
-        {
-          "@id": "untp-dcc:Product"
-        },
-        {
-          "@id": "untp-dcc:Facility"
-        }
-      ],
-      "rdfs:comment": [
-        "A textual description of the scope or purpose of this conformity attestation",
-        "A textual description providing details about the product.",
-        "An optional short description of the facility"
-      ],
-      "rdfs:label": "description"
-    },
-    {
       "@id": "untp-dcc:assessorLevel",
       "schema:rangeIncludes": {
         "@id": "untp-dcc:assessorLevelCode"
@@ -202,6 +175,33 @@
       "rdfs:label": "attestationType"
     },
     {
+      "@id": "untp-dcc:description",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAttestation"
+        },
+        {
+          "@id": "untp-dcc:Product"
+        },
+        {
+          "@id": "untp-dcc:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "A textual description of the scope or purpose of this conformity attestation",
+        "A textual description providing details about the product.",
+        "An optional short description of the facility"
+      ],
+      "rdfs:label": "description"
+    },
+    {
       "@id": "untp-dcc:issuedToParty",
       "schema:rangeIncludes": {
         "@id": "untp-core:Party"
@@ -223,7 +223,7 @@
     {
       "@id": "untp-dcc:authorisation",
       "schema:rangeIncludes": {
-        "@id": "untp-core:authorisation"
+        "@id": "untp-core:Endorsement"
       },
       "@type": [
         "rdf:Property",
@@ -242,7 +242,7 @@
     {
       "@id": "untp-dcc:conformityCertificate",
       "schema:rangeIncludes": {
-        "@id": "untp-core:conformityCertificate"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
@@ -261,7 +261,7 @@
     {
       "@id": "untp-dcc:auditableEvidence",
       "schema:rangeIncludes": {
-        "@id": "untp-core:auditableEvidence"
+        "@id": "untp-core:SecureLink"
       },
       "@type": [
         "rdf:Property",
