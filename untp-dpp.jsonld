@@ -37,25 +37,6 @@
       "rdfs:label": "TraceabilityPerformance"
     },
     {
-      "@id": "untp-dpp:@context",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:DigitalProductPassport"
-        }
-      ],
-      "rdfs:comment": [
-        "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. "
-      ],
-      "rdfs:label": "@context"
-    },
-    {
       "@id": "untp-dpp:id",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -66,9 +47,6 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:DigitalProductPassport"
-        },
-        {
           "@id": "untp-dpp:Product"
         },
         {
@@ -76,87 +54,10 @@
         }
       ],
       "rdfs:comment": [
-        "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
         "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
-    },
-    {
-      "@id": "untp-dpp:issuer",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:CredentialIssuer"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:DigitalProductPassport"
-        }
-      ],
-      "rdfs:comment": [
-        "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
-      ],
-      "rdfs:label": "issuer"
-    },
-    {
-      "@id": "untp-dpp:validFrom",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:DigitalProductPassport"
-        }
-      ],
-      "rdfs:comment": [
-        "The date and time from which the credential is valid."
-      ],
-      "rdfs:label": "validFrom"
-    },
-    {
-      "@id": "untp-dpp:validUntil",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:DigitalProductPassport"
-        }
-      ],
-      "rdfs:comment": [
-        "The expiry date (if applicable) of this verifiable credential."
-      ],
-      "rdfs:label": "validUntil"
-    },
-    {
-      "@id": "untp-dpp:credentialSubject",
-      "schema:rangeIncludes": {
-        "@id": "untp-dpp:Product"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:DigitalProductPassport"
-        }
-      ],
-      "rdfs:comment": [
-        "The subject of a digital product passport credential is the identified product."
-      ],
-      "rdfs:label": "credentialSubject"
     },
     {
       "@id": "untp-dpp:name",

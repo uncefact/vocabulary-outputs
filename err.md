@@ -14,7 +14,6 @@ untp-core:CircularityPerformance
 untp-dpp:countryCode
 untp-core:Party
 untp-core:conformance
-untp-core:CredentialIssuer
 untp-core:Facility
 xsd:string
 untp-core:Characteristics
