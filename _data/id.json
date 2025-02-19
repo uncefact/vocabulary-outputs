@@ -2,7 +2,6 @@
     "label": "id",
     "uri": "untp-dte:id",
     "comment": [
-        "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The unique identifier of this event - SHOULD be a UUID",
         "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
         "The unique identifier of this event - SHOULD be a UUID",
@@ -13,14 +12,10 @@
     ],
     "rangeIncludes": [
         {
-            "uri": "untp-core:id"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "untp-dte:DigitalTraceabilityEvent",
-            "comment": "An array of Traceability Events as a VC"
-        },
         {
             "uri": "untp-dte:Event",
             "comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event."

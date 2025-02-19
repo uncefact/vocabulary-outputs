@@ -90,16 +90,13 @@
     {
       "@id": "untp-dte:id",
       "schema:rangeIncludes": {
-        "@id": "untp-core:id"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        },
         {
           "@id": "untp-dte:Event"
         },
@@ -123,7 +120,6 @@
         }
       ],
       "rdfs:comment": [
-        "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The unique identifier of this event - SHOULD be a UUID",
         "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
         "The unique identifier of this event - SHOULD be a UUID",
@@ -133,82 +129,6 @@
         "The unique identifier of this event - SHOULD be a UUID"
       ],
       "rdfs:label": "id"
-    },
-    {
-      "@id": "untp-dte:@context",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:@context"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. "
-      ],
-      "rdfs:label": "@context"
-    },
-    {
-      "@id": "untp-dte:issuer",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:issuer"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
-      ],
-      "rdfs:label": "issuer"
-    },
-    {
-      "@id": "untp-dte:validFrom",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:validFrom"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "The date and time from which the credential is valid."
-      ],
-      "rdfs:label": "validFrom"
-    },
-    {
-      "@id": "untp-dte:credentialSubject",
-      "schema:rangeIncludes": {
-        "@id": "untp-dte:Event"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dte:DigitalTraceabilityEvent"
-        }
-      ],
-      "rdfs:comment": [
-        "VC subject is the transaction event structure"
-      ],
-      "rdfs:label": "credentialSubject"
     },
     {
       "@id": "untp-dte:processType",
