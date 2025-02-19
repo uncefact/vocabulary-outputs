@@ -33,11 +33,11 @@
     {
       "@id": "untp-dfr:id",
       "schema:rangeIncludes": {
-        "@id": "untp-core:id"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -54,51 +54,13 @@
       "rdfs:label": "id"
     },
     {
-      "@id": "untp-dfr:registeredId",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:registeredId"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Facility"
-        }
-      ],
-      "rdfs:comment": [
-        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
-      ],
-      "rdfs:label": "registeredId"
-    },
-    {
-      "@id": "untp-dfr:description",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:description"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Facility"
-        }
-      ],
-      "rdfs:comment": [
-        "An optional short description of the facility"
-      ],
-      "rdfs:label": "description"
-    },
-    {
       "@id": "untp-dfr:name",
       "schema:rangeIncludes": {
-        "@id": "untp-core:name"
+        "@id": "xsd:string"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -111,9 +73,28 @@
       "rdfs:label": "name"
     },
     {
+      "@id": "untp-dfr:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
       "@id": "untp-dfr:idScheme",
       "schema:rangeIncludes": {
-        "@id": "untp-core:idScheme"
+        "@id": "untp-core:IdentifierScheme"
       },
       "@type": [
         "rdf:Property",
@@ -128,6 +109,25 @@
         "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
       ],
       "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dfr:description",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional short description of the facility"
+      ],
+      "rdfs:label": "description"
     },
     {
       "@id": "untp-dfr:countryOfOperation",
@@ -151,7 +151,7 @@
     {
       "@id": "untp-dfr:processCategory",
       "schema:rangeIncludes": {
-        "@id": "untp-core:processCategory"
+        "@id": "untp-core:Classification"
       },
       "@type": [
         "rdf:Property",
@@ -170,7 +170,7 @@
     {
       "@id": "untp-dfr:operatedByParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:operatedByParty"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -189,7 +189,7 @@
     {
       "@id": "untp-dfr:facilityAlsoKnownAs",
       "schema:rangeIncludes": {
-        "@id": "untp-core:facilityAlsoKnownAs"
+        "@id": "untp-core:Facility"
       },
       "@type": [
         "rdf:Property",
@@ -208,7 +208,7 @@
     {
       "@id": "untp-dfr:address",
       "schema:rangeIncludes": {
-        "@id": "untp-core:address"
+        "@id": "untp-core:Address"
       },
       "@type": [
         "rdf:Property",
@@ -263,6 +263,63 @@
       "rdfs:label": "conformityClaim"
     },
     {
+      "@id": "untp-dfr:referenceStandard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Standard"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the standard that defines the specification / criteria"
+      ],
+      "rdfs:label": "referenceStandard"
+    },
+    {
+      "@id": "untp-dfr:referenceRegulation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Regulation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the regulation that defines the assessment criteria"
+      ],
+      "rdfs:label": "referenceRegulation"
+    },
+    {
+      "@id": "untp-dfr:assessmentCriteria",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Criterion"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The specification against which the assessment is made."
+      ],
+      "rdfs:label": "assessmentCriteria"
+    },
+    {
       "@id": "untp-dfr:assessmentDate",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -282,66 +339,9 @@
       "rdfs:label": "assessmentDate"
     },
     {
-      "@id": "untp-dfr:referenceStandard",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:referenceStandard"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the standard that defines the specification / criteria"
-      ],
-      "rdfs:label": "referenceStandard"
-    },
-    {
-      "@id": "untp-dfr:referenceRegulation",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:referenceRegulation"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the regulation that defines the assessment criteria"
-      ],
-      "rdfs:label": "referenceRegulation"
-    },
-    {
-      "@id": "untp-dfr:assessmentCriteria",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:assessmentCriteria"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The specification against which the assessment is made."
-      ],
-      "rdfs:label": "assessmentCriteria"
-    },
-    {
       "@id": "untp-dfr:declaredValue",
       "schema:rangeIncludes": {
-        "@id": "untp-core:declaredValue"
+        "@id": "untp-core:Metric"
       },
       "@type": [
         "rdf:Property",
@@ -360,11 +360,11 @@
     {
       "@id": "untp-dfr:conformance",
       "schema:rangeIncludes": {
-        "@id": "untp-core:conformance"
+        "@id": "xsd:boolean"
       },
       "@type": [
         "rdf:Property",
-        "owl:ObjectProperty"
+        "owl:DatatypeProperty"
       ],
       "schema:domainIncludes": [
         {
