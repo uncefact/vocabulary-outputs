@@ -31,37 +31,15 @@
       "rdfs:subClassOf": "untp-core:Declaration"
     },
     {
-      "@id": "untp-dfr:@context",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:DigitalFacilityRecord"
-        }
-      ],
-      "rdfs:comment": [
-        "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. "
-      ],
-      "rdfs:label": "@context"
-    },
-    {
       "@id": "untp-dfr:id",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:id"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:DigitalFacilityRecord"
-        },
         {
           "@id": "untp-dfr:Facility"
         },
@@ -70,87 +48,10 @@
         }
       ],
       "rdfs:comment": [
-        "A unique identifier (URI) assigned to the product passport. May be a UUID",
         "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
         "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
-    },
-    {
-      "@id": "untp-dfr:issuer",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:CredentialIssuer"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:DigitalFacilityRecord"
-        }
-      ],
-      "rdfs:comment": [
-        "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
-      ],
-      "rdfs:label": "issuer"
-    },
-    {
-      "@id": "untp-dfr:validFrom",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:DigitalFacilityRecord"
-        }
-      ],
-      "rdfs:comment": [
-        "The date and time from which the credential is valid."
-      ],
-      "rdfs:label": "validFrom"
-    },
-    {
-      "@id": "untp-dfr:validUntil",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:DigitalFacilityRecord"
-        }
-      ],
-      "rdfs:comment": [
-        "The expiry date (if applicable) of this verifiable credential."
-      ],
-      "rdfs:label": "validUntil"
-    },
-    {
-      "@id": "untp-dfr:credentialSubject",
-      "schema:rangeIncludes": {
-        "@id": "untp-dfr:Facility"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:DigitalFacilityRecord"
-        }
-      ],
-      "rdfs:comment": [
-        "The subject of a UNTP Digital Facility Record (DFR) is a Facility "
-      ],
-      "rdfs:label": "credentialSubject"
     },
     {
       "@id": "untp-dfr:registeredId",

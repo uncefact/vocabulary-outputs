@@ -11,9 +11,9 @@ untp-core:name
 untp-core:idScheme
 untp-core:description
 untp-core:Location
+untp-core:id
 untp-dfr:conformityTopicCode
 untp-core:processCategory
 untp-core:conformance
-untp-core:CredentialIssuer
 xsd:string
 untp-dfr:countryCode
