@@ -163,8 +163,14 @@
     {
       "@id": "untp-core:RenderTemplate2024",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).",
+      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9",
       "rdfs:label": "RenderTemplate2024"
+    },
+    {
+      "@id": "untp-core:WebRenderingTemplate2022",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A simple (though non-standard) embedded template.",
+      "rdfs:label": "WebRenderingTemplate2022"
     },
     {
       "@id": "untp-core:id",
@@ -277,6 +283,9 @@
         },
         {
           "@id": "untp-core:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-core:WebRenderingTemplate2022"
         }
       ],
       "rdfs:comment": [
@@ -292,7 +301,8 @@
         "Name of this material (eg \"Egyptian Cotton\")",
         "A human readable description of this conformity attestation",
         "The name of the accreditation.",
-        "Human facing display name for selection"
+        "Human facing display name for selection",
+        "Human facing display name for template"
       ],
       "rdfs:label": "name"
     },
@@ -2229,10 +2239,14 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-core:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-core:WebRenderingTemplate2022"
         }
       ],
       "rdfs:comment": [
-        "An inline template field for use cases where remote retrieval of a render method is suboptimal"
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
       ],
       "rdfs:label": "template"
     },
