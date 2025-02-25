@@ -1,21 +1,16 @@
 {
-    "label": "name",
-    "uri": "untp-dte:name",
+    "label": "template",
+    "uri": "untp-dte:template",
     "comment": [
-        "The name of the product class to which the product item belongs.  ",
-        "Human facing display name for selection",
-        "Human facing display name for template"
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
     ],
     "rangeIncludes": [
         {
-            "uri": "untp-core:name"
+            "uri": "xsd:string"
         }
     ],
     "domainIncludes": [
-        {
-            "uri": "untp-dte:Item",
-            "comment": "A specific serialised trade item which is an instance of a more generic product. "
-        },
         {
             "uri": "untp-dte:RenderTemplate2024",
             "comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9"
