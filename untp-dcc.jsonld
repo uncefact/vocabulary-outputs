@@ -52,6 +52,20 @@
       "rdfs:subClassOf": "untp-core:Facility"
     },
     {
+      "@id": "untp-dcc:RenderTemplate2024",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The organisation that is the subject of this conformity assessment.",
+      "rdfs:label": "RenderTemplate2024",
+      "rdfs:subClassOf": "untp-core:RenderTemplate2024"
+    },
+    {
+      "@id": "untp-dcc:WebRenderingTemplate2022",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A simple (though non-standard) embedded template.",
+      "rdfs:label": "WebRenderingTemplate2022",
+      "rdfs:subClassOf": "untp-core:WebRenderingTemplate2022"
+    },
+    {
       "@id": "untp-dcc:id",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -107,13 +121,21 @@
         },
         {
           "@id": "untp-dcc:Facility"
+        },
+        {
+          "@id": "untp-dcc:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dcc:WebRenderingTemplate2022"
         }
       ],
       "rdfs:comment": [
         "A human readable description of this conformity attestation",
         "The name of the standard",
         "The registered name of the product within the identifier scheme. ",
-        "The registered name of the facility within the identifier scheme.  "
+        "The registered name of the facility within the identifier scheme.  ",
+        "Human facing display name for selection",
+        "Human facing display name for template"
       ],
       "rdfs:label": "name"
     },
@@ -972,6 +994,105 @@
         "The Postal address of the location."
       ],
       "rdfs:label": "address"
+    },
+    {
+      "@id": "untp-dcc:mediaQuery",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Media query as defined in https://www.w3.org/TR/mediaqueries-4/"
+      ],
+      "rdfs:label": "mediaQuery"
+    },
+    {
+      "@id": "untp-dcc:template",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dcc:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
+      ],
+      "rdfs:label": "template"
+    },
+    {
+      "@id": "untp-dcc:url",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "URL for remotely hosted template"
+      ],
+      "rdfs:label": "url"
+    },
+    {
+      "@id": "untp-dcc:mediaType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
+      ],
+      "rdfs:label": "mediaType"
+    },
+    {
+      "@id": "untp-dcc:digestMultibase",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Used for resource integrity and/or validation of the inline `template`"
+      ],
+      "rdfs:label": "digestMultibase"
     }
   ]
 }
