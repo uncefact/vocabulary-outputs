@@ -161,6 +161,12 @@
       "rdfs:label": "Endorsement"
     },
     {
+      "@id": "untp-core:RenderTemplate2024",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).",
+      "rdfs:label": "RenderTemplate2024"
+    },
+    {
       "@id": "untp-core:id",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
@@ -268,6 +274,9 @@
         },
         {
           "@id": "untp-core:Endorsement"
+        },
+        {
+          "@id": "untp-core:RenderTemplate2024"
         }
       ],
       "rdfs:comment": [
@@ -282,7 +291,8 @@
         "A name that describes this criteria.",
         "Name of this material (eg \"Egyptian Cotton\")",
         "A human readable description of this conformity attestation",
-        "The name of the accreditation."
+        "The name of the accreditation.",
+        "Human facing display name for selection"
       ],
       "rdfs:label": "name"
     },
@@ -2187,6 +2197,101 @@
         "The evidence that supports the authority under which the attestation is issued - for an example an accreditation certificate."
       ],
       "rdfs:label": "endorsementEvidence"
+    },
+    {
+      "@id": "untp-core:mediaQuery",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Media query as defined in https://www.w3.org/TR/mediaqueries-4/"
+      ],
+      "rdfs:label": "mediaQuery"
+    },
+    {
+      "@id": "untp-core:template",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal"
+      ],
+      "rdfs:label": "template"
+    },
+    {
+      "@id": "untp-core:url",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "URL for remotely hosted template"
+      ],
+      "rdfs:label": "url"
+    },
+    {
+      "@id": "untp-core:mediaType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
+      ],
+      "rdfs:label": "mediaType"
+    },
+    {
+      "@id": "untp-core:digestMultibase",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Used for resource integrity and/or validation of the inline `template`"
+      ],
+      "rdfs:label": "digestMultibase"
     },
     {
       "@id": "untp-core:assessmentLevelCode",
