@@ -1,2 +1,2 @@
-untp-core:Party
+untp-core:IdentifierScheme
 xsd:string

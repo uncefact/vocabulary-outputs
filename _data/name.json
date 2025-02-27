@@ -2,6 +2,7 @@
     "label": "name",
     "uri": "untp-dia:name",
     "comment": [
+        "The registered name of the entity within the identifier scheme.  Examples: product - EV battery 300Ah, Party - Sample Company Pty Ltd,  Facility - Green Acres battery factory",
         "Human facing display name for selection",
         "Human facing display name for template"
     ],
@@ -11,6 +12,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "untp-dia:RegisteredIdentity",
+            "comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes."
+        },
         {
             "uri": "untp-dia:RenderTemplate2024",
             "comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9"
