@@ -70,6 +70,12 @@
       "rdfs:label": "Product"
     },
     {
+      "@id": "untp-core:Characteristics",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc.",
+      "rdfs:label": "Characteristics"
+    },
+    {
       "@id": "untp-core:Dimension",
       "@type": "rdfs:Class",
       "rdfs:comment": "Overall (length, width, height) dimensions and weight/volume of an item.",
@@ -141,12 +147,6 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity.",
       "rdfs:label": "EmissionsPerformance"
-    },
-    {
-      "@id": "untp-core:Characteristics",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc.",
-      "rdfs:label": "Characteristics"
     },
     {
       "@id": "untp-core:Attestation",
@@ -934,6 +934,25 @@
         "Reference information (location, type, name) of an image of the product."
       ],
       "rdfs:label": "productImage"
+    },
+    {
+      "@id": "untp-core:characteristics",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Characteristics"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A placeholder for indusutry / product category specific information. "
+      ],
+      "rdfs:label": "characteristics"
     },
     {
       "@id": "untp-core:productCategory",

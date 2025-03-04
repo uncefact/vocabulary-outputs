@@ -1,5 +1,4 @@
 Class untp-core:Attestation has no references
-Class untp-core:Characteristics has no references
 Class untp-core:CircularityPerformance has no references
 Class untp-core:CredentialIssuer has no references
 Class untp-core:Declaration has no references
