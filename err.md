@@ -21,3 +21,4 @@ untp-core:conformance
 xsd:boolean
 untp-core:Facility
 xsd:string
+untp-core:Characteristics
