@@ -16,4 +16,5 @@ untp-core:Party
 untp-core:conformance
 untp-core:Facility
 xsd:string
+untp-core:Characteristics
 xsd:decimal
