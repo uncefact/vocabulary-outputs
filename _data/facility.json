@@ -1,74 +1,18 @@
 {
-    "label": "Facility",
-    "uri": "untp-dcc:Facility",
-    "comment": "The facility which is the subject of this conformity assessment",
-    "subClassOf": "untp-core:Facility",
-    "datatypeProperties": [
+    "label": "facility",
+    "uri": "untp-dcc:facility",
+    "comment": [
+        "The physical site (eg farm or factory) where the product or materials was produced."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "untp-dcc:IDverifiedByCAB",
-            "type": "xsd:boolean",
-            "comment": "Indicates whether the conformity assessment ..."
-        },
-        {
-            "uri": "untp-dcc:address",
-            "type": "untp-core:Address",
-            "comment": "The Postal address of the ..."
-        },
-        {
-            "uri": "untp-dcc:countryOfOperation",
-            "type": "untp-dcc:countryCode",
-            "comment": "The country in which this ..."
-        },
-        {
-            "uri": "untp-dcc:description",
-            "type": "xsd:string",
-            "comment": "A textual description of the ..."
-        },
-        {
-            "uri": "untp-dcc:facilityAlsoKnownAs",
-            "type": "untp-core:Facility",
-            "comment": "An optional list of other ..."
-        },
-        {
-            "uri": "untp-dcc:id",
-            "type": "xsd:string",
-            "comment": "The globally unique ID of ..."
-        },
-        {
-            "uri": "untp-dcc:idScheme",
-            "type": "untp-core:IdentifierScheme",
-            "comment": "The identifier scheme for this ..."
-        },
-        {
-            "uri": "untp-dcc:locationInformation",
-            "type": "untp-core:Location",
-            "comment": "Geo-location information for this facility ..."
-        },
-        {
-            "uri": "untp-dcc:name",
-            "type": "xsd:string",
-            "comment": "A human readable description of ..."
-        },
-        {
-            "uri": "untp-dcc:operatedByParty",
-            "type": "untp-core:Party",
-            "comment": "The Party entity responsible for ..."
-        },
-        {
-            "uri": "untp-dcc:processCategory",
-            "type": "untp-core:Classification",
-            "comment": "The industrial or production processes ..."
-        },
-        {
-            "uri": "untp-dcc:registeredId",
-            "type": "xsd:string",
-            "comment": "The registration number (alphanumeric) of ..."
+            "uri": "untp-core:Facility"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "untp-dcc:assessedFacility",
-            "comment": "The list of facilities that ..."
+            "uri": "untp-dcc:FacilityVerification",
+            "comment": "The facility which is the subject of this conformity assessment"
         }
     ]
 }

@@ -1,99 +1,18 @@
 {
-    "label": "Product",
-    "uri": "untp-dcc:Product",
-    "comment": "The product which is the subject of this conformity assessment",
-    "subClassOf": "untp-core:Product",
-    "datatypeProperties": [
+    "label": "product",
+    "uri": "untp-dcc:product",
+    "comment": [
+        "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "untp-dcc:IDverifiedByCAB",
-            "type": "xsd:boolean",
-            "comment": "Indicates whether the conformity assessment ..."
-        },
-        {
-            "uri": "untp-dcc:batchNumber",
-            "type": "xsd:string",
-            "comment": "Identifier of the specific production ..."
-        },
-        {
-            "uri": "untp-dcc:characteristics",
-            "type": "untp-core:Characteristics",
-            "comment": "A placeholder for indusutry / ..."
-        },
-        {
-            "uri": "untp-dcc:countryOfProduction",
-            "type": "untp-dcc:countryCode",
-            "comment": "The country in which this ..."
-        },
-        {
-            "uri": "untp-dcc:description",
-            "type": "xsd:string",
-            "comment": "A textual description of the ..."
-        },
-        {
-            "uri": "untp-dcc:dimensions",
-            "type": "untp-core:Dimension",
-            "comment": "The physical dimensions of the ..."
-        },
-        {
-            "uri": "untp-dcc:furtherInformation",
-            "type": "untp-core:Link",
-            "comment": "A URL pointing to further ..."
-        },
-        {
-            "uri": "untp-dcc:id",
-            "type": "xsd:string",
-            "comment": "The globally unique ID of ..."
-        },
-        {
-            "uri": "untp-dcc:idScheme",
-            "type": "untp-core:IdentifierScheme",
-            "comment": "The identifier scheme for this ..."
-        },
-        {
-            "uri": "untp-dcc:name",
-            "type": "xsd:string",
-            "comment": "A human readable description of ..."
-        },
-        {
-            "uri": "untp-dcc:producedAtFacility",
-            "type": "untp-core:Facility",
-            "comment": "The Facility where the product ..."
-        },
-        {
-            "uri": "untp-dcc:producedByParty",
-            "type": "untp-core:Party",
-            "comment": "The Party entity that manufactured ..."
-        },
-        {
-            "uri": "untp-dcc:productCategory",
-            "type": "untp-core:Classification",
-            "comment": "A code representing the product's ..."
-        },
-        {
-            "uri": "untp-dcc:productImage",
-            "type": "untp-core:Link",
-            "comment": "Reference information (location, type, name) ..."
-        },
-        {
-            "uri": "untp-dcc:productionDate",
-            "type": "xsd:string",
-            "comment": "The ISO 8601 date on ..."
-        },
-        {
-            "uri": "untp-dcc:registeredId",
-            "type": "xsd:string",
-            "comment": "The registration number (alphanumeric) of ..."
-        },
-        {
-            "uri": "untp-dcc:serialNumber",
-            "type": "xsd:string",
-            "comment": "A number or code representing ..."
+            "uri": "untp-core:Product"
         }
     ],
-    "referencedBy": [
+    "domainIncludes": [
         {
-            "uri": "untp-dcc:assessedProduct",
-            "comment": "The list of products that ..."
+            "uri": "untp-dcc:ProductVerification",
+            "comment": "The product which is the subject of this conformity assessment"
         }
     ]
 }
