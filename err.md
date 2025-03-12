@@ -1,15 +1,10 @@
-untp-core:Address
-untp-core:IdentifierScheme
-untp-core:SecureLink
 untp-core:Location
-untp-core:Classification
 untp-core:Criterion
 untp-dfr:conformityTopicCode
 untp-core:Metric
-untp-core:Party
 untp-core:Standard
 xsd:boolean
 untp-core:Facility
 untp-core:Regulation
 xsd:string
-untp-dfr:countryCode
+untp-core:SecureLink

@@ -1,68 +1,18 @@
 {
-    "label": "Facility",
-    "uri": "untp-dfr:Facility",
-    "comment": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record.",
-    "subClassOf": "untp-core:Facility",
-    "datatypeProperties": [
+    "label": "facility",
+    "uri": "untp-dfr:facility",
+    "comment": [
+        "The physical site (eg farm or factory) where the product or materials was produced."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "untp-dfr:address",
-            "type": "untp-core:Address",
-            "comment": "The Postal address of the ..."
-        },
+            "uri": "untp-core:Facility"
+        }
+    ],
+    "domainIncludes": [
         {
-            "uri": "untp-dfr:conformityClaim",
-            "type": "untp-dfr:Claim",
-            "comment": "A list of conformity declarations ..."
-        },
-        {
-            "uri": "untp-dfr:countryOfOperation",
-            "type": "untp-dfr:countryCode",
-            "comment": "The country in which this ..."
-        },
-        {
-            "uri": "untp-dfr:description",
-            "type": "xsd:string",
-            "comment": "An optional short description of ..."
-        },
-        {
-            "uri": "untp-dfr:facilityAlsoKnownAs",
-            "type": "untp-core:Facility",
-            "comment": "An optional list of other ..."
-        },
-        {
-            "uri": "untp-dfr:id",
-            "type": "xsd:string",
-            "comment": "The globally unique ID of ..."
-        },
-        {
-            "uri": "untp-dfr:idScheme",
-            "type": "untp-core:IdentifierScheme",
-            "comment": "The ID scheme of the ..."
-        },
-        {
-            "uri": "untp-dfr:locationInformation",
-            "type": "untp-core:Location",
-            "comment": "Physical location details "
-        },
-        {
-            "uri": "untp-dfr:name",
-            "type": "xsd:string",
-            "comment": "The registered name of the ..."
-        },
-        {
-            "uri": "untp-dfr:operatedByParty",
-            "type": "untp-core:Party",
-            "comment": "The Party entity responsible for ..."
-        },
-        {
-            "uri": "untp-dfr:processCategory",
-            "type": "untp-core:Classification",
-            "comment": "The industrial or production processes ..."
-        },
-        {
-            "uri": "untp-dfr:registeredId",
-            "type": "xsd:string",
-            "comment": "The registration number (alphanumeric) of ..."
+            "uri": "untp-dfr:FacilityClaim",
+            "comment": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record."
         }
     ]
 }
