@@ -17,11 +17,10 @@
       "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
-      "@id": "untp-dpp:Product",
+      "@id": "untp-dpp:ProductClaim",
       "@type": "rdfs:Class",
-      "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
-      "rdfs:label": "Product",
-      "rdfs:subClassOf": "untp-core:Product"
+      "rdfs:comment": "The ProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. ",
+      "rdfs:label": "ProductClaim"
     },
     {
       "@id": "untp-dpp:Claim",
@@ -35,6 +34,13 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. Events are grouped by value chain process (eg \"Weaving\" in textiles supply chain).",
       "rdfs:label": "TraceabilityPerformance"
+    },
+    {
+      "@id": "untp-dpp:ManufacturedProductClaim",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The ManufacturedProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. ",
+      "rdfs:label": "ManufacturedProductClaim",
+      "rdfs:subClassOf": "untp-dpp:ProductClaim"
     },
     {
       "@id": "untp-dpp:RenderTemplate2024",
@@ -61,310 +67,44 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Product"
+          "@id": "untp-dpp:ProductClaim"
         },
         {
           "@id": "untp-dpp:Claim"
+        },
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
         }
       ],
       "rdfs:comment": [
-        "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
-        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject",
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
+        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
       ],
       "rdfs:label": "id"
     },
     {
-      "@id": "untp-dpp:name",
+      "@id": "untp-dpp:product",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "untp-core:Product"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Product"
+          "@id": "untp-dpp:ProductClaim"
         },
         {
-          "@id": "untp-dpp:RenderTemplate2024"
-        },
-        {
-          "@id": "untp-dpp:WebRenderingTemplate2022"
+          "@id": "untp-dpp:ManufacturedProductClaim"
         }
       ],
       "rdfs:comment": [
-        "The registered name of the product within the identifier scheme. ",
-        "Human facing display name for selection",
-        "Human facing display name for template"
+        "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
+        "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
       ],
-      "rdfs:label": "name"
-    },
-    {
-      "@id": "untp-dpp:registeredId",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
-      ],
-      "rdfs:label": "registeredId"
-    },
-    {
-      "@id": "untp-dpp:idScheme",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:IdentifierScheme"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
-      ],
-      "rdfs:label": "idScheme"
-    },
-    {
-      "@id": "untp-dpp:serialNumber",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A number or code representing a specific serialised item of the product. Unique within product class."
-      ],
-      "rdfs:label": "serialNumber"
-    },
-    {
-      "@id": "untp-dpp:batchNumber",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "Identifier of the specific production batch of the product.  Unique within the product class."
-      ],
-      "rdfs:label": "batchNumber"
-    },
-    {
-      "@id": "untp-dpp:productImage",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Link"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "Reference information (location, type, name) of an image of the product."
-      ],
-      "rdfs:label": "productImage"
-    },
-    {
-      "@id": "untp-dpp:description",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A textual description providing details about the product."
-      ],
-      "rdfs:label": "description"
-    },
-    {
-      "@id": "untp-dpp:characteristics",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Characteristics"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A placeholder for indusutry / product category specific information. "
-      ],
-      "rdfs:label": "characteristics"
-    },
-    {
-      "@id": "untp-dpp:productCategory",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Classification"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
-      ],
-      "rdfs:label": "productCategory"
-    },
-    {
-      "@id": "untp-dpp:furtherInformation",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Link"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A URL pointing to further human readable information about the product."
-      ],
-      "rdfs:label": "furtherInformation"
-    },
-    {
-      "@id": "untp-dpp:producedByParty",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Party"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The Party entity that manufactured the product."
-      ],
-      "rdfs:label": "producedByParty"
-    },
-    {
-      "@id": "untp-dpp:producedAtFacility",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Facility"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The Facility where the product batch was produced / manufactured."
-      ],
-      "rdfs:label": "producedAtFacility"
-    },
-    {
-      "@id": "untp-dpp:dimensions",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Dimension"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have weight and volume but not length, with, or height.\"weight\":{\"value\":10, \"unit\":\"KGM\"}"
-      ],
-      "rdfs:label": "dimensions"
-    },
-    {
-      "@id": "untp-dpp:productionDate",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The ISO 8601 date on which the product batch or individual serialised item was manufactured."
-      ],
-      "rdfs:label": "productionDate"
-    },
-    {
-      "@id": "untp-dpp:countryOfProduction",
-      "schema:rangeIncludes": {
-        "@id": "untp-dpp:countryCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The country in which this item was produced / manufactured."
-      ],
-      "rdfs:label": "countryOfProduction"
+      "rdfs:label": "product"
     },
     {
       "@id": "untp-dpp:granularityLevel",
@@ -377,51 +117,17 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Product"
+          "@id": "untp-dpp:ProductClaim"
+        },
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
         }
       ],
       "rdfs:comment": [
+        "Code to indicate the granularity of this digital product passport - item level, batch level or product class level.",
         "Code to indicate the granularity of this digital product passport - item level, batch level or product class level."
       ],
       "rdfs:label": "granularityLevel"
-    },
-    {
-      "@id": "untp-dpp:dueDiligenceDeclaration",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Link"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "The due diligence declaration that conforms with the regulations of the market into which the product is sold."
-      ],
-      "rdfs:label": "dueDiligenceDeclaration"
-    },
-    {
-      "@id": "untp-dpp:materialsProvenance",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Material"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch. "
-      ],
-      "rdfs:label": "materialsProvenance"
     },
     {
       "@id": "untp-dpp:conformityClaim",
@@ -434,32 +140,17 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Product"
+          "@id": "untp-dpp:ProductClaim"
+        },
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
         }
       ],
       "rdfs:comment": [
+        "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list.",
         "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
       ],
       "rdfs:label": "conformityClaim"
-    },
-    {
-      "@id": "untp-dpp:circularityScorecard",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:CircularityPerformance"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Product"
-        }
-      ],
-      "rdfs:comment": [
-        "A circularity performance scorecard"
-      ],
-      "rdfs:label": "circularityScorecard"
     },
     {
       "@id": "untp-dpp:emissionsScorecard",
@@ -472,10 +163,14 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Product"
+          "@id": "untp-dpp:ProductClaim"
+        },
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
         }
       ],
       "rdfs:comment": [
+        "An emissions performance scorecard",
         "An emissions performance scorecard"
       ],
       "rdfs:label": "emissionsScorecard"
@@ -491,10 +186,14 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:Product"
+          "@id": "untp-dpp:ProductClaim"
+        },
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
         }
       ],
       "rdfs:comment": [
+        "An array of traceability events grouped by value chain process.  Where actual traceability events are unavailable or carry sensitive information, passport publishers may specify the extent to which the traceability information has been independently verified. ",
         "An array of traceability events grouped by value chain process.  Where actual traceability events are unavailable or carry sensitive information, passport publishers may specify the extent to which the traceability information has been independently verified. "
       ],
       "rdfs:label": "traceabilityInformation"
@@ -707,6 +406,86 @@
         "A list of secure links to digital traceability events that support this traceability performance statement. May be encrypted for confidentiality purposes. "
       ],
       "rdfs:label": "traceabilityEvent"
+    },
+    {
+      "@id": "untp-dpp:circularityScorecard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:CircularityPerformance"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
+        }
+      ],
+      "rdfs:comment": [
+        "A circularity performance scorecard"
+      ],
+      "rdfs:label": "circularityScorecard"
+    },
+    {
+      "@id": "untp-dpp:dueDiligenceDeclaration",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
+        }
+      ],
+      "rdfs:comment": [
+        "The due diligence declaration that conforms with the regulations of the market into which the product is sold."
+      ],
+      "rdfs:label": "dueDiligenceDeclaration"
+    },
+    {
+      "@id": "untp-dpp:materialsProvenance",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Material"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:ManufacturedProductClaim"
+        }
+      ],
+      "rdfs:comment": [
+        "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch. "
+      ],
+      "rdfs:label": "materialsProvenance"
+    },
+    {
+      "@id": "untp-dpp:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dpp:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "Human facing display name for selection",
+        "Human facing display name for template"
+      ],
+      "rdfs:label": "name"
     },
     {
       "@id": "untp-dpp:mediaQuery",

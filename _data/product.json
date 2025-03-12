@@ -1,123 +1,23 @@
 {
-    "label": "Product",
-    "uri": "untp-dpp:Product",
-    "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. ",
-    "subClassOf": "untp-core:Product",
-    "datatypeProperties": [
+    "label": "product",
+    "uri": "untp-dpp:product",
+    "comment": [
+        "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
+        "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+    ],
+    "rangeIncludes": [
         {
-            "uri": "untp-dpp:batchNumber",
-            "type": "xsd:string",
-            "comment": "Identifier of the specific production ..."
+            "uri": "untp-core:Product"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-dpp:ProductClaim",
+            "comment": "The ProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. "
         },
         {
-            "uri": "untp-dpp:characteristics",
-            "type": "untp-core:Characteristics",
-            "comment": "A placeholder for indusutry / ..."
-        },
-        {
-            "uri": "untp-dpp:circularityScorecard",
-            "type": "untp-core:CircularityPerformance",
-            "comment": "A circularity performance scorecard "
-        },
-        {
-            "uri": "untp-dpp:conformityClaim",
-            "type": "untp-dpp:Claim",
-            "comment": "An array of claim objects ..."
-        },
-        {
-            "uri": "untp-dpp:countryOfProduction",
-            "type": "untp-dpp:countryCode",
-            "comment": "The country in which this ..."
-        },
-        {
-            "uri": "untp-dpp:description",
-            "type": "xsd:string",
-            "comment": "A textual description providing details ..."
-        },
-        {
-            "uri": "untp-dpp:dimensions",
-            "type": "untp-core:Dimension",
-            "comment": "The physical dimensions of the ..."
-        },
-        {
-            "uri": "untp-dpp:dueDiligenceDeclaration",
-            "type": "untp-core:Link",
-            "comment": "The due diligence declaration that ..."
-        },
-        {
-            "uri": "untp-dpp:emissionsScorecard",
-            "type": "untp-core:EmissionsPerformance",
-            "comment": "An emissions performance scorecard "
-        },
-        {
-            "uri": "untp-dpp:furtherInformation",
-            "type": "untp-core:Link",
-            "comment": "A URL pointing to further ..."
-        },
-        {
-            "uri": "untp-dpp:granularityLevel",
-            "type": "untp-dpp:granularityCode",
-            "comment": "Code to indicate the granularity ..."
-        },
-        {
-            "uri": "untp-dpp:id",
-            "type": "xsd:string",
-            "comment": "The globally unique ID of ..."
-        },
-        {
-            "uri": "untp-dpp:idScheme",
-            "type": "untp-core:IdentifierScheme",
-            "comment": "The identifier scheme for this ..."
-        },
-        {
-            "uri": "untp-dpp:materialsProvenance",
-            "type": "untp-core:Material",
-            "comment": "An array of Provenance objects ..."
-        },
-        {
-            "uri": "untp-dpp:name",
-            "type": "xsd:string",
-            "comment": "The registered name of the ..."
-        },
-        {
-            "uri": "untp-dpp:producedAtFacility",
-            "type": "untp-core:Facility",
-            "comment": "The Facility where the product ..."
-        },
-        {
-            "uri": "untp-dpp:producedByParty",
-            "type": "untp-core:Party",
-            "comment": "The Party entity that manufactured ..."
-        },
-        {
-            "uri": "untp-dpp:productCategory",
-            "type": "untp-core:Classification",
-            "comment": "A code representing the product's ..."
-        },
-        {
-            "uri": "untp-dpp:productImage",
-            "type": "untp-core:Link",
-            "comment": "Reference information (location, type, name) ..."
-        },
-        {
-            "uri": "untp-dpp:productionDate",
-            "type": "xsd:string",
-            "comment": "The ISO 8601 date on ..."
-        },
-        {
-            "uri": "untp-dpp:registeredId",
-            "type": "xsd:string",
-            "comment": "The registration number (alphanumeric) of ..."
-        },
-        {
-            "uri": "untp-dpp:serialNumber",
-            "type": "xsd:string",
-            "comment": "A number or code representing ..."
-        },
-        {
-            "uri": "untp-dpp:traceabilityInformation",
-            "type": "untp-dpp:TraceabilityPerformance",
-            "comment": "An array of traceability events ..."
+            "uri": "untp-dpp:ManufacturedProductClaim",
+            "comment": "The ManufacturedProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. "
         }
     ]
 }

@@ -2,8 +2,9 @@
     "label": "id",
     "uri": "untp-dpp:id",
     "comment": [
-        "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
-        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject",
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
+        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
     ],
     "rangeIncludes": [
         {
@@ -12,12 +13,16 @@
     ],
     "domainIncludes": [
         {
-            "uri": "untp-dpp:Product",
-            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details. "
+            "uri": "untp-dpp:ProductClaim",
+            "comment": "The ProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. "
         },
         {
             "uri": "untp-dpp:Claim",
             "comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  "
+        },
+        {
+            "uri": "untp-dpp:ManufacturedProductClaim",
+            "comment": "The ManufacturedProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. "
         }
     ]
 }
