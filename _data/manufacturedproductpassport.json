@@ -1,12 +1,23 @@
 {
-    "label": "ProductClaim",
-    "uri": "untp-dpp:ProductClaim",
-    "comment": "The ProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. ",
+    "label": "ManufacturedProductPassport",
+    "uri": "untp-dpp:ManufacturedProductPassport",
+    "comment": "The ManufacturedProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. ",
+    "subClassOf": "untp-dpp:ProductPassport",
     "datatypeProperties": [
         {
+            "uri": "untp-dpp:circularityScorecard",
+            "type": "untp-core:CircularityPerformance",
+            "comment": "A circularity performance scorecard "
+        },
+        {
             "uri": "untp-dpp:conformityClaim",
-            "type": "untp-dpp:Claim",
+            "type": "untp-core:Claim",
             "comment": "An array of claim objects ..."
+        },
+        {
+            "uri": "untp-dpp:dueDiligenceDeclaration",
+            "type": "untp-core:Link",
+            "comment": "The due diligence declaration that ..."
         },
         {
             "uri": "untp-dpp:emissionsScorecard",
@@ -22,6 +33,11 @@
             "uri": "untp-dpp:id",
             "type": "xsd:string",
             "comment": "An id is not required ..."
+        },
+        {
+            "uri": "untp-dpp:materialsProvenance",
+            "type": "untp-core:Material",
+            "comment": "An array of Provenance objects ..."
         },
         {
             "uri": "untp-dpp:product",

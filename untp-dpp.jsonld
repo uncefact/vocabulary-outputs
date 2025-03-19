@@ -10,24 +10,17 @@
   },
   "@graph": [
     {
-      "@id": "untp-dpp:DigitalProductPassport",
+      "@id": "untp-dpp:VerifiableProductPassport",
       "@type": "rdfs:Class",
       "rdfs:comment": "The Product Passport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provenance information, circularity information and a set of verifiable product conformity & sustainability claims. ",
-      "rdfs:label": "DigitalProductPassport",
+      "rdfs:label": "VerifiableProductPassport",
       "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
-      "@id": "untp-dpp:ProductClaim",
+      "@id": "untp-dpp:ProductPassport",
       "@type": "rdfs:Class",
       "rdfs:comment": "The ProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. ",
-      "rdfs:label": "ProductClaim"
-    },
-    {
-      "@id": "untp-dpp:Claim",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
-      "rdfs:label": "Claim",
-      "rdfs:subClassOf": "untp-core:Declaration"
+      "rdfs:label": "ProductPassport"
     },
     {
       "@id": "untp-dpp:TraceabilityPerformance",
@@ -36,11 +29,18 @@
       "rdfs:label": "TraceabilityPerformance"
     },
     {
-      "@id": "untp-dpp:ManufacturedProductClaim",
+      "@id": "untp-dpp:VerifiableManufacturedProductPassport",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The Product Passport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provenance information, circularity information and a set of verifiable product conformity & sustainability claims. ",
+      "rdfs:label": "VerifiableManufacturedProductPassport",
+      "rdfs:subClassOf": "untp-dpp:VerifiableProductPassport"
+    },
+    {
+      "@id": "untp-dpp:ManufacturedProductPassport",
       "@type": "rdfs:Class",
       "rdfs:comment": "The ManufacturedProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. ",
-      "rdfs:label": "ManufacturedProductClaim",
-      "rdfs:subClassOf": "untp-dpp:ProductClaim"
+      "rdfs:label": "ManufacturedProductPassport",
+      "rdfs:subClassOf": "untp-dpp:ProductPassport"
     },
     {
       "@id": "untp-dpp:RenderTemplate2024",
@@ -67,18 +67,14 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ProductClaim"
+          "@id": "untp-dpp:ProductPassport"
         },
         {
-          "@id": "untp-dpp:Claim"
-        },
-        {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
         "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject",
-        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
         "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
       ],
       "rdfs:label": "id"
@@ -94,10 +90,10 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ProductClaim"
+          "@id": "untp-dpp:ProductPassport"
         },
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -117,10 +113,10 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ProductClaim"
+          "@id": "untp-dpp:ProductPassport"
         },
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -132,7 +128,7 @@
     {
       "@id": "untp-dpp:conformityClaim",
       "schema:rangeIncludes": {
-        "@id": "untp-dpp:Claim"
+        "@id": "untp-core:Claim"
       },
       "@type": [
         "rdf:Property",
@@ -140,10 +136,10 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ProductClaim"
+          "@id": "untp-dpp:ProductPassport"
         },
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -163,10 +159,10 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ProductClaim"
+          "@id": "untp-dpp:ProductPassport"
         },
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -186,10 +182,10 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ProductClaim"
+          "@id": "untp-dpp:ProductPassport"
         },
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -197,158 +193,6 @@
         "An array of traceability events grouped by value chain process.  Where actual traceability events are unavailable or carry sensitive information, passport publishers may specify the extent to which the traceability information has been independently verified. "
       ],
       "rdfs:label": "traceabilityInformation"
-    },
-    {
-      "@id": "untp-dpp:assessmentDate",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The date on which this assessment was made. "
-      ],
-      "rdfs:label": "assessmentDate"
-    },
-    {
-      "@id": "untp-dpp:referenceStandard",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:referenceStandard"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the standard that defines the specification / criteria"
-      ],
-      "rdfs:label": "referenceStandard"
-    },
-    {
-      "@id": "untp-dpp:referenceRegulation",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:referenceRegulation"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the regulation that defines the assessment criteria"
-      ],
-      "rdfs:label": "referenceRegulation"
-    },
-    {
-      "@id": "untp-dpp:assessmentCriteria",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:assessmentCriteria"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The specification against which the assessment is made."
-      ],
-      "rdfs:label": "assessmentCriteria"
-    },
-    {
-      "@id": "untp-dpp:declaredValue",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:declaredValue"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The list of specific values measured as part of this assessment (eg tensile strength)"
-      ],
-      "rdfs:label": "declaredValue"
-    },
-    {
-      "@id": "untp-dpp:conformance",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:conformance"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
-      ],
-      "rdfs:label": "conformance"
-    },
-    {
-      "@id": "untp-dpp:conformityTopic",
-      "schema:rangeIncludes": {
-        "@id": "untp-dpp:conformityTopicCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
-      ],
-      "rdfs:label": "conformityTopic"
-    },
-    {
-      "@id": "untp-dpp:conformityEvidence",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:SecureLink"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dpp:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital Conformity Credential (DCC)"
-      ],
-      "rdfs:label": "conformityEvidence"
     },
     {
       "@id": "untp-dpp:valueChainProcess",
@@ -418,7 +262,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -437,7 +281,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
@@ -456,7 +300,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dpp:ManufacturedProductClaim"
+          "@id": "untp-dpp:ManufacturedProductPassport"
         }
       ],
       "rdfs:comment": [
