@@ -1,7 +1,8 @@
 {
-    "label": "Product",
-    "uri": "untp-core:Product",
+    "label": "ManufacturedProduct",
+    "uri": "untp-core:ManufacturedProduct",
     "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
+    "subClassOf": "untp-core:Product",
     "datatypeProperties": [
         {
             "uri": "untp-core:batchNumber",
@@ -22,6 +23,11 @@
             "uri": "untp-core:description",
             "type": "xsd:string",
             "comment": "An optional short description of ..."
+        },
+        {
+            "uri": "untp-core:dimensions",
+            "type": "untp-core:Dimension",
+            "comment": "The physical dimensions of the ..."
         },
         {
             "uri": "untp-core:furtherInformation",
@@ -72,6 +78,11 @@
             "uri": "untp-core:registeredId",
             "type": "xsd:string",
             "comment": "The registration number (alphanumeric) of ..."
+        },
+        {
+            "uri": "untp-core:serialNumber",
+            "type": "xsd:string",
+            "comment": "A number or code representing ..."
         }
     ]
 }

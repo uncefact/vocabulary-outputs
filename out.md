@@ -1,8 +1,10 @@
 Class untp-core:Attestation has no references
 Class untp-core:CircularityPerformance has no references
+Class untp-core:Claim has no references
 Class untp-core:CredentialIssuer has no references
 Class untp-core:Declaration has no references
 Class untp-core:EmissionsPerformance has no references
+Class untp-core:ManufacturedProduct has no references
 Class untp-core:Material has no references
 Class untp-core:Product has no references
 Class untp-core:RenderTemplate2024 has no references

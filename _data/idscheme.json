@@ -4,6 +4,7 @@
     "comment": [
         "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. ",
         "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. ",
+        "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  ",
         "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
     ],
     "rangeIncludes": [
@@ -23,6 +24,10 @@
         },
         {
             "uri": "untp-core:Product",
+            "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+        },
+        {
+            "uri": "untp-core:ManufacturedProduct",
             "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
         }
     ]
