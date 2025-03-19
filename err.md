@@ -1,10 +1,4 @@
+untp-core:Claim
 untp-core:Location
-untp-core:Criterion
-untp-dfr:conformityTopicCode
-untp-core:Metric
-untp-core:Standard
-xsd:boolean
 untp-core:Facility
-untp-core:Regulation
 xsd:string
-untp-core:SecureLink

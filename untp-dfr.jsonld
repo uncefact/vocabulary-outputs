@@ -10,24 +10,17 @@
   },
   "@graph": [
     {
-      "@id": "untp-dfr:DigitalFacilityRecord",
+      "@id": "untp-dfr:VerifiableFacilityRecord",
       "@type": "rdfs:Class",
       "rdfs:comment": "A digital verifiable credential holding facility performance information.",
-      "rdfs:label": "DigitalFacilityRecord",
+      "rdfs:label": "VerifiableFacilityRecord",
       "rdfs:subClassOf": "untp-core:VerifiableCredential"
     },
     {
-      "@id": "untp-dfr:FacilityClaim",
+      "@id": "untp-dfr:FacilityRecord",
       "@type": "rdfs:Class",
       "rdfs:comment": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record.",
-      "rdfs:label": "FacilityClaim"
-    },
-    {
-      "@id": "untp-dfr:Claim",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A conformity claim about the facility against a specific standard or regulation.",
-      "rdfs:label": "Claim",
-      "rdfs:subClassOf": "untp-core:Declaration"
+      "rdfs:label": "FacilityRecord"
     },
     {
       "@id": "untp-dfr:RenderTemplate2024",
@@ -54,15 +47,11 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:FacilityClaim"
-        },
-        {
-          "@id": "untp-dfr:Claim"
+          "@id": "untp-dfr:FacilityRecord"
         }
       ],
       "rdfs:comment": [
-        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject",
-        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
       ],
       "rdfs:label": "id"
     },
@@ -77,7 +66,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:FacilityClaim"
+          "@id": "untp-dfr:FacilityRecord"
         }
       ],
       "rdfs:comment": [
@@ -96,7 +85,7 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:FacilityClaim"
+          "@id": "untp-dfr:FacilityRecord"
         }
       ],
       "rdfs:comment": [
@@ -107,7 +96,7 @@
     {
       "@id": "untp-dfr:conformityClaim",
       "schema:rangeIncludes": {
-        "@id": "untp-dfr:Claim"
+        "@id": "untp-core:Claim"
       },
       "@type": [
         "rdf:Property",
@@ -115,165 +104,13 @@
       ],
       "schema:domainIncludes": [
         {
-          "@id": "untp-dfr:FacilityClaim"
+          "@id": "untp-dfr:FacilityRecord"
         }
       ],
       "rdfs:comment": [
         "A list of conformity declarations against specific criteria from recognised standards or regulations. "
       ],
       "rdfs:label": "conformityClaim"
-    },
-    {
-      "@id": "untp-dfr:referenceStandard",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Standard"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the standard that defines the specification / criteria"
-      ],
-      "rdfs:label": "referenceStandard"
-    },
-    {
-      "@id": "untp-dfr:referenceRegulation",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Regulation"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The reference to the regulation that defines the assessment criteria"
-      ],
-      "rdfs:label": "referenceRegulation"
-    },
-    {
-      "@id": "untp-dfr:assessmentCriteria",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Criterion"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The specification against which the assessment is made."
-      ],
-      "rdfs:label": "assessmentCriteria"
-    },
-    {
-      "@id": "untp-dfr:assessmentDate",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The date on which this assessment was made. "
-      ],
-      "rdfs:label": "assessmentDate"
-    },
-    {
-      "@id": "untp-dfr:declaredValue",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Metric"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The list of specific values measured as part of this assessment (eg tensile strength)"
-      ],
-      "rdfs:label": "declaredValue"
-    },
-    {
-      "@id": "untp-dfr:conformance",
-      "schema:rangeIncludes": {
-        "@id": "xsd:boolean"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
-      ],
-      "rdfs:label": "conformance"
-    },
-    {
-      "@id": "untp-dfr:conformityTopic",
-      "schema:rangeIncludes": {
-        "@id": "untp-dfr:conformityTopicCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
-      ],
-      "rdfs:label": "conformityTopic"
-    },
-    {
-      "@id": "untp-dfr:conformityEvidence",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:SecureLink"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
-      ],
-      "rdfs:label": "conformityEvidence"
     },
     {
       "@id": "untp-dfr:name",
