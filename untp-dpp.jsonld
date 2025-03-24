@@ -157,6 +157,63 @@
       "rdfs:label": "traceabilityInformation"
     },
     {
+      "@id": "untp-dpp:circularityScorecard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:CircularityPerformance"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:ProductPassport"
+        }
+      ],
+      "rdfs:comment": [
+        "A circularity performance scorecard"
+      ],
+      "rdfs:label": "circularityScorecard"
+    },
+    {
+      "@id": "untp-dpp:dueDiligenceDeclaration",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:ProductPassport"
+        }
+      ],
+      "rdfs:comment": [
+        "The due diligence declaration that conforms with the regulations of the market into which the product is sold."
+      ],
+      "rdfs:label": "dueDiligenceDeclaration"
+    },
+    {
+      "@id": "untp-dpp:materialsProvenance",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Material"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dpp:ProductPassport"
+        }
+      ],
+      "rdfs:comment": [
+        "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch. "
+      ],
+      "rdfs:label": "materialsProvenance"
+    },
+    {
       "@id": "untp-dpp:valueChainProcess",
       "schema:rangeIncludes": {
         "@id": "xsd:string"

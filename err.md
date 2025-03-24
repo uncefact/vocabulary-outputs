@@ -1,4 +1,7 @@
 untp-core:Claim
+untp-core:Link
+untp-core:CircularityPerformance
+untp-core:Material
 untp-core:EmissionsPerformance
 untp-core:Product
 xsd:string
