@@ -4,6 +4,16 @@
     "comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
     "datatypeProperties": [
         {
+            "uri": "untp-core:conformityTopic",
+            "type": "untp-core:conformityTopicCode",
+            "comment": "The conformity topic category for ..."
+        },
+        {
+            "uri": "untp-core:description",
+            "type": "xsd:string",
+            "comment": "An optional short description of ..."
+        },
+        {
             "uri": "untp-core:id",
             "type": "xsd:string",
             "comment": "The W3C DID of the ..."
@@ -14,15 +24,39 @@
             "comment": "The name of the issuer ..."
         },
         {
-            "uri": "untp-core:thresholdValues",
+            "uri": "untp-core:performanceLevel",
+            "type": "xsd:string",
+            "comment": "A performance category code to ..."
+        },
+        {
+            "uri": "untp-core:status",
+            "type": "untp-core:statusCode",
+            "comment": "The lifecycle status of this ..."
+        },
+        {
+            "uri": "untp-core:subCriterion",
+            "type": "untp-core:Criterion",
+            "comment": "List of criterion that are ..."
+        },
+        {
+            "uri": "untp-core:tags",
+            "type": "xsd:string",
+            "comment": "a category code to reporent ..."
+        },
+        {
+            "uri": "untp-core:thresholdValue",
             "type": "untp-core:Metric",
-            "comment": "A conformity threshold defined by ..."
+            "comment": "A threshold value that defines ..."
         }
     ],
     "referencedBy": [
         {
             "uri": "untp-core:assessmentCriteria",
             "comment": "The specification against which the ..."
+        },
+        {
+            "uri": "untp-core:subCriterion",
+            "comment": "List of criterion that are ..."
         }
     ]
 }

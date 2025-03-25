@@ -1,5 +1,6 @@
-xsd:boolean
-geojson:appendix-A.3
-xsd:string
-xsd:decimal
-geojson:appendix-A.1
+Exception in thread "main" java.lang.ClassCastException: class jakarta.json.JsonValueImpl cannot be cast to class jakarta.json.JsonString (jakarta.json.JsonValueImpl and jakarta.json.JsonString are in unnamed module of loader 'app')
+	at org.glassfish.json.JsonObjectBuilderImpl$JsonObjectImpl.getJsonString(JsonObjectBuilderImpl.java:254)
+	at org.glassfish.json.JsonObjectBuilderImpl$JsonObjectImpl.getString(JsonObjectBuilderImpl.java:259)
+	at org.unece.uncefact.vocab.md.DomainsToMD.generate(DomainsToMD.java:789)
+	at org.unece.uncefact.vocab.md.DomainsToMD.generate(DomainsToMD.java:26)
+	at org.unece.uncefact.vocab.Runner.main(Runner.java:115)
