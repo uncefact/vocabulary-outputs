@@ -5,7 +5,9 @@
         "An optional short description of the party.",
         "An optional short description of the facility",
         "A textual description providing details about the product.",
+        "A textual description of the declaration being made.",
         "A full text description of the criterion that clearly specifies how compliance is achieved and measured. ",
+        "A textual description of the declaration being made.",
         "A textual description of the scope or purpose of this conformity attestation",
         "The description of this conformity scheme"
     ],
@@ -28,8 +30,16 @@
             "comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
         },
         {
+            "uri": "untp-core:Declaration",
+            "comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch."
+        },
+        {
             "uri": "untp-core:Criterion",
             "comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard."
+        },
+        {
+            "uri": "untp-core:Claim",
+            "comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  "
         },
         {
             "uri": "untp-core:Attestation",

@@ -239,7 +239,7 @@
         }
       ],
       "rdfs:comment": [
-        "The W3C DID of the issuer - should be a did:web or did:tdw",
+        "The W3C DID of the issuer - should be a did:web or did:webvh",
         "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
         "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique URI representing the specific classifier value",
@@ -424,7 +424,13 @@
           "@id": "untp-core:Product"
         },
         {
+          "@id": "untp-core:Declaration"
+        },
+        {
           "@id": "untp-core:Criterion"
+        },
+        {
+          "@id": "untp-core:Claim"
         },
         {
           "@id": "untp-core:Attestation"
@@ -437,7 +443,9 @@
         "An optional short description of the party.",
         "An optional short description of the facility",
         "A textual description providing details about the product.",
+        "A textual description of the declaration being made.",
         "A full text description of the criterion that clearly specifies how compliance is achieved and measured. ",
+        "A textual description of the declaration being made.",
         "A textual description of the scope or purpose of this conformity attestation",
         "The description of this conformity scheme"
       ],
@@ -1794,7 +1802,7 @@
         }
       ],
       "rdfs:comment": [
-        "a category code to reporent target stakholder types or commodity types to which this criteron applies. "
+        "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
       ],
       "rdfs:label": "tags"
     },
@@ -1875,7 +1883,7 @@
       "rdfs:label": "massFraction"
     },
     {
-      "@id": "untp-core:massAmount",
+      "@id": "untp-core:mass",
       "schema:rangeIncludes": {
         "@id": "untp-core:Measure"
       },
@@ -1891,10 +1899,10 @@
       "rdfs:comment": [
         "The mass of the material component."
       ],
-      "rdfs:label": "massAmount"
+      "rdfs:label": "mass"
     },
     {
-      "@id": "untp-core:recycledAmount",
+      "@id": "untp-core:recycledMassFraction",
       "schema:rangeIncludes": {
         "@id": "xsd:decimal"
       },
@@ -1910,7 +1918,7 @@
       "rdfs:comment": [
         "Mass fraction of this material that is recycled (eg 50% recycled Lithium)"
       ],
-      "rdfs:label": "recycledAmount"
+      "rdfs:label": "recycledMassFraction"
     },
     {
       "@id": "untp-core:hazardous",
