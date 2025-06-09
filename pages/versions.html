@@ -38,12 +38,12 @@ layout: table
                     </td>
                     <td>
                         {% for schema in version.schemas %}
-                        <p><a href="{{ schema | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
+                        <p><a href="{{ schema | prepend: '/' | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
                         {% endfor %}
                     </td>
                     <td>
                         {% for instance in version.instances %}
-                        <p><a href="{{ instance | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
+                        <p><a href="{{ instance | prepend: '/' | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
                         {% endfor %}
                     </td>
                 </tr>
