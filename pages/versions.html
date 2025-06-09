@@ -25,7 +25,7 @@ layout: table
         {% for version in major.log %}
                 <tr>
                     <td>
-                        {{ version.version}}
+                        {{ version.version }}
                     </td>
                     <td>
                         {{ version.date }}
@@ -38,12 +38,12 @@ layout: table
                     </td>
                     <td>
                         {% for schema in version.schemas %}
-                        <p><a href="{{ schema | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
+                        <p><a href="{{ schema | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
                         {% endfor %}
                     </td>
                     <td>
                         {% for instance in version.instances %}
-                        <p><a href="{{ instance | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
+                        <p><a href="{{ instance | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
                         {% endfor %}
                     </td>
                 </tr>
