@@ -38,12 +38,20 @@ layout: table
                     </td>
                     <td>
                         {% for schema in version.schemas %}
+                        {% if version.version == "working"%}
                         <p><a href="{{ schema | prepend: '/' | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ schema }}</a></p>
+                        {% else %}
+                        <p><a href="{{ schema | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ schema }}</a></p>
+                        {% endif %}
                         {% endfor %}
                     </td>
                     <td>
                         {% for instance in version.instances %}
+                        {% if version.version == "working"%}
                         <p><a href="{{ instance | prepend: '/' | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ instance }}</a></p>
+                        {% else %}
+                        <p><a href="{{ instance | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ instance }}</a></p>
+                        {% endif %}
                         {% endfor %}
                     </td>
                 </tr>
