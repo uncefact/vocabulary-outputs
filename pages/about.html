@@ -92,7 +92,7 @@ class: white
             </li>
         </ul>
 
-        {%- assign jsonld_context_url = '/' | prepend: site.versions.untp-dcc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign jsonld_context_url = '/context/' | prepend: site.versions.untp-dcc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>Current JSON-LD Context file is available here:</p>
         <p>
@@ -111,9 +111,9 @@ class: white
                 </svg>
             </button>
         </div>
-
-        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dcc | prepend: '/untp-dcc-schema-' | prepend: site.artefacts | prepend: site.dest -%}
-        {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dcc | prepend: '/untp-dcc-instance-' | prepend: site.artefacts | prepend: site.dest -%}
+        
+        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dcc | prepend: '/untp-dcc-schema-' | prepend: site.versions.untp-dcc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dcc | prepend: '/untp-dcc-instance-' | prepend: site.versions.untp-dcc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
 
         <h2 class="home-content__subtitle">JSON Schemas</h2>
         <p>Current JSON Schema file is available here:</p>
