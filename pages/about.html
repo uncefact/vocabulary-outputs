@@ -5,8 +5,8 @@ type: default
 class: white
 ---
 <div class="home-content">
-    <h1 class="home-content__title">UNTP B2B Traceability Events Vocabulary</h1>
-    <p class="home-content__description">A collection of events that can be used to build supply chain traceability graphs.</p>
+    <h1 class="home-content__title">Sustainability Vocabulary Catalog</h1>
+    <p class="home-content__description">A schema for representation of any sustainability scheme as a catalog of assessment criteria.</p>
     <div class="search-block">
         <form action="{{ '/search' | prepend: site.baseurl }}" method="get" class="search-block">
             <div class="search-block__container">
@@ -37,12 +37,12 @@ class: white
                     Classes
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of Traceability Events Classes</p>
+                    <p class="browse-type__description">List of Sustainability Vocabulary Catalog Classes</p>
                     <a class="browse-type__action" href="{{ 'classes' | absolute_url }}">Browse Classes</a>
                 </div>
-                {% if site.versions.untp-dte %}
+                {% if site.versions.untp-svc %}
                     <span class="browse-type__version">
-                        {{ site.versions.untp-dte }}
+                        {{ site.versions.untp-svc }}
                     </span>
                 {% endif %}
             </li>
@@ -59,12 +59,12 @@ class: white
                     Properties
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of Traceability Events Properties</p>
+                    <p class="browse-type__description">List of Sustainability Vocabulary Catalog Properties</p>
                     <a class="browse-type__action" href="{{ 'properties' | absolute_url }}">Browse Properties</a>
                 </div>
-                {% if site.versions.untp-dte %}
+                {% if site.versions.untp-svc %}
                     <span class="browse-type__version">
-                        {{ site.versions.untp-dte }}
+                        {{ site.versions.untp-svc }}
                     </span>
                 {% endif %}
             </li>
@@ -81,18 +81,18 @@ class: white
                     Code Lists
                 </a>
                 <div class="browse-type__info">
-                    <p class="browse-type__description">List of Traceability Events Codes</p>
+                    <p class="browse-type__description">List of Sustainability Vocabulary Catalog Codes</p>
                     <a class="browse-type__action" href="{{ 'code-lists' | absolute_url }}">Browse Code Lists</a>
                 </div>
-                {% if site.versions.untp-dte %}
+                {% if site.versions.untp-svc %}
                     <span class="browse-type__version">
-                        {{ site.versions.untp-dte }}
+                        {{ site.versions.untp-svc }}
                     </span>
                 {% endif %}
             </li>
         </ul>
 
-        {%- assign jsonld_context_url = '/context/' | prepend: site.versions.untp-dte | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign jsonld_context_url = '/context/' | prepend: site.versions.untp-svc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
         <h2 class="home-content__subtitle">Contexts</h2>
         <p>Current JSON-LD Context file is available here:</p>
         <p>
@@ -112,8 +112,8 @@ class: white
             </button>
         </div>
 
-        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dte | prepend: '/untp-dte-schema-' | prepend: site.versions.untp-dte | prepend: site.artefacts | prepend: site.dest -%}
-        {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dte | prepend: '/untp-dte-instance-' | prepend: site.versions.untp-dte | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-svc | prepend: '/untp-svc-schema-' | prepend: site.versions.untp-svc | prepend: site.artefacts | prepend: site.dest -%}
+        {%- assign json_instance_url = '.json' | prepend: site.versions.untp-svc | prepend: '/untp-svc-instance-' | prepend: site.versions.untp-svc | prepend: site.artefacts | prepend: site.dest -%}
 
         <h2 class="home-content__subtitle">JSON Schemas</h2>
         <p>Current JSON Schema file is available here:</p>
