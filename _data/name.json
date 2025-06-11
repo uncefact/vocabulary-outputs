@@ -1,0 +1,23 @@
+{
+    "label": "name",
+    "uri": "untp-svc:name",
+    "comment": [
+        "The name of the performance level (eg \"B\")",
+        "Tag name used to classify criterion"
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "xsd:string"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-svc:LevelCode",
+            "comment": "A list of performance level codes that may be assigned to criterion. Conformity at a higher level requires conformity agaisnt all criteria at lower levels."
+        },
+        {
+            "uri": "untp-svc:TagCode",
+            "comment": "A code list of target groups () that are the object of confomance for this scheme."
+        }
+    ]
+}

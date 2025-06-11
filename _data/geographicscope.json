@@ -1,0 +1,18 @@
+{
+    "label": "geographicScope",
+    "uri": "untp-svc:geographicScope",
+    "comment": [
+        "A classification scheme and code / name representing a category value for a product, entity, or facility."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "untp-core:Classification"
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-svc:ConformitySchemeVocabulary",
+            "comment": "A conformity scheme as a structured hierarchy of conformity critera.# Note: \"name\", \"description\", \"id\" and \"type\" need to be defined in the context because# we import the UNTP-core model `Criterion` which is also used in credentials# where the VC context has been included, and the VC context defines both the # name and description terms globally (with a few others).# See https://github.com/w3c/vc-data-model/blob/949c8e1749a18dfd1e5d7556f9d5cb7801e0932f/contexts/credentials/v2#L5-L20"
+        }
+    ]
+}

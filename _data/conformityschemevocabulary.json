@@ -1,0 +1,52 @@
+{
+    "label": "ConformitySchemeVocabulary",
+    "uri": "untp-svc:ConformitySchemeVocabulary",
+    "comment": "A conformity scheme as a structured hierarchy of conformity critera.# Note: \"name\", \"description\", \"id\" and \"type\" need to be defined in the context because# we import the UNTP-core model `Criterion` which is also used in credentials# where the VC context has been included, and the VC context defines both the # name and description terms globally (with a few others).# See https://github.com/w3c/vc-data-model/blob/949c8e1749a18dfd1e5d7556f9d5cb7801e0932f/contexts/credentials/v2#L5-L20",
+    "datatypeProperties": [
+        {
+            "uri": "untp-svc:@context",
+            "type": "xsd:string",
+            "comment": "The context for the Sustainability ..."
+        },
+        {
+            "uri": "untp-svc:conformityCriterion",
+            "type": "untp-core:Criterion",
+            "comment": "A list of criterion defined ..."
+        },
+        {
+            "uri": "untp-svc:geographicScope",
+            "type": "untp-core:Classification",
+            "comment": "A classification scheme and code ..."
+        },
+        {
+            "uri": "untp-svc:id",
+            "type": "xsd:string",
+            "comment": "The identifier of this scheme ..."
+        },
+        {
+            "uri": "untp-svc:industryScope",
+            "type": "untp-core:Classification",
+            "comment": "A classification scheme and code ..."
+        },
+        {
+            "uri": "untp-svc:performanceLevelCode",
+            "type": "untp-svc:LevelCode",
+            "comment": "An optional list of performance ..."
+        },
+        {
+            "uri": "untp-svc:regulatoryAlignment",
+            "type": "untp-core:Regulation",
+            "comment": "Regulations to which this conformity ..."
+        },
+        {
+            "uri": "untp-svc:scheme",
+            "type": "untp-core:ConformityScheme",
+            "comment": "The conformity scheme on which ..."
+        },
+        {
+            "uri": "untp-svc:tagCode",
+            "type": "untp-svc:TagCode",
+            "comment": "A codelist of tags defined ..."
+        }
+    ]
+}

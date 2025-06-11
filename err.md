@@ -1,7 +1,6 @@
-untp-core:name
-untp-core:id
-untp-core:issuer
-untp-core:@context
-untp-core:validFrom
+untp-core:ConformityScheme
+untp-core:Classification
+untp-core:Criterion
+xsd:integer
+untp-core:Regulation
 xsd:string
-xsd:decimal

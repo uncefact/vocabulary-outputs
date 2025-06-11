@@ -1,0 +1,19 @@
+{
+    "label": "performanceLevelCode",
+    "uri": "untp-svc:performanceLevelCode",
+    "comment": [
+        "An optional list of performance levels (eg C, B, A, AA) defined by the scheme and used to assign criterion to the relevant performance level."
+    ],
+    "rangeIncludes": [
+        {
+            "uri": "untp-svc:LevelCode",
+            "comment": "A list of performance level codes that may be assigned to criterion. Conformity at a higher level requires conformity agaisnt all criteria at lower levels."
+        }
+    ],
+    "domainIncludes": [
+        {
+            "uri": "untp-svc:ConformitySchemeVocabulary",
+            "comment": "A conformity scheme as a structured hierarchy of conformity critera.# Note: \"name\", \"description\", \"id\" and \"type\" need to be defined in the context because# we import the UNTP-core model `Criterion` which is also used in credentials# where the VC context has been included, and the VC context defines both the # name and description terms globally (with a few others).# See https://github.com/w3c/vc-data-model/blob/949c8e1749a18dfd1e5d7556f9d5cb7801e0932f/contexts/credentials/v2#L5-L20"
+        }
+    ]
+}
