@@ -17,13 +17,15 @@ layout: table
             <th>Date</th>
             <th>Notes</th>
             <th>JSON-LD Context</th>
+            <th>JSON Schema</th>
+            <th>JSON Instance</th>
         </tr>
     </thead>
     <tbody>
         {% for version in major.log %}
                 <tr>
                     <td>
-                        {{ version.version}}
+                        {{ version.version }}
                     </td>
                     <td>
                         {{ version.date }}
@@ -33,6 +35,24 @@ layout: table
                     </td>
                     <td>
                         <p><a href="{{ version.context | prepend: site.data.versions.prefix | prepend: site.dest }}"> View</a></p>
+                    </td>
+                    <td>
+                        {% for schema in version.schemas %}
+                        {% if version.version == "working"%}
+                        <p><a href="{{ schema | prepend: '/' | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ schema }}</a></p>
+                        {% else %}
+                        <p><a href="{{ schema | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ schema }}</a></p>
+                        {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for instance in version.instances %}
+                        {% if version.version == "working"%}
+                        <p><a href="{{ instance | prepend: '/' | prepend: version.version | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ instance }}</a></p>
+                        {% else %}
+                        <p><a href="{{ instance | prepend: site.data.versions.prefix | prepend: site.dest }}"> {{ instance }}</a></p>
+                        {% endif %}
+                        {% endfor %}
                     </td>
                 </tr>
         {% endfor %}
