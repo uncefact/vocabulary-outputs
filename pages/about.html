@@ -112,7 +112,7 @@ class: white
             </button>
         </div>
 
-        {{% if site.versions.untp-dfr == "working"%}
+        {% if site.versions.untp-dfr == "working"%}
             {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dfr | prepend: '/untp-dfr-schema-' | prepend: site.versions.untp-dfr | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
             {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dfr | prepend: '/untp-dfr-instance-' | prepend: site.versions.untp-dfr | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
         {% else %}
