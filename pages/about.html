@@ -112,9 +112,14 @@ class: white
             </button>
         </div>
 
-        {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dia | prepend: '/untp-dia-schema-' | prepend: site.versions.untp-dia | prepend: site.artefacts | prepend: site.dest -%}
-        {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dia | prepend: '/untp-dia-instance-' | prepend: site.versions.untp-dia | prepend: site.artefacts | prepend: site.dest -%}
-
+        {% if site.versions.untp-dia == "working"%}
+            {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dia | prepend: '/untp-dia-schema-' | prepend: site.versions.untp-dia | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+            {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dia | prepend: '/untp-dia-instance-' | prepend: site.versions.untp-dia | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+        {% else %}
+            {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dia | prepend: '/untp-dia-schema-' | prepend: site.artefacts | prepend: site.dest -%}
+            {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dia | prepend: '/untp-dia-instance-' | prepend: site.artefacts | prepend: site.dest -%}
+        {% endif %}
+        
         <h2 class="home-content__subtitle">JSON Schemas</h2>
         <p>Current JSON Schema file is available here:</p>
         <p>
