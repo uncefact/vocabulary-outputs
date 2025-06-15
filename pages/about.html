@@ -112,12 +112,12 @@ class: white
             </button>
         </div>
 
-        {% if site.versions.untp-dpp == "working"%}
-            {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dpp | prepend: '/untp-dpp-schema-' | prepend: site.versions.untp-dpp | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
-            {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dpp | prepend: '/untp-dpp-instance-' | prepend: site.versions.untp-dpp | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+        {% if site.versions.untp-svc == "working"%}
+            {%- assign json_schema_url = '.json' | prepend: site.versions.untp-svc | prepend: '/untp-svc-schema-' | prepend: site.versions.untp-svc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
+            {%- assign json_instance_url = '.json' | prepend: site.versions.untp-svc | prepend: '/untp-svc-instance-' | prepend: site.versions.untp-svc | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
         {% else %}
-            {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dpp | prepend: '/untp-dpp-schema-' | prepend: site.artefacts | prepend: site.dest -%}
-            {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dpp | prepend: '/untp-dpp-instance-' | prepend: site.artefacts | prepend: site.dest -%}
+            {%- assign json_schema_url = '.json' | prepend: site.versions.untp-svc | prepend: '/untp-svc-schema-' | prepend: site.artefacts | prepend: site.dest -%}
+            {%- assign json_instance_url = '.json' | prepend: site.versions.untp-svc | prepend: '/untp-svc-instance-' | prepend: site.artefacts | prepend: site.dest -%}
         {% endif %}
         
         <h2 class="home-content__subtitle">JSON Schemas</h2>
