@@ -112,7 +112,7 @@ class: white
             </button>
         </div>
 
-        {% if version.version == "working"%}
+        {% if site.versions.untp-dpp == "working"%}
             {%- assign json_schema_url = '.json' | prepend: site.versions.untp-dpp | prepend: '/untp-dpp-schema-' | prepend: site.versions.untp-dpp | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
             {%- assign json_instance_url = '.json' | prepend: site.versions.untp-dpp | prepend: '/untp-dpp-instance-' | prepend: site.versions.untp-dpp | prepend: '/' | prepend: site.artefacts | prepend: site.dest -%}
         {% else %}
