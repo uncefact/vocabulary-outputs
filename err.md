@@ -7,7 +7,7 @@ untp-core:Product
 untp-core:SecureLink
 untp-core:referenceStandard
 untp-dcc:assessorLevelCode
-untp-core:BinaryFile
+untp-core:ConformityScheme
 untp-dcc:attestationTypeCode
 untp-core:Party
 untp-dcc:conformityTopicCode
