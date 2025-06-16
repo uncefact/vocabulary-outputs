@@ -1,9 +1,9 @@
 untp-core:Claim
 untp-core:Link
+xsd:double
 untp-core:CircularityPerformance
 untp-core:Material
 untp-core:EmissionsPerformance
 untp-core:Product
 xsd:string
 untp-core:SecureLink
-xsd:decimal
