@@ -23,6 +23,7 @@ layout: table
     </thead>
     <tbody>
         {% for version in major.log %}
+            {% if ((site.versions.untp-dfr != "working") and (version.version != "working")) || (site.versions.untp-dfr == "working") %}
                 <tr>
                     <td>
                         {{ version.version }}
@@ -55,6 +56,7 @@ layout: table
                         {% endfor %}
                     </td>
                 </tr>
+            {% endif %}
         {% endfor %}
     </tbody>
 </table>
