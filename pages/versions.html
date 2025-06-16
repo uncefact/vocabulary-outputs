@@ -23,7 +23,7 @@ layout: table
     </thead>
     <tbody>
         {% for version in major.log %}
-            {% if ((site.versions.untp-svc != "working") && (version.version != "working")) || (version.version == "working") %}
+            {% if ((site.versions.untp-svc != "working") && (version.version != "working")) || (site.versions.untp-svc == "working") %}
                 <tr>
                     <td>
                         {{ version.version }}
