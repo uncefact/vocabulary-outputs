@@ -11,7 +11,6 @@ untp-core:ConformityScheme
 untp-dcc:attestationTypeCode
 untp-core:Party
 untp-dcc:conformityTopicCode
-untp-core:conformance
 xsd:boolean
 untp-core:Facility
 xsd:string
