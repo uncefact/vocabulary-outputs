@@ -9,8 +9,10 @@ untp-core:referenceStandard
 untp-dcc:assessorLevelCode
 untp-core:ConformityScheme
 untp-dcc:attestationTypeCode
+schema:description
 untp-core:Party
 untp-dcc:conformityTopicCode
 xsd:boolean
 untp-core:Facility
+schema:name
 xsd:string
