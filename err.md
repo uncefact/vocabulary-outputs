@@ -5,5 +5,6 @@ untp-core:CircularityPerformance
 untp-core:Material
 untp-core:EmissionsPerformance
 untp-core:Product
+schema:name
 xsd:string
 untp-core:SecureLink
