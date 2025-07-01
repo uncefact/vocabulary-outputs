@@ -2,6 +2,7 @@
     "label": "digestMultibase",
     "uri": "untp-core:digestMultibase",
     "comment": [
+        "An optional multi-base encoded digest to ensure the content of the link has not changed. See https://www.w3.org/TR/vc-data-integrity/#resource-integrity for more information.",
         "Used for resource integrity and/or validation of the inline `template`"
     ],
     "rangeIncludes": [
@@ -10,6 +11,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "untp-core:Link",
+            "comment": "A structure to provide a URL link plus metadata associated with the link."
+        },
         {
             "uri": "untp-core:RenderTemplate2024",
             "comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9"

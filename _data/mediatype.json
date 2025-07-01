@@ -2,6 +2,7 @@
     "label": "mediaType",
     "uri": "untp-core:mediaType",
     "comment": [
+        "The media type of the target resource.",
         "content/media type for (possible) conneg on the above URL and certainly for display use"
     ],
     "rangeIncludes": [
@@ -10,6 +11,10 @@
         }
     ],
     "domainIncludes": [
+        {
+            "uri": "untp-core:Link",
+            "comment": "A structure to provide a URL link plus metadata associated with the link."
+        },
         {
             "uri": "untp-core:RenderTemplate2024",
             "comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9"

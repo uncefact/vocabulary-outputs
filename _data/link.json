@@ -4,22 +4,39 @@
     "comment": "A structure to provide a URL link plus metadata associated with the link.",
     "datatypeProperties": [
         {
-            "uri": "untp-core:linkName",
+            "uri": "untp-core:digestMultibase",
             "type": "xsd:string",
-            "comment": "A display name for the ..."
+            "comment": "An optional multi-base encoded digest ..."
         },
         {
-            "uri": "untp-core:linkType",
+            "uri": "untp-core:id",
             "type": "xsd:string",
-            "comment": "The type of the target ..."
+            "comment": "The W3C DID of the ..."
         },
         {
-            "uri": "untp-core:linkURL",
+            "uri": "untp-core:mediaType",
             "type": "xsd:string",
-            "comment": "The URL of the target ..."
+            "comment": "The media type of the ..."
+        },
+        {
+            "uri": "untp-core:name",
+            "type": "schema:name",
+            "comment": "The name of the issuer ..."
         }
     ],
     "referencedBy": [
+        {
+            "uri": "untp-core:auditableEvidence",
+            "comment": "Auditable evidence supporting this assessment ..."
+        },
+        {
+            "uri": "untp-core:conformityCertificate",
+            "comment": "A reference to the human ..."
+        },
+        {
+            "uri": "untp-core:conformityEvidence",
+            "comment": "A URI pointing to the ..."
+        },
         {
             "uri": "untp-core:endorsementEvidence",
             "comment": "The evidence that supports the ..."
